@@ -8,7 +8,6 @@ import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
 
 export const dynamic = 'force-dynamic';
-export const revalidate = 0;
 
 type StatsPageProps = { searchParams?: Promise<{ lang?: string }> };
 

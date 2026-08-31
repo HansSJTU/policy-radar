@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
 const root = new URL('../', import.meta.url);
@@ -65,7 +67,21 @@ test('Wrangler config serves both app routes and binds the production D1', () =>
   );
 });
 
-test('the home route is request-dynamic and does not require a persistent ISR cache', () => {
+test('the home route is request-dynamic', () => {
   assert.match(homePage, /dynamic\s*=\s*['"]force-dynamic['"]/);
-  assert.match(homePage, /revalidate\s*=\s*0/);
+});
+
+test('Cloudflare deployment classifies the app as non-ISR', () => {
+  const result = spawnSync(
+    fileURLToPath(new URL('node_modules/.bin/vinext-cloudflare', root)),
+    ['deploy', '--dry-run'],
+    {
+      cwd: fileURLToPath(root),
+      encoding: 'utf8',
+      env: { ...process.env, NO_COLOR: '1' },
+    },
+  );
+
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  assert.match(result.stdout, /ISR:\s+none/);
 });
