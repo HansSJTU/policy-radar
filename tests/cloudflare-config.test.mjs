@@ -57,6 +57,7 @@ test('Wrangler config serves both app routes and binds the production D1', () =>
   assert.equal(wranglerConfig.d1_databases.length, 1);
   assert.equal(wranglerConfig.d1_databases[0].binding, 'DB');
   assert.equal(wranglerConfig.d1_databases[0].database_name, 'policy-radar-db');
+  assert.equal(wranglerConfig.d1_databases[0].migrations_dir, 'drizzle');
   assert.match(
     wranglerConfig.d1_databases[0].database_id,
     /^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,

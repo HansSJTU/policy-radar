@@ -13,7 +13,8 @@
     {
       "binding": "DB",
       "database_name": "policy-radar-db",
-      "database_id": "5644306b-96f8-4928-ac03-bf8bd4b196f2"
+      "database_id": "5644306b-96f8-4928-ac03-bf8bd4b196f2",
+      "migrations_dir": "drizzle"
     }
   ]
 }
