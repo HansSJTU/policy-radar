@@ -10,21 +10,38 @@
 
 # testing
 /coverage
+/.nyc_output
+/test-results
+/playwright-report
 
 # next.js
 /.next/
 /.vinext/
 /out/
+*.tsbuildinfo
+/.cache/
+/.turbo/
+/.tmp/
+/tmp/
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+*.swp
+*.swo
+*~
+
+# editors
+/.idea
+/.vscode
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
 # local environment
 .env*

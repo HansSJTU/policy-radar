@@ -4,7 +4,7 @@
 
 A bilingual tracker for U.S. policies affecting the `F-1 → CPT → OPT → H-1B` path. It separates policy impact from procedural certainty and links each entry to its underlying sources.
 
-正式网站以本仓库右侧 **Homepage** 链接为准；访问统计位于同一域名的 `/stats`。
+正式网站：[policy-radar.uspolicy.workers.dev](https://policy-radar.uspolicy.workers.dev/)；访问统计位于同一域名的 `/stats`。
 
 ## 功能
 
@@ -12,7 +12,7 @@ A bilingual tracker for U.S. policies affecting the `F-1 → CPT → OPT → H-1
 - 路径轴只按页面列出的 F-1、CPT、OPT、H-1B 归属筛选；
 - 每项政策包含客观摘要、流程阶段、日期时间线、影响和来源；
 - 缩写与术语提供键盘、鼠标和触屏可用的解释；
-- `/stats` 使用 Cloudflare D1 保存匿名的每日浏览量和日去重访客数；
+- `/stats` 使用 Cloudflare D1 保存匿名的每日浏览量、日去重访客数和国家汇总；
 - GitHub `main` 分支通过 GitHub Actions 自动部署到 Cloudflare Workers。
 
 ## 数据与来源
@@ -34,6 +34,7 @@ npm run dev
 
 ```bash
 npm test
+npm run lint
 npm run build
 ```
 
@@ -53,7 +54,7 @@ GitHub Actions 使用同名 repository secrets。Pull Request 只测试和构建
 
 ## 访问统计与隐私
 
-每次主页加载计为一次 page view。同一浏览器在同一美东自然日只计为一个 unique visitor。数据库保存按日期生成的匿名哈希，不保存 IP、姓名或邮箱，也不能用该哈希跨天关联个人。历史迁移只包含公开的每日汇总数字，不包含旧访客哈希。
+每次主页加载计为一次 page view。同一浏览器在同一美东自然日只计为一个 unique visitor。数据库保存按日期生成的匿名哈希和 Cloudflare 提供的两位国家代码，不保存 IP、姓名或邮箱，也不能用该哈希跨天关联个人。历史迁移只包含公开的每日汇总数字，不包含旧访客哈希或国家信息。
 
 ## 贡献
 
