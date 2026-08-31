@@ -5,6 +5,7 @@ import test from 'node:test';
 const root = new URL('../', import.meta.url);
 const packageJson = JSON.parse(await readFile(new URL('package.json', root), 'utf8'));
 const viteConfig = await readFile(new URL('vite.config.ts', root), 'utf8');
+const homePage = await readFile(new URL('app/page.tsx', root), 'utf8');
 
 let sitesHostingConfigExists = true;
 try {
@@ -62,4 +63,9 @@ test('Wrangler config serves both app routes and binds the production D1', () =>
     wranglerConfig.d1_databases[0].database_id,
     /^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,
   );
+});
+
+test('the home route is request-dynamic and does not require a persistent ISR cache', () => {
+  assert.match(homePage, /dynamic\s*=\s*['"]force-dynamic['"]/);
+  assert.match(homePage, /revalidate\s*=\s*0/);
 });
