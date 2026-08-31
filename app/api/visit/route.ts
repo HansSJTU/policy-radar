@@ -24,14 +24,29 @@ export async function POST(request: Request) {
     return Response.json({ error: 'Invalid request body' }, { status: 400 });
   }
 
-  if (typeof body.visitorId !== 'string' || !UUID_PATTERN.test(body.visitorId)) {
-    return Response.json({ error: 'Invalid visitor identifier' }, { status: 400 });
+  if (
+    typeof body.visitorId !== 'string' ||
+    !UUID_PATTERN.test(body.visitorId)
+  ) {
+    return Response.json(
+      { error: 'Invalid visitor identifier' },
+      { status: 400 },
+    );
   }
 
   try {
-    await recordVisit(body.visitorId);
+    const cloudflareCountry = (
+      request as Request & { cf?: { country?: string | null } }
+    ).cf?.country;
+    await recordVisit(
+      body.visitorId,
+      cloudflareCountry ?? request.headers.get('CF-IPCountry'),
+    );
   } catch {
-    return Response.json({ error: 'Analytics service unavailable' }, { status: 503 });
+    return Response.json(
+      { error: 'Analytics service unavailable' },
+      { status: 503 },
+    );
   }
 
   return new Response(null, {

@@ -5,7 +5,7 @@ import test from 'node:test';
 
 const root = new URL('../', import.meta.url);
 
-test('D1 migrations preserve the public August 30–31 traffic baseline', async () => {
+void test('D1 migrations preserve the public August 30–31 traffic baseline', async () => {
   const database = new DatabaseSync(':memory:');
   const migrationDirectory = new URL('drizzle/', root);
   const migrationFiles = (await readdir(migrationDirectory))
@@ -29,5 +29,20 @@ test('D1 migrations preserve the public August 30–31 traffic baseline', async 
   assert.deepEqual(rows, [
     { day: '2026-08-30', pageViews: 926, visitors: 774 },
     { day: '2026-08-31', pageViews: 734, visitors: 559 },
+  ]);
+
+  const countryTables = database
+    .prepare(`
+      SELECT name
+      FROM sqlite_master
+      WHERE type = 'table' AND name LIKE 'daily_country_%'
+      ORDER BY name
+    `)
+    .all()
+    .map((row) => row.name);
+
+  assert.deepEqual(countryTables, [
+    'daily_country_traffic',
+    'daily_country_visitors',
   ]);
 });

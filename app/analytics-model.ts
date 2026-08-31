@@ -4,6 +4,28 @@ export type TrafficPoint = {
   visitors: number;
 };
 
+export type CountryTrafficPoint = {
+  country: string;
+  pageViews: number;
+  visitors: number;
+};
+
+export function normalizeCountryCode(country: string | null | undefined) {
+  const normalized = country?.trim().toUpperCase();
+  return normalized && /^[A-Z]{2}$/.test(normalized) ? normalized : 'ZZ';
+}
+
+export function getCountryLabel(country: string, language: 'zh' | 'en') {
+  const normalized = normalizeCountryCode(country);
+  if (normalized === 'ZZ') return language === 'en' ? 'Unknown' : '未知';
+
+  return (
+    new Intl.DisplayNames([language === 'en' ? 'en-US' : 'zh-CN'], {
+      type: 'region',
+    }).of(normalized) ?? normalized
+  );
+}
+
 function parseDay(day: string) {
   return new Date(`${day}T00:00:00.000Z`);
 }
@@ -41,7 +63,8 @@ export function summarizeTraffic(points: TrafficPoint[]) {
       pageViews: summary.pageViews + point.pageViews,
       visitorDays: summary.visitorDays + point.visitors,
       activeDays:
-        summary.activeDays + (point.pageViews > 0 || point.visitors > 0 ? 1 : 0),
+        summary.activeDays +
+        (point.pageViews > 0 || point.visitors > 0 ? 1 : 0),
     }),
     { pageViews: 0, visitorDays: 0, activeDays: 0 },
   );
