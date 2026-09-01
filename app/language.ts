@@ -55,3 +55,7 @@ export function languageFromAcceptLanguage(
 export function isEnglish(language: Language): boolean {
   return language === 'en';
 }
+
+export function brandHomeLabel(language: Language): string {
+  return language === 'en' ? 'Policy Radar home' : '政策雷达首页';
+}

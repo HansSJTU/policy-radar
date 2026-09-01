@@ -1,7 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { languageFromAcceptLanguage, parseLanguage } from '../app/language.ts';
+import {
+  brandHomeLabel,
+  languageFromAcceptLanguage,
+  parseLanguage,
+} from '../app/language.ts';
 
 test('parses only explicit supported language selections', () => {
   assert.equal(parseLanguage('zh'), 'zh');
@@ -18,4 +22,9 @@ test('uses the highest-priority supported browser language', () => {
 test('defaults unsupported or missing browser languages to English', () => {
   assert.equal(languageFromAcceptLanguage('fr-FR,fr;q=0.9'), 'en');
   assert.equal(languageFromAcceptLanguage(undefined), 'en');
+});
+
+test('labels the brand as the site home without matching back-to-top blockers', () => {
+  assert.equal(brandHomeLabel('en'), 'Policy Radar home');
+  assert.equal(brandHomeLabel('zh'), '政策雷达首页');
 });

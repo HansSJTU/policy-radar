@@ -76,6 +76,27 @@ test('mobile school cards keep their link in normal flow and use a clear uniform
   );
 });
 
+test('school evidence tabs establish the vertical gap before the cards', () => {
+  assert.match(css, /\.school-tabs\s*\{[^}]*display:\s*grid;[^}]*gap:\s*18px;/s);
+});
+
+test('route policy markers share the exact center of their vertical rail', () => {
+  const policiesRule = css.match(/\.stage-policies\s*\{([^}]*)\}/s)?.[1] ?? '';
+  const markerRule = css.match(/\.route-policy::before\s*\{([^}]*)\}/s)?.[1] ?? '';
+  const pixelValue = (rule, property) =>
+    Number.parseFloat(rule.match(new RegExp(`${property}:\\s*(-?[\\d.]+)px`))?.[1] ?? 'NaN');
+
+  const railBorder = pixelValue(policiesRule, 'border-left');
+  const cardOffset = railBorder + pixelValue(policiesRule, 'padding-left');
+  const markerBorder = pixelValue(markerRule, 'border');
+  const markerOuterWidth =
+    pixelValue(markerRule, 'width') + markerBorder * 2;
+  const markerCenter = cardOffset + pixelValue(markerRule, 'left') + markerOuterWidth / 2;
+  const railCenter = railBorder / 2;
+
+  assert.equal(markerCenter, railCenter);
+});
+
 test('mobile timeline line and nodes share one horizontal center coordinate', () => {
   assert.match(css, /\.time-axis\s*\{[^}]*--timeline-axis-x:/s);
   assert.match(

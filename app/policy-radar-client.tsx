@@ -17,7 +17,7 @@ import { VisitorTracker } from '@/components/visitor-tracker';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { englishCommunitySchools, englishPolicies, englishRouteStages, englishVerifiedSchools } from './english-content';
 import { LanguageProvider } from './language-context';
-import type { Language } from './language';
+import { brandHomeLabel, type Language } from './language';
 import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
@@ -450,7 +450,7 @@ const routeStages = [
 
 const pageCopy = {
   zh: {
-    brand: '留美路径雷达', backTop: '回到顶部', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', stats: '访问统计',
+    brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', stats: '访问统计',
     switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 13 所学校',
     routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
@@ -464,7 +464,7 @@ const pageCopy = {
     footer: '更新于 2026-08-31（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
-    brand: 'Stay Path Radar', backTop: 'Back to top', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', stats: 'Traffic',
+    brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', stats: 'Traffic',
     switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 13 schools',
     routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
@@ -552,7 +552,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       <VisitorTracker />
       <main>
       <header className="topbar product-bar">
-        <a className="brand" href="#top" aria-label={ui.backTop}>
+        <a className="brand" href="#top" aria-label={brandHomeLabel(language)}>
           <span className="brand-mark">US</span>
           <span>{ui.brand}</span>
         </a>

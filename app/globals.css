@@ -145,7 +145,7 @@ main { width: 100%; min-width: 0; }
 .route-stage.active small { color: #aeb8c7; }
 .stage-policies { position: relative; margin: 13px 0 0 12px; padding-left: 13px; display: grid; gap: 7px; border-left: 1px solid var(--line); }
 .route-policy { position: relative; min-height: 66px; padding: 11px 28px 10px 12px; display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; border: 1px solid #e2ddd4; border-radius: 10px; background: rgba(255,255,255,.6); text-decoration: none; transition: transform .2s ease, border-color .2s ease, background .2s ease; }
-.route-policy::before { content: ''; position: absolute; left: -17px; top: 15px; width: 7px; height: 7px; border: 2px solid var(--paper); border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 1px var(--amber); }
+.route-policy::before { content: ''; position: absolute; left: -19px; top: 15px; width: 7px; height: 7px; border: 2px solid var(--paper); border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 1px var(--amber); }
 .stage-red .route-policy::before { background: var(--red); box-shadow: 0 0 0 1px var(--red); }
 .route-policy:hover { transform: translateX(4px); border-color: #bcb3a6; background: #fff; }
 .route-policy > span { color: var(--red); font: 800 8px/1.35 ui-monospace, monospace; }
@@ -311,7 +311,7 @@ main { width: 100%; min-width: 0; }
 .school-search > svg { width: 16px; color: #8f9caf; }
 .school-search input { height: 100%; padding: 0; border: 0; color: #fff; background: transparent; box-shadow: none !important; font-size: 13px; }
 .school-search input::placeholder { color: #7f8ca0; }
-.school-tabs { margin-top: 36px; gap: 18px; }
+.school-tabs { margin-top: 36px; display: grid; gap: 18px; }
 .school-tab-list { width: fit-content; height: 44px; padding: 4px; gap: 4px; border: 1px solid rgba(255,255,255,.13); border-radius: 12px; background: rgba(255,255,255,.055); }
 .school-tab-list button { min-width: 190px; height: 34px; padding: 0 14px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 0; color: #93a0b3; border-radius: 8px; background: transparent; cursor: pointer; font-size: 11px; font-weight: 700; transition: color .2s ease, background .2s ease, transform .2s ease; }
 .school-tab-list button:hover { color: #fff; }
