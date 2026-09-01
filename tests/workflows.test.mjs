@@ -21,13 +21,12 @@ test('CI validates tests and production build without deployment secrets', () =>
   assert.doesNotMatch(ci, /CLOUDFLARE_API_TOKEN/);
 });
 
-test('production workflow migrates D1 before deploying from main', () => {
+test('production workflow validates and deploys from main', () => {
   assert.match(deploy, /branches:\s*\[main\]/);
   assert.match(deploy, /environment:\s*production/);
   assert.match(deploy, /CLOUDFLARE_API_TOKEN/);
   assert.match(deploy, /CLOUDFLARE_ACCOUNT_ID/);
-  assert.ok(
-    deploy.indexOf('npm run db:migrate') < deploy.indexOf('npm run deploy'),
-    'D1 migrations must run before deployment',
-  );
+  assert.match(deploy, /npm test/);
+  assert.match(deploy, /npm run build/);
+  assert.match(deploy, /npm run deploy/);
 });

@@ -1,17 +1,19 @@
 # Contributing
 
-感谢你帮助维护留美路径政策雷达。
+[English](CONTRIBUTING.md) · [简体中文](CONTRIBUTING.zh-CN.md)
 
-## 内容更新
+Contributions to the U.S. Stay Path Policy Radar are welcome.
 
-- 每项事实都应链接到可复核来源；优先使用官方文件、法院记录和学校正式通知。
-- 论坛链接可以作为社区讨论或线索来源，但不能替代官方依据。
-- 摘要只陈述政策内容本身，使用明确的主语、谓语和宾语；不要写“这条路走不通”等主观结论。
-- 同时维护中文与英文。英文版本不能残留未翻译的中文内容。
-- 明确区分已生效规则、拟议规则、议程项目、行政指导、诉讼和媒体披露。
-- 不得提交个人资料、访客哈希、访问日志、密钥、Token、密码或 `.env` 内容。
+## Content updates
 
-## 开发流程
+- Link every factual claim to a verifiable source. Prefer official documents, court records, and formal school notices.
+- Forum links may supplement community discussion or identify leads, but they do not replace official evidence.
+- Summaries must state the policy itself with a clear subject, verb, and object. Avoid subjective conclusions such as “this path is no longer viable.”
+- Update both supported languages. English content must not contain untranslated Chinese text.
+- Clearly distinguish final rules, proposed rules, regulatory agenda items, administrative guidance, litigation, and media reports.
+- Do not commit personal data, visitor hashes, access logs, secrets, tokens, passwords, or `.env` contents.
+
+## Development workflow
 
 ```bash
 npm ci
@@ -20,11 +22,11 @@ npm run lint
 npm run build
 ```
 
-Pull Request 请说明：
+A Pull Request should explain:
 
-1. 更新了哪些政策、学校或界面行为；
-2. 原始来源与日期；
-3. 如何验证中英文、桌面端和手机端；
-4. 运行过哪些测试。
+1. which policy, school, or interface behavior changed;
+2. the primary sources and relevant dates;
+3. how the change was checked in both supported languages, on desktop, and on mobile;
+4. which tests were run.
 
-不要在 Pull Request 中修改生产 D1 数据或添加部署凭据。数据库结构变化必须附带可重复执行的 migration。
+Do not modify production D1 data or add deployment credentials in a Pull Request. Database schema changes must update the runtime schema initialization and its tests.

@@ -25,7 +25,7 @@ try {
   wranglerConfig = undefined;
 }
 
-test('package exposes native Cloudflare build, migration, and deploy commands', () => {
+test('package exposes native Cloudflare build and deploy commands', () => {
   assert.equal(packageJson.name, 'policy-radar');
   assert.notEqual(packageJson.private, true);
   assert.equal(packageJson.devDependencies['@openai/sites-vite-plugin'], undefined);
@@ -34,10 +34,6 @@ test('package exposes native Cloudflare build, migration, and deploy commands', 
     packageJson.dependencies.vinext,
   );
   assert.equal(packageJson.scripts.deploy, 'vinext-cloudflare deploy');
-  assert.equal(
-    packageJson.scripts['db:migrate'],
-    'wrangler d1 migrations apply policy-radar-db --remote',
-  );
 });
 
 test('Vite uses the native Cloudflare plugin without Sites wiring', () => {
@@ -60,7 +56,6 @@ test('Wrangler config serves both app routes and binds the production D1', () =>
   assert.equal(wranglerConfig.d1_databases.length, 1);
   assert.equal(wranglerConfig.d1_databases[0].binding, 'DB');
   assert.equal(wranglerConfig.d1_databases[0].database_name, 'policy-radar-db');
-  assert.equal(wranglerConfig.d1_databases[0].migrations_dir, 'drizzle');
   assert.match(
     wranglerConfig.d1_databases[0].database_id,
     /^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,

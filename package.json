@@ -8,10 +8,8 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "analytics:sql": "node scripts/build-analytics-import.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "deploy": "vinext-cloudflare deploy",
-    "db:migrate": "wrangler d1 migrations apply policy-radar-db --remote",
     "lint": "oxlint",
     "format": "oxfmt"
   },

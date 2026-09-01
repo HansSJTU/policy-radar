@@ -7,16 +7,14 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-1683B6.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Bilingual](https://img.shields.io/badge/languages-English%20%7C%20中文-0F8A77)](README.zh-CN.md)
 [![Live site](https://img.shields.io/badge/site-live-2EA44F)](https://policy-radar.uspolicy.workers.dev/)
 
-A bilingual tracker for U.S. policies affecting the `F-1 → CPT → OPT → H-1B` path. The home page ranks policies by their potential impact on the path and shows each policy's procedural stage, past and expected milestones, practical effects, and primary sources.
+A tracker for U.S. policies affecting the `F-1 → CPT → OPT → H-1B` path. The home page ranks policies by their potential impact on the path and shows each policy's procedural stage, past and expected milestones, practical effects, and primary sources.
 
-Live site: [policy-radar.uspolicy.workers.dev](https://policy-radar.uspolicy.workers.dev/). Public traffic analytics are available at [/stats](https://policy-radar.uspolicy.workers.dev/stats).
+Live site: [policy-radar.uspolicy.workers.dev](https://policy-radar.uspolicy.workers.dev/).
 
 ## Features
 
-- Complete English and Chinese interfaces on desktop and mobile;
 - Stage filters limited to the F-1, CPT, OPT, and H-1B policy assignments shown on the path map;
 - An objective summary, process stage, dated timeline, practical effects, and sources for every policy;
 - Keyboard-, pointer-, and touch-accessible explanations for abbreviations and specialized terms;
@@ -51,22 +49,21 @@ npm run build
 1. Create a D1 database named `policy-radar-db`.
 2. Set its ID in `wrangler.jsonc` at `d1_databases[0].database_id`.
 3. Authenticate with Wrangler, or provide `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
-4. Apply the migrations and deploy:
+4. Deploy:
 
 ```bash
-npm run db:migrate
 npm run deploy
 ```
 
-GitHub Actions uses repository secrets with the same names. Pull requests run tests and build the project without deploying. A push to `main` applies the production D1 migrations and deploys the Worker.
+GitHub Actions uses repository secrets with the same names. Pull requests and non-`main` branch pushes run tests and build the project without deploying. A push to `main` validates the project and deploys the Worker.
 
 ## Traffic analytics and privacy
 
-Each home-page load counts as one page view. A browser counts as one unique visitor per Eastern Time calendar day. The database stores date-scoped anonymous hashes and two-letter country codes supplied by Cloudflare. It does not store IP addresses, names, or email addresses, and the hashes cannot be used to link a visitor across days. Historical migrations contain only public daily aggregates and no historical visitor hashes or country data.
+Each home-page load counts as one page view. A browser counts as one unique visitor per Eastern Time calendar day. The database stores date-scoped anonymous hashes and two-letter country codes supplied by Cloudflare. It does not store IP addresses, names, or email addresses, and the hashes cannot be used to link a visitor across days. Historical public aggregates contain no visitor hashes or country data.
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing. Content changes must update both languages, cite verifiable sources, and keep summaries objective, explicit, and grammatically complete.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing. Content changes must update both supported languages, cite verifiable sources, and keep summaries objective, explicit, and grammatically complete.
 
 ## Disclaimer
 
