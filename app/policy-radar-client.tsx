@@ -18,6 +18,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { englishCommunitySchools, englishPolicies, englishRouteStages, englishVerifiedSchools } from './english-content';
 import { LanguageProvider } from './language-context';
 import type { Language } from './language';
+import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
 
@@ -478,8 +479,8 @@ const pageCopy = {
   },
 };
 
-export default function Home() {
-  const [language, setLanguage] = useState<Language>('zh');
+export default function Home({ initialLanguage }: { initialLanguage: Language }) {
+  const [language, setLanguage] = useState<Language>(initialLanguage);
   const [selectedPath, setSelectedPath] = useState('all');
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
@@ -527,6 +528,14 @@ export default function Home() {
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
   const briefing = getThirtyDayBriefing('2026-08-31', language);
+  const selectLanguage = (nextLanguage: Language) => {
+    persistLanguage(nextLanguage);
+    setLanguage(nextLanguage);
+
+    const url = new URL(window.location.href);
+    url.searchParams.delete('lang');
+    window.history.replaceState(null, '', url);
+  };
   const revealPolicy = (policyId: string) => {
     setSelectedPath('all');
     window.requestAnimationFrame(() => {
@@ -555,8 +564,8 @@ export default function Home() {
         <div className="top-actions">
           <GitHubProjectLink language={language} />
           <nav className="language-switch" aria-label={ui.switchLabel}>
-            <button type="button" className={language === 'zh' ? 'active' : ''} aria-pressed={language === 'zh'} onClick={() => setLanguage('zh')}>{ui.chinese}</button>
-            <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => setLanguage('en')}>{ui.english}</button>
+            <button type="button" className={language === 'zh' ? 'active' : ''} aria-pressed={language === 'zh'} onClick={() => selectLanguage('zh')}>{ui.chinese}</button>
+            <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <div className="asof"><span />2026-08-31 · ET</div>
         </div>

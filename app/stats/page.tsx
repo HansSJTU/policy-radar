@@ -3,9 +3,11 @@ import { ArrowLeft, BarChart3, Eye, Globe2, Users } from 'lucide-react';
 
 import { getCountryLabel, summarizeTraffic } from '@/app/analytics-model';
 import { TrafficChart } from '@/app/stats/traffic-chart';
+import { StatsLanguageSwitch } from '@/app/stats/language-switch';
 import { getCountryTraffic, getTrafficSeries } from '@/db/analytics';
 import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
+import { resolveRequestLanguage } from '@/app/language-server';
 
 export const dynamic = 'force-dynamic';
 
@@ -80,7 +82,7 @@ async function pageLanguage(
   searchParams?: Promise<{ lang?: string }>,
 ): Promise<Language> {
   const parameters = await searchParams;
-  return parameters?.lang === 'en' ? 'en' : 'zh';
+  return resolveRequestLanguage(parameters?.lang);
 }
 
 export async function generateMetadata({
@@ -121,31 +123,7 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
         <div className="stats-page-actions">
           <span>{ui.public}</span>
           <GitHubProjectLink language={language} />
-          <form
-            className="language-switch"
-            aria-label={ui.switchLabel}
-            action="/stats"
-            method="get"
-          >
-            <button
-              type="submit"
-              name="lang"
-              value="zh"
-              className={language === 'zh' ? 'active' : ''}
-              aria-pressed={language === 'zh'}
-            >
-              中
-            </button>
-            <button
-              type="submit"
-              name="lang"
-              value="en"
-              className={language === 'en' ? 'active' : ''}
-              aria-pressed={language === 'en'}
-            >
-              EN
-            </button>
-          </form>
+          <StatsLanguageSwitch language={language} label={ui.switchLabel} />
         </div>
       </header>
 
