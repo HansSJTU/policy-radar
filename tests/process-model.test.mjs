@@ -52,6 +52,13 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { date: '9·03', label: '禁令听证' },
     ],
   );
+  assert.deepEqual(
+    track.litigation.map(({ afterStage, progress }) => ({ afterStage, progress })),
+    [
+      { afterStage: 4, progress: 53 },
+      { afterStage: 4, progress: 80 },
+    ],
+  );
 });
 
 test('administrative guidance has its own process and color family', () => {

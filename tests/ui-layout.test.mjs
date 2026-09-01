@@ -23,7 +23,57 @@ test('policy hover preserves the native accent border color', () => {
 
 test('rulemaking segments join continuously and center their nodes on each join', () => {
   assert.match(css, /\.process-steps\s*\{[^}]*gap:\s*0;/s);
-  assert.match(css, /\.process-steps\s*>\s*i\s*b\s*\{[^}]*right:\s*-5px;/s);
+  assert.match(css, /\.process-steps\s*>\s*i\s*>\s*b\s*\{[^}]*right:\s*-5px;/s);
+});
+
+test('litigation markers use the same size and vertical center as process nodes', () => {
+  assert.match(
+    css,
+    /\.litigation-marker\s*\{[^}]*top:\s*-3px;[^}]*width:\s*10px;[^}]*height:\s*10px;/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\s*>\s*b\s*\{[^}]*border:\s*2px solid var\(--card\);/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\.upcoming\s*>\s*b\s*\{[^}]*border-color:\s*var\(--red\);[^}]*box-shadow:\s*0 0 0 5px/s,
+  );
+});
+
+test('mobile litigation labels fan out from their nearby markers', () => {
+  assert.match(
+    css,
+    /\.litigation-marker\.align-left\s*>\s*em\s*\{[^}]*left:\s*auto;[^}]*right:\s*0;[^}]*text-align:\s*right;[^}]*transform:\s*none;/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\.align-right\s*>\s*em\s*\{[^}]*left:\s*0;[^}]*right:\s*auto;[^}]*text-align:\s*left;[^}]*transform:\s*none;/s,
+  );
+});
+
+test('mobile process help is anchored to the full metadata row', () => {
+  assert.match(
+    css,
+    /@media \(max-width:\s*480px\)[\s\S]*?\.flow-help\s*\{[^}]*position:\s*static;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*480px\)[\s\S]*?\.flow-popover\s*\{[^}]*left:\s*0;[^}]*right:\s*0;[^}]*width:\s*100%;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*480px\)[\s\S]*?\.flow-popover-head\s*\{[^}]*grid-template-columns:\s*1fr;/s,
+  );
+});
+
+test('mobile school cards keep their link in normal flow and use a clear uniform gap', () => {
+  assert.match(css, /\.school-card\s*\{[^}]*display:\s*flex;[^}]*flex-direction:\s*column;/s);
+  assert.match(css, /\.school-card\s*>\s*small\s*\{[^}]*position:\s*static;[^}]*margin-top:\s*auto;/s);
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.school-cards\s*\{[^}]*gap:\s*16px;/s,
+  );
 });
 
 test('mobile timeline line and nodes share one horizontal center coordinate', () => {

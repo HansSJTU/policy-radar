@@ -3,7 +3,8 @@ export type ProcessKind = 'federal-rulemaking' | 'administrative-guidance';
 export type LitigationMarker = {
   date: string;
   label: string;
-  position: number;
+  afterStage: number;
+  progress: number;
   status: 'filed' | 'upcoming';
   align: 'left' | 'right';
 };
@@ -82,8 +83,8 @@ const processTracks: Record<string, ProcessTrack> = {
     currentStage: 4,
     stages: federalRulemakingStages,
     litigation: [
-      { date: '8·18', label: '提起诉讼', position: 80, status: 'filed', align: 'left' },
-      { date: '9·03', label: '禁令听证', position: 91, status: 'upcoming', align: 'right' },
+      { date: '8·18', label: '提起诉讼', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
+      { date: '9·03', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
     ],
   },
   'cpt-guidance': {
@@ -200,8 +201,8 @@ const englishProcessTracks: Record<string, Pick<ProcessTrack, 'name' | 'meaning'
     currentSummary: 'Final rule published; injunction request pending',
     stages: federalRulemakingStagesEnglish,
     litigation: [
-      { date: '8·18', label: 'Lawsuit filed', position: 80, status: 'filed', align: 'left' },
-      { date: '9·03', label: 'Injunction hearing', position: 91, status: 'upcoming', align: 'right' },
+      { date: '8·18', label: 'Lawsuit filed', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
+      { date: '9·03', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
     ],
   },
   'cpt-guidance': {

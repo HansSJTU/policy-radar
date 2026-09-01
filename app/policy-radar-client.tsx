@@ -772,17 +772,19 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                         >
                           <b />
                           <em><GlossaryText text={label} /></em>
+                          {process.litigation
+                            .filter((event) => event.afterStage + 1 === index)
+                            .map((event) => (
+                              <span
+                                className={`litigation-marker ${event.status} align-${event.align}`}
+                                key={event.date + event.label}
+                                style={{ left: `${event.progress}%` }}
+                              >
+                                <b />
+                                <em><strong>{event.date}</strong><span>{event.label}</span></em>
+                              </span>
+                            ))}
                         </i>
-                      ))}
-                      {process.litigation.map((event) => (
-                        <span
-                          className={`litigation-marker ${event.status} align-${event.align}`}
-                          key={event.date + event.label}
-                          style={{ left: `${event.position}%` }}
-                        >
-                          <b />
-                          <em><strong>{event.date}</strong><span>{event.label}</span></em>
-                        </span>
                       ))}
                     </div>
                   </div>

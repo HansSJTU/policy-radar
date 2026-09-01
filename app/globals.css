@@ -248,19 +248,19 @@ main { width: 100%; min-width: 0; }
 .process-steps.federal-rulemaking > i.current { background: var(--blue); }
 .process-steps.administrative-guidance > i.complete { background: #d2a35b; }
 .process-steps.administrative-guidance > i.current { background: #a96e18; }
-.process-steps > i b { position: absolute; z-index: 2; right: -5px; top: -3px; width: 10px; height: 10px; border: 2px solid var(--card); border-radius: 50%; background: #e5dfd5; box-shadow: 0 0 0 1px #d4cdc1; }
-.process-steps.federal-rulemaking > i.complete b { background: #789bc0; box-shadow: 0 0 0 1px #789bc0; }
-.process-steps.federal-rulemaking > i.current b { background: var(--blue); box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px rgba(49,95,146,.1); }
-.process-steps.administrative-guidance > i.complete b { background: #d2a35b; box-shadow: 0 0 0 1px #d2a35b; }
-.process-steps.administrative-guidance > i.current b { background: #a96e18; box-shadow: 0 0 0 1px #a96e18, 0 0 0 5px rgba(169,110,24,.1); }
-.process-steps > i em { position: absolute; right: 2px; top: 13px; width: 90px; color: #9a958c; font-size: 9px; font-style: normal; line-height: 1.25; text-align: center; white-space: normal; transform: translateX(50%); }
-.process-steps.federal-rulemaking > i.complete em { color: #667d98; }
-.process-steps.federal-rulemaking > i.current em { color: var(--blue); font-weight: 800; }
-.process-steps.administrative-guidance > i.complete em { color: #9a753e; }
-.process-steps.administrative-guidance > i.current em { color: #8b590f; font-weight: 800; }
-.litigation-marker { position: absolute; z-index: 6; top: -5px; width: 12px; height: 12px; transform: translateX(-50%); }
-.litigation-marker > b { position: absolute; inset: 0; border: 2px solid #fffdf8; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 1px var(--red), 0 0 0 5px rgba(217,80,66,.1); }
-.litigation-marker.upcoming > b { background: #fffdf8; box-shadow: 0 0 0 2px var(--red), 0 0 0 5px rgba(217,80,66,.08); }
+.process-steps > i > b { position: absolute; z-index: 2; right: -5px; top: -3px; width: 10px; height: 10px; border: 2px solid var(--card); border-radius: 50%; background: #e5dfd5; box-shadow: 0 0 0 1px #d4cdc1; }
+.process-steps.federal-rulemaking > i.complete > b { background: #789bc0; box-shadow: 0 0 0 1px #789bc0; }
+.process-steps.federal-rulemaking > i.current > b { background: var(--blue); box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px rgba(49,95,146,.1); }
+.process-steps.administrative-guidance > i.complete > b { background: #d2a35b; box-shadow: 0 0 0 1px #d2a35b; }
+.process-steps.administrative-guidance > i.current > b { background: #a96e18; box-shadow: 0 0 0 1px #a96e18, 0 0 0 5px rgba(169,110,24,.1); }
+.process-steps > i > em { position: absolute; right: 2px; top: 13px; width: 90px; color: #9a958c; font-size: 9px; font-style: normal; line-height: 1.25; text-align: center; white-space: normal; transform: translateX(50%); }
+.process-steps.federal-rulemaking > i.complete > em { color: #667d98; }
+.process-steps.federal-rulemaking > i.current > em { color: var(--blue); font-weight: 800; }
+.process-steps.administrative-guidance > i.complete > em { color: #9a753e; }
+.process-steps.administrative-guidance > i.current > em { color: #8b590f; font-weight: 800; }
+.litigation-marker { position: absolute; z-index: 6; top: -3px; width: 10px; height: 10px; transform: translateX(-50%); }
+.litigation-marker > b { position: absolute; inset: 0; border: 2px solid var(--card); border-radius: 50%; background: var(--red); box-shadow: 0 0 0 1px var(--red), 0 0 0 5px rgba(217,80,66,.1); }
+.litigation-marker.upcoming > b { border-color: var(--red); background: var(--card); box-shadow: 0 0 0 5px rgba(217,80,66,.08); }
 .litigation-marker > em { position: absolute; bottom: 17px; display: flex; gap: 4px; color: var(--red-dark); font-size: 9px; font-style: normal; font-weight: 760; line-height: 1; white-space: nowrap; }
 .litigation-marker > em strong { font: 850 9px/1 ui-monospace, monospace; }
 .litigation-marker.align-left > em { right: 0; }
@@ -319,7 +319,7 @@ main { width: 100%; min-width: 0; }
 .school-tab-list b { margin-left: 5px; color: var(--red); font: 800 9px/1 ui-monospace, monospace; }
 .school-tab-content { animation: tab-enter .32s ease both; }
 .school-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 11px; }
-.school-card { position: relative; min-height: 230px; padding: 21px; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; color: #fff; background: rgba(255,255,255,.055); text-decoration: none; transition: transform .24s ease, border-color .24s ease, background .24s ease; }
+.school-card { position: relative; min-height: 230px; padding: 21px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; color: #fff; background: rgba(255,255,255,.055); text-decoration: none; transition: transform .24s ease, border-color .24s ease, background .24s ease; }
 a.school-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,.34); background: rgba(255,255,255,.09); }
 .school-card > div { display: flex; align-items: center; gap: 7px; color: #9aa7b9; font-size: 8px; text-transform: uppercase; letter-spacing: .1em; }
 .school-state { width: 7px; height: 7px; border-radius: 50%; background: var(--gray); }
@@ -330,7 +330,7 @@ a.school-card:hover { transform: translateY(-5px); border-color: rgba(255,255,25
 .school-card h3 { margin: 22px 0 0; font-size: 21px; letter-spacing: -.035em; }
 .school-card > strong { display: block; margin-top: 17px; color: #e5e9ef; font-size: 13px; line-height: 1.6; }
 .school-card > p { margin: 9px 0 0; color: #9eabba; font-size: 12px; line-height: 1.7; }
-.school-card > small { position: absolute; left: 21px; bottom: 18px; display: inline-flex; align-items: center; gap: 5px; color: #d7dde6; font-size: 8px; }
+.school-card > small { position: static; margin-top: auto; padding-top: 16px; display: inline-flex; align-items: center; gap: 5px; color: #d7dde6; font-size: 8px; }
 .school-card > small svg { width: 11px; }
 .community-cards .school-card { min-height: 170px; }
 .evidence-banner { margin-bottom: 12px; padding: 13px 15px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid rgba(255,255,255,.13); border-radius: 10px; background: rgba(49,95,146,.18); }
@@ -449,7 +449,7 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .process-row::-webkit-scrollbar { display: none; }
   .process-steps { min-width: 760px; padding-right: 76px; padding-left: 20px; }
   .process-steps > i { scroll-snap-align: start; }
-  .process-steps > i em { top: 16px; width: 108px; font-size: 10px; line-height: 1.35; }
+  .process-steps > i > em { top: 16px; width: 108px; font-size: 10px; line-height: 1.35; }
   .litigation-marker > em {
     left: 50%;
     right: auto;
@@ -471,8 +471,8 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .litigation-marker > em strong { font-size: 10px; line-height: 1; }
   .litigation-marker > em span { font-size: 9px; font-weight: 720; line-height: 1.1; }
   .litigation-marker.upcoming > em { bottom: 24px; }
-  .litigation-marker.align-left > em,
-  .litigation-marker.align-right > em { left: 50%; right: auto; transform: translateX(-50%); }
+  .litigation-marker.align-left > em { left: auto; right: 0; justify-items: end; text-align: right; transform: none; }
+  .litigation-marker.align-right > em { left: 0; right: auto; justify-items: start; text-align: left; transform: none; }
   .timeline-shell {
     min-width: 0;
     margin-left: 0;
@@ -501,8 +501,8 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .school-search { width: 100%; }
   .school-tab-list { width: 100%; height: auto; display: grid; grid-template-columns: 1fr; }
   .school-tab-list button { width: 100%; min-width: 0; min-height: 44px; }
-  .school-cards { grid-template-columns: 1fr; }
-  .school-card { min-height: 220px; }
+  .school-cards { grid-template-columns: 1fr; gap: 16px; }
+  .school-card { min-height: 0; }
   footer { grid-template-columns: 1fr; align-items: flex-start; }
   footer p { text-align: left; }
   .footer-actions { justify-self: start; justify-content: flex-start; }
@@ -512,8 +512,13 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .topbar { padding-right: 12px; padding-left: 12px; }
   .top-actions .asof { display: none; }
   .brand > span:last-child { max-width: 122px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .flow-popover { left: -36px; width: min(340px, calc(100vw - 48px)); }
-  .flow-popover::before { left: 42px; }
+  .flow-help { position: static; }
+  .flow-popover { top: calc(100% + 10px); left: 0; right: 0; width: 100%; padding: 16px; }
+  .flow-popover::before { left: min(132px, calc(100% - 28px)); }
+  .flow-popover-head { display: grid; grid-template-columns: 1fr; gap: 6px; }
+  .flow-popover-head strong { text-align: left; }
+  .flow-popover li > span { min-width: 0; }
+  .flow-popover li small { white-space: normal; text-align: right; }
   .workspace-hero, .briefing-board, .report-section { padding-left: 16px; padding-right: 16px; }
   .workspace-title h1 { font-size: clamp(34px, 10vw, 40px); line-height: 1.08; }
   .route-map-shell { padding: 16px; }
