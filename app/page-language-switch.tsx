@@ -5,10 +5,12 @@ import { useEffect } from 'react';
 import { persistLanguage } from '@/app/language-client';
 import type { Language } from '@/app/language';
 
-export function StatsLanguageSwitch({
+export function PageLanguageSwitch({
+  action,
   language,
   label,
 }: {
+  action: string;
   language: Language;
   label: string;
 }) {
@@ -20,7 +22,7 @@ export function StatsLanguageSwitch({
     <form
       className="language-switch"
       aria-label={label}
-      action="/stats"
+      action={action}
       method="get"
     >
       <button

@@ -3,11 +3,12 @@ import { ArrowLeft, BarChart3, Eye, Globe2, Users } from 'lucide-react';
 
 import { getCountryLabel, summarizeTraffic } from '@/app/analytics-model';
 import { TrafficChart } from '@/app/stats/traffic-chart';
-import { StatsLanguageSwitch } from '@/app/stats/language-switch';
+import { PageLanguageSwitch } from '@/app/page-language-switch';
 import { getCountryTraffic, getTrafficSeries } from '@/db/analytics';
 import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
 import { resolveRequestLanguage } from '@/app/language-server';
+import { MobileSiteMenu } from '@/app/mobile-site-menu';
 
 export const dynamic = 'force-dynamic';
 
@@ -21,8 +22,7 @@ const statsCopy = {
     public: '公开访问统计',
     switchLabel: '切换网站语言',
     hero: '最近 30 天访问趋势',
-    intro:
-      '按美东日期统计。数据从启用统计后开始累计，重新部署不会清空历史记录。',
+    intro: '按美东日期统计，数据从启用统计后开始累计。',
     summaryAria: '最近 30 天统计摘要',
     visitors: '独立访客（日去重）',
     views: '页面浏览量',
@@ -52,7 +52,7 @@ const statsCopy = {
     switchLabel: 'Switch site language',
     hero: 'Traffic over the last 30 days',
     intro:
-      'Dates use Eastern Time. Data accumulates from the day tracking was enabled, and a redeployment does not erase prior records.',
+      'Dates use Eastern Time. Data accumulates from the day tracking was enabled.',
     summaryAria: 'Traffic summary for the last 30 days',
     visitors: 'Unique visitors (daily)',
     views: 'Page views',
@@ -123,7 +123,12 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
         <div className="stats-page-actions">
           <span>{ui.public}</span>
           <GitHubProjectLink language={language} />
-          <StatsLanguageSwitch language={language} label={ui.switchLabel} />
+          <PageLanguageSwitch
+            action="/stats"
+            language={language}
+            label={ui.switchLabel}
+          />
+          <MobileSiteMenu current="stats" language={language} />
         </div>
       </header>
 

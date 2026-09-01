@@ -21,6 +21,7 @@ import { brandHomeLabel, type Language } from './language';
 import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
+import { MobileSiteMenu } from './mobile-site-menu';
 
 type Tone = 'red' | 'amber' | 'blue' | 'green' | 'gray';
 
@@ -486,7 +487,7 @@ const routeStages = [
 
 const pageCopy = {
   zh: {
-    brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', stats: '访问统计',
+    brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
     switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 18 所学校',
     routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
@@ -500,7 +501,7 @@ const pageCopy = {
     footer: '更新于 2026-09-01（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
-    brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', stats: 'Traffic',
+    brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
     switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 18 schools',
     routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
@@ -564,6 +565,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
   const briefing = getThirtyDayBriefing('2026-09-01', language);
+  const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
     setLanguage(nextLanguage);
@@ -595,6 +597,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <nav className="nav-links" aria-label={ui.navLabel}>
           <a href="#ranking">{ui.policies}</a>
           <a href="#cpt-schools">{ui.cptSchools}</a>
+          <a href={updatesHref}>{ui.updates}</a>
           <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
         </nav>
         <div className="top-actions">
@@ -603,6 +606,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'zh' ? 'active' : ''} aria-pressed={language === 'zh'} onClick={() => selectLanguage('zh')}>{ui.chinese}</button>
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
+          <MobileSiteMenu current="home" language={language} />
           <div className="asof"><span />2026-09-01 · ET</div>
         </div>
       </header>
@@ -910,6 +914,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <p>{ui.footer}</p>
         <div className="footer-actions">
           <GitHubProjectLink language={language} placement="footer" />
+          <a href={updatesHref}>{ui.updates}</a>
           <a href="#top">{ui.top}</a>
         </div>
       </footer>
