@@ -114,9 +114,10 @@ const policies: Array<{
       { date: '2025-08-28', text: 'DHS 发布拟议规则。' },
       { date: '2026-07-17', text: '最终规则发布。' },
       { date: '2026-08-18', text: '高校联盟等在麻省联邦法院起诉。' },
+      { date: '2026-08-27', text: '政府申请延长答辩期限；此后的公开排期将禁令听证列为 9·09。' },
     ],
     next: [
-      { date: '2026-09-03', text: '初步禁令听证，上午 11:00（美东）。' },
+      { date: '2026-09-09', text: '最新公开排期显示：初步禁令听证，上午 11:00（美东）。' },
       { date: '2026-09-15', text: '规则计划生效；法院仍可能在此前改变局面。' },
     ],
     impacts: [
@@ -128,7 +129,7 @@ const policies: Array<{
     sources: [
       { label: '2025 拟议规则', href: 'https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '2026 最终规则', href: 'https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
-      { label: '诉讼与听证进度', href: 'https://www.presidentsalliance.org/duration-of-status-litigation/' },
+      { label: '诉讼与听证进度', href: 'https://news.clinchlaw.com/en/article/uscis-to-mandate-revised-i-539-and-i-765-forms-on-september-15-as-fixed-admissio-mtdmg30w' },
       { label: '美卡论坛规则讨论', href: 'https://www.uscardforum.com/t/topic/431784' },
       { label: '美卡论坛诉讼讨论', href: 'https://www.uscardforum.com/t/topic/525892' },
     ],
@@ -177,7 +178,7 @@ const policies: Array<{
     milestones: [
       { date: '2026-08-12', text: 'SEVP Broadcast 2608-01：强调 DSO 与学校责任并预告强化监管。' },
       { date: '2026-08-24', text: 'Broadcast 2608-02：给出更窄的 “integral” 与合作协议标准。' },
-      { date: '2026-08-12 起', text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。' },
+      { date: '2026-08-24 起', text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。' },
     ],
     next: [
       { date: '现在', text: '每所学校按自身课程设置和法律意见执行；没有统一恢复日期。' },
@@ -331,7 +332,7 @@ const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-08-31', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-01', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       { date: 'TBD', text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。' },
@@ -391,16 +392,51 @@ const verifiedSchools = [
     href: 'https://isso.utdallas.edu/2026/08/25/regarding-sevp-broadcast-messages-on-cpt/',
     tone: 'continue',
   },
+  {
+    school: 'University of Michigan',
+    state: '不再批准 elective-course CPT',
+    detail: '只批准对该学位项目所有学生均为毕业必需的实践；既有授权可继续。',
+    href: 'https://internationalcenter.umich.edu/about/news/updated-guidance-curricular-practical-training-cpt',
+    tone: 'pause',
+  },
+  {
+    school: 'Northwestern University',
+    state: '暂停非全员必修的 CPT 申请',
+    detail: '学校审核期间，只处理对该项目所有学生均为必修工作经历的 CPT。',
+    href: 'https://www.northwestern.edu/international/international-students/student-employment/cpt-for-f1-students.html',
+    tone: 'pause',
+  },
+  {
+    school: 'Columbia University',
+    state: '按新标准复核 CPT 授权与申请',
+    detail: '仅保留课程体系内、全员必修且有 cooperative agreement 的情形；受影响学生由 ISSO 单独通知。',
+    href: 'https://communications.news.columbia.edu/news/important-updates-regarding-cpt-f-1-students',
+    tone: 'tighten',
+  },
+  {
+    school: 'Harvard University',
+    state: '资格收紧，但校方未称全面停批',
+    detail: '就业必须是正式记载的学位要求，并提供与该项目要求相关的 cooperative agreement。',
+    href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
+    tone: 'tighten',
+  },
+  {
+    school: 'MIT',
+    state: '按新标准收紧材料与学分要求',
+    detail: '校方页面仍列出全员必修，或由教授评估且计入最低毕业学分的课程型 CPT；不是公开的全面停批。',
+    href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+    tone: 'tighten',
+  },
 ];
 
 const communitySchools = [
   { school: 'UCSB', state: '截图称暂停非学位必需的新 CPT；既有授权不受影响' },
   { school: 'UC Irvine', state: '截图称暂停 Course Credit CPT；强制毕业要求继续' },
-  { school: 'University of Michigan', state: '校方邮箱截图称 optional CPT 暂停；公开网页未独立确认' },
   { school: 'UNC–Chapel Hill', state: 'ISSS 邮件截图称除严格毕业要求外暂停' },
   { school: 'Caltech', state: 'ISP 通知截图称暂停全部新 CPT；当前参与者不受影响' },
   { school: 'UCLA', state: '通知截图称暂停非全员学位要求的 Course Credit / 支持信 CPT' },
   { school: 'Purdue ECE', state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校' },
+  { school: 'New York University', state: '论坛 8·31 报告称暂停 CPT；尚待校方公开页面确认范围' },
 ];
 
 const routeStages = [
@@ -451,7 +487,7 @@ const routeStages = [
 const pageCopy = {
   zh: {
     brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', stats: '访问统计',
-    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 13 所学校',
+    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 18 所学校',
     routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
     ranking: '最难绕开的关卡', filterAria: '按签证路径筛选', all: '全部', items: '项',
@@ -461,11 +497,11 @@ const pageCopy = {
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '论坛截图／邮件', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下来自', evidenceLink: 'USCardForum 汇总帖', evidenceSuffix: '中的校方截图或邮件，未全部找到公开校页。Purdue 信息仅对应 ECE 院系。', verifyPending: '待公开来源复核',
-    footer: '更新于 2026-08-31（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
+    footer: '更新于 2026-09-01（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', stats: 'Traffic',
-    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 13 schools',
+    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 18 schools',
     routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
     ranking: 'Highest-impact barriers', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
@@ -475,7 +511,7 @@ const pageCopy = {
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Forum screenshots / emails', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries come from screenshots or emails in the', evidenceLink: 'USCardForum roundup', evidenceSuffix: '. Not every item has a public university webpage. The Purdue entry applies only to the ECE department.', verifyPending: 'Awaiting a public source',
-    footer: 'Updated August 31, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
+    footer: 'Updated September 1, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
   },
 };
 
@@ -527,7 +563,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const visibleCommunity = localizedCommunitySchools.filter((school) =>
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
-  const briefing = getThirtyDayBriefing('2026-08-31', language);
+  const briefing = getThirtyDayBriefing('2026-09-01', language);
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
     setLanguage(nextLanguage);
@@ -567,7 +603,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'zh' ? 'active' : ''} aria-pressed={language === 'zh'} onClick={() => selectLanguage('zh')}>{ui.chinese}</button>
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
-          <div className="asof"><span />2026-08-31 · ET</div>
+          <div className="asof"><span />2026-09-01 · ET</div>
         </div>
       </header>
 

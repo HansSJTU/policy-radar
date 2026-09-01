@@ -63,9 +63,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       { date: '2025-08-28', text: 'DHS published the proposed rule.' },
       { date: '2026-07-17', text: 'DHS published the final rule.' },
       { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
+      { date: '2026-08-27', text: 'The government requested more time to respond; later public schedules list the injunction hearing for September 9.' },
     ],
     next: [
-      { date: '2026-09-03', text: 'The court will hold a preliminary-injunction hearing at 11:00 a.m. ET.' },
+      { date: '2026-09-09', text: 'The latest public schedule lists a preliminary-injunction hearing at 11:00 a.m. ET.' },
       { date: '2026-09-15', text: 'The rule is scheduled to take effect unless the court changes the timeline.' },
     ],
     impacts: [
@@ -107,7 +108,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     milestones: [
       { date: '2026-08-12', text: 'SEVP Broadcast 2608-01 emphasized DSO and school responsibilities and previewed stronger oversight.' },
       { date: '2026-08-24', text: 'Broadcast 2608-02 set out a narrower “integral” standard and a cooperative-agreement requirement.' },
-      { date: 'Since 2026-08-12', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
+      { date: 'Since 2026-08-24', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
     ],
     next: [
       { date: 'Now', text: 'Each school is applying the guidance to its own curriculum and legal advice; there is no single reopening date.' },
@@ -216,7 +217,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-08-31', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-01', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -237,16 +238,21 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   UIUC: { state: 'Elective-course CPT is no longer approved', detail: 'Only training required of every student and supported by an employer cooperative agreement is accepted.' },
   'Texas A&M': { state: 'Tighter review, not a full pause', detail: 'New applications after August 24 must satisfy both the program-wide graduation requirement and cooperative-agreement standards.' },
   'UT Dallas': { state: 'Process unchanged as of August 25', detail: 'This is a counterexample: not every university has “canceled CPT.”' },
+  'University of Michigan': { state: 'Elective-course CPT is no longer approved', detail: 'Only training required for every student in the degree program may be approved; existing authorizations may continue.' },
+  'Northwestern University': { state: 'CPT not required for every student is on hold', detail: 'During its review, the university is processing only work experiences required for every student in the academic program.' },
+  'Columbia University': { state: 'CPT authorizations and requests are being reviewed', detail: 'Eligibility is limited to curricular, program-wide requirements documented by a cooperative agreement; ISSO is contacting affected students.' },
+  'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
+  MIT: { state: 'Documentation and degree-credit requirements tightened', detail: 'MIT still lists CPT that is required for all students or is faculty-evaluated and counts toward minimum degree credits; its public page does not announce a blanket pause.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
   UCSB: 'A screenshot says new CPT that is not degree-required is paused; existing authorizations are unaffected.',
   'UC Irvine': 'A screenshot says course-credit CPT is paused while mandatory graduation requirements continue.',
-  'University of Michigan': 'A university email screenshot says optional CPT is paused; no independent public webpage was located.',
   'UNC–Chapel Hill': 'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
   UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',
   'Purdue ECE': 'A department email screenshot says it will not sign CPT this semester; this is an ECE position and should not be generalized to the entire university.',
+  'New York University': 'An August 31 forum report says CPT was paused; no public university page has yet confirmed the scope.',
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {

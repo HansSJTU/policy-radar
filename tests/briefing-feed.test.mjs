@@ -22,13 +22,12 @@ test('recent updates stay inside the prior 30 days and sort newest first', () =>
 });
 
 test('future briefing only includes confirmed events in the next 30 days', () => {
-  const { upcoming } = getThirtyDayBriefing('2026-08-29');
+  const { upcoming } = getThirtyDayBriefing('2026-09-01');
 
   assert.deepEqual(
     upcoming.map(({ id, date }) => [id, date]),
     [
-      ['duration-government-response', '2026-08-31'],
-      ['duration-injunction-hearing', '2026-09-03'],
+      ['duration-injunction-hearing', '2026-09-09'],
       ['duration-effective-date', '2026-09-15'],
       ['h1b-fee-comment-deadline', '2026-09-24'],
     ],
