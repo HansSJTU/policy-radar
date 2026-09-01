@@ -42,6 +42,7 @@ test('comment-closed proposals remain at the public-comment stage until a final 
 
 test('D/S fixed-duration rule remains federal rulemaking with litigation overlaid', () => {
   const track = getProcessTrack('duration-status');
+  const englishTrack = getProcessTrack('duration-status', 'en');
 
   assert.equal(track.name, '联邦规则制定流程');
   assert.equal(track.stages[track.currentStage], '最终规则');
@@ -49,7 +50,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: '提起诉讼' },
-      { date: '9·03', label: '禁令听证' },
+      { date: '9·09', label: '禁令听证' },
     ],
   );
   assert.deepEqual(
@@ -57,6 +58,13 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     [
       { afterStage: 4, progress: 53 },
       { afterStage: 4, progress: 80 },
+    ],
+  );
+  assert.deepEqual(
+    englishTrack.litigation.map(({ date, label }) => ({ date, label })),
+    [
+      { date: '8·18', label: 'Lawsuit filed' },
+      { date: '9·09', label: 'Injunction hearing' },
     ],
   );
 });
