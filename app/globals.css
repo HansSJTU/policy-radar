@@ -359,7 +359,7 @@ button.evidence-card:focus-visible { outline: 2px solid #95b5de; outline-offset:
 
 .evidence-modal-backdrop { position: fixed; inset: 0; z-index: 3000; padding: max(18px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); display: grid; place-items: center; background: rgba(9,19,38,.76); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); animation: evidence-fade-in .18s ease both; }
 .evidence-modal { position: relative; width: min(900px,100%); max-height: min(90dvh,940px); margin: 0; padding: 0; display: flex; flex-direction: column; overflow: hidden; border: 1px solid #c9c1b4; border-radius: 18px; color: var(--ink); background: var(--paper); box-shadow: 0 30px 90px rgba(0,0,0,.38); animation: evidence-rise-in .22s ease both; }
-.evidence-modal > header { min-height: 112px; padding: 22px 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); }
+.evidence-modal > header { flex: 0 0 auto; min-height: 112px; padding: 22px 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); }
 .evidence-modal > header > div { min-width: 0; }
 .evidence-modal > header span { color: var(--red); font: 800 9px/1 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .12em; }
 .evidence-modal > header h2 { margin: 8px 0 0; font-size: 25px; line-height: 1.12; letter-spacing: -.035em; }
@@ -368,7 +368,7 @@ button.evidence-card:focus-visible { outline: 2px solid #95b5de; outline-offset:
 .evidence-modal > header > button:hover { border-color: var(--ink); transform: rotate(4deg); }
 .evidence-modal > header > button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .evidence-modal > header > button svg { width: 18px; }
-.evidence-modal-body { min-height: 180px; padding: 24px; display: grid; gap: 20px; overflow: auto; overscroll-behavior: contain; }
+.evidence-modal-body { flex: 1 1 auto; min-height: 0; padding: 24px; display: grid; gap: 20px; overflow: auto; overscroll-behavior: contain; }
 .evidence-modal-body figure { margin: 0; display: grid; justify-items: center; gap: 8px; }
 .evidence-modal-body img { display: block; width: auto; max-width: 100%; height: auto; max-height: 68dvh; border: 1px solid #d7d0c4; border-radius: 10px; background: #fff; box-shadow: 0 8px 30px rgba(27,39,61,.12); }
 .evidence-modal-body figcaption { color: var(--muted); font: 700 9px/1 ui-monospace, monospace; }
@@ -548,12 +548,12 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .school-cards { grid-template-columns: 1fr; gap: 16px; }
   .school-card { min-height: 0; }
   .evidence-modal-backdrop { padding: max(12px, env(safe-area-inset-top)) 0 0; place-items: end center; }
-  .evidence-modal { width: 100%; max-height: calc(100dvh - max(12px, env(safe-area-inset-top))); border-right: 0; border-bottom: 0; border-left: 0; border-radius: 18px 18px 0 0; }
+  .evidence-modal { width: 100%; max-height: 88dvh; border-right: 0; border-bottom: 0; border-left: 0; border-radius: 18px 18px 0 0; }
   .evidence-modal > header { min-height: 0; padding: 18px 16px; gap: 14px; }
   .evidence-modal > header h2 { font-size: 23px; }
   .evidence-modal > header p { font-size: 12px; }
   .evidence-modal > header > button { width: 44px; height: 44px; flex-basis: 44px; }
-  .evidence-modal-body { min-height: 160px; padding: 14px; gap: 14px; }
+  .evidence-modal-body { min-height: 0; padding: 14px; gap: 14px; }
   .evidence-modal-body img { width: 100%; max-height: none; }
   footer { grid-template-columns: 1fr; align-items: flex-start; }
   footer p { text-align: left; }

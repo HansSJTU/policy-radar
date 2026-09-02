@@ -22,8 +22,8 @@ export type CommunitySchool = {
 export const verifiedSchools: VerifiedSchool[] = [
   {
     school: 'UC Berkeley',
-    state: '已暂停 Course Credit CPT',
-    detail: 'Degree-required 与 thesis/dissertation-required CPT 继续。',
+    state: 'Course Credit CPT 仍暂停；论文型 CPT 仅限严格个案',
+    detail: 'Degree Requirement CPT 仅适用于全专业学生均须完成的实践；Thesis/Dissertation Requirement CPT 仅限已 Advanced to Candidacy 的论文型硕士或博士，且训练必须是完成论文所必需、无法由其他研究或数据收集方式合理替代，并需导师书面证明。',
     href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
     tone: 'pause',
     screenshots: [],

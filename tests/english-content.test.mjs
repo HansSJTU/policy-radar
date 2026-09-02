@@ -69,3 +69,14 @@ test('every glossary entry has an English-only popover definition', () => {
     assert.equal(han.test(segment.explanation), false, entry.term);
   }
 });
+
+test('the English UC Berkeley entry preserves the narrow CPT eligibility conditions', () => {
+  const berkeley = englishVerifiedSchools['UC Berkeley'];
+
+  assert.match(berkeley.state, /Course Credit CPT remains paused/);
+  assert.match(berkeley.detail, /Degree Requirement CPT/);
+  assert.match(berkeley.detail, /Thesis\/Dissertation Requirement CPT/);
+  assert.match(berkeley.detail, /Advanced to Candidacy/);
+  assert.match(berkeley.detail, /cannot reasonably be replaced/);
+  assert.match(berkeley.detail, /faculty adviser/);
+});

@@ -23,6 +23,26 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-02',
+    changes: [
+      {
+        id: 'uc-berkeley-cpt-criteria',
+        category: 'CPT 学校清单',
+        title: 'UC Berkeley',
+        summary:
+          '校方 CPT 页面进一步明确论文型 CPT 的适用条件：只有已 Advanced to Candidacy 的论文型硕士或博士，且实践训练是完成论文所必需、无法由其他研究或数据收集方式合理替代时，才可按个案申请，并需导师书面证明。Course Credit CPT 仍暂停。',
+        before: '已暂停 Course Credit CPT；Degree-required 与 thesis/dissertation-required CPT 继续。',
+        after: 'Course Credit CPT 仍暂停；论文型 CPT 仅限符合 candidacy、必要性、不可替代性和导师证明要求的严格个案。',
+        sources: [
+          {
+            label: 'UC Berkeley International Office CPT 页面',
+            href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
+          },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-01',
     changes: [
       {
@@ -123,6 +143,26 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-02',
+    changes: [
+      {
+        id: 'uc-berkeley-cpt-criteria',
+        category: 'CPT SCHOOL LIST',
+        title: 'UC Berkeley',
+        summary:
+          'The university CPT page now states the narrow thesis and dissertation criteria explicitly: only thesis-track master’s or doctoral students who have Advanced to Candidacy may apply, and the practical training must be necessary to complete the thesis or dissertation, not reasonably replaceable by another research or data-collection method, and documented by the faculty adviser. Course Credit CPT remains paused.',
+        before: 'Course-credit CPT is paused; degree-required and thesis/dissertation-required CPT continue.',
+        after: 'Course Credit CPT remains paused; thesis and dissertation CPT is limited to cases meeting the candidacy, necessity, non-replaceability, and faculty-documentation requirements.',
+        sources: [
+          {
+            label: 'UC Berkeley International Office CPT page',
+            href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
+          },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-01',
     changes: [

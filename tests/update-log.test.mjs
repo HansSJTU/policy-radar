@@ -13,8 +13,22 @@ function collectStrings(value) {
   return [];
 }
 
-test('the first content update records the corrected hearing date and material September 1 CPT changes', () => {
+test('the newest content update records UC Berkeley thesis and dissertation CPT criteria', () => {
   const [entry] = getUpdateLog('zh');
+
+  assert.equal(entry.date, '2026-09-02');
+  assert.deepEqual(entry.changes.map((change) => change.id), ['uc-berkeley-cpt-criteria']);
+
+  const text = collectStrings(entry).join(' ');
+  assert.match(text, /Degree-required 与 thesis\/dissertation-required CPT 继续/);
+  assert.match(text, /Advanced to Candidacy/);
+  assert.match(text, /无法由其他研究或数据收集方式合理替代/);
+  assert.match(text, /导师书面证明/);
+  assert.doesNotMatch(text, /学校数量|证据分组|排序不变|未提交|未推送|未发布/);
+});
+
+test('the September 1 content update records the corrected hearing date and material CPT changes', () => {
+  const [, entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-01');
   assert.deepEqual(

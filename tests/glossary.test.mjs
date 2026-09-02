@@ -76,3 +76,25 @@ test('annotates the agencies and filings used by the prevailing-wage policy', ()
 
   assert.deepEqual(terms, ['DOL', 'OEWS', 'LCA', 'PERM']);
 });
+
+test('annotates the approved CPT, status, and litigation terms', () => {
+  const terms = annotateGlossary(
+    'Course Credit CPT、Degree Requirement CPT、Thesis/Dissertation Requirement CPT、Advanced to Candidacy、CPT I-20、SEVIS、D/S、EAD、RIN、初步禁令、prevailing wage',
+  )
+    .filter((segment) => segment.type === 'term')
+    .map((segment) => segment.value);
+
+  assert.deepEqual(terms, [
+    'Course Credit CPT',
+    'Degree Requirement CPT',
+    'Thesis/Dissertation Requirement CPT',
+    'Advanced to Candidacy',
+    'CPT I-20',
+    'SEVIS',
+    'D/S',
+    'EAD',
+    'RIN',
+    '初步禁令',
+    'prevailing wage',
+  ]);
+});

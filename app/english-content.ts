@@ -232,7 +232,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
 };
 
 export const englishVerifiedSchools: Record<string, { state: string; detail: string }> = {
-  'UC Berkeley': { state: 'Course-credit CPT is paused', detail: 'Degree-required and thesis/dissertation-required CPT continue.' },
+  'UC Berkeley': {
+    state: 'Course Credit CPT remains paused; thesis and dissertation CPT is limited to narrowly documented cases',
+    detail: 'Degree Requirement CPT is limited to training required of every student in the program. Thesis/Dissertation Requirement CPT is available only to thesis-track master’s or doctoral students who have Advanced to Candidacy, when the training is necessary to complete the thesis or dissertation, cannot reasonably be replaced by another research or data-collection method, and is documented by the faculty adviser.',
+  },
   'UC Davis': { state: 'Non-degree-required course-credit CPT is paused', detail: 'Degree-required CPT continues; previously issued CPT I-20s are currently unaffected.' },
   'Boston University': { state: 'Some CPT approvals are paused', detail: 'Cases that are expressly required for graduation continue to be processed.' },
   UIUC: { state: 'Elective-course CPT is no longer approved', detail: 'Only training required of every student and supported by an employer cooperative agreement is accepted.' },

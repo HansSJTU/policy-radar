@@ -78,6 +78,18 @@ test('current CPT status evidence is grouped without overstating public verifica
   assert.ok(communitySchools.some(({ school }) => school === 'Purdue University (ISS)'));
 });
 
+test('UC Berkeley describes the narrow thesis and dissertation CPT exception', () => {
+  const berkeley = verifiedSchools.find(({ school }) => school === 'UC Berkeley');
+
+  assert.ok(berkeley);
+  assert.equal(berkeley.state, 'Course Credit CPT 仍暂停；论文型 CPT 仅限严格个案');
+  assert.match(berkeley.detail, /Degree Requirement CPT/);
+  assert.match(berkeley.detail, /Thesis\/Dissertation Requirement CPT/);
+  assert.match(berkeley.detail, /Advanced to Candidacy/);
+  assert.match(berkeley.detail, /无法由其他研究或数据收集方式合理替代/);
+  assert.match(berkeley.detail, /导师书面证明/);
+});
+
 test('screenshot evidence is bundled as nonempty project assets', async () => {
   const paths = [
     ...Object.values(screenshotEvidence).flat(),
@@ -126,11 +138,18 @@ test('all school evidence opens an accessible dialog and can be dismissed', () =
   assert.match(source, /selectedEvidence\.href/);
 });
 
-test('evidence dialog is responsive and keeps screenshots scrollable', () => {
+test('evidence dialog preserves its header and delegates overflow to the body', () => {
   assert.match(css, /\.evidence-modal-backdrop\s*\{[^}]*position:\s*fixed;/s);
-  assert.match(css, /\.evidence-modal-body\s*\{[^}]*overflow:\s*auto;/s);
+  assert.match(css, /\.evidence-modal\s*>\s*header\s*\{[^}]*flex:\s*0\s+0\s+auto;/s);
   assert.match(
     css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.evidence-modal\s*\{[^}]*width:\s*100%;[^}]*max-height:\s*calc\(100dvh/s,
+    /\.evidence-modal-body\s*\{[^}]*flex:\s*1\s+1\s+auto;[^}]*min-height:\s*0;[^}]*overflow:\s*auto;/s,
+  );
+});
+
+test('mobile evidence dialog leaves breathing room above a long screenshot', () => {
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.evidence-modal\s*\{[^}]*width:\s*100%;[^}]*max-height:\s*88dvh;/s,
   );
 });
