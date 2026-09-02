@@ -3,7 +3,11 @@ import { env } from 'cloudflare:workers';
 import {
   buildTrafficSeries,
   getTrafficStartDay,
+  hashDailyVisitor,
   normalizeCountryCode,
+  normalizeVisitLanguage,
+  normalizeVisitPathname,
+  writeVisitAnalytics,
   type CountryTrafficPoint,
   type TrafficPoint,
 } from '@/app/analytics-model';
@@ -59,46 +63,50 @@ function easternDay(now = new Date()) {
   return `${value.year}-${value.month}-${value.day}`;
 }
 
-async function dailyVisitorHash(day: string, visitorId: string) {
-  const digest = await crypto.subtle.digest(
-    'SHA-256',
-    new TextEncoder().encode(`${day}:${visitorId}`),
-  );
-  return Array.from(new Uint8Array(digest), (byte) =>
-    byte.toString(16).padStart(2, '0'),
-  ).join('');
-}
-
 export async function recordVisit(
   visitorId: string,
   country: string | null | undefined,
+  metadata: { pathname?: unknown; language?: unknown } = {},
   now = new Date(),
 ) {
   await ensureAnalyticsSchema();
   const db = database();
   const day = easternDay(now);
-  const visitorHash = await dailyVisitorHash(day, visitorId);
+  const visitorHash = await hashDailyVisitor(day, visitorId);
   const countryCode = normalizeCountryCode(country);
 
-  await db.batch([
-    db
-      .prepare(
-        `INSERT INTO daily_traffic (day, page_views, updated_at)
-         VALUES (?, 1, CURRENT_TIMESTAMP)
-         ON CONFLICT(day) DO UPDATE SET
-           page_views = page_views + 1,
-           updated_at = CURRENT_TIMESTAMP`,
-      )
-      .bind(day),
-    db
-      .prepare(
-        `INSERT OR IGNORE INTO daily_visitors (day, visitor_hash)
-         VALUES (?, ?)`,
-      )
-      .bind(day, visitorHash),
-    db.prepare(upsertDailyCountryTraffic).bind(day, countryCode),
-    db.prepare(insertDailyCountryVisitor).bind(day, countryCode, visitorHash),
-  ]);
+  await writeVisitAnalytics(
+    () =>
+      db.batch([
+        db
+          .prepare(
+            `INSERT INTO daily_traffic (day, page_views, updated_at)
+             VALUES (?, 1, CURRENT_TIMESTAMP)
+             ON CONFLICT(day) DO UPDATE SET
+               page_views = page_views + 1,
+               updated_at = CURRENT_TIMESTAMP`,
+          )
+          .bind(day),
+        db
+          .prepare(
+            `INSERT OR IGNORE INTO daily_visitors (day, visitor_hash)
+             VALUES (?, ?)`,
+          )
+          .bind(day, visitorHash),
+        db.prepare(upsertDailyCountryTraffic).bind(day, countryCode),
+        db
+          .prepare(insertDailyCountryVisitor)
+          .bind(day, countryCode, visitorHash),
+      ]),
+    env.ANALYTICS,
+    {
+      day,
+      country: countryCode,
+      pathname: normalizeVisitPathname(metadata.pathname),
+      language: normalizeVisitLanguage(metadata.language),
+      visitorHash,
+    },
+  );
 }
 
 type TrafficRow = {

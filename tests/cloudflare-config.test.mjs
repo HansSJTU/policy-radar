@@ -5,7 +5,9 @@ import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
 const root = new URL('../', import.meta.url);
-const packageJson = JSON.parse(await readFile(new URL('package.json', root), 'utf8'));
+const packageJson = JSON.parse(
+  await readFile(new URL('package.json', root), 'utf8'),
+);
 const viteConfig = await readFile(new URL('vite.config.ts', root), 'utf8');
 const homePage = await readFile(new URL('app/page.tsx', root), 'utf8');
 
@@ -28,7 +30,10 @@ try {
 test('package exposes native Cloudflare build and deploy commands', () => {
   assert.equal(packageJson.name, 'policy-radar');
   assert.notEqual(packageJson.private, true);
-  assert.equal(packageJson.devDependencies['@openai/sites-vite-plugin'], undefined);
+  assert.equal(
+    packageJson.devDependencies['@openai/sites-vite-plugin'],
+    undefined,
+  );
   assert.equal(
     packageJson.devDependencies['@vinext/cloudflare'],
     packageJson.dependencies.vinext,
@@ -43,7 +48,7 @@ test('Vite uses the native Cloudflare plugin without Sites wiring', () => {
   assert.equal(sitesHostingConfigExists, false);
 });
 
-test('Wrangler config serves both app routes and binds the production D1', () => {
+test('Wrangler config serves app routes and binds both analytics stores', () => {
   assert.ok(wranglerConfig, 'wrangler.jsonc must exist');
   assert.equal(wranglerConfig.name, 'policy-radar');
   assert.equal(wranglerConfig.main, 'vinext/server/fetch-handler');
@@ -60,6 +65,12 @@ test('Wrangler config serves both app routes and binds the production D1', () =>
     wranglerConfig.d1_databases[0].database_id,
     /^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,
   );
+  assert.deepEqual(wranglerConfig.analytics_engine_datasets, [
+    {
+      binding: 'ANALYTICS',
+      dataset: 'policy_radar_visits',
+    },
+  ]);
 });
 
 test('the home route is request-dynamic', () => {

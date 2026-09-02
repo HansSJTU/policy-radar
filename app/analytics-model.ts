@@ -10,6 +10,86 @@ export type CountryTrafficPoint = {
   visitors: number;
 };
 
+export type AnalyticsEngineVisit = {
+  day: string;
+  country: string;
+  pathname: string;
+  language: 'zh' | 'en';
+  visitorHash: string;
+};
+
+type AnalyticsEngineDataPoint = {
+  indexes: string[];
+  blobs: string[];
+  doubles: number[];
+};
+
+type AnalyticsEngineWriter = {
+  writeDataPoint(event: AnalyticsEngineDataPoint): void;
+};
+
+export function buildAnalyticsEngineVisitDataPoint(
+  visit: AnalyticsEngineVisit,
+): AnalyticsEngineDataPoint {
+  return {
+    indexes: [visit.visitorHash],
+    blobs: [
+      'page_view',
+      visit.day,
+      visit.country,
+      visit.pathname,
+      visit.language,
+    ],
+    doubles: [1],
+  };
+}
+
+export async function hashDailyVisitor(day: string, visitorId: string) {
+  const digest = await crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(`${day}:${visitorId}`),
+  );
+  return Array.from(new Uint8Array(digest), (byte) =>
+    byte.toString(16).padStart(2, '0'),
+  ).join('');
+}
+
+export function writeAnalyticsEngineVisit(
+  dataset: AnalyticsEngineWriter | undefined,
+  visit: AnalyticsEngineVisit,
+) {
+  try {
+    dataset?.writeDataPoint(buildAnalyticsEngineVisitDataPoint(visit));
+  } catch {
+    // D1 remains authoritative when the optional event stream is unavailable.
+  }
+}
+
+export async function writeVisitAnalytics(
+  writeD1: () => Promise<unknown>,
+  dataset: AnalyticsEngineWriter | undefined,
+  visit: AnalyticsEngineVisit,
+) {
+  await writeD1();
+  writeAnalyticsEngineVisit(dataset, visit);
+}
+
+export function normalizeVisitPathname(pathname: unknown) {
+  return typeof pathname === 'string' &&
+    pathname.startsWith('/') &&
+    !pathname.startsWith('//') &&
+    pathname.length <= 256
+    ? pathname
+    : '/';
+}
+
+export function normalizeVisitLanguage(language: unknown): 'zh' | 'en' {
+  if (typeof language === 'string' && language.toLowerCase().startsWith('en')) {
+    return 'en';
+  }
+  return 'zh';
+}
+
 export function normalizeCountryCode(country: string | null | undefined) {
   const normalized = country?.trim().toUpperCase();
   return normalized && /^[A-Z]{2}$/.test(normalized) ? normalized : 'ZZ';

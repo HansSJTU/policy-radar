@@ -17,9 +17,13 @@ export async function POST(request: Request) {
     return Response.json({ error: 'Invalid request' }, { status: 403 });
   }
 
-  let body: { visitorId?: unknown };
+  let body: {
+    visitorId?: unknown;
+    pathname?: unknown;
+    language?: unknown;
+  };
   try {
-    body = (await request.json()) as { visitorId?: unknown };
+    body = (await request.json()) as typeof body;
   } catch {
     return Response.json({ error: 'Invalid request body' }, { status: 400 });
   }
@@ -41,6 +45,7 @@ export async function POST(request: Request) {
     await recordVisit(
       body.visitorId,
       cloudflareCountry ?? request.headers.get('CF-IPCountry'),
+      { pathname: body.pathname, language: body.language },
     );
   } catch {
     return Response.json(
