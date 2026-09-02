@@ -22,6 +22,18 @@ const screenshotEvidence = {
   MIT: ['/cpt-evidence/cpt_mit.jpeg'],
 };
 
+const verifiedForumEvidence = {
+  'UC Berkeley': ['/cpt-evidence/cpt_forum_uc_berkeley.png'],
+  UIUC: ['/cpt-evidence/cpt_forum_uiuc.png'],
+  'Texas A&M': ['/cpt-evidence/cpt_forum_texas_am.png'],
+  'UT Dallas': ['/cpt-evidence/cpt_forum_ut_dallas.png'],
+  'University of Michigan': ['/cpt-evidence/cpt_forum_michigan.png'],
+  'Northwestern University': ['/cpt-evidence/cpt_forum_northwestern.png'],
+  'Columbia University': ['/cpt-evidence/cpt_forum_columbia.png'],
+  'Harvard University': ['/cpt-evidence/cpt_forum_harvard.png'],
+  'University of Washington': ['/cpt-evidence/cpt_forum_washington.png'],
+};
+
 test('community CPT schools retain their corresponding screenshot evidence', () => {
   const schools = new Map(communitySchools.map((school) => [school.school, school]));
   for (const [school, screenshots] of Object.entries(screenshotEvidence)) {
@@ -29,6 +41,24 @@ test('community CPT schools retain their corresponding screenshot evidence', () 
     assert.deepEqual(schools.get(school).screenshots.map(({ src }) => src), screenshots);
   }
   assert.doesNotMatch(JSON.stringify(communitySchools), /asset-cdn\.uscardforum\.com/);
+});
+
+test('university-verified CPT schools expose corresponding forum screenshots when located', () => {
+  const schools = new Map(verifiedSchools.map((school) => [school.school, school]));
+  for (const [school, screenshots] of Object.entries(verifiedForumEvidence)) {
+    assert.ok(schools.has(school), `${school} should remain in the university-verified group`);
+    assert.deepEqual(schools.get(school).screenshots.map(({ src }) => src), screenshots);
+    assert.match(schools.get(school).href, /^https:\/\//);
+  }
+
+  assert.deepEqual(
+    verifiedSchools.find(({ school }) => school === 'UC Davis').screenshots,
+    [],
+  );
+  assert.deepEqual(
+    verifiedSchools.find(({ school }) => school === 'Boston University').screenshots,
+    [],
+  );
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
@@ -44,7 +74,10 @@ test('current CPT status evidence is grouped without overstating public verifica
 });
 
 test('screenshot evidence is bundled as nonempty project assets', async () => {
-  const paths = Object.values(screenshotEvidence).flat();
+  const paths = [
+    ...Object.values(screenshotEvidence).flat(),
+    ...Object.values(verifiedForumEvidence).flat(),
+  ];
   for (const path of paths) {
     const file = await stat(new URL(`../public${path}`, import.meta.url));
     assert.ok(file.size > 10_000, `${path} should contain a real screenshot`);
@@ -55,15 +88,21 @@ test('NYU text-only report is explicitly represented without a fabricated screen
   const nyu = communitySchools.find(({ school }) => school === 'New York University');
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
-  assert.match(source, /尚未找到对应截图/);
-  assert.match(source, /no corresponding screenshot has been located/);
+  assert.match(source, /尚未找到对应的论坛截图/);
+  assert.match(source, /No corresponding forum screenshot has been located/);
 });
 
-test('community evidence opens an accessible dialog and can be dismissed', () => {
+test('all school evidence opens an accessible dialog and can be dismissed', () => {
+  assert.match(
+    source,
+    /useState<\s*VerifiedSchool\s*\|\s*CommunitySchool\s*\|\s*null\s*>/,
+  );
+  assert.match(source, /visibleVerified[\s\S]*?aria-haspopup="dialog"/);
   assert.match(source, /aria-haspopup="dialog"/);
   assert.match(source, /<dialog[\s\S]*?aria-modal="true"/);
   assert.match(source, /aria-modal="true"/);
   assert.match(source, /event\.key === 'Escape'/);
+  assert.match(source, /selectedEvidence\.href/);
 });
 
 test('evidence dialog is responsive and keeps screenshots scrollable', () => {

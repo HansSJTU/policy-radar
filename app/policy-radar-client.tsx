@@ -25,7 +25,12 @@ import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
 import { MobileSiteMenu } from './mobile-site-menu';
-import { communitySchools, verifiedSchools, type CommunitySchool } from './cpt-schools';
+import {
+  communitySchools,
+  verifiedSchools,
+  type CommunitySchool,
+  type VerifiedSchool,
+} from './cpt-schools';
 
 type Tone = 'red' | 'amber' | 'blue' | 'green' | 'gray';
 
@@ -337,7 +342,7 @@ const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-01', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-02', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       { date: 'TBD', text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。' },
@@ -412,8 +417,8 @@ const pageCopy = {
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '论坛截图／邮件', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方截图或邮件，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
-    viewEvidence: '查看截图材料', viewReport: '查看论坛报告', evidenceTitle: '材料截图', closeEvidence: '关闭截图', noScreenshot: '这项目前只有论坛文字报告，尚未找到对应截图。',
-    footer: '更新于 2026-09-01（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
+    viewEvidence: '查看论坛截图', viewReport: '论坛截图待补', evidenceTitle: '论坛截图', closeEvidence: '关闭截图', noScreenshot: '尚未找到对应的论坛截图。',
+    footer: '更新于 2026-09-02（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
@@ -427,8 +432,8 @@ const pageCopy = {
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Forum screenshots / emails', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university screenshots or emails stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
-    viewEvidence: 'View screenshot evidence', viewReport: 'View forum report', evidenceTitle: 'Evidence screenshots', closeEvidence: 'Close screenshots', noScreenshot: 'Only a text report is available for this entry; no corresponding screenshot has been located.',
-    footer: 'Updated September 1, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
+    viewEvidence: 'View forum screenshot', viewReport: 'Forum screenshot pending', evidenceTitle: 'Forum screenshots', closeEvidence: 'Close screenshots', noScreenshot: 'No corresponding forum screenshot has been located.',
+    footer: 'Updated September 2, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
   },
 };
 
@@ -437,7 +442,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const [selectedPath, setSelectedPath] = useState('all');
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
-  const [selectedEvidence, setSelectedEvidence] = useState<CommunitySchool | null>(null);
+  const [selectedEvidence, setSelectedEvidence] = useState<VerifiedSchool | CommunitySchool | null>(null);
   const ui = pageCopy[language];
   useEffect(() => {
     document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
@@ -496,7 +501,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const visibleCommunity = localizedCommunitySchools.filter((school) =>
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
-  const briefing = getThirtyDayBriefing('2026-09-01', language);
+  const briefing = getThirtyDayBriefing('2026-09-02', language);
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -540,7 +545,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span />2026-09-01 · ET</div>
+          <div className="asof"><span />2026-09-02 · ET</div>
         </div>
       </header>
 
@@ -601,7 +606,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <article className="briefing-panel briefing-recent">
           <header>
             <div><span>RECENT 30 DAYS</span><h2>{ui.recent}</h2></div>
-            <small>08·02—08·31</small>
+            <small>08·04—09·02</small>
           </header>
           <div className="briefing-list">
             {briefing.recent.map((item) => (
@@ -627,7 +632,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <article className="briefing-panel briefing-upcoming">
           <header>
             <div><span>NEXT 30 DAYS</span><h2>{ui.upcoming}</h2></div>
-            <small>09·01—09·30</small>
+            <small>09·03—10·02</small>
           </header>
           <div className="briefing-list">
             {briefing.upcoming.map((item) => (
@@ -816,13 +821,19 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
           {schoolTab === 'verified' ? <div className="school-tab-content" role="tabpanel">
             <div className="school-cards">
               {visibleVerified.map((school) => (
-                <a className="school-card" href={school.href} target="_blank" rel="noreferrer" key={school.school}>
+                <button
+                  type="button"
+                  className="school-card evidence-card"
+                  aria-haspopup="dialog"
+                  onClick={() => setSelectedEvidence(school)}
+                  key={school.school}
+                >
                   <div><i className={`school-state ${school.tone}`} /><span>{school.tone === 'pause' ? ui.paused : school.tone === 'tighten' ? ui.tightened : ui.unchanged}</span></div>
                   <h3>{school.school}</h3>
                   <strong><GlossaryText text={school.state} /></strong>
                   <p><GlossaryText text={school.detail} /></p>
-                  <small>{ui.officialPage} <ArrowUpRight aria-hidden="true" /></small>
-                </a>
+                  <small><Images aria-hidden="true" />{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</small>
+                </button>
               ))}
               {visibleVerified.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
             </div>
@@ -874,6 +885,11 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
               </button>
             </header>
             <div className="evidence-modal-body">
+              {'href' in selectedEvidence && (
+                <a className="evidence-official-link" href={selectedEvidence.href} target="_blank" rel="noreferrer">
+                  {ui.officialPage}<ExternalLink aria-hidden="true" />
+                </a>
+              )}
               {selectedEvidence.screenshots.length > 0
                 ? selectedEvidence.screenshots.map((screenshot, index) => (
                     <figure key={screenshot.src}>

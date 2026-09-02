@@ -54,6 +54,7 @@ next-env.d.ts
 /dist/
 /.wrangler/
 /outputs/
+/promo/
 /work/
 /.worktrees/
 /.openai/hosting.json

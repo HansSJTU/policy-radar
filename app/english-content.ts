@@ -217,7 +217,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-01', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-02', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },

@@ -1,15 +1,22 @@
+export type EvidenceScreenshot = {
+  src: string;
+  width: number;
+  height: number;
+};
+
 export type VerifiedSchool = {
   school: string;
   state: string;
   detail: string;
   href: string;
   tone: 'pause' | 'tighten' | 'continue';
+  screenshots: EvidenceScreenshot[];
 };
 
 export type CommunitySchool = {
   school: string;
   state: string;
-  screenshots: Array<{ src: string; width: number; height: number }>;
+  screenshots: EvidenceScreenshot[];
 };
 
 export const verifiedSchools: VerifiedSchool[] = [
@@ -19,6 +26,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: 'Degree-required 与 thesis/dissertation-required CPT 继续。',
     href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
     tone: 'pause',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_uc_berkeley.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'UC Davis',
@@ -26,6 +36,7 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '学位要求 CPT 继续；已签发 CPT I-20 暂不受影响。',
     href: 'https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars',
     tone: 'pause',
+    screenshots: [],
   },
   {
     school: 'Boston University',
@@ -33,6 +44,7 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '明确属于毕业要求的情形继续处理。',
     href: 'https://www.bu.edu/isso/2026/08/28/additional-sevp-guidance-further-restricts-cpt-eligibility/',
     tone: 'pause',
+    screenshots: [],
   },
   {
     school: 'UIUC',
@@ -40,6 +52,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '仅接受全体学生强制要求且有雇主合作协议的情形。',
     href: 'https://blogs.illinois.edu/view/7559/791491523',
     tone: 'pause',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_uiuc.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'Texas A&M',
@@ -47,6 +62,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '8·24 后的新申请按“全员毕业要求 + 合作协议”审查，不满足则拒。',
     href: 'https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html',
     tone: 'tighten',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_texas_am.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'UT Dallas',
@@ -54,6 +72,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '可作为反例：并非所有学校都已“取消 CPT”。',
     href: 'https://isso.utdallas.edu/2026/08/25/regarding-sevp-broadcast-messages-on-cpt/',
     tone: 'continue',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_ut_dallas.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'University of Michigan',
@@ -61,6 +82,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '只批准对该学位项目所有学生均为毕业必需的实践；既有授权可继续。',
     href: 'https://internationalcenter.umich.edu/about/news/updated-guidance-curricular-practical-training-cpt',
     tone: 'pause',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_michigan.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'Northwestern University',
@@ -68,6 +92,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '学校审核期间，只处理对该项目所有学生均为必修工作经历的 CPT。',
     href: 'https://www.northwestern.edu/international/international-students/student-employment/cpt-for-f1-students.html',
     tone: 'pause',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_northwestern.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'Columbia University',
@@ -75,6 +102,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '仅保留课程体系内、全员必修且有 cooperative agreement 的情形；受影响学生由 ISSO 单独通知。',
     href: 'https://communications.news.columbia.edu/news/important-updates-regarding-cpt-f-1-students',
     tone: 'tighten',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_columbia.png', width: 1680, height: 999 },
+    ],
   },
   {
     school: 'Harvard University',
@@ -82,6 +112,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '就业必须是正式记载的学位要求，并提供与该项目要求相关的 cooperative agreement。',
     href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
     tone: 'tighten',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_harvard.png', width: 1665, height: 990 },
+    ],
   },
   {
     school: 'University of Washington',
@@ -89,6 +122,9 @@ export const verifiedSchools: VerifiedSchool[] = [
     detail: '对该学位项目所有学生都不是必修的 CPT 新申请暂停；已获批 CPT 可以继续。',
     href: 'https://iss.washington.edu/update-on-cpt-policy/',
     tone: 'pause',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_forum_washington.png', width: 1680, height: 999 },
+    ],
   },
 ];
 
