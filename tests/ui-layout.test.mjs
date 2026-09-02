@@ -21,6 +21,11 @@ test('policy hover preserves the native accent border color', () => {
   assert.match(hoverRule, /border-bottom-color:\s*#c2b9aa;/);
 });
 
+test('desktop policy cards cannot overflow their grid track in Chromium', () => {
+  assert.match(css, /\.policy-list\s*\{[^}]*min-width:\s*0;[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\);/s);
+  assert.match(css, /\.policy-card\s*\{[^}]*min-width:\s*0;[^}]*width:\s*100%;/s);
+});
+
 test('rulemaking segments join continuously and center their nodes on each join', () => {
   assert.match(css, /\.process-steps\s*\{[^}]*gap:\s*0;/s);
   assert.match(css, /\.process-steps\s*>\s*i\s*>\s*b\s*\{[^}]*right:\s*-5px;/s);

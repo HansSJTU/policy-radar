@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import {
   ArrowUpRight,
@@ -7,8 +8,10 @@ import {
   Clock3,
   ExternalLink,
   FileSearch,
+  Images,
   Search,
   ShieldAlert,
+  X,
 } from 'lucide-react';
 import { getThirtyDayBriefing } from './briefing-feed';
 import { GlossaryText } from './glossary-text';
@@ -430,14 +433,51 @@ const verifiedSchools = [
   },
 ];
 
-const communitySchools = [
-  { school: 'UCSB', state: '截图称暂停非学位必需的新 CPT；既有授权不受影响' },
-  { school: 'UC Irvine', state: '截图称暂停 Course Credit CPT；强制毕业要求继续' },
-  { school: 'UNC–Chapel Hill', state: 'ISSS 邮件截图称除严格毕业要求外暂停' },
-  { school: 'Caltech', state: 'ISP 通知截图称暂停全部新 CPT；当前参与者不受影响' },
-  { school: 'UCLA', state: '通知截图称暂停非全员学位要求的 Course Credit / 支持信 CPT' },
-  { school: 'Purdue ECE', state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校' },
-  { school: 'New York University', state: '论坛 8·31 报告称暂停 CPT；尚待校方公开页面确认范围' },
+type CommunitySchool = {
+  school: string;
+  state: string;
+  screenshots: Array<{ src: string; width: number; height: number }>;
+};
+
+const communitySchools: CommunitySchool[] = [
+  {
+    school: 'UCSB',
+    state: '截图称暂停非学位必需的新 CPT；既有授权不受影响',
+    screenshots: [
+      { src: '/cpt-evidence/cpt_ucsb_1.jpeg', width: 1080, height: 1677 },
+      { src: '/cpt-evidence/cpt_ucsb_2.jpeg', width: 1080, height: 1508 },
+    ],
+  },
+  {
+    school: 'UC Irvine',
+    state: '截图称暂停 Course Credit CPT；强制毕业要求继续',
+    screenshots: [{ src: '/cpt-evidence/cpt_uci.jpeg', width: 1080, height: 1731 }],
+  },
+  {
+    school: 'UNC–Chapel Hill',
+    state: 'ISSS 邮件截图称除严格毕业要求外暂停',
+    screenshots: [{ src: '/cpt-evidence/cpt_unc.jpeg', width: 1080, height: 1875 }],
+  },
+  {
+    school: 'Caltech',
+    state: 'ISP 通知截图称暂停全部新 CPT；当前参与者不受影响',
+    screenshots: [{ src: '/cpt-evidence/cpt_caltech.jpeg', width: 1080, height: 1413 }],
+  },
+  {
+    school: 'UCLA',
+    state: '通知截图称暂停非全员学位要求的 Course Credit / 支持信 CPT',
+    screenshots: [{ src: '/cpt-evidence/cpt_ucla.jpeg', width: 1144, height: 667 }],
+  },
+  {
+    school: 'Purdue ECE',
+    state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校',
+    screenshots: [{ src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 }],
+  },
+  {
+    school: 'New York University',
+    state: '论坛 8·31 报告称暂停 CPT；尚待校方公开页面确认范围',
+    screenshots: [],
+  },
 ];
 
 const routeStages = [
@@ -498,6 +538,7 @@ const pageCopy = {
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '论坛截图／邮件', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下来自', evidenceLink: 'USCardForum 汇总帖', evidenceSuffix: '中的校方截图或邮件，未全部找到公开校页。Purdue 信息仅对应 ECE 院系。', verifyPending: '待公开来源复核',
+    viewEvidence: '查看截图材料', viewReport: '查看论坛报告', evidenceTitle: '材料截图', closeEvidence: '关闭截图', noScreenshot: '这项目前只有论坛文字报告，尚未找到对应截图。',
     footer: '更新于 2026-09-01（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
@@ -512,6 +553,7 @@ const pageCopy = {
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Forum screenshots / emails', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries come from screenshots or emails in the', evidenceLink: 'USCardForum roundup', evidenceSuffix: '. Not every item has a public university webpage. The Purdue entry applies only to the ECE department.', verifyPending: 'Awaiting a public source',
+    viewEvidence: 'View screenshot evidence', viewReport: 'View forum report', evidenceTitle: 'Evidence screenshots', closeEvidence: 'Close screenshots', noScreenshot: 'Only a text report is available for this entry; no corresponding screenshot has been located.',
     footer: 'Updated September 1, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
   },
 };
@@ -521,6 +563,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const [selectedPath, setSelectedPath] = useState('all');
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
+  const [selectedEvidence, setSelectedEvidence] = useState<CommunitySchool | null>(null);
   const ui = pageCopy[language];
   useEffect(() => {
     document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
@@ -528,6 +571,21 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       ? 'U.S. Stay Path Policy Radar | F-1 → CPT → OPT → H-1B'
       : '留美路径政策雷达｜F-1 → CPT → OPT → H-1B';
   }, [language]);
+  useEffect(() => {
+    if (!selectedEvidence) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSelectedEvidence(null);
+    };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', closeOnEscape);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [selectedEvidence]);
   const localizedPolicies = language === 'en'
     ? policies.map((policy) => {
         const english = englishPolicies[policy.id];
@@ -569,6 +627,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
     setLanguage(nextLanguage);
+    setSelectedEvidence(null);
 
     const url = new URL(window.location.href);
     url.searchParams.delete('lang');
@@ -897,17 +956,68 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <div className="evidence-banner"><ShieldAlert aria-hidden="true" /><p>{ui.evidencePrefix} <a href="https://www.uscardforum.com/t/topic/524965" target="_blank" rel="noreferrer">{ui.evidenceLink}</a>{ui.evidenceSuffix}</p></div>
             <div className="school-cards community-cards">
               {visibleCommunity.map((school) => (
-                <article className="school-card" key={school.school}>
+                <button
+                  type="button"
+                  className="school-card evidence-card"
+                  aria-haspopup="dialog"
+                  onClick={() => setSelectedEvidence(school)}
+                  key={school.school}
+                >
                   <div><i className="school-state lead" /><span>{ui.verifyPending}</span></div>
                   <h3>{school.school}</h3>
                   <p><GlossaryText text={school.state} /></p>
-                </article>
+                  <small><Images aria-hidden="true" />{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</small>
+                </button>
               ))}
               {visibleCommunity.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
             </div>
           </div>}
         </div>
       </section>
+
+      {selectedEvidence && (
+        <div
+          className="evidence-modal-backdrop"
+          role="presentation"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setSelectedEvidence(null);
+          }}
+        >
+          <dialog
+            open
+            className="evidence-modal"
+            aria-modal="true"
+            aria-labelledby="evidence-modal-title"
+          >
+            <header>
+              <div>
+                <span>{ui.evidenceTitle}</span>
+                <h2 id="evidence-modal-title">{selectedEvidence.school}</h2>
+                <p><GlossaryText text={selectedEvidence.state} /></p>
+              </div>
+              <button type="button" autoFocus onClick={() => setSelectedEvidence(null)} aria-label={ui.closeEvidence}>
+                <X aria-hidden="true" />
+              </button>
+            </header>
+            <div className="evidence-modal-body">
+              {selectedEvidence.screenshots.length > 0
+                ? selectedEvidence.screenshots.map((screenshot, index) => (
+                    <figure key={screenshot.src}>
+                      <Image
+                        src={screenshot.src}
+                        width={screenshot.width}
+                        height={screenshot.height}
+                        alt={`${selectedEvidence.school} ${ui.evidenceTitle} ${index + 1}`}
+                        unoptimized
+                      />
+                      {selectedEvidence.screenshots.length > 1 && <figcaption>{index + 1} / {selectedEvidence.screenshots.length}</figcaption>}
+                    </figure>
+                  ))
+                : <p className="evidence-empty"><FileSearch aria-hidden="true" />{ui.noScreenshot}</p>}
+            </div>
+          </dialog>
+        </div>
+      )}
 
       <footer>
         <div><span className="brand-mark">US</span><strong>{ui.brand}</strong></div>
