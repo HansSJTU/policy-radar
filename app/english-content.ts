@@ -63,10 +63,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       { date: '2025-08-28', text: 'DHS published the proposed rule.' },
       { date: '2026-07-17', text: 'DHS published the final rule.' },
       { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
-      { date: '2026-08-27', text: 'The government requested more time to respond; later public schedules list the injunction hearing for September 9.' },
+      { date: '2026-08-31', text: 'The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar.' },
     ],
     next: [
-      { date: '2026-09-09', text: 'The latest public schedule lists a preliminary-injunction hearing at 11:00 a.m. ET.' },
+      { date: '2026-09-03', text: 'The court’s official calendar lists a preliminary-injunction hearing at 11:00 a.m. ET.' },
       { date: '2026-09-15', text: 'The rule is scheduled to take effect unless the court changes the timeline.' },
     ],
     impacts: [
@@ -75,7 +75,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
       'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
     ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Litigation and hearing updates', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
+    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
   },
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',
@@ -242,7 +242,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'Northwestern University': { state: 'CPT not required for every student is on hold', detail: 'During its review, the university is processing only work experiences required for every student in the academic program.' },
   'Columbia University': { state: 'CPT authorizations and requests are being reviewed', detail: 'Eligibility is limited to curricular, program-wide requirements documented by a cooperative agreement; ISSO is contacting affected students.' },
   'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
-  MIT: { state: 'Documentation and degree-credit requirements tightened', detail: 'MIT still lists CPT that is required for all students or is faculty-evaluated and counts toward minimum degree credits; its public page does not announce a blanket pause.' },
+  'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
@@ -253,6 +253,9 @@ export const englishCommunitySchools: Record<string, string> = {
   UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',
   'Purdue ECE': 'A department email screenshot says it will not sign CPT this semester; this is an ECE position and should not be generalized to the entire university.',
   'New York University': 'An August 31 forum report says CPT was paused; no public university page has yet confirmed the scope.',
+  'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
+  'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',
+  MIT: 'A university notice screenshot says some new CPT that is not required for every student in the program is paused, and MIT will contact students who already received Fall 2026 CPT.',
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {

@@ -30,17 +30,21 @@ const chineseUpdates: ContentUpdate[] = [
         category: '日期调整',
         title: '#03 D/S 固定期限',
         summary:
-          '初步禁令听证按最新公开排期改到 2026 年 9 月 9 日上午 11:00（美东）。',
-        before: '2026-09-03 · 初步禁令听证',
-        after: '2026-09-09 · 初步禁令听证',
+          '此前采用的二手报道把初步禁令听证写成 9 月 9 日；现按法院官方日历和 docket 校正为 2026 年 9 月 3 日上午 11:00（美东）。',
+        before: '2026-09-09 · 初步禁令听证（错误）',
+        after: '2026-09-03 · 初步禁令听证',
         sources: [
           {
-            label: '诉讼记录',
+            label: '法院官方日历',
+            href: 'https://forms.mad.uscourts.gov/courtlist.html',
+          },
+          {
+            label: '诉讼 docket 汇总',
             href: 'https://clearinghouse.net/case/48393/',
           },
           {
-            label: '最新排期说明',
-            href: 'https://news.clinchlaw.com/en/article/uscis-to-mandate-revised-i-539-and-i-765-forms-on-september-15-as-fixed-admissio-mtdmg30w',
+            label: '原告方案件页面',
+            href: 'https://www.presidentsalliance.org/duration-of-status-litigation/',
           },
         ],
       },
@@ -68,18 +72,21 @@ const chineseUpdates: ContentUpdate[] = [
         category: 'CPT 学校清单',
         title: '学校数量与证据级别',
         summary:
-          '清单由 13 所扩至 18 所；有校方网页的学校由 6 所增至 11 所，只有论坛截图或邮件的学校仍为 7 所。',
+          '清单由 13 所扩至 21 所；有校方网页支持当前状态的学校由 6 所增至 11 所，只有截图、邮件或论坛文字材料的学校由 7 所增至 10 所。',
         before: '13 所 · 6 所校方网页 / 7 所论坛材料',
-        after: '18 所 · 11 所校方网页 / 7 所论坛材料',
+        after: '21 所 · 11 所校方网页 / 10 所截图、邮件或论坛材料',
         details: [
           'University of Michigan 从论坛材料升级为校方网页来源。',
-          'Northwestern、Columbia、Harvard、MIT 按校方页面加入清单。',
+          'Northwestern、Columbia、Harvard 按校方页面加入清单。',
           'New York University 按 8·31 论坛报告加入，仍标为待校方公开页面确认。',
+          'University of Washington 按校方通知加入；学校暂停非全专业必修的新 CPT，已获批 CPT 可以继续。',
+          'Goldey-Beacom College 与 Purdue University ISS 按已下载到本站的校方邮件截图加入；Purdue ISS 与 Purdue ECE 分开记录。',
+          'MIT 的公开 CPT 页面未同步最新暂停范围，因此移至截图材料组；条目改为部分非全专业必修的新 CPT 暂停。',
         ],
         sources: [
           {
-            label: '论坛汇总',
-            href: 'https://www.uscardforum.com/t/topic/524965',
+            label: 'University of Washington',
+            href: 'https://iss.washington.edu/update-on-cpt-policy/',
           },
           {
             label: 'Michigan',
@@ -98,8 +105,16 @@ const chineseUpdates: ContentUpdate[] = [
             href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
           },
           {
-            label: 'MIT',
-            href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+            label: 'Goldey-Beacom 邮件截图',
+            href: '/cpt-evidence/cpt_goldey_beacom.jpeg',
+          },
+          {
+            label: 'Purdue ISS 邮件截图',
+            href: '/cpt-evidence/cpt_purdue_iss.jpeg',
+          },
+          {
+            label: 'MIT 通知截图',
+            href: '/cpt-evidence/cpt_mit.jpeg',
           },
         ],
       },
@@ -116,17 +131,21 @@ const englishUpdates: ContentUpdate[] = [
         category: 'DATE CHANGE',
         title: '#03 Fixed F/J admission period',
         summary:
-          'The preliminary-injunction hearing moved to September 9, 2026, at 11:00 a.m. Eastern Time under the latest public schedule.',
-        before: 'September 3, 2026 · Preliminary-injunction hearing',
-        after: 'September 9, 2026 · Preliminary-injunction hearing',
+          'A secondary report previously placed the preliminary-injunction hearing on September 9. The date is now corrected to September 3, 2026, at 11:00 a.m. Eastern Time based on the court’s official calendar and docket.',
+        before: 'September 9, 2026 · Preliminary-injunction hearing (incorrect)',
+        after: 'September 3, 2026 · Preliminary-injunction hearing',
         sources: [
           {
-            label: 'Case record',
+            label: 'Official court calendar',
+            href: 'https://forms.mad.uscourts.gov/courtlist.html',
+          },
+          {
+            label: 'Docket summary',
             href: 'https://clearinghouse.net/case/48393/',
           },
           {
-            label: 'Latest scheduling summary',
-            href: 'https://news.clinchlaw.com/en/article/uscis-to-mandate-revised-i-539-and-i-765-forms-on-september-15-as-fixed-admissio-mtdmg30w',
+            label: 'Plaintiffs’ case page',
+            href: 'https://www.presidentsalliance.org/duration-of-status-litigation/',
           },
         ],
       },
@@ -154,18 +173,21 @@ const englishUpdates: ContentUpdate[] = [
         category: 'CPT SCHOOL LIST',
         title: 'School count and evidence level',
         summary:
-          'The list expanded from 13 to 18 schools. Entries backed by university webpages increased from 6 to 11, while forum-screenshot or email-only entries remained at 7.',
+          'The list expanded from 13 to 21 schools. Entries whose current status is supported by university webpages increased from 6 to 11, while screenshot, email, or forum-text entries increased from 7 to 10.',
         before: '13 schools · 6 university webpages / 7 forum reports',
-        after: '18 schools · 11 university webpages / 7 forum reports',
+        after: '21 schools · 11 university webpages / 10 screenshot, email, or forum reports',
         details: [
           'The University of Michigan entry moved from forum-only evidence to a university webpage.',
-          'Northwestern, Columbia, Harvard, and MIT were added from university webpages.',
+          'Northwestern, Columbia, and Harvard were added from university webpages.',
           'New York University was added from an August 31 forum report and remains marked as awaiting a public university page.',
+          'The University of Washington was added from its university notice: new CPT not required for every student is paused, while previously authorized CPT may continue.',
+          'Goldey-Beacom College and Purdue University ISS were added from university email screenshots stored on this site; Purdue ISS remains separate from Purdue ECE.',
+          'MIT moved to the screenshot-evidence group because its public CPT webpage does not show the latest pause; the entry now describes the narrower scope shown in the university notice.',
         ],
         sources: [
           {
-            label: 'Forum roundup',
-            href: 'https://www.uscardforum.com/t/topic/524965',
+            label: 'University of Washington',
+            href: 'https://iss.washington.edu/update-on-cpt-policy/',
           },
           {
             label: 'Michigan',
@@ -184,8 +206,16 @@ const englishUpdates: ContentUpdate[] = [
             href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
           },
           {
-            label: 'MIT',
-            href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+            label: 'Goldey-Beacom email screenshot',
+            href: '/cpt-evidence/cpt_goldey_beacom.jpeg',
+          },
+          {
+            label: 'Purdue ISS email screenshot',
+            href: '/cpt-evidence/cpt_purdue_iss.jpeg',
+          },
+          {
+            label: 'MIT notice screenshot',
+            href: '/cpt-evidence/cpt_mit.jpeg',
           },
         ],
       },

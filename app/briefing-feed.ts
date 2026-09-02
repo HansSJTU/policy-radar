@@ -94,11 +94,11 @@ const briefingItems: BriefingItem[] = [
   },
   {
     id: 'duration-injunction-hearing',
-    date: '2026-09-09',
+    date: '2026-09-03',
     policyId: 'duration-status',
     rank: 3,
     policy: 'D/S 固定期限',
-    summary: '最新公开排期显示法院将举行初步禁令听证；规则是否暂停可能在生效日前明确。',
+    summary: '法院官方日历列明将举行初步禁令听证；规则是否暂停可能在生效日前明确。',
     timing: 'upcoming',
     confirmed: true,
   },
@@ -133,7 +133,7 @@ const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> 
   'duration-lawsuit': { policy: 'Fixed F/J admission period', summary: 'A university coalition sued and requested a preliminary injunction to stop the rule from taking effect on September 15.' },
   'cpt-risk-notice': { policy: 'Tighter CPT guidance', summary: 'SEVP emphasized school and DSO compliance duties; several universities then paused optional CPT.' },
   'ead-discretion-comment-close': { policy: 'I-765 criminal-record review', summary: 'The NPRM comment period closed. DHS is reviewing comments, while current OPT and H-4 EAD standards remain unchanged.' },
-  'duration-injunction-hearing': { policy: 'Fixed F/J admission period', summary: 'The latest public schedule lists a preliminary-injunction hearing. Whether the rule is stayed may become clear before its effective date.' },
+  'duration-injunction-hearing': { policy: 'Fixed F/J admission period', summary: 'The court’s official calendar lists a preliminary-injunction hearing. Whether the rule is stayed may become clear before its effective date.' },
   'duration-effective-date': { policy: 'Fixed F/J admission period', summary: 'Unless the court stays it, the rule is scheduled to take effect and F/J/I admissions will no longer use D/S.' },
   'h1b-fee-comment-deadline': { policy: 'H-1B $103,265', summary: 'The NPRM comment period closes. DHS will then review the record and decide whether to revise the proposal.' },
 };

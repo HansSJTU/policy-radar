@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import test from 'node:test';
 
+import { communitySchools, verifiedSchools } from '../app/cpt-schools.ts';
+
 const source = await readFile(new URL('../app/policy-radar-client.tsx', import.meta.url), 'utf8');
 const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
 
@@ -15,14 +17,30 @@ const screenshotEvidence = {
   Caltech: ['/cpt-evidence/cpt_caltech.jpeg'],
   UCLA: ['/cpt-evidence/cpt_ucla.jpeg'],
   'Purdue ECE': ['/cpt-evidence/cpt_purdue.jpeg'],
+  'Goldey-Beacom College': ['/cpt-evidence/cpt_goldey_beacom.jpeg'],
+  'Purdue University (ISS)': ['/cpt-evidence/cpt_purdue_iss.jpeg'],
+  MIT: ['/cpt-evidence/cpt_mit.jpeg'],
 };
 
 test('community CPT schools retain their corresponding screenshot evidence', () => {
+  const schools = new Map(communitySchools.map((school) => [school.school, school]));
   for (const [school, screenshots] of Object.entries(screenshotEvidence)) {
-    assert.match(source, new RegExp(`school: '${school.replace(/[–]/g, '–')}'`));
-    for (const screenshot of screenshots) assert.match(source, new RegExp(screenshot.replaceAll('.', '\\.')));
+    assert.ok(schools.has(school), `${school} should remain in the screenshot-evidence group`);
+    assert.deepEqual(schools.get(school).screenshots.map(({ src }) => src), screenshots);
   }
-  assert.doesNotMatch(source, /asset-cdn\.uscardforum\.com/);
+  assert.doesNotMatch(JSON.stringify(communitySchools), /asset-cdn\.uscardforum\.com/);
+});
+
+test('current CPT status evidence is grouped without overstating public verification', () => {
+  assert.equal(verifiedSchools.length, 11);
+  assert.equal(communitySchools.length, 10);
+  assert.equal(verifiedSchools.length + communitySchools.length, 21);
+
+  assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
+  assert.ok(communitySchools.some(({ school }) => school === 'MIT'));
+  assert.equal(verifiedSchools.some(({ school }) => school === 'MIT'), false);
+  assert.ok(communitySchools.some(({ school }) => school === 'Purdue ECE'));
+  assert.ok(communitySchools.some(({ school }) => school === 'Purdue University (ISS)'));
 });
 
 test('screenshot evidence is bundled as nonempty project assets', async () => {
@@ -34,10 +52,9 @@ test('screenshot evidence is bundled as nonempty project assets', async () => {
 });
 
 test('NYU text-only report is explicitly represented without a fabricated screenshot', () => {
-  assert.match(
-    source,
-    /school: 'New York University',[\s\S]*?screenshots: \[\]/,
-  );
+  const nyu = communitySchools.find(({ school }) => school === 'New York University');
+  assert.ok(nyu);
+  assert.deepEqual(nyu.screenshots, []);
   assert.match(source, /尚未找到对应截图/);
   assert.match(source, /no corresponding screenshot has been located/);
 });

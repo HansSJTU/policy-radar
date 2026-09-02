@@ -25,6 +25,7 @@ import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
 import { MobileSiteMenu } from './mobile-site-menu';
+import { communitySchools, verifiedSchools, type CommunitySchool } from './cpt-schools';
 
 type Tone = 'red' | 'amber' | 'blue' | 'green' | 'gray';
 
@@ -118,10 +119,10 @@ const policies: Array<{
       { date: '2025-08-28', text: 'DHS 发布拟议规则。' },
       { date: '2026-07-17', text: '最终规则发布。' },
       { date: '2026-08-18', text: '高校联盟等在麻省联邦法院起诉。' },
-      { date: '2026-08-27', text: '政府申请延长答辩期限；此后的公开排期将禁令听证列为 9·09。' },
+      { date: '2026-08-31', text: '法院把政府答辩期限延至 9·02；9·03 的初步禁令听证排期未变。' },
     ],
     next: [
-      { date: '2026-09-09', text: '最新公开排期显示：初步禁令听证，上午 11:00（美东）。' },
+      { date: '2026-09-03', text: '法院官方日历列明：初步禁令听证，上午 11:00（美东）。' },
       { date: '2026-09-15', text: '规则计划生效；法院仍可能在此前改变局面。' },
     ],
     impacts: [
@@ -133,7 +134,7 @@ const policies: Array<{
     sources: [
       { label: '2025 拟议规则', href: 'https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '2026 最终规则', href: 'https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
-      { label: '诉讼与听证进度', href: 'https://news.clinchlaw.com/en/article/uscis-to-mandate-revised-i-539-and-i-765-forms-on-september-15-as-fixed-admissio-mtdmg30w' },
+      { label: '法院官方日历', href: 'https://forms.mad.uscourts.gov/courtlist.html' },
       { label: '美卡论坛规则讨论', href: 'https://www.uscardforum.com/t/topic/431784' },
       { label: '美卡论坛诉讼讨论', href: 'https://www.uscardforum.com/t/topic/525892' },
     ],
@@ -353,133 +354,6 @@ const policies: Array<{
   },
 ];
 
-const verifiedSchools = [
-  {
-    school: 'UC Berkeley',
-    state: '已暂停 Course Credit CPT',
-    detail: 'Degree-required 与 thesis/dissertation-required CPT 继续。',
-    href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
-    tone: 'pause',
-  },
-  {
-    school: 'UC Davis',
-    state: '已暂停非学位必需的 Course Credit CPT',
-    detail: '学位要求 CPT 继续；已签发 CPT I-20 暂不受影响。',
-    href: 'https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars',
-    tone: 'pause',
-  },
-  {
-    school: 'Boston University',
-    state: '暂停部分 CPT 审批',
-    detail: '明确属于毕业要求的情形继续处理。',
-    href: 'https://www.bu.edu/isso/2026/08/28/additional-sevp-guidance-further-restricts-cpt-eligibility/',
-    tone: 'pause',
-  },
-  {
-    school: 'UIUC',
-    state: '不再批准 elective-course CPT',
-    detail: '仅接受全体学生强制要求且有雇主合作协议的情形。',
-    href: 'https://blogs.illinois.edu/view/7559/791491523',
-    tone: 'pause',
-  },
-  {
-    school: 'Texas A&M',
-    state: '收紧，但不是全面暂停',
-    detail: '8·24 后的新申请按“全员毕业要求 + 合作协议”审查，不满足则拒。',
-    href: 'https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html',
-    tone: 'tighten',
-  },
-  {
-    school: 'UT Dallas',
-    state: '截至 8·25 表示流程未变',
-    detail: '可作为反例：并非所有学校都已“取消 CPT”。',
-    href: 'https://isso.utdallas.edu/2026/08/25/regarding-sevp-broadcast-messages-on-cpt/',
-    tone: 'continue',
-  },
-  {
-    school: 'University of Michigan',
-    state: '不再批准 elective-course CPT',
-    detail: '只批准对该学位项目所有学生均为毕业必需的实践；既有授权可继续。',
-    href: 'https://internationalcenter.umich.edu/about/news/updated-guidance-curricular-practical-training-cpt',
-    tone: 'pause',
-  },
-  {
-    school: 'Northwestern University',
-    state: '暂停非全员必修的 CPT 申请',
-    detail: '学校审核期间，只处理对该项目所有学生均为必修工作经历的 CPT。',
-    href: 'https://www.northwestern.edu/international/international-students/student-employment/cpt-for-f1-students.html',
-    tone: 'pause',
-  },
-  {
-    school: 'Columbia University',
-    state: '按新标准复核 CPT 授权与申请',
-    detail: '仅保留课程体系内、全员必修且有 cooperative agreement 的情形；受影响学生由 ISSO 单独通知。',
-    href: 'https://communications.news.columbia.edu/news/important-updates-regarding-cpt-f-1-students',
-    tone: 'tighten',
-  },
-  {
-    school: 'Harvard University',
-    state: '资格收紧，但校方未称全面停批',
-    detail: '就业必须是正式记载的学位要求，并提供与该项目要求相关的 cooperative agreement。',
-    href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
-    tone: 'tighten',
-  },
-  {
-    school: 'MIT',
-    state: '按新标准收紧材料与学分要求',
-    detail: '校方页面仍列出全员必修，或由教授评估且计入最低毕业学分的课程型 CPT；不是公开的全面停批。',
-    href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
-    tone: 'tighten',
-  },
-];
-
-type CommunitySchool = {
-  school: string;
-  state: string;
-  screenshots: Array<{ src: string; width: number; height: number }>;
-};
-
-const communitySchools: CommunitySchool[] = [
-  {
-    school: 'UCSB',
-    state: '截图称暂停非学位必需的新 CPT；既有授权不受影响',
-    screenshots: [
-      { src: '/cpt-evidence/cpt_ucsb_1.jpeg', width: 1080, height: 1677 },
-      { src: '/cpt-evidence/cpt_ucsb_2.jpeg', width: 1080, height: 1508 },
-    ],
-  },
-  {
-    school: 'UC Irvine',
-    state: '截图称暂停 Course Credit CPT；强制毕业要求继续',
-    screenshots: [{ src: '/cpt-evidence/cpt_uci.jpeg', width: 1080, height: 1731 }],
-  },
-  {
-    school: 'UNC–Chapel Hill',
-    state: 'ISSS 邮件截图称除严格毕业要求外暂停',
-    screenshots: [{ src: '/cpt-evidence/cpt_unc.jpeg', width: 1080, height: 1875 }],
-  },
-  {
-    school: 'Caltech',
-    state: 'ISP 通知截图称暂停全部新 CPT；当前参与者不受影响',
-    screenshots: [{ src: '/cpt-evidence/cpt_caltech.jpeg', width: 1080, height: 1413 }],
-  },
-  {
-    school: 'UCLA',
-    state: '通知截图称暂停非全员学位要求的 Course Credit / 支持信 CPT',
-    screenshots: [{ src: '/cpt-evidence/cpt_ucla.jpeg', width: 1144, height: 667 }],
-  },
-  {
-    school: 'Purdue ECE',
-    state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校',
-    screenshots: [{ src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 }],
-  },
-  {
-    school: 'New York University',
-    state: '论坛 8·31 报告称暂停 CPT；尚待校方公开页面确认范围',
-    screenshots: [],
-  },
-];
-
 const routeStages = [
   {
     key: 'F-1',
@@ -528,7 +402,7 @@ const routeStages = [
 const pageCopy = {
   zh: {
     brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
-    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 18 所学校',
+    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 21 所学校',
     routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
     ranking: '最难绕开的关卡', filterAria: '按签证路径筛选', all: '全部', items: '项',
@@ -537,13 +411,13 @@ const pageCopy = {
     past: '过去', now: '现在', expected: '预计', details: '具体影响与来源', happening: '现在发生了什么', change: '这条路会怎么变',
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '论坛截图／邮件', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
-    noSchool: '没有匹配的学校。', evidencePrefix: '以下来自', evidenceLink: 'USCardForum 汇总帖', evidenceSuffix: '中的校方截图或邮件，未全部找到公开校页。Purdue 信息仅对应 ECE 院系。', verifyPending: '待公开来源复核',
+    noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方截图或邮件，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看截图材料', viewReport: '查看论坛报告', evidenceTitle: '材料截图', closeEvidence: '关闭截图', noScreenshot: '这项目前只有论坛文字报告，尚未找到对应截图。',
     footer: '更新于 2026-09-01（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
-    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 18 schools',
+    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 21 schools',
     routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
     ranking: 'Highest-impact barriers', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
@@ -552,7 +426,7 @@ const pageCopy = {
     past: 'Past', now: 'Now', expected: 'Expected', details: 'Detailed impact and sources', happening: 'What is happening now', change: 'How the path would change',
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Forum screenshots / emails', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
-    noSchool: 'No matching school.', evidencePrefix: 'The following entries come from screenshots or emails in the', evidenceLink: 'USCardForum roundup', evidenceSuffix: '. Not every item has a public university webpage. The Purdue entry applies only to the ECE department.', verifyPending: 'Awaiting a public source',
+    noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university screenshots or emails stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
     viewEvidence: 'View screenshot evidence', viewReport: 'View forum report', evidenceTitle: 'Evidence screenshots', closeEvidence: 'Close screenshots', noScreenshot: 'Only a text report is available for this entry; no corresponding screenshot has been located.',
     footer: 'Updated September 1, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
   },
@@ -953,7 +827,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
               {visibleVerified.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
             </div>
           </div> : <div className="school-tab-content" role="tabpanel">
-            <div className="evidence-banner"><ShieldAlert aria-hidden="true" /><p>{ui.evidencePrefix} <a href="https://www.uscardforum.com/t/topic/524965" target="_blank" rel="noreferrer">{ui.evidenceLink}</a>{ui.evidenceSuffix}</p></div>
+            <div className="evidence-banner"><ShieldAlert aria-hidden="true" /><p>{ui.evidencePrefix}</p></div>
             <div className="school-cards community-cards">
               {visibleCommunity.map((school) => (
                 <button

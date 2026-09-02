@@ -13,7 +13,7 @@ function collectStrings(value) {
   return [];
 }
 
-test('the first content update contains only the three material September 1 changes', () => {
+test('the first content update records the corrected hearing date and material September 1 CPT changes', () => {
   const [entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-01');
@@ -23,10 +23,14 @@ test('the first content update contains only the three material September 1 chan
   );
 
   const text = collectStrings(entry).join(' ');
-  assert.match(text, /2026-09-03/);
   assert.match(text, /2026-09-09/);
+  assert.match(text, /2026-09-03/);
   assert.match(text, /13 所/);
-  assert.match(text, /18 所/);
+  assert.match(text, /21 所/);
+  assert.match(text, /University of Washington/);
+  assert.match(text, /Goldey-Beacom College/);
+  assert.match(text, /Purdue University/);
+  assert.match(text, /MIT/);
   assert.doesNotMatch(text, /排序不变|没有阶段变化|未提交|未推送|未发布/);
 });
 

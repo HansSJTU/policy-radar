@@ -84,7 +84,7 @@ const processTracks: Record<string, ProcessTrack> = {
     stages: federalRulemakingStages,
     litigation: [
       { date: '8·18', label: '提起诉讼', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
-      { date: '9·09', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
+      { date: '9·03', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
     ],
   },
   'cpt-guidance': {
@@ -202,7 +202,7 @@ const englishProcessTracks: Record<string, Pick<ProcessTrack, 'name' | 'meaning'
     stages: federalRulemakingStagesEnglish,
     litigation: [
       { date: '8·18', label: 'Lawsuit filed', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
-      { date: '9·09', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
+      { date: '9·03', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
     ],
   },
   'cpt-guidance': {

@@ -50,7 +50,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: '提起诉讼' },
-      { date: '9·09', label: '禁令听证' },
+      { date: '9·03', label: '禁令听证' },
     ],
   );
   assert.deepEqual(
@@ -64,7 +64,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: 'Lawsuit filed' },
-      { date: '9·09', label: 'Injunction hearing' },
+      { date: '9·03', label: 'Injunction hearing' },
     ],
   );
 });
