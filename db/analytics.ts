@@ -4,9 +4,15 @@ import {
   buildTrafficSeries,
   getTrafficStartDay,
   hashDailyVisitor,
+  normalizeCampaignDimension,
   normalizeCountryCode,
+  normalizeOutboundClick,
+  normalizePolicyId,
+  normalizeReferrerHost,
+  normalizeSessionId,
   normalizeVisitLanguage,
   normalizeVisitPathname,
+  writeAnalyticsEngineVisit,
   writeVisitAnalytics,
   type CountryTrafficPoint,
   type TrafficPoint,
@@ -24,6 +30,19 @@ import {
 } from '@/db/schema';
 
 let schemaPromise: Promise<void> | undefined;
+
+type AnalyticsMetadata = {
+  pathname?: unknown;
+  language?: unknown;
+  referrerHost?: unknown;
+  utmSource?: unknown;
+  utmMedium?: unknown;
+  utmCampaign?: unknown;
+  sessionId?: unknown;
+  landingPage?: unknown;
+  policyId?: unknown;
+  outboundClick?: unknown;
+};
 
 function database() {
   return env.DB;
@@ -66,7 +85,7 @@ function easternDay(now = new Date()) {
 export async function recordVisit(
   visitorId: string,
   country: string | null | undefined,
-  metadata: { pathname?: unknown; language?: unknown } = {},
+  metadata: AnalyticsMetadata = {},
   now = new Date(),
 ) {
   await ensureAnalyticsSchema();
@@ -100,13 +119,49 @@ export async function recordVisit(
       ]),
     env.ANALYTICS,
     {
+      eventType: 'page_view',
       day,
       country: countryCode,
       pathname: normalizeVisitPathname(metadata.pathname),
       language: normalizeVisitLanguage(metadata.language),
       visitorHash,
+      referrerHost: normalizeReferrerHost(metadata.referrerHost),
+      utmSource: normalizeCampaignDimension(metadata.utmSource),
+      utmMedium: normalizeCampaignDimension(metadata.utmMedium),
+      utmCampaign: normalizeCampaignDimension(metadata.utmCampaign),
+      sessionId: normalizeSessionId(metadata.sessionId),
+      landingPage: normalizeVisitPathname(metadata.landingPage),
+      policyId: normalizePolicyId(metadata.policyId),
+      outboundClick: '',
     },
   );
+}
+
+export async function recordAnalyticsEngineEvent(
+  visitorId: string,
+  country: string | null | undefined,
+  metadata: AnalyticsMetadata = {},
+  now = new Date(),
+) {
+  const day = easternDay(now);
+  const visitorHash = await hashDailyVisitor(day, visitorId);
+
+  writeAnalyticsEngineVisit(env.ANALYTICS, {
+    eventType: 'outbound_click',
+    day,
+    country: normalizeCountryCode(country),
+    pathname: normalizeVisitPathname(metadata.pathname),
+    language: normalizeVisitLanguage(metadata.language),
+    visitorHash,
+    referrerHost: normalizeReferrerHost(metadata.referrerHost),
+    utmSource: normalizeCampaignDimension(metadata.utmSource),
+    utmMedium: normalizeCampaignDimension(metadata.utmMedium),
+    utmCampaign: normalizeCampaignDimension(metadata.utmCampaign),
+    sessionId: normalizeSessionId(metadata.sessionId),
+    landingPage: normalizeVisitPathname(metadata.landingPage),
+    policyId: normalizePolicyId(metadata.policyId),
+    outboundClick: normalizeOutboundClick(metadata.outboundClick),
+  });
 }
 
 type TrafficRow = {

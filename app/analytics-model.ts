@@ -11,11 +11,20 @@ export type CountryTrafficPoint = {
 };
 
 export type AnalyticsEngineVisit = {
+  eventType: 'page_view' | 'outbound_click';
   day: string;
   country: string;
   pathname: string;
   language: 'zh' | 'en';
   visitorHash: string;
+  referrerHost: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  sessionId: string;
+  landingPage: string;
+  policyId: string;
+  outboundClick: string;
 };
 
 type AnalyticsEngineDataPoint = {
@@ -33,15 +42,39 @@ export function buildAnalyticsEngineVisitDataPoint(
 ): AnalyticsEngineDataPoint {
   return {
     indexes: [visit.visitorHash],
+    // Analytics Engine exposes these append-only dimensions as blob1..blob13.
     blobs: [
-      'page_view',
+      visit.eventType,
       visit.day,
       visit.country,
       visit.pathname,
       visit.language,
+      visit.referrerHost,
+      visit.utmSource,
+      visit.utmMedium,
+      visit.utmCampaign,
+      visit.sessionId,
+      visit.landingPage,
+      visit.policyId,
+      visit.outboundClick,
     ],
     doubles: [1],
   };
+}
+
+export async function dispatchAnalyticsEvent(
+  eventType: unknown,
+  handlers: {
+    pageView: () => Promise<unknown>;
+    outboundClick: () => Promise<unknown>;
+  },
+) {
+  if (eventType === 'outbound_click') {
+    await handlers.outboundClick();
+    return;
+  }
+
+  await handlers.pageView();
 }
 
 export async function hashDailyVisitor(day: string, visitorId: string) {
@@ -88,6 +121,69 @@ export function normalizeVisitLanguage(language: unknown): 'zh' | 'en' {
     return 'en';
   }
   return 'zh';
+}
+
+export function normalizeReferrerHost(value: unknown) {
+  if (typeof value !== 'string' || value.trim() === '') return '(direct)';
+  const normalized = value.trim().toLowerCase();
+  if (normalized === '(direct)') return normalized;
+
+  try {
+    const parsed = new URL(`https://${normalized}`);
+    return parsed.hostname === normalized &&
+      parsed.pathname === '/' &&
+      parsed.search === '' &&
+      parsed.hash === ''
+      ? normalized
+      : '(direct)';
+  } catch {
+    return '(direct)';
+  }
+}
+
+export function normalizeCampaignDimension(value: unknown) {
+  return typeof value === 'string'
+    ? Array.from(value)
+        .filter((character) => {
+          const code = character.charCodeAt(0);
+          return code >= 32 && code !== 127;
+        })
+        .join('')
+        .trim()
+        .slice(0, 128)
+    : '';
+}
+
+export function normalizeSessionId(value: unknown) {
+  return typeof value === 'string' &&
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
+      value,
+    )
+    ? value.toLowerCase()
+    : '(unknown)';
+}
+
+export function normalizePolicyId(value: unknown) {
+  return typeof value === 'string' && /^[a-z0-9][a-z0-9-]{0,63}$/.test(value)
+    ? value
+    : '';
+}
+
+export function normalizeOutboundClick(value: unknown) {
+  if (typeof value !== 'string') return '';
+
+  try {
+    const destination = new URL(value);
+    if (destination.protocol !== 'https:' && destination.protocol !== 'http:') {
+      return '';
+    }
+    return `${destination.host.toLowerCase()}${destination.pathname}`.slice(
+      0,
+      256,
+    );
+  } catch {
+    return '';
+  }
 }
 
 export function normalizeCountryCode(country: string | null | undefined) {

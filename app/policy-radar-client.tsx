@@ -685,6 +685,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
               <article
                 className={`policy-card policy-${policy.tone}`}
                 id={policy.id}
+                data-policy-id={policy.id}
                 key={policy.id}
                 style={{ animationDelay: `${policyIndex * 55}ms` }}
               >

@@ -1,4 +1,5 @@
-import { recordVisit } from '@/db/analytics';
+import { dispatchAnalyticsEvent } from '@/app/analytics-model';
+import { recordAnalyticsEngineEvent, recordVisit } from '@/db/analytics';
 
 const UUID_PATTERN =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -12,15 +13,24 @@ export async function POST(request: Request) {
   if (
     (origin && origin !== requestUrl.origin) ||
     fetchSite === 'cross-site' ||
-    contentLength > 512
+    contentLength > 2048
   ) {
     return Response.json({ error: 'Invalid request' }, { status: 403 });
   }
 
   let body: {
     visitorId?: unknown;
+    eventType?: unknown;
     pathname?: unknown;
     language?: unknown;
+    referrerHost?: unknown;
+    utmSource?: unknown;
+    utmMedium?: unknown;
+    utmCampaign?: unknown;
+    sessionId?: unknown;
+    landingPage?: unknown;
+    policyId?: unknown;
+    outboundClick?: unknown;
   };
   try {
     body = (await request.json()) as typeof body;
@@ -42,11 +52,26 @@ export async function POST(request: Request) {
     const cloudflareCountry = (
       request as Request & { cf?: { country?: string | null } }
     ).cf?.country;
-    await recordVisit(
-      body.visitorId,
-      cloudflareCountry ?? request.headers.get('CF-IPCountry'),
-      { pathname: body.pathname, language: body.language },
-    );
+    const country =
+      cloudflareCountry ?? request.headers.get('CF-IPCountry');
+    const metadata = {
+      pathname: body.pathname,
+      language: body.language,
+      referrerHost: body.referrerHost,
+      utmSource: body.utmSource,
+      utmMedium: body.utmMedium,
+      utmCampaign: body.utmCampaign,
+      sessionId: body.sessionId,
+      landingPage: body.landingPage,
+      policyId: body.policyId,
+      outboundClick: body.outboundClick,
+    };
+
+    await dispatchAnalyticsEvent(body.eventType, {
+      pageView: () => recordVisit(body.visitorId as string, country, metadata),
+      outboundClick: () =>
+        recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
+    });
   } catch {
     return Response.json(
       { error: 'Analytics service unavailable' },
