@@ -23,16 +23,21 @@ const screenshotEvidence = {
 };
 
 const verifiedForumEvidence = {
-  'UC Berkeley': ['/cpt-evidence/cpt_forum_uc_berkeley.png'],
-  UIUC: ['/cpt-evidence/cpt_forum_uiuc.png'],
-  'Texas A&M': ['/cpt-evidence/cpt_forum_texas_am.png'],
-  'UT Dallas': ['/cpt-evidence/cpt_forum_ut_dallas.png'],
-  'University of Michigan': ['/cpt-evidence/cpt_forum_michigan.png'],
-  'Northwestern University': ['/cpt-evidence/cpt_forum_northwestern.png'],
-  'Columbia University': ['/cpt-evidence/cpt_forum_columbia.png'],
-  'Harvard University': ['/cpt-evidence/cpt_forum_harvard.png'],
-  'University of Washington': ['/cpt-evidence/cpt_forum_washington.png'],
+  UIUC: ['/cpt-evidence/cpt_uiuc_notice.jpeg'],
+  'University of Michigan': ['/cpt-evidence/cpt_michigan_notice.jpeg'],
+  'Northwestern University': ['/cpt-evidence/cpt_northwestern_notice.png'],
+  'Columbia University': ['/cpt-evidence/cpt_columbia_notice.webp'],
 };
+
+const verifiedWithoutForumEvidence = [
+  'UC Berkeley',
+  'UC Davis',
+  'Boston University',
+  'Texas A&M',
+  'UT Dallas',
+  'Harvard University',
+  'University of Washington',
+];
 
 test('community CPT schools retain their corresponding screenshot evidence', () => {
   const schools = new Map(communitySchools.map((school) => [school.school, school]));
@@ -51,14 +56,14 @@ test('university-verified CPT schools expose corresponding forum screenshots whe
     assert.match(schools.get(school).href, /^https:\/\//);
   }
 
-  assert.deepEqual(
-    verifiedSchools.find(({ school }) => school === 'UC Davis').screenshots,
-    [],
-  );
-  assert.deepEqual(
-    verifiedSchools.find(({ school }) => school === 'Boston University').screenshots,
-    [],
-  );
+  for (const school of verifiedWithoutForumEvidence) {
+    assert.deepEqual(verifiedSchools.find((entry) => entry.school === school).screenshots, []);
+  }
+});
+
+test('verified-school screenshots are notice attachments rather than forum page captures', () => {
+  const screenshots = verifiedSchools.flatMap((school) => school.screenshots);
+  assert.doesNotMatch(JSON.stringify(screenshots), /cpt_forum_/);
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
