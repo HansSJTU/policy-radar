@@ -415,9 +415,9 @@ const pageCopy = {
     impact: '路径冲击', processProgress: '规则制定进度', swipe: '左右滑动查看完整流程 →', currentProcess: '当前流程：',
     past: '过去', now: '现在', expected: '预计', details: '具体影响与来源', happening: '现在发生了什么', change: '这条路会怎么变',
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
-    verified: '校方网页已核实', community: '论坛截图／邮件', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
-    noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方截图或邮件，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
-    viewEvidence: '查看论坛截图', viewReport: '论坛截图待补', evidenceTitle: '论坛截图', closeEvidence: '关闭截图', noScreenshot: '尚未找到对应的论坛截图。',
+    verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
+    noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
+    viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
     footer: '更新于 2026-09-02（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
   },
   en: {
@@ -430,9 +430,9 @@ const pageCopy = {
     impact: 'Path impact', processProgress: 'Rulemaking progress', swipe: 'Swipe to see the full process →', currentProcess: 'Current process: ',
     past: 'Past', now: 'Now', expected: 'Expected', details: 'Detailed impact and sources', happening: 'What is happening now', change: 'How the path would change',
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
-    verified: 'Verified on university website', community: 'Forum screenshots / emails', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
-    noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university screenshots or emails stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
-    viewEvidence: 'View forum screenshot', viewReport: 'Forum screenshot pending', evidenceTitle: 'Forum screenshots', closeEvidence: 'Close screenshots', noScreenshot: 'No corresponding forum screenshot has been located.',
+    verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
+    noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
+    viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
     footer: 'Updated September 2, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
   },
 };
@@ -913,8 +913,6 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <div><span className="brand-mark">US</span><strong>{ui.brand}</strong></div>
         <p>{ui.footer}</p>
         <div className="footer-actions">
-          <GitHubProjectLink language={language} placement="footer" />
-          <a href={updatesHref}>{ui.updates}</a>
           <a href="#top">{ui.top}</a>
         </div>
       </footer>

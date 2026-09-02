@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+
+const homeSource = await readFile(new URL('../app/policy-radar-client.tsx', import.meta.url), 'utf8');
 
 let githubProject;
 try {
@@ -31,4 +34,16 @@ test('GitHub project link metadata is safe and localized', () => {
     text: 'GitHub',
     footerText: 'Open source on GitHub · MIT',
   });
+});
+
+test('home footer omits the GitHub project badge and updates link', () => {
+  const footer = homeSource.match(/<footer>[\s\S]*?<\/footer>/)?.[0];
+  assert.ok(footer, 'the home footer should remain present');
+  assert.doesNotMatch(footer, /GitHubProjectLink/);
+  assert.doesNotMatch(footer, /href=\{updatesHref\}/);
+  assert.match(footer, /ui\.brand/);
+  assert.match(footer, /ui\.footer/);
+  assert.match(footer, /ui\.top/);
+  assert.match(homeSource, /<GitHubProjectLink language=\{language\} \/>/);
+  assert.match(homeSource, /<a href=\{updatesHref\}>\{ui\.updates\}<\/a>/);
 });

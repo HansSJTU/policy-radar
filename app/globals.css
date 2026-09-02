@@ -386,7 +386,6 @@ footer > div strong { font-size: 12px; }
 footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; text-align: center; }
 .footer-actions { justify-self: end; justify-content: flex-end; flex-wrap: wrap; }
 .footer-actions > a:last-child { color: var(--blue); font-size: 9px; text-decoration: none; }
-.github-project-link-footer { min-height: 32px; padding: 0 9px; font-size: 9px; }
 
 @keyframes status-pulse { 0%,100% { opacity: 1; } 50% { opacity: .46; } }
 @keyframes line-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }

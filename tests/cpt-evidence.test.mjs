@@ -93,8 +93,24 @@ test('NYU text-only report is explicitly represented without a fabricated screen
   const nyu = communitySchools.find(({ school }) => school === 'New York University');
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
-  assert.match(source, /尚未找到对应的论坛截图/);
-  assert.match(source, /No corresponding forum screenshot has been located/);
+  assert.match(source, /尚未找到对应的邮件截图/);
+  assert.match(source, /No corresponding email screenshot has been located/);
+});
+
+test('school evidence labels describe the stored images as email screenshots', () => {
+  assert.match(source, /community: '邮件截图'/);
+  assert.match(source, /evidencePrefix: '以下条目依据已下载到本站的校方邮件截图/);
+  assert.match(source, /viewEvidence: '查看邮件截图'/);
+  assert.match(source, /viewReport: '邮件截图待补'/);
+  assert.match(source, /evidenceTitle: '邮件截图'/);
+  assert.match(source, /closeEvidence: '关闭邮件截图'/);
+  assert.match(source, /community: 'Email screenshots'/);
+  assert.match(source, /evidencePrefix: 'The following entries rely on university email screenshots/);
+  assert.match(source, /viewEvidence: 'View email screenshot'/);
+  assert.match(source, /viewReport: 'Email screenshot pending'/);
+  assert.match(source, /evidenceTitle: 'Email screenshots'/);
+  assert.match(source, /closeEvidence: 'Close email screenshots'/);
+  assert.doesNotMatch(source, /论坛截图|forum screenshots?/i);
 });
 
 test('all school evidence opens an accessible dialog and can be dismissed', () => {
