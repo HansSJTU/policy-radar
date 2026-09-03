@@ -57,11 +57,49 @@ test('litigation markers use the same size and vertical center as process nodes'
 test('mobile litigation labels fan out from their nearby markers', () => {
   assert.match(
     css,
-    /\.litigation-marker\.align-left\s*>\s*em\s*\{[^}]*left:\s*auto;[^}]*right:\s*0;[^}]*text-align:\s*right;[^}]*transform:\s*none;/s,
+    /\.litigation-marker\.align-left\s*>\s*em\s*\{[^}]*left:\s*auto;[^}]*right:\s*50%;[^}]*text-align:\s*right;[^}]*transform:\s*none;/s,
   );
   assert.match(
     css,
-    /\.litigation-marker\.align-right\s*>\s*em\s*\{[^}]*left:\s*0;[^}]*right:\s*auto;[^}]*text-align:\s*left;[^}]*transform:\s*none;/s,
+    /\.litigation-marker\.align-right\s*>\s*em\s*\{[^}]*left:\s*50%;[^}]*right:\s*auto;[^}]*text-align:\s*left;[^}]*transform:\s*none;/s,
+  );
+});
+
+test('closely spaced litigation labels use separate vertical lanes', () => {
+  assert.match(
+    policyPage,
+    /litigation-marker[^`]*lane-\$\{event\.lane\}/,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\.lane-raised\s*\{[^}]*--litigation-label-bottom:\s*46px;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.litigation-marker\.lane-raised\s*\{[^}]*--litigation-label-bottom:\s*54px;/s,
+  );
+});
+
+test('every litigation label draws a centered two-pixel connector to its marker', () => {
+  assert.match(
+    css,
+    /\.litigation-marker\s*\{[^}]*--litigation-label-bottom:\s*24px;/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\s*>\s*em\s*\{[^}]*bottom:\s*var\(--litigation-label-bottom\);/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\s*>\s*em::after\s*\{[^}]*position:\s*absolute;[^}]*width:\s*2px;[^}]*height:\s*calc\(var\(--litigation-label-bottom\)\s*-\s*13px\);[^}]*transform:\s*translateX\(-50%\);/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\.align-left\s*>\s*em::after\s*\{[^}]*left:\s*100%;/s,
+  );
+  assert.match(
+    css,
+    /\.litigation-marker\.align-right\s*>\s*em::after\s*\{[^}]*left:\s*0;/s,
   );
 });
 

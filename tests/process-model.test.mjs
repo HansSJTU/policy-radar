@@ -62,6 +62,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { afterStage: 4, progress: 80 },
     ],
   );
+  assert.deepEqual(track.litigation.map(({ lane }) => lane), ['base', 'raised', 'base']);
   assert.deepEqual(
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [

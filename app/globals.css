@@ -277,7 +277,7 @@ main { width: 100%; min-width: 0; }
 .rating-feedback.error { color: var(--red-dark); }
 
 .process-mobile-head { display: none; }
-.process-row { margin: 22px 0 0 96px; padding: 38px 0 30px; border-top: 1px solid #ece7de; border-bottom: 1px solid #ece7de; }
+.process-row { margin: 22px 0 0 96px; padding: 52px 0 30px; border-top: 1px solid #ece7de; border-bottom: 1px solid #ece7de; }
 .process-steps { position: relative; width: 100%; display: flex; align-items: center; gap: 0; padding-right: 45px; }
 .process-steps > i { position: relative; flex: 1; height: 4px; border-radius: 0; background: #e5dfd5; font-style: normal; }
 .process-steps > i:first-child { border-radius: 999px 0 0 999px; }
@@ -296,13 +296,17 @@ main { width: 100%; min-width: 0; }
 .process-steps.federal-rulemaking > i.current > em { color: var(--blue); font-weight: 800; }
 .process-steps.administrative-guidance > i.complete > em { color: #9a753e; }
 .process-steps.administrative-guidance > i.current > em { color: #8b590f; font-weight: 800; }
-.litigation-marker { position: absolute; z-index: 6; top: -3px; width: 10px; height: 10px; transform: translateX(-50%); }
+.litigation-marker { --litigation-label-bottom: 24px; position: absolute; z-index: 6; top: -3px; width: 10px; height: 10px; transform: translateX(-50%); }
 .litigation-marker > b { position: absolute; inset: 0; border: 2px solid var(--card); border-radius: 50%; background: var(--red); box-shadow: 0 0 0 1px var(--red), 0 0 0 5px rgba(217,80,66,.1); }
 .litigation-marker.upcoming > b { border-color: var(--red); background: var(--card); box-shadow: 0 0 0 5px rgba(217,80,66,.08); }
-.litigation-marker > em { position: absolute; bottom: 17px; display: flex; gap: 4px; color: var(--red-dark); font-size: 9px; font-style: normal; font-weight: 760; line-height: 1; white-space: nowrap; }
+.litigation-marker > em { position: absolute; bottom: var(--litigation-label-bottom); display: flex; gap: 4px; color: var(--red-dark); font-size: 9px; font-style: normal; font-weight: 760; line-height: 1; white-space: nowrap; }
+.litigation-marker > em::after { position: absolute; top: calc(100% + 3px); width: 2px; height: calc(var(--litigation-label-bottom) - 13px); content: ''; background: rgba(217,80,66,.36); transform: translateX(-50%); }
 .litigation-marker > em strong { font: 850 9px/1 ui-monospace, monospace; }
-.litigation-marker.align-left > em { right: 0; }
-.litigation-marker.align-right > em { left: 0; }
+.litigation-marker.align-left > em { right: 50%; }
+.litigation-marker.align-right > em { left: 50%; }
+.litigation-marker.align-left > em::after { left: 100%; }
+.litigation-marker.align-right > em::after { left: 0; }
+.litigation-marker.lane-raised { --litigation-label-bottom: 46px; }
 
 .timeline-shell { margin: 25px 0 0 96px; padding-bottom: 20px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #cfc7ba transparent; }
 .timeline-caption { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .12em; }
@@ -677,7 +681,7 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .process-mobile-head small { color: var(--blue); font-size: 9px; font-weight: 700; }
   .process-row {
     margin: 0;
-    padding-top: 64px;
+    padding-top: 82px;
     padding-bottom: 42px;
     overflow-x: auto;
     border: 0;
@@ -692,7 +696,6 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .litigation-marker > em {
     left: 50%;
     right: auto;
-    bottom: 24px;
     width: 76px;
     padding: 0;
     display: grid;
@@ -706,12 +709,12 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
     text-align: center;
     transform: translateX(-50%);
   }
-  .litigation-marker > em::after { width: 1px; height: 8px; content: ''; background: rgba(217,80,66,.48); }
   .litigation-marker > em strong { font-size: 10px; line-height: 1; }
   .litigation-marker > em span { font-size: 9px; font-weight: 720; line-height: 1.1; }
-  .litigation-marker.upcoming > em { bottom: 24px; }
-  .litigation-marker.align-left > em { left: auto; right: 0; justify-items: end; text-align: right; transform: none; }
-  .litigation-marker.align-right > em { left: 0; right: auto; justify-items: start; text-align: left; transform: none; }
+  .litigation-marker { --litigation-label-bottom: 30px; }
+  .litigation-marker.lane-raised { --litigation-label-bottom: 54px; }
+  .litigation-marker.align-left > em { left: auto; right: 50%; justify-items: end; text-align: right; transform: none; }
+  .litigation-marker.align-right > em { left: 50%; right: auto; justify-items: start; text-align: left; transform: none; }
   .timeline-shell {
     min-width: 0;
     margin-left: 0;

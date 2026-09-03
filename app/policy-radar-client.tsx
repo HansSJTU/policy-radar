@@ -784,7 +784,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                             .filter((event) => event.afterStage + 1 === index)
                             .map((event) => (
                               <span
-                                className={`litigation-marker ${event.status} align-${event.align}`}
+                                className={`litigation-marker ${event.status} align-${event.align} lane-${event.lane}`}
                                 key={event.date + event.label}
                                 style={{ left: `${event.progress}%` }}
                               >

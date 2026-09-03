@@ -7,6 +7,7 @@ export type LitigationMarker = {
   progress: number;
   status: 'filed' | 'upcoming';
   align: 'left' | 'right';
+  lane: 'base' | 'raised';
 };
 
 export type ProcessTrack = {
@@ -83,9 +84,9 @@ const processTracks: Record<string, ProcessTrack> = {
     currentStage: 4,
     stages: federalRulemakingStages,
     litigation: [
-      { date: '8·18', label: '提起诉讼', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
-      { date: '9·02', label: '拟议反对意见', afterStage: 4, progress: 70, status: 'filed', align: 'left' },
-      { date: '9·03', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
+      { date: '8·18', label: '提起诉讼', afterStage: 4, progress: 53, status: 'filed', align: 'left', lane: 'base' },
+      { date: '9·02', label: '拟议反对意见', afterStage: 4, progress: 70, status: 'filed', align: 'left', lane: 'raised' },
+      { date: '9·03', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right', lane: 'base' },
     ],
   },
   'cpt-guidance': {
@@ -202,9 +203,9 @@ const englishProcessTracks: Record<string, Pick<ProcessTrack, 'name' | 'meaning'
     currentSummary: 'Proposed opposition attached; court has not ruled',
     stages: federalRulemakingStagesEnglish,
     litigation: [
-      { date: '8·18', label: 'Lawsuit filed', afterStage: 4, progress: 53, status: 'filed', align: 'left' },
-      { date: '9·02', label: 'Proposed opposition', afterStage: 4, progress: 70, status: 'filed', align: 'left' },
-      { date: '9·03', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right' },
+      { date: '8·18', label: 'Lawsuit filed', afterStage: 4, progress: 53, status: 'filed', align: 'left', lane: 'base' },
+      { date: '9·02', label: 'Proposed opposition', afterStage: 4, progress: 70, status: 'filed', align: 'left', lane: 'raised' },
+      { date: '9·03', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right', lane: 'base' },
     ],
   },
   'cpt-guidance': {
