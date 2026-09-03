@@ -23,6 +23,58 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-03',
+    changes: [
+      {
+        id: 'duration-government-opposition',
+        category: '诉讼进展',
+        title: '#03 D/S 固定期限',
+        summary:
+          '政府于 9 月 2 日提交一份获双方同意的超页申请，并将拟议反对意见作为 Exhibit A 附上。拟议意见请求法院驳回 APA § 705 暂缓、初步禁令以及在行政记录提交前作出简易判决的请求，并主张任何救济均应限于原告。用户提供的 57 页文件不是法院裁定；9·03 听证与 9·15 计划生效日未因该文件本身改变。',
+        before: '政府答辩期限延至 2026-09-02；初步禁令申请待答辩。',
+        after: '政府已于 2026-09-02 随超页申请附上拟议反对意见；法院尚未裁定。',
+        details: [
+          '政府主张四年上限不是要求学生四年内毕业，超过获批期限者可申请延期停留。',
+          '政府把原告主张的招生损失、合规成本和项目调整描述为推测性或经济性损害，并否认其构成不可弥补损害。',
+          '政府反对全国性救济，并称若法院提供救济，应限于本案原告及其成员。',
+        ],
+        sources: [
+          {
+            label: '政府 9·02 拟议反对意见附件（57 页 PDF）',
+            href: 'https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf',
+          },
+          {
+            label: '诉讼 docket 汇总',
+            href: 'https://clearinghouse.net/case/48393/',
+          },
+        ],
+      },
+      {
+        id: 'cpt-school-evidence-2026-09-03',
+        category: 'CPT 学校清单',
+        title: '学校数量与校方证据',
+        summary:
+          '清单由 21 所扩至 23 所，有校方网页支持当前状态的学校由 11 所增至 13 所；截图、邮件或论坛材料组仍为 10 所。新增 University of Maryland, College Park 与 Trine University，并保留两校公开材料所能支持的范围。',
+        before: '21 所 · 11 所校方网页 / 10 所截图、邮件或论坛材料',
+        after: '23 所 · 13 所校方网页 / 10 所截图、邮件或论坛材料',
+        details: [
+          'University of Maryland, College Park 于 9·02 公布：暂停不属于全专业必修、必修课程或论文研究要求的未批准 CPT；已获批 CPT 可继续。',
+          'Trine University 的研究生 CPT 页面仍列 2026–27 申请截止日，并称申请持续开放、按收到顺序审理；页面未单独回应 8·24 指引，因此条目不把该页面解读为全面不受影响。',
+        ],
+        sources: [
+          {
+            label: 'University of Maryland, College Park CPT 页面',
+            href: 'https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt',
+          },
+          {
+            label: 'Trine University CPT 页面',
+            href: 'https://www.trine.edu/international/graduate/cpt-information.aspx',
+          },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-02',
     changes: [
       {
@@ -143,6 +195,58 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-03',
+    changes: [
+      {
+        id: 'duration-government-opposition',
+        category: 'LITIGATION',
+        title: '#03 Fixed F/J admission period',
+        summary:
+          'On September 2, the government filed an assented motion for leave to exceed the page limit and attached its proposed opposition as Exhibit A. The proposed brief asks the court to deny APA § 705 relief, a preliminary injunction, and summary judgment before the administrative record is filed, and argues that any relief should be limited to the plaintiffs. The 57-page document supplied by the user is not a court ruling; the filing itself did not change the September 3 hearing or the scheduled September 15 effective date.',
+        before: 'The government response was due September 2; the injunction request was awaiting that response.',
+        after: 'The government attached its proposed opposition to its September 2 page-limit motion; the court has not ruled.',
+        details: [
+          'The government says the four-year cap does not require students to graduate within four years because eligible students may seek an extension of stay.',
+          'It characterizes the asserted enrollment losses, compliance costs, and program adjustments as speculative or economic injuries rather than irreparable harm.',
+          'It opposes nationwide relief and argues that any remedy should be limited to the plaintiffs and their members.',
+        ],
+        sources: [
+          {
+            label: 'Government’s September 2 proposed opposition exhibit (57-page PDF)',
+            href: 'https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf',
+          },
+          {
+            label: 'Docket summary',
+            href: 'https://clearinghouse.net/case/48393/',
+          },
+        ],
+      },
+      {
+        id: 'cpt-school-evidence-2026-09-03',
+        category: 'CPT SCHOOL LIST',
+        title: 'School count and university evidence',
+        summary:
+          'The list expanded from 21 to 23 schools. Entries supported by university webpages increased from 11 to 13, while the screenshot, email, or forum-evidence group remains at 10. The University of Maryland, College Park and Trine University were added within the limits of their public materials.',
+        before: '21 schools · 11 university webpages / 10 screenshot, email, or forum reports',
+        after: '23 schools · 13 university webpages / 10 screenshot, email, or forum reports',
+        details: [
+          'The University of Maryland, College Park stated on September 2 that unapproved CPT outside a program-wide requirement, required course, or thesis or dissertation research requirement is paused; previously authorized CPT may continue.',
+          'Trine University’s graduate CPT page still lists 2026–27 application deadlines and says applications remain open and are reviewed in the order received. Because it does not separately address the August 24 guidance, the entry does not treat the page as proof that every CPT category is unaffected.',
+        ],
+        sources: [
+          {
+            label: 'University of Maryland, College Park CPT page',
+            href: 'https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt',
+          },
+          {
+            label: 'Trine University CPT page',
+            href: 'https://www.trine.edu/international/graduate/cpt-information.aspx',
+          },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-02',
     changes: [

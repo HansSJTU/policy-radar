@@ -116,6 +116,22 @@ export const verifiedSchools: VerifiedSchool[] = [
     tone: 'pause',
     screenshots: [],
   },
+  {
+    school: 'University of Maryland, College Park',
+    state: '暂停非全员必修或非论文必需的新 CPT',
+    detail: 'ISSS 暂停不属于全专业必修、必修课程或论文／学位论文研究要求的未批准 CPT；UNIV099、ENCO099、BMGT099 等非必修实习暂不受理，已获批 CPT 可继续。',
+    href: 'https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt',
+    tone: 'pause',
+    screenshots: [],
+  },
+  {
+    school: 'Trine University',
+    state: '校方 CPT 页面仍列开放申请与审理流程',
+    detail: '研究生 CPT 页面仍列 2026–27 开始日期的申请截止日，并称申请持续开放、按收到顺序审理；页面未见针对 8·24 指引的单独更新，个案资格仍应向 DSO 确认。',
+    href: 'https://www.trine.edu/international/graduate/cpt-information.aspx',
+    tone: 'continue',
+    screenshots: [],
+  },
 ];
 
 export const communitySchools: CommunitySchool[] = [

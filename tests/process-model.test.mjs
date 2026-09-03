@@ -50,6 +50,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: '提起诉讼' },
+      { date: '9·02', label: '拟议反对意见' },
       { date: '9·03', label: '禁令听证' },
     ],
   );
@@ -57,6 +58,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ afterStage, progress }) => ({ afterStage, progress })),
     [
       { afterStage: 4, progress: 53 },
+      { afterStage: 4, progress: 70 },
       { afterStage: 4, progress: 80 },
     ],
   );
@@ -64,6 +66,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: 'Lawsuit filed' },
+      { date: '9·02', label: 'Proposed opposition' },
       { date: '9·03', label: 'Injunction hearing' },
     ],
   );

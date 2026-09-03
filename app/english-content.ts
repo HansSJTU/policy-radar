@@ -57,13 +57,14 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'F/J Status Would No Longer Use Duration of Status',
     tldr: 'A DHS final rule replaces Duration of Status admission for F/J holders with a fixed period, generally no longer than four years. People who need more time must apply to USCIS for an extension; an OPT filing would generally require both Form I-765 and Form I-539.',
     status: 'Final rule · In litigation',
-    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system.',
+    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. On September 2, the government attached its proposed opposition to a motion for leave to exceed the page limit; as of this update, the court has not ruled.',
     route: ['F-1', 'CPT', 'OPT'],
     milestones: [
       { date: '2025-08-28', text: 'DHS published the proposed rule.' },
       { date: '2026-07-17', text: 'DHS published the final rule.' },
       { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
       { date: '2026-08-31', text: 'The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar.' },
+      { date: '2026-09-02', text: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and opposing summary judgment before the administrative record is filed.' },
     ],
     next: [
       { date: '2026-09-03', text: 'The court’s official calendar lists a preliminary-injunction hearing at 11:00 a.m. ET.' },
@@ -75,7 +76,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
       'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
     ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
+    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
   },
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',
@@ -217,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-02', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-03', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -246,6 +247,8 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'Columbia University': { state: 'CPT authorizations and requests are being reviewed', detail: 'Eligibility is limited to curricular, program-wide requirements documented by a cooperative agreement; ISSO is contacting affected students.' },
   'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
   'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
+  'University of Maryland, College Park': { state: 'New CPT outside a program-wide requirement or required research is paused', detail: 'ISSS paused unapproved requests unless the training is required for every student, is part of a required course, or is necessary for thesis or dissertation research. UNIV099, ENCO099, BMGT099, and other non-required internships are not being accepted; previously authorized CPT may continue.' },
+  'Trine University': { state: 'The university CPT page still lists an open application and review process', detail: 'The graduate CPT page lists application deadlines for 2026–27 start dates and says applications remain open and are reviewed in the order received. The page does not separately address the August 24 guidance, so students should confirm individual eligibility with their DSO.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {

@@ -13,6 +13,16 @@ import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
   {
+    id: 'duration-government-opposition',
+    date: '2026-09-02',
+    policyId: 'duration-status',
+    rank: 3,
+    policy: 'D/S 固定期限',
+    summary: '政府随超页申请附上拟议反对意见，请求法院驳回 APA § 705 暂缓与初步禁令，并主张任何救济均应限于原告；该文件不是法院裁定。',
+    timing: 'recent',
+    confirmed: true,
+  },
+  {
     id: 'grace-oira-cleared',
     date: '2026-08-27',
     policyId: 'grace-period',
@@ -125,6 +135,7 @@ const briefingItems: BriefingItem[] = [
 ];
 
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
+  'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
   'grace-oira-cleared': { policy: 'End of 60-day grace period', summary: 'OIRA cleared the proposal with changes. DHS may publish an NPRM, but the current 60-day grace period has not changed.' },
   'h1b-fee-nprm': { policy: 'H-1B $103,265', summary: 'DHS published the surcharge proposal. It covers all cap-subject petitions and is not currently in effect.' },
   'cpt-integral-guidance': { policy: 'Tighter CPT guidance', summary: 'SEVP narrowed the “integral” standard, and several universities have stopped approving elective-course CPT.' },

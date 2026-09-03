@@ -34,3 +34,12 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
   );
   assert.ok(upcoming.every((item) => item.confirmed));
 });
+
+test('the September 3 briefing distinguishes the government filing from a court ruling', () => {
+  const { recent, upcoming } = getThirtyDayBriefing('2026-09-03');
+  const filing = recent.find(({ id }) => id === 'duration-government-opposition');
+
+  assert.ok(filing);
+  assert.match(filing.summary, /不是法院裁定/);
+  assert.equal(upcoming.some(({ id }) => id === 'duration-injunction-hearing'), false);
+});

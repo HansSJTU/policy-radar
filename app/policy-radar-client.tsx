@@ -124,13 +124,14 @@ const policies: Array<{
     confidence: 85,
     status: '最终规则 · 诉讼中',
     tone: 'red',
-    current: '2025 年的拟议规则已在 2026-07-17 变成最终规则。F/J 最长按项目获批、但通常不超过四年；延期需向 USCIS 申请。现有 D/S 持有人有过渡条款，但生效后出境再入境通常会进入固定期限制度。',
+    current: '2025 年的拟议规则已在 2026-07-17 变成最终规则。F/J 最长按项目获批、但通常不超过四年；延期需向 USCIS 申请。现有 D/S 持有人有过渡条款，但生效后出境再入境通常会进入固定期限制度。政府于 9·02 随超页申请附上拟议反对意见；截至本次更新，法院尚未裁定。',
     route: ['F-1', 'CPT', 'OPT'],
     milestones: [
       { date: '2025-08-28', text: 'DHS 发布拟议规则。' },
       { date: '2026-07-17', text: '最终规则发布。' },
       { date: '2026-08-18', text: '高校联盟等在麻省联邦法院起诉。' },
       { date: '2026-08-31', text: '法院把政府答辩期限延至 9·02；9·03 的初步禁令听证排期未变。' },
+      { date: '2026-09-02', text: '政府随超页申请附上拟议反对意见，请求驳回 APA § 705 暂缓与初步禁令，并反对在行政记录提交前作出简易判决。' },
     ],
     next: [
       { date: '2026-09-03', text: '法院官方日历列明：初步禁令听证，上午 11:00（美东）。' },
@@ -146,6 +147,7 @@ const policies: Array<{
       { label: '2025 拟议规则', href: 'https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '2026 最终规则', href: 'https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '法院官方日历', href: 'https://forms.mad.uscourts.gov/courtlist.html' },
+      { label: '政府 9·02 拟议反对意见附件', href: 'https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf' },
       { label: '美卡论坛规则讨论', href: 'https://www.uscardforum.com/t/topic/431784' },
       { label: '美卡论坛诉讼讨论', href: 'https://www.uscardforum.com/t/topic/525892' },
     ],
@@ -348,7 +350,7 @@ const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-02', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-03', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       { date: 'TBD', text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。' },
@@ -413,7 +415,7 @@ const routeStages = [
 const pageCopy = {
   zh: {
     brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
-    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 21 所学校',
+    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: '10 项动态 · 23 所学校',
     routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
     ranking: '最难绕开的关卡', filterAria: '按签证路径筛选', all: '全部', items: '项',
@@ -424,11 +426,11 @@ const pageCopy = {
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: '更新于 2026-09-02（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', seedDisclosure: '社区影响均分目前包含每项政策 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
+    footer: '更新于 2026-09-03（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', seedDisclosure: '社区影响均分目前包含每项政策 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
-    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 21 schools',
+    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: '10 policy developments · 23 schools',
     routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
     ranking: 'Highest-impact barriers', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
@@ -439,7 +441,7 @@ const pageCopy = {
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
     viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
-    footer: 'Updated September 2, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', seedDisclosure: 'Community-impact averages currently include 10–20 synthetic launch samples per policy. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
+    footer: 'Updated September 3, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', seedDisclosure: 'Community-impact averages currently include 10–20 synthetic launch samples per policy. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
   },
 };
 
@@ -509,7 +511,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const visibleCommunity = localizedCommunitySchools.filter((school) =>
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
-  const briefing = getThirtyDayBriefing('2026-09-02', language);
+  const briefing = getThirtyDayBriefing('2026-09-03', language);
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -560,7 +562,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span />2026-09-02 · ET</div>
+          <div className="asof"><span />2026-09-03 · ET</div>
         </div>
       </header>
 

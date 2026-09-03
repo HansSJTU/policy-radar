@@ -37,6 +37,8 @@ const verifiedWithoutForumEvidence = [
   'UT Dallas',
   'Harvard University',
   'University of Washington',
+  'University of Maryland, College Park',
+  'Trine University',
 ];
 
 test('community CPT schools retain their corresponding screenshot evidence', () => {
@@ -67,11 +69,13 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 11);
+  assert.equal(verifiedSchools.length, 13);
   assert.equal(communitySchools.length, 10);
-  assert.equal(verifiedSchools.length + communitySchools.length, 21);
+  assert.equal(verifiedSchools.length + communitySchools.length, 23);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
+  assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
+  assert.ok(verifiedSchools.some(({ school }) => school === 'Trine University'));
   assert.ok(communitySchools.some(({ school }) => school === 'MIT'));
   assert.equal(verifiedSchools.some(({ school }) => school === 'MIT'), false);
   assert.ok(communitySchools.some(({ school }) => school === 'Purdue ECE'));

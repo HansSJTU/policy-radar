@@ -13,8 +13,27 @@ function collectStrings(value) {
   return [];
 }
 
-test('the newest content update records UC Berkeley thesis and dissertation CPT criteria', () => {
+test('the newest content update records the government opposition and new CPT school evidence', () => {
   const [entry] = getUpdateLog('zh');
+
+  assert.equal(entry.date, '2026-09-03');
+  assert.deepEqual(
+    entry.changes.map((change) => change.id),
+    ['duration-government-opposition', 'cpt-school-evidence-2026-09-03'],
+  );
+
+  const text = collectStrings(entry).join(' ');
+  assert.match(text, /不是法院裁定/);
+  assert.match(text, /APA § 705/);
+  assert.match(text, /21 所/);
+  assert.match(text, /23 所/);
+  assert.match(text, /University of Maryland, College Park/);
+  assert.match(text, /Trine University/);
+  assert.doesNotMatch(text, /未提交|未推送|未发布/);
+});
+
+test('the September 2 content update records UC Berkeley thesis and dissertation CPT criteria', () => {
+  const [, entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-02');
   assert.deepEqual(entry.changes.map((change) => change.id), ['uc-berkeley-cpt-criteria']);
@@ -28,7 +47,7 @@ test('the newest content update records UC Berkeley thesis and dissertation CPT 
 });
 
 test('the September 1 content update records the corrected hearing date and material CPT changes', () => {
-  const [, entry] = getUpdateLog('zh');
+  const [, , entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-01');
   assert.deepEqual(
