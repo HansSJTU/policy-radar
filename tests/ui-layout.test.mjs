@@ -7,6 +7,10 @@ const policyPage = await readFile(
   new URL('../app/policy-radar-client.tsx', import.meta.url),
   'utf8',
 );
+const ratingComponent = await readFile(
+  new URL('../app/community-impact-rating.tsx', import.meta.url),
+  'utf8',
+);
 
 test('policy accent uses the card native left border', () => {
   assert.doesNotMatch(css, /\.policy-card::before/);
@@ -152,6 +156,28 @@ test('mobile community rating uses a shorter compact composition', () => {
     css,
     /@media \(max-width:\s*720px\)[\s\S]*?\.impact-scale button\s*\{[^}]*height:\s*26px;/s,
   );
+});
+
+test('high community averages use the supplied standalone horn art above the average', () => {
+  assert.doesNotMatch(
+    policyPage,
+    /<article[\s\S]*?<CommunityHornMarker[\s\S]*?<header className="policy-snapshot">/,
+  );
+  assert.match(
+    css,
+    /\.community-average-value\s*\{[^}]*position:\s*relative;/s,
+  );
+  assert.match(
+    css,
+    /\.community-horn-marker\s*\{[^}]*position:\s*absolute;[^}]*bottom:\s*calc\(100% - 3px\);/s,
+  );
+  assert.match(
+    css,
+    /\.community-horn-marker img\s*\{[^}]*position:\s*absolute;[^}]*object-fit:\s*contain;/s,
+  );
+  assert.match(ratingComponent, /src="\/animations\/niulai-horn-badge\.png"/);
+  assert.doesNotMatch(css, /\.community-horn-crown\s*\{/s);
+  assert.doesNotMatch(css, /\.community-horn-(?:left|right)\s*\{/s);
 });
 
 test('the footer discloses synthetic launch samples in both languages', () => {

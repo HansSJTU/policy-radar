@@ -53,6 +53,10 @@ export function shouldTriggerNiulai(policyId: string, rating: number) {
   return policyId === 'opt-fee' && rating === 10;
 }
 
+export function shouldShowCommunityHornMarker(average?: number) {
+  return typeof average === 'number' && Number.isFinite(average) && average > 9;
+}
+
 export function buildCommunityRatingChoices(selected: number | null) {
   return Array.from({ length: 10 }, (_, index) => {
     const value = index + 1;

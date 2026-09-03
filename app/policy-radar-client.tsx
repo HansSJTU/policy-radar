@@ -696,6 +696,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <div className="policy-list" key={selectedPath}>
           {visiblePolicies.map((policy, policyIndex) => {
             const process = getProcessTrack(policy.id, language);
+            const communityAggregate = communityImpact.aggregates[policy.id];
             return (
               <article
                 className={`policy-card policy-${policy.tone}`}
@@ -755,7 +756,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   <CommunityImpactRating
                     language={language}
                     policyId={policy.id}
-                    aggregate={communityImpact.aggregates[policy.id]}
+                    aggregate={communityAggregate}
                     selected={communityImpact.selections[policy.id] ?? null}
                     pending={communityImpact.pending[policy.id] ?? false}
                     error={communityImpact.errors[policy.id] || communityImpact.loadFailed}

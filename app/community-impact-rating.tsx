@@ -1,9 +1,12 @@
 'use client';
 
+/* oxlint-disable next/no-img-element -- This small badge uses the supplied transparent Niulai artwork. */
+
 import { useCallback, useEffect, useState } from 'react';
 
 import {
   buildCommunityRatingChoices,
+  shouldShowCommunityHornMarker,
   type PolicyId,
 } from './community-impact-model';
 import { getOrCreateAnonymousVisitorId } from '../components/anonymous-visitor';
@@ -23,6 +26,7 @@ const RATING_SELECTIONS_KEY = 'f1-policy-radar-impact-ratings-v1';
 const copy = {
   zh: {
     title: '社区影响',
+    hornMarker: '社区影响均分已突破 9.0',
     noRatings: '暂无评分',
     ratingCount: (count: number) => `${count} 人评分`,
     prompt: '这项政策对你的路径破坏有多大？',
@@ -44,6 +48,7 @@ const copy = {
   },
   en: {
     title: 'COMMUNITY IMPACT',
+    hornMarker: 'Community impact average is above 9.0',
     noRatings: 'No ratings yet',
     ratingCount: (count: number) => `${count} ratings`,
     prompt: 'How damaging is this policy to your path?',
@@ -222,7 +227,13 @@ export function CommunityImpactRating({
       <div className="community-impact-head">
         <span>{text.title}</span>
         <div className="community-average">
-          <strong>{aggregate ? aggregate.average.toFixed(1) : '—'}</strong>
+          <span className="community-average-value">
+            <CommunityHornMarker
+              language={language}
+              average={aggregate?.average}
+            />
+            <strong>{aggregate ? aggregate.average.toFixed(1) : '—'}</strong>
+          </span>
           <small>/10</small>
         </div>
       </div>
@@ -255,5 +266,27 @@ export function CommunityImpactRating({
         {error ? text.unavailable : description}
       </p>
     </aside>
+  );
+}
+
+export function CommunityHornMarker({
+  language,
+  average,
+}: {
+  language: Language;
+  average?: number;
+}) {
+  if (!shouldShowCommunityHornMarker(average)) return null;
+
+  const label = copy[language].hornMarker;
+  return (
+    <span className="community-horn-marker" title={label}>
+      <img
+        className="community-horn-art"
+        src="/animations/niulai-horn-badge.png"
+        alt={label}
+        draggable="false"
+      />
+    </span>
   );
 }

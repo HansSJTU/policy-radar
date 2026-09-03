@@ -117,6 +117,15 @@ test('triggers Niulai only for a rating of 10 on the stable first policy ID', ()
   assert.equal(ratingModel.shouldTriggerNiulai('', 10), false);
 });
 
+test('shows the community horn marker only when the average exceeds 9.0', () => {
+  assert.equal(typeof ratingModel.shouldShowCommunityHornMarker, 'function');
+  assert.equal(ratingModel.shouldShowCommunityHornMarker(9.1), true);
+  assert.equal(ratingModel.shouldShowCommunityHornMarker(10), true);
+  assert.equal(ratingModel.shouldShowCommunityHornMarker(9), false);
+  assert.equal(ratingModel.shouldShowCommunityHornMarker(8.9), false);
+  assert.equal(ratingModel.shouldShowCommunityHornMarker(undefined), false);
+});
+
 test('re-rating one policy replaces the vote and preserves the aggregate count', async (t) => {
   assert.equal(typeof ratingSchema.createPolicyImpactRatingsTable, 'string');
   assert.equal(
@@ -408,6 +417,49 @@ test('community impact panel renders a ten-button non-star scale with aggregate 
   assert.match(html, />125 人评分</);
   assert.match(html, /aria-label="给这项政策打 7 分"/);
   assert.doesNotMatch(html, /★|☆|star/i);
+});
+
+test('community horn marker is accessible and disappears at the threshold', () => {
+  assert.equal(typeof ratingUi.CommunityHornMarker, 'function');
+
+  const visible = renderToStaticMarkup(
+    React.createElement(ratingUi.CommunityHornMarker, {
+      language: 'zh',
+      average: 9.1,
+    }),
+  );
+  const hidden = renderToStaticMarkup(
+    React.createElement(ratingUi.CommunityHornMarker, {
+      language: 'zh',
+      average: 9,
+    }),
+  );
+
+  assert.match(visible, /class="community-horn-marker"/);
+  assert.match(visible, /alt="社区影响均分已突破 9\.0"/);
+  assert.match(visible, /class="community-horn-art"/);
+  assert.match(visible, /src="\/animations\/niulai-horn-badge\.png"/);
+  assert.equal((visible.match(/<img/g) ?? []).length, 1);
+  assert.equal(hidden, '');
+});
+
+test('community horn marker sits directly above a qualifying average', () => {
+  const html = renderToStaticMarkup(
+    React.createElement(ratingUi.CommunityImpactRating, {
+      language: 'zh',
+      policyId: 'opt-fee',
+      aggregate: { average: 9.6, count: 18 },
+      selected: null,
+      pending: false,
+      error: null,
+      onSelect() {},
+    }),
+  );
+
+  assert.match(
+    html,
+    /class="community-average-value">[\s\S]*?class="community-horn-marker"[\s\S]*?<strong>9\.6<\/strong><\/span><small>\/10<\/small>/,
+  );
 });
 
 test('Niulai effect renders the approved text-free layered cow as decoration', () => {
