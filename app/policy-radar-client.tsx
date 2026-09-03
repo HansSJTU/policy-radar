@@ -26,6 +26,12 @@ import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
 import { MobileSiteMenu } from './mobile-site-menu';
 import {
+  CommunityImpactRating,
+  useCommunityImpactRatings,
+} from './community-impact-rating';
+import { shouldTriggerNiulai, type PolicyId } from './community-impact-model';
+import { NiulaiEffect } from './niulai-effect';
+import {
   communitySchools,
   verifiedSchools,
   type CommunitySchool,
@@ -36,7 +42,7 @@ type Tone = 'red' | 'amber' | 'blue' | 'green' | 'gray';
 
 const policies: Array<{
   rank: number;
-  id: string;
+  id: PolicyId;
   title: string;
   tldr: string;
   score: string;
@@ -418,7 +424,7 @@ const pageCopy = {
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: '更新于 2026-09-02（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', top: '回到顶部 ↑',
+    footer: '更新于 2026-09-02（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', seedDisclosure: '社区影响均分目前包含每项政策 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
@@ -433,7 +439,7 @@ const pageCopy = {
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
     viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
-    footer: 'Updated September 2, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', top: 'Back to top ↑',
+    footer: 'Updated September 2, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', seedDisclosure: 'Community-impact averages currently include 10–20 synthetic launch samples per policy. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
   },
 };
 
@@ -443,6 +449,8 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
   const [selectedEvidence, setSelectedEvidence] = useState<VerifiedSchool | CommunitySchool | null>(null);
+  const [niulaiTriggerToken, setNiulaiTriggerToken] = useState(0);
+  const communityImpact = useCommunityImpactRatings();
   const ui = pageCopy[language];
   useEffect(() => {
     document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
@@ -521,11 +529,18 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       });
     });
   };
+  const selectCommunityImpact = (policyId: PolicyId, rating: number) => {
+    if (shouldTriggerNiulai(policyId, rating)) {
+      setNiulaiTriggerToken((current) => current + 1);
+    }
+    void communityImpact.submitRating(policyId, rating);
+  };
 
   return (
     <LanguageProvider language={language}>
     <TooltipProvider closeDelay={40} delay={0}>
       <VisitorTracker />
+      <NiulaiEffect triggerToken={niulaiTriggerToken} />
       <main>
       <header className="topbar product-bar">
         <a className="brand" href="#top" aria-label={brandHomeLabel(language)}>
@@ -690,7 +705,12 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                 style={{ animationDelay: `${policyIndex * 55}ms` }}
               >
                 <header className="policy-snapshot">
-                  <div className="rank-number"><span>#</span>{String(policy.rank).padStart(2, '0')}</div>
+                  <div className="rank-column">
+                    <div className="rank-number"><span>#</span>{String(policy.rank).padStart(2, '0')}</div>
+                    <div className="rank-score" aria-label={`${ui.impact} ${policy.score} / 10`}>
+                      <span>{ui.impact}</span><strong>{policy.score}</strong><small>/10</small>
+                    </div>
+                  </div>
                   <div className="policy-title-group">
                     <div className="policy-meta">
                       <div className={`flow-annotation ${process.kind}`}>
@@ -732,9 +752,15 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                     <h3>{policy.title}</h3>
                     <p><GlossaryText text={policy.tldr} /></p>
                   </div>
-                  <div className="score-box" aria-label={`${ui.impact} ${policy.score} / 10`}>
-                    <span>{ui.impact}</span><strong>{policy.score}</strong><small>/10</small>
-                  </div>
+                  <CommunityImpactRating
+                    language={language}
+                    policyId={policy.id}
+                    aggregate={communityImpact.aggregates[policy.id]}
+                    selected={communityImpact.selections[policy.id] ?? null}
+                    pending={communityImpact.pending[policy.id] ?? false}
+                    error={communityImpact.errors[policy.id] || communityImpact.loadFailed}
+                    onSelect={(rating) => selectCommunityImpact(policy.id, rating)}
+                  />
                 </header>
 
                 <div className="process-block">
@@ -912,7 +938,10 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
 
       <footer>
         <div><span className="brand-mark">US</span><strong>{ui.brand}</strong></div>
-        <p>{ui.footer}</p>
+        <div className="footer-notes">
+          <p>{ui.footer}</p>
+          <p className="seed-disclosure">{ui.seedDisclosure}</p>
+        </div>
         <div className="footer-actions">
           <a href="#top">{ui.top}</a>
         </div>

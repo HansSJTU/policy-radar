@@ -3,6 +3,10 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
+const policyPage = await readFile(
+  new URL('../app/policy-radar-client.tsx', import.meta.url),
+  'utf8',
+);
 
 test('policy accent uses the card native left border', () => {
   assert.doesNotMatch(css, /\.policy-card::before/);
@@ -112,4 +116,65 @@ test('mobile timeline line and nodes share one horizontal center coordinate', ()
 
 test('timeline date starts its own line beside the marker', () => {
   assert.match(css, /\.timeline-node time\s*\{[^}]*display:\s*block;/s);
+});
+
+test('community impact owns the card upper right while path impact sits below rank', () => {
+  assert.match(
+    css,
+    /\.policy-snapshot\s*\{[^}]*grid-template-columns:\s*74px minmax\(0,\s*1fr\) minmax\(250px,\s*300px\);/s,
+  );
+  assert.match(css, /\.rank-score\s*\{[^}]*border-top:\s*1px solid var\(--line\);/s);
+  assert.match(css, /\.community-impact\s*\{[^}]*grid-column:\s*3;/s);
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.community-impact\s*\{[^}]*grid-column:\s*1;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.rank-column\s*\{[^}]*width:\s*100%;[^}]*display:\s*flex;[^}]*justify-content:\s*space-between;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.rank-score\s*\{[^}]*border-top:\s*0;[^}]*border-left:\s*1px solid var\(--line\);/s,
+  );
+});
+
+test('mobile community rating uses a shorter compact composition', () => {
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.community-impact\s*\{[^}]*padding:\s*10px 11px 9px;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.community-impact-summary\s*\{[^}]*min-height:\s*0;[^}]*display:\s*flex;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.impact-scale button\s*\{[^}]*height:\s*26px;/s,
+  );
+});
+
+test('the footer discloses synthetic launch samples in both languages', () => {
+  assert.match(policyPage, /模拟样本/);
+  assert.match(policyPage, /synthetic launch samples/);
+  assert.match(policyPage, /className="seed-disclosure"/);
+});
+
+test('Niulai preserves the approved two-second outer and uncompressed internal motion', () => {
+  assert.match(
+    css,
+    /\.niulai-puppet\.active\s*\{[^}]*puppet-motion 2s cubic-bezier\(\.17,\.8,\.19,1\) both,[^}]*puppet-opacity 2s linear both;/s,
+  );
+  assert.match(
+    css,
+    /\.niulai-puppet\.active \.head-rig\s*\{[^}]*head-wail 2\.25s \.08s ease-in-out both;/s,
+  );
+  assert.match(
+    css,
+    /\.niulai-puppet\.active \.tear-stream\.left\s*\{[^}]*stream-left 1\.85s \.36s ease-out both;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*760px\)[\s\S]*?\.niulai-puppet\s*\{[^}]*top:\s*82px;[^}]*right:\s*-24px;[^}]*width:\s*260px;/s,
+  );
 });

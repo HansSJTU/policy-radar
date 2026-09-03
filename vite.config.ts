@@ -21,6 +21,12 @@ export default defineConfig({
     vinext(),
     cloudflare({
       viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
+      config: process.env.POLICY_RADAR_LOCAL_COMPAT_DATE
+        ? {
+            compatibility_date:
+              process.env.POLICY_RADAR_LOCAL_COMPAT_DATE,
+          }
+        : undefined,
     }),
   ],
 });

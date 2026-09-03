@@ -86,3 +86,70 @@ export const insertDailyCountryVisitor = `
   INSERT OR IGNORE INTO daily_country_visitors (day, country, visitor_hash)
   VALUES (?, ?, ?)
 `;
+
+export const createPolicyImpactRatingsTable = `
+  CREATE TABLE IF NOT EXISTS policy_impact_ratings (
+    policy_id TEXT NOT NULL,
+    visitor_id TEXT NOT NULL,
+    rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 10),
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (policy_id, visitor_id)
+  )
+`;
+
+export const createPolicyImpactSeedRatingsTable = `
+  CREATE TABLE IF NOT EXISTS policy_impact_seed_ratings (
+    policy_id TEXT PRIMARY KEY,
+    seed_count INTEGER NOT NULL CHECK (seed_count > 0),
+    rating_total INTEGER NOT NULL CHECK (
+      rating_total >= seed_count AND rating_total <= seed_count * 10
+    ),
+    is_fake INTEGER NOT NULL DEFAULT 1 CHECK (is_fake = 1),
+    note TEXT NOT NULL
+  )
+`;
+
+export const upsertPolicyImpactRating = `
+  INSERT INTO policy_impact_ratings (policy_id, visitor_id, rating)
+  VALUES (?, ?, ?)
+  ON CONFLICT(policy_id, visitor_id) DO UPDATE SET
+    rating = excluded.rating,
+    updated_at = CURRENT_TIMESTAMP
+`;
+
+export const selectPolicyImpactAggregates = `
+  WITH real_totals AS (
+    SELECT
+      policy_id,
+      SUM(rating) AS rating_total,
+      COUNT(*) AS rating_count
+    FROM policy_impact_ratings
+    GROUP BY policy_id
+  ), policy_ids AS (
+    SELECT policy_id FROM real_totals
+    UNION
+    SELECT policy_id FROM policy_impact_seed_ratings WHERE is_fake = 1
+  )
+  SELECT
+    policy_ids.policy_id,
+    ROUND(
+      (
+        COALESCE(real_totals.rating_total, 0) +
+        COALESCE(policy_impact_seed_ratings.rating_total, 0)
+      ) * 1.0 /
+      (
+        COALESCE(real_totals.rating_count, 0) +
+        COALESCE(policy_impact_seed_ratings.seed_count, 0)
+      ),
+      1
+    ) AS average,
+    COALESCE(real_totals.rating_count, 0) +
+      COALESCE(policy_impact_seed_ratings.seed_count, 0) AS rating_count
+  FROM policy_ids
+  LEFT JOIN real_totals USING (policy_id)
+  LEFT JOIN policy_impact_seed_ratings
+    ON policy_impact_seed_ratings.policy_id = policy_ids.policy_id
+    AND policy_impact_seed_ratings.is_fake = 1
+  ORDER BY policy_ids.policy_id ASC
+`;

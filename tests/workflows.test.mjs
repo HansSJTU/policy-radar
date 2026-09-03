@@ -29,4 +29,8 @@ test('production workflow validates and deploys from main', () => {
   assert.match(deploy, /npm test/);
   assert.match(deploy, /npm run build/);
   assert.match(deploy, /npm run deploy/);
+  assert.match(
+    deploy,
+    /wrangler d1 execute policy-radar-db --remote --file=db\/seed-policy-impact-ratings\.sql/,
+  );
 });
