@@ -156,12 +156,13 @@ test('mobile timeline line and nodes share one horizontal center coordinate', ()
   );
 });
 
-test('desktop timeline rail reaches the same right inset as the process rail', () => {
+test('desktop timeline scroll viewport shares the process rail right inset', () => {
   assert.doesNotMatch(css, /\.time-axis::before\s*\{/);
   assert.match(
     css,
-    /\.time-axis::after\s*\{[^}]*width:\s*45px;[^}]*flex:\s*0 0 45px;/s,
+    /\.timeline-shell\s*\{[^}]*margin:\s*25px 45px 0 96px;[^}]*overflow-x:\s*auto;/s,
   );
+  assert.doesNotMatch(css, /\.time-axis::after\s*\{/);
   assert.match(
     css,
     /\.process-steps\s*\{[^}]*padding-right:\s*45px;/s,
@@ -185,7 +186,7 @@ test('desktop timeline rail reaches the same right inset as the process rail', (
   );
   assert.match(
     css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.time-axis::after\s*\{[^}]*display:\s*none;/s,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.timeline-shell\s*\{[^}]*margin-left:\s*0;[^}]*margin-right:\s*0;/s,
   );
 });
 
