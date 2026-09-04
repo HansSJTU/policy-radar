@@ -277,7 +277,10 @@ main { width: 100%; min-width: 0; }
 .rating-feedback.error { color: var(--red-dark); }
 
 .process-mobile-head { display: none; }
-.process-row { margin: 22px 0 0 96px; padding: 52px 0 30px; border-top: 1px solid #ece7de; border-bottom: 1px solid #ece7de; }
+.process-row { margin: 22px 0 0 96px; padding: 30px 0; border-bottom: 1px solid #ece7de; }
+@media (min-width: 721px) {
+  .process-row:has(.litigation-marker) { padding: 52px 0; }
+}
 .process-steps { position: relative; width: 100%; display: flex; align-items: center; gap: 0; padding-right: 45px; }
 .process-steps > i { position: relative; flex: 1; height: 4px; border-radius: 0; background: #e5dfd5; font-style: normal; }
 .process-steps > i:first-child { border-radius: 999px 0 0 999px; }
@@ -308,8 +311,9 @@ main { width: 100%; min-width: 0; }
 .litigation-marker.align-right > em::after { left: 0; }
 .litigation-marker.lane-raised { --litigation-label-bottom: 46px; }
 
-.timeline-shell { margin: 25px 45px 0 96px; padding-bottom: 20px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #cfc7ba transparent; }
-.timeline-caption { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .12em; }
+.timeline-block { margin-top: 25px; }
+.timeline-shell { margin: 17px 45px 0 96px; padding-bottom: 20px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #cfc7ba transparent; }
+.timeline-caption { margin: 0 45px 0 96px; display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .12em; }
 .timeline-caption svg { width: 13px; color: var(--red); }
 .timeline-caption i { width: 18px; height: 1px; background: var(--line); }
 .timeline-caption strong { color: var(--ink); font-size: 8px; }
@@ -677,7 +681,7 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .impact-scale { margin-top: 6px; gap: 2px; }
   .impact-scale button { height: 26px; border-radius: 5px; font-size: 8px; }
   .rating-feedback { min-height: 11px; margin-top: 5px; font-size: 8px; line-height: 1.25; }
-  .process-block { position: relative; margin-top: 20px; border-top: 1px solid #ece7de; border-bottom: 1px solid #ece7de; }
+  .process-block { position: relative; margin-top: 20px; border-bottom: 1px solid #ece7de; }
   .process-block::after { position: absolute; z-index: 8; top: 36px; right: 0; bottom: 14px; width: 28px; content: ''; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255,253,248,.96)); }
   .process-mobile-head { min-height: 42px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); }
   .process-mobile-head span { color: var(--ink-soft); font-size: 11px; font-weight: 780; }
@@ -720,13 +724,14 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .litigation-marker.align-right > em { left: 50%; right: auto; justify-items: start; text-align: left; transform: none; }
   .timeline-shell {
     min-width: 0;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 4px;
     overflow-x: visible;
     overscroll-behavior-x: contain;
   }
-  .timeline-caption { margin-bottom: 18px; }
+  .timeline-caption { margin: 0 0 18px; }
   .time-axis { --timeline-axis-x: 8px; --timeline-content-x: 30px; min-width: 0; margin-top: 0; padding-left: var(--timeline-content-x); display: grid; }
   .timeline-node { min-height: 80px; padding: 0 0 25px 0; }
   .timeline-node:not(:last-child)::after { top: 7px; bottom: -7px; left: calc(var(--timeline-axis-x) - var(--timeline-content-x)); width: 2px; height: auto; transform: translateX(-50%); }

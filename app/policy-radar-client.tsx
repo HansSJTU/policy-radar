@@ -800,26 +800,28 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   </div>
                 </div>
 
-                <div className="timeline-shell" ref={showLatestTimeline}>
+                <div className="timeline-block">
                   <div className="timeline-caption"><Clock3 aria-hidden="true" /><span>{ui.past}</span><i /> <strong>{ui.now}</strong><i /> <span>{ui.expected}</span></div>
-                  <ol className="time-axis">
-                    {policy.milestones.map((item, index) => (
-                      <li
-                        className={`timeline-node past${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
-                        key={item.date + item.text}
-                      >
-                        <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>
+                  <div className="timeline-shell" ref={showLatestTimeline}>
+                    <ol className="time-axis">
+                      {policy.milestones.map((item, index) => (
+                        <li
+                          className={`timeline-node past${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
+                          key={item.date + item.text}
+                        >
+                          <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>
+                        </li>
+                      ))}
+                      <li className="timeline-node present">
+                        <b /><time>{ui.now}</time><p><GlossaryText text={process.currentSummary} /></p>
                       </li>
-                    ))}
-                    <li className="timeline-node present">
-                      <b /><time>{ui.now}</time><p><GlossaryText text={process.currentSummary} /></p>
-                    </li>
-                    {policy.next.map((item) => (
-                      <li className="timeline-node future" key={item.date + item.text}>
-                        <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>{item.estimate && <em>{ui.expected}</em>}
-                      </li>
-                    ))}
-                  </ol>
+                      {policy.next.map((item) => (
+                        <li className="timeline-node future" key={item.date + item.text}>
+                          <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>{item.estimate && <em>{ui.expected}</em>}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
                 </div>
 
                 <details className="policy-details" open>

@@ -39,6 +39,18 @@ test('rulemaking segments join continuously and center their nodes on each join'
   assert.match(css, /\.process-steps\s*>\s*i\s*>\s*b\s*\{[^}]*right:\s*-5px;/s);
 });
 
+test('desktop process rail is vertically centered without an upper divider', () => {
+  const processRowRule = css.match(/\.process-row\s*\{([^}]*)\}/s)?.[1] ?? '';
+
+  assert.match(processRowRule, /padding:\s*30px 0;/);
+  assert.doesNotMatch(processRowRule, /border-top:/);
+  assert.match(processRowRule, /border-bottom:\s*1px solid #ece7de;/);
+  assert.match(
+    css,
+    /@media \(min-width:\s*721px\)[\s\S]*?\.process-row:has\(\.litigation-marker\)\s*\{[^}]*padding:\s*52px 0;/s,
+  );
+});
+
 test('litigation markers use the same size and vertical center as process nodes', () => {
   assert.match(
     css,
@@ -160,7 +172,7 @@ test('desktop timeline scroll viewport shares the process rail right inset', () 
   assert.doesNotMatch(css, /\.time-axis::before\s*\{/);
   assert.match(
     css,
-    /\.timeline-shell\s*\{[^}]*margin:\s*25px 45px 0 96px;[^}]*overflow-x:\s*auto;/s,
+    /\.timeline-shell\s*\{[^}]*margin:\s*17px 45px 0 96px;[^}]*overflow-x:\s*auto;/s,
   );
   assert.doesNotMatch(css, /\.time-axis::after\s*\{/);
   assert.match(
@@ -188,6 +200,18 @@ test('desktop timeline scroll viewport shares the process rail right inset', () 
     css,
     /@media \(max-width:\s*720px\)[\s\S]*?\.timeline-shell\s*\{[^}]*margin-left:\s*0;[^}]*margin-right:\s*0;/s,
   );
+});
+
+test('timeline caption stays outside the horizontal scroll viewport', () => {
+  assert.match(
+    policyPage,
+    /<div className="timeline-block">\s*<div className="timeline-caption"[\s\S]*?<div className="timeline-shell" ref=\{showLatestTimeline\}>/s,
+  );
+  assert.doesNotMatch(
+    policyPage,
+    /<div className="timeline-shell"[^>]*>\s*<div className="timeline-caption"/s,
+  );
+  assert.match(css, /\.timeline-caption\s*\{[^}]*margin:\s*0 45px 0 96px;/s);
 });
 
 test('timeline date starts its own line beside the marker', () => {
