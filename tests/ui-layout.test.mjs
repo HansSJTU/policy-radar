@@ -156,6 +156,19 @@ test('mobile timeline line and nodes share one horizontal center coordinate', ()
   );
 });
 
+test('timeline rail connects adjacent nodes instead of ending at the flex container', () => {
+  assert.doesNotMatch(css, /\.time-axis::before\s*\{/);
+  assert.match(
+    css,
+    /\.timeline-node:not\(:last-child\)::after\s*\{[^}]*left:\s*8px;[^}]*width:\s*100%;[^}]*height:\s*2px;/s,
+  );
+  assert.match(
+    css,
+    /\.timeline-node\.to-present::after\s*\{[^}]*linear-gradient\(90deg,\s*var\(--green\),\s*var\(--red\)\)/s,
+  );
+  assert.match(policyPage, /index === policy\.milestones\.length - 1[^\n]*to-present/);
+});
+
 test('timeline date starts its own line beside the marker', () => {
   assert.match(css, /\.timeline-node time\s*\{[^}]*display:\s*block;/s);
 });

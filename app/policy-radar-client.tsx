@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { getThirtyDayBriefing } from './briefing-feed';
 import { GlossaryText } from './glossary-text';
+import { centerCurrentProcessStage, showLatestTimeline } from './initial-scroll';
 import { getProcessTrack } from './process-model';
 import { VisitorTracker } from '@/components/visitor-tracker';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -772,7 +773,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                     <span>{ui.processProgress}</span>
                     <small>{ui.swipe}</small>
                   </div>
-                  <div className="process-row">
+                  <div className="process-row" ref={centerCurrentProcessStage}>
                     <div className={`process-steps ${process.kind}`} aria-label={`${ui.currentProcess}${process.stages[process.currentStage]}`}>
                       {process.stages.map((label, index) => (
                         <i
@@ -799,11 +800,14 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   </div>
                 </div>
 
-                <div className="timeline-shell">
+                <div className="timeline-shell" ref={showLatestTimeline}>
                   <div className="timeline-caption"><Clock3 aria-hidden="true" /><span>{ui.past}</span><i /> <strong>{ui.now}</strong><i /> <span>{ui.expected}</span></div>
                   <ol className="time-axis">
-                    {policy.milestones.map((item) => (
-                      <li className="timeline-node past" key={item.date + item.text}>
+                    {policy.milestones.map((item, index) => (
+                      <li
+                        className={`timeline-node past${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
+                        key={item.date + item.text}
+                      >
                         <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>
                       </li>
                     ))}
