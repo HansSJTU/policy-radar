@@ -39,11 +39,11 @@ test('rulemaking segments join continuously and center their nodes on each join'
   assert.match(css, /\.process-steps\s*>\s*i\s*>\s*b\s*\{[^}]*right:\s*-5px;/s);
 });
 
-test('desktop process rail is vertically centered without an upper divider', () => {
+test('desktop process rail stays raised with breathing room above the divider', () => {
   const processRowRule = css.match(/\.process-row\s*\{([^}]*)\}/s)?.[1] ?? '';
 
   assert.match(processRowRule, /margin:\s*0 0 0 96px;/);
-  assert.match(processRowRule, /padding:\s*24px 0;/);
+  assert.match(processRowRule, /padding:\s*24px 0 36px;/);
   assert.doesNotMatch(processRowRule, /border-top:/);
   assert.match(processRowRule, /border-bottom:\s*1px solid #ece7de;/);
   assert.match(
