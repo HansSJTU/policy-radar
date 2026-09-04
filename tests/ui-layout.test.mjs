@@ -51,6 +51,17 @@ test('desktop process rail is vertically centered without an upper divider', () 
   );
 });
 
+test('mobile process rail stays compact unless litigation labels need clearance', () => {
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.process-row\s*\{[^}]*padding-top:\s*32px;[^}]*padding-bottom:\s*42px;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.process-row:has\(\.litigation-marker\)\s*\{[^}]*padding-top:\s*82px;/s,
+  );
+});
+
 test('litigation markers use the same size and vertical center as process nodes', () => {
   assert.match(
     css,

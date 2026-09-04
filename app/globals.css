@@ -688,7 +688,7 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
   .process-mobile-head small { color: var(--blue); font-size: 9px; font-weight: 700; }
   .process-row {
     margin: 0;
-    padding-top: 82px;
+    padding-top: 32px;
     padding-bottom: 42px;
     overflow-x: auto;
     border: 0;
@@ -696,6 +696,7 @@ footer p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; te
     scroll-snap-type: x proximity;
     scrollbar-width: none;
   }
+  .process-row:has(.litigation-marker) { padding-top: 82px; }
   .process-row::-webkit-scrollbar { display: none; }
   .process-steps { min-width: 760px; padding-right: 76px; padding-left: 20px; }
   .process-steps > i { scroll-snap-align: start; }
