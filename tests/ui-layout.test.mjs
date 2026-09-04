@@ -156,17 +156,33 @@ test('mobile timeline line and nodes share one horizontal center coordinate', ()
   );
 });
 
-test('timeline rail connects adjacent nodes instead of ending at the flex container', () => {
+test('desktop timeline rail reaches the same right inset as the process rail', () => {
   assert.doesNotMatch(css, /\.time-axis::before\s*\{/);
   assert.match(
     css,
-    /\.timeline-node:not\(:last-child\)::after\s*\{[^}]*left:\s*8px;[^}]*width:\s*100%;[^}]*height:\s*2px;/s,
+    /\.time-axis\s*\{[^}]*padding:\s*1px 45px 0 0;/s,
+  );
+  assert.match(
+    css,
+    /\.process-steps\s*\{[^}]*padding-right:\s*45px;/s,
+  );
+  assert.match(
+    css,
+    /\.timeline-node::after\s*\{[^}]*left:\s*8px;[^}]*width:\s*100%;[^}]*height:\s*2px;/s,
+  );
+  assert.match(
+    css,
+    /\.timeline-node:last-child::after\s*\{[^}]*width:\s*calc\(100%\s*-\s*8px\);/s,
   );
   assert.match(
     css,
     /\.timeline-node\.to-present::after\s*\{[^}]*linear-gradient\(90deg,\s*var\(--green\),\s*var\(--red\)\)/s,
   );
   assert.match(policyPage, /index === policy\.milestones\.length - 1[^\n]*to-present/);
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.timeline-node:last-child::after\s*\{[^}]*display:\s*none;/s,
+  );
 });
 
 test('timeline date starts its own line beside the marker', () => {
