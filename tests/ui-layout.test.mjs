@@ -42,7 +42,8 @@ test('rulemaking segments join continuously and center their nodes on each join'
 test('desktop process rail is vertically centered without an upper divider', () => {
   const processRowRule = css.match(/\.process-row\s*\{([^}]*)\}/s)?.[1] ?? '';
 
-  assert.match(processRowRule, /padding:\s*30px 0;/);
+  assert.match(processRowRule, /margin:\s*0 0 0 96px;/);
+  assert.match(processRowRule, /padding:\s*24px 0;/);
   assert.doesNotMatch(processRowRule, /border-top:/);
   assert.match(processRowRule, /border-bottom:\s*1px solid #ece7de;/);
   assert.match(
