@@ -160,7 +160,7 @@ test('desktop timeline rail reaches the same right inset as the process rail', (
   assert.doesNotMatch(css, /\.time-axis::before\s*\{/);
   assert.match(
     css,
-    /\.time-axis\s*\{[^}]*padding:\s*1px 45px 0 0;/s,
+    /\.time-axis::after\s*\{[^}]*width:\s*45px;[^}]*flex:\s*0 0 45px;/s,
   );
   assert.match(
     css,
@@ -182,6 +182,10 @@ test('desktop timeline rail reaches the same right inset as the process rail', (
   assert.match(
     css,
     /@media \(max-width:\s*720px\)[\s\S]*?\.timeline-node:last-child::after\s*\{[^}]*display:\s*none;/s,
+  );
+  assert.match(
+    css,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.time-axis::after\s*\{[^}]*display:\s*none;/s,
   );
 });
 
