@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-03', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-04', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -249,6 +249,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
   'University of Maryland, College Park': { state: 'New CPT outside a program-wide requirement or required research is paused', detail: 'ISSS paused unapproved requests unless the training is required for every student, is part of a required course, or is necessary for thesis or dissertation research. UNIV099, ENCO099, BMGT099, and other non-required internships are not being accepted; previously authorized CPT may continue.' },
   'Trine University': { state: 'The university CPT page still lists an open application and review process', detail: 'The graduate CPT page lists application deadlines for 2026–27 start dates and says applications remain open and are reviewed in the order received. The page does not separately address the August 24 guidance, so students should confirm individual eligibility with their DSO.' },
+  MIT: { state: 'New CPT outside a program-wide degree requirement is temporarily paused', detail: 'MIT paused new CPT requests received or pending as of August 24 when the training is not required for every student to complete the degree, and says it will contact students already issued Fall 2026 CPT to discuss options.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
@@ -261,7 +262,6 @@ export const englishCommunitySchools: Record<string, string> = {
   'New York University': 'An August 31 forum report says CPT was paused; no public university page has yet confirmed the scope.',
   'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
   'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',
-  MIT: 'A university notice screenshot says some new CPT that is not required for every student in the program is paused, and MIT will contact students who already received Fall 2026 CPT.',
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {

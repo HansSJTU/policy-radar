@@ -13,8 +13,23 @@ function collectStrings(value) {
   return [];
 }
 
-test('the newest content update records the hearing, government opposition, and CPT evidence', () => {
+test('the newest content update records MIT public-source verification', () => {
   const [entry] = getUpdateLog('zh');
+
+  assert.equal(entry.date, '2026-09-04');
+  assert.deepEqual(entry.changes.map((change) => change.id), ['mit-cpt-public-source']);
+
+  const text = collectStrings(entry).join(' ');
+  assert.match(text, /MIT International Students Office/);
+  assert.match(text, /13 所校方网页/);
+  assert.match(text, /14 所校方网页/);
+  assert.match(text, /10 所截图/);
+  assert.match(text, /9 所截图/);
+  assert.doesNotMatch(text, /未提交|未推送|未发布/);
+});
+
+test('the September 3 content update records the hearing, government opposition, and CPT evidence', () => {
+  const [, entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-03');
   assert.deepEqual(
@@ -36,7 +51,7 @@ test('the newest content update records the hearing, government opposition, and 
 });
 
 test('the September 2 content update records UC Berkeley thesis and dissertation CPT criteria', () => {
-  const [, entry] = getUpdateLog('zh');
+  const [, , entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-02');
   assert.deepEqual(entry.changes.map((change) => change.id), ['uc-berkeley-cpt-criteria']);
@@ -50,7 +65,7 @@ test('the September 2 content update records UC Berkeley thesis and dissertation
 });
 
 test('the September 1 content update records the corrected hearing date and material CPT changes', () => {
-  const [, , entry] = getUpdateLog('zh');
+  const [, , , entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-01');
   assert.deepEqual(

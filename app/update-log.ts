@@ -23,6 +23,26 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-04',
+    changes: [
+      {
+        id: 'mit-cpt-public-source',
+        category: 'CPT 学校清单',
+        title: 'MIT',
+        summary:
+          'MIT International Students Office 的公开 CPT 页面现已明确：学校暂停 8·24 当日已收到或待审、且实践并非全专业学生完成学位必需经历的新 CPT 申请，并将联系已获 2026 秋季 CPT 授权的学生讨论后续选项。因此 MIT 从邮件截图组移至校方网页已核实组。',
+        before: '23 所 · 13 所校方网页 / 10 所截图、邮件或论坛材料；MIT 仅由通知截图支持。',
+        after: '23 所 · 14 所校方网页 / 9 所截图、邮件或论坛材料；MIT 由公开校方页面支持。',
+        sources: [
+          {
+            label: 'MIT International Students Office CPT 页面',
+            href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+          },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-03',
     changes: [
       {
@@ -214,6 +234,26 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-04',
+    changes: [
+      {
+        id: 'mit-cpt-public-source',
+        category: 'CPT SCHOOL LIST',
+        title: 'MIT',
+        summary:
+          'MIT International Students Office now states on its public CPT page that the university paused new requests received or pending as of August 24 when the training is not required for every student to complete the degree, and that it will contact students already issued Fall 2026 CPT to discuss options. MIT therefore moves from the email-screenshot group to the university-verified group.',
+        before: '23 schools · 13 university webpages / 10 screenshot, email, or forum reports; MIT was supported only by a notice screenshot.',
+        after: '23 schools · 14 university webpages / 9 screenshot, email, or forum reports; MIT is supported by a public university page.',
+        sources: [
+          {
+            label: 'MIT International Students Office CPT page',
+            href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+          },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-03',
     changes: [

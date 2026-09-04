@@ -19,7 +19,6 @@ const screenshotEvidence = {
   'Purdue ECE': ['/cpt-evidence/cpt_purdue.jpeg'],
   'Goldey-Beacom College': ['/cpt-evidence/cpt_goldey_beacom.jpeg'],
   'Purdue University (ISS)': ['/cpt-evidence/cpt_purdue_iss.jpeg'],
-  MIT: ['/cpt-evidence/cpt_mit.jpeg'],
 };
 
 const verifiedForumEvidence = {
@@ -27,6 +26,7 @@ const verifiedForumEvidence = {
   'University of Michigan': ['/cpt-evidence/cpt_michigan_notice.jpeg'],
   'Northwestern University': ['/cpt-evidence/cpt_northwestern_notice.png'],
   'Columbia University': ['/cpt-evidence/cpt_columbia_notice.webp'],
+  MIT: ['/cpt-evidence/cpt_mit.jpeg'],
 };
 
 const verifiedWithoutForumEvidence = [
@@ -69,15 +69,15 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 13);
-  assert.equal(communitySchools.length, 10);
+  assert.equal(verifiedSchools.length, 14);
+  assert.equal(communitySchools.length, 9);
   assert.equal(verifiedSchools.length + communitySchools.length, 23);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'Trine University'));
-  assert.ok(communitySchools.some(({ school }) => school === 'MIT'));
-  assert.equal(verifiedSchools.some(({ school }) => school === 'MIT'), false);
+  assert.ok(verifiedSchools.some(({ school }) => school === 'MIT'));
+  assert.equal(communitySchools.some(({ school }) => school === 'MIT'), false);
   assert.ok(communitySchools.some(({ school }) => school === 'Purdue ECE'));
   assert.ok(communitySchools.some(({ school }) => school === 'Purdue University (ISS)'));
 });

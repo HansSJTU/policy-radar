@@ -132,6 +132,14 @@ export const verifiedSchools: VerifiedSchool[] = [
     tone: 'continue',
     screenshots: [],
   },
+  {
+    school: 'MIT',
+    state: '暂停非全专业学位必需的新 CPT',
+    detail: 'MIT 暂停 8·24 当日已收到或待审、且所涉实践并非全专业学生完成学位必需经历的新 CPT 申请；校方还将联系已获 2026 秋季 CPT 授权的学生讨论后续选项。',
+    href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
+    tone: 'pause',
+    screenshots: [{ src: '/cpt-evidence/cpt_mit.jpeg', width: 1080, height: 2341 }],
+  },
 ];
 
 export const communitySchools: CommunitySchool[] = [
@@ -182,10 +190,5 @@ export const communitySchools: CommunitySchool[] = [
     school: 'Purdue University (ISS)',
     state: '校级 ISS 邮件截图称 CPT 必须属于既定课程或论文研究要求；与 ECE 院系停签通知分开记录',
     screenshots: [{ src: '/cpt-evidence/cpt_purdue_iss.jpeg', width: 1206, height: 1018 }],
-  },
-  {
-    school: 'MIT',
-    state: '校方通知截图称暂停部分非全专业必修的新 CPT，并将联系已取得 2026 秋季 CPT 的学生',
-    screenshots: [{ src: '/cpt-evidence/cpt_mit.jpeg', width: 1080, height: 2341 }],
   },
 ];
