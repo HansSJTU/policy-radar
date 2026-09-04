@@ -79,14 +79,14 @@ const processTracks: Record<string, ProcessTrack> = {
     kind: 'federal-rulemaking',
     name: '联邦规则制定流程',
     meaning: federalMeaning,
-    detail: 'DHS 已走完 NPRM、公众评论和最终规则。政府于 9 月 2 日随超页申请附上拟议反对意见，法院仍在审查禁令申请；红点显示诉讼进度，9 月 15 日仍是未被暂停时的计划生效日。',
-    currentSummary: '政府已提交拟议反对意见附件，法院尚未裁定',
+    detail: 'DHS 已走完 NPRM、公众评论和最终规则。法院于 9 月 3 日举行禁令听证、听取双方陈述，并将申请留待裁定；这表示法官没有当庭作出决定，将继续审议并可能另行发布书面命令。9 月 15 日仍是未被暂缓或禁止时的计划生效日。',
+    currentSummary: '听证已举行；禁令申请留待裁定',
     currentStage: 4,
     stages: federalRulemakingStages,
     litigation: [
       { date: '8·18', label: '提起诉讼', afterStage: 4, progress: 53, status: 'filed', align: 'left', lane: 'base' },
       { date: '9·02', label: '拟议反对意见', afterStage: 4, progress: 70, status: 'filed', align: 'left', lane: 'raised' },
-      { date: '9·03', label: '禁令听证', afterStage: 4, progress: 80, status: 'upcoming', align: 'right', lane: 'base' },
+      { date: '9·03', label: '听证后待裁定', afterStage: 4, progress: 80, status: 'filed', align: 'right', lane: 'base' },
     ],
   },
   'cpt-guidance': {
@@ -199,13 +199,13 @@ const englishProcessTracks: Record<string, Pick<ProcessTrack, 'name' | 'meaning'
   'duration-status': {
     name: 'Federal rulemaking',
     meaning: federalMeaningEnglish,
-    detail: 'DHS completed the NPRM, comment, and final-rule stages. On September 2, the government attached its proposed opposition to a motion for leave to exceed the page limit, and the court is still reviewing the injunction request. The red markers show the litigation, while September 15 remains the scheduled effective date unless the rule is stayed.',
-    currentSummary: 'Proposed opposition attached; court has not ruled',
+    detail: 'DHS completed the NPRM, comment, and final-rule stages. The court held the injunction hearing on September 3, heard arguments, and took the matter under advisement. That means the judge did not rule from the bench and will continue considering the request, potentially through a later written order. September 15 remains the scheduled effective date unless the rule is stayed or enjoined.',
+    currentSummary: 'Hearing held; matter under advisement',
     stages: federalRulemakingStagesEnglish,
     litigation: [
       { date: '8·18', label: 'Lawsuit filed', afterStage: 4, progress: 53, status: 'filed', align: 'left', lane: 'base' },
       { date: '9·02', label: 'Proposed opposition', afterStage: 4, progress: 70, status: 'filed', align: 'left', lane: 'raised' },
-      { date: '9·03', label: 'Injunction hearing', afterStage: 4, progress: 80, status: 'upcoming', align: 'right', lane: 'base' },
+      { date: '9·03', label: 'Hearing held; decision pending', afterStage: 4, progress: 80, status: 'filed', align: 'right', lane: 'base' },
     ],
   },
   'cpt-guidance': {

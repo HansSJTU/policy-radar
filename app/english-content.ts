@@ -57,7 +57,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'F/J Status Would No Longer Use Duration of Status',
     tldr: 'A DHS final rule replaces Duration of Status admission for F/J holders with a fixed period, generally no longer than four years. People who need more time must apply to USCIS for an extension; an OPT filing would generally require both Form I-765 and Form I-539.',
     status: 'Final rule · In litigation',
-    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. On September 2, the government attached its proposed opposition to a motion for leave to exceed the page limit; as of this update, the court has not ruled.',
+    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. After hearing arguments on September 3, the court took the injunction request under advisement: the judge did not rule from the bench and will continue considering the matter, potentially through a later written order. This is neither a grant nor a denial of relief.',
     route: ['F-1', 'CPT', 'OPT'],
     milestones: [
       { date: '2025-08-28', text: 'DHS published the proposed rule.' },
@@ -65,10 +65,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
       { date: '2026-08-31', text: 'The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar.' },
       { date: '2026-09-02', text: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and opposing summary judgment before the administrative record is filed.' },
+      { date: '2026-09-03', text: 'The court held the injunction hearing and heard arguments; the judge did not rule from the bench and took the matter under advisement.' },
     ],
     next: [
-      { date: '2026-09-03', text: 'The court’s official calendar lists a preliminary-injunction hearing at 11:00 a.m. ET.' },
-      { date: '2026-09-15', text: 'The rule is scheduled to take effect unless the court changes the timeline.' },
+      { date: '2026-09-15', text: 'The rule remains scheduled to take effect unless the court first issues a stay or injunction.' },
     ],
     impacts: [
       'After completing a U.S. F-1 degree, a student generally could not begin another program at the same or a lower educational level in F-1 status, directly narrowing the Day-1 CPT fallback route.',
@@ -76,7 +76,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
       'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
     ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
+    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
   },
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',
@@ -265,7 +265,7 @@ export const englishCommunitySchools: Record<string, string> = {
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {
-  'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Final rule · Injunction pending' } } },
+  'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Final rule · Decision pending after hearing' } } },
   CPT: { subtitle: 'Curricular training', policies: { 'cpt-guidance': { title: 'Aug. 12 / Aug. 24 CPT guidance', state: 'Schools are applying the new standard' } } },
   OPT: { subtitle: 'Post-completion work', policies: {
     'opt-fee': { title: 'OPT $100k', state: 'Amount not officially confirmed' },

@@ -40,7 +40,7 @@ test('every English policy supplies a translated source label for each source', 
     'opt-fee': 3,
     'h1b-fee': 2,
     'h1b-weighted-selection': 2,
-    'duration-status': 6,
+    'duration-status': 7,
     'cpt-guidance': 3,
     'prevailing-wage': 3,
     'h1b-reform': 3,
@@ -51,6 +51,14 @@ test('every English policy supplies a translated source label for each source', 
   for (const [id, count] of Object.entries(sourceCounts)) {
     assert.equal(englishPolicies[id].sourceLabels.length, count, id);
   }
+});
+
+test('the English D/S entry records the completed hearing and pending decision', () => {
+  const policy = englishPolicies['duration-status'];
+
+  assert.match(policy.current, /under advisement/);
+  assert.ok(policy.milestones.some(({ date, text }) => date === '2026-09-03' && /arguments/.test(text)));
+  assert.equal(policy.next.some(({ date }) => date === '2026-09-03'), false);
 });
 
 test('English briefings and process tracks contain no Chinese copy', () => {

@@ -26,6 +26,25 @@ const chineseUpdates: ContentUpdate[] = [
     date: '2026-09-03',
     changes: [
       {
+        id: 'duration-hearing-under-advisement',
+        category: '诉讼进展',
+        title: '#03 D/S 固定期限',
+        summary:
+          '法院案卷第 47 项确认，9 月 3 日的禁令听证已经举行，双方完成陈述后法院将申请留待裁定。“留待裁定”表示法官没有当庭作出裁决，将继续审议并可能另行发布书面命令；它既不表示禁令已经获批，也不表示禁令已经被驳回。',
+        before: '2026-09-03 上午 11:00 的初步禁令听证待举行；法院尚未裁定。',
+        after: '听证已经举行、双方陈述完毕；法院留待裁定，尚未批准或驳回禁令。',
+        details: [
+          '现阶段没有法院命令暂停最终规则。',
+          '若截至该日法院仍无暂缓或禁令，9 月 15 日仍是计划生效日。',
+        ],
+        sources: [
+          {
+            label: '案卷第 47 项电子书记员笔记（CourtListener/RECAP）',
+            href: 'https://www.courtlistener.com/docket/74661796/feed/',
+          },
+        ],
+      },
+      {
         id: 'duration-government-opposition',
         category: '诉讼进展',
         title: '#03 D/S 固定期限',
@@ -198,6 +217,25 @@ const englishUpdates: ContentUpdate[] = [
   {
     date: '2026-09-03',
     changes: [
+      {
+        id: 'duration-hearing-under-advisement',
+        category: 'LITIGATION',
+        title: '#03 Fixed F/J admission period',
+        summary:
+          'Docket entry 47 confirms that the September 3 injunction hearing was held. After hearing arguments, the court took the matter under advisement. This means the judge did not rule from the bench and will continue considering the request, potentially through a later written order; the injunction has been neither granted nor denied.',
+        before: 'The preliminary-injunction hearing was scheduled for 11:00 a.m. on September 3; the court had not ruled.',
+        after: 'The hearing was held and arguments were completed; the matter is under advisement, with no grant or denial yet.',
+        details: [
+          'No court order currently stays the final rule.',
+          'September 15 remains the scheduled effective date unless the court first issues a stay or injunction.',
+        ],
+        sources: [
+          {
+            label: 'Docket entry 47 electronic clerk’s notes (CourtListener/RECAP)',
+            href: 'https://www.courtlistener.com/docket/74661796/feed/',
+          },
+        ],
+      },
       {
         id: 'duration-government-opposition',
         category: 'LITIGATION',

@@ -13,6 +13,16 @@ import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
   {
+    id: 'duration-hearing-under-advisement',
+    date: '2026-09-03',
+    policyId: 'duration-status',
+    rank: 3,
+    policy: 'D/S 固定期限',
+    summary: '法院举行禁令听证并听取双方陈述，随后将申请留待裁定；这表示法官没有当庭裁决，不代表禁令已获批准或遭到驳回。',
+    timing: 'recent',
+    confirmed: true,
+  },
+  {
     id: 'duration-government-opposition',
     date: '2026-09-02',
     policyId: 'duration-status',
@@ -135,6 +145,7 @@ const briefingItems: BriefingItem[] = [
 ];
 
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
+  'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'The court held the injunction hearing, heard arguments, and took the matter under advisement. The judge did not rule from the bench, so the request has been neither granted nor denied.' },
   'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
   'grace-oira-cleared': { policy: 'End of 60-day grace period', summary: 'OIRA cleared the proposal with changes. DHS may publish an NPRM, but the current 60-day grace period has not changed.' },
   'h1b-fee-nprm': { policy: 'H-1B $103,265', summary: 'DHS published the surcharge proposal. It covers all cap-subject petitions and is not currently in effect.' },

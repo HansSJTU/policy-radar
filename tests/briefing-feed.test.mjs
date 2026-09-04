@@ -35,10 +35,14 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
   assert.ok(upcoming.every((item) => item.confirmed));
 });
 
-test('the September 3 briefing distinguishes the government filing from a court ruling', () => {
+test('the September 3 briefing records the completed hearing without implying a ruling', () => {
   const { recent, upcoming } = getThirtyDayBriefing('2026-09-03');
+  const hearing = recent.find(({ id }) => id === 'duration-hearing-under-advisement');
   const filing = recent.find(({ id }) => id === 'duration-government-opposition');
 
+  assert.ok(hearing);
+  assert.match(hearing.summary, /留待裁定/);
+  assert.match(hearing.summary, /没有当庭裁决/);
   assert.ok(filing);
   assert.match(filing.summary, /不是法院裁定/);
   assert.equal(upcoming.some(({ id }) => id === 'duration-injunction-hearing'), false);

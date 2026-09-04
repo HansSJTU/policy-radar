@@ -124,7 +124,7 @@ const policies: Array<{
     confidence: 85,
     status: '最终规则 · 诉讼中',
     tone: 'red',
-    current: '2025 年的拟议规则已在 2026-07-17 变成最终规则。F/J 最长按项目获批、但通常不超过四年；延期需向 USCIS 申请。现有 D/S 持有人有过渡条款，但生效后出境再入境通常会进入固定期限制度。政府于 9·02 随超页申请附上拟议反对意见；截至本次更新，法院尚未裁定。',
+    current: '2025 年的拟议规则已在 2026-07-17 变成最终规则。F/J 最长按项目获批、但通常不超过四年；延期需向 USCIS 申请。现有 D/S 持有人有过渡条款，但生效后出境再入境通常会进入固定期限制度。法院于 9·03 听取双方陈述后将禁令申请留待裁定，即法官没有当庭作出决定、将继续审议并可能另行发布书面命令；这既不代表批准禁令，也不代表驳回禁令。',
     route: ['F-1', 'CPT', 'OPT'],
     milestones: [
       { date: '2025-08-28', text: 'DHS 发布拟议规则。' },
@@ -132,10 +132,10 @@ const policies: Array<{
       { date: '2026-08-18', text: '高校联盟等在麻省联邦法院起诉。' },
       { date: '2026-08-31', text: '法院把政府答辩期限延至 9·02；9·03 的初步禁令听证排期未变。' },
       { date: '2026-09-02', text: '政府随超页申请附上拟议反对意见，请求驳回 APA § 705 暂缓与初步禁令，并反对在行政记录提交前作出简易判决。' },
+      { date: '2026-09-03', text: '法院举行禁令听证并听取双方陈述；法官没有当庭裁决，将申请留待裁定。' },
     ],
     next: [
-      { date: '2026-09-03', text: '法院官方日历列明：初步禁令听证，上午 11:00（美东）。' },
-      { date: '2026-09-15', text: '规则计划生效；法院仍可能在此前改变局面。' },
+      { date: '2026-09-15', text: '若法院此前未发布暂缓或禁令，规则仍按计划生效。' },
     ],
     impacts: [
       '完成美国 F-1 学位后，原则上不能再以 F-1 就读同级或更低级别项目，Day-1 CPT 回退路径被直接压缩。',
@@ -147,6 +147,7 @@ const policies: Array<{
       { label: '2025 拟议规则', href: 'https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '2026 最终规则', href: 'https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant' },
       { label: '法院官方日历', href: 'https://forms.mad.uscourts.gov/courtlist.html' },
+      { label: '案卷第 47 项电子书记员笔记', href: 'https://www.courtlistener.com/docket/74661796/feed/' },
       { label: '政府 9·02 拟议反对意见附件', href: 'https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf' },
       { label: '美卡论坛规则讨论', href: 'https://www.uscardforum.com/t/topic/431784' },
       { label: '美卡论坛诉讼讨论', href: 'https://www.uscardforum.com/t/topic/525892' },
@@ -374,7 +375,7 @@ const routeStages = [
     subtitle: '入学与在读',
     tone: 'amber',
     policies: [
-      { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '最终规则 · 禁令待裁定' },
+      { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '最终规则 · 听证后待裁定' },
     ],
   },
   {

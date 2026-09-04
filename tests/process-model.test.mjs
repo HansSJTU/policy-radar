@@ -51,7 +51,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     [
       { date: '8·18', label: '提起诉讼' },
       { date: '9·02', label: '拟议反对意见' },
-      { date: '9·03', label: '禁令听证' },
+      { date: '9·03', label: '听证后待裁定' },
     ],
   );
   assert.deepEqual(
@@ -68,9 +68,11 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     [
       { date: '8·18', label: 'Lawsuit filed' },
       { date: '9·02', label: 'Proposed opposition' },
-      { date: '9·03', label: 'Injunction hearing' },
+      { date: '9·03', label: 'Hearing held; decision pending' },
     ],
   );
+  assert.match(track.currentSummary, /留待裁定/);
+  assert.match(englishTrack.currentSummary, /under advisement/);
 });
 
 test('administrative guidance has its own process and color family', () => {

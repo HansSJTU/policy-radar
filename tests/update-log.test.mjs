@@ -13,16 +13,19 @@ function collectStrings(value) {
   return [];
 }
 
-test('the newest content update records the government opposition and new CPT school evidence', () => {
+test('the newest content update records the hearing, government opposition, and CPT evidence', () => {
   const [entry] = getUpdateLog('zh');
 
   assert.equal(entry.date, '2026-09-03');
   assert.deepEqual(
     entry.changes.map((change) => change.id),
-    ['duration-government-opposition', 'cpt-school-evidence-2026-09-03'],
+    ['duration-hearing-under-advisement', 'duration-government-opposition', 'cpt-school-evidence-2026-09-03'],
   );
 
   const text = collectStrings(entry).join(' ');
+  assert.match(text, /第 47 项/);
+  assert.match(text, /留待裁定/);
+  assert.match(text, /没有当庭作出裁决/);
   assert.match(text, /不是法院裁定/);
   assert.match(text, /APA § 705/);
   assert.match(text, /21 所/);
