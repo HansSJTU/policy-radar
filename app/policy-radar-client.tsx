@@ -5,10 +5,14 @@ import { useEffect, useState } from 'react';
 import {
   ArrowUpRight,
   CheckCircle2,
+  ChevronDown,
   Clock3,
   ExternalLink,
   FileSearch,
+  FileText,
   Images,
+  Radar,
+  Scale,
   Search,
   ShieldAlert,
   X,
@@ -374,7 +378,6 @@ const routeStages = [
     key: 'F-1',
     number: '01',
     subtitle: '入学与在读',
-    tone: 'amber',
     policies: [
       { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '最终规则 · 听证后待裁定' },
     ],
@@ -383,7 +386,6 @@ const routeStages = [
     key: 'CPT',
     number: '02',
     subtitle: '校内外实习',
-    tone: 'red',
     policies: [
       { rank: '05', id: 'cpt-guidance', title: '8·12 / 8·24 CPT 指引', state: '学校已按新口径执行' },
     ],
@@ -392,7 +394,6 @@ const routeStages = [
     key: 'OPT',
     number: '03',
     subtitle: '毕业后工作',
-    tone: 'red',
     policies: [
       { rank: '01', id: 'opt-fee', title: 'OPT $100k', state: '金额未获官方确认' },
       { rank: '09', id: 'ead-discretion', title: 'I-765 犯罪记录审查', state: '评论期已结束' },
@@ -402,7 +403,6 @@ const routeStages = [
     key: 'H-1B',
     number: '04',
     subtitle: '工作签证',
-    tone: 'red',
     policies: [
       { rank: '02', id: 'h1b-fee', title: 'H-1B $103,265', state: '正式提案' },
       { rank: '04', id: 'h1b-weighted-selection', title: 'H-1B 工资加权抽签', state: '最终规则已生效' },
@@ -414,16 +414,37 @@ const routeStages = [
   },
 ];
 
+function RoutePolicyLink({ policy, onSelect }: {
+  policy: (typeof routeStages)[number]['policies'][number];
+  onSelect: (policyId: string) => void;
+}) {
+  return (
+    <a
+      href={`#${policy.id}`}
+      className="route-policy"
+      onClick={(event) => {
+        event.preventDefault();
+        onSelect(policy.id);
+      }}
+    >
+      <span>#{policy.rank}</span>
+      <strong>{policy.title}</strong>
+      <small><GlossaryText text={policy.state} /></small>
+      <ArrowUpRight aria-hidden="true" />
+    </a>
+  );
+}
+
 const pageCopy = {
   zh: {
     brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
     switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: `10 项动态 · ${verifiedSchools.length + communitySchools.length} 条学校／院系记录`,
-    routeHint: '点击阶段筛选下方政策', showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
+    routeTitle: '你的留美路径', routeHint: '选择阶段，查看相关政策', morePolicies: (count: number) => `另有 ${count} 项政策`, showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
-    ranking: '最难绕开的关卡', filterAria: '按签证路径筛选', all: '全部', items: '项',
+    ranking: '最难绕开的关卡', rankingHint: '颜色对应路径分类 · 按路径冲击分数从高到低排序', filterAria: '按签证路径筛选', all: '全部', items: '项', sourceLabel: '信息来源',
     viewProcess: (name: string) => `查看${name}说明`, policySpecific: '本项政策：', complete: '已完成', currentStage: '当前阶段', upcomingStage: '尚未到达',
-    impact: '路径冲击', processProgress: '规则制定进度', swipe: '左右滑动查看完整流程 →', currentProcess: '当前流程：',
-    past: '过去', now: '现在', expected: '预计', details: '具体影响与来源', happening: '现在发生了什么', change: '这条路会怎么变',
+    impact: '路径冲击', processProgress: '规则制定进度', swipe: '左右滑动查看完整流程 →', currentProcess: '当前流程：', litigation: '诉讼进展',
+    past: '过去', now: '现在', expected: '预计', details: '政策解读与具体影响', happening: '现在发生了什么', change: '这条路会怎么变',
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
@@ -433,12 +454,12 @@ const pageCopy = {
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
     switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: `10 policy developments · ${verifiedSchools.length + communitySchools.length} school/department records`,
-    routeHint: 'Select a stage to filter the policies below', showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
+    routeTitle: 'Your path in the U.S.', routeHint: 'Select a stage to explore its policies', morePolicies: (count: number) => `${count} more policies`, showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
-    ranking: 'Highest-impact barriers', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
+    ranking: 'Highest-impact barriers', rankingHint: 'Colors identify path categories · Sorted by path impact, highest first', filterAria: 'Filter by immigration path', all: 'All', items: 'items', sourceLabel: 'Sources',
     viewProcess: (name: string) => `Explain ${name}`, policySpecific: 'This policy: ', complete: 'Completed', currentStage: 'Current stage', upcomingStage: 'Not reached',
-    impact: 'Path impact', processProgress: 'Rulemaking progress', swipe: 'Swipe to see the full process →', currentProcess: 'Current process: ',
-    past: 'Past', now: 'Now', expected: 'Expected', details: 'Detailed impact and sources', happening: 'What is happening now', change: 'How the path would change',
+    impact: 'Path impact', processProgress: 'Rulemaking progress', swipe: 'Swipe to see the full process →', currentProcess: 'Current process: ', litigation: 'Court proceedings',
+    past: 'Past', now: 'Now', expected: 'Expected', details: 'Policy analysis and impact', happening: 'What is happening now', change: 'How the path would change',
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
@@ -548,7 +569,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       <main>
       <header className="topbar product-bar">
         <a className="brand" href="#top" aria-label={brandHomeLabel(language)}>
-          <span className="brand-mark">US</span>
+          <span className="brand-mark"><Radar aria-hidden="true" /></span>
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
@@ -564,7 +585,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span />2026-09-05 · ET</div>
+          <div className="asof"><span /><time dateTime="2026-09-05">2026-09-05 · ET</time></div>
         </div>
       </header>
 
@@ -578,12 +599,12 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
 
         <div className="route-map-shell">
           <div className="route-map-head">
-            <span>{ui.routeHint}</span>
+            <div><strong>{ui.routeTitle}</strong><span>{ui.routeHint}</span></div>
             {selectedPath !== 'all' && <button type="button" onClick={() => setSelectedPath('all')}>{ui.showAll}</button>}
           </div>
           <div className="route-map" aria-label={ui.routeAria}>
             {localizedRouteStages.map((stage) => (
-              <section className={`route-stage-column stage-${stage.tone}`} key={stage.key}>
+              <section className="route-stage-column" data-path={stage.key} key={stage.key}>
                 <button
                   type="button"
                   className={`route-stage ${selectedPath === stage.key ? 'active' : ''}`}
@@ -598,22 +619,17 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   <small>{stage.subtitle}</small>
                 </button>
                 <div className="stage-policies">
-                  {stage.policies.map((policy) => (
-                    <a
-                      href={`#${policy.id}`}
-                      className="route-policy"
-                      key={policy.id}
-                      onClick={(event) => {
-                        event.preventDefault();
-                        revealPolicy(policy.id);
-                      }}
-                    >
-                      <span>#{policy.rank}</span>
-                      <strong>{policy.title}</strong>
-                      <small><GlossaryText text={policy.state} /></small>
-                      <ArrowUpRight aria-hidden="true" />
-                    </a>
+                  {stage.policies.slice(0, 2).map((policy) => (
+                    <RoutePolicyLink policy={policy} onSelect={revealPolicy} key={policy.id} />
                   ))}
+                  {stage.policies.length > 2 && (
+                    <details className="route-more">
+                      <summary>{ui.morePolicies(stage.policies.length - 2)}<ChevronDown aria-hidden="true" /></summary>
+                      {stage.policies.slice(2).map((policy) => (
+                        <RoutePolicyLink policy={policy} onSelect={revealPolicy} key={policy.id} />
+                      ))}
+                    </details>
+                  )}
                 </div>
               </section>
             ))}
@@ -677,37 +693,40 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
 
       <section className="report-section" id="ranking" aria-labelledby="ranking-title">
         <div className="ranking-head">
-          <div><span className="section-kicker">IMPACT RANKING</span><h2 id="ranking-title">{ui.ranking}</h2></div>
-          <div className="path-console">
+          <div><span className="section-kicker">IMPACT RANKING</span><h2 id="ranking-title">{ui.ranking}</h2><p className="ranking-hint">{ui.rankingHint}</p></div>
+        </div>
+        <div className="path-console">
             <fieldset className="path-controls">
               <legend className="visually-hidden">{ui.filterAria}</legend>
               {pathFilters.map((path) => (
                 <button
                   type="button"
                   key={path}
+                  data-path={path === 'all' ? undefined : path}
                   className={selectedPath === path ? 'active' : ''}
                   aria-pressed={selectedPath === path}
                   onClick={() => setSelectedPath(path)}
                 >
-                  {path === 'all' ? ui.all : path}
+                  <span className="path-label">{path === 'all' ? ui.all : path}</span>
+                  <span className="path-count" aria-hidden="true">{filterPoliciesByRouteStage(localizedPolicies, localizedRouteStages, path).length}</span>
                 </button>
               ))}
             </fieldset>
-            <span>{visiblePolicies.length} {ui.items}</span>
-          </div>
+            <output className="filter-result" aria-live="polite">{visiblePolicies.length} {ui.items}</output>
         </div>
 
         <div className="policy-list" key={selectedPath}>
-          {visiblePolicies.map((policy, policyIndex) => {
+          {visiblePolicies.map((policy) => {
             const process = getProcessTrack(policy.id, language);
+            const policyPath = localizedRouteStages.find((stage) => stage.policies.some((item) => item.id === policy.id))?.key;
             const communityAggregate = communityImpact.aggregates[policy.id];
             return (
               <article
-                className={`policy-card policy-${policy.tone}`}
+                className="policy-card"
+                data-path={policyPath}
                 id={policy.id}
                 data-policy-id={policy.id}
                 key={policy.id}
-                style={{ animationDelay: `${policyIndex * 55}ms` }}
               >
                 <header className="policy-snapshot">
                   <div className="rank-column">
@@ -752,9 +771,11 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                           </div>
                         </details>
                       </div>
-                      {policy.route.map((tag) => <i key={tag}><GlossaryText text={tag} /></i>)}
+                      {policyPath && <span className="policy-category">{policyPath}</span>}
+                      {policy.route.filter((tag) => tag !== policyPath).map((tag) => <i key={tag}><GlossaryText text={tag} /></i>)}
                     </div>
                     <h3>{policy.title}</h3>
+                    <div className="policy-status"><span className={`status-chip ${policy.tone}`}>{policy.status}</span></div>
                     <p><GlossaryText text={policy.tldr} /></p>
                   </div>
                   <CommunityImpactRating
@@ -782,23 +803,25 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                         >
                           <b />
                           <em><GlossaryText text={label} /></em>
-                          {process.litigation
-                            .filter((event) => event.afterStage + 1 === index)
-                            .map((event) => (
-                              <span
-                                className={`litigation-marker ${event.status} align-${event.align} lane-${event.lane}`}
-                                key={event.date + event.label}
-                                style={{ left: `${event.progress}%` }}
-                              >
-                                <b />
-                                <em><strong>{event.date}</strong><span>{event.label}</span></em>
-                              </span>
-                            ))}
                         </i>
                       ))}
                     </div>
                   </div>
                 </div>
+
+                {process.litigation.length > 0 && (
+                  <section className="litigation-track" aria-label={ui.litigation}>
+                    <div className="litigation-heading"><Scale aria-hidden="true" /><span>{ui.litigation}</span></div>
+                    <ol className="litigation-events">
+                      {process.litigation.map((event, index) => (
+                        <li key={event.date + event.label} data-status={event.status} className={index === process.litigation.length - 1 ? 'latest' : undefined}>
+                          <time>{event.date}</time>
+                          <span>{event.label}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </section>
+                )}
 
                 <div className="timeline-block">
                   <div className="timeline-caption"><Clock3 aria-hidden="true" /><span>{ui.past}</span><i /> <strong>{ui.now}</strong><i /> <span>{ui.expected}</span></div>
@@ -825,19 +848,22 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                 </div>
 
                 <details className="policy-details" open>
-                  <summary className="policy-trigger">{ui.details} <span aria-hidden="true">＋</span></summary>
+                  <summary className="policy-trigger"><FileText aria-hidden="true" />{ui.details} <span aria-hidden="true"><ChevronDown /></span></summary>
                   <div className="policy-expanded">
                       <div className="expanded-grid">
                         <section><h4>{ui.happening}</h4><p><GlossaryText text={policy.current} /></p></section>
                         <section><h4>{ui.change}</h4><ul>{policy.impacts.map((impact) => <li key={impact}><GlossaryText text={impact} /></li>)}</ul></section>
                       </div>
-                      <div className="source-row">
-                        {policy.sources.map((source) => (
-                          <a href={source.href} target="_blank" rel="noreferrer" key={source.href}><GlossaryText text={source.label} /><ExternalLink aria-hidden="true" /></a>
-                        ))}
-                      </div>
                   </div>
                 </details>
+                <div className="policy-sources">
+                  <span className="source-label">{ui.sourceLabel}</span>
+                  <div className="source-row">
+                    {policy.sources.map((source) => (
+                      <a href={source.href} target="_blank" rel="noreferrer" key={source.href}><span><GlossaryText text={source.label} /></span><ExternalLink aria-hidden="true" /></a>
+                    ))}
+                  </div>
+                </div>
               </article>
             );
           })}
@@ -852,8 +878,8 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
 
         <div className="school-tabs">
           <div className="school-tab-list" role="tablist" aria-label={ui.evidenceAria}>
-            <button type="button" role="tab" aria-selected={schoolTab === 'verified'} className={schoolTab === 'verified' ? 'active' : ''} onClick={() => setSchoolTab('verified')}><CheckCircle2 aria-hidden="true" />{ui.verified} <b>{visibleVerified.length}</b></button>
-            <button type="button" role="tab" aria-selected={schoolTab === 'community'} className={schoolTab === 'community' ? 'active' : ''} onClick={() => setSchoolTab('community')}><FileSearch aria-hidden="true" />{ui.community} <b>{visibleCommunity.length}</b></button>
+            <button type="button" role="tab" aria-selected={schoolTab === 'verified'} className={schoolTab === 'verified' ? 'active' : ''} onClick={() => setSchoolTab('verified')}><CheckCircle2 aria-hidden="true" /><span>{ui.verified}</span><b>{visibleVerified.length}</b></button>
+            <button type="button" role="tab" aria-selected={schoolTab === 'community'} className={schoolTab === 'community' ? 'active' : ''} onClick={() => setSchoolTab('community')}><FileSearch aria-hidden="true" /><span>{ui.community}</span><b>{visibleCommunity.length}</b></button>
           </div>
           {schoolTab === 'verified' ? <div className="school-tab-content" role="tabpanel">
             <div className="school-cards">
@@ -869,7 +895,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   <h3>{school.school}</h3>
                   <strong><GlossaryText text={school.state} /></strong>
                   <p><GlossaryText text={school.detail} /></p>
-                  <small><Images aria-hidden="true" />{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</small>
+                  <small>{school.screenshots.length > 0 ? <Images aria-hidden="true" /> : <ExternalLink aria-hidden="true" />}<span>{school.screenshots.length > 0 ? ui.viewEvidence : ui.officialPage}</span><ArrowUpRight className="school-evidence-arrow" aria-hidden="true" /></small>
                 </button>
               ))}
               {visibleVerified.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
@@ -888,7 +914,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   <div><i className="school-state lead" /><span>{ui.verifyPending}</span></div>
                   <h3>{school.school}</h3>
                   <p><GlossaryText text={school.state} /></p>
-                  <small><Images aria-hidden="true" />{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</small>
+                  <small><Images aria-hidden="true" /><span>{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</span><ArrowUpRight className="school-evidence-arrow" aria-hidden="true" /></small>
                 </button>
               ))}
               {visibleCommunity.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
@@ -947,7 +973,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       )}
 
       <footer>
-        <div><span className="brand-mark">US</span><strong>{ui.brand}</strong></div>
+        <div><span className="brand-mark"><Radar aria-hidden="true" /></span><strong>{ui.brand}</strong></div>
         <div className="footer-notes">
           <p>{ui.footer}</p>
           <p className="seed-disclosure">{ui.seedDisclosure}</p>

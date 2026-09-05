@@ -30,6 +30,7 @@ const copy = {
     noRatings: '暂无评分',
     ratingCount: (count: number) => `${count} 人评分`,
     prompt: '这项政策对你的路径破坏有多大？',
+    scaleHint: '1 = 几乎无影响 · 10 = 路径被切断',
     myRating: (rating: number) => `我的评分 ${rating}`,
     buttonLabel: (rating: number) => `给这项政策打 ${rating} 分`,
     unavailable: '均分暂时无法更新，你的选择已保留。',
@@ -52,6 +53,7 @@ const copy = {
     noRatings: 'No ratings yet',
     ratingCount: (count: number) => `${count} ratings`,
     prompt: 'How damaging is this policy to your path?',
+    scaleHint: '1 = Minimal impact · 10 = Path cut off',
     myRating: (rating: number) => `My rating ${rating}`,
     buttonLabel: (rating: number) => `Rate this policy ${rating} out of 10`,
     unavailable: 'The average cannot update right now. Your choice is saved.',
@@ -216,7 +218,7 @@ export function CommunityImpactRating({
   const text = copy[language];
   const choices = buildCommunityRatingChoices(selected);
   const summary = selected ? text.myRating(selected) : text.prompt;
-  const description = selected ? text.descriptions[selected - 1] : summary;
+  const description = selected ? text.descriptions[selected - 1] : text.scaleHint;
 
   return (
     <aside

@@ -12,21 +12,19 @@ const ratingComponent = await readFile(
   'utf8',
 );
 
-test('policy accent uses the card native left border', () => {
+test('policy accent uses the card path category through its native left border', () => {
   assert.doesNotMatch(css, /\.policy-card::before/);
-  assert.match(css, /\.policy-card\s*\{[^}]*border-left:\s*4px solid var\(--gray\);/s);
-  assert.match(css, /\.policy-card\.policy-red\s*\{[^}]*border-left-color:\s*var\(--red\);/s);
-  assert.match(css, /\.policy-card\.policy-amber\s*\{[^}]*border-left-color:\s*var\(--amber\);/s);
-  assert.match(css, /\.policy-card\.policy-blue\s*\{[^}]*border-left-color:\s*var\(--blue\);/s);
+  assert.match(css, /\.policy-card\s*\{[^}]*border-left:\s*4px solid var\(--path-color\);/s);
+  assert.match(policyPage, /data-path=\{policyPath\}/);
 });
 
 test('policy hover preserves the native accent border color', () => {
   const hoverRule = css.match(/\.policy-card:hover\s*\{([^}]*)\}/s)?.[1] ?? '';
 
   assert.doesNotMatch(hoverRule, /(?:^|;)\s*border-color\s*:/);
-  assert.match(hoverRule, /border-top-color:\s*#c2b9aa;/);
-  assert.match(hoverRule, /border-right-color:\s*#c2b9aa;/);
-  assert.match(hoverRule, /border-bottom-color:\s*#c2b9aa;/);
+  assert.match(hoverRule, /border-top-color:\s*#bdcbdc;/);
+  assert.match(hoverRule, /border-right-color:\s*#bdcbdc;/);
+  assert.match(hoverRule, /border-bottom-color:\s*#bdcbdc;/);
 });
 
 test('desktop policy cards cannot overflow their grid track in Chromium', () => {
@@ -43,87 +41,15 @@ test('desktop process rail stays raised with breathing room above the divider', 
   const processRowRule = css.match(/\.process-row\s*\{([^}]*)\}/s)?.[1] ?? '';
 
   assert.match(processRowRule, /margin:\s*0 0 0 96px;/);
-  assert.match(processRowRule, /padding:\s*24px 0 36px;/);
+  assert.match(processRowRule, /padding:\s*24px 0 50px;/);
   assert.doesNotMatch(processRowRule, /border-top:/);
-  assert.match(processRowRule, /border-bottom:\s*1px solid #ece7de;/);
-  assert.match(
-    css,
-    /@media \(min-width:\s*721px\)[\s\S]*?\.process-row:has\(\.litigation-marker\)\s*\{[^}]*padding:\s*52px 0;/s,
-  );
+  assert.match(processRowRule, /border-bottom:\s*1px solid #e5eaf2;/);
 });
 
-test('mobile process rail stays compact unless litigation labels need clearance', () => {
+test('mobile process rail stays compact', () => {
   assert.match(
     css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.process-row\s*\{[^}]*padding-top:\s*32px;[^}]*padding-bottom:\s*42px;/s,
-  );
-  assert.match(
-    css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.process-row:has\(\.litigation-marker\)\s*\{[^}]*padding-top:\s*82px;/s,
-  );
-});
-
-test('litigation markers use the same size and vertical center as process nodes', () => {
-  assert.match(
-    css,
-    /\.litigation-marker\s*\{[^}]*top:\s*-3px;[^}]*width:\s*10px;[^}]*height:\s*10px;/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\s*>\s*b\s*\{[^}]*border:\s*2px solid var\(--card\);/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\.upcoming\s*>\s*b\s*\{[^}]*border-color:\s*var\(--red\);[^}]*box-shadow:\s*0 0 0 5px/s,
-  );
-});
-
-test('mobile litigation labels fan out from their nearby markers', () => {
-  assert.match(
-    css,
-    /\.litigation-marker\.align-left\s*>\s*em\s*\{[^}]*left:\s*auto;[^}]*right:\s*50%;[^}]*text-align:\s*right;[^}]*transform:\s*none;/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\.align-right\s*>\s*em\s*\{[^}]*left:\s*50%;[^}]*right:\s*auto;[^}]*text-align:\s*left;[^}]*transform:\s*none;/s,
-  );
-});
-
-test('closely spaced litigation labels use separate vertical lanes', () => {
-  assert.match(
-    policyPage,
-    /litigation-marker[^`]*lane-\$\{event\.lane\}/,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\.lane-raised\s*\{[^}]*--litigation-label-bottom:\s*46px;/s,
-  );
-  assert.match(
-    css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.litigation-marker\.lane-raised\s*\{[^}]*--litigation-label-bottom:\s*54px;/s,
-  );
-});
-
-test('every litigation label draws a centered two-pixel connector to its marker', () => {
-  assert.match(
-    css,
-    /\.litigation-marker\s*\{[^}]*--litigation-label-bottom:\s*24px;/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\s*>\s*em\s*\{[^}]*bottom:\s*var\(--litigation-label-bottom\);/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\s*>\s*em::after\s*\{[^}]*position:\s*absolute;[^}]*width:\s*2px;[^}]*height:\s*calc\(var\(--litigation-label-bottom\)\s*-\s*13px\);[^}]*transform:\s*translateX\(-50%\);/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\.align-left\s*>\s*em::after\s*\{[^}]*left:\s*100%;/s,
-  );
-  assert.match(
-    css,
-    /\.litigation-marker\.align-right\s*>\s*em::after\s*\{[^}]*left:\s*0;/s,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.process-row\s*\{[^}]*padding-top:\s*32px;[^}]*padding-bottom:\s*50px;/s,
   );
 });
 
@@ -164,8 +90,9 @@ test('route policy markers share the exact center of their vertical rail', () =>
   const railBorder = pixelValue(policiesRule, 'border-left');
   const cardOffset = railBorder + pixelValue(policiesRule, 'padding-left');
   const markerBorder = pixelValue(markerRule, 'border');
-  const markerOuterWidth =
-    pixelValue(markerRule, 'width') + markerBorder * 2;
+  const markerOuterWidth = /box-sizing:\s*border-box;/.test(markerRule)
+    ? pixelValue(markerRule, 'width')
+    : pixelValue(markerRule, 'width') + markerBorder * 2;
   const markerCenter = cardOffset + pixelValue(markerRule, 'left') + markerOuterWidth / 2;
   const railCenter = railBorder / 2;
 
@@ -251,10 +178,10 @@ test('community impact owns the card upper right while path impact sits below ra
   );
 });
 
-test('mobile community rating uses a shorter compact composition', () => {
+test('mobile community rating keeps its compact composition with larger controls', () => {
   assert.match(
     css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.community-impact\s*\{[^}]*padding:\s*10px 11px 9px;/s,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.community-impact\s*\{[^}]*padding:\s*14px;/s,
   );
   assert.match(
     css,
@@ -262,7 +189,7 @@ test('mobile community rating uses a shorter compact composition', () => {
   );
   assert.match(
     css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.impact-scale button\s*\{[^}]*height:\s*26px;/s,
+    /@media \(max-width:\s*720px\)[\s\S]*?\.impact-scale button\s*\{[^}]*height:\s*36px;/s,
   );
 });
 
