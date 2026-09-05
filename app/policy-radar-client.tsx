@@ -18,6 +18,7 @@ import {
   X,
 } from 'lucide-react';
 import { getThirtyDayBriefing } from './briefing-feed';
+import { animateDisclosure } from './disclosure-animation';
 import { GlossaryText } from './glossary-text';
 import { centerCurrentProcessStage, showLatestTimeline } from './initial-scroll';
 import { getProcessTrack } from './process-model';
@@ -623,11 +624,13 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                     <RoutePolicyLink policy={policy} onSelect={revealPolicy} key={policy.id} />
                   ))}
                   {stage.policies.length > 2 && (
-                    <details className="route-more">
+                    <details className="route-more" ref={animateDisclosure}>
                       <summary>{ui.morePolicies(stage.policies.length - 2)}<ChevronDown aria-hidden="true" /></summary>
-                      {stage.policies.slice(2).map((policy) => (
-                        <RoutePolicyLink policy={policy} onSelect={revealPolicy} key={policy.id} />
-                      ))}
+                      <div className="disclosure-content">
+                        {stage.policies.slice(2).map((policy) => (
+                          <RoutePolicyLink policy={policy} onSelect={revealPolicy} key={policy.id} />
+                        ))}
+                      </div>
                     </details>
                   )}
                 </div>
@@ -847,13 +850,15 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   </div>
                 </div>
 
-                <details className="policy-details" open>
+                <details className="policy-details" open ref={animateDisclosure}>
                   <summary className="policy-trigger"><FileText aria-hidden="true" />{ui.details} <span aria-hidden="true"><ChevronDown /></span></summary>
-                  <div className="policy-expanded">
+                  <div className="disclosure-content">
+                    <div className="policy-expanded">
                       <div className="expanded-grid">
                         <section><h4>{ui.happening}</h4><p><GlossaryText text={policy.current} /></p></section>
                         <section><h4>{ui.change}</h4><ul>{policy.impacts.map((impact) => <li key={impact}><GlossaryText text={impact} /></li>)}</ul></section>
                       </div>
+                    </div>
                   </div>
                 </details>
                 <div className="policy-sources">
