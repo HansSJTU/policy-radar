@@ -50,7 +50,9 @@ export function animateDisclosure(details: HTMLDetailsElement | null) {
     content!.style.height = 'auto';
     const to = expanded ? content!.getBoundingClientRect().height : 0;
     const styles = view!.getComputedStyle(details!);
-    const duration = Number.parseFloat(styles.getPropertyValue('--disclosure-duration')) || 320;
+    // Production CSS minification can turn 320ms into .32s.
+    const cssDuration = styles.getPropertyValue('--disclosure-duration').trim();
+    const duration = Number.parseFloat(cssDuration) * (cssDuration.endsWith('ms') ? 1 : 1000) || 320;
     const easing = styles.getPropertyValue('--motion-ease').trim() || 'ease-out';
     content!.style.height = `${to}px`;
     content!.style.overflow = 'hidden';

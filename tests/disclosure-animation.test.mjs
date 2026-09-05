@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { animateDisclosure } from '../app/disclosure-animation.ts';
 
-function fixture({ open = false, reduced = false } = {}) {
+function fixture({ open = false, reduced = false, duration = '320ms' } = {}) {
   const summary = new EventTarget();
   const attributes = new Map();
   summary.setAttribute = (name, value) => attributes.set(name, value);
@@ -12,7 +12,7 @@ function fixture({ open = false, reduced = false } = {}) {
   const view = new EventTarget();
   view.matchMedia = () => motion;
   view.getComputedStyle = () => ({
-    getPropertyValue: (name) => name === '--disclosure-duration' ? '320ms' : 'ease-out',
+    getPropertyValue: (name) => name === '--disclosure-duration' ? duration : 'ease-out',
   });
   const details = new EventTarget();
   details.open = open;
@@ -68,6 +68,15 @@ test('closing keeps content rendered until it has animated to zero', () => {
   f.animations[0].onfinish();
   assert.equal(f.details.open, false);
   assert.equal(f.content.style.height, undefined);
+});
+
+test('production minified seconds retain the same duration as development milliseconds', () => {
+  for (const duration of ['320ms', '.32s', '0.32s']) {
+    const f = fixture({ duration });
+    animateDisclosure(f.details);
+    f.click();
+    assert.equal(f.animations[0].options.duration, 320, duration);
+  }
 });
 
 test('rapid toggles reverse from the visible frame and discard stale completion', () => {
