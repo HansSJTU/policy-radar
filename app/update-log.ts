@@ -23,6 +23,55 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-05',
+    changes: [
+      {
+        id: 'cpt-school-records-2026-09-05',
+        category: 'CPT 学校清单',
+        title: '新增 USC、Alabama，并校正记录计数',
+        summary:
+          '新增 USC 与 University of Alabama 的公开 CPT 要求，记录总数由 23 增至 25；结合 UCSB、NYU 两条证据升级，校方网页组由 14 增至 18，邮件截图组由 9 减至 7。此前“所学校”的计数混入了同校不同范围的记录，现改为学校／院系记录。',
+        before: '23 所学校 · 14 所校方网页 / 9 所截图、邮件或论坛材料',
+        after: '25 条学校／院系记录 · 18 条校方网页 / 7 条邮件截图；对应 24 所不同院校',
+        details: [
+          'USC：此前未收录；现收录 8·25 公告，自 8·24 起仅批准毕业必需的 CPT，8·24 前已签发的 2026 秋季授权不会被撤销。',
+          'University of Alabama：此前未收录；现收录 8·31 公告，院系须补充证明实践对全项目或方向学生、或论文完成的必要性，并提供课程目录依据。',
+          'Purdue ECE 与 Purdue ISS 是同一院校的两条范围记录。更正此前更新日志把这类记录总数写成学校数的口径，历史条目原文保留供对照。',
+        ],
+        sources: [
+          { label: 'USC OIS 8·25 CPT 公告', href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/' },
+          { label: 'University of Alabama 8·31 CPT 公告', href: 'https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/' },
+          { label: 'Purdue ECE 邮件截图', href: '/cpt-evidence/cpt_purdue.jpeg' },
+          { label: 'Purdue ISS 邮件截图', href: '/cpt-evidence/cpt_purdue_iss.jpeg' },
+        ],
+      },
+      {
+        id: 'nyu-tandon-math-cpt-public-source',
+        category: 'CPT 学校清单',
+        title: 'NYU Tandon Mathematics',
+        summary:
+          'NYU Tandon 数学系实习政策页注明，自 9·01 暂停国际学生 CPT 审批。原 NYU 论坛报告移至校方网页组，并将范围限定为该数学系页面覆盖的本科生与研究生。',
+        before: 'New York University：8·31 论坛报告称暂停 CPT，尚待校方公开页面确认范围。',
+        after: 'New York University (Tandon Mathematics)：校方院系网页支持 9·01 暂停审批；未据此确认 NYU 全校政策。',
+        sources: [
+          { label: 'NYU Tandon 数学系实习政策页', href: 'https://math.nyu.edu/dynamic/sites/tandon/internships/' },
+        ],
+      },
+      {
+        id: 'ucsb-cpt-public-source',
+        category: 'CPT 学校清单',
+        title: 'UCSB',
+        summary:
+          'UCSB OISS 的公开 CPT 页面称，自 8·17 暂停签发 CPT，并正在咨询法律顾问。该条移至校方网页组，原有两张邮件截图保留。',
+        before: '仅由邮件截图支持：暂停非学位必需的新 CPT，既有授权不受影响。',
+        after: '公开公告支持自 8·17 暂停签发 CPT；页面未细分类别，也未说明既有授权的处理方式。',
+        sources: [
+          { label: 'UCSB OISS CPT 页面', href: 'https://oiss.ucsb.edu/curricular-practical-training' },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-04',
     changes: [
       {
@@ -234,6 +283,55 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-05',
+    changes: [
+      {
+        id: 'cpt-school-records-2026-09-05',
+        category: 'CPT SCHOOL LIST',
+        title: 'USC and Alabama added; evidence-record count corrected',
+        summary:
+          'Public CPT requirements from USC and the University of Alabama expand the list from 23 to 25 records. Together with the UCSB and NYU evidence upgrades, university-webpage records increase from 14 to 18 and email-screenshot records decrease from 9 to 7. The headline now counts school/department records because separate notices from one institution had been counted as separate schools.',
+        before: '23 schools · 14 university webpages / 9 screenshot, email, or forum reports',
+        after: '25 school/department records · 18 university webpages / 7 email screenshots; 24 distinct institutions',
+        details: [
+          'USC: newly added from its August 25 notice. From August 24, CPT must be required for graduation; Fall 2026 authorizations issued before August 24 will not be rescinded.',
+          'University of Alabama: newly added from its August 31 notice. Departments must document whether training is required for all students in the program or track, or for thesis/dissertation completion, with academic-catalog evidence.',
+          'Purdue ECE and Purdue ISS are two scope records for one institution. This corrects earlier update-log references that called such record totals school counts; the historical wording is retained for comparison.',
+        ],
+        sources: [
+          { label: 'USC OIS August 25 CPT notice', href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/' },
+          { label: 'University of Alabama August 31 CPT notice', href: 'https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/' },
+          { label: 'Purdue ECE email screenshot', href: '/cpt-evidence/cpt_purdue.jpeg' },
+          { label: 'Purdue ISS email screenshot', href: '/cpt-evidence/cpt_purdue_iss.jpeg' },
+        ],
+      },
+      {
+        id: 'nyu-tandon-math-cpt-public-source',
+        category: 'CPT SCHOOL LIST',
+        title: 'NYU Tandon Mathematics',
+        summary:
+          'The NYU Tandon mathematics internship page says international-student CPT approvals have been paused since September 1. The former NYU forum report moves to the university-webpage group, with its scope narrowed to the undergraduate and graduate mathematics students covered by this page.',
+        before: 'New York University: an August 31 forum report said CPT was paused, with the scope awaiting a public university source.',
+        after: 'New York University (Tandon Mathematics): a public department page supports a September 1 approval pause; it does not establish a university-wide NYU policy.',
+        sources: [
+          { label: 'NYU Tandon mathematics internship policies', href: 'https://math.nyu.edu/dynamic/sites/tandon/internships/' },
+        ],
+      },
+      {
+        id: 'ucsb-cpt-public-source',
+        category: 'CPT SCHOOL LIST',
+        title: 'UCSB',
+        summary:
+          'The public UCSB OISS CPT page says CPT issuance has been paused since August 17 while the office consults legal counsel. The entry moves to the university-webpage group and retains both email screenshots.',
+        before: 'Email screenshots only: new CPT that was not degree-required was paused, while existing authorizations were unaffected.',
+        after: 'A public notice supports an August 17 pause in CPT issuance; it does not distinguish categories or explain treatment of existing authorizations.',
+        sources: [
+          { label: 'UCSB OISS CPT page', href: 'https://oiss.ucsb.edu/curricular-practical-training' },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-04',
     changes: [

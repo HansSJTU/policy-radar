@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-04', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-05', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -250,16 +250,18 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'University of Maryland, College Park': { state: 'New CPT outside a program-wide requirement or required research is paused', detail: 'ISSS paused unapproved requests unless the training is required for every student, is part of a required course, or is necessary for thesis or dissertation research. UNIV099, ENCO099, BMGT099, and other non-required internships are not being accepted; previously authorized CPT may continue.' },
   'Trine University': { state: 'The university CPT page still lists an open application and review process', detail: 'The graduate CPT page lists application deadlines for 2026–27 start dates and says applications remain open and are reviewed in the order received. The page does not separately address the August 24 guidance, so students should confirm individual eligibility with their DSO.' },
   MIT: { state: 'New CPT outside a program-wide degree requirement is temporarily paused', detail: 'MIT paused new CPT requests received or pending as of August 24 when the training is not required for every student to complete the degree, and says it will contact students already issued Fall 2026 CPT to discuss options.' },
+  UCSB: { state: 'The university notice says CPT issuance has been paused since August 17', detail: 'OISS is consulting legal counsel and will update students when it has further guidance. The notice does not distinguish CPT categories or explain how existing authorizations are treated.' },
+  'New York University (Tandon Mathematics)': { state: 'The mathematics page says international-student CPT approvals have been paused since September 1', detail: 'The internship policy page covers mathematics undergraduates and graduates and directs students to OGS for further information. This entry records the public notice for Tandon Mathematics only and does not establish a university-wide NYU policy.' },
+  'University of Southern California': { state: 'Only CPT required for graduation is approved from August 24', detail: 'OIS no longer accepts elective-course CPT that is not required for every student in the program. Documentation review may delay approvals; Fall 2026 CPT authorizations issued before August 24 will not be rescinded.' },
+  'University of Alabama': { state: 'Stricter CPT eligibility review began August 31', detail: 'ISSS requires departments to document whether training is required for all students in the degree program or track, or is necessary for thesis-track master’s or doctoral students to complete their thesis or dissertation. Degree requirements must be supported by the academic catalog; an elective-course requirement alone does not qualify.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
-  UCSB: 'A screenshot says new CPT that is not degree-required is paused; existing authorizations are unaffected.',
   'UC Irvine': 'A screenshot says course-credit CPT is paused while mandatory graduation requirements continue.',
   'UNC–Chapel Hill': 'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
   UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',
   'Purdue ECE': 'A department email screenshot says it will not sign CPT this semester; this is an ECE position and should not be generalized to the entire university.',
-  'New York University': 'An August 31 forum report says CPT was paused; no public university page has yet confirmed the scope.',
   'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
   'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',
 };

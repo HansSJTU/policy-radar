@@ -128,7 +128,7 @@ export const verifiedSchools: VerifiedSchool[] = [
     school: 'Trine University',
     state: '校方 CPT 页面仍列开放申请与审理流程',
     detail: '研究生 CPT 页面仍列 2026–27 开始日期的申请截止日，并称申请持续开放、按收到顺序审理；页面未见针对 8·24 指引的单独更新，个案资格仍应向 DSO 确认。',
-    href: 'https://www.trine.edu/international/graduate/cpt-information.aspx',
+    href: 'https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx',
     tone: 'continue',
     screenshots: [],
   },
@@ -140,17 +140,44 @@ export const verifiedSchools: VerifiedSchool[] = [
     tone: 'pause',
     screenshots: [{ src: '/cpt-evidence/cpt_mit.jpeg', width: 1080, height: 2341 }],
   },
-];
-
-export const communitySchools: CommunitySchool[] = [
   {
     school: 'UCSB',
-    state: '截图称暂停非学位必需的新 CPT；既有授权不受影响',
+    state: '校方公告称自 8·17 暂停签发 CPT',
+    detail: 'OISS 正在咨询法律顾问，待有进一步指引后更新；公告未细分 CPT 类别，也未说明既有授权的处理方式。',
+    href: 'https://oiss.ucsb.edu/curricular-practical-training',
+    tone: 'pause',
     screenshots: [
       { src: '/cpt-evidence/cpt_ucsb_1.jpeg', width: 1080, height: 1677 },
       { src: '/cpt-evidence/cpt_ucsb_2.jpeg', width: 1080, height: 1508 },
     ],
   },
+  {
+    school: 'New York University (Tandon Mathematics)',
+    state: '数学系页面称自 9·01 暂停国际学生 CPT 审批',
+    detail: '该实习政策页适用于数学系本科生与研究生，并请学生向 OGS 了解后续信息；本条仅记录 Tandon 数学系的公开口径，不外推 NYU 全校。',
+    href: 'https://math.nyu.edu/dynamic/sites/tandon/internships/',
+    tone: 'pause',
+    screenshots: [],
+  },
+  {
+    school: 'University of Southern California',
+    state: '自 8·24 起仅批准毕业必需的 CPT',
+    detail: 'OIS 不再接受非全项目学生必修的选修课型 CPT，补充材料核验可能延迟审批；8·24 前已签发的 2026 秋季 CPT 授权不会被撤销。',
+    href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/',
+    tone: 'tighten',
+    screenshots: [],
+  },
+  {
+    school: 'University of Alabama',
+    state: '自 8·31 起收紧 CPT 资格审核',
+    detail: 'ISSS 要求院系证明实践为学位项目或方向全体学生必需，或为论文型硕士、博士完成论文所必需；学位要求须有课程目录依据，仅为选修课要求的 CPT 不符合标准。',
+    href: 'https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/',
+    tone: 'tighten',
+    screenshots: [],
+  },
+];
+
+export const communitySchools: CommunitySchool[] = [
   {
     school: 'UC Irvine',
     state: '截图称暂停 Course Credit CPT；强制毕业要求继续',
@@ -175,11 +202,6 @@ export const communitySchools: CommunitySchool[] = [
     school: 'Purdue ECE',
     state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校',
     screenshots: [{ src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 }],
-  },
-  {
-    school: 'New York University',
-    state: '论坛 8·31 报告称暂停 CPT；尚待校方公开页面确认范围',
-    screenshots: [],
   },
   {
     school: 'Goldey-Beacom College',

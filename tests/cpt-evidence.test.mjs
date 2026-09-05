@@ -8,10 +8,6 @@ const source = await readFile(new URL('../app/policy-radar-client.tsx', import.m
 const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
 
 const screenshotEvidence = {
-  UCSB: [
-    '/cpt-evidence/cpt_ucsb_1.jpeg',
-    '/cpt-evidence/cpt_ucsb_2.jpeg',
-  ],
   'UC Irvine': ['/cpt-evidence/cpt_uci.jpeg'],
   'UNC–Chapel Hill': ['/cpt-evidence/cpt_unc.jpeg'],
   Caltech: ['/cpt-evidence/cpt_caltech.jpeg'],
@@ -22,6 +18,10 @@ const screenshotEvidence = {
 };
 
 const verifiedForumEvidence = {
+  UCSB: [
+    '/cpt-evidence/cpt_ucsb_1.jpeg',
+    '/cpt-evidence/cpt_ucsb_2.jpeg',
+  ],
   UIUC: ['/cpt-evidence/cpt_uiuc_notice.jpeg'],
   'University of Michigan': ['/cpt-evidence/cpt_michigan_notice.jpeg'],
   'Northwestern University': ['/cpt-evidence/cpt_northwestern_notice.png'],
@@ -39,6 +39,9 @@ const verifiedWithoutForumEvidence = [
   'University of Washington',
   'University of Maryland, College Park',
   'Trine University',
+  'New York University (Tandon Mathematics)',
+  'University of Southern California',
+  'University of Alabama',
 ];
 
 test('community CPT schools retain their corresponding screenshot evidence', () => {
@@ -69,9 +72,9 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 14);
-  assert.equal(communitySchools.length, 9);
-  assert.equal(verifiedSchools.length + communitySchools.length, 23);
+  assert.equal(verifiedSchools.length, 18);
+  assert.equal(communitySchools.length, 7);
+  assert.equal(verifiedSchools.length + communitySchools.length, 25);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
@@ -105,12 +108,13 @@ test('screenshot evidence is bundled as nonempty project assets', async () => {
   }
 });
 
-test('NYU text-only report is explicitly represented without a fabricated screenshot', () => {
-  const nyu = communitySchools.find(({ school }) => school === 'New York University');
+test('NYU public evidence is limited to Tandon Mathematics and retains no fabricated screenshot', () => {
+  const nyu = verifiedSchools.find(({ school }) => school === 'New York University (Tandon Mathematics)');
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
-  assert.match(source, /尚未找到对应的邮件截图/);
-  assert.match(source, /No corresponding email screenshot has been located/);
+  assert.equal(nyu.href, 'https://math.nyu.edu/dynamic/sites/tandon/internships/');
+  assert.match(nyu.detail, /不外推 NYU 全校/);
+  assert.equal(communitySchools.some(({ school }) => school.startsWith('New York University')), false);
 });
 
 test('school evidence labels describe the stored images as email screenshots', () => {
