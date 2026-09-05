@@ -555,6 +555,15 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
       });
     });
   };
+  const selectRankingPath = (path: string) => {
+    setSelectedPath(path);
+    window.requestAnimationFrame(() => {
+      document.getElementById('ranking')?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+        block: 'start',
+      });
+    });
+  };
   const selectCommunityImpact = (policyId: PolicyId, rating: number) => {
     if (shouldTriggerNiulai(policyId, rating)) {
       setNiulaiTriggerToken((current) => current + 1);
@@ -708,7 +717,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
                   data-path={path === 'all' ? undefined : path}
                   className={selectedPath === path ? 'active' : ''}
                   aria-pressed={selectedPath === path}
-                  onClick={() => setSelectedPath(path)}
+                  onClick={() => selectRankingPath(path)}
                 >
                   <span className="path-label">{path === 'all' ? ui.all : path}</span>
                   <span className="path-count" aria-hidden="true">{filterPoliciesByRouteStage(localizedPolicies, localizedRouteStages, path).length}</span>

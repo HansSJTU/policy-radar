@@ -256,7 +256,8 @@ main { width: 100%; min-width: 0; }
 .rank-score small { margin-left: 2px; color: var(--muted); font: .75rem/1 ui-monospace, monospace; }
 .policy-title-group { min-width: 0; }
 .policy-meta { position: relative; display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
-.flow-annotation { display: inline-flex; align-items: center; gap: 7px; padding: 4px 6px 4px 9px; border-radius: 6px; font-size: .75rem; font-weight: 600; line-height: 1.45; }
+.policy-meta > :is(.flow-annotation, .policy-category, i) { display: inline-flex; align-items: center; min-height: 30px; line-height: 1.5; }
+.flow-annotation { display: inline-flex; align-items: center; gap: 7px; padding: 4px 6px 4px 9px; border-radius: 6px; font-size: .75rem; font-weight: 600; line-height: 1.5; }
 .flow-annotation.federal-rulemaking { color: #3e5a7d; background: #eef3f9; }
 .flow-annotation.administrative-guidance { color: #81551f; background: #faf2e6; }
 .flow-help { position: relative; }
