@@ -625,7 +625,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <article className="briefing-panel briefing-recent">
           <header>
             <div><span>RECENT 30 DAYS</span><h2>{ui.recent}</h2></div>
-            <small>08·04—09·02</small>
+            <small>08·07—09·05</small>
           </header>
           <div className="briefing-list">
             {briefing.recent.map((item) => (
@@ -651,7 +651,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         <article className="briefing-panel briefing-upcoming">
           <header>
             <div><span>NEXT 30 DAYS</span><h2>{ui.upcoming}</h2></div>
-            <small>09·04—10·03</small>
+            <small>09·06—10·05</small>
           </header>
           <div className="briefing-list">
             {briefing.upcoming.map((item) => (
