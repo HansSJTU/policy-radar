@@ -141,6 +141,8 @@ main { width: 100%; min-width: 0; }
 .github-project-link:hover { border-color: rgba(20,32,56,.3); color: var(--ink); background: var(--card); }
 .github-project-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .github-project-link svg { width: 15px; height: 15px; flex: 0 0 auto; }
+.github-project-link-header { width: 40px; min-width: 40px; height: 40px; padding: 0; }
+.github-project-link-header svg { width: 20px; height: 20px; }
 .language-switch { display: inline-flex; align-items: center; padding: 3px; border: 1px solid rgba(20,32,56,.15); border-radius: 10px; background: var(--paper); border-color: var(--line); }
 .language-switch button, .language-switch a { min-width: 36px; height: 30px; padding: 0 8px; display: grid; place-items: center; border: 0; border-radius: 7px; color: var(--muted); background: transparent; font: .75rem/1 ui-sans-serif, system-ui, sans-serif; text-decoration: none; cursor: pointer; transition: color .15s ease, background .15s ease, box-shadow .15s ease; font-weight: 700; }
 .language-switch button:hover, .language-switch a:hover { color: var(--ink); }

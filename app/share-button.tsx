@@ -158,8 +158,8 @@ export function ShareButton({ language, pageTitle }: { language: Language; pageT
 
   return (
     <Popover.Root open={open} onOpenChange={changeOpen} modal={mobile}>
-      <Popover.Trigger className="share-trigger" aria-label={ui.title}>
-        <Share aria-hidden="true" /><span>{ui.share}</span>
+      <Popover.Trigger className="share-trigger" aria-label={ui.title} title={ui.title}>
+        <Share aria-hidden="true" />
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Backdrop className="share-backdrop" />
