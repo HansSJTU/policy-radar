@@ -203,8 +203,8 @@ const policies: Array<{
     route: ['CPT', 'Day-1 CPT', '实习'],
     milestones: [
       { date: '2026-08-12', text: 'SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。' },
-      { date: '2026-08-24', text: 'Broadcast 2608-02：进一步解释选修课、全员适用与合作协议要求。' },
       { date: '2026-08-12 后', text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。' },
+      { date: '2026-08-24', text: 'Broadcast 2608-02：进一步解释选修课、全员适用与合作协议要求。' },
     ],
     next: [
       { date: '现在', text: '每所学校按自身课程设置和法律意见执行；没有统一恢复日期。' },

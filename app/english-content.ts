@@ -108,8 +108,8 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['CPT', 'Day-1 CPT', 'Internships'],
     milestones: [
       { date: '2026-08-12', text: 'SEVP Broadcast 2608-01 already required training indispensable to the degree and required for every student, and emphasized DSO and school duties.' },
-      { date: '2026-08-24', text: 'Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements.' },
       { date: 'After 2026-08-12', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
+      { date: '2026-08-24', text: 'Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements.' },
     ],
     next: [
       { date: 'Now', text: 'Each school is applying the guidance to its own curriculum and legal advice; there is no single reopening date.' },
