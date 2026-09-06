@@ -23,6 +23,118 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-09-06",
+    "changes": [
+      {
+        "id": "cpt-broadcast-august12-correction",
+        "category": "政策内容更正",
+        "title": "#05 CPT 指引的时间起点",
+        "summary": "核对 8·12 原文第二页后，更正 9·01 日志中把“全员毕业必需”标准仅归于 8·24 的表述。8·12 已提出该要求；8·24 问答进一步解释选修课、美国学生与合作协议。历史日志原文保留供对照。",
+        "before": "8·12 仅列合规提醒；8·24 才提出更窄的 integral 标准，高校调整起点写为 8·24。",
+        "after": "8·12 已要求 CPT 对取得学位不可缺少且为该学位全体学生必需；8·24 进一步解释。高校响应时间线改为 8·12 后。",
+        "sources": [
+          {
+            "label": "SEVP 8·12 Broadcast，第 2 页",
+            "href": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf"
+          },
+          {
+            "label": "SEVP 8·24 Broadcast（MIT 保存的原文）",
+            "href": "https://iso.mit.edu/wp-content/uploads/2026/08/2026_0824_SEVP_BroadcastMessage2608-02_CPT_Guidance.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-school-records-2026-09-06",
+        "category": "CPT 学校清单",
+        "title": "新增 9 所院校的公开 CPT 记录",
+        "summary": "新增 Utah、Delaware、UC San Diego、UMBC、GWU、CU Boulder、UW–Milwaukee、Oregon 和 Kansas。连同 UCI 证据升级，清单由 25 增至 34 条学校／院系记录，对应 33 所不同院校。公告日期保留为原发布日期，本次为网站新增收录。",
+        "before": "25 条记录 · 18 条校方网页 / 7 条邮件截图；24 所不同院校。",
+        "after": "34 条记录 · 28 条校方网页 / 6 条邮件截图；33 所不同院校。",
+        "details": [
+          "University of Utah：此前未收录；现记录“自 9·03 起暂停非全员必需的新 CPT”。ISSS 暂停 optional CPT 授权；UAtlas 仍可提交申请，但审核结束前不批准此类请求。既有授权按当前 I-20 的雇主、地点与日期继续。",
+          "University of Delaware：此前未收录；现记录“暂停非全员必需的新 CPT 授权”。9·02 公告称 CGPS 暂停 optional CPT；学生仍可提交申请，但审核结束前不签发此类新授权，并可能出现处理延迟。",
+          "UC San Diego：此前未收录；现记录“暂停全部 F-1 CPT 请求的提交与处理”。ISEO 专页仍暂停 iServices 全部 CPT 请求；9·02 说明会第 12 页预计 9 月中旬重开，并要求院系证明实习为必需。该时间为计划，尚无具体日期。",
+          "University of Maryland, Baltimore County：此前未收录；现记录“待审及未来 CPT 仅限全项目学生必需的实践”。OISS 9·04 更新称，待审与未来申请按全项目学生必需的实践要求审核；已经签发的 2026 秋季 CPT 授权不会被撤销。本条单列 UMBC 校区。",
+          "George Washington University：此前未收录；现记录“暂停非全员必需的新 CPT 授权”。ISO 9·02 公告称，不再批准非学位项目全体学生必需的新 CPT；既有授权可按当前 I-20 的雇主地点、日期及其他条件继续。",
+          "University of Colorado Boulder：此前未收录；现记录“仅处理课程目录列明的学位／主修必需 CPT”。8·31 更新称，仅限校方列出的实践为学位或主修毕业必需的项目，minor 不符合；仅供选修学分的实习不获批，已授权的 2026 秋季 CPT 不受影响。",
+          "University of Wisconsin-Milwaukee：此前未收录；现记录“自 8·24 起仅批准全项目学生必需的 CPT”。ISSS 要求实践为学位项目全体学生明确的必修要求；8·24 前已获批的 CPT 可持续至当前授权结束日。",
+          "University of Oregon：此前未收录；现记录“不再批准仅供选修实习学分的 CPT”。ISSS 新政策要求实践为既定课程与学位的必要组成部分；页面另列全员学位必需及完成必需硕士论文／毕业项目、博士论文的情形，研究类须有导师详细证明。",
+          "University of Kansas：此前未收录；现记录“校方页面称暂停全部 CPT 请求”。ISS 的 2026 年 8 月更新称，正在判断哪些情形仍可授权，期间暂停所有 CPT 请求；公告未说明既有授权的处理方式。"
+        ],
+        "sources": [
+          {
+            "label": "University of Utah CPT",
+            "href": "https://www.isss.utah.edu/news/posts/2026/cpt-broadcast-message-update.php"
+          },
+          {
+            "label": "University of Delaware CPT",
+            "href": "https://www.udel.edu/academics/global/isss/announcements/"
+          },
+          {
+            "label": "UC San Diego CPT",
+            "href": "https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html"
+          },
+          {
+            "label": "UC San Diego 9·02 说明会，第 12 页",
+            "href": "https://iseo.ucsd.edu/_files/student-services/working-in-us/Students_Understanding_CPT_9_2_26.pdf"
+          },
+          {
+            "label": "University of Maryland, Baltimore County CPT",
+            "href": "https://isss.umbc.edu/updates/"
+          },
+          {
+            "label": "George Washington University CPT",
+            "href": "https://internationalservices.gwu.edu/updated-guidance-curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Colorado Boulder CPT",
+            "href": "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs"
+          },
+          {
+            "label": "University of Wisconsin-Milwaukee CPT",
+            "href": "https://uwm.edu/cie/services/students/employment/curricular-practical-training/"
+          },
+          {
+            "label": "University of Oregon CPT",
+            "href": "https://isss.uoregon.edu/curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Kansas CPT",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "uci-cpt-public-source",
+        "category": "CPT 学校清单",
+        "title": "UCI 升级为校方网页证据",
+        "summary": "International Center 公开 CPT 页证实自 8·17 起暂停 Course Credit CPT，UCI 移入校方网页组并保留原邮件截图。",
+        "before": "仅由邮件截图支持：暂停 Course Credit CPT；强制毕业要求继续。",
+        "after": "公开网页支持 8·17 起暂停 Course Credit CPT；Degree Requirement CPT 须有 UCI 课程目录的毕业要求依据。",
+        "sources": [
+          {
+            "label": "UCI International Center CPT 页面",
+            "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "columbia-cpt-scope",
+        "category": "CPT 学校清单",
+        "title": "Columbia 明确暂停范围与既有授权",
+        "summary": "采用 ISSO CPT 专页补充具体暂停范围，以及 8·24 前已批授权的处理方式。",
+        "before": "按新标准复核 CPT 授权与申请；受影响学生由 ISSO 单独通知。",
+        "after": "仅批准课程体系内、全员必需且有 cooperative agreement 的 CPT，其他情形暂停；8·24 前获批的 CPT 不撤销。",
+        "sources": [
+          {
+            "label": "Columbia ISSO CPT 页面",
+            "href": "https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      }
+    ]
+  },
+  {
     date: '2026-09-05',
     changes: [
       {
@@ -283,6 +395,118 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-09-06",
+    "changes": [
+      {
+        "id": "cpt-broadcast-august12-correction",
+        "category": "POLICY CORRECTION",
+        "title": "#05 CPT guidance timeline",
+        "summary": "Page 2 of the August 12 broadcast corrects the September 1 log’s attribution of the all-student graduation requirement solely to August 24. August 12 already stated that standard; the August 24 Q&A elaborated on elective courses, American students, and cooperative agreements. The earlier log is retained for comparison.",
+        "before": "August 12 was described only as a compliance reminder; the narrower integral standard and university responses were dated from August 24.",
+        "after": "August 12 already required CPT to be indispensable to obtaining the degree and required for all students pursuing it. August 24 elaborated on the standard; the school-response timeline now starts after August 12.",
+        "sources": [
+          {
+            "label": "SEVP August 12 Broadcast, page 2",
+            "href": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf"
+          },
+          {
+            "label": "SEVP August 24 Broadcast preserved by MIT",
+            "href": "https://iso.mit.edu/wp-content/uploads/2026/08/2026_0824_SEVP_BroadcastMessage2608-02_CPT_Guidance.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-school-records-2026-09-06",
+        "category": "CPT SCHOOL LIST",
+        "title": "Public CPT records added for nine institutions",
+        "summary": "Utah, Delaware, UC San Diego, UMBC, GWU, CU Boulder, UW–Milwaukee, Oregon, and Kansas are newly listed. Together with the UCI evidence upgrade, the list grows from 25 to 34 school/department records covering 33 distinct institutions. Original notice dates are preserved; these are new additions to the website.",
+        "before": "25 records · 18 university webpages / 7 email screenshots; 24 distinct institutions.",
+        "after": "34 records · 28 university webpages / 6 email screenshots; 33 distinct institutions.",
+        "details": [
+          "University of Utah: previously unlisted. New CPT not required for every student is paused from September 3. ISSS paused optional CPT authorizations. UAtlas still accepts requests, but optional cases will not be approved until review is complete. Existing authorizations continue under the employer, location, and dates on the current I-20.",
+          "University of Delaware: previously unlisted. New CPT not required for every student is paused. The September 2 notice says CGPS paused optional CPT. Students may still submit requests, but no new optional authorizations will be issued until review is complete, and processing delays are expected.",
+          "UC San Diego: previously unlisted. All F-1 CPT request submission and processing is paused. The ISEO page still pauses all CPT requests in iServices. Page 12 of the September 2 presentation plans reopening in mid-September and requires department confirmation that the internship is required. No exact reopening date is specified.",
+          "University of Maryland, Baltimore County: previously unlisted. Pending and future CPT is limited to training required for every student in the program. The September 4 OISS update limits pending and future requests to programs requiring practical training for every student. Already issued Fall 2026 CPT authorizations will not be revoked. This record covers the UMBC campus.",
+          "George Washington University: previously unlisted. New CPT not required for every student is paused. The September 2 ISO notice pauses new CPT that is not required for all students in the degree program. Existing authorizations continue under the employer location, dates, and other conditions on the current I-20.",
+          "University of Colorado Boulder: previously unlisted. CPT is limited to catalog-listed degree or major requirements. The August 31 update limits CPT to listed programs requiring practical training for degree or major completion; a minor does not qualify. Elective internship credit alone is insufficient. Already authorized Fall 2026 CPT is unaffected.",
+          "University of Wisconsin-Milwaukee: previously unlisted. Only CPT required for every student in the program is approved from August 24. ISSS requires an articulated practical-training requirement for all students in the academic program. CPT approved before August 24 remains authorized through its current end date.",
+          "University of Oregon: previously unlisted. CPT solely for optional internship credit is no longer authorized. The new ISSS policy requires training to be integral to the curriculum and degree. The page lists program-wide degree requirements and work needed for a required master’s thesis/final project or doctoral dissertation; research cases require detailed faculty documentation.",
+          "University of Kansas: previously unlisted. The university page says all CPT requests are paused. The ISS August 2026 update pauses all CPT requests while the office determines which cases can be authorized. The notice does not explain how existing authorizations are treated."
+        ],
+        "sources": [
+          {
+            "label": "University of Utah CPT",
+            "href": "https://www.isss.utah.edu/news/posts/2026/cpt-broadcast-message-update.php"
+          },
+          {
+            "label": "University of Delaware CPT",
+            "href": "https://www.udel.edu/academics/global/isss/announcements/"
+          },
+          {
+            "label": "UC San Diego CPT",
+            "href": "https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html"
+          },
+          {
+            "label": "UC San Diego September 2 presentation, page 12",
+            "href": "https://iseo.ucsd.edu/_files/student-services/working-in-us/Students_Understanding_CPT_9_2_26.pdf"
+          },
+          {
+            "label": "University of Maryland, Baltimore County CPT",
+            "href": "https://isss.umbc.edu/updates/"
+          },
+          {
+            "label": "George Washington University CPT",
+            "href": "https://internationalservices.gwu.edu/updated-guidance-curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Colorado Boulder CPT",
+            "href": "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs"
+          },
+          {
+            "label": "University of Wisconsin-Milwaukee CPT",
+            "href": "https://uwm.edu/cie/services/students/employment/curricular-practical-training/"
+          },
+          {
+            "label": "University of Oregon CPT",
+            "href": "https://isss.uoregon.edu/curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Kansas CPT",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "uci-cpt-public-source",
+        "category": "CPT SCHOOL LIST",
+        "title": "UCI upgraded to university-webpage evidence",
+        "summary": "The International Center public CPT page confirms an August 17 pause in Course Credit CPT. UCI moves to the university-webpage group and retains its original email screenshot.",
+        "before": "Email screenshot only: Course Credit CPT paused; mandatory graduation requirements continued.",
+        "after": "A public page supports an August 17 Course Credit CPT pause. Degree Requirement CPT must be documented as a graduation requirement in the UCI catalog.",
+        "sources": [
+          {
+            "label": "UCI International Center CPT page",
+            "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "columbia-cpt-scope",
+        "category": "CPT SCHOOL LIST",
+        "title": "Columbia clarifies the pause and existing authorizations",
+        "summary": "The ISSO CPT page supplies the specific pause scope and treatment of authorizations approved before August 24.",
+        "before": "CPT authorizations and requests under review; ISSO would contact affected students.",
+        "after": "Only CPT integral to the curriculum, required for all students, and supported by a cooperative agreement is approved. Other cases are paused; pre-August 24 approvals will not be rescinded.",
+        "sources": [
+          {
+            "label": "Columbia ISSO CPT page",
+            "href": "https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      }
+    ]
+  },
   {
     date: '2026-09-05',
     changes: [

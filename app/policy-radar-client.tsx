@@ -199,12 +199,12 @@ const policies: Array<{
     confidence: 100,
     status: 'SEVP 执法口径已在执行',
     tone: 'red',
-    current: 'ICE/SEVP 先在 8·12 提醒学校与 DSO 承担合规责任，后在 8·24 将 “integral” 解释为：实践训练必须是完成学位所必需、且对该项目所有学生均为毕业要求；仅靠选修课通常不够，sponsoring employer 还需与学校有 cooperative agreement。',
+    current: 'ICE/SEVP 在 8·12 已要求 DSO 仅批准完成学位不可缺少、且对该学位所有学生均为必需的 CPT，并强调学校与 DSO 的合规责任。8·24 问答进一步说明可选实习课不满足标准、全员包含美国学生，并重申 sponsoring employer 与学校的 cooperative agreement 要求。',
     route: ['CPT', 'Day-1 CPT', '实习'],
     milestones: [
-      { date: '2026-08-12', text: 'SEVP Broadcast 2608-01：强调 DSO 与学校责任并预告强化监管。' },
-      { date: '2026-08-24', text: 'Broadcast 2608-02：给出更窄的 “integral” 与合作协议标准。' },
-      { date: '2026-08-24 起', text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。' },
+      { date: '2026-08-12', text: 'SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。' },
+      { date: '2026-08-24', text: 'Broadcast 2608-02：进一步解释选修课、全员适用与合作协议要求。' },
+      { date: '2026-08-12 后', text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。' },
     ],
     next: [
       { date: '现在', text: '每所学校按自身课程设置和法律意见执行；没有统一恢复日期。' },
@@ -358,7 +358,7 @@ const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-05', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-06', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       { date: 'TBD', text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。' },
@@ -451,7 +451,7 @@ const pageCopy = {
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: '更新于 2026-09-05（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', seedDisclosure: '社区影响均分目前包含每项政策 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
+    footer: '更新于 2026-09-06（美东）。预计日期可能因规则修改或诉讼变化而移动；个人决定请复核原始文件与专业意见。', seedDisclosure: '社区影响均分目前包含每项政策 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
@@ -466,7 +466,7 @@ const pageCopy = {
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
     viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
-    footer: 'Updated September 5, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', seedDisclosure: 'Community-impact averages currently include 10–20 synthetic launch samples per policy. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
+    footer: 'Updated September 6, 2026 (Eastern Time). Estimated dates may move as rules change or litigation develops. Verify primary sources and obtain professional advice before making individual decisions.', seedDisclosure: 'Community-impact averages currently include 10–20 synthetic launch samples per policy. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
   },
 };
 
@@ -536,7 +536,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
   const visibleCommunity = localizedCommunitySchools.filter((school) =>
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
-  const briefing = getThirtyDayBriefing('2026-09-05', language);
+  const briefing = getThirtyDayBriefing('2026-09-06', language);
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -597,7 +597,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span /><time dateTime="2026-09-05">2026-09-05 · ET</time></div>
+          <div className="asof"><span /><time dateTime="2026-09-06">2026-09-06 · ET</time></div>
         </div>
       </header>
 

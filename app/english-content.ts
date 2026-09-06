@@ -104,12 +104,12 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'August 12 / August 24 CPT Guidance Tightens Eligibility',
     tldr: 'ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school.',
     status: 'SEVP enforcement position already in use',
-    current: 'ICE/SEVP first reminded schools and DSOs of their compliance responsibilities on August 12. On August 24, it defined “integral” more narrowly: the practical training must be necessary to complete the degree and required of every student in the program. An elective course is generally insufficient, and the sponsoring employer must have a cooperative agreement with the school.',
+    current: 'On August 12, ICE/SEVP already instructed DSOs to authorize CPT only when the degree could not be completed without it and the training was required for every student pursuing that degree, alongside compliance duties. The August 24 Q&A further explained that optional internship courses do not qualify, all students includes Americans, and sponsoring employers need cooperative agreements with schools.',
     route: ['CPT', 'Day-1 CPT', 'Internships'],
     milestones: [
-      { date: '2026-08-12', text: 'SEVP Broadcast 2608-01 emphasized DSO and school responsibilities and previewed stronger oversight.' },
-      { date: '2026-08-24', text: 'Broadcast 2608-02 set out a narrower “integral” standard and a cooperative-agreement requirement.' },
-      { date: 'Since 2026-08-24', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
+      { date: '2026-08-12', text: 'SEVP Broadcast 2608-01 already required training indispensable to the degree and required for every student, and emphasized DSO and school duties.' },
+      { date: '2026-08-24', text: 'Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements.' },
+      { date: 'After 2026-08-12', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
     ],
     next: [
       { date: 'Now', text: 'Each school is applying the guidance to its own curriculum and legal advice; there is no single reopening date.' },
@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-05', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-06', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -244,7 +244,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'UT Dallas': { state: 'Process unchanged as of August 25', detail: 'This is a counterexample: not every university has “canceled CPT.”' },
   'University of Michigan': { state: 'Elective-course CPT is no longer approved', detail: 'Only training required for every student in the degree program may be approved; existing authorizations may continue.' },
   'Northwestern University': { state: 'CPT not required for every student is on hold', detail: 'During its review, the university is processing only work experiences required for every student in the academic program.' },
-  'Columbia University': { state: 'CPT authorizations and requests are being reviewed', detail: 'Eligibility is limited to curricular, program-wide requirements documented by a cooperative agreement; ISSO is contacting affected students.' },
+  'Columbia University': { state: 'CPT not required for every student is paused; pre-August 24 approvals will not be rescinded', detail: 'ISSO approves only CPT that is integral to the curriculum, required for all students, and supported by a cooperative agreement. Other cases are paused; CPT approved before August 24 will not be rescinded.' },
   'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
   'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
   'University of Maryland, College Park': { state: 'New CPT outside a program-wide requirement or required research is paused', detail: 'ISSS paused unapproved requests unless the training is required for every student, is part of a required course, or is necessary for thesis or dissertation research. UNIV099, ENCO099, BMGT099, and other non-required internships are not being accepted; previously authorized CPT may continue.' },
@@ -254,10 +254,19 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'New York University (Tandon Mathematics)': { state: 'The mathematics page says international-student CPT approvals have been paused since September 1', detail: 'The internship policy page covers mathematics undergraduates and graduates and directs students to OGS for further information. This entry records the public notice for Tandon Mathematics only and does not establish a university-wide NYU policy.' },
   'University of Southern California': { state: 'Only CPT required for graduation is approved from August 24', detail: 'OIS no longer accepts elective-course CPT that is not required for every student in the program. Documentation review may delay approvals; Fall 2026 CPT authorizations issued before August 24 will not be rescinded.' },
   'University of Alabama': { state: 'Stricter CPT eligibility review began August 31', detail: 'ISSS requires departments to document whether training is required for all students in the degree program or track, or is necessary for thesis-track master’s or doctoral students to complete their thesis or dissertation. Degree requirements must be supported by the academic catalog; an elective-course requirement alone does not qualify.' },
+  'UC Irvine': { state: 'Course Credit CPT has been paused since August 17', detail: 'The International Center public notice suspends Course Credit CPT applications until further notice. Degree Requirement CPT must be listed as a graduation requirement in the UCI catalog.' },
+  'University of Utah': { state: 'New CPT not required for every student is paused from September 3', detail: 'ISSS paused optional CPT authorizations. UAtlas still accepts requests, but optional cases will not be approved until review is complete. Existing authorizations continue under the employer, location, and dates on the current I-20.' },
+  'University of Delaware': { state: 'New CPT not required for every student is paused', detail: 'The September 2 notice says CGPS paused optional CPT. Students may still submit requests, but no new optional authorizations will be issued until review is complete, and processing delays are expected.' },
+  'UC San Diego': { state: 'All F-1 CPT request submission and processing is paused', detail: 'The ISEO page still pauses all CPT requests in iServices. Page 12 of the September 2 presentation plans reopening in mid-September and requires department confirmation that the internship is required. No exact reopening date is specified.' },
+  'University of Maryland, Baltimore County': { state: 'Pending and future CPT is limited to training required for every student in the program', detail: 'The September 4 OISS update limits pending and future requests to programs requiring practical training for every student. Already issued Fall 2026 CPT authorizations will not be revoked. This record covers the UMBC campus.' },
+  'George Washington University': { state: 'New CPT not required for every student is paused', detail: 'The September 2 ISO notice pauses new CPT that is not required for all students in the degree program. Existing authorizations continue under the employer location, dates, and other conditions on the current I-20.' },
+  'University of Colorado Boulder': { state: 'CPT is limited to catalog-listed degree or major requirements', detail: 'The August 31 update limits CPT to listed programs requiring practical training for degree or major completion; a minor does not qualify. Elective internship credit alone is insufficient. Already authorized Fall 2026 CPT is unaffected.' },
+  'University of Wisconsin-Milwaukee': { state: 'Only CPT required for every student in the program is approved from August 24', detail: 'ISSS requires an articulated practical-training requirement for all students in the academic program. CPT approved before August 24 remains authorized through its current end date.' },
+  'University of Oregon': { state: 'CPT solely for optional internship credit is no longer authorized', detail: 'The new ISSS policy requires training to be integral to the curriculum and degree. The page lists program-wide degree requirements and work needed for a required master’s thesis/final project or doctoral dissertation; research cases require detailed faculty documentation.' },
+  'University of Kansas': { state: 'The university page says all CPT requests are paused', detail: 'The ISS August 2026 update pauses all CPT requests while the office determines which cases can be authorized. The notice does not explain how existing authorizations are treated.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
-  'UC Irvine': 'A screenshot says course-credit CPT is paused while mandatory graduation requirements continue.',
   'UNC–Chapel Hill': 'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
   UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',

@@ -8,7 +8,6 @@ const source = await readFile(new URL('../app/policy-radar-client.tsx', import.m
 const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
 
 const screenshotEvidence = {
-  'UC Irvine': ['/cpt-evidence/cpt_uci.jpeg'],
   'UNC–Chapel Hill': ['/cpt-evidence/cpt_unc.jpeg'],
   Caltech: ['/cpt-evidence/cpt_caltech.jpeg'],
   UCLA: ['/cpt-evidence/cpt_ucla.jpeg'],
@@ -18,6 +17,7 @@ const screenshotEvidence = {
 };
 
 const verifiedForumEvidence = {
+  'UC Irvine': ['/cpt-evidence/cpt_uci.jpeg'],
   UCSB: [
     '/cpt-evidence/cpt_ucsb_1.jpeg',
     '/cpt-evidence/cpt_ucsb_2.jpeg',
@@ -72,9 +72,9 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 18);
-  assert.equal(communitySchools.length, 7);
-  assert.equal(verifiedSchools.length + communitySchools.length, 25);
+  assert.equal(verifiedSchools.length, 28);
+  assert.equal(communitySchools.length, 6);
+  assert.equal(verifiedSchools.length + communitySchools.length, 34);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
