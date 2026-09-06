@@ -72,3 +72,5 @@ GitHub Actions 使用同名 repository secrets。Pull Request 与非 `main` 分�
 ## License
 
 [MIT](LICENSE)
+
+分享按钮的渠道埋点、统计口径与 Analytics Engine 查询示例见[分享统计说明](docs/share-analytics.md)。

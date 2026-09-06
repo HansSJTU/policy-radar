@@ -1,0 +1,97 @@
+.share-trigger {
+  width: 80px; min-width: 80px; height: 40px; padding: 0 10px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  border: 1px solid var(--line); border-radius: 9px; color: var(--ink);
+  background: var(--card); font-size: .8125rem; font-weight: 600;
+}
+.share-trigger:hover { background: var(--paper); }
+.share-trigger[data-popup-open] { color: var(--blue); background: #edf4fd; border-color: #b8cde9; }
+.share-trigger svg { width: 20px; height: 20px; stroke-width: 1.7; }
+.share-backdrop { display: none; }
+.share-positioner { z-index: 70; }
+.share-panel {
+  width: min(370px, calc(100vw - 32px)); max-height: var(--available-height);
+  overflow-y: auto; padding: 21px; border: 1px solid var(--line); border-radius: 18px;
+  background: var(--card); color: var(--ink); outline: none;
+  box-shadow: 0 18px 55px rgb(13 31 56 / 17%), 0 3px 8px rgb(13 31 56 / 5%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.share-handle { display: none; }
+.share-panel-header { display: flex; align-items: center; gap: 8px; margin-bottom: 15px; }
+.share-panel-header h2 { flex: 1; margin: 0; font-size: 1.0625rem; font-weight: 650; line-height: 1.4; letter-spacing: -.02em; }
+.share-icon-button {
+  display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px;
+  padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--muted);
+}
+.share-icon-button:hover { background: var(--paper); }
+.share-icon-button svg { width: 20px; height: 20px; stroke-width: 1.7; }
+.share-preview { display: flex; align-items: center; gap: 11px; padding: 12px; margin-bottom: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
+.share-preview .brand-mark { width: 36px; height: 36px; border-radius: 9px; }
+.share-preview > div { min-width: 0; }
+.share-preview strong { display: block; font-size: .8125rem; font-weight: 600; overflow-wrap: anywhere; }
+.share-preview > div > span { display: block; margin-top: 2px; color: var(--muted); font-size: .6875rem; }
+.share-channels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin: 0 -5px 16px; }
+.share-channel { display: flex; flex-direction: column; align-items: center; gap: 8px; min-height: 82px; padding: 8px 2px; border: 0; border-radius: 11px; color: var(--ink); background: transparent; font: inherit; font-size: .75rem; white-space: nowrap; text-decoration: none; }
+.share-channel:hover { background: var(--paper); }
+.share-channel > span { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; border: 1px solid var(--line); background: var(--paper); }
+.share-channel svg { width: 24px; height: 24px; stroke-width: 1.7; }
+.share-copy-section { padding-top: 15px; border-top: 1px solid var(--line); }
+.share-copy-label { display: block; margin-bottom: 8px; font-size: .6875rem; color: var(--muted); }
+.share-link-row { display: flex; align-items: center; gap: 8px; padding: 5px 5px 5px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); }
+.share-link-row > svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--muted); }
+.share-link-row input { min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--muted); font-size: .6875rem; text-overflow: ellipsis; }
+.share-copy-button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; flex-shrink: 0; min-height: 32px; min-width: 90px; padding: 0 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--card); font-size: .75rem; font-weight: 550; }
+.share-copy-button svg { width: 14px; height: 14px; }
+.share-copy-button:hover { background: var(--paper); }
+.share-copy-button:disabled { cursor: wait; opacity: .7; }
+.share-copy-button[data-copied] { color: var(--green); border-color: #b8dacc; }
+.share-wechat-content { text-align: center; }
+.share-qr { display: grid; place-items: center; width: 180px; height: 180px; margin: 4px auto 14px; padding: 5px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.share-qr img { display: block; max-width: 100%; height: auto; image-rendering: pixelated; }
+.share-qr > output { padding: 10px; color: var(--muted); font-size: .75rem; }
+.share-wechat-content > strong { font-size: .875rem; font-weight: 550; }
+.share-help { margin: 7px auto 16px; max-width: 285px; font-size: .75rem; line-height: 1.75; color: var(--muted); }
+.share-wechat-content > .share-copy-button { width: 100%; min-height: 42px; margin-top: 4px; }
+.share-wechat-mark { display: grid; place-items: center; width: 60px; height: 60px; border: 1px solid var(--line); border-radius: 18px; margin: 8px auto 18px; background: var(--paper); }
+.share-wechat-mark svg { width: 32px; height: 32px; stroke-width: 1.7; }
+.share-step { display: flex; align-items: center; gap: 10px; padding: 10px 12px; text-align: left; background: var(--paper); border-radius: 10px; margin: 8px 0; font-size: .8125rem; }
+.share-step > span { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 50%; background: var(--card); font-size: .75rem; color: var(--muted); }
+.share-notice { display: block; margin: 12px 0 0; color: var(--muted); font-size: .75rem; line-height: 1.65; }
+.share-notice:empty { margin: 0; }
+.share-manual-url { display: block; width: 100%; min-width: 0; margin-top: 10px; padding: 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 1rem; color: var(--ink); background: var(--paper); }
+
+/* Equal-height controls; the text controls share a width, the menu is square. */
+:is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 80px; height: 40px; flex-shrink: 0; padding: 3px; border-radius: 9px; }
+:is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch :is(button, a) { min-width: 0; width: 36px; height: 32px; padding: 0; border-radius: 6px; }
+:is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger { flex-shrink: 0; width: 40px; height: 40px; border-radius: 9px; background: var(--card); border-color: var(--line); }
+:is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger svg { width: 20px; height: 20px; stroke-width: 1.7; }
+@media (max-width: 1120px) {
+  .topbar.product-bar { grid-template-columns: minmax(0, 1fr) auto; }
+  .topbar.product-bar .nav-links { display: none; }
+  .topbar.product-bar .mobile-menu-trigger { display: inline-flex; }
+  .topbar.product-bar .github-project-link-header { display: none; }
+}
+@media (max-width: 720px) {
+  .topbar.product-bar { padding-left: 12px; padding-right: 12px; gap: 8px; }
+  .topbar.product-bar .brand { width: 100%; gap: 7px; font-size: .8125rem; }
+  .topbar.product-bar .brand-mark { width: 30px; height: 30px; }
+  .topbar.product-bar .brand > span:last-child { min-width: 0; max-width: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  :is(.topbar, .stats-page-bar, .updates-page-bar) :is(.top-actions, .stats-page-actions, .updates-page-actions) { gap: 4px; }
+  .share-trigger { width: 44px; min-width: 44px; height: 44px; padding: 0; }
+  .share-trigger > span { display: none; }
+  :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 72px; height: 44px; }
+  :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch :is(button, a) { width: 32px; height: 36px; }
+  :is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger { width: 44px; height: 44px; }
+  .share-backdrop { display: block; position: fixed; inset: 0; z-index: 69; background: rgb(12 25 43 / 25%); }
+  .share-positioner { position: fixed !important; inset: auto 0 0 !important; width: 100% !important; transform: none !important; }
+  .share-panel { width: 100%; max-height: calc(100dvh - 20px); padding: 10px 20px max(24px, env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 22px 22px 0 0; box-shadow: 0 -12px 44px rgb(13 31 56 / 14%); }
+  .share-handle { display: block; width: 32px; height: 4px; margin: 0 auto 12px; border-radius: 8px; background: var(--line); }
+  .share-panel-header { margin-bottom: 12px; }
+  .share-panel-header h2 { font-size: 1.125rem; }
+  .share-icon-button { width: 44px; height: 44px; }
+  .share-preview { margin-bottom: 12px; }
+  .share-copy-button { min-height: 44px; }
+  .share-link-row input { font-size: 1rem; }
+  .share-wechat-content > .share-copy-button { min-height: 48px; background: var(--ink); color: #fff; border-color: var(--ink); }
+}
+@media print { .share-trigger, .share-positioner, .share-backdrop { display: none !important; } }

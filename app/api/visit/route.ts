@@ -1,4 +1,4 @@
-import { dispatchAnalyticsEvent } from '@/app/analytics-model';
+import { dispatchAnalyticsEvent, normalizeShareEvent } from '@/app/analytics-model';
 import { recordAnalyticsEngineEvent, recordVisit } from '@/db/analytics';
 
 const UUID_PATTERN =
@@ -31,6 +31,8 @@ export async function POST(request: Request) {
     landingPage?: unknown;
     policyId?: unknown;
     outboundClick?: unknown;
+    shareMethod?: unknown;
+    shareAction?: unknown;
   };
   try {
     body = (await request.json()) as typeof body;
@@ -39,6 +41,7 @@ export async function POST(request: Request) {
   }
 
   if (
+    !body || typeof body !== 'object' ||
     typeof body.visitorId !== 'string' ||
     !UUID_PATTERN.test(body.visitorId)
   ) {
@@ -48,6 +51,14 @@ export async function POST(request: Request) {
     );
   }
 
+  if (
+    (body.eventType !== undefined &&
+      !['page_view', 'outbound_click', 'share'].includes(body.eventType as string)) ||
+    (body.eventType === 'share' && !normalizeShareEvent(body.shareMethod, body.shareAction))
+  ) {
+    return Response.json({ error: 'Invalid analytics event' }, { status: 400 });
+  }
+
   try {
     const cloudflareCountry = (
       request as Request & { cf?: { country?: string | null } }
@@ -55,6 +66,7 @@ export async function POST(request: Request) {
     const country =
       cloudflareCountry ?? request.headers.get('CF-IPCountry');
     const metadata = {
+      eventType: body.eventType === 'share' ? 'share' as const : 'outbound_click' as const,
       pathname: body.pathname,
       language: body.language,
       referrerHost: body.referrerHost,
@@ -65,11 +77,15 @@ export async function POST(request: Request) {
       landingPage: body.landingPage,
       policyId: body.policyId,
       outboundClick: body.outboundClick,
+      shareMethod: body.shareMethod,
+      shareAction: body.shareAction,
     };
 
     await dispatchAnalyticsEvent(body.eventType, {
       pageView: () => recordVisit(body.visitorId as string, country, metadata),
       outboundClick: () =>
+        recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
+      share: () =>
         recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
     });
   } catch {

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './share.css';
 import { resolveRequestLanguage } from './language-server';
 
 export async function generateMetadata(): Promise<Metadata> {

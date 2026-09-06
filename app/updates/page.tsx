@@ -11,6 +11,7 @@ import type { Language } from '@/app/language';
 import { resolveRequestLanguage } from '@/app/language-server';
 import { PageLanguageSwitch } from '@/app/page-language-switch';
 import { getUpdateLog } from '@/app/update-log';
+import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
 
 export const dynamic = 'force-dynamic';
@@ -86,6 +87,7 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
         <div className="updates-page-actions">
           <span>{ui.bar}</span>
           <GitHubProjectLink language={language} />
+          <ShareButton language={language} pageTitle={ui.title} />
           <PageLanguageSwitch
             action="/updates"
             language={language}

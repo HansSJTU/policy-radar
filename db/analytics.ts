@@ -10,6 +10,7 @@ import {
   normalizePolicyId,
   normalizeReferrerHost,
   normalizeSessionId,
+  normalizeShareEvent,
   normalizeVisitLanguage,
   normalizeVisitPathname,
   writeAnalyticsEngineVisit,
@@ -32,6 +33,7 @@ import {
 let schemaPromise: Promise<void> | undefined;
 
 type AnalyticsMetadata = {
+  eventType?: 'outbound_click' | 'share';
   pathname?: unknown;
   language?: unknown;
   referrerHost?: unknown;
@@ -42,6 +44,8 @@ type AnalyticsMetadata = {
   landingPage?: unknown;
   policyId?: unknown;
   outboundClick?: unknown;
+  shareMethod?: unknown;
+  shareAction?: unknown;
 };
 
 function database() {
@@ -147,7 +151,7 @@ export async function recordAnalyticsEngineEvent(
   const visitorHash = await hashDailyVisitor(day, visitorId);
 
   writeAnalyticsEngineVisit(env.ANALYTICS, {
-    eventType: 'outbound_click',
+    eventType: metadata.eventType ?? 'outbound_click',
     day,
     country: normalizeCountryCode(country),
     pathname: normalizeVisitPathname(metadata.pathname),
@@ -161,6 +165,7 @@ export async function recordAnalyticsEngineEvent(
     landingPage: normalizeVisitPathname(metadata.landingPage),
     policyId: normalizePolicyId(metadata.policyId),
     outboundClick: normalizeOutboundClick(metadata.outboundClick),
+    ...normalizeShareEvent(metadata.shareMethod, metadata.shareAction),
   });
 }
 

@@ -8,6 +8,7 @@ import { getCountryTraffic, getTrafficSeries } from '@/db/analytics';
 import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
 import { resolveRequestLanguage } from '@/app/language-server';
+import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
 
 export const dynamic = 'force-dynamic';
@@ -123,6 +124,7 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
         <div className="stats-page-actions">
           <span>{ui.public}</span>
           <GitHubProjectLink language={language} />
+          <ShareButton language={language} pageTitle={ui.hero} />
           <PageLanguageSwitch
             action="/stats"
             language={language}

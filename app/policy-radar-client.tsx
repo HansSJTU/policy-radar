@@ -30,6 +30,7 @@ import { brandHomeLabel, type Language } from './language';
 import { persistLanguage } from './language-client';
 import { filterPoliciesByRouteStage } from './policy-filter';
 import { GitHubProjectLink } from './github-link';
+import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from './mobile-site-menu';
 import {
   CommunityImpactRating,
@@ -590,6 +591,7 @@ export default function Home({ initialLanguage }: { initialLanguage: Language })
         </nav>
         <div className="top-actions">
           <GitHubProjectLink language={language} />
+          <ShareButton language={language} />
           <nav className="language-switch" aria-label={ui.switchLabel}>
             <button type="button" className={language === 'zh' ? 'active' : ''} aria-pressed={language === 'zh'} onClick={() => selectLanguage('zh')}>{ui.chinese}</button>
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>

@@ -10,8 +10,22 @@ export type CountryTrafficPoint = {
   visitors: number;
 };
 
+export type ShareMethod = 'messages' | 'email' | 'wechat' | 'whatsapp' | 'copy_link';
+export type ShareAction = 'select' | 'copy_success' | 'copy_failure';
+
+export function normalizeShareEvent(method: unknown, action: unknown): {
+  shareMethod: ShareMethod;
+  shareAction: ShareAction;
+} | null {
+  if (!['messages', 'email', 'wechat', 'whatsapp', 'copy_link'].includes(method as string)) return null;
+  if (action !== 'select' &&
+    !((method === 'copy_link' || method === 'wechat') &&
+      (action === 'copy_success' || action === 'copy_failure'))) return null;
+  return { shareMethod: method as ShareMethod, shareAction: action };
+}
+
 export type AnalyticsEngineVisit = {
-  eventType: 'page_view' | 'outbound_click';
+  eventType: 'page_view' | 'outbound_click' | 'share';
   day: string;
   country: string;
   pathname: string;
@@ -25,6 +39,8 @@ export type AnalyticsEngineVisit = {
   landingPage: string;
   policyId: string;
   outboundClick: string;
+  shareMethod?: ShareMethod;
+  shareAction?: ShareAction;
 };
 
 type AnalyticsEngineDataPoint = {
@@ -42,7 +58,7 @@ export function buildAnalyticsEngineVisitDataPoint(
 ): AnalyticsEngineDataPoint {
   return {
     indexes: [visit.visitorHash],
-    // Analytics Engine exposes these append-only dimensions as blob1..blob13.
+    // Keep blob1..blob13 stable; share events append method/action at blob14/15.
     blobs: [
       visit.eventType,
       visit.day,
@@ -57,6 +73,7 @@ export function buildAnalyticsEngineVisitDataPoint(
       visit.landingPage,
       visit.policyId,
       visit.outboundClick,
+      ...(visit.eventType === 'share' ? [visit.shareMethod ?? '', visit.shareAction ?? ''] : []),
     ],
     doubles: [1],
   };
@@ -67,13 +84,21 @@ export async function dispatchAnalyticsEvent(
   handlers: {
     pageView: () => Promise<unknown>;
     outboundClick: () => Promise<unknown>;
+    share: () => Promise<unknown>;
   },
 ) {
+  if (eventType === 'share') {
+    await handlers.share();
+    return;
+  }
   if (eventType === 'outbound_click') {
     await handlers.outboundClick();
     return;
   }
 
+  if (eventType !== undefined && eventType !== 'page_view') {
+    throw new Error('Invalid analytics event type');
+  }
   await handlers.pageView();
 }
 

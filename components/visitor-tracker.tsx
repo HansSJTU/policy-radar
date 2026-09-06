@@ -77,6 +77,7 @@ export function VisitorTracker() {
       if (!(event.target instanceof Element)) return;
       const anchor = event.target.closest<HTMLAnchorElement>('a[href]');
       if (!anchor) return;
+      if (anchor.hasAttribute('data-share-method')) return;
 
       let destination: URL;
       try {
