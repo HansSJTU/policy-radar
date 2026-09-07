@@ -144,7 +144,7 @@ const examples: Record<PolicyId, [string[], string[]][]> = {
     [
       [
         '小陈上次办 H-1B 的时候，工资是符合当时门槛的。现在他想跳槽，新公司愿意给同样的工资。但如果新标准生效了，而且这个岗位的门槛已经涨了，那公司就得把 offer 再往上提，才能让新申请达标。以前批过不代表现在也能过。',
-        '小王的H-1B签证和原来的LCA（也就是劳工条件申请）都快到期了，公司准备帮他续三年，所以得重新办一份LCA。虽然公司、岗位、工作地点都没变，但如果新的工资标准适用于这次申请，公司就得按新标准重新核一遍他的工资。\n要是小王现在的工资低于新的法定门槛，公司就必须给他涨薪，才能满足延期申请的要求。如果公司不愿意增加这笔预算，那就没法按现在的工资水平帮他办延期。\n至于哪些延期申请会受到新标准的影响，还得等最终的规则和过渡安排公布后才能确定。',
+        '小王的H-1B签证和原来的LCA（也就是劳工条件申请）都快到期了，公司准备帮他续三年，所以得重新办一份LCA。虽然公司、岗位、工作地点都没变，但如果新的工资标准适用于这次申请，公司就得按新标准重新核一遍他的工资。要是小王现在的工资低于新的法定门槛，公司就必须给他涨薪，才能满足延期申请的要求。如果公司不愿意增加这笔预算，那就没法按现在的工资水平帮他办延期。至于哪些延期申请会受到新标准的影响，还得等最终的规则和过渡安排公布后才能确定。',
       ],
       [
         'Chen’s salary met the legal threshold for the previous H-1B filing. A new employer now offers the same pay. If the new wage standard applies to this petition and raises the threshold for the role, the new employer must increase the offer accordingly. Meeting the previous filing’s standard does not satisfy a higher standard applicable to this one.',
