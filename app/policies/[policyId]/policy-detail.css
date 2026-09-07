@@ -869,6 +869,7 @@ fieldset.pd-stages {
 .pd-impact .pd-example p {
   font-size: 14px;
   line-height: 1.8;
+  white-space: pre-line;
 }
 .pd-scenario-intro {
   margin: 22px 0 14px;
