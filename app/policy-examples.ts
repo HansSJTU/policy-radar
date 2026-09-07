@@ -144,11 +144,11 @@ const examples: Record<PolicyId, [string[], string[]][]> = {
     [
       [
         '小陈上次办 H-1B 的时候，工资是符合当时门槛的。现在他想跳槽，新公司愿意给同样的工资。但如果新标准生效了，而且这个岗位的门槛已经涨了，那公司就得把 offer 再往上提，才能让新申请达标。以前批过不代表现在也能过。',
-        '小王的 H-1B 快到期了，公司准备帮他办延期，他也打算继续留在原岗位工作。虽然公司、岗位和工作地点都没变，但如果这次延期需要提交新的 LCA（劳工条件申请），而且新工资标准适用于这份申请，公司就得按新标准核对他的工资。要是他现在的工资低于新的法定门槛，公司就需要给他涨薪，才能满足这次延期申请的工资要求。如果公司不愿增加预算，就可能没法按原工资帮他办延期。具体哪些延期申请会适用新标准，还要看最终规则和过渡安排。',
+        '小王的 H-1B 和原来的 LCA（劳工条件申请）都快到期了，公司准备帮他续三年，因此需要重新办理 LCA。虽然公司、岗位和工作地点都没变，但如果新的工资标准适用于这次申请，公司就得按新标准核对他的工资。要是他现在的工资低于新的法定门槛，公司就需要给他涨薪，才能满足这次延期申请的工资要求。如果公司不愿增加预算，就可能没法按原工资帮他办延期。具体哪些延期申请会适用新标准，还要看最终规则和过渡安排。',
       ],
       [
         'Chen’s salary met the legal threshold for the previous H-1B filing. A new employer now offers the same pay. If the new wage standard applies to this petition and raises the threshold for the role, the new employer must increase the offer accordingly. Meeting the previous filing’s standard does not satisfy a higher standard applicable to this one.',
-        'Wang’s H-1B is nearing expiration, and the company plans to file an extension so he can stay in the same job. Even with the same employer, role, and work location, if the extension requires a new Labor Condition Application (LCA) and the new wage standard applies to that filing, the company must check his pay against the new standard. If his current salary falls below the new required wage, the company must raise it to meet the extension’s wage requirement. Without the extra budget, it may be unable to proceed at his current pay. Which extensions would be covered depends on the final rule and transition provisions.',
+        'Wang’s H-1B and existing Labor Condition Application (LCA) are both nearing expiration. The company plans to extend his employment for another three years, so it needs a new LCA. Even with the same employer, role, and work location, if the new wage standard applies to this filing, the company must check his pay against the new standard. If his current salary falls below the new required wage, the company must raise it to meet the extension’s wage requirement. Without the extra budget, it may be unable to proceed at his current pay. Which extensions would be covered depends on the final rule and transition provisions.',
       ],
     ],
     [

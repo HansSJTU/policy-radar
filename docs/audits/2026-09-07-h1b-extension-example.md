@@ -7,3 +7,5 @@ Sources read via search excerpts:
 - https://www.dol.gov/agencies/whd/fact-sheets/62g-h1b-required-wage — confirms the required-wage obligation.
 
 Result: Added bilingual illustrative copy conditional on a new LCA and applicability of the future standard. The example does not assert that all extensions or existing approvals are immediately covered. Final-rule applicability and transition provisions were not re-audited; other policies are outside this check.
+
+Clarification: The example now explicitly assumes both the H-1B and existing LCA are expiring and the employer seeks another three years. A new LCA is required for that period; only applicability of the future wage standard remains conditional. DOL validity rules limit an H-1B LCA to three years: https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/E3_regs.pdf .
