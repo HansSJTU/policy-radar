@@ -80,6 +80,7 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
+        id="site-menu-trigger"
         className="mobile-menu-trigger"
         aria-label={copy.label}
       >

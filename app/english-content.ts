@@ -71,12 +71,12 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       { date: '2026-09-15', text: 'The rule remains scheduled to take effect unless the court first issues a stay or injunction.' },
     ],
     impacts: [
-      'After completing a U.S. F-1 degree, a student generally could not begin another program at the same or a lower educational level in F-1 status, directly narrowing the Day-1 CPT fallback route.',
+      'Completing a U.S. F-1 degree after the rule takes effect bars F-1 through another same- or lower-level program; degrees completed before the effective date do not count toward this restriction.',
       'Graduate students would face tighter limits on changing programs or schools mid-program unless SEVP approves an exception for special circumstances.',
       'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
       'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
     ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion'],
+    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion', 'Rice: PhD exit, master’s OPT and degree restrictions'],
   },
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',
@@ -279,7 +279,7 @@ export const englishRouteStages: Record<string, { subtitle: string; policies: Re
   'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Final rule · Decision pending after hearing' } } },
   CPT: { subtitle: 'Curricular training', policies: { 'cpt-guidance': { title: 'Aug. 12 / Aug. 24 CPT guidance', state: 'Schools are applying the new standard' } } },
   OPT: { subtitle: 'Post-completion work', policies: {
-    'opt-fee': { title: 'OPT $100k', state: 'Amount not officially confirmed' },
+    'opt-fee': { title: 'OPT $100k', state: 'Under OIRA review · Not in effect' },
     'ead-discretion': { title: 'I-765 criminal-record review', state: 'Comment period closed' },
   } },
   'H-1B': { subtitle: 'Employment visa', policies: {

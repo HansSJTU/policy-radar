@@ -9,10 +9,12 @@ export function PageLanguageSwitch({
   action,
   language,
   label,
+  from,
 }: {
   action: string;
   language: Language;
   label: string;
+  from?: string;
 }) {
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
@@ -25,6 +27,7 @@ export function PageLanguageSwitch({
       action={action}
       method="get"
     >
+      {from && <input type="hidden" name="from" value={from} />}
       <button
         type="submit"
         name="lang"

@@ -130,7 +130,6 @@ test('desktop timeline scroll viewport shares the process rail right inset', () 
     css,
     /\.timeline-node\.to-present::after\s*\{[^}]*linear-gradient\(90deg,\s*var\(--green\),\s*var\(--red\)\)/s,
   );
-  assert.match(policyPage, /index === policy\.milestones\.length - 1[^\n]*to-present/);
   assert.match(
     css,
     /@media \(max-width:\s*720px\)[\s\S]*?\.timeline-node:last-child::after\s*\{[^}]*display:\s*none;/s,
@@ -141,20 +140,13 @@ test('desktop timeline scroll viewport shares the process rail right inset', () 
   );
 });
 
-test('timeline caption stays outside the horizontal scroll viewport', () => {
-  assert.match(
-    policyPage,
-    /<div className="timeline-block">\s*<div className="timeline-caption"[\s\S]*?<div className="timeline-shell" ref=\{showLatestTimeline\}>/s,
-  );
-  assert.doesNotMatch(
-    policyPage,
-    /<div className="timeline-shell"[^>]*>\s*<div className="timeline-caption"/s,
-  );
-  assert.match(css, /\.timeline-caption\s*\{[^}]*margin:\s*0 45px 0 96px;/s);
+test('homepage briefing sends readers to the detail timeline', () => {
+  assert.match(policyPage, /policyHref\(item.policyId, language, 'timeline', selectedPath\)/);
+  assert.match(policyPage, /className="timeline-shell" ref=\{showLatestTimeline\}/);
 });
 
 test('timeline date starts its own line beside the marker', () => {
-  assert.match(css, /\.timeline-node time\s*\{[^}]*display:\s*block;/s);
+  assert.match(css, /\.timeline-node time\s*\{[^}]*display:\s*(?:block|flex);/s);
 });
 
 test('community impact owns the card upper right while path impact sits below rank', () => {

@@ -22,6 +22,29 @@ export type ContentUpdate = {
 };
 
 const chineseUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-07",
+  "changes": [
+    {
+      "id": "duration-status-academic-restrictions-clarification",
+      "category": "政策说明更正",
+      "title": "#03 补明博士退出后的 OPT 障碍与第二学位限制边界",
+      "summary": "此前的例子未解释新规则如何影响 master out 后的 OPT，并遗漏同级／降级再入学限制的毕业时间边界。现根据最终规则和 Rice 说明补清。",
+      "before": "博士退出拿硕士后“确认能否申请 OPT”；完成美国 F-1 学位后原则上不能再读同级或更低级别。",
+      "after": "新规则禁止研究生在读期间改学位层级。Rice 说明学校可发硕士学位，但不能将博士 SEVIS 记录改为硕士，因此不能以该硕士申请 OPT。同级／降级再入学限制不计算生效前完成的学位。",
+      "sources": [
+        {
+          "label": "2026 最终规则",
+          "href": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+        },
+        {
+          "label": "Rice 博士退出与学位限制说明",
+          "href": "https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions"
+        }
+      ]
+    }
+  ]
+},
   {
     "date": "2026-09-06",
     "changes": [
@@ -395,6 +418,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-07",
+  "changes": [
+    {
+      "id": "duration-status-academic-restrictions-clarification",
+      "category": "Policy clarification",
+      "title": "#03 Explain the OPT obstacle after a PhD exit and the boundary on another degree",
+      "summary": "The earlier example did not explain how the rule affects OPT after a master’s exit and omitted the completion-date boundary for same/lower-level study. The final rule and Rice guidance clarify both.",
+      "before": "After a PhD exit with a master’s, “check OPT eligibility”; completing a U.S. F-1 degree generally barred another same/lower-level program.",
+      "after": "The rule prohibits graduate-level changes during study. Rice explains that a master’s can be awarded without changing doctoral SEVIS records, preventing OPT based on that master’s. Degrees completed before the effective date do not count toward the same/lower-level re-enrollment limit.",
+      "sources": [
+        {
+          "label": "2026 final rule",
+          "href": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+        },
+        {
+          "label": "Rice guidance on PhD exit and degree restrictions",
+          "href": "https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions"
+        }
+      ]
+    }
+  ]
+},
   {
     "date": "2026-09-06",
     "changes": [

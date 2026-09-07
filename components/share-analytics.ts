@@ -7,24 +7,41 @@ import {
   getPolicyIdFromHash,
   type SessionAttribution,
 } from './analytics-session';
-import { createAnonymousVisitorId, getOrCreateAnonymousVisitorId } from './anonymous-visitor';
+import {
+  createAnonymousVisitorId,
+  getOrCreateAnonymousVisitorId,
+} from './anonymous-visitor';
 
 let session: SessionAttribution | undefined;
 
-export function recordShareEvent(shareMethod: ShareMethod, shareAction: ShareAction) {
+export function recordShareEvent(
+  shareMethod: ShareMethod,
+  shareAction: ShareAction,
+) {
   try {
-    session ??= getOrCreateSessionAttribution({
-      getItem: (key) => {
-        try { return sessionStorage.getItem(key); } catch { return null; }
+    session ??= getOrCreateSessionAttribution(
+      {
+        getItem: (key) => {
+          try {
+            return sessionStorage.getItem(key);
+          } catch {
+            return null;
+          }
+        },
+        setItem: (key, value) => {
+          try {
+            sessionStorage.setItem(key, value);
+          } catch {
+            /* In-memory attribution remains available. */
+          }
+        },
       },
-      setItem: (key, value) => {
-        try { sessionStorage.setItem(key, value); } catch { /* In-memory attribution remains available. */ }
+      {
+        href: window.location.href,
+        referrer: document.referrer,
+        createSessionId: createAnonymousVisitorId,
       },
-    }, {
-      href: window.location.href,
-      referrer: document.referrer,
-      createSessionId: createAnonymousVisitorId,
-    });
+    );
 
     const payload = buildAnalyticsEventPayload({
       eventType: 'share',
@@ -32,7 +49,10 @@ export function recordShareEvent(shareMethod: ShareMethod, shareAction: ShareAct
       pathname: window.location.pathname,
       language: document.documentElement.lang,
       session,
-      policyId: getPolicyIdFromHash(window.location.hash),
+      policyId:
+        document.querySelector<HTMLElement>(
+          '.policy-detail-page[data-policy-id]',
+        )?.dataset.policyId ?? getPolicyIdFromHash(window.location.hash),
       shareMethod,
       shareAction,
     });

@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import './policy-home.css';
 
 :root {
   --ink: #172b46;
@@ -361,6 +362,7 @@ main { width: 100%; min-width: 0; }
 .timeline-caption strong { color: var(--ink); font-size: .75rem; }
 .time-axis { position: relative; min-width: max(100%, 720px); margin: 17px 0 0; padding: 1px 0 0; display: flex; list-style: none; }
 .timeline-node { position: relative; flex: 1 0 180px; min-width: 0; padding: 25px 22px 0 0; }
+.timeline-node:has(.timeline-estimate) { flex-basis: 240px; }
 .timeline-node::after { content: ''; position: absolute; left: 8px; top: 7px; z-index: 1; width: 100%; height: 2px; background: #aeb7c4; }
 .timeline-node:last-child::after { width: calc(100% - 8px); }
 .timeline-node.past::after { background: var(--green); }
@@ -368,11 +370,11 @@ main { width: 100%; min-width: 0; }
 .timeline-node > b { position: absolute; left: 2px; top: 2px; z-index: 2; width: 12px; height: 12px; border: 3px solid var(--card); border-radius: 50%; background: var(--green); box-shadow: 0 0 0 1px var(--green); }
 .timeline-node.present > b { width: 15px; height: 15px; top: 0; background: var(--red); box-shadow: 0 0 0 1px var(--red), 0 0 0 6px rgba(217,80,66,.1); animation: none; }
 .timeline-node.future > b { background: var(--card); box-shadow: 0 0 0 1px #9ca8b7; }
-.timeline-node time { display: block; color: var(--ink); font: 650 .875rem/1.5 ui-monospace, monospace; }
+.timeline-node time { display: flex; align-items: center; gap: 6px; white-space: nowrap; color: var(--ink); font: 650 .875rem/1.5 ui-monospace, monospace; }
 .timeline-node.present time { color: var(--red); }
 .timeline-node p { margin: 7px 0 0; color: var(--muted); font-size: .875rem; line-height: 1.75; }
 .timeline-node.present p { color: var(--ink-soft); font-weight: 700; }
-.timeline-node em { display: inline-block; margin-top: 7px; padding: 3px 5px; border: 1px dashed #aeb7c4; border-radius: 4px; color: var(--gray); font-size: .75rem; font-style: normal; }
+.timeline-estimate { flex: 0 0 auto; padding: 1px 4px; border: 1px dashed #aeb7c4; border-radius: 3px; color: var(--gray); font-family: var(--font-sans, sans-serif); font-size: .625rem; line-height: 1.4; font-weight: 400; }
 
 .policy-details { margin-left: 96px; }
 .policy-trigger { min-height: 60px; padding: 14px 0; display: flex; align-items: center; gap: 9px; color: var(--blue); cursor: pointer; list-style: none; font-size: .875rem; font-weight: 650; border-top: 1px solid var(--line); }
@@ -790,7 +792,6 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .timeline-node.present > b { top: 0; left: calc(var(--timeline-axis-x) - var(--timeline-content-x)); }
   .timeline-node time { font-size: .875rem; }
   .timeline-node p { margin-top: 6px; font-size: .9375rem; line-height: 1.75; }
-  .timeline-node em { margin-top: 6px; font-size: .75rem; }
   .policy-details { min-width: 0; margin-left: 0; }
   .policy-sources { margin-left: 0; padding-bottom: 20px; grid-template-columns: 1fr; gap: 8px; }
   .policy-trigger { min-height: 58px; font-size: .875rem; }

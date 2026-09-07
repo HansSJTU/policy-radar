@@ -50,7 +50,7 @@ function mobileSnapshot() {
   return window.matchMedia('(max-width: 720px)').matches;
 }
 
-export function ShareButton({ language, pageTitle }: { language: Language; pageTitle?: string }) {
+export function ShareButton({ language, pageTitle, pageDescription }: { language: Language; pageTitle?: string; pageDescription?: string }) {
   const ui = copy[language];
   const [open, setOpen] = useState(false);
   const mobile = useSyncExternalStore(subscribeMobile, mobileSnapshot, () => false);
@@ -107,7 +107,7 @@ export function ShareButton({ language, pageTitle }: { language: Language; pageT
         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
       setQr('');
       setQrFailed(false);
-      setContent(buildShareContent(window.location.href, language, pageTitle));
+      setContent(buildShareContent(window.location.href, language, pageTitle, pageDescription));
       setWechat(false);
       setCopied(false);
       setManualCopy(false);
@@ -202,7 +202,7 @@ export function ShareButton({ language, pageTitle }: { language: Language; pageT
               <>
                 <div className="share-preview">
                   <span className="brand-mark"><Radar aria-hidden="true" /></span>
-                  <div><strong>{content.title}</strong><span>{ui.subtitle}</span></div>
+                  <div><strong>{content.title}</strong><span>{pageDescription ?? ui.subtitle}</span></div>
                 </div>
                 <div className="share-channels">
                   <a className="share-channel" data-share-method="messages" href={links?.messages} onClick={() => choose('messages')}><span><MessageCircle aria-hidden="true" /></span>{ui.messages}</a>

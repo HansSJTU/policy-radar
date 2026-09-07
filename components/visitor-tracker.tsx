@@ -16,7 +16,7 @@ import {
 let visitRecorded = false;
 let analyticsSession: SessionAttribution | undefined;
 
-export function VisitorTracker() {
+export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
   useEffect(() => {
     const visitorId = getOrCreateAnonymousVisitorId();
 
@@ -70,7 +70,10 @@ export function VisitorTracker() {
 
     if (!visitRecorded) {
       visitRecorded = true;
-      sendEvent('page_view', getPolicyIdFromHash(window.location.hash));
+      sendEvent(
+        'page_view',
+        policyId ?? getPolicyIdFromHash(window.location.hash),
+      );
     }
 
     const recordOutboundClick = (event: MouseEvent) => {
@@ -87,7 +90,8 @@ export function VisitorTracker() {
       }
 
       if (
-        (destination.protocol !== 'https:' && destination.protocol !== 'http:') ||
+        (destination.protocol !== 'https:' &&
+          destination.protocol !== 'http:') ||
         destination.origin === window.location.origin
       ) {
         return;
@@ -100,7 +104,7 @@ export function VisitorTracker() {
 
     document.addEventListener('click', recordOutboundClick);
     return () => document.removeEventListener('click', recordOutboundClick);
-  }, []);
+  }, [policyId]);
 
   return null;
 }
