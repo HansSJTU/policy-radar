@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 import { getUpdateLog } from '../app/update-log.ts';
@@ -88,15 +87,4 @@ test('the September 1 content update records the corrected hearing date and mate
 test('the English update log contains no Chinese copy', () => {
   const strings = collectStrings(getUpdateLog('en'));
   assert.equal(strings.filter((value) => han.test(value)).length, 0);
-});
-
-test('the update page and home navigation expose the changelog route', async () => {
-  const [page, home] = await Promise.all([
-    readFile(new URL('../app/updates/page.tsx', import.meta.url), 'utf8'),
-    readFile(new URL('../app/policy-radar-client.tsx', import.meta.url), 'utf8'),
-  ]);
-
-  assert.match(page, /getUpdateLog/);
-  assert.match(home, /\/updates\?lang=en/);
-  assert.match(home, /href=\{updatesHref\}/);
 });

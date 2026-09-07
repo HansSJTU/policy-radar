@@ -1,3 +1,5 @@
+import { isUuid } from '../lib/identifiers.ts';
+
 export const POLICY_IDS = [
   'opt-fee',
   'h1b-fee',
@@ -20,8 +22,6 @@ export type CommunityRatingSubmission = {
 };
 
 const policyIdSet = new Set<string>(POLICY_IDS);
-const UUID_PATTERN =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 export function parseCommunityRating(
   input: unknown,
@@ -36,8 +36,7 @@ export function parseCommunityRating(
     !Number.isInteger(rating) ||
     rating < 1 ||
     rating > 10 ||
-    typeof visitorId !== 'string' ||
-    !UUID_PATTERN.test(visitorId)
+    !isUuid(visitorId)
   ) {
     return null;
   }

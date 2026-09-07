@@ -1,3 +1,5 @@
+import { isUuid } from '../lib/identifiers.ts';
+
 export type TrafficPoint = {
   day: string;
   pageViews: number;
@@ -180,12 +182,7 @@ export function normalizeCampaignDimension(value: unknown) {
 }
 
 export function normalizeSessionId(value: unknown) {
-  return typeof value === 'string' &&
-    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
-      value,
-    )
-    ? value.toLowerCase()
-    : '(unknown)';
+  return isUuid(value) ? value.toLowerCase() : '(unknown)';
 }
 
 export function normalizePolicyId(value: unknown) {

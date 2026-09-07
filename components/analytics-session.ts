@@ -1,3 +1,9 @@
+import {
+  normalizeCampaignDimension,
+  normalizePolicyId,
+} from '../app/analytics-model.ts';
+import { isUuid } from '../lib/identifiers.ts';
+
 export type SessionAttribution = {
   referrerHost: string;
   utmSource: string;
@@ -31,19 +37,6 @@ type AnalyticsEventPayloadOptions = {
 };
 
 const SESSION_KEY = 'f1-policy-radar-analytics-session';
-const UUID_PATTERN =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-
-function cleanCampaignValue(value: string | null) {
-  return Array.from(value ?? '')
-    .filter((character) => {
-      const code = character.charCodeAt(0);
-      return code >= 32 && code !== 127;
-    })
-    .join('')
-    .trim()
-    .slice(0, 128);
-}
 
 function referrerHost(referrer: string) {
   if (!referrer) return '(direct)';
@@ -62,8 +55,7 @@ function isSessionAttribution(value: unknown): value is SessionAttribution {
     typeof session.utmSource === 'string' &&
     typeof session.utmMedium === 'string' &&
     typeof session.utmCampaign === 'string' &&
-    typeof session.sessionId === 'string' &&
-    UUID_PATTERN.test(session.sessionId) &&
+    isUuid(session.sessionId) &&
     typeof session.landingPage === 'string' &&
     session.landingPage.startsWith('/') &&
     !session.landingPage.startsWith('//')
@@ -87,9 +79,9 @@ export function getOrCreateSessionAttribution(
   const current = new URL(options.href);
   const session: SessionAttribution = {
     referrerHost: referrerHost(options.referrer),
-    utmSource: cleanCampaignValue(current.searchParams.get('utm_source')),
-    utmMedium: cleanCampaignValue(current.searchParams.get('utm_medium')),
-    utmCampaign: cleanCampaignValue(current.searchParams.get('utm_campaign')),
+    utmSource: normalizeCampaignDimension(current.searchParams.get('utm_source')),
+    utmMedium: normalizeCampaignDimension(current.searchParams.get('utm_medium')),
+    utmCampaign: normalizeCampaignDimension(current.searchParams.get('utm_campaign')),
     sessionId: options.createSessionId(),
     landingPage: current.pathname,
   };
@@ -105,7 +97,7 @@ export function getOrCreateSessionAttribution(
 
 export function getPolicyIdFromHash(hash: string) {
   const value = hash.startsWith('#') ? hash.slice(1) : hash;
-  return /^[a-z0-9][a-z0-9-]{0,63}$/.test(value) ? value : '';
+  return normalizePolicyId(value);
 }
 
 export function buildAnalyticsEventPayload(

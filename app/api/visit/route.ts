@@ -1,20 +1,10 @@
+import { isInvalidJsonRequest } from '@/app/api-request';
 import { dispatchAnalyticsEvent, normalizeShareEvent } from '@/app/analytics-model';
 import { recordAnalyticsEngineEvent, recordVisit } from '@/db/analytics';
-
-const UUID_PATTERN =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+import { isUuid } from '@/lib/identifiers';
 
 export async function POST(request: Request) {
-  const requestUrl = new URL(request.url);
-  const origin = request.headers.get('origin');
-  const fetchSite = request.headers.get('sec-fetch-site');
-  const contentLength = Number(request.headers.get('content-length') ?? 0);
-
-  if (
-    (origin && origin !== requestUrl.origin) ||
-    fetchSite === 'cross-site' ||
-    contentLength > 2048
-  ) {
+  if (isInvalidJsonRequest(request)) {
     return Response.json({ error: 'Invalid request' }, { status: 403 });
   }
 
@@ -42,8 +32,7 @@ export async function POST(request: Request) {
 
   if (
     !body || typeof body !== 'object' ||
-    typeof body.visitorId !== 'string' ||
-    !UUID_PATTERN.test(body.visitorId)
+    !isUuid(body.visitorId)
   ) {
     return Response.json(
       { error: 'Invalid visitor identifier' },
