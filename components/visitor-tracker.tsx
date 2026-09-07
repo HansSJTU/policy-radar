@@ -3,15 +3,14 @@
 import { useEffect } from 'react';
 
 import {
-  buildAnalyticsEventPayload,
-  getOrCreateSessionAttribution,
   getPolicyIdFromHash,
   type SessionAttribution,
 } from './analytics-session';
+import { getOrCreateAnonymousVisitorId } from './anonymous-visitor';
 import {
-  createAnonymousVisitorId,
-  getOrCreateAnonymousVisitorId,
-} from './anonymous-visitor';
+  createBrowserAnalyticsSession,
+  sendBrowserAnalyticsEvent,
+} from './browser-analytics';
 
 let visitRecorded = false;
 let analyticsSession: SessionAttribution | undefined;
@@ -20,52 +19,20 @@ export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
   useEffect(() => {
     const visitorId = getOrCreateAnonymousVisitorId();
 
-    analyticsSession ??= getOrCreateSessionAttribution(
-      {
-        getItem(key) {
-          try {
-            return sessionStorage.getItem(key);
-          } catch {
-            return null;
-          }
-        },
-        setItem(key, value) {
-          try {
-            sessionStorage.setItem(key, value);
-          } catch {
-            // The in-memory fallback remains stable for this page lifecycle.
-          }
-        },
-      },
-      {
-        href: window.location.href,
-        referrer: document.referrer,
-        createSessionId: createAnonymousVisitorId,
-      },
-    );
+    analyticsSession ??= createBrowserAnalyticsSession();
 
     const sendEvent = (
       eventType: 'page_view' | 'outbound_click',
       policyId = '',
       outboundClick = '',
     ) => {
-      const payload = buildAnalyticsEventPayload({
+      sendBrowserAnalyticsEvent({
         eventType,
         visitorId,
-        pathname: window.location.pathname,
-        language: document.documentElement.lang,
         session: analyticsSession!,
         policyId,
         outboundClick,
       });
-
-      void fetch('/api/visit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-        keepalive: true,
-        credentials: 'same-origin',
-      }).catch(() => undefined);
     };
 
     if (!visitRecorded) {

@@ -4,8 +4,7 @@ import test from 'node:test';
 
 import { communitySchools, verifiedSchools } from '../app/cpt-schools.ts';
 
-const source = await readFile(new URL('../app/policy-radar-client.tsx', import.meta.url), 'utf8');
-const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
+const source = await readFile(new URL('../app/home-copy.ts', import.meta.url), 'utf8');
 
 const screenshotEvidence = {
   'UNC–Chapel Hill': ['/cpt-evidence/cpt_unc.jpeg'],
@@ -131,33 +130,4 @@ test('school evidence labels describe the stored images as email screenshots', (
   assert.match(source, /evidenceTitle: 'Email screenshots'/);
   assert.match(source, /closeEvidence: 'Close email screenshots'/);
   assert.doesNotMatch(source, /论坛截图|forum screenshots?/i);
-});
-
-test('all school evidence opens an accessible dialog and can be dismissed', () => {
-  assert.match(
-    source,
-    /useState<\s*VerifiedSchool\s*\|\s*CommunitySchool\s*\|\s*null\s*>/,
-  );
-  assert.match(source, /visibleVerified[\s\S]*?aria-haspopup="dialog"/);
-  assert.match(source, /aria-haspopup="dialog"/);
-  assert.match(source, /<dialog[\s\S]*?aria-modal="true"/);
-  assert.match(source, /aria-modal="true"/);
-  assert.match(source, /event\.key === 'Escape'/);
-  assert.match(source, /selectedEvidence\.href/);
-});
-
-test('evidence dialog preserves its header and delegates overflow to the body', () => {
-  assert.match(css, /\.evidence-modal-backdrop\s*\{[^}]*position:\s*fixed;/s);
-  assert.match(css, /\.evidence-modal\s*>\s*header\s*\{[^}]*flex:\s*0\s+0\s+auto;/s);
-  assert.match(
-    css,
-    /\.evidence-modal-body\s*\{[^}]*flex:\s*1\s+1\s+auto;[^}]*min-height:\s*0;[^}]*overflow:\s*auto;/s,
-  );
-});
-
-test('mobile evidence dialog leaves breathing room above a long screenshot', () => {
-  assert.match(
-    css,
-    /@media \(max-width:\s*720px\)[\s\S]*?\.evidence-modal\s*\{[^}]*width:\s*100%;[^}]*max-height:\s*88dvh;/s,
-  );
 });

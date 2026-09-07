@@ -2,15 +2,14 @@
 
 import type { ShareAction, ShareMethod } from '@/app/analytics-model';
 import {
-  buildAnalyticsEventPayload,
-  getOrCreateSessionAttribution,
   getPolicyIdFromHash,
   type SessionAttribution,
 } from './analytics-session';
+import { getOrCreateAnonymousVisitorId } from './anonymous-visitor';
 import {
-  createAnonymousVisitorId,
-  getOrCreateAnonymousVisitorId,
-} from './anonymous-visitor';
+  createBrowserAnalyticsSession,
+  sendBrowserAnalyticsEvent,
+} from './browser-analytics';
 
 let session: SessionAttribution | undefined;
 
@@ -19,35 +18,11 @@ export function recordShareEvent(
   shareAction: ShareAction,
 ) {
   try {
-    session ??= getOrCreateSessionAttribution(
-      {
-        getItem: (key) => {
-          try {
-            return sessionStorage.getItem(key);
-          } catch {
-            return null;
-          }
-        },
-        setItem: (key, value) => {
-          try {
-            sessionStorage.setItem(key, value);
-          } catch {
-            /* In-memory attribution remains available. */
-          }
-        },
-      },
-      {
-        href: window.location.href,
-        referrer: document.referrer,
-        createSessionId: createAnonymousVisitorId,
-      },
-    );
+    session ??= createBrowserAnalyticsSession();
 
-    const payload = buildAnalyticsEventPayload({
+    sendBrowserAnalyticsEvent({
       eventType: 'share',
       visitorId: getOrCreateAnonymousVisitorId(),
-      pathname: window.location.pathname,
-      language: document.documentElement.lang,
       session,
       policyId:
         document.querySelector<HTMLElement>(
@@ -56,13 +31,6 @@ export function recordShareEvent(
       shareMethod,
       shareAction,
     });
-    void fetch('/api/visit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      keepalive: true,
-      credentials: 'same-origin',
-    }).catch(() => undefined);
   } catch {
     // Sharing must still work when storage or analytics is unavailable.
   }

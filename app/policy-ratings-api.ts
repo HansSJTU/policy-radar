@@ -1,3 +1,4 @@
+import { isInvalidJsonRequest } from './api-request';
 import { parseCommunityRating } from './community-impact-model';
 import {
   getPolicyImpactAggregates,
@@ -24,16 +25,7 @@ export async function postPolicyRatingResponse(
   request: Request,
   db: D1Database,
 ) {
-  const requestUrl = new URL(request.url);
-  const origin = request.headers.get('origin');
-  const fetchSite = request.headers.get('sec-fetch-site');
-  const contentLength = Number(request.headers.get('content-length') ?? 0);
-
-  if (
-    (origin && origin !== requestUrl.origin) ||
-    fetchSite === 'cross-site' ||
-    contentLength > 2048
-  ) {
+  if (isInvalidJsonRequest(request)) {
     return Response.json(
       { error: 'Invalid request' },
       { status: 403, headers: noStoreHeaders },
