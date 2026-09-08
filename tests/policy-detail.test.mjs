@@ -21,9 +21,9 @@ test('only known legacy policy fragments become detail URLs', () => {
   assert.equal(legacyPolicyHref('#%zz', 'en'), null);
 });
 
-test('policy sharing uses its own summary and drops acquisition parameters', () => {
+test('policy sharing uses its own summary and drops acquisition and navigation parameters', () => {
   const content = buildShareContent(
-    'https://example.com/policies/opt-fee?utm_source=xhs#outlook',
+    'https://example.com/policies/opt-fee?utm_source=xhs&from=H-1B&path=H-1B#outlook',
     'en',
     'OPT fee',
     'Potential impact on the first job.',

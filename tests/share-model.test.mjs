@@ -13,6 +13,34 @@ test('shared links preserve page, anchor, and selected language but strip incomi
   assert.match(content.text, /https:\/\/example.com\/updates\?lang=en#opt-fee/);
 });
 
+test('homepage sharing preserves every supported path and the ranking anchor', () => {
+  for (const language of ['en', 'zh']) {
+    for (const path of ['F-1', 'CPT', 'OPT', 'H-1B']) {
+      const content = share.buildShareContent(
+        `https://example.com/?path=${path}&utm_source=reddit#ranking`, language,
+      );
+      assert.equal(content.url, `https://example.com/?lang=${language}&path=${path}#ranking`);
+      assert.ok(content.text.endsWith(content.url));
+      assert.doesNotMatch(content.text, /utm_source|reddit/);
+    }
+  }
+});
+
+test('homepage sharing omits unsupported filters and keeps only content parameters', () => {
+  for (const path of ['', 'all', 'H-4', 'h-1b', 'unknown']) {
+    const content = share.buildShareContent(
+      `https://example.com/?lang=zh&path=${path}&from=OPT&utm_campaign=private&token=secret#cpt-schools`, 'en',
+    );
+    assert.equal(content.url, 'https://example.com/?lang=en#cpt-schools');
+    assert.doesNotMatch(content.text, /private|secret/);
+  }
+});
+
+test('homepage sharing without a filter or anchor still uses the selected language', () => {
+  const content = share.buildShareContent('https://example.com/?utm_source=reddit', 'zh');
+  assert.equal(content.url, 'https://example.com/?lang=zh');
+});
+
 test('mail and WhatsApp encode punctuation and Unicode without changing the shared text', () => {
   assert.equal(typeof share.buildShareLinks, 'function');
   const content = { title: '政策 & 路径', text: '你好 & hello\nhttps://example.com/?lang=zh', url: 'https://example.com/?lang=zh' };
