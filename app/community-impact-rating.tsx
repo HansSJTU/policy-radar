@@ -1,12 +1,9 @@
 'use client';
 
-/* oxlint-disable next/no-img-element -- This small badge uses the supplied transparent Niulai artwork. */
-
 import { useCallback, useEffect, useState } from 'react';
 
 import {
   buildCommunityRatingChoices,
-  shouldShowCommunityHornMarker,
   type PolicyId,
 } from './community-impact-model';
 import { getOrCreateAnonymousVisitorId } from '../components/anonymous-visitor';
@@ -25,8 +22,8 @@ const RATING_SELECTIONS_KEY = 'f1-policy-radar-impact-ratings-v1';
 
 const copy = {
   zh: {
-    title: '社区影响',
-    hornMarker: '社区影响均分已突破 9.0',
+    title: '参与评分',
+    scoreTitle: '社区评分',
     noRatings: '暂无评分',
     ratingCount: (count: number) => `${count} 人评分`,
     prompt: '这项政策对你的路径破坏有多大？',
@@ -48,8 +45,8 @@ const copy = {
     ],
   },
   en: {
-    title: 'COMMUNITY IMPACT',
-    hornMarker: 'Community impact average is above 9.0',
+    title: 'Rate this policy',
+    scoreTitle: 'Community score',
     noRatings: 'No ratings yet',
     ratingCount: (count: number) => `${count} ratings`,
     prompt: 'How damaging is this policy to your path?',
@@ -217,8 +214,9 @@ export function CommunityImpactRating({
 }) {
   const text = copy[language];
   const choices = buildCommunityRatingChoices(selected);
-  const summary = selected ? text.myRating(selected) : text.prompt;
-  const description = selected ? text.descriptions[selected - 1] : text.scaleHint;
+  const description = selected
+    ? text.descriptions[selected - 1]
+    : text.scaleHint;
 
   return (
     <aside
@@ -227,23 +225,10 @@ export function CommunityImpactRating({
       data-policy-rating={policyId}
     >
       <div className="community-impact-head">
-        <span>{text.title}</span>
-        <div className="community-average">
-          <span className="community-average-value">
-            <CommunityHornMarker
-              language={language}
-              average={aggregate?.average}
-            />
-            <strong>{aggregate ? aggregate.average.toFixed(1) : '—'}</strong>
-          </span>
-          <small>/10</small>
-        </div>
-      </div>
-      <div className="community-impact-summary">
-        <span>
+        <span className="community-rating-title">{text.title}</span>
+        <span className="community-rating-count">
           {aggregate ? text.ratingCount(aggregate.count) : text.noRatings}
         </span>
-        <strong>{summary}</strong>
       </div>
       <fieldset className="impact-scale">
         <legend className="visually-hidden">{text.prompt}</legend>
@@ -253,6 +238,7 @@ export function CommunityImpactRating({
             key={value}
             aria-label={text.buttonLabel(value)}
             aria-pressed={pressed}
+            aria-describedby={`rating-feedback-${policyId}`}
             disabled={pending}
             title={`${value} · ${text.descriptions[value - 1]}`}
             onClick={() => onSelect(value)}
@@ -264,31 +250,42 @@ export function CommunityImpactRating({
       <p
         className={error ? 'rating-feedback error' : 'rating-feedback'}
         aria-live="polite"
+        id={`rating-feedback-${policyId}`}
       >
+        {selected !== null && (
+          <strong className="community-my-rating">
+            {text.myRating(selected)} ·{' '}
+          </strong>
+        )}
         {error ? text.unavailable : description}
       </p>
     </aside>
   );
 }
 
-export function CommunityHornMarker({
+export function CommunityImpactScore({
   language,
-  average,
+  policyId,
+  aggregate,
 }: {
   language: Language;
-  average?: number;
+  policyId: PolicyId;
+  aggregate?: CommunityImpactAggregate;
 }) {
-  if (!shouldShowCommunityHornMarker(average)) return null;
-
-  const label = copy[language].hornMarker;
+  const text = copy[language];
+  const score = aggregate ? aggregate.average.toFixed(1) : '—';
   return (
-    <span className="community-horn-marker" title={label}>
-      <img
-        className="community-horn-art"
-        src="/animations/niulai-horn-badge.png"
-        alt={label}
-        draggable="false"
-      />
-    </span>
+    <div
+      className="rank-score community-score"
+      data-community-score={policyId}
+      aria-label={`${text.scoreTitle}: ${aggregate ? `${score} / 10` : text.noRatings}`}
+      aria-live="polite"
+    >
+      <span>{text.scoreTitle}</span>
+      <div className="community-score-value">
+        <strong>{score}</strong>
+        <small>/10</small>
+      </div>
+    </div>
   );
 }

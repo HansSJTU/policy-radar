@@ -5,7 +5,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   BriefcaseBusiness,
-  Clock3,
   FileText,
   GraduationCap,
   Radar,
@@ -14,6 +13,7 @@ import {
 import { resolveRequestLanguage } from '../../language-server';
 import { PageLanguageSwitch } from '../../page-language-switch';
 import { ShareButton } from '../../share-button';
+import { getPolicyShareItem } from '../../item-share-model';
 import { MobileSiteMenu } from '../../mobile-site-menu';
 import { getPolicies } from '../../policy-data';
 import {
@@ -105,7 +105,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
     label: `${String(item.rank).padStart(2, '0')} · ${getPolicyEditorial(item.id, language)!.short}`,
   }));
   const sections: [string, string][] = [
-    ['overview', english ? 'Policy overview' : '政策概况'],
+    ['overview', english ? 'Policy background' : '政策背景'],
     ['impact', english ? 'Potential impact' : '潜在影响'],
     ['outlook', english ? 'Outlook' : '走向预测'],
     ['progress', english ? 'Progress' : '程序进度'],
@@ -178,13 +178,6 @@ export default async function PolicyPage({ params, searchParams }: Props) {
               <div className="pd-eyebrow">
                 <span>{p.group}</span>POLICY BRIEF
               </div>
-              <div className="pd-meta">
-                <span>
-                  <Clock3 aria-hidden="true" />
-                  {english ? 'As of' : '资料截至'}{' '}
-                  <time dateTime={POLICY_AS_OF}>{POLICY_AS_OF}</time> · ET
-                </span>
-              </div>
               <div className="pd-title-row">
                 <h1>
                   <GlossaryText text={p.title} />
@@ -193,21 +186,62 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   language={language}
                   pageTitle={p.title}
                   pageDescription={p.teaser}
+                  item={getPolicyShareItem(policyId, language)}
                 />
               </div>
+              <dl
+                className="pd-status"
+                aria-label={
+                  english ? 'Current status and effect' : '当前状态与效力'
+                }
+              >
+                <div>
+                  <dt>{english ? 'Current status' : '当前状态'}</dt>
+                  <dd>{p.status}</dd>
+                </div>
+                <div>
+                  <dt>{english ? 'In effect?' : '是否生效'}</dt>
+                  <dd data-effect={p.effectState}>{p.effectLabel}</dd>
+                </div>
+                <div>
+                  <dt>{english ? 'As of' : '资料截至'}</dt>
+                  <dd>
+                    <time dateTime={POLICY_AS_OF}>{POLICY_AS_OF}</time> · ET
+                  </dd>
+                </div>
+              </dl>
               <p className="pd-deck">
-                <GlossaryText text={record.tldr} />
+                <GlossaryText text={p.summary} />
               </p>
-              <section id="overview" className="pd-overview">
-                <h2>{english ? 'Policy overview' : '政策概况'}</h2>
+              <dl className="pd-essentials">
+                <div>
+                  <dt>{english ? 'Who is affected' : '相关人群'}</dt>
+                  <dd>
+                    <GlossaryText text={p.audience} />
+                  </dd>
+                </div>
+                <div>
+                  <dt>{english ? 'Key boundaries' : '关键边界'}</dt>
+                  <dd>
+                    <GlossaryText text={p.caveat} />
+                  </dd>
+                </div>
+                <div>
+                  <dt>{english ? 'Next to watch' : '下一步关注'}</dt>
+                  <dd>
+                    {record.next[0].estimate &&
+                      (english ? 'Estimated · ' : '预计 · ')}
+                    {record.next[0].date} ·{' '}
+                    <GlossaryText text={record.next[0].text} />
+                  </dd>
+                </div>
+              </dl>
+              <section id="overview" className="pd-overview pd-section">
+                <h2>{english ? 'Policy background' : '政策背景'}</h2>
                 <p>
-                  <GlossaryText text={record.current} />
+                  <GlossaryText text={p.background} />
                 </p>
               </section>
-              <div className="pd-status">
-                <span>{p.status}</span>
-                <a href="#sources">{p.note} ↗</a>
-              </div>
               <section id="impact" className="pd-section">
                 <div className="pd-section-heading">
                   <h2>{english ? 'Potential impact' : '潜在影响'}</h2>
@@ -336,13 +370,6 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   track={process}
                   language={language}
                 />
-                <div className="pd-watch">
-                  <strong>{english ? 'Next to watch' : '下一步观察'}</strong>
-                  <p>
-                    {record.next[0].date} ·{' '}
-                    <GlossaryText text={record.next[0].text} />
-                  </p>
-                </div>
               </section>
               <section id="timeline" className="pd-section">
                 <div className="pd-section-heading">

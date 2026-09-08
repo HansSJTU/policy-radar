@@ -46,6 +46,7 @@ type AnalyticsMetadata = {
   outboundClick?: unknown;
   shareMethod?: unknown;
   shareAction?: unknown;
+  schoolId?: unknown;
 };
 
 function database() {
@@ -166,6 +167,7 @@ export async function recordAnalyticsEngineEvent(
     policyId: normalizePolicyId(metadata.policyId),
     outboundClick: normalizeOutboundClick(metadata.outboundClick),
     ...normalizeShareEvent(metadata.shareMethod, metadata.shareAction),
+    schoolId: normalizePolicyId(metadata.schoolId),
   });
 }
 

@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import Image from 'next/image';
 import { Popover } from '@base-ui/react/popover';
-import { Check, ChevronLeft, Copy, Link, Mail, MessageCircle, MessagesSquare, Phone, Radar, Share, X } from 'lucide-react';
+import { Check, ChevronLeft, Copy, Download, ImagePlus, Link, Mail, MessageCircle, MessagesSquare, Phone, Radar, Share, X } from 'lucide-react';
 import { recordShareEvent } from '@/components/share-analytics';
 import type { ShareMethod } from './analytics-model';
 import type { Language } from './language';
-import { buildShareContent, buildShareLinks, type ShareContent } from './share-model';
+import { buildItemShareContent, buildShareContent, buildShareLinks, itemShareLabels, type ShareContent, type ShareItem } from './share-model';
 
 const copy = {
   zh: {
@@ -23,6 +23,11 @@ const copy = {
     step1: '复制页面网址', step2: '在微信聊天中粘贴发送',
     inWechat: '已在微信中打开？点右上角「···」分享。',
     appHint: '未打开应用？可复制下方网址，再粘贴发送。',
+    itemTitle: '分享本条', summary: '本条摘要与链接', copySummary: '复制本条摘要与链接',
+    summarySuccess: '本条摘要与链接已复制', summaryFailure: '无法自动复制，请选中下方摘要与链接手动复制。',
+    image: '生成本条分享图', imageTitle: '本条分享图', imageBusy: '正在生成分享图…',
+    imageFailure: '分享图生成失败，请重试，或复制本条摘要与链接。',
+    download: '保存 PNG 图片', imageHelp: '可保存图片，或长按图片保存。转发前请留意图上的核对日期。',
   },
   en: {
     share: 'Share', title: 'Share this page', close: 'Close sharing', back: 'Back to sharing options',
@@ -37,6 +42,11 @@ const copy = {
     step1: 'Copy the page link', step2: 'Paste it into a WeChat conversation',
     inWechat: 'Already in WeChat? Tap “···” to share.',
     appHint: 'App didn’t open? Copy the link below and paste it to share.',
+    itemTitle: 'Share this entry', summary: 'Entry summary and link', copySummary: 'Copy summary & link',
+    summarySuccess: 'Summary and link copied', summaryFailure: 'Unable to copy automatically. Select the summary and link below to copy manually.',
+    image: 'Create share image', imageTitle: 'Entry share image', imageBusy: 'Creating share image…',
+    imageFailure: 'Unable to create the image. Try again, or copy the summary and link.',
+    download: 'Save PNG image', imageHelp: 'Save the image, or touch and hold it to save. Check the review date before forwarding.',
   },
 };
 
@@ -50,7 +60,13 @@ function mobileSnapshot() {
   return window.matchMedia('(max-width: 720px)').matches;
 }
 
-export function ShareButton({ language, pageTitle, pageDescription }: { language: Language; pageTitle?: string; pageDescription?: string }) {
+type ShareButtonProps = { language: Language; pageTitle?: string; pageDescription?: string; item?: ShareItem; compact?: boolean };
+
+export function ShareButton(props: ShareButtonProps) {
+  return <ShareMenu key={`${props.language}-${props.item?.id ?? 'page'}`} {...props} />;
+}
+
+function ShareMenu({ language, pageTitle, pageDescription, item, compact = false }: ShareButtonProps) {
   const ui = copy[language];
   const [open, setOpen] = useState(false);
   const mobile = useSyncExternalStore(subscribeMobile, mobileSnapshot, () => false);
@@ -59,20 +75,31 @@ export function ShareButton({ language, pageTitle, pageDescription }: { language
   const [content, setContent] = useState<ShareContent | null>(null);
   const [qr, setQr] = useState('');
   const [qrFailed, setQrFailed] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const [busy, setBusy] = useState(false);
+  const [copied, setCopied] = useState<'url' | 'summary' | null>(null);
+  const [busy, setBusy] = useState<'url' | 'summary' | null>(null);
   const [notice, setNotice] = useState('');
-  const [manualCopy, setManualCopy] = useState(false);
+  const [manualCopy, setManualCopy] = useState<'url' | 'summary' | null>(null);
+  const [imageView, setImageView] = useState(false);
+  const [imageBusy, setImageBusy] = useState(false);
+  const [shareImage, setShareImage] = useState<{ url: string; width: number; height: number } | null>(null);
+  const operation = useRef({ id: 0 });
   const resetTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const urlInput = useRef<HTMLInputElement>(null);
+  const summaryInput = useRef<HTMLTextAreaElement>(null);
+  const imageButton = useRef<HTMLButtonElement>(null);
   const wechatButton = useRef<HTMLButtonElement>(null);
   const backButton = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    const activeOperation = operation.current;
     return () => {
       clearTimeout(resetTimer.current);
+      activeOperation.id++;
     };
   }, []);
+
+  useEffect(() => () => { if (shareImage) URL.revokeObjectURL(shareImage.url); }, [shareImage]);
+
 
   useEffect(() => {
     if (!open || !wechat || mobile || !content) return;
@@ -89,34 +116,50 @@ export function ShareButton({ language, pageTitle, pageDescription }: { language
   }, [open, wechat, mobile, content]);
 
   useEffect(() => {
-    if (open && wechat) backButton.current?.focus();
-  }, [open, wechat]);
+    if (open && (wechat || imageView)) backButton.current?.focus();
+  }, [open, wechat, imageView]);
 
   useEffect(() => {
-    if (manualCopy) {
+    if (manualCopy === 'url') {
       urlInput.current?.focus();
       urlInput.current?.select();
+    } else if (manualCopy === 'summary') {
+      summaryInput.current?.focus();
+      summaryInput.current?.select();
     }
   }, [manualCopy]);
 
   function changeOpen(next: boolean) {
     setOpen(next);
+    operation.current.id++;
     clearTimeout(resetTimer.current);
+    setShareImage(null);
+    setImageView(false);
+    setImageBusy(false);
+    setBusy(null);
     if (next) {
       setAppleMobile(/iPhone|iPad|iPod/.test(navigator.userAgent) ||
         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
       setQr('');
       setQrFailed(false);
-      setContent(buildShareContent(window.location.href, language, pageTitle, pageDescription));
+      setContent(item ? buildItemShareContent(item, language) : buildShareContent(window.location.href, language, pageTitle, pageDescription));
       setWechat(false);
-      setCopied(false);
-      setManualCopy(false);
+      setCopied(null);
+      setManualCopy(null);
       setNotice('');
     }
   }
 
+  function record(method: ShareMethod, action: Parameters<typeof recordShareEvent>[1]) {
+    recordShareEvent(method, action, item ? {
+      policyId: item.kind === 'policy' ? item.id : '',
+      schoolId: item.kind === 'school' ? item.id : '',
+    } : undefined);
+  }
+
   function choose(method: ShareMethod) {
-    recordShareEvent(method, 'select');
+    record(method, 'select');
+    setManualCopy(null);
     if (method === 'wechat') {
       setWechat(true);
       setNotice('');
@@ -125,60 +168,98 @@ export function ShareButton({ language, pageTitle, pageDescription }: { language
     }
   }
 
-  async function copyUrl() {
+  async function copyContent(target: 'url' | 'summary') {
     if (!content || busy) return;
-    const method = wechat ? 'wechat' : 'copy_link';
-    if (method === 'copy_link') recordShareEvent(method, 'select');
-    setBusy(true);
-    setManualCopy(false);
+    const method = target === 'summary' ? 'copy_summary' : wechat ? 'wechat' : 'copy_link';
+    if (method !== 'wechat') record(method, 'select');
+    const current = operation.current.id;
+    setBusy(target);
+    setManualCopy(null);
     try {
-      await navigator.clipboard.writeText(content.url);
-      setCopied(true);
-      setNotice(wechat ? ui.copyWechat : ui.copySuccess);
-      recordShareEvent(method, 'copy_success');
+      await navigator.clipboard.writeText(target === 'summary' ? content.text : content.url);
+      record(method, 'copy_success');
+      if (current !== operation.current.id) return;
+      setCopied(target);
+      setNotice(target === 'summary' ? ui.summarySuccess : wechat ? ui.copyWechat : ui.copySuccess);
       clearTimeout(resetTimer.current);
-      resetTimer.current = setTimeout(() => setCopied(false), 3000);
+      resetTimer.current = setTimeout(() => setCopied(null), 3000);
     } catch {
-      setCopied(false);
-      setManualCopy(true);
-      setNotice(ui.copyFailure);
-      recordShareEvent(method, 'copy_failure');
+      record(method, 'copy_failure');
+      if (current !== operation.current.id) return;
+      setCopied(null);
+      setManualCopy(target);
+      setNotice(target === 'summary' ? ui.summaryFailure : ui.copyFailure);
     } finally {
-      setBusy(false);
+      if (current === operation.current.id) setBusy(null);
+    }
+  }
+
+  async function createImage() {
+    if (!item || !content || imageBusy) return;
+    record('share_image', 'select');
+    setImageView(true);
+    setManualCopy(null);
+    setNotice('');
+    if (shareImage) return;
+    const current = operation.current.id;
+    setImageBusy(true);
+    try {
+      const { generateShareImage } = await import('./share-image');
+      const result = await generateShareImage(item, content, language);
+      if (current !== operation.current.id) return;
+      setShareImage({ url: URL.createObjectURL(result.blob), width: result.width, height: result.height });
+      record('share_image', 'generate_success');
+    } catch {
+      if (current !== operation.current.id) return;
+      setNotice(ui.imageFailure);
+      record('share_image', 'generate_failure');
+    } finally {
+      if (current === operation.current.id) setImageBusy(false);
     }
   }
 
   const links = content ? buildShareLinks(content, appleMobile) : null;
   const copyControl = (
-    <button className="share-copy-button" type="button" disabled={busy} data-copied={copied || undefined} onClick={() => void copyUrl()}>
-      {copied ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
-      <span>{busy ? ui.copying : copied ? ui.copied : ui.copy}</span>
+    <button className="share-copy-button" type="button" disabled={!!busy} data-copied={copied === 'url' || undefined} onClick={() => void copyContent('url')}>
+      {copied === 'url' ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
+      <span>{busy === 'url' ? ui.copying : copied === 'url' ? ui.copied : ui.copy}</span>
     </button>
   );
 
   return (
     <Popover.Root open={open} onOpenChange={changeOpen} modal={mobile}>
-      <Popover.Trigger className="share-trigger" aria-label={ui.title} title={ui.title}>
+      <Popover.Trigger className={`share-trigger${compact ? ' share-card-trigger' : ''}`} aria-label={item ? `${ui.itemTitle}：${item.title}` : ui.title} title={item ? ui.itemTitle : ui.title}>
         <Share aria-hidden="true" />
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Backdrop className="share-backdrop" />
-        <Popover.Positioner className="share-positioner" side="bottom" align="end" sideOffset={10}>
-          <Popover.Popup className="share-panel">
+        <Popover.Positioner className="share-positioner" side="bottom" align="end" sideOffset={10} sticky>
+          <Popover.Popup className="share-panel" data-item-share={item ? true : undefined}>
             <span className="share-handle" aria-hidden="true" />
             <div className="share-panel-header">
-              {wechat && (
+              {(wechat || imageView) && (
                 <button ref={backButton} type="button" className="share-icon-button" aria-label={ui.back} onClick={() => {
                   setWechat(false);
-                  setManualCopy(false);
+                  setImageView(false);
+                  setManualCopy(null);
                   setNotice('');
-                  requestAnimationFrame(() => wechatButton.current?.focus());
+                  requestAnimationFrame(() => (imageView ? imageButton : wechatButton).current?.focus());
                 }}><ChevronLeft aria-hidden="true" /></button>
               )}
-              <Popover.Title>{wechat ? ui.wechatTitle : ui.title}</Popover.Title>
+              <Popover.Title>{imageView ? ui.imageTitle : wechat ? ui.wechatTitle : item ? ui.itemTitle : ui.title}</Popover.Title>
               <Popover.Close className="share-icon-button" aria-label={ui.close}><X aria-hidden="true" /></Popover.Close>
             </div>
-            {content && (wechat ? (
+            {content && (imageView ? (
+              <div className="share-image-content" aria-busy={imageBusy}>
+                {imageBusy && <output aria-live="polite">{ui.imageBusy}</output>}
+                {shareImage && item && <>
+                  <Image className="share-generated-image" src={shareImage.url} width={shareImage.width} height={shareImage.height} alt={`${item.title} · ${item.status} · ${item.scope} · ${itemShareLabels[language].checkedOn} ${item.checkedOn}`} unoptimized />
+                  <a className="share-copy-button share-save-image" href={shareImage.url} download={`${item.kind}-${item.id}-${language}-${item.checkedOn}.png`} onClick={() => record('share_image', 'download')}><Download aria-hidden="true" />{ui.download}</a>
+                  <p className="share-help">{ui.imageHelp}</p>
+                </>}
+                {!imageBusy && !shareImage && <button className="share-copy-button" type="button" onClick={() => void createImage()}>{ui.image}</button>}
+              </div>
+            ) : wechat ? (
               <div className="share-wechat-content">
                 {mobile ? (
                   <>
@@ -202,8 +283,15 @@ export function ShareButton({ language, pageTitle, pageDescription }: { language
               <>
                 <div className="share-preview">
                   <span className="brand-mark"><Radar aria-hidden="true" /></span>
-                  <div><strong>{content.title}</strong><span>{pageDescription ?? ui.subtitle}</span></div>
+                  <div><strong>{content.title}</strong><span>{item?.status ?? pageDescription ?? ui.subtitle}</span>{item && <time className="share-checked-date" dateTime={item.checkedOn}>{itemShareLabels[language].checkedOn} {item.checkedOn} · ET</time>}</div>
                 </div>
+                {item && <div className="share-item-actions">
+                  <button className="share-copy-button" type="button" disabled={!!busy} data-copied={copied === 'summary' || undefined} onClick={() => void copyContent('summary')}>
+                    {copied === 'summary' ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
+                    {busy === 'summary' ? ui.copying : copied === 'summary' ? ui.summarySuccess : ui.copySummary}
+                  </button>
+                  <button ref={imageButton} className="share-copy-button" type="button" onClick={() => void createImage()}><ImagePlus aria-hidden="true" />{ui.image}</button>
+                </div>}
                 <div className="share-channels">
                   <a className="share-channel" data-share-method="messages" href={links?.messages} onClick={() => choose('messages')}><span><MessageCircle aria-hidden="true" /></span>{ui.messages}</a>
                   <a className="share-channel" data-share-method="email" href={links?.email} onClick={() => choose('email')}><span><Mail aria-hidden="true" /></span>{ui.email}</a>
@@ -221,9 +309,10 @@ export function ShareButton({ language, pageTitle, pageDescription }: { language
               </>
             ))}
             <output className="share-notice" aria-live="polite">{notice}</output>
-            {wechat && manualCopy && content && (
+            {wechat && manualCopy === 'url' && content && (
               <input className="share-manual-url" ref={urlInput} aria-label={ui.url} value={content.url} readOnly onFocus={(event) => event.currentTarget.select()} />
             )}
+            {manualCopy === 'summary' && content && <textarea className="share-manual-summary" ref={summaryInput} aria-label={ui.summary} value={content.text} readOnly rows={8} onFocus={(event) => event.currentTarget.select()} />}
           </Popover.Popup>
         </Popover.Positioner>
       </Popover.Portal>

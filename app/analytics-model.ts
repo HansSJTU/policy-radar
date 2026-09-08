@@ -12,18 +12,19 @@ export type CountryTrafficPoint = {
   visitors: number;
 };
 
-export type ShareMethod = 'messages' | 'email' | 'wechat' | 'whatsapp' | 'copy_link';
-export type ShareAction = 'select' | 'copy_success' | 'copy_failure';
+export type ShareMethod = 'messages' | 'email' | 'wechat' | 'whatsapp' | 'copy_link' | 'copy_summary' | 'share_image';
+export type ShareAction = 'select' | 'copy_success' | 'copy_failure' | 'generate_success' | 'generate_failure' | 'download';
 
 export function normalizeShareEvent(method: unknown, action: unknown): {
   shareMethod: ShareMethod;
   shareAction: ShareAction;
 } | null {
-  if (!['messages', 'email', 'wechat', 'whatsapp', 'copy_link'].includes(method as string)) return null;
+  if (!['messages', 'email', 'wechat', 'whatsapp', 'copy_link', 'copy_summary', 'share_image'].includes(method as string)) return null;
   if (action !== 'select' &&
-    !((method === 'copy_link' || method === 'wechat') &&
-      (action === 'copy_success' || action === 'copy_failure'))) return null;
-  return { shareMethod: method as ShareMethod, shareAction: action };
+    !((method === 'copy_link' || method === 'wechat' || method === 'copy_summary') &&
+      (action === 'copy_success' || action === 'copy_failure')) &&
+    !(method === 'share_image' && ['generate_success', 'generate_failure', 'download'].includes(action as string))) return null;
+  return { shareMethod: method as ShareMethod, shareAction: action as ShareAction };
 }
 
 export type AnalyticsEngineVisit = {
@@ -43,6 +44,7 @@ export type AnalyticsEngineVisit = {
   outboundClick: string;
   shareMethod?: ShareMethod;
   shareAction?: ShareAction;
+  schoolId?: string;
 };
 
 type AnalyticsEngineDataPoint = {
@@ -60,7 +62,7 @@ export function buildAnalyticsEngineVisitDataPoint(
 ): AnalyticsEngineDataPoint {
   return {
     indexes: [visit.visitorHash],
-    // Keep blob1..blob13 stable; share events append method/action at blob14/15.
+    // Keep blob1..blob15 stable; item shares append schoolId at blob16.
     blobs: [
       visit.eventType,
       visit.day,
@@ -75,7 +77,7 @@ export function buildAnalyticsEngineVisitDataPoint(
       visit.landingPage,
       visit.policyId,
       visit.outboundClick,
-      ...(visit.eventType === 'share' ? [visit.shareMethod ?? '', visit.shareAction ?? ''] : []),
+      ...(visit.eventType === 'share' ? [visit.shareMethod ?? '', visit.shareAction ?? '', visit.schoolId ?? ''] : []),
     ],
     doubles: [1],
   };

@@ -25,7 +25,7 @@ test('unknown event types cannot inflate page views', async () => {
 
 test('share metadata accepts only supported methods and meaningful action combinations', () => {
   assert.equal(typeof model.normalizeShareEvent, 'function');
-  for (const shareMethod of ['messages', 'email', 'wechat', 'whatsapp', 'copy_link']) {
+  for (const shareMethod of ['messages', 'email', 'wechat', 'whatsapp', 'copy_link', 'copy_summary', 'share_image']) {
     assert.deepEqual(model.normalizeShareEvent(shareMethod, 'select'), { shareMethod, shareAction: 'select' });
   }
   assert.deepEqual(model.normalizeShareEvent('wechat', 'copy_success'), { shareMethod: 'wechat', shareAction: 'copy_success' });
@@ -58,7 +58,7 @@ test('Analytics Engine appends share dimensions without moving any existing fiel
   });
   assert.deepEqual(point.blobs, [
     'share', '2026-09-05', 'US', '/', 'zh', '(direct)', 'xhs', 'social', 'fall',
-    'session', '/', 'opt-fee', '', 'whatsapp', 'select',
+    'session', '/', 'opt-fee', '', 'whatsapp', 'select', '',
   ]);
   assert.deepEqual(point.doubles, [1]);
 });

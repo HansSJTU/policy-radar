@@ -3,7 +3,11 @@
 import { useEffect, useState } from 'react';
 import { GlossaryText } from '../../glossary-text';
 import type { Language } from '../../language';
-import type { ProcessTrack } from '../../process-model';
+import {
+  getProcessStageState,
+  getProcessStageLabel,
+  type ProcessTrack,
+} from '../../process-model';
 import type { PolicyEditorial } from '../../policy-editorial';
 import { policyHref } from '../../policy-links';
 
@@ -147,7 +151,9 @@ export function PolicyProgress({
   track: ProcessTrack;
   language: Language;
 }) {
-  const [selected, setSelected] = useState(track.currentStage);
+  const [selected, setSelected] = useState(
+    track.activeStage ?? track.lastCompletedStage ?? 0,
+  );
   const english = language === 'en';
   const descriptions = (
     track.kind === 'federal-rulemaking'
@@ -156,6 +162,17 @@ export function PolicyProgress({
   )[language];
   return (
     <>
+      <p className="pd-current">
+        <GlossaryText text={track.detail} />
+      </p>
+      {track.waitingFor && (
+        <div className="pd-watch pd-process-waiting">
+          <strong>{english ? 'Currently waiting for' : '当前等待'}</strong>
+          <p>
+            <GlossaryText text={track.waitingFor} />
+          </p>
+        </div>
+      )}
       <fieldset
         className="pd-stages"
         aria-label={english ? 'Policy progress' : '政策进度'}
@@ -168,44 +185,28 @@ export function PolicyProgress({
             type="button"
             key={label}
             onClick={() => setSelected(index)}
-            className={
-              index === track.currentStage
-                ? 'current'
-                : index < track.currentStage
-                  ? 'past'
-                  : ''
-            }
+            className={getProcessStageState(track, index)}
+            aria-current={index === track.activeStage ? 'step' : undefined}
             aria-pressed={index === selected}
             aria-controls="progress-result"
           >
-            <span>{index + 1}</span>
+            <span aria-hidden="true">
+              {getProcessStageState(track, index) === 'complete'
+                ? '✓'
+                : index + 1}
+            </span>
             <strong>{label}</strong>
+            <small>{getProcessStageLabel(track, index, language)}</small>
           </button>
         ))}
       </fieldset>
       <div className="pd-progress-note" id="progress-result" aria-live="polite">
         <strong>
-          {selected === track.currentStage
-            ? english
-              ? 'Current stage · '
-              : '当前阶段 · '
-            : selected > track.currentStage
-              ? english
-                ? 'Later stage · '
-                : '后续节点 · '
-              : english
-                ? 'Earlier stage · '
-                : '前序节点 · '}
+          {getProcessStageLabel(track, selected, language)} ·{' '}
           <GlossaryText text={track.stages[selected]} />
         </strong>
         <p>
-          <GlossaryText
-            text={
-              selected === track.currentStage
-                ? track.detail
-                : descriptions[selected]
-            }
-          />
+          <GlossaryText text={descriptions[selected]} />
         </p>
       </div>
       {track.litigation.length > 0 && (

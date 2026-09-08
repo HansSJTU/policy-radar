@@ -3,12 +3,28 @@ import type { PolicyEditorial } from './policy-editorial';
 export const englishPolicyEditorial: PolicyEditorial[] = [
   {
     id: 'opt-fee',
+    discovery: {
+      status: 'Under OIRA review',
+      identities: ['F-1', 'OPT / STEM OPT'],
+      summary:
+        'ICE plans an added OPT fee. The media-reported $100,000 amount, payer and exemptions remain unconfirmed; current application fees are unchanged.',
+    },
     title: 'OPT May Carry a $100,000 Fee',
     short: '$100,000 OPT Fee',
     group: 'OPT',
     agency: 'DHS / ICE',
     rin: '1653-AB01',
-    status: 'Under OIRA review · Not in effect',
+    status: 'Under OIRA review',
+    effectLabel: 'Not in effect · Amount unconfirmed',
+    audience:
+      'F-1 students planning OPT or a STEM OPT extension and their employers.',
+    caveat:
+      'The payer, covered applications and exemptions are unpublished; $100,000 is a media-reported figure.',
+    summary:
+      'ICE plans a new fee for F-1 Optional Practical Training. Media reports put the possible amount at $100,000, but the official fee schedule, payer, covered applications and exemptions have not been published.',
+    background:
+      'ICE submitted Optional Practical Training Fees to OIRA on August 20, 2026 as an economically significant rule; the review record does not include public fee provisions.',
+    effectState: 'not-in-effect',
     note: 'The $100,000 figure comes from media reports',
     deck: 'How would this change the first job after graduation and the path to staying in the U.S.?',
     headline:
@@ -70,35 +86,32 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'Filing cutoffs and transition periods determine which graduating classes are affected.',
       ],
     ],
-    process: [
-      ['Rulemaking agenda', 'The agency plans the direction of the rule.'],
-      ['OIRA review', 'The proposed rule is undergoing prepublication review.'],
-      [
-        'Public proposal',
-        'The formal text will define the fee, covered groups, and comment process.',
-      ],
-      [
-        'Public comment',
-        'The agency reviews comments and may revise the proposal.',
-      ],
-      ['Final rule', 'The agency publishes the final fee and coverage terms.'],
-      [
-        'Effective and enforced',
-        'Implementation follows the effective-date provisions and any later orders.',
-      ],
-    ],
-    active: 1,
-    processKind: 'Rulemaking',
     related: ['h1b-fee', 'duration-status'],
   },
   {
     id: 'h1b-fee',
+    discovery: {
+      status: 'Public proposal',
+      identities: ['H-1B'],
+      summary:
+        'The proposed $103,265 surcharge covers cap-subject H-1B petitions, including U.S. advanced-degree cases and F-1 changes of status. Cap-exempt petitions are excluded; the surcharge is not in effect.',
+      next: { date: '2026-09-24', text: 'Public comment deadline' },
+    },
     title: 'Proposed $103,265 H-1B Surcharge',
     short: '$103,265 H-1B Surcharge',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD20',
-    status: 'Formal proposal · Comments due September 24',
+    status: 'Formal proposal · Comments open',
+    effectLabel: 'Not in effect',
+    audience:
+      'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
+    caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
+    summary:
+      'DHS proposes a $103,265 surcharge on each cap-subject H-1B petition, on top of existing fees. U.S. advanced-degree cases and F-1 changes of status are included; cap-exempt petitions are excluded.',
+    background:
+      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. This proposed fee would be additional to existing fees and should be distinguished from the earlier presidential-proclamation charge.',
+    effectState: 'not-in-effect',
     note: 'Scope is defined by cap-subject filings',
     deck: 'After selection, will the employer still be willing to sponsor you?',
     headline:
@@ -160,34 +173,36 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'This is a proposed surcharge on top of existing fees; it should not be conflated with the fee under the earlier presidential proclamation.',
       ],
     ],
-    process: [
-      ['Public proposal', 'The NPRM was published on August 25.'],
-      ['Public comment', 'The current comment deadline is September 24.'],
-      [
-        'Review and revision',
-        'DHS evaluates comments and decides what comes next.',
-      ],
-      [
-        'Final rule',
-        'If it proceeds, the agency will publish the final fee and dates.',
-      ],
-      [
-        'Implementation and litigation',
-        'Actual implementation depends on the final terms and any court orders.',
-      ],
-    ],
-    active: 1,
-    processKind: 'Rulemaking',
     related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   },
   {
     id: 'duration-status',
+    discovery: {
+      status: 'Final rule · In litigation',
+      identities: ['F / J'],
+      summary:
+        'The final rule would replace D/S with fixed periods generally capped at four years, requiring USCIS extensions for longer stays. It is not yet effective; current D/S holders have transition provisions.',
+      next: {
+        date: '2026-09-15',
+        text: 'Scheduled effective date, unless stayed or enjoined beforehand',
+      },
+    },
     title: 'F/J Status Will Shift from D/S to Fixed Admission Periods',
     short: 'Fixed F/J Periods and Litigation',
     group: 'F-1',
     agency: 'DHS / ICE',
     rin: 'Final Rule 2026-14439',
     status: 'Final rule · In litigation',
+    effectLabel: 'Not in effect · Scheduled September 15',
+    audience:
+      'F/J status holders, especially those planning extensions, OPT or travel and reentry.',
+    caveat:
+      'Current D/S holders have transition provisions; a hearing does not pause the rule, and court orders determine any relief.',
+    summary:
+      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings.',
+    background:
+      'The 2025 proposal became a final rule on July 17, 2026, generally setting a four-year maximum and requiring USCIS extensions. After hearing arguments on September 3, the court took the request under advisement without granting or denying it from the bench.',
+    effectState: 'not-in-effect',
     note: 'Scheduled to take effect September 15; watch for court orders',
     deck: 'Which transitions in study, transfers, and post-graduation work would become more complex?',
     headline:
@@ -249,34 +264,32 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'A hearing by itself does not pause a rule; legal effect depends on an order issued by the court.',
       ],
     ],
-    process: [
-      ['Final rule', 'The final text was published on July 17.'],
-      ['Lawsuit filed', 'Relevant groups sued on August 18.'],
-      [
-        'Injunction considered',
-        'After a September 3 hearing, the motion remained under consideration.',
-      ],
-      [
-        'Effective-date milestone',
-        'Originally scheduled for September 15, subject to any court order then in effect.',
-      ],
-      [
-        'Further proceedings',
-        'Temporary relief and the final outcome of the case are separate stages.',
-      ],
-    ],
-    active: 2,
-    processKind: 'Implementation and litigation',
     related: ['cpt-guidance', 'opt-fee', 'grace-period'],
   },
   {
     id: 'h1b-weighted-selection',
+    discovery: {
+      status: 'In effect',
+      identities: ['H-1B'],
+      summary:
+        'H-1B selection has changed from equal-chance selection to wage weighting: Levels I–IV receive one to four weights. These are not individual selection probabilities and do not directly raise required wage floors.',
+    },
     title: 'H-1B Selection Now Weights Wage Levels',
     short: 'Wage-Weighted H-1B Selection',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD01',
-    status: 'In effect · Used beginning with FY2027',
+    status: 'Final rule · Used from FY 2027',
+    effectLabel: 'In effect · February 27, 2026',
+    audience:
+      'cap-subject H-1B registrants and employers reporting the offered position.',
+    caveat:
+      'One to four weights are not individual selection probabilities and do not themselves raise the required wage floor.',
+    summary:
+      'USCIS has replaced equal-chance cap-subject H-1B selection with wage-level weighting: Levels I, II, III and IV receive 1, 2, 3 and 4 entries, respectively. These weights do not translate into fixed individual selection probabilities.',
+    background:
+      'DHS published the RIN 1615-AD01 final rule on December 29, 2025, retaining beneficiary-centric selection and the existing order for regular and U.S. advanced-degree allocations.',
+    effectState: 'in-effect',
     note: 'Levels I–IV receive one to four entries respectively',
     deck: 'Why do two people with offers now enter the selection process from different starting points?',
     headline:
@@ -335,28 +348,32 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'This selection mechanism does not itself raise the statutory wage an employer must pay.',
       ],
     ],
-    process: [
-      ['Public proposal', 'The NPRM was published on September 24, 2025.'],
-      ['Final rule', 'The final rule was published on December 29, 2025.'],
-      ['Rule effective', 'The rule took effect on February 27, 2026.'],
-      [
-        'Registration-season implementation',
-        'Used beginning with FY2027; watch actual implementation and data each season.',
-      ],
-    ],
-    active: 3,
-    processKind: 'Implementation tracking',
     related: ['prevailing-wage', 'h1b-fee'],
   },
   {
     id: 'cpt-guidance',
+    discovery: {
+      status: 'Schools implementing',
+      identities: ['F-1 / CPT'],
+      summary:
+        'CPT training must be required for every student to complete the degree; an elective internship course is generally insufficient. Schools are applying this standard; check school notices for specific programs and existing authorizations.',
+    },
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
     group: 'CPT',
     agency: 'ICE / SEVP',
     rin: 'Broadcast 2608-01 / 02',
-    status: 'Schools are applying the new interpretation',
+    status: 'Schools implementing guidance',
+    effectLabel: 'Guidance in use · Check school and program',
+    audience: 'students seeking CPT authorization, their schools and DSOs.',
+    caveat:
+      'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
+    summary:
+      'SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with a cooperative agreement between the employer and school. Enrollment in an elective internship course alone generally does not qualify.',
+    background:
+      'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
+    effectState: 'guidance-in-use',
     note: 'Specific authorization still depends on school and program notices',
     deck: 'Why does continued internship eligibility require checking the specific school and degree program?',
     headline:
@@ -418,34 +435,33 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'Preserve the school, department, program, authorization type, and effective date.',
       ],
     ],
-    process: [
-      ['August 12 guidance', 'SEVP issued the first Broadcast.'],
-      [
-        'August 24 questions and answers',
-        'SEVP further explained course and cooperation-agreement requirements.',
-      ],
-      [
-        'School implementation',
-        'Schools are currently applying the guidance to their program structures.',
-      ],
-      [
-        'Further clarification',
-        'Track school updates and additional SEVP explanations.',
-      ],
-    ],
-    active: 2,
-    processKind: 'Guidance and implementation',
     related: ['duration-status', 'opt-fee'],
     schoolLink: true,
   },
   {
     id: 'prevailing-wage',
+    discovery: {
+      status: 'Comments closed',
+      identities: ['H-1B / H-1B1', 'E-3', 'PERM'],
+      summary:
+        'DOL proposes raising the four prevailing-wage floors to roughly the 34th, 52nd, 70th and 88th percentiles. Current standards are unchanged; this proposal concerns required wage floors.',
+    },
     title: 'Proposed Increase to H-1B / PERM Wage Floors',
     short: 'H-1B / PERM Wage Floors',
     group: 'H-1B',
     agency: 'DOL',
     rin: '1205-AC30',
-    status: 'Comment period closed · Not in effect',
+    status: 'Comment period closed',
+    effectLabel: 'Not in effect',
+    audience:
+      'H-1B, H-1B1, E-3 and PERM applicants and employers funding their wages.',
+    caveat:
+      'This proposal concerns required wage floors, separate from H-1B selection weights.',
+    summary:
+      'DOL proposes raising the four prevailing-wage thresholds used for H-1B, H-1B1, E-3 and PERM from approximately the 17th, 34th, 50th and 67th percentiles to the 34th, 52nd, 70th and 88th percentiles.',
+    background:
+      'RIN 1205-AC30 was published on March 27, 2026 and comments closed May 26. It proposes moving the four levels from roughly the 17th, 34th, 50th and 67th percentiles to the 34th, 52nd, 70th and 88th; the August agenda still lists a proposal.',
+    effectState: 'not-in-effect',
     note: 'Affects minimum wages, not selection weight',
     deck: 'Even if an employer will sponsor, can its wage budget still support the role?',
     headline:
@@ -507,25 +523,16 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'The proposal has not changed current wage standards; future coverage depends on effective-date and transition terms.',
       ],
     ],
-    process: [
-      ['Public proposal', 'The NPRM was published on March 27.'],
-      ['Comments closed', 'The public comment period ended on May 26.'],
-      [
-        'Comments under review',
-        'The agency is considering later revisions or a final rule.',
-      ],
-      ['Final rule', 'Final standards must be formally published.'],
-      [
-        'Effective and implemented',
-        'Implementation follows the final dates and transition arrangements.',
-      ],
-    ],
-    active: 2,
-    processKind: 'Rulemaking',
     related: ['h1b-weighted-selection', 'h1b-fee'],
   },
   {
     id: 'h1b-reform',
+    discovery: {
+      status: 'Under OIRA review',
+      identities: ['H-1B'],
+      summary:
+        'The agenda proposes revised cap-exempt eligibility and closer scrutiny of employers with violations and third-party worksites. Formal text is unpublished, so eligibility boundaries and evidence requirements remain unresolved.',
+    },
     title:
       'H-1B Classification Reform: Exemptions and Third-Party Placements Under Review',
     short: 'H-1B Classification Reform',
@@ -533,6 +540,16 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     agency: 'DHS / USCIS',
     rin: '1615-AD00',
     status: 'Under OIRA review',
+    effectLabel: 'Not in effect · Text unpublished',
+    audience:
+      'cap-exempt employers, workers at third-party sites and employers with violation records.',
+    caveat:
+      'The agenda gives direction only; eligibility boundaries and evidence requirements await the public proposal.',
+    summary:
+      'DHS plans to redefine H-1B cap-exempt eligibility and increase scrutiny of employers with program violations and third-party worksites. The precise eligibility boundaries and evidence requirements await the published proposal.',
+    background:
+      'RIN 1615-AD00 entered OIRA review on August 24, 2026. Exemption eligibility relates to fee coverage, but classification reform and the H-1B surcharge are separate rules.',
+    effectState: 'not-in-effect',
     note: 'The reform direction comes from the regulatory agenda summary',
     deck: 'What new boundaries could cap-exempt employers and third-party placements face?',
     headline:
@@ -594,40 +611,33 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'Cap-exempt eligibility relates to fee coverage but belongs to a separate rule.',
       ],
     ],
-    process: [
-      [
-        'Agenda direction',
-        'The Unified Agenda disclosed the reform direction.',
-      ],
-      [
-        'OIRA review',
-        'The proposal was submitted for prepublication review on August 24.',
-      ],
-      [
-        'Public proposal',
-        'The next step is specific eligibility and documentation requirements.',
-      ],
-      [
-        'Comment and revision',
-        'The agency may revise the content in response to comments.',
-      ],
-      [
-        'Final implementation',
-        'A final rule and effective-date terms are still required.',
-      ],
-    ],
-    active: 1,
-    processKind: 'Rulemaking',
     related: ['h1b-fee', 'grace-period'],
   },
   {
     id: 'grace-period',
+    discovery: {
+      status: 'OIRA review complete',
+      identities: ['E categories', 'H-1B / H-1B1', 'L-1 / O-1 / TN'],
+      summary:
+        'The plan would remove the discretionary grace period of up to 60 days after early employment termination. The current grace period is unchanged; this does not concern the F-1 post-completion grace period.',
+      next: { text: 'Awaiting DHS publication of the NPRM text' },
+    },
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
     short: 'Ending the 60-Day Post-Termination Grace Period',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD22',
-    status: 'OIRA review complete · Awaiting public proposal',
+    status: 'OIRA review complete · Awaiting proposal',
+    effectLabel: 'Not in effect · Proposal unpublished',
+    audience:
+      'E, H-1B, H-1B1, L-1, O-1 and TN workers whose employment ends early.',
+    caveat:
+      'This does not concern the F-1 post-completion grace period; specific exceptions await the proposal text.',
+    summary:
+      'DHS plans to remove the discretionary grace period of up to 60 days after early termination of employment for H-1B, H-1B1, E, L-1, O-1, TN and related work statuses. This does not concern the F-1 grace period after program completion.',
+    background:
+      'OIRA completed review of RIN 1615-AD22 on August 27, 2026 as Consistent with Change. This records prepublication clearance; DHS has not yet published the NPRM in the Federal Register.',
+    effectState: 'not-in-effect',
     note: 'Addresses the buffer after early termination of employment',
     deck: 'After a layoff, how much time might remain to find work, change status, and arrange family matters?',
     headline:
@@ -689,37 +699,34 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'The grace period after an F-1 student completes a program is governed separately.',
       ],
     ],
-    process: [
-      [
-        'Submitted for review',
-        'The proposal was submitted to OIRA on August 6.',
-      ],
-      ['Review completed', 'Review concluded with changes on August 27.'],
-      [
-        'Public proposal',
-        'The NPRM is pending; the proposal is not yet effective.',
-      ],
-      [
-        'Comment and revision',
-        'A clear comment process will exist only after publication.',
-      ],
-      [
-        'Final rule',
-        'Any actual change depends on final text and an effective date.',
-      ],
-    ],
-    active: 1,
-    processKind: 'Rulemaking',
     related: ['h1b-reform', 'h4-ead', 'duration-status'],
   },
   {
     id: 'ead-discretion',
+    discovery: {
+      status: 'Comments closed',
+      identities: ['OPT', 'H-4 EAD and others'],
+      summary:
+        'The proposal would extend adverse criminal-record discretion standards to most discretionary I-765 categories: relevant arrests, criminal charges, indictments or convictions would generally lead to denial unless significant countervailing public interests exist. It is not in effect.',
+      audience:
+        'Applicants with related criminal records seeking OPT, H-4 EAD or other covered work authorization.',
+    },
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
     short: 'I-765 Criminal-Record Review',
     group: 'OPT',
     agency: 'DHS / USCIS',
     rin: '1615-AC98',
-    status: 'Comment period closed · Not in effect',
+    status: 'Comment period closed',
+    effectLabel: 'Not in effect',
+    audience:
+      'applicants with related criminal records seeking discretionary work authorization, including OPT and H-4 EAD.',
+    caveat:
+      'Ordinary civil traffic tickets are not automatically criminal records; the proposal does not automatically revoke existing EADs.',
+    summary:
+      'DHS proposes extending adverse criminal-record discretion standards to most discretionary work-permit applications, including OPT and H-4 EAD. Relevant arrests, criminal charges, indictments or convictions would generally lead to I-765 denial unless significant countervailing public interests apply.',
+    background:
+      'RIN 1615-AC98 was published on June 5, 2026 and comments closed August 4. The proposal covers most 8 CFR 274a.12(c) categories and includes biometrics for initial and renewal I-765 filings.',
+    effectState: 'not-in-effect',
     note: 'Covers most discretionary employment-authorization categories',
     deck: 'Which records could affect work authorization and later hiring or renewal?',
     headline:
@@ -781,31 +788,34 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'The proposal would not automatically revoke an issued EAD; future renewal standards require separate analysis.',
       ],
     ],
-    process: [
-      ['Public proposal', 'The NPRM was published on June 5.'],
-      ['Comments closed', 'The public comment period ended on August 4.'],
-      [
-        'Comments under review',
-        'DHS is considering revisions or a final rule.',
-      ],
-      ['Final rule', 'Applicable standards must be formally published.'],
-      [
-        'Effective and implemented',
-        'Implementation follows the final effective date and terms for initial applications and renewals.',
-      ],
-    ],
-    active: 2,
-    processKind: 'Rulemaking',
     related: ['opt-fee', 'h4-ead'],
   },
   {
     id: 'h4-ead',
+    discovery: {
+      status: 'Long-term agenda',
+      identities: ['H-4'],
+      summary:
+        'Current rules remain unchanged; no proposal date has been announced.',
+      audience:
+        'Eligible H-4 spouses who obtain work authorization under the current rule.',
+    },
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
     short: 'H-4 Spousal EAD',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD14',
     status: 'Long-term agenda · No proposal date',
+    effectLabel: 'Not in effect · Current rules unchanged',
+    audience:
+      'eligible H-4 spouses working under the current rule and their families.',
+    caveat:
+      'The agenda does not directly cancel the principal H-1B status or invalidate existing work authorization.',
+    summary:
+      'DHS plans to reverse the 2015 rule that allows certain H-4 spouses to apply for an EAD, removing their eligibility for work authorization under that rule. It would not directly change the principal worker’s H-1B status.',
+    background:
+      'RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.',
+    effectState: 'not-in-effect',
     note: 'The current agenda stage does not change existing work-authorization rules',
     deck: 'How would a loss of spousal work authorization change a family’s plan to stay in the U.S.?',
     headline:
@@ -867,24 +877,6 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'There is no formal proposal, comment window, or effective date.',
       ],
     ],
-    process: [
-      ['Long-term agenda', 'The action remains scheduled as a long-term item.'],
-      [
-        'Public proposal',
-        'If it proceeds, the agency will first disclose a specific rescission plan.',
-      ],
-      ['Public comment', 'Public input may affect the final terms.'],
-      [
-        'Final rule',
-        'Final text and transition arrangements must be published.',
-      ],
-      [
-        'Effective and implemented',
-        'Implementation depends on the effective provisions and any court orders.',
-      ],
-    ],
-    active: 0,
-    processKind: 'Long-term agenda',
     related: ['ead-discretion', 'grace-period'],
   },
 ];

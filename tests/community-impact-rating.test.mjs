@@ -117,15 +117,6 @@ test('triggers Niulai only for a rating of 10 on the stable first policy ID', ()
   assert.equal(ratingModel.shouldTriggerNiulai('', 10), false);
 });
 
-test('shows the community horn marker only when the average exceeds 9.0', () => {
-  assert.equal(typeof ratingModel.shouldShowCommunityHornMarker, 'function');
-  assert.equal(ratingModel.shouldShowCommunityHornMarker(9.1), true);
-  assert.equal(ratingModel.shouldShowCommunityHornMarker(10), true);
-  assert.equal(ratingModel.shouldShowCommunityHornMarker(9), false);
-  assert.equal(ratingModel.shouldShowCommunityHornMarker(8.9), false);
-  assert.equal(ratingModel.shouldShowCommunityHornMarker(undefined), false);
-});
-
 test('re-rating one policy replaces the vote and preserves the aggregate count', async (t) => {
   assert.equal(typeof ratingSchema.createPolicyImpactRatingsTable, 'string');
   assert.equal(
@@ -168,12 +159,17 @@ test('re-rating one policy replaces the vote and preserves the aggregate count',
 });
 
 test('launch seed data is explicitly fake, bounded, and removable without real votes', () => {
-  const rows = [...seedSql.matchAll(
-    /\('([^']+)',\s*(\d+),\s*(\d+),\s*1,\s*'FAKE launch seed; safe to delete'\)/g,
-  )];
+  const rows = [
+    ...seedSql.matchAll(
+      /\('([^']+)',\s*(\d+),\s*(\d+),\s*1,\s*'FAKE launch seed; safe to delete'\)/g,
+    ),
+  ];
 
   assert.equal(rows.length, 10);
-  assert.match(seedSql, /Cleanup: DELETE FROM policy_impact_seed_ratings WHERE is_fake = 1;/);
+  assert.match(
+    seedSql,
+    /Cleanup: DELETE FROM policy_impact_seed_ratings WHERE is_fake = 1;/,
+  );
   assert.match(seedSql, /community-impact-launch-v1/);
   assert.match(seedSql, /WHERE NOT EXISTS/);
   for (const [, policyId, countText, totalText] of rows) {
@@ -396,7 +392,7 @@ test('rating choices always expose 1 through 10 and only press the selected valu
   );
 });
 
-test('community impact panel renders a ten-button non-star scale with aggregate context', () => {
+test('community voting keeps the ten-button scale and count without duplicating the average', () => {
   assert.equal(typeof ratingUi.CommunityImpactRating, 'function');
 
   const html = renderToStaticMarkup(
@@ -413,53 +409,28 @@ test('community impact panel renders a ten-button non-star scale with aggregate 
 
   assert.equal((html.match(/<button/g) ?? []).length, 10);
   assert.equal((html.match(/aria-pressed="true"/g) ?? []).length, 1);
-  assert.match(html, />8\.4</);
+  assert.doesNotMatch(html, />8\.4<|community-average/);
   assert.match(html, />125 人评分</);
   assert.match(html, /aria-label="给这项政策打 7 分"/);
   assert.doesNotMatch(html, /★|☆|star/i);
 });
 
-test('community horn marker is accessible and disappears at the threshold', () => {
-  assert.equal(typeof ratingUi.CommunityHornMarker, 'function');
-
-  const visible = renderToStaticMarkup(
-    React.createElement(ratingUi.CommunityHornMarker, {
-      language: 'zh',
-      average: 9.1,
-    }),
-  );
-  const hidden = renderToStaticMarkup(
-    React.createElement(ratingUi.CommunityHornMarker, {
-      language: 'zh',
-      average: 9,
-    }),
-  );
-
-  assert.match(visible, /class="community-horn-marker"/);
-  assert.match(visible, /alt="社区影响均分已突破 9\.0"/);
-  assert.match(visible, /class="community-horn-art"/);
-  assert.match(visible, /src="\/animations\/niulai-horn-badge\.png"/);
-  assert.equal((visible.match(/<img/g) ?? []).length, 1);
-  assert.equal(hidden, '');
-});
-
-test('community horn marker sits directly above a qualifying average', () => {
-  const html = renderToStaticMarkup(
-    React.createElement(ratingUi.CommunityImpactRating, {
-      language: 'zh',
-      policyId: 'opt-fee',
-      aggregate: { average: 9.6, count: 18 },
-      selected: null,
-      pending: false,
-      error: null,
-      onSelect() {},
-    }),
-  );
-
-  assert.match(
-    html,
-    /class="community-average-value">[\s\S]*?class="community-horn-marker"[\s\S]*?<strong>9\.6<\/strong><\/span><small>\/10<\/small>/,
-  );
+test('community scores retain their numeric value without decorative horns, including high averages', () => {
+  for (const { aggregate, expected } of [
+    { aggregate: undefined, expected: '—' },
+    { aggregate: { average: 9.6, count: 18 }, expected: '9.6' },
+    { aggregate: { average: 10, count: 6 }, expected: '10.0' },
+  ]) {
+    const html = renderToStaticMarkup(
+      React.createElement(ratingUi.CommunityImpactScore, {
+        language: 'zh',
+        policyId: 'opt-fee',
+        aggregate,
+      }),
+    );
+    assert.ok(html.includes(`<strong>${expected}</strong>`));
+    assert.doesNotMatch(html, /<img|community-horn/);
+  }
 });
 
 test('Niulai effect renders the approved text-free layered cow as decoration', () => {

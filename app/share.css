@@ -9,8 +9,10 @@
 .share-trigger svg { width: 20px; height: 20px; stroke-width: 1.7; }
 .share-backdrop { display: none; }
 .share-positioner { z-index: 70; }
+/* Sticky positioning shifts on both axes; a viewport height cap avoids
+   resize/placement feedback when switching between the menu and a tall PNG. */
 .share-panel {
-  width: min(370px, calc(100vw - 32px)); max-height: var(--available-height);
+  width: min(370px, calc(100vw - 32px)); max-height: calc(100dvh - 32px);
   overflow-y: auto; padding: 21px; border: 1px solid var(--line); border-radius: 18px;
   background: var(--card); color: var(--ink); outline: none;
   box-shadow: 0 18px 55px rgb(13 31 56 / 17%), 0 3px 8px rgb(13 31 56 / 5%);
@@ -59,6 +61,35 @@
 .share-notice { display: block; margin: 12px 0 0; color: var(--muted); font-size: .75rem; line-height: 1.65; }
 .share-notice:empty { margin: 0; }
 .share-manual-url { display: block; width: 100%; min-width: 0; margin-top: 10px; padding: 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 1rem; color: var(--ink); background: var(--paper); }
+.share-trigger.share-card-trigger { width: 32px; min-width: 32px; height: 32px; padding: 0; border-radius: 8px; border-color: #dce4ef; color: #1b2e49; background: #fff; }
+.share-card-trigger svg { width: 17px; height: 17px; stroke-width: 1.8; }
+.share-card-trigger:hover, .share-card-trigger[data-popup-open] { background: #edf4fd; border-color: #b8cde9; }
+.policy-card > .share-card-trigger { position: absolute; top: 22px; right: 20px; }
+.policy-card-compact .policy-snapshot { padding-right: 40px; }
+.share-checked-date { display: block; margin-top: 8px; font-size: .75rem; font-weight: 650; color: #155d69; }
+.share-item-actions { display: grid; gap: 8px; margin-bottom: 16px; }
+.share-item-actions .share-copy-button { min-height: 44px; font-size: .8125rem; }
+.share-item-actions .share-copy-button:first-child { color: #fff; background: #155d69; border-color: #155d69; }
+.share-manual-summary { width: 100%; resize: vertical; margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 9px; font: inherit; font-size: 1rem; line-height: 1.65; color: var(--ink); background: var(--paper); }
+.share-image-content { text-align: center; }
+.share-generated-image { display: block; width: 100%; height: auto; margin-bottom: 14px; border: 1px solid var(--line); border-radius: 8px; }
+.share-save-image { width: 100%; min-height: 44px; text-decoration: none; }
+.share-image-content > output { display: block; padding: 40px 0; color: var(--muted); }
+.school-share-card { position: relative; display: flex; flex-direction: column; min-width: 0; border: 1px solid rgba(255,255,255,.12); border-radius: 12px; background: #203954; scroll-margin-top: 100px; }
+.school-share-card:target { outline: 3px solid #a0e2bf; outline-offset: 4px; }
+.school-share-card > .school-card { flex: 1; border: 0; border-radius: 12px; }
+.school-share-card > .school-card:hover { transform: none; }
+.school-share-card > .school-card > div { max-width: calc(100% - 40px); }
+.school-share-card > .share-card-trigger {
+  position: absolute; top: 22px; right: 22px;
+  color: #c7daef; border-color: rgba(193,210,232,.18); background: rgba(171,199,231,.06);
+  transition: color .16s ease, border-color .16s ease, background .16s ease;
+}
+.school-share-card > .share-card-trigger:hover,
+.school-share-card > .share-card-trigger[data-popup-open] {
+  color: #e1e9f4; border-color: rgba(193,210,232,.32); background: rgba(171,199,231,.12);
+}
+.school-share-card > .share-card-trigger:focus-visible { outline: 2px solid #c7daef; outline-offset: 3px; }
 
 /* Equal-height controls; the text controls share a width, the menu is square. */
 :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 80px; height: 40px; flex-shrink: 0; padding: 3px; border-radius: 9px; }
@@ -79,6 +110,9 @@
   :is(.topbar, .stats-page-bar, .updates-page-bar) :is(.top-actions, .stats-page-actions, .updates-page-actions) { gap: 4px; }
   .share-trigger { width: 44px; min-width: 44px; height: 44px; padding: 0; }
   .share-trigger > span { display: none; }
+  .policy-card > .share-card-trigger { top: 16px; right: 16px; }
+  .policy-card-compact .policy-snapshot { padding-right: 0; }
+  .policy-card-compact .rank-column { padding-right: 40px; }
   :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 72px; height: 44px; }
   :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch :is(button, a) { width: 32px; height: 36px; }
   :is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger { width: 44px; height: 44px; }

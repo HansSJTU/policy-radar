@@ -1,13 +1,15 @@
 import type { ReactNode } from 'react';
 import { ArrowUpRight, Clock3, Scale } from 'lucide-react';
 import { GlossaryText } from './glossary-text';
+import { CommunityImpactScore, type CommunityImpactAggregate } from './community-impact-rating';
 import { homeCopy } from './home-copy';
 import { centerCurrentProcessStage, showLatestTimeline } from './initial-scroll';
 import type { Language } from './language';
 import type { getPolicies } from './policy-data';
-import { getPolicyEditorial } from './policy-detail-model';
+import { getHomePolicyEditorial as getPolicyEditorial, getHomeProcessTrack as getProcessTrack } from './policy-home-model';
 import { policyHref } from './policy-links';
-import { getProcessTrack } from './process-model';
+import { ShareButton } from './share-button';
+import { getPolicyShareItem } from './item-share-model';
 
 type PolicyCardProps = {
   policy: ReturnType<typeof getPolicies>[number];
@@ -15,6 +17,7 @@ type PolicyCardProps = {
   selectedPath: string;
   policyPath?: string;
   communityRating: ReactNode;
+  communityAggregate?: CommunityImpactAggregate;
 };
 
 export function PolicyCard({
@@ -23,6 +26,7 @@ export function PolicyCard({
   selectedPath,
   policyPath,
   communityRating,
+  communityAggregate,
 }: PolicyCardProps) {
   const ui = homeCopy[language];
   const process = getProcessTrack(policy.id, language);
@@ -35,12 +39,11 @@ export function PolicyCard({
       id={`policy-${policy.id}`}
       data-policy-id={policy.id}
     >
+      <ShareButton language={language} item={getPolicyShareItem(policy.id, language)} compact />
       <header className="policy-snapshot">
         <div className="rank-column">
           <div className="rank-number"><span>#</span>{String(policy.rank).padStart(2, '0')}</div>
-          <div className="rank-score" aria-label={`${ui.impact} ${policy.score} / 10`}>
-            <span>{ui.impact}</span><strong>{policy.score}</strong><small>/10</small>
-          </div>
+          <CommunityImpactScore language={language} policyId={policy.id} aggregate={communityAggregate} />
         </div>
         <div className="policy-title-group">
           <div className="policy-meta">

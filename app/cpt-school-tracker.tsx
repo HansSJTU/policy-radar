@@ -20,6 +20,8 @@ import { englishCommunitySchools, englishVerifiedSchools } from './english-conte
 import { GlossaryText } from './glossary-text';
 import { homeCopy } from './home-copy';
 import type { Language } from './language';
+import { getSchoolShareItem } from './item-share-model';
+import { ShareButton } from './share-button';
 
 type CptSchoolTrackerProps = {
   language: Language;
@@ -34,7 +36,33 @@ export function CptSchoolTracker({
 }: CptSchoolTrackerProps) {
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
+  const [targetSchool, setTargetSchool] = useState('');
   const ui = homeCopy[language];
+
+  useEffect(() => {
+    const revealSharedSchool = () => {
+      const id = window.location.hash.replace(/^#school-/, '');
+      const verified = verifiedSchools.some((school) => school.id === id);
+      if (!verified && !communitySchools.some((school) => school.id === id)) return;
+      setSchoolQuery('');
+      setSchoolTab(verified ? 'verified' : 'community');
+      setTargetSchool(id);
+    };
+    revealSharedSchool();
+    window.addEventListener('hashchange', revealSharedSchool);
+    return () => window.removeEventListener('hashchange', revealSharedSchool);
+  }, []);
+
+  useEffect(() => {
+    if (!targetSchool) return;
+    const frame = requestAnimationFrame(() => {
+      const target = document.getElementById(`school-${targetSchool}`);
+      target?.scrollIntoView({ block: 'center' });
+      target?.focus({ preventScroll: true });
+      setTargetSchool('');
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [targetSchool]);
 
   useEffect(() => {
     if (!selectedEvidence) return;
@@ -82,12 +110,12 @@ export function CptSchoolTracker({
           {schoolTab === 'verified' ? <div className="school-tab-content" role="tabpanel">
             <div className="school-cards">
               {visibleVerified.map((school) => (
+                <article className="school-share-card" id={`school-${school.id}`} key={school.id} tabIndex={-1}>
                 <button
                   type="button"
                   className="school-card evidence-card"
                   aria-haspopup="dialog"
                   onClick={() => setSelectedEvidence(school)}
-                  key={school.school}
                 >
                   <div><i className={`school-state ${school.tone}`} /><span>{school.tone === 'pause' ? ui.paused : school.tone === 'tighten' ? ui.tightened : ui.unchanged}</span></div>
                   <h3>{school.school}</h3>
@@ -95,6 +123,8 @@ export function CptSchoolTracker({
                   <p><GlossaryText text={school.detail} /></p>
                   <small>{school.screenshots.length > 0 ? <Images aria-hidden="true" /> : <ExternalLink aria-hidden="true" />}<span>{school.screenshots.length > 0 ? ui.viewEvidence : ui.officialPage}</span><ArrowUpRight className="school-evidence-arrow" aria-hidden="true" /></small>
                 </button>
+                <ShareButton language={language} item={getSchoolShareItem(school, language)} compact />
+                </article>
               ))}
               {visibleVerified.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
             </div>
@@ -102,18 +132,20 @@ export function CptSchoolTracker({
             <div className="evidence-banner"><ShieldAlert aria-hidden="true" /><p>{ui.evidencePrefix}</p></div>
             <div className="school-cards community-cards">
               {visibleCommunity.map((school) => (
+                <article className="school-share-card" id={`school-${school.id}`} key={school.id} tabIndex={-1}>
                 <button
                   type="button"
                   className="school-card evidence-card"
                   aria-haspopup="dialog"
                   onClick={() => setSelectedEvidence(school)}
-                  key={school.school}
                 >
                   <div><i className="school-state lead" /><span>{ui.verifyPending}</span></div>
                   <h3>{school.school}</h3>
                   <p><GlossaryText text={school.state} /></p>
                   <small><Images aria-hidden="true" /><span>{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</span><ArrowUpRight className="school-evidence-arrow" aria-hidden="true" /></small>
                 </button>
+                <ShareButton language={language} item={getSchoolShareItem(school, language)} compact />
+                </article>
               ))}
               {visibleCommunity.length === 0 && <p className="empty-result">{ui.noSchool}</p>}
             </div>

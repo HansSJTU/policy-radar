@@ -34,6 +34,7 @@ type AnalyticsEventPayloadOptions = {
   outboundClick?: string;
   shareMethod?: string;
   shareAction?: string;
+  schoolId?: string;
 };
 
 const SESSION_KEY = 'f1-policy-radar-analytics-session';
@@ -112,7 +113,7 @@ export function buildAnalyticsEventPayload(
     policyId: options.policyId ?? '',
     outboundClick: options.outboundClick ?? '',
     ...(options.eventType === 'share'
-      ? { shareMethod: options.shareMethod, shareAction: options.shareAction }
+      ? { shareMethod: options.shareMethod, shareAction: options.shareAction, schoolId: options.schoolId ?? '' }
       : {}),
   };
 }

@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { getProcessTrack } from '../app/process-model.ts';
+import {
+  getProcessTrack,
+  getProcessStageState,
+  getProcessStageLabel,
+} from '../app/process-model.ts';
 
 test('all federal rulemaking policies share one process bar', () => {
   const ids = [
@@ -27,16 +31,19 @@ test('H-1B weighted selection is a completed federal rulemaking now in effect', 
   const track = getProcessTrack('h1b-weighted-selection');
 
   assert.equal(track.kind, 'federal-rulemaking');
-  assert.equal(track.stages[track.currentStage], '生效');
+  assert.equal(track.stages[track.lastCompletedStage], '生效');
   assert.match(track.detail, /2026-02-27/);
   assert.equal(track.litigation.length, 0);
 });
 
-test('comment-closed proposals remain at the public-comment stage until a final rule appears', () => {
+test('comment-closed proposals complete comments while the final rule remains a future event', () => {
   for (const id of ['prevailing-wage', 'ead-discretion']) {
     const track = getProcessTrack(id);
-    assert.equal(track.stages[track.currentStage], '公众评论');
+    assert.equal(track.stages[track.lastCompletedStage], '公众评论');
     assert.match(track.currentSummary, /评论期.*结束/);
+    assert.equal(track.activeStage, null);
+    assert.equal(track.nextStage, 4);
+    assert.equal(getProcessStageState(track, 4), 'upcoming');
   }
 });
 
@@ -45,7 +52,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
   const englishTrack = getProcessTrack('duration-status', 'en');
 
   assert.equal(track.name, '联邦规则制定流程');
-  assert.equal(track.stages[track.currentStage], '最终规则');
+  assert.equal(track.stages[track.lastCompletedStage], '最终规则');
   assert.deepEqual(
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
@@ -55,14 +62,20 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     ],
   );
   assert.deepEqual(
-    track.litigation.map(({ afterStage, progress }) => ({ afterStage, progress })),
+    track.litigation.map(({ afterStage, progress }) => ({
+      afterStage,
+      progress,
+    })),
     [
       { afterStage: 4, progress: 53 },
       { afterStage: 4, progress: 70 },
       { afterStage: 4, progress: 80 },
     ],
   );
-  assert.deepEqual(track.litigation.map(({ lane }) => lane), ['base', 'raised', 'base']);
+  assert.deepEqual(
+    track.litigation.map(({ lane }) => lane),
+    ['base', 'raised', 'base'],
+  );
   assert.deepEqual(
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [
@@ -81,4 +94,49 @@ test('administrative guidance has its own process and color family', () => {
   assert.equal(track.kind, 'administrative-guidance');
   assert.equal(track.name, 'SEVP 行政指引流程');
   assert.notDeepEqual(track.stages, getProcessTrack('opt-fee').stages);
+});
+
+test('OIRA clearance does not mark an unpublished grace-period proposal as reached', () => {
+  for (const language of ['zh', 'en']) {
+    const track = getProcessTrack('grace-period', language);
+    assert.equal(track.lastCompletedStage, 1);
+    assert.equal(track.activeStage, null);
+    assert.equal(track.nextStage, 2);
+    assert.equal(getProcessStageState(track, 1), 'complete');
+    assert.equal(getProcessStageState(track, 2), 'upcoming');
+    assert.match(track.waitingFor, /NPRM/);
+    assert.match(
+      getProcessStageLabel(track, 2, language),
+      /尚未发生|Not yet reached/,
+    );
+  }
+});
+
+test('an ongoing review is distinct from a completed review and a future proposal', () => {
+  const track = getProcessTrack('opt-fee');
+  assert.equal(getProcessStageState(track, 0), 'complete');
+  assert.equal(getProcessStageState(track, 1), 'active');
+  assert.equal(getProcessStageState(track, 2), 'upcoming');
+});
+
+test('all tracks keep completed, active and future stages disjoint and languages aligned', async () => {
+  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  for (const id of POLICY_IDS) {
+    const zh = getProcessTrack(id, 'zh');
+    const en = getProcessTrack(id, 'en');
+    for (const field of ['lastCompletedStage', 'activeStage', 'nextStage']) {
+      assert.equal(zh[field], en[field]);
+      assert.ok(
+        zh[field] === null || (zh[field] >= 0 && zh[field] < zh.stages.length),
+      );
+    }
+    if (zh.activeStage !== null)
+      assert.ok(zh.activeStage > (zh.lastCompletedStage ?? -1));
+    if (zh.nextStage !== null) {
+      assert.ok(zh.nextStage > (zh.activeStage ?? zh.lastCompletedStage ?? -1));
+      assert.equal(getProcessStageState(zh, zh.nextStage), 'upcoming');
+      assert.ok(zh.waitingFor && en.waitingFor);
+    }
+    assert.equal('currentStage' in zh, false);
+  }
 });

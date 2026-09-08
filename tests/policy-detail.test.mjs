@@ -58,7 +58,9 @@ test('all existing policy IDs resolve with complete analysis and valid related l
       assert.equal(detail.record.id, id);
       assert.equal(detail.editorial.scenarios.length, 3);
       const process = getProcessTrack(id, language);
-      assert.ok(process.stages[process.currentStage]);
+      assert.ok(
+        process.stages[process.activeStage ?? process.lastCompletedStage],
+      );
       assert.ok(
         detail.record.sources.every(
           (source) => source.label && source.href.startsWith('https://'),
@@ -72,12 +74,60 @@ test('all existing policy IDs resolve with complete analysis and valid related l
 test('federal details share one process while litigation remains separate', () => {
   for (const language of ['zh', 'en']) {
     const federal = getProcessTrack('opt-fee', language).stages;
-    for (const id of ['h1b-fee', 'duration-status', 'h1b-weighted-selection', 'prevailing-wage', 'h1b-reform', 'grace-period', 'ead-discretion', 'h4-ead']) {
+    for (const id of [
+      'h1b-fee',
+      'duration-status',
+      'h1b-weighted-selection',
+      'prevailing-wage',
+      'h1b-reform',
+      'grace-period',
+      'ead-discretion',
+      'h4-ead',
+    ]) {
       assert.deepEqual(getProcessTrack(id, language).stages, federal);
     }
     const litigation = getProcessTrack('duration-status', language);
-    assert.equal(litigation.currentStage, 4);
+    assert.equal(litigation.lastCompletedStage, 4);
     assert.equal(litigation.litigation.length, 3);
-    assert.notDeepEqual(getProcessTrack('cpt-guidance', language).stages, federal);
+    assert.notDeepEqual(
+      getProcessTrack('cpt-guidance', language).stages,
+      federal,
+    );
   }
+});
+
+test('every detail has an explicit effect, audience, caveat and distinct background in both languages', async () => {
+  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  for (const id of POLICY_IDS) {
+    for (const language of ['zh', 'en']) {
+      const { editorial } = getPolicyDetail(id, language);
+      for (const field of [
+        'status',
+        'effectLabel',
+        'audience',
+        'caveat',
+        'summary',
+        'background',
+      ])
+        assert.ok(editorial[field]);
+      assert.notEqual(editorial.summary, editorial.background);
+      if (language === 'en')
+        assert.doesNotMatch(JSON.stringify(editorial), /[\u3400-\u9fff]/u);
+      const expected =
+        id === 'h1b-weighted-selection'
+          ? 'in-effect'
+          : id === 'cpt-guidance'
+            ? 'guidance-in-use'
+            : 'not-in-effect';
+      assert.equal(editorial.effectState, expected);
+    }
+  }
+  assert.match(
+    getPolicyDetail('opt-fee', 'zh').editorial.effectLabel,
+    /金额未确认/,
+  );
+  assert.match(
+    getPolicyDetail('grace-period', 'en').editorial.effectLabel,
+    /Proposal unpublished/,
+  );
 });

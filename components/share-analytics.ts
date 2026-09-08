@@ -16,6 +16,7 @@ let session: SessionAttribution | undefined;
 export function recordShareEvent(
   shareMethod: ShareMethod,
   shareAction: ShareAction,
+  entry?: { policyId: string; schoolId: string },
 ) {
   try {
     session ??= createBrowserAnalyticsSession();
@@ -25,11 +26,12 @@ export function recordShareEvent(
       visitorId: getOrCreateAnonymousVisitorId(),
       session,
       policyId:
-        document.querySelector<HTMLElement>(
+        entry?.policyId ?? document.querySelector<HTMLElement>(
           '.policy-detail-page[data-policy-id]',
         )?.dataset.policyId ?? getPolicyIdFromHash(window.location.hash),
       shareMethod,
       shareAction,
+      schoolId: entry?.schoolId,
     });
   } catch {
     // Sharing must still work when storage or analytics is unavailable.

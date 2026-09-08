@@ -64,6 +64,8 @@ test('share API rejects invalid channels, fabricated send outcomes and cross-sit
     { visitorId, eventType: 'share', shareMethod: 'facebook', shareAction: 'select' },
     { visitorId, eventType: 'share', shareMethod: 'email', shareAction: 'sent' },
     { visitorId, eventType: 'share', shareMethod: 'whatsapp', shareAction: 'copy_success' },
+    { visitorId, eventType: 'share', shareMethod: 'copy_summary', shareAction: 'generate_success' },
+    { visitorId, eventType: 'share', shareMethod: 'share_image', shareAction: 'copy_success' },
   ]) {
     assert.equal((await POST(request(body))).status, 400);
   }
@@ -71,4 +73,28 @@ test('share API rejects invalid channels, fabricated send outcomes and cross-sit
     visitorId, eventType: 'share', shareMethod: 'wechat', shareAction: 'select',
   }, 'https://other.example'))).status, 403);
   assert.equal(points.length, 0);
+});
+
+test('item copy and image outcomes retain policy or school identity without writing D1', async () => {
+  const points = [];
+  env.ANALYTICS = { writeDataPoint: point => points.push(point) };
+  env.DB = { prepare() { assert.fail('Item shares must not write D1'); } };
+  for (const [shareMethod, actions] of [
+    ['copy_summary', ['select', 'copy_success', 'copy_failure']],
+    ['share_image', ['select', 'generate_success', 'generate_failure', 'download']],
+  ]) for (const shareAction of actions) {
+    const response = await POST(request({
+      visitorId, eventType: 'share', shareMethod, shareAction,
+      pathname: '/', language: 'zh', policyId: '', schoolId: 'purdue-ece',
+    }));
+    assert.equal(response.status, 204);
+    const point = points.at(-1);
+    assert.equal(point.blobs[11], '');
+    assert.equal(point.blobs[13], shareMethod);
+    assert.equal(point.blobs[14], shareAction);
+    assert.equal(point.blobs[15], 'purdue-ece');
+  }
+  await POST(request({ visitorId, eventType: 'share', shareMethod: 'copy_summary', shareAction: 'copy_success', policyId: 'opt-fee', schoolId: '../invalid' }));
+  assert.equal(points.at(-1).blobs[11], 'opt-fee');
+  assert.equal(points.at(-1).blobs[15], '');
 });

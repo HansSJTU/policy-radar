@@ -311,6 +311,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
               language={language}
               selectedPath={selectedPath}
               policyPath={localizedRouteStages.find((stage) => stage.policies.some((item) => item.id === policy.id))?.key}
+              communityAggregate={communityImpact.aggregates[policy.id]}
               communityRating={
                 <CommunityImpactRating
                   language={language}

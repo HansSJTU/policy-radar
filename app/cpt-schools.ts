@@ -5,6 +5,8 @@ export type EvidenceScreenshot = {
 };
 
 export type VerifiedSchool = {
+  id: string;
+  checkedOn: string;
   school: string;
   state: string;
   detail: string;
@@ -14,13 +16,19 @@ export type VerifiedSchool = {
 };
 
 export type CommunitySchool = {
+  id: string;
+  checkedOn: string;
   school: string;
   state: string;
   screenshots: EvidenceScreenshot[];
 };
 
+// Per-record evidence review dates are backed by docs/audits/2026-09-07.md.
+// A community screenshot review does not confirm its current policy status.
 export const verifiedSchools: VerifiedSchool[] = [
   {
+    id: 'uc-berkeley',
+    checkedOn: '2026-09-07',
     school: 'UC Berkeley',
     state: 'Course Credit CPT 仍暂停；论文型 CPT 仅限严格个案',
     detail: 'Degree Requirement CPT 仅适用于全专业学生均须完成的实践；Thesis/Dissertation Requirement CPT 仅限已 Advanced to Candidacy 的论文型硕士或博士，且训练必须是完成论文所必需、无法由其他研究或数据收集方式合理替代，并需导师书面证明。',
@@ -29,6 +37,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'uc-davis',
+    checkedOn: '2026-09-07',
     school: 'UC Davis',
     state: '已暂停非学位必需的 Course Credit CPT',
     detail: '学位要求 CPT 继续；已签发 CPT I-20 暂不受影响。',
@@ -37,6 +47,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'boston-university',
+    checkedOn: '2026-09-07',
     school: 'Boston University',
     state: '暂停部分 CPT 审批',
     detail: '明确属于毕业要求的情形继续处理。',
@@ -45,6 +57,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'uiuc',
+    checkedOn: '2026-09-07',
     school: 'UIUC',
     state: '不再批准 elective-course CPT',
     detail: '仅接受全体学生强制要求且有雇主合作协议的情形。',
@@ -55,6 +69,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     ],
   },
   {
+    id: 'texas-a-m',
+    checkedOn: '2026-09-07',
     school: 'Texas A&M',
     state: '收紧，但不是全面暂停',
     detail: '8·24 后的新申请按“全员毕业要求 + 合作协议”审查，不满足则拒。',
@@ -63,6 +79,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'ut-dallas',
+    checkedOn: '2026-09-07',
     school: 'UT Dallas',
     state: '截至 8·25 表示流程未变',
     detail: '可作为反例：并非所有学校都已“取消 CPT”。',
@@ -71,6 +89,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-michigan',
+    checkedOn: '2026-09-07',
     school: 'University of Michigan',
     state: '不再批准 elective-course CPT',
     detail: '只批准对该学位项目所有学生均为毕业必需的实践；既有授权可继续。',
@@ -81,6 +101,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     ],
   },
   {
+    id: 'northwestern-university',
+    checkedOn: '2026-09-07',
     school: 'Northwestern University',
     state: '暂停非全员必修的 CPT 申请',
     detail: '学校审核期间，只处理对该项目所有学生均为必修工作经历的 CPT。',
@@ -91,6 +113,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     ],
   },
   {
+    id: 'columbia-university',
+    checkedOn: '2026-09-07',
     school: 'Columbia University',
     state: '暂停非全员必需的 CPT；8·24 前已批授权不撤销',
     detail: 'ISSO 仅批准课程体系内、全员必需且有 cooperative agreement 的 CPT，其他情形暂停；8·24 前获批的 CPT 不会被撤销。',
@@ -101,6 +125,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     ],
   },
   {
+    id: 'harvard-university',
+    checkedOn: '2026-09-07',
     school: 'Harvard University',
     state: '资格收紧，但校方未称全面停批',
     detail: '就业必须是正式记载的学位要求，并提供与该项目要求相关的 cooperative agreement。',
@@ -109,6 +135,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-washington',
+    checkedOn: '2026-09-07',
     school: 'University of Washington',
     state: '暂停非全专业必修的新 CPT',
     detail: '对该学位项目所有学生都不是必修的 CPT 新申请暂停；已获批 CPT 可以继续。',
@@ -117,6 +145,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-maryland-college-park',
+    checkedOn: '2026-09-07',
     school: 'University of Maryland, College Park',
     state: '暂停非全员必修或非论文必需的新 CPT',
     detail: 'ISSS 暂停不属于全专业必修、必修课程或论文／学位论文研究要求的未批准 CPT；UNIV099、ENCO099、BMGT099 等非必修实习暂不受理，已获批 CPT 可继续。',
@@ -125,6 +155,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'trine-university',
+    checkedOn: '2026-09-07',
     school: 'Trine University',
     state: '校方 CPT 页面仍列开放申请与审理流程',
     detail: '研究生 CPT 页面仍列 2026–27 开始日期的申请截止日，并称申请持续开放、按收到顺序审理；页面未见针对 8·24 指引的单独更新，个案资格仍应向 DSO 确认。',
@@ -133,6 +165,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'mit',
+    checkedOn: '2026-09-07',
     school: 'MIT',
     state: '暂停非全专业学位必需的新 CPT',
     detail: 'MIT 暂停 8·24 当日已收到或待审、且所涉实践并非全专业学生完成学位必需经历的新 CPT 申请；校方还将联系已获 2026 秋季 CPT 授权的学生讨论后续选项。',
@@ -141,6 +175,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [{ src: '/cpt-evidence/cpt_mit.jpeg', width: 1080, height: 2341 }],
   },
   {
+    id: 'ucsb',
+    checkedOn: '2026-09-07',
     school: 'UCSB',
     state: '校方公告称自 8·17 暂停签发 CPT',
     detail: 'OISS 正在咨询法律顾问，待有进一步指引后更新；公告未细分 CPT 类别，也未说明既有授权的处理方式。',
@@ -152,6 +188,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     ],
   },
   {
+    id: 'new-york-university-tandon-mathematics',
+    checkedOn: '2026-09-07',
     school: 'New York University (Tandon Mathematics)',
     state: '数学系页面称自 9·01 暂停国际学生 CPT 审批',
     detail: '该实习政策页适用于数学系本科生与研究生，并请学生向 OGS 了解后续信息；本条仅记录 Tandon 数学系的公开口径，不外推 NYU 全校。',
@@ -160,6 +198,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-southern-california',
+    checkedOn: '2026-09-07',
     school: 'University of Southern California',
     state: '自 8·24 起仅批准毕业必需的 CPT',
     detail: 'OIS 不再接受非全项目学生必修的选修课型 CPT，补充材料核验可能延迟审批；8·24 前已签发的 2026 秋季 CPT 授权不会被撤销。',
@@ -168,6 +208,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-alabama',
+    checkedOn: '2026-09-07',
     school: 'University of Alabama',
     state: '自 8·31 起收紧 CPT 资格审核',
     detail: 'ISSS 要求院系证明实践为学位项目或方向全体学生必需，或为论文型硕士、博士完成论文所必需；学位要求须有课程目录依据，仅为选修课要求的 CPT 不符合标准。',
@@ -176,6 +218,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'uc-irvine',
+    checkedOn: '2026-09-07',
     school: 'UC Irvine',
     state: '自 8·17 起暂停 Course Credit CPT',
     detail: 'International Center 公开通知称暂停 Course Credit CPT 申请，直至另行通知；Degree Requirement CPT 须在 UCI 课程目录中列为毕业要求。',
@@ -184,6 +228,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [{ src: '/cpt-evidence/cpt_uci.jpeg', width: 1080, height: 1731 }],
   },
   {
+    id: 'university-of-utah',
+    checkedOn: '2026-09-07',
     school: 'University of Utah',
     state: '自 9·03 起暂停非全员必需的新 CPT',
     detail: 'ISSS 暂停 optional CPT 授权；UAtlas 仍可提交申请，但审核结束前不批准此类请求。既有授权按当前 I-20 的雇主、地点与日期继续。',
@@ -192,6 +238,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-delaware',
+    checkedOn: '2026-09-07',
     school: 'University of Delaware',
     state: '暂停非全员必需的新 CPT 授权',
     detail: '9·02 公告称 CGPS 暂停 optional CPT；学生仍可提交申请，但审核结束前不签发此类新授权，并可能出现处理延迟。',
@@ -200,6 +248,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'uc-san-diego',
+    checkedOn: '2026-09-07',
     school: 'UC San Diego',
     state: '暂停全部 F-1 CPT 请求的提交与处理',
     detail: 'ISEO 专页仍暂停 iServices 全部 CPT 请求；9·02 说明会第 12 页预计 9 月中旬重开，并要求院系证明实习为必需。该时间为计划，尚无具体日期。',
@@ -208,6 +258,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-maryland-baltimore-county',
+    checkedOn: '2026-09-07',
     school: 'University of Maryland, Baltimore County',
     state: '待审及未来 CPT 仅限全项目学生必需的实践',
     detail: 'OISS 9·04 更新称，待审与未来申请按全项目学生必需的实践要求审核；已经签发的 2026 秋季 CPT 授权不会被撤销。本条单列 UMBC 校区。',
@@ -216,6 +268,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'george-washington-university',
+    checkedOn: '2026-09-07',
     school: 'George Washington University',
     state: '暂停非全员必需的新 CPT 授权',
     detail: 'ISO 9·02 公告称，不再批准非学位项目全体学生必需的新 CPT；既有授权可按当前 I-20 的雇主地点、日期及其他条件继续。',
@@ -224,6 +278,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-colorado-boulder',
+    checkedOn: '2026-09-07',
     school: 'University of Colorado Boulder',
     state: '仅处理课程目录列明的学位／主修必需 CPT',
     detail: '8·31 更新称，仅限校方列出的实践为学位或主修毕业必需的项目，minor 不符合；仅供选修学分的实习不获批，已授权的 2026 秋季 CPT 不受影响。',
@@ -232,6 +288,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-wisconsin-milwaukee',
+    checkedOn: '2026-09-07',
     school: 'University of Wisconsin-Milwaukee',
     state: '自 8·24 起仅批准全项目学生必需的 CPT',
     detail: 'ISSS 要求实践为学位项目全体学生明确的必修要求；8·24 前已获批的 CPT 可持续至当前授权结束日。',
@@ -240,6 +298,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-oregon',
+    checkedOn: '2026-09-07',
     school: 'University of Oregon',
     state: '不再批准仅供选修实习学分的 CPT',
     detail: 'ISSS 新政策要求实践为既定课程与学位的必要组成部分；页面另列全员学位必需及完成必需硕士论文／毕业项目、博士论文的情形，研究类须有导师详细证明。',
@@ -248,6 +308,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'university-of-kansas',
+    checkedOn: '2026-09-07',
     school: 'University of Kansas',
     state: '校方页面称暂停全部 CPT 请求',
     detail: 'ISS 的 2026 年 8 月更新称，正在判断哪些情形仍可授权，期间暂停所有 CPT 请求；公告未说明既有授权的处理方式。',
@@ -256,6 +318,8 @@ export const verifiedSchools: VerifiedSchool[] = [
     screenshots: [],
   },
   {
+    id: 'george-mason-university',
+    checkedOn: '2026-09-07',
     school: 'George Mason University',
     state: '暂停无法证明全员毕业必需的 2026 秋季 CPT 审理',
     detail: 'OIPS 审核 CPT 政策期间，要求提供实践为该学位项目全体学生毕业必需的证明；仅为选修课或多个可选毕业路径之一的实习不满足该标准。公告未说明既有授权如何处理。',
@@ -267,31 +331,43 @@ export const verifiedSchools: VerifiedSchool[] = [
 
 export const communitySchools: CommunitySchool[] = [
   {
+    id: 'unc-chapel-hill',
+    checkedOn: '2026-09-07',
     school: 'UNC–Chapel Hill',
     state: 'ISSS 邮件截图称除严格毕业要求外暂停',
     screenshots: [{ src: '/cpt-evidence/cpt_unc.jpeg', width: 1080, height: 1875 }],
   },
   {
+    id: 'caltech',
+    checkedOn: '2026-09-07',
     school: 'Caltech',
     state: 'ISP 通知截图称暂停全部新 CPT；当前参与者不受影响',
     screenshots: [{ src: '/cpt-evidence/cpt_caltech.jpeg', width: 1080, height: 1413 }],
   },
   {
+    id: 'ucla',
+    checkedOn: '2026-09-07',
     school: 'UCLA',
     state: '通知截图称暂停非全员学位要求的 Course Credit / 支持信 CPT',
     screenshots: [{ src: '/cpt-evidence/cpt_ucla.jpeg', width: 1144, height: 667 }],
   },
   {
+    id: 'purdue-ece',
+    checkedOn: '2026-09-07',
     school: 'Purdue ECE',
     state: '院系邮件截图称本学期不批非必需的实习／co-op CPT；论文研究所需工作应另向 ISS 咨询，仅限 ECE 口径',
     screenshots: [{ src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 }],
   },
   {
+    id: 'goldey-beacom-college',
+    checkedOn: '2026-09-07',
     school: 'Goldey-Beacom College',
     state: '学校邮件截图称暂停新的 CPT 审核与批准；尚未加入 SEVIS 的申请暂不获批',
     screenshots: [{ src: '/cpt-evidence/cpt_goldey_beacom.jpeg', width: 1080, height: 2202 }],
   },
   {
+    id: 'purdue-university-iss',
+    checkedOn: '2026-09-07',
     school: 'Purdue University (ISS)',
     state: '校级 ISS 邮件截图称 CPT 必须属于既定课程或论文研究要求；与 ECE 院系停签通知分开记录',
     screenshots: [{ src: '/cpt-evidence/cpt_purdue_iss.jpeg', width: 1206, height: 1018 }],

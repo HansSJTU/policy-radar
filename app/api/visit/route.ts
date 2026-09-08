@@ -23,6 +23,7 @@ export async function POST(request: Request) {
     outboundClick?: unknown;
     shareMethod?: unknown;
     shareAction?: unknown;
+    schoolId?: unknown;
   };
   try {
     body = (await request.json()) as typeof body;
@@ -68,6 +69,7 @@ export async function POST(request: Request) {
       outboundClick: body.outboundClick,
       shareMethod: body.shareMethod,
       shareAction: body.shareAction,
+      schoolId: body.schoolId,
     };
 
     await dispatchAnalyticsEvent(body.eventType, {
