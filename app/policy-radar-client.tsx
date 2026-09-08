@@ -124,7 +124,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
     localizedRouteStages,
     selectedPath,
   );
-  const briefing = getThirtyDayBriefing('2026-09-06', language);
+  const briefing = getThirtyDayBriefing('2026-09-07', language);
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -180,7 +180,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span /><time dateTime="2026-09-06">2026-09-06 · ET</time></div>
+          <div className="asof"><span /><time dateTime="2026-09-07">2026-09-07 · ET</time></div>
         </div>
       </header>
 

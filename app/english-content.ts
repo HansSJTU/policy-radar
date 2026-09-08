@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-06', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-07', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -264,13 +264,14 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'University of Wisconsin-Milwaukee': { state: 'Only CPT required for every student in the program is approved from August 24', detail: 'ISSS requires an articulated practical-training requirement for all students in the academic program. CPT approved before August 24 remains authorized through its current end date.' },
   'University of Oregon': { state: 'CPT solely for optional internship credit is no longer authorized', detail: 'The new ISSS policy requires training to be integral to the curriculum and degree. The page lists program-wide degree requirements and work needed for a required master’s thesis/final project or doctoral dissertation; research cases require detailed faculty documentation.' },
   'University of Kansas': { state: 'The university page says all CPT requests are paused', detail: 'The ISS August 2026 update pauses all CPT requests while the office determines which cases can be authorized. The notice does not explain how existing authorizations are treated.' },
+  'George Mason University': { state: 'Fall 2026 CPT processing is paused without proof of a program-wide graduation requirement', detail: 'During its CPT policy review, OIPS requires proof that training is necessary for every student in the degree program to graduate. An elective internship or one of several optional ways to satisfy a degree requirement does not meet that standard. The notice does not explain how existing authorizations are treated.' },
 };
 
 export const englishCommunitySchools: Record<string, string> = {
   'UNC–Chapel Hill': 'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
   UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',
-  'Purdue ECE': 'A department email screenshot says it will not sign CPT this semester; this is an ECE position and should not be generalized to the entire university.',
+  'Purdue ECE': 'A department email screenshot says non-required internship/co-op CPT will not be approved this semester; students should separately consult ISS about work needed for thesis research. This statement covers ECE only.',
   'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
   'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',
 };

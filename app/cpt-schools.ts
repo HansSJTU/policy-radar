@@ -255,6 +255,14 @@ export const verifiedSchools: VerifiedSchool[] = [
     tone: 'pause',
     screenshots: [],
   },
+  {
+    school: 'George Mason University',
+    state: '暂停无法证明全员毕业必需的 2026 秋季 CPT 审理',
+    detail: 'OIPS 审核 CPT 政策期间，要求提供实践为该学位项目全体学生毕业必需的证明；仅为选修课或多个可选毕业路径之一的实习不满足该标准。公告未说明既有授权如何处理。',
+    href: 'https://oips.gmu.edu/current-immigration-information/',
+    tone: 'pause',
+    screenshots: [],
+  },
 ];
 
 export const communitySchools: CommunitySchool[] = [
@@ -275,7 +283,7 @@ export const communitySchools: CommunitySchool[] = [
   },
   {
     school: 'Purdue ECE',
-    state: '院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校',
+    state: '院系邮件截图称本学期不批非必需的实习／co-op CPT；论文研究所需工作应另向 ISS 咨询，仅限 ECE 口径',
     screenshots: [{ src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 }],
   },
   {

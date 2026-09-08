@@ -3,7 +3,7 @@ import { getPolicies } from './policy-data.ts';
 import { chinesePolicyEditorial } from './policy-editorial-zh.ts';
 import { englishPolicyEditorial } from './policy-editorial-en.ts';
 
-export const POLICY_AS_OF = '2026-09-06';
+export const POLICY_AS_OF = '2026-09-07';
 export const POLICY_SITE_URL = 'https://policy-radar.uspolicy.workers.dev';
 
 export function getPolicyEditorial(id: string, language: Language) {

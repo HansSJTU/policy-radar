@@ -26,6 +26,38 @@ const chineseUpdates: ContentUpdate[] = [
   "date": "2026-09-07",
   "changes": [
     {
+      "id": "gmu-cpt-public-source",
+      "category": "CPT 学校清单",
+      "title": "新增 George Mason 校方 CPT 说明：证据记录增至 35 条",
+      "summary": "本次收录 OIPS 已公开的政策审核说明：无法证明实践为全项目学生毕业必需的 2026 秋季 CPT 暂停审理。页面未标明该段发布日期，不将本次收录日视为政策宣布日。",
+      "before": "34 条证据记录：28 条校方网页、6 条社区记录；按院校／独立校区去重为 33 所。George Mason 尚未收录。",
+      "after": "35 条证据记录：29 条校方网页、6 条社区记录；按同一口径去重为 34 所。新增 George Mason：暂停无法证明全员毕业必需的 2026 秋季 CPT 审理。",
+      "details": [
+        "选修课或多个可选毕业路径之一的实习不满足所列标准；公告未说明既有授权如何处理。",
+        "Purdue ECE 与校级 ISS 合并计为一所；UMD College Park 与 UMBC 继续按独立校区分别计数。"
+      ],
+      "sources": [
+        {
+          "label": "George Mason OIPS：Important CPT Policy Review",
+          "href": "https://oips.gmu.edu/current-immigration-information/"
+        }
+      ]
+    },
+    {
+      "id": "purdue-ece-research-scope-clarification",
+      "category": "CPT 证据摘要更正",
+      "title": "Purdue ECE 摘要补回论文研究个案咨询提示",
+      "summary": "原邮件末段让学生就论文研究所需工作另向 ISS 咨询；此前摘要遗漏了这一限定。本条仍为院系邮件截图证据，不升级为校方网页确认，也不代表研究类 CPT 一定获批。",
+      "before": "院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校",
+      "after": "院系邮件截图称本学期不批非必需的实习／co-op CPT；论文研究所需工作应另向 ISS 咨询，仅限 ECE 口径",
+      "sources": [
+        {
+          "label": "Purdue ECE 原邮件截图（末段）",
+          "href": "/cpt-evidence/cpt_purdue.jpeg"
+        }
+      ]
+    },
+    {
       "id": "duration-status-academic-restrictions-clarification",
       "category": "政策说明更正",
       "title": "#03 补明博士退出后的 OPT 障碍与第二学位限制边界",
@@ -421,6 +453,38 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-07",
   "changes": [
+    {
+      "id": "gmu-cpt-public-source",
+      "category": "CPT SCHOOL LIST",
+      "title": "Add George Mason’s public CPT notice; evidence entries increase to 35",
+      "summary": "The newly collected OIPS notice pauses Fall 2026 CPT processing when students cannot prove that training is required for everyone in the degree program to graduate. The section has no publication date; the collection date is not the announcement date.",
+      "before": "34 evidence entries: 28 public university webpages and 6 community records, covering 33 distinct institutions or separate campuses. George Mason was not listed.",
+      "after": "35 evidence entries: 29 public university webpages and 6 community records, covering 34 distinct institutions or separate campuses. George Mason is added with Fall 2026 CPT processing paused without proof of a program-wide graduation requirement.",
+      "details": [
+        "An elective internship or one of several optional ways to satisfy a degree requirement does not qualify under the stated standard. The notice does not address existing authorizations.",
+        "Purdue ECE and university-level ISS count as one institution; UMD College Park and UMBC remain separate campuses."
+      ],
+      "sources": [
+        {
+          "label": "George Mason OIPS: Important CPT Policy Review",
+          "href": "https://oips.gmu.edu/current-immigration-information/"
+        }
+      ]
+    },
+    {
+      "id": "purdue-ece-research-scope-clarification",
+      "category": "CPT EVIDENCE SUMMARY CORRECTION",
+      "title": "Restore the thesis-research consultation caveat in Purdue ECE’s summary",
+      "summary": "The email’s final paragraph directs students to consult ISS about work needed for thesis research, a qualification omitted from the previous summary. This remains department-email screenshot evidence, without an upgrade to public-webpage confirmation or a guarantee of research CPT approval.",
+      "before": "A department email screenshot says it will not sign CPT this semester; this is an ECE position and should not be generalized to the entire university.",
+      "after": "A department email screenshot says non-required internship/co-op CPT will not be approved this semester; students should separately consult ISS about work needed for thesis research. This statement covers ECE only.",
+      "sources": [
+        {
+          "label": "Original Purdue ECE email screenshot (final paragraph)",
+          "href": "/cpt-evidence/cpt_purdue.jpeg"
+        }
+      ]
+    },
     {
       "id": "duration-status-academic-restrictions-clarification",
       "category": "Policy clarification",
