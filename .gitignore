@@ -58,3 +58,6 @@ next-env.d.ts
 /work/
 /.worktrees/
 /.openai/hosting.json
+
+# local documentation (all directory levels)
+docs/
