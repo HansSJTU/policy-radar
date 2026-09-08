@@ -234,7 +234,10 @@ export function CommunityImpactRating({
           {aggregate ? text.ratingCount(aggregate.count) : text.noRatings}
         </span>
       </div>
-      <fieldset className="impact-scale">
+      <fieldset
+        className="impact-scale"
+        onPointerLeave={() => setHoveredRating(null)}
+      >
         <legend className="visually-hidden">{text.prompt}</legend>
         {choices.map(({ value, pressed }) => (
           <button
@@ -247,7 +250,6 @@ export function CommunityImpactRating({
             onPointerEnter={(event) => {
               if (event.pointerType === 'mouse') setHoveredRating(value);
             }}
-            onPointerLeave={() => setHoveredRating(null)}
             onFocus={() => setFocusedRating(value)}
             onBlur={() => setFocusedRating(null)}
             onClick={() => onSelect(value)}
