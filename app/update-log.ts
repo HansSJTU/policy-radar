@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-08",
+  "changes": [
+    {
+      "id": "northwestern-cpt-september3-policy",
+      "category": "CPT 学校清单",
+      "title": "Northwestern 从审核期间暂停改为明确不批准非全员必需 CPT",
+      "summary": "校方 CPT 页面链接的 9 月 3 日通知明确：除非 SEVP 指引改变，学校不能批准非项目全体学生必需的实践。本次更新反映该已发布通知，不将核查日视为通知发布日期。",
+      "before": "暂停非全员必修的 CPT 申请；学校审核期间只处理全员必修工作经历。",
+      "after": "不再批准非全员必需的 CPT；除非 SEVP 指引改变，学校不能批准此类实践，OISS 正与各项目核实资格。",
+      "sources": [
+        {
+          "label": "Northwestern OISS CPT webpage",
+          "href": "https://www.northwestern.edu/international/international-students/student-employment/cpt-for-f1-students.html"
+        },
+        {
+          "label": "Northwestern OISS September 3 notice",
+          "href": "https://mailchi.mp/37923185e320/international-student-newsletter-month-day-5100682"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-07",
   "changes": [
     {
@@ -450,6 +473,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-08",
+  "changes": [
+    {
+      "id": "northwestern-cpt-september3-policy",
+      "category": "CPT school tracker",
+      "title": "Northwestern clarifies it cannot approve CPT that is not required for every student",
+      "summary": "The September 3 notice linked from the university CPT page states that this restriction continues unless SEVP guidance changes. The audit date is not the announcement date.",
+      "before": "CPT not required for every student was on hold during the university review.",
+      "after": "Northwestern cannot approve experiential learning that is not required for every student unless SEVP guidance changes; OISS is working with programs to determine eligibility.",
+      "sources": [
+        {
+          "label": "Northwestern OISS CPT webpage",
+          "href": "https://www.northwestern.edu/international/international-students/student-employment/cpt-for-f1-students.html"
+        },
+        {
+          "label": "Northwestern OISS September 3 notice",
+          "href": "https://mailchi.mp/37923185e320/international-student-newsletter-month-day-5100682"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-07",
   "changes": [

@@ -506,7 +506,7 @@ export const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-07', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-08', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       {
