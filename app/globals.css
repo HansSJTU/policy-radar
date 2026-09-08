@@ -302,9 +302,11 @@ main { width: 100%; min-width: 0; }
 .community-impact-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; }
 .community-rating-title { color: var(--ink); font-size: .875rem; line-height: 1.5; font-weight: 650; }
 .community-rating-count { color: var(--muted); font-size: .75rem; line-height: 1.5; font-variant-numeric: tabular-nums; }
-.community-score-value { display: flex; align-items: baseline; gap: 3px; }
+.community-score-value { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 2px; white-space: nowrap; }
 .rank-score.community-score { grid-template-columns: minmax(0, 1fr); }
-.rank-score.community-score strong { color: var(--ink); }
+.rank-score.community-score > span { color: var(--ink-soft); }
+.rank-score.community-score strong { color: var(--red-dark); font: 700 2.25rem/1.1 ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.055em; }
+.rank-score.community-score small { margin-left: 0; font-size: .625rem; }
 .impact-scale { margin: 12px 0 0; padding: 4px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; border: 1px solid #e1e7ef; border-radius: 10px; background: #edf1f6; }
 .impact-scale button { min-width: 0; height: 40px; padding: 0; border: 1px solid transparent; border-radius: 6px; color: #52647a; background: transparent; cursor: pointer; font: 600 .875rem/1 ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; transition: border-color .14s ease, color .14s ease, background .14s ease, box-shadow .14s ease; }
 .impact-scale button:hover:not(:disabled) { color: var(--ink); border-color: #d4deeb; background: #fff; }
@@ -657,7 +659,7 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .route-stage-column:nth-child(2)::after { display: none; }
   .policy-snapshot { grid-template-columns: 64px minmax(0,1fr) 220px; gap: 16px; }
   .community-impact { padding: 14px; width: 100%; }
-  .rank-score strong { font-size: 1.375rem; }
+  .rank-score.community-score strong { font-size: 1.875rem; }
   .process-row, .litigation-track, .timeline-shell, .policy-details, .policy-sources { margin-left: 80px; }
   .briefing-panel > header { flex-wrap: wrap; }
   footer { grid-template-columns: 1fr; gap: 18px; }
@@ -735,6 +737,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .rank-score { margin: 0; padding: 0 0 0 14px; display: flex; align-items: baseline; justify-content: flex-end; gap: 3px; border-top: 0; border-left: 1px solid var(--line); }
   .rank-score > span { display: inline; margin-right: 4px; font-size: .75rem; }
   .rank-score strong { margin-top: 0; font-size: 1.375rem; }
+  .rank-score.community-score { min-width: 0; flex-wrap: wrap; column-gap: 4px; row-gap: 2px; }
+  .rank-score.community-score strong { font-size: 2rem; }
   .community-impact { width: 100%; grid-column: 1; grid-row: auto; margin-top: 2px; padding: 14px; border-radius: 11px; max-width: none; }
   .process-block { position: relative; margin-top: 20px; border-bottom: 1px solid #e5eaf2; }
   .process-block::after { position: absolute; z-index: 8; top: 36px; right: 0; bottom: 14px; width: 28px; content: ''; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255,255,255,.96)); }

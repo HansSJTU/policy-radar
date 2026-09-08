@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
+import { Module } from 'node:module';
 import test from 'node:test';
 
 import { build } from 'esbuild';
@@ -23,15 +24,16 @@ async function loadBundledModule(path) {
   const result = await build({
     entryPoints: [path],
     bundle: true,
-    format: 'esm',
+    format: 'cjs',
+    packages: 'external',
     jsx: 'automatic',
     platform: 'node',
     write: false,
   });
-  const source = result.outputFiles[0].text;
-  return import(
-    `data:text/javascript;base64,${Buffer.from(source).toString('base64')}`
-  );
+  const compiled = new Module(path);
+  compiled.paths = Module._nodeModulePaths(process.cwd());
+  compiled._compile(result.outputFiles[0].text, path);
+  return compiled.exports;
 }
 
 const ratingApi = await loadBundledModule(

@@ -22,7 +22,7 @@ const RATING_SELECTIONS_KEY = 'f1-policy-radar-impact-ratings-v1';
 
 const copy = {
   zh: {
-    title: '参与评分',
+    title: '参与社区评分',
     scoreTitle: '社区评分',
     noRatings: '暂无评分',
     ratingCount: (count: number) => `${count} 人评分`,
@@ -212,8 +212,12 @@ export function CommunityImpactRating({
   error: boolean | null;
   onSelect: (rating: number) => void;
 }) {
+  const [hoveredRating, setHoveredRating] = useState<number | null>(null);
+  const [focusedRating, setFocusedRating] = useState<number | null>(null);
   const text = copy[language];
   const choices = buildCommunityRatingChoices(selected);
+  const previewRating = hoveredRating ?? focusedRating;
+  const isPreview = previewRating !== null && previewRating !== selected;
   const description = selected
     ? text.descriptions[selected - 1]
     : text.scaleHint;
@@ -240,7 +244,12 @@ export function CommunityImpactRating({
             aria-pressed={pressed}
             aria-describedby={`rating-feedback-${policyId}`}
             disabled={pending}
-            title={`${value} · ${text.descriptions[value - 1]}`}
+            onPointerEnter={(event) => {
+              if (event.pointerType === 'mouse') setHoveredRating(value);
+            }}
+            onPointerLeave={() => setHoveredRating(null)}
+            onFocus={() => setFocusedRating(value)}
+            onBlur={() => setFocusedRating(null)}
             onClick={() => onSelect(value)}
           >
             {value}
@@ -248,16 +257,24 @@ export function CommunityImpactRating({
         ))}
       </fieldset>
       <p
-        className={error ? 'rating-feedback error' : 'rating-feedback'}
+        className={
+          error && !isPreview ? 'rating-feedback error' : 'rating-feedback'
+        }
         aria-live="polite"
         id={`rating-feedback-${policyId}`}
       >
-        {selected !== null && (
-          <strong className="community-my-rating">
-            {text.myRating(selected)} ·{' '}
-          </strong>
+        {isPreview ? (
+          `${previewRating} · ${text.descriptions[previewRating - 1]}`
+        ) : (
+          <>
+            {selected !== null && (
+              <strong className="community-my-rating">
+                {text.myRating(selected)} ·{' '}
+              </strong>
+            )}
+            {error ? text.unavailable : description}
+          </>
         )}
-        {error ? text.unavailable : description}
       </p>
     </aside>
   );
