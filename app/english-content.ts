@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-07', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-08', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -243,7 +243,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'Texas A&M': { state: 'Tighter review, not a full pause', detail: 'New applications after August 24 must satisfy both the program-wide graduation requirement and cooperative-agreement standards.' },
   'UT Dallas': { state: 'Process unchanged as of August 25', detail: 'This is a counterexample: not every university has “canceled CPT.”' },
   'University of Michigan': { state: 'Elective-course CPT is no longer approved', detail: 'Only training required for every student in the degree program may be approved; existing authorizations may continue.' },
-  'Northwestern University': { state: 'CPT not required for every student is on hold', detail: 'During its review, the university is processing only work experiences required for every student in the academic program.' },
+  'Northwestern University': { state: 'CPT not required for every student will not be approved', detail: 'In its September 3 notice, OISS says Northwestern cannot approve experiential learning that is not required for every student unless SEVP guidance changes. OISS is working with programs to establish eligibility.' },
   'Columbia University': { state: 'CPT not required for every student is paused; pre-August 24 approvals will not be rescinded', detail: 'ISSO approves only CPT that is integral to the curriculum, required for all students, and supported by a cooperative agreement. Other cases are paused; CPT approved before August 24 will not be rescinded.' },
   'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
   'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
