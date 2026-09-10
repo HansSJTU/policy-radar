@@ -1011,6 +1011,7 @@ fieldset.pd-scenarios {
 }
 .pd-stages .upcoming > span {
   border-style: dashed;
+  background: #e4eaf3;
 }
 .pd-stages button small {
   font-size: 0.8125rem;

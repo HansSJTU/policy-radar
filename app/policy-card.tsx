@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { ArrowUpRight, Clock3, Scale } from 'lucide-react';
 import { GlossaryText } from './glossary-text';
 import { CommunityImpactScore, type CommunityImpactAggregate } from './community-impact-rating';
@@ -31,6 +31,18 @@ export function PolicyCard({
   const ui = homeCopy[language];
   const process = getProcessTrack(policy.id, language);
   const editorial = getPolicyEditorial(policy.id, language)!;
+  const flowHelpRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    const dismissOutside = (event: PointerEvent) => {
+      const details = flowHelpRef.current;
+      if (details?.open && !event.composedPath().includes(details)) {
+        details.open = false;
+      }
+    };
+    document.addEventListener('pointerdown', dismissOutside, true);
+    return () => document.removeEventListener('pointerdown', dismissOutside, true);
+  }, []);
 
   return (
     <article
@@ -49,7 +61,7 @@ export function PolicyCard({
           <div className="policy-meta">
             <div className={`flow-annotation ${process.kind}`}>
               <span><GlossaryText text={process.name} /></span>
-              <details className="flow-help">
+              <details className="flow-help" ref={flowHelpRef}>
                 <summary aria-label={ui.viewProcess(process.name)}>?</summary>
                 <div className="flow-popover">
                   <div className="flow-popover-head">

@@ -64,7 +64,7 @@
 .share-trigger.share-card-trigger { width: 32px; min-width: 32px; height: 32px; padding: 0; border-radius: 8px; border-color: #dce4ef; color: #1b2e49; background: #fff; }
 .share-card-trigger svg { width: 17px; height: 17px; stroke-width: 1.8; }
 .share-card-trigger:hover, .share-card-trigger[data-popup-open] { background: #edf4fd; border-color: #b8cde9; }
-.policy-card > .share-card-trigger { position: absolute; top: 22px; right: 20px; }
+.policy-card > .share-card-trigger { position: absolute; top: 28px; right: 20px; }
 .policy-card-compact .policy-snapshot { padding-right: 40px; }
 .share-checked-date { display: block; margin-top: 8px; font-size: .75rem; font-weight: 650; color: #155d69; }
 .share-item-actions { display: grid; gap: 8px; margin-bottom: 16px; }
@@ -110,7 +110,7 @@
   :is(.topbar, .stats-page-bar, .updates-page-bar) :is(.top-actions, .stats-page-actions, .updates-page-actions) { gap: 4px; }
   .share-trigger { width: 44px; min-width: 44px; height: 44px; padding: 0; }
   .share-trigger > span { display: none; }
-  .policy-card > .share-card-trigger { top: 16px; right: 16px; }
+  .policy-card > .share-card-trigger { top: 20px; right: 16px; }
   .policy-card-compact .policy-snapshot { padding-right: 0; }
   .policy-card-compact .rank-column { padding-right: 40px; }
   :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 72px; height: 44px; }
