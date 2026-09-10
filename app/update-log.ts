@@ -25,6 +25,28 @@ const chineseUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-09",
   "changes": [
+{
+  "id": "penn-neu-cpt-public-sources",
+  "category": "CPT 学校清单",
+  "title": "新增 UPenn 暂停审批说明和 Northeastern COE 硕士实习次数限制",
+  "summary": "按校方公开页面新增两条记录。Penn 通知为 8 月 27 日发布、页面 8 月 31 日更新；NEU 条款发布日期未标明，不将收录日视为新规宣布日。",
+  "before": "35 条记录：30 条校方公开来源、5 条社区记录，覆盖 34 所院校／独立校区；尚未收录 Penn 和 Northeastern。",
+  "after": "37 条记录：32 条校方公开来源、5 条社区记录，覆盖 36 所院校／独立校区。Penn 暂停新申请和待审申请的审批决定；Northeastern COE 硕士限一次 co-op／internship，最长 8 个月。",
+  "details": [
+    "Penn 既有 CPT 授权不受此次暂停影响；暂停不等于永久取消或拒绝全部待审请求。",
+    "NEU 记录仅限工程学院硕士，不能外推全校，也不能用作“博士全面停批”的证据。"
+  ],
+  "sources": [
+    {
+      "label": "Penn ISSS CPT",
+      "href": "https://global.upenn.edu/isss/cpt/"
+    },
+    {
+      "label": "Northeastern COE graduate co-op FAQ",
+      "href": "https://coe.northeastern.edu/academics-experiential-learning/co-op-experiential-learning/co-op/graduate-co-op/co-op-faqs/"
+    }
+  ]
+},
     {
       "id": "ucla-cpt-public-source",
       "category": "CPT 学校清单",
@@ -503,6 +525,28 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-09",
   "changes": [
+{
+  "id": "penn-neu-cpt-public-sources",
+  "category": "CPT school evidence",
+  "title": "Add Penn’s approval pause and Northeastern COE master’s placement limit",
+  "summary": "Two records are added from public university pages. Penn’s notice is dated August 27 on a page updated August 31. The NEU provision has no stated publication date; the date of inclusion is not a new-policy announcement date.",
+  "before": "35 entries: 30 public university sources and 5 community records, covering 34 distinct institutions or separate campuses. Penn and Northeastern were not listed.",
+  "after": "37 entries: 32 public university sources and 5 community records, covering 36 distinct institutions or separate campuses. Penn pauses decisions on new and pending requests; Northeastern COE master’s students are limited to one co-op/internship, up to eight months.",
+  "details": [
+    "Penn’s existing CPT authorizations are unaffected by this pause, which is neither permanent elimination nor denial of all pending requests.",
+    "The NEU entry covers COE master’s students only. It neither establishes a university-wide rule nor confirms a blanket PhD suspension."
+  ],
+  "sources": [
+    {
+      "label": "Penn ISSS CPT",
+      "href": "https://global.upenn.edu/isss/cpt/"
+    },
+    {
+      "label": "Northeastern COE graduate co-op FAQ",
+      "href": "https://coe.northeastern.edu/academics-experiential-learning/co-op-experiential-learning/co-op/graduate-co-op/co-op-faqs/"
+    }
+  ]
+},
     {
       "id": "ucla-cpt-public-source",
       "category": "CPT school evidence",
