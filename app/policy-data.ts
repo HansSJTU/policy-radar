@@ -402,33 +402,34 @@ export const policies: Array<{
     tldr: 'DHS 拟取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1 和 TN 等身份在雇佣提前终止后的最长 60 天酌情宽限期；该提案不涉及 F-1 完成学业后的宽限期。',
     score: '5.5',
     confidence: 35,
-    status: 'OIRA 已审完 · 等待 NPRM',
+    status: 'NPRM 预览已公开 · 尚未生效',
     tone: 'blue',
     current:
-      'RIN 1615-AD22 于 2026-08-27 完成 OIRA 审查，结果为 “Consistent with Change”。拟取消 E-1/E-2/E-3/H-1B/H-1B1/L-1/O-1/TN 等在雇佣提前终止后的最长 60 天酌情宽限期。提案尚未公开。',
+      'DHS 于 2026-09-10 公开 RIN 1615-AD22 的 NPRM 预览稿（2026-18631），预定 9 月 11 日正式刊登。拟删除 8 CFR 214.1(l)(2)，取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属的最长 60 天酌情宽限期。评论期为正式刊登后 60 天，预览稿尚未填入截止日期；没有最终规则或生效日期，现行规则未变。',
     route: ['H-1B 失业', '换雇主', '转身份'],
     milestones: [
       { date: '2026-08-06', text: '提案送交 OIRA。' },
       { date: '2026-08-27', text: 'OIRA 完成审查并带修改放行。' },
+      { date: '2026-09-10', text: 'NPRM 预览稿公开，明确八类工作身份及其家属的适用范围。' },
     ],
     next: [
       {
-        date: '数天—数周',
-        text: '可能发布 NPRM，届时才会看到适用细节。',
-        estimate: true,
+        date: '2026-09-11',
+        text: '预览稿注明预定正式刊登日；评论期为正式刊登后 60 天，截止日期待正式版确认。',
       },
       {
-        date: '2026 年末—2027+',
-        text: '评论结束后才可能形成最终规则。',
+        date: '日期未定',
+        text: '评论与审议后是否形成最终规则、何时生效均未确定。',
         estimate: true,
       },
     ],
     impacts: [
       'H-1B 被裁后可能无法在境内从容寻找新雇主、递交 change of status 或安排离境。',
-      '雇主转换、家庭安排与 I-94 到期日会变得更关键。',
+      '家属（包括 H-4、L-2、E 家属、O-3、TD）依赖主申请人维持身份时也受影响；家属本人失业不等于主申请人失业。',
       'F-1 完成课程后的 grace period 是另一套规则，不要混淆。',
     ],
     sources: [
+      { label: 'Federal Register NPRM 预览稿（9·10）', href: 'https://public-inspection.federalregister.gov/2026-18631.pdf' },
       {
         label: 'OIRA 完成记录',
         href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1496261',

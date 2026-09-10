@@ -96,7 +96,7 @@ test('administrative guidance has its own process and color family', () => {
   assert.notDeepEqual(track.stages, getProcessTrack('opt-fee').stages);
 });
 
-test('OIRA clearance does not mark an unpublished grace-period proposal as reached', () => {
+test('public inspection does not mark formal Federal Register publication as completed', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('grace-period', language);
     assert.equal(track.lastCompletedStage, 1);

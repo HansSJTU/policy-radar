@@ -616,27 +616,27 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
   {
     id: 'grace-period',
     discovery: {
-      status: 'OIRA review complete',
+      status: 'NPRM preview public',
       identities: ['E categories', 'H-1B / H-1B1', 'L-1 / O-1 / TN'],
       summary:
         'The plan would remove the discretionary grace period of up to 60 days after early employment termination. The current grace period is unchanged; this does not concern the F-1 post-completion grace period.',
-      next: { text: 'Awaiting DHS publication of the NPRM text' },
+      next: { text: 'Scheduled publication September 11; then a 60-day comment period' },
     },
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
     short: 'Ending the 60-Day Post-Termination Grace Period',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD22',
-    status: 'OIRA review complete · Awaiting proposal',
-    effectLabel: 'Not in effect · Proposal unpublished',
+    status: 'NPRM preview public · Publication scheduled September 11',
+    effectLabel: 'Not in effect · Current rule unchanged',
     audience:
-      'E, H-1B, H-1B1, L-1, O-1 and TN workers whose employment ends early.',
+      'E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN workers whose employment or qualifying activity ends early, and their dependents.',
     caveat:
-      'This does not concern the F-1 post-completion grace period; specific exceptions await the proposal text.',
+      'This is a proposal; current rules remain unchanged. If finalized as drafted, people otherwise authorized to remain lawfully would not all have to depart immediately. The F-1 post-completion grace period is separate.',
     summary:
       'DHS plans to remove the discretionary grace period of up to 60 days after early termination of employment for H-1B, H-1B1, E, L-1, O-1, TN and related work statuses. This does not concern the F-1 grace period after program completion.',
     background:
-      'OIRA completed review of RIN 1615-AD22 on August 27, 2026 as Consistent with Change. This records prepublication clearance; DHS has not yet published the NPRM in the Federal Register.',
+      'Document 2026-18631 entered public inspection September 10, with publication scheduled September 11; docket USCIS-2026-0364. It would remove 8 CFR 214.1(l)(2) and make a conforming reference change for compelling-circumstances EADs. Comments are due 60 days after publication; the exact deadline awaits the published version. No final rule or effective date is set.',
     effectState: 'not-in-effect',
     note: 'Addresses the buffer after early termination of employment',
     deck: 'After a layoff, how much time might remain to find work, change status, and arrange family matters?',
@@ -661,7 +661,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
       ],
     ],
     outlook:
-      'Our outlook: once the proposal is published, exceptions and effective-date boundaries will drive the debate. For workers, the most practical question is whether the rule preserves response time after an unexpected layoff.',
+      'Watch whether public comments lead DHS to revise the proposal and what effective-date and transition terms appear in any final rule. The preview specifies removal of the buffer but does not change current requirements.',
     scenarios: [
       [
         'Current buffer removed',
@@ -682,13 +682,13 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
         'The current rule continues to provide a buffer',
         'The proposal is not finalized or does not take effect.',
         'Near-term decisions would continue under the current rule, though employers and workers may pay more attention to future changes during layoffs and job transitions.',
-        'A formal proposal, a withdrawal record, or a new regulatory agenda entry.',
+        'A final rule, withdrawal, or subsequent revision.',
       ],
     ],
     scope: [
       [
         'Covered statuses',
-        'The agenda addresses E, H-1B, H-1B1, L-1, O-1, TN, and related employment statuses.',
+        'E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN, plus their dependents, including H-4, L-2, E dependents, O-3 and TD.',
       ],
       [
         'Covered event',
@@ -696,7 +696,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
       ],
       [
         'Separate rule',
-        'The grace period after an F-1 student completes a program is governed separately.',
+        'The F-1 post-completion grace period is separate. The separately authorized up-to-10-day periods around petition validity dates do not replace the 60-day period after early termination. A dependent losing employment does not itself cause the principal or dependent to lose status.',
       ],
     ],
     related: ['h1b-reform', 'h4-ead', 'duration-status'],

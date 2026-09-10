@@ -2,7 +2,7 @@ import type { PolicyId } from './community-impact-model';
 import type { Language } from './language';
 
 // Last site update, not a certification that every source is fully verified.
-export const SITE_UPDATED_ON = '2026-09-09';
+export const SITE_UPDATED_ON = '2026-09-10';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
@@ -13,7 +13,7 @@ export const policyCheckedOn: Record<PolicyId, string> = {
   'cpt-guidance': '2026-09-09',
   'prevailing-wage': '2026-09-09',
   'h1b-reform': '2026-09-09',
-  'grace-period': '2026-09-09',
+  'grace-period': '2026-09-10',
   'ead-discretion': '2026-09-09',
   'h4-ead': '2026-09-09',
 };
