@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og';
-import { getPolicyDetail, POLICY_AS_OF } from '../../../policy-detail-model';
+import { getPolicyDetail } from '../../../policy-detail-model';
 
 export async function GET(
   request: Request,
@@ -58,7 +58,7 @@ export async function GET(
         }}
       >
         <span>{p.status}</span>
-        <span>{POLICY_AS_OF} · ET</span>
+        <span>{detail.checkedOn} · ET</span>
       </div>
     </div>,
     { width: 1200, height: 630 },

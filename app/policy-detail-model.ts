@@ -3,7 +3,7 @@ import { getPolicies } from './policy-data.ts';
 import { chinesePolicyEditorial } from './policy-editorial-zh.ts';
 import { englishPolicyEditorial } from './policy-editorial-en.ts';
 
-export const POLICY_AS_OF = '2026-09-07';
+import { policyCheckedOn, getVerificationNote } from './policy-freshness.ts';
 export const POLICY_SITE_URL = 'https://policy-radar.uspolicy.workers.dev';
 
 export function getPolicyEditorial(id: string, language: Language) {
@@ -15,5 +15,5 @@ export function getPolicyEditorial(id: string, language: Language) {
 export function getPolicyDetail(id: string, language: Language) {
   const record = getPolicies(language).find((policy) => policy.id === id);
   const editorial = getPolicyEditorial(id, language);
-  return record && editorial ? { record, editorial } : undefined;
+  return record && editorial ? { record, editorial, checkedOn: policyCheckedOn[record.id], verificationNote: getVerificationNote(record.id, language) } : undefined;
 }

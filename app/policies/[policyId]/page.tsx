@@ -19,7 +19,6 @@ import { getPolicies } from '../../policy-data';
 import {
   getPolicyDetail,
   getPolicyEditorial,
-  POLICY_AS_OF,
   POLICY_SITE_URL,
 } from '../../policy-detail-model';
 import { GlossaryText } from '../../glossary-text';
@@ -204,9 +203,9 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <dd data-effect={p.effectState}>{p.effectLabel}</dd>
                 </div>
                 <div>
-                  <dt>{english ? 'As of' : '资料截至'}</dt>
+                  <dt>{english ? 'Last checked' : '最后核对'}</dt>
                   <dd>
-                    <time dateTime={POLICY_AS_OF}>{POLICY_AS_OF}</time> · ET
+                    <time dateTime={detail.checkedOn}>{detail.checkedOn}</time> · ET
                   </dd>
                 </div>
               </dl>
@@ -223,7 +222,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 <div>
                   <dt>{english ? 'Key boundaries' : '关键边界'}</dt>
                   <dd>
-                    <GlossaryText text={p.caveat} />
+                    <GlossaryText text={[p.caveat, detail.verificationNote].filter(Boolean).join(' ')} />
                   </dd>
                 </div>
                 <div>
