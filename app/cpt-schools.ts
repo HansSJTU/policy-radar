@@ -337,6 +337,26 @@ export const verifiedSchools: VerifiedSchool[] = [
     tone: 'pause',
     screenshots: [{ src: '/cpt-evidence/cpt_ucla.jpeg', width: 1144, height: 667 }],
   },
+  {
+    id: 'university-of-pennsylvania',
+    checkedOn: '2026-09-09',
+    school: 'University of Pennsylvania (UPenn)',
+    state: '暂停新申请及待审 CPT 的审批决定；既有授权不受此次暂停影响',
+    detail: 'ISSS 的 8·27 通知（页面 8·31 更新）称，学校正在审核各项目及 CPT 流程，期间暂停新申请和待审申请的审批决定；不是拒绝全部待审申请或永久取消 CPT。既有授权须继续遵守当前 I-20 的雇主、地点及日期等条件。',
+    href: 'https://global.upenn.edu/isss/cpt/',
+    tone: 'pause',
+    screenshots: [],
+  },
+  {
+    id: 'northeastern-university-coe-masters',
+    checkedOn: '2026-09-09',
+    school: 'Northeastern University (COE Master’s)',
+    state: '工程学院硕士项目只允许一次 co-op／internship，最长 8 个月',
+    detail: 'COE FAQ 将硕士的 co-op 与 internship 合并计算，不因第一次较短而允许第二次；这是学院项目限制，不能外推全校或视为近期新规。页面未标明该规定发布日期，也不能据此保证个案 CPT 获批；“博士全面停批”尚无最新校方公开通知证实。',
+    href: 'https://coe.northeastern.edu/academics-experiential-learning/co-op-experiential-learning/co-op/graduate-co-op/co-op-faqs/',
+    tone: 'tighten',
+    screenshots: [],
+  },
 ];
 
 export const communitySchools: CommunitySchool[] = [
