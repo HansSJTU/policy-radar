@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { ArrowUpRight, ChevronDown, Radar } from 'lucide-react';
-import { getThirtyDayBriefing } from './briefing-feed';
+import { getThirtyDayBriefing, getBriefingDateLabels } from './briefing-feed';
 import { animateDisclosure } from './disclosure-animation';
 import { GlossaryText } from './glossary-text';
 import { VisitorTracker } from '@/components/visitor-tracker';
@@ -26,6 +26,7 @@ import { NiulaiEffect } from './niulai-effect';
 import { CptSchoolTracker } from './cpt-school-tracker';
 import { PolicyCard } from './policy-card';
 import { homeCopy } from './home-copy';
+import { SITE_UPDATED_ON } from './policy-freshness';
 import type { CommunitySchool, VerifiedSchool } from './cpt-schools';
 
 const routeStages = [
@@ -124,7 +125,8 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
     localizedRouteStages,
     selectedPath,
   );
-  const briefing = getThirtyDayBriefing('2026-09-07', language);
+  const briefing = getThirtyDayBriefing(SITE_UPDATED_ON, language);
+  const briefingDates = getBriefingDateLabels(SITE_UPDATED_ON);
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -180,7 +182,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
             <button type="button" className={language === 'en' ? 'active' : ''} aria-pressed={language === 'en'} onClick={() => selectLanguage('en')}>{ui.english}</button>
           </nav>
           <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span /><time dateTime="2026-09-07">2026-09-07 · ET</time></div>
+          <div className="asof"><span /><time dateTime={SITE_UPDATED_ON}>{SITE_UPDATED_ON} · ET</time></div>
         </div>
       </header>
 
@@ -237,7 +239,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
         <article className="briefing-panel briefing-recent">
           <header>
             <div><span>RECENT 30 DAYS</span><h2>{ui.recent}</h2></div>
-            <small>08·07—09·05</small>
+            <small>{briefingDates.recent}</small>
           </header>
           <div className="briefing-list">
             {briefing.recent.map((item) => (
@@ -259,7 +261,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
         <article className="briefing-panel briefing-upcoming">
           <header>
             <div><span>NEXT 30 DAYS</span><h2>{ui.upcoming}</h2></div>
-            <small>09·06—10·05</small>
+            <small>{briefingDates.upcoming}</small>
           </header>
           <div className="briefing-list">
             {briefing.upcoming.map((item) => (

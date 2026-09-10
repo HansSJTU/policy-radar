@@ -3,7 +3,7 @@ import test from 'node:test';
 import { getPolicyShareItem, getSchoolShareItem } from '../app/item-share-model.ts';
 import { buildItemShareContent } from '../app/share-model.ts';
 import { POLICY_IDS } from '../app/community-impact-model.ts';
-import { POLICY_AS_OF, getPolicyDetail } from '../app/policy-detail-model.ts';
+import { getPolicyDetail } from '../app/policy-detail-model.ts';
 import { verifiedSchools, communitySchools } from '../app/cpt-schools.ts';
 import { englishVerifiedSchools, englishCommunitySchools } from '../app/english-content.ts';
 import { wrapShareText } from '../app/share-image.ts';
@@ -11,9 +11,9 @@ import { wrapShareText } from '../app/share-image.ts';
 test('all policies share the exact status, effect, scope and review date in both languages', () => {
   for (const language of ['zh', 'en']) for (const id of POLICY_IDS) {
     const item = getPolicyShareItem(id, language);
-    const { editorial } = getPolicyDetail(id, language);
+    const { editorial, checkedOn } = getPolicyDetail(id, language);
     const content = buildItemShareContent(item, language);
-    for (const value of [editorial.title, editorial.summary, editorial.status, editorial.effectLabel, editorial.audience, editorial.caveat, POLICY_AS_OF]) {
+    for (const value of [editorial.title, editorial.summary, editorial.status, editorial.effectLabel, editorial.audience, editorial.caveat, checkedOn]) {
       assert.ok(content.text.includes(value), `${language}/${id}: missing ${value}`);
     }
     assert.equal(new URL(content.url).pathname, `/policies/${id}`);
@@ -82,5 +82,23 @@ test('image wrapping preserves qualifiers, long URLs, dates and Unicode without 
     const lines = wrapShareText(value, 14, measure);
     assert.ok(lines.every(line => measure(line) <= 14));
     assert.equal(lines.join('').replace(/\s/g, ''), value.replace(/\s/g, ''));
+  }
+});
+
+test('policy review dates remain independent of the site update date', async () => {
+  const { policyCheckedOn, SITE_UPDATED_ON } = await import('../app/policy-freshness.ts');
+  const original = policyCheckedOn['h4-ead'];
+  const distinctDate = SITE_UPDATED_ON === '2026-09-10' ? '2026-09-11' : '2026-09-10';
+  try {
+    policyCheckedOn['h4-ead'] = distinctDate;
+    for (const language of ['zh', 'en']) {
+      const detail = getPolicyDetail('h4-ead', language);
+      const item = getPolicyShareItem('h4-ead', language);
+      assert.equal(detail.checkedOn, distinctDate);
+      assert.equal(item.checkedOn, distinctDate);
+      assert.ok(buildItemShareContent(item, language).text.includes(distinctDate));
+    }
+  } finally {
+    policyCheckedOn['h4-ead'] = original;
   }
 });

@@ -184,3 +184,9 @@ export function getThirtyDayBriefing(asOf: string, language: Language = 'zh'): {
 
   return { recent, upcoming };
 }
+
+export function getBriefingDateLabels(asOf: string) {
+  const label = (offset: number) => new Date(dateValue(asOf) + offset * dayMs)
+    .toISOString().slice(5, 10).replace('-', '·');
+  return { recent: `${label(-29)}—${label(0)}`, upcoming: `${label(1)}—${label(30)}` };
+}

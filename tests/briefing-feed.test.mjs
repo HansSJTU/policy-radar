@@ -47,3 +47,9 @@ test('the September 3 briefing records the completed hearing without implying a 
   assert.match(filing.summary, /不是法院裁定/);
   assert.equal(upcoming.some(({ id }) => id === 'duration-injunction-hearing'), false);
 });
+
+test('briefing date labels follow the same rolling window across a year boundary', async () => {
+  const { getBriefingDateLabels } = await import('../app/briefing-feed.ts');
+  assert.deepEqual(getBriefingDateLabels('2026-09-09'), { recent: '08·11—09·09', upcoming: '09·10—10·09' });
+  assert.deepEqual(getBriefingDateLabels('2026-12-31'), { recent: '12·02—12·31', upcoming: '01·01—01·30' });
+});
