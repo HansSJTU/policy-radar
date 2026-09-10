@@ -634,7 +634,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'This is a proposal; current rules remain unchanged. If finalized as drafted, people otherwise authorized to remain lawfully would not all have to depart immediately. The F-1 post-completion grace period is separate.',
     summary:
-      'DHS plans to remove the discretionary grace period of up to 60 days after early termination of employment for H-1B, H-1B1, E, L-1, O-1, TN and related work statuses. This does not concern the F-1 grace period after program completion.',
+      'September 10 update: DHS released a preview of its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Publication is scheduled September 11, followed by a 60-day public comment period. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
     background:
       'Document 2026-18631 entered public inspection September 10, with publication scheduled September 11; docket USCIS-2026-0364. It would remove 8 CFR 214.1(l)(2) and make a conforming reference change for compelling-circumstances EADs. Comments are due 60 days after publication; the exact deadline awaits the published version. No final rule or effective date is set.',
     effectState: 'not-in-effect',
