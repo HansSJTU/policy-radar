@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { ArrowUpRight, ChevronDown, Radar } from 'lucide-react';
 import { getThirtyDayBriefing, getBriefingDateLabels } from './briefing-feed';
 import { animateDisclosure } from './disclosure-animation';
@@ -70,14 +71,19 @@ const routeStages = [
   },
 ];
 
-function RoutePolicyLink({ policy, language, path }: {
+function RoutePolicyLink({ policy, language, onNavigate }: {
   policy: (typeof routeStages)[number]['policies'][number];
   language: Language;
-  path: string;
+  onNavigate: (id: string) => void;
 }) {
   return (
     <a
-      href={policyHref(policy.id, language, undefined, path)}
+      href={`/?lang=${language}#policy-${policy.id}`}
+      onClick={(event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        onNavigate(policy.id);
+      }}
       className="route-policy"
     >
       <span>#{policy.rank}</span>
@@ -127,6 +133,19 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
   );
   const briefing = getThirtyDayBriefing(SITE_UPDATED_ON, language);
   const briefingDates = getBriefingDateLabels(SITE_UPDATED_ON);
+  const navigateToPolicy = (id: string) => {
+    const url = new URL(window.location.href);
+    if (!visiblePolicies.some((policy) => policy.id === id)) {
+      flushSync(() => setSelectedPath('all'));
+      url.searchParams.delete('path');
+    }
+    url.hash = `policy-${id}`;
+    window.history.pushState(null, '', url);
+    document.getElementById(`policy-${id}`)?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
+    });
+  };
   const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
   const selectLanguage = (nextLanguage: Language) => {
     persistLanguage(nextLanguage);
@@ -216,14 +235,14 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
                 </button>
                 <div className="stage-policies">
                   {stage.policies.slice(0, 2).map((policy) => (
-                    <RoutePolicyLink policy={policy} language={language} path={selectedPath} key={policy.id} />
+                    <RoutePolicyLink policy={policy} language={language} onNavigate={navigateToPolicy} key={policy.id} />
                   ))}
                   {stage.policies.length > 2 && (
                     <details className="route-more" ref={animateDisclosure}>
                       <summary>{ui.morePolicies(stage.policies.length - 2)}<ChevronDown aria-hidden="true" /></summary>
                       <div className="disclosure-content">
                         {stage.policies.slice(2).map((policy) => (
-                          <RoutePolicyLink policy={policy} language={language} path={selectedPath} key={policy.id} />
+                          <RoutePolicyLink policy={policy} language={language} onNavigate={navigateToPolicy} key={policy.id} />
                         ))}
                       </div>
                     </details>
