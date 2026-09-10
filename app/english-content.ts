@@ -218,7 +218,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-08', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-09', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -233,6 +233,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
 };
 
 export const englishVerifiedSchools: Record<string, { state: string; detail: string }> = {
+  UCLA: { state: 'Non-degree-required course-credit and support-letter CPT is suspended; degree-required CPT continues', detail: 'The September 8 notice suspends non-degree-required applications submitted from August 12. Dissertation, thesis, research, or capstone training must also be a requirement for every student in the program in the UCLA General Catalog. CPT approved with an I-20 issued before August 12 is unaffected. All CPT applications require a department-employer cooperative agreement.' },
   'UC Berkeley': {
     state: 'Course Credit CPT remains paused; thesis and dissertation CPT is limited to narrowly documented cases',
     detail: 'Degree Requirement CPT is limited to training required of every student in the program. Thesis/Dissertation Requirement CPT is available only to thesis-track master’s or doctoral students who have Advanced to Candidacy, when the training is necessary to complete the thesis or dissertation, cannot reasonably be replaced by another research or data-collection method, and is documented by the faculty adviser.',
@@ -270,7 +271,6 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
 export const englishCommunitySchools: Record<string, string> = {
   'UNC–Chapel Hill': 'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
-  UCLA: 'A notice screenshot says course-credit or support-letter CPT is paused unless it is a program-wide degree requirement.',
   'Purdue ECE': 'A department email screenshot says non-required internship/co-op CPT will not be approved this semester; students should separately consult ISS about work needed for thesis research. This statement covers ECE only.',
   'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
   'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',

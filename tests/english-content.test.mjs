@@ -22,8 +22,8 @@ function collectStrings(value) {
 
 test('the English policy and school datasets contain no Chinese copy', () => {
   assert.equal(Object.keys(englishPolicies).length, 10);
-  assert.equal(Object.keys(englishVerifiedSchools).length, 29);
-  assert.equal(Object.keys(englishCommunitySchools).length, 6);
+  assert.equal(Object.keys(englishVerifiedSchools).length, 30);
+  assert.equal(Object.keys(englishCommunitySchools).length, 5);
   assert.equal(Object.keys(englishRouteStages).length, 4);
 
   const strings = collectStrings({
