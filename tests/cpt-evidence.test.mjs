@@ -9,13 +9,13 @@ const source = await readFile(new URL('../app/home-copy.ts', import.meta.url), '
 const screenshotEvidence = {
   'UNC–Chapel Hill': ['/cpt-evidence/cpt_unc.jpeg'],
   Caltech: ['/cpt-evidence/cpt_caltech.jpeg'],
-  UCLA: ['/cpt-evidence/cpt_ucla.jpeg'],
   'Purdue ECE': ['/cpt-evidence/cpt_purdue.jpeg'],
   'Goldey-Beacom College': ['/cpt-evidence/cpt_goldey_beacom.jpeg'],
   'Purdue University (ISS)': ['/cpt-evidence/cpt_purdue_iss.jpeg'],
 };
 
 const verifiedForumEvidence = {
+  UCLA: ['/cpt-evidence/cpt_ucla.jpeg'],
   'UC Irvine': ['/cpt-evidence/cpt_uci.jpeg'],
   UCSB: [
     '/cpt-evidence/cpt_ucsb_1.jpeg',
@@ -71,8 +71,8 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 29);
-  assert.equal(communitySchools.length, 6);
+  assert.equal(verifiedSchools.length, 30);
+  assert.equal(communitySchools.length, 5);
   assert.equal(verifiedSchools.length + communitySchools.length, 35);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));

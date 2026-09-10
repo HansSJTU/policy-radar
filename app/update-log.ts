@@ -23,6 +23,33 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-09",
+  "changes": [
+    {
+      "id": "ucla-cpt-public-source",
+      "category": "CPT 学校清单",
+      "title": "UCLA 证据升级为校方公开通知",
+      "summary": "Dashew Center 已公开 9 月 8 日通知，补充论文研究、既有授权及合作协议要求；本次是证据升级，不是新增学校。",
+      "before": "UCLA 仅有邮件截图：暂停非全员学位要求的课程学分／支持信 CPT。35 条记录中有 29 条校方公开来源、6 条社区记录。",
+      "after": "UCLA 改为校方公开来源：非全员毕业必需的课程学分／支持信 CPT 暂停，学位必需 CPT 继续。35 条记录改为 30 条校方公开来源、5 条社区记录，仍覆盖 34 所院校／独立校区。",
+      "details": [
+        "论文、研究或 capstone 所需实践须在 UCLA General Catalog 中列为全项目学生的要求。",
+        "8 月 12 日前已批准并签发 CPT I-20 的授权不受影响；所有 CPT 申请须附院系与雇主的合作协议。"
+      ],
+      "sources": [
+        {
+          "label": "UCLA Dashew Center · September 8 notice",
+          "href": "https://internationalcenter.ucla.edu/September8message"
+        },
+        {
+          "label": "UCLA Dashew Center Messages",
+          "href": "https://internationalcenter.ucla.edu/dashew-center-messages"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-08",
   "changes": [
     {
@@ -473,6 +500,33 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-09",
+  "changes": [
+    {
+      "id": "ucla-cpt-public-source",
+      "category": "CPT school evidence",
+      "title": "Upgrade UCLA to a public university notice",
+      "summary": "The Dashew Center published a September 8 notice clarifying research cases, existing authorizations, and cooperative agreements. This upgrades an existing entry; it does not add a school.",
+      "before": "UCLA relied on an email screenshot describing a pause on non-degree-required course-credit and support-letter CPT. The 35 entries comprised 29 public university sources and 6 community records.",
+      "after": "UCLA now has a public source: non-degree-required course-credit and support-letter CPT is suspended; degree-required CPT continues. The 35 entries now comprise 30 public university sources and 5 community records, still covering 34 distinct institutions or separate campuses.",
+      "details": [
+        "Dissertation, thesis, research, or capstone training must be a program-wide requirement listed in the UCLA General Catalog.",
+        "CPT approved with an I-20 issued before August 12 is unaffected. All CPT applications require a department-employer cooperative agreement."
+      ],
+      "sources": [
+        {
+          "label": "UCLA Dashew Center · September 8 notice",
+          "href": "https://internationalcenter.ucla.edu/September8message"
+        },
+        {
+          "label": "UCLA Dashew Center Messages",
+          "href": "https://internationalcenter.ucla.edu/dashew-center-messages"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-08",
   "changes": [
