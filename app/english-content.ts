@@ -169,23 +169,24 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
   'grace-period': {
     title: 'Proposal to Eliminate the 60-Day Grace Period After Job Loss',
     tldr: 'DHS plans to eliminate the discretionary grace period of up to 60 days after early termination of employment for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, TN, and related classifications. The proposal does not concern the F-1 post-completion grace period.',
-    status: 'OIRA review completed · Awaiting NPRM',
-    current: 'OIRA completed its review of RIN 1615-AD22 on August 27, 2026, with the result “Consistent with Change.” DHS plans to eliminate the discretionary grace period of up to 60 days after early termination of employment for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, TN, and related classifications. The proposal is not yet public.',
+    status: 'NPRM preview public · Not in effect',
+    current: 'DHS released the RIN 1615-AD22 NPRM preview (2026-18631) on September 10, 2026, scheduled for publication September 11. It would remove 8 CFR 214.1(l)(2) for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, TN and their dependents. Comments are due 60 days after publication; the preview leaves the deadline blank. There is no final rule or effective date, and the current rule remains unchanged.',
     route: ['H-1B job loss', 'Employer change', 'Change of status'],
     milestones: [
       { date: '2026-08-06', text: 'DHS submitted the proposal to OIRA.' },
       { date: '2026-08-27', text: 'OIRA completed review and cleared the proposal with changes.' },
+      { date: '2026-09-10', text: 'The NPRM preview became public, specifying eight worker classifications and their dependents.' },
     ],
     next: [
-      { date: 'Days to weeks', text: 'DHS may publish an NPRM, which will reveal the scope and implementation details.', estimate: true },
-      { date: 'Late 2026–2027+', text: 'A final rule could follow only after the comment period and agency review.', estimate: true },
+      { date: '2026-09-11', text: 'Scheduled publication date in the preview. Comments are due 60 days after publication; confirm the deadline in the published version.' },
+      { date: 'Date unknown', text: 'Whether a final rule follows comments and review, and when it would take effect, remain undetermined.', estimate: true },
     ],
     impacts: [
       'An H-1B worker whose employment ends could lose the discretionary period now available to find a new employer, file a change of status, or arrange departure.',
-      'Employer-change timing, family arrangements, and the I-94 expiration date would become more important.',
+      'Dependents including H-4, L-2, E dependents, O-3 and TD would also be affected when relying on the principal maintaining status. A dependent losing a job is not the same as the principal losing employment.',
       'The F-1 post-completion grace period is governed by a different rule and is not part of this proposal.',
     ],
-    sourceLabels: ['OIRA completion record', 'Fragomen August 28 update', 'USCardForum discussion'],
+    sourceLabels: ['Federal Register NPRM preview (September 10)', 'OIRA completion record', 'Fragomen August 28 update', 'USCardForum discussion'],
   },
   'ead-discretion': {
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
@@ -290,7 +291,7 @@ export const englishRouteStages: Record<string, { subtitle: string; policies: Re
     'h1b-weighted-selection': { title: 'H-1B wage-weighted selection', state: 'Final rule in effect' },
     'prevailing-wage': { title: 'H-1B / PERM wage levels', state: 'Comment period closed' },
     'h1b-reform': { title: 'H-1B classification reform', state: 'OMB review' },
-    'grace-period': { title: 'End of 60-day grace period', state: 'Awaiting proposed rule text' },
+    'grace-period': { title: 'End of 60-day grace period', state: 'NPRM preview public; not in effect' },
     'h4-ead': { title: 'H-4 EAD', state: 'Long-term agenda' },
   } },
 };

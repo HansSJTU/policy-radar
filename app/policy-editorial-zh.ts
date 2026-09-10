@@ -540,25 +540,25 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
   {
     id: 'grace-period',
     discovery: {
-      status: 'OIRA 审查已完成',
+      status: 'NPRM 预览已公开',
       identities: ['E 类', 'H-1B / H-1B1', 'L-1 / O-1 / TN'],
       summary:
         '拟取消雇佣提前终止后的最长 60 天酌情宽限期；现行宽限期暂未改变，也不涉及 F-1 完成学业后的宽限期。',
-      next: { text: '等待 DHS 公开 NPRM 提案正文' },
+      next: { text: '预定 9 月 11 日正式刊登；随后 60 天评论期' },
     },
     title: '失业后的最长 60 天宽限期拟取消',
     short: '取消失业后 60 天宽限期',
     group: 'H-1B',
     agency: 'DHS / USCIS',
     rin: '1615-AD22',
-    status: 'OIRA 已审完 · 等待公开提案',
-    effectLabel: '尚未生效 · 提案未公开',
-    audience: '雇佣提前终止的 E、H-1B、H-1B1、L-1、O-1、TN 等工作身份持有人。',
-    caveat: '不涉及 F-1 完成学业后的宽限期；具体例外尚待提案正文。',
+    status: 'NPRM 预览已公开 · 预定 9·11 刊登',
+    effectLabel: '尚未生效 · 现行规则未变',
+    audience: '雇佣或相关活动提前终止的 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 持有人及其家属。',
+    caveat: '这只是提案，现行规则未变；如最终按稿生效，另有合法留美依据者不属于一概立即离境的情形。F-1 毕业宽限期是另一套规则。',
     summary:
       'DHS 拟取消 H-1B、H-1B1、E、L-1、O-1、TN 等工作身份在雇佣提前终止后的最长 60 天酌情宽限期；不涉及 F-1 完成学业后的宽限期。',
     background:
-      'RIN 1615-AD22 于 2026-08-27 以 Consistent with Change 完成审查。该记录是发布前审查的结果；DHS 尚未在 Federal Register 公开 NPRM。',
+      '2026-18631 于 9 月 10 日进入公开预览，预定 9 月 11 日正式刊登；案卷 USCIS-2026-0364。拟删除 8 CFR 214.1(l)(2)，并对 compelling-circumstances EAD 的引用作相应修改。评论期为正式刊登后 60 天，具体截止日待正式版确认；最终规则及生效日期未定。',
     effectState: 'not-in-effect',
     note: '针对雇佣提前终止后的缓冲期',
     deck: '被裁员后，找工作、转身份与家庭安排可能还剩多少缓冲？',
@@ -581,7 +581,7 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
       ],
     ],
     outlook:
-      '我们的预判：提案公布后，例外情形和生效边界会成为讨论重点。对员工最有实际意义的，是规则是否保留突发裁员情况下的应对空间。',
+      '后续需观察公众评论是否促使 DHS 修改方案，以及最终规则的生效与过渡安排。预览稿已明确取消这段缓冲，但不能把提案直接当作现行要求。',
     scenarios: [
       [
         '取消现有缓冲',
@@ -602,12 +602,14 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
         '现行规则下的缓冲继续发挥作用',
         '提案未定稿或没有生效。',
         '近期安排仍按现行规则判断，但企业裁员和员工转岗时可能更关注未来变化。',
-        '正式提案、撤回记录或新的议程安排。',
+        '最终规则、撤回记录或后续修订。',
       ],
     ],
     scope: [
-      ['涉及身份', '议程涉及 E、H-1B、H-1B1、L-1、O-1、TN 等相关工作身份。'],
+      ['涉及身份', 'E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN，以及依赖其身份的家属，包括 H-4、L-2、E 家属、O-3、TD。'],
       ['适用事件', '雇佣提前终止，不是所有签证到期或失业情形。'],
+      ['家属失业', '家属本人的工作结束并不因此使主申请人或家属失去身份；此处关注主申请人的雇佣或相关活动结束。'],
+      ['10 天规则', '有效期届满前后另有规定的最长 10 天期间不等于失业宽限期，也不能代替有效期内提前失业后的 60 天。'],
       ['不要混淆', 'F-1 完成学业后的宽限期属于另一套规则。'],
     ],
     related: ['h1b-reform', 'h4-ead', 'duration-status'],

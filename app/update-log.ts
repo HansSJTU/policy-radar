@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-10",
+  "changes": [
+    {
+      "id": "grace-period-nprm-preview",
+      "category": "规则制定",
+      "title": "失业后 60 天宽限期取消提案公开预览",
+      "summary": "第 8 项：NPRM 预览稿明确八类工作身份及家属范围，尚未生效。",
+      "before": "OIRA 已审完；等待公开提案，发布日期未定。",
+      "after": "9 月 10 日预览公开，预定 9 月 11 日正式刊登。拟取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属的最长 60 天酌情宽限期。评论期为正式刊登后 60 天；最终规则和生效日期未定，另有合法留美依据的情形须区别判断。",
+      "sources": [
+        {
+          "label": "Federal Register 2026-18631",
+          "href": "https://public-inspection.federalregister.gov/2026-18631.pdf"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-09",
   "changes": [
 {
@@ -522,6 +541,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-10",
+  "changes": [
+    {
+      "id": "grace-period-nprm-preview",
+      "category": "Rulemaking",
+      "title": "60-day grace-period proposal enters public inspection",
+      "summary": "Policy 8: the NPRM preview specifies eight worker classifications and their dependents; it is not in effect.",
+      "before": "OIRA review complete; public proposal and publication date pending.",
+      "after": "Preview released September 10, scheduled for publication September 11. It would remove the up-to-60-day discretionary period for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, TN and their dependents. Comments are due 60 days after publication. No final rule or effective date is set; people otherwise authorized to remain lawfully must be distinguished.",
+      "sources": [
+        {
+          "label": "Federal Register 2026-18631",
+          "href": "https://public-inspection.federalregister.gov/2026-18631.pdf"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-09",
   "changes": [

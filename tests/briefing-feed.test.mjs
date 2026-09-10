@@ -28,6 +28,7 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
     upcoming.map(({ id, date }) => [id, date]),
     [
       ['duration-injunction-hearing', '2026-09-03'],
+      ['grace-publication', '2026-09-11'],
       ['duration-effective-date', '2026-09-15'],
       ['h1b-fee-comment-deadline', '2026-09-24'],
     ],

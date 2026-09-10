@@ -44,7 +44,7 @@ test('every English policy supplies a translated source label for each source', 
     'cpt-guidance': 3,
     'prevailing-wage': 3,
     'h1b-reform': 3,
-    'grace-period': 3,
+    'grace-period': 4,
     'ead-discretion': 3,
     'h4-ead': 2,
   };
