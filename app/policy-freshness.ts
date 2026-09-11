@@ -6,16 +6,16 @@ export const SITE_UPDATED_ON = '2026-09-10';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
-  'opt-fee': '2026-09-09',
-  'h1b-fee': '2026-09-09',
-  'duration-status': '2026-09-09',
-  'h1b-weighted-selection': '2026-09-09',
-  'cpt-guidance': '2026-09-09',
-  'prevailing-wage': '2026-09-09',
-  'h1b-reform': '2026-09-09',
+  'opt-fee': '2026-09-10',
+  'h1b-fee': '2026-09-10',
+  'duration-status': '2026-09-10',
+  'h1b-weighted-selection': '2026-09-10',
+  'cpt-guidance': '2026-09-10',
+  'prevailing-wage': '2026-09-10',
+  'h1b-reform': '2026-09-10',
   'grace-period': '2026-09-10',
-  'ead-discretion': '2026-09-09',
-  'h4-ead': '2026-09-09',
+  'ead-discretion': '2026-09-10',
+  'h4-ead': '2026-09-10',
 };
 
 const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {

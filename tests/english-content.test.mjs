@@ -22,7 +22,7 @@ function collectStrings(value) {
 
 test('the English policy and school datasets contain no Chinese copy', () => {
   assert.equal(Object.keys(englishPolicies).length, 10);
-  assert.equal(Object.keys(englishVerifiedSchools).length, 32);
+  assert.equal(Object.keys(englishVerifiedSchools).length, 33);
   assert.equal(Object.keys(englishCommunitySchools).length, 5);
   assert.equal(Object.keys(englishRouteStages).length, 4);
 
@@ -38,7 +38,7 @@ test('the English policy and school datasets contain no Chinese copy', () => {
 test('every English policy supplies a translated source label for each source', () => {
   const sourceCounts = {
     'opt-fee': 3,
-    'h1b-fee': 2,
+    'h1b-fee': 3,
     'h1b-weighted-selection': 2,
     'duration-status': 8,
     'cpt-guidance': 3,

@@ -25,6 +25,40 @@ const chineseUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-10",
   "changes": [
+{
+  "id": "h1b-fee-table13-correction",
+  "category": "规则制定",
+  "title": "H-1B 附加费提案新增官方更正",
+  "summary": "9·10 更正替换 Table 13 历史申请数量表；$103,265、cap-subject 范围及 9·24 评论截止日均未改变，提案仍未生效。",
+  "sources": [
+    {
+      "label": "Federal Register C1-2026-17324",
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf"
+    }
+  ]
+},
+{
+  "id": "penn-resumption-georgetown-cpt",
+  "category": "CPT 学校清单",
+  "title": "Penn 有条件恢复 CPT 处理；新增 Georgetown 校方说明",
+  "summary": "Penn 9·10 顶部通知称恢复符合条件的请求；Georgetown 9·09 说明选修实习不符合资格。",
+  "before": "Penn 记录为暂停新申请及待审决定；学校清单为 37 条记录（32 公开、5 社区），覆盖 36 所院校／独立校区。",
+  "after": "Penn 改为按现行课程要求有条件恢复处理，保留同页旧暂停文案的核查提示；新增 Georgetown 后为 38 条记录（33 公开、5 社区），覆盖 37 所院校／独立校区。",
+  "details": [
+    "Penn 须院系确认课程要求、雇主完成合作协议并取得授权 I-20；不能理解为全面恢复。",
+    "Georgetown 已联系待审及秋季已授权学生讨论影响和选项，没有保证所有既有授权不受影响。"
+  ],
+  "sources": [
+    {
+      "label": "Penn ISSS · September 10",
+      "href": "https://global.upenn.edu/isss/cpt/"
+    },
+    {
+      "label": "Georgetown OGS · September 9",
+      "href": "https://internationalservices.georgetown.edu/immigration-updates/"
+    }
+  ]
+},
     {
       "id": "grace-period-nprm-preview",
       "category": "规则制定",
@@ -544,6 +578,40 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-10",
   "changes": [
+{
+  "id": "h1b-fee-table13-correction",
+  "category": "Rulemaking",
+  "title": "Official correction added to H-1B surcharge proposal",
+  "summary": "The September 10 correction replaces Table 13 historical receipt figures. The $103,265 amount, cap-subject scope and September 24 comment deadline are unchanged; the proposal is not in effect.",
+  "sources": [
+    {
+      "label": "Federal Register C1-2026-17324",
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf"
+    }
+  ]
+},
+{
+  "id": "penn-resumption-georgetown-cpt",
+  "category": "CPT school evidence",
+  "title": "Penn conditionally resumes CPT processing; add Georgetown guidance",
+  "summary": "Penn’s September 10 top notice resumes eligible requests; Georgetown’s September 9 update excludes elective internships.",
+  "before": "Penn was listed as pausing decisions on new and pending requests; 37 entries (32 public, 5 community) covered 36 institutions or separate campuses.",
+  "after": "Penn now conditionally resumes processing under current curricular requirements, with a caveat about older pause text on the same page. Adding Georgetown brings the list to 38 entries (33 public, 5 community), covering 37 institutions or separate campuses.",
+  "details": [
+    "Penn requires departmental confirmation, an employer cooperative agreement and an authorized I-20; this is not unrestricted reopening.",
+    "Georgetown contacted pending applicants and fall-authorized students about impacts and options, without guaranteeing all existing authorizations are unaffected."
+  ],
+  "sources": [
+    {
+      "label": "Penn ISSS · September 10",
+      "href": "https://global.upenn.edu/isss/cpt/"
+    },
+    {
+      "label": "Georgetown OGS · September 9",
+      "href": "https://internationalservices.georgetown.edu/immigration-updates/"
+    }
+  ]
+},
     {
       "id": "grace-period-nprm-preview",
       "category": "Rulemaking",
