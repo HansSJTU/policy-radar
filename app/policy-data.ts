@@ -80,9 +80,10 @@ export const policies: Array<{
     status: '正式 NPRM · 尚未生效',
     tone: 'amber',
     current:
-      'DHS 于 2026-08-25 正式发布 RIN 1615-AD20，拟在现有费用之外，对每份 cap-subject H-1B petition 加收 $103,265。Cap-exempt 申请不在该附加费范围。',
+      'DHS 于 2026-08-25 正式发布 RIN 1615-AD20，拟在现有费用之外，对每份 cap-subject H-1B petition 加收 $103,265。Cap-exempt 申请不在该附加费范围。9·10 更正仅替换 Table 13 的历史申请数量表，未改变拟议金额、适用范围或 9·24 评论截止日。',
     route: ['OPT → H-1B', 'H-1B 抽签'],
     milestones: [
+      { date: '2026-09-10', text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。' },
       {
         date: '2026-06-08',
         text: '旧总统公告的 $100k 实施被联邦地区法院撤销；政府上诉中。',
@@ -106,6 +107,7 @@ export const policies: Array<{
       '高校、研究机构等 cap-exempt 雇主不受这笔附加费约束，但其他规则仍适用。',
     ],
     sources: [
+      { label: 'Federal Register 9·10 更正', href: 'https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf' },
       {
         label: 'Federal Register NPRM',
         href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions',
@@ -507,7 +509,7 @@ export const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-09', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-10', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       {

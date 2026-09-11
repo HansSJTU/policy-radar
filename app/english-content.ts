@@ -36,9 +36,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'New $103,265 H-1B Surcharge',
     tldr: 'DHS proposes a $103,265 surcharge, in addition to existing fees, for every cap-subject H-1B petition. The proposal includes U.S. advanced-degree cases and F-1 change-of-status petitions; cap-exempt petitions are outside the surcharge.',
     status: 'Published NPRM · Not in effect',
-    current: 'DHS published RIN 1615-AD20 on August 25, 2026. The proposal would add $103,265 to the existing filing fees for each cap-subject H-1B petition. Cap-exempt petitions would not pay this surcharge.',
+    current: 'DHS published RIN 1615-AD20 on August 25, 2026. The proposal would add $103,265 to the existing filing fees for each cap-subject H-1B petition. Cap-exempt petitions would not pay this surcharge. The September 10 correction replaces historical receipt figures in Table 13; it does not change the proposed amount, scope, or September 24 comment deadline.',
     route: ['OPT → H-1B', 'H-1B selection'],
     milestones: [
+      { date: '2026-09-10', text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.' },
       { date: '2026-06-08', text: 'A federal district court vacated implementation of the earlier presidential proclamation imposing a $100,000 fee; the government is appealing.' },
       { date: '2026-08-25', text: 'DHS published a new $103,265 fee NPRM under a different legal authority.' },
     ],
@@ -51,7 +52,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'The proposal is not limited to applicants entering from abroad; coverage turns on whether the petition is cap-subject.',
       'Qualifying universities, research organizations, and other cap-exempt employers are outside this surcharge, although other H-1B rules still apply.',
     ],
-    sourceLabels: ['Federal Register NPRM', 'USCardForum discussion'],
+    sourceLabels: ['Federal Register September 10 correction', 'Federal Register NPRM', 'USCardForum discussion'],
   },
   'duration-status': {
     title: 'F/J Status Would No Longer Use Duration of Status',
@@ -219,7 +220,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-09', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-10', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -234,7 +235,8 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
 };
 
 export const englishVerifiedSchools: Record<string, { state: string; detail: string }> = {
-  'University of Pennsylvania (UPenn)': { state: 'Decisions on new and pending CPT requests are paused; existing authorizations are unaffected by this pause', detail: 'The August 27 ISSS notice, on a page updated August 31, pauses decisions while Penn reviews academic programs and CPT processes. This is not a denial of all pending requests or permanent elimination of CPT. Existing authorizations remain subject to the employer, location, dates, and other conditions on the current I-20.' },
+  'Georgetown University': { state: 'CPT must be required for all students in the curriculum; elective internships are ineligible', detail: 'The September 9 OGS update requires training for all students in the established curriculum, regardless of citizenship. OGS contacted applicants pending as of August 24 and students holding fall authorizations about impacts and options, without promising all existing authorizations are unaffected. September 9 is the university update date, not a new SEVP guidance date.' },
+  'University of Pennsylvania (UPenn)': { state: 'September 10 notice says processing has resumed for CPT meeting current curricular requirements', detail: 'The latest ISSS notice limits resumed processing to training that is an integral and required curricular component. Department confirmation and the employer’s Penn cooperative agreement are required; students need approval and a new I-20 before working. Lower on the same page, older pending-request pause language remains. Confirm individual processing with ISSS; this is not an unrestricted reopening.' },
   'Northeastern University (COE Master’s)': { state: 'COE master’s programs allow one co-op/internship, up to eight months', detail: 'The COE FAQ counts co-op and internship together for master’s students, with no second placement even if the first was shorter. This college-level limit cannot be generalized university-wide or described as a recent rule change. The page does not date the provision or guarantee individual CPT approval. No recent public university notice confirming a blanket PhD suspension was established.' },
   UCLA: { state: 'Non-degree-required course-credit and support-letter CPT is suspended; degree-required CPT continues', detail: 'The September 8 notice suspends non-degree-required applications submitted from August 12. Dissertation, thesis, research, or capstone training must also be a requirement for every student in the program in the UCLA General Catalog. CPT approved with an I-20 issued before August 12 is unaffected. All CPT applications require a department-employer cooperative agreement.' },
   'UC Berkeley': {

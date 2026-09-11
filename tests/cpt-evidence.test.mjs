@@ -71,9 +71,9 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 32);
+  assert.equal(verifiedSchools.length, 33);
   assert.equal(communitySchools.length, 5);
-  assert.equal(verifiedSchools.length + communitySchools.length, 37);
+  assert.equal(verifiedSchools.length + communitySchools.length, 38);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
