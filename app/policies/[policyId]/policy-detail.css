@@ -1093,3 +1093,8 @@ fieldset.pd-scenarios {
 .pd-comment-codebook dt { font-weight: 500; }
 .pd-comment-codebook dd { margin: 3px 0 0; color: var(--pd-muted); font-size: 12px; line-height: 1.7; }
 .pd-main .pd-comment-scope-note { margin-top: 12px; padding: 12px 14px; border-left: 2px solid var(--pd-purple); background: var(--pd-purple-bg); }
+.pd-comment-tab-list { display: flex; gap: 4px; padding: 4px; margin: 16px 0; border-radius: 8px; background: var(--pd-answer); }
+.pd-comment-tab { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 9px 12px; border: 0; border-radius: 6px; background: transparent; color: var(--pd-muted); font: inherit; font-size: 13px; cursor: pointer; }
+.pd-comment-tab span { font-size: 11px; font-variant-numeric: tabular-nums; }
+.pd-comment-tab[aria-selected='true'] { background: var(--pd-surface); color: var(--pd-purple); box-shadow: 0 1px 4px #14274012; font-weight: 600; }
+.pd-comment-tab:focus-visible, .pd-comment-theme-panel:focus-visible { outline: 2px solid var(--pd-purple); outline-offset: 3px; }

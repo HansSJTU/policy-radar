@@ -1,6 +1,10 @@
+import { PublicCommentThemeTabs } from './public-comment-theme-tabs';
 import type { Language } from './language';
 import { publicCommentSamples } from './public-comment-data';
-import { summarizeComments } from './public-comment-model';
+import {
+  summarizeComments,
+  summarizeThemeGroups,
+} from './public-comment-model';
 
 const stanceLabels = {
   zh: {
@@ -119,32 +123,13 @@ export function PublicCommentDistribution({
               </div>
             ))}
           </div>
-          <h4>{en ? 'Themes discussed' : '讨论主题分布'}</h4>
-          <p className="pd-comment-note">
-            {en
-              ? `Supporters and opponents may discuss the same theme. A comment can have multiple labels; each percentage uses all ${sampleSize} comments, so totals may exceed 100%.`
-              : `支持和反对者可能讨论同一主题。一条评论可有多个标签；占比均以 ${sampleSize} 条为分母，合计可能超过 100%。`}
-          </p>
-          <div className="pd-comment-bars">
-            {stats.themes.map((row) => (
-              <div className="pd-comment-row" key={row.id}>
-                <div>
-                  <span>
-                    {sample.themes.find((theme) => theme.id === row.id)?.[
-                      language
-                    ] ?? row.id}
-                  </span>
-                  <strong>
-                    {row.count} / {stats.total} ·{' '}
-                    {row.percent.toFixed(1).replace(/\.0$/, '')}%
-                  </strong>
-                </div>
-                <div className="pd-comment-track" aria-hidden="true">
-                  <span style={{ width: `${row.percent}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
+          <PublicCommentThemeTabs
+            language={language}
+            groups={summarizeThemeGroups(sample.comments)}
+            labels={Object.fromEntries(
+              sample.themes.map((theme) => [theme.id, theme[language]]),
+            )}
+          />
           <details className="pd-comment-method">
             <summary>
               {en

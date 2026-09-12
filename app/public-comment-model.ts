@@ -37,3 +37,14 @@ export function summarizeComments(comments: readonly ClassifiedComment[]) {
       .sort((a, b) => b.count - a.count || a.id.localeCompare(b.id)),
   };
 }
+
+export function summarizeThemeGroups(comments: readonly ClassifiedComment[]) {
+  return (['all', 'support', 'oppose'] as const).map((id) => {
+    const { total, themes } = summarizeComments(
+      id === 'all'
+        ? comments
+        : comments.filter((comment) => comment.stance === id),
+    );
+    return { id, total, themes };
+  });
+}

@@ -127,3 +127,25 @@ test('all open and closed-awaiting-final-rule policies have independent samples'
     assert.equal(sample.sampleSize, 200);
   }
 });
+
+test('theme tabs use the selected stance denominator and retain mixed/unclear only in all', async () => {
+  const { summarizeThemeGroups } =
+    await import('../app/public-comment-model.ts');
+  const rows = [
+    { id: '1', stance: 'support', themes: ['jobs', 'jobs'] },
+    { id: '2', stance: 'support', themes: [] },
+    { id: '3', stance: 'oppose', themes: ['cost'] },
+    { id: '4', stance: 'mixed', themes: ['cost'] },
+    { id: '5', stance: 'unclear', themes: ['jobs'] },
+  ];
+  const [all, support, oppose] = summarizeThemeGroups(rows);
+  assert.equal(all.total, 5);
+  assert.equal(support.total, 2);
+  assert.deepEqual(support.themes, [{ id: 'jobs', count: 1, percent: 50 }]);
+  assert.deepEqual(oppose.themes, [{ id: 'cost', count: 1, percent: 100 }]);
+  const empty = summarizeThemeGroups(
+    rows.filter((row) => row.stance !== 'support'),
+  )[1];
+  assert.equal(empty.total, 0);
+  assert.deepEqual(empty.themes, []);
+});
