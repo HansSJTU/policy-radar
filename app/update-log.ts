@@ -26,6 +26,20 @@ const chineseUpdates: ContentUpdate[] = [
   "date": "2026-09-12",
   "changes": [
 {
+  "id": "duration-hearing-transcript",
+  "category": "诉讼",
+  "title": "补充 D/S 庭审记录与 9·14 裁决时间目标",
+  "summary": "庭审记录第 70 页披露法官希望最迟 9·14 决定，并提及可能先发短期 TRO；均不等于已签发命令。",
+  "before": "仅说明 9·03 听证后留待裁定，未列庭审原文及时间目标。",
+  "after": "新增 NAFSA 托管的官方庭审记录、9·14 非保证时间目标及可能短期 TRO；补充法官质疑和政府答辩的归属。",
+  "sources": [
+    {
+      "label": "Official September 3 hearing transcript · p. 70",
+      "href": "https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf#page=70"
+    }
+  ]
+},
+{
   "id": "opt-oira-completed",
   "category": "规则制定",
   "title": "OPT 收费提案 9·11 完成 OIRA 审查",
@@ -651,6 +665,20 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-12",
   "changes": [
+{
+  "id": "duration-hearing-transcript",
+  "category": "Litigation",
+  "title": "Add D/S hearing transcript and September 14 decision target",
+  "summary": "Transcript p. 70 records a hoped-for decision by September 14 and a possible brief TRO, neither an issued order.",
+  "before": "Only reported the September 3 hearing and matter under advisement, without the transcript or timing target.",
+  "after": "Adds the NAFSA-hosted official transcript, non-guaranteed September 14 target and possible brief TRO, with attributed judicial questions and government arguments.",
+  "sources": [
+    {
+      "label": "Official September 3 hearing transcript · p. 70",
+      "href": "https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf#page=70"
+    }
+  ]
+},
 {
   "id": "opt-oira-completed",
   "category": "Rulemaking",

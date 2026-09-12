@@ -59,7 +59,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'F/J Status Would No Longer Use Duration of Status',
     tldr: 'A DHS final rule replaces Duration of Status admission for F/J holders with a fixed period, generally no longer than four years. People who need more time must apply to USCIS for an extension; an OPT filing would generally require both Form I-765 and Form I-539.',
     status: 'Final rule · In litigation',
-    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. After hearing arguments on September 3, the court took the injunction request under advisement: the judge did not rule from the bench and will continue considering the matter, potentially through a later written order. This is neither a grant nor a denial of relief.',
+    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. After hearing arguments on September 3, the court took the injunction request under advisement: the judge did not rule from the bench and will continue considering the matter, potentially through a later written order. This is neither a grant nor a denial of relief. Transcript checked September 12: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
     route: ['F-1', 'CPT', 'OPT'],
     milestones: [
       { date: '2025-08-28', text: 'DHS published the proposed rule.' },
@@ -67,9 +67,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
       { date: '2026-08-31', text: 'The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar.' },
       { date: '2026-09-02', text: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and opposing summary judgment before the administrative record is filed.' },
-      { date: '2026-09-03', text: 'The court held the injunction hearing and heard arguments; the judge did not rule from the bench and took the matter under advisement.' },
+      { date: '2026-09-03', text: 'After hearing arguments, the court took the request under advisement. Transcript p. 70 records a hoped-for decision by September 14 and a possible brief TRO, neither an issued order.' },
     ],
     next: [
+      { date: '2026-09-14', text: 'The judge hoped to decide by this date, without a guarantee; a brief TRO or more time remained possible (transcript p. 70).', estimate: true },
       { date: '2026-09-15', text: 'The rule remains scheduled to take effect unless the court first issues a stay or injunction.' },
     ],
     impacts: [
@@ -78,7 +79,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
       'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
     ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion', 'Rice: PhD exit, master’s OPT and degree restrictions'],
+    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'September 3 official hearing transcript (NAFSA-hosted; p. 70)', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion', 'Rice: PhD exit, master’s OPT and degree restrictions'],
   },
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',

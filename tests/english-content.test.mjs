@@ -40,7 +40,7 @@ test('every English policy supplies a translated source label for each source', 
     'opt-fee': 3,
     'h1b-fee': 3,
     'h1b-weighted-selection': 2,
-    'duration-status': 8,
+    'duration-status': 9,
     'cpt-guidance': 3,
     'prevailing-wage': 3,
     'h1b-reform': 3,
@@ -87,4 +87,13 @@ test('the English UC Berkeley entry preserves the narrow CPT eligibility conditi
   assert.match(berkeley.detail, /Advanced to Candidacy/);
   assert.match(berkeley.detail, /cannot reasonably be replaced/);
   assert.match(berkeley.detail, /faculty adviser/);
+});
+
+test('D/S transcript timing is an estimate and links to the hearing source', () => {
+  const policy = englishPolicies['duration-status'];
+  const target = policy.next.find(({ date }) => date === '2026-09-14');
+  assert.equal(target.estimate, true);
+  assert.match(target.text, /without a guarantee/);
+  assert.match(policy.current, /not an issued order/);
+  assert.ok(policy.sourceLabels.some(label => /hearing transcript/.test(label)));
 });
