@@ -199,9 +199,9 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'Current D/S holders have transition provisions; a hearing does not pause the rule, and court orders determine any relief.',
     summary:
-      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings.',
+      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings. Transcript checked September 12: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
     background:
-      'The 2025 proposal became a final rule on July 17, 2026, generally setting a four-year maximum and requiring USCIS extensions. After hearing arguments on September 3, the court took the request under advisement without granting or denying it from the bench.',
+      'The 2025 proposal became a final rule on July 17, 2026, generally setting a four-year maximum and requiring USCIS extensions. After hearing arguments on September 3, the court took the request under advisement without granting or denying it from the bench. Pages 38–44 and 49–51 record judicial questions about the connection between a four-year limit and national security, extension uncertainty and enrollment harm. The government defended added screening, fraud prevention and available extensions. These are hearing exchanges and party arguments, not final findings.',
     effectState: 'not-in-effect',
     note: 'Scheduled to take effect September 15; watch for court orders',
     deck: 'Which transitions in study, transfers, and post-graduation work would become more complex?',

@@ -22,7 +22,7 @@ const briefingItems: BriefingItem[] = [
     policyId: 'duration-status',
     rank: 3,
     policy: 'D/S 固定期限',
-    summary: '法院举行禁令听证并听取双方陈述，随后将申请留待裁定；这表示法官没有当庭裁决，不代表禁令已获批准或遭到驳回。',
+    summary: '庭审记录第 70 页：法官希望最迟 9·14 决定，也可能先发短期 TRO 争取时间；没有当庭裁决，申请留待裁定，9·14 并非保证。',
     timing: 'recent',
     confirmed: true,
   },
@@ -149,7 +149,7 @@ const briefingItems: BriefingItem[] = [
 ];
 
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
-  'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'The court held the injunction hearing, heard arguments, and took the matter under advisement. The judge did not rule from the bench, so the request has been neither granted nor denied.' },
+  'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'Transcript p. 70: the judge hoped to decide by September 14 and might first issue a brief TRO for more time. No bench ruling was issued; September 14 is not guaranteed.' },
   'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
   'grace-comment-deadline': { policy: 'End of 60-day grace period', summary: 'Public comments due before midnight ET; docket USCIS-2026-0364. This is not an effective date.' },
   'grace-preview': { policy: 'End of 60-day grace period', summary: 'The NPRM preview is public, covering eight worker classifications and their dependents. The current rule is unchanged.' },

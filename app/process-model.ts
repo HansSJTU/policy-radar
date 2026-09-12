@@ -103,7 +103,7 @@ const processTracks: Record<string, ProcessTrack> = {
     activeStage: null,
     nextStage: 5,
     waitingFor:
-      '法院对禁令申请作出裁定；9 月 15 日仍是未被暂缓时的计划生效日。',
+      '法官希望最迟 9·14 决定，也可能先发短期 TRO；尚非命令。若未暂缓，9·15 仍为计划生效日。',
     stages: federalRulemakingStages,
     litigation: [
       {
@@ -291,7 +291,7 @@ const englishProcessTracks: Record<
     detail:
       'DHS completed the NPRM, comment, and final-rule stages. The court held the injunction hearing on September 3, heard arguments, and took the matter under advisement. That means the judge did not rule from the bench and will continue considering the request, potentially through a later written order. September 15 remains the scheduled effective date unless the rule is stayed or enjoined.',
     waitingFor:
-      'A court decision on the injunction request; September 15 remains the scheduled effective date unless stayed.',
+      'The judge hoped to decide by September 14 or might issue a brief TRO; neither is an issued order. September 15 remains the scheduled effective date unless stayed.',
     currentSummary: 'Hearing held; matter under advisement',
     stages: federalRulemakingStagesEnglish,
     litigation: [
