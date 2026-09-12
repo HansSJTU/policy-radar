@@ -1,8 +1,9 @@
 {
   "documentId": "ETA-2026-0001-0001",
-  "sampledAt": "2026-09-12T12:27:12.979Z",
-  "seed": "d5f5e00b7d9b452f3ec6218fed38ecff0bc786490b902ceec63d9479e549dc5d",
-  "method": "SHA-256 seeded ranking, first 100 without replacement",
+  "sampledAt": "2026-09-12T13:09:38.001Z",
+  "sampleSize": 200,
+  "seed": "88ea200eaadcf41e6dc9077541213ababfeaffafffcbde540b20a662b8906871",
+  "method": "SHA-256 seeded ranking, first 200 without replacement",
   "frameSize": 1298,
   "frameSha256": "54de364629c126f8a8e04ed606cd42046c49db29e3c75cf022b80b95203d9ba0",
   "populationIds": [
@@ -1306,243 +1307,929 @@
     "ETA-2026-0001-1300"
   ],
   "sampleIds": [
-    "ETA-2026-0001-0137",
-    "ETA-2026-0001-0913",
-    "ETA-2026-0001-0951",
-    "ETA-2026-0001-0436",
-    "ETA-2026-0001-0398",
-    "ETA-2026-0001-0731",
-    "ETA-2026-0001-0011",
-    "ETA-2026-0001-0547",
-    "ETA-2026-0001-1162",
-    "ETA-2026-0001-0195",
-    "ETA-2026-0001-0393",
-    "ETA-2026-0001-0040",
-    "ETA-2026-0001-0269",
-    "ETA-2026-0001-0116",
-    "ETA-2026-0001-0964",
-    "ETA-2026-0001-1059",
-    "ETA-2026-0001-1263",
-    "ETA-2026-0001-0612",
-    "ETA-2026-0001-0943",
-    "ETA-2026-0001-0465",
-    "ETA-2026-0001-1081",
-    "ETA-2026-0001-0009",
-    "ETA-2026-0001-0699",
-    "ETA-2026-0001-0230",
-    "ETA-2026-0001-0508",
-    "ETA-2026-0001-0133",
-    "ETA-2026-0001-0516",
-    "ETA-2026-0001-0123",
-    "ETA-2026-0001-1003",
-    "ETA-2026-0001-0787",
-    "ETA-2026-0001-0606",
-    "ETA-2026-0001-0262",
-    "ETA-2026-0001-0446",
-    "ETA-2026-0001-0857",
-    "ETA-2026-0001-0375",
-    "ETA-2026-0001-0775",
-    "ETA-2026-0001-1254",
-    "ETA-2026-0001-0078",
-    "ETA-2026-0001-0627",
-    "ETA-2026-0001-0734",
-    "ETA-2026-0001-0219",
-    "ETA-2026-0001-0037",
-    "ETA-2026-0001-0933",
-    "ETA-2026-0001-1086",
-    "ETA-2026-0001-0278",
-    "ETA-2026-0001-1291",
-    "ETA-2026-0001-0824",
-    "ETA-2026-0001-1196",
-    "ETA-2026-0001-0097",
-    "ETA-2026-0001-0953",
-    "ETA-2026-0001-0285",
-    "ETA-2026-0001-0860",
-    "ETA-2026-0001-1010",
-    "ETA-2026-0001-0726",
-    "ETA-2026-0001-0505",
-    "ETA-2026-0001-0682",
-    "ETA-2026-0001-0422",
-    "ETA-2026-0001-0371",
-    "ETA-2026-0001-0358",
-    "ETA-2026-0001-0691",
-    "ETA-2026-0001-0935",
-    "ETA-2026-0001-0545",
-    "ETA-2026-0001-0051",
-    "ETA-2026-0001-0333",
-    "ETA-2026-0001-0107",
-    "ETA-2026-0001-0865",
-    "ETA-2026-0001-0485",
-    "ETA-2026-0001-0182",
-    "ETA-2026-0001-0170",
-    "ETA-2026-0001-1288",
-    "ETA-2026-0001-0746",
-    "ETA-2026-0001-1161",
+    "ETA-2026-0001-1019",
+    "ETA-2026-0001-0631",
+    "ETA-2026-0001-1097",
+    "ETA-2026-0001-1018",
+    "ETA-2026-0001-0526",
+    "ETA-2026-0001-1058",
+    "ETA-2026-0001-1213",
+    "ETA-2026-0001-0792",
+    "ETA-2026-0001-1228",
+    "ETA-2026-0001-0474",
+    "ETA-2026-0001-0189",
+    "ETA-2026-0001-0645",
+    "ETA-2026-0001-0778",
+    "ETA-2026-0001-0401",
+    "ETA-2026-0001-0822",
+    "ETA-2026-0001-0550",
+    "ETA-2026-0001-0799",
+    "ETA-2026-0001-0539",
+    "ETA-2026-0001-0781",
+    "ETA-2026-0001-0076",
+    "ETA-2026-0001-0447",
+    "ETA-2026-0001-0141",
+    "ETA-2026-0001-0184",
+    "ETA-2026-0001-1120",
+    "ETA-2026-0001-0346",
+    "ETA-2026-0001-0215",
+    "ETA-2026-0001-0138",
+    "ETA-2026-0001-0779",
+    "ETA-2026-0001-0376",
+    "ETA-2026-0001-1072",
     "ETA-2026-0001-0678",
-    "ETA-2026-0001-1189",
-    "ETA-2026-0001-0674",
-    "ETA-2026-0001-0367",
-    "ETA-2026-0001-0070",
-    "ETA-2026-0001-1156",
-    "ETA-2026-0001-0480",
-    "ETA-2026-0001-0220",
-    "ETA-2026-0001-0387",
-    "ETA-2026-0001-1025",
-    "ETA-2026-0001-0292",
-    "ETA-2026-0001-0460",
-    "ETA-2026-0001-0034",
-    "ETA-2026-0001-0709",
-    "ETA-2026-0001-0967",
-    "ETA-2026-0001-0356",
-    "ETA-2026-0001-0030",
-    "ETA-2026-0001-1060",
-    "ETA-2026-0001-0391",
-    "ETA-2026-0001-1212",
-    "ETA-2026-0001-0204",
-    "ETA-2026-0001-0271",
-    "ETA-2026-0001-0433",
-    "ETA-2026-0001-0577",
+    "ETA-2026-0001-0517",
+    "ETA-2026-0001-0352",
+    "ETA-2026-0001-0381",
+    "ETA-2026-0001-0209",
+    "ETA-2026-0001-0754",
+    "ETA-2026-0001-1177",
+    "ETA-2026-0001-1258",
+    "ETA-2026-0001-1232",
+    "ETA-2026-0001-0085",
+    "ETA-2026-0001-0859",
+    "ETA-2026-0001-0650",
+    "ETA-2026-0001-1217",
     "ETA-2026-0001-0476",
-    "ETA-2026-0001-0478",
-    "ETA-2026-0001-0687",
-    "ETA-2026-0001-1245"
+    "ETA-2026-0001-1188",
+    "ETA-2026-0001-0038",
+    "ETA-2026-0001-1245",
+    "ETA-2026-0001-0527",
+    "ETA-2026-0001-0494",
+    "ETA-2026-0001-0195",
+    "ETA-2026-0001-0702",
+    "ETA-2026-0001-0477",
+    "ETA-2026-0001-1289",
+    "ETA-2026-0001-1087",
+    "ETA-2026-0001-0760",
+    "ETA-2026-0001-0154",
+    "ETA-2026-0001-1123",
+    "ETA-2026-0001-0592",
+    "ETA-2026-0001-0940",
+    "ETA-2026-0001-0419",
+    "ETA-2026-0001-0903",
+    "ETA-2026-0001-0942",
+    "ETA-2026-0001-0026",
+    "ETA-2026-0001-1173",
+    "ETA-2026-0001-0691",
+    "ETA-2026-0001-0848",
+    "ETA-2026-0001-0905",
+    "ETA-2026-0001-0065",
+    "ETA-2026-0001-0572",
+    "ETA-2026-0001-1103",
+    "ETA-2026-0001-0181",
+    "ETA-2026-0001-1183",
+    "ETA-2026-0001-0077",
+    "ETA-2026-0001-1178",
+    "ETA-2026-0001-1172",
+    "ETA-2026-0001-0619",
+    "ETA-2026-0001-0604",
+    "ETA-2026-0001-1195",
+    "ETA-2026-0001-1211",
+    "ETA-2026-0001-1006",
+    "ETA-2026-0001-1039",
+    "ETA-2026-0001-1267",
+    "ETA-2026-0001-1053",
+    "ETA-2026-0001-0079",
+    "ETA-2026-0001-0490",
+    "ETA-2026-0001-0155",
+    "ETA-2026-0001-0456",
+    "ETA-2026-0001-0314",
+    "ETA-2026-0001-1186",
+    "ETA-2026-0001-0709",
+    "ETA-2026-0001-0573",
+    "ETA-2026-0001-0749",
+    "ETA-2026-0001-0566",
+    "ETA-2026-0001-0312",
+    "ETA-2026-0001-0468",
+    "ETA-2026-0001-0946",
+    "ETA-2026-0001-0060",
+    "ETA-2026-0001-1052",
+    "ETA-2026-0001-0555",
+    "ETA-2026-0001-0207",
+    "ETA-2026-0001-0437",
+    "ETA-2026-0001-0162",
+    "ETA-2026-0001-0390",
+    "ETA-2026-0001-0514",
+    "ETA-2026-0001-0670",
+    "ETA-2026-0001-0761",
+    "ETA-2026-0001-0846",
+    "ETA-2026-0001-0137",
+    "ETA-2026-0001-0200",
+    "ETA-2026-0001-0130",
+    "ETA-2026-0001-1110",
+    "ETA-2026-0001-0403",
+    "ETA-2026-0001-0216",
+    "ETA-2026-0001-0145",
+    "ETA-2026-0001-1295",
+    "ETA-2026-0001-1147",
+    "ETA-2026-0001-0257",
+    "ETA-2026-0001-0637",
+    "ETA-2026-0001-0608",
+    "ETA-2026-0001-0167",
+    "ETA-2026-0001-0062",
+    "ETA-2026-0001-0794",
+    "ETA-2026-0001-1070",
+    "ETA-2026-0001-1190",
+    "ETA-2026-0001-1286",
+    "ETA-2026-0001-0071",
+    "ETA-2026-0001-1106",
+    "ETA-2026-0001-0918",
+    "ETA-2026-0001-0542",
+    "ETA-2026-0001-1273",
+    "ETA-2026-0001-0981",
+    "ETA-2026-0001-1193",
+    "ETA-2026-0001-0943",
+    "ETA-2026-0001-0595",
+    "ETA-2026-0001-0704",
+    "ETA-2026-0001-0328",
+    "ETA-2026-0001-0440",
+    "ETA-2026-0001-0937",
+    "ETA-2026-0001-1167",
+    "ETA-2026-0001-0051",
+    "ETA-2026-0001-0661",
+    "ETA-2026-0001-0685",
+    "ETA-2026-0001-0684",
+    "ETA-2026-0001-0458",
+    "ETA-2026-0001-1255",
+    "ETA-2026-0001-0292",
+    "ETA-2026-0001-1055",
+    "ETA-2026-0001-0657",
+    "ETA-2026-0001-1067",
+    "ETA-2026-0001-0707",
+    "ETA-2026-0001-1199",
+    "ETA-2026-0001-0202",
+    "ETA-2026-0001-0172",
+    "ETA-2026-0001-0970",
+    "ETA-2026-0001-0016",
+    "ETA-2026-0001-0036",
+    "ETA-2026-0001-0841",
+    "ETA-2026-0001-1242",
+    "ETA-2026-0001-0511",
+    "ETA-2026-0001-0348",
+    "ETA-2026-0001-0882",
+    "ETA-2026-0001-1130",
+    "ETA-2026-0001-0871",
+    "ETA-2026-0001-0241",
+    "ETA-2026-0001-0391",
+    "ETA-2026-0001-0426",
+    "ETA-2026-0001-1054",
+    "ETA-2026-0001-0020",
+    "ETA-2026-0001-0521",
+    "ETA-2026-0001-0667",
+    "ETA-2026-0001-0730",
+    "ETA-2026-0001-0309",
+    "ETA-2026-0001-0408",
+    "ETA-2026-0001-0630",
+    "ETA-2026-0001-0813",
+    "ETA-2026-0001-0639",
+    "ETA-2026-0001-0869",
+    "ETA-2026-0001-0714",
+    "ETA-2026-0001-0817",
+    "ETA-2026-0001-0142",
+    "ETA-2026-0001-0040",
+    "ETA-2026-0001-0283",
+    "ETA-2026-0001-0734",
+    "ETA-2026-0001-1085",
+    "ETA-2026-0001-1115",
+    "ETA-2026-0001-0979",
+    "ETA-2026-0001-0543",
+    "ETA-2026-0001-0052",
+    "ETA-2026-0001-0294",
+    "ETA-2026-0001-0723",
+    "ETA-2026-0001-0057",
+    "ETA-2026-0001-0717",
+    "ETA-2026-0001-0509",
+    "ETA-2026-0001-1163",
+    "ETA-2026-0001-0838",
+    "ETA-2026-0001-0466",
+    "ETA-2026-0001-0624",
+    "ETA-2026-0001-0380",
+    "ETA-2026-0001-1269",
+    "ETA-2026-0001-1034"
   ],
   "classification": [
     {
-      "id": "ETA-2026-0001-0137",
-      "postedDate": "2026-04-03T04:00:00Z",
+      "id": "ETA-2026-0001-1019",
       "stance": "oppose",
       "themes": [
-        "market",
         "entry",
-        "small",
         "talent",
-        "process"
+        "market"
       ],
       "summary": {
-        "zh": "反对提高工资门槛，认为会挤压初创企业及新毕业生并促使人才外流；另混入抽签改革异议。",
-        "en": "Opposes higher wage floors, citing startup and graduate exclusion and talent loss; also discusses selection reform."
+        "zh": "担忧不切实际的入门工资阻碍毕业生留美和长期竞争力。",
+        "en": "Warns unrealistic entry wages would impede graduate retention and long-term competitiveness."
       },
-      "textSha256": "74d0e6be5508e158acc9a0105345a02981e366b3abc0a917c9acfd3f643d5c20"
+      "postedDate": "2026-05-20T04:00:00Z",
+      "textSha256": "4b708edeeebd4daa612d16ceb1e60f62e062da43e692e8d41511fe187e069d9c"
     },
     {
-      "id": "ETA-2026-0001-0913",
-      "postedDate": "2026-05-13T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对提案，担心更高成本促使岗位外迁并减少初级职位。",
-        "en": "Opposes the proposal over offshoring incentives and reduced junior hiring."
-      },
-      "textSha256": "3b956582098943eb6e147734def2c4bf18bd1f1ce4e7ee451ee4f2b609ab382b"
-    },
-    {
-      "id": "ETA-2026-0001-0951",
-      "postedDate": "2026-05-18T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "academic",
-        "talent",
-        "process",
-        "small"
-      ],
-      "summary": {
-        "zh": "要求撤回，质疑工资方法和法律依据，并关注既有案件、高校及小雇主影响。",
-        "en": "Requests withdrawal, challenging methodology and authority and citing reliance, academic, and small-employer impacts."
-      },
-      "textSha256": "3e7e1a85a8fb8c268c2243c4f83a9a66aca6e8a195c25e509dd90b95168789a2"
-    },
-    {
-      "id": "ETA-2026-0001-0436",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "认为工资底线脱离市场、损害小企业并推动工作外迁，要求放弃提案。",
-        "en": "Urges abandonment, arguing inflated floors harm small firms and encourage offshoring."
-      },
-      "textSha256": "501aaa47be2bd396804a1cf6e3c9b727ac96851c876f3317be066712eb05619b"
-    },
-    {
-      "id": "ETA-2026-0001-0398",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对统一上调，认为高成本地区的工资分布不能准确代表入门技能。",
-        "en": "Opposes the increases because high-cost regional wage distributions poorly represent entry-level skills."
-      },
-      "textSha256": "ff294119e1c3c4770bfe2c3e27c924bfe690d19322573193f3071cc961a30424"
-    },
-    {
-      "id": "ETA-2026-0001-0731",
-      "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "虽认可保护劳工目标，仍反对提案对毕业生岗位及人才留存的影响。",
-        "en": "Supports worker-protection goals but opposes effects on graduate jobs and talent retention."
-      },
-      "textSha256": "78ff98f3376f88f3655fe8fb2ab6b15e27c719da3056c10b395eea3c0bf51fa0"
-    },
-    {
-      "id": "ETA-2026-0001-0011",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "support",
+      "id": "ETA-2026-0001-0631",
+      "stance": "unclear",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "支持提高工资以减少对本土和签证劳工的工资压低，并主张优先招聘本地人才。",
-        "en": "Supports higher wages to protect domestic and visa workers from underpayment and favors local recruitment."
+        "zh": "指称签证欺诈和招聘排斥，但未评价拟议工资方法。",
+        "en": "Alleges visa fraud and exclusionary hiring without evaluating the proposed wage methodology."
       },
-      "textSha256": "d4b2a3055cdf9a08de6fb795f27420e03d2b276138d84abb6ed934b1d9a79ca6"
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "9d4c6f82a0cb9778bae8f3d5dc7f70a914b38f35aff59253972b728cff040fc3"
     },
     {
-      "id": "ETA-2026-0001-0547",
-      "postedDate": "2026-04-28T04:00:00Z",
+      "id": "ETA-2026-0001-1097",
+      "stance": "support",
+      "themes": [
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持提案，认为有助于本土工资和就业并回应其对资金外流的担忧。",
+        "en": "Supports the proposal to protect domestic wages and jobs, citing concerns about remittances."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "76ba01231f662c3b359bd4c1611bf95623eefdf731635aede20ba81cc52f1f6f"
+    },
+    {
+      "id": "ETA-2026-0001-1018",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "enforcement",
+        "market"
+      ],
+      "summary": {
+        "zh": "赞同提案改善工资公平，并建议加强分类、地区工资和派遣用工审计。",
+        "en": "Welcomes the proposal's wage protections and seeks stronger classification, geographic wage, and contracting audits."
+      },
+      "postedDate": "2026-05-20T04:00:00Z",
+      "textSha256": "07264e7a52b19f46e9ad72ae576a4d1d3a6571eee11778c365e813602e166475"
+    },
+    {
+      "id": "ETA-2026-0001-0526",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "担忧提高工资门槛阻碍毕业生就业、人才留存并推动岗位外迁。",
+        "en": "Warns higher wage thresholds would obstruct graduate hiring and talent retention and encourage offshoring."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "cd161fc5949135a405b9391bc58f8cfec37d44ab6df894532559735d61a0e73c"
+    },
+    {
+      "id": "ETA-2026-0001-1058",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为工资规则范围有限，要求应对其所称外籍劳动力过剩，未明确取舍拟议门槛。",
+        "en": "Calls the rule limited and seeks broader responses to alleged foreign-labor oversupply without clearly accepting or rejecting its thresholds."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "bec7ecb21bd8c862d3da41762ccda51476b03b94b16c65413d06e9e55e473207"
+    },
+    {
+      "id": "ETA-2026-0001-1213",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0792",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "process"
+      ],
+      "summary": {
+        "zh": "支持尽快实施，认为工资调整公平且有助于减少本土劳动者被替代。",
+        "en": "Supports prompt implementation, calling the adjustment fair and protective against domestic worker displacement."
+      },
+      "postedDate": "2026-05-08T04:00:00Z",
+      "textSha256": "16438e496e94397f4098eb987358b863df76c75125aba187092623375f9e9b41"
+    },
+    {
+      "id": "ETA-2026-0001-1228",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0474",
       "stance": "oppose",
       "themes": [
         "entry",
         "talent"
       ],
       "summary": {
-        "zh": "认为提高工资门槛会排除有潜力的毕业生并阻碍人才与永久居留路径。",
-        "en": "Argues higher salary thresholds exclude promising graduates and impede talent and residency pathways."
+        "zh": "担忧提高门槛削弱国际毕业生就业、人才留存和创新。",
+        "en": "Warns higher thresholds would undermine international graduate hiring, talent retention, and innovation."
       },
-      "textSha256": "f215fdde9926ef1f9d9ca632c449810494b255fff81e24798bc3777b57811f25"
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "ea69022790bc283471dc7909fdc35b7d08dff860323fab486b73dd6267e4dfd4"
     },
     {
-      "id": "ETA-2026-0001-1162",
+      "id": "ETA-2026-0001-0189",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求结束其所称存在欺诈和岗位替代的签证项目，未评价工资提案。",
+        "en": "Seeks abolition of visa programs over alleged fraud and displacement without evaluating the wage proposal."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "8d56a817306791f6cd7f7cb6fe048d8c88ef66451ba2efdac7052d65fa2668ae"
+    },
+    {
+      "id": "ETA-2026-0001-0645",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为固定医疗报销限制支付能力，提案将使农村流失医护人员。",
+        "en": "Argues fixed healthcare reimbursements constrain pay and the proposal would drive rural healthcare staff losses."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "0be2b08cfe77e8ef58e6f016e79fe7670cf9d5ae810b51b081b7a8e3d672d581"
+    },
+    {
+      "id": "ETA-2026-0001-0778",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为高工资门槛妨碍毕业生留美并削弱技术优势。",
+        "en": "Argues high wage requirements would prevent graduate retention and weaken technological leadership."
+      },
+      "postedDate": "2026-05-07T04:00:00Z",
+      "textSha256": "8dc49c87cd366a92dff3421d5f9091f0cfb025e0d90708980cfddb8f22373dec"
+    },
+    {
+      "id": "ETA-2026-0001-0401",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对大幅加薪门槛，担忧企业负担和外迁，主张针对违规者执法。",
+        "en": "Opposes sharp wage increases over employer burdens and offshoring, favoring targeted enforcement."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "62f64c23606b71bc60364a702b81395f88cd94b5628c6a8076b109946c9dd904"
+    },
+    {
+      "id": "ETA-2026-0001-0822",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "talent",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，批评比较方法及既有案件负担，主张经验基准和针对性执法。",
+        "en": "Seeks withdrawal, criticizing benchmarking and burdens on existing cases, and favors experience comparisons and targeted enforcement."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "a3915b97fedc6651f951a026c674cd7ea11f0b6c6402120015c5053f28dc49da"
+    },
+    {
+      "id": "ETA-2026-0001-0550",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "process",
+        "talent"
+      ],
+      "summary": {
+        "zh": "担忧提高门槛影响毕业生、续签和转职并削弱人才留存。",
+        "en": "Warns higher thresholds would affect graduates, renewals, and transfers and weaken talent retention."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "4afb856c2dde95acaf9d064201d2f27a900a655e54144ae61f1a49b5d5ba00b4"
+    },
+    {
+      "id": "ETA-2026-0001-0799",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "process"
+      ],
+      "summary": {
+        "zh": "担忧突然提高入门门槛伤害美国毕业生和小雇主。",
+        "en": "Warns an abrupt entry-wage increase would harm U.S. graduates and small employers."
+      },
+      "postedDate": "2026-05-08T04:00:00Z",
+      "textSha256": "c08f2d4996b3077f3b3789b903164510ca4d7c6bd7407025edb01116f035a079"
+    },
+    {
+      "id": "ETA-2026-0001-0539",
+      "stance": "oppose",
+      "themes": [
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "认为工资规则无法解决滥用，要求以更广泛的签证限制立法替代。",
+        "en": "Dismisses the wage rule as ineffective against abuse and seeks broader statutory visa restrictions instead."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "056a10f10ff11e753bef5407b19bad738b7d87c8c30f40adee52af2a01f3355a"
+    },
+    {
+      "id": "ETA-2026-0001-0781",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "academic",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持通用职业适用新标准，但要求专业科研工程领域豁免或采用专门方法。",
+        "en": "Supports revised standards for general occupations but seeks exemptions or tailored methods for specialized scientific and engineering fields."
+      },
+      "postedDate": "2026-05-07T04:00:00Z",
+      "textSha256": "03982d502989aecde81c8a52830a3dd26ca5faec718dbdff249c1b4a55b62e24"
+    },
+    {
+      "id": "ETA-2026-0001-0076",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "指称本土岗位被替代并主张按工资分配签证，未评价本工资计算提案。",
+        "en": "Alleges domestic displacement and favors salary-based visa allocation without evaluating this wage-calculation proposal."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "2afc49ca1cae021d469c57d7d381c4dc712fa0b7726fb05bc484d7705d5207b4"
+    },
+    {
+      "id": "ETA-2026-0001-0447",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "talent",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为现有工资已具竞争力，新门槛将减少入门岗位并伤害初创企业。",
+        "en": "Considers current wages competitive and warns new thresholds would reduce entry jobs and harm startups."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "762f226c41155c5fbd87828c8dfb4e6e1b61b79fcb5ae220055c9d487256042c"
+    },
+    {
+      "id": "ETA-2026-0001-0141",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持规则调整，并要求最低工资高于市场水平及整治错误分类。",
+        "en": "Supports the rule change and seeks above-market minimum wages and action on misclassification."
+      },
+      "postedDate": "2026-04-03T04:00:00Z",
+      "textSha256": "2d5dfa86cc911ac6b163a02b69a585c67ba1abdd6e3e6bb70a1da73526181f87"
+    },
+    {
+      "id": "ETA-2026-0001-0184",
+      "stance": "support",
+      "themes": [
+        "market",
+        "entry",
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持提高工资作为第一步，并要求更高入门门槛及培训本土人才。",
+        "en": "Supports wage increases as a first step and seeks a higher entry threshold and training of domestic talent."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "db6500185dcd19ce18d051983aa10a7282653d05bd0d264f7e92a12d607d2267"
+    },
+    {
+      "id": "ETA-2026-0001-1120",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "批评高百分位忽略总报酬和地区差异，担忧网络安全岗位及长期申请受损。",
+        "en": "Criticizes high percentiles for ignoring total compensation and regional variation, warning of harm to cybersecurity roles and ongoing petitions."
+      },
       "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "ed4633d4e72488746139e985b7c528404b510a9c3b46537cf16afb7b18dfc68f"
+    },
+    {
+      "id": "ETA-2026-0001-0346",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "支持规则并覆盖既有签证，同时要求更低配额和禁止第三方派遣。",
+        "en": "Supports the rule and coverage of existing visas, alongside lower caps and a ban on third-party placement."
+      },
+      "postedDate": "2026-04-22T04:00:00Z",
+      "textSha256": "afe96aa3d653a16f27faca4a9f101f890c149ebe23b98344b2e5a749611e866e"
+    },
+    {
+      "id": "ETA-2026-0001-0215",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持规则调整，并主张至少采用中位工资以减少替代和滥用。",
+        "en": "Supports the rule change and seeks at least median wages to reduce displacement and abuse."
+      },
+      "postedDate": "2026-04-08T04:00:00Z",
+      "textSha256": "ddf6a11cb4ec533966a86aebbc34e0a02d910153e50cce2595f2632498218faa"
+    },
+    {
+      "id": "ETA-2026-0001-0138",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "主张采用同等教育经验平均工资的150%，并允许挑战招聘自证。",
+        "en": "Proposes 150% of average wages for comparable education and experience and challenges to recruitment self-certification."
+      },
+      "postedDate": "2026-04-03T04:00:00Z",
+      "textSha256": "6b9221ec16f750aa830209eb6c4696156d064b7ac276359672c5e96da4300a6b"
+    },
+    {
+      "id": "ETA-2026-0001-0779",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "academic",
+        "talent"
+      ],
+      "summary": {
+        "zh": "担忧僵化工资门槛伤害多语人才、小企业和国际毕业生留存。",
+        "en": "Warns rigid wage thresholds would harm multilingual talent, small firms, and international graduate retention."
+      },
+      "postedDate": "2026-05-07T04:00:00Z",
+      "textSha256": "a756eaf3565c737c9c745a7b3e08189867bad84001c534e4a774a3d3068c7f2a"
+    },
+    {
+      "id": "ETA-2026-0001-0376",
+      "stance": "oppose",
+      "themes": [],
+      "summary": {
+        "zh": "要求拒绝提案，未详述理由。",
+        "en": "Calls for rejection without elaborating."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "6afa27cdbd6d4812251d8e31ef749adaa39d34a97dfe8fd10cc1a7de9d1a721a"
+    },
+    {
+      "id": "ETA-2026-0001-1072",
       "stance": "unclear",
       "themes": [],
       "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to an attachment; readable material does not establish a stance."
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
       },
-      "textSha256": "b3d639fdada21c262e4bfe32de3e22769ef1fbfb035e1badfd4eb100f9920282",
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
       }
+    },
+    {
+      "id": "ETA-2026-0001-0678",
+      "postedDate": "2026-04-30T04:00:00Z",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "market",
+        "entry",
+        "process"
+      ],
+      "summary": {
+        "zh": "明确反对，认为统一上调不适合科研预算和薪酬，要求分行业分析、科研豁免及累积负担评估。",
+        "en": "Explicitly opposes uniform increases as mismatched to research funding and pay, seeking sector analysis, research exemptions, and cumulative-burden review."
+      },
+      "textSha256": "eea68865fbdde0de6084714de48c0905d38ff2c72b53a2bd286611f9ac005b9e"
+    },
+    {
+      "id": "ETA-2026-0001-0517",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提高初级工资将限制初创企业招聘并拖慢创新。",
+        "en": "Argues higher junior wages would constrain startup hiring and slow innovation."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "dd9c20adf0dd91465d5db0be465f88d4dfe907598b38343e05cdda2f391ab247"
+    },
+    {
+      "id": "ETA-2026-0001-0352",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "提出另一组更高工资百分位，并要求限制OPT以保护本土岗位。",
+        "en": "Proposes a different set of higher wage percentiles and OPT restrictions to protect domestic jobs."
+      },
+      "postedDate": "2026-04-23T04:00:00Z",
+      "textSha256": "309352952c156fa9f1c2b9eadeeafca6029847ba67e0d0d3df8438bd47d50e51"
+    },
+    {
+      "id": "ETA-2026-0001-0381",
+      "stance": "oppose",
+      "themes": [
+        "protection",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为提案未解决根源，增加门槛不会确保本土劳动者获得岗位。",
+        "en": "Argues the proposal misses underlying problems and higher thresholds would not ensure jobs for domestic workers."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "63dab3d580b11bdd6065be7b2ed92e088827c5916edd9e5995c75339fef9b08c"
+    },
+    {
+      "id": "ETA-2026-0001-0209",
+      "stance": "support",
+      "themes": [
+        "market",
+        "entry",
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持实施提案，认为低门槛造成工资套利和青年岗位替代。",
+        "en": "Supports implementation, arguing low floors enable wage arbitrage and displacement of young domestic workers."
+      },
+      "postedDate": "2026-04-07T04:00:00Z",
+      "textSha256": "79a161edd13dbce0c02417bb0e64e5291d0e2d3dfb03bd36f8c56a14a47f84c6"
+    },
+    {
+      "id": "ETA-2026-0001-0754",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "主张外籍用工承担显著高于市场的工资和罚款，以保护本土机会。",
+        "en": "Favors substantially above-market pay and penalties for foreign hiring to protect domestic opportunities."
+      },
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "7fa72901688798e7a8614ed4c4081df27c37df956a212598ba8631819907d62d"
+    },
+    {
+      "id": "ETA-2026-0001-1177",
+      "stance": "mixed",
+      "themes": [
+        "protection"
+      ],
+      "summary": {
+        "zh": "认为规则力度不足，要求进一步保护美国劳动者的岗位和工资。",
+        "en": "Views the rule as insufficiently strong and seeks further protection of domestic jobs and wages."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "bcf6d4bc74cac5c643dacd8bbba809cb1e7084822c6b96fd8d9749184d7249fe"
+    },
+    {
+      "id": "ETA-2026-0001-1258",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "7e8df5680e08fc9472ff254094563cc9117d6e93123cf39a675057c5d8a6e294",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-1232",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "market",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持提高保护力度，并要求更大工资增幅及国别配额。",
+        "en": "Supports stronger protections and seeks larger wage increases and country quotas."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "9bfe02ef702493ce039dadff2e6c1289597551c1ae5b390c36360c09fe67384a"
+    },
+    {
+      "id": "ETA-2026-0001-0085",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对经验基准模型，认为其扭曲工资并增加合规负担和外迁风险。",
+        "en": "Opposes experience benchmarking as distorting wages and increasing compliance burdens and offshoring risks."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "0362bef3c0b7cedf27109c5bd289d73e6d9394bf8b94f56080f3c944d0032f8e"
+    },
+    {
+      "id": "ETA-2026-0001-0859",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "enforcement",
+        "talent",
+        "entry",
+        "academic",
+        "small",
+        "market"
+      ],
+      "summary": {
+        "zh": "反对统一大幅加薪，担忧转职、既有案件和人才外迁，要求针对执法和过渡保护。",
+        "en": "Opposes uniform sharp increases over mobility, existing-case, and talent-loss concerns, favoring targeted enforcement and transition protection."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "13e401ec83e7044b9565f1230115ee08ecd43bde40e8b51b71f94cb375e774fe"
+    },
+    {
+      "id": "ETA-2026-0001-0650",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "肯定移民贡献并强调才能，未评价工资提案。",
+        "en": "Affirms immigrant contributions and merit without evaluating the wage proposal."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "4cda206d89e2420903830fdbd6a0f75431e86d55177d0930f8f9481f0a11ddd0"
+    },
+    {
+      "id": "ETA-2026-0001-1217",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0476",
+      "postedDate": "2026-04-27T04:00:00Z",
+      "stance": "oppose",
+      "themes": [],
+      "summary": {
+        "zh": "明确反对，认为不公平且损害勤劳员工，未进一步说明机制。",
+        "en": "Explicitly opposes the proposal as unfair and harmful to hardworking people, without further explanation."
+      },
+      "textSha256": "5d80bca32d812658e8f7e49a412946857979042c843116bef1fc92427fa04e5d"
+    },
+    {
+      "id": "ETA-2026-0001-1188",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "赞同规则调整，并要求入门工资进一步接近本地中位数。",
+        "en": "Welcomes the rule change and seeks entry wages closer to the local median."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "8149c2a0886ea502219a2356b579e9393a326f098506e2a3b234e96835604f0e"
+    },
+    {
+      "id": "ETA-2026-0001-0038",
+      "stance": "oppose",
+      "themes": [
+        "small",
+        "academic",
+        "market",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为统一提高门槛叠加其他成本、诱发重新分类，应按行业和岗位实际定薪。",
+        "en": "Argues uniform increases compound other costs and encourage reclassification, favoring industry- and role-specific wage setting."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "d54b9d6f943e03834d19d24b6e7c7870b7096db0d3e92299a9e3eb4a0890ca96"
+    },
+    {
+      "id": "ETA-2026-0001-1245",
+      "postedDate": "2026-05-28T04:00:00Z",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为第34百分位不足，建议H-1B依赖雇主的入门底线改为第52百分位，并禁止降级转职。",
+        "en": "Finds the 34th percentile insufficient, proposing the 52nd for H-1B-dependent employers and prohibiting moves to lower wage levels."
+      },
+      "textSha256": "2822450906d43448c356b629073262e1fa7999029e4e8c9cd5a395568b964ca9"
+    },
+    {
+      "id": "ETA-2026-0001-0527",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent",
+        "market"
+      ],
+      "summary": {
+        "zh": "反对现稿，担忧门槛排除合格毕业生和专业人才并推动外迁。",
+        "en": "Opposes the draft, warning thresholds would exclude qualified graduates and specialists and encourage offshoring."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "a0db4801fd2329b98ab5426bb3713ef75fae0f88214bb6482f73c84ada7f1aa2"
+    },
+    {
+      "id": "ETA-2026-0001-0494",
+      "stance": "mixed",
+      "themes": [
+        "process"
+      ],
+      "summary": {
+        "zh": "支持公平工资目标，但要求保护待审案件，避免绿卡流程重启。",
+        "en": "Supports fair-wage goals but seeks grandfathering of pending filings to avoid restarting green-card processes."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "b2b1f95fc64a643b45a1a98a122f10289ee0c7575274828d444a465a02903836"
     },
     {
       "id": "ETA-2026-0001-0195",
@@ -1564,734 +2251,208 @@
       }
     },
     {
-      "id": "ETA-2026-0001-0393",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "process"
-      ],
-      "summary": {
-        "zh": "泛谈就业培训项目的复杂性和行政障碍，未明确讨论本项工资提案。",
-        "en": "Discusses generic workforce-program complexity and barriers without a clear position on this wage proposal."
-      },
-      "textSha256": "c92bf70efbf5175e986646207723118ba60f27f5a2ee3d4dfc6527d6a74cac6f"
-    },
-    {
-      "id": "ETA-2026-0001-0040",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "认为应以高于第50百分位作为入门底线，并提出审计和更严格的签证限制。",
-        "en": "Calls for an entry floor above the 50th percentile, audits, and stricter visa restrictions."
-      },
-      "textSha256": "58c8f0b29317d31ee3a9f187aa1a3f7f079250cd80a4f4b67182b41e0dd8f414"
-    },
-    {
-      "id": "ETA-2026-0001-0269",
-      "postedDate": "2026-04-13T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "要求新增等额工资费用和裁员限制，未明确评价本提案的工资方法。",
-        "en": "Seeks salary-matching fees and layoff restrictions without clearly assessing the proposed wage method."
-      },
-      "textSha256": "578db3dafe6fa17ba4898b8ac2f8f30fba3b01efa415ae416fca47df1c4bd1d4"
-    },
-    {
-      "id": "ETA-2026-0001-0116",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "small",
-        "protection"
-      ],
-      "summary": {
-        "zh": "支持提高前两级工资，但反对第四级第88百分位，建议改为第75百分位。",
-        "en": "Supports higher Levels I–II but rejects Level IV at the 88th percentile in favor of the 75th."
-      },
-      "textSha256": "1d400175a35c86bae0eb7e161c6a9efd751d6b3c376b9df9197753e95ed8043e"
-    },
-    {
-      "id": "ETA-2026-0001-0964",
-      "postedDate": "2026-05-18T04:00:00Z",
+      "id": "ETA-2026-0001-0702",
       "stance": "oppose",
       "themes": [
-        "market",
         "talent"
       ],
       "summary": {
-        "zh": "要求撤回全面上调，认为扭曲职业阶梯、内部薪酬并推动外迁。",
-        "en": "Requests withdrawal, citing distorted career tiers, internal pay structures, and offshoring."
+        "zh": "反对调整，认为企业会将过于昂贵的岗位迁往海外。",
+        "en": "Opposes the change, arguing employers would relocate costly positions abroad."
       },
-      "textSha256": "4011cb4cfd11b28b8fd27cf68ef067d534d71d86537033fdd5a83d5683daabe8"
+      "postedDate": "2026-05-01T04:00:00Z",
+      "textSha256": "3098addf8472894c0062c22c0c29aeef93de1f8e3923d56b4c19f28a2b7ebdd8"
     },
     {
-      "id": "ETA-2026-0001-1059",
-      "postedDate": "2026-05-22T04:00:00Z",
+      "id": "ETA-2026-0001-0477",
       "stance": "oppose",
       "themes": [
-        "academic",
-        "market",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对提案对高校的适用，认为其预算和薪酬结构需要单独方法或豁免。",
-        "en": "Opposes its application to higher education, seeking separate methodology or exemptions for academic funding structures."
-      },
-      "textSha256": "0b5310b5a28fdf3290591661ee9875f6108cab0c0037083f57843a7da4f3374a"
-    },
-    {
-      "id": "ETA-2026-0001-1263",
-      "postedDate": "2026-05-28T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to an attachment; readable material does not establish a stance."
-      },
-      "textSha256": "26bc6cc4634ab453ff103a1ebb882067360322d7cb7f37a8eee9314b019d9816",
-      "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0612",
-      "postedDate": "2026-04-29T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
         "entry",
         "small",
         "academic",
         "talent",
-        "enforcement",
+        "process",
+        "market"
+      ],
+      "summary": {
+        "zh": "反对大幅提高门槛，建议渐进且考虑地区差异的调整以保护入门机会。",
+        "en": "Opposes steep increases and favors gradual, region-sensitive adjustments to preserve entry opportunities."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "49cee67e53cdde3be42a7cc1b7985a04d29749813debc64470a7b0a0601ff050"
+    },
+    {
+      "id": "ETA-2026-0001-1289",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-06-12T04:00:00Z",
+      "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-1087",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "market"
+      ],
+      "summary": {
+        "zh": "质疑以高工资限制合法用工需求超出法律授权及市场校准目的。",
+        "en": "Questions whether elevated wages restricting lawful hiring exceed statutory authority and market-calibration purposes."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "457840c42625f26acccf87765a936c64064400d687551547a36e09e7bd20b702"
+    },
+    {
+      "id": "ETA-2026-0001-0760",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "强烈支持提案，并要求更高百分位及加重故意违规处罚。",
+        "en": "Strongly supports the proposal and seeks higher percentiles and stronger penalties for willful violations."
+      },
+      "postedDate": "2026-05-05T04:00:00Z",
+      "textSha256": "26f23ab99b2798897f7252d7fcaac9656b782eec6ae2558cddb418736c8e02ac"
+    },
+    {
+      "id": "ETA-2026-0001-0154",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent",
         "process"
       ],
       "summary": {
-        "zh": "反对现有文本，担忧入门岗位及小机构受损，建议精准执法、分阶段实施和保护措施。",
-        "en": "Opposes the current text over entry-level and smaller-institution impacts, suggesting targeted enforcement, phasing, and safeguards."
+        "zh": "要求保留现行工资框架，认为入门门槛提升缺乏证据并减少招聘。",
+        "en": "Seeks retention of current tiers, arguing the entry increase lacks evidence and would reduce hiring."
       },
-      "textSha256": "310bff957e38ec8659e77b16e69b4eb0960eae1763040e1c622bbd274119ac97"
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "e404fb0772cbe209dd51b93635b283edc79df8c671975cc3dcdcb0a16f491638"
     },
     {
-      "id": "ETA-2026-0001-0943",
-      "postedDate": "2026-05-18T04:00:00Z",
+      "id": "ETA-2026-0001-1123",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对提高基准，认为其扰乱总报酬、关键技术团队和长期用工规划。",
+        "en": "Opposes higher benchmarks as disrupting total compensation, critical technical teams, and long-term workforce planning."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "5b93b5d52022a4949465733e4520e6f3d4061dbecf57330035781d06e9142ec8"
+    },
+    {
+      "id": "ETA-2026-0001-0592",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "2a883c161cea6ac9fedd3d04649329a930a48a9eda15f44aabd15d80ca466d3b",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0940",
       "stance": "oppose",
       "themes": [
         "talent"
       ],
       "summary": {
-        "zh": "反对工资规则，担心有技能人才转往其他国家。",
-        "en": "Opposes the wage rule over skilled talent moving to other countries."
+        "zh": "反对工资规则，担忧专业人才流向其他国家。",
+        "en": "Opposes the wage rule over concerns skilled talent would move to other countries."
       },
+      "postedDate": "2026-05-18T04:00:00Z",
       "textSha256": "7184163a124867e3e711adb82e0324458822eb8d99a6b13cd01b5a30bd8a6fbf"
     },
     {
-      "id": "ETA-2026-0001-0465",
+      "id": "ETA-2026-0001-0419",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "market",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求撤回，认为新门槛冲突于公校薪级及教育要求，并导致教师空缺。",
+        "en": "Seeks withdrawal, arguing thresholds conflict with public-school salary scales and education requirements and leave classrooms unstaffed."
+      },
       "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "8aee0f6e4141a259ed0c4186a1ff6e8605f1891037e0ee06e5a476da94cf86bc"
+    },
+    {
+      "id": "ETA-2026-0001-0903",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提案脱离同工市场薪酬，削弱专业工程团队和全球创新合作。",
+        "en": "Argues the proposal diverges from comparable market pay and would weaken specialized engineering and global innovation collaboration."
+      },
+      "postedDate": "2026-05-12T04:00:00Z",
+      "textSha256": "ecfa9ca392931c235014e6268c8d32aa6fa098c99957efa9b17a3bcc59a0314b"
+    },
+    {
+      "id": "ETA-2026-0001-0942",
       "stance": "oppose",
       "themes": [
         "talent"
       ],
       "summary": {
-        "zh": "反对提案，认为人才流失会削弱美国竞争力。",
-        "en": "Opposes the proposal because talent loss could weaken U.S. competitiveness."
+        "zh": "反对工资规则，担忧专业人才流向其他国家。",
+        "en": "Opposes the wage rule over concerns skilled talent would move to other countries."
       },
-      "textSha256": "91378393fc689505fc80e0b891325947dd1905b96bec8800371e5b456c87f837"
+      "postedDate": "2026-05-18T04:00:00Z",
+      "textSha256": "7184163a124867e3e711adb82e0324458822eb8d99a6b13cd01b5a30bd8a6fbf"
     },
     {
-      "id": "ETA-2026-0001-1081",
-      "postedDate": "2026-05-22T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文说明附件涉及EB-3工资方法及影响，但没有可读的明确立场。",
-        "en": "The body identifies EB-3 methodology and impacts as the attachment topic but provides no clear readable stance."
-      },
-      "textSha256": "481e381869a936ec2e814fe1ae6c517ac2ff2b03d1e09cf9e458374bd77668fc",
-      "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0009",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection"
-      ],
-      "summary": {
-        "zh": "支持提高工资，但认为拟议底线仍过低，建议四级改为57、69、82和96百分位。",
-        "en": "Supports increases but considers proposed floors too low, recommending the 57th, 69th, 82nd, and 96th percentiles."
-      },
-      "textSha256": "9b9bfa9be678cf599608e8676aa78f3e1ec6a6e4bc63cba1eb687c29e71a9689"
-    },
-    {
-      "id": "ETA-2026-0001-0699",
-      "postedDate": "2026-05-01T04:00:00Z",
+      "id": "ETA-2026-0001-0026",
       "stance": "oppose",
       "themes": [
         "market",
-        "entry",
-        "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "要求撤回，认为百分位缺乏依据且会挤压小雇主、职业起点与国内创新。",
-        "en": "Requests withdrawal, citing unsupported percentiles and harm to small employers, career entry, and domestic innovation."
-      },
-      "textSha256": "964ba02b313b3f207d5e18e0d40337813acab828d7f878152140778ea1738a0f"
-    },
-    {
-      "id": "ETA-2026-0001-0230",
-      "postedDate": "2026-04-08T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
         "entry"
       ],
       "summary": {
-        "zh": "反对批准，认为对新毕业生尤其不公平。",
-        "en": "Opposes approval as particularly unfair to new graduates."
+        "zh": "认为提高一级工资改变入门岗位含义，应不予实施。",
+        "en": "Argues raising Level I changes the meaning of entry-level roles and should not be implemented."
       },
-      "textSha256": "1738621ad3af136b32c245fa7f01f97c0227863858f86eb94045e340650e4904"
-    },
-    {
-      "id": "ETA-2026-0001-0508",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "talent",
-        "market"
-      ],
-      "summary": {
-        "zh": "反对提案，认为国际人才与本土就业互补，限制招聘会损害增长并推动外迁。",
-        "en": "Opposes the proposal, arguing global talent complements domestic jobs and restrictions hurt growth and encourage offshoring."
-      },
-      "textSha256": "7127f02c80bab987e134d3e613ed4c42a02cbf76590aad8f7aed46bc8ccaca77"
-    },
-    {
-      "id": "ETA-2026-0001-0133",
-      "postedDate": "2026-04-03T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "talent"
-      ],
-      "summary": {
-        "zh": "强调合法移民促进就业与创新，但未明确评价此次工资上调。",
-        "en": "Emphasizes immigrants’ contributions to jobs and innovation without clearly evaluating this wage increase."
-      },
-      "textSha256": "329c19fe93cd406ad0178c78de46b894adea63f760107319143aec033b20a2d2"
-    },
-    {
-      "id": "ETA-2026-0001-0516",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "entry",
-        "market"
-      ],
-      "summary": {
-        "zh": "认为过高入门工资会让雇主改聘有经验者，压缩培训与职业发展通道。",
-        "en": "Argues excessive entry floors favor experienced hires and constrict training and career pipelines."
-      },
-      "textSha256": "f90bc64c60b0a4424c4b488f8bb842451af02fd559a0e4d91605bcb2201aa72c"
-    },
-    {
-      "id": "ETA-2026-0001-0123",
       "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "希望减少雇用外国劳工的激励并征收汇款税，未明确表达对工资提案的立场。",
-        "en": "Seeks disincentives for foreign hiring and remittance taxes without a clear stance on the wage proposal."
-      },
-      "textSha256": "cd711ba2c62d5895b1102093dfaf80e17f3ca88221804a0e86304df84c283985"
+      "textSha256": "6b698bf06bcb9f0b3e89014b877546bed13d4d26ccf46857aa3ed8935ecca81f"
     },
     {
-      "id": "ETA-2026-0001-1003",
-      "postedDate": "2026-05-19T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "首选暂停或废除相关签证项目，同时明确支持至少提高现行工资标准。",
-        "en": "Prefers pausing or ending visa programs but explicitly endorses higher prevailing wages as a minimum step."
-      },
-      "textSha256": "99eb0daac0e263b9761fffc662c59872b6e8ba2ff47993dcaa1c60a428d2adea"
-    },
-    {
-      "id": "ETA-2026-0001-0787",
-      "postedDate": "2026-05-07T04:00:00Z",
+      "id": "ETA-2026-0001-1173",
       "stance": "oppose",
       "themes": [
         "academic",
-        "small",
-        "entry",
         "talent"
       ],
       "summary": {
-        "zh": "反对提案，担忧高校、小企业和研究机构失去毕业生与科研人才。",
-        "en": "Opposes the proposal over lost graduate and research hiring at universities and smaller employers."
+        "zh": "要求不提高工资门槛，以便学术领域继续聘用国际学者。",
+        "en": "Seeks no increase in wage minimums so academic fields can retain access to international scholars."
       },
-      "textSha256": "8b7356a39e899efde34998a03690135910c6a3a252cd9cadf19cdf5c5538fec7"
-    },
-    {
-      "id": "ETA-2026-0001-0606",
-      "postedDate": "2026-04-29T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "talent"
-      ],
-      "summary": {
-        "zh": "认可保护工资目标，但认为僵硬门槛不适应科技市场变化，会减少招聘或促使岗位外迁。",
-        "en": "Accepts wage-protection goals but argues rigid thresholds ignore technology-market changes and reduce or relocate hiring."
-      },
-      "textSha256": "1c5b9bca788cc35e19cfce6033cc7743d2d4a34acb8bd700c17edb27133f8603"
-    },
-    {
-      "id": "ETA-2026-0001-0262",
-      "postedDate": "2026-04-10T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "支持加强保护方向，但要求入门工资改为第50百分位，并减少签证数量。",
-        "en": "Supports stronger protection but seeks a 50th-percentile entry floor and fewer visas."
-      },
-      "textSha256": "c20f7ca7472a87e2a62738ad2049fb4387df497c85f96528ca7991e788c5dcb3"
-    },
-    {
-      "id": "ETA-2026-0001-0446",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "要求重新考虑或大幅修改，认为新工资层级会损害入门招聘、小雇主与竞争力。",
-        "en": "Seeks reconsideration or substantial revision over entry hiring, small-employer, and competitiveness impacts."
-      },
-      "textSha256": "b2ccb4a7c4e543edb2f850c28e74e0bb6c61578c9ddc286860cefbe9c5b3b77e"
-    },
-    {
-      "id": "ETA-2026-0001-0857",
-      "postedDate": "2026-05-11T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "担心提高门槛阻碍国际毕业生就业，削弱人才留存与创新。",
-        "en": "Warns that higher thresholds block international graduates and weaken retention and innovation."
-      },
-      "textSha256": "1b107588d1443079dddd048c695137ded0933dd3828f9682de5582cabe90e88d"
-    },
-    {
-      "id": "ETA-2026-0001-0375",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "small",
-        "academic",
-        "talent",
-        "enforcement",
-        "process"
-      ],
-      "summary": {
-        "zh": "明确反对一刀切上调，主张针对违规执法并保持雇主规划的可预期性。",
-        "en": "Opposes blanket increases, preferring targeted enforcement and predictable employer planning."
-      },
-      "textSha256": "0edc398fa936a37c17d2e2b3512aa4b94f8a07f4ae58e8d6715baf72c9d5f175"
-    },
-    {
-      "id": "ETA-2026-0001-0775",
-      "postedDate": "2026-05-07T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "market",
-        "protection"
-      ],
-      "summary": {
-        "zh": "支持尽快实施，认为提高工资能减少低薪招聘和对统计漏洞的利用。",
-        "en": "Supports prompt implementation to reduce low-paid hiring and perceived statistical loopholes."
-      },
-      "textSha256": "7a1c715bceb1b3d314501de66a0fe6333c5409de75db670443009db8a49631dc"
-    },
-    {
-      "id": "ETA-2026-0001-1254",
-      "postedDate": "2026-05-28T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to an attachment; readable material does not establish a stance."
-      },
-      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
-      "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0078",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "将提高工资视为积极步骤，同时更倾向终止H-1B项目。",
-        "en": "Views wage increases as a positive step while preferring termination of H-1B."
-      },
-      "textSha256": "ea27f74cc06d724244eb367b8f1c526533488f3f9dd4dde7bac202f4fa2b6532"
-    },
-    {
-      "id": "ETA-2026-0001-0627",
-      "postedDate": "2026-04-30T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "entry",
-        "talent",
-        "process"
-      ],
-      "summary": {
-        "zh": "担心突然上调造成岗位外迁及生活不稳定，主张考虑美国培养人才的投入。",
-        "en": "Warns abrupt increases may relocate jobs and disrupt lives, urging recognition of U.S.-educated talent."
-      },
-      "textSha256": "637965a426c4287efe5da7b496dff55e6e4ac2882bb0d021dd06d30be2a3a98f"
-    },
-    {
-      "id": "ETA-2026-0001-0734",
-      "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "明确支持按工资选取H-1B，但内容针对抽签机制，不能据此判断对本工资方法的立场。",
-        "en": "Explicitly supports wage-based H-1B selection, but discusses the lottery rather than this wage methodology."
-      },
-      "textSha256": "6df69a0e9f1ed51358920110bfb22348d58d589eb58032e0b6892ed2bac9d0f1",
-      "sourceNote": {
-        "zh": "正文针对另一项按工资选取H-1B的制度；未将其支持态度自动算作支持本项工资提案。",
-        "en": "The body concerns a separate wage-based H-1B selection policy; its support is not treated as support for this wage proposal."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0219",
-      "postedDate": "2026-04-08T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "market",
-        "protection"
-      ],
-      "summary": {
-        "zh": "明确支持第34百分位入门底线，认为可减少低价招聘并改善公平性。",
-        "en": "Explicitly supports the 34th-percentile entry floor to reduce low-cost hiring and improve fairness."
-      },
-      "textSha256": "9d7b946b05ac5037fed88c9146a89938f7ad65c874ff847d0ca00b557833d162"
-    },
-    {
-      "id": "ETA-2026-0001-0037",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "认为第34百分位仍不足，主张更高工资和独立核查职位分类。",
-        "en": "Considers the 34th percentile insufficient and calls for higher pay and independent job-classification verification."
-      },
-      "textSha256": "430d58928cc8e55c32dbec85d5ef5f9983d5cb87384e5543dd04c8715969c4ce"
-    },
-    {
-      "id": "ETA-2026-0001-0933",
-      "postedDate": "2026-05-15T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "academic",
-        "market",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对现行文本，认为不适合学术薪酬体系并可能推动研究人才外流。",
-        "en": "Opposes the current text as mismatched to academic pay and potentially driving research talent abroad."
-      },
-      "textSha256": "50b5ba9337a5a47798b46b6b4f52ee1f61392f9d689a8712b742ca7651af58e9"
-    },
-    {
-      "id": "ETA-2026-0001-1086",
       "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "small",
-        "academic",
-        "talent"
-      ],
-      "summary": {
-        "zh": "担心提高工资使招聘能力集中于大企业，并削弱竞争与劳动力流动。",
-        "en": "Warns higher floors concentrate sponsorship among large firms and weaken competition and mobility."
-      },
-      "textSha256": "8b14620bdf85fb0ce6d0bf5dff7745f5af41d75e3619b1cd3b678e7b6e9e1437"
-    },
-    {
-      "id": "ETA-2026-0001-0278",
-      "postedDate": "2026-04-13T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "认为拟议工资仍不足，要求经验基准或更高百分位，并完善招聘证明与审计。",
-        "en": "Finds proposed floors insufficient, seeking experience benchmarking or higher percentiles and stronger recruitment evidence and audits."
-      },
-      "textSha256": "78dba1fd66c76eb5583ab46812e3bf039aa2b4f95f0eb3dbfc621edbad2a7285"
-    },
-    {
-      "id": "ETA-2026-0001-1291",
-      "postedDate": "2026-06-12T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to attachments; readable material does not establish a stance."
-      },
-      "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
-      "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0824",
-      "postedDate": "2026-05-11T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对提高门槛，认为地区中小雇主和毕业生需要现实的入门工资与培训机会。",
-        "en": "Opposes higher thresholds, citing realistic entry pay and training needs for regional smaller employers and graduates."
-      },
-      "textSha256": "759b20d2fdcb957eaa385b78aa56243d5cac7fbc0280f668e99690d93ce80a1c"
-    },
-    {
-      "id": "ETA-2026-0001-1196",
-      "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "small",
-        "talent",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "要求撤回，认为工资方法失真、损害初创企业并推动人才外流；偏好精准执法。",
-        "en": "Requests withdrawal over distorted benchmarks, startup harm, and talent loss, preferring targeted enforcement."
-      },
-      "textSha256": "c6f5d1c2bcb94f1cfb46adede365173b4bc130a67715339efe93f0d77d153c72"
-    },
-    {
-      "id": "ETA-2026-0001-0097",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "认为第34百分位不足以制止低薪替代，要求改为第50百分位。",
-        "en": "Considers the 34th-percentile floor insufficient against underpayment and replacement, seeking the 50th."
-      },
-      "textSha256": "ca45f555d2ff45a8e869eaab18d57d85014e50b40f151bd3b51b156bccf1b0bb"
-    },
-    {
-      "id": "ETA-2026-0001-0953",
-      "postedDate": "2026-05-18T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "支持提案以改善工资及本土就业公平，并提出对企业招聘滥用和安全的担忧。",
-        "en": "Supports the proposal for wage and domestic-employment fairness, raising concerns about hiring abuses and security."
-      },
-      "textSha256": "60cfc98f796eb6d11325df8dc4102efa84821c56909806c3d3b525084295e2de"
-    },
-    {
-      "id": "ETA-2026-0001-0285",
-      "postedDate": "2026-04-14T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "small",
-        "talent",
-        "process"
-      ],
-      "summary": {
-        "zh": "反对提案，担心合规负担减少招聘、推动外包并拖慢小企业用人。",
-        "en": "Opposes the proposal over compliance burdens, reduced hiring, outsourcing, and delays for small employers."
-      },
-      "textSha256": "549fc67ce9c068b237b17589cb8c3b593d70d6dbc5f6a02438c783556cd9f6c2"
-    },
-    {
-      "id": "ETA-2026-0001-0860",
-      "postedDate": "2026-05-11T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "要求撤回，认为入门工资脱离毕业生市场薪酬，会造成技术人才缺口。",
-        "en": "Requests withdrawal, arguing entry floors exceed graduate market pay and create technical talent shortages."
-      },
-      "textSha256": "97288279bafda22280650e1e15b80d2f067dcd733c2b25e225c0aa74b780413a"
-    },
-    {
-      "id": "ETA-2026-0001-1010",
-      "postedDate": "2026-05-20T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "明确支持工资改革，并建议增加分类和数据透明度以追踪劳动力替代。",
-        "en": "Explicitly supports wage reform and recommends classification and transparency measures to track labor substitution."
-      },
-      "textSha256": "e7f6b0bc2967c24b4006b0480dd10788e245ec9627b6853fcaa05d18e0710ec2",
-      "sourceNote": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0726",
-      "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "要求调查绿卡申请中的资历造假指控，未评价本工资提案。",
-        "en": "Requests investigation of alleged credential fraud in green-card cases without assessing this wage proposal."
-      },
-      "textSha256": "31a5337fdb9f08f13be66bcb38f6555a78a10ae8cb07cbe3014fa3c2cd2a156d"
-    },
-    {
-      "id": "ETA-2026-0001-0505",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry",
-        "small",
-        "academic",
-        "talent",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "要求撤回或大幅修改，认为工资层级失真且损害毕业生及小机构，偏好精准执法。",
-        "en": "Seeks withdrawal or major revision over distorted wage tiers and harms to graduates and smaller institutions, preferring targeted enforcement."
-      },
-      "textSha256": "28a38897de7ca98aadc42167f26070b947521bb29f49050451f9ea15e818bcb9"
-    },
-    {
-      "id": "ETA-2026-0001-0682",
-      "postedDate": "2026-04-30T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection"
-      ],
-      "summary": {
-        "zh": "认可上调方向，但认为第34百分位仍太低，建议四级改为55、70、85及90以上百分位。",
-        "en": "Accepts increases but finds the 34th percentile too low, proposing tiers at the 55th, 70th, 85th, and at least 90th percentiles."
-      },
-      "textSha256": "a9d99506d6bd7a5c8a04fa094efae1a0d44056786ee1103bd850c76295d18624"
-    },
-    {
-      "id": "ETA-2026-0001-0422",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "process",
-        "talent"
-      ],
-      "summary": {
-        "zh": "要求废弃重写，主张按行业和资历评估，并豁免既有员工及境内转职。",
-        "en": "Calls for rejection and rewriting, industry and credential-based assessment, and exemptions for existing workers and domestic transfers."
-      },
-      "textSha256": "90c4b3e50193b59795a27b5144ec83086781fdffe0d88aa78f1f94e072775e8f"
-    },
-    {
-      "id": "ETA-2026-0001-0371",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "talent",
-        "academic",
-        "small",
-        "process"
-      ],
-      "summary": {
-        "zh": "认为工资门槛将推动外迁、削弱公共服务及小企业；若坚持改革，要求多年过渡。",
-        "en": "Warns of offshoring and harm to public services and small firms; seeks a multiyear transition if changes proceed."
-      },
-      "textSha256": "d266ec548ba5fd53a8d8dac4bf44c18143a4f7020aa8bb2d31a9cbc8fcb04eeb"
-    },
-    {
-      "id": "ETA-2026-0001-0358",
-      "postedDate": "2026-04-24T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "small",
-        "talent",
-        "process",
-        "protection"
-      ],
-      "summary": {
-        "zh": "认可更新工资的益处，但要求分阶段实施以兼顾工资保护和雇主招聘能力。",
-        "en": "Acknowledges benefits of wage updates but seeks phased implementation balancing protection with employers’ hiring capacity."
-      },
-      "textSha256": "b898dabbd1d26b5040888c451a28965269c54ec998f7ecc3451eca0840147801"
+      "textSha256": "be6226c23b8a842bd360dbf457781fa319740a52c1c0d3f69705e234e4f1d00b"
     },
     {
       "id": "ETA-2026-0001-0691",
@@ -2308,21 +2469,1112 @@
       "textSha256": "b7e0b0e5a57c7dd4c7d764a375c1b8a076027ab503aa2cb8b6e6951e2a70209a"
     },
     {
-      "id": "ETA-2026-0001-0935",
-      "postedDate": "2026-05-15T04:00:00Z",
+      "id": "ETA-2026-0001-0848",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。",
+        "en": "Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "7ec85d8622982f86dfc1f56048eaf9de7b0d07f0e3e7d6b815f7e3d9e4817bd7"
+    },
+    {
+      "id": "ETA-2026-0001-0905",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为规则不会奏效并批评实施拖延，主张直接立法收紧签证。",
+        "en": "Dismisses the rule as ineffective, criticizes implementation delays, and favors statutory visa restrictions."
+      },
+      "postedDate": "2026-05-13T04:00:00Z",
+      "textSha256": "64426996484f7170124f8869850d4b6e205c04fed4bf0ec0225b7159da1ae696"
+    },
+    {
+      "id": "ETA-2026-0001-0065",
+      "stance": "mixed",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "担忧未覆盖签证类别造成替代招聘，要求研究并弥补规则范围缺口。",
+        "en": "Warns uncovered visa categories could encourage substitution and seeks analysis and correction of scope gaps."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "752e2383b898071404f8545270834efc2042938d3b155379c961f652c5424d90"
+    },
+    {
+      "id": "ETA-2026-0001-0572",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "small",
+        "market",
+        "academic",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求撤回，认为提案将推动外迁、伤害小企业及医疗服务且缺乏统计依据。",
+        "en": "Seeks withdrawal over offshoring, small-business and healthcare harms, and insufficient statistical justification."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "7180c70faa11adde950dc47405301dc26a35e70a84e19866e924955877ef35d6"
+    },
+    {
+      "id": "ETA-2026-0001-1103",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "small",
+        "entry",
+        "academic",
+        "talent"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，质疑经济和法律依据，担忧小企业、毕业生与人才外流。",
+        "en": "Seeks withdrawal, questioning economic and legal justification and warning of harm to small firms, graduates, and talent retention."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "71b9b5e7d023c129f457b7f907874966b45fea26036b8dd83ed55b760acc05aa"
+    },
+    {
+      "id": "ETA-2026-0001-0181",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为仅按基本工资提高门槛妨碍AI毕业生留美，要求重审或豁免。",
+        "en": "Argues base-pay thresholds hinder retention of AI graduates and seeks reconsideration or exemptions."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "1e52ef3e21ffc51ead8e29e8170c63cef5ae9d5cac56d75b49fbaa80e08d71b8"
+    },
+    {
+      "id": "ETA-2026-0001-1183",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "entry",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "主张按职业供需差异定薪，保留高阶保护并降低紧缺领域入门障碍。",
+        "en": "Favors occupation-sensitive wages, retaining senior protections while reducing entry barriers in shortage fields."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "7acefaabb81b30716806ea3388a76acbf718163570491877b2f1444cf866066a"
+    },
+    {
+      "id": "ETA-2026-0001-0077",
+      "stance": "mixed",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "称现有力度不足并要求取消H-1B，未明确认可本工资方法。",
+        "en": "Calls current measures insufficient and seeks H-1B abolition without clearly endorsing this wage methodology."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "d3a747a0265e29a27130015e5a5e0e7650717d336b93c7dab365b790a5d74637"
+    },
+    {
+      "id": "ETA-2026-0001-1178",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持新工资规则，并要求更高工资溢价及撤销部分签证。",
+        "en": "Supports the new wage rule and seeks a larger wage premium and revocation of some visas."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "8335415981455a3df61300bb6f7d86b8eab0811937d5242fca8a7f30a3f2bac1"
+    },
+    {
+      "id": "ETA-2026-0001-1172",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提案会妨碍公立大学聘用国际学者和博士后。",
+        "en": "Argues the proposal would impede public universities' hiring of international scholars and postdocs."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "8f443389cc92f1cc2145156c4241e03bde802530bccf2dbcb2b18b30ad788097"
+    },
+    {
+      "id": "ETA-2026-0001-0619",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对脱离市场的门槛和既有案件变动，若实施则要求仅适用未来申请。",
+        "en": "Opposes above-market thresholds and disruption to existing cases, requesting prospective-only application if adopted."
+      },
+      "postedDate": "2026-04-29T04:00:00Z",
+      "textSha256": "8288d1a50693db8f91094b21c86cc1cfd7d42bdccd735a0ac9575b09e3f41525"
+    },
+    {
+      "id": "ETA-2026-0001-0604",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "protection",
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对提案，认为裁员源于经济和AI变化，门槛增加将减少招聘并推动外迁。",
+        "en": "Opposes the proposal, attributing layoffs to economic and AI changes and warning thresholds would reduce hiring and encourage offshoring."
+      },
+      "postedDate": "2026-04-29T04:00:00Z",
+      "textSha256": "4dd3b0fb60a7c89279426e6717e9d85c0d548542cc549ca698d537255f26ed56"
+    },
+    {
+      "id": "ETA-2026-0001-1195",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持新规则及同工同酬，并要求将签证限于真实技能缺口。",
+        "en": "Supports the new rule and equal pay, seeking restrictions to genuine skill shortages."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "c2a6fd37b0b7224b7a2ae85656c93297b71167b64fd41e0a706460e054cc7cbc"
+    },
+    {
+      "id": "ETA-2026-0001-1211",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "a0671ef1fd1bba6265082b965c33d00c516798e016e1a3f525858fc8fd79fbd1",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-1006",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "担忧统一门槛超出景观设计行业固定项目预算，要求按地区和行业重审。",
+        "en": "Warns uniform thresholds exceed landscape-design project budgets and seeks region- and industry-sensitive reconsideration."
+      },
+      "postedDate": "2026-05-19T04:00:00Z",
+      "textSha256": "907098b433b05c04a3451f880b35fd7ddc52d5443f3592266e100c6b1b337a7e"
+    },
+    {
+      "id": "ETA-2026-0001-1039",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "批评统一调整误伤毕业生，主张经验基准、工作地点执法和OPT转衔保护。",
+        "en": "Criticizes blanket increases for harming graduates and favors experience benchmarking, worksite enforcement, and OPT transition protections."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "d1c506627a63a1293a466d54cc27f663fd923058e3b3be07982a6baee52b29cb"
+    },
+    {
+      "id": "ETA-2026-0001-1267",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求撤回或大幅修订，质疑工资差距分析并担忧企业、紧缺行业和人才留存。",
+        "en": "Seeks withdrawal or major revision, questioning wage-gap analysis and warning of harm to firms, shortage sectors, and talent retention."
+      },
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "ac9e160bbdc1ae1f7f23d0319460b57ab33eec03a405e7d8db1d0b42f13f9477"
+    },
+    {
+      "id": "ETA-2026-0001-1053",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "要求撤回，认为入门工资门槛会推动初级工程团队及创新外迁。",
+        "en": "Seeks withdrawal, arguing entry-wage thresholds would offshore junior engineering teams and innovation."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "41cc835b8a503d10ffcc211375bc74ef5bdf62106d65a919f8da80fecfbcf64d"
+    },
+    {
+      "id": "ETA-2026-0001-0079",
+      "stance": "support",
+      "themes": [
+        "protection"
+      ],
+      "summary": {
+        "zh": "认为规则有助于减少低薪替代并保护美国劳动者。",
+        "en": "Views the rule as helpful in reducing low-wage replacement and protecting domestic workers."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "ab1d9f05f5864a63374c295fb18a9769e825431075bac23e8e79857270dcf081"
+    },
+    {
+      "id": "ETA-2026-0001-0490",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "talent"
+      ],
+      "summary": {
+        "zh": "强烈反对门槛提高，担忧初创企业负担、岗位流失及创新外迁。",
+        "en": "Strongly opposes higher thresholds over startup burdens, job losses, and offshoring of innovation."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "074cef81602f45aea8301647fff5f0db6b4316c8419e2babd25d15bc182778c0"
+    },
+    {
+      "id": "ETA-2026-0001-0155",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持提高工资，并要求最低门槛达到本地第50百分位。",
+        "en": "Supports wage increases and seeks a minimum at the local 50th percentile."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "7708bf57f921b2fe5203b5a596c3dd4f366895ca3b58539efb8ae429a67600a1"
+    },
+    {
+      "id": "ETA-2026-0001-0456",
+      "stance": "support",
+      "themes": [
+        "protection"
+      ],
+      "summary": {
+        "zh": "认为规则可改善签证劳动者长期无加薪和收入增长受限的问题。",
+        "en": "Views the rule as needed to address stagnant pay and constrained earnings growth among visa workers."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "a78c217688d7f3490313cd9b93be96544b15644f93c683c6d307c27a41518df9"
+    },
+    {
+      "id": "ETA-2026-0001-0314",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求新工资规则覆盖全部H-1B持有人，并加强限制和年度审计。",
+        "en": "Seeks application of the new wage rule to all H-1B holders plus stronger restrictions and annual audits."
+      },
+      "postedDate": "2026-04-17T04:00:00Z",
+      "textSha256": "676022d2a511d207a57d74b2c799e0464e5046829fe8a0b38e5933bfecec1fd7"
+    },
+    {
+      "id": "ETA-2026-0001-1186",
+      "stance": "support",
+      "themes": [
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持新规则作为正确第一步，主张本土和外籍劳动者同酬。",
+        "en": "Supports the new rule as a first step and equal pay for domestic and foreign workers."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "545600100bb91d14f57d70bb1c009495ee5cc80bfe9f2a008776f6a1d6772cb8"
+    },
+    {
+      "id": "ETA-2026-0001-0709",
+      "postedDate": "2026-05-04T04:00:00Z",
+      "stance": "unclear",
+      "themes": [
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "批评签证滥用及政治执行不足，要求限制第三方派遣，未明确评价拟议工资方法。",
+        "en": "Criticizes alleged visa abuse and inadequate political enforcement, seeking third-party placement limits without clearly evaluating the wage method."
+      },
+      "textSha256": "5bb0b457c13a2dbc17622274e534e997fb1d614ef21370cdeb2fb84f6462adac"
+    },
+    {
+      "id": "ETA-2026-0001-0573",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent"
+      ],
+      "summary": {
+        "zh": "要求保留现行工资，担忧入门门槛排除毕业生、伤害科研并推动外迁。",
+        "en": "Seeks current wage levels, warning entry thresholds would exclude graduates, harm research, and encourage offshoring."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "a7e909da3e92b842f7765ee2c983fa0dce47cff14344b40a2b311b76974daaff"
+    },
+    {
+      "id": "ETA-2026-0001-0749",
+      "stance": "unclear",
+      "themes": [
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "表示支持减少移民并希望全面停止移民，未具体评价工资提案。",
+        "en": "Supports immigration reductions and seeks a full halt without specifically evaluating the wage proposal."
+      },
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "31cb799d1c61cebc9f87eacc9619ec255a7fcb1c0ee9304845c394b9d9c977ca"
+    },
+    {
+      "id": "ETA-2026-0001-0566",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "认为工资百分位过低，提出另一组更高门槛。",
+        "en": "Considers wage percentiles too low and proposes a different set of higher thresholds."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "9188f96fd6fa9edea4f70b94738510e99d6cad5afe572ac141577c8759bb9895"
+    },
+    {
+      "id": "ETA-2026-0001-0312",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "支持工资规则，同时要求降低配额、覆盖既有持有人并限制派遣。",
+        "en": "Supports the wage rule while seeking lower caps, coverage of existing holders, and placement restrictions."
+      },
+      "postedDate": "2026-04-17T04:00:00Z",
+      "textSha256": "7acab9868c37eab15dc940341502bfbe5042595ca2fa9c21ae71b9d6f2486206"
+    },
+    {
+      "id": "ETA-2026-0001-0468",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "academic"
+      ],
+      "summary": {
+        "zh": "认为低工资等级体现正常职业阶段，反对以此为由大幅提高门槛。",
+        "en": "Argues lower wage tiers reflect normal career stages and rejects using them to justify steep increases."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "bb1708922cc55acc0b5e6a640866cd03b12c401aad3562e3c1c2d5f84499f1e0"
+    },
+    {
+      "id": "ETA-2026-0001-0946",
+      "stance": "oppose",
+      "themes": [
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对工资规则，担忧专业人才流向其他国家。",
+        "en": "Opposes the wage rule over concerns skilled talent would move to other countries."
+      },
+      "postedDate": "2026-05-18T04:00:00Z",
+      "textSha256": "7184163a124867e3e711adb82e0324458822eb8d99a6b13cd01b5a30bd8a6fbf"
+    },
+    {
+      "id": "ETA-2026-0001-0060",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认可工资提高，并建议加强审计、处罚、举报保护和裁员后招聘限制。",
+        "en": "Welcomes wage increases and seeks stronger audits, penalties, whistleblower protection, and post-layoff hiring restrictions."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "88897a0348e2151f7a990ef022d25b1f42a76827111dff86de0b3121c69612c2"
+    },
+    {
+      "id": "ETA-2026-0001-1052",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "强烈支持新百分位，并要求将工资保护延伸至OPT和L-1。",
+        "en": "Strongly supports the new percentiles and seeks parallel wage protections for OPT and L-1."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "82e14aece203a3911e52fe9776d39f2074dccdd9c23dddf0beaf60f357c27aa0"
+    },
+    {
+      "id": "ETA-2026-0001-0555",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "academic",
+        "talent",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为调整过猛并伤害培训和医疗科研，建议经验基准及渐进实施。",
+        "en": "Criticizes excessive increases and harm to training and medical research, favoring experience benchmarking and phased implementation."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "e8f086d26966f170c23ebce4f63153edcbf0cb6e1084b22c151a7dcafab66f32"
+    },
+    {
+      "id": "ETA-2026-0001-0207",
+      "stance": "support",
+      "themes": [
+        "market",
+        "entry",
+        "protection",
+        "process"
+      ],
+      "summary": {
+        "zh": "支持尽快提高工资百分位，认为可减少低薪替代并保护本土毕业生。",
+        "en": "Supports prompt percentile increases to reduce low-wage substitution and protect domestic graduates."
+      },
+      "postedDate": "2026-04-07T04:00:00Z",
+      "textSha256": "ce164a3b8b06a017c4538908e3bf3a6f4807f85282b843dc53ed3075860f8c65"
+    },
+    {
+      "id": "ETA-2026-0001-0437",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对忽略建筑设计固定项目费用的门槛提高，担忧全球专业人才流失。",
+        "en": "Opposes increases that overlook fixed architectural project fees and warns of lost access to global expertise."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "b91d658e2e1d6d05a7cd74aa48bc083ec4533416d82e14eb01126dbd3b8e031b"
+    },
+    {
+      "id": "ETA-2026-0001-0162",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "要求重新考虑入门标准，改用第50百分位以减少低薪替代。",
+        "en": "Seeks reconsideration of entry standards in favor of the 50th percentile to reduce low-wage substitution."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "f28e2e0982a448df2598ea7e219a75dd5a3bd85133a22728830af9e8501d1a3d"
+    },
+    {
+      "id": "ETA-2026-0001-0390",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent",
+        "protection"
+      ],
+      "summary": {
+        "zh": "反对提案的低技能替代前提，认为人为提高工资会伤害专业人才贡献。",
+        "en": "Rejects the proposal's low-skill substitution premise and argues artificial wage increases would harm skilled contributions."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "f5bb273b4e6b54693b7a682f825dc067df7aa89ce64244328f8c6afaacf69f8b"
+    },
+    {
+      "id": "ETA-2026-0001-0514",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "academic",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求重审脱离市场的工资方法，担忧小企业和外迁，若调整则主张分期实施。",
+        "en": "Seeks reconsideration of market-disconnected wages over small-firm and offshoring harms, favoring phasing if changed."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "36b8ab22e7ef93b3c464ac2013fd0e13efb3378869c6abf885b031c4c1d27277"
+    },
+    {
+      "id": "ETA-2026-0001-0670",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "academic",
+        "entry",
+        "talent",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "批评工资等同技能及忽略股权报酬，要求保护初创科研和入门岗位并针对执法。",
+        "en": "Criticizes equating pay with skill and ignoring equity, seeking protection for startups, research, and entry roles plus targeted enforcement."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "bf720a5fddda3d48ea0e2ded5f1d08ffdbf6904e07ea1ad6683bd5a519cf0bcc"
+    },
+    {
+      "id": "ETA-2026-0001-0761",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持新规则，认为现行低等级工资助长本土岗位替代。",
+        "en": "Supports the new rule, arguing current lower tiers facilitate domestic displacement."
+      },
+      "postedDate": "2026-05-05T04:00:00Z",
+      "textSha256": "eab834f438ed151d93672c64232a92b9c4b5d2429e80b15408ca3c3320cf9895"
+    },
+    {
+      "id": "ETA-2026-0001-0846",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。",
+        "en": "Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "311afdffc5cd0b486e01e9689aaf66cc331b2231cbed5d1d2697536b60c01f3d"
+    },
+    {
+      "id": "ETA-2026-0001-0137",
+      "postedDate": "2026-04-03T04:00:00Z",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对提高工资门槛，认为会挤压初创企业及新毕业生并促使人才外流；另混入抽签改革异议。",
+        "en": "Opposes higher wage floors, citing startup and graduate exclusion and talent loss; also discusses selection reform."
+      },
+      "textSha256": "74d0e6be5508e158acc9a0105345a02981e366b3abc0a917c9acfd3f643d5c20"
+    },
+    {
+      "id": "ETA-2026-0001-0200",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求对外籍用工和岗位外迁施加高额惩罚，未明确评价本提案。",
+        "en": "Seeks substantial penalties on foreign hiring and offshoring without clearly evaluating this proposal."
+      },
+      "postedDate": "2026-04-07T04:00:00Z",
+      "textSha256": "1c3539528869308685077c84fe127207797ed5a8d1e6dc8741c374fffd6956d1"
+    },
+    {
+      "id": "ETA-2026-0001-0130",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small"
+      ],
+      "summary": {
+        "zh": "批评统计调整忽略岗位复杂度、地区和企业规模，反对统一方法。",
+        "en": "Criticizes statistical adjustments for overlooking job complexity, regions, and firm size and rejects a uniform method."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "5856ff24c8677ee2dd0c86223c583b48e2f4d766e09d0b305f42b7ed5c5a17eb"
+    },
+    {
+      "id": "ETA-2026-0001-1110",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求撤回或进一步研究，认为教育工资假设证据不足且会减少入门机会。",
+        "en": "Seeks withdrawal or further study, finding education-wage assumptions unsupported and harmful to entry opportunities."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "8718cee33f2a58e1d9d18d5fa0e11daaf49d02818f0190d4bf77d9e211bd3201"
+    },
+    {
+      "id": "ETA-2026-0001-0403",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为突然提高门槛过猛并加剧就业不稳定，主张按经济和地区情况渐进调整。",
+        "en": "Considers abrupt increases excessive and destabilizing, favoring gradual adjustments reflecting economic and regional conditions."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "83acd20cdfe522474cd4aab228790c4c0dc9c6016e0573784ab6aa844392f733"
+    },
+    {
+      "id": "ETA-2026-0001-0216",
+      "stance": "unclear",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求提高H-1B和OPT用工成本以限制滥用，未明确评价本工资提案。",
+        "en": "Seeks higher H-1B and OPT employment costs to curb abuse without clearly evaluating this wage proposal."
+      },
+      "postedDate": "2026-04-08T04:00:00Z",
+      "textSha256": "802c1e0765be4c0ef426269446e4db14a4d0a7df1864134081c63b4c042915e4"
+    },
+    {
+      "id": "ETA-2026-0001-0145",
       "stance": "oppose",
       "themes": [],
       "summary": {
-        "zh": "认为提案会损害国家产业，未进一步说明理由。",
-        "en": "Argues the proposal will harm the country’s industries without elaborating."
+        "zh": "表示完全不喜欢提案，未详述理由。",
+        "en": "Expresses strong dislike of the proposal without elaborating."
       },
-      "textSha256": "ad927cf5219d2e8f7649c3cea59edd11ee337de84f860ee9f29cf8ded011a46d"
+      "postedDate": "2026-04-03T04:00:00Z",
+      "textSha256": "15bb46d605bdce72ef15f86275bfb5df3a1002c773313f56bf3f7a17d13d8286"
     },
     {
-      "id": "ETA-2026-0001-0545",
-      "postedDate": "2026-04-28T04:00:00Z",
+      "id": "ETA-2026-0001-1295",
       "stance": "oppose",
       "themes": [
+        "protection",
+        "enforcement",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "认为工资规则不能解决外迁和招聘滥用，要求本土与外籍用工比例限制。",
+        "en": "Dismisses the wage rule as ineffective against offshoring and hiring abuse and seeks domestic-to-foreign staffing ratios."
+      },
+      "postedDate": "2026-06-24T04:00:00Z",
+      "textSha256": "355648ce7b792fcda82ed7fd92e7f49ce8937bec2c0213d19e2002d41be9fb8e"
+    },
+    {
+      "id": "ETA-2026-0001-1147",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "market",
+        "entry"
+      ],
+      "summary": {
+        "zh": "反对百分位方法不衡量法定教育经验因素，要求撤回或直接采用可比工资。",
+        "en": "Opposes percentiles for not measuring statutory education and experience factors and seeks withdrawal or direct comparable-wage measures."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "9e2cfca40199561a2909d5c4072399625d80362d01b9109275fcf8eea64cfd69"
+    },
+    {
+      "id": "ETA-2026-0001-0257",
+      "stance": "oppose",
+      "themes": [
+        "small",
+        "academic",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对普遍提高门槛，担忧小企业和人才留存，主张强化现行规则执法。",
+        "en": "Opposes blanket increases over small-business and retention harms, favoring enforcement of existing rules."
+      },
+      "postedDate": "2026-04-10T04:00:00Z",
+      "textSha256": "669eb376dff03ac99cbe4608689f22445030217e8c205a099af5eae84a0d1d53"
+    },
+    {
+      "id": "ETA-2026-0001-0637",
+      "stance": "unclear",
+      "themes": [
+        "enforcement",
+        "market"
+      ],
+      "summary": {
+        "zh": "建议限制兼职、核验税务和合并职业分类，未明确评价拟议工资百分位。",
+        "en": "Suggests part-time limits, tax verification, and consolidated classifications without clearly evaluating proposed wage percentiles."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "1683713d2016b91f0663d7c231e54f2baf998253a901c698d75ea6f41c37716b"
+    },
+    {
+      "id": "ETA-2026-0001-0608",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "entry",
+        "protection"
+      ],
+      "summary": {
+        "zh": "认为提高工资门槛将促使初级岗位外迁并损害美国就业。",
+        "en": "Argues higher wage floors would offshore junior roles and harm domestic employment."
+      },
+      "postedDate": "2026-04-29T04:00:00Z",
+      "textSha256": "78e0678410cfdcd94c3c90f193366dd8b40a5bf4e0cc854576d003a3b2b00c91"
+    },
+    {
+      "id": "ETA-2026-0001-0167",
+      "stance": "oppose",
+      "themes": [
+        "small",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提高低等级工资将伤害小企业竞争力并限制双方劳动者机会。",
+        "en": "Argues higher lower-tier wages would hurt small-firm competitiveness and limit opportunities for both domestic and foreign workers."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "79a687f2b65f4ab398ce15d1d4299b8d9d1767d82e5629225277cd05f96ded07"
+    },
+    {
+      "id": "ETA-2026-0001-0062",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "process",
+        "talent"
+      ],
+      "summary": {
+        "zh": "批评经验基准替代方案偏离岗位要求、增加法律风险并扭曲招聘。",
+        "en": "Criticizes experience benchmarking for departing from job requirements, increasing legal risk, and distorting hiring."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "d28e59494a63f92e3e52b73aa7187cf63a98fc023c441ffdbe61cb33a86a763c"
+    },
+    {
+      "id": "ETA-2026-0001-0794",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提高入门门槛伤害新毕业生并导致未来人才流失。",
+        "en": "Argues higher entry thresholds harm graduates and risk losing future talent."
+      },
+      "postedDate": "2026-05-08T04:00:00Z",
+      "textSha256": "51a05ff979e3e1e425bc07f16c593500c59e7724f0ca142ac5a090de45454a1c"
+    },
+    {
+      "id": "ETA-2026-0001-1070",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "process",
+        "talent"
+      ],
+      "summary": {
+        "zh": "要求全面撤回，认为工资分析依据不足且忽视负担较小的替代措施。",
+        "en": "Seeks complete withdrawal, citing inadequate wage analysis and failure to consider less burdensome alternatives."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "7487e7627ff1b9fbe342bed02037d609bc7cb9afdb7c93ea90edc4398d58ab8d",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-1190",
+      "stance": "oppose",
+      "themes": [
+        "process"
+      ],
+      "summary": {
+        "zh": "赞同反对现稿的意见，若推进则要求延后生效、分期和过渡工资安排。",
+        "en": "Endorses opposition to the draft and seeks delayed, phased implementation and transitional wages if pursued."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "a485cfed20c13ece8a34b05863a2922bc135918939a95838fbcefdca8d63eb92"
+    },
+    {
+      "id": "ETA-2026-0001-1286",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-06-12T04:00:00Z",
+      "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0071",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "academic"
+      ],
+      "summary": {
+        "zh": "认为限制签证人才将伤害企业科研和长期竞争力。",
+        "en": "Argues restricting visa talent would harm corporate research and long-term competitiveness."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "d4d750bbd377f805d804790431fb3e6cc09d857996e08ff241fb38587ad97721"
+    },
+    {
+      "id": "ETA-2026-0001-1106",
+      "stance": "oppose",
+      "themes": [
+        "small",
+        "talent",
+        "market"
+      ],
+      "summary": {
+        "zh": "担忧大幅提高工资使小企业无法留用专业人才并扩大大企业优势。",
+        "en": "Warns steep wage increases would prevent small firms retaining specialists and favor large corporations."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "92f102637c579f2ace991fd77d548c6f14c99dbcad06db21bd9f6ebdf10ec8ec"
+    },
+    {
+      "id": "ETA-2026-0001-0918",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection"
+      ],
+      "summary": {
+        "zh": "赞同保护本土劳动者目标，但主张入门工资高于中位数以体现稀缺技能。",
+        "en": "Welcomes domestic-worker protection goals but proposes above-median entry wages to reflect scarce skills."
+      },
+      "postedDate": "2026-05-13T04:00:00Z",
+      "textSha256": "15bacf069c202b8ef934cf22ec21a245953d58497df11e8694c3bf3ddeed4321"
+    },
+    {
+      "id": "ETA-2026-0001-0542",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为固定预算下提高入门工资会减少招聘并损害未来人才培养。",
+        "en": "Argues higher entry wages under fixed budgets would reduce hiring and undermine workforce development."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "dced39f66c65012c3670a7a319184302417c95cce8d0a83699b61f92151cc91d"
+    },
+    {
+      "id": "ETA-2026-0001-1273",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "entry",
+        "academic",
+        "small",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对提案扰乱既有就业并消除入门岗位，要求撤回或过渡保护及针对执法。",
+        "en": "Opposes disruption to existing employment and entry roles, seeking withdrawal or transition protection and targeted enforcement."
+      },
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "519fca117a004de41c5471c35f8881250e89edc4a448b9b4fffa0943daf95f0c"
+    },
+    {
+      "id": "ETA-2026-0001-0981",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "academic"
+      ],
+      "summary": {
+        "zh": "认为入门增幅过大，会妨碍小企业和非营利组织招聘。",
+        "en": "Considers the entry increase excessive and harmful to hiring by small firms and nonprofits."
+      },
+      "postedDate": "2026-05-19T04:00:00Z",
+      "textSha256": "028b0cbf5ad23eb0d0c056139aebc6c999b413214d8c00c1850e56c4a6796b23"
+    },
+    {
+      "id": "ETA-2026-0001-1193",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "process",
+        "market"
+      ],
+      "summary": {
+        "zh": "强烈反对高门槛和缺少过渡，担忧毕业生、小企业、大学及人才外流。",
+        "en": "Strongly opposes high thresholds and absent transitions over graduate, small-firm, university, and talent-loss harms."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "8cbd04e665639dfdd7258f03112274942f2596aff06f113401672a99e8aa88e1"
+    },
+    {
+      "id": "ETA-2026-0001-0943",
+      "postedDate": "2026-05-18T04:00:00Z",
+      "stance": "oppose",
+      "themes": [
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对工资规则，担心有技能人才转往其他国家。",
+        "en": "Opposes the wage rule over skilled talent moving to other countries."
+      },
+      "textSha256": "7184163a124867e3e711adb82e0324458822eb8d99a6b13cd01b5a30bd8a6fbf"
+    },
+    {
+      "id": "ETA-2026-0001-0595",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，未能读取附件，无法判断立场。",
+        "en": "Body refers only to an inaccessible attachment, preventing a stance determination."
+      },
+      "postedDate": "2026-04-29T04:00:00Z",
+      "textSha256": "ac6d9b76a1413682c7dcf49d8e1664d99d06ffccbe39488df676e98eb2d3e7ef",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0704",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "small",
+        "market",
+        "entry"
+      ],
+      "summary": {
+        "zh": "要求取消计划，认为高门槛脱离小城市场并推动岗位外迁。",
+        "en": "Seeks abandonment, arguing high thresholds diverge from small-town markets and encourage offshoring."
+      },
+      "postedDate": "2026-05-01T04:00:00Z",
+      "textSha256": "002cde3a1e5590ab439201388a50426562a33f0ee16ea85ed38f80ee574d06e1"
+    },
+    {
+      "id": "ETA-2026-0001-0328",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "talent",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求撤回，批评工资差距推论及小企业负担，主张经验基准和针对执法。",
+        "en": "Seeks withdrawal, criticizing wage-gap reasoning and small-firm burdens, and favors experience benchmarking and targeted enforcement."
+      },
+      "postedDate": "2026-04-20T04:00:00Z",
+      "textSha256": "07b5d2e05820525a1e72b9e7f02042c3d590ce575e595ab92f6c847938c48e13"
+    },
+    {
+      "id": "ETA-2026-0001-0440",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为提案过度限制入门机会，将迫使美国培养的STEM人才流失。",
+        "en": "Considers the proposal excessively restrictive of entry opportunities and likely to drive away U.S.-trained STEM talent."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "610840f64bd3cf79d5723cfc2168632a1cf417332d39d2c35eb2e4801e2f1447"
+    },
+    {
+      "id": "ETA-2026-0001-0937",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "支持立即实施，认为新门槛减少低薪替代并保护本土和外籍劳动者。",
+        "en": "Supports prompt implementation to reduce low-wage substitution and protect domestic and foreign workers."
+      },
+      "postedDate": "2026-05-15T04:00:00Z",
+      "textSha256": "e658e256fd0241d613144f6d9d9ec69864b3c49426c7503a6007dd2241724bf5"
+    },
+    {
+      "id": "ETA-2026-0001-1167",
+      "stance": "oppose",
+      "themes": [
+        "process",
         "market",
         "entry",
         "small",
@@ -2331,10 +3583,15 @@
         "enforcement"
       ],
       "summary": {
-        "zh": "反对现有文本，认为全面上调损害毕业生和小机构并推动外迁，主张精准执法。",
-        "en": "Opposes the current text over graduate and smaller-institution impacts and offshoring, preferring targeted enforcement."
+        "zh": "要求撤回或重修，批评总量基准及与工资抽签叠加分析不足，主张分级校准和执法。",
+        "en": "Seeks withdrawal or revision, criticizing aggregate benchmarking and incomplete analysis of wage-selection interactions, and favors calibrated tiers and enforcement."
       },
-      "textSha256": "ddfa1ba1bc29e51534081653f4a8d9219947ecb6a9fe6c01fe80270854b64de9"
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "d913ab42f180004a61693d1908461eb61d8e85caa25c9e2b75ff5e407555d444",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body."
+      }
     },
     {
       "id": "ETA-2026-0001-0051",
@@ -2353,279 +3610,83 @@
       "textSha256": "b179fc6220c964b24aae1493b6e21597797e15dd74d762cb14739c6e2f951043"
     },
     {
-      "id": "ETA-2026-0001-0333",
-      "postedDate": "2026-04-21T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "支持工资层级改革，并要求PERM岗位使用雇主通常的招聘渠道公布。",
-        "en": "Supports wage-level changes and requests that PERM jobs appear through employers’ ordinary recruitment channels."
-      },
-      "textSha256": "f2832794269ab90eb2957336913eb75d19145bcc155ee14cbc9374b00d68ef53"
-    },
-    {
-      "id": "ETA-2026-0001-0107",
-      "postedDate": "2026-04-02T04:00:00Z",
+      "id": "ETA-2026-0001-0661",
       "stance": "oppose",
       "themes": [
-        "talent"
-      ],
-      "summary": {
-        "zh": "担心过高工资门槛将人才和创新推向其他国家，削弱美国竞争力。",
-        "en": "Warns excessive wage thresholds will redirect talent and innovation abroad and weaken U.S. competitiveness."
-      },
-      "textSha256": "e1f8a99723d1987a1c1e5a6b36c47b59e3c59ae4cf4c59fafe429c8e74604af8"
-    },
-    {
-      "id": "ETA-2026-0001-0865",
-      "postedDate": "2026-05-11T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
+        "market",
         "entry",
-        "academic",
         "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "要求撤回，认为毕业生就业减少会削弱高校及创新，并加速外包、损害初创企业。",
-        "en": "Seeks rescission, citing reduced graduate opportunities, weaker universities and innovation, outsourcing, and startup harm."
-      },
-      "textSha256": "2add35c0c717603e1c7bbd671630889208e7eeec74a01d035768362babb24c6a"
-    },
-    {
-      "id": "ETA-2026-0001-0485",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry"
-      ],
-      "summary": {
-        "zh": "认为过高入门工资使雇主更偏好有经验者，压缩初级招聘、培训及后续人才供给。",
-        "en": "Argues high entry floors favor experienced hires and constrict junior recruitment, training, and future talent supply."
-      },
-      "textSha256": "f90bc64c60b0a4424c4b488f8bb842451af02fd559a0e4d91605bcb2201aa72c"
-    },
-    {
-      "id": "ETA-2026-0001-0182",
-      "postedDate": "2026-04-06T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "希望终止H-1B或要求工资高于本土员工20%，以优先本土招聘。",
-        "en": "Seeks H-1B cancellation or wages 20% above domestic workers’ pay to prioritize domestic hiring."
-      },
-      "textSha256": "40b7ede3a8ac34586d9f0eaab92624ec876f8d311e368c41d2668e08970a1949"
-    },
-    {
-      "id": "ETA-2026-0001-0170",
-      "postedDate": "2026-04-06T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "entry"
-      ],
-      "summary": {
-        "zh": "认为提高前两级工资破坏职业起点，减少培训、技能成长和未来人才。",
-        "en": "Argues higher Levels I–II undermine career entry, training, skill development, and future talent."
-      },
-      "textSha256": "31aa56e1fa491167cf85ceeb33c9be8c60de736b3ff4e35b7438fb3027430d8c"
-    },
-    {
-      "id": "ETA-2026-0001-1288",
-      "postedDate": "2026-06-12T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to an attachment; readable material does not establish a stance."
-      },
-      "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
-      "sourceNote": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0746",
-      "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "mixed",
-      "themes": [
-        "market",
-        "protection"
-      ],
-      "summary": {
-        "zh": "认可工资调整方向，但要求改用按地区计算的第50百分位基准。",
-        "en": "Accepts the direction of wage adjustments but requests a geographically based 50th-percentile benchmark."
-      },
-      "textSha256": "985add09408cc9af48b82cc955fe39aa35b3f40f8d2697e117e0387e05349ada"
-    },
-    {
-      "id": "ETA-2026-0001-1161",
-      "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "明确支持工资新规，另要求大幅限制OPT以优先本土就业。",
-        "en": "Explicitly supports the wage rule and separately seeks major OPT restrictions to favor domestic employment."
-      },
-      "textSha256": "f5dadec6cbf14901ce1f1f9a119eb3c1b2c41244bdfa6f70a2c6f81d57440364"
-    },
-    {
-      "id": "ETA-2026-0001-0678",
-      "postedDate": "2026-04-30T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
         "academic",
-        "market",
-        "entry",
-        "process"
-      ],
-      "summary": {
-        "zh": "明确反对，认为统一上调不适合科研预算和薪酬，要求分行业分析、科研豁免及累积负担评估。",
-        "en": "Explicitly opposes uniform increases as mismatched to research funding and pay, seeking sector analysis, research exemptions, and cumulative-burden review."
-      },
-      "textSha256": "eea68865fbdde0de6084714de48c0905d38ff2c72b53a2bd286611f9ac005b9e"
-    },
-    {
-      "id": "ETA-2026-0001-1189",
-      "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "担心更高工资门槛阻碍国际毕业生就业，损害人才留存与创新。",
-        "en": "Warns higher wage floors impede international graduates’ employment and harm retention and innovation."
-      },
-      "textSha256": "ea69022790bc283471dc7909fdc35b7d08dff860323fab486b73dd6267e4dfd4"
-    },
-    {
-      "id": "ETA-2026-0001-0674",
-      "postedDate": "2026-04-30T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "small",
-        "entry",
-        "talent"
-      ],
-      "summary": {
-        "zh": "反对上调，认为忽视股权薪酬会挤压初创企业现金、限制毕业生招聘并强化大企业优势。",
-        "en": "Opposes increases, arguing disregard for equity compensation strains startup cash, limits graduate hiring, and advantages large firms."
-      },
-      "textSha256": "c1ff4df928e48198db9ba81e3e6900b24e0bb3dfd42e7270b2549bcf506d3463"
-    },
-    {
-      "id": "ETA-2026-0001-0367",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement",
-        "talent"
-      ],
-      "summary": {
-        "zh": "支持工资规则，指称低薪招聘挤压本土劳工，并要求外包税和更严格签证限制。",
-        "en": "Supports the wage rule, alleging low-paid hiring displaces domestic workers and seeking offshoring taxes and stricter visa limits."
-      },
-      "textSha256": "c1c8db53a410a37f3fddc65a7100c405bb426aabb79d816593b25d0291821812"
-    },
-    {
-      "id": "ETA-2026-0001-0070",
-      "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "academic",
-        "talent"
-      ],
-      "summary": {
-        "zh": "认为政策限制企业和研究机构所需人才，可能削弱长期竞争力。",
-        "en": "Argues the policy restricts talent needed by firms and research institutions and may weaken long-term competitiveness."
-      },
-      "textSha256": "d4d750bbd377f805d804790431fb3e6cc09d857996e08ff241fb38587ad97721"
-    },
-    {
-      "id": "ETA-2026-0001-1156",
-      "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "market",
-        "academic",
-        "small",
         "talent",
         "process"
       ],
       "summary": {
-        "zh": "反对拟议方法，关注地区及行业差异、科研和小雇主预算，并要求过渡期。",
-        "en": "Opposes the methodology over regional and sector differences and research and small-employer budgets, seeking transition periods."
+        "zh": "反对一级增幅，要求按经验分层数据和毕业生过渡期以保留入门招聘。",
+        "en": "Opposes the Level I increase and seeks experience-stratified data and graduate transitions to preserve entry hiring."
       },
-      "textSha256": "6eed25389b40cc6f42adb1166d1d9bcee96ec14e330e18442069b4259c71a30e"
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "151456db4e451131550ebff6c21e78ec8922c6bfc613f482cd4192cbae8acccb"
     },
     {
-      "id": "ETA-2026-0001-0480",
-      "postedDate": "2026-04-27T04:00:00Z",
+      "id": "ETA-2026-0001-0685",
+      "stance": "unclear",
+      "themes": [
+        "academic"
+      ],
+      "summary": {
+        "zh": "正文仅说明评论讨论国际博士后及工资政策，附件未能读取，无法判断立场。",
+        "en": "Body identifies international postdocs and wage policy as the topic; inaccessible attachment prevents a stance determination."
+      },
+      "postedDate": "2026-05-01T04:00:00Z",
+      "textSha256": "397c933052bc2f73dd66779749a3d5a6f9206e770b6bbb03394d0a163b1b25e2",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；正文不足以判断立场。",
+        "en": "Official attachment download returned HTTP 403 and could not be read; the body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0684",
       "stance": "oppose",
       "themes": [
+        "market",
+        "entry",
+        "talent",
+        "small"
+      ],
+      "summary": {
+        "zh": "反对将入门工资提高至第34百分位，担忧毕业生机会、小企业及岗位外迁。",
+        "en": "Opposes the 34th-percentile entry wage, citing graduate opportunities, small businesses, and offshoring."
+      },
+      "postedDate": "2026-05-01T04:00:00Z",
+      "textSha256": "6552d2c8275ea2437dd87d9a45a28899aa19719cd68813e9b096b824822a4e9e"
+    },
+    {
+      "id": "ETA-2026-0001-0458",
+      "stance": "oppose",
+      "themes": [
+        "entry",
         "talent"
       ],
       "summary": {
-        "zh": "认为提高工资要求会推动项目外迁，减少留在美国的岗位。",
-        "en": "Argues higher wage requirements push projects offshore and reduce jobs retained in the United States."
+        "zh": "要求不通过，认为规则剥夺青年入门成长机会并减少人才。",
+        "en": "Seeks rejection, arguing the rule removes young workers' entry and growth opportunities and reduces talent."
       },
-      "textSha256": "32a9050345511a645e7ab1c318d0a9a06bec1ad350224085edaaa942a34faee0"
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "7eca677eaef21daaa770a03c9028ac5dde78ff0984445a8b3677c693b2134e44"
     },
     {
-      "id": "ETA-2026-0001-0220",
-      "postedDate": "2026-04-08T04:00:00Z",
+      "id": "ETA-2026-0001-1255",
       "stance": "support",
       "themes": [
         "market",
         "protection"
       ],
       "summary": {
-        "zh": "明确支持第34百分位入门底线，认为有助于纠正低薪招聘并保护本土劳工。",
-        "en": "Explicitly supports the 34th-percentile entry floor as a correction to low-paid hiring and protection for domestic workers."
+        "zh": "支持全面实施，认为可防止以低薪签证用工排挤本土劳动者。",
+        "en": "Supports full implementation to prevent lower-paid visa hiring from disadvantaging domestic workers."
       },
-      "textSha256": "ba9f4e29483f7e2be518a55b86c1f2a0a5de2ba5411f57d650846dc83c50f09c"
-    },
-    {
-      "id": "ETA-2026-0001-0387",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
-      "themes": [
-        "small",
-        "talent"
-      ],
-      "summary": {
-        "zh": "担心工资要求挤压中小及低利润企业、减少招聘，并让机会集中于大型企业。",
-        "en": "Warns wage requirements squeeze smaller and low-margin firms, reduce hiring, and concentrate opportunities in large companies."
-      },
-      "textSha256": "0010005f1d60d829c625aef8b31b77c264bc1537db005684ba3873225ed34608"
-    },
-    {
-      "id": "ETA-2026-0001-1025",
-      "postedDate": "2026-05-20T04:00:00Z",
-      "stance": "unclear",
-      "themes": [
-        "protection"
-      ],
-      "summary": {
-        "zh": "仅要求保护美国就业，未明确评价工资提案。",
-        "en": "Only calls for protecting American jobs without clearly assessing the wage proposal."
-      },
-      "textSha256": "e3c0da00dc316f177cbb32217543b8b18d98e4f48685f2e80cfaea2753631a60"
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "80b8b02bc464fd08dedfc70aca3e36b36b35d080cd041f0a39f335cd94a5b858"
     },
     {
       "id": "ETA-2026-0001-0292",
@@ -2642,112 +3703,276 @@
       "textSha256": "37862946087d7e37e935d239226920541a5aa25efbc438063ca991fa27757ed5"
     },
     {
-      "id": "ETA-2026-0001-0460",
-      "postedDate": "2026-04-27T04:00:00Z",
-      "stance": "oppose",
+      "id": "ETA-2026-0001-1055",
+      "stance": "support",
       "themes": [
-        "entry",
-        "talent",
+        "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为按工资选取已能抑制滥用，额外提高工资门槛可能不必要并损害年轻人才。",
-        "en": "Argues wage-weighted selection already discourages abuse and additional wage floors may be unnecessary and harm young talent."
+        "zh": "支持工资规则及同酬，并要求结束其他签证路径。",
+        "en": "Supports the wage rule and equal pay and seeks termination of other visa pathways."
       },
-      "textSha256": "f9e8777bb7d7967ccc2ab74d4d6b73b74322d25b3fa7eba00da35e1dbb44e9b9"
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "b8f3a60623c7b2fc76e7ecd7da11b1075db3ad75d9afd718b9b78a70646912b5"
     },
     {
-      "id": "ETA-2026-0001-0034",
-      "postedDate": "2026-04-02T04:00:00Z",
+      "id": "ETA-2026-0001-0657",
       "stance": "oppose",
       "themes": [
+        "market",
+        "small",
+        "academic",
+        "talent",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对过度统一提高工资，担忧人才、既有就业和小雇主，主张针对执法。",
+        "en": "Opposes broad increases over talent, existing-employment, and small-employer harms, favoring targeted enforcement."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "89037aff95c177dab16e596011f7f7e2d1bce01d833c22db450dbca53600eea9"
+    },
+    {
+      "id": "ETA-2026-0001-1067",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向附件，无法据此判断立场。",
+        "en": "Body refers only to an attachment and does not establish a stance."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-0707",
+      "stance": "oppose",
+      "themes": [
+        "market",
         "entry",
         "small",
         "talent",
         "process"
       ],
       "summary": {
-        "zh": "担心突然上调损害入门岗位和小企业并推动外迁，要求逐步调整。",
-        "en": "Warns abrupt increases harm entry jobs and small firms and encourage offshoring, seeking gradual adjustments."
+        "zh": "批评科技中心入门工资门槛失真，建议分期及地区行业差异化调整。",
+        "en": "Criticizes distorted entry thresholds in technology hubs and suggests phased, regional, and sector-specific adjustments."
       },
-      "textSha256": "5cd47ab1d83a0fc78987d39c9dca906deb77d4e7dd8cd3d0d2b587900c598f2d",
-      "sourceNote": {
-        "zh": "正文将拟议入门工资写为第45百分位；摘要不将该说法视为提案事实。",
-        "en": "The body describes the proposed entry floor as the 45th percentile; the summary does not treat that claim as a fact about the proposal."
-      }
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "1324d2009da5510d6ec160bc87a153abc59befb6c7d81fda260d0b87ff1b74d3"
     },
     {
-      "id": "ETA-2026-0001-0709",
-      "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "unclear",
+      "id": "ETA-2026-0001-1199",
+      "stance": "mixed",
       "themes": [
+        "market",
+        "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "批评签证滥用及政治执行不足，要求限制第三方派遣，未明确评价拟议工资方法。",
-        "en": "Criticizes alleged visa abuse and inadequate political enforcement, seeking third-party placement limits without clearly evaluating the wage method."
+        "zh": "认为拟议高低等级均不足，提出第50及95百分位并要求现代招聘和核查。",
+        "en": "Finds proposed lower and upper tiers insufficient, proposing 50th and 95th percentiles plus modern recruitment and verification."
       },
-      "textSha256": "5bb0b457c13a2dbc17622274e534e997fb1d614ef21370cdeb2fb84f6462adac"
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "1e19bcc63befaee376b1f653a2fdf463ddae752ff2a81032aa94d63fb4d861bd"
     },
     {
-      "id": "ETA-2026-0001-0967",
-      "postedDate": "2026-05-18T04:00:00Z",
-      "stance": "mixed",
+      "id": "ETA-2026-0001-0202",
+      "stance": "support",
+      "themes": [],
+      "summary": {
+        "zh": "明确支持H-1B工资规则，未详述理由。",
+        "en": "Explicitly supports the H-1B wage rule without elaborating."
+      },
+      "postedDate": "2026-04-07T04:00:00Z",
+      "textSha256": "ff5d141749ce189a74cdb2c2144a5e9b6cfb79852deb0515ddbf9fb2292239ef"
+    },
+    {
+      "id": "ETA-2026-0001-0172",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为统一增幅忽略低成本地区，减少入门岗位并诱发企业迁移。",
+        "en": "Argues uniform increases overlook lower-cost regions, reducing entry jobs and prompting business relocation."
+      },
+      "postedDate": "2026-04-06T04:00:00Z",
+      "textSha256": "8a4ec59293d27b2f1e409ab1b41bbea2304eed3e4b29839d0d43e3688b229191"
+    },
+    {
+      "id": "ETA-2026-0001-0970",
+      "stance": "support",
       "themes": [
         "market",
         "protection"
       ],
       "summary": {
-        "zh": "认为拟议涨幅仍不足以防止低薪替代，要求20万美元最低工资。",
-        "en": "Finds the proposed increase insufficient against low-paid substitution and seeks a $200,000 wage floor."
+        "zh": "支持提案减少低薪用工动机，并鼓励培养本土人才。",
+        "en": "Supports the proposal to reduce low-wage hiring incentives and encourage domestic workforce investment."
       },
-      "textSha256": "92c20d988c54a80514e54a13e3c1170d5cea38252632a68df33b9cbea06ccff6"
+      "postedDate": "2026-05-19T04:00:00Z",
+      "textSha256": "221d711972e45175d9af03501c05e0fd42572db06de4e2eb4245e5227cb323e4"
     },
     {
-      "id": "ETA-2026-0001-0356",
-      "postedDate": "2026-04-23T04:00:00Z",
+      "id": "ETA-2026-0001-0016",
       "stance": "mixed",
       "themes": [
         "market",
-        "academic",
-        "entry",
-        "talent",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "支持一般职业采用新标准，但要求关键科研工程领域豁免或使用定制工资方法。",
-        "en": "Supports new standards for general occupations but seeks exemptions or tailored wage methods for critical scientific and engineering fields."
+        "zh": "支持提高工资方向，但明确要求不得以第34百分位定案，改用至少中位工资。",
+        "en": "Supports higher-wage goals but expressly rejects finalizing the 34th percentile and seeks at least median entry wages."
       },
-      "textSha256": "0c2fb49fc9c28b8be655d8d736b2bba78facf1578d6b5bceba148c9d5bfff2c6"
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "5ed5d24a794d2193386ef2e69912b19c2ac198a36c73a8e0fed4e055f39e95df"
     },
     {
-      "id": "ETA-2026-0001-0030",
-      "postedDate": "2026-04-02T04:00:00Z",
+      "id": "ETA-2026-0001-0036",
       "stance": "oppose",
       "themes": [
-        "talent"
-      ],
-      "summary": {
-        "zh": "认为提高工资要求会推动项目外迁，减少留在美国的岗位。",
-        "en": "Argues higher wage requirements push projects offshore and reduce jobs retained in the United States."
-      },
-      "textSha256": "32a9050345511a645e7ab1c318d0a9a06bec1ad350224085edaaa942a34faee0"
-    },
-    {
-      "id": "ETA-2026-0001-1060",
-      "postedDate": "2026-05-22T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "protection",
-        "enforcement",
         "process"
       ],
       "summary": {
-        "zh": "要求将工资新规适用于既有签证持有人，并限制第三方派遣和低级别岗位。",
-        "en": "Seeks application of the wage rule to existing visa holders and restrictions on third-party placements and lower-level roles."
+        "zh": "认为突然提高工资要求带来不确定性并冻结招聘。",
+        "en": "Argues sudden wage increases create uncertainty and hiring freezes."
       },
-      "textSha256": "14246974f0c1d92c86830e687049d8317246fbf7a693a724ef553c1e685b1746"
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "2420c8319e78ad6990ecdd4159a2a2d1d7647fd683034840c53966dd9605d385"
+    },
+    {
+      "id": "ETA-2026-0001-0841",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对缺乏依据的大幅提升，担忧毕业生和科研企业，要求撤回或针对性改革。",
+        "en": "Opposes unsupported steep increases over graduate and research-employer harms and seeks withdrawal or targeted reform."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "539fce15d59f74e911edce58be4629d87e568d26122938d466463b21e80e20cc"
+    },
+    {
+      "id": "ETA-2026-0001-1242",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "talent",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为高工资要求伤害公立大学科研和人才吸引力，建议降低高校增幅。",
+        "en": "Argues high requirements harm public-university research and recruitment and suggests smaller increases for higher education."
+      },
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "820c610184483ecfeea11a0beeafe06ec6fa6a6cf390ff3f67239734f999c018"
+    },
+    {
+      "id": "ETA-2026-0001-0511",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "talent",
+        "process",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "要求保留现有框架，避免中级人才和PERM负担，并加强违规执法。",
+        "en": "Seeks the current framework to avoid burdens on mid-career talent and PERM processes, with stronger enforcement."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "f5f893fa777c6edd4ecb1ab06d891b36b8f36c1188a5967c80e3d503b942c498"
+    },
+    {
+      "id": "ETA-2026-0001-0348",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "主张以经验基准或更高百分位替代提案，并强化招聘和工资核查。",
+        "en": "Favors experience benchmarking or higher percentiles instead of the proposal, alongside recruitment and wage verification."
+      },
+      "postedDate": "2026-04-22T04:00:00Z",
+      "textSha256": "5d19c8c9b7ffd327498bff10610ad17678d7144ee2cfe3c816be3768785cf45e"
+    },
+    {
+      "id": "ETA-2026-0001-0882",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "process",
+        "small",
+        "market"
+      ],
+      "summary": {
+        "zh": "要求撤回，担忧外迁、续签转职不稳及小企业被排除。",
+        "en": "Seeks withdrawal over offshoring, renewal and transfer instability, and small-firm exclusion."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "b09c00f25d85624a4120ca071e023ddedd693de7341f4033dec444d5dda1613b"
+    },
+    {
+      "id": "ETA-2026-0001-1130",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "talent"
+      ],
+      "summary": {
+        "zh": "要求不提高门槛，以保留小型高校聘用国际教师和国际教育机会。",
+        "en": "Seeks no increase to preserve smaller colleges' international faculty hiring and educational opportunities."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "95bfa9d8618db66125b7a429f4ff6fc39329d3805fe99313dc710082fc826708"
+    },
+    {
+      "id": "ETA-2026-0001-0871",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "small",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对缺乏实证的工资调整，担忧小企业负担及人才不足，要求撤回。",
+        "en": "Opposes empirically unsupported adjustments over small-business burdens and talent shortages and seeks withdrawal."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "af439ab280f4913f5cd9b3dcad32d5ba324fd5bc13ca02aea25a644ea1773522"
+    },
+    {
+      "id": "ETA-2026-0001-0241",
+      "stance": "mixed",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为现有方向迟来且不足，要求数倍工资溢价、本土用工比例及更强核查。",
+        "en": "Finds the direction overdue and insufficient, seeking multiple-fold wage premiums, domestic staffing ratios, and stronger checks."
+      },
+      "postedDate": "2026-04-09T04:00:00Z",
+      "textSha256": "6e54b7ee47939a5ae2eb8d1dc27e62299aa704a0779ebf4d32c5a52cec2966f6"
     },
     {
       "id": "ETA-2026-0001-0391",
@@ -2767,104 +3992,222 @@
       "textSha256": "d9d28c5d253b959de85b51f54f6582b5de3fdbfadc7880f6c991f52e497529fa"
     },
     {
-      "id": "ETA-2026-0001-1212",
-      "postedDate": "2026-05-26T04:00:00Z",
-      "stance": "unclear",
-      "themes": [],
-      "summary": {
-        "zh": "正文仅指向附件，无法从可读材料判断立场。",
-        "en": "The body only refers to an attachment; readable material does not establish a stance."
-      },
-      "textSha256": "3e81fe50069deb77177b82ab691ff141de66f86b95a1502d3ecadfeb6bcbe795",
-      "sourceNote": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "id": "ETA-2026-0001-0204",
-      "postedDate": "2026-04-07T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "market",
-        "protection",
-        "enforcement"
-      ],
-      "summary": {
-        "zh": "明确支持工资改革，并鼓励提高至第50百分位以及增设费用、裁员和外包限制。",
-        "en": "Explicitly supports wage reform and encourages the 50th percentile alongside fees and layoff and outsourcing restrictions."
-      },
-      "textSha256": "4700a5396111f996894b475aaa7ca4da0d669a8c7e3c665e429323311407ae1f"
-    },
-    {
-      "id": "ETA-2026-0001-0271",
-      "postedDate": "2026-04-13T04:00:00Z",
-      "stance": "support",
-      "themes": [
-        "process",
-        "protection"
-      ],
-      "summary": {
-        "zh": "支持工资新规，并要求适用于所有既有H-1B持有人。",
-        "en": "Supports the wage rule and requests application to all existing H-1B holders."
-      },
-      "textSha256": "2f4a30c2f82d1cf668e9ea420a50158b0afab2274a98c3fffabde987b1944af2"
-    },
-    {
-      "id": "ETA-2026-0001-0433",
-      "postedDate": "2026-04-27T04:00:00Z",
+      "id": "ETA-2026-0001-0426",
       "stance": "oppose",
       "themes": [
-        "market",
-        "process",
+        "entry",
+        "small",
         "talent"
       ],
       "summary": {
-        "zh": "要求撤回，认为突然上调会破坏既有员工续签及PERM安排并使雇主失去熟练员工。",
-        "en": "Requests withdrawal, arguing abrupt increases disrupt existing workers’ extensions and PERM plans and cost employers experienced staff."
+        "zh": "认为提案损害国家利益，排除入门人才并促使小企业外包。",
+        "en": "Argues the proposal harms national interests by excluding entry talent and encouraging small-firm outsourcing."
       },
-      "textSha256": "301a6b93892bc84a4e442b9cd968d08dde7b2302d2c4927c0ffae2347853623e"
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "c8f852efc873d3d12f1431fd1470bda4aa1eb91b383d0c660546e6fc54a5cab0"
     },
     {
-      "id": "ETA-2026-0001-0577",
-      "postedDate": "2026-04-28T04:00:00Z",
+      "id": "ETA-2026-0001-1054",
+      "stance": "support",
+      "themes": [
+        "entry",
+        "protection"
+      ],
+      "summary": {
+        "zh": "支持计划，认为可减少廉价用工并优先本土毕业生机会。",
+        "en": "Supports the plan to reduce cheaper hiring and prioritize domestic graduates' opportunities."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "608b632b6a8cdec8eeb532f187bdef2631c17a7fa44010b660e97ec4e8517527"
+    },
+    {
+      "id": "ETA-2026-0001-0020",
       "stance": "oppose",
       "themes": [
         "small",
+        "market",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "认为统一门槛阻碍合法创业，要求为真实初创企业及并行H-1B创业提供调整。",
+        "en": "Argues uniform floors obstruct lawful entrepreneurship and seeks accommodations for genuine startups and concurrent H-1B founders."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "07e58fcf7337f0cb8c1b390020b03f0cadd51404e7b76d2b68a8b07076c04e00"
+    },
+    {
+      "id": "ETA-2026-0001-0521",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "process",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对门槛与工资选取规则叠加伤害既有案件和毕业生，要求撤回或过渡保护。",
+        "en": "Opposes threshold and wage-selection interactions harming existing cases and graduates, seeking withdrawal or transition protection."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "50b56ee5e146532155ee82455328391a66ea932bffabc2774e8200f9983a589a"
+    },
+    {
+      "id": "ETA-2026-0001-0667",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对现稿，认为统一高门槛排除合法岗位和公共科研雇主，应针对违规执法。",
+        "en": "Opposes the draft as excluding legitimate roles and public research employers, favoring targeted enforcement."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "e880bd7a0cc03cad58860c4a1732f9978b3deb561113070ac765055f7c807b4a"
+    },
+    {
+      "id": "ETA-2026-0001-0730",
+      "stance": "oppose",
+      "themes": [
+        "academic",
+        "process",
+        "market"
+      ],
+      "summary": {
+        "zh": "批评未分析弱势地区公校影响，要求保留教师现行工资并研究较小负担方案。",
+        "en": "Criticizes missing analysis of underserved public schools and seeks existing teacher wages and less burdensome alternatives."
+      },
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "b95c70b8e923fc411524ec802d5b32e140e6c9bb831c160b17db73c77230aaaa"
+    },
+    {
+      "id": "ETA-2026-0001-0309",
+      "stance": "oppose",
+      "themes": [
+        "protection",
+        "enforcement",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对现稿，认为提高工资不能解决滥用，要求先进行全面招聘和用工核查。",
+        "en": "Opposes the draft as failing to address abuse and demands comprehensive recruitment and employment checks first."
+      },
+      "postedDate": "2026-04-16T04:00:00Z",
+      "textSha256": "e7efc986c2089fce3ef52f9cb75e9e9858c44b4ead6f1fa3fd0a57afe3a6c066"
+    },
+    {
+      "id": "ETA-2026-0001-0408",
+      "stance": "oppose",
+      "themes": [
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对提高门槛和复杂性，担忧招聘、创新和人才短缺进一步恶化。",
+        "en": "Opposes higher thresholds and complexity over worsening hiring, innovation, and talent shortages."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "ebaecb5168f9c40e6761afc224109b4b99c4589004eb29724ba7b9d730c878ca"
+    },
+    {
+      "id": "ETA-2026-0001-0630",
+      "stance": "oppose",
+      "themes": [
         "entry",
         "talent"
       ],
       "summary": {
-        "zh": "认为上调会削减小企业初级招聘、拖慢创新，并让招聘机会向大企业集中。",
-        "en": "Argues increases reduce small firms’ junior hiring, slow innovation, and concentrate opportunities in large employers."
+        "zh": "认为规则伤害毕业生并加剧美国人才流失。",
+        "en": "Argues the rule harms graduates and worsens U.S. talent loss."
       },
-      "textSha256": "86813c3621e5a435bbc033604bc0870b75d66f4acf71202c8385dfa5148bbdd5"
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "da42aeffda9d739e4ccc3ee95399a78c4672beed23b748ace4112e3d19ee46e1"
     },
     {
-      "id": "ETA-2026-0001-0476",
-      "postedDate": "2026-04-27T04:00:00Z",
+      "id": "ETA-2026-0001-0813",
       "stance": "oppose",
-      "themes": [],
+      "themes": [
+        "small",
+        "academic",
+        "entry",
+        "talent",
+        "market",
+        "process",
+        "enforcement"
+      ],
       "summary": {
-        "zh": "明确反对，认为不公平且损害勤劳员工，未进一步说明机制。",
-        "en": "Explicitly opposes the proposal as unfair and harmful to hardworking people, without further explanation."
+        "zh": "担忧提案增加大企业优势、外迁和招聘不确定性，要求重审并针对滥用执法。",
+        "en": "Warns of large-firm advantages, offshoring, and hiring uncertainty and seeks reconsideration and targeted enforcement."
       },
-      "textSha256": "5d80bca32d812658e8f7e49a412946857979042c843116bef1fc92427fa04e5d"
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "351d8a6141100da01b1ed58c04b02996246cfb1e3246488cda627842fed3edd9"
     },
     {
-      "id": "ETA-2026-0001-0478",
-      "postedDate": "2026-04-27T04:00:00Z",
+      "id": "ETA-2026-0001-0639",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "担忧过高工资要求阻断高级STEM毕业生进入职场并削弱创新。",
+        "en": "Warns excessive wages would block advanced STEM graduates' workforce entry and weaken innovation."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "57c77c5ea26511abfd879c48d6557179ce30fa826b1cd47de0dcae04043e28dc"
+    },
+    {
+      "id": "ETA-2026-0001-0869",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "academic",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "反对过猛加薪门槛，担忧毕业生、小雇主和既有劳动者流失。",
+        "en": "Opposes excessive increases over harms to graduates, small employers, and retention of existing workers."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "2ff7148d519bc406e37e7057801f3627f47eaa7ef0b793f2d7f7ea182c6b1bca"
+    },
+    {
+      "id": "ETA-2026-0001-0714",
       "stance": "unclear",
-      "themes": [],
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
       "summary": {
-        "zh": "仅有含糊的改善表述，无法判断对提案的立场。",
-        "en": "Provides only a vague reference to improvement, insufficient to determine a stance on the proposal."
+        "zh": "指称签证用工导致失业并要求取消项目，未明确评价本工资提案。",
+        "en": "Alleges visa hiring caused unemployment and seeks program abolition without clearly evaluating this wage proposal."
       },
-      "textSha256": "dcd3d2a7a6492abe54f5fa6855d8cf9359e024da7b529c910c6651d9ddbbc158"
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "82f4d043ddac4fe443da90f87e72756859876d2caa8411b494d9cadf3914e9b2"
     },
     {
-      "id": "ETA-2026-0001-0687",
-      "postedDate": "2026-05-01T04:00:00Z",
+      "id": "ETA-2026-0001-0817",
+      "stance": "oppose",
+      "themes": [
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对提案，认为其阻碍STEM人才并削弱技术优势。",
+        "en": "Opposes the proposal as deterring STEM talent and weakening technological competitiveness."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "dda312268164cffac9f3c8bd238b7afdf9dbded653e90027aab9d74f1e25323f"
+    },
+    {
+      "id": "ETA-2026-0001-0142",
       "stance": "support",
       "themes": [
         "market",
@@ -2872,18 +4215,15 @@
         "enforcement"
       ],
       "summary": {
-        "zh": "明确支持最终实施，并要求更高工资倍数、限于第四级及加强招聘核查和执法。",
-        "en": "Explicitly supports finalization and seeks higher wage multipliers, Level IV-only certification, recruitment checks, and enforcement."
+        "zh": "支持规则作为良好开端，同时要求更严期限、用工税和派遣限制。",
+        "en": "Supports the rule as a good start, alongside stricter duration, hiring-tax, and placement limits."
       },
-      "textSha256": "0e571e3b83994b30244a899861bcd0ed84394ddef964d854833ebcf4ced21ae2",
-      "sourceNote": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
+      "postedDate": "2026-04-03T04:00:00Z",
+      "textSha256": "53512ccf8b78804f8ada6808c4985f03e9127d64ff0c781fb9ff5146e47e39a2"
     },
     {
-      "id": "ETA-2026-0001-1245",
-      "postedDate": "2026-05-28T04:00:00Z",
+      "id": "ETA-2026-0001-0040",
+      "postedDate": "2026-04-02T04:00:00Z",
       "stance": "mixed",
       "themes": [
         "market",
@@ -2891,10 +4231,297 @@
         "enforcement"
       ],
       "summary": {
-        "zh": "认为第34百分位不足，建议H-1B依赖雇主的入门底线改为第52百分位，并禁止降级转职。",
-        "en": "Finds the 34th percentile insufficient, proposing the 52nd for H-1B-dependent employers and prohibiting moves to lower wage levels."
+        "zh": "认为应以高于第50百分位作为入门底线，并提出审计和更严格的签证限制。",
+        "en": "Calls for an entry floor above the 50th percentile, audits, and stricter visa restrictions."
       },
-      "textSha256": "2822450906d43448c356b629073262e1fa7999029e4e8c9cd5a395568b964ca9"
+      "textSha256": "58c8f0b29317d31ee3a9f187aa1a3f7f079250cd80a4f4b67182b41e0dd8f414"
+    },
+    {
+      "id": "ETA-2026-0001-0283",
+      "stance": "oppose",
+      "themes": [],
+      "summary": {
+        "zh": "反复表达不同意，认为提案不合理，未给具体理由。",
+        "en": "Repeatedly disagrees and calls the proposal unreasonable without specific reasons."
+      },
+      "postedDate": "2026-04-14T04:00:00Z",
+      "textSha256": "cbb8145c8341c2951074e064be6b0cdda171d8306f974e96d30c7f782f261583"
+    },
+    {
+      "id": "ETA-2026-0001-0734",
+      "postedDate": "2026-05-04T04:00:00Z",
+      "stance": "unclear",
+      "themes": [
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "明确支持按工资选取H-1B，但内容针对抽签机制，不能据此判断对本工资方法的立场。",
+        "en": "Explicitly supports wage-based H-1B selection, but discusses the lottery rather than this wage methodology."
+      },
+      "textSha256": "6df69a0e9f1ed51358920110bfb22348d58d589eb58032e0b6892ed2bac9d0f1",
+      "sourceNote": {
+        "zh": "正文针对另一项按工资选取H-1B的制度；未将其支持态度自动算作支持本项工资提案。",
+        "en": "The body concerns a separate wage-based H-1B selection policy; its support is not treated as support for this wage proposal."
+      }
+    },
+    {
+      "id": "ETA-2026-0001-1085",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "market",
+        "process"
+      ],
+      "summary": {
+        "zh": "批评经济分析未充分考虑外迁和自动化，认为规则可能减少国内技能岗位。",
+        "en": "Criticizes insufficient modeling of offshoring and automation and warns the rule could reduce domestic skilled jobs."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "aad8e918d5682f0e9a28789028e751e0bb49911e2eafbc6ec1e562deecd2e42f"
+    },
+    {
+      "id": "ETA-2026-0001-1115",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "small"
+      ],
+      "summary": {
+        "zh": "认为规则将加剧人才短缺、伤害初创企业和美国技术竞争力。",
+        "en": "Argues the rule would worsen talent shortages and harm startups and technological competitiveness."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "c57d58845a42b13f78c58fbca711c7d464997118052f813a87108a0a1c0d3e35"
+    },
+    {
+      "id": "ETA-2026-0001-0979",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent",
+        "academic",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为规则将减少所有入门招聘并推动外迁，要求按地区评估影响。",
+        "en": "Argues the rule would reduce all entry hiring and encourage offshoring, seeking local impact assessment."
+      },
+      "postedDate": "2026-05-19T04:00:00Z",
+      "textSha256": "64c850394fcc58cf41be2cede2de8027d8d40d13156116224ef86d52f5feec32"
+    },
+    {
+      "id": "ETA-2026-0001-0543",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent",
+        "small",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对提案推动岗位与消费外流，主张打击欺诈而保留正常人才竞争。",
+        "en": "Opposes offshoring and lost spending, favoring fraud enforcement while preserving legitimate talent competition."
+      },
+      "postedDate": "2026-04-28T04:00:00Z",
+      "textSha256": "a09e98f9e0ce20177b8aaee89035d41d70b07cfb991fb75c31340a40437903b5"
+    },
+    {
+      "id": "ETA-2026-0001-0052",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "认为高工资控制扭曲市场、减少毕业生机会并推动岗位外迁。",
+        "en": "Argues high wage controls distort markets, reduce graduate opportunities, and encourage offshoring."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "0111dec68469632b78a754533199888d680ad4890be8ff77c23d702894bda4e3"
+    },
+    {
+      "id": "ETA-2026-0001-0294",
+      "stance": "oppose",
+      "themes": [
+        "small",
+        "market",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "担忧提升门槛排除初创企业，要求小企业保留现行工资或长期分期。",
+        "en": "Warns higher thresholds exclude startups and seeks current wages or extended phasing for small firms."
+      },
+      "postedDate": "2026-04-15T04:00:00Z",
+      "textSha256": "1b05a8581a7282b78451c4817cf0330f9e865a59306b8febf7c4c8db68772254"
+    },
+    {
+      "id": "ETA-2026-0001-0723",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对加薪门槛，认为固定招聘预算下会减少青年岗位和人才培养。",
+        "en": "Opposes higher floors as reducing junior positions and workforce development under fixed hiring budgets."
+      },
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "01035f24bc3af982cf7034ad1d57ed2374b7663f2a14c00df4c21d4c91390872"
+    },
+    {
+      "id": "ETA-2026-0001-0057",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持实施提案，认为可回应工资停滞和项目滥用并优先本土就业。",
+        "en": "Supports implementation to address stagnant wages and alleged program abuse and prioritize domestic employment."
+      },
+      "postedDate": "2026-04-02T04:00:00Z",
+      "textSha256": "70414f4f784b0eaed11f8d95398484d159008ebec36a3f40b93d23aada9ce8c4"
+    },
+    {
+      "id": "ETA-2026-0001-0717",
+      "stance": "oppose",
+      "themes": [
+        "talent",
+        "market"
+      ],
+      "summary": {
+        "zh": "认为大幅加薪要求不合理，会加剧技术人才短缺并削弱竞争力。",
+        "en": "Considers sharp increases unreasonable and likely to worsen technical shortages and competitiveness."
+      },
+      "postedDate": "2026-05-04T04:00:00Z",
+      "textSha256": "1a558876a6534307e86ad3835f69535187967431b6f7ba1b630b4cbf3ea7f534"
+    },
+    {
+      "id": "ETA-2026-0001-0509",
+      "stance": "oppose",
+      "themes": [
+        "market",
+        "entry",
+        "small",
+        "talent",
+        "process"
+      ],
+      "summary": {
+        "zh": "要求撤回，批评缺乏依据的工资控制减少招聘并扩大市场集中。",
+        "en": "Seeks withdrawal, criticizing unsupported wage controls for reducing hiring and increasing concentration."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "9eb7d4f9e07356e97a74e19028523156a53ccc8ee4a53431ef22c094b7fbcc16"
+    },
+    {
+      "id": "ETA-2026-0001-1163",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "强烈支持提高工资，并建议裁员保护、举报奖励和更严雇主处罚。",
+        "en": "Strongly supports higher wages and suggests layoff protections, whistleblower incentives, and stronger employer penalties."
+      },
+      "postedDate": "2026-05-26T04:00:00Z",
+      "textSha256": "ae78a3976e1a9d7e834178fae99e8afa714319ab30d609da5150c0933ccb1639"
+    },
+    {
+      "id": "ETA-2026-0001-0838",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "market",
+        "entry",
+        "small",
+        "talent"
+      ],
+      "summary": {
+        "zh": "反对法律和数据依据，担忧中型企业无法招聘并外包项目，要求撤回。",
+        "en": "Challenges legal and data foundations and warns mid-sized firms would halt hiring and outsource projects, seeking withdrawal."
+      },
+      "postedDate": "2026-05-11T04:00:00Z",
+      "textSha256": "b8245a72c673ebc73889ea4d5713fd0fe90ec94dfc00225c739b929bb4939db2"
+    },
+    {
+      "id": "ETA-2026-0001-0466",
+      "stance": "oppose",
+      "themes": [
+        "process",
+        "entry"
+      ],
+      "summary": {
+        "zh": "认为政策变动过快且工资已上调，新要求将超出雇主承受能力。",
+        "en": "Views policy changes as too rapid and new requirements as unaffordable after existing salary increases."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "450e272d6278c3dfac6abfb83a939c50ce0a658322626c7829683f0390de4512"
+    },
+    {
+      "id": "ETA-2026-0001-0624",
+      "stance": "support",
+      "themes": [
+        "protection",
+        "entry",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持工资规则，并要求结束OPT以回应其所称本土岗位替代。",
+        "en": "Supports the wage rule and seeks OPT termination over alleged domestic displacement."
+      },
+      "postedDate": "2026-04-30T04:00:00Z",
+      "textSha256": "cd77b0d904fe69c1827dda8e82aabc566e3864e6a0780d6f26a4df10258192f7"
+    },
+    {
+      "id": "ETA-2026-0001-0380",
+      "stance": "oppose",
+      "themes": [
+        "entry",
+        "academic",
+        "small",
+        "talent",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "反对提高门槛切断教育就业衔接，主张保留入门机会并加强分类执法。",
+        "en": "Opposes barriers between education and employment, favoring entry opportunities and stronger classification enforcement."
+      },
+      "postedDate": "2026-04-27T04:00:00Z",
+      "textSha256": "7c119665461028fc975939b9732cf5ec4e3822406265e2d3094a54dad2f25510"
+    },
+    {
+      "id": "ETA-2026-0001-1269",
+      "stance": "support",
+      "themes": [
+        "market",
+        "protection",
+        "enforcement"
+      ],
+      "summary": {
+        "zh": "支持拟议百分位，并要求资助限定资格的非营利机构监督PERM招聘公开性。",
+        "en": "Supports proposed percentiles and seeks grants to restricted-eligibility nonprofits overseeing PERM recruitment visibility."
+      },
+      "postedDate": "2026-05-28T04:00:00Z",
+      "textSha256": "d81e38b58dae12d9caa7164110ca1f9b913970b25e1c8b0938cbe9ffe633a48b"
+    },
+    {
+      "id": "ETA-2026-0001-1034",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "正文仅指向评论信附件，无法据此判断立场。",
+        "en": "Body refers only to an attached comment letter and does not establish a stance."
+      },
+      "postedDate": "2026-05-22T04:00:00Z",
+      "textSha256": "8eaff642594f6dd317267a7fb41cfbbd12f7b563aa0698740f2c78c0d039f1c6",
+      "sourceNote": {
+        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
+        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+      }
     }
   ],
   "codebook": [
@@ -2971,132 +4598,29 @@
       }
     }
   ],
-  "commentPhase": "closed",
   "commentDeadline": "2026-05-26",
+  "summary": {
+    "policyId": "prevailing-wage",
+    "publishedCount": 1298,
+    "deadline": "2026-05-26",
+    "sampleSize": 200,
+    "seed": "88ea200eaadcf41e6dc9077541213ababfeaffafffcbde540b20a662b8906871",
+    "counts": {
+      "oppose": 120,
+      "support": 35,
+      "mixed": 18,
+      "unclear": 27
+    },
+    "percentages": {
+      "oppose": 60.0,
+      "support": 17.5,
+      "mixed": 9.0,
+      "unclear": 13.5
+    }
+  },
+  "commentPhase": "closed",
   "scopeNote": {
     "zh": "提案涉及H-1B、H-1B1、E-3及PERM工资确定；部分评论讨论另行制定的H-1B选取机制。",
     "en": "The proposal covers wage determinations for H-1B, H-1B1, E-3, and PERM; some comments discuss a separate H-1B selection policy."
-  },
-  "expandedAt": "2026-09-12T12:42:23.153Z",
-  "sampleSize": 100,
-  "bodyReviewCompletedOn": "2026-09-12",
-  "attachmentGaps": [
-    {
-      "commentId": "ETA-2026-0001-1162",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1162/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-0195",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-0195/attachment_1.txt",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-0195",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-0195/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1263",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1263/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1081",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1081/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1254",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1254/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1291",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1291/attachment_2.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1291",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1291/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1010",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1010/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1288",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1288/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-1212",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-1212/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-0687",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-0687/attachment_1.pdf",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    },
-    {
-      "commentId": "ETA-2026-0001-0687",
-      "url": "https://downloads.regulations.gov/ETA-2026-0001-0687/attachment_1.txt",
-      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
-      "note": {
-        "zh": "官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。",
-        "en": "Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable."
-      }
-    }
-  ]
+  }
 }

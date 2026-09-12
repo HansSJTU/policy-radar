@@ -9,7 +9,6 @@ export type CommentSample = {
   scopeNote?: { zh: string; en: string };
   publishedCount: number;
   sampleSize: number;
-  expandedAt?: string;
   status: 'pending' | 'reviewed';
   sampledAt?: string;
   seed?: string;

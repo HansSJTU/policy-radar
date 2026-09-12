@@ -7,8 +7,8 @@ export default {
   publishedCount: 526,
   frameSize: 526,
   status: 'reviewed',
-  sampledAt: '2026-09-12T12:27:21.096Z',
-  seed: '7870361dc317ce8e3b24c30fb36617239fc4fd7c841280b51bc5bbb35a58eeb6',
+  sampledAt: '2026-09-12T13:09:25.966Z',
+  seed: 'cc252988a5ddf32b884d796de1e693551269b00b7d5fa7d0643fb14307bcf354',
   manifestUrl: '/comment-samples/grace-period-2026-09-12.json',
   themes: [
     {
@@ -95,174 +95,6 @@ export default {
   ],
   comments: [
     {
-      id: 'USCIS-2026-0364-0409',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent'],
-      summary: {
-        zh: '要求保留60天，以便完成招聘和签证手续并保护家庭稳定。',
-        en: 'Seeks to retain 60 days for hiring and visa filings while protecting family stability.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '391bdde5251142e6f29626aff71941c29a60a5630be0f37588f236e61f8475dd',
-    },
-    {
-      id: 'USCIS-2026-0364-0027',
-      stance: 'support',
-      themes: ['temporary'],
-      summary: {
-        zh: '认为工作结束应终止相应停留，反对以宽限期反复寻找担保延续临时身份。',
-        en: 'Argues that employment ending should end the corresponding stay rather than enable repeated sponsorship bridges.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'cc0ad9fc6da5e4f3d8bc058e32c496717eccc3b0d735ec6da54692c31f355713',
-    },
-    {
-      id: 'USCIS-2026-0364-0285',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances'],
-      summary: {
-        zh: '认为搬迁、财务善后和儿童转学需要合理时间，要求保留宽限期。',
-        en: 'Requests retention because relocation, financial arrangements, and school transitions take time.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '6c5ea7366695971302587e4daca15cb4436c180c907bac2ffcd13941a1906cc7',
-    },
-    {
-      id: 'USCIS-2026-0364-0354',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'legal', 'enforcement'],
-      summary: {
-        zh: '要求保留过渡期以便家庭有序离境或维持合法身份，并以定向措施处理滥用。',
-        en: 'Seeks retention for orderly family departure or lawful status transitions, with targeted measures against misuse.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '90143d6eedcd6020e85e89d7d89603a246adcf4065816f464a961b6422635d6d',
-    },
-    {
-      id: 'USCIS-2026-0364-0165',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
-      summary: {
-        zh: '质疑取消的实践可行性及行政减负理由，强调家庭信赖与企业转雇主手续。',
-        en: 'Questions practical feasibility and administrative savings, emphasizing family reliance and employer transfer filings.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '42a1f197f2f1d01f7f058f01c9fd2911fd9ab791ce1a6155bb6c26d2fd769590',
-    },
-    {
-      id: 'USCIS-2026-0364-0479',
-      stance: 'support',
-      themes: ['domestic'],
-      summary: {
-        zh: '支持取消，认为应优先保障美国人的工作机会。',
-        en: 'Supports repeal to prioritize jobs for Americans.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'd826b78ec2e02cfe27ea5f78445c551b95908b917b572a3ada6163a1ff3746e3',
-    },
-    {
-      id: 'USCIS-2026-0364-0129',
-      stance: 'oppose',
-      themes: ['family', 'alternatives'],
-      summary: {
-        zh: '认为60天必不可少，希望延至120天，并诉及长期绿卡等待对家庭的影响。',
-        en: 'Calls 60 days necessary, seeks 120 days, and describes family hardship during a long green-card wait.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '8851799458b61699895e4768d811a8578f92eda8ec43ba519dffc4327d3bb6b0',
-    },
-    {
-      id: 'USCIS-2026-0364-0242',
-      stance: 'oppose',
-      themes: ['finances', 'domestic', 'legal', 'alternatives'],
-      summary: {
-        zh: '要求撤回，质疑信赖利益及工资影响分析；退而要求保护已在境内者。',
-        en: 'Requests withdrawal, challenges reliance and wage analysis, and alternatively seeks grandfathering.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'a4223144cd7866b3c2f2e153bfa916fb84de820f4276e75386a9d9ad21dcd8f9',
-    },
-    {
-      id: 'USCIS-2026-0364-0236',
-      stance: 'oppose',
-      themes: [],
-      summary: {
-        zh: '直接表示反对本规则，未提供理由。',
-        en: 'States opposition to the rule without reasons.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '190ec4cc4660270be8bbcfec968f68f0fb5089f795e4f800c2bf5dfda6b1c3fd',
-    },
-    {
-      id: 'USCIS-2026-0364-0510',
-      stance: 'oppose',
-      themes: ['transition', 'talent', 'enforcement'],
-      summary: {
-        zh: '认为取消会将科技与科研人才推向其他国家，主张保留并定向查处滥用。',
-        en: 'Argues repeal would drive scientific talent abroad; seeks retention and targeted enforcement.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'efb6f7b174ee9d701aed38bb691ef6a17d67b920e613538a58395b6580c21233',
-    },
-    {
-      id: 'USCIS-2026-0364-0340',
-      stance: 'oppose',
-      themes: ['family', 'alternatives'],
-      summary: {
-        zh: '认为长期等待绿卡的家庭被迫迁离会伤害子女及未来世代，负面后果更大。',
-        en: 'Argues uprooting long-settled, backlogged families would harm children and future generations.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '0f311fae26fd9bde604eb01020520332350e51069c28bcccc06bda5429ada115',
-    },
-    {
-      id: 'USCIS-2026-0364-0368',
-      stance: 'support',
-      themes: ['domestic', 'enforcement'],
-      summary: {
-        zh: '支持采取该措施，并声称移民劳动力压低工资，要求加强遣返。',
-        en: 'Supports the measure, alleges immigrant labor depresses wages, and calls for stronger removals.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'fff633cbb799bdfe27aa805400ead43f7e210d50f3fdfbf9a69154e26f4a7414',
-    },
-    {
-      id: 'USCIS-2026-0364-0405',
-      stance: 'support',
-      themes: ['temporary', 'domestic', 'enforcement'],
-      summary: {
-        zh: '支持涵盖TN等类别的取消方案，认为临时签证应回归临时用途，并提出资质欺诈指控。',
-        en: 'Supports repeal across covered categories including TN, stresses temporary visas, and alleges credential fraud.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'a90d99b319b8ae5e5e43f937960d3bc3b04931b33c58dec538a8909d15b30a8f',
-    },
-    {
-      id: 'USCIS-2026-0364-0472',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'legal', 'transition'],
-      summary: {
-        zh: '要求保留时间处理子女教育、房产和持续医疗，并认为取消会增加紧急申请。',
-        en: 'Seeks time for schooling, property, and medical care, and argues repeal would increase emergency filings.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '51063e568622c20d874e42c0dc933b0169edef30bf438bb37b2b8a503c128c64',
-    },
-    {
       id: 'USCIS-2026-0364-0376',
       stance: 'oppose',
       themes: ['family', 'finances', 'transition', 'talent'],
@@ -275,176 +107,88 @@ export default {
         '202fa6b8d36fc2d7965ca1fea3e31914512502ac1059c45f12b8663a5293e178',
     },
     {
-      id: 'USCIS-2026-0364-0216',
+      id: 'USCIS-2026-0364-0158',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition'],
+      themes: ['finances', 'family'],
       summary: {
-        zh: '强调非自愿失业对整个家庭的影响，要求保留60天或足够酌情过渡时间。',
-        en: 'Emphasizes family consequences of involuntary job loss and seeks retention or sufficient discretionary transition time.',
+        zh: '反对取消，担忧房产急售、债务与子女教育中断。',
+        en: 'Opposes removal because of forced asset sales, debts and disrupted schooling.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'd8292ba3daeeb87700e70fb23979b3662ee3247fb7f1edb4eec87d5ae3bead73',
+        'a5449deca61126ffce2ffa3acdb303c7668cfa2e2466c010af2ba942e65e95b5',
     },
     {
-      id: 'USCIS-2026-0364-0362',
+      id: 'USCIS-2026-0364-0107',
+      stance: 'oppose',
+      themes: ['legal', 'transition'],
+      summary: {
+        zh: '质疑取消宽限期与法定雇主转换权不相容，要求解释。',
+        en: "Challenges the proposal's compatibility with statutory portability and requests an explanation.",
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ead60763cde184629501f8d3e1575cc1e0d6a6bdeee1ce008f4e72f0714ad1e7',
+    },
+    {
+      id: 'USCIS-2026-0364-0020',
+      stance: 'oppose',
+      themes: ['family', 'talent', 'finances', 'transition', 'enforcement'],
+      summary: {
+        zh: '认为取消会伤害家庭和经济，主张针对签证滥用。',
+        en: 'Warns of family and economic harms and urges targeting visa misuse.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'e84a641b33af061fc4036f2eae62081605fedabc37579f9712a8b1493e28c868',
+    },
+    {
+      id: 'USCIS-2026-0364-0496',
+      stance: 'support',
+      themes: ['temporary'],
+      summary: {
+        zh: '认为临时工作结束后应离境。',
+        en: 'Says temporary workers should leave when their work ends.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'e4a94deec11439246744ae8a79473683b51c9fd434977e0de1eccc254590f576',
+    },
+    {
+      id: 'USCIS-2026-0364-0229',
+      stance: 'oppose',
+      themes: ['family', 'transition', 'finances'],
+      summary: {
+        zh: '认为家庭需要时间处理教育、医疗及离境事务。',
+        en: 'Argues families need time to manage schooling, healthcare and departure.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1be5f3c5f764a9fc8fb000948f40695bd7f9bf0f367067757d67b6929242468c',
+    },
+    {
+      id: 'USCIS-2026-0364-0491',
       stance: 'support',
       themes: ['domestic'],
       summary: {
-        zh: '支持取消，认为有助于本土应届毕业生就业，并陈述招聘不公的个人看法。',
-        en: 'Supports repeal to improve domestic graduates’ job prospects and describes perceived hiring unfairness.',
+        zh: '认为宽限期侵犯美国劳动者权益。',
+        en: "Claims the grace period violates American workers' rights.",
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '5d6d320b25c48c8848fe3c19dd0b207f3c3f07b95226a2ecea3a6871effe799b',
+        '093b54d4bc43a7f2d90a2408d3b408a7bdbfc271d91bdba75f69bcec2a41df48',
     },
     {
-      id: 'USCIS-2026-0364-0037',
+      id: 'USCIS-2026-0364-0159',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'talent'],
+      themes: ['transition', 'finances', 'talent', 'legal', 'alternatives'],
       summary: {
-        zh: '要求保留宽限期，使非自愿失业家庭有时间完成招聘手续并避免子女生活突变。',
-        en: 'Seeks retention so families facing involuntary job loss can complete hiring and avoid abrupt disruption to children.',
+        zh: '反对完全取消，并提出固定过渡期作为替代。',
+        en: 'Opposes abolition and proposes a fixed transition period as an alternative.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '149fa600ea5c86c2332e66e91382f33b63fd07f5398523f7b90e70db55e3f481',
-    },
-    {
-      id: 'USCIS-2026-0364-0101',
-      stance: 'unclear',
-      themes: [],
-      summary: {
-        zh: '正文仅指向附件；附件未能读取，无法判断立场。',
-        en: 'Body only refers to an attachment; the unavailable attachment prevents a stance determination.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
-      sourceNote: {
-        zh: '官方附件 attachment_1.pdf 经网页读取失败且下载返回403；保留原抽样，正文无实质内容。',
-        en: 'Official attachment_1.pdf failed web retrieval and returned HTTP 403 on download; original selection retained, with no substantive body.',
-      },
-    },
-    {
-      id: 'USCIS-2026-0364-0346',
-      stance: 'oppose',
-      themes: ['transition', 'finances'],
-      summary: {
-        zh: '认为有限过渡期有助于公平求职及有序处理房产和搬迁，并非不公平优势。',
-        en: 'Defends a limited period for fair job competition, property arrangements, and orderly relocation.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '5947717bbeeab6356132c41eaffd8fde2d2b399371f1019f37764e8d14f9045b',
-    },
-    {
-      id: 'USCIS-2026-0364-0091',
-      stance: 'unclear',
-      themes: [],
-      summary: {
-        zh: '仅泛泛赞扬工作，未明确说明对取消提案的立场。',
-        en: 'Offers generic praise without identifying a position on repeal.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '316d44b7dda994770c5c0fa023add5dd21e36481ca727936fcdeb8232fd815d5',
-    },
-    {
-      id: 'USCIS-2026-0364-0168',
-      stance: 'support',
-      themes: ['domestic', 'enforcement'],
-      summary: {
-        zh: '支持取消，认为企业应改善招聘留任并优先本土劳动力，同时建议加强H-4企业合规监管。',
-        en: 'Supports repeal, calls for domestic hiring and retention, and proposes stronger oversight of H-4 business activity.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'ccd041d38c364944da22557a7b3207673cfa6a7ac74a895164d39548a87035d1',
-    },
-    {
-      id: 'USCIS-2026-0364-0231',
-      stance: 'mixed',
-      themes: ['alternatives', 'family', 'finances', 'legal', 'transition'],
-      summary: {
-        zh: '批评取消对绿卡积压家庭的影响，具体要求为已批I-140者保留宽限期或豁免。',
-        en: 'Criticizes effects on backlogged families and specifically seeks retained grace periods or grandfathering for approved I-140 holders.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'baf0a214b0ae045595b743be194eea639ce198f985dee23a25a115726f7ecf9e',
-    },
-    {
-      id: 'USCIS-2026-0364-0093',
-      stance: 'oppose',
-      themes: ['alternatives', 'family', 'finances', 'transition'],
-      summary: {
-        zh: '要求延长而非取消宽限期，尤其保护已批I-140且有子女的长期居民。',
-        en: 'Seeks a longer rather than eliminated grace period, especially for long-term residents with approved I-140s and children.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '2aacafe623f7f80d384b3f7a39d5df7d126104929517a01923cb9cc7f5e04034',
-    },
-    {
-      id: 'USCIS-2026-0364-0125',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances'],
-      summary: {
-        zh: '要求保留60天，让劳动者求职并为家庭完成离境前的生活善后。',
-        en: 'Seeks 60 days for job searches and families’ practical departure arrangements.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '25e5ad0ea553a712e0b2ed649062ba91db0d3c21dd7693993976488d65affd17',
-    },
-    {
-      id: 'USCIS-2026-0364-0202',
-      stance: 'oppose',
-      themes: ['transition', 'talent', 'legal'],
-      summary: {
-        zh: '认为取消妨碍专业招聘、损害创新并增加海外签证处理负担，要求撤回。',
-        en: 'Requests withdrawal, citing disrupted specialist hiring, innovation losses, and more overseas visa processing.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '228214ed97a0b924f7c4c0566efcd77158e455e55136380342fb463b833a140c',
-    },
-    {
-      id: 'USCIS-2026-0364-0522',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'transition'],
-      summary: {
-        zh: '以有幼儿和住房的长期家庭为例，要求保留求职或有序离境的时间。',
-        en: 'Describes an established household with young children and a home, seeking time to find work or depart orderly.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '8ef2dbd9b59c3322978559b291a41f2194ee52877d0fa16c648b26f5191e254e',
-    },
-    {
-      id: 'USCIS-2026-0364-0463',
-      stance: 'oppose',
-      themes: ['finances', 'family', 'transition'],
-      summary: {
-        zh: '强调搬家、租约处罚和心理压力，要求保留宽限期以便履行义务。',
-        en: 'Emphasizes moving logistics, lease penalties, and emotional distress, seeking time to settle obligations.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'c075547ed75b5b18f60c38b1bc9ecee4f5ea672634559bee300ae9b3f6d7b88d',
-    },
-    {
-      id: 'USCIS-2026-0364-0154',
-      stance: 'oppose',
-      themes: ['family', 'talent', 'legal', 'alternatives'],
-      summary: {
-        zh: '要求撤回，质疑信赖和可携带性分析，并提出较短期限或已批I-140者保护作为替代。',
-        en: 'Requests withdrawal, challenges reliance and portability analysis, and offers shorter periods or I-140 protections as alternatives.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'a0912c0560826677c4c3fe7ee9d12a1cdd7cbf464fe08c2ad14d17735e5b9476',
+        'ca5f988ef7d51ded50901355520ed9cb972250b5cc6d7b4e36f3ffca9422898c',
     },
     {
       id: 'USCIS-2026-0364-0517',
@@ -459,386 +203,83 @@ export default {
         'b8b97de21579ab953d59d39ee11624314a46040b76025949e3435ca936d06e65',
     },
     {
-      id: 'USCIS-2026-0364-0433',
+      id: 'USCIS-2026-0364-0167',
       stance: 'oppose',
-      themes: ['transition', 'talent'],
+      themes: ['transition'],
       summary: {
-        zh: '认为宽限期让市场检验人才需求，有利于企业和经济，要求保留。',
-        en: 'Seeks retention so employer demand can retain skilled workers and benefit the economy.',
+        zh: '认为取消带来不必要困难，60天是合理期限。',
+        en: 'Calls removal unnecessary hardship and 60 days reasonable.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '27e5c01ad4aeb5ae3b738e13ae1183b4d8e3a85bf478ce92d430b39dc6df9edb',
+        '1d38c8bcc7f508c5716d59ef42ab0dec37d1e6b6b77542fc39575e10a7aa086c',
     },
     {
-      id: 'USCIS-2026-0364-0013',
-      stance: 'oppose',
-      themes: ['transition', 'talent'],
-      summary: {
-        zh: '担忧取消使转职和裁员后求职更困难，并降低美国对人才的吸引力。',
-        en: 'Warns repeal would complicate job changes and layoffs and reduce U.S. attractiveness to talent.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '15d6ce24afcaabd171b09533efd2a666a5512a62259bee3e1085a661a3588e5c',
-    },
-    {
-      id: 'USCIS-2026-0364-0054',
+      id: 'USCIS-2026-0364-0055',
       stance: 'oppose',
       themes: ['transition', 'talent', 'enforcement'],
       summary: {
-        zh: '要求保留必要求职时间和企业招聘灵活性，以较温和措施解决合规问题。',
-        en: 'Seeks retention for job searches and employer flexibility, with less restrictive compliance measures.',
+        zh: '要求保留60天以便求职及办理雇主转换。',
+        en: 'Urges retaining 60 days for hiring and employer-transfer filings.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         '3ce73536fd8b9c4a0c4a988cf450ebb3cf23dc7a2c579875283fffebff83e41d',
     },
     {
-      id: 'USCIS-2026-0364-0287',
+      id: 'USCIS-2026-0364-0257',
       stance: 'oppose',
-      themes: ['transition', 'family', 'talent'],
+      themes: ['transition', 'family', 'finances', 'legal'],
       summary: {
-        zh: '要求保留并提高宽限期可预测性，避免家庭不确定性及企业人才损失。',
-        en: 'Seeks retention and predictability to reduce family uncertainty and employer talent losses.',
+        zh: '反对将裁员变成身份危机，强调家庭和求职现实。',
+        en: 'Opposes turning layoffs into status emergencies, citing families and hiring timelines.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '7262bc447c74a662a6abf117e4b8cd8c91733bc381f48e3d0acdcf075e4ec443',
+        'd3285e05e5a66a610b126c0ff712fa0abcd32003cd08cfad4d14f595131649bf',
     },
     {
-      id: 'USCIS-2026-0364-0345',
+      id: 'USCIS-2026-0364-0221',
       stance: 'oppose',
-      themes: ['family', 'finances'],
+      themes: ['transition', 'talent', 'legal', 'finances', 'enforcement'],
       summary: {
-        zh: '认为取消会让子女和家庭承担巨大压力与资产损失，无法一日完成迁离。',
-        en: 'Warns of pressure on children and households and asset losses from an impractical one-day departure.',
+        zh: '认为取消既妨碍招聘，也增加机构负担。',
+        en: 'Argues removal impedes hiring and increases agency burdens.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'b1862dcc4522a1241de52699517a146b27cd54bcd85ad071b5893d2901b9aa31',
+        '0f22cf161efeccdd940ffc6d19071509470305ec5090455cd286123838aed701',
     },
     {
-      id: 'USCIS-2026-0364-0413',
+      id: 'USCIS-2026-0364-0142',
       stance: 'oppose',
-      themes: ['transition', 'talent'],
+      themes: ['transition', 'family', 'finances'],
       summary: {
-        zh: '指出招聘及转签手续需时间，要求保留以免美国企业流失境内人才。',
-        en: 'Seeks retention because hiring and transfer filings take time and employers could lose available talent.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'def0e887ee441a6435729df1ec66d3a7ec9410ce890094be81cd3891a01c5fb9',
-    },
-    {
-      id: 'USCIS-2026-0364-0111',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'domestic', 'enforcement'],
-      summary: {
-        zh: '要求保留60天，同时加强以证据为基础的反欺诈、工资及公平招聘监管。',
-        en: 'Supports retaining 60 days alongside evidence-based fraud enforcement, wage protections, and fair hiring.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '8e33427f73ffaaa230ea0b638882ddaa22d7ee3c1c415099850120db26c3a6bf',
-    },
-    {
-      id: 'USCIS-2026-0364-0452',
-      stance: 'mixed',
-      themes: ['alternatives', 'transition'],
-      summary: {
-        zh: '赞成取消60天，但要求保留4至5天办理离境善后。',
-        en: 'Supports removing 60 days but requests four to five days to wind up affairs.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'c5583dfba741482fbfdb9acad60340b72bc2f92d0e8fdaaf2edea92fca22374d',
-    },
-    {
-      id: 'USCIS-2026-0364-0339',
-      stance: 'support',
-      themes: ['temporary', 'domestic', 'enforcement'],
-      summary: {
-        zh: '支持取消，认为工作结束后不应继续竞争本土岗位，并声称项目存在欺诈。',
-        en: 'Supports repeal to end post-employment competition for domestic jobs and alleges program fraud.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'c39d334e81322fb874dfa12641032a39f83d943e21f6a197f8c0f43bec3e7bbc',
-    },
-    {
-      id: 'USCIS-2026-0364-0193',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
-      summary: {
-        zh: '要求保留，认为取消损害家庭、企业和地方经济，行政便利不足以支持其代价。',
-        en: 'Seeks retention, arguing family, employer, and local economic harms outweigh administrative convenience.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '79e020ef4a4bcecec6fe663e7a7e8bb4b5569d058c83120e51d20125f9456c24',
-    },
-    {
-      id: 'USCIS-2026-0364-0227',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'domestic'],
-      summary: {
-        zh: '从家属角度要求保留，强调儿童稳定、搬迁时间及劳动者离开不良工作环境的能力。',
-        en: 'Seeks retention for dependents’ stability, relocation time, and workers’ ability to leave poor conditions.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '3860eb364ad5a3b6fb6176149296f3c8920ffd19d42de937ea08a2654d5d8631',
-    },
-    {
-      id: 'USCIS-2026-0364-0304',
-      stance: 'support',
-      themes: [],
-      summary: {
-        zh: '直接要求取消60天宽限期，未提供理由。',
-        en: 'Directly requests elimination of the 60-day period without reasons.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '2b675351f1cdf88c4d18e91c67ccc44b6e5be9f831392042ff2b95c38f187bcf',
-    },
-    {
-      id: 'USCIS-2026-0364-0104',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'transition'],
-      summary: {
-        zh: '强调家庭、子女和财务义务不能一夜清理，要求保留合理过渡期。',
-        en: 'Seeks retention because family, schooling, and financial obligations cannot be resolved overnight.',
+        zh: '要求保留宽限期，避免家庭被迫立即清理生活和财务。',
+        en: 'Urges retention so families can settle their affairs and depart responsibly.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         '779428494eab1aa62f35a556b89ac6126a440f70b56c3a787d5ca8ebcc268493',
     },
     {
-      id: 'USCIS-2026-0364-0248',
-      stance: 'oppose',
-      themes: ['transition', 'talent'],
-      summary: {
-        zh: '反对取消，认为合法工作并贡献社区者应有时间寻找新机会。',
-        en: 'Opposes repeal, seeking time for lawful workers who contribute to communities to find new opportunities.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'd73b6d0c35472f1c888738ac6d075d20862ab512ae76b45302fd9aeac77a10aa',
-    },
-    {
-      id: 'USCIS-2026-0364-0088',
-      stance: 'unclear',
-      themes: ['legal'],
-      summary: {
-        zh: '要求明确本规则与H-1B法定可携带性的关系，未明确支持或反对取消。',
-        en: 'Requests a clear interpretation of statutory H-1B portability without stating a position on repeal.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'db884f534cd471f58575154abf65fcd2eb100cc069b00176ac85bfdd91cd155c',
-    },
-    {
-      id: 'USCIS-2026-0364-0357',
-      stance: 'support',
-      themes: ['domestic'],
-      summary: {
-        zh: '要求取消，并表达对签证依赖型劳动力制度的负面看法。',
-        en: 'Requests repeal and expresses a negative view of visa-dependent labor arrangements.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '5a36da4f9a2c45b1826a6da26cc03548512bb5e3952a31f28acc56b84db390a1',
-    },
-    {
-      id: 'USCIS-2026-0364-0300',
-      stance: 'mixed',
-      themes: ['finances', 'family', 'alternatives', 'legal'],
-      summary: {
-        zh: '有条件称欢迎取消，却质疑住房信赖损失，要求政府补偿房产并限制未来购房。',
-        en: 'Conditionally welcomes repeal while challenging property reliance losses and demanding government compensation and future purchase restrictions.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '1232920d04a46c78125bb3778ccffb411bd293adef9a465dc282179121bfdfc6',
-    },
-    {
-      id: 'USCIS-2026-0364-0138',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'enforcement'],
-      summary: {
-        zh: '要求保留，主张针对欺诈和违法雇主执法，避免合法家庭和企业受损。',
-        en: 'Seeks retention and targeted action against fraud and unlawful employers to avoid harming lawful families and businesses.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '6edb309e1afc89a4838bfbc5d5b50877791ae60b9eb6bde06b4b9d421285cfde',
-    },
-    {
-      id: 'USCIS-2026-0364-0350',
-      stance: 'oppose',
-      themes: ['transition', 'legal', 'alternatives'],
-      summary: {
-        zh: '要求保留现有60天，质疑零天与可携带性及信赖利益的冲突；退而建议30天。',
-        en: 'Seeks current 60 days, questions effects on portability and reliance, and alternatively suggests 30 days.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'b627a425d5dd63b19d833a156c5fbc700334a96a3daff52283b87eced8ab8663',
-    },
-    {
-      id: 'USCIS-2026-0364-0465',
-      stance: 'support',
-      themes: ['domestic', 'enforcement'],
-      summary: {
-        zh: '要求立即取消并进一步限制外籍用工，声称相关渠道损害美国就业且存在滥用。',
-        en: 'Requests immediate repeal and wider foreign-worker restrictions, alleging job displacement and abuse.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'ecd8920c88f1bdd3b56c9710ef5e36dc1d909bff707265331ce6d74bf665f86e',
-    },
-    {
-      id: 'USCIS-2026-0364-0402',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent'],
-      summary: {
-        zh: '要求撤回，认为取消会损害企业招聘、人才竞争及家庭稳定。',
-        en: 'Requests withdrawal, citing employer hiring, talent competitiveness, and family stability.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'bd261b12039ce86ce21f0d9f2b34576d7c9ea1cb944f3eeb26c0c0db2d3e366e',
-    },
-    {
-      id: 'USCIS-2026-0364-0145',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'legal'],
-      summary: {
-        zh: '要求保留，认为行政减负不足以抵消家庭及转职损害。',
-        en: 'Seeks retention, arguing administrative savings do not justify family and job-transition harms.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'a0e9e81cbb407534abd3b0ecf33c0f10fcfd7c5261f4e89a3ae56e96f9990334',
-    },
-    {
-      id: 'USCIS-2026-0364-0062',
-      stance: 'oppose',
-      themes: ['transition', 'family'],
-      summary: {
-        zh: '认为60天求职已很困难，取消会进一步伤害家庭和子女教育。',
-        en: 'Argues job searches are already difficult within 60 days and repeal would harm families and schooling.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '0894013755765b7af6bc1a2fe174a81601475dda58bf1d487f7b222e87c04abf',
-    },
-    {
-      id: 'USCIS-2026-0364-0169',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'talent', 'alternatives'],
-      summary: {
-        zh: '要求保留，强调长期积压家庭、子女及有序离境和招聘所需时间。',
-        en: 'Seeks retention for backlogged families, children, orderly departure, and employer hiring.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'f2cf8b727ea7f02a0cb45d2f8878c3614bfa9b825b8e0217de0f679ad34eed0c',
-    },
-    {
-      id: 'USCIS-2026-0364-0387',
-      stance: 'support',
-      themes: ['temporary', 'enforcement'],
-      summary: {
-        zh: '支持取消，主张工作结束即离境，并声称身份转换和中介用工存在滥用。',
-        en: 'Supports repeal and departure when work ends, alleging abuse of status changes and staffing arrangements.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '2b8e07290bcceed2fbca0c7fa21e36d0f667acfdabae6c1ab00490897b5c9e2f',
-    },
-    {
-      id: 'USCIS-2026-0364-0147',
-      stance: 'oppose',
-      themes: ['family', 'finances', 'transition'],
-      summary: {
-        zh: '要求保留，认为家庭、教育和财务善后无法立即完成。',
-        en: 'Seeks retention because family, schooling, and financial arrangements cannot be completed immediately.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'ddaa98c4382fac4318a244fdf5ca31959455be1dfd4de51481f1f16c338ace7f',
-    },
-    {
-      id: 'USCIS-2026-0364-0071',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'enforcement'],
-      summary: {
-        zh: '要求保留并加强定向监管，以保障招聘时间、家庭和财务稳定。',
-        en: 'Seeks retention with targeted safeguards to protect hiring time, families, and financial stability.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'f156f55b275866d4a6340a57b704bec45138f821a1d88c7e448dfeeb2373f3ee',
-    },
-    {
-      id: 'USCIS-2026-0364-0175',
-      stance: 'oppose',
-      themes: [],
-      summary: {
-        zh: '正文简短表达反对，未提供实质理由；附件未能读取。',
-        en: 'Body briefly expresses opposition without substantive reasons; attachment could not be read.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '1afafb1d5812d520cf440773aa912dd2f51a1449c5190be81f1a173de3ac5a40',
-      sourceNote: {
-        zh: '正文“Appose”按反对的拼写错误理解；官方附件网页读取失败且下载返回403，未能核实附件内容。',
-        en: 'Body “Appose” is interpreted as a misspelling of opposition; official attachment web retrieval failed and download returned 403, so its contents could not be verified.',
-      },
-    },
-    {
-      id: 'USCIS-2026-0364-0254',
-      stance: 'oppose',
-      themes: ['family'],
-      summary: {
-        zh: '反对政府推进该规则，认为会影响众多家庭。',
-        en: 'Opposes proceeding with the rule because of its effects on families.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'a2b0799639fda996c133c86bb93545981251bd92562e67083c8412f3e76435ba',
-    },
-    {
-      id: 'USCIS-2026-0364-0450',
+      id: 'USCIS-2026-0364-0379',
       stance: 'oppose',
       themes: [
         'transition',
         'talent',
+        'family',
         'finances',
+        'legal',
         'enforcement',
-        'alternatives',
       ],
       summary: {
-        zh: '要求保留并考虑延至90天，同时加强反欺诈监管。',
-        en: 'Seeks retention and consideration of 90 days alongside stronger fraud enforcement.',
+        zh: '要求撤回提案，强调招聘、家庭与政策信赖利益。',
+        en: 'Requests withdrawal, citing hiring needs, families and reliance on existing policy.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '7085af9f4ac440e6df03f4dab36ce91d1324e9099d1e1d7c30f27421a4aeb114',
-    },
-    {
-      id: 'USCIS-2026-0364-0320',
-      stance: 'oppose',
-      themes: ['transition', 'talent'],
-      summary: {
-        zh: '要求撤回，强调招聘、LCA和转雇主申请需要数周。',
-        en: 'Requests withdrawal, emphasizing weeks needed for hiring, LCAs, and employer-transfer petitions.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '62132211f402816676071260429e2d4df013f75dbfa4f17b603c8d76b039acb3',
+        '4c4d130822eb393d1b62b93eb874dc078edd2c8b6c5e6f873d877aba5d72b826',
     },
     {
       id: 'USCIS-2026-0364-0194',
@@ -853,6 +294,109 @@ export default {
         '7fe5e1373c67211c3bc121dc36104e98949a71f382c6a1e1231034d68254621a',
     },
     {
+      id: 'USCIS-2026-0364-0474',
+      stance: 'support',
+      themes: ['temporary', 'domestic', 'legal'],
+      summary: {
+        zh: '支持取消，认为身份应随工作结束且宽限期增加行政成本。',
+        en: 'Supports removal, tying status to employment and citing administrative costs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '9b303da41864639ca5fd011d7bb710507f6986e7acac4dced24beb8aeb532e27',
+    },
+    {
+      id: 'USCIS-2026-0364-0473',
+      stance: 'unclear',
+      themes: ['domestic', 'enforcement'],
+      summary: {
+        zh: '质疑政策效果和时机，未清楚表明对取消宽限期的立场。',
+        en: 'Questions timing and effectiveness without a clear stance on grace-period removal.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f82a9791370adbf0d68eeb73c371d4a284a4a4649251221e79b5b50eba9aa316',
+    },
+    {
+      id: 'USCIS-2026-0364-0110',
+      stance: 'oppose',
+      themes: ['legal'],
+      summary: {
+        zh: '认为提案未解释与既有可携带性解释的关系。',
+        en: 'Argues the proposal inadequately addresses prior portability reasoning.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f506dbd722811c33c634493b02c0e33cd4672a9d66b16cdcf7b8f67afdde3574',
+    },
+    {
+      id: 'USCIS-2026-0364-0495',
+      stance: 'support',
+      themes: ['domestic', 'enforcement'],
+      summary: {
+        zh: '支持取消，援引本土就业与欺诈指控。',
+        en: 'Supports removal based on domestic-job concerns and fraud allegations.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f854ce018c5ea14e4d81a1a11f95ecfbbdd11602270de2646f12ca1daf19236d',
+    },
+    {
+      id: 'USCIS-2026-0364-0409',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '要求保留60天，以便完成招聘和签证手续并保护家庭稳定。',
+        en: 'Seeks to retain 60 days for hiring and visa filings while protecting family stability.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '391bdde5251142e6f29626aff71941c29a60a5630be0f37588f236e61f8475dd',
+    },
+    {
+      id: 'USCIS-2026-0364-0289',
+      stance: 'mixed',
+      themes: ['family', 'transition', 'talent', 'alternatives'],
+      summary: {
+        zh: '请求加强长期工作者家庭的过渡保护。',
+        en: 'Requests greater transition protections for long-term workers and their families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cca7aa5a6b2324b960c7acde77b7263f5dcdcb4bb7489370f8cc9df21067a01e',
+    },
+    {
+      id: 'USCIS-2026-0364-0382',
+      stance: 'oppose',
+      themes: [
+        'family',
+        'finances',
+        'transition',
+        'legal',
+        'enforcement',
+        'alternatives',
+      ],
+      summary: {
+        zh: '要求保留60天并加强长期工作者和特定家庭保护。',
+        en: 'Seeks retention and enhanced protections for long-term workers and certain families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '850b9e386c6147c65af47429fda894c275408fa400a59804bbfc0de479591c60',
+    },
+    {
+      id: 'USCIS-2026-0364-0230',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances'],
+      summary: {
+        zh: '认为取消加剧求职、搬迁、家庭和房贷压力。',
+        en: 'Warns removal worsens hiring, relocation, family and mortgage pressures.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '9c0252a76f91ecfec4f9f8b9b94656718893430310109bd639cea73539cddc5a',
+    },
+    {
       id: 'USCIS-2026-0364-0011',
       stance: 'oppose',
       themes: ['family', 'legal', 'finances', 'talent'],
@@ -865,16 +409,284 @@ export default {
         '1e7bb454c3448ee51f780d30489095e406934d456697ef62900d654075a7f11b',
     },
     {
-      id: 'USCIS-2026-0364-0343',
+      id: 'USCIS-2026-0364-0115',
       stance: 'oppose',
-      themes: ['transition', 'talent', 'alternatives'],
+      themes: ['legal', 'transition'],
       summary: {
-        zh: '要求保留以适应招聘周期，避免长期积压人才和企业受损。',
-        en: 'Seeks retention to accommodate hiring timelines and protect backlogged workers and employers.',
+        zh: '认为取消会实质削弱国会赋予的雇主转换权。',
+        en: 'Argues removal would practically narrow statutory portability rights.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '958041258ef7610c6e423dd98e3501b5d84be882d2d5905254fc44972e02c39d',
+        '3374a760cffa3e950953ee945925cdd164d68f9087d9d6a88281f0fb4b95905a',
+    },
+    {
+      id: 'USCIS-2026-0364-0100',
+      stance: 'support',
+      themes: ['temporary', 'legal', 'enforcement', 'domestic'],
+      summary: {
+        zh: '支持取消并要求严格限制身份衔接、加强雇主申报。',
+        en: 'Supports removal and stricter status bridges and employer reporting.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a4133680e6ffe4644028d389f0bf1d514a87ffc9941ff73e93838afdf9b80cd8',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0507',
+      stance: 'oppose',
+      themes: ['legal', 'transition', 'talent', 'finances'],
+      summary: {
+        zh: '要求撤回，指出可携带性、人才流失与额外申请负担。',
+        en: 'Requests withdrawal over portability, talent loss and added application burdens.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '0b7e244791f530fa575538f11054ea073b6b066f944b3b9797df300a19ac905d',
+    },
+    {
+      id: 'USCIS-2026-0364-0007',
+      stance: 'support',
+      themes: ['temporary'],
+      summary: {
+        zh: '支持取消，认为身份应严格取决于持续就业。',
+        en: 'Supports removal because status should depend strictly on ongoing employment.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '416ef70b1b1ae6a0a7490efb07b0d424be57f9907e72c02617f4ea74391eff9c',
+    },
+    {
+      id: 'USCIS-2026-0364-0434',
+      stance: 'oppose',
+      themes: ['transition', 'talent'],
+      summary: {
+        zh: '认为保留宽限期有助雇主留住有经验人才。',
+        en: 'Favors retention to help employers retain experienced talent.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '95e91e4df2716ca2b00600fd34b751490f04b5197eb6d12d242d1004320233b2',
+    },
+    {
+      id: 'USCIS-2026-0364-0374',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '反对取消，强调家庭善后、雇主稳定与人才竞争。',
+        en: 'Opposes removal over family obligations, workforce stability and talent competition.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'e32820a1fa8601b4d9fd3b0af280b02da89796d4d9bcca266e51198c5124c1a0',
+    },
+    {
+      id: 'USCIS-2026-0364-0116',
+      stance: 'support',
+      themes: [],
+      summary: {
+        zh: '明确支持提案并要求尽快实施。',
+        en: 'Explicitly supports the proposal and prompt implementation.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'db91f210e16cb15e9e5061a1b6cff67e53c449ced63e9ac52795f76b0e848651',
+    },
+    {
+      id: 'USCIS-2026-0364-0380',
+      stance: 'oppose',
+      themes: ['transition', 'talent', 'finances'],
+      summary: {
+        zh: '认为立即离境会扰乱企业招聘和住房市场。',
+        en: 'Warns immediate departure disrupts hiring and housing markets.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '75f5800eb1cdb45e812d914f3a45aa8bf93c9f916d6c19feb788320cebec9179',
+    },
+    {
+      id: 'USCIS-2026-0364-0312',
+      stance: 'oppose',
+      themes: ['transition', 'enforcement'],
+      summary: {
+        zh: '认为规则难以遵守且会增加非法停留。',
+        en: 'Calls the rule impractical and warns of more unlawful stays.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '54c84a34000a0a3e99e84e185d15ea1afb3e770caff63ff4c86a612fff9bc6f2',
+    },
+    {
+      id: 'USCIS-2026-0364-0316',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
+        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0059',
+      stance: 'oppose',
+      themes: ['talent', 'transition'],
+      summary: {
+        zh: '认为取消将导致人才流失、项目延迟和成本增加。',
+        en: 'Warns removal causes talent loss, project delays and higher costs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '40c547ce2bcabe51788a79eb7b8457b1c228c5e8ac3a1ee34ec4be498ba2f93f',
+    },
+    {
+      id: 'USCIS-2026-0364-0073',
+      stance: 'oppose',
+      themes: ['talent', 'transition'],
+      summary: {
+        zh: '反对取消，认为将削弱企业效率和竞争力。',
+        en: 'Opposes removal because it weakens business efficiency and competitiveness.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1d42406b5d57ce8fa4867296772f2df01202bf62c881804822f744340deeb873',
+    },
+    {
+      id: 'USCIS-2026-0364-0369',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '担忧子女教育、房贷和立即搬迁的困难。',
+        en: 'Raises schooling, mortgage and immediate relocation difficulties.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '3194fcf321c57c9dd5256f6ec732e313a7f3e414e758e4ba0fa4cbb8e238f6db',
+    },
+    {
+      id: 'USCIS-2026-0364-0512',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
+        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0278',
+      stance: 'oppose',
+      themes: ['enforcement', 'transition', 'talent'],
+      summary: {
+        zh: '要求撤回，认为取消加剧雇主权力失衡并阻碍合法转换。',
+        en: 'Requests withdrawal over employer power imbalances and barriers to lawful transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '83e8c8015569f1c8398553cbfe58cc878a7b04a0ab4f2181e3ce1ec53058ca06',
+    },
+    {
+      id: 'USCIS-2026-0364-0445',
+      stance: 'oppose',
+      themes: ['talent', 'domestic'],
+      summary: {
+        zh: '认为提案不帮助本土劳动者却伤害合法工作者。',
+        en: 'Argues the proposal harms lawful workers without helping domestic workers.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '6d4acc18d29a537cd0c3a98d332b13914a19651891957c5b0e7732288eb0311e',
+    },
+    {
+      id: 'USCIS-2026-0364-0270',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '要求保留，避免家庭分离和财务、教育冲击。',
+        en: 'Urges retention to avoid family separation and financial and educational disruption.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd7147e2360886a023315f2db13469c96380f33207c4210e06267444a7e357c09',
+    },
+    {
+      id: 'USCIS-2026-0364-0068',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为招聘和申请需时，反对其所理解的缩短期限。',
+        en: 'Cites hiring and filing timelines to oppose the reduction as understood.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '48461feba6341b629f5e971e1fd03345b9fe5f01b3eacad76c477e006504faaa',
+    },
+    {
+      id: 'USCIS-2026-0364-0204',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为人们需要时间安排和准备离境。',
+        en: 'Says people need time to arrange and prepare departure.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '38ad64b9f43ddbd395d48168e24715e941dd55346c0c0ad23263748488cb9fcd',
+    },
+    {
+      id: 'USCIS-2026-0364-0171',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
+        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0466',
+      stance: 'mixed',
+      themes: ['family', 'finances', 'transition', 'alternatives'],
+      summary: {
+        zh: '请求保留过渡空间，若60天过长可缩短而非取消。',
+        en: 'Seeks a transition window, accepting a shorter period instead of abolition.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd79c96ee98e1e83a9ba2a24ed935333174ba5993bce583b5d9f6a8ef02250a4c',
+    },
+    {
+      id: 'USCIS-2026-0364-0453',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'family', 'talent'],
+      summary: {
+        zh: '要求撤回，强调有序离境、家庭与人才吸引力。',
+        en: 'Requests withdrawal, citing orderly departure, families and talent attraction.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '23e474aaf2370689c4becd66fdce69ccef4de2a77e45d9baef2706747732e36d',
     },
     {
       id: 'USCIS-2026-0364-0112',
@@ -889,40 +701,284 @@ export default {
         '01e080941c0cb66f71e73fc32589b06cbc0d72dd04c2194de888eff662a11f24',
     },
     {
-      id: 'USCIS-2026-0364-0423',
+      id: 'USCIS-2026-0364-0403',
       stance: 'support',
-      themes: ['temporary', 'legal', 'enforcement'],
+      themes: ['domestic', 'temporary', 'enforcement'],
       summary: {
-        zh: '支持取消，认为可强化身份与就业联系并降低行政负担。',
-        en: 'Supports repeal to tie status to employment and reduce administrative burden.',
+        zh: '认为岗位结束即失去签证依据，支持相应执法。',
+        en: 'Says the visa rationale ends with the job and supports enforcement accordingly.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'd3012854e0e83b66df0e37976ad0efd6977a6e4af8686dfe13bb10d989e042a6',
+        '0e3b3aeba90c9104610ce3332e28bf7e8c3fda1f59707fb789b50f5265384cd9',
     },
     {
-      id: 'USCIS-2026-0364-0118',
-      stance: 'unclear',
+      id: 'USCIS-2026-0364-0524',
+      stance: 'oppose',
+      themes: ['finances', 'transition', 'talent', 'legal'],
+      summary: {
+        zh: '要求保留，强调资产清理、合同义务及企业通过可携带性留才。',
+        en: 'Seeks retention for asset disposal, contractual obligations, and employer retention through portability.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1fa9db59ef2b9969f1c7cde0e63601d8434c40299eac23f9053e32a5af8241a8',
+    },
+    {
+      id: 'USCIS-2026-0364-0169',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'talent', 'alternatives'],
+      summary: {
+        zh: '要求保留，强调长期积压家庭、子女及有序离境和招聘所需时间。',
+        en: 'Seeks retention for backlogged families, children, orderly departure, and employer hiring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f2cf8b727ea7f02a0cb45d2f8878c3614bfa9b825b8e0217de0f679ad34eed0c',
+    },
+    {
+      id: 'USCIS-2026-0364-0071',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent', 'enforcement'],
+      summary: {
+        zh: '要求保留并加强定向监管，以保障招聘时间、家庭和财务稳定。',
+        en: 'Seeks retention with targeted safeguards to protect hiring time, families, and financial stability.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f156f55b275866d4a6340a57b704bec45138f821a1d88c7e448dfeeb2373f3ee',
+    },
+    {
+      id: 'USCIS-2026-0364-0353',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '认为立即离境不现实，要求照顾家庭及财务善后。',
+        en: 'Calls immediate departure unrealistic and seeks time for family and financial obligations.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '3241e1e9acfd9feeb4015e58216a9f88bc5c69f66cc87afe4eef5576bbba05de',
+    },
+    {
+      id: 'USCIS-2026-0364-0006',
+      stance: 'mixed',
+      themes: ['alternatives', 'talent'],
+      summary: {
+        zh: '提出逐步缩短至30天而非完全取消。',
+        en: 'Proposes gradually shortening the period to 30 days instead of abolition.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd9f33fb08b3802e3d29f5debca0195e17e67447d1eb45d24e4bbaffbd84d4ad0',
+    },
+    {
+      id: 'USCIS-2026-0364-0414',
+      stance: 'support',
+      themes: ['temporary', 'domestic', 'enforcement'],
+      summary: {
+        zh: '支持提案但认为还应处理虚假工资和中介滥用。',
+        en: 'Supports the proposal while urging action on sham payrolls and staffing abuse.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '7349d7e1437a61b3b1779c629b42e32345a95b334b23c4268aab83c625d08688',
+    },
+    {
+      id: 'USCIS-2026-0364-0168',
+      stance: 'support',
       themes: ['domestic', 'enforcement'],
       summary: {
-        zh: '要求取消H-1B和H-4 EAD并加强限制，但未明确评论宽限期取消。',
-        en: 'Calls for H-1B and H-4 EAD abolition and tighter restrictions without addressing grace-period repeal specifically.',
+        zh: '支持取消，认为企业应改善招聘留任并优先本土劳动力，同时建议加强H-4企业合规监管。',
+        en: 'Supports repeal, calls for domestic hiring and retention, and proposes stronger oversight of H-4 business activity.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '30c09337ac41d8b6bee8e03d9d3cb21103966f07980fcea36b477a54796aa034',
+        'ccd041d38c364944da22557a7b3207673cfa6a7ac74a895164d39548a87035d1',
     },
     {
-      id: 'USCIS-2026-0364-0283',
+      id: 'USCIS-2026-0364-0322',
       stance: 'oppose',
-      themes: ['transition', 'family', 'talent'],
+      themes: ['finances', 'family', 'transition'],
       summary: {
-        zh: '要求保留，认为合理转职窗口有利于家庭和美国雇主留才。',
-        en: 'Seeks retention because a reasonable transition window helps families and employer talent retention.',
+        zh: '反对取消，强调房屋处置、教育及搬迁所需时间。',
+        en: 'Opposes removal, citing time needed for property, schooling and relocation.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '9e8d17910db86ba13bbe7c0fcbdce8881cf9898827ca8310ea914a5402ed7991',
+        '4b21ad6dfc84a710dbbd747db7675556bb29ff16e1bcf8b76b535d169e80be39',
+    },
+    {
+      id: 'USCIS-2026-0364-0080',
+      stance: 'oppose',
+      themes: ['legal', 'family'],
+      summary: {
+        zh: '质疑成本收益证据不一致及向其他机构和家庭转移成本。',
+        en: 'Challenges uneven cost-benefit evidence and shifted burdens on agencies and families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cfa778d16cb8ffd633834fadfc6626c848be5ab259d7dcd834a2210d40b2070d',
+    },
+    {
+      id: 'USCIS-2026-0364-0469',
+      stance: 'support',
+      themes: [],
+      summary: {
+        zh: '明确支持取消60天宽限期。',
+        en: 'Explicitly supports eliminating the 60-day grace period.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '00c705d32eb2ad1126725d21789dd1e9045be5d4b451c30cbea5a539f01fb000',
+    },
+    {
+      id: 'USCIS-2026-0364-0259',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '表示支持保留H-1B宽限期。',
+        en: 'Expresses support for the H-1B grace period.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'fbf094eda181da133fda2f62bbbc2f43b67cc3af23ab3df19a82dd09b7e7a5b5',
+    },
+    {
+      id: 'USCIS-2026-0364-0267',
+      stance: 'oppose',
+      themes: ['legal', 'family', 'finances', 'transition', 'alternatives'],
+      summary: {
+        zh: '反对取消，但至少接受缩短期限，质疑行政负担论证。',
+        en: 'Opposes removal but accepts a shorter fallback, challenging the burden rationale.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '59ff17be6e22b18cdfb9f2b05bbfea0505f4576ddf3c2c3a44063cf96b5ae7cd',
+    },
+    {
+      id: 'USCIS-2026-0364-0163',
+      stance: 'oppose',
+      themes: [
+        'legal',
+        'enforcement',
+        'domestic',
+        'talent',
+        'family',
+        'finances',
+        'transition',
+        'alternatives',
+      ],
+      summary: {
+        zh: '要求保留并保护非自愿失业和举报劳动违规者。',
+        en: 'Seeks retention and protections for involuntary layoffs and labor-violation reporters.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '614f839bfd85f0b905a8b3b0f7f9f34e2a5735978cdab7d80be44fbb3a3188e8',
+    },
+    {
+      id: 'USCIS-2026-0364-0199',
+      stance: 'oppose',
+      themes: ['legal', 'family', 'finances', 'transition', 'talent'],
+      summary: {
+        zh: '反对取消，关注积压工作者、家庭和政府成本转移。',
+        en: 'Opposes removal over backlogged workers, families and shifted government costs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '20519c7d3f1f4d437b00cf0df100203981e789e08ba052b459e5da556900b7e7',
+    },
+    {
+      id: 'USCIS-2026-0364-0024',
+      stance: 'oppose',
+      themes: ['legal', 'family', 'finances', 'transition', 'talent'],
+      summary: {
+        zh: '反对取消，认为伤害积压工作者并增加执法成本。',
+        en: 'Opposes removal as harmful to backlogged workers and costly for enforcement.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '8190a17b0c5a7a73ac95179fffacccaa7f63d721720051defa028cc95f69396a',
+    },
+    {
+      id: 'USCIS-2026-0364-0398',
+      stance: 'oppose',
+      themes: ['alternatives', 'transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '主张延长至90或120天并给予家庭额外时间。',
+        en: 'Proposes 90 or 120 days and extra time for families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '273727ff383378ce1ee2c57e2fab669031cba4327717b2d5b241e0291191a9f0',
+    },
+    {
+      id: 'USCIS-2026-0364-0062',
+      stance: 'oppose',
+      themes: ['transition', 'family'],
+      summary: {
+        zh: '认为60天求职已很困难，取消会进一步伤害家庭和子女教育。',
+        en: 'Argues job searches are already difficult within 60 days and repeal would harm families and schooling.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '0894013755765b7af6bc1a2fe174a81601475dda58bf1d487f7b222e87c04abf',
+    },
+    {
+      id: 'USCIS-2026-0364-0425',
+      stance: 'oppose',
+      themes: [
+        'alternatives',
+        'transition',
+        'legal',
+        'family',
+        'finances',
+        'talent',
+      ],
+      summary: {
+        zh: '要求保留，至少为非自愿失业者保留过渡期。',
+        en: 'Seeks retention or at least a transition period after involuntary termination.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a10790d17c756cd21db83eac497dc0810eaf55db017663d6711aaa9dc255352d',
+    },
+    {
+      id: 'USCIS-2026-0364-0457',
+      stance: 'support',
+      themes: ['enforcement', 'temporary'],
+      summary: {
+        zh: '要求取消，认为宽限期便利虚假中介和身份转换。',
+        en: 'Seeks removal, alleging it enables sham consultancies and status switching.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a0a76ea94d22066723be5de949edb82909acc00ac544e5b62604bc7e64e579a0',
+    },
+    {
+      id: 'USCIS-2026-0364-0511',
+      stance: 'oppose',
+      themes: ['legal', 'family', 'talent'],
+      summary: {
+        zh: '要求撤回，认为取消破坏信赖并增加行政混乱。',
+        en: 'Requests withdrawal over reliance interests and administrative disruption.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '5d4381cc8ac405b061c54c01d21d1ae0e6d935b8ed2575b1dc4b6ec600534ce5',
+    },
+    {
+      id: 'USCIS-2026-0364-0069',
+      stance: 'oppose',
+      themes: ['alternatives', 'transition', 'finances', 'family'],
+      summary: {
+        zh: '认为善后和求职需要时间，要求延至至少180天。',
+        en: 'Seeks at least 180 days for job search and settling affairs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'c064c4e793f8acd1ee41c0a9cc53b1f90ae812d7714ef4929568f2b1aa33ab80',
     },
     {
       id: 'USCIS-2026-0364-0122',
@@ -937,220 +993,452 @@ export default {
         '4a8359ec8fb238e355de065e33f8140ef7828a045d2a7f72031ed5ff4e3c2613',
     },
     {
-      id: 'USCIS-2026-0364-0492',
+      id: 'USCIS-2026-0364-0526',
       stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
+      themes: ['alternatives', 'legal', 'transition', 'family', 'finances'],
       summary: {
-        zh: '要求撤回，质疑取消的依据及行政成本，并强调家庭和招聘损害。',
-        en: 'Requests withdrawal, questioning justification and administrative costs while emphasizing family and hiring harms.',
+        zh: '提出固定自动60天，质疑家庭评估和行政节省。',
+        en: 'Proposes an automatic fixed 60 days and challenges family and savings assessments.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'a666c1842504ff21b073aae8c0c1d33b8120b94788cd9d7ab0189ac7fbaa35e3',
+        'fa549902b78aff4b53ddba95c046010f3005629e658daf78e19a99e817b2bb45',
     },
     {
-      id: 'USCIS-2026-0364-0025',
+      id: 'USCIS-2026-0364-0028',
       stance: 'oppose',
-      themes: ['talent'],
+      themes: ['family', 'finances', 'transition'],
       summary: {
-        zh: '反对取消，认为经济需要这些外籍人才且取消没有必要。',
-        en: 'Opposes repeal as unnecessary and argues the economy needs these foreign professionals.',
+        zh: '要求保留，减少家庭失业后的财务和个人压力。',
+        en: 'Seeks retention to reduce financial and personal pressures after job loss.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '0d634292fe9c19bd643879d45a0c5d6b6f6947afd8e00d204f98afa707b84f36',
+        'c0ab4b40066b07d636597c57450409d3a71a3831ea78093349bf519f0694822c',
     },
     {
-      id: 'USCIS-2026-0364-0429',
+      id: 'USCIS-2026-0364-0075',
       stance: 'oppose',
-      themes: ['transition', 'talent'],
+      themes: ['legal', 'family', 'transition', 'talent'],
       summary: {
-        zh: '要求保留，认为取消会冻结人才流动、削弱创新并增加企业招聘成本。',
-        en: 'Seeks retention to avoid reduced talent mobility, weaker innovation, and higher hiring costs.',
+        zh: '要求撤回并改革绿卡积压，避免家庭和执法冲击。',
+        en: 'Requests withdrawal and backlog reform to avoid family and enforcement harms.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '305af70adc020deceac04030d070dd2732d7f02435a8ac802ea2ee4c295cb986',
+        'd1bb78d2ecada768a4e311b6a89f1f19d709fe53a42ac566403572f7494ba47a',
     },
     {
-      id: 'USCIS-2026-0364-0078',
-      stance: 'oppose',
-      themes: ['talent'],
+      id: 'USCIS-2026-0364-0041',
+      stance: 'support',
+      themes: [],
       summary: {
-        zh: '认为取消会破坏高技能行业连续性、生产率和人才供给稳定。',
-        en: 'Argues repeal would disrupt high-skilled industries, productivity, and workforce stability.',
+        zh: '明确赞同USCIS提案。',
+        en: 'Explicitly agrees with the USCIS proposal.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '5749d8bc7652a1a7557b4477478a1732327d58988eea5cc3d7193e312c0fb95d',
+        'e5fcd9f9dffd7b6f4a440eadff74f5b623ba028628f72c5c2696586982b74230',
     },
     {
-      id: 'USCIS-2026-0364-0480',
+      id: 'USCIS-2026-0364-0361',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'alternatives'],
+      themes: ['legal'],
       summary: {
-        zh: '要求保留，以便长期积压家庭处理求职、住房、教育和离境安排。',
-        en: 'Seeks retention so backlogged families can manage employment, housing, schooling, and departure.',
+        zh: '认为未量化成本收益无法支持提案，要求完整分析。',
+        en: 'Challenges the unquantified cost-benefit case and requests a fuller analysis.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '4e3a1882829d80e63f5976a50992a00918f33d8490b6b1d0f2bb232566e3866b',
+        'ee4d9cf9f4cb8923555a572e6efac5bec0315a01518f54f23d08d72b4aba442d',
     },
     {
-      id: 'USCIS-2026-0364-0036',
+      id: 'USCIS-2026-0364-0249',
       stance: 'oppose',
-      themes: ['transition', 'family', 'talent'],
+      themes: ['alternatives', 'family', 'finances', 'transition', 'legal'],
       summary: {
-        zh: '要求撤回或保留合理过渡时间，强调雇主招聘与家庭生活。',
-        en: 'Requests withdrawal or preservation of reasonable transition time for employer hiring and families.',
+        zh: '要求保留，至少保护非自愿裁员和长期积压工作者。',
+        en: 'Seeks retention, at least for involuntary layoffs and long-term backlogged workers.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'cccffd228faff557c6a367b6f3353522da084c4a10046d5817c8efc7ba7f6635',
+        'e3ac5325cbb04ba48a54c935e41b22255d54760ed8e00962256db0e67ede625a',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
     },
     {
-      id: 'USCIS-2026-0364-0048',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
+      id: 'USCIS-2026-0364-0241',
+      stance: 'support',
+      themes: ['temporary', 'enforcement', 'domestic'],
       summary: {
-        zh: '反对取消或缩短，强调招聘合规手续、医疗教育、财务善后和人才竞争。',
-        en: 'Opposes repeal or shortening, citing hiring procedures, healthcare, schooling, finances, and talent competition.',
+        zh: '支持取消以维持工作与身份联系，并要求反欺诈执法。',
+        en: 'Supports removal to preserve the employment-status link and urges anti-fraud enforcement.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'fece03606e5203e32016a7bf7ad388b09bef3a025d935bf8e6dcd342df4964a3',
+        'e57ec1184f1f6dd3c7182fba19be08f2a06b551aa4b6326183225fdf8a783e6a',
     },
     {
-      id: 'USCIS-2026-0364-0200',
+      id: 'USCIS-2026-0364-0010',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '要求保留，强调搬迁困难及子女教育、心理冲击。',
+        en: "Urges retention over relocation difficulties and children's educational and emotional harms.",
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'b55ed0a541eb08664f5f2622e0683475a9323de5520c9a9d7f15b4c8be0ecc4d',
+    },
+    {
+      id: 'USCIS-2026-0364-0255',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '认为立即离境使求职转换和家庭生活陷入混乱。',
+        en: 'Warns immediate departure disrupts job transitions and family life.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f8d72d568a8e43c8af53c3122fbba743a55d352495bd5be15d35ee2a6409767b',
+    },
+    {
+      id: 'USCIS-2026-0364-0327',
+      stance: 'oppose',
+      themes: ['family', 'transition', 'finances'],
+      summary: {
+        zh: '要求保留60天，重点保护子女教育与家庭安排。',
+        en: 'Seeks retention of 60 days, emphasizing schooling and family arrangements.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'fbd403012f3503f256c99ae2f4a76b97064364f40b231f61db1a9e2908ca04a9',
+    },
+    {
+      id: 'USCIS-2026-0364-0079',
+      stance: 'mixed',
+      themes: ['legal', 'alternatives', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '要求考虑信赖利益并提供过渡或祖父条款。',
+        en: 'Seeks consideration of reliance interests and transition or grandfathering provisions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'b7951f666d8016c46df653c00436bebf27e86b62f1fe64d4a044c2af04cbb065',
+    },
+    {
+      id: 'USCIS-2026-0364-0113',
+      stance: 'oppose',
+      themes: ['alternatives', 'legal', 'transition', 'family', 'finances'],
+      summary: {
+        zh: '要求保留并为有获批I-140的长期工作者提供保护。',
+        en: 'Seeks retention and protections for long-term workers with approved I-140 petitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'bd520b259dc7b56aa0613dd741ccbfdb4b9427e41b587d495f373808a314a50e',
+    },
+    {
+      id: 'USCIS-2026-0364-0494',
+      stance: 'oppose',
+      themes: ['alternatives', 'family', 'finances', 'transition'],
+      summary: {
+        zh: '要求保留或延长60天，便于家庭有序处理事务。',
+        en: 'Seeks retention or extension beyond 60 days for orderly family transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '9c5f69ecaa892c1970bc3951ca3681f47d488585872882d4be2036ff956e7413',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0395',
+      stance: 'oppose',
+      themes: ['finances', 'transition'],
+      summary: {
+        zh: '反对取消，认为出售资产和寻找雇主都需要时间。',
+        en: 'Opposes removal because asset disposal and finding a sponsor take time.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a13d0a2ce9d93317dc52dc34eb3a7307d6f9f6906c6002bbb2ad0f14d4bef3bd',
+    },
+    {
+      id: 'USCIS-2026-0364-0509',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
+        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0151',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'enforcement'],
+      summary: {
+        zh: '要求保留，担忧雇主胁迫和家庭立即搬迁压力。',
+        en: 'Seeks retention over employer coercion and sudden family relocation pressures.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd9284b1e26d0403f37223bc727e9d313fcfcc8f5b3df000739221ab04759e71d',
+    },
+    {
+      id: 'USCIS-2026-0364-0174',
+      stance: 'mixed',
+      themes: ['alternatives', 'legal', 'transition'],
+      summary: {
+        zh: '反对降至零天，建议至少保留30天。',
+        en: 'Opposes zero days and suggests retaining at least 30 days.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1d0c48b155b35ce4412ca435a4ff913929968b2be25c64f2bece445168f7e966',
+    },
+    {
+      id: 'USCIS-2026-0364-0211',
+      stance: 'support',
+      themes: [],
+      summary: {
+        zh: '明确要求结束60天宽限期。',
+        en: 'Explicitly calls for ending the 60-day grace period.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ce32ea72e6a8282540312285d4b62e22c93465c1542d5cd5724596909811c02c',
+    },
+    {
+      id: 'USCIS-2026-0364-0181',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances'],
+      summary: {
+        zh: '强调招聘和家庭安排无法立即完成，要求保留。',
+        en: 'Seeks retention because hiring and family arrangements cannot happen immediately.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd3f322d2f390a55f427588959d7a96f985a9061197e34bfa8ceae0aefd4b2f26',
+    },
+    {
+      id: 'USCIS-2026-0364-0130',
       stance: 'oppose',
       themes: ['transition', 'talent', 'legal'],
       summary: {
-        zh: '要求撤回，认为取消会阻碍国内招聘并增加境外签证办理负担。',
-        en: 'Requests withdrawal because repeal would obstruct domestic hiring and increase overseas visa-processing burdens.',
+        zh: '支持保留现行60天，认为兼顾转换与制度稳定。',
+        en: 'Favors retaining 60 days for transitions and regulatory stability.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'cb38fc6fd7c527430785ff7238d39f8357a52f32df00ae0f0a48d1dc0b0532a6',
+        '5aeda4bf483a27dfcfba6ccdd5c9dd45fe51b035bff751321695464affbf83d5',
     },
     {
-      id: 'USCIS-2026-0364-0137',
+      id: 'USCIS-2026-0364-0090',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances'],
+      summary: {
+        zh: '要求保留以便家庭作出充分考虑的决定。',
+        en: 'Seeks retention so families can make considered decisions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'feff0eb4974d8d62ee52e8534d604163da754f8036187ebdcf7568c8216d4e8f',
+    },
+    {
+      id: 'USCIS-2026-0364-0404',
+      stance: 'support',
+      themes: ['domestic', 'temporary'],
+      summary: {
+        zh: '支持取消以减少本土求职竞争并维持临时签证性质。',
+        en: 'Supports removal to reduce domestic job competition and preserve temporary status.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a29d5a6c5e7efef6b5bc7727b81a5178c6f8269914ee3f8271f187a1429b5155',
+    },
+    {
+      id: 'USCIS-2026-0364-0384',
+      stance: 'mixed',
+      themes: ['alternatives', 'family', 'finances'],
+      summary: {
+        zh: '主张明确、一致的通知期限，担忧立即离境影响家庭。',
+        en: 'Seeks a clear, consistent notice period, citing family harms from immediate departure.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '01eb4b93165da289c5a39f3e6aec0bf14f2fcc2a077997227058f5c7bf77a439',
+    },
+    {
+      id: 'USCIS-2026-0364-0202',
+      stance: 'oppose',
+      themes: ['transition', 'talent', 'legal'],
+      summary: {
+        zh: '认为取消妨碍专业招聘、损害创新并增加海外签证处理负担，要求撤回。',
+        en: 'Requests withdrawal, citing disrupted specialist hiring, innovation losses, and more overseas visa processing.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '228214ed97a0b924f7c4c0566efcd77158e455e55136380342fb463b833a140c',
+    },
+    {
+      id: 'USCIS-2026-0364-0269',
+      stance: 'mixed',
+      themes: ['alternatives', 'transition', 'finances', 'family'],
+      summary: {
+        zh: '要求至少30天处理租约、资产和家庭搬迁。',
+        en: 'Requests at least 30 days to handle leases, assets and family relocation.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '7ce9b52670cab1b5dbab8cb3df0f8ba5d428db955fe98aa0aa4bd5c6cacd96ca',
+    },
+    {
+      id: 'USCIS-2026-0364-0406',
       stance: 'oppose',
       themes: ['transition', 'family', 'talent'],
       summary: {
-        zh: '要求保留，避免长期居民、家庭及依赖熟练人才的企业受损。',
-        en: 'Seeks retention to protect long-term residents, families, and employers relying on experienced talent.',
+        zh: '认为取消过于严苛并损害家庭和人才吸引力。',
+        en: 'Calls removal harsh and harmful to families and talent attraction.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'fc6498fb0511541bbd61faba8847312254732940681536508b7d9afb503e7d09',
+        '9fa54101b12f96624ba2e79612f4a6b172b417496b2125632191a1ead3ca6533',
     },
     {
-      id: 'USCIS-2026-0364-0335',
-      stance: 'mixed',
-      themes: ['family', 'finances', 'transition', 'alternatives'],
-      summary: {
-        zh: '要求明确合理的过渡机制，使失业家庭有时间处理住房、教育和合法身份。',
-        en: 'Requests a clearly defined, reasonable transition mechanism for housing, schooling, and lawful status after job loss.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        'bde1fc0fb06d014caec789fd0b5152f6f5d6efa69d4c6c724958394e6533007a',
-    },
-    {
-      id: 'USCIS-2026-0364-0126',
+      id: 'USCIS-2026-0364-0292',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'legal'],
+      themes: [
+        'alternatives',
+        'transition',
+        'family',
+        'finances',
+        'enforcement',
+        'talent',
+        'legal',
+      ],
       summary: {
-        zh: '要求保留，强调家庭长期投资、子女教育及转职和资产处理所需时间。',
-        en: 'Seeks retention, citing family investments, schooling, and time for job transitions and asset arrangements.',
+        zh: '要求保留并保护已在美、绿卡排队或信赖现行制度者。',
+        en: 'Seeks retention and protections for existing residents and green-card applicants.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'e9bd758605cd7f1b61c07e743b3382891ed08a3d552ea4036e14b4b8dc904cd9',
+        '974c795a1c1915ecaa997f498551e40995239753eac6e9a9a5588a8ab56eb345',
     },
     {
-      id: 'USCIS-2026-0364-0271',
+      id: 'USCIS-2026-0364-0506',
       stance: 'oppose',
-      themes: ['transition', 'legal'],
+      themes: ['transition', 'family', 'finances'],
       summary: {
-        zh: '要求保留酌情宽限期并明确适用指引，以应对手续延误和意外情况。',
-        en: 'Seeks retention with clear discretionary guidance for processing delays and unexpected circumstances.',
+        zh: '要求保留60天，认为家庭无法立即处理资产和国际搬迁。',
+        en: 'Seeks retention because families cannot immediately settle assets and relocate internationally.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'f5c49dea3d0424154442c9f1e3db4c3cafd2c3fe2b6dde2ea46718306efef413',
+        '2b0fe42c68adff9d19b1bb841df61e1abb0848a3eb217e5e6e1dd9b927a433c9',
     },
     {
-      id: 'USCIS-2026-0364-0411',
+      id: 'USCIS-2026-0364-0415',
       stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'enforcement'],
+      themes: ['transition', 'family', 'finances'],
       summary: {
-        zh: '要求保留并定向查处滥用，强调子女教育、债务和雇主留才。',
-        en: 'Seeks retention with targeted enforcement, citing schooling, debts, and employer talent retention.',
+        zh: '反对取消，强调招聘期限和家庭稳定。',
+        en: 'Opposes removal, citing hiring timelines and family stability.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '677aa22d258b71f70024176ac85aa3711a423602e9b15ee9627ce4ab4a4db401',
+        'e2c74cbb6abf709d1aed0d183bfef9dff9e1bbc2167248b01be0a37337521fe2',
     },
     {
-      id: 'USCIS-2026-0364-0034',
+      id: 'USCIS-2026-0364-0187',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '指出子女退学、住房和离境事务无法立即完成。',
+        en: 'Says schooling, housing and departure arrangements cannot be resolved immediately.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '4ac0cbaa3dde8cba5573d671b0fff89915c15375398a1a6e11caab828de9e88d',
+    },
+    {
+      id: 'USCIS-2026-0364-0516',
+      stance: 'oppose',
+      themes: ['family', 'talent', 'legal'],
+      summary: {
+        zh: '担忧长期合法居住者失业后立即失去家庭和职业稳定。',
+        en: "Warns immediate departure after job loss undermines long-term residents' family and career stability.",
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '24dba0bc6bd13fe60820a7f6b934b8b6976e54ca02d489dfa8bcd69bd54c89d8',
+    },
+    {
+      id: 'USCIS-2026-0364-0410',
+      stance: 'oppose',
+      themes: ['legal', 'alternatives', 'transition', 'family', 'finances'],
+      summary: {
+        zh: '要求撤回或采用固定60天，并质疑成本与家庭评估。',
+        en: 'Requests withdrawal or fixed 60 days and challenges cost and family assessments.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '0655e62da128b0954306a862f5c162963d8b63c1832462ea391f48a2a3f7caa0',
+      sourceNote: {
+        zh: '正文提及附件，但API未列出附件链接；依据实质正文分类。',
+        en: 'The body references an attachment, but the API lists no attachment link; classification uses the substantive body.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0455',
       stance: 'unclear',
-      themes: ['enforcement', 'domestic'],
-      summary: {
-        zh: '要求加强身份核验、雇主审计和反欺诈监管，未明确支持或反对取消。',
-        en: 'Requests identity checks, employer audits, and fraud oversight without a clear position on repeal.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '09eaa0c539b327119bb642136b2bbde619daa710de8d371b312a3384f76df053',
-    },
-    {
-      id: 'USCIS-2026-0364-0016',
-      stance: 'oppose',
-      themes: ['transition', 'family', 'talent', 'enforcement', 'domestic'],
-      summary: {
-        zh: '要求保留并针对违法雇主执法，避免劳动者受制于雇主及家属失业。',
-        en: 'Seeks retention with targeted employer enforcement to reduce worker vulnerability and dependent employment losses.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '91671b53cd8414877bff166cf8935c5e51b7ec49de69c79101e9a0c03e789529',
-    },
-    {
-      id: 'USCIS-2026-0364-0475',
-      stance: 'oppose',
-      themes: ['talent', 'family', 'finances', 'transition'],
-      summary: {
-        zh: '要求保留，认为取消会增加企业招聘成本并损害家庭财务和人才吸引力。',
-        en: 'Seeks retention to avoid higher hiring costs, family financial harm, and reduced talent appeal.',
-      },
-      postedDate: '2026-09-11T04:00:00Z',
-      textSha256:
-        '41184f93a5808a05951a73705fb42d34acf782feb050914d470c02b2563e281d',
-    },
-    {
-      id: 'USCIS-2026-0364-0250',
-      stance: 'oppose',
       themes: [],
       summary: {
-        zh: '直接要求不要取消60天宽限期，未提供理由。',
-        en: 'Directly asks not to eliminate the 60-day period without providing reasons.',
+        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
+        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '369519dae4c9a2d372978a06e139763ad776a4188972dfac717b16fb0324f5fe',
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
     },
     {
-      id: 'USCIS-2026-0364-0156',
+      id: 'USCIS-2026-0364-0117',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'talent'],
+      themes: ['transition', 'family', 'finances', 'talent'],
       summary: {
-        zh: '要求保留，保护配偶和子女稳定并支持雇主留用人才。',
-        en: 'Seeks retention to protect spouses and children and support employer talent retention.',
+        zh: '反对取消，认为会伤害家庭并使企业失去人才。',
+        en: "Opposes removal over family hardship and employers' lost talent.",
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '1bad5988bbb86406fd81f1c4da0e7f0b5311a9353ddb2c61ac3ffa8bd00b1043',
+        'b8e8b0cde177ff27891fcecb18bff5d033aac1e8ec378530acdba2ef49fc7a90',
+    },
+    {
+      id: 'USCIS-2026-0364-0032',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'family', 'talent'],
+      summary: {
+        zh: '以招聘延迟和裁员经历说明宽限期必要性。',
+        en: 'Explains the need for the grace period through hiring delays and layoffs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '61ebe2a43b0f70aea3c75d994a6dbdb7e2700852d6c60826224833d823e0f7a6',
     },
     {
       id: 'USCIS-2026-0364-0360',
@@ -1172,40 +1460,502 @@ export default {
         'a30e82d1d2ead0c547d73aa0489638b1cccf5f766600e440d07851b444f2fddf',
     },
     {
-      id: 'USCIS-2026-0364-0485',
+      id: 'USCIS-2026-0364-0018',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'talent'],
+      themes: ['transition', 'family', 'finances', 'talent'],
       summary: {
-        zh: '认为家庭无法一天内完成迁离，且会波及地方企业和债权人。',
-        en: 'Argues families cannot relocate within a day and local businesses and creditors would also suffer.',
+        zh: '要求保留，保障家庭稳定和企业招聘。',
+        en: 'Seeks retention for family stability and employer hiring.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '7a489cafc4f1f7c282b5c39aa68182bb6e96ef841a4a373c51da1c7b7cc5496c',
+        'bc79d22b1fa6d204e311be1417f63632be959316785f99a12fc0aaa8c60bd85d',
     },
     {
-      id: 'USCIS-2026-0364-0170',
+      id: 'USCIS-2026-0364-0420',
       stance: 'oppose',
-      themes: ['transition', 'talent', 'family', 'domestic'],
+      themes: ['family', 'finances', 'transition', 'enforcement', 'legal'],
       summary: {
-        zh: '主张保留合理期限，担忧取消会加强咨询公司议价权并损害家庭和其他雇主。',
-        en: 'Favors a reasonable period, warning repeal would strengthen consulting firms’ leverage and harm families and other employers.',
+        zh: '要求撤回，担忧家庭冲击、雇主胁迫和政府负担。',
+        en: 'Requests withdrawal over family harms, employer coercion and government burdens.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'b645dff081a8253f4c0c2b28f98537fd5fcc9094f017692bf6322636768c6aa0',
+        '60b32f31a689dcec990445ceacf78ae702bf376bfeee9b7caeb5a6f542931fb1',
     },
     {
-      id: 'USCIS-2026-0364-0442',
+      id: 'USCIS-2026-0364-0339',
+      stance: 'support',
+      themes: ['temporary', 'domestic', 'enforcement'],
+      summary: {
+        zh: '支持取消，认为工作结束后不应继续竞争本土岗位，并声称项目存在欺诈。',
+        en: 'Supports repeal to end post-employment competition for domestic jobs and alleges program fraud.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'c39d334e81322fb874dfa12641032a39f83d943e21f6a197f8c0f43bec3e7bbc',
+    },
+    {
+      id: 'USCIS-2026-0364-0101',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件；附件未能读取，无法判断立场。',
+        en: 'Body only refers to an attachment; the unavailable attachment prevents a stance determination.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0224',
+      stance: 'oppose',
+      themes: ['transition', 'legal'],
+      summary: {
+        zh: '明确反对取消，认为60天促进有序合规。',
+        en: 'Explicitly opposes removal, calling 60 days important for orderly compliance.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'bff2a158e98c1cbf0dabfcbc6a35bac20ac2284c9f0aa71df5ba007cf9863786',
+    },
+    {
+      id: 'USCIS-2026-0364-0493',
+      stance: 'oppose',
+      themes: ['finances', 'family', 'talent', 'transition'],
+      summary: {
+        zh: '要求保留，强调住房违约、教育和企业招聘影响。',
+        en: 'Seeks retention, citing housing defaults, education and employer hiring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1536933fe3352f187f0ff067c3576c41efac2d4b0ee2817b8dad685a3c421c4c',
+    },
+    {
+      id: 'USCIS-2026-0364-0264',
+      stance: 'support',
+      themes: ['domestic'],
+      summary: {
+        zh: '明确支持取消，认为可恢复本土就业机会。',
+        en: 'Explicitly supports removal as restoring domestic job opportunities.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '77b4ed099b297d5ef011e74278ce97bcaa7231542365bc56c00f6784ccff26c5',
+    },
+    {
+      id: 'USCIS-2026-0364-0377',
+      stance: 'oppose',
+      themes: [
+        'legal',
+        'transition',
+        'talent',
+        'family',
+        'finances',
+        'alternatives',
+      ],
+      summary: {
+        zh: '反对取消，接受较短固定期限并要求更完整分析。',
+        en: 'Opposes removal, accepts a shorter fixed period and requests fuller analysis.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '81d1fe39f0cd885c1decae51ff5b20a3b3c8082b966adf69a29da1c33f9548b5',
+    },
+    {
+      id: 'USCIS-2026-0364-0333',
+      stance: 'oppose',
+      themes: ['family', 'transition'],
+      summary: {
+        zh: '要求保留60天，减轻子女转学和搬迁压力。',
+        en: 'Seeks 60 days to reduce schooling and relocation pressures.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'fa502634a27dcc42f21c4a35966aeeed1d5bcd8cc952684f2d0d968c7a46008d',
+    },
+    {
+      id: 'USCIS-2026-0364-0207',
+      stance: 'oppose',
+      themes: ['family', 'transition'],
+      summary: {
+        zh: '要求保留，为家庭和儿童准备搬迁提供时间。',
+        en: 'Seeks retention to give families and children time to prepare relocation.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '07cc677fcb520fe8617d584f373f702fed025d0e43cb8fe637959c128937f0aa',
+    },
+    {
+      id: 'USCIS-2026-0364-0150',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为立即离境不人道，需要时间准备。',
+        en: 'Calls immediate departure inhumane and says preparation takes time.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a582fe0d82d80db93a61f452c5c5fe5dc6ed553f6eeaee510c8276a255e2c973',
+    },
+    {
+      id: 'USCIS-2026-0364-0040',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '反对提案，认为会使岗位转移海外。',
+        en: 'Opposes the proposal, warning jobs will move abroad.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a8e2b5a971adbe08923cb54b243292e560a57c795243fec23a4f6e99c9fc176b',
+    },
+    {
+      id: 'USCIS-2026-0364-0329',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '认为立即失去身份会惩罚家庭，宽限期提供合理过渡。',
+        en: 'Argues immediate status loss punishes families and a grace period enables reasonable transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '4071527d8e7b2dd6df877c9933567086720f7c73208cc4e513e2e62d46337a76',
+    },
+    {
+      id: 'USCIS-2026-0364-0125',
       stance: 'oppose',
       themes: ['transition', 'family', 'finances'],
       summary: {
-        zh: '反对方案，认为子女教育及住房车辆处理需要更多时间。',
-        en: 'Opposes the proposal because schooling and home and vehicle arrangements need time.',
+        zh: '要求保留60天，让劳动者求职并为家庭完成离境前的生活善后。',
+        en: 'Seeks 60 days for job searches and families’ practical departure arrangements.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '766a3ecefffe3c92ae4bc0ee6e0856f85596d8c8485a331b9f209694a9fb9b85',
+        '25e5ad0ea553a712e0b2ed649062ba91db0d3c21dd7693993976488d65affd17',
+    },
+    {
+      id: 'USCIS-2026-0364-0514',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
+      summary: {
+        zh: '要求保留，强调家庭、人才竞争和既有信赖。',
+        en: 'Seeks retention, emphasizing families, talent competition and reliance interests.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '8f53e6a634ab0f60869f5b0660482e10f025d0705d1fa0205f5594fe76fe0b9a',
+    },
+    {
+      id: 'USCIS-2026-0364-0106',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'legal', 'domestic', 'talent'],
+      summary: {
+        zh: '认为取消制造无法避免的违规，并可能造成岗位外流。',
+        en: 'Argues removal creates unavoidable violations and potential offshoring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '3a1ae058421df855d020c1ed910c3a86280b1a9078b2985f7a448cbca02ae515',
+    },
+    {
+      id: 'USCIS-2026-0364-0471',
+      stance: 'mixed',
+      themes: ['family', 'finances', 'transition', 'alternatives'],
+      summary: {
+        zh: '批评立即离境不公，但接受限制转职以换取善后时间。',
+        en: 'Criticizes immediate departure but accepts job-switch limits in exchange for departure-preparation time.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '66800828154a5eb88b675761bcf9bdbf6dad0858ca9cff183e5b378242d3e470',
+    },
+    {
+      id: 'USCIS-2026-0364-0105',
+      stance: 'support',
+      themes: ['domestic', 'enforcement'],
+      summary: {
+        zh: '支持取消宽限期并要求取消H-1B及配偶工卡。',
+        en: 'Supports grace-period removal and calls for ending H-1B and spouse work authorization.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '9d1311b6cbdcf14abada5774fc96f8c6cd32b2500880d766d540160e1aaf8507',
+    },
+    {
+      id: 'USCIS-2026-0364-0074',
+      stance: 'oppose',
+      themes: [
+        'alternatives',
+        'legal',
+        'transition',
+        'family',
+        'finances',
+        'talent',
+      ],
+      summary: {
+        zh: '反对取消并主张延长，以适应招聘和长期家庭生活。',
+        en: 'Opposes removal and favors extension for hiring realities and established families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'e09c7b7f9e559ca34b782897aef8f90ce7542d746b94a9e7f23e2b2fc85ddde5',
+    },
+    {
+      id: 'USCIS-2026-0364-0250',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '直接要求不要取消60天宽限期，未提供理由。',
+        en: 'Directly asks not to eliminate the 60-day period without providing reasons.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '369519dae4c9a2d372978a06e139763ad776a4188972dfac717b16fb0324f5fe',
+    },
+    {
+      id: 'USCIS-2026-0364-0102',
+      stance: 'support',
+      themes: ['temporary', 'domestic'],
+      summary: {
+        zh: '支持取消，认为临时身份应随工作结束且应优先本土招聘。',
+        en: 'Supports removal, tying temporary status to employment and prioritizing domestic hiring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '8d54fa5e5d2be4e633e3a8459295e26e3018084375a9e1b080c37a0073bb2e37',
+    },
+    {
+      id: 'USCIS-2026-0364-0036',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'talent'],
+      summary: {
+        zh: '要求撤回或保留合理过渡时间，强调雇主招聘与家庭生活。',
+        en: 'Requests withdrawal or preservation of reasonable transition time for employer hiring and families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cccffd228faff557c6a367b6f3353522da084c4a10046d5817c8efc7ba7f6635',
+    },
+    {
+      id: 'USCIS-2026-0364-0468',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'family', 'talent', 'legal'],
+      summary: {
+        zh: '要求保留，担忧家庭损失、人才流失和额外申请负担。',
+        en: 'Seeks retention over family losses, talent flight and extra application burdens.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f6ceb7d3b941953a71c97fbdf4756e1f93c4792bcf53bd2017302bb195a90e0f',
+    },
+    {
+      id: 'USCIS-2026-0364-0248',
+      stance: 'oppose',
+      themes: ['transition', 'talent'],
+      summary: {
+        zh: '反对取消，认为合法工作并贡献社区者应有时间寻找新机会。',
+        en: 'Opposes repeal, seeking time for lawful workers who contribute to communities to find new opportunities.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd73b6d0c35472f1c888738ac6d075d20862ab512ae76b45302fd9aeac77a10aa',
+    },
+    {
+      id: 'USCIS-2026-0364-0428',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '认为立即离境迫使家庭遗弃资产并增加社区负担。',
+        en: 'Warns immediate departure forces abandonment of assets and burdens communities.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '19eb1fc0e2d94b479590451f49d434abd70b732545b5c519b4c331c09320b988',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0300',
+      stance: 'mixed',
+      themes: ['finances', 'family', 'alternatives', 'legal'],
+      summary: {
+        zh: '有条件称欢迎取消，却质疑住房信赖损失，要求政府补偿房产并限制未来购房。',
+        en: 'Conditionally welcomes repeal while challenging property reliance losses and demanding government compensation and future purchase restrictions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1232920d04a46c78125bb3778ccffb411bd293adef9a465dc282179121bfdfc6',
+    },
+    {
+      id: 'USCIS-2026-0364-0440',
+      stance: 'mixed',
+      themes: ['alternatives', 'transition', 'family', 'finances', 'temporary'],
+      summary: {
+        zh: '提出30或45天，或只供离境、不许转换身份的期限。',
+        en: 'Proposes 30 or 45 days, or departure-only time without status transfers.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '52f5593a5cd8cdaf519d36d92ddc0ab1d4fb08e10d961c85cfb75ec8bc824b92',
+    },
+    {
+      id: 'USCIS-2026-0364-0058',
+      stance: 'oppose',
+      themes: ['transition', 'talent'],
+      summary: {
+        zh: '要求保留，避免仓促职业决定和企业招聘困难。',
+        en: 'Seeks retention to avoid rushed career decisions and hiring difficulties.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '4cbabcbe203101927f3b0de301749b12e5b69a9af6683a5bc22719e20ecea3d6',
+    },
+    {
+      id: 'USCIS-2026-0364-0111',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'domestic', 'enforcement'],
+      summary: {
+        zh: '要求保留60天，同时加强以证据为基础的反欺诈、工资及公平招聘监管。',
+        en: 'Supports retaining 60 days alongside evidence-based fraud enforcement, wage protections, and fair hiring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '8e33427f73ffaaa230ea0b638882ddaa22d7ee3c1c415099850120db26c3a6bf',
+    },
+    {
+      id: 'USCIS-2026-0364-0205',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为人们需要时间安排并准备离境。',
+        en: 'Says people need time to arrange and prepare departure.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '7c6c5f2015c1db6fec412a1b6a97a5ae3fe90c4ddd15dc22a8b0a5adbe7db17a',
+    },
+    {
+      id: 'USCIS-2026-0364-0346',
+      stance: 'oppose',
+      themes: ['transition', 'finances'],
+      summary: {
+        zh: '认为有限过渡期有助于公平求职及有序处理房产和搬迁，并非不公平优势。',
+        en: 'Defends a limited period for fair job competition, property arrangements, and orderly relocation.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '5947717bbeeab6356132c41eaffd8fde2d2b399371f1019f37764e8d14f9045b',
+    },
+    {
+      id: 'USCIS-2026-0364-0381',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '详细指出房贷、子女教育和资产急售造成的损害。',
+        en: 'Details harms from mortgages, disrupted schooling and rushed asset sales.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '0b453a4633cd77c9f89ee0b0070a410c0e1a1c19189c0148f5d0f79c3a014366',
+    },
+    {
+      id: 'USCIS-2026-0364-0396',
+      stance: 'support',
+      themes: ['domestic'],
+      summary: {
+        zh: '支持取消，认为可避免签证用工压低本土劳动者待遇。',
+        en: 'Supports removal as protecting domestic workers from visa-labor undercutting.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '8e5f5abf4a56e4ed8e863640340385aa326043596a9196a7b555e12cca4a7df0',
+    },
+    {
+      id: 'USCIS-2026-0364-0306',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'enforcement', 'talent'],
+      summary: {
+        zh: '认为取消破坏家庭和投资稳定，并强化雇主胁迫。',
+        en: 'Argues removal undermines family and investment stability and strengthens employer coercion.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '6609fa5f77c0a5b2844b0bd23ecc701cb49eaaa2e8d5437ea57ab2d1ed841fe6',
+    },
+    {
+      id: 'USCIS-2026-0364-0302',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent', 'alternatives'],
+      summary: {
+        zh: '要求保留或加强过渡保护，强调家庭和招聘现实。',
+        en: 'Seeks retention or stronger transition protections, citing families and hiring realities.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cfcd951a06476c272767b8bb2dc320449cb530b3888d8dde0f375128e5bdb0ff',
+    },
+    {
+      id: 'USCIS-2026-0364-0175',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '正文简短表达反对，未提供实质理由；附件未能读取。',
+        en: 'Body briefly expresses opposition without substantive reasons; attachment could not be read.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1afafb1d5812d520cf440773aa912dd2f51a1449c5190be81f1a173de3ac5a40',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0431',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'legal'],
+      summary: {
+        zh: '要求撤回，强调家庭善后、申请时限与既有信赖。',
+        en: 'Requests withdrawal, citing family obligations, filing timelines and reliance interests.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '306d674454134a71bd3f3d57d92021fab2f3610b421d67568e72cd74795049f1',
+    },
+    {
+      id: 'USCIS-2026-0364-0214',
+      stance: 'oppose',
+      themes: ['transition', 'alternatives'],
+      summary: {
+        zh: '反对取消并建议延长至三个月。',
+        en: 'Opposes removal and suggests extending the period to three months.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '69a6f943b6c5779215394d450e25868285e3cdbd71e8efad864903e456caa662',
+    },
+    {
+      id: 'USCIS-2026-0364-0042',
+      stance: 'oppose',
+      themes: ['legal', 'alternatives', 'transition', 'family', 'talent'],
+      summary: {
+        zh: '要求保留，质疑数据局限并提出针对性过渡保护。',
+        en: 'Seeks retention, challenges data limitations and proposes targeted transition protections.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ee5a84a0369935e40b4645c13c409458b56a0215169a9df05a40131922c90acf',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类。',
+        en: 'The official attachment download returned HTTP403; classification uses readable body text only.',
+      },
     },
     {
       id: 'USCIS-2026-0364-0443',
@@ -1220,91 +1970,163 @@ export default {
         'e6d3510b15ba77902b634c8b87d26f82963a78e1dc9f2e2f556fe4f76a282cc4',
     },
     {
-      id: 'USCIS-2026-0364-0348',
+      id: 'USCIS-2026-0364-0043',
+      stance: 'oppose',
+      themes: ['family', 'talent', 'finances', 'transition', 'domestic'],
+      summary: {
+        zh: '反对取消，担忧配偶失业、外包和经济投入损失。',
+        en: 'Opposes removal over spouse job losses, offshoring and lost economic investments.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'fd67e765591f153ef5f7886d1e298131c41b4814e76c0afc29911253db34a528',
+    },
+    {
+      id: 'USCIS-2026-0364-0164',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '要求保留，避免家庭动荡和企业人才损失。',
+        en: 'Seeks retention to avoid family disruption and employer talent losses.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '20fb8d93fed65946394288eb037d0f983594be5dc7095006a4da10e3ca87fcb8',
+    },
+    {
+      id: 'USCIS-2026-0364-0311',
+      stance: 'oppose',
+      themes: ['transition', 'talent', 'enforcement'],
+      summary: {
+        zh: '认为立即离境制造混乱、非法停留及人才流失。',
+        en: 'Warns immediate departure causes disruption, unlawful stays and talent loss.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '025ce2d503c9e815900f28c45fa96bd03211dcb27fbcbcc02e7c2750ac0b409a',
+    },
+    {
+      id: 'USCIS-2026-0364-0331',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '反对通过，认为迫使合法工作者离境损害经济。',
+        en: 'Opposes adoption, arguing forced departures of lawful workers harm the economy.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '46870d67f567d2bdf6fd862d2ded83f097b66f168cfe5e44a5bce1697d27b9bd',
+    },
+    {
+      id: 'USCIS-2026-0364-0296',
       stance: 'support',
-      themes: ['enforcement', 'domestic'],
+      themes: ['temporary'],
       summary: {
-        zh: '支持取消，认为可打击签证滥用并保护美国劳动者就业和工资。',
-        en: 'Supports repeal as a means to address visa abuse and protect U.S. jobs and wages.',
+        zh: '称提案方向正确，并要求进一步取消签证项目。',
+        en: 'Calls the proposal a step in the right direction and seeks program abolition.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '0881d5b641badec63a20a4bd747aced37d497b4e6207d748c8d9d5e1c95132ba',
+        '9bd0f44f5c530c237e6ae9107eba7e29edf7830752201711264b4fc52cee1725',
     },
     {
-      id: 'USCIS-2026-0364-0524',
+      id: 'USCIS-2026-0364-0452',
+      stance: 'mixed',
+      themes: ['alternatives', 'transition'],
+      summary: {
+        zh: '赞成取消60天，但要求保留4至5天办理离境善后。',
+        en: 'Supports removing 60 days but requests four to five days to wind up affairs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'c5583dfba741482fbfdb9acad60340b72bc2f92d0e8fdaaf2edea92fca22374d',
+    },
+    {
+      id: 'USCIS-2026-0364-0461',
       stance: 'oppose',
-      themes: ['finances', 'transition', 'talent', 'legal'],
+      themes: ['finances', 'family', 'transition'],
       summary: {
-        zh: '要求保留，强调资产清理、合同义务及企业通过可携带性留才。',
-        en: 'Seeks retention for asset disposal, contractual obligations, and employer retention through portability.',
+        zh: '要求停止实施，担忧房贷违约及教育医疗影响。',
+        en: 'Requests no implementation over mortgage defaults and educational and medical harms.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '1fa9db59ef2b9969f1c7cde0e63601d8434c40299eac23f9053e32a5af8241a8',
+        '49ba6bccaa4372cfab76aff64746be617c8a1210c0dbb77cd2e699d80e935d14',
     },
     {
-      id: 'USCIS-2026-0364-0448',
+      id: 'USCIS-2026-0364-0487',
       stance: 'oppose',
-      themes: ['family', 'finances', 'transition', 'talent'],
+      themes: ['transition', 'family', 'finances', 'alternatives'],
       summary: {
-        zh: '要求保留，避免家庭承受骤然离境压力并保障雇主招聘人才。',
-        en: 'Seeks retention to avoid abrupt family disruption and preserve employer access to talent.',
+        zh: '要求撤回并保留现行规则，30至60天是备选。',
+        en: 'Requests withdrawal and retention of the current rule, with 30–60 days as fallback.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '942bab7db041877b263e34a433dfb4d8fc0547e79baf2b6f90f97b71abb2d9c4',
+        '2108c8c9c36816dc3b48ea34bdebf484d27d0a826202e5d422bcb08719d32e4f',
     },
     {
-      id: 'USCIS-2026-0364-0033',
+      id: 'USCIS-2026-0364-0310',
       stance: 'support',
-      themes: ['enforcement', 'domestic', 'temporary'],
+      themes: ['domestic', 'temporary'],
       summary: {
-        zh: '明确支持取消并要求更广泛限制外籍用工，声称存在欺诈和本土就业损害。',
-        en: 'Explicitly supports repeal and wider foreign-worker restrictions, alleging fraud and harm to domestic employment.',
+        zh: '反对失业后转换身份继续找工作，援引本土就业。',
+        en: 'Opposes status changes and further job seeking after job loss, citing domestic employment.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '6f8c571fda6377c45a50a2419bb0191886971c38d6e734021a4e2748f9169f3e',
+        '04556fa48cb81a80f40aba0ff4938f4a9b1e82b6523248a8f9cce090a649df41',
     },
     {
-      id: 'USCIS-2026-0364-0432',
+      id: 'USCIS-2026-0364-0072',
       stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
+      themes: ['talent', 'family', 'finances', 'transition'],
       summary: {
-        zh: '要求撤回，认为行政便利不能抵消家庭负担和企业招聘障碍。',
-        en: 'Requests withdrawal, arguing administrative convenience cannot outweigh family burdens and hiring obstacles.',
+        zh: '反对取消，认为保留有利人才和社区稳定。',
+        en: 'Opposes removal, citing talent retention and community stability.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '5ab22561ccf1d626bb2a518fe58695f57cfe78aab076032fd14376c76aeab14b',
+        '93012f4d1542b6947e21855493f57e4352cbb3e82c5bf120621b995ad2318ecb',
     },
     {
-      id: 'USCIS-2026-0364-0252',
+      id: 'USCIS-2026-0364-0240',
       stance: 'oppose',
-      themes: ['transition', 'family', 'finances', 'enforcement'],
+      themes: ['transition', 'legal'],
       summary: {
-        zh: '要求保留，以便合法求职或有序离境，并以合规监管处理滥用。',
-        en: 'Seeks retention for lawful job searches or orderly departure, with compliance measures against misuse.',
+        zh: '反对取消，强调积压工作者失业后的基本保护。',
+        en: 'Opposes removal, emphasizing protection after job loss for backlogged workers.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'ec24e679112fbb63aae53d07ee0ee4756c5b35fedefeadc6dfaac3d0b9cf0704',
+        '83b58db0f59dc5f2e1537d459b76c6a0e6378284d23ba817509222686690fe1f',
     },
     {
-      id: 'USCIS-2026-0364-0274',
+      id: 'USCIS-2026-0364-0201',
       stance: 'oppose',
-      themes: [],
+      themes: ['transition', 'talent', 'legal'],
       summary: {
-        zh: '要求不要实施该方案，认为其不人道。',
-        en: 'Asks that the proposal not be implemented, calling it inhumane.',
+        zh: '要求撤回，担忧招聘中断、创新损失和海外办理负担。',
+        en: 'Requests withdrawal over hiring disruption, innovation losses and overseas processing burdens.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        'da60436a7c8084c6dc2f92aea6602bd3ff9e6e6709c64f50d7582d59d01c0735',
+        '848ae7b1935b852a6ece065e38b78b042eac76ff479e5bdde80faf54998f18cb',
     },
     {
-      id: 'USCIS-2026-0364-0281',
+      id: 'USCIS-2026-0364-0155',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为60天已是面试和求职所需最低时间。',
+        en: 'Calls 60 days the minimum time needed for interviews and job search.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '3bd52f93c63bd707ec2f0ee8cc9c9f71b222517a83ea7610c4350b63dc0c392e',
+    },
+    {
+      id: 'USCIS-2026-0364-0213',
       stance: 'oppose',
       themes: [
         'transition',
@@ -1312,23 +2134,509 @@ export default {
         'finances',
         'talent',
         'legal',
+        'enforcement',
         'alternatives',
       ],
       summary: {
-        zh: '要求撤回并考虑延至90或180天，以适应招聘周期及长期家庭承诺。',
-        en: 'Requests withdrawal and consideration of 90 or 180 days to reflect hiring cycles and long-term family commitments.',
+        zh: '要求保留并采用较窄合规措施，避免家庭和招聘冲击。',
+        en: 'Seeks retention and narrower compliance measures to avoid family and hiring harms.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
-        '25ceb10314dc191f0afa930c8e0ecf08eb805acd3199f1cb66b0a04d62b29aec',
+        '5e07a613c0701960ef17a7b2a66f5ee4967dc2f6d0f8556df3a4fcc9bf47b671',
+    },
+    {
+      id: 'USCIS-2026-0364-0490',
+      stance: 'oppose',
+      themes: [
+        'alternatives',
+        'legal',
+        'transition',
+        'family',
+        'finances',
+        'enforcement',
+      ],
+      summary: {
+        zh: '要求保留，提出带有特定例外的自动60天。',
+        en: 'Seeks retention and proposes automatic 60 days with specified exceptions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '3a3962c1285112d79b6f61e0b174208f4ea6420de5a6904d72938dc7146279e9',
+    },
+    {
+      id: 'USCIS-2026-0364-0212',
+      stance: 'oppose',
+      themes: ['talent', 'transition', 'family', 'finances'],
+      summary: {
+        zh: '要求撤回，认为取消增加招聘成本、家庭困难和人才流失。',
+        en: 'Requests withdrawal over hiring costs, family hardship and talent loss.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '702efba0b1465c8d297cb94bf3997debcc8e3e3961dee3d0e55808cfc45bf50f',
+    },
+    {
+      id: 'USCIS-2026-0364-0182',
+      stance: 'oppose',
+      themes: ['talent', 'transition', 'family', 'finances', 'enforcement'],
+      summary: {
+        zh: '要求保留，主张针对性合规改革以支持雇主和家庭。',
+        en: 'Seeks retention and targeted compliance reforms to support employers and families.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a48104022281ab26cef51c5368cd9268e4a66917764789620c41f1bde234a186',
+    },
+    {
+      id: 'USCIS-2026-0364-0405',
+      stance: 'support',
+      themes: ['temporary', 'domestic', 'enforcement'],
+      summary: {
+        zh: '支持涵盖TN等类别的取消方案，认为临时签证应回归临时用途，并提出资质欺诈指控。',
+        en: 'Supports repeal across covered categories including TN, stresses temporary visas, and alleges credential fraud.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a90d99b319b8ae5e5e43f937960d3bc3b04931b33c58dec538a8909d15b30a8f',
+    },
+    {
+      id: 'USCIS-2026-0364-0502',
+      stance: 'oppose',
+      themes: ['transition', 'family'],
+      summary: {
+        zh: '要求保留，以便失业后完成招聘和身份转换。',
+        en: 'Seeks retention to allow hiring and status transitions after job loss.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '874e7b2e66955ff76408b6291e0c0f00739034e27dafc32bdf07cb76c5cabdef',
+    },
+    {
+      id: 'USCIS-2026-0364-0260',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances'],
+      summary: {
+        zh: '认为取消会把裁员变成全家身份危机。',
+        en: 'Argues removal turns a layoff into a status crisis for an entire family.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1b339a4e4c5082b7d5c0a71fca2020fa785f1c04b2584423c6145c5a5156d8ce',
+    },
+    {
+      id: 'USCIS-2026-0364-0504',
+      stance: 'oppose',
+      themes: ['transition', 'family'],
+      summary: {
+        zh: '明确反对取消，强调求职、身份转换和家庭急需。',
+        en: 'Explicitly opposes removal, citing job search, status changes and family needs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ccd9ecacd0a72baa429552b60a1a2c406056d1d4215b71dad48b02dc4b4ae7dc',
+    },
+    {
+      id: 'USCIS-2026-0364-0176',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'talent'],
+      summary: {
+        zh: '要求撤回，认为取消伤害已扎根家庭和经济贡献。',
+        en: 'Requests withdrawal over harms to established families and economic contributions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cd05af562d5a2bebd40da1ed49d46af1da8cfaa77b6fa5e2633b4cffdece8a1a',
+      sourceNote: {
+        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
+        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0364-0200',
+      stance: 'oppose',
+      themes: ['transition', 'talent', 'legal'],
+      summary: {
+        zh: '要求撤回，认为取消会阻碍国内招聘并增加境外签证办理负担。',
+        en: 'Requests withdrawal because repeal would obstruct domestic hiring and increase overseas visa-processing burdens.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'cb38fc6fd7c527430785ff7238d39f8357a52f32df00ae0f0a48d1dc0b0532a6',
+    },
+    {
+      id: 'USCIS-2026-0364-0124',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '反对取消，认为损害技术工作者和美国经济。',
+        en: 'Opposes removal as harmful to skilled workers and the U.S. economy.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '47174def576621a9d581245072bc739d58dd7a42eb5ae13d4b7305f5cdb212dd',
+    },
+    {
+      id: 'USCIS-2026-0364-0503',
+      stance: 'support',
+      themes: ['domestic', 'temporary'],
+      summary: {
+        zh: '批评失业者通过转换身份留美继续竞争岗位。',
+        en: 'Criticizes post-employment status changes that allow continued competition for jobs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '5d29fbb6ca92d0cdf9ffa5839144fbb1dd1cd54624ead40cad1d2e2b21e06389',
+    },
+    {
+      id: 'USCIS-2026-0364-0435',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'family'],
+      summary: {
+        zh: '要求宽限期以处理财务、家庭及离境或转职事务。',
+        en: 'Seeks a grace period for finances, families and departure or job transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '19575019d2bec909bae6c5e37b973edae9486eae51aa8ed680d1a4da6bb3a325',
+    },
+    {
+      id: 'USCIS-2026-0364-0108',
+      stance: 'oppose',
+      themes: ['talent', 'transition', 'family'],
+      summary: {
+        zh: '反对取消，担忧企业人才流失和家庭冲击。',
+        en: 'Opposes removal over employer talent loss and family disruption.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '2f11f0633862909adef18d924acae4accff21a1fc4dc041842d4c9c4e17fba6d',
+    },
+    {
+      id: 'USCIS-2026-0364-0188',
+      stance: 'oppose',
+      themes: ['transition', 'talent', 'family', 'finances', 'enforcement'],
+      summary: {
+        zh: '要求撤回并保留，强调招聘期限、家庭和劳动流动。',
+        en: 'Requests withdrawal and retention, citing hiring timelines, families and worker mobility.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd1467c2889feff0de2d295d1d27424dfdc26ad89bdab474a91b2ecacb25e316a',
+    },
+    {
+      id: 'USCIS-2026-0364-0015',
+      stance: 'oppose',
+      themes: ['legal'],
+      summary: {
+        zh: '反对改变现行规则，认为违背对来美者的承诺。',
+        en: 'Opposes changing the existing rule as breaking commitments to admitted workers.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ccc2263f7162c59471e7b0bacc09e33dd9171338f98d0a6c1f7e8830f2598c21',
+    },
+    {
+      id: 'USCIS-2026-0364-0056',
+      stance: 'oppose',
+      themes: ['talent', 'family', 'finances', 'transition'],
+      summary: {
+        zh: '要求撤回，强调人才、企业和地方经济损失。',
+        en: 'Requests withdrawal, emphasizing losses to talent, businesses and local economies.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '940c5317f4229102deda23169f2e2c4aef8fe9cbbddd4209c861b9208e466411',
+    },
+    {
+      id: 'USCIS-2026-0364-0103',
+      stance: 'oppose',
+      themes: ['transition', 'finances', 'family'],
+      summary: {
+        zh: '认为60天对于合法、有序离境和处理家庭事务必不可少。',
+        en: 'Calls 60 days essential for lawful, orderly departure and family arrangements.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '93dfa60437fd79825a7a1a004a398b9edf7e6a073509c8ed627fa089fce085b1',
+    },
+    {
+      id: 'USCIS-2026-0364-0402',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '要求撤回，认为取消会损害企业招聘、人才竞争及家庭稳定。',
+        en: 'Requests withdrawal, citing employer hiring, talent competitiveness, and family stability.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'bd261b12039ce86ce21f0d9f2b34576d7c9ea1cb944f3eeb26c0c0db2d3e366e',
+    },
+    {
+      id: 'USCIS-2026-0364-0349',
+      stance: 'oppose',
+      themes: ['finances'],
+      summary: {
+        zh: '反对取消，担忧房贷和住房、银行业受到冲击。',
+        en: 'Opposes removal over mortgage, housing and banking impacts.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '440527002e510a0bcde43323577791c3d57f2794dfbf56353ea363a88026ffd4',
+    },
+    {
+      id: 'USCIS-2026-0364-0145',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'legal'],
+      summary: {
+        zh: '要求保留，认为行政减负不足以抵消家庭及转职损害。',
+        en: 'Seeks retention, arguing administrative savings do not justify family and job-transition harms.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a0e9e81cbb407534abd3b0ecf33c0f10fcfd7c5261f4e89a3ae56e96f9990334',
+    },
+    {
+      id: 'USCIS-2026-0364-0317',
+      stance: 'mixed',
+      themes: ['alternatives', 'temporary', 'domestic', 'enforcement'],
+      summary: {
+        zh: '赞同方向但提出仅供离境的15或30天，担忧本土裁员。',
+        en: 'Favors the direction but proposes departure-only 15 or 30 days, citing domestic layoffs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'bc4ead916731d4d26fbec64013469a89d4903d671118fcdace996c6f1a5cdc35',
+    },
+    {
+      id: 'USCIS-2026-0364-0423',
+      stance: 'support',
+      themes: ['temporary', 'legal', 'enforcement'],
+      summary: {
+        zh: '支持取消，认为可强化身份与就业联系并降低行政负担。',
+        en: 'Supports repeal to tie status to employment and reduce administrative burden.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd3012854e0e83b66df0e37976ad0efd6977a6e4af8686dfe13bb10d989e042a6',
+    },
+    {
+      id: 'USCIS-2026-0364-0157',
+      stance: 'oppose',
+      themes: [
+        'transition',
+        'family',
+        'finances',
+        'talent',
+        'enforcement',
+        'legal',
+      ],
+      summary: {
+        zh: '要求保留以支持家庭、招聘和举报不当用工。',
+        en: 'Seeks retention for families, hiring and reporting workplace mistreatment.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'c37ffc880c20fee4444d9d1ccf6e6beaa149383d5c960001f68067bc0f352b23',
+    },
+    {
+      id: 'USCIS-2026-0364-0499',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '基于人道理由要求失业后至少60天求职。',
+        en: 'Requests at least 60 days for job search on humanitarian grounds.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '9a77e27eabc311a848ab1d8d84db926b3f01b0b2831a704f5256ebb888275cd8',
+    },
+    {
+      id: 'USCIS-2026-0364-0185',
+      stance: 'oppose',
+      themes: ['alternatives', 'transition', 'family', 'finances', 'talent'],
+      summary: {
+        zh: '要求保留60天或至少30天以便家庭有序过渡。',
+        en: 'Seeks 60 days or at least 30 days for orderly family transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1bb2f789cb5f7619d6e3c039ae1fa1a170385111c28e6c1af89fcfd8c2923fdb',
+    },
+    {
+      id: 'USCIS-2026-0364-0284',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'enforcement'],
+      summary: {
+        zh: '要求保留现行宽限期，担忧家庭和雇主权力失衡。',
+        en: 'Seeks retention of the current period over family harms and employer power imbalances.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'a05c6858079c534a1c7c1c8d45e3a23dd19befa5ba8912603cbec2c03f5a2e92',
+    },
+    {
+      id: 'USCIS-2026-0364-0388',
+      stance: 'oppose',
+      themes: ['talent', 'transition', 'finances', 'family'],
+      summary: {
+        zh: '认为取消损害留才和合法有序处理离境事务。',
+        en: 'Argues removal harms talent retention and lawful, orderly departure arrangements.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1bb976cb954d1a345c913b3812c6a908d71b026f02a16d89ed0415af2332b365',
+    },
+    {
+      id: 'USCIS-2026-0364-0484',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '要求不要取消，为正常转职提供必要时间。',
+        en: 'Seeks retention to provide necessary time for normal job transitions.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '26ffd1c8c7a6ddbcec7a0c75dbf4ac7cb8d335abec1f813f5af798b6ae9fdadb',
+    },
+    {
+      id: 'USCIS-2026-0364-0002',
+      stance: 'support',
+      themes: ['legal'],
+      summary: {
+        zh: '赞同取消，认为符合立法意图并简化监管。',
+        en: 'Supports removal as consistent with statutory intent and simpler oversight.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '926c524b81a22804f52d5f37bf6563037c50e233ca2184f75ba9a1d2e2c31fc3',
+    },
+    {
+      id: 'USCIS-2026-0364-0121',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '反对立即危及全家，强调教育、医疗和房屋善后。',
+        en: 'Opposes an immediate family crisis, citing schooling, healthcare and housing obligations.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'd65d847a40f8af8022324ba9b5418560454687e4e3f7cc62fa986af8cd3854d4',
+    },
+    {
+      id: 'USCIS-2026-0364-0276',
+      stance: 'oppose',
+      themes: ['transition'],
+      summary: {
+        zh: '认为合法工作并在美生活者需要60天。',
+        en: 'Says lawful workers with established lives need 60 days.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '7ee279b8e50e0fd616013f1406335703d74d844c6442c7e1817b881b389e22d1',
+    },
+    {
+      id: 'USCIS-2026-0364-0165',
+      stance: 'oppose',
+      themes: ['transition', 'family', 'finances', 'talent', 'legal'],
+      summary: {
+        zh: '质疑取消的实践可行性及行政减负理由，强调家庭信赖与企业转雇主手续。',
+        en: 'Questions practical feasibility and administrative savings, emphasizing family reliance and employer transfer filings.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '42a1f197f2f1d01f7f058f01c9fd2911fd9ab791ce1a6155bb6c26d2fd769590',
+    },
+    {
+      id: 'USCIS-2026-0364-0475',
+      stance: 'oppose',
+      themes: ['talent', 'family', 'finances', 'transition'],
+      summary: {
+        zh: '要求保留，认为取消会增加企业招聘成本并损害家庭财务和人才吸引力。',
+        en: 'Seeks retention to avoid higher hiring costs, family financial harm, and reduced talent appeal.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '41184f93a5808a05951a73705fb42d34acf782feb050914d470c02b2563e281d',
+    },
+    {
+      id: 'USCIS-2026-0364-0091',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '仅泛泛赞扬工作，未明确说明对取消提案的立场。',
+        en: 'Offers generic praise without identifying a position on repeal.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '316d44b7dda994770c5c0fa023add5dd21e36481ca727936fcdeb8232fd815d5',
+    },
+    {
+      id: 'USCIS-2026-0364-0149',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '认为不给60天既残酷又不尊重工作者贡献。',
+        en: "Calls denial of 60 days cruel and disrespectful of workers' contributions.",
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '4f0430ede61015a4d8a11e086ef5b23e5d7ac7347f6b6f4ea4d7ed7d14325b94',
+    },
+    {
+      id: 'USCIS-2026-0364-0421',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '要求撤回，强调子女、医疗和财务责任所需时间。',
+        en: 'Requests withdrawal, citing time needed for children, healthcare and financial obligations.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'e100552cef1d3a1159b0c0ffb7f73d39944c9dc2e4eaf94ae24ba7d3f3df5dda',
+    },
+    {
+      id: 'USCIS-2026-0364-0085',
+      stance: 'oppose',
+      themes: ['legal', 'family', 'transition'],
+      summary: {
+        zh: '要求保留官员裁量，以应对主申请人死亡等特殊情况。',
+        en: "Seeks continued officer discretion for exceptional cases such as a principal worker's death.",
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '2a80e4117d78da1aa12b1e21298e4da616d7c5e577f17ee6c37f440ba1be3f23',
+    },
+    {
+      id: 'USCIS-2026-0364-0147',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition'],
+      summary: {
+        zh: '要求保留，认为家庭、教育和财务善后无法立即完成。',
+        en: 'Seeks retention because family, schooling, and financial arrangements cannot be completed immediately.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'ddaa98c4382fac4318a244fdf5ca31959455be1dfd4de51481f1f16c338ace7f',
+    },
+    {
+      id: 'USCIS-2026-0364-0156',
+      stance: 'oppose',
+      themes: ['family', 'finances', 'transition', 'talent'],
+      summary: {
+        zh: '要求保留，保护配偶和子女稳定并支持雇主留用人才。',
+        en: 'Seeks retention to protect spouses and children and support employer talent retention.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '1bad5988bbb86406fd81f1c4da0e7f0b5311a9353ddb2c61ac3ffa8bd00b1043',
     },
   ],
   scopeNote: {
-    zh: '基于已公开526条中的固定随机100条；1条仅有附件且附件不可读，保留为不明确。观点摘要为评论者主张，并非事实或法律结论。',
-    en: 'Fixed random sample of 100 from 526 published comments; one attachment-only comment was unreadable and retained as unclear. Summaries describe commenters’ views, not factual or legal findings.',
+    zh: '样本来自该提案的已公开评论。无法读取的附件逐条注明；观点摘要为评论者主张，并非事实或法律结论。',
+    en: 'This sample covers published comments on the proposal. Unreadable attachments are disclosed per record; summaries describe commenters’ views, not factual or legal findings.',
   },
   commentPhase: 'open',
   commentDeadline: '2026-11-10',
-  sampleSize: 100,
-  expandedAt: '2026-09-12T12:42:16.444Z',
+  sampleSize: 200,
 } satisfies CommentSample;

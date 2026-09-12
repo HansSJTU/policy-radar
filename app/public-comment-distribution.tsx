@@ -106,7 +106,8 @@ export function PublicCommentDistribution({
                     }
                   </span>
                   <strong>
-                    {row.count} / {stats.total} · {row.percent.toFixed(0)}%
+                    {row.count} / {stats.total} ·{' '}
+                    {row.percent.toFixed(1).replace(/\.0$/, '')}%
                   </strong>
                 </div>
                 <div className="pd-comment-track" aria-hidden="true">
@@ -134,7 +135,8 @@ export function PublicCommentDistribution({
                     ] ?? row.id}
                   </span>
                   <strong>
-                    {row.count} / {stats.total} · {row.percent.toFixed(0)}%
+                    {row.count} / {stats.total} ·{' '}
+                    {row.percent.toFixed(1).replace(/\.0$/, '')}%
                   </strong>
                 </div>
                 <div className="pd-comment-track" aria-hidden="true">
