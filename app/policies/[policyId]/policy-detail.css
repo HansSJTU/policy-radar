@@ -1051,3 +1051,45 @@ fieldset.pd-scenarios {
     gap: 12px;
   }
 }
+
+.pd-comment-section {
+  margin-top: 26px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--pd-surface);
+  scroll-margin-top: 84px;
+}
+.pd-comment-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.pd-comment-eyebrow { font-size: 10px; letter-spacing: .12em; color: var(--pd-purple); }
+.pd-main .pd-comment-heading h3 { margin-top: 6px; font-size: 21px; }
+.pd-comment-badge { padding: 5px 10px; border-radius: 5px; color: var(--pd-purple); background: var(--pd-purple-bg); font-size: 12px; }
+.pd-main .pd-comment-meta { margin-top: 12px; color: var(--pd-muted); font-size: 12px; }
+.pd-comment-section h4 { margin: 24px 0 12px; font-size: 14px; font-weight: 500; }
+.pd-comment-bars { display: grid; gap: 14px; margin: 16px 0 22px; }
+.pd-comment-row > div:first-child { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; line-height: 1.6; }
+.pd-comment-row strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pd-comment-track { height: 8px; background: var(--pd-answer); border-radius: 4px; margin-top: 7px; overflow: hidden; }
+.pd-comment-track > span { display: block; height: 100%; background: var(--pd-purple); border-radius: inherit; }
+.pd-comment-track > span[data-stance='support'] { background: #35736a; }
+.pd-comment-track > span[data-stance='mixed'] { background: #aa8141; }
+.pd-comment-track > span[data-stance='unclear'] { background: #7c8798; }
+.pd-main .pd-comment-note, .pd-comment-method p { color: var(--pd-muted); font-size: 12px; line-height: 1.8; }
+.pd-main .pd-comment-pending { margin: 20px 0; padding: 16px; background: var(--pd-answer); border-radius: 8px; font-size: 14px; line-height: 1.8; }
+.pd-comment-method { border-top: 1px solid var(--line); padding-top: 16px; margin: 20px 0; font-size: 13px; }
+.pd-comment-method summary { cursor: pointer; }
+.pd-comment-method p { margin-top: 12px; }
+.pd-comment-method ol { padding-left: 20px; }
+.pd-comment-method li { margin-bottom: 14px; overflow-wrap: anywhere; }
+.pd-comment-method li span { display: block; margin-top: 4px; line-height: 1.7; color: var(--pd-muted); }
+.policy-detail-page .pd-comment-source { display: inline-block; margin-top: 14px; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 600px) {
+  .pd-comment-section { padding: 18px 16px; }
+  .pd-comment-row > div:first-child { flex-wrap: wrap; gap: 4px; }
+}
+.pd-comment-method li small { display: block; margin-top: 5px; color: var(--pd-muted); font-size: 11px; line-height: 1.7; }
+.pd-comment-codebook { padding: 14px; margin: 18px 0; background: var(--pd-answer); border-radius: 8px; }
+.pd-comment-codebook > div + div { margin-top: 10px; }
+.pd-comment-codebook dt { font-weight: 500; }
+.pd-comment-codebook dd { margin: 3px 0 0; color: var(--pd-muted); font-size: 12px; line-height: 1.7; }
+.pd-main .pd-comment-scope-note { margin-top: 12px; padding: 12px 14px; border-left: 2px solid var(--pd-purple); background: var(--pd-purple-bg); }

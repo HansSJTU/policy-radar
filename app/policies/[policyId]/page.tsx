@@ -16,6 +16,7 @@ import { ShareButton } from '../../share-button';
 import { getPolicyShareItem } from '../../item-share-model';
 import { MobileSiteMenu } from '../../mobile-site-menu';
 import { getPolicies } from '../../policy-data';
+import { PublicCommentDistribution } from '../../public-comment-distribution';
 import {
   getPolicyDetail,
   getPolicyEditorial,
@@ -376,6 +377,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   track={process}
                   language={language}
                 />
+                <PublicCommentDistribution policyId={policyId} language={language} />
               </section>
               <section id="timeline" className="pd-section">
                 <div className="pd-section-heading">

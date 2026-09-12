@@ -402,6 +402,7 @@ export const policies: Array<{
   {
     rank: 8,
     id: 'grace-period',
+    commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
     title: '拟取消失业后的 60 天宽限期',
     tldr: 'DHS 拟取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1 和 TN 等身份在雇佣提前终止后的最长 60 天酌情宽限期；该提案不涉及 F-1 完成学业后的宽限期。',
     score: '5.5',
