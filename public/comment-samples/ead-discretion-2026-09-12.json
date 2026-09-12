@@ -5050,14 +5050,14 @@
     },
     {
       "id": "USCIS-2026-0067-4483",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy",
         "livelihood"
       ],
       "summary": {
-        "zh": "申请工作许可以贡献经济、纳税并实现自立，未评价提案。",
-        "en": "Requests work authorization to contribute economically, pay taxes and become self-sufficient, without assessing the proposal."
+        "zh": "申请工作许可以贡献经济、纳税并实现自立；方向上支持保留或改善工作许可准入。",
+        "en": "Requests work authorization to contribute economically, pay taxes and become self-sufficient; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-08-04T04:00:00Z",
       "textSha256": "768c98386e41bee0c2f979c45f57543f0eab21ebe4b3440162c9310d2726872e"
@@ -5096,14 +5096,14 @@
     },
     {
       "id": "USCIS-2026-0067-2372",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood"
       ],
       "summary": {
-        "zh": "要求及时续发工作许可、避免工作中断，但未明确评价提案。",
-        "en": "Requests timely permits and gap-free renewals to prevent job loss, without clearly assessing the proposal."
+        "zh": "要求及时续发工作许可、避免工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Requests timely permits and gap-free renewals to prevent job loss; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-27T04:00:00Z",
       "textSha256": "dadfbbe1e8fa3854e2f2cd99e7f5a771265dd968da53444599c406d2ae478e72"
@@ -5154,14 +5154,14 @@
     },
     {
       "id": "USCIS-2026-0067-1217",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "担忧失业后家庭无法维持生活，未明确评价提案。",
-        "en": "Fears the household cannot meet living expenses after job loss, without clearly assessing the proposal."
+        "zh": "担心失业使家庭无法维生，表达维持就业和家庭收入的方向。",
+        "en": "Warns that job loss would leave the family without means to live, favoring preservation of employment and household income."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "e3c2984a03cc059218f1de3ae10714bfd9fa0df167c0e76d80ffea53e4185e52"
@@ -5212,7 +5212,7 @@
     },
     {
       "id": "USCIS-2026-0067-4316",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
@@ -5220,15 +5220,15 @@
         "economy"
       ],
       "summary": {
-        "zh": "描述续期延误造成失业和生活困难，要求继续工作但未明确评价提案。",
-        "en": "Describes job loss and hardship from renewal delays and seeks continued work, without clearly assessing the proposal."
+        "zh": "描述续期延误造成失业和生活困难，要求继续合法工作，方向上支持保留或改善工作许可准入。",
+        "en": "Describes job loss and hardship from renewal delays and seeks continued work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-08-03T04:00:00Z",
       "textSha256": "604bdf2749bfc30ef34746ad86bc8c567563a5d17564da05215e29a8ab4edf1e"
     },
     {
       "id": "USCIS-2026-0067-1680",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
@@ -5236,8 +5236,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时处理乌克兰假释、TPS和工作许可续期，未表达提案立场。",
-        "en": "Requests timely Ukrainian parole, TPS and work permit renewals, without expressing a proposal stance."
+        "zh": "要求及时处理乌克兰假释、TPS和工作许可续期；方向上支持保留或改善工作许可准入。",
+        "en": "Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-16T04:00:00Z",
       "textSha256": "a86d6ff573ee2a7d196b35ce17bbd0a491072c327146107479aaf06ec9d7afa6"
@@ -5277,14 +5277,14 @@
     },
     {
       "id": "USCIS-2026-0067-2497",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "humanitarian",
         "livelihood"
       ],
       "summary": {
-        "zh": "描述战争避难及合法工作对自立的重要性，未明确评价提案。",
-        "en": "Describes refuge from war and the importance of lawful work to self-sufficiency, without clearly assessing the proposal."
+        "zh": "描述战争避难及合法工作对自立的重要性；方向上支持保留或改善工作许可准入。",
+        "en": "Describes refuge from war and the importance of lawful work to self-sufficiency; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-29T04:00:00Z",
       "textSha256": "bacf0217bd4dc8c9da9df6265879477a94277b370e5661a5be26a1ae3e11f6bb"
@@ -5527,13 +5527,13 @@
     },
     {
       "id": "USCIS-2026-0067-1941",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy"
       ],
       "summary": {
-        "zh": "赞扬乌克兰人的劳动贡献并支持工作权，未评价提案。",
-        "en": "Praises Ukrainians’ work contributions and supports their right to work, without assessing the proposal."
+        "zh": "赞扬乌克兰人的劳动贡献并支持工作权；方向上支持保留或改善工作许可准入。",
+        "en": "Praises Ukrainians’ work contributions and supports their right to work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "899d32145f893691de653dde82172b6de0980d952b09bff5591cc15a6fa07ca0"
@@ -5589,7 +5589,7 @@
     },
     {
       "id": "USCIS-2026-0067-1522",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
@@ -5597,8 +5597,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。",
-        "en": "Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal."
+        "zh": "要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-14T04:00:00Z",
       "textSha256": "b6b8443f9daa54685c5c7bbeeee178896f25739177aeaa80c846e9a711c7103f"
@@ -5711,7 +5711,7 @@
     },
     {
       "id": "USCIS-2026-0067-2013",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
@@ -5719,8 +5719,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。",
-        "en": "Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal."
+        "zh": "要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-21T04:00:00Z",
       "textSha256": "3493079f45fc1c685ac5d6c661604ff341f6f230a72c480ef67a5b9671a6b416"
@@ -5801,14 +5801,14 @@
     },
     {
       "id": "USCIS-2026-0067-2404",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "强调工作许可对住房、医疗和家庭自立的重要性，未表达提案立场。",
-        "en": "Emphasizes work authorization for housing, healthcare and family independence, without a proposal stance."
+        "zh": "强调工作许可对住房、医疗和家庭自立的重要性；方向上支持保留或改善工作许可准入。",
+        "en": "Emphasizes work authorization for housing, healthcare and family independence; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-27T04:00:00Z",
       "textSha256": "31e5d880023824604a03b951704240e6a0babf312891fe97fff8e261bc75cfda"
@@ -5830,7 +5830,7 @@
     },
     {
       "id": "USCIS-2026-0067-2642",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
@@ -5838,8 +5838,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。",
-        "en": "Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal."
+        "zh": "要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-29T04:00:00Z",
       "textSha256": "1c669f9be6c128529ba0dd4c99b958aadad93b62738da2bc7a13e9360e4bba38"
@@ -5863,7 +5863,7 @@
     },
     {
       "id": "USCIS-2026-0067-1517",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
@@ -5871,32 +5871,32 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。",
-        "en": "Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal."
+        "zh": "要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-14T04:00:00Z",
       "textSha256": "b6b8443f9daa54685c5c7bbeeee178896f25739177aeaa80c846e9a711c7103f"
     },
     {
       "id": "USCIS-2026-0067-0083",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [],
       "summary": {
-        "zh": "仅支持合法在美者工作，未表达对提案的立场。",
-        "en": "Only supports lawful work by people legally in the United States, without expressing a proposal stance."
+        "zh": "支持合法在美者依法工作，方向上主张保留工作机会。",
+        "en": "Supports lawful work for people legally in the United States, favoring preservation of work access."
       },
       "postedDate": "2026-06-08T04:00:00Z",
       "textSha256": "5b31a97848a706e978989b9fb2fa05910df96f59dd875238394eff95833b85d7"
     },
     {
       "id": "USCIS-2026-0067-2032",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals"
       ],
       "summary": {
-        "zh": "请求处理积压工作许可申请，正文未表达提案立场。",
-        "en": "Requests action on a delayed work permit application; the body expresses no proposal stance."
+        "zh": "请求处理积压工作许可申请；方向上支持保留或改善工作许可准入。",
+        "en": "Requests action on a delayed work permit application; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-21T04:00:00Z",
       "textSha256": "ddb7b018f7c31fd247e21e3fa3dc4ac5134043a7870059d764b22a2009697b4f",
@@ -6009,27 +6009,27 @@
     },
     {
       "id": "USCIS-2026-0067-4684",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood"
       ],
       "summary": {
-        "zh": "担心许可到期影响家庭和工作，立场表述不足。",
-        "en": "Fears permit expiration affects family and employment, but gives insufficient proposal position."
+        "zh": "担心工作许可到期伤害家庭和就业，方向上主张保留工作机会。",
+        "en": "Fears permit expiration will harm family and employment, favoring continued work access."
       },
       "postedDate": "2026-08-04T04:00:00Z",
       "textSha256": "1ad6f22624c7397e332e61271a69022e56f5eb50a86d4eb57da7cbafe18b2d45"
     },
     {
       "id": "USCIS-2026-0067-2505",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals"
       ],
       "summary": {
-        "zh": "希望持续工作并减轻工作许可和身份续期困难，但未明确评价提案。",
-        "en": "Wants continued work and relief from permit and status renewal difficulties, without clearly assessing the proposal."
+        "zh": "希望持续工作并减轻工作许可和身份续期困难；方向上支持保留或改善工作许可准入。",
+        "en": "Wants continued work and relief from permit and status renewal difficulties; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-29T04:00:00Z",
       "textSha256": "c6efda46153dd6e92e6f9ec3182f5e2079980878b27c73340854fa06283da2ac"
@@ -6096,29 +6096,29 @@
     },
     {
       "id": "USCIS-2026-0067-1718",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
         "livelihood"
       ],
       "summary": {
-        "zh": "请求解决办理积压和工作中断，未明确评价提案。",
-        "en": "Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal."
+        "zh": "请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-17T04:00:00Z",
       "textSha256": "4fc9035d3b1b8ec0ca0cdccf56d72ffc37336abc378b07d486867115f5fe1159"
     },
     {
       "id": "USCIS-2026-0067-4454",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "要求权衡限制就业的人道和经济影响，未明确支持或反对提案。",
-        "en": "Asks that human and economic impacts of work limits be weighed, without clearly supporting or opposing the proposal."
+        "zh": "强调限制合法就业的人道和经济伤害，主张维持工作机会及家庭稳定。",
+        "en": "Emphasizes the human and economic harms of limiting lawful employment and favors work access and family stability."
       },
       "postedDate": "2026-08-04T04:00:00Z",
       "textSha256": "4ae527323e94f069464e679bd93f10c01012fbd43648181a414035aa4fe46262"
@@ -6198,29 +6198,29 @@
     },
     {
       "id": "USCIS-2026-0067-4779",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy",
         "humanitarian"
       ],
       "summary": {
-        "zh": "强调照护行业依赖移民并请求考虑离境背景，未明确提案立场。",
-        "en": "Notes caregiving relies on immigrants and seeks consideration of circumstances fled, without a clear proposal stance."
+        "zh": "强调移民对残障照护的重要贡献，要求裁量考虑移民逃离的处境，方向上支持移民工作机会。",
+        "en": "Defends immigrants’ contributions to disability care and asks discretion to consider circumstances they fled, favoring migrant work access."
       },
       "postedDate": "2026-08-05T04:00:00Z",
       "textSha256": "e2a3f4f616e04f2f4e07e5f149936509987f332f46a96a9c293f924de50d6098"
     },
     {
       "id": "USCIS-2026-0067-1329",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "humanitarian",
         "livelihood",
         "renewals"
       ],
       "summary": {
-        "zh": "要求恢复乌克兰人工作许可，主要讨论现有暂停和TPS困境而非提案。",
-        "en": "Seeks restored Ukrainian work permits, focusing on existing suspensions and TPS hardship rather than the proposal."
+        "zh": "要求立即恢复乌克兰人工作许可，支持其在战争期间自立和维持就业。",
+        "en": "Urges immediate restoration of Ukrainian work permits so people can remain employed and self-sufficient during the war."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "fcdfdbd97f69e9b349227f77ea9e9019fa51ff73430c737c02c8060f3848df20"
@@ -6269,15 +6269,15 @@
     },
     {
       "id": "USCIS-2026-0067-1998",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
         "livelihood"
       ],
       "summary": {
-        "zh": "请求解决办理积压和工作中断，未明确评价提案。",
-        "en": "Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal."
+        "zh": "请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "cc4417f7398363d2915c29e93f86362c302a5fff17333148e203a26edc2958ff"
@@ -6346,15 +6346,15 @@
     },
     {
       "id": "USCIS-2026-0067-1833",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
         "livelihood"
       ],
       "summary": {
-        "zh": "请求解决办理积压和工作中断，未明确评价提案。",
-        "en": "Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal."
+        "zh": "请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "802d44f05b0a76f70c2ace0e8be2969acc26c37a53b7074033dfd8b15630fb53"
@@ -6375,13 +6375,13 @@
     },
     {
       "id": "USCIS-2026-0067-1653",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "livelihood"
       ],
       "summary": {
-        "zh": "强调工作对家庭生存的重要性，未明确评价提案。",
-        "en": "Emphasizes work as essential to household survival, without clearly assessing the proposal."
+        "zh": "强调工作对家庭生存的重要性；方向上支持保留或改善工作许可准入。",
+        "en": "Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-15T04:00:00Z",
       "textSha256": "d22e0aaca55284ae7c4f30600780846de87ae82f1ec68fc09dd7b3f9c13dcc14"
@@ -6406,13 +6406,13 @@
     },
     {
       "id": "USCIS-2026-0067-3259",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "livelihood"
       ],
       "summary": {
-        "zh": "强调工作对家庭生存的重要性，未明确评价提案。",
-        "en": "Emphasizes work as essential to household survival, without clearly assessing the proposal."
+        "zh": "强调工作对家庭生存的重要性；方向上支持保留或改善工作许可准入。",
+        "en": "Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-31T04:00:00Z",
       "textSha256": "47af5d6ad8093e661723970f3e2a69c2ea15758e8b00513d8c461bef67eab56c"
@@ -6436,13 +6436,13 @@
     },
     {
       "id": "USCIS-2026-0067-0857",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "discretion"
       ],
       "summary": {
-        "zh": "支持工作机会和公平审理，未明确评价提案。",
-        "en": "Supports work opportunities and fair hearings, without clearly assessing the proposal."
+        "zh": "支持工作机会和公平审理；方向上支持保留或改善工作许可准入。",
+        "en": "Supports work opportunities and fair hearings; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-06-15T04:00:00Z",
       "textSha256": "cea15a0b37a457a5d5df3de451a13a49d72d71ac0e99300a2fd9b29c978a8cfe"
@@ -6589,14 +6589,14 @@
     },
     {
       "id": "USCIS-2026-0067-1439",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "discretion"
       ],
       "summary": {
-        "zh": "要求透明办理期限和费用减免，未明确对提案表达支持或反对。",
-        "en": "Requests transparent processing timelines and fee relief, without clear support or opposition to the proposal."
+        "zh": "要求透明办理期限和费用减免；方向上支持保留或改善工作许可准入。",
+        "en": "Requests transparent processing timelines and fee relief; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "dfe496c333ae5cdbf68732679a2e39eb0529f4e4faf207c9b9682d6e3070ceb0"
@@ -6757,7 +6757,7 @@
     },
     {
       "id": "USCIS-2026-0067-1573",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
@@ -6765,8 +6765,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。",
-        "en": "Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal."
+        "zh": "要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-14T04:00:00Z",
       "textSha256": "b6b8443f9daa54685c5c7bbeeee178896f25739177aeaa80c846e9a711c7103f"
@@ -6816,14 +6816,14 @@
     },
     {
       "id": "USCIS-2026-0067-1337",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood"
       ],
       "summary": {
-        "zh": "描述办理延误带来的失业和家庭压力，未评价提案。",
-        "en": "Describes job loss and household pressure from processing delays, without assessing the proposal."
+        "zh": "描述办理延误带来的失业和家庭压力；方向上支持保留或改善工作许可准入。",
+        "en": "Describes job loss and household pressure from processing delays; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "4127dacca7b349ee5d6b0f57f815d702d2f99d7f9514b6199c2966afdfca51eb"
@@ -6879,11 +6879,11 @@
     },
     {
       "id": "USCIS-2026-0067-1111",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [],
       "summary": {
-        "zh": "笼统批评对移民群体的待遇，未明确指向提案。",
-        "en": "Broadly criticizes treatment of immigrants without clearly addressing the proposal."
+        "zh": "批评对移民群体的待遇不公，方向上反对限制移民。",
+        "en": "Condemns treatment of the immigrant community as wrong, directionally opposing restrictions on immigrants."
       },
       "postedDate": "2026-06-29T04:00:00Z",
       "textSha256": "9a3da545f08e2c8ba8729e28f8bed6d6f989a4e4c5742b28b8d4cf7fd453b5d5"
@@ -6905,14 +6905,14 @@
     },
     {
       "id": "USCIS-2026-0067-3477",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "humanitarian",
         "livelihood"
       ],
       "summary": {
-        "zh": "表达对安全和工作机会的感激，未明确评价提案。",
-        "en": "Expresses gratitude for safety and work opportunities, without clearly assessing the proposal."
+        "zh": "强调安全居留和工作权对家庭的重要性，支持保留这些机会。",
+        "en": "Emphasizes the importance of safe residence and the right to work for the family, favoring preservation of those opportunities."
       },
       "postedDate": "2026-08-03T04:00:00Z",
       "textSha256": "a88c3e659d4a3158c71269da3bd446bef9fd233d4bc11f79cf4b1d2c3739c708"
@@ -6970,7 +6970,7 @@
     },
     {
       "id": "USCIS-2026-0067-1465",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "humanitarian",
         "renewals",
@@ -6978,8 +6978,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时续发乌克兰人工作许可，正文未明确评价提案。",
-        "en": "Seeks timely Ukrainian work permit renewals; the body does not clearly assess the proposal."
+        "zh": "要求及时续发乌克兰人工作许可；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "4cff94ca30699ef7a5393d0d85530b713fe1dd6e8050871eda5b818879b60c97",
@@ -7045,28 +7045,28 @@
     },
     {
       "id": "USCIS-2026-0067-1624",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood"
       ],
       "summary": {
-        "zh": "描述办理延误带来的失业和家庭压力，未评价提案。",
-        "en": "Describes job loss and household pressure from processing delays, without assessing the proposal."
+        "zh": "描述长期无法合法工作造成家庭财务压力，要求加快工作许可办理。",
+        "en": "Describes household financial hardship from a prolonged inability to work legally and asks for faster EAD processing."
       },
       "postedDate": "2026-07-15T04:00:00Z",
       "textSha256": "9c078329beca1071cd5a874b23d1fe8f6f5c2a8c149bb966cbb91d18910453d2"
     },
     {
       "id": "USCIS-2026-0067-1305",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood"
       ],
       "summary": {
-        "zh": "描述办理延误带来的失业和家庭压力，未评价提案。",
-        "en": "Describes job loss and household pressure from processing delays, without assessing the proposal."
+        "zh": "担心工作许可积压导致即将失业及家庭收入中断，支持维持合法工作机会。",
+        "en": "Warns that EAD delays threaten imminent job loss and family income, favoring continued lawful work access."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "9e30db11c1f0683b359a0befd370d4ae56364ef7cf0ec40a72767a8f56c6eec8"
@@ -7100,14 +7100,14 @@
     },
     {
       "id": "USCIS-2026-0067-1914",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy",
         "livelihood"
       ],
       "summary": {
-        "zh": "描述就业和纳税的好处，未表达提案立场。",
-        "en": "Describes benefits of employment and taxes, without a proposal stance."
+        "zh": "描述就业和纳税的好处；方向上支持保留或改善工作许可准入。",
+        "en": "Describes benefits of employment and taxes; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "aa7ebcc35d0057ffc81ab6a5837671d5fcf30eabc5f576c26746e8c16572cdc5"
@@ -7174,30 +7174,30 @@
     },
     {
       "id": "USCIS-2026-0067-3970",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "要求解决现有续期积压和工作中断，未明确评价提案。",
-        "en": "Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal."
+        "zh": "要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-08-03T04:00:00Z",
       "textSha256": "d3089cd9875c0425350bd386548601a47b9dc0573b83b939ff502e769f050d81"
     },
     {
       "id": "USCIS-2026-0067-2661",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "要求解决现有续期积压和工作中断，未明确评价提案。",
-        "en": "Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal."
+        "zh": "要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-29T04:00:00Z",
       "textSha256": "197db67a5f70669a12bc93f8ce32c4fac379f23d5ecc7d7fccf3fd0b90d4e7a9"
@@ -7282,15 +7282,15 @@
     },
     {
       "id": "USCIS-2026-0067-1818",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "livelihood",
         "economy"
       ],
       "summary": {
-        "zh": "要求解决现有续期积压和工作中断，未明确评价提案。",
-        "en": "Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal."
+        "zh": "要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。",
+        "en": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "b4a6c740393490721debf554ff74941403778ed79a5041c39b468ef2f7c43a2c"
@@ -7394,7 +7394,7 @@
     },
     {
       "id": "USCIS-2026-0067-1683",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals",
         "humanitarian",
@@ -7402,8 +7402,8 @@
         "economy"
       ],
       "summary": {
-        "zh": "要求及时处理乌克兰假释、TPS和工作许可续期，未表达提案立场。",
-        "en": "Requests timely Ukrainian parole, TPS and work permit renewals, without expressing a proposal stance."
+        "zh": "要求及时处理乌克兰假释、TPS和工作许可续期；方向上支持保留或改善工作许可准入。",
+        "en": "Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-16T04:00:00Z",
       "textSha256": "a86d6ff573ee2a7d196b35ce17bbd0a491072c327146107479aaf06ec9d7afa6"
@@ -7551,13 +7551,13 @@
     },
     {
       "id": "USCIS-2026-0067-1306",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "renewals"
       ],
       "summary": {
-        "zh": "描述TPS、假释和工作许可积压，未明确评价提案。",
-        "en": "Describes TPS, parole and work permit backlogs, without clearly assessing the proposal."
+        "zh": "描述TPS、假释和工作许可积压；方向上支持保留或改善工作许可准入。",
+        "en": "Describes TPS, parole and work permit backlogs; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-13T04:00:00Z",
       "textSha256": "ea021cb53ec94efa7e06081c852ace99a7fe12e55011202205284056b6ae34a7"
@@ -7798,7 +7798,7 @@
     },
     {
       "id": "USCIS-2026-0067-1974",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "criminal",
         "discretion",
@@ -7806,8 +7806,8 @@
         "livelihood"
       ],
       "summary": {
-        "zh": "支持对严重犯罪的不利裁量，但要求区分守法贡献者并免于不必要负担。",
-        "en": "Supports adverse discretion for serious crimes but seeks distinction for compliant contributors and relief from unnecessary burdens."
+        "zh": "主张保护守法假释者及其雇主免受不必要负担；认可严重犯罪审查，但整体方向支持保留工作机会。",
+        "en": "Favors protecting compliant parolees and employers from unnecessary burdens; accepts scrutiny of serious crime but overall favors preserving work access."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "3ccf97761a486619011459c93bb170f780e9c2d0869a1738d3aaa510e3bd1d71"
@@ -7830,7 +7830,7 @@
     },
     {
       "id": "USCIS-2026-0067-3905",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "humanitarian",
         "renewals",
@@ -7838,22 +7838,22 @@
         "economy"
       ],
       "summary": {
-        "zh": "请求及时续发乌克兰人工作许可，未明确评价提案。",
-        "en": "Requests timely Ukrainian work permit renewals, without clearly assessing the proposal."
+        "zh": "请求及时续发乌克兰人工作许可；方向上支持保留或改善工作许可准入。",
+        "en": "Requests timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-08-03T04:00:00Z",
       "textSha256": "65f84f8b22e6a1364f8fdd4be73acaf62dd578d8d516460c9cfe7a59413bbc07"
     },
     {
       "id": "USCIS-2026-0067-2401",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy",
         "livelihood"
       ],
       "summary": {
-        "zh": "说明工作许可将支持创业和自立，未表达提案立场。",
-        "en": "Explains how a permit would support entrepreneurship and self-sufficiency, without a proposal stance."
+        "zh": "说明工作许可将支持创业和自立；方向上支持保留或改善工作许可准入。",
+        "en": "Explains how a permit would support entrepreneurship and self-sufficiency; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-27T04:00:00Z",
       "textSha256": "28c5280c9002ac5ccf3afc31f928fd6fce7c20034f8fb33278d855ff43f51be7"
@@ -7937,14 +7937,14 @@
     },
     {
       "id": "USCIS-2026-0067-1847",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "economy",
         "livelihood"
       ],
       "summary": {
-        "zh": "强调合法就业增加税收、填补岗位并减少救助依赖，未评价提案。",
-        "en": "Emphasizes taxes, staffing and reduced assistance from lawful work, without assessing the proposal."
+        "zh": "强调合法就业增加税收、填补岗位并减少救助依赖；方向上支持保留或改善工作许可准入。",
+        "en": "Emphasizes taxes, staffing and reduced assistance from lawful work; directionally favors preserving or improving access to work authorization."
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "a4716a308b5859f04a7c9cb3d8e1dca4732b42c13ec6a447964b5ac231213ce0"
@@ -8133,21 +8133,1037 @@
     "sampleSize": 200,
     "seed": "736e626b7f25ced0eb8056b6196f0fdc5aa63527cab71083a37f351f806ed01b",
     "counts": {
-      "oppose": 152,
+      "oppose": 195,
       "support": 1,
-      "mixed": 1,
-      "unclear": 46
+      "mixed": 0,
+      "unclear": 4
     },
     "percentages": {
-      "oppose": 76.0,
+      "oppose": 97.5,
       "support": 0.5,
-      "mixed": 0.5,
-      "unclear": 23.0
+      "mixed": 0,
+      "unclear": 2
     }
   },
   "commentPhase": "closed",
   "scopeNote": {
-    "zh": "样本来自整份拟议规则的公开评论，不仅涉及本卡片强调的犯罪记录审查，也涵盖人道假释、暂缓遣返和监督令等工作许可。立场针对整份提案；主题可多选，通用工卡诉求不足以推断立场。",
-    "en": "This sample covers comments on the full proposed rule, including parole, deferred-action and supervision-order work authorization, beyond the criminal-record review highlighted by this card. Stances concern the full proposal; themes overlap, and generic EAD requests alone do not establish a stance."
+    "zh": "样本来自整份拟议规则的公开评论，涵盖犯罪记录审查、人道假释、暂缓遣返和监督令等工作许可。按相关工作许可政策方向归类；明确主张保留、恢复或便利合法工作的评论，归为反对收紧。",
+    "en": "This sample covers comments on the full proposed rule, including criminal-record review and work authorization for parole, deferred action and supervision orders. Labels describe the related work-authorization policy direction; clear calls to preserve, restore or facilitate lawful work count as opposition to tightening."
+  },
+  "classificationBasis": "policy-direction-v1",
+  "classificationDefinition": {
+    "zh": "按政策方向归类：支持包括赞同提案、对相关外籍用工或签证制度持明确负面态度，以及要求进一步收紧；反对包括反对限制、维护移民或工作许可、主张保留或放宽相关机会。不要求评论明确评价提案的具体条款。",
+    "en": "Classified by policy direction: support includes endorsing the proposal, clearly negative views of the relevant foreign-worker or visa program, and calls for tighter restrictions. Opposition includes rejecting restrictions, defending migrants or work authorization, and preserving or expanding access. Explicit views on the proposal’s exact provisions are not required."
+  },
+  "classificationMethod": {
+    "zh": "逐条结合全文判断相关政策方向，不按赞成或反对等关键词机械分类。要求更高费用、更严限制或取消签证，归为支持收紧；支持保留或放宽工作与居留机会，归为反对收紧。对不同人群采取收紧与放宽并存的立场、或明确提出实质性支持条件，保留为有条件／混合。反对取消保障、仅把较短保障期作为退让方案的，仍归为反对收紧。仅有一般反欺诈表述，不会覆盖全文维护合法工作机会的主要方向。无关内容、纯咨询、无法判断方向的表述及不可读记录归为不明确。分类依据评论文字，不依据姓名或身份推断。附件不可读时保留说明，仅按可读正文判断；不会因观点或可读性替换样本。",
+    "en": "Each full body is reviewed for its relevant policy direction, rather than classified by isolated words such as support or oppose. Demands for higher fees, tighter restrictions or visa abolition count as support for tightening; preserving or expanding work and residence opportunities counts as opposition. Scope-dependent combinations of tightening and easing, or explicit substantive conditions of support, remain conditional / mixed. Opposing the removal of protections while accepting shorter protections only as a fallback remains opposition. General anti-fraud language does not override an overall defense of lawful work access. Unrelated content, pure questions, indeterminate views and unreadable records remain unclear. Labels rely on the text, not names or identities. Unavailable attachments are disclosed and only readable bodies are assessed. No sample is replaced because of its viewpoint or readability."
+  },
+  "classificationReview": {
+    "reviewedAt": "2026-09-12T21:47:24.689Z",
+    "reviewedCount": 200,
+    "availableBodyCount": 200,
+    "records": [
+      {
+        "id": "USCIS-2026-0067-1381",
+        "stance": "oppose",
+        "rationale": "Urges reconsideration and preservation of work authorization for compliant parolees to prevent family hardship during backlogs. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0535",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4483",
+        "stance": "oppose",
+        "rationale": "Requests work authorization to contribute economically, pay taxes and become self-sufficient; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1050",
+        "stance": "oppose",
+        "rationale": "Calls the proposal unnecessary and discriminatory, arguing it harms people without charges and undermines economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0408",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2372",
+        "stance": "oppose",
+        "rationale": "Requests timely permits and gap-free renewals to prevent job loss; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4725",
+        "stance": "oppose",
+        "rationale": "Asks to protect lawful work authorization and avoid new barriers while addressing processing delays and work interruptions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4663",
+        "stance": "oppose",
+        "rationale": "The organization explicitly strongly opposes the proposal in its body text, with detailed reasons in an attachment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0996",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of restrictions and protection of family livelihoods through reduced backlogs and simpler work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1217",
+        "stance": "oppose",
+        "rationale": "Warns that job loss would leave the family without means to live, favoring preservation of employment and household income. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3378",
+        "stance": "oppose",
+        "rationale": "Calls for protecting authorization for compliant families to keep working, emphasizing household stability and tax contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2541",
+        "stance": "oppose",
+        "rationale": "Asks against new employment barriers and seeks preserved and expanded automatic extensions and longer validity to protect households and businesses. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3482",
+        "stance": "unclear",
+        "rationale": "No discernible policy direction: attachment-only body; attachment unavailable."
+      },
+      {
+        "id": "USCIS-2026-0067-4316",
+        "stance": "oppose",
+        "rationale": "Describes job loss and hardship from renewal delays and seeks continued work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1680",
+        "stance": "oppose",
+        "rationale": "Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3130",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal and expanded work authorization for parole, deferred action and supervision-order populations, opposing discretionary barriers and shorter validity. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4814",
+        "stance": "oppose",
+        "rationale": "Calls for withdrawal, arguing added restrictions lack public-safety benefits and harm protected people’s livelihoods and employers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2497",
+        "stance": "oppose",
+        "rationale": "Describes refuge from war and the importance of lawful work to self-sufficiency; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1164",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal and seeks to retain humanitarian parolees’ work authorization for self-sufficiency and tax contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3234",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of restrictions and reduced backlogs and simpler work permits to protect family livelihoods. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3645",
+        "stance": "oppose",
+        "rationale": "Calls for preserving and expanding lawful work opportunities, opposing the harm restrictions cause families, businesses and communities. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3195",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0797",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0641",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2453",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal, opposing denial presumptions based on arrests without convictions and lack of review; exemptions are only a fallback request. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1247",
+        "stance": "oppose",
+        "rationale": "Asks to cancel the ban on automatic work permit extensions, citing job loss and living-cost pressures despite timely filing. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0724",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2147",
+        "stance": "oppose",
+        "rationale": "Asks against work permit restrictions, arguing they undermine family self-sufficiency and increase assistance needs. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2001",
+        "stance": "oppose",
+        "rationale": "Asks against added barriers to lawful work, emphasizing war-displaced people’s self-sufficiency, taxes and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0465",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2375",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes denial of work authorization during green-card waits over resolved minor records, emphasizing family hardship and loss of stable employment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0727",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3508",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes broad restrictions and seeks to preserve individualized consideration of minor old offenses, rehabilitation and overall circumstances. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1941",
+        "stance": "oppose",
+        "rationale": "Praises Ukrainians’ work contributions and supports their right to work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0679",
+        "stance": "oppose",
+        "rationale": "Says the proposal violates war-displaced people’s rights, emphasizing safety, work and tax contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4601",
+        "stance": "oppose",
+        "rationale": "Urges full withdrawal, arguing annual renewals and record restrictions undermine U-visa victim protection. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0553",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1522",
+        "stance": "oppose",
+        "rationale": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4119",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2561",
+        "stance": "oppose",
+        "rationale": "Calls for protecting humanitarian parolees’ work authorization and continuous access to prevent backlog-related household harm. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4285",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4218",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0843",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal and restrictions based on uncharged arrests, arguing they violate rights and harm families and businesses. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3900",
+        "stance": "oppose",
+        "rationale": "Seeks reliable work authorization for Ukrainian parolees, citing livelihood harm from short validity and policy uncertainty. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4470",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2013",
+        "stance": "oppose",
+        "rationale": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4630",
+        "stance": "oppose",
+        "rationale": "Opposes denial presumptions based on arrests without convictions and seeks individualized review and procedural fairness. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3393",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3679",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2731",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0752",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2404",
+        "stance": "oppose",
+        "rationale": "Emphasizes work authorization for housing, healthcare and family independence; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4602",
+        "stance": "oppose",
+        "rationale": "The body explicitly states opposition to the proposal, with detailed comments in an attachment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2642",
+        "stance": "oppose",
+        "rationale": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4571",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of U-visa work permit restrictions, opposing annual renewal, economic-necessity and employer-verification barriers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1517",
+        "stance": "oppose",
+        "rationale": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0083",
+        "stance": "oppose",
+        "rationale": "Supports lawful work for people legally in the United States, favoring preservation of work access. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2032",
+        "stance": "oppose",
+        "rationale": "Requests action on a delayed work permit application; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4620",
+        "stance": "oppose",
+        "rationale": "Opposes denial presumptions based on arrests without convictions and seeks individualized review and procedural fairness. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2471",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3937",
+        "stance": "oppose",
+        "rationale": "Opposes restrictions on humanitarian parolees’ work and seeks preserved protection and family stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3698",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4645",
+        "stance": "oppose",
+        "rationale": "Opposes requiring proof of the need to work, arguing it creates livelihood hardship for people seeking refuge. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2379",
+        "stance": "oppose",
+        "rationale": "Opposes denial presumptions from non-conviction records and seeks individualized assessment and respect for reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4234",
+        "stance": "oppose",
+        "rationale": "Calls for protecting lawful work authorization and avoiding added barriers, citing family self-sufficiency and benefits to employers and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4684",
+        "stance": "oppose",
+        "rationale": "Fears permit expiration will harm family and employment, favoring continued work access. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2505",
+        "stance": "oppose",
+        "rationale": "Wants continued work and relief from permit and status renewal difficulties; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0275",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0056",
+        "stance": "oppose",
+        "rationale": "Opposes restrictions on humanitarian parolees’ work and seeks preserved protection and family stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4804",
+        "stance": "oppose",
+        "rationale": "Argues E-Verify and a uniform discretion framework violate victim confidentiality and seeks reconsideration or exclusion of U-visa applicants. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2809",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1718",
+        "stance": "oppose",
+        "rationale": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4454",
+        "stance": "oppose",
+        "rationale": "Emphasizes the human and economic harms of limiting lawful employment and favors work access and family stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0830",
+        "stance": "oppose",
+        "rationale": "Opposes permit restrictions and non-conviction arrest presumptions, citing due process and economic harm. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3640",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2107",
+        "stance": "oppose",
+        "rationale": "Seeks preserved work permits for humanitarian parolees, arguing restrictions undermine self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0957",
+        "stance": "oppose",
+        "rationale": "Opposes restrictions on humanitarian parolees’ work and seeks preserved protection and family stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3946",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4779",
+        "stance": "oppose",
+        "rationale": "Defends immigrants’ contributions to disability care and asks discretion to consider circumstances they fled, favoring migrant work access. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1329",
+        "stance": "oppose",
+        "rationale": "Urges immediate restoration of Ukrainian work permits so people can remain employed and self-sufficient during the war. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3811",
+        "stance": "oppose",
+        "rationale": "Opposes heavier requirements and procedures and seeks fair, accessible humanitarian work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3833",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1070",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal, arguing work permit losses harm community sustainability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1998",
+        "stance": "oppose",
+        "rationale": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2892",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0638",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3722",
+        "stance": "oppose",
+        "rationale": "Opposes restrictions on humanitarian parolees’ work and seeks preserved protection and family stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0538",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1833",
+        "stance": "oppose",
+        "rationale": "Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3742",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work and no new barriers, emphasizing family and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1653",
+        "stance": "oppose",
+        "rationale": "Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2413",
+        "stance": "oppose",
+        "rationale": "Opposes added economic-necessity, discretion and employer-verification barriers and seeks preserved work for humanitarian parolees. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3259",
+        "stance": "oppose",
+        "rationale": "Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2803",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0857",
+        "stance": "oppose",
+        "rationale": "Supports work opportunities and fair hearings; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3562",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0566",
+        "stance": "oppose",
+        "rationale": "Seeks reasonable work authorization access and no unnecessary delays or barriers from new procedures. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2617",
+        "stance": "oppose",
+        "rationale": "Asks that changes not make continued work harder for compliant people with humanitarian protection. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3077",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2241",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal, opposing non-conviction presumptions and universal biometrics burdens, with exemptions as fallback. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0039",
+        "stance": "oppose",
+        "rationale": "Seeks fair access and longer permit validity, arguing restrictions harm families and businesses. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3336",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2554",
+        "stance": "oppose",
+        "rationale": "Seeks access without new discretionary barriers, E-Verify exemption and continued permits during re-parole waits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1071",
+        "stance": "oppose",
+        "rationale": "Criticizes restrictions as punishing compliant people and creating financial crises, and seeks protected work rights. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1439",
+        "stance": "oppose",
+        "rationale": "Requests transparent processing timelines and fee relief; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1114",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3464",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1707",
+        "stance": "oppose",
+        "rationale": "Seeks reconsideration of work restrictions, arguing they increase poverty, unauthorized employment and business losses. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3605",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0856",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal, calling arrest-record restrictions unfair and harmful to households and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0227",
+        "stance": "oppose",
+        "rationale": "Seeks preserved lawful work access to sustain war-affected families’ independence. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2322",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of restrictions on supervision orders, deferred action and parole, citing reliance interests and economic and administrative costs. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2038",
+        "stance": "oppose",
+        "rationale": "Opposes added economic-necessity, discretion and employer-verification barriers and seeks preserved work for humanitarian parolees. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1219",
+        "stance": "oppose",
+        "rationale": "Opposes making work permits harder to obtain, emphasizing lawful workers’ economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1049",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1573",
+        "stance": "oppose",
+        "rationale": "Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2093",
+        "stance": "oppose",
+        "rationale": "Calls for rejecting the action, describing affected people as established contributors to society. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4431",
+        "stance": "oppose",
+        "rationale": "Argues threatening permits over arrests without convictions unfairly punishes compliant people and disregards reliance. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3926",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work authorization without new barriers, emphasizing self-sufficiency and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1337",
+        "stance": "oppose",
+        "rationale": "Describes job loss and household pressure from processing delays; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4567",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of humanitarian parole work restrictions, opposing economic necessity, E-Verify and frequent renewals. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0661",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3678",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work permits without added barriers burdening families and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1111",
+        "stance": "oppose",
+        "rationale": "Condemns treatment of the immigrant community as wrong, directionally opposing restrictions on immigrants. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1888",
+        "stance": "oppose",
+        "rationale": "Seeks a fair and practical permit process so lawfully present people can remain self-sufficient. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3477",
+        "stance": "oppose",
+        "rationale": "Emphasizes the importance of safe residence and the right to work for the family, favoring preservation of those opportunities. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2137",
+        "stance": "oppose",
+        "rationale": "Seeks continued work permit eligibility for Ukrainian parolees, emphasizing employers and community impacts. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1928",
+        "stance": "oppose",
+        "rationale": "Criticizes the decision as creating unemployment and poverty and losing tax revenue. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0616",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1465",
+        "stance": "oppose",
+        "rationale": "Seeks timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4757",
+        "stance": "oppose",
+        "rationale": "Warns new requirements worsen delays and hardship and seeks accessible humanitarian work permits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4377",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work permits without added barriers burdening families and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1758",
+        "stance": "oppose",
+        "rationale": "Seeks reconsideration of restrictions, arguing short and uncertain permits impede hiring and career development. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2243",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal and calls for equal and humane treatment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1624",
+        "stance": "oppose",
+        "rationale": "Describes household financial hardship from a prolonged inability to work legally and asks for faster EAD processing. Classified oppose under the directional rubric because it favors preservation of lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1305",
+        "stance": "oppose",
+        "rationale": "Warns that EAD delays threaten imminent job loss and family income, favoring continued lawful work access. Classified oppose under the directional rubric because it favors preservation of lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4137",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work permits without added barriers burdening families and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3519",
+        "stance": "oppose",
+        "rationale": "Asks for continued work authorization for Ukrainians. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1914",
+        "stance": "oppose",
+        "rationale": "Describes benefits of employment and taxes; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3756",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work permits without added barriers burdening families and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3437",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal and fewer backlogs, opposing old records continuing to affect employment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2949",
+        "stance": "oppose",
+        "rationale": "Urges full withdrawal, opposing discretion, automatic termination, employer verification and arrest-record barriers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0476",
+        "stance": "oppose",
+        "rationale": "Seeks no new lawful-employment barriers, emphasizing self-sufficient households’ taxes and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3970",
+        "stance": "oppose",
+        "rationale": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2661",
+        "stance": "oppose",
+        "rationale": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1266",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal or major revision, arguing restrictions harm the economy, worsen backlogs and weaken due process. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0239",
+        "stance": "oppose",
+        "rationale": "Fears the proposal undermines household employment and seeks preserved work opportunities for humanitarian parolees. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2014",
+        "stance": "oppose",
+        "rationale": "Opposes added discretion, economic-need and job-offer barriers and seeks reliable work permits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3972",
+        "stance": "unclear",
+        "rationale": "No discernible policy direction: attachment-only body; attachment unavailable."
+      },
+      {
+        "id": "USCIS-2026-0067-4781",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal, arguing economic necessity and E-Verify undermine compliant parolees’ self-sufficiency. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1818",
+        "stance": "oppose",
+        "rationale": "Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1273",
+        "stance": "oppose",
+        "rationale": "Asks against adoption, arguing the proposal adds household stress and harms community employment. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3155",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal, arguing the proposal lacks reasoned justification and ignores DACA-related reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0943",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2780",
+        "stance": "oppose",
+        "rationale": "Urges full withdrawal, citing commitments to Afghan allies, reliance interests and renewal barriers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3051",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3431",
+        "stance": "oppose",
+        "rationale": "Opposes rigid criminal-history restrictions and seeks consideration of rehabilitation, completed sentences and individual circumstances. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1683",
+        "stance": "oppose",
+        "rationale": "Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0689",
+        "stance": "oppose",
+        "rationale": "Criticizes added arbitrary discretion and processing complexity as harmful to immigrant households and the economy. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0081",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes the proposal, arguing lawful work supports labor demand, self-sufficiency and humanitarian protection. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3181",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0611",
+        "stance": "oppose",
+        "rationale": "Urges full withdrawal, emphasizing commitments to Afghan allies, reliance interests and employment restrictions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4525",
+        "stance": "unclear",
+        "rationale": "No discernible policy direction: attachment-only body; attachment unavailable."
+      },
+      {
+        "id": "USCIS-2026-0067-3218",
+        "stance": "oppose",
+        "rationale": "Seeks protected continued work for timely filers and criticizes permit loss caused by government backlogs. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2964",
+        "stance": "oppose",
+        "rationale": "Urges full withdrawal, emphasizing commitments to Afghan allies, reliance interests and employment restrictions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3139",
+        "stance": "oppose",
+        "rationale": "Seeks protected work rights and streamlined renewal, warning barriers harm household housing and employers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0478",
+        "stance": "oppose",
+        "rationale": "Seeks preserved lawful employment access without new barriers, emphasizing self-sufficiency and economic benefits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1306",
+        "stance": "oppose",
+        "rationale": "Describes TPS, parole and work permit backlogs; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2861",
+        "stance": "oppose",
+        "rationale": "Seeks preserved lawful employment access without new barriers, emphasizing self-sufficiency and economic benefits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1287",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes restrictions and delays from the proposal and seeks predictable processing for household stability. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4575",
+        "stance": "oppose",
+        "rationale": "Argues restrictions undermine U-visa purposes and crime-reporting cooperation, suggesting renewable four-year permits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2724",
+        "stance": "unclear",
+        "rationale": "Administrative form confirmation only; no discernible policy direction."
+      },
+      {
+        "id": "USCIS-2026-0067-3205",
+        "stance": "oppose",
+        "rationale": "Seeks preserved lawful employment access without new barriers, emphasizing self-sufficiency and economic benefits. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3024",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal or major revision, opposing one-year validity, E-Verify and arrest-record restrictions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4791",
+        "stance": "oppose",
+        "rationale": "Asks not to proceed, arguing the proposal creates additional individual difficulties. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0885",
+        "stance": "support",
+        "rationale": "Explicit approval plus opposition to foreign-worker competition supports tighter immigration/work policy."
+      },
+      {
+        "id": "USCIS-2026-0067-2946",
+        "stance": "oppose",
+        "rationale": "Seeks preserved reliable work permits, arguing restrictions harm compliant households and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0732",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2778",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1039",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2641",
+        "stance": "oppose",
+        "rationale": "Seeks preserved reliable work permits, arguing restrictions harm compliant households and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4775",
+        "stance": "oppose",
+        "rationale": "Calls for rejecting rules that limit or delay permits, emphasizing employer and community needs. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2635",
+        "stance": "oppose",
+        "rationale": "Seeks preserved reliable work permits, arguing restrictions harm compliant households and economic contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0332",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal or major revision, arguing protection must include lawful work needed for subsistence. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1974",
+        "stance": "oppose",
+        "rationale": "Primary request protects law-abiding parolees from unnecessary burdens. General acceptance of serious-crime screening does not outweigh the overall direction favoring work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0013",
+        "stance": "oppose",
+        "rationale": "Opposes an economic-necessity barrier as penalizing savings and independence and seeks withdrawal, with a savings exemption as fallback. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-3905",
+        "stance": "oppose",
+        "rationale": "Requests timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2401",
+        "stance": "oppose",
+        "rationale": "Explains how a permit would support entrepreneurship and self-sufficiency; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1806",
+        "stance": "oppose",
+        "rationale": "Seeks preserved work opportunities for humanitarian parolees, arguing restrictions harm families and employers. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4451",
+        "stance": "oppose",
+        "rationale": "Asks not to complicate work permit procedures, to protect livelihoods and continued tax contributions. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4357",
+        "stance": "oppose",
+        "rationale": "Seeks withdrawal of permit denials based on arrests and unproven charges, citing presumed innocence and livelihoods. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-2664",
+        "stance": "oppose",
+        "rationale": "Asks against restricting humanitarian entrants’ work, emphasizing taxes, independence and refuge from war. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0606",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-1847",
+        "stance": "oppose",
+        "rationale": "Emphasizes taxes, staffing and reduced assistance from lawful work; directionally favors preserving or improving access to work authorization. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0585",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4746",
+        "stance": "oppose",
+        "rationale": "Seeks protected lawful work permits without new barriers, emphasizing family independence during war. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-4049",
+        "stance": "oppose",
+        "rationale": "Explicitly opposes restrictions and seeks E-Verify exemptions, automatic extensions and removal of duplicative economic-need documentation. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0531",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0790",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      },
+      {
+        "id": "USCIS-2026-0067-0636",
+        "stance": "oppose",
+        "rationale": "Urges withdrawal of the entire proposal, arguing that discretion, annual renewals and employer verification barriers harm Afghan allies and disregard reliance interests. Classified oppose under the directional rubric because it defends migrants or preserves/eases lawful work access."
+      }
+    ]
   }
 }

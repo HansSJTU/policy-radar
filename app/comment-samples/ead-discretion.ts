@@ -11,8 +11,8 @@ export default {
   seed: '736e626b7f25ced0eb8056b6196f0fdc5aa63527cab71083a37f351f806ed01b',
   manifestUrl: '/comment-samples/ead-discretion-2026-09-12.json',
   scopeNote: {
-    zh: '样本来自整份拟议规则的公开评论，不仅涉及本卡片强调的犯罪记录审查，也涵盖人道假释、暂缓遣返和监督令等工作许可。立场针对整份提案；主题可多选，通用工卡诉求不足以推断立场。',
-    en: 'This sample covers comments on the full proposed rule, including parole, deferred-action and supervision-order work authorization, beyond the criminal-record review highlighted by this card. Stances concern the full proposal; themes overlap, and generic EAD requests alone do not establish a stance.',
+    zh: '样本来自整份拟议规则的公开评论，涵盖犯罪记录审查、人道假释、暂缓遣返和监督令等工作许可。按相关工作许可政策方向归类；明确主张保留、恢复或便利合法工作的评论，归为反对收紧。',
+    en: 'This sample covers comments on the full proposed rule, including criminal-record review and work authorization for parole, deferred action and supervision orders. Labels describe the related work-authorization policy direction; clear calls to preserve, restore or facilitate lawful work count as opposition to tightening.',
   },
   themes: [
     {
@@ -121,11 +121,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-4483',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy', 'livelihood'],
       summary: {
-        zh: '申请工作许可以贡献经济、纳税并实现自立，未评价提案。',
-        en: 'Requests work authorization to contribute economically, pay taxes and become self-sufficient, without assessing the proposal.',
+        zh: '申请工作许可以贡献经济、纳税并实现自立；方向上支持保留或改善工作许可准入。',
+        en: 'Requests work authorization to contribute economically, pay taxes and become self-sufficient; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-08-04T04:00:00Z',
       textSha256:
@@ -163,11 +163,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2372',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood'],
       summary: {
-        zh: '要求及时续发工作许可、避免工作中断，但未明确评价提案。',
-        en: 'Requests timely permits and gap-free renewals to prevent job loss, without clearly assessing the proposal.',
+        zh: '要求及时续发工作许可、避免工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Requests timely permits and gap-free renewals to prevent job loss; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-27T04:00:00Z',
       textSha256:
@@ -215,11 +215,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1217',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['livelihood', 'economy'],
       summary: {
-        zh: '担忧失业后家庭无法维持生活，未明确评价提案。',
-        en: 'Fears the household cannot meet living expenses after job loss, without clearly assessing the proposal.',
+        zh: '担心失业使家庭无法维生，表达维持就业和家庭收入的方向。',
+        en: 'Warns that job loss would leave the family without means to live, favoring preservation of employment and household income.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -267,11 +267,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-4316',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood', 'economy'],
       summary: {
-        zh: '描述续期延误造成失业和生活困难，要求继续工作但未明确评价提案。',
-        en: 'Describes job loss and hardship from renewal delays and seeks continued work, without clearly assessing the proposal.',
+        zh: '描述续期延误造成失业和生活困难，要求继续合法工作，方向上支持保留或改善工作许可准入。',
+        en: 'Describes job loss and hardship from renewal delays and seeks continued work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
@@ -279,11 +279,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1680',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood', 'economy'],
       summary: {
-        zh: '要求及时处理乌克兰假释、TPS和工作许可续期，未表达提案立场。',
-        en: 'Requests timely Ukrainian parole, TPS and work permit renewals, without expressing a proposal stance.',
+        zh: '要求及时处理乌克兰假释、TPS和工作许可续期；方向上支持保留或改善工作许可准入。',
+        en: 'Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-16T04:00:00Z',
       textSha256:
@@ -321,11 +321,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2497',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['humanitarian', 'livelihood'],
       summary: {
-        zh: '描述战争避难及合法工作对自立的重要性，未明确评价提案。',
-        en: 'Describes refuge from war and the importance of lawful work to self-sufficiency, without clearly assessing the proposal.',
+        zh: '描述战争避难及合法工作对自立的重要性；方向上支持保留或改善工作许可准入。',
+        en: 'Describes refuge from war and the importance of lawful work to self-sufficiency; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-29T04:00:00Z',
       textSha256:
@@ -549,11 +549,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1941',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy'],
       summary: {
-        zh: '赞扬乌克兰人的劳动贡献并支持工作权，未评价提案。',
-        en: 'Praises Ukrainians’ work contributions and supports their right to work, without assessing the proposal.',
+        zh: '赞扬乌克兰人的劳动贡献并支持工作权；方向上支持保留或改善工作许可准入。',
+        en: 'Praises Ukrainians’ work contributions and supports their right to work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -603,11 +603,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1522',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'humanitarian', 'economy'],
       summary: {
-        zh: '要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。',
-        en: 'Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal.',
+        zh: '要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-14T04:00:00Z',
       textSha256:
@@ -705,11 +705,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2013',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'humanitarian', 'economy'],
       summary: {
-        zh: '要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。',
-        en: 'Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal.',
+        zh: '要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-21T04:00:00Z',
       textSha256:
@@ -789,11 +789,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2404',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['livelihood', 'economy'],
       summary: {
-        zh: '强调工作许可对住房、医疗和家庭自立的重要性，未表达提案立场。',
-        en: 'Emphasizes work authorization for housing, healthcare and family independence, without a proposal stance.',
+        zh: '强调工作许可对住房、医疗和家庭自立的重要性；方向上支持保留或改善工作许可准入。',
+        en: 'Emphasizes work authorization for housing, healthcare and family independence; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-27T04:00:00Z',
       textSha256:
@@ -817,11 +817,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2642',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'humanitarian', 'economy'],
       summary: {
-        zh: '要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。',
-        en: 'Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal.',
+        zh: '要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-29T04:00:00Z',
       textSha256:
@@ -841,11 +841,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1517',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'humanitarian', 'economy'],
       summary: {
-        zh: '要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。',
-        en: 'Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal.',
+        zh: '要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-14T04:00:00Z',
       textSha256:
@@ -853,11 +853,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-0083',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: [],
       summary: {
-        zh: '仅支持合法在美者工作，未表达对提案的立场。',
-        en: 'Only supports lawful work by people legally in the United States, without expressing a proposal stance.',
+        zh: '支持合法在美者依法工作，方向上主张保留工作机会。',
+        en: 'Supports lawful work for people legally in the United States, favoring preservation of work access.',
       },
       postedDate: '2026-06-08T04:00:00Z',
       textSha256:
@@ -865,11 +865,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2032',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals'],
       summary: {
-        zh: '请求处理积压工作许可申请，正文未表达提案立场。',
-        en: 'Requests action on a delayed work permit application; the body expresses no proposal stance.',
+        zh: '请求处理积压工作许可申请；方向上支持保留或改善工作许可准入。',
+        en: 'Requests action on a delayed work permit application; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-21T04:00:00Z',
       textSha256:
@@ -965,11 +965,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-4684',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood'],
       summary: {
-        zh: '担心许可到期影响家庭和工作，立场表述不足。',
-        en: 'Fears permit expiration affects family and employment, but gives insufficient proposal position.',
+        zh: '担心工作许可到期伤害家庭和就业，方向上主张保留工作机会。',
+        en: 'Fears permit expiration will harm family and employment, favoring continued work access.',
       },
       postedDate: '2026-08-04T04:00:00Z',
       textSha256:
@@ -977,11 +977,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2505',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals'],
       summary: {
-        zh: '希望持续工作并减轻工作许可和身份续期困难，但未明确评价提案。',
-        en: 'Wants continued work and relief from permit and status renewal difficulties, without clearly assessing the proposal.',
+        zh: '希望持续工作并减轻工作许可和身份续期困难；方向上支持保留或改善工作许可准入。',
+        en: 'Wants continued work and relief from permit and status renewal difficulties; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-29T04:00:00Z',
       textSha256:
@@ -1043,11 +1043,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1718',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood'],
       summary: {
-        zh: '请求解决办理积压和工作中断，未明确评价提案。',
-        en: 'Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal.',
+        zh: '请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-17T04:00:00Z',
       textSha256:
@@ -1055,11 +1055,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-4454',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['livelihood', 'economy'],
       summary: {
-        zh: '要求权衡限制就业的人道和经济影响，未明确支持或反对提案。',
-        en: 'Asks that human and economic impacts of work limits be weighed, without clearly supporting or opposing the proposal.',
+        zh: '强调限制合法就业的人道和经济伤害，主张维持工作机会及家庭稳定。',
+        en: 'Emphasizes the human and economic harms of limiting lawful employment and favors work access and family stability.',
       },
       postedDate: '2026-08-04T04:00:00Z',
       textSha256:
@@ -1127,11 +1127,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-4779',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy', 'humanitarian'],
       summary: {
-        zh: '强调照护行业依赖移民并请求考虑离境背景，未明确提案立场。',
-        en: 'Notes caregiving relies on immigrants and seeks consideration of circumstances fled, without a clear proposal stance.',
+        zh: '强调移民对残障照护的重要贡献，要求裁量考虑移民逃离的处境，方向上支持移民工作机会。',
+        en: 'Defends immigrants’ contributions to disability care and asks discretion to consider circumstances they fled, favoring migrant work access.',
       },
       postedDate: '2026-08-05T04:00:00Z',
       textSha256:
@@ -1139,11 +1139,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1329',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['humanitarian', 'livelihood', 'renewals'],
       summary: {
-        zh: '要求恢复乌克兰人工作许可，主要讨论现有暂停和TPS困境而非提案。',
-        en: 'Seeks restored Ukrainian work permits, focusing on existing suspensions and TPS hardship rather than the proposal.',
+        zh: '要求立即恢复乌克兰人工作许可，支持其在战争期间自立和维持就业。',
+        en: 'Urges immediate restoration of Ukrainian work permits so people can remain employed and self-sufficient during the war.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -1187,11 +1187,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1998',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood'],
       summary: {
-        zh: '请求解决办理积压和工作中断，未明确评价提案。',
-        en: 'Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal.',
+        zh: '请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -1259,11 +1259,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1833',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood'],
       summary: {
-        zh: '请求解决办理积压和工作中断，未明确评价提案。',
-        en: 'Requests relief from processing backlogs and interrupted work, without clearly assessing the proposal.',
+        zh: '请求解决办理积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Requests relief from processing backlogs and interrupted work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -1283,11 +1283,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1653',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['livelihood'],
       summary: {
-        zh: '强调工作对家庭生存的重要性，未明确评价提案。',
-        en: 'Emphasizes work as essential to household survival, without clearly assessing the proposal.',
+        zh: '强调工作对家庭生存的重要性；方向上支持保留或改善工作许可准入。',
+        en: 'Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-15T04:00:00Z',
       textSha256:
@@ -1314,11 +1314,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-3259',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['livelihood'],
       summary: {
-        zh: '强调工作对家庭生存的重要性，未明确评价提案。',
-        en: 'Emphasizes work as essential to household survival, without clearly assessing the proposal.',
+        zh: '强调工作对家庭生存的重要性；方向上支持保留或改善工作许可准入。',
+        en: 'Emphasizes work as essential to household survival; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-31T04:00:00Z',
       textSha256:
@@ -1344,11 +1344,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-0857',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['discretion'],
       summary: {
-        zh: '支持工作机会和公平审理，未明确评价提案。',
-        en: 'Supports work opportunities and fair hearings, without clearly assessing the proposal.',
+        zh: '支持工作机会和公平审理；方向上支持保留或改善工作许可准入。',
+        en: 'Supports work opportunities and fair hearings; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-06-15T04:00:00Z',
       textSha256:
@@ -1477,11 +1477,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1439',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'discretion'],
       summary: {
-        zh: '要求透明办理期限和费用减免，未明确对提案表达支持或反对。',
-        en: 'Requests transparent processing timelines and fee relief, without clear support or opposition to the proposal.',
+        zh: '要求透明办理期限和费用减免；方向上支持保留或改善工作许可准入。',
+        en: 'Requests transparent processing timelines and fee relief; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -1622,11 +1622,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1573',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'humanitarian', 'economy'],
       summary: {
-        zh: '要求及时办理工作许可以减少家庭和就业困难，未明确评价提案。',
-        en: 'Seeks timely work permits to reduce household and employment hardship, without clearly assessing the proposal.',
+        zh: '要求及时办理工作许可以减少家庭和就业困难；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely work permits to reduce household and employment hardship; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-14T04:00:00Z',
       textSha256:
@@ -1670,11 +1670,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1337',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood'],
       summary: {
-        zh: '描述办理延误带来的失业和家庭压力，未评价提案。',
-        en: 'Describes job loss and household pressure from processing delays, without assessing the proposal.',
+        zh: '描述办理延误带来的失业和家庭压力；方向上支持保留或改善工作许可准入。',
+        en: 'Describes job loss and household pressure from processing delays; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -1731,11 +1731,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1111',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: [],
       summary: {
-        zh: '笼统批评对移民群体的待遇，未明确指向提案。',
-        en: 'Broadly criticizes treatment of immigrants without clearly addressing the proposal.',
+        zh: '批评对移民群体的待遇不公，方向上反对限制移民。',
+        en: 'Condemns treatment of the immigrant community as wrong, directionally opposing restrictions on immigrants.',
       },
       postedDate: '2026-06-29T04:00:00Z',
       textSha256:
@@ -1755,11 +1755,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-3477',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['humanitarian', 'livelihood'],
       summary: {
-        zh: '表达对安全和工作机会的感激，未明确评价提案。',
-        en: 'Expresses gratitude for safety and work opportunities, without clearly assessing the proposal.',
+        zh: '强调安全居留和工作权对家庭的重要性，支持保留这些机会。',
+        en: 'Emphasizes the importance of safe residence and the right to work for the family, favoring preservation of those opportunities.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
@@ -1813,11 +1813,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1465',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['humanitarian', 'renewals', 'livelihood', 'economy'],
       summary: {
-        zh: '要求及时续发乌克兰人工作许可，正文未明确评价提案。',
-        en: 'Seeks timely Ukrainian work permit renewals; the body does not clearly assess the proposal.',
+        zh: '要求及时续发乌克兰人工作许可；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -1877,11 +1877,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1624',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood'],
       summary: {
-        zh: '描述办理延误带来的失业和家庭压力，未评价提案。',
-        en: 'Describes job loss and household pressure from processing delays, without assessing the proposal.',
+        zh: '描述长期无法合法工作造成家庭财务压力，要求加快工作许可办理。',
+        en: 'Describes household financial hardship from a prolonged inability to work legally and asks for faster EAD processing.',
       },
       postedDate: '2026-07-15T04:00:00Z',
       textSha256:
@@ -1889,11 +1889,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1305',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood'],
       summary: {
-        zh: '描述办理延误带来的失业和家庭压力，未评价提案。',
-        en: 'Describes job loss and household pressure from processing delays, without assessing the proposal.',
+        zh: '担心工作许可积压导致即将失业及家庭收入中断，支持维持合法工作机会。',
+        en: 'Warns that EAD delays threaten imminent job loss and family income, favoring continued lawful work access.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -1925,11 +1925,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1914',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy', 'livelihood'],
       summary: {
-        zh: '描述就业和纳税的好处，未表达提案立场。',
-        en: 'Describes benefits of employment and taxes, without a proposal stance.',
+        zh: '描述就业和纳税的好处；方向上支持保留或改善工作许可准入。',
+        en: 'Describes benefits of employment and taxes; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -1985,11 +1985,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-3970',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'economy'],
       summary: {
-        zh: '要求解决现有续期积压和工作中断，未明确评价提案。',
-        en: 'Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal.',
+        zh: '要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
@@ -1997,11 +1997,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2661',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'economy'],
       summary: {
-        zh: '要求解决现有续期积压和工作中断，未明确评价提案。',
-        en: 'Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal.',
+        zh: '要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-29T04:00:00Z',
       textSha256:
@@ -2073,11 +2073,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1818',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'livelihood', 'economy'],
       summary: {
-        zh: '要求解决现有续期积压和工作中断，未明确评价提案。',
-        en: 'Seeks relief from existing renewal backlogs and work interruptions, without clearly assessing the proposal.',
+        zh: '要求解决现有续期积压和工作中断；方向上支持保留或改善工作许可准入。',
+        en: 'Seeks relief from existing renewal backlogs and work interruptions; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -2176,11 +2176,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1683',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals', 'humanitarian', 'livelihood', 'economy'],
       summary: {
-        zh: '要求及时处理乌克兰假释、TPS和工作许可续期，未表达提案立场。',
-        en: 'Requests timely Ukrainian parole, TPS and work permit renewals, without expressing a proposal stance.',
+        zh: '要求及时处理乌克兰假释、TPS和工作许可续期；方向上支持保留或改善工作许可准入。',
+        en: 'Requests timely Ukrainian parole, TPS and work permit renewals; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-16T04:00:00Z',
       textSha256:
@@ -2318,11 +2318,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1306',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['renewals'],
       summary: {
-        zh: '描述TPS、假释和工作许可积压，未明确评价提案。',
-        en: 'Describes TPS, parole and work permit backlogs, without clearly assessing the proposal.',
+        zh: '描述TPS、假释和工作许可积压；方向上支持保留或改善工作许可准入。',
+        en: 'Describes TPS, parole and work permit backlogs; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-13T04:00:00Z',
       textSha256:
@@ -2547,11 +2547,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1974',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['criminal', 'discretion', 'economy', 'livelihood'],
       summary: {
-        zh: '支持对严重犯罪的不利裁量，但要求区分守法贡献者并免于不必要负担。',
-        en: 'Supports adverse discretion for serious crimes but seeks distinction for compliant contributors and relief from unnecessary burdens.',
+        zh: '主张保护守法假释者及其雇主免受不必要负担；认可严重犯罪审查，但整体方向支持保留工作机会。',
+        en: 'Favors protecting compliant parolees and employers from unnecessary burdens; accepts scrutiny of serious crime but overall favors preserving work access.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -2571,11 +2571,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-3905',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['humanitarian', 'renewals', 'livelihood', 'economy'],
       summary: {
-        zh: '请求及时续发乌克兰人工作许可，未明确评价提案。',
-        en: 'Requests timely Ukrainian work permit renewals, without clearly assessing the proposal.',
+        zh: '请求及时续发乌克兰人工作许可；方向上支持保留或改善工作许可准入。',
+        en: 'Requests timely Ukrainian work permit renewals; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
@@ -2583,11 +2583,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-2401',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy', 'livelihood'],
       summary: {
-        zh: '说明工作许可将支持创业和自立，未表达提案立场。',
-        en: 'Explains how a permit would support entrepreneurship and self-sufficiency, without a proposal stance.',
+        zh: '说明工作许可将支持创业和自立；方向上支持保留或改善工作许可准入。',
+        en: 'Explains how a permit would support entrepreneurship and self-sufficiency; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-27T04:00:00Z',
       textSha256:
@@ -2661,11 +2661,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0067-1847',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['economy', 'livelihood'],
       summary: {
-        zh: '强调合法就业增加税收、填补岗位并减少救助依赖，未评价提案。',
-        en: 'Emphasizes taxes, staffing and reduced assistance from lawful work, without assessing the proposal.',
+        zh: '强调合法就业增加税收、填补岗位并减少救助依赖；方向上支持保留或改善工作许可准入。',
+        en: 'Emphasizes taxes, staffing and reduced assistance from lawful work; directionally favors preserving or improving access to work authorization.',
       },
       postedDate: '2026-07-20T04:00:00Z',
       textSha256:
@@ -2778,4 +2778,6 @@ export default {
   commentPhase: 'closed',
   commentDeadline: '2026-08-04',
   sampleSize: 200,
+  classificationBasis: 'policy-direction-v1',
+  classificationReviewedAt: '2026-09-12T21:47:24.689Z',
 } satisfies CommentSample;

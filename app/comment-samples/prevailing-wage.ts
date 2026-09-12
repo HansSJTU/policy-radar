@@ -99,11 +99,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0631',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '指称签证欺诈和招聘排斥，但未评价拟议工资方法。',
-        en: 'Alleges visa fraud and exclusionary hiring without evaluating the proposed wage methodology.',
+        zh: '指称H-1B和OPT欺诈及排斥本土劳动者，表达反对外籍签证劳工替代的收紧方向。',
+        en: 'Alleges H-1B/OPT fraud and exclusion of domestic workers, expressing a tightening direction against visa-labor substitution.',
       },
       postedDate: '2026-04-30T04:00:00Z',
       textSha256:
@@ -147,11 +147,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-1058',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '认为工资规则范围有限，要求应对其所称外籍劳动力过剩，未明确取舍拟议门槛。',
-        en: 'Calls the rule limited and seeks broader responses to alleged foreign-labor oversupply without clearly accepting or rejecting its thresholds.',
+        zh: '认为工资规则力度有限，要求应对其所称外籍劳动力过剩并加强限制。',
+        en: 'Sees the wage rule as limited and seeks stronger measures against alleged foreign-labor oversupply.',
       },
       postedDate: '2026-05-22T04:00:00Z',
       textSha256:
@@ -215,11 +215,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0189',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '要求结束其所称存在欺诈和岗位替代的签证项目，未评价工资提案。',
-        en: 'Seeks abolition of visa programs over alleged fraud and displacement without evaluating the wage proposal.',
+        zh: '指称欺诈和替代本土劳动者，要求终止H-1B，支持更严限制。',
+        en: 'Alleges fraud and domestic-worker displacement and calls for ending H-1B, supporting stronger restrictions.',
       },
       postedDate: '2026-04-06T04:00:00Z',
       textSha256:
@@ -299,11 +299,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0539',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['protection', 'enforcement', 'process'],
       summary: {
-        zh: '认为工资规则无法解决滥用，要求以更广泛的签证限制立法替代。',
-        en: 'Dismisses the wage rule as ineffective against abuse and seeks broader statutory visa restrictions instead.',
+        zh: '认为工资规则不足，要求通过更严格的签证限制法并限制外籍用工比例。',
+        en: 'Finds the wage rule inadequate and seeks stricter visa legislation and limits on foreign staffing ratios.',
       },
       postedDate: '2026-04-28T04:00:00Z',
       textSha256:
@@ -323,11 +323,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0076',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '指称本土岗位被替代并主张按工资分配签证，未评价本工资计算提案。',
-        en: 'Alleges domestic displacement and favors salary-based visa allocation without evaluating this wage-calculation proposal.',
+        zh: '反对低薪H-1B替代本土劳动者，并支持按工资分配签证的收紧方向。',
+        en: 'Opposes low-paid H-1B displacement and favors salary-based visa allocation as a tightening direction.',
       },
       postedDate: '2026-04-02T04:00:00Z',
       textSha256:
@@ -407,11 +407,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0138',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '主张采用同等教育经验平均工资的150%，并允许挑战招聘自证。',
-        en: 'Proposes 150% of average wages for comparable education and experience and challenges to recruitment self-certification.',
+        zh: '要求工资至少为同等教育与经验平均值的150%，并加强招聘核查。',
+        en: 'Seeks wages of at least 150% of the comparable education-and-experience average and stronger recruitment verification.',
       },
       postedDate: '2026-04-03T04:00:00Z',
       textSha256:
@@ -483,11 +483,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0352',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '提出另一组更高工资百分位，并要求限制OPT以保护本土岗位。',
-        en: 'Proposes a different set of higher wage percentiles and OPT restrictions to protect domestic jobs.',
+        zh: '要求提高各级工资门槛并限制OPT，以保护本土就业。',
+        en: 'Seeks higher wage thresholds and OPT restrictions to protect domestic employment.',
       },
       postedDate: '2026-04-23T04:00:00Z',
       textSha256:
@@ -519,11 +519,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0754',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '主张外籍用工承担显著高于市场的工资和罚款，以保护本土机会。',
-        en: 'Favors substantially above-market pay and penalties for foreign hiring to protect domestic opportunities.',
+        zh: '要求外籍用工支付远高于市场的工资和罚金，以优先保障本土机会。',
+        en: 'Seeks far-above-market wages and penalties for foreign hiring to prioritize domestic opportunities.',
       },
       postedDate: '2026-05-04T04:00:00Z',
       textSha256:
@@ -531,11 +531,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-1177',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['protection'],
       summary: {
-        zh: '认为规则力度不足，要求进一步保护美国劳动者的岗位和工资。',
-        en: 'Views the rule as insufficiently strong and seeks further protection of domestic jobs and wages.',
+        zh: '认为规则力度不足，要求进一步保护本土劳动者的就业和工资。',
+        en: 'Finds the rule insufficient and seeks stronger domestic job and wage protections.',
       },
       postedDate: '2026-05-26T04:00:00Z',
       textSha256:
@@ -603,11 +603,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0650',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: [],
       summary: {
-        zh: '肯定移民贡献并强调才能，未评价工资提案。',
-        en: 'Affirms immigrant contributions and merit without evaluating the wage proposal.',
+        zh: '肯定移民对美国的贡献并主张凭能力竞争，表达支持移民的方向；未具体评价工资算法。',
+        en: 'Affirms immigrant contributions and merit-based opportunity, expressing a pro-immigrant direction without evaluating the wage formula.',
       },
       postedDate: '2026-04-30T04:00:00Z',
       textSha256:
@@ -668,11 +668,11 @@ export default {
     {
       id: 'ETA-2026-0001-1245',
       postedDate: '2026-05-28T04:00:00Z',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '认为第34百分位不足，建议H-1B依赖雇主的入门底线改为第52百分位，并禁止降级转职。',
-        en: 'Finds the 34th percentile insufficient, proposing the 52nd for H-1B-dependent employers and prohibiting moves to lower wage levels.',
+        zh: '要求对H-1B依赖雇主采用更高的入门工资，并禁止转向较低工资等级。',
+        en: 'Seeks higher entry wages for H-1B-dependent employers and a ban on moves to lower wage levels.',
       },
       textSha256:
         '2822450906d43448c356b629073262e1fa7999029e4e8c9cd5a395568b964ca9',
@@ -691,11 +691,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0494',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['process'],
       summary: {
-        zh: '支持公平工资目标，但要求保护待审案件，避免绿卡流程重启。',
-        en: 'Supports fair-wage goals but seeks grandfathering of pending filings to avoid restarting green-card processes.',
+        zh: '要求对待审申请提供祖父条款以保留绿卡路径；对公平工资目标的认同不等于支持新增障碍。',
+        en: 'Seeks grandfathering of pending filings to preserve green-card access; agreement with fair-wage goals does not endorse added barriers.',
       },
       postedDate: '2026-04-27T04:00:00Z',
       textSha256:
@@ -907,11 +907,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0848',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。',
-        en: 'Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds.',
+        zh: '指称裁员和留任偏向签证劳工，要求加强审计与监管以保护本土劳动者。',
+        en: 'Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers.',
       },
       postedDate: '2026-05-11T04:00:00Z',
       textSha256:
@@ -919,11 +919,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0905',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['process', 'enforcement'],
       summary: {
-        zh: '认为规则不会奏效并批评实施拖延，主张直接立法收紧签证。',
-        en: 'Dismisses the rule as ineffective, criticizes implementation delays, and favors statutory visa restrictions.',
+        zh: '批评工资规则进展缓慢且力度不足，要求落实更严格的签证和工作许可限制。',
+        en: 'Criticizes slow and inadequate wage-rule action and seeks implementation of stricter visa and work-authorization restrictions.',
       },
       postedDate: '2026-05-13T04:00:00Z',
       textSha256:
@@ -931,11 +931,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0065',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '担忧未覆盖签证类别造成替代招聘，要求研究并弥补规则范围缺口。',
-        en: 'Warns uncovered visa categories could encourage substitution and seeks analysis and correction of scope gaps.',
+        zh: '要求纠正规则未覆盖L-1及EAD等用工的漏洞，以防雇主绕过工资保护。',
+        en: 'Seeks correction of gaps covering L-1 and EAD-based labor to prevent avoidance of wage protections.',
       },
       postedDate: '2026-04-02T04:00:00Z',
       textSha256:
@@ -998,11 +998,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0077',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '称现有力度不足并要求取消H-1B，未明确认可本工资方法。',
-        en: 'Calls current measures insufficient and seeks H-1B abolition without clearly endorsing this wage methodology.',
+        zh: '认为措施不够，要求完全禁止H-1B，属于支持进一步收紧。',
+        en: 'Finds the measures insufficient and demands a complete H-1B ban, supporting further tightening.',
       },
       postedDate: '2026-04-02T04:00:00Z',
       textSha256:
@@ -1207,11 +1207,11 @@ export default {
     {
       id: 'ETA-2026-0001-0709',
       postedDate: '2026-05-04T04:00:00Z',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['enforcement'],
       summary: {
-        zh: '批评签证滥用及政治执行不足，要求限制第三方派遣，未明确评价拟议工资方法。',
-        en: 'Criticizes alleged visa abuse and inadequate political enforcement, seeking third-party placement limits without clearly evaluating the wage method.',
+        zh: '指称签证滥用和执法不足，要求停止H-1B第三方派遣并通过更严格法案。',
+        en: 'Alleges visa abuse and inadequate enforcement and seeks an end to H-1B third-party placements and stricter legislation.',
       },
       textSha256:
         '5bb0b457c13a2dbc17622274e534e997fb1d614ef21370cdeb2fb84f6462adac',
@@ -1230,11 +1230,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0749',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['enforcement'],
       summary: {
-        zh: '表示支持减少移民并希望全面停止移民，未具体评价工资提案。',
-        en: 'Supports immigration reductions and seeks a full halt without specifically evaluating the wage proposal.',
+        zh: '支持任何减少移民人数的措施，并要求完全停止移民。',
+        en: 'Supports any measure reducing immigration and seeks a complete immigration halt.',
       },
       postedDate: '2026-05-04T04:00:00Z',
       textSha256:
@@ -1242,11 +1242,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0566',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection'],
       summary: {
-        zh: '认为工资百分位过低，提出另一组更高门槛。',
-        en: 'Considers wage percentiles too low and proposes a different set of higher thresholds.',
+        zh: '认为工资百分位过低，要求提高各级门槛以限制低薪外籍用工。',
+        en: 'Finds wage percentiles too low and seeks higher thresholds to restrict low-paid foreign hiring.',
       },
       postedDate: '2026-04-28T04:00:00Z',
       textSha256:
@@ -1357,11 +1357,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0162',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection'],
       summary: {
-        zh: '要求重新考虑入门标准，改用第50百分位以减少低薪替代。',
-        en: 'Seeks reconsideration of entry standards in favor of the 50th percentile to reduce low-wage substitution.',
+        zh: '指称H-1B替代本土劳动者，要求将入门工资提高至第50百分位。',
+        en: 'Alleges H-1B displacement of domestic workers and seeks a 50th-percentile entry wage.',
       },
       postedDate: '2026-04-06T04:00:00Z',
       textSha256:
@@ -1425,11 +1425,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0846',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。',
-        en: 'Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds.',
+        zh: '指称裁员和留任偏向签证劳工，要求加强审计与监管以保护本土劳动者。',
+        en: 'Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers.',
       },
       postedDate: '2026-05-11T04:00:00Z',
       textSha256:
@@ -1449,11 +1449,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0200',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'talent', 'enforcement'],
       summary: {
-        zh: '要求对外籍用工和岗位外迁施加高额惩罚，未明确评价本提案。',
-        en: 'Seeks substantial penalties on foreign hiring and offshoring without clearly evaluating this proposal.',
+        zh: '要求对H-1B外籍招聘和离岸外包施加足够高的经济惩罚。',
+        en: 'Seeks substantial financial penalties on H-1B foreign hiring and offshoring.',
       },
       postedDate: '2026-04-07T04:00:00Z',
       textSha256:
@@ -1497,11 +1497,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0216',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '要求提高H-1B和OPT用工成本以限制滥用，未明确评价本工资提案。',
-        en: 'Seeks higher H-1B and OPT employment costs to curb abuse without clearly evaluating this wage proposal.',
+        zh: '要求提高H-1B和OPT用工成本，限制其被用于低价劳动力。',
+        en: 'Seeks higher H-1B and OPT employment costs to restrict their use as cheap labor.',
       },
       postedDate: '2026-04-08T04:00:00Z',
       textSha256:
@@ -1521,11 +1521,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-1295',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['protection', 'enforcement', 'talent', 'process'],
       summary: {
-        zh: '认为工资规则不能解决外迁和招聘滥用，要求本土与外籍用工比例限制。',
-        en: 'Dismisses the wage rule as ineffective against offshoring and hiring abuse and seeks domestic-to-foreign staffing ratios.',
+        zh: '认为工资规则不足，要求限制临时签证与工作许可，并设置本土用工比例。',
+        en: 'Finds wage changes inadequate and seeks temporary-visa and work-permit restrictions plus domestic staffing ratios.',
       },
       postedDate: '2026-06-24T04:00:00Z',
       textSha256:
@@ -1557,11 +1557,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0637',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['enforcement', 'market'],
       summary: {
-        zh: '建议限制兼职、核验税务和合并职业分类，未明确评价拟议工资百分位。',
-        en: 'Suggests part-time limits, tax verification, and consolidated classifications without clearly evaluating proposed wage percentiles.',
+        zh: '要求限制兼职外籍用工、核验税务记录并采用更高薪职位分类，加强监管。',
+        en: 'Seeks limits on part-time foreign work, tax-record checks, and higher-paying job classifications to strengthen oversight.',
       },
       postedDate: '2026-04-30T04:00:00Z',
       textSha256:
@@ -1685,11 +1685,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0918',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection'],
       summary: {
-        zh: '赞同保护本土劳动者目标，但主张入门工资高于中位数以体现稀缺技能。',
-        en: 'Welcomes domestic-worker protection goals but proposes above-median entry wages to reflect scarce skills.',
+        zh: '要求H-1B入门工资高于中位数，以限制低薪替代并优先保护本土劳动者。',
+        en: 'Seeks above-median H-1B entry wages to limit low-paid substitution and prioritize domestic workers.',
       },
       postedDate: '2026-05-13T04:00:00Z',
       textSha256:
@@ -1869,18 +1869,18 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0685',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['academic'],
       summary: {
-        zh: '正文仅说明评论讨论国际博士后及工资政策，附件未能读取，无法判断立场。',
-        en: 'Body identifies international postdocs and wage policy as the topic; inaccessible attachment prevents a stance determination.',
+        zh: '正文强调国际博士后对美国科学的价值，呈支持移民贡献的方向；附件不可读，未据此推断具体工资建议。',
+        en: 'The body emphasizes international postdocs’ value to U.S. science, indicating a pro-immigrant direction; the unavailable attachment leaves specific wage recommendations unknown.',
       },
       postedDate: '2026-05-01T04:00:00Z',
       textSha256:
         '397c933052bc2f73dd66779749a3d5a6f9206e770b6bbb03394d0a163b1b25e2',
       sourceNote: {
-        zh: '官方附件下载返回HTTP 403，未能读取；正文不足以判断立场。',
-        en: 'Official attachment download returned HTTP 403 and could not be read; the body is insufficient to determine stance.',
+        zh: '官方附件下载返回 HTTP 403，未能读取；仅依据正文对国际博士后贡献的肯定判断政策方向，具体工资建议未获核实。',
+        en: 'The official attachment download returned HTTP 403. Direction is assessed only from the body’s support for international postdocs; specific wage recommendations remain unverified.',
       },
     },
     {
@@ -1992,11 +1992,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-1199',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '认为拟议高低等级均不足，提出第50及95百分位并要求现代招聘和核查。',
-        en: 'Finds proposed lower and upper tiers insufficient, proposing 50th and 95th percentiles plus modern recruitment and verification.',
+        zh: '认为拟议工资保护不足，要求第50和95百分位门槛及更严格招聘核验。',
+        en: 'Finds proposed protections insufficient and seeks 50th/95th-percentile floors plus stricter recruitment verification.',
       },
       postedDate: '2026-05-26T04:00:00Z',
       textSha256:
@@ -2040,11 +2040,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0016',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '支持提高工资方向，但明确要求不得以第34百分位定案，改用至少中位工资。',
-        en: 'Supports higher-wage goals but expressly rejects finalizing the 34th percentile and seeks at least median entry wages.',
+        zh: '支持提高工资，但认为第34百分位仍过低，要求入门门槛至少达到第50百分位。',
+        en: 'Supports higher wages but finds the 34th percentile too low and seeks an entry floor of at least the 50th percentile.',
       },
       postedDate: '2026-04-02T04:00:00Z',
       textSha256:
@@ -2100,11 +2100,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0348',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '主张以经验基准或更高百分位替代提案，并强化招聘和工资核查。',
-        en: 'Favors experience benchmarking or higher percentiles instead of the proposal, alongside recruitment and wage verification.',
+        zh: '要求经验基准法或更高工资百分位，并加强招聘核验和执法以保护本土劳动者。',
+        en: 'Seeks experience benchmarking or higher wage percentiles, with stronger recruitment checks and enforcement to protect domestic workers.',
       },
       postedDate: '2026-04-22T04:00:00Z',
       textSha256:
@@ -2148,11 +2148,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0241',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '认为现有方向迟来且不足，要求数倍工资溢价、本土用工比例及更强核查。',
-        en: 'Finds the direction overdue and insufficient, seeking multiple-fold wage premiums, domestic staffing ratios, and stronger checks.',
+        zh: '认为调整太迟且力度不足，要求数倍工资溢价、本土用工比例及严格检查。',
+        en: 'Finds the reform overdue and insufficient and seeks multiple-fold wage premiums, domestic staffing ratios, and strict inspections.',
       },
       postedDate: '2026-04-09T04:00:00Z',
       textSha256:
@@ -2244,11 +2244,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0309',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['protection', 'enforcement', 'process'],
       summary: {
-        zh: '反对现稿，认为提高工资不能解决滥用，要求先进行全面招聘和用工核查。',
-        en: 'Opposes the draft as failing to address abuse and demands comprehensive recruitment and employment checks first.',
+        zh: '拒绝单独提高工资的有限措施，要求全面签证审查、招聘核验，否则暂停H-1B。',
+        en: 'Rejects a wage-only partial measure and demands universal visa audits and recruitment verification, otherwise pausing H-1B.',
       },
       postedDate: '2026-04-16T04:00:00Z',
       textSha256:
@@ -2324,11 +2324,11 @@ export default {
     },
     {
       id: 'ETA-2026-0001-0714',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['protection', 'enforcement'],
       summary: {
-        zh: '指称签证用工导致失业并要求取消项目，未明确评价本工资提案。',
-        en: 'Alleges visa hiring caused unemployment and seeks program abolition without clearly evaluating this wage proposal.',
+        zh: '指称H-1B造成失业和欺诈，要求终止该项目及遣返，明确支持更严限制。',
+        en: 'Alleges H-1B-related unemployment and fraud and demands program abolition and deportations, a clear tightening direction.',
       },
       postedDate: '2026-05-04T04:00:00Z',
       textSha256:
@@ -2361,11 +2361,11 @@ export default {
     {
       id: 'ETA-2026-0001-0040',
       postedDate: '2026-04-02T04:00:00Z',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['market', 'protection', 'enforcement'],
       summary: {
-        zh: '认为应以高于第50百分位作为入门底线，并提出审计和更严格的签证限制。',
-        en: 'Calls for an entry floor above the 50th percentile, audits, and stricter visa restrictions.',
+        zh: '要求入门工资高于第50百分位、加强审计、终止续签并限制PERM。',
+        en: 'Seeks an entry floor above the 50th percentile, audits, an end to visa renewals, and PERM restrictions.',
       },
       textSha256:
         '58c8f0b29317d31ee3a9f187aa1a3f7f079250cd80a4f4b67182b41e0dd8f414',
@@ -2385,17 +2385,17 @@ export default {
     {
       id: 'ETA-2026-0001-0734',
       postedDate: '2026-05-04T04:00:00Z',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['enforcement'],
       summary: {
-        zh: '明确支持按工资选取H-1B，但内容针对抽签机制，不能据此判断对本工资方法的立场。',
-        en: 'Explicitly supports wage-based H-1B selection, but discusses the lottery rather than this wage methodology.',
+        zh: '明确支持按工资和能力筛选H-1B并反对欺诈，属于支持收紧方向，虽主要讨论抽签规则。',
+        en: 'Explicitly supports wage-and-ability-based H-1B selection and opposes fraud, a tightening direction despite focusing on lottery rules.',
       },
       textSha256:
         '6df69a0e9f1ed51358920110bfb22348d58d589eb58032e0b6892ed2bac9d0f1',
       sourceNote: {
-        zh: '正文针对另一项按工资选取H-1B的制度；未将其支持态度自动算作支持本项工资提案。',
-        en: 'The body concerns a separate wage-based H-1B selection policy; its support is not treated as support for this wage proposal.',
+        zh: '正文主要讨论另行制定的 H-1B 按工资选取机制；按相关政策收紧方向归类，不代表其明确赞成本项工资提案的具体条款。',
+        en: 'The body primarily discusses a separate wage-based H-1B selection mechanism. Its label describes the related tightening direction, not explicit approval of this wage proposal’s specific provisions.',
       },
     },
     {
@@ -2614,4 +2614,6 @@ export default {
   commentPhase: 'closed',
   commentDeadline: '2026-05-26',
   sampleSize: 200,
+  classificationBasis: 'policy-direction-v1',
+  classificationReviewedAt: '2026-09-12T21:47:24.689Z',
 } satisfies CommentSample;

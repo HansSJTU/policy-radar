@@ -8555,14 +8555,14 @@
   "classification": [
     {
       "id": "USCIS-2026-0298-4278",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "要求优先雇用美国人并加强监管，未表明收费立场。",
-        "en": "Calls for American hiring priority and stronger oversight without taking a fee position."
+        "zh": "要求优先雇用美国人，反对扩大或延续替代本土工人的 H-1B 用工。",
+        "en": "Demands American hiring priority and opposes expanding or continuing H-1B hiring that displaces domestic workers."
       },
       "postedDate": "2026-08-31T04:00:00Z",
       "textSha256": "beed5b56a3a350166542cc01eeb60ad7e8d4794f271b380b32001fa04ff41d09"
@@ -8702,28 +8702,28 @@
     },
     {
       "id": "USCIS-2026-0298-3552",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "批评外籍用工压低工资和招聘歧视，未表明收费立场。",
-        "en": "Criticizes wage suppression and discriminatory hiring without a fee position."
+        "zh": "批评 H-1B 用工压低美国人工资并排挤本土求职者。",
+        "en": "Criticizes H-1B hiring for suppressing U.S. wages and displacing domestic applicants."
       },
       "postedDate": "2026-08-27T04:00:00Z",
       "textSha256": "6f47f36c76c53afb7326cfa137d210ca4851961b12baab6e4a1cf7c631f1e9d6"
     },
     {
       "id": "USCIS-2026-0298-6797",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "要求暂停就业签证并全面核查，未表明收费立场。",
-        "en": "Demands employment-visa pauses and audits without a fee position."
+        "zh": "要求立即暂停就业签证及绿卡申请，全面核查，否则取消相关签证。",
+        "en": "Demands an immediate pause and comprehensive audits of employment visas and green-card petitions, or termination of the visa programs."
       },
       "postedDate": "2026-09-09T04:00:00Z",
       "textSha256": "da359ba45a92d8f2652d086cbfbff1efe4faedf82372d8c2d242a7f5ba0830fa"
@@ -8861,13 +8861,13 @@
     },
     {
       "id": "USCIS-2026-0298-6110",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "fraud"
       ],
       "summary": {
-        "zh": "指控用工及工资欺诈，未表明收费立场。",
-        "en": "Alleges employment and payroll fraud without a fee position."
+        "zh": "指控 H-1B 工资与用工欺诈，反对宽容并要求加强监管。",
+        "en": "Alleges H-1B payroll and employment fraud, opposes leniency and demands stronger oversight."
       },
       "postedDate": "2026-09-03T04:00:00Z",
       "textSha256": "caf144117c7a0f66c4fb934a0b20c3d4532404f2e603e4058fe3de67475a4085"
@@ -8904,7 +8904,7 @@
     },
     {
       "id": "USCIS-2026-0298-0836",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "restriction",
         "legal",
@@ -9073,14 +9073,14 @@
     },
     {
       "id": "USCIS-2026-0298-7809",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction"
       ],
       "summary": {
-        "zh": "要求停止 H-1B 并雇用美国人，未表明收费立场。",
-        "en": "Calls for ending H-1B and hiring Americans without a fee position."
+        "zh": "要求停止发放 H-1B 签证并改雇美国人。",
+        "en": "Calls for ending H-1B visas and hiring Americans instead."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "ee8c1d2d2aaaf89ddf5885b40bbd3362eaa9ced7188ee64a21dfb9d8bcb00aa2"
@@ -9163,7 +9163,7 @@
     },
     {
       "id": "USCIS-2026-0298-0415",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "restriction",
         "jobs"
@@ -9241,7 +9241,7 @@
     },
     {
       "id": "USCIS-2026-0298-3995",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction",
@@ -9302,14 +9302,14 @@
     },
     {
       "id": "USCIS-2026-0298-5583",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction"
       ],
       "summary": {
-        "zh": "要求关闭项目并声称被替代，未表明收费立场。",
-        "en": "Seeks program closure and describes displacement without a fee position."
+        "zh": "要求关闭 H-1B 项目并让持有人离境，认为本土工人被替代。",
+        "en": "Demands ending H-1B and sending workers home, arguing that domestic workers are displaced."
       },
       "postedDate": "2026-09-01T04:00:00Z",
       "textSha256": "17cf07cff669a5ce8c37d118bcaa90595a122abd67d4b81a6e9755116e93b158"
@@ -9467,28 +9467,28 @@
     },
     {
       "id": "USCIS-2026-0298-0902",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction"
       ],
       "summary": {
-        "zh": "批评 H-1B 就业及社区影响，未表明收费立场。",
-        "en": "Criticizes H-1B employment and community impacts without a fee position."
+        "zh": "认为 H-1B 用工及家属迁入损害本土就业与社区，要求停止。",
+        "en": "Argues H-1B hiring and accompanying family migration harm domestic employment and communities, and demands an end."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "017f86ceeac571db41a18d6b6ea0ddf4a9354f342414e83d8ecbf75fc9da3874"
     },
     {
       "id": "USCIS-2026-0298-1331",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "要求美国人招聘优先及学历核查，未表明收费立场。",
-        "en": "Seeks American hiring priority and degree verification without a fee position."
+        "zh": "主张美国公民就业优先，并加强对 H-1B 学历资质的核查。",
+        "en": "Calls for American hiring priority and stronger checks on H-1B educational credentials."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "02fc30cdba6addc754da67076e21f3d0ff7553822f5db4567547a3286b67b57c"
@@ -9638,26 +9638,26 @@
     },
     {
       "id": "USCIS-2026-0298-8320",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs"
       ],
       "summary": {
-        "zh": "呼吁支持总统和美国劳动者，未明确谈及收费。",
-        "en": "Calls for supporting the president and American workers without an explicit fee position."
+        "zh": "呼吁支持总统保护美国工人的政策方向。",
+        "en": "Urges support for the president’s policy direction of protecting American workers."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "e6dc435a323e342a2f273a09ccba8ebf7b34fd5199f52899c950e1e94201834b"
     },
     {
       "id": "USCIS-2026-0298-7737",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs"
       ],
       "summary": {
-        "zh": "批评项目压低工资并转移财富，未表明收费立场。",
-        "en": "Criticizes wage suppression and wealth transfers without a fee position."
+        "zh": "批评 H-1B 压低美国人工资、替代岗位并把收益转给企业。",
+        "en": "Criticizes H-1B for lowering U.S. wages, displacing jobs and shifting gains to employers."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "60d82356cec10f0bd74429af71e65f5e393521a1a2a291439eb878ea352bec99"
@@ -9693,15 +9693,15 @@
     },
     {
       "id": "USCIS-2026-0298-1740",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "要求改革或终结项目，未表明收费立场。",
-        "en": "Seeks reform or termination without a fee position."
+        "zh": "批评 H-1B 欺诈和工资压低，支持终止或替换现行制度。",
+        "en": "Criticizes H-1B fraud and wage suppression and supports ending or replacing the current system."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "31dc6c42c9ee7c9ade3ffa233ebcc0b502ab6e9bf72846b02afa9293e59488ca"
@@ -9719,29 +9719,29 @@
     },
     {
       "id": "USCIS-2026-0298-7535",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "要求取消项目并批评廉价劳工替代，未表明收费立场。",
-        "en": "Seeks abolition and criticizes cheaper-labor replacement without a fee position."
+        "zh": "要求全面取消 H-1B，认为企业以廉价外劳替代美国员工。",
+        "en": "Demands abolishing H-1B, arguing employers replace Americans with cheaper foreign labor."
       },
       "postedDate": "2026-09-10T04:00:00Z",
       "textSha256": "00481c595b6e54049790a2f299f1c5e09f3adf45dac4e1c154ca2a99fc77e718"
     },
     {
       "id": "USCIS-2026-0298-0705",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction"
       ],
       "summary": {
-        "zh": "明确拒绝提高费用，主张直接取消签证项目。",
-        "en": "Explicitly rejects higher fees and instead calls for visa-program abolition."
+        "zh": "认为涨费不足以解决问题，要求直接取消 H-1B 及配偶签证。",
+        "en": "Rejects higher fees as insufficient and demands abolishing H-1B and associated spousal visas."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "7301290f97dfd90f2ac7f8efea29b8e27cf1333167edad11e03aa84e84860180"
@@ -9855,15 +9855,15 @@
     },
     {
       "id": "USCIS-2026-0298-1154",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "主张限制滥用并优先雇用美国人，未表明收费立场。",
-        "en": "Seeks abuse limits and American hiring priority without a fee position."
+        "zh": "认为雇主滥用 H-1B，要求增加限制并优先雇用美国人。",
+        "en": "Alleges employer abuse of H-1B and demands tighter limits and American hiring priority."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "49aef5af4485c83448ff2c5034876d30cf3fd704e353b94447dca931ebab9cca"
@@ -9886,14 +9886,14 @@
     },
     {
       "id": "USCIS-2026-0298-1334",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "批评项目滥用及工资就业影响，未表明收费立场。",
-        "en": "Criticizes abuse and wage and employment impacts without a fee position."
+        "zh": "批评 H-1B 将岗位让给外籍员工并损害美国劳动者。",
+        "en": "Criticizes H-1B for shifting jobs to foreign workers at the expense of Americans."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "3c7e569a6e54318cb6ffc400069ecc1d91dde1b0cf8bd1b9b75676cf6ebb6764"
@@ -10003,7 +10003,7 @@
     },
     {
       "id": "USCIS-2026-0298-0206",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "restriction",
         "jobs"
@@ -10017,7 +10017,7 @@
     },
     {
       "id": "USCIS-2026-0298-2013",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction",
@@ -10093,14 +10093,14 @@
     },
     {
       "id": "USCIS-2026-0298-7579",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "描述招聘歧视及低薪外劳偏好，未表明收费立场。",
-        "en": "Describes hiring discrimination and preference for cheaper labor without a fee position."
+        "zh": "以招聘经历批评企业偏好低薪外劳并排挤美国求职者。",
+        "en": "Cites recruiting experience to criticize employers favoring cheaper foreign labor over American applicants."
       },
       "postedDate": "2026-09-10T04:00:00Z",
       "textSha256": "b4adf23d3d792ebacf56edb29f9a142aae934a25ed19c7ae787176d1ad5f2d30"
@@ -10181,15 +10181,15 @@
     },
     {
       "id": "USCIS-2026-0298-6064",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "支持全面限制签证并批评招聘歧视，未表明收费立场。",
-        "en": "Supports broad visa restrictions and criticizes hiring discrimination without a fee position."
+        "zh": "明确支持尽可能限制 H-1B 及所有签证，批评外籍用工排斥美国人。",
+        "en": "Explicitly supports restricting H-1B and all visas as much as possible, alleging exclusion of Americans."
       },
       "postedDate": "2026-09-03T04:00:00Z",
       "textSha256": "61ec3a82cc77ab4445b80578e4957ae5709a990a9ce85a092fe090a365f05554"
@@ -10211,14 +10211,14 @@
     },
     {
       "id": "USCIS-2026-0298-0220",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction"
       ],
       "summary": {
-        "zh": "要求高签证成本及美国人优先，未明确评价拟议收费。",
-        "en": "Seeks high visa costs and American priority without evaluating the proposed fee."
+        "zh": "主张以高额签证费用限制外籍招聘，并要求美国人就业优先。",
+        "en": "Advocates high visa costs to restrict foreign hiring and prioritize Americans."
       },
       "postedDate": "2026-08-25T04:00:00Z",
       "textSha256": "ded47c4434afe996fa15a6820fc65cfed2f25ccddbf6efaa943122ffa23ff06e"
@@ -10284,7 +10284,7 @@
     },
     {
       "id": "USCIS-2026-0298-6237",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "fraud",
         "jobs",
@@ -10292,8 +10292,8 @@
         "tailored"
       ],
       "summary": {
-        "zh": "有条件支持合理收费，要求收入专门用于核查和执法。",
-        "en": "Conditionally supports reasonable fees with revenue dedicated to verification and enforcement."
+        "zh": "支持加强资质核查和移民执法，要求将合理收费投入反欺诈。",
+        "en": "Supports stronger credential checks and immigration enforcement, with reasonable fees directed to anti-fraud work."
       },
       "postedDate": "2026-09-04T04:00:00Z",
       "textSha256": "696b7adf06fb05a5e1cc128dc1c7c86bee66a50b6fd2a2f792d01a450e316d3c"
@@ -10538,27 +10538,27 @@
     },
     {
       "id": "USCIS-2026-0298-1892",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud"
       ],
       "summary": {
-        "zh": "指控签证滥用及招聘歧视，未表达收费立场。",
-        "en": "Alleges visa abuse and hiring discrimination without a fee position."
+        "zh": "指责签证用工排挤美国就业并推高住房成本，要求制止。",
+        "en": "Alleges visa hiring displaces American jobs and raises housing costs, and demands it stop."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "91d3024b31e19291c12cd39885a30fae049320820e236aebcc8209a9a7be7958"
     },
     {
       "id": "USCIS-2026-0298-2268",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs"
       ],
       "summary": {
-        "zh": "批评企业外包及替代美国员工，未表达收费立场。",
-        "en": "Criticizes offshoring and displacement without a fee position."
+        "zh": "批评 H-1B 和低成本外包取代美国本土员工。",
+        "en": "Criticizes H-1B and low-cost offshoring for replacing U.S.-based staff."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "bed3d22a7b40c3de00af3413c72e1ecec404dedef723007614b1356b32354fba"
@@ -10608,7 +10608,7 @@
     },
     {
       "id": "USCIS-2026-0298-0502",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction",
@@ -10640,13 +10640,13 @@
     },
     {
       "id": "USCIS-2026-0298-1311",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs"
       ],
       "summary": {
-        "zh": "认为无需引进外劳，未表达收费立场。",
-        "en": "Says foreign recruitment is unnecessary without a fee position."
+        "zh": "认为美国已有足够劳动力，不应继续引入外籍工人。",
+        "en": "Argues the United States has enough workers and should not import foreign labor."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "a595a543470145f5afd4e9aef46690eae4b494d7ef14ea02d4dd0a18197d327f"
@@ -10666,15 +10666,15 @@
     },
     {
       "id": "USCIS-2026-0298-6852",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "认为提案不足并要求终结项目，未明确认可收费。",
-        "en": "Finds the proposal insufficient and seeks program abolition without endorsing the fee."
+        "zh": "认为提案力度不足，要求立即取消 H-1B、H-4 EAD、OPT 等项目。",
+        "en": "Says the proposal is not restrictive enough and demands immediate termination of H-1B, H-4 EAD, OPT and related programs."
       },
       "postedDate": "2026-09-09T04:00:00Z",
       "textSha256": "dfeaf0ab89c96a8322f1dd63c7d44660465a9ab0a827f39529db42133e686eb1"
@@ -10724,13 +10724,13 @@
     },
     {
       "id": "USCIS-2026-0298-5951",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "jobs"
       ],
       "summary": {
-        "zh": "主张灵活签证规则并关注外包，未明确评价收费。",
-        "en": "Favors flexible visa rules and flags offshoring without evaluating the fee."
+        "zh": "主张对高技能 H-1B 工作者保持灵活规则，认为主要问题是岗位外包。",
+        "en": "Favors flexible H-1B rules for skilled workers and identifies offshoring as the main problem."
       },
       "postedDate": "2026-09-03T04:00:00Z",
       "textSha256": "9521a00426d51726b202d0ae48657ebf95dfec90cbc8da0dc77f10dd0972207b"
@@ -10905,14 +10905,14 @@
     },
     {
       "id": "USCIS-2026-0298-6020",
-      "stance": "mixed",
+      "stance": "unclear",
       "themes": [
         "legal",
         "tailored"
       ],
       "summary": {
-        "zh": "提出让 EB-5 投资移民也分担费用。",
-        "en": "Suggests including EB-5 investors among fee payers."
+        "zh": "询问为何不向 EB-5 投资移民分摊费用，未表明收紧或放宽方向。",
+        "en": "Asks why EB-5 investors are not included in cost sharing without expressing a clear direction on restrictions."
       },
       "postedDate": "2026-09-03T04:00:00Z",
       "textSha256": "80a95f595121d92e09f782366efb9f057f19feecfc8b640fca3c8795de95ce94"
@@ -10959,7 +10959,7 @@
     },
     {
       "id": "USCIS-2026-0298-2377",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "restriction",
         "jobs",
@@ -11015,15 +11015,15 @@
     },
     {
       "id": "USCIS-2026-0298-2329",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "jobs",
         "restriction",
         "legal"
       ],
       "summary": {
-        "zh": "要求大幅涨费及汇款征税，未明确评价拟议金额。",
-        "en": "Seeks steep fees and remittance taxes without evaluating the proposed amount."
+        "zh": "要求大幅提高 H-1B 申请费，并增加持有人的税负及汇款限制。",
+        "en": "Demands sharply higher H-1B fees, heavier taxes on visa holders and restrictions on remittances."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "3ac81f5d79eab37f60c18a0affc2467ce64e346cbbcd5e68f2696cfb64fd475b"
@@ -11154,7 +11154,7 @@
     },
     {
       "id": "USCIS-2026-0298-3770",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "tailored",
         "restriction",
@@ -11287,15 +11287,15 @@
     },
     {
       "id": "USCIS-2026-0298-3199",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "jobs",
         "fraud",
         "restriction"
       ],
       "summary": {
-        "zh": "认为收费无效，要求取消工作签证。",
-        "en": "Rejects the fee as ineffective and calls for ending work visas."
+        "zh": "认为收费无效，要求取消工作签证并优先保障美国毕业生就业。",
+        "en": "Calls fees ineffective and demands canceling work visas and prioritizing American graduates."
       },
       "postedDate": "2026-08-27T04:00:00Z",
       "textSha256": "b3c076d06e80af6b28614e9ee072754cb3e620de1eeb168d98bc456c53e1bb15"
@@ -11388,14 +11388,14 @@
     },
     {
       "id": "USCIS-2026-0298-2991",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "jobs",
         "students"
       ],
       "summary": {
-        "zh": "呼吁按能力平等招聘，未明确评价收费。",
-        "en": "Calls for equal merit-based hiring without evaluating the fee."
+        "zh": "维护 H-1B 工作者的贡献，主张不按国籍或担保身份限制平等就业。",
+        "en": "Defends H-1B workers’ contributions and equal employment opportunities regardless of nationality or sponsorship."
       },
       "postedDate": "2026-08-27T04:00:00Z",
       "textSha256": "7f8ba7452d7fd0651333f477b955b21a33606644ead0ab68315db633d6f3ce72"
@@ -11416,13 +11416,13 @@
     },
     {
       "id": "USCIS-2026-0298-8312",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "fraud"
       ],
       "summary": {
-        "zh": "指控虚假学历和项目滥用，未表明收费立场。",
-        "en": "Alleges false credentials and program abuse without a fee position."
+        "zh": "指责 H-1B 被假学历和欺诈滥用，要求制止。",
+        "en": "Alleges H-1B abuse through fake credentials and fraud and demands it stop."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "8c9ba9eb4526ecdbaa1bfcd11f13ddbc7dce909cf4ee4d5bedd84bee0a5354ca"
@@ -11558,16 +11558,1032 @@
     "seed": "654429093d674e1f905a2d04e579df3ec1de10f41f387314af9632f785e19a2d",
     "counts": {
       "oppose": 110,
-      "support": 49,
-      "mixed": 11,
-      "unclear": 30
+      "support": 83,
+      "mixed": 1,
+      "unclear": 6
     },
     "percentages": {
-      "oppose": 55.0,
-      "support": 24.5,
-      "mixed": 5.5,
-      "unclear": 15.0
+      "oppose": 55.00000000000001,
+      "support": 41.5,
+      "mixed": 0.5,
+      "unclear": 3
     }
   },
-  "commentPhase": "open"
+  "commentPhase": "open",
+  "classificationBasis": "policy-direction-v1",
+  "classificationDefinition": {
+    "zh": "按政策方向归类：支持包括赞同提案、对相关外籍用工或签证制度持明确负面态度，以及要求进一步收紧；反对包括反对限制、维护移民或工作许可、主张保留或放宽相关机会。不要求评论明确评价提案的具体条款。",
+    "en": "Classified by policy direction: support includes endorsing the proposal, clearly negative views of the relevant foreign-worker or visa program, and calls for tighter restrictions. Opposition includes rejecting restrictions, defending migrants or work authorization, and preserving or expanding access. Explicit views on the proposal’s exact provisions are not required."
+  },
+  "classificationMethod": {
+    "zh": "逐条结合全文判断相关政策方向，不按赞成或反对等关键词机械分类。要求更高费用、更严限制或取消签证，归为支持收紧；支持保留或放宽工作与居留机会，归为反对收紧。对不同人群采取收紧与放宽并存的立场、或明确提出实质性支持条件，保留为有条件／混合。反对取消保障、仅把较短保障期作为退让方案的，仍归为反对收紧。仅有一般反欺诈表述，不会覆盖全文维护合法工作机会的主要方向。无关内容、纯咨询、无法判断方向的表述及不可读记录归为不明确。分类依据评论文字，不依据姓名或身份推断。附件不可读时保留说明，仅按可读正文判断；不会因观点或可读性替换样本。",
+    "en": "Each full body is reviewed for its relevant policy direction, rather than classified by isolated words such as support or oppose. Demands for higher fees, tighter restrictions or visa abolition count as support for tightening; preserving or expanding work and residence opportunities counts as opposition. Scope-dependent combinations of tightening and easing, or explicit substantive conditions of support, remain conditional / mixed. Opposing the removal of protections while accepting shorter protections only as a fallback remains opposition. General anti-fraud language does not override an overall defense of lawful work access. Unrelated content, pure questions, indeterminate views and unreadable records remain unclear. Labels rely on the text, not names or identities. Unavailable attachments are disclosed and only readable bodies are assessed. No sample is replaced because of its viewpoint or readability."
+  },
+  "classificationReview": {
+    "reviewedAt": "2026-09-12T21:47:24.689Z",
+    "reviewedCount": 200,
+    "availableBodyCount": 199,
+    "records": [
+      {
+        "id": "USCIS-2026-0298-4278",
+        "stance": "support",
+        "rationale": "要求优先雇用美国人，反对扩大或延续替代本土工人的 H-1B 用工。"
+      },
+      {
+        "id": "USCIS-2026-0298-1494",
+        "stance": "oppose",
+        "rationale": "反对用高额申请费补贴整个移民体系。"
+      },
+      {
+        "id": "USCIS-2026-0298-6784",
+        "stance": "oppose",
+        "rationale": "认为叠加费用将阻断合规招聘并推动外包。"
+      },
+      {
+        "id": "USCIS-2026-0298-8276",
+        "stance": "support",
+        "rationale": "支持收费，认为可筛选人才并保护本土岗位。"
+      },
+      {
+        "id": "USCIS-2026-0298-7224",
+        "stance": "oppose",
+        "rationale": "警告收费将损害小企业、留学和美国经济。"
+      },
+      {
+        "id": "USCIS-2026-0298-3934",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑收费权限、收入模型及小企业影响。"
+      },
+      {
+        "id": "USCIS-2026-0298-7957",
+        "stance": "support",
+        "rationale": "支持以收费降低企业替代美国工人的动机。"
+      },
+      {
+        "id": "USCIS-2026-0298-1393",
+        "stance": "oppose",
+        "rationale": "反对不成比例收费，质疑法律基础及小企业负担。"
+      },
+      {
+        "id": "USCIS-2026-0298-5632",
+        "stance": "oppose",
+        "rationale": "认为高额费用将人才推向其他国家。"
+      },
+      {
+        "id": "USCIS-2026-0298-7221",
+        "stance": "oppose",
+        "rationale": "要求撤回或降低收费，改用针对性反欺诈监管。"
+      },
+      {
+        "id": "USCIS-2026-0298-3552",
+        "stance": "support",
+        "rationale": "批评 H-1B 用工压低美国人工资并排挤本土求职者。"
+      },
+      {
+        "id": "USCIS-2026-0298-6797",
+        "stance": "support",
+        "rationale": "要求立即暂停就业签证及绿卡申请，全面核查，否则取消相关签证。"
+      },
+      {
+        "id": "USCIS-2026-0298-3027",
+        "stance": "oppose",
+        "rationale": "反对增收费用，担心加剧医疗人员短缺。"
+      },
+      {
+        "id": "USCIS-2026-0298-3205",
+        "stance": "support",
+        "rationale": "要求实施收费并覆盖所有 H-1B。"
+      },
+      {
+        "id": "USCIS-2026-0298-4193",
+        "stance": "support",
+        "rationale": "主张收费也适用于延期续签并严查咨询公司。"
+      },
+      {
+        "id": "USCIS-2026-0298-3100",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑收费权限并警告企业和毕业生受损。"
+      },
+      {
+        "id": "USCIS-2026-0298-4481",
+        "stance": "oppose",
+        "rationale": "警告高费用会推动岗位外流而非保护就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-3829",
+        "stance": "oppose",
+        "rationale": "要求取消收费以吸引高技能移民。"
+      },
+      {
+        "id": "USCIS-2026-0298-6687",
+        "stance": "oppose",
+        "rationale": "警告收费将人才、投资及美国岗位推向海外。"
+      },
+      {
+        "id": "USCIS-2026-0298-0697",
+        "stance": "support",
+        "rationale": "认为收费是良好开端，同时要求取消 H-1B。"
+      },
+      {
+        "id": "USCIS-2026-0298-2876",
+        "stance": "oppose",
+        "rationale": "反对涨费，认为将损害制造业投资及技术人才吸引力。"
+      },
+      {
+        "id": "USCIS-2026-0298-6110",
+        "stance": "support",
+        "rationale": "指控 H-1B 工资与用工欺诈，反对宽容并要求加强监管。"
+      },
+      {
+        "id": "USCIS-2026-0298-2551",
+        "stance": "oppose",
+        "rationale": "认为费用过高，将阻碍小企业招聘人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-0890",
+        "stance": "support",
+        "rationale": "认可收费作为开端，并要求更多劳工限制及社区补助。"
+      },
+      {
+        "id": "USCIS-2026-0298-0836",
+        "stance": "support",
+        "rationale": "要求收费更高以抑制外籍用工，方向为收紧而非混合。"
+      },
+      {
+        "id": "USCIS-2026-0298-4183",
+        "stance": "oppose",
+        "rationale": "认为收费过高且惩罚需要招聘的企业。"
+      },
+      {
+        "id": "USCIS-2026-0298-4987",
+        "stance": "oppose",
+        "rationale": "要求撤回或修改，质疑权限、收入预测及创新影响。"
+      },
+      {
+        "id": "USCIS-2026-0298-5909",
+        "stance": "support",
+        "rationale": "支持政策，认为将减少签证欺诈。"
+      },
+      {
+        "id": "USCIS-2026-0298-2277",
+        "stance": "support",
+        "rationale": "支持保护本土就业并资助移民机构运作。"
+      },
+      {
+        "id": "USCIS-2026-0298-7905",
+        "stance": "support",
+        "rationale": "支持收费改变雇主偏好低成本外劳的动机。"
+      },
+      {
+        "id": "USCIS-2026-0298-5133",
+        "stance": "support",
+        "rationale": "认为收费可纠正滥用并保护美国劳动者。"
+      },
+      {
+        "id": "USCIS-2026-0298-2254",
+        "stance": "support",
+        "rationale": "明确支持政策，同时希望费用提高至一百万美元。"
+      },
+      {
+        "id": "USCIS-2026-0298-4963",
+        "stance": "oppose",
+        "rationale": "要求撤回并建议毕业生豁免和按企业规模收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-6773",
+        "stance": "support",
+        "rationale": "认可收费并要求扩大到其他签证及加强限制。"
+      },
+      {
+        "id": "USCIS-2026-0298-2817",
+        "stance": "support",
+        "rationale": "支持收费且要求提高，以保护美国求职者。"
+      },
+      {
+        "id": "USCIS-2026-0298-7407",
+        "stance": "support",
+        "rationale": "支持收费鼓励企业招聘本土人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-7809",
+        "stance": "support",
+        "rationale": "要求停止发放 H-1B 签证并改雇美国人。"
+      },
+      {
+        "id": "USCIS-2026-0298-1410",
+        "stance": "unclear",
+        "rationale": "未取得评论正文且未列出附件，无法判断政策方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-3001",
+        "stance": "oppose",
+        "rationale": "警告涨费削弱全球人才优势，主张针对滥用执法。"
+      },
+      {
+        "id": "USCIS-2026-0298-6592",
+        "stance": "oppose",
+        "rationale": "反对收费，强调医疗及科技业需要外籍专业人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-0747",
+        "stance": "support",
+        "rationale": "支持提案并要求更高费用以优先雇用美国人。"
+      },
+      {
+        "id": "USCIS-2026-0298-4941",
+        "stance": "oppose",
+        "rationale": "反对统一高费，主张定向执法及合理分级收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-0415",
+        "stance": "support",
+        "rationale": "要求更高费用并反对外籍替代劳工，方向为收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-2712",
+        "stance": "oppose",
+        "rationale": "批评政策针对议价能力弱的外籍劳动者。"
+      },
+      {
+        "id": "USCIS-2026-0298-4561",
+        "stance": "oppose",
+        "rationale": "质疑就业替代假设并警告收费可能减少美国经济活动。"
+      },
+      {
+        "id": "USCIS-2026-0298-6944",
+        "stance": "support",
+        "rationale": "支持收费，并要求取消相关工作许可及限制外包。"
+      },
+      {
+        "id": "USCIS-2026-0298-4829",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑成本模型并提出毕业生豁免及替代收入。"
+      },
+      {
+        "id": "USCIS-2026-0298-3995",
+        "stance": "support",
+        "rationale": "要求百万美元级费用以抑制外籍替代，方向为收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-4236",
+        "stance": "oppose",
+        "rationale": "认为收费会推动工作转移海外并损害美国劳动力市场。"
+      },
+      {
+        "id": "USCIS-2026-0298-6131",
+        "stance": "support",
+        "rationale": "支持额外收费覆盖新申请及续签。"
+      },
+      {
+        "id": "USCIS-2026-0298-4891",
+        "stance": "oppose",
+        "rationale": "反对缺乏雇主退出和申请量实证依据的收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-5583",
+        "stance": "support",
+        "rationale": "要求关闭 H-1B 项目并让持有人离境，认为本土工人被替代。"
+      },
+      {
+        "id": "USCIS-2026-0298-3635",
+        "stance": "oppose",
+        "rationale": "明确反对过高费用。"
+      },
+      {
+        "id": "USCIS-2026-0298-2910",
+        "stance": "oppose",
+        "rationale": "要求撤回不成比例收费，保护小企业并合理分摊成本。"
+      },
+      {
+        "id": "USCIS-2026-0298-1117",
+        "stance": "support",
+        "rationale": "支持涨费，强调美国工人的就业与工资。"
+      },
+      {
+        "id": "USCIS-2026-0298-3085",
+        "stance": "oppose",
+        "rationale": "反对收费，警告岗位和美国培养的人才外流并质疑权限。"
+      },
+      {
+        "id": "USCIS-2026-0298-6929",
+        "stance": "oppose",
+        "rationale": "反对收费，主张按员工比例限制赞助以保护毕业生。"
+      },
+      {
+        "id": "USCIS-2026-0298-4031",
+        "stance": "oppose",
+        "rationale": "要求撤回，认为向 H-1B 雇主征收跨机构费用缺乏依据。"
+      },
+      {
+        "id": "USCIS-2026-0298-6142",
+        "stance": "oppose",
+        "rationale": "要求全面撤回，指出成本权限、企业及毕业生损害。"
+      },
+      {
+        "id": "USCIS-2026-0298-5983",
+        "stance": "support",
+        "rationale": "支持提案，同时主张最终取消 H-1B。"
+      },
+      {
+        "id": "USCIS-2026-0298-4233",
+        "stance": "oppose",
+        "rationale": "反对用提高合法移民成本回应复杂就业问题。"
+      },
+      {
+        "id": "USCIS-2026-0298-3515",
+        "stance": "oppose",
+        "rationale": "认为成本过高，阻碍雇主参与。"
+      },
+      {
+        "id": "USCIS-2026-0298-0902",
+        "stance": "support",
+        "rationale": "认为 H-1B 用工及家属迁入损害本土就业与社区，要求停止。"
+      },
+      {
+        "id": "USCIS-2026-0298-1331",
+        "stance": "support",
+        "rationale": "主张美国公民就业优先，并加强对 H-1B 学历资质的核查。"
+      },
+      {
+        "id": "USCIS-2026-0298-0309",
+        "stance": "support",
+        "rationale": "认可收费为第一步，并批评工资压低及岗位竞争。"
+      },
+      {
+        "id": "USCIS-2026-0298-6241",
+        "stance": "support",
+        "rationale": "明确支持收费，并要求最终关闭项目。"
+      },
+      {
+        "id": "USCIS-2026-0298-2090",
+        "stance": "support",
+        "rationale": "认可措施，认为可保护美国求职者并应对虚假资历。"
+      },
+      {
+        "id": "USCIS-2026-0298-0776",
+        "stance": "oppose",
+        "rationale": "质疑跨机构成本收费与服务费法律基础的关联。"
+      },
+      {
+        "id": "USCIS-2026-0298-2024",
+        "stance": "oppose",
+        "rationale": "反对六位数门槛损害小企业和国际毕业生。"
+      },
+      {
+        "id": "USCIS-2026-0298-7455",
+        "stance": "support",
+        "rationale": "支持收费鼓励本土招聘。"
+      },
+      {
+        "id": "USCIS-2026-0298-5893",
+        "stance": "oppose",
+        "rationale": "警告规则减少留学生并导致外包及美国员工裁员。"
+      },
+      {
+        "id": "USCIS-2026-0298-6616",
+        "stance": "oppose",
+        "rationale": "反对收费导致研究型雇主及美国培养的科技人才受损。"
+      },
+      {
+        "id": "USCIS-2026-0298-3574",
+        "stance": "oppose",
+        "rationale": "要求撤回并采用工资执法及按企业规模收费等替代措施。"
+      },
+      {
+        "id": "USCIS-2026-0298-7659",
+        "stance": "support",
+        "rationale": "明确支持设立 H-1B 费用。"
+      },
+      {
+        "id": "USCIS-2026-0298-8320",
+        "stance": "support",
+        "rationale": "呼吁支持总统保护美国工人的政策方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-7737",
+        "stance": "support",
+        "rationale": "批评 H-1B 压低美国人工资、替代岗位并把收益转给企业。"
+      },
+      {
+        "id": "USCIS-2026-0298-2625",
+        "stance": "oppose",
+        "rationale": "要求撤回，认为高费损害初创企业及医疗人才招聘。"
+      },
+      {
+        "id": "USCIS-2026-0298-7075",
+        "stance": "oppose",
+        "rationale": "担心高费限制换雇主和合同工就业，要求重新考虑。"
+      },
+      {
+        "id": "USCIS-2026-0298-1740",
+        "stance": "support",
+        "rationale": "批评 H-1B 欺诈和工资压低，支持终止或替换现行制度。"
+      },
+      {
+        "id": "USCIS-2026-0298-5509",
+        "stance": "support",
+        "rationale": "明确表示完全支持。"
+      },
+      {
+        "id": "USCIS-2026-0298-7535",
+        "stance": "support",
+        "rationale": "要求全面取消 H-1B，认为企业以廉价外劳替代美国员工。"
+      },
+      {
+        "id": "USCIS-2026-0298-0705",
+        "stance": "support",
+        "rationale": "认为涨费不足以解决问题，要求直接取消 H-1B 及配偶签证。"
+      },
+      {
+        "id": "USCIS-2026-0298-6383",
+        "stance": "oppose",
+        "rationale": "反对集中分摊系统成本，主张更合理收费及财政拨款。"
+      },
+      {
+        "id": "USCIS-2026-0298-6553",
+        "stance": "oppose",
+        "rationale": "要求完整撤回，指出企业成本、岗位外流及权限问题。"
+      },
+      {
+        "id": "USCIS-2026-0298-2745",
+        "stance": "oppose",
+        "rationale": "要求撤回或大幅降费并为受损雇主提供豁免。"
+      },
+      {
+        "id": "USCIS-2026-0298-0882",
+        "stance": "support",
+        "rationale": "认可提案为开端，要求每年二十五万美元收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-1402",
+        "stance": "oppose",
+        "rationale": "反对伤害企业及人才，质疑减少申请后的收入。"
+      },
+      {
+        "id": "USCIS-2026-0298-5226",
+        "stance": "oppose",
+        "rationale": "警告政策将学生和科研人才推向竞争国家。"
+      },
+      {
+        "id": "USCIS-2026-0298-7850",
+        "stance": "oppose",
+        "rationale": "反对缺乏就业收益证据的收费，并警告外包和税收损失。"
+      },
+      {
+        "id": "USCIS-2026-0298-1154",
+        "stance": "support",
+        "rationale": "认为雇主滥用 H-1B，要求增加限制并优先雇用美国人。"
+      },
+      {
+        "id": "USCIS-2026-0298-5823",
+        "stance": "oppose",
+        "rationale": "要求撤回收费，至少为已入学学生提供过渡豁免或减费。"
+      },
+      {
+        "id": "USCIS-2026-0298-1334",
+        "stance": "support",
+        "rationale": "批评 H-1B 将岗位让给外籍员工并损害美国劳动者。"
+      },
+      {
+        "id": "USCIS-2026-0298-4142",
+        "stance": "support",
+        "rationale": "主张将收费扩展到全部 H-1B，以保护美国就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-7787",
+        "stance": "support",
+        "rationale": "支持收费促进本土招聘及培训。"
+      },
+      {
+        "id": "USCIS-2026-0298-4927",
+        "stance": "oppose",
+        "rationale": "讽刺政策削弱制造业人才引进及本土培训。"
+      },
+      {
+        "id": "USCIS-2026-0298-1218",
+        "stance": "support",
+        "rationale": "接受费用并要求额外证明美国人招聘未果。"
+      },
+      {
+        "id": "USCIS-2026-0298-7826",
+        "stance": "oppose",
+        "rationale": "反对高费关闭毕业生就业路径并损害小企业。"
+      },
+      {
+        "id": "USCIS-2026-0298-4175",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑成本依据和程序并警告外流。"
+      },
+      {
+        "id": "USCIS-2026-0298-0179",
+        "stance": "unclear",
+        "rationale": "讽刺性追溯收费提问，未清楚表明政策方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-0206",
+        "stance": "support",
+        "rationale": "要求至少百万美元收费保护本土职业，方向为收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-2013",
+        "stance": "support",
+        "rationale": "主张不再需要此类签证并要求雇主补偿，方向为收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-7296",
+        "stance": "oppose",
+        "rationale": "要求撤回，担心毕业生无法获得雇主赞助。"
+      },
+      {
+        "id": "USCIS-2026-0298-6320",
+        "stance": "oppose",
+        "rationale": "反对不成比例收费造成小企业障碍和岗位外流。"
+      },
+      {
+        "id": "USCIS-2026-0298-3613",
+        "stance": "oppose",
+        "rationale": "要求撤回或按规模合理分级收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-5102",
+        "stance": "oppose",
+        "rationale": "认为收费削弱中小科技公司并将人才推向竞争国家。"
+      },
+      {
+        "id": "USCIS-2026-0298-7579",
+        "stance": "support",
+        "rationale": "以招聘经历批评企业偏好低薪外劳并排挤美国求职者。"
+      },
+      {
+        "id": "USCIS-2026-0298-5590",
+        "stance": "support",
+        "rationale": "支持收费覆盖新申请、续签及 H-4 EAD。"
+      },
+      {
+        "id": "USCIS-2026-0298-7299",
+        "stance": "oppose",
+        "rationale": "要求撤回并延长评论期，质疑费用权限及收入预测。"
+      },
+      {
+        "id": "USCIS-2026-0298-4249",
+        "stance": "oppose",
+        "rationale": "反对 H-1B 雇主承担广泛移民系统成本，要求缩小成本范围。"
+      },
+      {
+        "id": "USCIS-2026-0298-3477",
+        "stance": "oppose",
+        "rationale": "要求撤回，认为缺乏国会授权将其他项目费用转嫁给雇主。"
+      },
+      {
+        "id": "USCIS-2026-0298-4148",
+        "stance": "oppose",
+        "rationale": "反对雇主承担无关政府开支。"
+      },
+      {
+        "id": "USCIS-2026-0298-6064",
+        "stance": "support",
+        "rationale": "明确支持尽可能限制 H-1B 及所有签证，批评外籍用工排斥美国人。"
+      },
+      {
+        "id": "USCIS-2026-0298-4879",
+        "stance": "oppose",
+        "rationale": "要求撤回，认为规则偏袒大企业并损害合法人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-0220",
+        "stance": "support",
+        "rationale": "主张以高额签证费用限制外籍招聘，并要求美国人就业优先。"
+      },
+      {
+        "id": "USCIS-2026-0298-2309",
+        "stance": "support",
+        "rationale": "支持成本分摊和人才筛选，认为大企业有支付能力。"
+      },
+      {
+        "id": "USCIS-2026-0298-1814",
+        "stance": "oppose",
+        "rationale": "反对收费权限、需求模型及不足的替代方案分析。"
+      },
+      {
+        "id": "USCIS-2026-0298-5718",
+        "stance": "oppose",
+        "rationale": "要求撤回或豁免美国培养的毕业生及长期居美青年。"
+      },
+      {
+        "id": "USCIS-2026-0298-4341",
+        "stance": "oppose",
+        "rationale": "认为无理由征收巨额费用不公平。"
+      },
+      {
+        "id": "USCIS-2026-0298-6237",
+        "stance": "support",
+        "rationale": "整体要求更严格资格核查和执法；资金用途建议没有放宽方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-2069",
+        "stance": "support",
+        "rationale": "支持以收费为起点，最终取消 H-1B 等项目。"
+      },
+      {
+        "id": "USCIS-2026-0298-7939",
+        "stance": "support",
+        "rationale": "支持收费推动本土人才招聘。"
+      },
+      {
+        "id": "USCIS-2026-0298-5446",
+        "stance": "oppose",
+        "rationale": "反驳收费理由，认为人才价值应通过更高工资体现。"
+      },
+      {
+        "id": "USCIS-2026-0298-2793",
+        "stance": "oppose",
+        "rationale": "要求重新考虑收费，警告科研创新及岗位外流。"
+      },
+      {
+        "id": "USCIS-2026-0298-7237",
+        "stance": "oppose",
+        "rationale": "反对增加招聘障碍并推动岗位和投资外移。"
+      },
+      {
+        "id": "USCIS-2026-0298-7476",
+        "stance": "support",
+        "rationale": "支持收费改变低成本外劳招聘动机。"
+      },
+      {
+        "id": "USCIS-2026-0298-3582",
+        "stance": "oppose",
+        "rationale": "要求重新考虑收费，以规模收费及定向执法保护小企业和人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-4850",
+        "stance": "oppose",
+        "rationale": "要求撤回，反对跨机构成本转嫁及小企业障碍。"
+      },
+      {
+        "id": "USCIS-2026-0298-3379",
+        "stance": "oppose",
+        "rationale": "反对权限、需求及成本依据不足的巨额收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-7759",
+        "stance": "support",
+        "rationale": "支持由企业承担政府审核成本而非纳税人。"
+      },
+      {
+        "id": "USCIS-2026-0298-5687",
+        "stance": "oppose",
+        "rationale": "要求撤回或重写，补充长期人才影响及分级替代分析。"
+      },
+      {
+        "id": "USCIS-2026-0298-2401",
+        "stance": "unclear",
+        "rationale": "只有个人求职经历，未将其归因于外籍用工或表明政策方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-1675",
+        "stance": "support",
+        "rationale": "认为提案是良好开端，希望费用提高十倍。"
+      },
+      {
+        "id": "USCIS-2026-0298-7924",
+        "stance": "support",
+        "rationale": "认为收费好于无措施，同时要求取消项目。"
+      },
+      {
+        "id": "USCIS-2026-0298-4896",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑权限及需求模型并警告初创企业受损。"
+      },
+      {
+        "id": "USCIS-2026-0298-2441",
+        "stance": "oppose",
+        "rationale": "要求撤回或降费，警告投资和岗位可能外移。"
+      },
+      {
+        "id": "USCIS-2026-0298-1892",
+        "stance": "support",
+        "rationale": "指责签证用工排挤美国就业并推高住房成本，要求制止。"
+      },
+      {
+        "id": "USCIS-2026-0298-2268",
+        "stance": "support",
+        "rationale": "批评 H-1B 和低成本外包取代美国本土员工。"
+      },
+      {
+        "id": "USCIS-2026-0298-6613",
+        "stance": "oppose",
+        "rationale": "要求撤回或降低并按企业规模收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-6754",
+        "stance": "oppose",
+        "rationale": "反对收费推动软件岗位及美国培养人才外流。"
+      },
+      {
+        "id": "USCIS-2026-0298-1812",
+        "stance": "unclear",
+        "rationale": "仅询问适用范围，没有表达方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-0502",
+        "stance": "support",
+        "rationale": "要求更高收费、取消 OPT 及限制外国毕业生就业，方向为收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-3766",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑法律与收入模型及累积成本。"
+      },
+      {
+        "id": "USCIS-2026-0298-1311",
+        "stance": "support",
+        "rationale": "认为美国已有足够劳动力，不应继续引入外籍工人。"
+      },
+      {
+        "id": "USCIS-2026-0298-7191",
+        "stance": "mixed",
+        "rationale": "对新人支持收费、对现有长期 H-1B 工作者主张豁免，保留条件／混合。"
+      },
+      {
+        "id": "USCIS-2026-0298-6852",
+        "stance": "support",
+        "rationale": "认为提案力度不足，要求立即取消 H-1B、H-4 EAD、OPT 等项目。"
+      },
+      {
+        "id": "USCIS-2026-0298-6491",
+        "stance": "oppose",
+        "rationale": "反对初创企业无法承受且损害创新的费用。"
+      },
+      {
+        "id": "USCIS-2026-0298-4643",
+        "stance": "oppose",
+        "rationale": "反对提高美国专业工作成本并促使业务迁出。"
+      },
+      {
+        "id": "USCIS-2026-0298-2838",
+        "stance": "oppose",
+        "rationale": "批评收费破坏毕业生路径、损害小企业并增加既有负担。"
+      },
+      {
+        "id": "USCIS-2026-0298-5951",
+        "stance": "oppose",
+        "rationale": "主张对高技能 H-1B 工作者保持灵活规则，认为主要问题是岗位外包。"
+      },
+      {
+        "id": "USCIS-2026-0298-5748",
+        "stance": "oppose",
+        "rationale": "认为政策妨碍人才招聘并减少留学生及教育收入。"
+      },
+      {
+        "id": "USCIS-2026-0298-5964",
+        "stance": "oppose",
+        "rationale": "要求撤回，质疑权限与收入并主张学生及小企业保护。"
+      },
+      {
+        "id": "USCIS-2026-0298-3720",
+        "stance": "oppose",
+        "rationale": "要求撤回，担心创新、岗位及美国培养人才外流。"
+      },
+      {
+        "id": "USCIS-2026-0298-2059",
+        "stance": "support",
+        "rationale": "支持雇主付费以优先保障美国人就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-8118",
+        "stance": "support",
+        "rationale": "支持规则以降低企业偏好廉价外劳的动机。"
+      },
+      {
+        "id": "USCIS-2026-0298-6111",
+        "stance": "support",
+        "rationale": "支持收费防欺诈并筛选真正专业岗位。"
+      },
+      {
+        "id": "USCIS-2026-0298-2988",
+        "stance": "oppose",
+        "rationale": "反对无关成本转嫁及对小企业和创新的损害。"
+      },
+      {
+        "id": "USCIS-2026-0298-7436",
+        "stance": "support",
+        "rationale": "支持收费并主张美国公民就业优先。"
+      },
+      {
+        "id": "USCIS-2026-0298-0821",
+        "stance": "oppose",
+        "rationale": "批评跨机构收费越权并认为无法阻止外包。"
+      },
+      {
+        "id": "USCIS-2026-0298-4286",
+        "stance": "oppose",
+        "rationale": "批评政策加剧工程及医疗人才短缺。"
+      },
+      {
+        "id": "USCIS-2026-0298-5287",
+        "stance": "oppose",
+        "rationale": "明确反对拟议规则。"
+      },
+      {
+        "id": "USCIS-2026-0298-0278",
+        "stance": "support",
+        "rationale": "感谢保护美国工资并希望更高收费。"
+      },
+      {
+        "id": "USCIS-2026-0298-6020",
+        "stance": "unclear",
+        "rationale": "仅提出 EB-5 费用分摊问题，不足以确定政策方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-5547",
+        "stance": "support",
+        "rationale": "支持至少十万美元费用并夸张地要求进一步提高。"
+      },
+      {
+        "id": "USCIS-2026-0298-3585",
+        "stance": "support",
+        "rationale": "支持征税限制 H-1B 仅用于本土人才短缺岗位。"
+      },
+      {
+        "id": "USCIS-2026-0298-6240",
+        "stance": "oppose",
+        "rationale": "反对规则对赴美学生的不利影响。"
+      },
+      {
+        "id": "USCIS-2026-0298-2377",
+        "stance": "support",
+        "rationale": "要求更高且每年收费，方向为进一步收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-5037",
+        "stance": "oppose",
+        "rationale": "要求撤回，认为外流削弱税基并使收入模型失效。"
+      },
+      {
+        "id": "USCIS-2026-0298-5692",
+        "stance": "support",
+        "rationale": "同意收费，但更希望关闭项目。"
+      },
+      {
+        "id": "USCIS-2026-0298-6893",
+        "stance": "oppose",
+        "rationale": "要求撤回，反对跨机构成本转嫁及不可靠收入预测。"
+      },
+      {
+        "id": "USCIS-2026-0298-2329",
+        "stance": "support",
+        "rationale": "要求大幅提高 H-1B 申请费，并增加持有人的税负及汇款限制。"
+      },
+      {
+        "id": "USCIS-2026-0298-7201",
+        "stance": "oppose",
+        "rationale": "要求撤回和延长评论期，指出小企业及毕业生受损。"
+      },
+      {
+        "id": "USCIS-2026-0298-6446",
+        "stance": "oppose",
+        "rationale": "反对高费阻碍初创企业投资年轻人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-5411",
+        "stance": "oppose",
+        "rationale": "警告政策破坏美国科技及人工智能竞争力。"
+      },
+      {
+        "id": "USCIS-2026-0298-4173",
+        "stance": "oppose",
+        "rationale": "反对关闭人才通道并要求充分经济评估。"
+      },
+      {
+        "id": "USCIS-2026-0298-6232",
+        "stance": "oppose",
+        "rationale": "要求撤回统一费，改用按工资和地区定向监管。"
+      },
+      {
+        "id": "USCIS-2026-0298-3460",
+        "stance": "oppose",
+        "rationale": "认为收费将美国培养的科技人才送往竞争国家。"
+      },
+      {
+        "id": "USCIS-2026-0298-1436",
+        "stance": "oppose",
+        "rationale": "要求撤回并提出较低费用及美国研究生豁免。"
+      },
+      {
+        "id": "USCIS-2026-0298-7790",
+        "stance": "oppose",
+        "rationale": "要求撤回或合理修改，避免小企业及美国团队受损。"
+      },
+      {
+        "id": "USCIS-2026-0298-3770",
+        "stance": "support",
+        "rationale": "要求浮动更高费用及扩大适用范围，方向为进一步收紧。"
+      },
+      {
+        "id": "USCIS-2026-0298-7183",
+        "stance": "support",
+        "rationale": "支持费用促进美国经济及就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-6526",
+        "stance": "oppose",
+        "rationale": "要求撤回并逐项证明跨系统成本的授权及关联。"
+      },
+      {
+        "id": "USCIS-2026-0298-7465",
+        "stance": "support",
+        "rationale": "支持收费鼓励招聘本土人才。"
+      },
+      {
+        "id": "USCIS-2026-0298-7612",
+        "stance": "oppose",
+        "rationale": "反对将高技能签证变为巨额收费工具。"
+      },
+      {
+        "id": "USCIS-2026-0298-2850",
+        "stance": "oppose",
+        "rationale": "反对提案并要求延长评论期及完整经济数据。"
+      },
+      {
+        "id": "USCIS-2026-0298-6215",
+        "stance": "oppose",
+        "rationale": "反对进一步涨费，要求保持可负担的人才通道。"
+      },
+      {
+        "id": "USCIS-2026-0298-2403",
+        "stance": "oppose",
+        "rationale": "认为高费损害经济，主张直接打击工资及雇主欺诈。"
+      },
+      {
+        "id": "USCIS-2026-0298-2689",
+        "stance": "oppose",
+        "rationale": "要求撤回，警告外包及美国培养人才流失。"
+      },
+      {
+        "id": "USCIS-2026-0298-3199",
+        "stance": "support",
+        "rationale": "认为收费无效，要求取消工作签证并优先保障美国毕业生就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-0123",
+        "stance": "unclear",
+        "rationale": "仅表示不会阅读提案，没有可判断方向。"
+      },
+      {
+        "id": "USCIS-2026-0298-3676",
+        "stance": "oppose",
+        "rationale": "反对高费阻碍小企业及国际毕业生就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-3797",
+        "stance": "support",
+        "rationale": "明确赞成拟议修改。"
+      },
+      {
+        "id": "USCIS-2026-0298-4603",
+        "stance": "oppose",
+        "rationale": "认为收费会推动外包，要求补充分析后再决定。"
+      },
+      {
+        "id": "USCIS-2026-0298-7548",
+        "stance": "oppose",
+        "rationale": "反对损害小企业招聘，并主张加强非法用工核查。"
+      },
+      {
+        "id": "USCIS-2026-0298-6904",
+        "stance": "oppose",
+        "rationale": "要求撤回并延长评论期，质疑权限及收入依据。"
+      },
+      {
+        "id": "USCIS-2026-0298-2991",
+        "stance": "oppose",
+        "rationale": "维护 H-1B 工作者的贡献，主张不按国籍或担保身份限制平等就业。"
+      },
+      {
+        "id": "USCIS-2026-0298-6688",
+        "stance": "oppose",
+        "rationale": "反驳岗位一对一替代假设，警告投资和工作外移。"
+      },
+      {
+        "id": "USCIS-2026-0298-8312",
+        "stance": "support",
+        "rationale": "指责 H-1B 被假学历和欺诈滥用，要求制止。"
+      },
+      {
+        "id": "USCIS-2026-0298-2445",
+        "stance": "oppose",
+        "rationale": "要求撤回，指出越权、外流及劳动者议价风险。"
+      },
+      {
+        "id": "USCIS-2026-0298-7639",
+        "stance": "oppose",
+        "rationale": "认为费用无法解决本土就业问题且推动外包。"
+      },
+      {
+        "id": "USCIS-2026-0298-4924",
+        "stance": "support",
+        "rationale": "认为收费减少滥用并增加美国毕业生就业。"
+      }
+    ]
+  }
 }

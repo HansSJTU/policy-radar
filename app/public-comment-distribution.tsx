@@ -1,3 +1,8 @@
+import {
+  stanceLabels,
+  classificationNote,
+  classificationMethod,
+} from './public-comment-classification';
 import { PublicCommentRecordTabs } from './public-comment-record-tabs';
 import { PublicCommentThemeTabs } from './public-comment-theme-tabs';
 import type { Language } from './language';
@@ -6,21 +11,6 @@ import {
   summarizeComments,
   summarizeThemeGroups,
 } from './public-comment-model';
-
-const stanceLabels = {
-  zh: {
-    oppose: '反对提案',
-    support: '支持提案',
-    mixed: '有条件支持／混合立场',
-    unclear: '未明确表态／无法判断',
-  },
-  en: {
-    oppose: 'Oppose',
-    support: 'Support',
-    mixed: 'Conditional / mixed',
-    unclear: 'Unclear / unclassifiable',
-  },
-};
 
 export function PublicCommentDistribution({
   policyId,
@@ -98,7 +88,8 @@ export function PublicCommentDistribution({
       )}
       {stats ? (
         <>
-          <h4>{en ? 'Overall position' : '总体立场'}</h4>
+          <h4>{en ? 'Policy direction' : '政策方向立场'}</h4>
+          <p className="pd-comment-note">{classificationNote[language]}</p>
           <div className="pd-comment-bars">
             {stats.stances.map((row) => (
               <div className="pd-comment-row" key={row.id}>
@@ -142,11 +133,7 @@ export function PublicCommentDistribution({
                 ? `A fixed random seed selected ${sampleSize} unique comment IDs from the complete listing of ${sample.frameSize} published records. Sampled ${sampledAt}. This site's AI classified each body into one position and zero or more themes; these are not official labels. Similar submissions with distinct IDs remain separate records.`
                 : `从完整的 ${sample.frameSize} 条已公开记录列表中，用固定随机种子不放回抽取 ${sampleSize} 个评论编号。采样时间：${sampledAt}。本站 AI 逐条阅读正文并归类，每条对应一个立场和零个或多个主题，标签非官方认定；内容相似但编号不同的提交仍分别计数。`}
             </p>
-            <p>
-              {en
-                ? 'Positions refer to this proposal: explicit endorsement is support; clear rejection (including an unambiguous statement of harm from this proposal) or a request to withdraw is oppose. Conditional / mixed covers substantive exemptions, alternative schemes or mixed positions. General immigration views without a clear position on this proposal remain unclear. Unavailable attachments are disclosed per record: a clear available body can be classified, while attachment-only records remain unclear. Records are never replaced because of their viewpoint or readability.'
-                : '立场针对本项提案：明确赞成归为“支持”，明确反对（包括明确指称本提案会造成损害）或要求撤回归为“反对”；实质性豁免、替代方案或混合意见归为“有条件／混合”。只表达一般移民看法、没有明确评价本提案的，保留为“未明确表态”。附件无法读取时逐条注明：正文立场明确的按正文归类，仅有不可读附件的记为“无法判断”。不会因观点或可读性替换样本。'}
-            </p>
+            <p>{classificationMethod[language]}</p>
             {sample.manifestUrl && (
               <a
                 className="pd-comment-source"

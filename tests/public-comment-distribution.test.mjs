@@ -179,3 +179,60 @@ test('record groups preserve source order and include every stance without losin
   );
   assert.ok(groupCommentRecords([]).every((g) => g.comments.length === 0));
 });
+
+test('directional classification includes restrictive intent and preserves genuinely unreadable records', async () => {
+  const { publicCommentSamples } =
+    await import('../app/public-comment-data.ts');
+  const stance = (policy, suffix) =>
+    publicCommentSamples[policy].comments.find((c) =>
+      c.id.endsWith(`-${suffix}`),
+    ).stance;
+  assert.equal(stance('h1b-fee', '3552'), 'support'); // Negative view of H-1B hiring.
+  assert.equal(stance('h1b-fee', '0705'), 'support'); // Rejects fees because it wants visas abolished.
+  assert.equal(stance('h1b-fee', '0836'), 'support'); // Demands an even higher fee.
+  assert.equal(stance('h1b-fee', '2991'), 'oppose'); // Defends equal access for foreign workers.
+  assert.equal(stance('h1b-fee', '7191'), 'mixed'); // Explicitly different treatment for new/existing workers.
+  assert.equal(stance('h1b-fee', '1812'), 'unclear'); // Scope question only.
+  assert.equal(stance('ead-discretion', '4483'), 'oppose'); // Requests lawful work access.
+  assert.equal(stance('ead-discretion', '3482'), 'unclear'); // Unavailable attachment only.
+  assert.equal(stance('grace-period', '0473'), 'support'); // Wants tighter restrictions.
+  assert.equal(stance('prevailing-wage', '0650'), 'oppose'); // Defends migrant contributions.
+});
+
+test('every directional snapshot discloses its basis and a complete review without changing sampling metadata', async () => {
+  const { publicCommentSamples } =
+    await import('../app/public-comment-data.ts');
+  const { readFile } = await import('node:fs/promises');
+  for (const sample of Object.values(publicCommentSamples)) {
+    const manifest = JSON.parse(
+      await readFile(
+        new URL(`../public${sample.manifestUrl}`, import.meta.url),
+        'utf8',
+      ),
+    );
+    assert.equal(sample.classificationBasis, 'policy-direction-v1');
+    assert.equal(manifest.classificationBasis, sample.classificationBasis);
+    assert.equal(manifest.classificationReview.reviewedCount, 200);
+    assert.equal(
+      manifest.classificationReview.reviewedAt,
+      sample.classificationReviewedAt,
+    );
+    assert.deepEqual(
+      manifest.classificationReview.records.map((r) => r.id),
+      manifest.sampleIds,
+    );
+    assert.ok(
+      manifest.classificationReview.records.every(
+        (r) => r.rationale && r.stance,
+      ),
+    );
+    for (const row of summarizeComments(sample.comments).stances) {
+      assert.equal(manifest.summary.counts[row.id], row.count);
+      assert.equal(manifest.summary.percentages[row.id], row.percent);
+    }
+    assert.ok(
+      Date.parse(sample.classificationReviewedAt) >=
+        Date.parse(sample.sampledAt),
+    );
+  }
+});

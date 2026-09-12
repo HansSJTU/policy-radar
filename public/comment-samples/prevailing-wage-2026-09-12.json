@@ -1526,14 +1526,14 @@
     },
     {
       "id": "ETA-2026-0001-0631",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "指称签证欺诈和招聘排斥，但未评价拟议工资方法。",
-        "en": "Alleges visa fraud and exclusionary hiring without evaluating the proposed wage methodology."
+        "zh": "指称H-1B和OPT欺诈及排斥本土劳动者，表达反对外籍签证劳工替代的收紧方向。",
+        "en": "Alleges H-1B/OPT fraud and exclusion of domestic workers, expressing a tightening direction against visa-labor substitution."
       },
       "postedDate": "2026-04-30T04:00:00Z",
       "textSha256": "9d4c6f82a0cb9778bae8f3d5dc7f70a914b38f35aff59253972b728cff040fc3"
@@ -1583,14 +1583,14 @@
     },
     {
       "id": "ETA-2026-0001-1058",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为工资规则范围有限，要求应对其所称外籍劳动力过剩，未明确取舍拟议门槛。",
-        "en": "Calls the rule limited and seeks broader responses to alleged foreign-labor oversupply without clearly accepting or rejecting its thresholds."
+        "zh": "认为工资规则力度有限，要求应对其所称外籍劳动力过剩并加强限制。",
+        "en": "Sees the wage rule as limited and seeks stronger measures against alleged foreign-labor oversupply."
       },
       "postedDate": "2026-05-22T04:00:00Z",
       "textSha256": "bec7ecb21bd8c862d3da41762ccda51476b03b94b16c65413d06e9e55e473207"
@@ -1655,14 +1655,14 @@
     },
     {
       "id": "ETA-2026-0001-0189",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "要求结束其所称存在欺诈和岗位替代的签证项目，未评价工资提案。",
-        "en": "Seeks abolition of visa programs over alleged fraud and displacement without evaluating the wage proposal."
+        "zh": "指称欺诈和替代本土劳动者，要求终止H-1B，支持更严限制。",
+        "en": "Alleges fraud and domestic-worker displacement and calls for ending H-1B, supporting stronger restrictions."
       },
       "postedDate": "2026-04-06T04:00:00Z",
       "textSha256": "8d56a817306791f6cd7f7cb6fe048d8c88ef66451ba2efdac7052d65fa2668ae"
@@ -1762,15 +1762,15 @@
     },
     {
       "id": "ETA-2026-0001-0539",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement",
         "process"
       ],
       "summary": {
-        "zh": "认为工资规则无法解决滥用，要求以更广泛的签证限制立法替代。",
-        "en": "Dismisses the wage rule as ineffective against abuse and seeks broader statutory visa restrictions instead."
+        "zh": "认为工资规则不足，要求通过更严格的签证限制法并限制外籍用工比例。",
+        "en": "Finds the wage rule inadequate and seeks stricter visa legislation and limits on foreign staffing ratios."
       },
       "postedDate": "2026-04-28T04:00:00Z",
       "textSha256": "056a10f10ff11e753bef5407b19bad738b7d87c8c30f40adee52af2a01f3355a"
@@ -1793,14 +1793,14 @@
     },
     {
       "id": "ETA-2026-0001-0076",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "指称本土岗位被替代并主张按工资分配签证，未评价本工资计算提案。",
-        "en": "Alleges domestic displacement and favors salary-based visa allocation without evaluating this wage-calculation proposal."
+        "zh": "反对低薪H-1B替代本土劳动者，并支持按工资分配签证的收紧方向。",
+        "en": "Opposes low-paid H-1B displacement and favors salary-based visa allocation as a tightening direction."
       },
       "postedDate": "2026-04-02T04:00:00Z",
       "textSha256": "2afc49ca1cae021d469c57d7d381c4dc712fa0b7726fb05bc484d7705d5207b4"
@@ -1898,15 +1898,15 @@
     },
     {
       "id": "ETA-2026-0001-0138",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "主张采用同等教育经验平均工资的150%，并允许挑战招聘自证。",
-        "en": "Proposes 150% of average wages for comparable education and experience and challenges to recruitment self-certification."
+        "zh": "要求工资至少为同等教育与经验平均值的150%，并加强招聘核查。",
+        "en": "Seeks wages of at least 150% of the comparable education-and-experience average and stronger recruitment verification."
       },
       "postedDate": "2026-04-03T04:00:00Z",
       "textSha256": "6b9221ec16f750aa830209eb6c4696156d064b7ac276359672c5e96da4300a6b"
@@ -1986,15 +1986,15 @@
     },
     {
       "id": "ETA-2026-0001-0352",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "提出另一组更高工资百分位，并要求限制OPT以保护本土岗位。",
-        "en": "Proposes a different set of higher wage percentiles and OPT restrictions to protect domestic jobs."
+        "zh": "要求提高各级工资门槛并限制OPT，以保护本土就业。",
+        "en": "Seeks higher wage thresholds and OPT restrictions to protect domestic employment."
       },
       "postedDate": "2026-04-23T04:00:00Z",
       "textSha256": "309352952c156fa9f1c2b9eadeeafca6029847ba67e0d0d3df8438bd47d50e51"
@@ -2030,28 +2030,28 @@
     },
     {
       "id": "ETA-2026-0001-0754",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "主张外籍用工承担显著高于市场的工资和罚款，以保护本土机会。",
-        "en": "Favors substantially above-market pay and penalties for foreign hiring to protect domestic opportunities."
+        "zh": "要求外籍用工支付远高于市场的工资和罚金，以优先保障本土机会。",
+        "en": "Seeks far-above-market wages and penalties for foreign hiring to prioritize domestic opportunities."
       },
       "postedDate": "2026-05-04T04:00:00Z",
       "textSha256": "7fa72901688798e7a8614ed4c4081df27c37df956a212598ba8631819907d62d"
     },
     {
       "id": "ETA-2026-0001-1177",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "protection"
       ],
       "summary": {
-        "zh": "认为规则力度不足，要求进一步保护美国劳动者的岗位和工资。",
-        "en": "Views the rule as insufficiently strong and seeks further protection of domestic jobs and wages."
+        "zh": "认为规则力度不足，要求进一步保护本土劳动者的就业和工资。",
+        "en": "Finds the rule insufficient and seeks stronger domestic job and wage protections."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "bcf6d4bc74cac5c643dacd8bbba809cb1e7084822c6b96fd8d9749184d7249fe"
@@ -2123,11 +2123,11 @@
     },
     {
       "id": "ETA-2026-0001-0650",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [],
       "summary": {
-        "zh": "肯定移民贡献并强调才能，未评价工资提案。",
-        "en": "Affirms immigrant contributions and merit without evaluating the wage proposal."
+        "zh": "肯定移民对美国的贡献并主张凭能力竞争，表达支持移民的方向；未具体评价工资算法。",
+        "en": "Affirms immigrant contributions and merit-based opportunity, expressing a pro-immigrant direction without evaluating the wage formula."
       },
       "postedDate": "2026-04-30T04:00:00Z",
       "textSha256": "4cda206d89e2420903830fdbd6a0f75431e86d55177d0930f8f9481f0a11ddd0"
@@ -2191,15 +2191,15 @@
     {
       "id": "ETA-2026-0001-1245",
       "postedDate": "2026-05-28T04:00:00Z",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为第34百分位不足，建议H-1B依赖雇主的入门底线改为第52百分位，并禁止降级转职。",
-        "en": "Finds the 34th percentile insufficient, proposing the 52nd for H-1B-dependent employers and prohibiting moves to lower wage levels."
+        "zh": "要求对H-1B依赖雇主采用更高的入门工资，并禁止转向较低工资等级。",
+        "en": "Seeks higher entry wages for H-1B-dependent employers and a ban on moves to lower wage levels."
       },
       "textSha256": "2822450906d43448c356b629073262e1fa7999029e4e8c9cd5a395568b964ca9"
     },
@@ -2220,13 +2220,13 @@
     },
     {
       "id": "ETA-2026-0001-0494",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "process"
       ],
       "summary": {
-        "zh": "支持公平工资目标，但要求保护待审案件，避免绿卡流程重启。",
-        "en": "Supports fair-wage goals but seeks grandfathering of pending filings to avoid restarting green-card processes."
+        "zh": "要求对待审申请提供祖父条款以保留绿卡路径；对公平工资目标的认同不等于支持新增障碍。",
+        "en": "Seeks grandfathering of pending filings to preserve green-card access; agreement with fair-wage goals does not endorse added barriers."
       },
       "postedDate": "2026-04-27T04:00:00Z",
       "textSha256": "b2b1f95fc64a643b45a1a98a122f10289ee0c7575274828d444a465a02903836"
@@ -2470,42 +2470,42 @@
     },
     {
       "id": "ETA-2026-0001-0848",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。",
-        "en": "Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds."
+        "zh": "指称裁员和留任偏向签证劳工，要求加强审计与监管以保护本土劳动者。",
+        "en": "Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers."
       },
       "postedDate": "2026-05-11T04:00:00Z",
       "textSha256": "7ec85d8622982f86dfc1f56048eaf9de7b0d07f0e3e7d6b815f7e3d9e4817bd7"
     },
     {
       "id": "ETA-2026-0001-0905",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "process",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为规则不会奏效并批评实施拖延，主张直接立法收紧签证。",
-        "en": "Dismisses the rule as ineffective, criticizes implementation delays, and favors statutory visa restrictions."
+        "zh": "批评工资规则进展缓慢且力度不足，要求落实更严格的签证和工作许可限制。",
+        "en": "Criticizes slow and inadequate wage-rule action and seeks implementation of stricter visa and work-authorization restrictions."
       },
       "postedDate": "2026-05-13T04:00:00Z",
       "textSha256": "64426996484f7170124f8869850d4b6e205c04fed4bf0ec0225b7159da1ae696"
     },
     {
       "id": "ETA-2026-0001-0065",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "担忧未覆盖签证类别造成替代招聘，要求研究并弥补规则范围缺口。",
-        "en": "Warns uncovered visa categories could encourage substitution and seeks analysis and correction of scope gaps."
+        "zh": "要求纠正规则未覆盖L-1及EAD等用工的漏洞，以防雇主绕过工资保护。",
+        "en": "Seeks correction of gaps covering L-1 and EAD-based labor to prevent avoidance of wage protections."
       },
       "postedDate": "2026-04-02T04:00:00Z",
       "textSha256": "752e2383b898071404f8545270834efc2042938d3b155379c961f652c5424d90"
@@ -2578,14 +2578,14 @@
     },
     {
       "id": "ETA-2026-0001-0077",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "称现有力度不足并要求取消H-1B，未明确认可本工资方法。",
-        "en": "Calls current measures insufficient and seeks H-1B abolition without clearly endorsing this wage methodology."
+        "zh": "认为措施不够，要求完全禁止H-1B，属于支持进一步收紧。",
+        "en": "Finds the measures insufficient and demands a complete H-1B ban, supporting further tightening."
       },
       "postedDate": "2026-04-02T04:00:00Z",
       "textSha256": "d3a747a0265e29a27130015e5a5e0e7650717d336b93c7dab365b790a5d74637"
@@ -2831,13 +2831,13 @@
     {
       "id": "ETA-2026-0001-0709",
       "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "enforcement"
       ],
       "summary": {
-        "zh": "批评签证滥用及政治执行不足，要求限制第三方派遣，未明确评价拟议工资方法。",
-        "en": "Criticizes alleged visa abuse and inadequate political enforcement, seeking third-party placement limits without clearly evaluating the wage method."
+        "zh": "指称签证滥用和执法不足，要求停止H-1B第三方派遣并通过更严格法案。",
+        "en": "Alleges visa abuse and inadequate enforcement and seeks an end to H-1B third-party placements and stricter legislation."
       },
       "textSha256": "5bb0b457c13a2dbc17622274e534e997fb1d614ef21370cdeb2fb84f6462adac"
     },
@@ -2860,27 +2860,27 @@
     },
     {
       "id": "ETA-2026-0001-0749",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "enforcement"
       ],
       "summary": {
-        "zh": "表示支持减少移民并希望全面停止移民，未具体评价工资提案。",
-        "en": "Supports immigration reductions and seeks a full halt without specifically evaluating the wage proposal."
+        "zh": "支持任何减少移民人数的措施，并要求完全停止移民。",
+        "en": "Supports any measure reducing immigration and seeks a complete immigration halt."
       },
       "postedDate": "2026-05-04T04:00:00Z",
       "textSha256": "31cb799d1c61cebc9f87eacc9619ec255a7fcb1c0ee9304845c394b9d9c977ca"
     },
     {
       "id": "ETA-2026-0001-0566",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection"
       ],
       "summary": {
-        "zh": "认为工资百分位过低，提出另一组更高门槛。",
-        "en": "Considers wage percentiles too low and proposes a different set of higher thresholds."
+        "zh": "认为工资百分位过低，要求提高各级门槛以限制低薪外籍用工。",
+        "en": "Finds wage percentiles too low and seeks higher thresholds to restrict low-paid foreign hiring."
       },
       "postedDate": "2026-04-28T04:00:00Z",
       "textSha256": "9188f96fd6fa9edea4f70b94738510e99d6cad5afe572ac141577c8759bb9895"
@@ -3010,14 +3010,14 @@
     },
     {
       "id": "ETA-2026-0001-0162",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection"
       ],
       "summary": {
-        "zh": "要求重新考虑入门标准，改用第50百分位以减少低薪替代。",
-        "en": "Seeks reconsideration of entry standards in favor of the 50th percentile to reduce low-wage substitution."
+        "zh": "指称H-1B替代本土劳动者，要求将入门工资提高至第50百分位。",
+        "en": "Alleges H-1B displacement of domestic workers and seeks a 50th-percentile entry wage."
       },
       "postedDate": "2026-04-06T04:00:00Z",
       "textSha256": "f28e2e0982a448df2598ea7e219a75dd5a3bd85133a22728830af9e8501d1a3d"
@@ -3089,14 +3089,14 @@
     },
     {
       "id": "ETA-2026-0001-0846",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "指称裁员和留任偏向签证用工并要求审计，未评价工资门槛。",
-        "en": "Alleges visa-linked disparities in layoffs and retention and seeks audits without evaluating wage thresholds."
+        "zh": "指称裁员和留任偏向签证劳工，要求加强审计与监管以保护本土劳动者。",
+        "en": "Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers."
       },
       "postedDate": "2026-05-11T04:00:00Z",
       "textSha256": "311afdffc5cd0b486e01e9689aaf66cc331b2231cbed5d1d2697536b60c01f3d"
@@ -3120,15 +3120,15 @@
     },
     {
       "id": "ETA-2026-0001-0200",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "talent",
         "enforcement"
       ],
       "summary": {
-        "zh": "要求对外籍用工和岗位外迁施加高额惩罚，未明确评价本提案。",
-        "en": "Seeks substantial penalties on foreign hiring and offshoring without clearly evaluating this proposal."
+        "zh": "要求对H-1B外籍招聘和离岸外包施加足够高的经济惩罚。",
+        "en": "Seeks substantial financial penalties on H-1B foreign hiring and offshoring."
       },
       "postedDate": "2026-04-07T04:00:00Z",
       "textSha256": "1c3539528869308685077c84fe127207797ed5a8d1e6dc8741c374fffd6956d1"
@@ -3182,14 +3182,14 @@
     },
     {
       "id": "ETA-2026-0001-0216",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "要求提高H-1B和OPT用工成本以限制滥用，未明确评价本工资提案。",
-        "en": "Seeks higher H-1B and OPT employment costs to curb abuse without clearly evaluating this wage proposal."
+        "zh": "要求提高H-1B和OPT用工成本，限制其被用于低价劳动力。",
+        "en": "Seeks higher H-1B and OPT employment costs to restrict their use as cheap labor."
       },
       "postedDate": "2026-04-08T04:00:00Z",
       "textSha256": "802c1e0765be4c0ef426269446e4db14a4d0a7df1864134081c63b4c042915e4"
@@ -3207,7 +3207,7 @@
     },
     {
       "id": "ETA-2026-0001-1295",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement",
@@ -3215,8 +3215,8 @@
         "process"
       ],
       "summary": {
-        "zh": "认为工资规则不能解决外迁和招聘滥用，要求本土与外籍用工比例限制。",
-        "en": "Dismisses the wage rule as ineffective against offshoring and hiring abuse and seeks domestic-to-foreign staffing ratios."
+        "zh": "认为工资规则不足，要求限制临时签证与工作许可，并设置本土用工比例。",
+        "en": "Finds wage changes inadequate and seeks temporary-visa and work-permit restrictions plus domestic staffing ratios."
       },
       "postedDate": "2026-06-24T04:00:00Z",
       "textSha256": "355648ce7b792fcda82ed7fd92e7f49ce8937bec2c0213d19e2002d41be9fb8e"
@@ -3254,14 +3254,14 @@
     },
     {
       "id": "ETA-2026-0001-0637",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "enforcement",
         "market"
       ],
       "summary": {
-        "zh": "建议限制兼职、核验税务和合并职业分类，未明确评价拟议工资百分位。",
-        "en": "Suggests part-time limits, tax verification, and consolidated classifications without clearly evaluating proposed wage percentiles."
+        "zh": "要求限制兼职外籍用工、核验税务记录并采用更高薪职位分类，加强监管。",
+        "en": "Seeks limits on part-time foreign work, tax-record checks, and higher-paying job classifications to strengthen oversight."
       },
       "postedDate": "2026-04-30T04:00:00Z",
       "textSha256": "1683713d2016b91f0663d7c231e54f2baf998253a901c698d75ea6f41c37716b"
@@ -3403,14 +3403,14 @@
     },
     {
       "id": "ETA-2026-0001-0918",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection"
       ],
       "summary": {
-        "zh": "赞同保护本土劳动者目标，但主张入门工资高于中位数以体现稀缺技能。",
-        "en": "Welcomes domestic-worker protection goals but proposes above-median entry wages to reflect scarce skills."
+        "zh": "要求H-1B入门工资高于中位数，以限制低薪替代并优先保护本土劳动者。",
+        "en": "Seeks above-median H-1B entry wages to limit low-paid substitution and prioritize domestic workers."
       },
       "postedDate": "2026-05-13T04:00:00Z",
       "textSha256": "15bacf069c202b8ef934cf22ec21a245953d58497df11e8694c3bf3ddeed4321"
@@ -3629,19 +3629,19 @@
     },
     {
       "id": "ETA-2026-0001-0685",
-      "stance": "unclear",
+      "stance": "oppose",
       "themes": [
         "academic"
       ],
       "summary": {
-        "zh": "正文仅说明评论讨论国际博士后及工资政策，附件未能读取，无法判断立场。",
-        "en": "Body identifies international postdocs and wage policy as the topic; inaccessible attachment prevents a stance determination."
+        "zh": "正文强调国际博士后对美国科学的价值，呈支持移民贡献的方向；附件不可读，未据此推断具体工资建议。",
+        "en": "The body emphasizes international postdocs’ value to U.S. science, indicating a pro-immigrant direction; the unavailable attachment leaves specific wage recommendations unknown."
       },
       "postedDate": "2026-05-01T04:00:00Z",
       "textSha256": "397c933052bc2f73dd66779749a3d5a6f9206e770b6bbb03394d0a163b1b25e2",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；正文不足以判断立场。",
-        "en": "Official attachment download returned HTTP 403 and could not be read; the body is insufficient to determine stance."
+        "zh": "官方附件下载返回 HTTP 403，未能读取；仅依据正文对国际博士后贡献的肯定判断政策方向，具体工资建议未获核实。",
+        "en": "The official attachment download returned HTTP 403. Direction is assessed only from the body’s support for international postdocs; specific wage recommendations remain unverified."
       }
     },
     {
@@ -3768,15 +3768,15 @@
     },
     {
       "id": "ETA-2026-0001-1199",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为拟议高低等级均不足，提出第50及95百分位并要求现代招聘和核查。",
-        "en": "Finds proposed lower and upper tiers insufficient, proposing 50th and 95th percentiles plus modern recruitment and verification."
+        "zh": "认为拟议工资保护不足，要求第50和95百分位门槛及更严格招聘核验。",
+        "en": "Finds proposed protections insufficient and seeks 50th/95th-percentile floors plus stricter recruitment verification."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "1e19bcc63befaee376b1f653a2fdf463ddae752ff2a81032aa94d63fb4d861bd"
@@ -3823,15 +3823,15 @@
     },
     {
       "id": "ETA-2026-0001-0016",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "支持提高工资方向，但明确要求不得以第34百分位定案，改用至少中位工资。",
-        "en": "Supports higher-wage goals but expressly rejects finalizing the 34th percentile and seeks at least median entry wages."
+        "zh": "支持提高工资，但认为第34百分位仍过低，要求入门门槛至少达到第50百分位。",
+        "en": "Supports higher wages but finds the 34th percentile too low and seeks an entry floor of at least the 50th percentile."
       },
       "postedDate": "2026-04-02T04:00:00Z",
       "textSha256": "5ed5d24a794d2193386ef2e69912b19c2ac198a36c73a8e0fed4e055f39e95df"
@@ -3900,15 +3900,15 @@
     },
     {
       "id": "ETA-2026-0001-0348",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "主张以经验基准或更高百分位替代提案，并强化招聘和工资核查。",
-        "en": "Favors experience benchmarking or higher percentiles instead of the proposal, alongside recruitment and wage verification."
+        "zh": "要求经验基准法或更高工资百分位，并加强招聘核验和执法以保护本土劳动者。",
+        "en": "Seeks experience benchmarking or higher wage percentiles, with stronger recruitment checks and enforcement to protect domestic workers."
       },
       "postedDate": "2026-04-22T04:00:00Z",
       "textSha256": "5d19c8c9b7ffd327498bff10610ad17678d7144ee2cfe3c816be3768785cf45e"
@@ -3961,15 +3961,15 @@
     },
     {
       "id": "ETA-2026-0001-0241",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为现有方向迟来且不足，要求数倍工资溢价、本土用工比例及更强核查。",
-        "en": "Finds the direction overdue and insufficient, seeking multiple-fold wage premiums, domestic staffing ratios, and stronger checks."
+        "zh": "认为调整太迟且力度不足，要求数倍工资溢价、本土用工比例及严格检查。",
+        "en": "Finds the reform overdue and insufficient and seeks multiple-fold wage premiums, domestic staffing ratios, and strict inspections."
       },
       "postedDate": "2026-04-09T04:00:00Z",
       "textSha256": "6e54b7ee47939a5ae2eb8d1dc27e62299aa704a0779ebf4d32c5a52cec2966f6"
@@ -4088,15 +4088,15 @@
     },
     {
       "id": "ETA-2026-0001-0309",
-      "stance": "oppose",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement",
         "process"
       ],
       "summary": {
-        "zh": "反对现稿，认为提高工资不能解决滥用，要求先进行全面招聘和用工核查。",
-        "en": "Opposes the draft as failing to address abuse and demands comprehensive recruitment and employment checks first."
+        "zh": "拒绝单独提高工资的有限措施，要求全面签证审查、招聘核验，否则暂停H-1B。",
+        "en": "Rejects a wage-only partial measure and demands universal visa audits and recruitment verification, otherwise pausing H-1B."
       },
       "postedDate": "2026-04-16T04:00:00Z",
       "textSha256": "e7efc986c2089fce3ef52f9cb75e9e9858c44b4ead6f1fa3fd0a57afe3a6c066"
@@ -4181,14 +4181,14 @@
     },
     {
       "id": "ETA-2026-0001-0714",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "指称签证用工导致失业并要求取消项目，未明确评价本工资提案。",
-        "en": "Alleges visa hiring caused unemployment and seeks program abolition without clearly evaluating this wage proposal."
+        "zh": "指称H-1B造成失业和欺诈，要求终止该项目及遣返，明确支持更严限制。",
+        "en": "Alleges H-1B-related unemployment and fraud and demands program abolition and deportations, a clear tightening direction."
       },
       "postedDate": "2026-05-04T04:00:00Z",
       "textSha256": "82f4d043ddac4fe443da90f87e72756859876d2caa8411b494d9cadf3914e9b2"
@@ -4224,15 +4224,15 @@
     {
       "id": "ETA-2026-0001-0040",
       "postedDate": "2026-04-02T04:00:00Z",
-      "stance": "mixed",
+      "stance": "support",
       "themes": [
         "market",
         "protection",
         "enforcement"
       ],
       "summary": {
-        "zh": "认为应以高于第50百分位作为入门底线，并提出审计和更严格的签证限制。",
-        "en": "Calls for an entry floor above the 50th percentile, audits, and stricter visa restrictions."
+        "zh": "要求入门工资高于第50百分位、加强审计、终止续签并限制PERM。",
+        "en": "Seeks an entry floor above the 50th percentile, audits, an end to visa renewals, and PERM restrictions."
       },
       "textSha256": "58c8f0b29317d31ee3a9f187aa1a3f7f079250cd80a4f4b67182b41e0dd8f414"
     },
@@ -4250,18 +4250,18 @@
     {
       "id": "ETA-2026-0001-0734",
       "postedDate": "2026-05-04T04:00:00Z",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "enforcement"
       ],
       "summary": {
-        "zh": "明确支持按工资选取H-1B，但内容针对抽签机制，不能据此判断对本工资方法的立场。",
-        "en": "Explicitly supports wage-based H-1B selection, but discusses the lottery rather than this wage methodology."
+        "zh": "明确支持按工资和能力筛选H-1B并反对欺诈，属于支持收紧方向，虽主要讨论抽签规则。",
+        "en": "Explicitly supports wage-and-ability-based H-1B selection and opposes fraud, a tightening direction despite focusing on lottery rules."
       },
       "textSha256": "6df69a0e9f1ed51358920110bfb22348d58d589eb58032e0b6892ed2bac9d0f1",
       "sourceNote": {
-        "zh": "正文针对另一项按工资选取H-1B的制度；未将其支持态度自动算作支持本项工资提案。",
-        "en": "The body concerns a separate wage-based H-1B selection policy; its support is not treated as support for this wage proposal."
+        "zh": "正文主要讨论另行制定的 H-1B 按工资选取机制；按相关政策收紧方向归类，不代表其明确赞成本项工资提案的具体条款。",
+        "en": "The body primarily discusses a separate wage-based H-1B selection mechanism. Its label describes the related tightening direction, not explicit approval of this wage proposal’s specific provisions."
       }
     },
     {
@@ -4606,21 +4606,1037 @@
     "sampleSize": 200,
     "seed": "88ea200eaadcf41e6dc9077541213ababfeaffafffcbde540b20a662b8906871",
     "counts": {
-      "oppose": 120,
-      "support": 35,
-      "mixed": 18,
-      "unclear": 27
+      "oppose": 119,
+      "support": 67,
+      "mixed": 2,
+      "unclear": 12
     },
     "percentages": {
-      "oppose": 60.0,
-      "support": 17.5,
-      "mixed": 9.0,
-      "unclear": 13.5
+      "oppose": 59.5,
+      "support": 33.5,
+      "mixed": 1,
+      "unclear": 6
     }
   },
   "commentPhase": "closed",
   "scopeNote": {
     "zh": "提案涉及H-1B、H-1B1、E-3及PERM工资确定；部分评论讨论另行制定的H-1B选取机制。",
     "en": "The proposal covers wage determinations for H-1B, H-1B1, E-3, and PERM; some comments discuss a separate H-1B selection policy."
+  },
+  "classificationBasis": "policy-direction-v1",
+  "classificationDefinition": {
+    "zh": "按政策方向归类：支持包括赞同提案、对相关外籍用工或签证制度持明确负面态度，以及要求进一步收紧；反对包括反对限制、维护移民或工作许可、主张保留或放宽相关机会。不要求评论明确评价提案的具体条款。",
+    "en": "Classified by policy direction: support includes endorsing the proposal, clearly negative views of the relevant foreign-worker or visa program, and calls for tighter restrictions. Opposition includes rejecting restrictions, defending migrants or work authorization, and preserving or expanding access. Explicit views on the proposal’s exact provisions are not required."
+  },
+  "classificationMethod": {
+    "zh": "逐条结合全文判断相关政策方向，不按赞成或反对等关键词机械分类。要求更高费用、更严限制或取消签证，归为支持收紧；支持保留或放宽工作与居留机会，归为反对收紧。对不同人群采取收紧与放宽并存的立场、或明确提出实质性支持条件，保留为有条件／混合。反对取消保障、仅把较短保障期作为退让方案的，仍归为反对收紧。仅有一般反欺诈表述，不会覆盖全文维护合法工作机会的主要方向。无关内容、纯咨询、无法判断方向的表述及不可读记录归为不明确。分类依据评论文字，不依据姓名或身份推断。附件不可读时保留说明，仅按可读正文判断；不会因观点或可读性替换样本。",
+    "en": "Each full body is reviewed for its relevant policy direction, rather than classified by isolated words such as support or oppose. Demands for higher fees, tighter restrictions or visa abolition count as support for tightening; preserving or expanding work and residence opportunities counts as opposition. Scope-dependent combinations of tightening and easing, or explicit substantive conditions of support, remain conditional / mixed. Opposing the removal of protections while accepting shorter protections only as a fallback remains opposition. General anti-fraud language does not override an overall defense of lawful work access. Unrelated content, pure questions, indeterminate views and unreadable records remain unclear. Labels rely on the text, not names or identities. Unavailable attachments are disclosed and only readable bodies are assessed. No sample is replaced because of its viewpoint or readability."
+  },
+  "classificationReview": {
+    "reviewedAt": "2026-09-12T21:47:24.689Z",
+    "reviewedCount": 200,
+    "availableBodyCount": 200,
+    "records": [
+      {
+        "id": "ETA-2026-0001-1019",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns unrealistic entry wages would impede graduate retention and long-term competitiveness."
+      },
+      {
+        "id": "ETA-2026-0001-0631",
+        "stance": "support",
+        "rationale": "Alleges H-1B/OPT fraud and exclusion of domestic workers, expressing a tightening direction against visa-labor substitution. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1097",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the proposal to protect domestic wages and jobs, citing concerns about remittances."
+      },
+      {
+        "id": "ETA-2026-0001-1018",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Welcomes the proposal's wage protections and seeks stronger classification, geographic wage, and contracting audits."
+      },
+      {
+        "id": "ETA-2026-0001-0526",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns higher wage thresholds would obstruct graduate hiring and talent retention and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-1058",
+        "stance": "support",
+        "rationale": "Sees the wage rule as limited and seeks stronger measures against alleged foreign-labor oversupply. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1213",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0792",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports prompt implementation, calling the adjustment fair and protective against domestic worker displacement."
+      },
+      {
+        "id": "ETA-2026-0001-1228",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0474",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns higher thresholds would undermine international graduate hiring, talent retention, and innovation."
+      },
+      {
+        "id": "ETA-2026-0001-0189",
+        "stance": "support",
+        "rationale": "Alleges fraud and domestic-worker displacement and calls for ending H-1B, supporting stronger restrictions. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0645",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues fixed healthcare reimbursements constrain pay and the proposal would drive rural healthcare staff losses."
+      },
+      {
+        "id": "ETA-2026-0001-0778",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues high wage requirements would prevent graduate retention and weaken technological leadership."
+      },
+      {
+        "id": "ETA-2026-0001-0401",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes sharp wage increases over employer burdens and offshoring, favoring targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0822",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, criticizing benchmarking and burdens on existing cases, and favors experience comparisons and targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0550",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns higher thresholds would affect graduates, renewals, and transfers and weaken talent retention."
+      },
+      {
+        "id": "ETA-2026-0001-0799",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns an abrupt entry-wage increase would harm U.S. graduates and small employers."
+      },
+      {
+        "id": "ETA-2026-0001-0539",
+        "stance": "support",
+        "rationale": "Finds the wage rule inadequate and seeks stricter visa legislation and limits on foreign staffing ratios. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0781",
+        "stance": "mixed",
+        "rationale": "Contains substantive support for tightening and substantive requests to preserve or ease access in different cases. Supports revised standards for general occupations but seeks exemptions or tailored methods for specialized scientific and engineering fields."
+      },
+      {
+        "id": "ETA-2026-0001-0076",
+        "stance": "support",
+        "rationale": "Opposes low-paid H-1B displacement and favors salary-based visa allocation as a tightening direction. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0447",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Considers current wages competitive and warns new thresholds would reduce entry jobs and harm startups."
+      },
+      {
+        "id": "ETA-2026-0001-0141",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the rule change and seeks above-market minimum wages and action on misclassification."
+      },
+      {
+        "id": "ETA-2026-0001-0184",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports wage increases as a first step and seeks a higher entry threshold and training of domestic talent."
+      },
+      {
+        "id": "ETA-2026-0001-1120",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes high percentiles for ignoring total compensation and regional variation, warning of harm to cybersecurity roles and ongoing petitions."
+      },
+      {
+        "id": "ETA-2026-0001-0346",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the rule and coverage of existing visas, alongside lower caps and a ban on third-party placement."
+      },
+      {
+        "id": "ETA-2026-0001-0215",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the rule change and seeks at least median wages to reduce displacement and abuse."
+      },
+      {
+        "id": "ETA-2026-0001-0138",
+        "stance": "support",
+        "rationale": "Seeks wages of at least 150% of the comparable education-and-experience average and stronger recruitment verification. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0779",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns rigid wage thresholds would harm multilingual talent, small firms, and international graduate retention."
+      },
+      {
+        "id": "ETA-2026-0001-0376",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Calls for rejection without elaborating."
+      },
+      {
+        "id": "ETA-2026-0001-1072",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0678",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Explicitly opposes uniform increases as mismatched to research funding and pay, seeking sector analysis, research exemptions, and cumulative-burden review."
+      },
+      {
+        "id": "ETA-2026-0001-0517",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues higher junior wages would constrain startup hiring and slow innovation."
+      },
+      {
+        "id": "ETA-2026-0001-0352",
+        "stance": "support",
+        "rationale": "Seeks higher wage thresholds and OPT restrictions to protect domestic employment. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0381",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the proposal misses underlying problems and higher thresholds would not ensure jobs for domestic workers."
+      },
+      {
+        "id": "ETA-2026-0001-0209",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports implementation, arguing low floors enable wage arbitrage and displacement of young domestic workers."
+      },
+      {
+        "id": "ETA-2026-0001-0754",
+        "stance": "support",
+        "rationale": "Seeks far-above-market wages and penalties for foreign hiring to prioritize domestic opportunities. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1177",
+        "stance": "support",
+        "rationale": "Finds the rule insufficient and seeks stronger domestic job and wage protections. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1258",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-1232",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports stronger protections and seeks larger wage increases and country quotas."
+      },
+      {
+        "id": "ETA-2026-0001-0085",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes experience benchmarking as distorting wages and increasing compliance burdens and offshoring risks."
+      },
+      {
+        "id": "ETA-2026-0001-0859",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes uniform sharp increases over mobility, existing-case, and talent-loss concerns, favoring targeted enforcement and transition protection."
+      },
+      {
+        "id": "ETA-2026-0001-0650",
+        "stance": "oppose",
+        "rationale": "Affirms immigrant contributions and merit-based opportunity, expressing a pro-immigrant direction without evaluating the wage formula. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1217",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0476",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Explicitly opposes the proposal as unfair and harmful to hardworking people, without further explanation."
+      },
+      {
+        "id": "ETA-2026-0001-1188",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Welcomes the rule change and seeks entry wages closer to the local median."
+      },
+      {
+        "id": "ETA-2026-0001-0038",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues uniform increases compound other costs and encourage reclassification, favoring industry- and role-specific wage setting."
+      },
+      {
+        "id": "ETA-2026-0001-1245",
+        "stance": "support",
+        "rationale": "Seeks higher entry wages for H-1B-dependent employers and a ban on moves to lower wage levels. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0527",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the draft, warning thresholds would exclude qualified graduates and specialists and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0494",
+        "stance": "oppose",
+        "rationale": "Seeks grandfathering of pending filings to preserve green-card access; agreement with fair-wage goals does not endorse added barriers. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0195",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports increases but calls for above-market wages plus classification, portability, and audit reforms."
+      },
+      {
+        "id": "ETA-2026-0001-0702",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the change, arguing employers would relocate costly positions abroad."
+      },
+      {
+        "id": "ETA-2026-0001-0477",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes steep increases and favors gradual, region-sensitive adjustments to preserve entry opportunities."
+      },
+      {
+        "id": "ETA-2026-0001-1289",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-1087",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Questions whether elevated wages restricting lawful hiring exceed statutory authority and market-calibration purposes."
+      },
+      {
+        "id": "ETA-2026-0001-0760",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Strongly supports the proposal and seeks higher percentiles and stronger penalties for willful violations."
+      },
+      {
+        "id": "ETA-2026-0001-0154",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks retention of current tiers, arguing the entry increase lacks evidence and would reduce hiring."
+      },
+      {
+        "id": "ETA-2026-0001-1123",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes higher benchmarks as disrupting total compensation, critical technical teams, and long-term workforce planning."
+      },
+      {
+        "id": "ETA-2026-0001-0592",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0940",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the wage rule over concerns skilled talent would move to other countries."
+      },
+      {
+        "id": "ETA-2026-0001-0419",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, arguing thresholds conflict with public-school salary scales and education requirements and leave classrooms unstaffed."
+      },
+      {
+        "id": "ETA-2026-0001-0903",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the proposal diverges from comparable market pay and would weaken specialized engineering and global innovation collaboration."
+      },
+      {
+        "id": "ETA-2026-0001-0942",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the wage rule over concerns skilled talent would move to other countries."
+      },
+      {
+        "id": "ETA-2026-0001-0026",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues raising Level I changes the meaning of entry-level roles and should not be implemented."
+      },
+      {
+        "id": "ETA-2026-0001-1173",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks no increase in wage minimums so academic fields can retain access to international scholars."
+      },
+      {
+        "id": "ETA-2026-0001-0691",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes increases, arguing fixed budgets will reduce entry hiring and training and harm domestic employment."
+      },
+      {
+        "id": "ETA-2026-0001-0848",
+        "stance": "support",
+        "rationale": "Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0905",
+        "stance": "support",
+        "rationale": "Criticizes slow and inadequate wage-rule action and seeks implementation of stricter visa and work-authorization restrictions. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0065",
+        "stance": "support",
+        "rationale": "Seeks correction of gaps covering L-1 and EAD-based labor to prevent avoidance of wage protections. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0572",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal over offshoring, small-business and healthcare harms, and insufficient statistical justification."
+      },
+      {
+        "id": "ETA-2026-0001-1103",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, questioning economic and legal justification and warning of harm to small firms, graduates, and talent retention."
+      },
+      {
+        "id": "ETA-2026-0001-0181",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues base-pay thresholds hinder retention of AI graduates and seeks reconsideration or exemptions."
+      },
+      {
+        "id": "ETA-2026-0001-1183",
+        "stance": "mixed",
+        "rationale": "Contains substantive support for tightening and substantive requests to preserve or ease access in different cases. Favors occupation-sensitive wages, retaining senior protections while reducing entry barriers in shortage fields."
+      },
+      {
+        "id": "ETA-2026-0001-0077",
+        "stance": "support",
+        "rationale": "Finds the measures insufficient and demands a complete H-1B ban, supporting further tightening. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1178",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the new wage rule and seeks a larger wage premium and revocation of some visas."
+      },
+      {
+        "id": "ETA-2026-0001-1172",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the proposal would impede public universities' hiring of international scholars and postdocs."
+      },
+      {
+        "id": "ETA-2026-0001-0619",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes above-market thresholds and disruption to existing cases, requesting prospective-only application if adopted."
+      },
+      {
+        "id": "ETA-2026-0001-0604",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the proposal, attributing layoffs to economic and AI changes and warning thresholds would reduce hiring and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-1195",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the new rule and equal pay, seeking restrictions to genuine skill shortages."
+      },
+      {
+        "id": "ETA-2026-0001-1211",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-1006",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns uniform thresholds exceed landscape-design project budgets and seeks region- and industry-sensitive reconsideration."
+      },
+      {
+        "id": "ETA-2026-0001-1039",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes blanket increases for harming graduates and favors experience benchmarking, worksite enforcement, and OPT transition protections."
+      },
+      {
+        "id": "ETA-2026-0001-1267",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal or major revision, questioning wage-gap analysis and warning of harm to firms, shortage sectors, and talent retention."
+      },
+      {
+        "id": "ETA-2026-0001-1053",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, arguing entry-wage thresholds would offshore junior engineering teams and innovation."
+      },
+      {
+        "id": "ETA-2026-0001-0079",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Views the rule as helpful in reducing low-wage replacement and protecting domestic workers."
+      },
+      {
+        "id": "ETA-2026-0001-0490",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Strongly opposes higher thresholds over startup burdens, job losses, and offshoring of innovation."
+      },
+      {
+        "id": "ETA-2026-0001-0155",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports wage increases and seeks a minimum at the local 50th percentile."
+      },
+      {
+        "id": "ETA-2026-0001-0456",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Views the rule as needed to address stagnant pay and constrained earnings growth among visa workers."
+      },
+      {
+        "id": "ETA-2026-0001-0314",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Seeks application of the new wage rule to all H-1B holders plus stronger restrictions and annual audits."
+      },
+      {
+        "id": "ETA-2026-0001-1186",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the new rule as a first step and equal pay for domestic and foreign workers."
+      },
+      {
+        "id": "ETA-2026-0001-0709",
+        "stance": "support",
+        "rationale": "Alleges visa abuse and inadequate enforcement and seeks an end to H-1B third-party placements and stricter legislation. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0573",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks current wage levels, warning entry thresholds would exclude graduates, harm research, and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0749",
+        "stance": "support",
+        "rationale": "Supports any measure reducing immigration and seeks a complete immigration halt. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0566",
+        "stance": "support",
+        "rationale": "Finds wage percentiles too low and seeks higher thresholds to restrict low-paid foreign hiring. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0312",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the wage rule while seeking lower caps, coverage of existing holders, and placement restrictions."
+      },
+      {
+        "id": "ETA-2026-0001-0468",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues lower wage tiers reflect normal career stages and rejects using them to justify steep increases."
+      },
+      {
+        "id": "ETA-2026-0001-0946",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the wage rule over concerns skilled talent would move to other countries."
+      },
+      {
+        "id": "ETA-2026-0001-0060",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Welcomes wage increases and seeks stronger audits, penalties, whistleblower protection, and post-layoff hiring restrictions."
+      },
+      {
+        "id": "ETA-2026-0001-1052",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Strongly supports the new percentiles and seeks parallel wage protections for OPT and L-1."
+      },
+      {
+        "id": "ETA-2026-0001-0555",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes excessive increases and harm to training and medical research, favoring experience benchmarking and phased implementation."
+      },
+      {
+        "id": "ETA-2026-0001-0207",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports prompt percentile increases to reduce low-wage substitution and protect domestic graduates."
+      },
+      {
+        "id": "ETA-2026-0001-0437",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes increases that overlook fixed architectural project fees and warns of lost access to global expertise."
+      },
+      {
+        "id": "ETA-2026-0001-0162",
+        "stance": "support",
+        "rationale": "Alleges H-1B displacement of domestic workers and seeks a 50th-percentile entry wage. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0390",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Rejects the proposal's low-skill substitution premise and argues artificial wage increases would harm skilled contributions."
+      },
+      {
+        "id": "ETA-2026-0001-0514",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks reconsideration of market-disconnected wages over small-firm and offshoring harms, favoring phasing if changed."
+      },
+      {
+        "id": "ETA-2026-0001-0670",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes equating pay with skill and ignoring equity, seeking protection for startups, research, and entry roles plus targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0761",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the new rule, arguing current lower tiers facilitate domestic displacement."
+      },
+      {
+        "id": "ETA-2026-0001-0846",
+        "stance": "support",
+        "rationale": "Alleges visa-linked disparities in layoffs and retention and seeks stronger audits and regulation to protect domestic workers. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0137",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes higher wage floors, citing startup and graduate exclusion and talent loss; also discusses selection reform."
+      },
+      {
+        "id": "ETA-2026-0001-0200",
+        "stance": "support",
+        "rationale": "Seeks substantial financial penalties on H-1B foreign hiring and offshoring. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0130",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes statistical adjustments for overlooking job complexity, regions, and firm size and rejects a uniform method."
+      },
+      {
+        "id": "ETA-2026-0001-1110",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal or further study, finding education-wage assumptions unsupported and harmful to entry opportunities."
+      },
+      {
+        "id": "ETA-2026-0001-0403",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Considers abrupt increases excessive and destabilizing, favoring gradual adjustments reflecting economic and regional conditions."
+      },
+      {
+        "id": "ETA-2026-0001-0216",
+        "stance": "support",
+        "rationale": "Seeks higher H-1B and OPT employment costs to restrict their use as cheap labor. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0145",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Expresses strong dislike of the proposal without elaborating."
+      },
+      {
+        "id": "ETA-2026-0001-1295",
+        "stance": "support",
+        "rationale": "Finds wage changes inadequate and seeks temporary-visa and work-permit restrictions plus domestic staffing ratios. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1147",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes percentiles for not measuring statutory education and experience factors and seeks withdrawal or direct comparable-wage measures."
+      },
+      {
+        "id": "ETA-2026-0001-0257",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes blanket increases over small-business and retention harms, favoring enforcement of existing rules."
+      },
+      {
+        "id": "ETA-2026-0001-0637",
+        "stance": "support",
+        "rationale": "Seeks limits on part-time foreign work, tax-record checks, and higher-paying job classifications to strengthen oversight. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0608",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues higher wage floors would offshore junior roles and harm domestic employment."
+      },
+      {
+        "id": "ETA-2026-0001-0167",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues higher lower-tier wages would hurt small-firm competitiveness and limit opportunities for both domestic and foreign workers."
+      },
+      {
+        "id": "ETA-2026-0001-0062",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes experience benchmarking for departing from job requirements, increasing legal risk, and distorting hiring."
+      },
+      {
+        "id": "ETA-2026-0001-0794",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues higher entry thresholds harm graduates and risk losing future talent."
+      },
+      {
+        "id": "ETA-2026-0001-1070",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks complete withdrawal, citing inadequate wage analysis and failure to consider less burdensome alternatives."
+      },
+      {
+        "id": "ETA-2026-0001-1190",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Endorses opposition to the draft and seeks delayed, phased implementation and transitional wages if pursued."
+      },
+      {
+        "id": "ETA-2026-0001-1286",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0071",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues restricting visa talent would harm corporate research and long-term competitiveness."
+      },
+      {
+        "id": "ETA-2026-0001-1106",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns steep wage increases would prevent small firms retaining specialists and favor large corporations."
+      },
+      {
+        "id": "ETA-2026-0001-0918",
+        "stance": "support",
+        "rationale": "Seeks above-median H-1B entry wages to limit low-paid substitution and prioritize domestic workers. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0542",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues higher entry wages under fixed budgets would reduce hiring and undermine workforce development."
+      },
+      {
+        "id": "ETA-2026-0001-1273",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes disruption to existing employment and entry roles, seeking withdrawal or transition protection and targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0981",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Considers the entry increase excessive and harmful to hiring by small firms and nonprofits."
+      },
+      {
+        "id": "ETA-2026-0001-1193",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Strongly opposes high thresholds and absent transitions over graduate, small-firm, university, and talent-loss harms."
+      },
+      {
+        "id": "ETA-2026-0001-0943",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the wage rule over skilled talent moving to other countries."
+      },
+      {
+        "id": "ETA-2026-0001-0595",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an inaccessible attachment, preventing a stance determination."
+      },
+      {
+        "id": "ETA-2026-0001-0704",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks abandonment, arguing high thresholds diverge from small-town markets and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0328",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, criticizing wage-gap reasoning and small-firm burdens, and favors experience benchmarking and targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0440",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Considers the proposal excessively restrictive of entry opportunities and likely to drive away U.S.-trained STEM talent."
+      },
+      {
+        "id": "ETA-2026-0001-0937",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports prompt implementation to reduce low-wage substitution and protect domestic and foreign workers."
+      },
+      {
+        "id": "ETA-2026-0001-1167",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal or revision, criticizing aggregate benchmarking and incomplete analysis of wage-selection interactions, and favors calibrated tiers and enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0051",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Requests withdrawal, challenging percentile alignment with market pay and citing small firms, graduates, and offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0661",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the Level I increase and seeks experience-stratified data and graduate transitions to preserve entry hiring."
+      },
+      {
+        "id": "ETA-2026-0001-0685",
+        "stance": "oppose",
+        "rationale": "The body emphasizes international postdocs’ value to U.S. science, indicating a pro-immigrant direction; the unavailable attachment leaves specific wage recommendations unknown. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0684",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the 34th-percentile entry wage, citing graduate opportunities, small businesses, and offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0458",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks rejection, arguing the rule removes young workers' entry and growth opportunities and reduces talent."
+      },
+      {
+        "id": "ETA-2026-0001-1255",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports full implementation to prevent lower-paid visa hiring from disadvantaging domestic workers."
+      },
+      {
+        "id": "ETA-2026-0001-0292",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues steep increases conflict with recently promoted workers’ pay arrangements and may cause layoffs and offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-1055",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the wage rule and equal pay and seeks termination of other visa pathways."
+      },
+      {
+        "id": "ETA-2026-0001-0657",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes broad increases over talent, existing-employment, and small-employer harms, favoring targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-1067",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+      },
+      {
+        "id": "ETA-2026-0001-0707",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes distorted entry thresholds in technology hubs and suggests phased, regional, and sector-specific adjustments."
+      },
+      {
+        "id": "ETA-2026-0001-1199",
+        "stance": "support",
+        "rationale": "Finds proposed protections insufficient and seeks 50th/95th-percentile floors plus stricter recruitment verification. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0202",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Explicitly supports the H-1B wage rule without elaborating."
+      },
+      {
+        "id": "ETA-2026-0001-0172",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues uniform increases overlook lower-cost regions, reducing entry jobs and prompting business relocation."
+      },
+      {
+        "id": "ETA-2026-0001-0970",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the proposal to reduce low-wage hiring incentives and encourage domestic workforce investment."
+      },
+      {
+        "id": "ETA-2026-0001-0016",
+        "stance": "support",
+        "rationale": "Supports higher wages but finds the 34th percentile too low and seeks an entry floor of at least the 50th percentile. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0036",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues sudden wage increases create uncertainty and hiring freezes."
+      },
+      {
+        "id": "ETA-2026-0001-0841",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes unsupported steep increases over graduate and research-employer harms and seeks withdrawal or targeted reform."
+      },
+      {
+        "id": "ETA-2026-0001-1242",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues high requirements harm public-university research and recruitment and suggests smaller increases for higher education."
+      },
+      {
+        "id": "ETA-2026-0001-0511",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks the current framework to avoid burdens on mid-career talent and PERM processes, with stronger enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0348",
+        "stance": "support",
+        "rationale": "Seeks experience benchmarking or higher wage percentiles, with stronger recruitment checks and enforcement to protect domestic workers. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0882",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal over offshoring, renewal and transfer instability, and small-firm exclusion."
+      },
+      {
+        "id": "ETA-2026-0001-1130",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks no increase to preserve smaller colleges' international faculty hiring and educational opportunities."
+      },
+      {
+        "id": "ETA-2026-0001-0871",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes empirically unsupported adjustments over small-business burdens and talent shortages and seeks withdrawal."
+      },
+      {
+        "id": "ETA-2026-0001-0241",
+        "stance": "support",
+        "rationale": "Finds the reform overdue and insufficient and seeks multiple-fold wage premiums, domestic staffing ratios, and strict inspections. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0391",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes abrupt increases over existing workers’ mobility, employer costs, and offshoring, seeking gradual, evidence-based reform."
+      },
+      {
+        "id": "ETA-2026-0001-0426",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the proposal harms national interests by excluding entry talent and encouraging small-firm outsourcing."
+      },
+      {
+        "id": "ETA-2026-0001-1054",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the plan to reduce cheaper hiring and prioritize domestic graduates' opportunities."
+      },
+      {
+        "id": "ETA-2026-0001-0020",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues uniform floors obstruct lawful entrepreneurship and seeks accommodations for genuine startups and concurrent H-1B founders."
+      },
+      {
+        "id": "ETA-2026-0001-0521",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes threshold and wage-selection interactions harming existing cases and graduates, seeking withdrawal or transition protection."
+      },
+      {
+        "id": "ETA-2026-0001-0667",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the draft as excluding legitimate roles and public research employers, favoring targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0730",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes missing analysis of underserved public schools and seeks existing teacher wages and less burdensome alternatives."
+      },
+      {
+        "id": "ETA-2026-0001-0309",
+        "stance": "support",
+        "rationale": "Rejects a wage-only partial measure and demands universal visa audits and recruitment verification, otherwise pausing H-1B. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0408",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes higher thresholds and complexity over worsening hiring, innovation, and talent shortages."
+      },
+      {
+        "id": "ETA-2026-0001-0630",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the rule harms graduates and worsens U.S. talent loss."
+      },
+      {
+        "id": "ETA-2026-0001-0813",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns of large-firm advantages, offshoring, and hiring uncertainty and seeks reconsideration and targeted enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-0639",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns excessive wages would block advanced STEM graduates' workforce entry and weaken innovation."
+      },
+      {
+        "id": "ETA-2026-0001-0869",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes excessive increases over harms to graduates, small employers, and retention of existing workers."
+      },
+      {
+        "id": "ETA-2026-0001-0714",
+        "stance": "support",
+        "rationale": "Alleges H-1B-related unemployment and fraud and demands program abolition and deportations, a clear tightening direction. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0817",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes the proposal as deterring STEM talent and weakening technological competitiveness."
+      },
+      {
+        "id": "ETA-2026-0001-0142",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the rule as a good start, alongside stricter duration, hiring-tax, and placement limits."
+      },
+      {
+        "id": "ETA-2026-0001-0040",
+        "stance": "support",
+        "rationale": "Seeks an entry floor above the 50th percentile, audits, an end to visa renewals, and PERM restrictions. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-0283",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Repeatedly disagrees and calls the proposal unreasonable without specific reasons."
+      },
+      {
+        "id": "ETA-2026-0001-0734",
+        "stance": "support",
+        "rationale": "Explicitly supports wage-and-ability-based H-1B selection and opposes fraud, a tightening direction despite focusing on lottery rules. Classified by overall policy direction under the approved rubric."
+      },
+      {
+        "id": "ETA-2026-0001-1085",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Criticizes insufficient modeling of offshoring and automation and warns the rule could reduce domestic skilled jobs."
+      },
+      {
+        "id": "ETA-2026-0001-1115",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the rule would worsen talent shortages and harm startups and technological competitiveness."
+      },
+      {
+        "id": "ETA-2026-0001-0979",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues the rule would reduce all entry hiring and encourage offshoring, seeking local impact assessment."
+      },
+      {
+        "id": "ETA-2026-0001-0543",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes offshoring and lost spending, favoring fraud enforcement while preserving legitimate talent competition."
+      },
+      {
+        "id": "ETA-2026-0001-0052",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Argues high wage controls distort markets, reduce graduate opportunities, and encourage offshoring."
+      },
+      {
+        "id": "ETA-2026-0001-0294",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Warns higher thresholds exclude startups and seeks current wages or extended phasing for small firms."
+      },
+      {
+        "id": "ETA-2026-0001-0723",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes higher floors as reducing junior positions and workforce development under fixed hiring budgets."
+      },
+      {
+        "id": "ETA-2026-0001-0057",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports implementation to address stagnant wages and alleged program abuse and prioritize domestic employment."
+      },
+      {
+        "id": "ETA-2026-0001-0717",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Considers sharp increases unreasonable and likely to worsen technical shortages and competitiveness."
+      },
+      {
+        "id": "ETA-2026-0001-0509",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Seeks withdrawal, criticizing unsupported wage controls for reducing hiring and increasing concentration."
+      },
+      {
+        "id": "ETA-2026-0001-1163",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Strongly supports higher wages and suggests layoff protections, whistleblower incentives, and stronger employer penalties."
+      },
+      {
+        "id": "ETA-2026-0001-0838",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Challenges legal and data foundations and warns mid-sized firms would halt hiring and outsource projects, seeking withdrawal."
+      },
+      {
+        "id": "ETA-2026-0001-0466",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Views policy changes as too rapid and new requirements as unaffordable after existing salary increases."
+      },
+      {
+        "id": "ETA-2026-0001-0624",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports the wage rule and seeks OPT termination over alleged domestic displacement."
+      },
+      {
+        "id": "ETA-2026-0001-0380",
+        "stance": "oppose",
+        "rationale": "Opposes the proposal or increased barriers to lawful foreign-worker access. Opposes barriers between education and employment, favoring entry opportunities and stronger classification enforcement."
+      },
+      {
+        "id": "ETA-2026-0001-1269",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa-labor controls. Supports proposed percentiles and seeks grants to restricted-eligibility nonprofits overseeing PERM recruitment visibility."
+      },
+      {
+        "id": "ETA-2026-0001-1034",
+        "stance": "unclear",
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attached comment letter and does not establish a stance."
+      }
+    ]
   }
 }

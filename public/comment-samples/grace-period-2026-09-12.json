@@ -998,14 +998,14 @@
     },
     {
       "id": "USCIS-2026-0364-0473",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [
         "domestic",
         "enforcement"
       ],
       "summary": {
-        "zh": "质疑政策效果和时机，未清楚表明对取消宽限期的立场。",
-        "en": "Questions timing and effectiveness without a clear stance on grace-period removal."
+        "zh": "批评提案时机与效果，要求进一步收紧工资及签证转换漏洞；方向上支持收紧。",
+        "en": "Criticizes the proposal’s timing and effectiveness and seeks stronger wage and visa-switch restrictions; directionally supports tightening."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "f82a9791370adbf0d68eeb73c371d4a284a4a4649251221e79b5b50eba9aa316"
@@ -1055,7 +1055,7 @@
     },
     {
       "id": "USCIS-2026-0364-0289",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "family",
         "transition",
@@ -1411,7 +1411,7 @@
     },
     {
       "id": "USCIS-2026-0364-0466",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "family",
         "finances",
@@ -1965,7 +1965,7 @@
     },
     {
       "id": "USCIS-2026-0364-0079",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "legal",
         "alternatives",
@@ -2064,7 +2064,7 @@
     },
     {
       "id": "USCIS-2026-0364-0174",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "alternatives",
         "legal",
@@ -2149,7 +2149,7 @@
     },
     {
       "id": "USCIS-2026-0364-0384",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "alternatives",
         "family",
@@ -2179,7 +2179,7 @@
     },
     {
       "id": "USCIS-2026-0364-0269",
-      "stance": "mixed",
+      "stance": "oppose",
       "themes": [
         "alternatives",
         "transition",
@@ -3700,11 +3700,11 @@
     },
     {
       "id": "USCIS-2026-0364-0091",
-      "stance": "unclear",
+      "stance": "support",
       "themes": [],
       "summary": {
-        "zh": "仅泛泛赞扬工作，未明确说明对取消提案的立场。",
-        "en": "Offers generic praise without identifying a position on repeal."
+        "zh": "在本提案评论语境中赞扬工作并要求继续，表达方向性支持。",
+        "en": "Praises the work and urges continuation in this proposal’s comment context, expressing directional support."
       },
       "postedDate": "2026-09-11T04:00:00Z",
       "textSha256": "316d44b7dda994770c5c0fa023add5dd21e36481ca727936fcdeb8232fd815d5"
@@ -3875,21 +3875,1037 @@
     "sampleSize": 200,
     "seed": "cc252988a5ddf32b884d796de1e693551269b00b7d5fa7d0643fb14307bcf354",
     "counts": {
-      "oppose": 150,
-      "support": 30,
-      "mixed": 12,
-      "unclear": 8
+      "oppose": 156,
+      "support": 32,
+      "mixed": 6,
+      "unclear": 6
     },
     "percentages": {
-      "oppose": 75.0,
-      "support": 15.0,
-      "mixed": 6.0,
-      "unclear": 4.0
+      "oppose": 78,
+      "support": 16,
+      "mixed": 3,
+      "unclear": 3
     }
   },
   "commentPhase": "open",
   "scopeNote": {
     "zh": "样本来自该提案的已公开评论。无法读取的附件逐条注明；观点摘要为评论者主张，并非事实或法律结论。",
     "en": "This sample covers published comments on the proposal. Unreadable attachments are disclosed per record; summaries describe commenters’ views, not factual or legal findings."
+  },
+  "classificationBasis": "policy-direction-v1",
+  "classificationDefinition": {
+    "zh": "按政策方向归类：支持包括赞同提案、对相关外籍用工或签证制度持明确负面态度，以及要求进一步收紧；反对包括反对限制、维护移民或工作许可、主张保留或放宽相关机会。不要求评论明确评价提案的具体条款。",
+    "en": "Classified by policy direction: support includes endorsing the proposal, clearly negative views of the relevant foreign-worker or visa program, and calls for tighter restrictions. Opposition includes rejecting restrictions, defending migrants or work authorization, and preserving or expanding access. Explicit views on the proposal’s exact provisions are not required."
+  },
+  "classificationMethod": {
+    "zh": "逐条结合全文判断相关政策方向，不按赞成或反对等关键词机械分类。要求更高费用、更严限制或取消签证，归为支持收紧；支持保留或放宽工作与居留机会，归为反对收紧。对不同人群采取收紧与放宽并存的立场、或明确提出实质性支持条件，保留为有条件／混合。反对取消保障、仅把较短保障期作为退让方案的，仍归为反对收紧。仅有一般反欺诈表述，不会覆盖全文维护合法工作机会的主要方向。无关内容、纯咨询、无法判断方向的表述及不可读记录归为不明确。分类依据评论文字，不依据姓名或身份推断。附件不可读时保留说明，仅按可读正文判断；不会因观点或可读性替换样本。",
+    "en": "Each full body is reviewed for its relevant policy direction, rather than classified by isolated words such as support or oppose. Demands for higher fees, tighter restrictions or visa abolition count as support for tightening; preserving or expanding work and residence opportunities counts as opposition. Scope-dependent combinations of tightening and easing, or explicit substantive conditions of support, remain conditional / mixed. Opposing the removal of protections while accepting shorter protections only as a fallback remains opposition. General anti-fraud language does not override an overall defense of lawful work access. Unrelated content, pure questions, indeterminate views and unreadable records remain unclear. Labels rely on the text, not names or identities. Unavailable attachments are disclosed and only readable bodies are assessed. No sample is replaced because of its viewpoint or readability."
+  },
+  "classificationReview": {
+    "reviewedAt": "2026-09-12T21:47:24.689Z",
+    "reviewedCount": 200,
+    "availableBodyCount": 200,
+    "records": [
+      {
+        "id": "USCIS-2026-0364-0376",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention because immediate relocation harms children, household finances, and employer hiring."
+      },
+      {
+        "id": "USCIS-2026-0364-0158",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal because of forced asset sales, debts and disrupted schooling."
+      },
+      {
+        "id": "USCIS-2026-0364-0107",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Challenges the proposal's compatibility with statutory portability and requests an explanation."
+      },
+      {
+        "id": "USCIS-2026-0364-0020",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns of family and economic harms and urges targeting visa misuse."
+      },
+      {
+        "id": "USCIS-2026-0364-0496",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Says temporary workers should leave when their work ends."
+      },
+      {
+        "id": "USCIS-2026-0364-0229",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues families need time to manage schooling, healthcare and departure."
+      },
+      {
+        "id": "USCIS-2026-0364-0491",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Claims the grace period violates American workers' rights."
+      },
+      {
+        "id": "USCIS-2026-0364-0159",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes abolition and proposes a fixed transition period as an alternative."
+      },
+      {
+        "id": "USCIS-2026-0364-0517",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports ending status with employment and alleges hiring networks and status switches disadvantage domestic graduates."
+      },
+      {
+        "id": "USCIS-2026-0364-0167",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls removal unnecessary hardship and 60 days reasonable."
+      },
+      {
+        "id": "USCIS-2026-0364-0055",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Urges retaining 60 days for hiring and employer-transfer filings."
+      },
+      {
+        "id": "USCIS-2026-0364-0257",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes turning layoffs into status emergencies, citing families and hiring timelines."
+      },
+      {
+        "id": "USCIS-2026-0364-0221",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal impedes hiring and increases agency burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0142",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Urges retention so families can settle their affairs and depart responsibly."
+      },
+      {
+        "id": "USCIS-2026-0364-0379",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing hiring needs, families and reliance on existing policy."
+      },
+      {
+        "id": "USCIS-2026-0364-0194",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Defends 60 days for children’s school and travel arrangements, financial affairs, and talent retention."
+      },
+      {
+        "id": "USCIS-2026-0364-0474",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal, tying status to employment and citing administrative costs."
+      },
+      {
+        "id": "USCIS-2026-0364-0473",
+        "stance": "support",
+        "rationale": "Supports tightening in direction: criticizes the proposal as ineffective without stronger restrictions and scrutinizing H-1B-to-L-1/TN/EB-1C routes. Skepticism about effectiveness is not opposition to tightening."
+      },
+      {
+        "id": "USCIS-2026-0364-0110",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues the proposal inadequately addresses prior portability reasoning."
+      },
+      {
+        "id": "USCIS-2026-0364-0495",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal based on domestic-job concerns and fraud allegations."
+      },
+      {
+        "id": "USCIS-2026-0364-0409",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks to retain 60 days for hiring and visa filings while protecting family stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0289",
+        "stance": "oppose",
+        "rationale": "Opposes tightening by explicitly seeking greater flexibility and protection for long-term H-1B families; no competing restrictive position appears."
+      },
+      {
+        "id": "USCIS-2026-0364-0382",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and enhanced protections for long-term workers and certain families."
+      },
+      {
+        "id": "USCIS-2026-0364-0230",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns removal worsens hiring, relocation, family and mortgage pressures."
+      },
+      {
+        "id": "USCIS-2026-0364-0011",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, emphasizing continuity of medical care, reliance interests, and emergency filing burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0115",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal would practically narrow statutory portability rights."
+      },
+      {
+        "id": "USCIS-2026-0364-0100",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal and stricter status bridges and employer reporting. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0507",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over portability, talent loss and added application burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0007",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal because status should depend strictly on ongoing employment."
+      },
+      {
+        "id": "USCIS-2026-0364-0434",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Favors retention to help employers retain experienced talent."
+      },
+      {
+        "id": "USCIS-2026-0364-0374",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over family obligations, workforce stability and talent competition."
+      },
+      {
+        "id": "USCIS-2026-0364-0116",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Explicitly supports the proposal and prompt implementation."
+      },
+      {
+        "id": "USCIS-2026-0364-0380",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns immediate departure disrupts hiring and housing markets."
+      },
+      {
+        "id": "USCIS-2026-0364-0312",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls the rule impractical and warns of more unlawful stays."
+      },
+      {
+        "id": "USCIS-2026-0364-0316",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an inaccessible attachment; stance cannot be determined. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0059",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns removal causes talent loss, project delays and higher costs."
+      },
+      {
+        "id": "USCIS-2026-0364-0073",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal because it weakens business efficiency and competitiveness."
+      },
+      {
+        "id": "USCIS-2026-0364-0369",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Raises schooling, mortgage and immediate relocation difficulties."
+      },
+      {
+        "id": "USCIS-2026-0364-0512",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an inaccessible attachment; stance cannot be determined. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0278",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over employer power imbalances and barriers to lawful transitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0445",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues the proposal harms lawful workers without helping domestic workers."
+      },
+      {
+        "id": "USCIS-2026-0364-0270",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Urges retention to avoid family separation and financial and educational disruption."
+      },
+      {
+        "id": "USCIS-2026-0364-0068",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Cites hiring and filing timelines to oppose the reduction as understood."
+      },
+      {
+        "id": "USCIS-2026-0364-0204",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Says people need time to arrange and prepare departure."
+      },
+      {
+        "id": "USCIS-2026-0364-0171",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an inaccessible attachment; stance cannot be determined. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0466",
+        "stance": "oppose",
+        "rationale": "Opposes eliminating transition protection; accepting a shorter period only if DHS rejects 60 days is a fallback to preserve access, not an endorsement of abolition."
+      },
+      {
+        "id": "USCIS-2026-0364-0453",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing orderly departure, families and talent attraction."
+      },
+      {
+        "id": "USCIS-2026-0364-0112",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports grace-period repeal and wider program abolition, alleging unfairness to domestic applicants."
+      },
+      {
+        "id": "USCIS-2026-0364-0403",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Says the visa rationale ends with the job and supports enforcement accordingly."
+      },
+      {
+        "id": "USCIS-2026-0364-0524",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention for asset disposal, contractual obligations, and employer retention through portability."
+      },
+      {
+        "id": "USCIS-2026-0364-0169",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention for backlogged families, children, orderly departure, and employer hiring."
+      },
+      {
+        "id": "USCIS-2026-0364-0071",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention with targeted safeguards to protect hiring time, families, and financial stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0353",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls immediate departure unrealistic and seeks time for family and financial obligations."
+      },
+      {
+        "id": "USCIS-2026-0364-0006",
+        "stance": "mixed",
+        "rationale": "Mixed compromise: rejects complete removal as punishment but affirmatively proposes gradually reducing 60 days to 30 days."
+      },
+      {
+        "id": "USCIS-2026-0364-0414",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports the proposal while urging action on sham payrolls and staffing abuse."
+      },
+      {
+        "id": "USCIS-2026-0364-0168",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports repeal, calls for domestic hiring and retention, and proposes stronger oversight of H-4 business activity."
+      },
+      {
+        "id": "USCIS-2026-0364-0322",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal, citing time needed for property, schooling and relocation."
+      },
+      {
+        "id": "USCIS-2026-0364-0080",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Challenges uneven cost-benefit evidence and shifted burdens on agencies and families."
+      },
+      {
+        "id": "USCIS-2026-0364-0469",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Explicitly supports eliminating the 60-day grace period."
+      },
+      {
+        "id": "USCIS-2026-0364-0259",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Expresses support for the H-1B grace period."
+      },
+      {
+        "id": "USCIS-2026-0364-0267",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal but accepts a shorter fallback, challenging the burden rationale."
+      },
+      {
+        "id": "USCIS-2026-0364-0163",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and protections for involuntary layoffs and labor-violation reporters."
+      },
+      {
+        "id": "USCIS-2026-0364-0199",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over backlogged workers, families and shifted government costs."
+      },
+      {
+        "id": "USCIS-2026-0364-0024",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal as harmful to backlogged workers and costly for enforcement."
+      },
+      {
+        "id": "USCIS-2026-0364-0398",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Proposes 90 or 120 days and extra time for families."
+      },
+      {
+        "id": "USCIS-2026-0364-0062",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues job searches are already difficult within 60 days and repeal would harm families and schooling."
+      },
+      {
+        "id": "USCIS-2026-0364-0425",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention or at least a transition period after involuntary termination."
+      },
+      {
+        "id": "USCIS-2026-0364-0457",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Seeks removal, alleging it enables sham consultancies and status switching."
+      },
+      {
+        "id": "USCIS-2026-0364-0511",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over reliance interests and administrative disruption."
+      },
+      {
+        "id": "USCIS-2026-0364-0069",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks at least 180 days for job search and settling affairs."
+      },
+      {
+        "id": "USCIS-2026-0364-0122",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes repeal and alternatively seeks involuntary-layoff protections, grandfathering, and transition provisions."
+      },
+      {
+        "id": "USCIS-2026-0364-0526",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Proposes an automatic fixed 60 days and challenges family and savings assessments."
+      },
+      {
+        "id": "USCIS-2026-0364-0028",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to reduce financial and personal pressures after job loss."
+      },
+      {
+        "id": "USCIS-2026-0364-0075",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal and backlog reform to avoid family and enforcement harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0041",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Explicitly agrees with the USCIS proposal."
+      },
+      {
+        "id": "USCIS-2026-0364-0361",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Challenges the unquantified cost-benefit case and requests a fuller analysis."
+      },
+      {
+        "id": "USCIS-2026-0364-0249",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, at least for involuntary layoffs and long-term backlogged workers. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0241",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal to preserve the employment-status link and urges anti-fraud enforcement."
+      },
+      {
+        "id": "USCIS-2026-0364-0010",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Urges retention over relocation difficulties and children's educational and emotional harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0255",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns immediate departure disrupts job transitions and family life."
+      },
+      {
+        "id": "USCIS-2026-0364-0327",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention of 60 days, emphasizing schooling and family arrangements."
+      },
+      {
+        "id": "USCIS-2026-0364-0079",
+        "stance": "oppose",
+        "rationale": "Opposes abrupt tightening by defending reliance interests and requesting transition or grandfathering protections; no restrictive demand appears."
+      },
+      {
+        "id": "USCIS-2026-0364-0113",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and protections for long-term workers with approved I-140 petitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0494",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention or extension beyond 60 days for orderly family transitions. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0395",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal because asset disposal and finding a sponsor take time."
+      },
+      {
+        "id": "USCIS-2026-0364-0509",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an inaccessible attachment; stance cannot be determined. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0151",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention over employer coercion and sudden family relocation pressures."
+      },
+      {
+        "id": "USCIS-2026-0364-0174",
+        "stance": "oppose",
+        "rationale": "Opposes abolition explicitly and defends transition protection; a shorter period is a fallback if DHS determines 60 days is too long."
+      },
+      {
+        "id": "USCIS-2026-0364-0211",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Explicitly calls for ending the 60-day grace period."
+      },
+      {
+        "id": "USCIS-2026-0364-0181",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention because hiring and family arrangements cannot happen immediately."
+      },
+      {
+        "id": "USCIS-2026-0364-0130",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Favors retaining 60 days for transitions and regulatory stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0090",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention so families can make considered decisions."
+      },
+      {
+        "id": "USCIS-2026-0364-0404",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal to reduce domestic job competition and preserve temporary status."
+      },
+      {
+        "id": "USCIS-2026-0364-0384",
+        "stance": "oppose",
+        "rationale": "Opposes loss of transition protection: seeks a fixed, fair period and warns immediate departure harms families. Disagreement with discretion does not endorse zero days."
+      },
+      {
+        "id": "USCIS-2026-0364-0202",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing disrupted specialist hiring, innovation losses, and more overseas visa processing."
+      },
+      {
+        "id": "USCIS-2026-0364-0269",
+        "stance": "oppose",
+        "rationale": "Opposes abolition and requests reconsideration, with at least 30 days as a minimum protective fallback."
+      },
+      {
+        "id": "USCIS-2026-0364-0406",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls removal harsh and harmful to families and talent attraction."
+      },
+      {
+        "id": "USCIS-2026-0364-0292",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and protections for existing residents and green-card applicants."
+      },
+      {
+        "id": "USCIS-2026-0364-0506",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention because families cannot immediately settle assets and relocate internationally."
+      },
+      {
+        "id": "USCIS-2026-0364-0415",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal, citing hiring timelines and family stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0187",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Says schooling, housing and departure arrangements cannot be resolved immediately."
+      },
+      {
+        "id": "USCIS-2026-0364-0516",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns immediate departure after job loss undermines long-term residents' family and career stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0410",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal or fixed 60 days and challenges cost and family assessments. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0455",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an inaccessible attachment; stance cannot be determined. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0117",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over family hardship and employers' lost talent."
+      },
+      {
+        "id": "USCIS-2026-0364-0032",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Explains the need for the grace period through hiring delays and layoffs."
+      },
+      {
+        "id": "USCIS-2026-0364-0360",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal and possible extension, questioning the reversal’s justification, reliance analysis, and small-business effects."
+      },
+      {
+        "id": "USCIS-2026-0364-0018",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention for family stability and employer hiring."
+      },
+      {
+        "id": "USCIS-2026-0364-0420",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over family harms, employer coercion and government burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0339",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports repeal to end post-employment competition for domestic jobs and alleges program fraud."
+      },
+      {
+        "id": "USCIS-2026-0364-0101",
+        "stance": "unclear",
+        "rationale": "No discernible direction in available text: Body only refers to an attachment; the unavailable attachment prevents a stance determination. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0224",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Explicitly opposes removal, calling 60 days important for orderly compliance."
+      },
+      {
+        "id": "USCIS-2026-0364-0493",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, citing housing defaults, education and employer hiring."
+      },
+      {
+        "id": "USCIS-2026-0364-0264",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Explicitly supports removal as restoring domestic job opportunities."
+      },
+      {
+        "id": "USCIS-2026-0364-0377",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal, accepts a shorter fixed period and requests fuller analysis."
+      },
+      {
+        "id": "USCIS-2026-0364-0333",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks 60 days to reduce schooling and relocation pressures."
+      },
+      {
+        "id": "USCIS-2026-0364-0207",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to give families and children time to prepare relocation."
+      },
+      {
+        "id": "USCIS-2026-0364-0150",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls immediate departure inhumane and says preparation takes time."
+      },
+      {
+        "id": "USCIS-2026-0364-0040",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes the proposal, warning jobs will move abroad."
+      },
+      {
+        "id": "USCIS-2026-0364-0329",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues immediate status loss punishes families and a grace period enables reasonable transitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0125",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks 60 days for job searches and families’ practical departure arrangements."
+      },
+      {
+        "id": "USCIS-2026-0364-0514",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, emphasizing families, talent competition and reliance interests."
+      },
+      {
+        "id": "USCIS-2026-0364-0106",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal creates unavoidable violations and potential offshoring."
+      },
+      {
+        "id": "USCIS-2026-0364-0471",
+        "stance": "mixed",
+        "rationale": "Mixed conditional tradeoff: condemns immediate departure but explicitly accepts stopping job changes in exchange for time to wind down affairs."
+      },
+      {
+        "id": "USCIS-2026-0364-0105",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports grace-period removal and calls for ending H-1B and spouse work authorization."
+      },
+      {
+        "id": "USCIS-2026-0364-0074",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal and favors extension for hiring realities and established families."
+      },
+      {
+        "id": "USCIS-2026-0364-0250",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Directly asks not to eliminate the 60-day period without providing reasons."
+      },
+      {
+        "id": "USCIS-2026-0364-0102",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal, tying temporary status to employment and prioritizing domestic hiring."
+      },
+      {
+        "id": "USCIS-2026-0364-0036",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal or preservation of reasonable transition time for employer hiring and families."
+      },
+      {
+        "id": "USCIS-2026-0364-0468",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention over family losses, talent flight and extra application burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0248",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes repeal, seeking time for lawful workers who contribute to communities to find new opportunities."
+      },
+      {
+        "id": "USCIS-2026-0364-0428",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns immediate departure forces abandonment of assets and burdens communities. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0300",
+        "stance": "mixed",
+        "rationale": "Mixed conditional position: says repeal is welcome only alongside government purchase or compensation for homes and future property restrictions, while condemning uncompensated immediate departure."
+      },
+      {
+        "id": "USCIS-2026-0364-0440",
+        "stance": "mixed",
+        "rationale": "Mixed conditional tradeoff: requests 30/45 days or a departure-only period explicitly barring job/status changes."
+      },
+      {
+        "id": "USCIS-2026-0364-0058",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to avoid rushed career decisions and hiring difficulties."
+      },
+      {
+        "id": "USCIS-2026-0364-0111",
+        "stance": "oppose",
+        "rationale": "Opposes tightening of lawful-worker access by insisting on retaining 60 days; evidence-based anti-fraud and fair-hiring requests do not reverse that direction."
+      },
+      {
+        "id": "USCIS-2026-0364-0205",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Says people need time to arrange and prepare departure."
+      },
+      {
+        "id": "USCIS-2026-0364-0346",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Defends a limited period for fair job competition, property arrangements, and orderly relocation."
+      },
+      {
+        "id": "USCIS-2026-0364-0381",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Details harms from mortgages, disrupted schooling and rushed asset sales."
+      },
+      {
+        "id": "USCIS-2026-0364-0396",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal as protecting domestic workers from visa-labor undercutting."
+      },
+      {
+        "id": "USCIS-2026-0364-0306",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal undermines family and investment stability and strengthens employer coercion."
+      },
+      {
+        "id": "USCIS-2026-0364-0302",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention or stronger transition protections, citing families and hiring realities."
+      },
+      {
+        "id": "USCIS-2026-0364-0175",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Body briefly expresses opposition without substantive reasons; attachment could not be read. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0431",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing family obligations, filing timelines and reliance interests."
+      },
+      {
+        "id": "USCIS-2026-0364-0214",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal and suggests extending the period to three months."
+      },
+      {
+        "id": "USCIS-2026-0364-0042",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, challenges data limitations and proposes targeted transition protections. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0443",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Favors departure without another job-search opportunity to prioritize domestic graduates."
+      },
+      {
+        "id": "USCIS-2026-0364-0043",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over spouse job losses, offshoring and lost economic investments."
+      },
+      {
+        "id": "USCIS-2026-0364-0164",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to avoid family disruption and employer talent losses."
+      },
+      {
+        "id": "USCIS-2026-0364-0311",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Warns immediate departure causes disruption, unlawful stays and talent loss."
+      },
+      {
+        "id": "USCIS-2026-0364-0331",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes adoption, arguing forced departures of lawful workers harm the economy."
+      },
+      {
+        "id": "USCIS-2026-0364-0296",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Calls the proposal a step in the right direction and seeks program abolition."
+      },
+      {
+        "id": "USCIS-2026-0364-0452",
+        "stance": "mixed",
+        "rationale": "Mixed conditional position: explicitly supports removing 60 days but requires four or five days to wind up affairs instead of immediate departure."
+      },
+      {
+        "id": "USCIS-2026-0364-0461",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests no implementation over mortgage defaults and educational and medical harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0487",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal and retention of the current rule, with 30–60 days as fallback."
+      },
+      {
+        "id": "USCIS-2026-0364-0310",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Opposes status changes and further job seeking after job loss, citing domestic employment."
+      },
+      {
+        "id": "USCIS-2026-0364-0072",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal, citing talent retention and community stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0240",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal, emphasizing protection after job loss for backlogged workers."
+      },
+      {
+        "id": "USCIS-2026-0364-0201",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over hiring disruption, innovation losses and overseas processing burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0155",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls 60 days the minimum time needed for interviews and job search."
+      },
+      {
+        "id": "USCIS-2026-0364-0213",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and narrower compliance measures to avoid family and hiring harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0490",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and proposes automatic 60 days with specified exceptions."
+      },
+      {
+        "id": "USCIS-2026-0364-0212",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over hiring costs, family hardship and talent loss."
+      },
+      {
+        "id": "USCIS-2026-0364-0182",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention and targeted compliance reforms to support employers and families."
+      },
+      {
+        "id": "USCIS-2026-0364-0405",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports repeal across covered categories including TN, stresses temporary visas, and alleges credential fraud."
+      },
+      {
+        "id": "USCIS-2026-0364-0502",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to allow hiring and status transitions after job loss."
+      },
+      {
+        "id": "USCIS-2026-0364-0260",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal turns a layoff into a status crisis for an entire family."
+      },
+      {
+        "id": "USCIS-2026-0364-0504",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Explicitly opposes removal, citing job search, status changes and family needs."
+      },
+      {
+        "id": "USCIS-2026-0364-0176",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal over harms to established families and economic contributions. Attachment remains unavailable; this assessment uses the readable body only."
+      },
+      {
+        "id": "USCIS-2026-0364-0200",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal because repeal would obstruct domestic hiring and increase overseas visa-processing burdens."
+      },
+      {
+        "id": "USCIS-2026-0364-0124",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal as harmful to skilled workers and the U.S. economy."
+      },
+      {
+        "id": "USCIS-2026-0364-0503",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Criticizes post-employment status changes that allow continued competition for jobs."
+      },
+      {
+        "id": "USCIS-2026-0364-0435",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks a grace period for finances, families and departure or job transitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0108",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over employer talent loss and family disruption."
+      },
+      {
+        "id": "USCIS-2026-0364-0188",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal and retention, citing hiring timelines, families and worker mobility."
+      },
+      {
+        "id": "USCIS-2026-0364-0015",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes changing the existing rule as breaking commitments to admitted workers."
+      },
+      {
+        "id": "USCIS-2026-0364-0056",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, emphasizing losses to talent, businesses and local economies."
+      },
+      {
+        "id": "USCIS-2026-0364-0103",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls 60 days essential for lawful, orderly departure and family arrangements."
+      },
+      {
+        "id": "USCIS-2026-0364-0402",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing employer hiring, talent competitiveness, and family stability."
+      },
+      {
+        "id": "USCIS-2026-0364-0349",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes removal over mortgage, housing and banking impacts."
+      },
+      {
+        "id": "USCIS-2026-0364-0145",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention, arguing administrative savings do not justify family and job-transition harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0317",
+        "stance": "mixed",
+        "rationale": "Mixed conditional position: supports the tightening direction but rejects complete elimination in favor of a departure-only 15/30-day period and warns of domestic-layoff harms."
+      },
+      {
+        "id": "USCIS-2026-0364-0423",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports repeal to tie status to employment and reduce administrative burden."
+      },
+      {
+        "id": "USCIS-2026-0364-0157",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention for families, hiring and reporting workplace mistreatment."
+      },
+      {
+        "id": "USCIS-2026-0364-0499",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests at least 60 days for job search on humanitarian grounds."
+      },
+      {
+        "id": "USCIS-2026-0364-0185",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks 60 days or at least 30 days for orderly family transitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0284",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention of the current period over family harms and employer power imbalances."
+      },
+      {
+        "id": "USCIS-2026-0364-0388",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Argues removal harms talent retention and lawful, orderly departure arrangements."
+      },
+      {
+        "id": "USCIS-2026-0364-0484",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to provide necessary time for normal job transitions."
+      },
+      {
+        "id": "USCIS-2026-0364-0002",
+        "stance": "support",
+        "rationale": "Supports the proposal or tighter visa/work rules: Supports removal as consistent with statutory intent and simpler oversight."
+      },
+      {
+        "id": "USCIS-2026-0364-0121",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Opposes an immediate family crisis, citing schooling, healthcare and housing obligations."
+      },
+      {
+        "id": "USCIS-2026-0364-0276",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Says lawful workers with established lives need 60 days."
+      },
+      {
+        "id": "USCIS-2026-0364-0165",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Questions practical feasibility and administrative savings, emphasizing family reliance and employer transfer filings."
+      },
+      {
+        "id": "USCIS-2026-0364-0475",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to avoid higher hiring costs, family financial harm, and reduced talent appeal."
+      },
+      {
+        "id": "USCIS-2026-0364-0091",
+        "stance": "support",
+        "rationale": "Supports the proposal in docket context through unqualified praise and encouragement to continue; exact policy endorsement is not required by the directional rubric."
+      },
+      {
+        "id": "USCIS-2026-0364-0149",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Calls denial of 60 days cruel and disrespectful of workers' contributions."
+      },
+      {
+        "id": "USCIS-2026-0364-0421",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Requests withdrawal, citing time needed for children, healthcare and financial obligations."
+      },
+      {
+        "id": "USCIS-2026-0364-0085",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks continued officer discretion for exceptional cases such as a principal worker's death."
+      },
+      {
+        "id": "USCIS-2026-0364-0147",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention because family, schooling, and financial arrangements cannot be completed immediately."
+      },
+      {
+        "id": "USCIS-2026-0364-0156",
+        "stance": "oppose",
+        "rationale": "Opposes tightening or preserves lawful-worker access: Seeks retention to protect spouses and children and support employer talent retention."
+      }
+    ]
   }
 }

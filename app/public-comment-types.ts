@@ -10,6 +10,8 @@ export type CommentSample = {
   publishedCount: number;
   sampleSize: number;
   status: 'pending' | 'reviewed';
+  classificationBasis?: 'policy-direction-v1';
+  classificationReviewedAt?: string;
   sampledAt?: string;
   seed?: string;
   frameSize?: number;

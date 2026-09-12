@@ -87,11 +87,11 @@ export default {
   comments: [
     {
       id: 'USCIS-2026-0298-4278',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '要求优先雇用美国人并加强监管，未表明收费立场。',
-        en: 'Calls for American hiring priority and stronger oversight without taking a fee position.',
+        zh: '要求优先雇用美国人，反对扩大或延续替代本土工人的 H-1B 用工。',
+        en: 'Demands American hiring priority and opposes expanding or continuing H-1B hiring that displaces domestic workers.',
       },
       postedDate: '2026-08-31T04:00:00Z',
       textSha256:
@@ -207,11 +207,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-3552',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '批评外籍用工压低工资和招聘歧视，未表明收费立场。',
-        en: 'Criticizes wage suppression and discriminatory hiring without a fee position.',
+        zh: '批评 H-1B 用工压低美国人工资并排挤本土求职者。',
+        en: 'Criticizes H-1B hiring for suppressing U.S. wages and displacing domestic applicants.',
       },
       postedDate: '2026-08-27T04:00:00Z',
       textSha256:
@@ -219,11 +219,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6797',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['fraud', 'restriction'],
       summary: {
-        zh: '要求暂停就业签证并全面核查，未表明收费立场。',
-        en: 'Demands employment-visa pauses and audits without a fee position.',
+        zh: '要求立即暂停就业签证及绿卡申请，全面核查，否则取消相关签证。',
+        en: 'Demands an immediate pause and comprehensive audits of employment visas and green-card petitions, or termination of the visa programs.',
       },
       postedDate: '2026-09-09T04:00:00Z',
       textSha256:
@@ -339,11 +339,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6110',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['fraud'],
       summary: {
-        zh: '指控用工及工资欺诈，未表明收费立场。',
-        en: 'Alleges employment and payroll fraud without a fee position.',
+        zh: '指控 H-1B 工资与用工欺诈，反对宽容并要求加强监管。',
+        en: 'Alleges H-1B payroll and employment fraud, opposes leniency and demands stronger oversight.',
       },
       postedDate: '2026-09-03T04:00:00Z',
       textSha256:
@@ -375,7 +375,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0836',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['restriction', 'legal', 'jobs'],
       summary: {
         zh: '要求改收五十万至一百万美元以补偿社会成本。',
@@ -519,11 +519,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-7809',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'restriction'],
       summary: {
-        zh: '要求停止 H-1B 并雇用美国人，未表明收费立场。',
-        en: 'Calls for ending H-1B and hiring Americans without a fee position.',
+        zh: '要求停止发放 H-1B 签证并改雇美国人。',
+        en: 'Calls for ending H-1B visas and hiring Americans instead.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -595,7 +595,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0415',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['restriction', 'jobs'],
       summary: {
         zh: '要求改为一百七十六万六千美元费用。',
@@ -659,7 +659,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-3995',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['jobs', 'restriction', 'legal', 'tailored'],
       summary: {
         zh: '要求按工资及财政损失收取百万级分级费用。',
@@ -711,11 +711,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-5583',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'restriction'],
       summary: {
-        zh: '要求关闭项目并声称被替代，未表明收费立场。',
-        en: 'Seeks program closure and describes displacement without a fee position.',
+        zh: '要求关闭 H-1B 项目并让持有人离境，认为本土工人被替代。',
+        en: 'Demands ending H-1B and sending workers home, arguing that domestic workers are displaced.',
       },
       postedDate: '2026-09-01T04:00:00Z',
       textSha256:
@@ -847,11 +847,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0902',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'restriction'],
       summary: {
-        zh: '批评 H-1B 就业及社区影响，未表明收费立场。',
-        en: 'Criticizes H-1B employment and community impacts without a fee position.',
+        zh: '认为 H-1B 用工及家属迁入损害本土就业与社区，要求停止。',
+        en: 'Argues H-1B hiring and accompanying family migration harm domestic employment and communities, and demands an end.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -859,11 +859,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1331',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '要求美国人招聘优先及学历核查，未表明收费立场。',
-        en: 'Seeks American hiring priority and degree verification without a fee position.',
+        zh: '主张美国公民就业优先，并加强对 H-1B 学历资质的核查。',
+        en: 'Calls for American hiring priority and stronger checks on H-1B educational credentials.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -999,11 +999,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-8320',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs'],
       summary: {
-        zh: '呼吁支持总统和美国劳动者，未明确谈及收费。',
-        en: 'Calls for supporting the president and American workers without an explicit fee position.',
+        zh: '呼吁支持总统保护美国工人的政策方向。',
+        en: 'Urges support for the president’s policy direction of protecting American workers.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -1011,11 +1011,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-7737',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs'],
       summary: {
-        zh: '批评项目压低工资并转移财富，未表明收费立场。',
-        en: 'Criticizes wage suppression and wealth transfers without a fee position.',
+        zh: '批评 H-1B 压低美国人工资、替代岗位并把收益转给企业。',
+        en: 'Criticizes H-1B for lowering U.S. wages, displacing jobs and shifting gains to employers.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -1047,11 +1047,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1740',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '要求改革或终结项目，未表明收费立场。',
-        en: 'Seeks reform or termination without a fee position.',
+        zh: '批评 H-1B 欺诈和工资压低，支持终止或替换现行制度。',
+        en: 'Criticizes H-1B fraud and wage suppression and supports ending or replacing the current system.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1071,11 +1071,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-7535',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '要求取消项目并批评廉价劳工替代，未表明收费立场。',
-        en: 'Seeks abolition and criticizes cheaper-labor replacement without a fee position.',
+        zh: '要求全面取消 H-1B，认为企业以廉价外劳替代美国员工。',
+        en: 'Demands abolishing H-1B, arguing employers replace Americans with cheaper foreign labor.',
       },
       postedDate: '2026-09-10T04:00:00Z',
       textSha256:
@@ -1083,11 +1083,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0705',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['jobs', 'restriction'],
       summary: {
-        zh: '明确拒绝提高费用，主张直接取消签证项目。',
-        en: 'Explicitly rejects higher fees and instead calls for visa-program abolition.',
+        zh: '认为涨费不足以解决问题，要求直接取消 H-1B 及配偶签证。',
+        en: 'Rejects higher fees as insufficient and demands abolishing H-1B and associated spousal visas.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1179,11 +1179,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1154',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '主张限制滥用并优先雇用美国人，未表明收费立场。',
-        en: 'Seeks abuse limits and American hiring priority without a fee position.',
+        zh: '认为雇主滥用 H-1B，要求增加限制并优先雇用美国人。',
+        en: 'Alleges employer abuse of H-1B and demands tighter limits and American hiring priority.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1203,11 +1203,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1334',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '批评项目滥用及工资就业影响，未表明收费立场。',
-        en: 'Criticizes abuse and wage and employment impacts without a fee position.',
+        zh: '批评 H-1B 将岗位让给外籍员工并损害美国劳动者。',
+        en: 'Criticizes H-1B for shifting jobs to foreign workers at the expense of Americans.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1299,7 +1299,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0206',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['restriction', 'jobs'],
       summary: {
         zh: '要求至少一百万美元费用，认为拟议金额不足。',
@@ -1311,7 +1311,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-2013',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['jobs', 'restriction', 'students', 'legal', 'tailored'],
       summary: {
         zh: '主张收回雇主节省的福利成本并限制签证及留学生名额。',
@@ -1371,11 +1371,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-7579',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '描述招聘歧视及低薪外劳偏好，未表明收费立场。',
-        en: 'Describes hiring discrimination and preference for cheaper labor without a fee position.',
+        zh: '以招聘经历批评企业偏好低薪外劳并排挤美国求职者。',
+        en: 'Cites recruiting experience to criticize employers favoring cheaper foreign labor over American applicants.',
       },
       postedDate: '2026-09-10T04:00:00Z',
       textSha256:
@@ -1451,11 +1451,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6064',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '支持全面限制签证并批评招聘歧视，未表明收费立场。',
-        en: 'Supports broad visa restrictions and criticizes hiring discrimination without a fee position.',
+        zh: '明确支持尽可能限制 H-1B 及所有签证，批评外籍用工排斥美国人。',
+        en: 'Explicitly supports restricting H-1B and all visas as much as possible, alleging exclusion of Americans.',
       },
       postedDate: '2026-09-03T04:00:00Z',
       textSha256:
@@ -1475,11 +1475,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0220',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'restriction'],
       summary: {
-        zh: '要求高签证成本及美国人优先，未明确评价拟议收费。',
-        en: 'Seeks high visa costs and American priority without evaluating the proposed fee.',
+        zh: '主张以高额签证费用限制外籍招聘，并要求美国人就业优先。',
+        en: 'Advocates high visa costs to restrict foreign hiring and prioritize Americans.',
       },
       postedDate: '2026-08-25T04:00:00Z',
       textSha256:
@@ -1535,11 +1535,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6237',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['fraud', 'jobs', 'legal', 'tailored'],
       summary: {
-        zh: '有条件支持合理收费，要求收入专门用于核查和执法。',
-        en: 'Conditionally supports reasonable fees with revenue dedicated to verification and enforcement.',
+        zh: '支持加强资质核查和移民执法，要求将合理收费投入反欺诈。',
+        en: 'Supports stronger credential checks and immigration enforcement, with reasonable fees directed to anti-fraud work.',
       },
       postedDate: '2026-09-04T04:00:00Z',
       textSha256:
@@ -1755,11 +1755,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1892',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud'],
       summary: {
-        zh: '指控签证滥用及招聘歧视，未表达收费立场。',
-        en: 'Alleges visa abuse and hiring discrimination without a fee position.',
+        zh: '指责签证用工排挤美国就业并推高住房成本，要求制止。',
+        en: 'Alleges visa hiring displaces American jobs and raises housing costs, and demands it stop.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1767,11 +1767,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-2268',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs'],
       summary: {
-        zh: '批评企业外包及替代美国员工，未表达收费立场。',
-        en: 'Criticizes offshoring and displacement without a fee position.',
+        zh: '批评 H-1B 和低成本外包取代美国本土员工。',
+        en: 'Criticizes H-1B and low-cost offshoring for replacing U.S.-based staff.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1815,7 +1815,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-0502',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['jobs', 'restriction', 'tailored', 'students'],
       summary: {
         zh: '要求十五万至五十万美元分级费及更多工作限制。',
@@ -1839,11 +1839,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-1311',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs'],
       summary: {
-        zh: '认为无需引进外劳，未表达收费立场。',
-        en: 'Says foreign recruitment is unnecessary without a fee position.',
+        zh: '认为美国已有足够劳动力，不应继续引入外籍工人。',
+        en: 'Argues the United States has enough workers and should not import foreign labor.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -1863,11 +1863,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6852',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '认为提案不足并要求终结项目，未明确认可收费。',
-        en: 'Finds the proposal insufficient and seeks program abolition without endorsing the fee.',
+        zh: '认为提案力度不足，要求立即取消 H-1B、H-4 EAD、OPT 等项目。',
+        en: 'Says the proposal is not restrictive enough and demands immediate termination of H-1B, H-4 EAD, OPT and related programs.',
       },
       postedDate: '2026-09-09T04:00:00Z',
       textSha256:
@@ -1911,11 +1911,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-5951',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['jobs'],
       summary: {
-        zh: '主张灵活签证规则并关注外包，未明确评价收费。',
-        en: 'Favors flexible visa rules and flags offshoring without evaluating the fee.',
+        zh: '主张对高技能 H-1B 工作者保持灵活规则，认为主要问题是岗位外包。',
+        en: 'Favors flexible H-1B rules for skilled workers and identifies offshoring as the main problem.',
       },
       postedDate: '2026-09-03T04:00:00Z',
       textSha256:
@@ -2067,11 +2067,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-6020',
-      stance: 'mixed',
+      stance: 'unclear',
       themes: ['legal', 'tailored'],
       summary: {
-        zh: '提出让 EB-5 投资移民也分担费用。',
-        en: 'Suggests including EB-5 investors among fee payers.',
+        zh: '询问为何不向 EB-5 投资移民分摊费用，未表明收紧或放宽方向。',
+        en: 'Asks why EB-5 investors are not included in cost sharing without expressing a clear direction on restrictions.',
       },
       postedDate: '2026-09-03T04:00:00Z',
       textSha256:
@@ -2115,7 +2115,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-2377',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['restriction', 'jobs', 'fraud'],
       summary: {
         zh: '要求更高且年度重复收费以限制滥用。',
@@ -2163,11 +2163,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-2329',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['jobs', 'restriction', 'legal'],
       summary: {
-        zh: '要求大幅涨费及汇款征税，未明确评价拟议金额。',
-        en: 'Seeks steep fees and remittance taxes without evaluating the proposed amount.',
+        zh: '要求大幅提高 H-1B 申请费，并增加持有人的税负及汇款限制。',
+        en: 'Demands sharply higher H-1B fees, heavier taxes on visa holders and restrictions on remittances.',
       },
       postedDate: '2026-08-26T04:00:00Z',
       textSha256:
@@ -2271,7 +2271,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-3770',
-      stance: 'mixed',
+      stance: 'support',
       themes: ['tailored', 'restriction', 'jobs', 'students'],
       summary: {
         zh: '要求按市场工资两倍浮动收费并扩大适用范围。',
@@ -2379,11 +2379,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-3199',
-      stance: 'oppose',
+      stance: 'support',
       themes: ['jobs', 'fraud', 'restriction'],
       summary: {
-        zh: '认为收费无效，要求取消工作签证。',
-        en: 'Rejects the fee as ineffective and calls for ending work visas.',
+        zh: '认为收费无效，要求取消工作签证并优先保障美国毕业生就业。',
+        en: 'Calls fees ineffective and demands canceling work visas and prioritizing American graduates.',
       },
       postedDate: '2026-08-27T04:00:00Z',
       textSha256:
@@ -2467,11 +2467,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-2991',
-      stance: 'unclear',
+      stance: 'oppose',
       themes: ['jobs', 'students'],
       summary: {
-        zh: '呼吁按能力平等招聘，未明确评价收费。',
-        en: 'Calls for equal merit-based hiring without evaluating the fee.',
+        zh: '维护 H-1B 工作者的贡献，主张不按国籍或担保身份限制平等就业。',
+        en: 'Defends H-1B workers’ contributions and equal employment opportunities regardless of nationality or sponsorship.',
       },
       postedDate: '2026-08-27T04:00:00Z',
       textSha256:
@@ -2491,11 +2491,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0298-8312',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['fraud'],
       summary: {
-        zh: '指控虚假学历和项目滥用，未表明收费立场。',
-        en: 'Alleges false credentials and program abuse without a fee position.',
+        zh: '指责 H-1B 被假学历和欺诈滥用，要求制止。',
+        en: 'Alleges H-1B abuse through fake credentials and fraud and demands it stop.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -2549,4 +2549,6 @@ export default {
   commentPhase: 'open',
   commentDeadline: '2026-09-24',
   sampleSize: 200,
+  classificationBasis: 'policy-direction-v1',
+  classificationReviewedAt: '2026-09-12T21:47:24.689Z',
 } satisfies CommentSample;

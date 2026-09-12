@@ -307,11 +307,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0473',
-      stance: 'unclear',
+      stance: 'support',
       themes: ['domestic', 'enforcement'],
       summary: {
-        zh: '质疑政策效果和时机，未清楚表明对取消宽限期的立场。',
-        en: 'Questions timing and effectiveness without a clear stance on grace-period removal.',
+        zh: '批评提案时机与效果，要求进一步收紧工资及签证转换漏洞；方向上支持收紧。',
+        en: 'Criticizes the proposal’s timing and effectiveness and seeks stronger wage and visa-switch restrictions; directionally supports tightening.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -355,7 +355,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0289',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['family', 'transition', 'talent', 'alternatives'],
       summary: {
         zh: '请求加强长期工作者家庭的过渡保护。',
@@ -666,7 +666,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0466',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['family', 'finances', 'transition', 'alternatives'],
       summary: {
         zh: '请求保留过渡空间，若60天过长可缩短而非取消。',
@@ -1118,7 +1118,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0079',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['legal', 'alternatives', 'family', 'finances', 'talent'],
       summary: {
         zh: '要求考虑信赖利益并提供过渡或祖父条款。',
@@ -1198,7 +1198,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0174',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['alternatives', 'legal', 'transition'],
       summary: {
         zh: '反对降至零天，建议至少保留30天。',
@@ -1270,7 +1270,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0384',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['alternatives', 'family', 'finances'],
       summary: {
         zh: '主张明确、一致的通知期限，担忧立即离境影响家庭。',
@@ -1294,7 +1294,7 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0269',
-      stance: 'mixed',
+      stance: 'oppose',
       themes: ['alternatives', 'transition', 'finances', 'family'],
       summary: {
         zh: '要求至少30天处理租约、资产和家庭搬迁。',
@@ -2561,11 +2561,11 @@ export default {
     },
     {
       id: 'USCIS-2026-0364-0091',
-      stance: 'unclear',
+      stance: 'support',
       themes: [],
       summary: {
-        zh: '仅泛泛赞扬工作，未明确说明对取消提案的立场。',
-        en: 'Offers generic praise without identifying a position on repeal.',
+        zh: '在本提案评论语境中赞扬工作并要求继续，表达方向性支持。',
+        en: 'Praises the work and urges continuation in this proposal’s comment context, expressing directional support.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
@@ -2639,4 +2639,6 @@ export default {
   commentPhase: 'open',
   commentDeadline: '2026-11-10',
   sampleSize: 200,
+  classificationBasis: 'policy-direction-v1',
+  classificationReviewedAt: '2026-09-12T21:47:24.689Z',
 } satisfies CommentSample;

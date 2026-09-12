@@ -26,6 +26,28 @@ const chineseUpdates: ContentUpdate[] = [
   "date": "2026-09-12",
   "changes": [
 {
+  "id": "comment-direction-review",
+  "category": "公众评论",
+  "title": "四项政策的评论统计改按政策方向归类",
+  "summary": "复核同一批 800 条样本，支持或反对按相关政策收紧方向判断，不再要求明确评价提案具体条款；123 条分类调整。",
+  "before": "按具体提案立场统计（反对／支持／条件或混合／不明确）：H-1B 110／49／11／30；宽限期 150／30／12／8；工资门槛 120／35／18／27；I-765 152／1／1／46。",
+  "after": "按政策方向统计（反对收紧／支持收紧／条件或混合／不明确）：H-1B 110／83／1／6；宽限期 156／32／6／6；工资门槛 119／67／2／12；I-765 195／1／0／4。",
+  "details": [
+    "要求进一步收紧、甚至取消相关签证的，归为支持收紧；维护合法工作机会的，归为反对收紧。",
+    "样本编号、随机种子和采样时间保持不变；不可读正文或附件的限制逐条保留。"
+  ],
+  "sources": [
+    {
+      "label": "Regulations.gov · H-1B 用工评论 3552",
+      "href": "https://www.regulations.gov/comment/USCIS-2026-0298-3552"
+    },
+    {
+      "label": "Regulations.gov · I-765 工作许可诉求 4483",
+      "href": "https://www.regulations.gov/comment/USCIS-2026-0067-4483"
+    }
+  ]
+},
+{
   "id": "jmu-cpt-pause",
   "category": "CPT 学校清单",
   "title": "新增 JMU 校方 CPT 暂停通知",
@@ -615,6 +637,28 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-12",
   "changes": [
+{
+  "id": "comment-direction-review",
+  "category": "Public comments",
+  "title": "Comment statistics for four policies now describe policy direction",
+  "summary": "Re-reviewed the same 800 sampled records using the direction of related restrictions, without requiring explicit views on exact proposal provisions; 123 classifications changed.",
+  "before": "Proposal-specific counts (oppose / support / conditional or mixed / unclear): H-1B 110/49/11/30; grace period 150/30/12/8; wages 120/35/18/27; I-765 152/1/1/46.",
+  "after": "Directional counts (oppose tightening / support tightening / conditional or mixed / unclear): H-1B 110/83/1/6; grace period 156/32/6/6; wages 119/67/2/12; I-765 195/1/0/4.",
+  "details": [
+    "Calls for tighter restrictions or visa abolition count as support for tightening; defending lawful work access counts as opposition.",
+    "Sample IDs, random seeds and sampling timestamps are unchanged; unreadable-body and attachment limitations remain disclosed per record."
+  ],
+  "sources": [
+    {
+      "label": "Regulations.gov · H-1B hiring comment 3552",
+      "href": "https://www.regulations.gov/comment/USCIS-2026-0298-3552"
+    },
+    {
+      "label": "Regulations.gov · I-765 work-access comment 4483",
+      "href": "https://www.regulations.gov/comment/USCIS-2026-0067-4483"
+    }
+  ]
+},
 {
   "id": "jmu-cpt-pause",
   "category": "CPT school list",

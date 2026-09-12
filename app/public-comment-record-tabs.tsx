@@ -1,24 +1,11 @@
 'use client';
 
+import { stanceLabels } from './public-comment-classification';
+
 import { Tabs } from '@base-ui/react/tabs';
 import type { Language } from './language';
 import type { CommentSample } from './public-comment-types';
 import { groupCommentRecords } from './public-comment-model';
-
-const stanceLabels = {
-  zh: {
-    oppose: '反对提案',
-    support: '支持提案',
-    mixed: '有条件支持／混合立场',
-    unclear: '未明确表态／无法判断',
-  },
-  en: {
-    oppose: 'Oppose',
-    support: 'Support',
-    mixed: 'Conditional / mixed',
-    unclear: 'Unclear / unclassifiable',
-  },
-};
 
 export function PublicCommentRecordTabs({
   comments,
