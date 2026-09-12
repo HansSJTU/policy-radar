@@ -23,6 +23,43 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-12",
+  "changes": [
+{
+  "id": "jmu-cpt-pause",
+  "category": "CPT 学校清单",
+  "title": "新增 JMU 校方 CPT 暂停通知",
+  "summary": "JMU 暂缓新申请及待审 CPT 决定，等待校内课程与流程审查。",
+  "before": "38 条证据记录：33 条校方公开来源、5 条社区记录，覆盖 37 所院校／独立校区。",
+  "after": "39 条证据记录：34 条校方公开来源、5 条社区记录，覆盖 38 所院校／独立校区。",
+  "details": [
+    "页头日期 9·10，CPT 栏标题为 2026 年 8 月；不能据此断言暂停于 9·10 开始。",
+    "通知未说明既有授权如何处理，也未给出恢复日期。"
+  ],
+  "sources": [
+    {
+      "label": "JMU · Immigration Announcements",
+      "href": "https://www.jmu.edu/global/isss/announcements.shtml"
+    }
+  ]
+},
+    {
+      "id": "grace-nprm-published",
+      "category": "规则制定",
+      "title": "取消 60 天宽限期提案正式刊登",
+      "summary": "9·11 NPRM 正式发布，评论截止为 11·10 美东午夜前；仍未生效。",
+      "before": "9·10 预览稿公开，预定 9·11 刊登；评论截止日期待正式版确认。",
+      "after": "9·11 正式刊登于 91 FR 57807，公众评论期至 2026-11-10；现行宽限期未变。",
+      "sources": [
+        {
+          "label": "Federal Register · 91 FR 57807",
+          "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-10",
   "changes": [
 {
@@ -575,6 +612,43 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-12",
+  "changes": [
+{
+  "id": "jmu-cpt-pause",
+  "category": "CPT school list",
+  "title": "Add JMU public CPT pause notice",
+  "summary": "JMU pauses decisions on new and pending CPT requests while reviewing programs and processes.",
+  "before": "38 evidence entries: 33 public university sources and 5 community reports; 37 institutions or separate campuses.",
+  "after": "39 evidence entries: 34 public university sources and 5 community reports; 38 institutions or separate campuses.",
+  "details": [
+    "The page date is September 10, but the CPT section is headed August 2026; this does not establish a September 10 start to the pause.",
+    "The notice does not specify treatment of existing authorizations or a resumption date."
+  ],
+  "sources": [
+    {
+      "label": "JMU · Immigration Announcements",
+      "href": "https://www.jmu.edu/global/isss/announcements.shtml"
+    }
+  ]
+},
+    {
+      "id": "grace-nprm-published",
+      "category": "Rulemaking",
+      "title": "60-day grace-period NPRM formally published",
+      "summary": "The September 11 NPRM sets comments due November 10 before midnight ET; it is not in effect.",
+      "before": "September 10 preview, with publication scheduled September 11 and exact comment deadline unconfirmed.",
+      "after": "Published September 11 at 91 FR 57807; comments due November 10, 2026. The current grace period remains unchanged.",
+      "sources": [
+        {
+          "label": "Federal Register · 91 FR 57807",
+          "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-10",
   "changes": [

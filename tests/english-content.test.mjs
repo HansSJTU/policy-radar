@@ -22,7 +22,7 @@ function collectStrings(value) {
 
 test('the English policy and school datasets contain no Chinese copy', () => {
   assert.equal(Object.keys(englishPolicies).length, 10);
-  assert.equal(Object.keys(englishVerifiedSchools).length, 33);
+  assert.equal(Object.keys(englishVerifiedSchools).length, 34);
   assert.equal(Object.keys(englishCommunitySchools).length, 5);
   assert.equal(Object.keys(englishRouteStages).length, 4);
 
@@ -44,7 +44,7 @@ test('every English policy supplies a translated source label for each source', 
     'cpt-guidance': 3,
     'prevailing-wage': 3,
     'h1b-reform': 3,
-    'grace-period': 4,
+    'grace-period': 5,
     'ead-discretion': 3,
     'h4-ead': 2,
   };

@@ -65,7 +65,7 @@ const routeStages = [
       { rank: '04', id: 'h1b-weighted-selection', title: 'H-1B 工资加权抽签', state: '最终规则已生效' },
       { rank: '06', id: 'prevailing-wage', title: 'H-1B / PERM 工资等级', state: '评论期已结束' },
       { rank: '07', id: 'h1b-reform', title: 'H-1B 分类改革', state: 'OMB 审查' },
-      { rank: '08', id: 'grace-period', title: '取消 60 天宽限期', state: '提案预览已公开，未生效' },
+      { rank: '08', id: 'grace-period', title: '取消 60 天宽限期', state: '提案已发布，评论期内，未生效' },
       { rank: '10', id: 'h4-ead', title: 'H-4 EAD', state: '长期议程' },
     ],
   },

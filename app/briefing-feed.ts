@@ -12,8 +12,9 @@ export type BriefingItem = {
 import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
+{"id": "grace-comment-deadline", "date": "2026-11-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "公众评论截止：美东当日午夜前，案卷 USCIS-2026-0364；这不是生效日。", "timing": "upcoming", "confirmed": true},
 {"id": "grace-preview", "date": "2026-09-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 预览稿公开，涵盖八类工作身份及其家属；现行规则未变。", "timing": "recent", "confirmed": true},
-{"id": "grace-publication", "date": "2026-09-11", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 预览稿注明预定正式刊登日；评论期为刊登后 60 天，具体截止日待正式版确认。", "timing": "upcoming", "confirmed": true},
+{"id": "grace-publication", "date": "2026-09-11", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 正式刊登，公众评论截止为 11 月 10 日美东午夜前；尚未生效。", "timing": "recent", "confirmed": true},
   {
     id: 'duration-hearing-under-advisement',
     date: '2026-09-03',
@@ -149,8 +150,9 @@ const briefingItems: BriefingItem[] = [
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
   'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'The court held the injunction hearing, heard arguments, and took the matter under advisement. The judge did not rule from the bench, so the request has been neither granted nor denied.' },
   'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
+  'grace-comment-deadline': { policy: 'End of 60-day grace period', summary: 'Public comments due before midnight ET; docket USCIS-2026-0364. This is not an effective date.' },
   'grace-preview': { policy: 'End of 60-day grace period', summary: 'The NPRM preview is public, covering eight worker classifications and their dependents. The current rule is unchanged.' },
-  'grace-publication': { policy: 'End of 60-day grace period', summary: 'Scheduled publication date shown in the NPRM preview. Comments are due 60 days after publication; confirm the exact deadline in the published version.' },
+  'grace-publication': { policy: 'End of 60-day grace period', summary: 'The NPRM was published. Public comments are due November 10 before midnight ET; it is not in effect.' },
   'grace-oira-cleared': { policy: 'End of 60-day grace period', summary: 'OIRA cleared the proposal with changes. DHS may publish an NPRM, but the current 60-day grace period has not changed.' },
   'h1b-fee-nprm': { policy: 'H-1B $103,265', summary: 'DHS published the surcharge proposal. It covers all cap-subject petitions and is not currently in effect.' },
   'cpt-integral-guidance': { policy: 'Tighter CPT guidance', summary: 'SEVP’s Q&A further explained elective courses, the all-student requirement, and cooperative agreements; several universities have stopped approving elective-course CPT.' },
