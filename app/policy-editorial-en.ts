@@ -4,7 +4,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
   {
     id: 'opt-fee',
     discovery: {
-      status: 'Under OIRA review',
+      status: 'OIRA review completed',
       identities: ['F-1', 'OPT / STEM OPT'],
       summary:
         'ICE plans an added OPT fee. The media-reported $100,000 amount, payer and exemptions remain unconfirmed; current application fees are unchanged.',
@@ -14,16 +14,16 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     group: 'OPT',
     agency: 'DHS / ICE',
     rin: '1653-AB01',
-    status: 'Under OIRA review',
+    status: 'OIRA review completed',
     effectLabel: 'Not in effect · Amount unconfirmed',
     audience:
       'F-1 students planning OPT or a STEM OPT extension and their employers.',
     caveat:
-      'The payer, covered applications and exemptions are unpublished; $100,000 is a media-reported figure.',
+      'The payer, covered applications and exemptions are unpublished; $100,000 is media-reported and student payment cannot be assumed.',
     summary:
-      'ICE plans a new fee for F-1 Optional Practical Training. Media reports put the possible amount at $100,000, but the official fee schedule, payer, covered applications and exemptions have not been published.',
+      'September 11 development (checked September 12): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
     background:
-      'ICE submitted Optional Practical Training Fees to OIRA on August 20, 2026 as an economically significant rule; the review record does not include public fee provisions.',
+      'ICE submitted Optional Practical Training Fees on August 20, 2026; the September 11 OIRA conclusion is Consistent with Change. Completed prepublication review is not a final rule or an effective fee. No public NPRM was located; payment responsibility awaits official provisions.',
     effectState: 'not-in-effect',
     note: 'The $100,000 figure comes from media reports',
     deck: 'How would this change the first job after graduation and the path to staying in the U.S.?',
@@ -67,7 +67,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
       [
         'Delayed or abandoned',
         'Near-term cost pressure eases, but uncertainty still affects planning',
-        'Review takes longer, the rule is withdrawn, or the proposal never reaches final implementation.',
+        'Later rulemaking takes longer, the rule is withdrawn, or the proposal never reaches final implementation.',
         'Without a new effective rule, applicants would not yet bear this added cost. Continued uncertainty could still influence school choices and future hiring budgets.',
         'An OIRA withdrawal record or later announcement changes the plan; publication delay alone is not enough to conclude that it has been abandoned.',
       ],

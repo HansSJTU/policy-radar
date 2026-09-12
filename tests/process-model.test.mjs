@@ -109,7 +109,7 @@ test('published grace-period NPRM opens comments without final effectiveness', (
 });
 
 test('an ongoing review is distinct from a completed review and a future proposal', () => {
-  const track = getProcessTrack('opt-fee');
+  const track = getProcessTrack('h1b-reform');
   assert.equal(getProcessStageState(track, 0), 'complete');
   assert.equal(getProcessStageState(track, 1), 'active');
   assert.equal(getProcessStageState(track, 2), 'upcoming');
@@ -134,5 +134,23 @@ test('all tracks keep completed, active and future stages disjoint and languages
       assert.ok(zh.waitingFor && en.waitingFor);
     }
     assert.equal('currentStage' in zh, false);
+  }
+});
+
+test('OPT completed review does not imply a published or effective rule', () => {
+  for (const language of ['zh', 'en']) {
+    const track = getProcessTrack('opt-fee', language);
+    assert.equal(track.lastCompletedStage, 1);
+    assert.equal(track.activeStage, null);
+    assert.equal(getProcessStageState(track, 2), 'upcoming');
+    assert.match(track.detail, /缴费方未公布|payer are unpublished/);
+  }
+});
+
+test('OPT homepage labels publication as pending after review completion', async () => {
+  const { getHomeProcessTrack } = await import('../app/policy-home-model.ts');
+  for (const language of ['zh', 'en']) {
+    const track = getHomeProcessTrack('opt-fee', language);
+    assert.match(track.stages[track.currentStage], /等待|Awaiting/);
   }
 });

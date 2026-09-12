@@ -12,6 +12,7 @@ export type BriefingItem = {
 import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
+{"id": "opt-fee-oira-completed", "date": "2026-09-11", "policyId": "opt-fee", "rank": 1, "policy": "OPT 收费", "summary": "OIRA 带修改完成审查；金额与缴费方尚未公布，尚未生效。", "timing": "recent", "confirmed": true},
 {"id": "grace-comment-deadline", "date": "2026-11-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "公众评论截止：美东当日午夜前，案卷 USCIS-2026-0364；这不是生效日。", "timing": "upcoming", "confirmed": true},
 {"id": "grace-preview", "date": "2026-09-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 预览稿公开，涵盖八类工作身份及其家属；现行规则未变。", "timing": "recent", "confirmed": true},
 {"id": "grace-publication", "date": "2026-09-11", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 正式刊登，公众评论截止为 11 月 10 日美东午夜前；尚未生效。", "timing": "recent", "confirmed": true},
@@ -157,6 +158,7 @@ const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> 
   'h1b-fee-nprm': { policy: 'H-1B $103,265', summary: 'DHS published the surcharge proposal. It covers all cap-subject petitions and is not currently in effect.' },
   'cpt-integral-guidance': { policy: 'Tighter CPT guidance', summary: 'SEVP’s Q&A further explained elective courses, the all-student requirement, and cooperative agreements; several universities have stopped approving elective-course CPT.' },
   'h1b-reform-oira': { policy: 'H-1B classification reform', summary: 'The proposed rule entered OIRA review and may tighten third-party placement and cap-exempt eligibility.' },
+  'opt-fee-oira-completed': { policy: 'OPT fee', summary: 'OIRA completed review with changes. The amount and payer remain unpublished; it is not in effect.' },
   'opt-fee-oira': { policy: 'OPT $100k', summary: 'The “OPT Fees” rule entered OIRA review. Neither the proposal nor the reported $100,000 amount is public.' },
   'duration-lawsuit': { policy: 'Fixed F/J admission period', summary: 'A university coalition sued and requested a preliminary injunction to stop the rule from taking effect on September 15.' },
   'cpt-risk-notice': { policy: 'Tighter CPT guidance', summary: 'SEVP already required CPT to be indispensable to the degree and required for every student, alongside school and DSO compliance duties; several universities then paused optional CPT.' },

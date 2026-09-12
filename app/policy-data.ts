@@ -25,13 +25,13 @@ export const policies: Array<{
     rank: 1,
     id: 'opt-fee',
     title: 'OPT 可能增收 $100,000',
-    tldr: 'F-1 学生申请 OPT 时可能需要缴纳 10 万美元；这一金额来自媒体报道，官方尚未公布规则正文、具体收费标准、缴费方或减免条件。',
+    tldr: 'ICE 拟新增 OPT 收费；媒体报道金额可能为 10 万美元，但官方未公布收费标准、缴费方、适用申请或减免条件，不能认定由学生承担。',
     score: '10.0',
     confidence: 20,
-    status: 'OMB 审查中 · 金额未获官方确认',
+    status: 'OIRA 审查已完成 · 金额及缴费方未确认',
     tone: 'blue',
     current:
-      'ICE 的拟议规则于 2026-08-20 送交 OMB/OIRA。标题为 Optional Practical Training Fees，属于经济重大规则；截至本报告日期，规则正文和收费数字尚未公开，现行 OPT 申请费未变。',
+      'ICE 于 2026-08-20 送审的 Optional Practical Training Fees（RIN 1653-AB01）已于 9 月 11 日完成 OIRA 审查，结论为 Consistent with Change（带修改完成审查）。这只是拟议规则的发布前审查；尚未找到公开 NPRM，金额、缴费方、适用申请与豁免未公布，不能认定由学生、雇主或学校承担。尚未生效，现行 OPT 申请费未因本提案改变。',
     route: ['OPT', 'H-1B 转换'],
     milestones: [
       { date: '2026-08-20', text: 'RIN 1653-AB01 送交 OMB/OIRA 审查。' },
@@ -39,15 +39,16 @@ export const policies: Array<{
         date: '2026-08-26',
         text: '高校提醒：$100k 来自媒体报道，不是已公布政府文本。',
       },
+      { date: '2026-09-11', text: 'OIRA 带修改完成审查；不等于 NPRM 已发布或收费已生效。' },
     ],
     next: [
       {
         date: '下一步',
-        text: 'OIRA 审查结束后，才可能在 Federal Register 发布 NPRM。',
+        text: '等待 Federal Register 公开 NPRM，确认金额、缴费方、适用范围及评论期限。',
       },
       {
-        date: '数周—数月',
-        text: '可能公开提案文本；最终规则更可能在 2026 年末或 2027 年以后。',
+        date: '日期未定',
+        text: 'NPRM 刊登、最终规则及生效时间均未确认。',
         estimate: true,
       },
     ],
@@ -58,8 +59,8 @@ export const policies: Array<{
     ],
     sources: [
       {
-        label: 'OIRA 审查记录',
-        href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1505717',
+        label: 'OIRA 9·11 结案记录',
+        href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1506461',
       },
       {
         label: 'UIC 状态说明',
