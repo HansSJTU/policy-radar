@@ -240,6 +240,13 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 <p>
                   <GlossaryText text={p.background} />
                 </p>
+                {record.commentUrl && (
+                  <p>
+                    <a href={record.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+                      {english ? 'Submit a public comment on Regulations.gov ↗' : '前往 Regulations.gov 提交公众评论 ↗'}
+                    </a>
+                  </p>
+                )}
               </section>
               <section id="impact" className="pd-section">
                 <div className="pd-section-heading">

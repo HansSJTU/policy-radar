@@ -12,6 +12,7 @@ export const policies: Array<{
   score: string;
   confidence: number;
   status: string;
+  commentUrl?: string;
   tone: Tone;
   current: string;
   route: string[];
@@ -73,6 +74,7 @@ export const policies: Array<{
   {
     rank: 2,
     id: 'h1b-fee',
+    commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0298-0001',
     title: '新的 H-1B $103,265 附加费',
     tldr: 'DHS 提议在现有费用之外，对每份 cap-subject H-1B 申请加收 103,265 美元；该费用适用于美国硕士名额和 F-1 境内转身份申请，cap-exempt 申请不在收费范围内。',
     score: '9.9',

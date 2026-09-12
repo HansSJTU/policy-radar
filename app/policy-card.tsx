@@ -98,7 +98,12 @@ export function PolicyCard({
           </div>
           <h3><a href={policyHref(policy.id, language, undefined, selectedPath)}>{editorial.title}</a></h3>
           <div className="policy-status"><span className={`status-chip ${policy.tone}`}>{editorial.status}</span></div>
-          <p><GlossaryText text={policy.tldr} /></p>
+          <p>
+            <GlossaryText text={policy.tldr} />
+            {policy.commentUrl && (
+              <> <a href={policy.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>{language === 'en' ? 'Submit a public comment ↗' : '提交公众评论 ↗'}</a></>
+            )}
+          </p>
         </div>
         {communityRating}
       </header>
