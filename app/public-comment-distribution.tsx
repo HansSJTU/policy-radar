@@ -75,13 +75,6 @@ export function PublicCommentDistribution({
           ? `Published comments: ${sample.publishedCount.toLocaleString('en-US')} · ${ready ? `Sampled ${sampledAt}` : `Checked ${sample.checkedOn} ET`}`
           : `已公开评论 ${sample.publishedCount.toLocaleString('en-US')} 条 · ${ready ? `采样于 ${sampledAt}` : `核对于 ${sample.checkedOn} ET`}`}
       </p>
-      {sample.expandedAt && (
-        <p className="pd-comment-meta">
-          {en
-            ? `Expanded to ${sampleSize} records on ${new Date(sample.expandedAt).toISOString().slice(0, 10)} using the original frame and seed; the initial 50 records are retained.`
-            : `于 ${new Date(sample.expandedAt).toISOString().slice(0, 10)} 沿用原评论列表和随机种子扩展至 ${sampleSize} 条，保留最初 50 条。`}
-        </p>
-      )}
       {sample.commentDeadline && (
         <p className="pd-comment-meta">
           {sample.commentPhase === 'closed'
