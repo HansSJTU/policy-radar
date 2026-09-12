@@ -4,7 +4,6 @@ import assert from 'node:assert/strict';
 import {
   getProcessTrack,
   getProcessStageState,
-  getProcessStageLabel,
 } from '../app/process-model.ts';
 
 test('all federal rulemaking policies share one process bar', () => {
@@ -96,19 +95,16 @@ test('administrative guidance has its own process and color family', () => {
   assert.notDeepEqual(track.stages, getProcessTrack('opt-fee').stages);
 });
 
-test('public inspection does not mark formal Federal Register publication as completed', () => {
+test('published grace-period NPRM opens comments without final effectiveness', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('grace-period', language);
-    assert.equal(track.lastCompletedStage, 1);
-    assert.equal(track.activeStage, null);
-    assert.equal(track.nextStage, 2);
-    assert.equal(getProcessStageState(track, 1), 'complete');
-    assert.equal(getProcessStageState(track, 2), 'upcoming');
-    assert.match(track.waitingFor, /NPRM/);
-    assert.match(
-      getProcessStageLabel(track, 2, language),
-      /尚未发生|Not yet reached/,
-    );
+    assert.equal(track.lastCompletedStage, 2);
+    assert.equal(track.activeStage, 3);
+    assert.equal(track.nextStage, 4);
+    assert.equal(getProcessStageState(track, 2), 'complete');
+    assert.equal(getProcessStageState(track, 3), 'active');
+    assert.equal(getProcessStageState(track, 4), 'upcoming');
+    assert.match(track.waitingFor, /11 月 10 日|November 10/);
   }
 });
 

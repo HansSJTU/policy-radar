@@ -70,15 +70,15 @@ test('restored homepage cards retain ratings, full progress and timeline with co
   }
 });
 
-test('the grace-period diagram renders NPRM as future and OIRA as completed in either language', () => {
+test('the grace-period diagram renders published NPRM and active comments in either language', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('grace-period', language);
     const html = render(PolicyProgress, { track, language }, language);
     const buttons = html.match(/<button\b[^>]*>[\s\S]*?<\/button>/g);
     assert.match(buttons[1], /class="complete"/);
-    assert.match(buttons[2], /class="upcoming"/);
-    assert.match(buttons[2], /尚未发生|Not yet reached/);
-    assert.doesNotMatch(html, /aria-current="step"/);
+    assert.match(buttons[2], /class="complete"/);
+    assert.match(buttons[2], /最近已完成|Last completed/);
+    assert.match(buttons[3], /aria-current="step"/);
     assert.match(html, /Currently waiting for|当前等待/);
   }
 });

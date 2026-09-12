@@ -28,7 +28,6 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
     upcoming.map(({ id, date }) => [id, date]),
     [
       ['duration-injunction-hearing', '2026-09-03'],
-      ['grace-publication', '2026-09-11'],
       ['duration-effective-date', '2026-09-15'],
       ['h1b-fee-comment-deadline', '2026-09-24'],
     ],
@@ -53,4 +52,12 @@ test('briefing date labels follow the same rolling window across a year boundary
   const { getBriefingDateLabels } = await import('../app/briefing-feed.ts');
   assert.deepEqual(getBriefingDateLabels('2026-09-09'), { recent: '08·11—09·09', upcoming: '09·10—10·09' });
   assert.deepEqual(getBriefingDateLabels('2026-12-31'), { recent: '12·02—12·31', upcoming: '01·01—01·30' });
+});
+
+test('published NPRM is recent and the comment deadline enters the correct rolling window', () => {
+  const { recent, upcoming } = getThirtyDayBriefing('2026-09-12');
+  assert.ok(recent.some(({ id }) => id === 'grace-publication'));
+  assert.ok(!upcoming.some(({ id }) => id === 'grace-publication'));
+  assert.ok(!upcoming.some(({ id }) => id === 'grace-comment-deadline'));
+  assert.ok(getThirtyDayBriefing('2026-10-11').upcoming.some(({ id, date }) => id === 'grace-comment-deadline' && date === '2026-11-10'));
 });
