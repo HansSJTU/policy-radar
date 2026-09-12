@@ -149,3 +149,33 @@ test('theme tabs use the selected stance denominator and retain mixed/unclear on
   assert.equal(empty.total, 0);
   assert.deepEqual(empty.themes, []);
 });
+
+test('record groups preserve source order and include every stance without losing record details', async () => {
+  const { groupCommentRecords } =
+    await import('../app/public-comment-model.ts');
+  const comments = ['unclear', 'oppose', 'support', 'mixed', 'oppose'].map(
+    (stance, i) => ({
+      id: String(i),
+      stance,
+      themes: [],
+      summary: `summary ${i}`,
+      sourceNote: 'attachment unavailable',
+    }),
+  );
+  const groups = groupCommentRecords(comments);
+  assert.deepEqual(
+    groups.map((g) => g.id),
+    ['all', 'support', 'oppose', 'mixed', 'unclear'],
+  );
+  assert.deepEqual(groups[0].comments, comments);
+  assert.deepEqual(
+    groups[2].comments.map((c) => c.id),
+    ['1', '4'],
+  );
+  assert.equal(groups[4].comments[0].sourceNote, 'attachment unavailable');
+  assert.equal(
+    groups.slice(1).reduce((n, g) => n + g.comments.length, 0),
+    comments.length,
+  );
+  assert.ok(groupCommentRecords([]).every((g) => g.comments.length === 0));
+});

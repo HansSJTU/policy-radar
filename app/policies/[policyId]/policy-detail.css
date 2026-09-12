@@ -1098,3 +1098,7 @@ fieldset.pd-scenarios {
 .pd-comment-tab span { font-size: 11px; font-variant-numeric: tabular-nums; }
 .pd-comment-tab[aria-selected='true'] { background: var(--pd-surface); color: var(--pd-purple); box-shadow: 0 1px 4px #14274012; font-weight: 600; }
 .pd-comment-tab:focus-visible, .pd-comment-theme-panel:focus-visible { outline: 2px solid var(--pd-purple); outline-offset: 3px; }
+
+.pd-comment-record-tab-list { flex-wrap: wrap; }
+.pd-comment-record-tab-list .pd-comment-tab { flex: 1 0 auto; }
+.pd-comment-record-panel:focus-visible { outline: 2px solid var(--pd-purple); outline-offset: 3px; }

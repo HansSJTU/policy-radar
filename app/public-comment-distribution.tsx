@@ -1,3 +1,4 @@
+import { PublicCommentRecordTabs } from './public-comment-record-tabs';
 import { PublicCommentThemeTabs } from './public-comment-theme-tabs';
 import type { Language } from './language';
 import { publicCommentSamples } from './public-comment-data';
@@ -165,38 +166,13 @@ export function PublicCommentDistribution({
                 </div>
               ))}
             </dl>
-            <ol>
-              {sample.comments.map((comment) => (
-                <li key={comment.id}>
-                  <a
-                    href={`https://www.regulations.gov/comment/${comment.id}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {comment.id} ↗
-                  </a>
-                  <span>
-                    {stanceLabels[language][comment.stance]} ·{' '}
-                    {comment.summary[language]}
-                  </span>
-                  {comment.themes.length > 0 && (
-                    <small>
-                      {comment.themes
-                        .map(
-                          (id) =>
-                            sample.themes.find((theme) => theme.id === id)?.[
-                              language
-                            ] ?? id,
-                        )
-                        .join(' · ')}
-                    </small>
-                  )}
-                  {comment.sourceNote && (
-                    <small>{comment.sourceNote[language]}</small>
-                  )}
-                </li>
-              ))}
-            </ol>
+            <PublicCommentRecordTabs
+              comments={sample.comments}
+              language={language}
+              themeLabels={Object.fromEntries(
+                sample.themes.map((theme) => [theme.id, theme[language]]),
+              )}
+            />
           </details>
           <p className="pd-comment-note">
             {en

@@ -48,3 +48,17 @@ export function summarizeThemeGroups(comments: readonly ClassifiedComment[]) {
     return { id, total, themes };
   });
 }
+
+export function groupCommentRecords<T extends ClassifiedComment>(
+  comments: readonly T[],
+) {
+  return (['all', 'support', 'oppose', 'mixed', 'unclear'] as const).map(
+    (id) => ({
+      id,
+      comments:
+        id === 'all'
+          ? comments
+          : comments.filter((comment) => comment.stance === id),
+    }),
+  );
+}
