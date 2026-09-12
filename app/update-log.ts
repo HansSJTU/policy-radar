@@ -26,6 +26,20 @@ const chineseUpdates: ContentUpdate[] = [
   "date": "2026-09-12",
   "changes": [
 {
+  "id": "opt-oira-completed",
+  "category": "规则制定",
+  "title": "OPT 收费提案 9·11 完成 OIRA 审查",
+  "summary": "结论为 Consistent with Change；不代表 NPRM 已发布、10 万美元已确认或收费生效。",
+  "before": "网站显示 OIRA 审查中，沿用旧在审记录。",
+  "after": "改为 9·11 带修改完成审查；金额、缴费方、适用范围与豁免仍待公开条款确认，不能认定由学生承担。",
+  "sources": [
+    {
+      "label": "OIRA · RIN 1653-AB01",
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1506461"
+    }
+  ]
+},
+{
   "id": "comment-direction-review",
   "category": "公众评论",
   "title": "四项政策的评论统计改按政策方向归类",
@@ -637,6 +651,20 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-12",
   "changes": [
+{
+  "id": "opt-oira-completed",
+  "category": "Rulemaking",
+  "title": "OPT fee proposal completed OIRA review September 11",
+  "summary": "The conclusion is Consistent with Change, not NPRM publication, confirmation of $100,000 or an effective fee.",
+  "before": "The site showed pending OIRA review using the older review record.",
+  "after": "Review completed with changes September 11; the amount, payer, coverage and exemptions await public provisions. Student payment cannot be assumed.",
+  "sources": [
+    {
+      "label": "OIRA · RIN 1653-AB01",
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1506461"
+    }
+  ]
+},
 {
   "id": "comment-direction-review",
   "category": "Public comments",

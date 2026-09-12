@@ -13,24 +13,25 @@ export type EnglishPolicy = {
 export const englishPolicies: Record<string, EnglishPolicy> = {
   'opt-fee': {
     title: 'OPT May Carry a $100,000 Fee',
-    tldr: 'F-1 students may be required to pay $100,000 when applying for OPT. The amount comes from media reporting; the government has not released the proposed rule, the actual fee, who would pay it, or any exemptions.',
-    status: 'Under OMB review · Amount not officially confirmed',
-    current: 'ICE submitted its proposed Optional Practical Training Fees rule to OMB/OIRA on August 20, 2026. It is classified as an economically significant rule. As of this report, neither the rule text nor a fee amount is public, and the current OPT filing fee has not changed.',
+    tldr: 'ICE proposes a new OPT fee. Media reports suggest $100,000, but the official amount, payer, covered applications and exemptions remain unpublished; student payment cannot be assumed.',
+    status: 'OIRA review completed · Amount and payer unconfirmed',
+    current: 'OIRA completed review of Optional Practical Training Fees (RIN 1653-AB01) on September 11, after its August 20 submission, with the conclusion Consistent with Change. This is prepublication review of a proposed rule. No public NPRM was located; the amount, payer, covered applications and exemptions remain unpublished. Student, employer or school payment cannot be assumed. It is not in effect and has not changed current OPT filing fees.',
     route: ['OPT', 'H-1B transition'],
     milestones: [
       { date: '2026-08-20', text: 'RIN 1653-AB01 was submitted to OMB/OIRA for review.' },
       { date: '2026-08-26', text: 'Universities cautioned that the $100,000 figure came from media reporting, not a published government document.' },
+      { date: '2026-09-11', text: 'OIRA completed review with changes; this does not mean an NPRM was published or a fee took effect.' },
     ],
     next: [
-      { date: 'Next step', text: 'An NPRM could appear in the Federal Register only after OIRA completes its review.' },
-      { date: 'Weeks to months', text: 'The proposal may become public; a final rule is more likely in late 2026 or 2027 and beyond.', estimate: true },
+      { date: 'Next step', text: 'Await a published NPRM to confirm the amount, payer, coverage and comment deadline.' },
+      { date: 'Date unknown', text: 'NPRM publication, a final rule and any effective date remain unconfirmed.', estimate: true },
     ],
     impacts: [
       'If the rule charges an individual or employer $100,000, the fee would apply at the OPT application stage before an H-1B registration or petition.',
       'Employers could consider the added OPT cost when deciding whether to hire international graduates who have not yet entered the H-1B selection process.',
       'No new fee is currently due. The NPRM will need to identify who pays, which applicants are covered, any exemptions, and the effective date.',
     ],
-    sourceLabels: ['OIRA review record', 'UIC status update', 'USCardForum discussion'],
+    sourceLabels: ['OIRA September 11 conclusion', 'UIC status update', 'USCardForum discussion'],
   },
   'h1b-fee': {
     title: 'New $103,265 H-1B Surcharge',
@@ -287,7 +288,7 @@ export const englishRouteStages: Record<string, { subtitle: string; policies: Re
   'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Final rule · Decision pending after hearing' } } },
   CPT: { subtitle: 'Curricular training', policies: { 'cpt-guidance': { title: 'Aug. 12 / Aug. 24 CPT guidance', state: 'Schools are applying the new standard' } } },
   OPT: { subtitle: 'Post-completion work', policies: {
-    'opt-fee': { title: 'OPT $100k', state: 'Under OIRA review · Not in effect' },
+    'opt-fee': { title: 'OPT $100k', state: 'OIRA review completed · Not in effect' },
     'ead-discretion': { title: 'I-765 criminal-record review', state: 'Comment period closed' },
   } },
   'H-1B': { subtitle: 'Employment visa', policies: {

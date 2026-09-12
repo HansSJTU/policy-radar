@@ -52,7 +52,7 @@ const routeStages = [
     number: '03',
     subtitle: '毕业后工作',
     policies: [
-      { rank: '01', id: 'opt-fee', title: 'OPT $100k', state: 'OIRA 审查中 · 尚未生效' },
+      { rank: '01', id: 'opt-fee', title: 'OPT $100k', state: 'OIRA 审查已完成 · 尚未生效' },
       { rank: '09', id: 'ead-discretion', title: 'I-765 犯罪记录审查', state: '评论期已结束' },
     ],
   },

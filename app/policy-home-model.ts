@@ -5,7 +5,7 @@ import { getProcessTrack } from './process-model.ts';
 // Preserve the HEAD homepage presentation while details use the explicit progress model.
 const homeStatuses: Record<Language, Record<string, string>> = {
   zh: {
-    'opt-fee': 'OIRA 审查中 · 尚未生效',
+    'opt-fee': 'OIRA 审查已完成 · 尚未生效',
     'h1b-fee': '正式提案 · 评论截至 9 月 24 日',
     'duration-status': '最终规则 · 诉讼中',
     'h1b-weighted-selection': '已生效 · FY2027 起使用',
@@ -17,7 +17,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
     'h4-ead': '长期议程 · 尚无提案日期',
   },
   en: {
-    'opt-fee': 'Under OIRA review · Not in effect',
+    'opt-fee': 'OIRA review completed · Not in effect',
     'h1b-fee': 'Formal proposal · Comments due September 24',
     'duration-status': 'Final rule · In litigation',
     'h1b-weighted-selection': 'In effect · Used beginning with FY2027',
@@ -30,7 +30,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
   },
 };
 const homeStages: Record<string, number> = {
-  'opt-fee': 1,
+  'opt-fee': 2,
   'h1b-fee': 3,
   'duration-status': 4,
   'h1b-weighted-selection': 5,
@@ -50,5 +50,11 @@ export function getHomePolicyEditorial(id: string, language: Language) {
 }
 
 export function getHomeProcessTrack(id: string, language: Language) {
-  return { ...getProcessTrack(id, language), currentStage: homeStages[id] };
+  const track = getProcessTrack(id, language);
+  const stages = id === 'opt-fee'
+    ? track.stages.map((stage, index) => index === 2
+      ? (language === 'zh' ? '等待 NPRM 发布' : 'Awaiting NPRM publication')
+      : stage)
+    : track.stages;
+  return { ...track, stages, currentStage: homeStages[id] };
 }

@@ -4,7 +4,7 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
   {
     id: 'opt-fee',
     discovery: {
-      status: 'OIRA 审查中',
+      status: 'OIRA 审查已完成',
       identities: ['F-1', 'OPT / STEM OPT'],
       summary:
         'ICE 拟新增 OPT 收费；10 万美元来自媒体报道，金额、缴费方与减免条件尚未确认，现行申请费未变。',
@@ -14,14 +14,14 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
     group: 'OPT',
     agency: 'DHS / ICE',
     rin: '1653-AB01',
-    status: 'OIRA 审查中',
+    status: 'OIRA 审查已完成',
     effectLabel: '尚未生效 · 金额未确认',
     audience: '计划申请 OPT 或 STEM OPT 延期的 F-1 学生及其雇主。',
-    caveat: '缴费方、适用申请与减免条件均未公开；10 万美元仅为媒体报道。',
+    caveat: '缴费方、适用申请与减免条件均未公开；10 万美元仅为媒体报道，不能认定由学生支付。',
     summary:
-      'ICE 拟为 F-1 学生的 OPT 新增收费；媒体报道金额可能为 10 万美元，但官方尚未公布收费标准、缴费方、适用申请或减免条件。',
+      '9·11 进展（9·12 核对）：OIRA 已带修改完成 OPT 收费提案审查。10 万美元仍为媒体报道，官方未公布金额、缴费方、适用申请及减免条件，不能认定由学生、雇主或学校承担；尚未生效。',
     background:
-      'ICE 于 2026-08-20 将 Optional Practical Training Fees 送交 OIRA，列为经济重大规则；送审记录尚不包含公开的收费条款。',
+      'ICE 于 2026-08-20 将 Optional Practical Training Fees 送交 OIRA；9·11 结案记录为 Consistent with Change。这是发布前审查完成，不是最终规则或收费生效；尚未找到公开 NPRM，具体缴费责任仍待正式条款确认。',
     effectState: 'not-in-effect',
     note: '10 万美元来自媒体报道',
     deck: '这会怎样改变毕业后的第一份工作，以及之后的留美路径？',
@@ -63,7 +63,7 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
       [
         '延后／未推进',
         '短期成本压力缓和，规划仍受政策悬念影响',
-        '审查延长、规则被撤回，或提案未进入最终实施。',
+        '后续规则制定延长、规则被撤回，或提案未进入最终实施。',
         '没有新的生效规则时，申请人暂不承担这项新增成本。持续的不确定性仍可能影响择校与未来招聘预算。',
         'OIRA 撤回记录或后续公告改变计划；单纯迟迟未公布，尚不足以判断已放弃。',
       ],
