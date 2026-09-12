@@ -697,7 +697,645 @@ export default {
       textSha256:
         'e443e1b4eaddc04d7caba9d41cf4ae0266bf35a518aeb1161bf27bd37953ede6',
     },
+    {
+      id: 'USCIS-2026-0298-7134',
+      stance: 'support',
+      themes: ['jobs', 'fraud'],
+      summary: {
+        zh: '支持收费，认为雇主利用签证依赖压低劳动条件，并主张更广泛劳工改革。',
+        en: 'Supports the fee, alleging sponsorship dependency worsens working conditions and seeking broader labor reform.',
+      },
+      postedDate: '2026-09-09T04:00:00Z',
+      textSha256:
+        'de200d5a30fec47ce8bd8f4768e59c5f101c84d19787e9f2b8248aaf0fd0479b',
+    },
+    {
+      id: 'USCIS-2026-0298-5929',
+      stance: 'oppose',
+      themes: ['jobs'],
+      summary: {
+        zh: '认为提案无助就业市场，要求放弃。',
+        en: 'Rejects the proposal as unhelpful to the job market.',
+      },
+      postedDate: '2026-09-03T04:00:00Z',
+      textSha256:
+        'a1cf2a6d05b84369cedc8e933e6794cd15b4b2115a2ec73355990a089361d8a2',
+    },
+    {
+      id: 'USCIS-2026-0298-2449',
+      stance: 'oppose',
+      themes: ['legal'],
+      summary: {
+        zh: '要求撤回提案，质疑条文编号、适用范围、退款程序与跨部门资金监管。',
+        en: 'Seeks withdrawal over drafting ambiguity, coverage, refund procedures and interagency financial controls.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        'b0a55b9f744648def4b916818fb7f3cfb69f016ba35a2476db66e1496d549fb3',
+    },
+    {
+      id: 'USCIS-2026-0298-6044',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '反对实施，担忧增加 H-1B 持有人的不确定性。',
+        en: 'Opposes adoption because of added uncertainty for H-1B holders.',
+      },
+      postedDate: '2026-09-03T04:00:00Z',
+      textSha256:
+        '8c8ceb64641dfa777f7c8235421ea6521f8c8c437593983b8016993796c828ce',
+    },
+    {
+      id: 'USCIS-2026-0298-4220',
+      stance: 'oppose',
+      themes: ['burden', 'legal'],
+      summary: {
+        zh: '不排斥合理涨费，但认为六位数收费缺乏成本依据并阻碍合法移民。',
+        en: 'Accepts reasonable increases but rejects the six-figure charge as unjustified and exclusionary.',
+      },
+      postedDate: '2026-08-31T04:00:00Z',
+      textSha256:
+        '6248c72e908de1abfd1dbd7090915485c6ce290bd10c21f4c7e2504fca73a37e',
+    },
+    {
+      id: 'USCIS-2026-0298-0403',
+      stance: 'mixed',
+      themes: ['jobs', 'fraud', 'restriction', 'legal'],
+      summary: {
+        zh: '认为拟议费用仍太低，要求提高收费并强化本土招聘核查和执法。',
+        en: 'Considers the proposed amount insufficient and seeks a higher fee with stronger domestic recruitment checks and enforcement.',
+      },
+      postedDate: '2026-08-25T04:00:00Z',
+      textSha256:
+        '0c4e8c1e6116db1057ad4d69256e08e7d944109a4f266320723e2e0d0118d815',
+    },
+    {
+      id: 'USCIS-2026-0298-6322',
+      stance: 'support',
+      themes: ['jobs', 'restriction'],
+      summary: {
+        zh: '表达赞同，并主张减少外国劳工、优先本土就业。',
+        en: 'Expresses approval and favors fewer foreign workers and domestic hiring priority.',
+      },
+      postedDate: '2026-09-08T04:00:00Z',
+      textSha256:
+        'db664e7c48d230bda675e4f6d52a65490dba9b8b3581e7b4e781438739dccffa',
+    },
+    {
+      id: 'USCIS-2026-0298-1716',
+      stance: 'unclear',
+      themes: ['jobs', 'fraud', 'restriction'],
+      summary: {
+        zh: '要求限制签证和追究雇主低薪用工，未明确评价本项费用。',
+        en: 'Seeks visa limits and employer accountability for low wages without explicitly evaluating this fee.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        '9e7db436ddc2e42cd309d441f5a74fe266d257415a0c7205e5171081127c4a5b',
+    },
+    {
+      id: 'USCIS-2026-0298-5147',
+      stance: 'oppose',
+      themes: [
+        'burden',
+        'talent',
+        'students',
+        'legal',
+        'tailored',
+        'fraud',
+        'jobs',
+      ],
+      summary: {
+        zh: '要求撤回或大幅降低收费，担忧人才、学生就业和小雇主受损，主张针对性执法。',
+        en: 'Seeks withdrawal or a major reduction, citing talent, student transitions and small employers while favoring targeted enforcement.',
+      },
+      postedDate: '2026-08-31T04:00:00Z',
+      textSha256:
+        '71cabd626c2b6d0ae80549ea7cfd2e01ceef8e737f830b3217c108060ce96a59',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0298-2002',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '正文明确反对六位数附加费，详细理由仅在不可访问附件中。',
+        en: 'The body explicitly opposes the six-figure surcharge; detailed reasoning is in an inaccessible attachment.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        'f23b94b2495bbf2ec7aa6fd8e05fd8a4929cd01b3d8caf49daabc598f087a048',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0298-0857',
+      stance: 'unclear',
+      themes: ['fraud', 'jobs'],
+      summary: {
+        zh: '指称学历造假和签证滥用排挤本土技术人才，未明确表态本项费用。',
+        en: 'Alleges credential fraud and visa abuse displace domestic tech workers without stating a fee position.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        '45f6bf56c771c2fbc30f9991b0ca9e188d91059bb069e84f0c0bc8b13ea79376',
+    },
+    {
+      id: 'USCIS-2026-0298-4589',
+      stance: 'support',
+      themes: ['jobs', 'fraud'],
+      summary: {
+        zh: '支持高额费用，认为可减少低薪替代并检验真实技能需求。',
+        en: 'Supports the fee as a check on lower-cost substitution and a test of genuine skill needs.',
+      },
+      postedDate: '2026-08-31T04:00:00Z',
+      textSha256:
+        'e5051dd6405e30c4714e535568f2bece6a9a6861addb825c36ca9258587f2f06',
+    },
+    {
+      id: 'USCIS-2026-0298-7263',
+      stance: 'support',
+      themes: ['jobs', 'fraud', 'students'],
+      summary: {
+        zh: '支持收费，质疑部分招聘的技能缺口理由，并关注技术岗位能力。',
+        en: 'Supports the fee, questioning claimed skill shortages and competence in technical hiring.',
+      },
+      postedDate: '2026-09-10T04:00:00Z',
+      textSha256:
+        'dc7be0e02e422a59346fe115eb5dbb7605c2fa38970e9ac8573e27c1943073d6',
+    },
+    {
+      id: 'USCIS-2026-0298-3168',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'legal', 'tailored', 'fraud', 'jobs'],
+      summary: {
+        zh: '要求撤回，担忧小企业和公共服务岗位受阻、税收及人才流失，主张成本收费与定向豁免。',
+        en: 'Seeks withdrawal over small-employer barriers and talent and tax losses, favoring cost-based fees and targeted exemptions.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '8651da5d730458f34ed092a31f5893f6bddf93ec364a5e9254cc9690e1cd5de3',
+    },
+    {
+      id: 'USCIS-2026-0298-8260',
+      stance: 'support',
+      themes: ['jobs', 'restriction', 'fraud'],
+      summary: {
+        zh: '支持定稿，并要求费用覆盖 L-1 等替代路径及加强招聘核查。',
+        en: 'Supports finalization and broader coverage of alternatives such as L-1, with stronger recruitment checks.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'f60b8527d06db1a172df275c66f8966148755b99666bff9837807f10f93fe217',
+    },
+    {
+      id: 'USCIS-2026-0298-6544',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'jobs'],
+      summary: {
+        zh: '要求重新考虑收费，担忧金融机构将专业团队和相关就业迁往海外。',
+        en: 'Urges reconsideration, warning that financial firms may move specialized teams and related jobs abroad.',
+      },
+      postedDate: '2026-09-08T04:00:00Z',
+      textSha256:
+        '674541fae7a767cd26e8688efea505334a1ff7757e31d013989f5aa5153b0f50',
+    },
+    {
+      id: 'USCIS-2026-0298-3877',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'legal', 'jobs'],
+      summary: {
+        zh: '反对高额收费与跨部门资金使用，认为会促使岗位外迁，并要求更多评论时间。',
+        en: 'Rejects the large fee and interagency funding, warning of offshoring and seeking more comment time.',
+      },
+      postedDate: '2026-08-28T04:00:00Z',
+      textSha256:
+        'e8e972ff76cf1dfa2f0d914bfaa5aa652249f0c4b46e0ff85bb3c194e611d6b4',
+    },
+    {
+      id: 'USCIS-2026-0298-2950',
+      stance: 'oppose',
+      themes: ['burden', 'talent'],
+      summary: {
+        zh: '反对收费，认为会排斥小雇主和非营利机构并损害人才留存。',
+        en: 'Opposes the fee as a barrier to smaller and nonprofit employers and talent retention.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '5d8da2e2d933cb5f6dcb561ad42fcecfb506b76d29f7096c745c79e46d0cad4d',
+    },
+    {
+      id: 'USCIS-2026-0298-2678',
+      stance: 'oppose',
+      themes: ['legal', 'burden', 'students', 'talent'],
+      summary: {
+        zh: '反对跨部门收费与六位数门槛，担忧毕业生就业，并质疑审查和评论时间。',
+        en: 'Opposes interagency funding and the six-figure barrier, citing graduate hiring and insufficient review and comment time.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '30bf289d77b8de20e57ab604395e249af13aa9a075704d9744d2ca58793aaa35',
+    },
+    {
+      id: 'USCIS-2026-0298-7387',
+      stance: 'unclear',
+      themes: ['jobs'],
+      summary: {
+        zh: '要求优先雇用美国人，未明确评价本项费用。',
+        en: 'Calls for hiring Americans first without explicitly evaluating this fee.',
+      },
+      postedDate: '2026-09-10T04:00:00Z',
+      textSha256:
+        'e57e7733c420de5b287da00e02874ff2421a4a417e9c99eafca7b55bd05cc4d9',
+    },
+    {
+      id: 'USCIS-2026-0298-5609',
+      stance: 'support',
+      themes: [],
+      summary: {
+        zh: '明确表示强烈支持，未提供进一步理由。',
+        en: 'Explicitly expresses strong support without further reasoning.',
+      },
+      postedDate: '2026-09-01T04:00:00Z',
+      textSha256:
+        'b7ec4309047fcaef3b079e257416b4e93ead5aa9b3a55b60eb72a3a9f2cbceb1',
+    },
+    {
+      id: 'USCIS-2026-0298-1420',
+      stance: 'unclear',
+      themes: ['restriction'],
+      summary: {
+        zh: '要求停止发放签证，未直接评价本项费用。',
+        en: 'Calls for ending visas without directly evaluating this fee.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        '30c352590ce7fa5a2d551e68d6d7627360a235510e512452b55cc759306a122c',
+    },
+    {
+      id: 'USCIS-2026-0298-8209',
+      stance: 'oppose',
+      themes: ['talent', 'burden'],
+      summary: {
+        zh: '要求拒绝提案，认为高费用会妨碍吸引和留住劳动力。',
+        en: 'Seeks rejection, arguing that high fees impede attracting and retaining workers.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'c1643874e7569a6804e890cc1c412fba61f6d20763c8fb62a5877d707f7cafaa',
+    },
+    {
+      id: 'USCIS-2026-0298-2929',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '仅提交附件，未取得可读正文，无法可靠判断立场。',
+        en: 'Provides only an inaccessible attachment, preventing a reliable stance assessment.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'USCIS-2026-0298-2391',
+      stance: 'oppose',
+      themes: ['students', 'talent', 'burden', 'tailored', 'fraud', 'jobs'],
+      summary: {
+        zh: '要求撤回或大幅降费，保护在美培养的人才和小企业，并以工资及反欺诈执法替代。',
+        en: 'Seeks withdrawal or a large reduction to protect U.S.-trained talent and small firms, favoring wage and fraud enforcement.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        '99707a5b46042fc985e6acdbb68bf14aa367c34fe281eb86e4c277ab1a9bac10',
+    },
+    {
+      id: 'USCIS-2026-0298-3021',
+      stance: 'oppose',
+      themes: [
+        'burden',
+        'talent',
+        'students',
+        'legal',
+        'tailored',
+        'fraud',
+        'jobs',
+      ],
+      summary: {
+        zh: '反对收费造成企业准入不平等和学生人才流失，主张合理成本收费及合规执法。',
+        en: 'Opposes unequal employer access and student talent losses, favoring proportionate cost-based fees and compliance enforcement.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '511722c6e190fc09fa7c797a1df2fefcb0678e578f3b689809bae20b8c10b740',
+    },
+    {
+      id: 'USCIS-2026-0298-2175',
+      stance: 'oppose',
+      themes: ['legal'],
+      summary: {
+        zh: '要求撤回，质疑向移民法庭分配收入的权限、预算重复和公开资料不足。',
+        en: 'Seeks withdrawal over authority for immigration-court transfers, duplicate funding and inadequate disclosure.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        'dea242e97f24224b0c279b01ce5cc3e176e9da1687c2f384716c679808f713b5',
+    },
+    {
+      id: 'USCIS-2026-0298-1898',
+      stance: 'mixed',
+      themes: ['restriction'],
+      summary: {
+        zh: '主张改收 100 万美元，以更高价格检验特殊人才需求。',
+        en: 'Proposes a $1 million fee as a stronger test of exceptional talent needs.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        'e4a09bed42998f7d05489379e0edd5a7b7da796e350998f9ce29628cbce01877',
+    },
+    {
+      id: 'USCIS-2026-0298-7643',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'legal', 'jobs'],
+      summary: {
+        zh: '要求拒绝提案，担忧小雇主、人才供给和经济活动受损，要求费用对应行政成本。',
+        en: 'Seeks rejection over small-employer, talent and economic harms, arguing fees should match administrative costs.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '7316870c996521cab3923d22bb33c26a258c061b409e91ef60e7a11889573ffd',
+    },
+    {
+      id: 'USCIS-2026-0298-5887',
+      stance: 'oppose',
+      themes: ['burden'],
+      summary: {
+        zh: '认为 10.3 万美元收费不可接受，要求不予通过。',
+        en: 'Rejects the proposed amount as unacceptable and asks that it not proceed.',
+      },
+      postedDate: '2026-09-02T04:00:00Z',
+      textSha256:
+        'b860fb0b97de688c50661f7009d674e9db80dfd6ba14aa82d3d2c3c5bc659cdb',
+    },
+    {
+      id: 'USCIS-2026-0298-5481',
+      stance: 'unclear',
+      themes: ['jobs', 'fraud', 'restriction', 'legal'],
+      summary: {
+        zh: '要求取消签证并提高汇款税，指称就业和安全问题，但未明确评价费用。',
+        en: 'Seeks visa abolition and higher remittance taxes, alleging employment and security harms without a fee position.',
+      },
+      postedDate: '2026-09-01T04:00:00Z',
+      textSha256:
+        '1217d2b17aceb87376123b7d26e796f4e5e60b1f5d714547f7b440555233f957',
+    },
+    {
+      id: 'USCIS-2026-0298-7821',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'students', 'legal'],
+      summary: {
+        zh: '反对提案，担忧在美培养的 STEM 人才和技术岗位外流，并质疑收费权限。',
+        en: 'Opposes the proposal over losses of U.S.-trained STEM talent and technical jobs, questioning fee authority.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '834ec1b0a9014a4eb17eaeda622c5d7860734e4c16dfaec4e9bd74cf42e6c5a3',
+    },
+    {
+      id: 'USCIS-2026-0298-8115',
+      stance: 'mixed',
+      themes: ['restriction', 'jobs'],
+      summary: {
+        zh: '要求将费用改为 25 万美元以优先本土招聘。',
+        en: 'Proposes a $250,000 fee to prioritize domestic hiring.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        '5890b82a8c6f46ca9be2ecfeafd17444df4dfcd847f4798b2d15599eabc961fb',
+    },
+    {
+      id: 'USCIS-2026-0298-7785',
+      stance: 'unclear',
+      themes: ['legal'],
+      summary: {
+        zh: '要求说明更正数据对收入测算的影响并延长评论机会，未明确支持或反对费用。',
+        en: 'Seeks clarity on corrected data and revenue estimates and additional comment time, without endorsing or opposing the fee.',
+      },
+      postedDate: '2026-09-11T04:00:00Z',
+      textSha256:
+        'aac87f3ffaaa14c39412287418c5920e348587be29f0d5a60f1b288bcf4c9d43',
+    },
+    {
+      id: 'USCIS-2026-0298-7509',
+      stance: 'support',
+      themes: ['jobs'],
+      summary: {
+        zh: '支持拟议费用，认为可减少外国劳工替代本土员工。',
+        en: 'Supports the proposed fee as a response to displacement of domestic workers.',
+      },
+      postedDate: '2026-09-10T04:00:00Z',
+      textSha256:
+        '9526bb5fd4d008bdc30e110f0f132dd84236df6d327f7ddf8830a0674f7e18c7',
+    },
+    {
+      id: 'USCIS-2026-0298-5060',
+      stance: 'oppose',
+      themes: [
+        'burden',
+        'legal',
+        'talent',
+        'students',
+        'tailored',
+        'fraud',
+        'jobs',
+      ],
+      summary: {
+        zh: '要求撤回统一高额收费，质疑收入假设与跨部门分摊，主张分级收费和针对性监管。',
+        en: 'Seeks withdrawal, questioning revenue assumptions and interagency allocation while favoring graduated fees and targeted enforcement.',
+      },
+      postedDate: '2026-08-31T04:00:00Z',
+      textSha256:
+        '4b55ec7dbca6f0d2f59d4dfbf4691629f487c86480d97994f7eb9ba44991d945',
+    },
+    {
+      id: 'USCIS-2026-0298-3489',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'students', 'legal'],
+      summary: {
+        zh: '反对收费，担忧初创企业外迁和毕业生流失，并质疑成本回收权限。',
+        en: 'Opposes the fee over startup offshoring and graduate losses, questioning cost-recovery authority.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '61c50e8a1e3ccf4acc4ac5e2e13aa90e07992a2fe6690b297e7f65cd74bb0aeb',
+    },
+    {
+      id: 'USCIS-2026-0298-6848',
+      stance: 'oppose',
+      themes: ['burden', 'fraud', 'tailored'],
+      summary: {
+        zh: '认为收费不合理，主张按工作类型和工资条件治理滥用。',
+        en: 'Rejects the fee as unreasonable and favors job-type and wage conditions to address abuse.',
+      },
+      postedDate: '2026-09-09T04:00:00Z',
+      textSha256:
+        '1dbd132a41f8438d69acb569cc2972be1acc95df9421f81d03c56db2a1a459ac',
+    },
+    {
+      id: 'USCIS-2026-0298-2774',
+      stance: 'oppose',
+      themes: ['talent', 'students', 'legal', 'burden'],
+      summary: {
+        zh: '要求撤回，担忧 AI 与网络安全人才外流，并质疑广泛跨部门收费。',
+        en: 'Seeks withdrawal over AI and cybersecurity talent losses and broad interagency cost allocation.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '95d8a3926ebb1b835840cbb81278c188cf4d20187cc8b9cc4252f371aac8f4af',
+    },
+    {
+      id: 'USCIS-2026-0298-0354',
+      stance: 'mixed',
+      themes: ['restriction', 'jobs', 'legal'],
+      summary: {
+        zh: '主张至少收取 35 万美元、按通胀调整并扩至所有担保岗位，且不得税前列支。',
+        en: 'Proposes at least $350,000, inflation indexing and coverage of all sponsored jobs, without business-expense deductions.',
+      },
+      postedDate: '2026-08-25T04:00:00Z',
+      textSha256:
+        '8653c8d2877769df20bae139e86e8ca88b04958091301fbb5b4cfd6bc017221c',
+    },
+    {
+      id: 'USCIS-2026-0298-5654',
+      stance: 'oppose',
+      themes: ['legal', 'talent', 'burden'],
+      summary: {
+        zh: '要求完整撤回，认为收费越权、收入假设矛盾并将研究岗位推向海外。',
+        en: 'Seeks full withdrawal, alleging excessive authority, inconsistent revenue assumptions and research offshoring.',
+      },
+      postedDate: '2026-09-02T04:00:00Z',
+      textSha256:
+        '0424ae0cbabfd3ef2d59da614d30a3f797ee9f319fb12b1216af72a1ff5eb5f5',
+    },
+    {
+      id: 'USCIS-2026-0298-4915',
+      stance: 'oppose',
+      themes: ['talent', 'legal', 'jobs'],
+      summary: {
+        zh: '反对提案，指出预期成本会在提交申请前就促使企业转向海外招聘。',
+        en: 'Opposes the proposal, arguing expected costs shift hiring abroad before petitions appear in the data.',
+      },
+      postedDate: '2026-08-31T04:00:00Z',
+      textSha256:
+        '89e0efc10ef0a0bf1a4feeb60f6beea617bbc85debe1682856eb40ea5a566a6e',
+    },
+    {
+      id: 'USCIS-2026-0298-0560',
+      stance: 'support',
+      themes: ['jobs', 'fraud', 'restriction'],
+      summary: {
+        zh: '支持费用，并要求本土招聘证明、严格审计和限制近期裁员企业申请。',
+        en: 'Supports the fee and seeks domestic recruitment proof, audits and restrictions on employers with recent layoffs.',
+      },
+      postedDate: '2026-08-25T04:00:00Z',
+      textSha256:
+        'd5c95a1780becaf53d18efe342c14202279b059e163be41ad548dc870b18c2d7',
+    },
+    {
+      id: 'USCIS-2026-0298-2964',
+      stance: 'oppose',
+      themes: ['burden', 'talent', 'students', 'legal', 'tailored', 'jobs'],
+      summary: {
+        zh: '要求撤回，担忧岗位、人才和税基外流，提出对离岸服务征税作为替代。',
+        en: 'Seeks withdrawal over offshoring, talent and tax-base losses, proposing a tax on offshore services instead.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        '1fdc6e6f70c09a1775f02f715c56fee26515a9982c03453a65380504306efc74',
+    },
+    {
+      id: 'USCIS-2026-0298-0107',
+      stance: 'unclear',
+      themes: ['jobs', 'fraud', 'restriction'],
+      summary: {
+        zh: '要求优先本土招聘、加强核查并考虑取消工作与学生签证，未评价本项费用。',
+        en: 'Seeks domestic hiring priority, audits and possible visa abolition without evaluating this fee.',
+      },
+      postedDate: '2026-08-25T04:00:00Z',
+      textSha256:
+        '95de31e667637afe1d2721709d42ca2fb20e6fdd08de05c177308cefe7ab1b8a',
+    },
+    {
+      id: 'USCIS-2026-0298-2284',
+      stance: 'mixed',
+      themes: ['restriction'],
+      summary: {
+        zh: '要求停止签证或将每份收费改为 50 万美元。',
+        en: 'Proposes halting visas or charging $500,000 each.',
+      },
+      postedDate: '2026-08-26T04:00:00Z',
+      textSha256:
+        'abc13e124baad6942b0aa2ce54aee4e4760ffc5661b2ef688312771aee068602',
+    },
+    {
+      id: 'USCIS-2026-0298-2517',
+      stance: 'oppose',
+      themes: ['legal'],
+      summary: {
+        zh: '反对收费，质疑把移民法庭及其他签证项目成本转嫁给 H-1B 雇主的权限。',
+        en: 'Opposes the fee, questioning authority to charge H-1B employers for courts and other visa programs.',
+      },
+      postedDate: '2026-08-27T04:00:00Z',
+      textSha256:
+        'e7eadbab9a787b6200a7b330050f426e6691430394ff3e91bad366fca86d0743',
+    },
+    {
+      id: 'USCIS-2026-0298-5625',
+      stance: 'unclear',
+      themes: ['jobs', 'fraud', 'restriction'],
+      summary: {
+        zh: '主张更严监管和更高合规费用，未明确认可或反对拟议金额。',
+        en: 'Seeks stricter oversight and higher compliance fees without clearly endorsing or rejecting the proposed amount.',
+      },
+      postedDate: '2026-09-01T04:00:00Z',
+      textSha256:
+        '8bb1810c472c9682ea7595d308b9a1f16960e0834ca134ce6c0577a760fb7272',
+    },
+    {
+      id: 'USCIS-2026-0298-5653',
+      stance: 'support',
+      themes: ['jobs', 'legal'],
+      summary: {
+        zh: '支持实施，认为收费可降低低成本替代并让雇主承担跨政府管理成本。',
+        en: 'Supports adoption as a deterrent to lower-cost substitution and a way for employers to fund government-wide administration.',
+      },
+      postedDate: '2026-09-02T04:00:00Z',
+      textSha256:
+        '4b56b8104d3ef606a83c32c62e4aa039df95421b43dfbcd13926535938da9ea0',
+    },
+    {
+      id: 'USCIS-2026-0298-7356',
+      stance: 'support',
+      themes: ['restriction'],
+      summary: {
+        zh: '认为提案是良好开端，并要求进一步提高费用。',
+        en: 'Endorses the proposal as a good start and seeks a higher fee.',
+      },
+      postedDate: '2026-09-10T04:00:00Z',
+      textSha256:
+        '1aef466f97b8ff92244c6a420fbc388a3eeddd5bdf0018fd7882792643675cb0',
+    },
   ],
   commentPhase: 'open',
   commentDeadline: '2026-09-24',
+  sampleSize: 100,
+  expandedAt: '2026-09-12T12:41:56.209Z',
 } satisfies CommentSample;

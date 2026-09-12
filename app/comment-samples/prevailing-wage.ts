@@ -721,6 +721,633 @@ export default {
       textSha256:
         '60cfc98f796eb6d11325df8dc4102efa84821c56909806c3d3b525084295e2de',
     },
+    {
+      id: 'ETA-2026-0001-0285',
+      postedDate: '2026-04-14T04:00:00Z',
+      stance: 'oppose',
+      themes: ['small', 'talent', 'process'],
+      summary: {
+        zh: '反对提案，担心合规负担减少招聘、推动外包并拖慢小企业用人。',
+        en: 'Opposes the proposal over compliance burdens, reduced hiring, outsourcing, and delays for small employers.',
+      },
+      textSha256:
+        '549fc67ce9c068b237b17589cb8c3b593d70d6dbc5f6a02438c783556cd9f6c2',
+    },
+    {
+      id: 'ETA-2026-0001-0860',
+      postedDate: '2026-05-11T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry', 'talent'],
+      summary: {
+        zh: '要求撤回，认为入门工资脱离毕业生市场薪酬，会造成技术人才缺口。',
+        en: 'Requests withdrawal, arguing entry floors exceed graduate market pay and create technical talent shortages.',
+      },
+      textSha256:
+        '97288279bafda22280650e1e15b80d2f067dcd733c2b25e225c0aa74b780413a',
+    },
+    {
+      id: 'ETA-2026-0001-1010',
+      postedDate: '2026-05-20T04:00:00Z',
+      stance: 'support',
+      themes: ['protection', 'enforcement'],
+      summary: {
+        zh: '明确支持工资改革，并建议增加分类和数据透明度以追踪劳动力替代。',
+        en: 'Explicitly supports wage reform and recommends classification and transparency measures to track labor substitution.',
+      },
+      textSha256:
+        'e7f6b0bc2967c24b4006b0480dd10788e245ec9627b6853fcaa05d18e0710ec2',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'ETA-2026-0001-0726',
+      postedDate: '2026-05-04T04:00:00Z',
+      stance: 'unclear',
+      themes: ['enforcement'],
+      summary: {
+        zh: '要求调查绿卡申请中的资历造假指控，未评价本工资提案。',
+        en: 'Requests investigation of alleged credential fraud in green-card cases without assessing this wage proposal.',
+      },
+      textSha256:
+        '31a5337fdb9f08f13be66bcb38f6555a78a10ae8cb07cbe3014fa3c2cd2a156d',
+    },
+    {
+      id: 'ETA-2026-0001-0505',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry', 'small', 'academic', 'talent', 'enforcement'],
+      summary: {
+        zh: '要求撤回或大幅修改，认为工资层级失真且损害毕业生及小机构，偏好精准执法。',
+        en: 'Seeks withdrawal or major revision over distorted wage tiers and harms to graduates and smaller institutions, preferring targeted enforcement.',
+      },
+      textSha256:
+        '28a38897de7ca98aadc42167f26070b947521bb29f49050451f9ea15e818bcb9',
+    },
+    {
+      id: 'ETA-2026-0001-0682',
+      postedDate: '2026-04-30T04:00:00Z',
+      stance: 'mixed',
+      themes: ['market', 'protection'],
+      summary: {
+        zh: '认可上调方向，但认为第34百分位仍太低，建议四级改为55、70、85及90以上百分位。',
+        en: 'Accepts increases but finds the 34th percentile too low, proposing tiers at the 55th, 70th, 85th, and at least 90th percentiles.',
+      },
+      textSha256:
+        'a9d99506d6bd7a5c8a04fa094efae1a0d44056786ee1103bd850c76295d18624',
+    },
+    {
+      id: 'ETA-2026-0001-0422',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'process', 'talent'],
+      summary: {
+        zh: '要求废弃重写，主张按行业和资历评估，并豁免既有员工及境内转职。',
+        en: 'Calls for rejection and rewriting, industry and credential-based assessment, and exemptions for existing workers and domestic transfers.',
+      },
+      textSha256:
+        '90c4b3e50193b59795a27b5144ec83086781fdffe0d88aa78f1f94e072775e8f',
+    },
+    {
+      id: 'ETA-2026-0001-0371',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['talent', 'academic', 'small', 'process'],
+      summary: {
+        zh: '认为工资门槛将推动外迁、削弱公共服务及小企业；若坚持改革，要求多年过渡。',
+        en: 'Warns of offshoring and harm to public services and small firms; seeks a multiyear transition if changes proceed.',
+      },
+      textSha256:
+        'd266ec548ba5fd53a8d8dac4bf44c18143a4f7020aa8bb2d31a9cbc8fcb04eeb',
+    },
+    {
+      id: 'ETA-2026-0001-0358',
+      postedDate: '2026-04-24T04:00:00Z',
+      stance: 'mixed',
+      themes: ['small', 'talent', 'process', 'protection'],
+      summary: {
+        zh: '认可更新工资的益处，但要求分阶段实施以兼顾工资保护和雇主招聘能力。',
+        en: 'Acknowledges benefits of wage updates but seeks phased implementation balancing protection with employers’ hiring capacity.',
+      },
+      textSha256:
+        'b898dabbd1d26b5040888c451a28965269c54ec998f7ecc3451eca0840147801',
+    },
+    {
+      id: 'ETA-2026-0001-0691',
+      postedDate: '2026-05-01T04:00:00Z',
+      stance: 'oppose',
+      themes: ['entry', 'talent'],
+      summary: {
+        zh: '反对上调，认为固定预算下雇主将削减入门招聘和培训，损害国内就业。',
+        en: 'Opposes increases, arguing fixed budgets will reduce entry hiring and training and harm domestic employment.',
+      },
+      textSha256:
+        'b7e0b0e5a57c7dd4c7d764a375c1b8a076027ab503aa2cb8b6e6951e2a70209a',
+    },
+    {
+      id: 'ETA-2026-0001-0935',
+      postedDate: '2026-05-15T04:00:00Z',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '认为提案会损害国家产业，未进一步说明理由。',
+        en: 'Argues the proposal will harm the country’s industries without elaborating.',
+      },
+      textSha256:
+        'ad927cf5219d2e8f7649c3cea59edd11ee337de84f860ee9f29cf8ded011a46d',
+    },
+    {
+      id: 'ETA-2026-0001-0545',
+      postedDate: '2026-04-28T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry', 'small', 'academic', 'talent', 'enforcement'],
+      summary: {
+        zh: '反对现有文本，认为全面上调损害毕业生和小机构并推动外迁，主张精准执法。',
+        en: 'Opposes the current text over graduate and smaller-institution impacts and offshoring, preferring targeted enforcement.',
+      },
+      textSha256:
+        'ddfa1ba1bc29e51534081653f4a8d9219947ecb6a9fe6c01fe80270854b64de9',
+    },
+    {
+      id: 'ETA-2026-0001-0051',
+      postedDate: '2026-04-02T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry', 'small', 'talent'],
+      summary: {
+        zh: '要求撤回，质疑百分位与市场薪酬的匹配，并担忧小企业、毕业生及岗位外迁。',
+        en: 'Requests withdrawal, challenging percentile alignment with market pay and citing small firms, graduates, and offshoring.',
+      },
+      textSha256:
+        'b179fc6220c964b24aae1493b6e21597797e15dd74d762cb14739c6e2f951043',
+    },
+    {
+      id: 'ETA-2026-0001-0333',
+      postedDate: '2026-04-21T04:00:00Z',
+      stance: 'support',
+      themes: ['protection', 'enforcement'],
+      summary: {
+        zh: '支持工资层级改革，并要求PERM岗位使用雇主通常的招聘渠道公布。',
+        en: 'Supports wage-level changes and requests that PERM jobs appear through employers’ ordinary recruitment channels.',
+      },
+      textSha256:
+        'f2832794269ab90eb2957336913eb75d19145bcc155ee14cbc9374b00d68ef53',
+    },
+    {
+      id: 'ETA-2026-0001-0107',
+      postedDate: '2026-04-02T04:00:00Z',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '担心过高工资门槛将人才和创新推向其他国家，削弱美国竞争力。',
+        en: 'Warns excessive wage thresholds will redirect talent and innovation abroad and weaken U.S. competitiveness.',
+      },
+      textSha256:
+        'e1f8a99723d1987a1c1e5a6b36c47b59e3c59ae4cf4c59fafe429c8e74604af8',
+    },
+    {
+      id: 'ETA-2026-0001-0865',
+      postedDate: '2026-05-11T04:00:00Z',
+      stance: 'oppose',
+      themes: ['entry', 'academic', 'small', 'talent'],
+      summary: {
+        zh: '要求撤回，认为毕业生就业减少会削弱高校及创新，并加速外包、损害初创企业。',
+        en: 'Seeks rescission, citing reduced graduate opportunities, weaker universities and innovation, outsourcing, and startup harm.',
+      },
+      textSha256:
+        '2add35c0c717603e1c7bbd671630889208e7eeec74a01d035768362babb24c6a',
+    },
+    {
+      id: 'ETA-2026-0001-0485',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry'],
+      summary: {
+        zh: '认为过高入门工资使雇主更偏好有经验者，压缩初级招聘、培训及后续人才供给。',
+        en: 'Argues high entry floors favor experienced hires and constrict junior recruitment, training, and future talent supply.',
+      },
+      textSha256:
+        'f90bc64c60b0a4424c4b488f8bb842451af02fd559a0e4d91605bcb2201aa72c',
+    },
+    {
+      id: 'ETA-2026-0001-0182',
+      postedDate: '2026-04-06T04:00:00Z',
+      stance: 'mixed',
+      themes: ['market', 'protection', 'enforcement'],
+      summary: {
+        zh: '希望终止H-1B或要求工资高于本土员工20%，以优先本土招聘。',
+        en: 'Seeks H-1B cancellation or wages 20% above domestic workers’ pay to prioritize domestic hiring.',
+      },
+      textSha256:
+        '40b7ede3a8ac34586d9f0eaab92624ec876f8d311e368c41d2668e08970a1949',
+    },
+    {
+      id: 'ETA-2026-0001-0170',
+      postedDate: '2026-04-06T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry'],
+      summary: {
+        zh: '认为提高前两级工资破坏职业起点，减少培训、技能成长和未来人才。',
+        en: 'Argues higher Levels I–II undermine career entry, training, skill development, and future talent.',
+      },
+      textSha256:
+        '31aa56e1fa491167cf85ceeb33c9be8c60de736b3ff4e35b7438fb3027430d8c',
+    },
+    {
+      id: 'ETA-2026-0001-1288',
+      postedDate: '2026-06-12T04:00:00Z',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件，无法从可读材料判断立场。',
+        en: 'The body only refers to an attachment; readable material does not establish a stance.',
+      },
+      textSha256:
+        '13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'ETA-2026-0001-0746',
+      postedDate: '2026-05-04T04:00:00Z',
+      stance: 'mixed',
+      themes: ['market', 'protection'],
+      summary: {
+        zh: '认可工资调整方向，但要求改用按地区计算的第50百分位基准。',
+        en: 'Accepts the direction of wage adjustments but requests a geographically based 50th-percentile benchmark.',
+      },
+      textSha256:
+        '985add09408cc9af48b82cc955fe39aa35b3f40f8d2697e117e0387e05349ada',
+    },
+    {
+      id: 'ETA-2026-0001-1161',
+      postedDate: '2026-05-26T04:00:00Z',
+      stance: 'support',
+      themes: ['protection', 'enforcement'],
+      summary: {
+        zh: '明确支持工资新规，另要求大幅限制OPT以优先本土就业。',
+        en: 'Explicitly supports the wage rule and separately seeks major OPT restrictions to favor domestic employment.',
+      },
+      textSha256:
+        'f5dadec6cbf14901ce1f1f9a119eb3c1b2c41244bdfa6f70a2c6f81d57440364',
+    },
+    {
+      id: 'ETA-2026-0001-0678',
+      postedDate: '2026-04-30T04:00:00Z',
+      stance: 'oppose',
+      themes: ['academic', 'market', 'entry', 'process'],
+      summary: {
+        zh: '明确反对，认为统一上调不适合科研预算和薪酬，要求分行业分析、科研豁免及累积负担评估。',
+        en: 'Explicitly opposes uniform increases as mismatched to research funding and pay, seeking sector analysis, research exemptions, and cumulative-burden review.',
+      },
+      textSha256:
+        'eea68865fbdde0de6084714de48c0905d38ff2c72b53a2bd286611f9ac005b9e',
+    },
+    {
+      id: 'ETA-2026-0001-1189',
+      postedDate: '2026-05-26T04:00:00Z',
+      stance: 'oppose',
+      themes: ['entry', 'talent'],
+      summary: {
+        zh: '担心更高工资门槛阻碍国际毕业生就业，损害人才留存与创新。',
+        en: 'Warns higher wage floors impede international graduates’ employment and harm retention and innovation.',
+      },
+      textSha256:
+        'ea69022790bc283471dc7909fdc35b7d08dff860323fab486b73dd6267e4dfd4',
+    },
+    {
+      id: 'ETA-2026-0001-0674',
+      postedDate: '2026-04-30T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'small', 'entry', 'talent'],
+      summary: {
+        zh: '反对上调，认为忽视股权薪酬会挤压初创企业现金、限制毕业生招聘并强化大企业优势。',
+        en: 'Opposes increases, arguing disregard for equity compensation strains startup cash, limits graduate hiring, and advantages large firms.',
+      },
+      textSha256:
+        'c1ff4df928e48198db9ba81e3e6900b24e0bb3dfd42e7270b2549bcf506d3463',
+    },
+    {
+      id: 'ETA-2026-0001-0367',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'support',
+      themes: ['protection', 'enforcement', 'talent'],
+      summary: {
+        zh: '支持工资规则，指称低薪招聘挤压本土劳工，并要求外包税和更严格签证限制。',
+        en: 'Supports the wage rule, alleging low-paid hiring displaces domestic workers and seeking offshoring taxes and stricter visa limits.',
+      },
+      textSha256:
+        'c1c8db53a410a37f3fddc65a7100c405bb426aabb79d816593b25d0291821812',
+    },
+    {
+      id: 'ETA-2026-0001-0070',
+      postedDate: '2026-04-02T04:00:00Z',
+      stance: 'oppose',
+      themes: ['academic', 'talent'],
+      summary: {
+        zh: '认为政策限制企业和研究机构所需人才，可能削弱长期竞争力。',
+        en: 'Argues the policy restricts talent needed by firms and research institutions and may weaken long-term competitiveness.',
+      },
+      textSha256:
+        'd4d750bbd377f805d804790431fb3e6cc09d857996e08ff241fb38587ad97721',
+    },
+    {
+      id: 'ETA-2026-0001-1156',
+      postedDate: '2026-05-26T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'academic', 'small', 'talent', 'process'],
+      summary: {
+        zh: '反对拟议方法，关注地区及行业差异、科研和小雇主预算，并要求过渡期。',
+        en: 'Opposes the methodology over regional and sector differences and research and small-employer budgets, seeking transition periods.',
+      },
+      textSha256:
+        '6eed25389b40cc6f42adb1166d1d9bcee96ec14e330e18442069b4259c71a30e',
+    },
+    {
+      id: 'ETA-2026-0001-0480',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '认为提高工资要求会推动项目外迁，减少留在美国的岗位。',
+        en: 'Argues higher wage requirements push projects offshore and reduce jobs retained in the United States.',
+      },
+      textSha256:
+        '32a9050345511a645e7ab1c318d0a9a06bec1ad350224085edaaa942a34faee0',
+    },
+    {
+      id: 'ETA-2026-0001-0220',
+      postedDate: '2026-04-08T04:00:00Z',
+      stance: 'support',
+      themes: ['market', 'protection'],
+      summary: {
+        zh: '明确支持第34百分位入门底线，认为有助于纠正低薪招聘并保护本土劳工。',
+        en: 'Explicitly supports the 34th-percentile entry floor as a correction to low-paid hiring and protection for domestic workers.',
+      },
+      textSha256:
+        'ba9f4e29483f7e2be518a55b86c1f2a0a5de2ba5411f57d650846dc83c50f09c',
+    },
+    {
+      id: 'ETA-2026-0001-0387',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['small', 'talent'],
+      summary: {
+        zh: '担心工资要求挤压中小及低利润企业、减少招聘，并让机会集中于大型企业。',
+        en: 'Warns wage requirements squeeze smaller and low-margin firms, reduce hiring, and concentrate opportunities in large companies.',
+      },
+      textSha256:
+        '0010005f1d60d829c625aef8b31b77c264bc1537db005684ba3873225ed34608',
+    },
+    {
+      id: 'ETA-2026-0001-1025',
+      postedDate: '2026-05-20T04:00:00Z',
+      stance: 'unclear',
+      themes: ['protection'],
+      summary: {
+        zh: '仅要求保护美国就业，未明确评价工资提案。',
+        en: 'Only calls for protecting American jobs without clearly assessing the wage proposal.',
+      },
+      textSha256:
+        'e3c0da00dc316f177cbb32217543b8b18d98e4f48685f2e80cfaea2753631a60',
+    },
+    {
+      id: 'ETA-2026-0001-0292',
+      postedDate: '2026-04-15T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'talent'],
+      summary: {
+        zh: '认为大幅上调不符合刚晋升员工的薪酬安排，可能导致裁员和岗位外迁。',
+        en: 'Argues steep increases conflict with recently promoted workers’ pay arrangements and may cause layoffs and offshoring.',
+      },
+      textSha256:
+        '37862946087d7e37e935d239226920541a5aa25efbc438063ca991fa27757ed5',
+    },
+    {
+      id: 'ETA-2026-0001-0460',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['entry', 'talent', 'enforcement'],
+      summary: {
+        zh: '认为按工资选取已能抑制滥用，额外提高工资门槛可能不必要并损害年轻人才。',
+        en: 'Argues wage-weighted selection already discourages abuse and additional wage floors may be unnecessary and harm young talent.',
+      },
+      textSha256:
+        'f9e8777bb7d7967ccc2ab74d4d6b73b74322d25b3fa7eba00da35e1dbb44e9b9',
+    },
+    {
+      id: 'ETA-2026-0001-0034',
+      postedDate: '2026-04-02T04:00:00Z',
+      stance: 'oppose',
+      themes: ['entry', 'small', 'talent', 'process'],
+      summary: {
+        zh: '担心突然上调损害入门岗位和小企业并推动外迁，要求逐步调整。',
+        en: 'Warns abrupt increases harm entry jobs and small firms and encourage offshoring, seeking gradual adjustments.',
+      },
+      textSha256:
+        '5cd47ab1d83a0fc78987d39c9dca906deb77d4e7dd8cd3d0d2b587900c598f2d',
+      sourceNote: {
+        zh: '正文将拟议入门工资写为第45百分位；摘要不将该说法视为提案事实。',
+        en: 'The body describes the proposed entry floor as the 45th percentile; the summary does not treat that claim as a fact about the proposal.',
+      },
+    },
+    {
+      id: 'ETA-2026-0001-0709',
+      postedDate: '2026-05-04T04:00:00Z',
+      stance: 'unclear',
+      themes: ['enforcement'],
+      summary: {
+        zh: '批评签证滥用及政治执行不足，要求限制第三方派遣，未明确评价拟议工资方法。',
+        en: 'Criticizes alleged visa abuse and inadequate political enforcement, seeking third-party placement limits without clearly evaluating the wage method.',
+      },
+      textSha256:
+        '5bb0b457c13a2dbc17622274e534e997fb1d614ef21370cdeb2fb84f6462adac',
+    },
+    {
+      id: 'ETA-2026-0001-0967',
+      postedDate: '2026-05-18T04:00:00Z',
+      stance: 'mixed',
+      themes: ['market', 'protection'],
+      summary: {
+        zh: '认为拟议涨幅仍不足以防止低薪替代，要求20万美元最低工资。',
+        en: 'Finds the proposed increase insufficient against low-paid substitution and seeks a $200,000 wage floor.',
+      },
+      textSha256:
+        '92c20d988c54a80514e54a13e3c1170d5cea38252632a68df33b9cbea06ccff6',
+    },
+    {
+      id: 'ETA-2026-0001-0356',
+      postedDate: '2026-04-23T04:00:00Z',
+      stance: 'mixed',
+      themes: [
+        'market',
+        'academic',
+        'entry',
+        'talent',
+        'protection',
+        'enforcement',
+      ],
+      summary: {
+        zh: '支持一般职业采用新标准，但要求关键科研工程领域豁免或使用定制工资方法。',
+        en: 'Supports new standards for general occupations but seeks exemptions or tailored wage methods for critical scientific and engineering fields.',
+      },
+      textSha256:
+        '0c2fb49fc9c28b8be655d8d736b2bba78facf1578d6b5bceba148c9d5bfff2c6',
+    },
+    {
+      id: 'ETA-2026-0001-0030',
+      postedDate: '2026-04-02T04:00:00Z',
+      stance: 'oppose',
+      themes: ['talent'],
+      summary: {
+        zh: '认为提高工资要求会推动项目外迁，减少留在美国的岗位。',
+        en: 'Argues higher wage requirements push projects offshore and reduce jobs retained in the United States.',
+      },
+      textSha256:
+        '32a9050345511a645e7ab1c318d0a9a06bec1ad350224085edaaa942a34faee0',
+    },
+    {
+      id: 'ETA-2026-0001-1060',
+      postedDate: '2026-05-22T04:00:00Z',
+      stance: 'support',
+      themes: ['protection', 'enforcement', 'process'],
+      summary: {
+        zh: '要求将工资新规适用于既有签证持有人，并限制第三方派遣和低级别岗位。',
+        en: 'Seeks application of the wage rule to existing visa holders and restrictions on third-party placements and lower-level roles.',
+      },
+      textSha256:
+        '14246974f0c1d92c86830e687049d8317246fbf7a693a724ef553c1e685b1746',
+    },
+    {
+      id: 'ETA-2026-0001-0391',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'entry', 'small', 'talent', 'process'],
+      summary: {
+        zh: '反对突然上调，担忧既有员工转职、雇主成本及外迁，要求渐进且有数据依据的改革。',
+        en: 'Opposes abrupt increases over existing workers’ mobility, employer costs, and offshoring, seeking gradual, evidence-based reform.',
+      },
+      textSha256:
+        'd9d28c5d253b959de85b51f54f6582b5de3fdbfadc7880f6c991f52e497529fa',
+    },
+    {
+      id: 'ETA-2026-0001-1212',
+      postedDate: '2026-05-26T04:00:00Z',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '正文仅指向附件，无法从可读材料判断立场。',
+        en: 'The body only refers to an attachment; readable material does not establish a stance.',
+      },
+      textSha256:
+        '3e81fe50069deb77177b82ab691ff141de66f86b95a1502d3ecadfeb6bcbe795',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'ETA-2026-0001-0204',
+      postedDate: '2026-04-07T04:00:00Z',
+      stance: 'support',
+      themes: ['market', 'protection', 'enforcement'],
+      summary: {
+        zh: '明确支持工资改革，并鼓励提高至第50百分位以及增设费用、裁员和外包限制。',
+        en: 'Explicitly supports wage reform and encourages the 50th percentile alongside fees and layoff and outsourcing restrictions.',
+      },
+      textSha256:
+        '4700a5396111f996894b475aaa7ca4da0d669a8c7e3c665e429323311407ae1f',
+    },
+    {
+      id: 'ETA-2026-0001-0271',
+      postedDate: '2026-04-13T04:00:00Z',
+      stance: 'support',
+      themes: ['process', 'protection'],
+      summary: {
+        zh: '支持工资新规，并要求适用于所有既有H-1B持有人。',
+        en: 'Supports the wage rule and requests application to all existing H-1B holders.',
+      },
+      textSha256:
+        '2f4a30c2f82d1cf668e9ea420a50158b0afab2274a98c3fffabde987b1944af2',
+    },
+    {
+      id: 'ETA-2026-0001-0433',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: ['market', 'process', 'talent'],
+      summary: {
+        zh: '要求撤回，认为突然上调会破坏既有员工续签及PERM安排并使雇主失去熟练员工。',
+        en: 'Requests withdrawal, arguing abrupt increases disrupt existing workers’ extensions and PERM plans and cost employers experienced staff.',
+      },
+      textSha256:
+        '301a6b93892bc84a4e442b9cd968d08dde7b2302d2c4927c0ffae2347853623e',
+    },
+    {
+      id: 'ETA-2026-0001-0577',
+      postedDate: '2026-04-28T04:00:00Z',
+      stance: 'oppose',
+      themes: ['small', 'entry', 'talent'],
+      summary: {
+        zh: '认为上调会削减小企业初级招聘、拖慢创新，并让招聘机会向大企业集中。',
+        en: 'Argues increases reduce small firms’ junior hiring, slow innovation, and concentrate opportunities in large employers.',
+      },
+      textSha256:
+        '86813c3621e5a435bbc033604bc0870b75d66f4acf71202c8385dfa5148bbdd5',
+    },
+    {
+      id: 'ETA-2026-0001-0476',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'oppose',
+      themes: [],
+      summary: {
+        zh: '明确反对，认为不公平且损害勤劳员工，未进一步说明机制。',
+        en: 'Explicitly opposes the proposal as unfair and harmful to hardworking people, without further explanation.',
+      },
+      textSha256:
+        '5d80bca32d812658e8f7e49a412946857979042c843116bef1fc92427fa04e5d',
+    },
+    {
+      id: 'ETA-2026-0001-0478',
+      postedDate: '2026-04-27T04:00:00Z',
+      stance: 'unclear',
+      themes: [],
+      summary: {
+        zh: '仅有含糊的改善表述，无法判断对提案的立场。',
+        en: 'Provides only a vague reference to improvement, insufficient to determine a stance on the proposal.',
+      },
+      textSha256:
+        'dcd3d2a7a6492abe54f5fa6855d8cf9359e024da7b529c910c6651d9ddbbc158',
+    },
+    {
+      id: 'ETA-2026-0001-0687',
+      postedDate: '2026-05-01T04:00:00Z',
+      stance: 'support',
+      themes: ['market', 'protection', 'enforcement'],
+      summary: {
+        zh: '明确支持最终实施，并要求更高工资倍数、限于第四级及加强招聘核查和执法。',
+        en: 'Explicitly supports finalization and seeks higher wage multipliers, Level IV-only certification, recruitment checks, and enforcement.',
+      },
+      textSha256:
+        '0e571e3b83994b30244a899861bcd0ed84394ddef964d854833ebcf4ced21ae2',
+      sourceNote: {
+        zh: '官方附件下载返回 403；保留该随机样本，仅按可读正文分类，正文不足则列为无法判断。',
+        en: 'Official attachment downloads returned 403. The sampled record is retained and classified only from readable body text; insufficient text is unclassifiable.',
+      },
+    },
+    {
+      id: 'ETA-2026-0001-1245',
+      postedDate: '2026-05-28T04:00:00Z',
+      stance: 'mixed',
+      themes: ['market', 'protection', 'enforcement'],
+      summary: {
+        zh: '认为第34百分位不足，建议H-1B依赖雇主的入门底线改为第52百分位，并禁止降级转职。',
+        en: 'Finds the 34th percentile insufficient, proposing the 52nd for H-1B-dependent employers and prohibiting moves to lower wage levels.',
+      },
+      textSha256:
+        '2822450906d43448c356b629073262e1fa7999029e4e8c9cd5a395568b964ca9',
+    },
   ],
   scopeNote: {
     zh: '提案涉及H-1B、H-1B1、E-3及PERM工资确定；部分评论讨论另行制定的H-1B选取机制。',
@@ -728,4 +1355,6 @@ export default {
   },
   commentPhase: 'closed',
   commentDeadline: '2026-05-26',
+  sampleSize: 100,
+  expandedAt: '2026-09-12T12:42:23.153Z',
 } satisfies CommentSample;

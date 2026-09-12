@@ -2,7 +2,7 @@
   "documentId": "USCIS-2026-0067-0001",
   "sampledAt": "2026-09-12T12:27:21.632Z",
   "seed": "3a4f9cdeb8e59408ec88d3f117eaddceecd5e89dc1a13e681e69fcb120f8918a",
-  "method": "SHA-256 seeded ranking, first 50 without replacement",
+  "method": "SHA-256 seeded ranking, first 100 without replacement",
   "frameSize": 4804,
   "frameSha256": "8e26633a6fa16edace3aecf2c8772aee48b4061c3532a7e3ea2c6c913ec3f565",
   "populationIds": [
@@ -4861,7 +4861,57 @@
     "USCIS-2026-0067-1879",
     "USCIS-2026-0067-1161",
     "USCIS-2026-0067-0645",
-    "USCIS-2026-0067-1874"
+    "USCIS-2026-0067-1874",
+    "USCIS-2026-0067-2954",
+    "USCIS-2026-0067-3397",
+    "USCIS-2026-0067-4738",
+    "USCIS-2026-0067-0324",
+    "USCIS-2026-0067-1853",
+    "USCIS-2026-0067-0793",
+    "USCIS-2026-0067-1396",
+    "USCIS-2026-0067-0557",
+    "USCIS-2026-0067-4150",
+    "USCIS-2026-0067-1648",
+    "USCIS-2026-0067-0384",
+    "USCIS-2026-0067-4556",
+    "USCIS-2026-0067-2495",
+    "USCIS-2026-0067-2921",
+    "USCIS-2026-0067-2737",
+    "USCIS-2026-0067-1848",
+    "USCIS-2026-0067-2165",
+    "USCIS-2026-0067-4813",
+    "USCIS-2026-0067-4410",
+    "USCIS-2026-0067-0381",
+    "USCIS-2026-0067-0827",
+    "USCIS-2026-0067-3394",
+    "USCIS-2026-0067-2173",
+    "USCIS-2026-0067-0117",
+    "USCIS-2026-0067-3372",
+    "USCIS-2026-0067-0364",
+    "USCIS-2026-0067-1764",
+    "USCIS-2026-0067-1949",
+    "USCIS-2026-0067-2518",
+    "USCIS-2026-0067-0423",
+    "USCIS-2026-0067-4319",
+    "USCIS-2026-0067-0245",
+    "USCIS-2026-0067-0951",
+    "USCIS-2026-0067-1059",
+    "USCIS-2026-0067-3143",
+    "USCIS-2026-0067-1561",
+    "USCIS-2026-0067-2053",
+    "USCIS-2026-0067-3240",
+    "USCIS-2026-0067-2382",
+    "USCIS-2026-0067-3566",
+    "USCIS-2026-0067-3801",
+    "USCIS-2026-0067-0083",
+    "USCIS-2026-0067-2536",
+    "USCIS-2026-0067-1413",
+    "USCIS-2026-0067-2682",
+    "USCIS-2026-0067-1180",
+    "USCIS-2026-0067-0800",
+    "USCIS-2026-0067-4273",
+    "USCIS-2026-0067-3776",
+    "USCIS-2026-0067-2788"
   ],
   "classification": [
     {
@@ -5633,6 +5683,764 @@
       },
       "postedDate": "2026-07-20T04:00:00Z",
       "textSha256": "0535256dc0d67676c54a7892356e84e52b8225127debc86fc363af7d1f727521"
+    },
+    {
+      "id": "USCIS-2026-0067-2954",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-3397",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-07-31T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-4738",
+      "stance": "mixed",
+      "themes": [
+        "livelihood",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "主张工卡有效期超过一年，以保障家庭收入和医疗需要。",
+        "en": "Requests work permits lasting longer than one year to protect household income and medical needs."
+      },
+      "postedDate": "2026-08-05T04:00:00Z",
+      "textSha256": "53bad12d13611a630d91e083c4154e070283d44a4f9f517e8811c43f8c523c00"
+    },
+    {
+      "id": "USCIS-2026-0067-0324",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对新增合法就业障碍，强调家庭自立及雇主和经济受益。",
+        "en": "Opposes additional lawful-work barriers, emphasizing self-sufficiency and benefits to employers and the economy."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "9f0e0ba2848816f60946ce53d18aa97af9af1c081ecab6e2ffa0bf73dc689791"
+    },
+    {
+      "id": "USCIS-2026-0067-1853",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "反对人道假释工卡变更，认为经济需求证明、裁量和 E-Verify 要求损害自立与就业。",
+        "en": "Opposes humanitarian-parole EAD changes, arguing economic-need evidence, discretion and E-Verify requirements harm self-sufficiency and employment."
+      },
+      "postedDate": "2026-07-20T04:00:00Z",
+      "textSha256": "af1a4c361e35f11a4d1c752da470a39bdb844d575c427dd3b89117ad7ac7242f"
+    },
+    {
+      "id": "USCIS-2026-0067-0793",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-06-11T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-1396",
+      "stance": "mixed",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求保留足够的 TPS 工卡自动延期，避免及时续期者因政府积压失业。",
+        "en": "Requests sufficient TPS EAD automatic extensions to prevent job loss from agency delays after timely renewal filings."
+      },
+      "postedDate": "2026-07-13T04:00:00Z",
+      "textSha256": "d0fb2b7a98d5c433ab6c9ed4af9b7e81b124e77139cc089733f57aeef318d3c7"
+    },
+    {
+      "id": "USCIS-2026-0067-0557",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对新增就业障碍，强调战争避难者自雇、纳税和自立。",
+        "en": "Opposes new work barriers, emphasizing self-employment, taxes and independence for people displaced by war."
+      },
+      "postedDate": "2026-06-09T04:00:00Z",
+      "textSha256": "75e63e1512c8c5f4e2165317fdfe5b1832635f9549fd4b1bba06f1468fe0ecd9"
+    },
+    {
+      "id": "USCIS-2026-0067-4150",
+      "stance": "unclear",
+      "themes": [
+        "livelihood"
+      ],
+      "summary": {
+        "zh": "仅表示需要工卡养家，未评价提案。",
+        "en": "States a need for work authorization to support a family without evaluating the proposal."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "f122f6cd78ce956645bd98f6d6afd37c2f29d9231f557b125e28f507b0f21ed7"
+    },
+    {
+      "id": "USCIS-2026-0067-1648",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "反对增加工卡申请和续期难度，强调战争避难家庭生计与纳税贡献。",
+        "en": "Opposes harder EAD applications and renewals, emphasizing war-displaced families’ livelihoods and tax contributions."
+      },
+      "postedDate": "2026-07-15T04:00:00Z",
+      "textSha256": "cc8283db4b74c5e21e2022bad037028db8056153e835147a4174375c50ce8089"
+    },
+    {
+      "id": "USCIS-2026-0067-0384",
+      "stance": "oppose",
+      "themes": [
+        "livelihood"
+      ],
+      "summary": {
+        "zh": "要求不实施提案，认为其使普通移民难以养家自立。",
+        "en": "Asks that the proposal not be implemented, arguing it prevents ordinary immigrants from supporting their families."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "ef90f772ba32e572694032dd7f08c32e29c378d1182bb85ae9b93cdd7916a3bd"
+    },
+    {
+      "id": "USCIS-2026-0067-4556",
+      "stance": "oppose",
+      "themes": [
+        "economy",
+        "renewals",
+        "everify",
+        "criminal",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求维持现行规则，认为 E-Verify、年度工卡和犯罪记录限制增加雇主负担。",
+        "en": "Seeks retention of current rules, arguing E-Verify, annual permits and criminal-record restrictions burden employers."
+      },
+      "postedDate": "2026-08-04T04:00:00Z",
+      "textSha256": "1b653e6cbb2e2e76c177ad8509f3cb3ad660dcfde16c0c73ad155fb620186d16"
+    },
+    {
+      "id": "USCIS-2026-0067-2495",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "反对新增就业障碍，强调及时工卡对家庭收入和工作连续性的重要性。",
+        "en": "Opposes new work barriers and stresses timely EADs for household income and uninterrupted employment."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "b74c57c0921fdcbe3fb0c2fe669cd71b22652b80e1e05669ad6d3bf1324cfe3e"
+    },
+    {
+      "id": "USCIS-2026-0067-2921",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy",
+        "renewals",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求保留现有裁量工作许可，认为限制会增加家庭和行政负担，并质疑其法律依据与影响分析。",
+        "en": "Seeks preservation of discretionary work access, arguing restrictions increase household and administrative burdens and questioning their legal and analytical basis."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "4eb05efb62fcc6b9ccdb2aa979ca03d03cbb8e96fcf9cb1a9cdf73ab125e2c42"
+    },
+    {
+      "id": "USCIS-2026-0067-2737",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood"
+      ],
+      "summary": {
+        "zh": "描述战争避难及无法安全返乡，要求继续工作养家；未明确评价提案。",
+        "en": "Describes displacement and unsafe return, requesting continued work to support a family without a clear proposal stance."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "0bbf2d657d9c43f4f556500e4711df65ef88e213ab984f7ed711422427982933"
+    },
+    {
+      "id": "USCIS-2026-0067-1848",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "反对经济需求证明和 E-Verify 限制，认为其减少就业与税收并增加家庭依赖。",
+        "en": "Opposes economic-need evidence and E-Verify restrictions, arguing they reduce employment and taxes while increasing dependency."
+      },
+      "postedDate": "2026-07-20T04:00:00Z",
+      "textSha256": "ea2d1d2c2aff61bc8ac263c10fd0dcd8cb9f38d2dd4aba3c354d5a24ab4092b8"
+    },
+    {
+      "id": "USCIS-2026-0067-2165",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "赞成移民多样性并批评入境限制，但未明确评价工卡提案。",
+        "en": "Favors immigrant diversity and criticizes entry restrictions without clearly evaluating the EAD proposal."
+      },
+      "postedDate": "2026-07-24T04:00:00Z",
+      "textSha256": "87184968ecc603d5dcbf40006dd30d139eb527d5d4432a7a92c6b5c1a5d84930"
+    },
+    {
+      "id": "USCIS-2026-0067-4813",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求避免新增就业障碍，强调人道假释者和 TPS 持有人的自立与稳定。",
+        "en": "Asks against new work barriers, emphasizing independence and stability for humanitarian parolees and TPS holders."
+      },
+      "postedDate": "2026-08-05T04:00:00Z",
+      "textSha256": "843d7845b7d4ed08324bc062fbb9efabe698a23cfa738eca36c9bc4c1b7c4ba9"
+    },
+    {
+      "id": "USCIS-2026-0067-4410",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "仅泛谈证件与稳定，无法判断提案立场。",
+        "en": "Discusses documents and stability in general; a proposal stance cannot be determined."
+      },
+      "postedDate": "2026-08-04T04:00:00Z",
+      "textSha256": "c109a11e143cd1b907ad03dcfd2a38b0e4b42371b93b29042bff75c0a2c76d15"
+    },
+    {
+      "id": "USCIS-2026-0067-0381",
+      "stance": "oppose",
+      "themes": [
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对限制工作许可的规则，认为其会加剧医务人员短缺和就医困难。",
+        "en": "Opposes the work-restricting rule, arguing it worsens medical staffing shortages and access to care."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "b2f5eabb021d3ac5041ed5e09bde5a1f0b99a113a2797af046cd575835f86e1a"
+    },
+    {
+      "id": "USCIS-2026-0067-0827",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy",
+        "criminal",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，反对以无定罪逮捕记录限制工作并强调家庭和雇主损失。",
+        "en": "Seeks withdrawal, opposing non-conviction arrest restrictions and stressing harm to families and employers."
+      },
+      "postedDate": "2026-06-12T04:00:00Z",
+      "textSha256": "f7cae1e63aaf30d178360415eca33e88059859823f1ffc6d8b4ef388faa7458a"
+    },
+    {
+      "id": "USCIS-2026-0067-3394",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-07-31T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-2173",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian"
+      ],
+      "summary": {
+        "zh": "主张欢迎逃离危险的移民，未明确评价工作许可提案。",
+        "en": "Favors welcoming immigrants fleeing danger without clearly evaluating the work-authorization proposal."
+      },
+      "postedDate": "2026-07-24T04:00:00Z",
+      "textSha256": "ceaa55c86adc34fd2d9f0764aa900806e56b96768ac17747815a37f3ef07618f"
+    },
+    {
+      "id": "USCIS-2026-0067-0117",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "主张保留人道假释者工作机会以自立纳税，但未明确评价拟议变更。",
+        "en": "Favors continued work access for humanitarian parolees to support themselves and pay taxes, without clearly evaluating proposed changes."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "699704862d527b974668cd368a5a3809b17fb4ce89812c4ab59189ac1e6f4738"
+    },
+    {
+      "id": "USCIS-2026-0067-3372",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "反对增加工卡申请和续期障碍，强调专业工人及雇主需要稳定许可。",
+        "en": "Opposes added EAD application and renewal barriers, emphasizing stable authorization for skilled workers and employers."
+      },
+      "postedDate": "2026-07-31T04:00:00Z",
+      "textSha256": "64902837d14673ded32baf57a73b85288a20b21202cac5773a3da1cf75ffaca0"
+    },
+    {
+      "id": "USCIS-2026-0067-0364",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-1764",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "描述重新假释获批后仍因工卡延误失业，要求及时续期者工作不中断；未直接评价提案。",
+        "en": "Describes job loss from EAD delays after re-parole approval and seeks continuity after timely renewal, without directly evaluating the proposal."
+      },
+      "postedDate": "2026-07-20T04:00:00Z",
+      "textSha256": "0f2c9b035fba8e62861ef6f5e1bf60c0e56edd464152225470b7de6e25acb94c"
+    },
+    {
+      "id": "USCIS-2026-0067-1949",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为限制合法工作损害家庭和经济，并要求及时审理。",
+        "en": "Seeks withdrawal, arguing work restrictions harm families and the economy, and requests timely processing."
+      },
+      "postedDate": "2026-07-20T04:00:00Z",
+      "textSha256": "286f74a4d6c61823f4bde650c64d66a21e4b225123f22f75c61a2ae79ee36d12"
+    },
+    {
+      "id": "USCIS-2026-0067-2518",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "支持 LET THEM WORK 和合法就业自立，但未明确评价提案限制。",
+        "en": "Supports LET THEM WORK and lawful employment for self-sufficiency without clearly evaluating the proposal’s restrictions."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "faaceeb73e76aa014a38b9aaee6f0357c7cbbb55816c4e06069a30ebbe540b61"
+    },
+    {
+      "id": "USCIS-2026-0067-0423",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-4319",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，强调重新假释后的工卡延误及新增限制危及家庭与小企业。",
+        "en": "Seeks withdrawal, stressing that post-re-parole EAD delays and added restrictions threaten families and small businesses."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "3bf86c312552311cde97caefd704d0ff3f4301e8ad7fbdc2324cde65f184edc8"
+    },
+    {
+      "id": "USCIS-2026-0067-0245",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对实施限制合法就业的行政障碍，强调家庭住房开支与经济贡献。",
+        "en": "Opposes administrative barriers restricting lawful employment, emphasizing household housing costs and economic contributions."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "2831b7ef2e446807b6c2b388f7105abac7c5ca09693670bad4fbe384c61eacfe"
+    },
+    {
+      "id": "USCIS-2026-0067-0951",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-06-15T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-1059",
+      "stance": "oppose",
+      "themes": [
+        "economy",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "明确反对资格变更，认为提案成本超过效益且加重合法申请人负担。",
+        "en": "Explicitly opposes eligibility changes, arguing costs outweigh benefits and burden lawful applicants."
+      },
+      "postedDate": "2026-06-23T04:00:00Z",
+      "textSha256": "ad9185e9b7c59da76af63845e18031d13312d6c31b003ac2f442e1bfcad5d327"
+    },
+    {
+      "id": "USCIS-2026-0067-3143",
+      "stance": "oppose",
+      "themes": [
+        "criminal",
+        "discretion",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求撤回无定罪逮捕推定和不受复核的裁量安排，强调家庭及雇主信赖利益。",
+        "en": "Seeks withdrawal of non-conviction arrest presumptions and unreviewable discretion, stressing families’ and employers’ reliance interests."
+      },
+      "postedDate": "2026-07-30T04:00:00Z",
+      "textSha256": "d2a8303bc5b3ae8a364d8550a375549b543f4e285c59b9c64cecf397cce8cbac"
+    },
+    {
+      "id": "USCIS-2026-0067-1561",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求及时办理乌克兰人的工卡和续期，强调安全返乡困难及经济贡献；未明确评价提案。",
+        "en": "Requests timely Ukrainian EAD processing and renewals, emphasizing unsafe return and economic contributions, without a clear proposal stance."
+      },
+      "postedDate": "2026-07-14T04:00:00Z",
+      "textSha256": "b6b8443f9daa54685c5c7bbeeee178896f25739177aeaa80c846e9a711c7103f"
+    },
+    {
+      "id": "USCIS-2026-0067-2053",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "认为限制或拖延工卡违背人道假释目的，要求保留工作以维持家庭生计。",
+        "en": "Argues EAD restrictions or delays conflict with humanitarian parole and seeks continued work access for family support."
+      },
+      "postedDate": "2026-07-21T04:00:00Z",
+      "textSha256": "568f6c9ffe69bd910d938147a59ed4fcf2868543ee0a1ed64091235431ddca98"
+    },
+    {
+      "id": "USCIS-2026-0067-3240",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求及时办理乌克兰人的工卡和续期，强调安全返乡困难及经济贡献；未明确评价提案。",
+        "en": "Requests timely Ukrainian EAD processing and renewals, emphasizing unsafe return and economic contributions, without a clear proposal stance."
+      },
+      "postedDate": "2026-07-30T04:00:00Z",
+      "textSha256": "b6b8443f9daa54685c5c7bbeeee178896f25739177aeaa80c846e9a711c7103f"
+    },
+    {
+      "id": "USCIS-2026-0067-2382",
+      "stance": "oppose",
+      "themes": [
+        "criminal",
+        "discretion",
+        "livelihood"
+      ],
+      "summary": {
+        "zh": "反对依据未经定罪的指控拒发工卡，要求撤回相关条款并尊重正当程序。",
+        "en": "Opposes EAD denials based on unproven allegations and seeks withdrawal of those provisions to protect due process."
+      },
+      "postedDate": "2026-07-27T04:00:00Z",
+      "textSha256": "d3257bb5e2c37c7b2dcb0f4c687b026a0bf4235a30cc5c9b396a40d5b7ccedb8"
+    },
+    {
+      "id": "USCIS-2026-0067-3566",
+      "stance": "mixed",
+      "themes": [
+        "criminal",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "建议针对可信身份或金融欺诈证据加强跨部门调查，同时坚持风险导向的个别审查并保护合法申请人。",
+        "en": "Proposes coordinated safeguards for credible identity or financial fraud while requiring risk-based individual review and protection of legitimate applicants."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "d0109bb783924a0045a984f956c57b180c9899bf033f5e923c8430f3e1a4f487"
+    },
+    {
+      "id": "USCIS-2026-0067-3801",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对新增就业障碍，强调家庭照料安排依赖稳定的合法工作收入。",
+        "en": "Opposes new work barriers, stressing that family caregiving depends on stable lawful earnings."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "16963964b5b69b2e2f33e4f696b910d4b719870cf379b3a716fd7b7b7abe182b"
+    },
+    {
+      "id": "USCIS-2026-0067-0083",
+      "stance": "unclear",
+      "themes": [],
+      "summary": {
+        "zh": "仅支持合法在美者工作，未表达对提案的立场。",
+        "en": "Only supports lawful work by people legally in the United States, without expressing a proposal stance."
+      },
+      "postedDate": "2026-06-08T04:00:00Z",
+      "textSha256": "5b31a97848a706e978989b9fb2fa05910df96f59dd875238394eff95833b85d7"
+    },
+    {
+      "id": "USCIS-2026-0067-2536",
+      "stance": "oppose",
+      "themes": [
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对新增合法就业障碍，强调家庭、雇主与地方经济受益。",
+        "en": "Opposes new lawful-work barriers, emphasizing benefits to families, employers and local economies."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "ba954689a28e9c4a1a432d5ea820e1d79bb9526721d7049272bbaacafd21508f"
+    },
+    {
+      "id": "USCIS-2026-0067-1413",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "描述证件到期及续期延误导致失业和学业困难，请求尽快办理；未明确评价提案。",
+        "en": "Describes expired documents and renewal delays causing job and education difficulties, requesting faster processing without a clear proposal stance."
+      },
+      "postedDate": "2026-07-13T04:00:00Z",
+      "textSha256": "b7b9764525a2ffd099170715517fce516e5bcbb41dbaf98b8b0a9e9ce1fb267b"
+    },
+    {
+      "id": "USCIS-2026-0067-2682",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "反对新增就业障碍，担心工卡丧失或延误破坏战争避难家庭的稳定。",
+        "en": "Opposes new work barriers, fearing EAD loss or delay will undermine stability for a war-displaced family."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "a0ce0b0c9465b02cba4f7fe59d436a70adb153dc5aed2995a54ceee1b4e9d495"
+    },
+    {
+      "id": "USCIS-2026-0067-1180",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "反对新增合法就业障碍，要求保留乌克兰假释者工作与纳税的机会。",
+        "en": "Opposes new lawful-work barriers and seeks continued work and tax contributions by Ukrainian parolees."
+      },
+      "postedDate": "2026-07-06T04:00:00Z",
+      "textSha256": "08f444e170a8057104682fbdf99ad196c088d5ecfa77337cd85a06c576aea066"
+    },
+    {
+      "id": "USCIS-2026-0067-0800",
+      "stance": "oppose",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "renewals",
+        "everify",
+        "discretion"
+      ],
+      "summary": {
+        "zh": "要求撤回提案，认为年度续期、E-Verify 和广泛裁量损害阿富汗盟友生计与信赖利益。",
+        "en": "Seeks withdrawal, arguing annual renewals, E-Verify and broad discretion harm Afghan allies’ livelihoods and reliance interests."
+      },
+      "postedDate": "2026-06-11T04:00:00Z",
+      "textSha256": "0807bf7c4e72bcb6ef770a67d15602892d4bf2d0d04e0ffed5b0736715f7ec45"
+    },
+    {
+      "id": "USCIS-2026-0067-4273",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy"
+      ],
+      "summary": {
+        "zh": "支持工作许可并说明医疗和生活支出需要，但未明确评价提案。",
+        "en": "Supports work access and describes medical and living expenses without clearly evaluating the proposal."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "13ee6b6cf89f9bfa33521c4f619f3956374049ec1c7b78bb9fb6bfaccdee20a7"
+    },
+    {
+      "id": "USCIS-2026-0067-3776",
+      "stance": "unclear",
+      "themes": [
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "支持帮助移民取得工卡以养家纳税和填补职位，未明确评价提案。",
+        "en": "Favors helping immigrants obtain EADs to support themselves, pay taxes and fill jobs, without a clear proposal stance."
+      },
+      "postedDate": "2026-08-03T04:00:00Z",
+      "textSha256": "204d72f004615dd3ed0753734394dcefa22a7091d12597ae2d73e471f3d4d414"
+    },
+    {
+      "id": "USCIS-2026-0067-2788",
+      "stance": "unclear",
+      "themes": [
+        "humanitarian",
+        "livelihood",
+        "economy",
+        "renewals"
+      ],
+      "summary": {
+        "zh": "要求加快乌克兰人工卡办理，描述延误对家庭和小企业的影响；未直接评价提案。",
+        "en": "Requests faster Ukrainian EAD processing and describes delays affecting families and small businesses, without directly evaluating the proposal."
+      },
+      "postedDate": "2026-07-29T04:00:00Z",
+      "textSha256": "9db1d6a40ea05d766c81cd07abcda50cd4b15b314bddfc03101f1eb74717ab6e"
     }
   ],
   "codebook": [
@@ -5714,5 +6522,19 @@
   "scopeNote": {
     "zh": "样本来自整份拟议规则的公开评论，不仅涉及本卡片强调的犯罪记录审查，也涵盖人道假释、暂缓遣返和监督令等工作许可。立场针对整份提案；主题可多选，通用工卡诉求不足以推断立场。",
     "en": "This sample covers comments on the full proposed rule, including parole, deferred-action and supervision-order work authorization, beyond the criminal-record review highlighted by this card. Stances concern the full proposal; themes overlap, and generic EAD requests alone do not establish a stance."
-  }
+  },
+  "expandedAt": "2026-09-12T12:42:28.157Z",
+  "sampleSize": 100,
+  "bodyReviewCompletedOn": "2026-09-12",
+  "attachmentGaps": [
+    {
+      "commentId": "USCIS-2026-0067-0014",
+      "url": "https://downloads.regulations.gov/USCIS-2026-0067-0014/attachment_1.pdf",
+      "classificationBasis": "Available comment body only; retained as unclear when insufficient",
+      "note": {
+        "zh": "正文仅有附件提示；官方附件 PDF 经直接下载和网页读取均返回 HTTP 403，未能审阅。",
+        "en": "Body contains only an attachment pointer; the official PDF returned HTTP 403 through direct download and web retrieval and could not be reviewed."
+      }
+    }
+  ]
 }

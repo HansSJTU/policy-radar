@@ -8,6 +8,8 @@ export type CommentSample = {
   commentDeadline?: string;
   scopeNote?: { zh: string; en: string };
   publishedCount: number;
+  sampleSize: number;
+  expandedAt?: string;
   status: 'pending' | 'reviewed';
   sampledAt?: string;
   seed?: string;

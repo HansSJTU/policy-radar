@@ -1,12 +1,15 @@
 /** Download a reproducible sample for editorial review; never invent classifications.
- * REGULATIONS_GOV_API_KEY=... node scripts/sample-public-comments.mjs DOCUMENT_ID OUTPUT_DIR
+ * REGULATIONS_GOV_API_KEY=... node scripts/sample-public-comments.mjs DOCUMENT_ID OUTPUT_DIR [SAMPLE_SIZE]
  * Output includes the complete sampling frame, selected IDs, and review records.
  */
 import { createHash, randomBytes } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
-const [documentId, output] = process.argv.slice(2);
+const [documentId, output, requestedSize = '100'] = process.argv.slice(2);
+const sampleSize = Number(requestedSize);
+if (!Number.isSafeInteger(sampleSize) || sampleSize < 1)
+  throw new Error('SAMPLE_SIZE must be a positive integer');
 if (!/^[-A-Z0-9]+-\d{4}$/.test(documentId ?? '') || !output)
   throw new Error('Pass DOCUMENT_ID and OUTPUT_DIR');
 const key = process.env.REGULATIONS_GOV_API_KEY;
@@ -92,9 +95,9 @@ if (rows.size !== initialTotal)
     'Listing changed during collection; use a fresh output directory to capture a consistent frame.',
   );
 const populationIds = [...rows.keys()].sort((a, b) => a.localeCompare(b));
-if (populationIds.length < 50)
+if (populationIds.length < sampleSize)
   throw new Error(
-    'Fewer than 50 published records; do not label as a 50-comment sample.',
+    `Fewer than ${sampleSize} published records; cannot complete the requested sample.`,
   );
 const manifestPath = path.join(output, 'manifest.json');
 let manifest;
@@ -111,18 +114,20 @@ if (
   (manifest.frameSha256 !== frameSha256 || manifest.documentId !== documentId)
 )
   throw new Error('Saved sample belongs to a different frame or document.');
-if (!manifest) {
-  const seed = randomBytes(32).toString('hex');
+if (!manifest || manifest.sampleIds.length !== sampleSize) {
+  const seed = manifest?.seed ?? randomBytes(32).toString('hex');
   const rank = (id) =>
     createHash('sha256').update(`${seed}\n${id}`).digest('hex');
   const sampleIds = [...populationIds]
     .sort((a, b) => rank(a).localeCompare(rank(b)) || a.localeCompare(b))
-    .slice(0, 50);
+    .slice(0, sampleSize);
   manifest = {
     documentId,
-    sampledAt: new Date().toISOString(),
+    sampledAt: manifest?.sampledAt ?? new Date().toISOString(),
+    expandedAt: manifest ? new Date().toISOString() : undefined,
+    sampleSize,
     seed,
-    method: 'SHA-256 seeded ranking, first 50 without replacement',
+    method: `SHA-256 seeded ranking, first ${sampleSize} without replacement`,
     frameSize: populationIds.length,
     frameSha256,
     populationIds,
@@ -146,12 +151,12 @@ for (const id of manifest.sampleIds) {
     themes: [],
     summary: { zh: '', en: '' },
   });
-  console.log(`Retrieved ${comments.length}/50`);
+  console.log(`Retrieved ${comments.length}/${sampleSize}`);
 }
 await writeFile(
   path.join(output, 'review.json'),
   JSON.stringify(comments, null, 2),
 );
 console.log(
-  'Review all 50 texts and attachments, label stances and themes, then publish the reviewed snapshot. Do not drop inaccessible or ambiguous selected records.',
+  `Review all ${sampleSize} texts and attachments, label stances and themes, then publish the reviewed snapshot. Do not drop inaccessible or ambiguous selected records.`,
 );

@@ -27,7 +27,11 @@ export function PublicCommentDistribution({
   const sample = publicCommentSamples[policyId];
   if (!sample) return null;
   const en = language === 'en';
-  const ready = sample.status === 'reviewed' && sample.comments.length === 50;
+  const sampleSize = sample.sampleSize;
+  const ready =
+    sample.status === 'reviewed' &&
+    sampleSize > 0 &&
+    sample.comments.length === sampleSize;
   const stats = ready ? summarizeComments(sample.comments) : null;
   const source = `https://www.regulations.gov/document/${sample.documentId}/comment`;
   const sampledAt = sample.sampledAt
@@ -59,8 +63,8 @@ export function PublicCommentDistribution({
         <span className="pd-comment-badge">
           {ready
             ? en
-              ? '50 sampled comments'
-              : '随机样本 · 50 条'
+              ? `${sampleSize} sampled comments`
+              : `随机样本 · ${sampleSize} 条`
             : en
               ? 'Sample pending'
               : '样本待完成'}
@@ -71,6 +75,13 @@ export function PublicCommentDistribution({
           ? `Published comments: ${sample.publishedCount.toLocaleString('en-US')} · ${ready ? `Sampled ${sampledAt}` : `Checked ${sample.checkedOn} ET`}`
           : `已公开评论 ${sample.publishedCount.toLocaleString('en-US')} 条 · ${ready ? `采样于 ${sampledAt}` : `核对于 ${sample.checkedOn} ET`}`}
       </p>
+      {sample.expandedAt && (
+        <p className="pd-comment-meta">
+          {en
+            ? `Expanded to ${sampleSize} records on ${new Date(sample.expandedAt).toISOString().slice(0, 10)} using the original frame and seed; the initial 50 records are retained.`
+            : `于 ${new Date(sample.expandedAt).toISOString().slice(0, 10)} 沿用原评论列表和随机种子扩展至 ${sampleSize} 条，保留最初 50 条。`}
+        </p>
+      )}
       {sample.commentDeadline && (
         <p className="pd-comment-meta">
           {sample.commentPhase === 'closed'
@@ -117,8 +128,8 @@ export function PublicCommentDistribution({
           <h4>{en ? 'Themes discussed' : '讨论主题分布'}</h4>
           <p className="pd-comment-note">
             {en
-              ? 'Supporters and opponents may discuss the same theme. A comment can have multiple labels; each percentage uses all 50 comments, so totals may exceed 100%.'
-              : '支持和反对者可能讨论同一主题。一条评论可有多个标签；占比均以 50 条为分母，合计可能超过 100%。'}
+              ? `Supporters and opponents may discuss the same theme. A comment can have multiple labels; each percentage uses all ${sampleSize} comments, so totals may exceed 100%.`
+              : `支持和反对者可能讨论同一主题。一条评论可有多个标签；占比均以 ${sampleSize} 条为分母，合计可能超过 100%。`}
           </p>
           <div className="pd-comment-bars">
             {stats.themes.map((row) => (
@@ -142,18 +153,18 @@ export function PublicCommentDistribution({
           <details className="pd-comment-method">
             <summary>
               {en
-                ? 'Sampling method & all 50 records'
-                : '采样方法与全部 50 条记录'}
+                ? `Sampling method & all ${sampleSize} records`
+                : `采样方法与全部 ${sampleSize} 条记录`}
             </summary>
             <p>
               {en
-                ? `A fixed random seed selected 50 unique comment IDs from the complete listing of ${sample.frameSize} published records. Sampled ${sampledAt}. This site's AI classified each body into one position and zero or more themes; these are not official labels. Similar submissions with distinct IDs remain separate records.`
-                : `从完整的 ${sample.frameSize} 条已公开记录列表中，用固定随机种子不放回抽取 50 个评论编号。采样时间：${sampledAt}。本站 AI 逐条阅读正文并归类，每条对应一个立场和零个或多个主题，标签非官方认定；内容相似但编号不同的提交仍分别计数。`}
+                ? `A fixed random seed selected ${sampleSize} unique comment IDs from the complete listing of ${sample.frameSize} published records. Sampled ${sampledAt}. This site's AI classified each body into one position and zero or more themes; these are not official labels. Similar submissions with distinct IDs remain separate records.`
+                : `从完整的 ${sample.frameSize} 条已公开记录列表中，用固定随机种子不放回抽取 ${sampleSize} 个评论编号。采样时间：${sampledAt}。本站 AI 逐条阅读正文并归类，每条对应一个立场和零个或多个主题，标签非官方认定；内容相似但编号不同的提交仍分别计数。`}
             </p>
             <p>
               {en
-                ? 'Positions refer to this proposal: explicit endorsement is support; explicit rejection or a request to withdraw is oppose. Conditional / mixed covers substantive exemptions, alternative schemes or mixed positions. General immigration views without a clear position on this proposal remain unclear. Unavailable attachments are disclosed per record: a clear available body can be classified, while attachment-only records remain unclear. Records are never replaced because of their viewpoint or readability.'
-                : '立场针对本项提案：明确赞成归为“支持”，明确反对或要求撤回归为“反对”；实质性豁免、替代方案或混合意见归为“有条件／混合”。只表达一般移民看法、没有明确评价本提案的，保留为“未明确表态”。附件无法读取时逐条注明：正文立场明确的按正文归类，仅有不可读附件的记为“无法判断”。不会因观点或可读性替换样本。'}
+                ? 'Positions refer to this proposal: explicit endorsement is support; clear rejection (including an unambiguous statement of harm from this proposal) or a request to withdraw is oppose. Conditional / mixed covers substantive exemptions, alternative schemes or mixed positions. General immigration views without a clear position on this proposal remain unclear. Unavailable attachments are disclosed per record: a clear available body can be classified, while attachment-only records remain unclear. Records are never replaced because of their viewpoint or readability.'
+                : '立场针对本项提案：明确赞成归为“支持”，明确反对（包括明确指称本提案会造成损害）或要求撤回归为“反对”；实质性豁免、替代方案或混合意见归为“有条件／混合”。只表达一般移民看法、没有明确评价本提案的，保留为“未明确表态”。附件无法读取时逐条注明：正文立场明确的按正文归类，仅有不可读附件的记为“无法判断”。不会因观点或可读性替换样本。'}
             </p>
             {sample.manifestUrl && (
               <a
@@ -216,8 +227,8 @@ export function PublicCommentDistribution({
       ) : (
         <p className="pd-comment-pending">
           {en
-            ? 'The 50-comment random sample is not yet complete. Viewpoint percentages will appear after the original comments have been retrieved and classified.'
-            : '50 条随机评论样本尚未完成。取得原文并逐条归类后，这里将显示各观点的数量与占比。'}
+            ? `The ${sampleSize}-comment random sample is not yet complete. Viewpoint percentages will appear after the original comments have been retrieved and classified.`
+            : `${sampleSize} 条随机评论样本尚未完成。取得原文并逐条归类后，这里将显示各观点的数量与占比。`}
         </p>
       )}
       <a

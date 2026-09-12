@@ -32,7 +32,7 @@ test('empty samples do not produce NaN and duplicate comment IDs are rejected', 
   );
 });
 
-test('published snapshot contains exactly the reproducible 50-record sample from a complete unique frame', async () => {
+test('published snapshot contains exactly the reproducible 100-record sample from a complete unique frame', async () => {
   const { createHash } = await import('node:crypto');
   const { readFile } = await import('node:fs/promises');
   const { publicCommentSamples } =
@@ -45,7 +45,8 @@ test('published snapshot contains exactly the reproducible 50-record sample from
       ),
     );
     assert.equal(sample.status, 'reviewed');
-    assert.equal(sample.comments.length, 50);
+    assert.equal(sample.sampleSize, 100);
+    assert.equal(sample.comments.length, 100);
     assert.equal(manifest.populationIds.length, manifest.frameSize);
     assert.equal(new Set(manifest.populationIds).size, manifest.frameSize);
     assert.equal(sample.publishedCount, manifest.frameSize);
@@ -59,7 +60,7 @@ test('published snapshot contains exactly the reproducible 50-record sample from
     const rank = (id) => hash(`${manifest.seed}\n${id}`);
     const selected = [...manifest.populationIds]
       .sort((a, b) => rank(a).localeCompare(rank(b)) || a.localeCompare(b))
-      .slice(0, 50);
+      .slice(0, 100);
     assert.deepEqual(selected, manifest.sampleIds);
     assert.deepEqual(
       sample.comments.map((c) => c.id),
@@ -71,7 +72,7 @@ test('published snapshot contains exactly the reproducible 50-record sample from
         (n, row) => n + row.count,
         0,
       ),
-      50,
+      100,
     );
   }
 });
@@ -121,7 +122,8 @@ test('all open and closed-awaiting-final-rule policies have independent samples'
     assert.equal(sample.documentId, documentId);
     assert.equal(sample.commentPhase, phase);
     assert.equal(sample.commentDeadline, deadline);
-    assert.equal(sample.comments.length, 50);
+    assert.equal(sample.comments.length, 100);
     assert.equal(sample.status, 'reviewed');
+    assert.equal(sample.sampleSize, 100);
   }
 });
