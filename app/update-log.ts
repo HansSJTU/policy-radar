@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-13",
+  "changes": [
+    {
+      "id": "cpt-bc-jhu",
+      "category": "CPT 学校",
+      "title": "新增 Boston College 与 Johns Hopkins 校方 CPT 通知",
+      "summary": "BC 暂停非全员毕业必需的校外 CPT；JHU 仅处理符合毕业要求及 SEVP 备忘录的新申请和待审请求。",
+      "before": "34 条公开校方证据、5 条社区证据，共 39 条，覆盖 38 所不同学校。",
+      "after": "36 条公开校方证据、5 条社区证据，共 41 条，覆盖 40 所不同学校；JHU 下方旧选修口径不构成恢复依据。",
+      "sources": [
+        {
+          "label": "Boston College OISS · September 9",
+          "href": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html"
+        },
+        {
+          "label": "Johns Hopkins OIS · CPT",
+          "href": "https://ois.jhu.edu/students/current-f-1-students/f-1-training-and-employment/curricular-practical-training/"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-12",
   "changes": [
 {
@@ -662,6 +685,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-13",
+  "changes": [
+    {
+      "id": "cpt-bc-jhu",
+      "category": "CPT schools",
+      "title": "Add Boston College and Johns Hopkins university CPT notices",
+      "summary": "BC pauses off-campus CPT not required of every student; JHU processes new and pending requests only for degree-required training consistent with SEVP memos.",
+      "before": "34 public university evidence entries and 5 community entries: 39 entries across 38 distinct schools.",
+      "after": "36 public university evidence entries and 5 community entries: 41 entries across 40 distinct schools. Older JHU elective-course text does not establish reopening.",
+      "sources": [
+        {
+          "label": "Boston College OISS · September 9",
+          "href": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html"
+        },
+        {
+          "label": "Johns Hopkins OIS · CPT",
+          "href": "https://ois.jhu.edu/students/current-f-1-students/f-1-training-and-employment/curricular-practical-training/"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-12",
   "changes": [

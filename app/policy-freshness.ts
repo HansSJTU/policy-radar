@@ -2,20 +2,20 @@ import type { PolicyId } from './community-impact-model';
 import type { Language } from './language';
 
 // Last site update, not a certification that every source is fully verified.
-export const SITE_UPDATED_ON = '2026-09-12';
+export const SITE_UPDATED_ON = '2026-09-13';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
-  'opt-fee': '2026-09-12',
-  'h1b-fee': '2026-09-12',
-  'duration-status': '2026-09-12',
-  'h1b-weighted-selection': '2026-09-12',
-  'cpt-guidance': '2026-09-12',
-  'prevailing-wage': '2026-09-12',
-  'h1b-reform': '2026-09-12',
-  'grace-period': '2026-09-12',
-  'ead-discretion': '2026-09-12',
-  'h4-ead': '2026-09-12',
+  'opt-fee': '2026-09-13',
+  'h1b-fee': '2026-09-13',
+  'duration-status': '2026-09-13',
+  'h1b-weighted-selection': '2026-09-13',
+  'cpt-guidance': '2026-09-13',
+  'prevailing-wage': '2026-09-13',
+  'h1b-reform': '2026-09-13',
+  'grace-period': '2026-09-13',
+  'ead-discretion': '2026-09-13',
+  'h4-ead': '2026-09-13',
 };
 
 const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {
