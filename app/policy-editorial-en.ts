@@ -21,7 +21,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'The payer, covered applications and exemptions are unpublished; $100,000 is media-reported and student payment cannot be assumed.',
     summary:
-      'September 11 development (checked September 12): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
+      'September 11 development (checked September 13): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
     background:
       'ICE submitted Optional Practical Training Fees on August 20, 2026; the September 11 OIRA conclusion is Consistent with Change. Completed prepublication review is not a final rule or an effective fee. No public NPRM was located; payment responsibility awaits official provisions.',
     effectState: 'not-in-effect',
@@ -199,7 +199,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'Current D/S holders have transition provisions; a hearing does not pause the rule, and court orders determine any relief.',
     summary:
-      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings. Transcript checked September 12: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
+      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings. Transcript checked September 13: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
     background:
       'The 2025 proposal became a final rule on July 17, 2026, generally setting a four-year maximum and requiring USCIS extensions. After hearing arguments on September 3, the court took the request under advisement without granting or denying it from the bench. Pages 38–44 and 49–51 record judicial questions about the connection between a four-year limit and national security, extension uncertainty and enrollment harm. The government defended added screening, fraud prevention and available extensions. These are hearing exchanges and party arguments, not final findings.',
     effectState: 'not-in-effect',
@@ -634,7 +634,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'This is a proposal; current rules remain unchanged. If finalized as drafted, people otherwise authorized to remain lawfully would not all have to depart immediately. The F-1 post-completion grace period is separate.',
     summary:
-      'September 11 development (checked September 12): DHS published its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
+      'September 11 development (checked September 13): DHS published its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
     background:
       'Document 2026-18631 entered public inspection September 10 and was published September 11 at 91 FR 57807; docket USCIS-2026-0364. It would remove 8 CFR 214.1(l)(2) and make a conforming reference change for compelling-circumstances EADs. The published version sets the comment deadline at November 10, 2026, before midnight Eastern Time. No final rule or effective date is set.',
     effectState: 'not-in-effect',
