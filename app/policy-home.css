@@ -29,7 +29,7 @@
   text-decoration: none;
   color: var(--path-ink);
 }
-.policy-detail-entry a:last-child {
+.policy-detail-entry a + a {
   color: var(--muted);
   font-size: 11px;
 }

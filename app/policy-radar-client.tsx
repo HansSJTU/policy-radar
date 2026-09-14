@@ -337,6 +337,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
                 <CommunityImpactRating
                   language={language}
                   policyId={policy.id}
+                  forumLinks={policy.sources.filter((source) => new URL(source.href).hostname === 'www.uscardforum.com')}
                   aggregate={communityImpact.aggregates[policy.id]}
                   selected={communityImpact.selections[policy.id] ?? null}
                   pending={communityImpact.pending[policy.id] ?? false}

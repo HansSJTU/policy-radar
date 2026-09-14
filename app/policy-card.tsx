@@ -168,7 +168,6 @@ export function PolicyCard({
 
       <div className="policy-detail-entry">
         <a href={policyHref(policy.id, language, undefined, selectedPath)}>{language === 'en' ? 'Read impact & outlook' : '阅读影响分析与走向'}<ArrowUpRight aria-hidden="true" /></a>
-        <a href={policyHref(policy.id, language, 'sources', selectedPath)}>{language === 'en' ? 'Sources' : '原始来源'}</a>
       </div>
     </article>
   );

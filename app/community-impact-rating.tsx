@@ -203,6 +203,7 @@ export function CommunityImpactRating({
   pending,
   error,
   onSelect,
+  forumLinks = [],
 }: {
   language: Language;
   policyId: PolicyId;
@@ -211,6 +212,7 @@ export function CommunityImpactRating({
   pending: boolean;
   error: boolean | null;
   onSelect: (rating: number) => void;
+  forumLinks?: { label: string; href: string }[];
 }) {
   const [hoveredRating, setHoveredRating] = useState<number | null>(null);
   const [focusedRating, setFocusedRating] = useState<number | null>(null);
@@ -278,6 +280,15 @@ export function CommunityImpactRating({
           </>
         )}
       </p>
+      {forumLinks.length > 0 && (
+        <div className="community-forum-links">
+          {forumLinks.map((source) => (
+            <a key={source.href} href={source.href} target="_blank" rel="noopener noreferrer">
+              {source.label} ↗
+            </a>
+          ))}
+        </div>
+      )}
     </aside>
   );
 }

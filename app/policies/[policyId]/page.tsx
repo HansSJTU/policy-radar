@@ -400,7 +400,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <h2>{english ? 'Sources' : '原始来源'}</h2>
                   <span>05 / SOURCES</span>
                 </div>
-                {sources.map((source) => (
+                {record.sources.map((source) => (
                   <div className="pd-source" key={source.href}>
                     <FileText aria-hidden="true" />
                     <div>
