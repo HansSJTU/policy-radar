@@ -318,7 +318,7 @@ main { width: 100%; min-width: 0; }
 .rating-feedback .community-my-rating { color: var(--ink-soft); font-weight: 600; white-space: nowrap; }
 .rating-feedback.error { color: var(--red-dark); }
 .community-forum-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5eaf2; }
-.community-forum-links a { color: var(--path-ink); font-size: .8125rem; text-underline-offset: 3px; }
+.community-forum-links a { color: var(--muted); font-size: .8125rem; text-underline-offset: 3px; }
 
 .process-mobile-head { display: none; }
 .process-row { margin: 0 0 0 96px; padding: 24px 0 50px; border-bottom: 1px solid #e5eaf2; }
