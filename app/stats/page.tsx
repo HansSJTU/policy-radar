@@ -137,7 +137,7 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
           <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
           <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
           <a href={language === 'en' ? '/updates?lang=en' : '/updates'}>{ui.updates}</a>
-          <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
+          <a href={language === 'en' ? '/stats?lang=en' : '/stats'} aria-current="page">{ui.stats}</a>
         </nav>
         <div className="top-actions">
           <GitHubProjectLink language={language} />

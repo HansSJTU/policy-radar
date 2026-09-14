@@ -96,7 +96,7 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
         <nav className="nav-links" aria-label={ui.navLabel}>
           <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
           <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
-          <a href={language === 'en' ? '/updates?lang=en' : '/updates'}>{ui.updates}</a>
+          <a href={language === 'en' ? '/updates?lang=en' : '/updates'} aria-current="page">{ui.updates}</a>
           <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
         </nav>
         <div className="top-actions">

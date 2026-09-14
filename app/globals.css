@@ -122,6 +122,8 @@ main { width: 100%; min-width: 0; }
 .nav-links a::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 14px; height: 2px; background: var(--red); transition: right .22s ease; }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a:hover::after { right: 0; }
+.nav-links a[aria-current="page"] { color: var(--ink); }
+.nav-links a[aria-current="page"]::after { right: 0; }
 .top-actions { min-width: 0; justify-self: end; display: flex; align-items: center; gap: 12px; }
 .mobile-menu-trigger { width: 36px; height: 36px; padding: 0; display: none; align-items: center; justify-content: center; border: 1px solid rgba(20,32,56,.15); border-radius: 999px; color: var(--ink); background: rgba(255,255,255,.66); cursor: pointer; }
 .mobile-menu-trigger:hover, .mobile-menu-trigger[data-popup-open] { border-color: rgba(20,32,56,.3); background: var(--card); }
