@@ -35,6 +35,7 @@ export type AnalyticsEngineVisit = {
   pathname: string;
   language: 'zh' | 'en';
   visitorHash: string;
+  anonymousVisitorId?: string;
   referrerHost: string;
   utmSource: string;
   utmMedium: string;
@@ -66,7 +67,7 @@ export function buildAnalyticsEngineVisitDataPoint(
   const schoolId = normalizeContentId(visit.schoolId);
   return {
     indexes: [visit.visitorHash],
-    // Preserve blob1..blob16; append content_type, component, action.
+    // Preserve blob1..blob19; append stable anonymous identity at blob20.
     blobs: [
       visit.eventType,
       visit.day,
@@ -87,6 +88,7 @@ export function buildAnalyticsEngineVisitDataPoint(
       policyId ? 'policy' : schoolId ? 'school' : 'page',
       normalizeComponent(visit.component) || (visit.eventType === 'share' ? 'share_menu' : 'page'),
       visit.eventType === 'page_view' ? 'view' : visit.eventType === 'share' ? visit.shareAction ?? '' : 'click',
+      visit.anonymousVisitorId ?? '',
     ],
     doubles: [1],
   };
@@ -293,4 +295,13 @@ export function summarizeTraffic(points: TrafficPoint[]) {
     }),
     { pageViews: 0, visitorDays: 0, activeDays: 0 },
   );
+}
+
+// Domain separation prevents reuse of the raw browser UUID in stored analytics.
+export async function hashAnonymousVisitor(visitorId: string) {
+  const digest = await crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(`policy-radar:retention:v1:${visitorId.toLowerCase()}`),
+  );
+  return Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
 }

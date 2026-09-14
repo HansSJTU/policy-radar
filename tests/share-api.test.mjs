@@ -108,6 +108,6 @@ test('ranking clicks normalize policy identity and write separate dimensions wit
     assert.equal((await POST(request({ visitorId, eventType: 'content_click', policyId, component: 'ranking_card' }))).status, 204);
   }
   assert.deepEqual(points.map(p => p.blobs[11]), ['opt-fee', 'opt-fee', '', '', '']);
-  assert.deepEqual(points[0].blobs.slice(16), ['policy', 'ranking_card', 'click']);
-  assert.deepEqual(points[2].blobs.slice(16), ['page', 'ranking_card', 'click']);
+  assert.deepEqual(points[0].blobs.slice(16, 19), ['policy', 'ranking_card', 'click']);
+  assert.deepEqual(points[2].blobs.slice(16, 19), ['page', 'ranking_card', 'click']);
 });

@@ -42,7 +42,7 @@ test('builds a stable, anonymous Analytics Engine page-view event', () => {
       '/',
       '',
       '',
-      '', '', '', 'page', 'page', 'view',
+      '', '', '', 'page', 'page', 'view', '',
     ],
     doubles: [1],
   });

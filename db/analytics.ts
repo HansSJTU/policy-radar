@@ -1,9 +1,11 @@
+import { retentionSchema, upsertRetentionVisitor, insertRetentionDay, insertRetentionSession } from './retention';
 import { env } from 'cloudflare:workers';
 
 import {
   buildTrafficSeries,
   getTrafficStartDay,
   hashDailyVisitor,
+  hashAnonymousVisitor,
   normalizeCampaignDimension,
   normalizeCountryCode,
   normalizeOutboundClick,
@@ -61,6 +63,7 @@ async function ensureAnalyticsSchema() {
     const db = database();
     schemaPromise = db
       .batch([
+        ...retentionSchema.map(sql => db.prepare(sql)),
         db.prepare(createDailyTrafficTable),
         db.prepare(createDailyVisitorsTable),
         db.prepare(createDailyVisitorBaselineTable),
@@ -100,11 +103,15 @@ export async function recordVisit(
   const db = database();
   const day = easternDay(now);
   const visitorHash = await hashDailyVisitor(day, visitorId);
+  const anonymousVisitorId = await hashAnonymousVisitor(visitorId);
   const countryCode = normalizeCountryCode(country);
 
   await writeVisitAnalytics(
     () =>
       db.batch([
+        db.prepare(upsertRetentionVisitor).bind(anonymousVisitorId, now.toISOString(), now.toISOString(), day, normalizeCampaignDimension(metadata.utmSource), normalizeCampaignDimension(metadata.utmMedium), normalizeCampaignDimension(metadata.utmCampaign), normalizeReferrerHost(metadata.referrerHost)),
+        db.prepare(insertRetentionDay).bind(anonymousVisitorId, day),
+        db.prepare(insertRetentionSession).bind(anonymousVisitorId, normalizeSessionId(metadata.sessionId)),
         db
           .prepare(
             `INSERT INTO daily_traffic (day, page_views, updated_at)
@@ -133,6 +140,7 @@ export async function recordVisit(
       pathname: normalizeVisitPathname(metadata.pathname),
       language: normalizeVisitLanguage(metadata.language),
       visitorHash,
+      anonymousVisitorId,
       referrerHost: normalizeReferrerHost(metadata.referrerHost),
       utmSource: normalizeCampaignDimension(metadata.utmSource),
       utmMedium: normalizeCampaignDimension(metadata.utmMedium),
@@ -154,6 +162,7 @@ export async function recordAnalyticsEngineEvent(
 ) {
   const day = easternDay(now);
   const visitorHash = await hashDailyVisitor(day, visitorId);
+  const anonymousVisitorId = await hashAnonymousVisitor(visitorId);
 
   writeAnalyticsEngineVisit(env.ANALYTICS, {
     eventType: metadata.eventType ?? 'outbound_click',
@@ -162,6 +171,7 @@ export async function recordAnalyticsEngineEvent(
     pathname: normalizeVisitPathname(metadata.pathname),
     language: normalizeVisitLanguage(metadata.language),
     visitorHash,
+    anonymousVisitorId,
     referrerHost: normalizeReferrerHost(metadata.referrerHost),
     utmSource: normalizeCampaignDimension(metadata.utmSource),
     utmMedium: normalizeCampaignDimension(metadata.utmMedium),

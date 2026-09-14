@@ -41,7 +41,7 @@ const statsCopy = {
     visitorMethod: '同一浏览器在同一自然日只计算一次。',
     viewMethod: '政策雷达主页每加载一次计算一次。',
     privacy:
-      '数据库只保存按日期生成的匿名哈希和国家代码，不保存 IP、姓名或邮箱，也不能跨天关联个人。',
+      '使用保存在浏览器中的随机匿名标识统计跨天回访，服务端保存其哈希、访问日期和来源，不保存 IP、姓名或邮箱。清除浏览器存储会重置标识。',
     locale: 'zh-CN',
   },
   en: {
@@ -74,7 +74,7 @@ const statsCopy = {
     viewMethod:
       'Each load of the policy-radar home page counts as one page view.',
     privacy:
-      'The database stores only date-scoped anonymous hashes and country codes. It does not store IP addresses, names, or email addresses and cannot link an individual across days.',
+      'A random identifier stored in your browser measures return visits across days. The server stores its hash, visit dates and attribution, without IP addresses, names or email addresses. Clearing browser storage resets the identifier.',
     locale: 'en-US',
   },
 };

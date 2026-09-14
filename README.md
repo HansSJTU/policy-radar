@@ -61,7 +61,7 @@ GitHub Actions uses repository secrets with the same names. Pull requests and no
 
 The share menu records channel selections and clipboard outcomes in Analytics Engine, separately from page views. See [share analytics](docs/share-analytics.md) for fields and a query by sharing method.
 
-Each home-page load counts as one page view. A browser counts as one unique visitor per Eastern Time calendar day. The database stores date-scoped anonymous hashes and two-letter country codes supplied by Cloudflare. It does not store IP addresses, names, or email addresses, and the hashes cannot be used to link a visitor across days. Historical public aggregates contain no visitor hashes or country data.
+Each home-page load counts as one page view. A browser counts as one unique visitor per Eastern Time calendar day. The database stores daily hashes and country codes, plus a stable hash of a random browser UUID for return-visit measurement. Retention records contain first/last seen, distinct visit days, sessions and first-touch attribution, without IP addresses, names or email addresses. See [retention measurement](RETENTION.md). Historical public aggregates contain no visitor hashes or country data.
 
 ## Contributing
 
