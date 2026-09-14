@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
 import {
-  ArrowLeft,
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
+  Radar,
 } from 'lucide-react';
 
+import { brandHomeLabel } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
 import type { Language } from '@/app/language';
 import { resolveRequestLanguage } from '@/app/language-server';
 import { PageLanguageSwitch } from '@/app/page-language-switch';
+import { SITE_UPDATED_ON } from '@/app/policy-freshness';
 import { getUpdateLog } from '@/app/update-log';
 import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
@@ -22,9 +24,15 @@ const updatesCopy = {
   zh: {
     metadataTitle: '更新记录｜留美路径政策雷达',
     metadataDescription: '留美路径政策雷达的政策、时间与 CPT 学校材料更新记录。',
-    back: '返回政策雷达',
-    bar: '内容更新记录',
+    brand: '留美路径雷达',
+    navLabel: '页面导航',
+    policies: '政策',
+    cptSchools: 'CPT 学校',
+    updates: '更新记录',
+    stats: '访问统计',
     switchLabel: '切换网站语言',
+    chinese: '中',
+    english: 'EN',
     kicker: 'CONTENT CHANGELOG',
     title: '更新记录',
     entryLabel: '次内容变化',
@@ -37,9 +45,15 @@ const updatesCopy = {
     metadataTitle: 'Updates | U.S. Stay Path Policy Radar',
     metadataDescription:
       'Content updates to policy status, dates, and CPT school evidence in the U.S. Stay Path Policy Radar.',
-    back: 'Back to policy radar',
-    bar: 'Content updates',
+    brand: 'Stay Path Radar',
+    navLabel: 'Page navigation',
+    policies: 'Policies',
+    cptSchools: 'CPT Schools',
+    updates: 'Updates',
+    stats: 'Traffic',
     switchLabel: 'Switch site language',
+    chinese: '中',
+    english: 'EN',
     kicker: 'CONTENT CHANGELOG',
     title: 'Updates',
     entryLabel: 'content changes',
@@ -74,18 +88,18 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
 
   return (
     <main className="updates-page">
-      <header className="updates-page-bar">
-        <form action="/" method="get">
-          {language === 'en' ? (
-            <input type="hidden" name="lang" value="en" />
-          ) : null}
-          <button type="submit" className="stats-back">
-            <ArrowLeft aria-hidden="true" />
-            {ui.back}
-          </button>
-        </form>
-        <div className="updates-page-actions">
-          <span>{ui.bar}</span>
+      <header className="topbar product-bar">
+        <a className="brand" href={language === 'en' ? '/?lang=en' : '/'} aria-label={brandHomeLabel(language)}>
+          <span className="brand-mark"><Radar aria-hidden="true" /></span>
+          <span>{ui.brand}</span>
+        </a>
+        <nav className="nav-links" aria-label={ui.navLabel}>
+          <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
+          <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
+          <a href={language === 'en' ? '/updates?lang=en' : '/updates'}>{ui.updates}</a>
+          <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
+        </nav>
+        <div className="top-actions">
           <GitHubProjectLink language={language} />
           <ShareButton language={language} pageTitle={ui.title} />
           <PageLanguageSwitch
@@ -94,6 +108,7 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
             label={ui.switchLabel}
           />
           <MobileSiteMenu current="updates" language={language} />
+          <div className="asof"><span /><time dateTime={SITE_UPDATED_ON}>{SITE_UPDATED_ON} · ET</time></div>
         </div>
       </header>
 

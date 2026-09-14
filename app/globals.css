@@ -650,9 +650,7 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .topbar { grid-template-columns: minmax(0, 1fr) auto; }
   .nav-links { display: none; }
   .mobile-menu-trigger { display: inline-flex; }
-  .top-actions .github-project-link-header,
-  .stats-page-actions .github-project-link-header,
-  .updates-page-actions .github-project-link-header { display: none; }
+  .top-actions .github-project-link-header { display: none; }
   .route-map-shell { padding-right: 22px; padding-left: 22px; }
   .briefing-board { grid-template-columns: 1fr; }
   .ranking-head { align-items: flex-start; flex-direction: column; gap: 20px; }
@@ -676,10 +674,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .brand { gap: 9px; font-size: .875rem; }
   .brand-mark { width: 33px; height: 33px; }
   .top-actions { gap: 8px; }
-  .top-actions .github-project-link-header,
-  .stats-page-actions .github-project-link-header { width: 36px; min-width: 36px; padding: 0; }
-  .top-actions .github-project-link-header span,
-  .stats-page-actions .github-project-link-header span { display: none; }
+  .top-actions .github-project-link-header { width: 36px; min-width: 36px; padding: 0; }
+  .top-actions .github-project-link-header span { display: none; }
   .language-switch { padding: 2px; }
   .language-switch button, .language-switch a { min-width: 34px; height: 32px; padding: 0 6px; font-size: .75rem; }
   .asof { display: none; }
@@ -884,11 +880,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .school-section, .route-map-shell { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
 
-.stats-page { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding-bottom: 72px; }
-.stats-page-bar { min-height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .75rem; font-weight: 750; letter-spacing: .08em; }
-.stats-page-actions { display: flex; align-items: center; gap: 14px; }
-.stats-back { display: inline-flex; align-items: center; gap: 7px; padding: 0; border: 0; color: var(--ink); background: transparent; font: inherit; text-decoration: none; letter-spacing: 0; cursor: pointer; }
-.stats-back svg { width: 15px; height: 15px; }
+.stats-page { padding-bottom: 72px; }
+.stats-page > :not(.topbar) { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
 .stats-hero { padding: 48px 0 32px; }
 .stats-hero h1 { max-width: 800px; margin: 13px 0 0; font-family: inherit; font-size: clamp(2.25rem, 4.5vw, 3.5rem); font-weight: 750; line-height: 1.2; letter-spacing: -.045em; }
 .stats-hero > p { max-width: 700px; margin: 22px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.75; }
@@ -929,9 +922,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
 .stats-method strong { color: var(--ink); }
 
 @media (max-width: 720px) {
-  .stats-page { width: min(100% - 32px, 1120px); padding-bottom: 48px; }
-  .stats-page-bar { min-height: 66px; }
-  .stats-page-actions > span { display: none; }
+  .stats-page { padding-bottom: 48px; }
+  .stats-page > :not(.topbar) { width: min(100% - 32px, 1120px); }
   .stats-hero { padding: 48px 0 26px; }
   .stats-hero h1 { font-size: 2.25rem; }
   .stats-hero > p { margin-top: 16px; font-size: 1rem; }
@@ -947,9 +939,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .stats-method { padding: 24px 8px; grid-template-columns: 1fr; gap: 16px; }
 }
 
-.updates-page { width: min(1080px, calc(100% - 48px)); margin: 0 auto; padding-bottom: 84px; }
-.updates-page-bar { min-height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .75rem; font-weight: 750; letter-spacing: .08em; }
-.updates-page-actions { display: flex; align-items: center; gap: 14px; }
+.updates-page { padding-bottom: 84px; }
+.updates-page > :not(.topbar) { width: min(1080px, calc(100% - 48px)); margin-inline: auto; }
 .updates-hero { padding: 48px 0 32px; }
 .updates-hero h1 { margin: 13px 0 0; font-family: inherit; font-size: clamp(2.25rem, 4.5vw, 3.5rem); font-weight: 750; line-height: 1.2; letter-spacing: -.05em; }
 .updates-hero p { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.75; }
@@ -989,11 +980,8 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
 .update-sources svg { width: 11px; height: 11px; }
 
 @media (max-width: 720px) {
-  .updates-page { width: min(100% - 32px, 1080px); padding-bottom: 52px; }
-  .updates-page-bar { min-height: 66px; }
-  .updates-page-actions > span { display: none; }
-  .updates-page-actions .github-project-link-header { width: 36px; min-width: 36px; padding: 0; }
-  .updates-page-actions .github-project-link-header span { display: none; }
+  .updates-page { padding-bottom: 52px; }
+  .updates-page > :not(.topbar) { width: min(100% - 32px, 1080px); }
   .updates-hero { padding: 48px 0 30px; }
   .updates-hero h1 { font-size: 2.25rem; }
   .updates-hero p { margin-top: 16px; font-size: 1rem; }

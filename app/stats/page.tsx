@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, BarChart3, Eye, Globe2, Users } from 'lucide-react';
+import { BarChart3, Eye, Globe2, Radar, Users } from 'lucide-react';
 
 import { getCountryLabel, summarizeTraffic } from '@/app/analytics-model';
 import { TrafficChart } from '@/app/stats/traffic-chart';
 import { PageLanguageSwitch } from '@/app/page-language-switch';
 import { getCountryTraffic, getTrafficSeries } from '@/db/analytics';
+import { brandHomeLabel } from '@/app/language';
 import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
+import { SITE_UPDATED_ON } from '@/app/policy-freshness';
 import { resolveRequestLanguage } from '@/app/language-server';
 import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
@@ -19,9 +21,15 @@ const statsCopy = {
   zh: {
     title: '访问统计｜留美路径政策雷达',
     description: '留美路径政策雷达最近 30 天的匿名独立访客与页面浏览量。',
-    back: '返回政策雷达',
-    public: '公开访问统计',
+    brand: '留美路径雷达',
+    navLabel: '页面导航',
+    policies: '政策',
+    cptSchools: 'CPT 学校',
+    updates: '更新记录',
+    stats: '访问统计',
     switchLabel: '切换网站语言',
+    chinese: '中',
+    english: 'EN',
     hero: '最近 30 天访问趋势',
     intro: '按美东日期统计，数据从启用统计后开始累计。',
     summaryAria: '最近 30 天统计摘要',
@@ -48,9 +56,15 @@ const statsCopy = {
     title: 'Traffic Statistics | U.S. Stay Path Policy Radar',
     description:
       'Anonymous unique visitors and page views for the U.S. Stay Path Policy Radar over the last 30 days.',
-    back: 'Back to policy radar',
-    public: 'Public traffic statistics',
+    brand: 'Stay Path Radar',
+    navLabel: 'Page navigation',
+    policies: 'Policies',
+    cptSchools: 'CPT Schools',
+    updates: 'Updates',
+    stats: 'Traffic',
     switchLabel: 'Switch site language',
+    chinese: '中',
+    english: 'EN',
     hero: 'Traffic over the last 30 days',
     intro:
       'Dates use Eastern Time. Data accumulates from the day tracking was enabled.',
@@ -114,15 +128,18 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
 
   return (
     <main className="stats-page">
-      <header className="stats-page-bar">
-        <form action="/" method="get">
-          <button type="submit" className="stats-back">
-            <ArrowLeft aria-hidden="true" />
-            {ui.back}
-          </button>
-        </form>
-        <div className="stats-page-actions">
-          <span>{ui.public}</span>
+      <header className="topbar product-bar">
+        <a className="brand" href={language === 'en' ? '/?lang=en' : '/'} aria-label={brandHomeLabel(language)}>
+          <span className="brand-mark"><Radar aria-hidden="true" /></span>
+          <span>{ui.brand}</span>
+        </a>
+        <nav className="nav-links" aria-label={ui.navLabel}>
+          <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
+          <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
+          <a href={language === 'en' ? '/updates?lang=en' : '/updates'}>{ui.updates}</a>
+          <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
+        </nav>
+        <div className="top-actions">
           <GitHubProjectLink language={language} />
           <ShareButton language={language} pageTitle={ui.hero} />
           <PageLanguageSwitch
@@ -131,6 +148,7 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
             label={ui.switchLabel}
           />
           <MobileSiteMenu current="stats" language={language} />
+          <div className="asof"><span /><time dateTime={SITE_UPDATED_ON}>{SITE_UPDATED_ON} · ET</time></div>
         </div>
       </header>
 
