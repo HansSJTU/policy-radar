@@ -42,6 +42,7 @@ test('builds a stable, anonymous Analytics Engine page-view event', () => {
       '/',
       '',
       '',
+      '', '', '', 'page', 'page', 'view',
     ],
     doubles: [1],
   });
@@ -169,4 +170,15 @@ test('normalizes acquisition and interaction dimensions before engine writes', (
     analyticsModel.normalizeOutboundClick('javascript:alert(1)'),
     '',
   );
+});
+
+
+test('policy identity merges legacy prefixes and excludes section and school anchors', () => {
+  for (const id of ['opt-fee', 'duration-status', 'cpt-guidance']) {
+    assert.equal(analyticsModel.normalizePolicyId(id), id);
+    assert.equal(analyticsModel.normalizePolicyId(`policy-${id}`), id);
+  }
+  for (const id of ['top', 'ranking', 'cpt-schools', 'school-purdue-ece', 'unknown-policy']) {
+    assert.equal(analyticsModel.normalizePolicyId(id), '');
+  }
 });

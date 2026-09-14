@@ -98,3 +98,16 @@ test('item copy and image outcomes retain policy or school identity without writ
   assert.equal(points.at(-1).blobs[11], 'opt-fee');
   assert.equal(points.at(-1).blobs[15], '');
 });
+
+
+test('ranking clicks normalize policy identity and write separate dimensions without D1', async () => {
+  const points = [];
+  env.ANALYTICS = { writeDataPoint: point => points.push(point) };
+  env.DB = { prepare() { assert.fail('Clicks must not write D1'); } };
+  for (const policyId of ['policy-opt-fee', 'opt-fee', 'top', 'ranking', 'cpt-schools']) {
+    assert.equal((await POST(request({ visitorId, eventType: 'content_click', policyId, component: 'ranking_card' }))).status, 204);
+  }
+  assert.deepEqual(points.map(p => p.blobs[11]), ['opt-fee', 'opt-fee', '', '', '']);
+  assert.deepEqual(points[0].blobs.slice(16), ['policy', 'ranking_card', 'click']);
+  assert.deepEqual(points[2].blobs.slice(16), ['page', 'ranking_card', 'click']);
+});

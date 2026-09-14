@@ -25,12 +25,13 @@ type SessionOptions = {
 };
 
 type AnalyticsEventPayloadOptions = {
-  eventType: 'page_view' | 'outbound_click' | 'share';
+  eventType: 'page_view' | 'outbound_click' | 'share' | 'content_click';
   visitorId: string;
   pathname: string;
   language: string;
   session: SessionAttribution;
   policyId?: string;
+  component?: string;
   outboundClick?: string;
   shareMethod?: string;
   shareAction?: string;
@@ -110,7 +111,8 @@ export function buildAnalyticsEventPayload(
     pathname: options.pathname,
     language: options.language,
     ...options.session,
-    policyId: options.policyId ?? '',
+    policyId: normalizePolicyId(options.policyId),
+    ...(options.component ? { component: options.component } : {}),
     outboundClick: options.outboundClick ?? '',
     ...(options.eventType === 'share'
       ? { shareMethod: options.shareMethod, shareAction: options.shareAction, schoolId: options.schoolId ?? '' }

@@ -1,3 +1,4 @@
+import { POLICY_IDS } from './community-impact-model.ts';
 import { isUuid } from '../lib/identifiers.ts';
 
 export type TrafficPoint = {
@@ -28,7 +29,7 @@ export function normalizeShareEvent(method: unknown, action: unknown): {
 }
 
 export type AnalyticsEngineVisit = {
-  eventType: 'page_view' | 'outbound_click' | 'share';
+  eventType: 'page_view' | 'outbound_click' | 'share' | 'content_click';
   day: string;
   country: string;
   pathname: string;
@@ -45,6 +46,7 @@ export type AnalyticsEngineVisit = {
   shareMethod?: ShareMethod;
   shareAction?: ShareAction;
   schoolId?: string;
+  component?: string;
 };
 
 type AnalyticsEngineDataPoint = {
@@ -60,9 +62,11 @@ type AnalyticsEngineWriter = {
 export function buildAnalyticsEngineVisitDataPoint(
   visit: AnalyticsEngineVisit,
 ): AnalyticsEngineDataPoint {
+  const policyId = normalizePolicyId(visit.policyId);
+  const schoolId = normalizeContentId(visit.schoolId);
   return {
     indexes: [visit.visitorHash],
-    // Keep blob1..blob15 stable; item shares append schoolId at blob16.
+    // Preserve blob1..blob16; append content_type, component, action.
     blobs: [
       visit.eventType,
       visit.day,
@@ -75,9 +79,14 @@ export function buildAnalyticsEngineVisitDataPoint(
       visit.utmCampaign,
       visit.sessionId,
       visit.landingPage,
-      visit.policyId,
+      policyId,
       visit.outboundClick,
-      ...(visit.eventType === 'share' ? [visit.shareMethod ?? '', visit.shareAction ?? '', visit.schoolId ?? ''] : []),
+      visit.eventType === 'share' ? visit.shareMethod ?? '' : '',
+      visit.eventType === 'share' ? visit.shareAction ?? '' : '',
+      schoolId,
+      policyId ? 'policy' : schoolId ? 'school' : 'page',
+      normalizeComponent(visit.component) || (visit.eventType === 'share' ? 'share_menu' : 'page'),
+      visit.eventType === 'page_view' ? 'view' : visit.eventType === 'share' ? visit.shareAction ?? '' : 'click',
     ],
     doubles: [1],
   };
@@ -89,8 +98,14 @@ export async function dispatchAnalyticsEvent(
     pageView: () => Promise<unknown>;
     outboundClick: () => Promise<unknown>;
     share: () => Promise<unknown>;
+    contentClick?: () => Promise<unknown>;
   },
 ) {
+  if (eventType === 'content_click') {
+    if (!handlers.contentClick) throw new Error('Missing content click handler');
+    await handlers.contentClick();
+    return;
+  }
   if (eventType === 'share') {
     await handlers.share();
     return;
@@ -187,7 +202,17 @@ export function normalizeSessionId(value: unknown) {
   return isUuid(value) ? value.toLowerCase() : '(unknown)';
 }
 
+export function normalizeComponent(value: unknown) {
+  return typeof value === 'string' && ['page', 'ranking_card', 'policy_detail', 'share_menu', 'navigation', 'school_card'].includes(value) ? value : '';
+}
+
 export function normalizePolicyId(value: unknown) {
+  if (typeof value !== 'string') return '';
+  const id = value.replace(/^policy-/, '');
+  return POLICY_IDS.some(policyId => policyId === id) ? id : '';
+}
+
+export function normalizeContentId(value: unknown) {
   return typeof value === 'string' && /^[a-z0-9][a-z0-9-]{0,63}$/.test(value)
     ? value
     : '';

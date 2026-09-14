@@ -58,7 +58,7 @@ test('Analytics Engine appends share dimensions without moving any existing fiel
   });
   assert.deepEqual(point.blobs, [
     'share', '2026-09-05', 'US', '/', 'zh', '(direct)', 'xhs', 'social', 'fall',
-    'session', '/', 'opt-fee', '', 'whatsapp', 'select', '',
+    'session', '/', 'opt-fee', '', 'whatsapp', 'select', '', 'policy', 'share_menu', 'select',
   ]);
   assert.deepEqual(point.doubles, [1]);
 });

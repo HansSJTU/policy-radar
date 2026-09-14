@@ -8,6 +8,8 @@ import {
   normalizeCountryCode,
   normalizeOutboundClick,
   normalizePolicyId,
+  normalizeContentId,
+  normalizeComponent,
   normalizeReferrerHost,
   normalizeSessionId,
   normalizeShareEvent,
@@ -33,7 +35,7 @@ import {
 let schemaPromise: Promise<void> | undefined;
 
 type AnalyticsMetadata = {
-  eventType?: 'outbound_click' | 'share';
+  eventType?: 'outbound_click' | 'share' | 'content_click';
   pathname?: unknown;
   language?: unknown;
   referrerHost?: unknown;
@@ -43,6 +45,7 @@ type AnalyticsMetadata = {
   sessionId?: unknown;
   landingPage?: unknown;
   policyId?: unknown;
+  component?: unknown;
   outboundClick?: unknown;
   shareMethod?: unknown;
   shareAction?: unknown;
@@ -137,6 +140,7 @@ export async function recordVisit(
       sessionId: normalizeSessionId(metadata.sessionId),
       landingPage: normalizeVisitPathname(metadata.landingPage),
       policyId: normalizePolicyId(metadata.policyId),
+      component: normalizeComponent(metadata.component),
       outboundClick: '',
     },
   );
@@ -165,9 +169,10 @@ export async function recordAnalyticsEngineEvent(
     sessionId: normalizeSessionId(metadata.sessionId),
     landingPage: normalizeVisitPathname(metadata.landingPage),
     policyId: normalizePolicyId(metadata.policyId),
+    component: normalizeComponent(metadata.component),
     outboundClick: normalizeOutboundClick(metadata.outboundClick),
     ...normalizeShareEvent(metadata.shareMethod, metadata.shareAction),
-    schoolId: normalizePolicyId(metadata.schoolId),
+    schoolId: normalizeContentId(metadata.schoolId),
   });
 }
 

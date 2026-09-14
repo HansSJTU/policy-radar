@@ -20,6 +20,7 @@ export async function POST(request: Request) {
     sessionId?: unknown;
     landingPage?: unknown;
     policyId?: unknown;
+    component?: unknown;
     outboundClick?: unknown;
     shareMethod?: unknown;
     shareAction?: unknown;
@@ -43,7 +44,7 @@ export async function POST(request: Request) {
 
   if (
     (body.eventType !== undefined &&
-      !['page_view', 'outbound_click', 'share'].includes(body.eventType as string)) ||
+      !['page_view', 'outbound_click', 'share', 'content_click'].includes(body.eventType as string)) ||
     (body.eventType === 'share' && !normalizeShareEvent(body.shareMethod, body.shareAction))
   ) {
     return Response.json({ error: 'Invalid analytics event' }, { status: 400 });
@@ -56,7 +57,7 @@ export async function POST(request: Request) {
     const country =
       cloudflareCountry ?? request.headers.get('CF-IPCountry');
     const metadata = {
-      eventType: body.eventType === 'share' ? 'share' as const : 'outbound_click' as const,
+      eventType: body.eventType === 'share' ? 'share' as const : body.eventType === 'content_click' ? 'content_click' as const : 'outbound_click' as const,
       pathname: body.pathname,
       language: body.language,
       referrerHost: body.referrerHost,
@@ -66,6 +67,7 @@ export async function POST(request: Request) {
       sessionId: body.sessionId,
       landingPage: body.landingPage,
       policyId: body.policyId,
+      component: body.component,
       outboundClick: body.outboundClick,
       shareMethod: body.shareMethod,
       shareAction: body.shareAction,
@@ -76,6 +78,7 @@ export async function POST(request: Request) {
       pageView: () => recordVisit(body.visitorId as string, country, metadata),
       outboundClick: () =>
         recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
+      contentClick: () => recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
       share: () =>
         recordAnalyticsEngineEvent(body.visitorId as string, country, metadata),
     });

@@ -22,9 +22,10 @@ export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
     analyticsSession ??= createBrowserAnalyticsSession();
 
     const sendEvent = (
-      eventType: 'page_view' | 'outbound_click',
+      eventType: 'page_view' | 'outbound_click' | 'content_click',
       policyId = '',
       outboundClick = '',
+      component = 'page',
     ) => {
       sendBrowserAnalyticsEvent({
         eventType,
@@ -32,6 +33,7 @@ export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
         session: analyticsSession!,
         policyId,
         outboundClick,
+        component,
       });
     };
 
@@ -43,7 +45,7 @@ export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
       );
     }
 
-    const recordOutboundClick = (event: MouseEvent) => {
+    const recordLinkClick = (event: MouseEvent) => {
       if (!(event.target instanceof Element)) return;
       const anchor = event.target.closest<HTMLAnchorElement>('a[href]');
       if (!anchor) return;
@@ -58,19 +60,23 @@ export function VisitorTracker({ policyId }: { policyId?: string } = {}) {
 
       if (
         (destination.protocol !== 'https:' &&
-          destination.protocol !== 'http:') ||
-        destination.origin === window.location.origin
+          destination.protocol !== 'http:')
       ) {
         return;
       }
 
-      const policyId =
-        anchor.closest<HTMLElement>('[data-policy-id]')?.dataset.policyId ?? '';
-      sendEvent('outbound_click', policyId, destination.href);
+      const policyId = anchor.closest<HTMLElement>('[data-policy-id]')?.dataset.policyId ?? '';
+      const component = anchor.closest('#ranking [data-policy-id]') ? 'ranking_card'
+        : anchor.closest('.policy-detail-page') ? 'policy_detail' : 'navigation';
+      if (destination.origin === window.location.origin) {
+        if (component === 'ranking_card') sendEvent('content_click', policyId, '', component);
+        return;
+      }
+      sendEvent('outbound_click', policyId, destination.href, component);
     };
 
-    document.addEventListener('click', recordOutboundClick);
-    return () => document.removeEventListener('click', recordOutboundClick);
+    document.addEventListener('click', recordLinkClick);
+    return () => document.removeEventListener('click', recordLinkClick);
   }, [policyId]);
 
   return null;
