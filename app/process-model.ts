@@ -97,13 +97,13 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      'DHS 已走完 NPRM、公众评论和最终规则。法院于 9 月 3 日举行禁令听证、听取双方陈述，并将申请留待裁定；这表示法官没有当庭作出决定，将继续审议并可能另行发布书面命令。9 月 15 日仍是未被暂缓或禁止时的计划生效日。',
-    currentSummary: '听证已举行；禁令申请留待裁定',
+      "法院于 9·14 根据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直至另行命令或实体审理结束；原 9·15 生效安排已改变。",
+    currentSummary: "全国暂缓已签发；生效日已推迟",
     lastCompletedStage: 4,
     activeStage: null,
     nextStage: 5,
     waitingFor:
-      '法官希望最迟 9·14 决定，也可能先发短期 TRO；尚非命令。若未暂缓，9·15 仍为计划生效日。',
+      "10·02 中午 12 点状态会议；关注后续法院命令及上诉，不是新生效日。",
     stages: federalRulemakingStages,
     litigation: [
       {
@@ -133,6 +133,15 @@ const processTracks: Record<string, ProcessTrack> = {
         align: 'right',
         lane: 'base',
       },
+      {
+  "date": "9·14",
+  "label": "全国暂缓",
+  "afterStage": 4,
+  "progress": 90,
+  "status": "filed",
+  "align": "right",
+  "lane": "raised"
+},
     ],
   },
   'cpt-guidance': {
@@ -289,10 +298,10 @@ const englishProcessTracks: Record<
     name: 'Federal rulemaking',
     meaning: federalMeaningEnglish,
     detail:
-      'DHS completed the NPRM, comment, and final-rule stages. The court held the injunction hearing on September 3, heard arguments, and took the matter under advisement. That means the judge did not rule from the bench and will continue considering the request, potentially through a later written order. September 15 remains the scheduled effective date unless the rule is stayed or enjoined.',
+      "On September 14, the court postponed the entire final rule nationwide under APA § 705 and barred DHS/ICE from implementation until further order or resolution on the merits. The September 15 effective date is postponed.",
     waitingFor:
-      'The judge hoped to decide by September 14 or might issue a brief TRO; neither is an issued order. September 15 remains the scheduled effective date unless stayed.',
-    currentSummary: 'Hearing held; matter under advisement',
+      "October 2 status conference at noon; monitor later court orders and appeals. This is not an effective date.",
+    currentSummary: "Nationwide stay issued; effective date postponed",
     stages: federalRulemakingStagesEnglish,
     litigation: [
       {
@@ -322,6 +331,15 @@ const englishProcessTracks: Record<
         align: 'right',
         lane: 'base',
       },
+      {
+  "date": "9·14",
+  "label": "Nationwide stay",
+  "afterStage": 4,
+  "progress": 90,
+  "status": "filed",
+  "align": "right",
+  "lane": "raised"
+},
     ],
   },
   'cpt-guidance': {

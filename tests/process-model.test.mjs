@@ -58,6 +58,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { date: '8·18', label: '提起诉讼' },
       { date: '9·02', label: '拟议反对意见' },
       { date: '9·03', label: '听证后待裁定' },
+      { date: '9·14', label: '全国暂缓' },
     ],
   );
   assert.deepEqual(
@@ -69,11 +70,12 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { afterStage: 4, progress: 53 },
       { afterStage: 4, progress: 70 },
       { afterStage: 4, progress: 80 },
+      { afterStage: 4, progress: 90 },
     ],
   );
   assert.deepEqual(
     track.litigation.map(({ lane }) => lane),
-    ['base', 'raised', 'base'],
+    ['base', 'raised', 'base', 'raised'],
   );
   assert.deepEqual(
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
@@ -81,10 +83,11 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { date: '8·18', label: 'Lawsuit filed' },
       { date: '9·02', label: 'Proposed opposition' },
       { date: '9·03', label: 'Hearing held; decision pending' },
+      { date: '9·14', label: 'Nationwide stay' },
     ],
   );
-  assert.match(track.currentSummary, /留待裁定/);
-  assert.match(englishTrack.currentSummary, /under advisement/);
+  assert.match(track.currentSummary, /全国暂缓/);
+  assert.match(englishTrack.currentSummary, /Nationwide stay/);
 });
 
 test('administrative guidance has its own process and color family', () => {

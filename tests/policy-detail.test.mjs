@@ -88,7 +88,7 @@ test('federal details share one process while litigation remains separate', () =
     }
     const litigation = getProcessTrack('duration-status', language);
     assert.equal(litigation.lastCompletedStage, 4);
-    assert.equal(litigation.litigation.length, 3);
+    assert.equal(litigation.litigation.length, 4);
     assert.notDeepEqual(
       getProcessTrack('cpt-guidance', language).stages,
       federal,
@@ -135,12 +135,28 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
 test('grace-period publication is distinct from final effectiveness', () => {
   for (const language of ['zh', 'en']) {
     const detail = getPolicyDetail('grace-period', language);
-    assert.equal(detail.checkedOn, '2026-09-13');
+    assert.equal(detail.checkedOn, '2026-09-14');
     assert.equal(detail.editorial.effectState, 'not-in-effect');
     assert.ok(detail.record.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
     assert.ok(detail.record.milestones.some(({ date }) => date === '2026-09-10'));
     assert.ok(detail.record.next.some(({ date }) => date === '2026-11-10'));
     assert.match(detail.record.current, /USCIS|DHS/);
     assert.doesNotMatch(detail.record.current, /提案尚未公开|proposal is not yet public/);
+  }
+});
+
+test('D/S relief is consistent across details, homepage and share copy', async () => {
+  const { getPolicyShareItem } = await import('../app/item-share-model.ts');
+  const { buildItemShareContent } = await import('../app/share-model.ts');
+  const { getHomePolicyEditorial } = await import('../app/policy-home-model.ts');
+  for (const language of ['zh', 'en']) {
+    const detail = getPolicyDetail('duration-status', language);
+    assert.equal(detail.editorial.effectState, 'not-in-effect');
+    assert.equal(detail.editorial.discovery.next.date, '2026-10-02');
+    assert.ok(detail.record.sources.some(source => source.href.endsWith('.51.0.pdf')));
+    const text = buildItemShareContent(getPolicyShareItem('duration-status', language), language).text;
+    const expression = language === 'zh' ? /全国暂缓/ : /Nationwide court stay/;
+    assert.match(text, expression);
+    assert.match(getHomePolicyEditorial('duration-status', language).status, expression);
   }
 });

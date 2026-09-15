@@ -7,7 +7,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
   zh: {
     'opt-fee': 'OIRA 审查已完成 · 尚未生效',
     'h1b-fee': '正式提案 · 评论截至 9 月 24 日',
-    'duration-status': '最终规则 · 诉讼中',
+    'duration-status': '法院全国暂缓 · 原 9·15 生效日已推迟',
     'h1b-weighted-selection': '已生效 · FY2027 起使用',
     'cpt-guidance': '学校已按新口径执行',
     'prevailing-wage': '评论期已结束 · 尚未生效',
@@ -19,7 +19,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
   en: {
     'opt-fee': 'OIRA review completed · Not in effect',
     'h1b-fee': 'Formal proposal · Comments due September 24',
-    'duration-status': 'Final rule · In litigation',
+    'duration-status': 'Nationwide court stay · September 15 effective date postponed',
     'h1b-weighted-selection': 'In effect · Used beginning with FY2027',
     'cpt-guidance': 'Schools are applying the new interpretation',
     'prevailing-wage': 'Comment period closed · Not in effect',

@@ -36,7 +36,7 @@ const routeStages = [
     number: '01',
     subtitle: '入学与在读',
     policies: [
-      { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '最终规则 · 听证后待裁定' },
+      { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '法院全国暂缓 · 生效日已推迟' },
     ],
   },
   {
