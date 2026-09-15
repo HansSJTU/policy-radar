@@ -132,7 +132,6 @@ export function PolicyCard({
         <section className="litigation-track" aria-label={ui.litigation}>
           <div className="litigation-heading">
             <Scale aria-hidden="true" /><span>{ui.litigation}</span>
-            <small>{language === 'en' ? 'Latest' : '最新进展'} · {process.litigation[process.litigation.length - 1].date}</small>
           </div>
           <ol className="litigation-events">
             {process.litigation.map((event, index) => (
