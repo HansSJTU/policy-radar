@@ -21,7 +21,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'The payer, covered applications and exemptions are unpublished; $100,000 is media-reported and student payment cannot be assumed.',
     summary:
-      'September 11 development (checked September 13): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
+      'September 11 development (checked September 14): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
     background:
       'ICE submitted Optional Practical Training Fees on August 20, 2026; the September 11 OIRA conclusion is Consistent with Change. Completed prepublication review is not a final rule or an effective fee. No public NPRM was located; payment responsibility awaits official provisions.',
     effectState: 'not-in-effect',
@@ -175,97 +175,94 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     ],
     related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   },
-  {
-    id: 'duration-status',
-    discovery: {
-      status: 'Final rule · In litigation',
-      identities: ['F / J'],
-      summary:
-        'The final rule would replace D/S with fixed periods generally capped at four years, requiring USCIS extensions for longer stays. It is not yet effective; current D/S holders have transition provisions.',
-      next: {
-        date: '2026-09-15',
-        text: 'Scheduled effective date, unless stayed or enjoined beforehand',
-      },
-    },
-    title: 'F/J Status Will Shift from D/S to Fixed Admission Periods',
-    short: 'Fixed F/J Periods and Litigation',
-    group: 'F-1',
-    agency: 'DHS / ICE',
-    rin: 'Final Rule 2026-14439',
-    status: 'Final rule · In litigation',
-    effectLabel: 'Not in effect · Scheduled September 15',
-    audience:
-      'F/J status holders, especially those planning extensions, OPT or travel and reentry.',
-    caveat:
-      'Current D/S holders have transition provisions; a hearing does not pause the rule, and court orders determine any relief.',
-    summary:
-      'The DHS final rule would replace F/J duration of status (D/S) with fixed admission periods generally capped at four years. Longer stays would require a USCIS extension, and relevant OPT applications would generally require both I-765 and I-539 filings. Transcript checked September 13: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
-    background:
-      'The 2025 proposal became a final rule on July 17, 2026, generally setting a four-year maximum and requiring USCIS extensions. After hearing arguments on September 3, the court took the request under advisement without granting or denying it from the bench. Pages 38–44 and 49–51 record judicial questions about the connection between a four-year limit and national security, extension uncertainty and enrollment harm. The government defended added screening, fraud prevention and available extensions. These are hearing exchanges and party arguments, not final findings.',
-    effectState: 'not-in-effect',
-    note: 'Scheduled to take effect September 15; watch for court orders',
-    deck: 'Which transitions in study, transfers, and post-graduation work would become more complex?',
-    headline:
-      'Status management would follow an expiration date more closely than the course of study.',
-    analysis:
-      'If the final rule takes effect as scheduled, students will need to coordinate program length, extensions of status, and work authorization earlier. The effect goes beyond one form: academic changes and career transitions may allow less timing flexibility, and same-level degree programs and transfers previously used as bridges would also face limits.',
-    teaser:
-      'Fixed end dates, extension filings, and transfer limits would reorder the academic and employment timeline.',
-    impacts: [
-      [
-        'For current students: program extensions depend more on administrative timing',
-        'Research, dissertations, and training plans do not always finish on an exact schedule. If a separate extension is required, document preparation and processing time become part of academic planning.',
-      ],
-      [
-        'For graduates: OPT and extensions of status must be coordinated',
-        'Under the new system, related OPT applications would generally also require an I-539 filing. Coordination between status and work authorization could affect actual start dates, while current D/S holders would need to review the transition rules separately.',
-      ],
-      [
-        'For backup paths: less room for additional study and transfers',
-        'The rule prohibits graduate-level changes during study and restricts mid-program transfers. The same/lower-level re-enrollment limit counts only degrees completed after the effective date. These provisions affect student status before the OPT or CPT plans that depend on it.',
-      ],
+{
+  "id": "duration-status",
+  "discovery": {
+    "status": "Nationwide court stay · September 15 effective date postponed",
+    "identities": [
+      "F / J / I"
     ],
-    outlook:
-      'Our outlook: the first near-term question is whether a court pauses the rule and how broadly. The practical student experience will then depend on transition categories and how schools and USCIS administer the extension process.',
-    scenarios: [
-      [
-        'Takes effect on schedule',
-        'Fall travel and status transitions require closer coordination',
-        'No court order changes implementation before the effective date.',
-        'Students covered by the new system may prepare extensions sooner and have less room for last-minute academic changes. Different entry and filing dates would produce different transition rules.',
-        'Written court orders, implementation status on September 15, and school operating guidance.',
-      ],
-      [
-        'Court pauses the rule first',
-        'Transition pressure eases temporarily while the case continues',
-        'A court issues an operative stay or injunction covering the relevant people.',
-        'Current procedures may continue in the short term, but schools and students would still need to track the order’s scope, duration, and any appeal. A temporary pause is not a final repeal.',
-        'The people receiving relief, provisions paused, duration, and appeal treatment in the order itself.',
-      ],
-      [
-        'Only some provisions paused',
-        'Students may need to understand two sets of rules at once',
-        'A court blocks only part of the rule while other provisions take effect.',
-        'Administration could become even more complex. Transfers, extensions, and work authorization may not share the same coverage boundaries.',
-        'The provisions addressed individually by the court and later implementation guidance from ICE and USCIS.',
-      ],
-    ],
-    scope: [
-      [
-        'Current and new populations',
-        'Current D/S holders have transition provisions; rules for new entrants cannot describe every current student.',
-      ],
-      [
-        'Departure and reentry',
-        'Reentry after the effective date may change which system applies, depending on the specific conditions.',
-      ],
-      [
-        'Litigation status',
-        'A hearing by itself does not pause a rule; legal effect depends on an order issued by the court.',
-      ],
-    ],
-    related: ['cpt-guidance', 'opt-fee', 'grace-period'],
+    "summary": "September 14 update: the court postponed the DHS rule ending D/S nationwide and barred further implementation. It will not take effect on September 15 as scheduled. The rule would replace F/J D/S with fixed periods generally capped at four years and add extension and academic-mobility restrictions; those new requirements are currently stayed.",
+    "next": {
+      "date": "2026-10-02",
+      "text": "Court status conference at noon; not a new effective date"
+    }
   },
+  "title": "Court Stays the D/S Final Rule Nationwide",
+  "short": "Fixed F/J Periods and Litigation",
+  "group": "F-1",
+  "agency": "DHS / ICE",
+  "rin": "Final Rule 2026-14439",
+  "status": "Nationwide court stay · September 15 effective date postponed",
+  "effectLabel": "Not in effect · Nationwide court stay",
+  "audience": "F/J/I holders and related dependents, schools and employers covered by the rule; relief is not limited to plaintiff-member schools.",
+  "caveat": "This nationwide stay covers the entire final rule, not permanent vacatur. It does not automatically rescind separate CPT guidance.",
+  "summary": "September 14 update: the court postponed the DHS rule ending D/S nationwide and barred further implementation. It will not take effect on September 15 as scheduled. The rule would replace F/J D/S with fixed periods generally capped at four years and add extension and academic-mobility restrictions; those new requirements are currently stayed.",
+  "background": "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, postponing the entire final rule under APA § 705 and preliminarily enjoining DHS/ICE from further implementation until a further court order or resolution on the merits. Opinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools. The September 15 effective date is postponed. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal. Docket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date.",
+  "effectState": "not-in-effect",
+  "note": "September 15 effective date postponed; no replacement date",
+  "deck": "What has the court paused, and what still needs monitoring?",
+  "headline": "The D/S rule is stayed nationwide; the existing framework continues.",
+  "analysis": "The nationwide stay covers the entire final rule, so its fixed admission periods, added extension filings and academic-mobility restrictions are not implemented. Students must still maintain their existing status and comply with applicable employment-authorization requirements. The order does not rescind the separate August CPT guidance.",
+  "teaser": "Nationwide relief is in place; any resumption depends on later orders.",
+  "impacts": [
+    [
+      "For current students: program extensions depend more on administrative timing",
+      "This describes the stayed rule’s intended effect; it is not currently implemented. Research, dissertations, and training plans do not always finish on an exact schedule. If a separate extension is required, document preparation and processing time become part of academic planning."
+    ],
+    [
+      "For graduates: OPT and extensions of status must be coordinated",
+      "This describes the stayed rule’s intended effect; it is not currently implemented. Under the new system, related OPT applications would generally also require an I-539 filing. Coordination between status and work authorization could affect actual start dates, while current D/S holders would need to review the transition rules separately."
+    ],
+    [
+      "For backup paths: less room for additional study and transfers",
+      "This describes the stayed rule’s intended effect; it is not currently implemented. The rule prohibits graduate-level changes during study and restricts mid-program transfers. The same/lower-level re-enrollment limit counts only degrees completed after the effective date. These provisions affect student status before the OPT or CPT plans that depend on it."
+    ]
+  ],
+  "outlook": "Watch for changes to the stay, any government appeal, and the October 2 status conference. The conference is not an effective date, and preliminary relief is not a final merits victory.",
+  "scenarios": [
+    [
+      "Stay remains",
+      "Existing framework continues",
+      "The court does not modify its order.",
+      "The stayed requirements are not implemented while litigation continues.",
+      "Later court orders and agency instructions."
+    ],
+    [
+      "Stay modified or stayed on appeal",
+      "Implementation may change again",
+      "The trial or appellate court issues a new operative order.",
+      "Check its scope, dates and transition provisions.",
+      "The order itself, not rumors."
+    ],
+    [
+      "Merits decision",
+      "The rule’s ultimate fate remains open",
+      "The court resolves the merits.",
+      "Vacatur, upholding the rule or further agency action remain possible; none is confirmed now.",
+      "The merits judgment and any appeal."
+    ]
+  ],
+  "scope": [
+    [
+      "Nationwide scope",
+      "Opinion 50, pp. 46–48, confirms relief covering the entire rule, not just plaintiff-member schools."
+    ],
+    [
+      "Duration",
+      "Until further court order or resolution on the merits; October 2 is only a status conference."
+    ],
+    [
+      "Separate CPT guidance",
+      "The order concerns final rule 2026-14439; it does not automatically rescind the August CPT memoranda or independent university requirements."
+    ]
+  ],
+  "related": [
+    "cpt-guidance",
+    "opt-fee",
+    "grace-period"
+  ]
+},
   {
     id: 'h1b-weighted-selection',
     discovery: {
@@ -634,7 +631,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     caveat:
       'This is a proposal; current rules remain unchanged. If finalized as drafted, people otherwise authorized to remain lawfully would not all have to depart immediately. The F-1 post-completion grace period is separate.',
     summary:
-      'September 11 development (checked September 13): DHS published its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
+      'September 11 development (checked September 14): DHS published its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
     background:
       'Document 2026-18631 entered public inspection September 10 and was published September 11 at 91 FR 57807; docket USCIS-2026-0364. It would remove 8 CFR 214.1(l)(2) and make a conforming reference change for compelling-circumstances EADs. The published version sets the comment deadline at November 10, 2026, before midnight Eastern Time. No final rule or effective date is set.',
     effectState: 'not-in-effect',

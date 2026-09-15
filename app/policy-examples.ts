@@ -56,28 +56,28 @@ const examples: Record<PolicyId, [string[], string[]][]> = {
   'duration-status': [
     [
       [
-        '小王博士还需要一年才能写完论文，学校也同意他延毕。但新规实施以后，合法停留时间有了固定到期日。如果新的毕业时间晚于那个日期，他还得专门向移民局申请延长停留。所以光有学校同意是不够的，合法身份不会自动跟着延。',
+        '以下情形描述被暂缓规则的原定影响，目前不实施。小王博士还需要一年才能写完论文，学校也同意他延毕。但新规实施以后，合法停留时间有了固定到期日。如果新的毕业时间晚于那个日期，他还得专门向移民局申请延长停留。所以光有学校同意是不够的，合法身份不会自动跟着延。',
       ],
       [
-        'Wang’s school approves another year for PhD research. Under the new fixed-period rule, permission to stay has an end date. If graduation would fall after it, Wang must also apply to extend the stay; the school’s program extension does not itself extend immigration permission.',
-      ],
-    ],
-    [
-      [
-        '小林五月份毕业，打算用 OPT 七月份入职。但新规下，申请 OPT 和申请延长停留通常是绑在一起的——前者管你能不能工作，后者管你能在美国待多久。所以她安排入职的时候得把这两件事都处理好。不过新规生效后前六个月有过渡安排，不是所有人都要马上同时办这两项。',
-      ],
-      [
-        'Lin plans to graduate in May and start work through OPT in July. The new system generally pairs the OPT application with a stay-extension application: work permission and the permitted length of stay are separate matters. Both affect planning, although a temporary first-six-month provision means simultaneous filings are not immediately required of every applicant.',
+        'This scenario describes the stayed rule’s intended effect and is not currently implemented. Wang’s school approves another year for PhD research. Under the new fixed-period rule, permission to stay has an end date. If graduation would fall after it, Wang must also apply to extend the stay; the school’s program extension does not itself extend immigration permission.',
       ],
     ],
     [
       [
-        '小陈原本在读博士，想中途退出来，拿个硕士文凭然后用 OPT 去工作。但新规禁止研究生在读期间改学位层级。根据 Rice 的说法，学校虽然可以发硕士学位，却不能在 SEVIS 系统里把他的身份从博士改成硕士——而这一步改不了，他就没法用这个硕士学位申 OPT。也就是说，就算他手里拿着毕业证，身份这道坎还是过不去，OPT 照样办不下来。',
-        '假设小李在新规生效后才拿到美国硕士学位，然后 OPT 期间没抽中 H-1B，就想再读一个硕士，用 Day 1 CPT 边读书边工作。但新规不允许用同级或更低的学位来拿或维持 F-1 身份，所以他首先就卡在第二个硕士的学生身份上——连入学都没法合法办，更别提用 CPT 接着工作了。不过要注意，这条限制只针对新规生效后拿到的学位。如果学位是生效前拿的，就不受影响，所以不能一概而论说所有用 OPT 的人都会遇到这个问题。',
+        '以下情形描述被暂缓规则的原定影响，目前不实施。小林五月份毕业，打算用 OPT 七月份入职。但新规下，申请 OPT 和申请延长停留通常是绑在一起的——前者管你能不能工作，后者管你能在美国待多久。所以她安排入职的时候得把这两件事都处理好。不过新规生效后前六个月有过渡安排，不是所有人都要马上同时办这两项。',
       ],
       [
-        'Chen wants to leave a PhD, receive a master’s, and apply for OPT based on it. The new rule prohibits graduate-level changes during study. Rice explains that it can award the master’s but cannot change the SEVIS record from doctoral to master’s level, preventing OPT based on that master’s. The obstacle is the record change, not whether the diploma is awarded.',
-        'Suppose Li completes a US master’s after the rule takes effect, then misses H-1B selection while on OPT and plans another master’s with Day 1 CPT. The rule bars obtaining or maintaining F-1 through a same- or lower-level program, blocking the student-status basis for the second master’s before CPT could support continued work. Degrees completed before the effective date do not count toward that restriction.',
+        'This scenario describes the stayed rule’s intended effect and is not currently implemented. Lin plans to graduate in May and start work through OPT in July. The new system generally pairs the OPT application with a stay-extension application: work permission and the permitted length of stay are separate matters. Both affect planning, although a temporary first-six-month provision means simultaneous filings are not immediately required of every applicant.',
+      ],
+    ],
+    [
+      [
+        '以下情形描述被暂缓规则的原定影响，目前不实施。小陈原本在读博士，想中途退出来，拿个硕士文凭然后用 OPT 去工作。但新规禁止研究生在读期间改学位层级。根据 Rice 的说法，学校虽然可以发硕士学位，却不能在 SEVIS 系统里把他的身份从博士改成硕士——而这一步改不了，他就没法用这个硕士学位申 OPT。也就是说，就算他手里拿着毕业证，身份这道坎还是过不去，OPT 照样办不下来。',
+        '以下情形描述被暂缓规则的原定影响，目前不实施。假设小李在新规生效后才拿到美国硕士学位，然后 OPT 期间没抽中 H-1B，就想再读一个硕士，用 Day 1 CPT 边读书边工作。但新规不允许用同级或更低的学位来拿或维持 F-1 身份，所以他首先就卡在第二个硕士的学生身份上——连入学都没法合法办，更别提用 CPT 接着工作了。不过要注意，这条限制只针对新规生效后拿到的学位。如果学位是生效前拿的，就不受影响，所以不能一概而论说所有用 OPT 的人都会遇到这个问题。',
+      ],
+      [
+        'This scenario describes the stayed rule’s intended effect and is not currently implemented. Chen wants to leave a PhD, receive a master’s, and apply for OPT based on it. The new rule prohibits graduate-level changes during study. Rice explains that it can award the master’s but cannot change the SEVIS record from doctoral to master’s level, preventing OPT based on that master’s. The obstacle is the record change, not whether the diploma is awarded.',
+        'This scenario describes the stayed rule’s intended effect and is not currently implemented. Suppose Li completes a US master’s after the rule takes effect, then misses H-1B selection while on OPT and plans another master’s with Day 1 CPT. The rule bars obtaining or maintaining F-1 through a same- or lower-level program, blocking the student-status basis for the second master’s before CPT could support continued work. Degrees completed before the effective date do not count toward that restriction.',
       ],
     ],
   ],

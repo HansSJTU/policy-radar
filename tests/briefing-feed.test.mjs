@@ -61,3 +61,13 @@ test('published NPRM is recent and the comment deadline enters the correct rolli
   assert.ok(!upcoming.some(({ id }) => id === 'grace-comment-deadline'));
   assert.ok(getThirtyDayBriefing('2026-10-11').upcoming.some(({ id, date }) => id === 'grace-comment-deadline' && date === '2026-11-10'));
 });
+
+test('nationwide D/S stay removes the superseded effective date while preserving earlier snapshots', () => {
+  for (const language of ['zh', 'en']) {
+    const { recent, upcoming } = getThirtyDayBriefing('2026-09-14', language);
+    assert.ok(recent.some(item => item.id === 'duration-nationwide-stay'));
+    assert.ok(!upcoming.some(item => item.id === 'duration-effective-date'));
+    assert.ok(upcoming.some(item => item.id === 'duration-status-conference' && item.date === '2026-10-02'));
+    assert.ok(getThirtyDayBriefing('2026-09-13', language).upcoming.some(item => item.id === 'duration-effective-date'));
+  }
+});

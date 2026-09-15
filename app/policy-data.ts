@@ -121,87 +121,114 @@ export const policies: Array<{
       },
     ],
   },
-  {
-    rank: 3,
-    id: 'duration-status',
-    title: 'F/J 不再使用 Duration of Status',
-    tldr: 'DHS 最终规则取消 F/J 持有人的 D/S 入境期限，改用通常不超过四年的固定期限；需要继续停留的人必须向 USCIS 申请延期，OPT 申请通常还要同时提交 I-765 和 I-539。',
-    score: '9.4',
-    confidence: 85,
-    status: '最终规则 · 诉讼中',
-    tone: 'red',
-    current:
-      '2025 年的拟议规则已在 2026-07-17 变成最终规则。F/J 最长按项目获批、但通常不超过四年；延期需向 USCIS 申请。现有 D/S 持有人有过渡条款，但生效后出境再入境通常会进入固定期限制度。法院于 9·03 听取双方陈述后将禁令申请留待裁定，即法官没有当庭作出决定、将继续审议并可能另行发布书面命令；这既不代表批准禁令，也不代表驳回禁令。 9·13 核对庭审记录：法官在 9·03 听证结尾表示，希望最迟 9·14 作出决定，也可能先签发短期临时限制令（TRO）以争取审议时间；这是时间目标和可能方案，不是已签发命令（第 70 页）。',
-    route: ['F-1', 'CPT', 'OPT'],
-    milestones: [
-      { date: '2025-08-28', text: 'DHS 发布拟议规则。' },
-      { date: '2026-07-17', text: '最终规则发布。' },
-      { date: '2026-08-18', text: '高校联盟等在麻省联邦法院起诉。' },
-      {
-        date: '2026-08-31',
-        text: '法院把政府答辩期限延至 9·02；9·03 的初步禁令听证排期未变。',
-      },
-      {
-        date: '2026-09-02',
-        text: '政府随超页申请附上拟议反对意见，请求驳回 APA § 705 暂缓与初步禁令，并反对在行政记录提交前作出简易判决。',
-      },
-      {
-        date: '2026-09-03',
-        text: '法院听证后留待裁定；庭审记录第 70 页：法官希望最迟 9·14 决定，也可能先发短期 TRO，均非已签发命令。',
-      },
-    ],
-    next: [
-      { date: '2026-09-14', text: '法官希望最迟此日决定；并非保证，可能先发短期 TRO 或需要更多时间（庭审第 70 页）。', estimate: true },
-      {
-        date: '2026-09-15',
-        text: '若法院此前未发布暂缓或禁令，规则仍按计划生效。',
-      },
-    ],
-    impacts: [
-      '在规则生效后完成美国 F-1 学位的人，不能再靠同级或更低级别项目取得或维持 F-1；生效前已完成的学位不计入这项限制。',
-      '研究生在项目中途换专业或转学受到更严限制，除非 SEVP 因特殊情形例外批准。',
-      '新制度下 OPT 通常要同时处理 I-765 与 I-539，且二者批准前不能开始工作。',
-      '新制度下一般离境宽限期缩为 30 天；过渡人群规则更复杂。',
-    ],
-    sources: [
-      {
-        label: '2025 拟议规则',
-        href: 'https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant',
-      },
-      {
-        label: '2026 最终规则',
-        href: 'https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant',
-      },
-      {
-        label: '法院官方日历',
-        href: 'https://forms.mad.uscourts.gov/courtlist.html',
-      },
-      {
-        label: '案卷第 47 项电子书记员笔记',
-        href: 'https://www.courtlistener.com/docket/74661796/feed/',
-      },
-      {
-        label: '9·03 官方庭审记录（NAFSA 托管；第 70 页）',
-        href: 'https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf#page=70',
-      },
-      {
-        label: '政府 9·02 拟议反对意见附件',
-        href: 'https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf',
-      },
-      {
-        label: '美卡论坛规则讨论',
-        href: 'https://www.uscardforum.com/t/topic/431784',
-      },
-      {
-        label: '美卡论坛诉讼讨论',
-        href: 'https://www.uscardforum.com/t/topic/525892',
-      },
-      {
-        label: 'Rice：博士退出、硕士 OPT 与学位限制说明',
-        href: 'https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions',
-      },
-    ],
-  },
+{
+  "rank": 3,
+  "id": "duration-status",
+  "title": "D/S 最终规则被法院全国暂缓",
+  "tldr": "9·14 更新：法院已全国暂缓 DHS 取消 D/S 的最终规则，原定 9 月 15 日不再生效，DHS 不得继续实施。规则原拟将 F/J 停留改为通常不超过四年的固定期限，并增加延期及学业流动限制；这些新要求目前均被暂缓。",
+  "score": "9.4",
+  "confidence": 85,
+  "status": "法院全国暂缓 · 原 9·15 生效日已推迟",
+  "tone": "amber",
+  "current": "麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令，依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直至法院另行下令或案件实体审理结束。第 50 号意见第 46—48 页明确采用全国救济，不限于原告成员学校。原定 9·15 生效安排已被推迟；法院尚未永久撤销规则，也未作出有利于原告的简易判决，相关请求被无偏见驳回、可再次提出。案卷第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭举行现场状态会议，该日期不是新的规则生效日。",
+  "route": [
+    "F-1",
+    "CPT",
+    "OPT"
+  ],
+  "milestones": [
+    {
+      "date": "2025-08-28",
+      "text": "DHS 发布拟议规则。"
+    },
+    {
+      "date": "2026-07-17",
+      "text": "最终规则发布。"
+    },
+    {
+      "date": "2026-08-18",
+      "text": "高校联盟等在麻省联邦法院起诉。"
+    },
+    {
+      "date": "2026-08-31",
+      "text": "法院把政府答辩期限延至 9·02；9·03 的初步禁令听证排期未变。"
+    },
+    {
+      "date": "2026-09-02",
+      "text": "政府随超页申请附上拟议反对意见，请求驳回 APA § 705 暂缓与初步禁令，并反对在行政记录提交前作出简易判决。"
+    },
+    {
+      "date": "2026-09-03",
+      "text": "法院听证后留待裁定；庭审记录第 70 页：法官希望最迟 9·14 决定，也可能先发短期 TRO，均非已签发命令。"
+    },
+    {
+      "date": "2026-09-14",
+      "text": "法院签发初步禁令，全国推迟整项规则生效并禁止继续实施；并非永久撤销。"
+    }
+  ],
+  "next": [
+    {
+      "date": "2026-10-02",
+      "text": "中午 12 点，波士顿第 1 法庭现场状态会议（案卷第 52 项）；不是新生效日。"
+    },
+    {
+      "date": "日期未定",
+      "text": "等待后续法院命令或实体裁判；目前没有新的规则生效日期。"
+    }
+  ],
+  "impacts": [
+    "以下是被暂缓规则的原定影响，目前未实施：在规则生效后完成美国 F-1 学位的人，不能再靠同级或更低级别项目取得或维持 F-1；生效前已完成的学位不计入这项限制。",
+    "以下是被暂缓规则的原定影响，目前未实施：研究生在项目中途换专业或转学受到更严限制，除非 SEVP 因特殊情形例外批准。",
+    "以下是被暂缓规则的原定影响，目前未实施：新制度下 OPT 通常要同时处理 I-765 与 I-539，且二者批准前不能开始工作。",
+    "以下是被暂缓规则的原定影响，目前未实施：新制度下一般离境宽限期缩为 30 天；过渡人群规则更复杂。"
+  ],
+  "sources": [
+    {
+      "label": "2025 拟议规则",
+      "href": "https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+    },
+    {
+      "label": "2026 最终规则",
+      "href": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+    },
+    {
+      "label": "法院官方日历",
+      "href": "https://forms.mad.uscourts.gov/courtlist.html"
+    },
+    {
+      "label": "法院案卷更新（含第 51、52 项）",
+      "href": "https://www.courtlistener.com/docket/74661796/feed/"
+    },
+    {
+      "label": "9·03 官方庭审记录（NAFSA 托管；第 70 页）",
+      "href": "https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf#page=70"
+    },
+    {
+      "label": "政府 9·02 拟议反对意见附件",
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf"
+    },
+    {
+      "label": "美卡论坛规则讨论",
+      "href": "https://www.uscardforum.com/t/topic/431784"
+    },
+    {
+      "label": "美卡论坛诉讼讨论",
+      "href": "https://www.uscardforum.com/t/topic/525892"
+    },
+    {
+      "label": "Rice：博士退出、硕士 OPT 与学位限制说明",
+      "href": "https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions"
+    },
+    {
+      "label": "9·14 初步禁令正文（第 51 项）",
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.51.0.pdf"
+    },
+    {
+      "label": "9·14 法院意见（第 50 项；第 46—48 页全国范围）",
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0.pdf"
+    }
+  ]
+},
   {
     rank: 4,
     id: 'h1b-weighted-selection',
@@ -520,7 +547,7 @@ export const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-13', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-14', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       {

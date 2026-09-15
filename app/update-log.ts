@@ -23,6 +23,59 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-14",
+  "changes": [
+    {
+      "id": "duration-nationwide-stay",
+      "category": "03 · D/S",
+      "title": "法院全国暂缓 D/S 最终规则，原 9·15 生效日已推迟",
+      "summary": "法院在美东下午 4:55 签发初步禁令，依据 APA § 705 全国推迟整项最终规则生效并禁止继续实施。",
+      "before": "9·03 听证后待裁定；若无暂缓，9·15 计划生效。",
+      "after": "全国暂缓持续至法院另行下令或实体审理结束；尚未永久撤销，未设新生效日。10·02 中午 12 点在波士顿第 1 法庭举行现场状态会议。",
+      "details": [
+        "第 50 号意见第 46—48 页明确救济不限原告成员学校；第 51 号命令第 2—5 段规定范围与期限。",
+        "法院未批准永久撤销或简易判决，相关请求可再次提出。该命令不自动撤销独立的 CPT 行政指引。"
+      ],
+      "sources": [
+        {
+          "label": "9·14 初步禁令 · 第 51 项",
+          "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.51.0.pdf"
+        },
+        {
+          "label": "9·14 法院意见 · 第 50 项",
+          "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0.pdf"
+        },
+        {
+          "label": "案卷第 52 项 · 状态会议",
+          "href": "https://www.courtlistener.com/docket/74661796/feed/"
+        }
+      ]
+    },
+    {
+      "id": "cpt-uw-followup-wsu",
+      "category": "CPT 学校",
+      "title": "补录 UW 后续处理要求与 WSU 2027 春季全职 CPT 限制",
+      "summary": "UW 9·08 通知明确驳回秋季待审非必需 CPT；新增 WSU 8·07 公告，区分校内计划与 8 月 SEVP 指引。",
+      "before": "UW 仅记录新申请暂停；36 条公开校方证据、5 条社区证据，共 41 条，覆盖 40 所不同学校。",
+      "after": "UW 明确待审申请处理与顾问证明要求；新增 WSU 后为 37 条公开证据、5 条社区证据，共 42 条，覆盖 41 所不同学校。",
+      "details": [
+        "WSU 限制计划从 2027 春季开始，针对学年内全职 CPT，课程必需实习除外；并非当前全面停批，公告提示校区适用范围有限。",
+        "WSU 校方索引正文可读，直接访问与后续执行状态仍待复核；不将该限制写成今天新发布的联邦政策。"
+      ],
+      "sources": [
+        {
+          "label": "UW · 9·08 后续通知",
+          "href": "https://iss.washington.edu/follow-up-on-cpt-policy/"
+        },
+        {
+          "label": "WSU · 8·07 公告",
+          "href": "https://ip.wsu.edu/august-7th-2026-special-immigration-advisory/"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-13",
   "changes": [
     {
@@ -685,6 +738,59 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-14",
+  "changes": [
+    {
+      "id": "duration-nationwide-stay",
+      "category": "03 · D/S",
+      "title": "Court stays the D/S final rule nationwide; September 15 effective date postponed",
+      "summary": "At 4:55 p.m. ET, the court issued preliminary relief under APA § 705 postponing the entire rule nationwide and barring further implementation.",
+      "before": "Decision pending after the September 3 hearing; September 15 scheduled effectiveness unless stayed.",
+      "after": "Nationwide stay until further court order or a merits resolution; no permanent vacatur or replacement effective date. An in-person status conference is set for October 2 at noon in Courtroom 1, Boston.",
+      "details": [
+        "Opinion 50, pp. 46–48, extends relief beyond plaintiff-member schools; order 51, paragraphs 2–5, sets the scope and duration.",
+        "Vacatur and summary judgment were denied without prejudice to renewal. The order does not automatically rescind separate CPT guidance."
+      ],
+      "sources": [
+        {
+          "label": "September 14 injunction · entry 51",
+          "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.51.0.pdf"
+        },
+        {
+          "label": "September 14 opinion · entry 50",
+          "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0.pdf"
+        },
+        {
+          "label": "Docket entry 52 · status conference",
+          "href": "https://www.courtlistener.com/docket/74661796/feed/"
+        }
+      ]
+    },
+    {
+      "id": "cpt-uw-followup-wsu",
+      "category": "CPT schools",
+      "title": "Add UW follow-up requirements and WSU Spring 2027 full-time CPT restriction",
+      "summary": "UW’s September 8 notice dismisses pending non-required autumn CPT. Add WSU’s August 7 notice while distinguishing its university policy from the August SEVP guidance.",
+      "before": "UW recorded only a pause on new requests; 36 public university entries plus 5 community entries, 41 entries covering 40 distinct schools.",
+      "after": "UW now specifies pending-request treatment and adviser attestation. Adding WSU yields 37 public entries plus 5 community entries, 42 entries covering 41 distinct schools.",
+      "details": [
+        "WSU plans to restrict full-time academic-year CPT from Spring 2027, except curricular-required internships. It is not a current blanket pause, and the notice cautions about campus scope.",
+        "Substantive indexed official-page text was available; direct access and later implementation remain unverified. This is not presented as a new federal policy issued today."
+      ],
+      "sources": [
+        {
+          "label": "UW · September 8 follow-up",
+          "href": "https://iss.washington.edu/follow-up-on-cpt-policy/"
+        },
+        {
+          "label": "WSU · August 7 notice",
+          "href": "https://ip.wsu.edu/august-7th-2026-special-immigration-advisory/"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-13",
   "changes": [

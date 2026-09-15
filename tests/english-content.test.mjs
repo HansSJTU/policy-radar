@@ -22,7 +22,7 @@ function collectStrings(value) {
 
 test('the English policy and school datasets contain no Chinese copy', () => {
   assert.equal(Object.keys(englishPolicies).length, 10);
-  assert.equal(Object.keys(englishVerifiedSchools).length, 36);
+  assert.equal(Object.keys(englishVerifiedSchools).length, 37);
   assert.equal(Object.keys(englishCommunitySchools).length, 5);
   assert.equal(Object.keys(englishRouteStages).length, 4);
 
@@ -40,7 +40,7 @@ test('every English policy supplies a translated source label for each source', 
     'opt-fee': 3,
     'h1b-fee': 3,
     'h1b-weighted-selection': 2,
-    'duration-status': 9,
+    'duration-status': 11,
     'cpt-guidance': 3,
     'prevailing-wage': 3,
     'h1b-reform': 3,
@@ -53,10 +53,10 @@ test('every English policy supplies a translated source label for each source', 
   }
 });
 
-test('the English D/S entry records the completed hearing and pending decision', () => {
+test('the English D/S entry preserves the hearing and records nationwide relief', () => {
   const policy = englishPolicies['duration-status'];
 
-  assert.match(policy.current, /under advisement/);
+  assert.match(policy.current, /nationwide relief/);
   assert.ok(policy.milestones.some(({ date, text }) => date === '2026-09-03' && /arguments/.test(text)));
   assert.equal(policy.next.some(({ date }) => date === '2026-09-03'), false);
 });
@@ -89,11 +89,11 @@ test('the English UC Berkeley entry preserves the narrow CPT eligibility conditi
   assert.match(berkeley.detail, /faculty adviser/);
 });
 
-test('D/S transcript timing is an estimate and links to the hearing source', () => {
+test('D/S court order supersedes the hoped-for hearing decision date', () => {
   const policy = englishPolicies['duration-status'];
-  const target = policy.next.find(({ date }) => date === '2026-09-14');
-  assert.equal(target.estimate, true);
-  assert.match(target.text, /without a guarantee/);
-  assert.match(policy.current, /not an issued order/);
+  assert.equal(policy.next.some(({ date }) => date === '2026-09-14' || date === '2026-09-15'), false);
+  assert.ok(policy.next.some(({ date, text }) => date === '2026-10-02' && /not a new effective date/.test(text)));
+  assert.match(policy.current, /did not permanently vacate/);
   assert.ok(policy.sourceLabels.some(label => /hearing transcript/.test(label)));
+  assert.ok(policy.sourceLabels.some(label => /preliminary injunction/.test(label)));
 });

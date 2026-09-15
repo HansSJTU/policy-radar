@@ -7,11 +7,32 @@ export type BriefingItem = {
   summary: string;
   timing: 'recent' | 'upcoming';
   confirmed: boolean;
+  supersededOn?: string;
 };
 
 import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
+{
+  "id": "duration-nationwide-stay",
+  "date": "2026-09-14",
+  "policyId": "duration-status",
+  "rank": 3,
+  "policy": "D/S 固定期限",
+  "summary": "法院全国推迟整项最终规则生效，禁止 DHS 继续实施；不是永久撤销，原 9·15 生效日已推迟。",
+  "timing": "recent",
+  "confirmed": true
+},
+{
+  "id": "duration-status-conference",
+  "date": "2026-10-02",
+  "policyId": "duration-status",
+  "rank": 3,
+  "policy": "D/S 固定期限",
+  "summary": "中午 12 点，波士顿第 1 法庭举行现场状态会议；这是诉讼安排，不是新生效日。",
+  "timing": "upcoming",
+  "confirmed": true
+},
 {"id": "opt-fee-oira-completed", "date": "2026-09-11", "policyId": "opt-fee", "rank": 1, "policy": "OPT 收费", "summary": "OIRA 带修改完成审查；金额与缴费方尚未公布，尚未生效。", "timing": "recent", "confirmed": true},
 {"id": "grace-comment-deadline", "date": "2026-11-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "公众评论截止：美东当日午夜前，案卷 USCIS-2026-0364；这不是生效日。", "timing": "upcoming", "confirmed": true},
 {"id": "grace-preview", "date": "2026-09-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 预览稿公开，涵盖八类工作身份及其家属；现行规则未变。", "timing": "recent", "confirmed": true},
@@ -128,6 +149,7 @@ const briefingItems: BriefingItem[] = [
   },
   {
     id: 'duration-effective-date',
+    supersededOn: '2026-09-14',
     date: '2026-09-15',
     policyId: 'duration-status',
     rank: 3,
@@ -149,6 +171,8 @@ const briefingItems: BriefingItem[] = [
 ];
 
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
+  'duration-nationwide-stay': { policy: 'D/S final rule', summary: 'The court postponed the entire rule nationwide and barred further implementation. This is not permanent vacatur; the September 15 effective date is postponed.' },
+  'duration-status-conference': { policy: 'D/S final rule', summary: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.' },
   'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'Transcript p. 70: the judge hoped to decide by September 14 and might first issue a brief TRO for more time. No bench ruling was issued; September 14 is not guaranteed.' },
   'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
   'grace-comment-deadline': { policy: 'End of 60-day grace period', summary: 'Public comments due before midnight ET; docket USCIS-2026-0364. This is not an effective date.' },
@@ -187,7 +211,7 @@ export function getThirtyDayBriefing(asOf: string, language: Language = 'zh'): {
     .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.rank - b.rank);
 
   const upcoming = localizedItems
-    .filter((item) => item.timing === 'upcoming' && item.confirmed && distanceInDays(item) >= 1 && distanceInDays(item) <= 30)
+    .filter((item) => item.timing === 'upcoming' && item.confirmed && (!item.supersededOn || asOf < item.supersededOn) && distanceInDays(item) >= 1 && distanceInDays(item) <= 30)
     .sort((a, b) => dateValue(a.date) - dateValue(b.date) || a.rank - b.rank);
 
   return { recent, upcoming };

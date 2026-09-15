@@ -56,31 +56,75 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     sourceLabels: ['Federal Register September 10 correction', 'Federal Register NPRM', 'USCardForum discussion'],
   },
   'duration-status': {
-    title: 'F/J Status Would No Longer Use Duration of Status',
-    tldr: 'A DHS final rule replaces Duration of Status admission for F/J holders with a fixed period, generally no longer than four years. People who need more time must apply to USCIS for an extension; an OPT filing would generally require both Form I-765 and Form I-539.',
-    status: 'Final rule · In litigation',
-    current: 'The rule proposed in 2025 became final on July 17, 2026. F/J admission would cover the approved program but generally no more than four years, and extensions would require a USCIS filing. Transitional provisions cover current D/S holders, but a later departure and reentry would generally place them under the fixed-period system. After hearing arguments on September 3, the court took the injunction request under advisement: the judge did not rule from the bench and will continue considering the matter, potentially through a later written order. This is neither a grant nor a denial of relief. Transcript checked September 13: at the September 3 hearing, the judge hoped to decide by September 14 and raised a possible brief temporary restraining order (TRO) to allow more time. This was a target and possibility, not an issued order (p. 70).',
-    route: ['F-1', 'CPT', 'OPT'],
-    milestones: [
-      { date: '2025-08-28', text: 'DHS published the proposed rule.' },
-      { date: '2026-07-17', text: 'DHS published the final rule.' },
-      { date: '2026-08-18', text: 'A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts.' },
-      { date: '2026-08-31', text: 'The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar.' },
-      { date: '2026-09-02', text: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and opposing summary judgment before the administrative record is filed.' },
-      { date: '2026-09-03', text: 'After hearing arguments, the court took the request under advisement. Transcript p. 70 records a hoped-for decision by September 14 and a possible brief TRO, neither an issued order.' },
-    ],
-    next: [
-      { date: '2026-09-14', text: 'The judge hoped to decide by this date, without a guarantee; a brief TRO or more time remained possible (transcript p. 70).', estimate: true },
-      { date: '2026-09-15', text: 'The rule remains scheduled to take effect unless the court first issues a stay or injunction.' },
-    ],
-    impacts: [
-      'Completing a U.S. F-1 degree after the rule takes effect bars F-1 through another same- or lower-level program; degrees completed before the effective date do not count toward this restriction.',
-      'Graduate students would face tighter limits on changing programs or schools mid-program unless SEVP approves an exception for special circumstances.',
-      'Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.',
-      'The general departure period would fall to 30 days, and the transition rules for current status holders are more complex.',
-    ],
-    sourceLabels: ['2025 proposed rule', '2026 final rule', 'Official court calendar', 'Docket entry 47 electronic clerk’s notes', 'September 3 official hearing transcript (NAFSA-hosted; p. 70)', 'Government’s September 2 proposed opposition', 'USCardForum rule discussion', 'USCardForum litigation discussion', 'Rice: PhD exit, master’s OPT and degree restrictions'],
-  },
+  "title": "Court Stays the D/S Final Rule Nationwide",
+  "tldr": "September 14 update: the court postponed the DHS rule ending D/S nationwide and barred further implementation. It will not take effect on September 15 as scheduled. The rule would replace F/J D/S with fixed periods generally capped at four years and add extension and academic-mobility restrictions; those new requirements are currently stayed.",
+  "status": "Nationwide court stay · September 15 effective date postponed",
+  "current": "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, postponing the entire final rule under APA § 705 and preliminarily enjoining DHS/ICE from further implementation until a further court order or resolution on the merits. Opinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools. The September 15 effective date is postponed. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal. Docket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date.",
+  "route": [
+    "F-1",
+    "CPT",
+    "OPT"
+  ],
+  "milestones": [
+    {
+      "date": "2025-08-28",
+      "text": "DHS published the proposed rule."
+    },
+    {
+      "date": "2026-07-17",
+      "text": "DHS published the final rule."
+    },
+    {
+      "date": "2026-08-18",
+      "text": "A coalition of universities and other plaintiffs filed suit in federal court in Massachusetts."
+    },
+    {
+      "date": "2026-08-31",
+      "text": "The court extended the government response deadline to September 2; the September 3 preliminary-injunction hearing remained on the calendar."
+    },
+    {
+      "date": "2026-09-02",
+      "text": "The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and opposing summary judgment before the administrative record is filed."
+    },
+    {
+      "date": "2026-09-03",
+      "text": "After hearing arguments, the court took the request under advisement. Transcript p. 70 records a hoped-for decision by September 14 and a possible brief TRO, neither an issued order."
+    },
+    {
+      "date": "2026-09-14",
+      "text": "The court issued a preliminary injunction postponing the entire rule nationwide and barring further implementation; this is not permanent vacatur."
+    }
+  ],
+  "next": [
+    {
+      "date": "2026-10-02",
+      "text": "In-person status conference at noon, Courtroom 1, Boston (docket entry 52); not a new effective date."
+    },
+    {
+      "date": "Date not set",
+      "text": "Await further court orders or a merits decision; no new effective date is set."
+    }
+  ],
+  "impacts": [
+    "The following describes the stayed rule and is not currently implemented: Completing a U.S. F-1 degree after the rule takes effect bars F-1 through another same- or lower-level program; degrees completed before the effective date do not count toward this restriction.",
+    "The following describes the stayed rule and is not currently implemented: Graduate students would face tighter limits on changing programs or schools mid-program unless SEVP approves an exception for special circumstances.",
+    "The following describes the stayed rule and is not currently implemented: Under the new system, an OPT applicant would generally need both Form I-765 and Form I-539 approved before beginning employment.",
+    "The following describes the stayed rule and is not currently implemented: The general departure period would fall to 30 days, and the transition rules for current status holders are more complex."
+  ],
+  "sourceLabels": [
+    "2025 proposed rule",
+    "2026 final rule",
+    "Official court calendar",
+    "Court docket updates (including entries 51 and 52)",
+    "September 3 official hearing transcript (NAFSA-hosted; p. 70)",
+    "Government’s September 2 proposed opposition",
+    "USCardForum rule discussion",
+    "USCardForum litigation discussion",
+    "Rice: PhD exit, master’s OPT and degree restrictions",
+    "September 14 preliminary injunction (entry 51)",
+    "September 14 opinion (entry 50; nationwide scope at pp. 46–48)"
+  ]
+},
   'h1b-weighted-selection': {
     title: 'H-1B Selection Is Now Weighted by Wage Level',
     tldr: 'USCIS replaced equal-probability selection for cap-subject H-1B cases with a wage-level-weighted process. Wage Levels I, II, III, and IV receive one, two, three, and four entries respectively. The rule took effect on February 27, 2026 and applies beginning with the FY 2027 registration season.',
@@ -223,7 +267,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['H-4 families', 'Household income'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'The initiative appeared on the government’s long-term rulemaking agenda.' },
-      { date: 'As of 2026-09-13', text: 'No NPRM, comment period, or effective date has been announced.' },
+      { date: 'As of 2026-09-14', text: 'No NPRM, comment period, or effective date has been announced.' },
     ],
     next: [
       { date: 'TBD', text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.' },
@@ -238,6 +282,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
 };
 
 export const englishVerifiedSchools: Record<string, { state: string; detail: string }> = {
+  'Washington State University': {
+  "state": "Plans to restrict full-time academic-year CPT from Spring 2027, with required-internship exceptions",
+  "detail": "The August 7 university notice says full-time CPT during the academic year will no longer be approved from Spring 2027, except internships explicitly required by the curriculum. It predates the August SEVP memoranda and does not establish a current blanket pause or cancel summer/part-time CPT. The notice says it may not apply at every campus. Review scope: substantive official-page text was read through the search index; direct access is restricted and later implementation remains unverified."
+},
   'Boston College': { state: 'CPT approvals paused for off-campus activities not required of every student in the degree program', detail: 'The September 9 OISS notice requires training both for degree completion and for every student in the program; optional academic credit is insufficient. The notice does not specify treatment of existing authorizations.' },
   'Johns Hopkins University': { state: 'New and pending CPT requests limited to degree-required training', detail: 'The new OIS notice permits internships/practicums required for degree completion and consistent with the SEVP memos; qualifying requests continue to be processed. Older elective-course language remains lower on the page and does not establish reopening. Existing authorization treatment is unspecified.' },
   'James Madison University': { state: 'Decisions on new and pending CPT requests paused during university review', detail: 'The Immigration Announcements page (September 10 page date; CPT section headed August 2026) says decisions on new and pending requests are temporarily paused while JMU reviews academic programs and processes after the August 24 guidance. It does not specify treatment of existing authorizations or a resumption date.' },
@@ -258,7 +306,10 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'Northwestern University': { state: 'CPT not required for every student will not be approved', detail: 'In its September 3 notice, OISS says Northwestern cannot approve experiential learning that is not required for every student unless SEVP guidance changes. OISS is working with programs to establish eligibility.' },
   'Columbia University': { state: 'CPT not required for every student is paused; pre-August 24 approvals will not be rescinded', detail: 'ISSO approves only CPT that is integral to the curriculum, required for all students, and supported by a cooperative agreement. Other cases are paused; CPT approved before August 24 will not be rescinded.' },
   'Harvard University': { state: 'Eligibility tightened; no university-wide pause announced', detail: 'Employment must be a formally documented degree requirement and supported by an appropriate cooperative agreement.' },
-  'University of Washington': { state: 'New CPT that is not required for every student is paused', detail: 'New requests are paused when CPT is not required for every student in the degree program; previously authorized CPT may continue.' },
+  'University of Washington': {
+  "state": "September 8: pause continues; pending non-required autumn CPT will be dismissed",
+  "detail": "The September 8 follow-up dismisses all pending non-required autumn CPT requests. New requests need an academic adviser’s attestation that training is required of all students in the established curriculum of the student’s primary program. The August 26 notice allowed existing authorizations to continue under their I-20 terms; the September 8 notice does not announce revocation."
+},
   'University of Maryland, College Park': { state: 'New CPT outside a program-wide requirement or required research is paused', detail: 'ISSS paused unapproved requests unless the training is required for every student, is part of a required course, or is necessary for thesis or dissertation research. UNIV099, ENCO099, BMGT099, and other non-required internships are not being accepted; previously authorized CPT may continue.' },
   'Trine University': { state: 'The university CPT page still lists an open application and review process', detail: 'The graduate CPT page lists application deadlines for 2026–27 start dates and says applications remain open and are reviewed in the order received. The page does not separately address the August 24 guidance, so students should confirm individual eligibility with their DSO.' },
   MIT: { state: 'New CPT outside a program-wide degree requirement is temporarily paused', detail: 'MIT paused new CPT requests received or pending as of August 24 when the training is not required for every student to complete the degree, and says it will contact students already issued Fall 2026 CPT to discuss options.' },
@@ -288,7 +339,7 @@ export const englishCommunitySchools: Record<string, string> = {
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {
-  'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Final rule · Decision pending after hearing' } } },
+  'F-1': { subtitle: 'Study and enrollment', policies: { 'duration-status': { title: 'Fixed admission period', state: 'Nationwide stay · Effective date postponed' } } },
   CPT: { subtitle: 'Curricular training', policies: { 'cpt-guidance': { title: 'Aug. 12 / Aug. 24 CPT guidance', state: 'Schools are applying the new standard' } } },
   OPT: { subtitle: 'Post-completion work', policies: {
     'opt-fee': { title: 'OPT $100k', state: 'OIRA review completed · Not in effect' },
