@@ -344,17 +344,22 @@ main { width: 100%; min-width: 0; }
 .process-steps.administrative-guidance > i.complete > em { color: #9a753e; }
 .process-steps.administrative-guidance > i.current > em { color: #8b590f; font-weight: 800; }
 
-.litigation-track { margin: 20px 0 0 96px; padding: 16px 18px; display: grid; grid-template-columns: 120px minmax(0,1fr); align-items: start; gap: 20px; border: 1px solid #efd9d6; border-radius: 10px; background: #fff9f8; }
-.litigation-heading { display: flex; align-items: center; gap: 8px; color: var(--red-dark); font-size: .8125rem; font-weight: 650; line-height: 1.5; }
-.litigation-heading svg { width: 17px; height: 17px; flex: 0 0 auto; }
-.litigation-events { min-width: 0; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; list-style: none; }
-.litigation-events > li { min-width: 0; padding-left: 12px; border-left: 2px solid #e8b8b1; display: grid; align-content: start; gap: 5px; }
-.litigation-events time { color: #9b514a; font: 650 .8125rem/1.5 ui-monospace, monospace; white-space: nowrap; }
-.litigation-events li > span { color: #6c5556; font-size: .875rem; line-height: 1.6; overflow-wrap: break-word; }
-.litigation-events .latest { border-color: var(--red); }
-.litigation-events .latest :is(time, span) { color: var(--red-dark); font-weight: 650; }
-.litigation-events [data-status="upcoming"] { border-left-style: dashed; }
-.litigation-events [data-status="upcoming"] :is(time, span) { color: var(--muted); font-weight: 400; }
+.litigation-track { margin: 20px 0 0 96px; padding: 20px 22px; border: 1px solid var(--line); border-radius: 12px; background: #fafbfc; }
+.litigation-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; color: var(--ink-soft); font-size: .8125rem; font-weight: 650; line-height: 1.5; }
+.litigation-heading svg { width: 16px; height: 16px; flex: 0 0 auto; color: var(--muted); }
+.litigation-events { min-width: 0; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0,1fr); list-style: none; }
+.litigation-events > li { position: relative; min-width: 0; padding: 24px 16px 0 0; display: grid; align-content: start; gap: 7px; }
+.litigation-events > li::before { position: absolute; content: ''; top: 5px; left: 5px; right: -5px; height: 1px; background: #d8dfe8; }
+.litigation-events > li:last-child { padding-right: 0; }
+.litigation-events > li:last-child::before { display: none; }
+.litigation-events > li::after { position: absolute; content: ''; top: 1px; left: 0; width: 9px; height: 9px; border: 2px solid #fafbfc; border-radius: 50%; background: #a4afbe; box-shadow: 0 0 0 1px #cbd3df; }
+.litigation-events time { color: var(--muted); font: 600 .8125rem/1.5 ui-monospace, monospace; white-space: nowrap; }
+.litigation-events li > span { color: var(--ink-soft); font-size: .875rem; line-height: 1.6; overflow-wrap: break-word; }
+.litigation-heading small { margin-left: auto; padding: 2px 7px; border-radius: 4px; background: #f9eae7; color: var(--red-dark); font-size: .6875rem; font-weight: 600; line-height: 1.5; white-space: nowrap; }
+.litigation-events .latest::after { background: var(--red-dark); box-shadow: 0 0 0 1px var(--red-dark), 0 0 0 4px #f6e7e4; }
+.litigation-events .latest time, .litigation-events .latest > span { color: var(--red-dark); font-weight: 650; }
+.litigation-events [data-status="upcoming"]::after { background: #fafbfc; }
+.litigation-events [data-status="upcoming"] > span { color: var(--muted); font-weight: 400; }
 
 .timeline-block { margin-top: 25px; }
 .timeline-shell { margin: 17px 45px 0 96px; padding-bottom: 20px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #c2cede transparent; }
@@ -760,8 +765,15 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .process-steps { min-width: 760px; padding-right: 76px; padding-left: 20px; }
   .process-steps > i { scroll-snap-align: start; }
   .process-steps > i > em { top: 16px; width: 108px; font-size: .75rem; line-height: 1.4; }
-  .litigation-track { margin-left: 0; padding: 16px; grid-template-columns: 1fr; gap: 14px; }
-  .litigation-events { gap: 14px; }
+  .litigation-track { margin-left: 0; padding: 18px; }
+  .litigation-heading { margin-bottom: 12px; }
+  .litigation-events { grid-auto-flow: row; grid-template-columns: 1fr; }
+  .litigation-events > li, .litigation-events > li:last-child { padding: 12px 0 12px 26px; grid-template-columns: 88px minmax(0,1fr); align-items: start; gap: 12px; }
+  .litigation-events > li::before { top: 0; bottom: 0; left: 4px; right: auto; width: 1px; height: auto; }
+  .litigation-events > li:first-child::before { top: 22px; }
+  .litigation-events > li:last-child::before { display: block; bottom: auto; height: 22px; }
+  .litigation-events > li:only-child::before { display: none; }
+  .litigation-events > li::after { top: 18px; }
   .timeline-shell {
     min-width: 0;
     margin-top: 0;
@@ -837,8 +849,6 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .path-controls { width: 100%; }
   .path-controls button { min-height: 42px; padding: 6px; font-size: .8125rem; }
   .path-count { display: none; }
-  .litigation-events { grid-template-columns: 1fr; gap: 0; }
-  .litigation-events > li { padding: 10px 0 10px 12px; grid-template-columns: 48px minmax(0,1fr); gap: 10px; }
   .expanded-grid { padding: 18px; }
   .source-row { display: flex; flex-wrap: wrap; }
   .source-row a { padding: 7px 9px; }
