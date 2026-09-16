@@ -23,6 +23,41 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-16",
+  "changes": [
+    {
+      "id": "cpt-bryn-mawr-buffalo-dearborn",
+      "category": "CPT 学校",
+      "title": "新增 Bryn Mawr、Buffalo 与 Michigan–Dearborn 校方 CPT 通知",
+      "summary": "Bryn Mawr 9·15 宣布暂停新的非必需 CPT；补录 Buffalo 的学位必需例外与 Dearborn 的两个硕士项目限制。",
+      "before": "37 条公开校方证据、5 条社区证据，共 42 条，覆盖 41 所不同学校／校区。",
+      "after": "40 条公开校方证据、5 条社区证据，共 45 条，覆盖 44 所不同学校／校区；Purdue 两条院系／校级证据仍只计一所学校。",
+      "details": [
+        "Bryn Mawr 未宣布撤销既有授权；Buffalo 与 Dearborn 均允许既有 2026 秋季授权继续。Dearborn 仅列应用行为分析与临床健康心理学硕士，不能外推 Ann Arbor 校区。",
+        "Berkeley 校方明确 CPT 指引独立于 D/S 规则，法院暂缓 D/S 不会自动恢复 optional CPT。"
+      ],
+      "sources": [
+        {
+          "label": "Bryn Mawr · 9/15",
+          "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements"
+        },
+        {
+          "label": "University at Buffalo · CPT FAQ",
+          "href": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-/cpt-policy-change---faqs.html"
+        },
+        {
+          "label": "Michigan–Dearborn · OIA",
+          "href": "https://umdearborn.edu/office-international-affairs/important-updates"
+        },
+        {
+          "label": "UC Berkeley · CPT",
+          "href": "https://internationaloffice.berkeley.edu/students/employment/cpt"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-14",
   "changes": [
     {
@@ -738,6 +773,41 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-16",
+  "changes": [
+    {
+      "id": "cpt-bryn-mawr-buffalo-dearborn",
+      "category": "CPT schools",
+      "title": "Add CPT notices from Bryn Mawr, Buffalo and Michigan–Dearborn",
+      "summary": "Bryn Mawr announced a new optional-CPT pause on September 15; add Buffalo’s degree-required exception and Dearborn’s two eligible MS programs.",
+      "before": "37 public university entries and 5 community entries: 42 records covering 41 distinct institutions/campuses.",
+      "after": "40 public university entries and 5 community entries: 45 records covering 44 distinct institutions/campuses. The two Purdue office/department records still count as one institution.",
+      "details": [
+        "Bryn Mawr does not announce revocation of existing approvals. Buffalo and Dearborn allow existing Fall 2026 authorizations to continue. Dearborn lists only Applied Behavior Analysis and Clinical Health Psychology MS programs; this cannot be generalized to Ann Arbor.",
+        "Berkeley explicitly separates CPT guidance from the D/S rule: the D/S stay does not automatically restore optional CPT."
+      ],
+      "sources": [
+        {
+          "label": "Bryn Mawr · 9/15",
+          "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements"
+        },
+        {
+          "label": "University at Buffalo · CPT FAQ",
+          "href": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-/cpt-policy-change---faqs.html"
+        },
+        {
+          "label": "Michigan–Dearborn · OIA",
+          "href": "https://umdearborn.edu/office-international-affairs/important-updates"
+        },
+        {
+          "label": "UC Berkeley · CPT",
+          "href": "https://internationaloffice.berkeley.edu/students/employment/cpt"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-14",
   "changes": [
