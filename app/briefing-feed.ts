@@ -14,6 +14,16 @@ import type { Language } from './language';
 
 const briefingItems: BriefingItem[] = [
 {
+  "id": "cpt-bryn-mawr-pause",
+  "date": "2026-09-15",
+  "policyId": "cpt-guidance",
+  "rank": 5,
+  "policy": "CPT 校方执行",
+  "summary": "Bryn Mawr 暂停新的非全员必需 CPT；未宣布撤销既有授权。D/S 暂缓不自动撤销独立 CPT 指引。",
+  "timing": "recent",
+  "confirmed": true
+},
+{
   "id": "duration-nationwide-stay",
   "date": "2026-09-14",
   "policyId": "duration-status",
@@ -171,6 +181,7 @@ const briefingItems: BriefingItem[] = [
 ];
 
 const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
+ 'cpt-bryn-mawr-pause': { policy: 'University CPT implementation', summary: 'Bryn Mawr paused new optional CPT without announcing revocation of existing approvals. The D/S stay does not automatically withdraw separate CPT guidance.' },
   'duration-nationwide-stay': { policy: 'D/S final rule', summary: 'The court postponed the entire rule nationwide and barred further implementation. This is not permanent vacatur; the September 15 effective date is postponed.' },
   'duration-status-conference': { policy: 'D/S final rule', summary: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.' },
   'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'Transcript p. 70: the judge hoped to decide by September 14 and might first issue a brief TRO for more time. No bench ruling was issued; September 14 is not guaranteed.' },

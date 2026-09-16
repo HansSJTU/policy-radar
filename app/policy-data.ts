@@ -285,6 +285,7 @@ export const policies: Array<{
       'ICE/SEVP 在 8·12 已要求 DSO 仅批准完成学位不可缺少、且对该学位所有学生均为必需的 CPT，并强调学校与 DSO 的合规责任。8·24 问答进一步说明可选实习课不满足标准、全员包含美国学生，并重申 sponsoring employer 与学校的 cooperative agreement 要求。',
     route: ['CPT', 'Day-1 CPT', '实习'],
     milestones: [
+      {"date": "2026-09-15", "text": "Bryn Mawr 校方宣布暂停新的非全员必需 CPT；这是学校执行通知，不是新的联邦规则。"},
       {
         date: '2026-08-12',
         text: 'SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。',
@@ -315,6 +316,7 @@ export const policies: Array<{
       '既有 CPT I-20 是否受影响由学校通知决定；多所学校明确现有授权暂不受影响。',
     ],
     sources: [
+      {"label": "Bryn Mawr · 9·15 校方通知", "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements"},
       {
         label: 'SEVP 8·12 Broadcast',
         href: 'https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf',
@@ -547,7 +549,7 @@ export const policies: Array<{
     route: ['H-4 家庭', '家庭收入'],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-14', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-16', text: '没有 NPRM、评论期或生效日。' },
     ],
     next: [
       {
