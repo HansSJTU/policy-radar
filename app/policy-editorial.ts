@@ -27,6 +27,13 @@ export type PolicyEditorial = {
   deck: string;
   headline: string;
   analysis: string;
+  // Practitioner expectations for an upcoming rule. Always labeled as analysis,
+  // never presented as published text or an effective requirement.
+  possibilities?: {
+    heading: string;
+    note: string;
+    items: [string, string][];
+  };
   teaser: string;
   impacts: [string, string][];
   outlook: string;

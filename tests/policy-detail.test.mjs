@@ -146,6 +146,34 @@ test('grace-period publication is distinct from final effectiveness', () => {
   }
 });
 
+test('PERM expectations stay labeled as analysis and cite the Justice Department settlement', () => {
+  for (const language of ['zh', 'en']) {
+    const { editorial, record } = getPolicyDetail('perm-modernization', language);
+    assert.equal(editorial.possibilities.items.length, 5);
+    assert.equal(
+      editorial.possibilities.items.filter(([, text]) => text.length > 0).length,
+      5,
+    );
+    const text = JSON.stringify(editorial.possibilities);
+    assert.match(text, /OpenAI/);
+    assert.match(text, /ATS/);
+    assert.ok(
+      record.sources.some(({ href }) =>
+        href.includes('justice.gov/opa/pr/civil-rights-division-secures-settlement-openai'),
+      ),
+    );
+    assert.ok(record.milestones.some(({ date }) => date === '2026-08-04'));
+  }
+  assert.match(
+    getPolicyDetail('perm-modernization', 'zh').editorial.possibilities.note,
+    /不是 DOL 已公布的条款/,
+  );
+  assert.match(
+    getPolicyDetail('perm-modernization', 'en').editorial.possibilities.heading,
+    /expect/i,
+  );
+});
+
 test('D/S relief is consistent across details, homepage and share copy', async () => {
   const { getPolicyShareItem } = await import('../app/item-share-model.ts');
   const { buildItemShareContent } = await import('../app/share-model.ts');

@@ -13,24 +13,30 @@ export type EnglishPolicy = {
 export const englishPolicies: Record<string, EnglishPolicy> = {
   'perm-modernization': {
     title: 'PERM Labor Certification Reform',
-    tldr: 'DOL plans to update PERM recruitment standards, strengthen protections for laid-off U.S. workers, and improve employer compliance with nondiscriminatory recruitment, hiring and recordkeeping requirements.',
+    tldr: 'DOL plans to rewrite PERM recruitment so its channels track real hiring, raise the bar for showing no qualified U.S. worker was available, and strengthen protections for laid-off U.S. workers. The proposed rule went to White House OIRA review on September 14 and is not in effect.',
     status: 'Under OIRA review · Not in effect',
-    current: 'DOL / ETA submitted RIN 1205-AC29 to OIRA on September 14, 2026, for prepublication review of a proposed rule. The Unified Agenda concerns PERM permanent labor certification under 20 CFR 656. This September 17 review did not locate a public NPRM, comment deadline or effective date. The agenda’s July 2026 target was a planned proposal month, not evidence of publication or effectiveness.',
+    current: 'DOL / ETA sent RIN 1205-AC29 to White House OIRA on September 14, 2026, for prepublication review of a proposed rule. The action sits under 20 CFR 656. This September 17 check did not locate a public NPRM, comment deadline or effective date. The agenda’s July 2026 entry was only a planned proposal month, not evidence of publication or effectiveness.',
     route: ['H-1B to green card', 'PERM', 'Employer sponsorship'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'DOL outlined PERM recruitment, layoff-protection and employer-compliance reforms, with an original July target for an NPRM.' },
-      { date: '2026-09-14', text: 'The proposed rule entered OIRA prepublication review.' },
+      { date: '2026-08-04', text: 'The Justice Department settled its PERM case against OpenAI, requiring the company to post roles on its career site and accept electronic applications.' },
+      { date: '2026-09-14', text: 'The proposed rule entered White House OIRA prepublication review.' },
     ],
     next: [
-      { date: 'Date unknown', text: 'Await the OIRA review outcome and a DOL NPRM specifying recruitment requirements, covered cases and the comment deadline.' },
+      { date: 'Date unknown', text: 'Await the OIRA review outcome and a DOL NPRM specifying recruitment channels, covered cases and the comment deadline.' },
       { date: 'Date unknown', text: 'A final rule, effective date and transition provisions for existing cases remain to be determined.', estimate: true },
     ],
     impacts: [
-      'Stricter recruitment and recordkeeping requirements could increase employer preparation work and time; specific changes depend on the rule text.',
-      'Protection for laid-off U.S. workers is an explicit reform objective, but the relevant time periods, positions and documentation remain unpublished.',
-      'For H-1B holders, the connection is subsequent employer-sponsored green-card processing. Submission for review does not itself change H-1B status or current PERM rules.',
+      'Stricter recruitment and recordkeeping requirements could increase employer preparation time and cost; specific changes depend on the rule text.',
+      'Protection for laid-off U.S. workers is an explicit reform objective, but the lookback period, covered positions and documentation remain unpublished.',
+      'For H-1B holders, the connection is the later employer-sponsored green-card step. Submission for review does not change H-1B status or current PERM rules.',
     ],
-    sourceLabels: ['OIRA September 14 submission · RIN 1205-AC29', 'Unified Agenda · PERM reform abstract'],
+    sourceLabels: [
+      'OIRA September 14 submission · RIN 1205-AC29',
+      'Unified Agenda · PERM reform abstract',
+      'Justice Department · OpenAI PERM settlement (August 4, 2026)',
+      'Meltzer Hellrung · What to expect from the PERM update (July 16, 2026)',
+    ],
   },
   'opt-fee': {
     title: 'OPT May Carry a $100,000 Fee',

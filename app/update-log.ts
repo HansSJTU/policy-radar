@@ -36,6 +36,22 @@ const chineseUpdates: ContentUpdate[] = [
         { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
         { label: '统一议程 · PERM 改革', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
       ],
+    }, {
+      id: 'perm-modernization-directions',
+      category: '内容补充',
+      title: 'PERM 条目：改用更直白的中文，并补上五种业内推测',
+      summary: '把 #11 的中文说明改写得更直白，并补充业内推测的五种招聘变化，以及 8 月 4 日司法部与 OpenAI 和解对其中多项的印证。',
+      before: '只笼统写“招聘与留档要求可能提高”，没有列出可能的渠道变化，也没有提到司法部和解。',
+      after: '新增“业内推测的五种可能变化”：取消强制性报纸广告、改用社交媒体等现代渠道并剔除广播电视、不再要求邮寄简历、在公司招聘页面发布职位、通过 ATS 接收申请。页面同时标明这些是推测，不是已公布条款。',
+      details: [
+        '2026-08-04 司法部与 OpenAI 就 PERM 招聘歧视达成 320 万美元和解，要求其在公开招聘网站发布职位、接受电子申请；司法部还认定“只收纸质邮寄申请”和“深夜投放广播广告”属于劝退美国工人。这与上述多项推测方向一致。',
+        '协议仍处于 OIRA 发布前审查，五项推测均未生效，具体条款以 NPRM 正文为准。',
+      ],
+      sources: [
+        { label: '司法部 · OpenAI PERM 和解（2026-08-04）', href: 'https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers' },
+        { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
+        { label: '统一议程 · PERM 改革', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
+      ],
     }],
   },
 {
@@ -800,6 +816,22 @@ const englishUpdates: ContentUpdate[] = [
       after: 'Added #11 perm-modernization, bringing the site to 11 policies. It is under OIRA prepublication review; detailed provisions, comment deadline and effective date remain unconfirmed.',
       details: ['The agenda’s July 2026 entry was an original NPRM target, not a publication or effective date. This action is tracked separately from the #06 wage-level proposal, RIN 1205-AC30.'],
       sources: [
+        { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
+        { label: 'Unified Agenda · PERM reform', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
+      ],
+    }, {
+      id: 'perm-modernization-directions',
+      category: 'Content',
+      title: 'PERM entry: clearer Chinese copy and five practitioner expectations',
+      summary: 'Rewrote the #11 Chinese copy in plainer language and added five expected recruitment changes, plus the August 4 Justice Department settlement that already reflects several of them.',
+      before: 'The entry said only that recruitment and recordkeeping requirements might tighten, without listing possible channel changes or the DOJ settlement.',
+      after: 'Added “five changes practitioners expect”: dropping the mandatory newspaper ad, moving to modern channels and cutting radio and television, ending mailed-resume requirements, posting roles on the company careers page, and accepting applications through the ATS. The page labels all five as expectations, not published terms.',
+      details: [
+        'On August 4, 2026, the Justice Department reached a $3.2 million PERM discrimination settlement with OpenAI requiring it to post roles on its public careers site and accept electronic applications; DOJ also found that paper-mail-only applications and late-night radio ads discouraged U.S. workers. That matches several of the expected directions.',
+        'The rule remains in OIRA prepublication review; none of the five expectations is in effect, and the NPRM text will control.',
+      ],
+      sources: [
+        { label: 'Justice Department · OpenAI PERM settlement (August 4, 2026)', href: 'https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers' },
         { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
         { label: 'Unified Agenda · PERM reform', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
       ],

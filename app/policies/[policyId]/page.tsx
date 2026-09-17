@@ -248,6 +248,33 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     </a>
                   </p>
                 )}
+                {p.possibilities && (
+                  <div className="pd-possibilities">
+                    <h3>
+                      <GlossaryText text={p.possibilities.heading} />
+                    </h3>
+                    <p className="pd-possibilities-note">
+                      <GlossaryText text={p.possibilities.note} />
+                    </p>
+                    <ul>
+                      {p.possibilities.items.map(([label, text], index) => (
+                        <li key={label}>
+                          <span className="pd-possibilities-index">
+                            {String(index + 1).padStart(2, '0')}
+                          </span>
+                          <div>
+                            <strong>
+                              <GlossaryText text={label} />
+                            </strong>
+                            <p>
+                              <GlossaryText text={text} />
+                            </p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </section>
               <section id="impact" className="pd-section">
                 <div className="pd-section-heading">
