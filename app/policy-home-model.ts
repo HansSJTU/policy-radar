@@ -15,6 +15,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
     'grace-period': 'NPRM 已正式发布 · 尚未生效',
     'ead-discretion': '评论期已结束 · 尚未生效',
     'h4-ead': '长期议程 · 尚无提案日期',
+    'perm-modernization': 'OIRA 审查中 · 尚未生效',
   },
   en: {
     'opt-fee': 'OIRA review completed · Not in effect',
@@ -27,6 +28,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
     'grace-period': 'NPRM published · Not in effect',
     'ead-discretion': 'Comment period closed · Not in effect',
     'h4-ead': 'Long-term agenda · No proposal date',
+    'perm-modernization': 'Under OIRA review · Not in effect',
   },
 };
 const homeStages: Record<string, number> = {
@@ -40,6 +42,7 @@ const homeStages: Record<string, number> = {
   'grace-period': 3,
   'ead-discretion': 3,
   'h4-ead': 0,
+  'perm-modernization': 1,
 };
 
 export function getHomePolicyEditorial(id: string, language: Language) {

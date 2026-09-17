@@ -43,6 +43,7 @@ const briefingItems: BriefingItem[] = [
   "timing": "upcoming",
   "confirmed": true
 },
+  { id: 'perm-modernization-oira', date: '2026-09-14', policyId: 'perm-modernization', rank: 11, policy: 'PERM 劳工认证改革', summary: 'DOL 将 PERM 招聘与雇主合规改革提案送交 OIRA，进入发布前审查；尚未生效。', timing: 'recent', confirmed: true },
 {"id": "opt-fee-oira-completed", "date": "2026-09-11", "policyId": "opt-fee", "rank": 1, "policy": "OPT 收费", "summary": "OIRA 带修改完成审查；金额与缴费方尚未公布，尚未生效。", "timing": "recent", "confirmed": true},
 {"id": "grace-comment-deadline", "date": "2026-11-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "公众评论截止：美东当日午夜前，案卷 USCIS-2026-0364；这不是生效日。", "timing": "upcoming", "confirmed": true},
 {"id": "grace-preview", "date": "2026-09-10", "policyId": "grace-period", "rank": 8, "policy": "取消 60 天宽限期", "summary": "NPRM 预览稿公开，涵盖八类工作身份及其家属；现行规则未变。", "timing": "recent", "confirmed": true},
@@ -184,6 +185,7 @@ const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> 
  'cpt-bryn-mawr-pause': { policy: 'University CPT implementation', summary: 'Bryn Mawr paused new optional CPT without announcing revocation of existing approvals. The D/S stay does not automatically withdraw separate CPT guidance.' },
   'duration-nationwide-stay': { policy: 'D/S final rule', summary: 'The court postponed the entire rule nationwide and barred further implementation. This is not permanent vacatur; the September 15 effective date is postponed.' },
   'duration-status-conference': { policy: 'D/S final rule', summary: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.' },
+  'perm-modernization-oira': { policy: 'PERM labor certification reform', summary: 'DOL submitted its PERM recruitment and employer-compliance reform proposal for OIRA prepublication review; it is not in effect.' },
   'duration-hearing-under-advisement': { policy: 'Fixed F/J admission period', summary: 'Transcript p. 70: the judge hoped to decide by September 14 and might first issue a brief TRO for more time. No bench ruling was issued; September 14 is not guaranteed.' },
   'duration-government-opposition': { policy: 'Fixed F/J admission period', summary: 'The government attached its proposed opposition to a motion for leave to exceed the page limit, asking the court to deny APA § 705 relief and a preliminary injunction and arguing that any relief should be limited to the plaintiffs. The filing is not a court ruling.' },
   'grace-comment-deadline': { policy: 'End of 60-day grace period', summary: 'Public comments due before midnight ET; docket USCIS-2026-0364. This is not an effective date.' },

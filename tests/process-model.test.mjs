@@ -17,6 +17,7 @@ test('all federal rulemaking policies share one process bar', () => {
     'grace-period',
     'ead-discretion',
     'h4-ead',
+    'perm-modernization',
   ];
   const tracks = ids.map(getProcessTrack);
 

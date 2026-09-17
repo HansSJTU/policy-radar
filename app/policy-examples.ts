@@ -4,6 +4,20 @@ import type { Language } from './language';
 // Explain the situation, relevant policy change, and consequence in connected prose.
 // Each impact can have zero, one, or several distinct examples.
 const examples: Record<PolicyId, [string[], string[]][]> = {
+  'perm-modernization': [
+    [
+      ['一家企业准备为小陈办理 PERM。如果最终规则要求更完整的招聘记录，HR 就可能需要补充整理求职申请和招聘结果，准备时间也可能增加。这是假设要求提高后的影响；目前还不能认定必须补做某种广告或增加特定材料。'],
+      ['A company is preparing PERM sponsorship for Chen. If a final rule requires fuller recruitment records, HR may need more time to organize applications and recruitment outcomes. This illustrates a possible effect of stricter requirements; no specific additional advertisement or document has yet been established.'],
+    ],
+    [
+      ['小林的公司最近裁过员，又准备为他启动 PERM。议程把保护被裁美国工人列为改革方向，公司以后可能需要更详细地核查相关岗位情况；但目前没有新条款说明范围，不能直接得出公司现在不能办 PERM 的结论。'],
+      ['Lin’s company recently laid off employees and is preparing to start PERM sponsorship. The agenda identifies protection of laid-off U.S. workers as a reform objective, which could mean more detailed checks of relevant positions. The scope is not yet specified, so this does not establish that the company cannot pursue PERM now.'],
+    ],
+    [
+      ['小王持 H-1B 工作，雇主答应今年启动绿卡申请。如果未来更严格的准备要求适用于他的案件，雇主的提交计划可能推迟；不过这次送审没有改变他当前的 H-1B 身份，也不能据此算出一定会延期几个月。'],
+      ['Wang works in H-1B status and has an employer commitment to start green-card sponsorship this year. If stricter preparation requirements eventually apply to the case, the filing plan could shift. This submission for review has not changed Wang’s H-1B status and cannot establish a delay of any particular length.'],
+    ],
+  ],
   'opt-fee': [
     [
       [

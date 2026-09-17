@@ -11,6 +11,7 @@ export const POLICY_IDS = [
   'grace-period',
   'ead-discretion',
   'h4-ead',
+  'perm-modernization',
 ] as const;
 
 export type PolicyId = (typeof POLICY_IDS)[number];

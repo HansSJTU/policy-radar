@@ -11,6 +11,27 @@ export type EnglishPolicy = {
 };
 
 export const englishPolicies: Record<string, EnglishPolicy> = {
+  'perm-modernization': {
+    title: 'PERM Labor Certification Reform',
+    tldr: 'DOL plans to update PERM recruitment standards, strengthen protections for laid-off U.S. workers, and improve employer compliance with nondiscriminatory recruitment, hiring and recordkeeping requirements.',
+    status: 'Under OIRA review · Not in effect',
+    current: 'DOL / ETA submitted RIN 1205-AC29 to OIRA on September 14, 2026, for prepublication review of a proposed rule. The Unified Agenda concerns PERM permanent labor certification under 20 CFR 656. This September 17 review did not locate a public NPRM, comment deadline or effective date. The agenda’s July 2026 target was a planned proposal month, not evidence of publication or effectiveness.',
+    route: ['H-1B to green card', 'PERM', 'Employer sponsorship'],
+    milestones: [
+      { date: '2026 Unified Agenda', text: 'DOL outlined PERM recruitment, layoff-protection and employer-compliance reforms, with an original July target for an NPRM.' },
+      { date: '2026-09-14', text: 'The proposed rule entered OIRA prepublication review.' },
+    ],
+    next: [
+      { date: 'Date unknown', text: 'Await the OIRA review outcome and a DOL NPRM specifying recruitment requirements, covered cases and the comment deadline.' },
+      { date: 'Date unknown', text: 'A final rule, effective date and transition provisions for existing cases remain to be determined.', estimate: true },
+    ],
+    impacts: [
+      'Stricter recruitment and recordkeeping requirements could increase employer preparation work and time; specific changes depend on the rule text.',
+      'Protection for laid-off U.S. workers is an explicit reform objective, but the relevant time periods, positions and documentation remain unpublished.',
+      'For H-1B holders, the connection is subsequent employer-sponsored green-card processing. Submission for review does not itself change H-1B status or current PERM rules.',
+    ],
+    sourceLabels: ['OIRA September 14 submission · RIN 1205-AC29', 'Unified Agenda · PERM reform abstract'],
+  },
   'opt-fee': {
     title: 'OPT May Carry a $100,000 Fee',
     tldr: 'ICE proposes a new OPT fee. Media reports suggest $100,000, but the official amount, payer, covered applications and exemptions remain unpublished; student payment cannot be assumed.',
@@ -356,5 +377,6 @@ export const englishRouteStages: Record<string, { subtitle: string; policies: Re
     'h1b-reform': { title: 'H-1B classification reform', state: 'OMB review' },
     'grace-period': { title: 'End of 60-day grace period', state: 'NPRM published; comments open; not in effect' },
     'h4-ead': { title: 'H-4 EAD', state: 'Long-term agenda' },
+    'perm-modernization': { title: 'PERM labor certification reform', state: 'Under OIRA review' },
   } },
 };

@@ -492,7 +492,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
               </p>
             </div>
             <a href={`${home}#ranking`}>
-              {english ? 'Explore all 10 policies' : '查看全部 10 项政策'}
+              {english ? `Explore all ${items.length} policies` : `查看全部 ${items.length} 项政策`}
               <ArrowRight aria-hidden="true" />
             </a>
           </footer>

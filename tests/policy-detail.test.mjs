@@ -83,6 +83,7 @@ test('federal details share one process while litigation remains separate', () =
       'grace-period',
       'ead-discretion',
       'h4-ead',
+      'perm-modernization',
     ]) {
       assert.deepEqual(getProcessTrack(id, language).stages, federal);
     }

@@ -67,6 +67,7 @@ const routeStages = [
       { rank: '07', id: 'h1b-reform', title: 'H-1B 分类改革', state: 'OMB 审查' },
       { rank: '08', id: 'grace-period', title: '取消 60 天宽限期', state: '提案已发布，评论期内，未生效' },
       { rank: '10', id: 'h4-ead', title: 'H-4 EAD', state: '长期议程' },
+      { rank: '11', id: 'perm-modernization', title: 'PERM 劳工认证改革', state: 'OIRA 审查中' },
     ],
   },
 ];

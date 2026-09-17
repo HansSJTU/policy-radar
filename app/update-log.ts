@@ -22,6 +22,22 @@ export type ContentUpdate = {
 };
 
 const chineseUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-17',
+    changes: [{
+      id: 'perm-modernization-added',
+      category: '规则制定',
+      title: 'H-1B 路径新增 #11 PERM 劳工认证改革',
+      summary: 'DOL 的 RIN 1205-AC29 于 9 月 14 日进入 OIRA 审查，拟更新招聘、裁员保护及雇主合规要求；尚未生效。',
+      before: 'H-1B 路径未单列 RIN 1205-AC29，网站共收录 10 项政策。',
+      after: '新增 #11 perm-modernization，网站共收录 11 项政策；状态为 OIRA 发布前审查中，具体条款、评论期限和生效日期待确认。',
+      details: ['议程中的 2026 年 7 月为原计划 NPRM 月份，不能当作已发布或生效日期。本项与 #06 工资等级提案（RIN 1205-AC30）分别跟踪。'],
+      sources: [
+        { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
+        { label: '统一议程 · PERM 改革', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
+      ],
+    }],
+  },
 {
   "date": "2026-09-16",
   "changes": [
@@ -773,6 +789,22 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-17',
+    changes: [{
+      id: 'perm-modernization-added',
+      category: 'Rulemaking',
+      title: 'Added #11 PERM labor certification reform to the H-1B path',
+      summary: 'DOL’s RIN 1205-AC29 entered OIRA review on September 14, covering recruitment, layoff protections and employer compliance. It is not in effect.',
+      before: 'The H-1B path did not separately track RIN 1205-AC29; the site contained 10 policies.',
+      after: 'Added #11 perm-modernization, bringing the site to 11 policies. It is under OIRA prepublication review; detailed provisions, comment deadline and effective date remain unconfirmed.',
+      details: ['The agenda’s July 2026 entry was an original NPRM target, not a publication or effective date. This action is tracked separately from the #06 wage-level proposal, RIN 1205-AC30.'],
+      sources: [
+        { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
+        { label: 'Unified Agenda · PERM reform', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
+      ],
+    }],
+  },
 {
   "date": "2026-09-16",
   "changes": [

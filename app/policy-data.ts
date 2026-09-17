@@ -9,8 +9,8 @@ export const policies: Array<{
   id: PolicyId;
   title: string;
   tldr: string;
-  score: string;
-  confidence: number;
+  score?: string;
+  confidence?: number;
   status: string;
   commentUrl?: string;
   tone: Tone;
@@ -571,6 +571,34 @@ export const policies: Array<{
         label: '美卡论坛讨论',
         href: 'https://www.uscardforum.com/t/topic/528394',
       },
+    ],
+  },
+  {
+    rank: 11,
+    id: 'perm-modernization',
+    title: 'PERM 劳工认证改革',
+    tldr: 'DOL 拟更新 PERM 招聘标准，加强对被裁美国工人的保护，并强化雇主在非歧视招聘、雇佣及记录留存方面的合规要求。',
+    status: 'OIRA 审查中 · 尚未生效',
+    tone: 'blue',
+    current:
+      'DOL / ETA 的 RIN 1205-AC29 于 2026-09-14 送交 OIRA，目前处于拟议规则的发布前审查。统一议程涉及 20 CFR 656 下的 PERM 永久劳工认证；截至 9 月 17 日，本次核查未找到公开 NPRM 正文、评论截止日或生效日。议程中的 2026 年 7 月是原计划提案月份，不代表已经发布或生效。',
+    route: ['H-1B → 绿卡', 'PERM', '雇主担保'],
+    milestones: [
+      { date: '2026 统一议程', text: 'DOL 列出 PERM 招聘、裁员保护及雇主合规改革方向；原计划 7 月发布 NPRM。' },
+      { date: '2026-09-14', text: '拟议规则送交 OIRA，进入发布前审查。' },
+    ],
+    next: [
+      { date: '日期未定', text: '等待 OIRA 审查结果及 DOL 发布 NPRM，确认具体招聘要求、适用案件和评论期限。' },
+      { date: '日期未定', text: '最终规则、生效日期与存量案件过渡安排尚待后续文件明确。', estimate: true },
+    ],
+    impacts: [
+      '若招聘及记录要求提高，雇主准备 PERM 的工作量和时间成本可能增加；具体变化待正文确认。',
+      '对被裁美国工人的保护是明确改革方向，但适用时间范围、岗位范围和证明材料尚未公开。',
+      '对 H-1B 持有人的关联主要是后续雇主担保绿卡路径；送审本身不改变现有 H-1B 身份或 PERM 规则。',
+    ],
+    sources: [
+      { label: 'OIRA 9·14 送审记录 · RIN 1205-AC29', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
+      { label: '统一议程 · PERM 改革摘要', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
     ],
   },
 ];

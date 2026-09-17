@@ -251,7 +251,7 @@ export function PolicyPicker({
 }) {
   return (
     <label className="pd-picker">
-      {language === 'en' ? 'Explore all 10 policies' : '切换政策 · 共 10 项'}
+      {language === 'en' ? `Explore all ${options.length} policies` : `切换政策 · 共 ${options.length} 项`}
       <select
         aria-label={language === 'en' ? 'Select policy' : '选择政策'}
         value={id}

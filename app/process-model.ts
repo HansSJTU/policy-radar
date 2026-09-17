@@ -51,6 +51,19 @@ const guidanceMeaning =
   'SEVP／ICE 通过 Broadcast、FAQ 等材料解释现行规则，由学校和 DSO 直接落实。它不修改 CFR，因此通常没有 NPRM、公众评论和最终规则这些步骤；执行可以很快，但法律层级低于正式法规。';
 
 const processTracks: Record<string, ProcessTrack> = {
+  'perm-modernization': {
+    kind: 'federal-rulemaking',
+    name: '联邦规则制定流程',
+    meaning: federalMeaning,
+    detail: 'DOL 于 2026-09-14 将 PERM 改革提案送交 OIRA，发布前审查仍在进行；本次核查未找到公开 NPRM 正文，尚未生效。',
+    currentSummary: 'PERM 改革处于发布前审查',
+    lastCompletedStage: 0,
+    activeStage: 1,
+    nextStage: 2,
+    waitingFor: 'OIRA 审查结果及 DOL 发布 NPRM；具体条款、评论期限和生效日期待定。',
+    stages: federalRulemakingStages,
+    litigation: [],
+  },
   'opt-fee': {
     kind: 'federal-rulemaking',
     name: '联邦规则制定流程',
@@ -263,6 +276,15 @@ const englishProcessTracks: Record<
     | 'waitingFor'
   >
 > = {
+  'perm-modernization': {
+    name: 'Federal rulemaking',
+    meaning: federalMeaningEnglish,
+    detail: 'DOL submitted its PERM reform proposal to OIRA on September 14, 2026. Prepublication review is ongoing; this check did not locate a public NPRM, and the reform is not in effect.',
+    currentSummary: 'PERM reform is in prepublication review',
+    waitingFor: 'The OIRA review outcome and a DOL NPRM; detailed provisions, comment deadline and effective date remain unknown.',
+    stages: federalRulemakingStagesEnglish,
+    litigation: [],
+  },
   'opt-fee': {
     name: 'Federal rulemaking',
     meaning: federalMeaningEnglish,

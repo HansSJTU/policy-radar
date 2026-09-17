@@ -2,7 +2,7 @@ import type { PolicyId } from './community-impact-model';
 import type { Language } from './language';
 
 // Last site update, not a certification that every source is fully verified.
-export const SITE_UPDATED_ON = '2026-09-16';
+export const SITE_UPDATED_ON = '2026-09-17';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
@@ -16,9 +16,14 @@ export const policyCheckedOn: Record<PolicyId, string> = {
   'grace-period': '2026-09-16',
   'ead-discretion': '2026-09-16',
   'h4-ead': '2026-09-16',
+  'perm-modernization': '2026-09-17',
 };
 
 const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {
+  'perm-modernization': {
+    zh: '核查范围：已读统一议程与 9 月 14 日 OIRA 待审记录。Federal Register 正文检索未完成验证，未找到公开 NPRM 不等于证明不存在后续文件。',
+    en: 'Review scope: the Unified Agenda and September 14 pending OIRA record were read. Federal Register document verification remains incomplete; failure to locate a public NPRM does not prove that no subsequent document exists.',
+  },
   'opt-fee': {
     zh: '核查范围：已复核 OIRA 结案记录及联邦公报检索，尚未找到公开 NPRM。原论坛主题已拆分，新主题最新回复访问受限。',
     en: 'Review scope: OIRA completion and Federal Register searches were rechecked; no public NPRM was found. The original forum topic was split and the new topic’s latest replies were inaccessible.',
