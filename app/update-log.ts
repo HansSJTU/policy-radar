@@ -28,10 +28,10 @@ const chineseUpdates: ContentUpdate[] = [
       id: 'perm-modernization-added',
       category: '规则制定',
       title: 'H-1B 路径新增 #11 PERM 劳工认证改革',
-      summary: 'DOL 的 RIN 1205-AC29 于 9 月 14 日进入 OIRA 审查，拟更新招聘、裁员保护及雇主合规要求；尚未生效。',
-      before: 'H-1B 路径未单列 RIN 1205-AC29，网站共收录 10 项政策。',
-      after: '新增 #11 perm-modernization，网站共收录 11 项政策；状态为 OIRA 发布前审查中，具体条款、评论期限和生效日期待确认。',
-      details: ['议程中的 2026 年 7 月为原计划 NPRM 月份，不能当作已发布或生效日期。本项与 #06 工资等级提案（RIN 1205-AC30）分别跟踪。'],
+      summary: 'DOL 的 RIN 1205-AC29 在 9 月 14 日进入 OIRA 审查。该提案拟更新招聘、裁员保护和雇主合规要求，目前尚未生效。',
+      before: 'H-1B 路径此前没有单列 RIN 1205-AC29，网站共收录 10 项政策。',
+      after: '网站新增 #11 perm-modernization，共收录 11 项政策。状态为 OIRA 审查中，具体条款、评论期限和生效日期都还没确定。',
+      details: ['议程中的 2026 年 7 月是原计划的 NPRM 月份，不能当成已发布或生效日期。本项与 #06 工资等级提案（RIN 1205-AC30）分别跟踪。'],
       sources: [
         { label: 'OIRA · RIN 1205-AC29 · September 14', href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863' },
         { label: '统一议程 · PERM 改革', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
@@ -39,13 +39,13 @@ const chineseUpdates: ContentUpdate[] = [
     }, {
       id: 'perm-modernization-directions',
       category: '内容补充',
-      title: 'PERM 条目：改用更直白的中文，并补上五种业内推测',
-      summary: '把 #11 的中文说明改写得更直白，并补充业内推测的五种招聘变化，以及 8 月 4 日司法部与 OpenAI 和解对其中多项的印证。',
-      before: '只笼统写“招聘与留档要求可能提高”，没有列出可能的渠道变化，也没有提到司法部和解。',
-      after: '新增“业内推测的五种可能变化”：取消强制性报纸广告、改用社交媒体等现代渠道并剔除广播电视、不再要求邮寄简历、在公司招聘页面发布职位、通过 ATS 接收申请。页面同时标明这些是推测，不是已公布条款。',
+      title: 'PERM 条目改写，补上五种业内推测',
+      summary: '#11 的中文说明已改写得更直白。新增业内推测的五种招聘变化。还补上 8 月 4 日司法部与 OpenAI 和解对其中多项的印证。',
+      before: '原来只笼统写“招聘与留档要求可能提高”。没有列出可能的渠道变化，也没有提到司法部和解。',
+      after: '新增“业内推测的五种可能变化”。一是取消强制性报纸广告。二是改用社交媒体等现代渠道，剔除广播电视。三是不再要求邮寄简历。四是在公司招聘页面发布职位。五是通过 ATS 接收申请。页面标明这些是推测，不是已公布条款。',
       details: [
-        '2026-08-04 司法部与 OpenAI 就 PERM 招聘歧视达成 320 万美元和解，要求其在公开招聘网站发布职位、接受电子申请；司法部还认定“只收纸质邮寄申请”和“深夜投放广播广告”属于劝退美国工人。这与上述多项推测方向一致。',
-        '协议仍处于 OIRA 发布前审查，五项推测均未生效，具体条款以 NPRM 正文为准。',
+        '司法部与 OpenAI 就 PERM 招聘歧视达成和解。和解日期为 2026-08-04，金额 320 万美元。和解要求 OpenAI 公开招聘职位并接受电子申请。司法部还认定“只收纸质邮寄申请”和“深夜投放广播广告”属于劝退美国工人。这与上述多项推测方向一致。',
+        '协议仍处于 OIRA 发布前审查，五项推测均未生效。具体条款以 NPRM 正文为准。',
       ],
       sources: [
         { label: '司法部 · OpenAI PERM 和解（2026-08-04）', href: 'https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers' },
@@ -60,13 +60,13 @@ const chineseUpdates: ContentUpdate[] = [
     {
       "id": "cpt-bryn-mawr-buffalo-dearborn",
       "category": "CPT 学校",
-      "title": "新增 Bryn Mawr、Buffalo 与 Michigan–Dearborn 校方 CPT 通知",
-      "summary": "Bryn Mawr 9·15 宣布暂停新的非必需 CPT；补录 Buffalo 的学位必需例外与 Dearborn 的两个硕士项目限制。",
+      "title": "新增 Bryn Mawr、Buffalo、Michigan–Dearborn CPT 通知",
+      "summary": "Bryn Mawr 在 9·15 宣布暂停新的非必需 CPT。补录 Buffalo 的学位必需例外，以及 Dearborn 的两个硕士项目限制。",
       "before": "37 条公开校方证据、5 条社区证据，共 42 条，覆盖 41 所不同学校／校区。",
-      "after": "40 条公开校方证据、5 条社区证据，共 45 条，覆盖 44 所不同学校／校区；Purdue 两条院系／校级证据仍只计一所学校。",
+      "after": "40 条公开校方证据、5 条社区证据，共 45 条，覆盖 44 所不同学校／校区。Purdue 两条院系／校级证据仍只计一所学校。",
       "details": [
-        "Bryn Mawr 未宣布撤销既有授权；Buffalo 与 Dearborn 均允许既有 2026 秋季授权继续。Dearborn 仅列应用行为分析与临床健康心理学硕士，不能外推 Ann Arbor 校区。",
-        "Berkeley 校方明确 CPT 指引独立于 D/S 规则，法院暂缓 D/S 不会自动恢复 optional CPT。"
+        "Bryn Mawr 没有宣布撤销既有授权。Buffalo 与 Dearborn 都允许既有 2026 秋季授权继续。Dearborn 仅列应用行为分析与临床健康心理学硕士，不能外推 Ann Arbor 校区。",
+        "Berkeley 校方明确 CPT 指引独立于 D/S 规则。法院暂缓 D/S 不会自动恢复 optional CPT。"
       ],
       "sources": [
         {
@@ -98,7 +98,7 @@ const chineseUpdates: ContentUpdate[] = [
       "title": "法院全国暂缓 D/S 最终规则，原 9·15 生效日已推迟",
       "summary": "法院在美东下午 4:55 签发初步禁令，依据 APA § 705 全国推迟整项最终规则生效并禁止继续实施。",
       "before": "9·03 听证后待裁定；若无暂缓，9·15 计划生效。",
-      "after": "全国暂缓持续至法院另行下令或实体审理结束；尚未永久撤销，未设新生效日。10·02 中午 12 点在波士顿第 1 法庭举行现场状态会议。",
+      "after": "全国暂缓持续至法院另行下令或实体审理结束。尚未永久撤销，未设新生效日。10·02 中午 12 点在波士顿第 1 法庭举行现场状态会议。",
       "details": [
         "第 50 号意见第 46—48 页明确救济不限原告成员学校；第 51 号命令第 2—5 段规定范围与期限。",
         "法院未批准永久撤销或简易判决，相关请求可再次提出。该命令不自动撤销独立的 CPT 行政指引。"
@@ -122,12 +122,12 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "cpt-uw-followup-wsu",
       "category": "CPT 学校",
       "title": "补录 UW 后续处理要求与 WSU 2027 春季全职 CPT 限制",
-      "summary": "UW 9·08 通知明确驳回秋季待审非必需 CPT；新增 WSU 8·07 公告，区分校内计划与 8 月 SEVP 指引。",
-      "before": "UW 仅记录新申请暂停；36 条公开校方证据、5 条社区证据，共 41 条，覆盖 40 所不同学校。",
-      "after": "UW 明确待审申请处理与顾问证明要求；新增 WSU 后为 37 条公开证据、5 条社区证据，共 42 条，覆盖 41 所不同学校。",
+      "summary": "UW 在 9·08 通知中明确驳回秋季待审的非必需 CPT。新增 WSU 8·07 公告，区分校内计划与 8 月 SEVP 指引。",
+      "before": "UW 此前仅记录新申请暂停。当时清单为 36 条公开校方证据、5 条社区证据，共 41 条，覆盖 40 所不同学校。",
+      "after": "UW 明确待审申请的处理方式和顾问证明要求。新增 WSU 后为 37 条公开证据、5 条社区证据，共 42 条，覆盖 41 所不同学校。",
       "details": [
-        "WSU 限制计划从 2027 春季开始，针对学年内全职 CPT，课程必需实习除外；并非当前全面停批，公告提示校区适用范围有限。",
-        "WSU 校方索引正文可读，直接访问与后续执行状态仍待复核；不将该限制写成今天新发布的联邦政策。"
+        "WSU 的限制从 2027 春季开始，针对学年内全职 CPT，课程必需实习除外。这不是当前全面停批。公告提示校区适用范围有限。",
+        "WSU 校方索引正文可读，直接访问与后续执行状态仍待复核。不将该限制写成今天新发布的联邦政策。"
       ],
       "sources": [
         {
@@ -149,7 +149,7 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "cpt-bc-jhu",
       "category": "CPT 学校",
       "title": "新增 Boston College 与 Johns Hopkins 校方 CPT 通知",
-      "summary": "BC 暂停非全员毕业必需的校外 CPT；JHU 仅处理符合毕业要求及 SEVP 备忘录的新申请和待审请求。",
+      "summary": "BC 暂停非全员毕业必需的校外 CPT。JHU 仅处理符合毕业要求及 SEVP 备忘录的新申请和待审请求。",
       "before": "34 条公开校方证据、5 条社区证据，共 39 条，覆盖 38 所不同学校。",
       "after": "36 条公开校方证据、5 条社区证据，共 41 条，覆盖 40 所不同学校；JHU 下方旧选修口径不构成恢复依据。",
       "sources": [
@@ -172,9 +172,9 @@ const chineseUpdates: ContentUpdate[] = [
   "id": "duration-hearing-transcript",
   "category": "诉讼",
   "title": "补充 D/S 庭审记录与 9·14 裁决时间目标",
-  "summary": "庭审记录第 70 页披露法官希望最迟 9·14 决定，并提及可能先发短期 TRO；均不等于已签发命令。",
-  "before": "仅说明 9·03 听证后留待裁定，未列庭审原文及时间目标。",
-  "after": "新增 NAFSA 托管的官方庭审记录、9·14 非保证时间目标及可能短期 TRO；补充法官质疑和政府答辩的归属。",
+  "summary": "庭审记录第 70 页披露，法官希望最迟 9·14 作出决定，并提到可能先发短期 TRO。这些都不等于已签发命令。",
+  "before": "此前只说 9·03 听证后留待裁定，没有列庭审原文和时间目标。",
+  "after": "新增 NAFSA 托管的官方庭审记录、9·14 非保证时间目标，以及可能先发短期 TRO。同时补充法官质疑和政府答辩的归属。",
   "sources": [
     {
       "label": "Official September 3 hearing transcript · p. 70",
@@ -186,9 +186,9 @@ const chineseUpdates: ContentUpdate[] = [
   "id": "opt-oira-completed",
   "category": "规则制定",
   "title": "OPT 收费提案 9·11 完成 OIRA 审查",
-  "summary": "结论为 Consistent with Change；不代表 NPRM 已发布、10 万美元已确认或收费生效。",
-  "before": "网站显示 OIRA 审查中，沿用旧在审记录。",
-  "after": "改为 9·11 带修改完成审查；金额、缴费方、适用范围与豁免仍待公开条款确认，不能认定由学生承担。",
+  "summary": "结论为 Consistent with Change。这不代表 NPRM 已发布、10 万美元已确认或收费已生效。",
+  "before": "网站此前显示 OIRA 审查中，沿用旧的在审记录。",
+  "after": "改为 9·11 带修改完成审查。金额、缴费方、适用范围和豁免仍待公开条款确认，不能认定由学生承担。",
   "sources": [
     {
       "label": "OIRA · RIN 1653-AB01",
@@ -200,9 +200,9 @@ const chineseUpdates: ContentUpdate[] = [
   "id": "comment-direction-review",
   "category": "公众评论",
   "title": "四项政策的评论统计改按政策方向归类",
-  "summary": "复核同一批 800 条样本，支持或反对按相关政策收紧方向判断，不再要求明确评价提案具体条款；123 条分类调整。",
-  "before": "按具体提案立场统计（反对／支持／条件或混合／不明确）：H-1B 110／49／11／30；宽限期 150／30／12／8；工资门槛 120／35／18／27；I-765 152／1／1／46。",
-  "after": "按政策方向统计（反对收紧／支持收紧／条件或混合／不明确）：H-1B 110／83／1／6；宽限期 156／32／6／6；工资门槛 119／67／2／12；I-765 195／1／0／4。",
+  "summary": "复核同一批 800 条样本。支持或反对改按相关政策收紧方向判断，不再要求明确评价提案具体条款。共 123 条分类调整。",
+  "before": "按具体提案立场统计（反对／支持／条件或混合／不明确）：H-1B 为 110／49／11／30。宽限期 150／30／12／8。工资门槛 120／35／18／27。I-765 152／1／1／46。",
+  "after": "按政策方向统计（反对收紧／支持收紧／条件或混合／不明确）：H-1B 为 110／83／1／6。宽限期 156／32／6／6。工资门槛 119／67／2／12。I-765 195／1／0／4。",
   "details": [
     "要求进一步收紧、甚至取消相关签证的，归为支持收紧；维护合法工作机会的，归为反对收紧。",
     "样本编号、随机种子和采样时间保持不变；不可读正文或附件的限制逐条保留。"
@@ -226,8 +226,8 @@ const chineseUpdates: ContentUpdate[] = [
   "before": "38 条证据记录：33 条校方公开来源、5 条社区记录，覆盖 37 所院校／独立校区。",
   "after": "39 条证据记录：34 条校方公开来源、5 条社区记录，覆盖 38 所院校／独立校区。",
   "details": [
-    "页头日期 9·10，CPT 栏标题为 2026 年 8 月；不能据此断言暂停于 9·10 开始。",
-    "通知未说明既有授权如何处理，也未给出恢复日期。"
+    "页头日期为 9·10，CPT 栏标题为 2026 年 8 月。不能据此断言暂停从 9·10 开始。",
+    "通知没有说明既有授权如何处理，也没有给出恢复日期。"
   ],
   "sources": [
     {
@@ -240,9 +240,9 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "grace-nprm-published",
       "category": "规则制定",
       "title": "取消 60 天宽限期提案正式刊登",
-      "summary": "9·11 NPRM 正式发布，评论截止为 11·10 美东午夜前；仍未生效。",
-      "before": "9·10 预览稿公开，预定 9·11 刊登；评论截止日期待正式版确认。",
-      "after": "9·11 正式刊登于 91 FR 57807，公众评论期至 2026-11-10；现行宽限期未变。",
+      "summary": "9·11 NPRM 正式发布，评论截止为 11·10 美东午夜前。该提案仍未生效。",
+      "before": "9·10 预览稿公开，预定 9·11 刊登。当时评论截止日期还待正式版确认。",
+      "after": "9·11 正式刊登于 91 FR 57807，公众评论期至 2026-11-10。现行宽限期未变。",
       "sources": [
         {
           "label": "Federal Register · 91 FR 57807",
@@ -259,7 +259,7 @@ const chineseUpdates: ContentUpdate[] = [
   "id": "h1b-fee-table13-correction",
   "category": "规则制定",
   "title": "H-1B 附加费提案新增官方更正",
-  "summary": "9·10 更正替换 Table 13 历史申请数量表；$103,265、cap-subject 范围及 9·24 评论截止日均未改变，提案仍未生效。",
+  "summary": "9·10 更正替换 Table 13 历史申请数量表。$103,265、cap-subject 范围及 9·24 评论截止日均未改变，提案仍未生效。",
   "sources": [
     {
       "label": "Federal Register C1-2026-17324",
@@ -270,13 +270,13 @@ const chineseUpdates: ContentUpdate[] = [
 {
   "id": "penn-resumption-georgetown-cpt",
   "category": "CPT 学校清单",
-  "title": "Penn 有条件恢复 CPT 处理；新增 Georgetown 校方说明",
-  "summary": "Penn 9·10 顶部通知称恢复符合条件的请求；Georgetown 9·09 说明选修实习不符合资格。",
-  "before": "Penn 记录为暂停新申请及待审决定；学校清单为 37 条记录（32 公开、5 社区），覆盖 36 所院校／独立校区。",
-  "after": "Penn 改为按现行课程要求有条件恢复处理，保留同页旧暂停文案的核查提示；新增 Georgetown 后为 38 条记录（33 公开、5 社区），覆盖 37 所院校／独立校区。",
+  "title": "Penn 有条件恢复 CPT 处理，新增 Georgetown 校方说明",
+  "summary": "Penn 在 9·10 顶部通知中称恢复符合条件的请求。Georgetown 9·09 说明选修实习不符合资格。",
+  "before": "Penn 此前记录为暂停新申请及待审决定。当时学校清单为 37 条记录（32 公开、5 社区），覆盖 36 所院校／独立校区。",
+  "after": "Penn 改为按现行课程要求有条件恢复处理，同页旧暂停文案保留核查提示。新增 Georgetown 后为 38 条记录（33 公开、5 社区），覆盖 37 所院校／独立校区。",
   "details": [
-    "Penn 须院系确认课程要求、雇主完成合作协议并取得授权 I-20；不能理解为全面恢复。",
-    "Georgetown 已联系待审及秋季已授权学生讨论影响和选项，没有保证所有既有授权不受影响。"
+    "Penn 须由院系确认课程要求、雇主完成合作协议，并取得授权 I-20。这不等于全面恢复。",
+    "Georgetown 已联系待审及秋季已授权学生，讨论影响和选项。校方没有保证所有既有授权不受影响。"
   ],
   "sources": [
     {
@@ -293,9 +293,9 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "grace-period-nprm-preview",
       "category": "规则制定",
       "title": "失业后 60 天宽限期取消提案公开预览",
-      "summary": "第 8 项：NPRM 预览稿明确八类工作身份及家属范围，尚未生效。",
-      "before": "OIRA 已审完；等待公开提案，发布日期未定。",
-      "after": "9 月 10 日预览公开，预定 9 月 11 日正式刊登。拟取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属的最长 60 天酌情宽限期。评论期为正式刊登后 60 天；最终规则和生效日期未定，另有合法留美依据的情形须区别判断。",
+      "summary": "第 8 项：NPRM 预览稿明确八类工作身份及家属范围。该提案尚未生效。",
+      "before": "OIRA 已审完，正在等待公开提案。发布日期未定。",
+      "after": "9 月 10 日预览公开，预定 9 月 11 日正式刊登。拟取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属的最长 60 天酌情宽限期。评论期为正式刊登后 60 天。最终规则和生效日期未定。另有合法留美依据的情形须区别判断。",
       "sources": [
         {
           "label": "Federal Register 2026-18631",
@@ -311,13 +311,13 @@ const chineseUpdates: ContentUpdate[] = [
 {
   "id": "penn-neu-cpt-public-sources",
   "category": "CPT 学校清单",
-  "title": "新增 UPenn 暂停审批说明和 Northeastern COE 硕士实习次数限制",
-  "summary": "按校方公开页面新增两条记录。Penn 通知为 8 月 27 日发布、页面 8 月 31 日更新；NEU 条款发布日期未标明，不将收录日视为新规宣布日。",
-  "before": "35 条记录：30 条校方公开来源、5 条社区记录，覆盖 34 所院校／独立校区；尚未收录 Penn 和 Northeastern。",
-  "after": "37 条记录：32 条校方公开来源、5 条社区记录，覆盖 36 所院校／独立校区。Penn 暂停新申请和待审申请的审批决定；Northeastern COE 硕士限一次 co-op／internship，最长 8 个月。",
+  "title": "新增 UPenn 暂停审批说明与 Northeastern COE 硕士实习限制",
+  "summary": "按校方公开页面新增两条记录。Penn 通知在 8 月 27 日发布，页面 8 月 31 日更新。NEU 条款没有标明发布日期，不把收录日当新规宣布日。",
+  "before": "35 条记录：30 条校方公开来源、5 条社区记录，覆盖 34 所院校／独立校区。当时还没有收录 Penn 和 Northeastern。",
+  "after": "37 条记录：32 条校方公开来源、5 条社区记录，覆盖 36 所院校／独立校区。Penn 暂停新申请和待审申请的审批决定。Northeastern COE 硕士限一次 co-op／internship，最长 8 个月。",
   "details": [
-    "Penn 既有 CPT 授权不受此次暂停影响；暂停不等于永久取消或拒绝全部待审请求。",
-    "NEU 记录仅限工程学院硕士，不能外推全校，也不能用作“博士全面停批”的证据。"
+    "Penn 既有 CPT 授权不受此次暂停影响。暂停不等于永久取消，也不等于拒绝全部待审请求。",
+    "NEU 记录仅限工程学院硕士，不能外推全校。也不能用它证明“博士全面停批”。"
   ],
   "sources": [
     {
@@ -334,9 +334,9 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "ucla-cpt-public-source",
       "category": "CPT 学校清单",
       "title": "UCLA 证据升级为校方公开通知",
-      "summary": "Dashew Center 已公开 9 月 8 日通知，补充论文研究、既有授权及合作协议要求；本次是证据升级，不是新增学校。",
-      "before": "UCLA 仅有邮件截图：暂停非全员学位要求的课程学分／支持信 CPT。35 条记录中有 29 条校方公开来源、6 条社区记录。",
-      "after": "UCLA 改为校方公开来源：非全员毕业必需的课程学分／支持信 CPT 暂停，学位必需 CPT 继续。35 条记录改为 30 条校方公开来源、5 条社区记录，仍覆盖 34 所院校／独立校区。",
+      "summary": "Dashew Center 已公开 9 月 8 日通知，补充论文研究、既有授权及合作协议要求。本次是证据升级，不是新增学校。",
+      "before": "UCLA 此前仅有邮件截图：暂停非全员学位要求的课程学分／支持信 CPT。当时 35 条记录中有 29 条校方公开来源、6 条社区记录。",
+      "after": "UCLA 改为校方公开来源。非全员毕业必需的课程学分／支持信 CPT 暂停，学位必需 CPT 继续。35 条记录改为 30 条校方公开来源、5 条社区记录，仍覆盖 34 所院校／独立校区。",
       "details": [
         "论文、研究或 capstone 所需实践须在 UCLA General Catalog 中列为全项目学生的要求。",
         "8 月 12 日前已批准并签发 CPT I-20 的授权不受影响；所有 CPT 申请须附院系与雇主的合作协议。"
@@ -360,10 +360,10 @@ const chineseUpdates: ContentUpdate[] = [
     {
       "id": "northwestern-cpt-september3-policy",
       "category": "CPT 学校清单",
-      "title": "Northwestern 从审核期间暂停改为明确不批准非全员必需 CPT",
-      "summary": "校方 CPT 页面链接的 9 月 3 日通知明确：除非 SEVP 指引改变，学校不能批准非项目全体学生必需的实践。本次更新反映该已发布通知，不将核查日视为通知发布日期。",
-      "before": "暂停非全员必修的 CPT 申请；学校审核期间只处理全员必修工作经历。",
-      "after": "不再批准非全员必需的 CPT；除非 SEVP 指引改变，学校不能批准此类实践，OISS 正与各项目核实资格。",
+      "title": "Northwestern 改为明确不批准非全员必需 CPT",
+      "summary": "校方 CPT 页面链接的 9 月 3 日通知明确了一点。除非 SEVP 指引改变，学校不能批准非项目全体学生必需的实践。本次更新反映该通知已发布，不把核查日当通知发布日期。",
+      "before": "申请暂停非全员必修的 CPT。学校审核期间只处理全员必修工作经历。",
+      "after": "不再批准非全员必需的 CPT。除非 SEVP 指引改变，学校不能批准此类实践。OISS 正与各项目核实资格。",
       "sources": [
         {
           "label": "Northwestern OISS CPT webpage",
@@ -383,12 +383,12 @@ const chineseUpdates: ContentUpdate[] = [
     {
       "id": "gmu-cpt-public-source",
       "category": "CPT 学校清单",
-      "title": "新增 George Mason 校方 CPT 说明：证据记录增至 35 条",
-      "summary": "本次收录 OIPS 已公开的政策审核说明：无法证明实践为全项目学生毕业必需的 2026 秋季 CPT 暂停审理。页面未标明该段发布日期，不将本次收录日视为政策宣布日。",
-      "before": "34 条证据记录：28 条校方网页、6 条社区记录；按院校／独立校区去重为 33 所。George Mason 尚未收录。",
-      "after": "35 条证据记录：29 条校方网页、6 条社区记录；按同一口径去重为 34 所。新增 George Mason：暂停无法证明全员毕业必需的 2026 秋季 CPT 审理。",
+      "title": "新增 George Mason 校方 CPT 说明，记录增至 35 条",
+      "summary": "本次收录 OIPS 已公开的政策审核说明。无法证明实践为全项目学生毕业必需的 2026 秋季 CPT 暂停审理。页面没有标明该段发布日期，不把本次收录日当政策宣布日。",
+      "before": "34 条证据记录：28 条校方网页、6 条社区记录，按院校／独立校区去重为 33 所。当时 George Mason 还没有收录。",
+      "after": "35 条证据记录：29 条校方网页、6 条社区记录，按同一口径去重为 34 所。新增 George Mason，暂停无法证明全员毕业必需的 2026 秋季 CPT 审理。",
       "details": [
-        "选修课或多个可选毕业路径之一的实习不满足所列标准；公告未说明既有授权如何处理。",
+        "选修课或多个可选毕业路径之一的实习，不满足所列标准。公告没有说明既有授权如何处理。",
         "Purdue ECE 与校级 ISS 合并计为一所；UMD College Park 与 UMBC 继续按独立校区分别计数。"
       ],
       "sources": [
@@ -402,9 +402,9 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "purdue-ece-research-scope-clarification",
       "category": "CPT 证据摘要更正",
       "title": "Purdue ECE 摘要补回论文研究个案咨询提示",
-      "summary": "原邮件末段让学生就论文研究所需工作另向 ISS 咨询；此前摘要遗漏了这一限定。本条仍为院系邮件截图证据，不升级为校方网页确认，也不代表研究类 CPT 一定获批。",
-      "before": "院系邮件截图称本学期不签 CPT；这是院系口径，不应外推全校",
-      "after": "院系邮件截图称本学期不批非必需的实习／co-op CPT；论文研究所需工作应另向 ISS 咨询，仅限 ECE 口径",
+      "summary": "原邮件末段让学生就论文研究所需工作另向 ISS 咨询，此前摘要遗漏了这一限定。本条仍为院系邮件截图证据，不升级为校方网页确认，也不代表研究类 CPT 一定获批。",
+      "before": "院系邮件截图称本学期不签 CPT。这是院系口径，不应外推全校。",
+      "after": "院系邮件截图称本学期不批非必需的实习／co-op CPT。论文研究所需工作应另向 ISS 咨询，仅限 ECE 口径。",
       "sources": [
         {
           "label": "Purdue ECE 原邮件截图（末段）",
@@ -416,9 +416,9 @@ const chineseUpdates: ContentUpdate[] = [
       "id": "duration-status-academic-restrictions-clarification",
       "category": "政策说明更正",
       "title": "#03 补明博士退出后的 OPT 障碍与第二学位限制边界",
-      "summary": "此前的例子未解释新规则如何影响 master out 后的 OPT，并遗漏同级／降级再入学限制的毕业时间边界。现根据最终规则和 Rice 说明补清。",
-      "before": "博士退出拿硕士后“确认能否申请 OPT”；完成美国 F-1 学位后原则上不能再读同级或更低级别。",
-      "after": "新规则禁止研究生在读期间改学位层级。Rice 说明学校可发硕士学位，但不能将博士 SEVIS 记录改为硕士，因此不能以该硕士申请 OPT。同级／降级再入学限制不计算生效前完成的学位。",
+      "summary": "此前的例子没有解释新规则如何影响 master out 后的 OPT，也遗漏了同级／降级再入学限制的毕业时间边界。现根据最终规则和 Rice 说明补清。",
+      "before": "博士退出拿硕士后“确认能否申请 OPT”。完成美国 F-1 学位后原则上不能再读同级或更低级别。",
+      "after": "新规则禁止研究生在读期间改学位层级。Rice 说明学校可以发硕士学位，但不能把博士 SEVIS 记录改为硕士，因此不能以该硕士申请 OPT。同级／降级再入学限制不计算生效前完成的学位。",
       "sources": [
         {
           "label": "2026 最终规则",
@@ -439,9 +439,9 @@ const chineseUpdates: ContentUpdate[] = [
         "id": "cpt-broadcast-august12-correction",
         "category": "政策内容更正",
         "title": "#05 CPT 指引的时间起点",
-        "summary": "核对 8·12 原文第二页后，更正 9·01 日志中把“全员毕业必需”标准仅归于 8·24 的表述。8·12 已提出该要求；8·24 问答进一步解释选修课、美国学生与合作协议。历史日志原文保留供对照。",
-        "before": "8·12 仅列合规提醒；8·24 才提出更窄的 integral 标准，高校调整起点写为 8·24。",
-        "after": "8·12 已要求 CPT 对取得学位不可缺少且为该学位全体学生必需；8·24 进一步解释。高校响应时间线改为 8·12 后。",
+        "summary": "核对 8·12 原文第二页后，更正 9·01 日志中的一处表述。该日志曾把“全员毕业必需”标准只归于 8·24。8·12 已经提出该要求，8·24 问答进一步解释选修课、美国学生与合作协议。历史日志原文保留供对照。",
+        "before": "8·12 仅列合规提醒。8·24 才提出更窄的 integral 标准，高校调整起点写为 8·24。",
+        "after": "8·12 已经要求 CPT 对取得学位不可缺少，且为该学位全体学生必需。8·24 进一步解释。高校响应时间线改为 8·12 之后。",
         "sources": [
           {
             "label": "SEVP 8·12 Broadcast，第 2 页",
@@ -457,19 +457,19 @@ const chineseUpdates: ContentUpdate[] = [
         "id": "cpt-school-records-2026-09-06",
         "category": "CPT 学校清单",
         "title": "新增 9 所院校的公开 CPT 记录",
-        "summary": "新增 Utah、Delaware、UC San Diego、UMBC、GWU、CU Boulder、UW–Milwaukee、Oregon 和 Kansas。连同 UCI 证据升级，清单由 25 增至 34 条学校／院系记录，对应 33 所不同院校。公告日期保留为原发布日期，本次为网站新增收录。",
-        "before": "25 条记录 · 18 条校方网页 / 7 条邮件截图；24 所不同院校。",
-        "after": "34 条记录 · 28 条校方网页 / 6 条邮件截图；33 所不同院校。",
+        "summary": "新增 Utah、Delaware、UC San Diego、UMBC、GWU、CU Boulder、UW–Milwaukee、Oregon 和 Kansas。连同 UCI 证据升级，清单由 25 增至 34 条学校／院系记录，对应 33 所不同院校。公告日期保留为原发布日期，本次是网站新增收录。",
+        "before": "25 条记录 · 18 条校方网页 / 7 条邮件截图，24 所不同院校。",
+        "after": "34 条记录 · 28 条校方网页 / 6 条邮件截图，33 所不同院校。",
         "details": [
-          "University of Utah：此前未收录；现记录“自 9·03 起暂停非全员必需的新 CPT”。ISSS 暂停 optional CPT 授权；UAtlas 仍可提交申请，但审核结束前不批准此类请求。既有授权按当前 I-20 的雇主、地点与日期继续。",
-          "University of Delaware：此前未收录；现记录“暂停非全员必需的新 CPT 授权”。9·02 公告称 CGPS 暂停 optional CPT；学生仍可提交申请，但审核结束前不签发此类新授权，并可能出现处理延迟。",
-          "UC San Diego：此前未收录；现记录“暂停全部 F-1 CPT 请求的提交与处理”。ISEO 专页仍暂停 iServices 全部 CPT 请求；9·02 说明会第 12 页预计 9 月中旬重开，并要求院系证明实习为必需。该时间为计划，尚无具体日期。",
-          "University of Maryland, Baltimore County：此前未收录；现记录“待审及未来 CPT 仅限全项目学生必需的实践”。OISS 9·04 更新称，待审与未来申请按全项目学生必需的实践要求审核；已经签发的 2026 秋季 CPT 授权不会被撤销。本条单列 UMBC 校区。",
-          "George Washington University：此前未收录；现记录“暂停非全员必需的新 CPT 授权”。ISO 9·02 公告称，不再批准非学位项目全体学生必需的新 CPT；既有授权可按当前 I-20 的雇主地点、日期及其他条件继续。",
-          "University of Colorado Boulder：此前未收录；现记录“仅处理课程目录列明的学位／主修必需 CPT”。8·31 更新称，仅限校方列出的实践为学位或主修毕业必需的项目，minor 不符合；仅供选修学分的实习不获批，已授权的 2026 秋季 CPT 不受影响。",
-          "University of Wisconsin-Milwaukee：此前未收录；现记录“自 8·24 起仅批准全项目学生必需的 CPT”。ISSS 要求实践为学位项目全体学生明确的必修要求；8·24 前已获批的 CPT 可持续至当前授权结束日。",
-          "University of Oregon：此前未收录；现记录“不再批准仅供选修实习学分的 CPT”。ISSS 新政策要求实践为既定课程与学位的必要组成部分；页面另列全员学位必需及完成必需硕士论文／毕业项目、博士论文的情形，研究类须有导师详细证明。",
-          "University of Kansas：此前未收录；现记录“校方页面称暂停全部 CPT 请求”。ISS 的 2026 年 8 月更新称，正在判断哪些情形仍可授权，期间暂停所有 CPT 请求；公告未说明既有授权的处理方式。"
+          "University of Utah：此前没有收录。现记录“自 9·03 起暂停非全员必需的新 CPT”。ISSS 暂停 optional CPT 授权。UAtlas 仍可提交申请，但审核结束前不批准这类请求。既有授权按当前 I-20 的雇主、地点与日期继续。",
+          "University of Delaware：此前没有收录。现记录“暂停非全员必需的新 CPT 授权”。9·02 公告称 CGPS 暂停 optional CPT。学生仍可提交申请，但审核结束前不签发这类新授权，并可能出现处理延迟。",
+          "UC San Diego：此前没有收录。现记录“暂停全部 F-1 CPT 请求的提交与处理”。ISEO 专页仍暂停 iServices 全部 CPT 请求。9·02 说明会第 12 页预计 9 月中旬重开，并要求院系证明实习为必需。该时间只是计划，尚无具体日期。",
+          "University of Maryland, Baltimore County：此前没有收录。现记录“待审及未来 CPT 仅限全项目学生必需的实践”。OISS 9·04 更新称，待审与未来申请按全项目学生必需的实践要求审核。已经签发的 2026 秋季 CPT 授权不会被撤销。本条单列 UMBC 校区。",
+          "George Washington University：此前没有收录。现记录“暂停非全员必需的新 CPT 授权”。ISO 9·02 公告称，不再批准非学位项目全体学生必需的新 CPT。既有授权可按当前 I-20 的雇主地点、日期及其他条件继续。",
+          "University of Colorado Boulder：此前没有收录。现记录“仅处理课程目录列明的学位／主修必需 CPT”。8·31 更新称，仅限校方列出的、为学位或主修毕业必需的实践，minor 不符合。仅供选修学分的实习不获批。已授权的 2026 秋季 CPT 不受影响。",
+          "University of Wisconsin-Milwaukee：此前没有收录。现记录“自 8·24 起仅批准全项目学生必需的 CPT”。ISSS 要求实践为学位项目全体学生明确的必修要求。8·24 前已获批的 CPT 可持续至当前授权结束日。",
+          "University of Oregon：此前没有收录。现记录“不再批准仅供选修实习学分的 CPT”。ISSS 新政策要求实践为既定课程与学位的必要组成部分。页面另列全员学位必需，以及完成必需硕士论文／毕业项目、博士论文的情形。研究类须有导师详细证明。",
+          "University of Kansas：此前没有收录。现记录“校方页面称暂停全部 CPT 请求”。ISS 的 2026 年 8 月更新称，正在判断哪些情形仍可授权，期间暂停所有 CPT 请求。公告没有说明既有授权的处理方式。"
         ],
         "sources": [
           {
@@ -518,9 +518,9 @@ const chineseUpdates: ContentUpdate[] = [
         "id": "uci-cpt-public-source",
         "category": "CPT 学校清单",
         "title": "UCI 升级为校方网页证据",
-        "summary": "International Center 公开 CPT 页证实自 8·17 起暂停 Course Credit CPT，UCI 移入校方网页组并保留原邮件截图。",
-        "before": "仅由邮件截图支持：暂停 Course Credit CPT；强制毕业要求继续。",
-        "after": "公开网页支持 8·17 起暂停 Course Credit CPT；Degree Requirement CPT 须有 UCI 课程目录的毕业要求依据。",
+        "summary": "International Center 公开 CPT 页，证实自 8·17 起暂停 Course Credit CPT。UCI 移入校方网页组，并保留原邮件截图。",
+        "before": "此前只有邮件截图支持：暂停 Course Credit CPT，强制毕业要求继续。",
+        "after": "公开网页支持自 8·17 起暂停 Course Credit CPT。Degree Requirement CPT 须有 UCI 课程目录的毕业要求依据。",
         "sources": [
           {
             "label": "UCI International Center CPT 页面",
@@ -533,8 +533,8 @@ const chineseUpdates: ContentUpdate[] = [
         "category": "CPT 学校清单",
         "title": "Columbia 明确暂停范围与既有授权",
         "summary": "采用 ISSO CPT 专页补充具体暂停范围，以及 8·24 前已批授权的处理方式。",
-        "before": "按新标准复核 CPT 授权与申请；受影响学生由 ISSO 单独通知。",
-        "after": "仅批准课程体系内、全员必需且有 cooperative agreement 的 CPT，其他情形暂停；8·24 前获批的 CPT 不撤销。",
+        "before": "按新标准复核 CPT 授权与申请。受影响学生由 ISSO 单独通知。",
+        "after": "仅批准课程体系内、全员必需且有 cooperative agreement 的 CPT，其他情形暂停。8·24 前获批的 CPT 不撤销。",
         "sources": [
           {
             "label": "Columbia ISSO CPT 页面",
@@ -552,13 +552,13 @@ const chineseUpdates: ContentUpdate[] = [
         category: 'CPT 学校清单',
         title: '新增 USC、Alabama，并校正记录计数',
         summary:
-          '新增 USC 与 University of Alabama 的公开 CPT 要求，记录总数由 23 增至 25；结合 UCSB、NYU 两条证据升级，校方网页组由 14 增至 18，邮件截图组由 9 减至 7。此前“所学校”的计数混入了同校不同范围的记录，现改为学校／院系记录。',
+          '新增 USC 与 University of Alabama 的公开 CPT 要求，记录总数由 23 增至 25。结合 UCSB、NYU 两条证据升级，校方网页组由 14 增至 18，邮件截图组由 9 减至 7。此前“所学校”的计数混入了同校不同范围的记录，现改为学校／院系记录。',
         before: '23 所学校 · 14 所校方网页 / 9 所截图、邮件或论坛材料',
-        after: '25 条学校／院系记录 · 18 条校方网页 / 7 条邮件截图；对应 24 所不同院校',
+        after: '25 条学校／院系记录 · 18 条校方网页 / 7 条邮件截图，对应 24 所不同院校',
         details: [
-          'USC：此前未收录；现收录 8·25 公告，自 8·24 起仅批准毕业必需的 CPT，8·24 前已签发的 2026 秋季授权不会被撤销。',
-          'University of Alabama：此前未收录；现收录 8·31 公告，院系须补充证明实践对全项目或方向学生、或论文完成的必要性，并提供课程目录依据。',
-          'Purdue ECE 与 Purdue ISS 是同一院校的两条范围记录。更正此前更新日志把这类记录总数写成学校数的口径，历史条目原文保留供对照。',
+          'USC：此前没有收录。现收录 8·25 公告，自 8·24 起仅批准毕业必需的 CPT。8·24 前已签发的 2026 秋季授权不会被撤销。',
+          'University of Alabama：此前没有收录。现收录 8·31 公告，院系须补充证明实践对全项目或方向学生、或论文完成的必要性，并提供课程目录依据。',
+          'Purdue ECE 与 Purdue ISS 是同一院校的两条范围记录。此前更新日志把这类记录总数写成学校数，现在更正口径。历史条目原文保留供对照。',
         ],
         sources: [
           { label: 'USC OIS 8·25 CPT 公告', href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/' },
@@ -572,9 +572,9 @@ const chineseUpdates: ContentUpdate[] = [
         category: 'CPT 学校清单',
         title: 'NYU Tandon Mathematics',
         summary:
-          'NYU Tandon 数学系实习政策页注明，自 9·01 暂停国际学生 CPT 审批。原 NYU 论坛报告移至校方网页组，并将范围限定为该数学系页面覆盖的本科生与研究生。',
-        before: 'New York University：8·31 论坛报告称暂停 CPT，尚待校方公开页面确认范围。',
-        after: 'New York University (Tandon Mathematics)：校方院系网页支持 9·01 暂停审批；未据此确认 NYU 全校政策。',
+          'NYU Tandon 数学系实习政策页注明，自 9·01 暂停国际学生 CPT 审批。原 NYU 论坛报告移至校方网页组，范围限定为该数学系页面覆盖的本科生与研究生。',
+        before: 'New York University：8·31 论坛报告称暂停 CPT，范围还待校方公开页面确认。',
+        after: 'New York University (Tandon Mathematics)：校方院系网页支持 9·01 暂停审批。未据此确认 NYU 全校政策。',
         sources: [
           { label: 'NYU Tandon 数学系实习政策页', href: 'https://math.nyu.edu/dynamic/sites/tandon/internships/' },
         ],
@@ -585,8 +585,8 @@ const chineseUpdates: ContentUpdate[] = [
         title: 'UCSB',
         summary:
           'UCSB OISS 的公开 CPT 页面称，自 8·17 暂停签发 CPT，并正在咨询法律顾问。该条移至校方网页组，原有两张邮件截图保留。',
-        before: '仅由邮件截图支持：暂停非学位必需的新 CPT，既有授权不受影响。',
-        after: '公开公告支持自 8·17 暂停签发 CPT；页面未细分类别，也未说明既有授权的处理方式。',
+        before: '此前只有邮件截图支持：暂停非学位必需的新 CPT，既有授权不受影响。',
+        after: '公开公告支持自 8·17 暂停签发 CPT。页面没有细分类别，也没有说明既有授权的处理方式。',
         sources: [
           { label: 'UCSB OISS CPT 页面', href: 'https://oiss.ucsb.edu/curricular-practical-training' },
         ],
@@ -599,11 +599,11 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'mit-cpt-public-source',
         category: 'CPT 学校清单',
-        title: 'MIT',
+        title: 'MIT 升级为校方网页已核实证据',
         summary:
-          'MIT International Students Office 的公开 CPT 页面现已明确：学校暂停 8·24 当日已收到或待审、且实践并非全专业学生完成学位必需经历的新 CPT 申请，并将联系已获 2026 秋季 CPT 授权的学生讨论后续选项。因此 MIT 从邮件截图组移至校方网页已核实组。',
-        before: '23 所 · 13 所校方网页 / 10 所截图、邮件或论坛材料；MIT 仅由通知截图支持。',
-        after: '23 所 · 14 所校方网页 / 9 所截图、邮件或论坛材料；MIT 由公开校方页面支持。',
+          'MIT International Students Office 的公开 CPT 页面现已明确。学校暂停 8·24 当日已收到或待审的新 CPT 申请。这些申请涉及的实践，不是全专业学生完成学位必需的经历。学校将联系已获 2026 秋季 CPT 授权的学生，讨论后续选项。因此 MIT 从邮件截图组移至校方网页已核实组。',
+        before: '23 所 · 13 所校方网页 / 10 所截图、邮件或论坛材料。MIT 此前仅有通知截图支持。',
+        after: '23 所 · 14 所校方网页 / 9 所截图、邮件或论坛材料。MIT 现由公开校方页面支持。',
         sources: [
           {
             label: 'MIT International Students Office CPT 页面',
@@ -619,9 +619,9 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'duration-hearing-under-advisement',
         category: '诉讼进展',
-        title: '#03 D/S 固定期限',
+        title: 'D/S 听证已举行，申请留待裁定',
         summary:
-          '法院案卷第 47 项确认，9 月 3 日的禁令听证已经举行，双方完成陈述后法院将申请留待裁定。“留待裁定”表示法官没有当庭作出裁决，将继续审议并可能另行发布书面命令；它既不表示禁令已经获批，也不表示禁令已经被驳回。',
+          '法院案卷第 47 项确认，9 月 3 日的禁令听证已经举行。双方完成陈述后，法院将申请留待裁定。“留待裁定”表示法官没有当庭作出裁决，会继续审议并可能另行发布书面命令。它既不表示禁令已经获批，也不表示禁令已经被驳回。',
         before: '2026-09-03 上午 11:00 的初步禁令听证待举行；法院尚未裁定。',
         after: '听证已经举行、双方陈述完毕；法院留待裁定，尚未批准或驳回禁令。',
         details: [
@@ -638,15 +638,15 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'duration-government-opposition',
         category: '诉讼进展',
-        title: '#03 D/S 固定期限',
+        title: '政府提交反对意见，法院尚未裁定',
         summary:
-          '政府于 9 月 2 日提交一份获双方同意的超页申请，并将拟议反对意见作为 Exhibit A 附上。拟议意见请求法院驳回 APA § 705 暂缓、初步禁令以及在行政记录提交前作出简易判决的请求，并主张任何救济均应限于原告。用户提供的 57 页文件不是法院裁定；9·03 听证与 9·15 计划生效日未因该文件本身改变。',
+          '政府于 9 月 2 日提交一份获双方同意的超页申请，并把拟议反对意见作为 Exhibit A 附上。拟议意见请求法院驳回 APA § 705 暂缓、初步禁令，以及在行政记录提交前作出简易判决的请求。它还主张任何救济都应限于原告。用户提供的 57 页文件不是法院裁定。9·03 听证与 9·15 计划生效日没有因该文件本身改变。',
         before: '政府答辩期限延至 2026-09-02；初步禁令申请待答辩。',
         after: '政府已于 2026-09-02 随超页申请附上拟议反对意见；法院尚未裁定。',
         details: [
-          '政府主张四年上限不是要求学生四年内毕业，超过获批期限者可申请延期停留。',
-          '政府把原告主张的招生损失、合规成本和项目调整描述为推测性或经济性损害，并否认其构成不可弥补损害。',
-          '政府反对全国性救济，并称若法院提供救济，应限于本案原告及其成员。',
+          '政府主张四年上限不是要求学生四年内毕业。超过获批期限的人可以申请延期停留。',
+          '政府把原告主张的招生损失、合规成本和项目调整称为推测性或经济性损害。政府否认这些构成不可弥补损害。',
+          '政府反对全国性救济。政府称，若法院提供救济，应限于本案原告及其成员。',
         ],
         sources: [
           {
@@ -662,14 +662,14 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'cpt-school-evidence-2026-09-03',
         category: 'CPT 学校清单',
-        title: '学校数量与校方证据',
+        title: '清单扩至 23 所，校方网页证据增至 13 所',
         summary:
-          '清单由 21 所扩至 23 所，有校方网页支持当前状态的学校由 11 所增至 13 所；截图、邮件或论坛材料组仍为 10 所。新增 University of Maryland, College Park 与 Trine University，并保留两校公开材料所能支持的范围。',
+          '清单由 21 所扩至 23 所。有校方网页支持当前状态的学校由 11 所增至 13 所，截图、邮件或论坛材料组仍为 10 所。新增 University of Maryland, College Park 与 Trine University，并保留两校公开材料所能支持的范围。',
         before: '21 所 · 11 所校方网页 / 10 所截图、邮件或论坛材料',
         after: '23 所 · 13 所校方网页 / 10 所截图、邮件或论坛材料',
         details: [
-          'University of Maryland, College Park 于 9·02 公布：暂停不属于全专业必修、必修课程或论文研究要求的未批准 CPT；已获批 CPT 可继续。',
-          'Trine University 的研究生 CPT 页面仍列 2026–27 申请截止日，并称申请持续开放、按收到顺序审理；页面未单独回应 8·24 指引，因此条目不把该页面解读为全面不受影响。',
+          'University of Maryland, College Park 于 9·02 公布：暂停不属于全专业必修、必修课程或论文研究要求的未批准 CPT。已获批 CPT 可以继续。',
+          'Trine University 的研究生 CPT 页面仍列 2026–27 申请截止日，并称申请持续开放、按收到顺序审理。页面没有单独回应 8·24 指引，因此条目不把该页面解读为全面不受影响。',
         ],
         sources: [
           {
@@ -690,11 +690,11 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'uc-berkeley-cpt-criteria',
         category: 'CPT 学校清单',
-        title: 'UC Berkeley',
+        title: 'UC Berkeley 明确论文型 CPT 条件',
         summary:
-          '校方 CPT 页面进一步明确论文型 CPT 的适用条件：只有已 Advanced to Candidacy 的论文型硕士或博士，且实践训练是完成论文所必需、无法由其他研究或数据收集方式合理替代时，才可按个案申请，并需导师书面证明。Course Credit CPT 仍暂停。',
-        before: '已暂停 Course Credit CPT；Degree-required 与 thesis/dissertation-required CPT 继续。',
-        after: 'Course Credit CPT 仍暂停；论文型 CPT 仅限符合 candidacy、必要性、不可替代性和导师证明要求的严格个案。',
+          '校方 CPT 页面进一步明确论文型 CPT 的适用条件。申请者仅限已 Advanced to Candidacy 的论文型硕士或博士。实践训练必须是完成论文所必需，且无法由其他研究或数据收集方式合理替代。这类申请按个案处理，并需导师书面证明。Course Credit CPT 仍暂停。',
+        before: '已暂停 Course Credit CPT。Degree-required 与 thesis/dissertation-required CPT 继续。',
+        after: 'Course Credit CPT 仍暂停。论文型 CPT 仅限符合 candidacy、必要性、不可替代性和导师证明要求的严格个案。',
         sources: [
           {
             label: 'UC Berkeley International Office CPT 页面',
@@ -710,9 +710,9 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'duration-hearing',
         category: '日期调整',
-        title: '#03 D/S 固定期限',
+        title: '听证日期由 9·09 更正为 9·03',
         summary:
-          '此前采用的二手报道把初步禁令听证写成 9 月 9 日；现按法院官方日历和 docket 校正为 2026 年 9 月 3 日上午 11:00（美东）。',
+          '此前采用的二手报道把初步禁令听证写成 9 月 9 日。现按法院官方日历和 docket 校正为 2026 年 9 月 3 日上午 11:00（美东）。',
         before: '2026-09-09 · 初步禁令听证（错误）',
         after: '2026-09-03 · 初步禁令听证',
         sources: [
@@ -735,9 +735,9 @@ const chineseUpdates: ContentUpdate[] = [
         category: '政策内容',
         title: '#05 8·12 / 8·24 CPT 指引',
         summary:
-          'CPT 条目现在分别说明两份 ICE/SEVP Broadcast：8·12 是对学校与 DSO 的合规责任提醒；8·24 才提出更窄的 “integral” 标准与 cooperative agreement 要求。高校按新资格口径调整 CPT 的时间起点相应更正为 8·24。',
+          'CPT 条目现在分别说明两份 ICE/SEVP Broadcast。8·12 是对学校与 DSO 的合规责任提醒。8·24 才提出更窄的 “integral” 标准与 cooperative agreement 要求。高校按新资格口径调整 CPT 的时间起点相应更正为 8·24。',
         before: '8·12 起 · 高校按收紧后的资格标准调整 CPT',
-        after: '8·12 合规提醒；8·24 资格标准收紧及高校响应',
+        after: '8·12 合规提醒，8·24 资格标准收紧及高校响应',
         sources: [
           {
             label: 'SEVP 8·12 Broadcast',
@@ -752,18 +752,18 @@ const chineseUpdates: ContentUpdate[] = [
       {
         id: 'cpt-school-evidence',
         category: 'CPT 学校清单',
-        title: '学校数量与证据级别',
+        title: '清单扩至 21 所，证据级别同步更新',
         summary:
-          '清单由 13 所扩至 21 所；有校方网页支持当前状态的学校由 6 所增至 11 所，只有截图、邮件或论坛文字材料的学校由 7 所增至 10 所。',
+          '清单由 13 所扩至 21 所。有校方网页支持当前状态的学校由 6 所增至 11 所，只有截图、邮件或论坛文字材料的学校由 7 所增至 10 所。',
         before: '13 所 · 6 所校方网页 / 7 所论坛材料',
         after: '21 所 · 11 所校方网页 / 10 所截图、邮件或论坛材料',
         details: [
           'University of Michigan 从论坛材料升级为校方网页来源。',
           'Northwestern、Columbia、Harvard 按校方页面加入清单。',
           'New York University 按 8·31 论坛报告加入，仍标为待校方公开页面确认。',
-          'University of Washington 按校方通知加入；学校暂停非全专业必修的新 CPT，已获批 CPT 可以继续。',
-          'Goldey-Beacom College 与 Purdue University ISS 按已下载到本站的校方邮件截图加入；Purdue ISS 与 Purdue ECE 分开记录。',
-          'MIT 的公开 CPT 页面未同步最新暂停范围，因此移至截图材料组；条目改为部分非全专业必修的新 CPT 暂停。',
+          'University of Washington 按校方通知加入。学校暂停非全专业必修的新 CPT，已获批 CPT 可以继续。',
+          'Goldey-Beacom College 与 Purdue University ISS 按已下载到本站的校方邮件截图加入。Purdue ISS 与 Purdue ECE 分开记录。',
+          'MIT 的公开 CPT 页面没有同步最新暂停范围，因此移至截图材料组。条目改为部分非全专业必修的新 CPT 暂停。',
         ],
         sources: [
           {

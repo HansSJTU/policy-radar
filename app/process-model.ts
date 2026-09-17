@@ -45,17 +45,17 @@ const administrativeGuidanceStages = [
 ] as const;
 
 const federalMeaning =
-  '行政机关修改具有法律约束力的联邦法规时，通常先拟稿并接受 OIRA 发布前审查，再发布 NPRM 征求公众意见；回应意见后才能发布最终规则，并在指定日期生效。诉讼属于规则发布后的并行司法审查，会影响规则能否或何时生效，但不是行政流程本身的一段。';
+  '行政机关要改一条有法律约束力的联邦法规，通常先拟稿，交给 OIRA 做发布前审查，再发布 NPRM 征求公众意见。回应意见之后，才能发布最终规则，并在指定日期生效。诉讼是规则发布之后的司法审查。它会影响规则能不能生效、什么时候生效，但不是行政流程里的一段。';
 
 const guidanceMeaning =
-  'SEVP／ICE 通过 Broadcast、FAQ 等材料解释现行规则，由学校和 DSO 直接落实。它不修改 CFR，因此通常没有 NPRM、公众评论和最终规则这些步骤；执行可以很快，但法律层级低于正式法规。';
+  'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。';
 
 const processTracks: Record<string, ProcessTrack> = {
   'perm-modernization': {
     kind: 'federal-rulemaking',
     name: '联邦规则制定流程',
     meaning: federalMeaning,
-    detail: 'DOL 于 2026-09-14 将 PERM 改革提案送交 OIRA，发布前审查仍在进行；本次核查未找到公开 NPRM 正文，尚未生效。',
+    detail: 'DOL 在 2026-09-14 把 PERM 改革提案送交 OIRA，发布前审查还在进行。本次核查没有找到公开的 NPRM 正文，尚未生效。',
     currentSummary: 'PERM 改革处于发布前审查',
     lastCompletedStage: 0,
     activeStage: 1,
@@ -69,7 +69,7 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      'OIRA 于 9 月 11 日带修改完成 OPT 收费提案审查；尚未找到公开 NPRM，金额和缴费方未公布，尚未生效。',
+      'OIRA 在 9 月 11 日带修改完成 OPT 收费提案的审查。目前没有公开的 NPRM，金额和缴费方未公布，尚未生效。',
     currentSummary: '正文与金额尚未公开',
     lastCompletedStage: 1,
     activeStage: null,
@@ -110,8 +110,8 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      "法院于 9·14 根据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直至另行命令或实体审理结束；原 9·15 生效安排已改变。",
-    currentSummary: "全国暂缓已签发；生效日已推迟",
+      "法院在 9·14 依据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直到另行命令或实体审理结束。原 9·15 生效安排已经改变。",
+    currentSummary: "全国暂缓已签发，生效日已推迟",
     lastCompletedStage: 4,
     activeStage: null,
     nextStage: 5,
@@ -176,7 +176,7 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      'DOL 已发布 NPRM，公众评论期于 2026 年 5 月 26 日结束。目前仍处于提案阶段，DOL 需要审阅意见后才能发布最终规则。',
+      'DOL 已经发布 NPRM，公众评论期在 2026 年 5 月 26 日结束。目前仍在提案阶段，DOL 要审阅意见之后才能发布最终规则。',
     currentSummary: '公众评论期已结束，等待后续规则',
     lastCompletedStage: 3,
     activeStage: null,
@@ -203,12 +203,12 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      'NPRM 已于 9 月 11 日正式刊登，公众评论期至 11 月 10 日；尚未形成最终规则。',
+      'NPRM 在 9 月 11 日正式刊登，公众评论期到 11 月 10 日。目前还没有最终规则。',
     currentSummary: 'NPRM 已发布，公众评论期内',
     lastCompletedStage: 2,
     activeStage: 3,
     nextStage: 4,
-    waitingFor: '11 月 10 日美东当日午夜前公众评论截止；其后关注最终规则及生效安排。',
+    waitingFor: '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     stages: federalRulemakingStages,
     litigation: [],
   },
@@ -217,7 +217,7 @@ const processTracks: Record<string, ProcessTrack> = {
     name: '联邦规则制定流程',
     meaning: federalMeaning,
     detail:
-      'DHS 已发布 NPRM，公众评论期于 2026 年 8 月 4 日结束。目前尚无最终规则或生效日期。',
+      'DHS 已经发布 NPRM，公众评论期在 2026 年 8 月 4 日结束。目前还没有最终规则或生效日期。',
     currentSummary: '公众评论期已结束，尚未形成最终规则',
     lastCompletedStage: 3,
     activeStage: null,

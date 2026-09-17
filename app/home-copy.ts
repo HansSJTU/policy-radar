@@ -16,7 +16,7 @@ export const homeCopy = {
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: `更新于 ${SITE_UPDATED_ON}（美东）。单项核查范围及缺口见详情；预计日期可能因规则修改或诉讼变化而移动。个人决定请复核原始文件与专业意见。`, seedDisclosure: '部分政策的社区影响均分包含每项 10–20 个用于上线初始化的模拟样本；这些样本已在数据库中单独标记，待真实评分积累后将删除。', top: '回到顶部 ↑',
+    footer: `更新于 ${SITE_UPDATED_ON}（美东）。每项的核查范围和缺口写在详情里。预计日期可能因规则修改或诉讼变化而移动。做个人决定前，请复核原始文件并咨询专业人士。`, seedDisclosure: '部分政策的社区影响均分里，每项包含 10–20 个用于上线初始化的模拟样本。这些样本在数据库里单独标记，等真实评分积累起来后会删除。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
