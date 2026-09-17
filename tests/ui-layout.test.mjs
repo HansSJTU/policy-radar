@@ -19,9 +19,24 @@ const policyPage = (
 test('homepage briefing sends readers to the detail timeline', () => {
   assert.match(
     policyPage,
-    /policyHref\(\s*item.policyId,\s*language,\s*'timeline',\s*selectedPath,?\s*\)/,
+    /<BriefingRow item=\{item\} view="timeline" language=\{language\} selectedPath=\{selectedPath\} key=\{item\.id\} \/>/,
   );
+  assert.match(
+    policyPage,
+    /<BriefingRow item=\{item\} view="progress" language=\{language\} selectedPath=\{selectedPath\} key=\{item\.id\} \/>/,
+  );
+  assert.match(policyPage, /href=\{policyHref\(item\.policyId, language, view, selectedPath\)\}/);
   assert.match(policyPage, /className="timeline-shell" ref=\{showLatestTimeline\}/);
+});
+
+test('briefing headings carry a category tag colored by the shared stay-path tokens', () => {
+  assert.match(policyPage, /className="briefing-tag" data-path=\{path\}/);
+  assert.match(
+    css,
+    /\.briefing-tag\s*\{[^}]*color: var\(--path-ink\)[^}]*background: var\(--path-bg\)/s,
+  );
+  assert.match(css, /\[data-path="F-1"\]\s*\{[^}]*--path-ink/s);
+  assert.match(css, /\[data-path="H-1B"\]\s*\{[^}]*--path-ink/s);
 });
 
 test('the homepage footer discloses synthetic launch samples in both languages', () => {

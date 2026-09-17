@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { ArrowUpRight, ChevronDown, Radar } from 'lucide-react';
-import { getThirtyDayBriefing, getBriefingDateLabels } from './briefing-feed';
+import { getThirtyDayBriefing, getBriefingDateLabels, type BriefingItem } from './briefing-feed';
 import { animateDisclosure } from './disclosure-animation';
 import { GlossaryText } from './glossary-text';
 import { VisitorTracker } from '@/components/visitor-tracker';
@@ -15,6 +15,7 @@ import { persistLanguage } from './language-client';
 import { getPolicies } from './policy-data';
 import { policyHref, legacyPolicyHref } from './policy-links';
 import { filterPoliciesByRouteStage } from './policy-filter';
+import { getPolicyPath, routeStages, type RouteStage } from './policy-paths';
 import { GitHubProjectLink } from './github-link';
 import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from './mobile-site-menu';
@@ -30,50 +31,32 @@ import { homeCopy } from './home-copy';
 import { SITE_UPDATED_ON } from './policy-freshness';
 import type { CommunitySchool, VerifiedSchool } from './cpt-schools';
 
-const routeStages = [
-  {
-    key: 'F-1',
-    number: '01',
-    subtitle: '入学与在读',
-    policies: [
-      { rank: '03', id: 'duration-status', title: 'D/S 固定期限', state: '法院全国暂缓 · 生效日已推迟' },
-    ],
-  },
-  {
-    key: 'CPT',
-    number: '02',
-    subtitle: '校内外实习',
-    policies: [
-      { rank: '05', id: 'cpt-guidance', title: '8·12 / 8·24 CPT 指引', state: '学校已按新口径执行' },
-    ],
-  },
-  {
-    key: 'OPT',
-    number: '03',
-    subtitle: '毕业后工作',
-    policies: [
-      { rank: '01', id: 'opt-fee', title: 'OPT $100k', state: 'OIRA 审查已完成 · 尚未生效' },
-      { rank: '09', id: 'ead-discretion', title: 'I-765 犯罪记录审查', state: '评论期已结束' },
-    ],
-  },
-  {
-    key: 'H-1B',
-    number: '04',
-    subtitle: '工作签证',
-    policies: [
-      { rank: '02', id: 'h1b-fee', title: 'H-1B $103,265', state: '正式提案' },
-      { rank: '04', id: 'h1b-weighted-selection', title: 'H-1B 工资加权抽签', state: '最终规则已生效' },
-      { rank: '06', id: 'prevailing-wage', title: 'H-1B / PERM 工资等级', state: '评论期已结束' },
-      { rank: '07', id: 'h1b-reform', title: 'H-1B 分类改革', state: 'OMB 审查' },
-      { rank: '08', id: 'grace-period', title: '取消 60 天宽限期', state: '提案已发布，评论期内，未生效' },
-      { rank: '10', id: 'h4-ead', title: 'H-4 EAD', state: '长期议程' },
-      { rank: '11', id: 'perm-modernization', title: 'PERM 劳工认证改革', state: 'OIRA 审查中' },
-    ],
-  },
-];
+function BriefingRow({ item, view, language, selectedPath }: {
+  item: BriefingItem;
+  view: 'timeline' | 'progress';
+  language: Language;
+  selectedPath: string;
+}) {
+  const path = getPolicyPath(item.policyId);
+  return (
+    <a
+      className="briefing-row"
+      href={policyHref(item.policyId, language, view, selectedPath)}
+      title={item.summary}
+    >
+      <time dateTime={item.date}>{item.date.slice(5).replace('-', '·')}</time>
+      <strong>
+        <span className="briefing-title-text">#{String(item.rank).padStart(2, '0')} {item.policy}</span>
+        {path && <span className="briefing-tag" data-path={path}>{path}</span>}
+      </strong>
+      <span><GlossaryText text={item.summary} /></span>
+      <ArrowUpRight aria-hidden="true" />
+    </a>
+  );
+}
 
 function RoutePolicyLink({ policy, language, onNavigate }: {
-  policy: (typeof routeStages)[number]['policies'][number];
+  policy: RouteStage['policies'][number];
   language: Language;
   onNavigate: (id: string) => void;
 }) {
@@ -263,17 +246,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
           </header>
           <div className="briefing-list">
             {briefing.recent.map((item) => (
-              <a
-                className="briefing-row"
-                href={policyHref(item.policyId, language, 'timeline', selectedPath)}
-                key={item.id}
-                title={item.summary}
-              >
-                <time dateTime={item.date}>{item.date.slice(5).replace('-', '·')}</time>
-                <strong>#{String(item.rank).padStart(2, '0')} {item.policy}</strong>
-                <span><GlossaryText text={item.summary} /></span>
-                <ArrowUpRight aria-hidden="true" />
-              </a>
+              <BriefingRow item={item} view="timeline" language={language} selectedPath={selectedPath} key={item.id} />
             ))}
           </div>
         </article>
@@ -285,17 +258,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
           </header>
           <div className="briefing-list">
             {briefing.upcoming.map((item) => (
-              <a
-                className="briefing-row"
-                href={policyHref(item.policyId, language, 'progress', selectedPath)}
-                key={item.id}
-                title={item.summary}
-              >
-                <time dateTime={item.date}>{item.date.slice(5).replace('-', '·')}</time>
-                <strong>#{String(item.rank).padStart(2, '0')} {item.policy}</strong>
-                <span><GlossaryText text={item.summary} /></span>
-                <ArrowUpRight aria-hidden="true" />
-              </a>
+              <BriefingRow item={item} view="progress" language={language} selectedPath={selectedPath} key={item.id} />
             ))}
           </div>
         </article>
@@ -332,7 +295,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
               policy={policy}
               language={language}
               selectedPath={selectedPath}
-              policyPath={localizedRouteStages.find((stage) => stage.policies.some((item) => item.id === policy.id))?.key}
+              policyPath={getPolicyPath(policy.id)}
               communityAggregate={communityImpact.aggregates[policy.id]}
               communityRating={
                 <CommunityImpactRating

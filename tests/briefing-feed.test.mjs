@@ -1,7 +1,55 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { getThirtyDayBriefing } from '../app/briefing-feed.ts';
+import { briefingItems, englishBriefing, getThirtyDayBriefing } from '../app/briefing-feed.ts';
+import { communitySchools, verifiedSchools } from '../app/cpt-schools.ts';
+
+// Campus-level developments live in the CPT school tracker, so the rolling 30-day
+// briefing must never name an individual institution.
+const genericSchoolWords = new Set(['university', 'college', 'institute', 'school', 'of', 'at', 'the']);
+const ambiguousPlaceNames = new Set([
+  'new york', 'boston', 'washington', 'pennsylvania', 'michigan', 'alabama', 'utah',
+  'delaware', 'oregon', 'kansas', 'colorado', 'maryland', 'california', 'carolina', 'buffalo',
+]);
+
+function schoolAliases(name) {
+  const base = name.replace(/\s*\(.*\)\s*$/, '').trim();
+  const distinctive = base
+    .split(/\s+/)
+    .filter((word) => !genericSchoolWords.has(word.toLowerCase()));
+  const alias = distinctive.join(' ');
+  if (!alias || alias === base || ambiguousPlaceNames.has(alias.toLowerCase())) return [base];
+  return [base, alias];
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+test('the 30-day briefing excludes individual campus notices', () => {
+  const aliases = [...verifiedSchools, ...communitySchools].flatMap(({ school }) => schoolAliases(school));
+  const localized = [
+    ...briefingItems,
+    ...Object.entries(englishBriefing).map(([id, copy]) => ({ id, ...copy })),
+  ];
+  for (const item of localized) {
+    const text = `${item.policy} ${item.summary}`;
+    for (const alias of aliases) {
+      assert.doesNotMatch(
+        text,
+        new RegExp(`(^|[^\\p{L}])${escapeRegExp(alias)}([^\\p{L}]|$)`, 'u'),
+        `${item.id} carries a campus-specific development (${alias})`,
+      );
+    }
+  }
+});
+
+test('every briefing item supplies English copy for the English homepage', () => {
+  assert.deepEqual(
+    Object.keys(englishBriefing).sort(),
+    briefingItems.map(({ id }) => id).sort(),
+  );
+});
 
 test('recent updates stay inside the prior 30 days and sort newest first', () => {
   const { recent } = getThirtyDayBriefing('2026-08-29');

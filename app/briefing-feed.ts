@@ -12,17 +12,9 @@ export type BriefingItem = {
 
 import type { Language } from './language';
 
-const briefingItems: BriefingItem[] = [
-{
-  "id": "cpt-bryn-mawr-pause",
-  "date": "2026-09-15",
-  "policyId": "cpt-guidance",
-  "rank": 5,
-  "policy": "CPT 校方执行",
-  "summary": "Bryn Mawr 暂停新的非全员必需 CPT；未宣布撤销既有授权。D/S 暂缓不自动撤销独立 CPT 指引。",
-  "timing": "recent",
-  "confirmed": true
-},
+// Curated source-level developments (federal rulemaking, litigation, official
+// guidance). Individual campus notices belong to the CPT school tracker instead.
+export const briefingItems: BriefingItem[] = [
 {
   "id": "duration-nationwide-stay",
   "date": "2026-09-14",
@@ -181,8 +173,7 @@ const briefingItems: BriefingItem[] = [
   },
 ];
 
-const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
- 'cpt-bryn-mawr-pause': { policy: 'University CPT implementation', summary: 'Bryn Mawr paused new optional CPT without announcing revocation of existing approvals. The D/S stay does not automatically withdraw separate CPT guidance.' },
+export const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
   'duration-nationwide-stay': { policy: 'D/S final rule', summary: 'The court postponed the entire rule nationwide and barred further implementation. This is not permanent vacatur; the September 15 effective date is postponed.' },
   'duration-status-conference': { policy: 'D/S final rule', summary: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.' },
   'perm-modernization-oira': { policy: 'PERM labor certification reform', summary: 'DOL submitted its PERM recruitment and employer-compliance reform proposal for OIRA prepublication review; it is not in effect.' },
