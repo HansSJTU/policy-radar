@@ -155,6 +155,11 @@ export function PolicyDetailStatusScore({
       className="pd-rating-modal-dialog"
       aria-label={text.title}
     >
+      <div
+        className="pd-rating-modal-backdrop"
+        onClick={closeModal}
+        aria-hidden="true"
+      />
       <div className="pd-rating-modal-sheet">
         <div className="pd-rating-modal-head">
           <div className="pd-rating-modal-title">

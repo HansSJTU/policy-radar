@@ -92,6 +92,24 @@ export async function generateMetadata({
   };
 }
 
+function DotWrapText({ text }: { text: string }) {
+  if (!text || !text.includes('·')) {
+    return <>{text}</>;
+  }
+  const parts = text.split(/\s*·\s*/);
+  return (
+    <span className="pd-dot-flow">
+      <span className="pd-dot-flow-inner">
+        {parts.map((part, index) => (
+          <span key={index} className="pd-dot-flow-item">
+            {part}
+          </span>
+        ))}
+      </span>
+    </span>
+  );
+}
+
 export default async function PolicyPage({ params, searchParams }: Props) {
   const [{ policyId }, search] = await Promise.all([params, searchParams]);
   const language = await resolveRequestLanguage(search?.lang);
@@ -208,11 +226,15 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 >
                   <div>
                     <dt>{english ? 'Current status' : '当前状态'}</dt>
-                    <dd>{p.status}</dd>
+                    <dd>
+                      <DotWrapText text={p.status} />
+                    </dd>
                   </div>
                   <div>
                     <dt>{english ? 'In effect?' : '是否生效'}</dt>
-                    <dd data-effect={p.effectState}>{p.effectLabel}</dd>
+                    <dd data-effect={p.effectState}>
+                      <DotWrapText text={p.effectLabel} />
+                    </dd>
                   </div>
                   <PolicyDetailStatusScore
                     policyId={record.id}
@@ -222,7 +244,14 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <div>
                     <dt>{english ? 'Last checked' : '最后核对'}</dt>
                     <dd>
-                      <time dateTime={detail.checkedOn}>{detail.checkedOn}</time> · ET
+                      <span className="pd-dot-flow">
+                        <span className="pd-dot-flow-inner">
+                          <span className="pd-dot-flow-item">
+                            <time dateTime={detail.checkedOn}>{detail.checkedOn}</time>
+                          </span>
+                          <span className="pd-dot-flow-item">ET</span>
+                        </span>
+                      </span>
                     </dd>
                   </div>
                 </dl>

@@ -169,9 +169,8 @@
   margin-bottom: 3px;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 4px 8px;
+  gap: 6px;
   min-width: 0;
 }
 .pd-status dd {
@@ -184,6 +183,33 @@
   min-width: 0;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+.pd-dot-flow {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.pd-dot-flow-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-left: -0.75em;
+  width: calc(100% + 0.75em);
+  row-gap: 2px;
+}
+.pd-dot-flow-item {
+  display: inline-block;
+  padding-left: 0.75em;
+  position: relative;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+.pd-dot-flow-item::before {
+  content: '·';
+  display: inline-block;
+  width: 0.75em;
+  text-align: center;
+  margin-left: -0.75em;
 }
 @container pdstatus (min-width: 710px) {
   .pd-status {
@@ -281,9 +307,7 @@
 }
 .pd-rating-modal-dialog {
   border: none;
-  background: rgba(15, 23, 42, 0.45);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: transparent;
   padding: 0;
   margin: 0;
   position: fixed;
@@ -297,7 +321,6 @@
   justify-content: center;
   outline: none;
   z-index: 1000;
-  cursor: pointer;
 }
 .pd-rating-modal-dialog:not([open]) {
   display: none;
@@ -307,7 +330,19 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
+.pd-rating-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1;
+}
 .pd-rating-modal-sheet {
+  position: relative;
+  z-index: 2;
   background: var(--paper);
   width: 100%;
   max-width: 520px;
