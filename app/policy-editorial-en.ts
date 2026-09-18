@@ -110,7 +110,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     summary:
       'DHS proposes a $103,265 surcharge on each cap-subject H-1B petition, on top of existing fees. U.S. advanced-degree cases and F-1 changes of status are included; cap-exempt petitions are excluded.',
     background:
-      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. This proposed fee would be additional to existing fees and should be distinguished from the earlier presidential-proclamation charge.',
+      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. This proposed fee would be additional to existing fees and applies by cap-subject filing.',
     effectState: 'not-in-effect',
     note: 'Scope is defined by cap-subject filings',
     deck: 'After selection, will the employer still be willing to sponsor you?',
@@ -170,7 +170,7 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
       ],
       [
         'Relationship to other fees',
-        'This is a proposed surcharge on top of existing fees; it should not be conflated with the fee under the earlier presidential proclamation.',
+        'This is a proposed surcharge on top of existing fees; its scope turns on whether the petition is cap-subject.',
       ],
     ],
     related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],

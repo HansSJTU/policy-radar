@@ -32,10 +32,6 @@ const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {
     zh: '核查缺口：Harvard、UC Davis、University of Michigan、Columbia 与 Penn 的校方网页本次返回 403，保留上次成功核对日期，不视为政策反转。UT Dallas 9·17 新通知已取代 8·25 口径。社区截图不等于校方公开确认，论坛只能读到 9·14 之前的回复。',
     en: 'Verification gaps: Harvard, UC Davis, University of Michigan, Columbia and Penn university pages returned HTTP 403 in this run, so their last successful review dates are retained; an access failure is not treated as a policy reversal. UT Dallas superseded its August 25 position with a September 17 notice. Community screenshots are not public university confirmation, and forum replies were readable only through September 14.',
   },
-  'h1b-fee': {
-    zh: '核查缺口：旧 10 万美元总统公告收费的上诉案卷最新状态尚未完整核实；本项与旧的公告收费分开跟踪。',
-    en: 'Verification gap: the latest appellate dockets for the older $100,000 proclamation fee have not been fully verified; that fee is tracked separately from this rule.',
-  },
   'duration-status': {
     zh: '核查范围：9·17 复核第 51、52 项及公开案卷，最新可见记录仍为 9·14 第 52 项状态会议通知；法院日历当前只排到 9·24，尚不含 10·02。镜像可能滞后，后续命令与上诉仍需跟踪。',
     en: 'Review scope: entries 51 and 52 and the public docket were rechecked September 17; the latest visible entry remains September 14 entry 52 scheduling the status conference. The court calendar currently runs only through September 24 and does not yet list October 2. The mirror may lag; later orders and appeals still need monitoring.',

@@ -98,7 +98,7 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
     summary:
       'DHS 打算在现有费用之外，对每份受年度名额限制的 H-1B 申请加收 103,265 美元。美国硕士名额和 F-1 境内转身份也要交，cap-exempt 申请除外。',
     background:
-      'RIN 1615-AD20 在 2026-08-25 公布，评论截止到 9 月 24 日。这是现有费用之外新加的拟议附加费，和旧总统公告里的收费要分开核对。',
+      'RIN 1615-AD20 在 2026-08-25 公布，评论截止到 9 月 24 日。这是现有费用之外新加的拟议附加费，按 cap-subject 申请划分范围。',
     effectState: 'not-in-effect',
     note: '按 cap-subject 申请划分范围',
     deck: '抽中之后，雇主还愿不愿意继续为你担保？',
@@ -151,7 +151,7 @@ export const chinesePolicyEditorial: PolicyEditorial[] = [
         '提案覆盖 cap-subject，包括美国高学历名额。境内转身份不能因为人已经在美国就排除。',
       ],
       ['未覆盖申请', 'Cap-exempt 不在附加费的拟议范围内。'],
-      ['费用关系', '这是现有费用之外新加的拟议附加费，别和旧总统公告里的收费当成一项。'],
+      ['费用关系', '这是现有费用之外新加的拟议附加费，按 cap-subject 申请划分范围。'],
     ],
     related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   },
