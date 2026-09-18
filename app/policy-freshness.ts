@@ -6,39 +6,39 @@ export const SITE_UPDATED_ON = '2026-09-17';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
-  'opt-fee': '2026-09-16',
-  'h1b-fee': '2026-09-16',
-  'duration-status': '2026-09-16',
-  'h1b-weighted-selection': '2026-09-16',
-  'cpt-guidance': '2026-09-16',
-  'prevailing-wage': '2026-09-16',
-  'h1b-reform': '2026-09-16',
-  'grace-period': '2026-09-16',
-  'ead-discretion': '2026-09-16',
-  'h4-ead': '2026-09-16',
+  'opt-fee': '2026-09-17',
+  'h1b-fee': '2026-09-17',
+  'duration-status': '2026-09-17',
+  'h1b-weighted-selection': '2026-09-17',
+  'cpt-guidance': '2026-09-17',
+  'prevailing-wage': '2026-09-17',
+  'h1b-reform': '2026-09-17',
+  'grace-period': '2026-09-17',
+  'ead-discretion': '2026-09-17',
+  'h4-ead': '2026-09-17',
   'perm-modernization': '2026-09-17',
 };
 
 const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {
   'perm-modernization': {
-    zh: '核查范围：已读统一议程与 9 月 14 日 OIRA 待审记录。Federal Register 正文检索未完成验证，未找到公开 NPRM 不等于证明不存在后续文件。',
-    en: 'Review scope: the Unified Agenda and September 14 pending OIRA record were read. Federal Register document verification remains incomplete; failure to locate a public NPRM does not prove that no subsequent document exists.',
+    zh: '核查范围：9·17 复核统一议程与 9 月 14 日 OIRA 待审记录（标题为 Modernizing the Labor Market Test… (NPRM)，状态仍为待审）。Federal Register 正文检索未完成验证，未找到公开 NPRM 不等于证明不存在后续文件。',
+    en: 'Review scope: the Unified Agenda and the September 14 pending OIRA record were rechecked September 17 (title “Modernizing the Labor Market Test… (NPRM)”, still pending). Federal Register document verification remains incomplete; failure to locate a public NPRM does not prove that no subsequent document exists.',
   },
   'opt-fee': {
-    zh: '核查范围：已复核 OIRA 结案记录及联邦公报检索，尚未找到公开 NPRM。原论坛主题已拆分，新主题最新回复访问受限。',
-    en: 'Review scope: OIRA completion and Federal Register searches were rechecked; no public NPRM was found. The original forum topic was split and the new topic’s latest replies were inaccessible.',
+    zh: '核查范围：9·17 复核 OIRA 结案记录及联邦公报检索，尚未找到公开 NPRM。旧论坛主题本次读取返回 403，新主题最新回复同样无法读取。',
+    en: 'Review scope: the OIRA conclusion record and Federal Register searches were rechecked September 17; no public NPRM was found. This run could not read the older forum topic (HTTP 403), and the newer topic’s latest replies were inaccessible as well.',
   },
   'cpt-guidance': {
-    zh: '核查缺口：UT Dallas、UC Irvine 当前原页无法读取，保留上次成功核对日期；WSU 仅核对到校方索引正文，后续执行待复核。Penn、JHU 新旧口径冲突仍已注明；USC 学院恢复传闻尚未获公开新公告证实。社区截图不等于校方公开确认，论坛仅复核最新可访问回复。',
-    en: 'Verification gaps: current UT Dallas and UC Irvine source pages were inaccessible, so their last successful review dates are retained. WSU was checked through indexed official text; later implementation remains unverified. Penn and JHU source conflicts remain disclosed; USC college reopening reports lack a verified new public notice. Community screenshots are not public university confirmation; only the latest accessible forum replies were reviewed.',
+    zh: '核查缺口：Harvard、UC Davis、University of Michigan、Columbia 与 Penn 的校方网页本次返回 403，保留上次成功核对日期，不视为政策反转。UT Dallas 9·17 新通知已取代 8·25 口径。社区截图不等于校方公开确认，论坛只能读到 9·14 之前的回复。',
+    en: 'Verification gaps: Harvard, UC Davis, University of Michigan, Columbia and Penn university pages returned HTTP 403 in this run, so their last successful review dates are retained; an access failure is not treated as a policy reversal. UT Dallas superseded its August 25 position with a September 17 notice. Community screenshots are not public university confirmation, and forum replies were readable only through September 14.',
   },
   'h1b-fee': {
-    zh: '核查缺口：旧 10 万美元总统公告收费的上诉案卷最新状态尚未完整核实。',
-    en: 'Verification gap: the latest appellate dockets for the older $100,000 proclamation fee have not been fully verified.',
+    zh: '核查缺口：旧 10 万美元总统公告收费的上诉案卷最新状态尚未完整核实；本项与旧的公告收费分开跟踪。',
+    en: 'Verification gap: the latest appellate dockets for the older $100,000 proclamation fee have not been fully verified; that fee is tracked separately from this rule.',
   },
   'duration-status': {
-    zh: '核查范围：9·16 复核第 51 号暂缓令及公开案卷，最新可见记录仍为 9·14 第 52 项状态会议通知；镜像可能滞后，后续命令与上诉仍需跟踪。',
-    en: 'Review scope: order 51 and the public docket were rechecked September 16; the latest visible entry remains September 14 entry 52 scheduling a status conference. The mirror may lag; later orders and appeals still need monitoring.',
+    zh: '核查范围：9·17 复核第 51、52 项及公开案卷，最新可见记录仍为 9·14 第 52 项状态会议通知；法院日历当前只排到 9·24，尚不含 10·02。镜像可能滞后，后续命令与上诉仍需跟踪。',
+    en: 'Review scope: entries 51 and 52 and the public docket were rechecked September 17; the latest visible entry remains September 14 entry 52 scheduling the status conference. The court calendar currently runs only through September 24 and does not yet list October 2. The mirror may lag; later orders and appeals still need monitoring.',
   },
 };
 

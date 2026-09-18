@@ -77,6 +77,7 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
     [
       ['duration-injunction-hearing', '2026-09-03'],
       ['duration-effective-date', '2026-09-15'],
+      ['h1b-fee-old-proclamation-expiry', '2026-09-21'],
       ['h1b-fee-comment-deadline', '2026-09-24'],
     ],
   );

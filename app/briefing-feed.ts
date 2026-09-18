@@ -171,6 +171,16 @@ export const briefingItems: BriefingItem[] = [
     timing: 'upcoming',
     confirmed: true,
   },
+  {
+    id: 'h1b-fee-old-proclamation-expiry',
+    date: '2026-09-21',
+    policyId: 'h1b-fee',
+    rank: 2,
+    policy: 'H-1B $103,265',
+    summary: '公告 10973 的 $100,000 限制按文本到期日；该付款目前不收取，上诉仍在进行。',
+    timing: 'upcoming',
+    confirmed: true,
+  },
 ];
 
 export const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
@@ -194,6 +204,7 @@ export const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summ
   'duration-injunction-hearing': { policy: 'Fixed F/J admission period', summary: 'The court’s official calendar lists a preliminary-injunction hearing. Whether the rule is stayed may become clear before its effective date.' },
   'duration-effective-date': { policy: 'Fixed F/J admission period', summary: 'Unless the court stays it, the rule is scheduled to take effect and F/J/I admissions will no longer use D/S.' },
   'h1b-fee-comment-deadline': { policy: 'H-1B $103,265', summary: 'The NPRM comment period closes. DHS will then review the record and decide whether to revise the proposal.' },
+  'h1b-fee-old-proclamation-expiry': { policy: 'H-1B $103,265', summary: 'Textual expiry date of the $100,000 restriction in Proclamation 10973. That payment is not currently collected and the appeal is still pending.' },
 };
 
 const dayMs = 86_400_000;
