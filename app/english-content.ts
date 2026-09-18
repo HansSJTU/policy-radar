@@ -36,6 +36,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
       'Unified Agenda · PERM reform abstract',
       'Justice Department · OpenAI PERM settlement (August 4, 2026)',
       'Meltzer Hellrung · What to expect from the PERM update (July 16, 2026)',
+      'USCardForum discussion',
     ],
   },
   'opt-fee': {

@@ -597,6 +597,7 @@ export const policies: Array<{
       { label: '统一议程 · PERM 改革摘要', href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29' },
       { label: '司法部 · OpenAI PERM 和解新闻稿（2026-08-04）', href: 'https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers' },
       { label: 'Meltzer Hellrung · PERM 改革预期分析（2026-07-16）', href: 'https://meltzerhellrung.com/dol-is-planning-to-give-perm-its-first-real-update-since-2005-heres-what-employers-should-expect/' },
+      { label: '美卡论坛讨论', href: 'https://www.uscardforum.com/t/topic/517411' },
     ],
   },
 ];
