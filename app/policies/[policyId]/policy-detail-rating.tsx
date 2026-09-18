@@ -1,6 +1,7 @@
 'use client';
 
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useSyncExternalStore } from 'react';
+import { createPortal } from 'react-dom';
 import {
   CommunityImpactRating,
   ratingCopy,
@@ -14,6 +15,8 @@ type RatingProps = {
   language: Language;
   forumLinks?: { label: string; href: string }[];
 };
+
+const emptySubscribe = () => () => {};
 
 /**
  * Determine whether the sidebar is currently hidden (mobile layout).
@@ -33,6 +36,7 @@ export function PolicyDetailStatusScore({
   forumLinks = [],
 }: RatingProps) {
   const ratings = usePolicyRatingContext();
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLElement | null>(null);
   const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -55,8 +59,10 @@ export function PolicyDetailStatusScore({
   // Idempotent, so it is safe to call from more than one close path.
   const releaseModal = useCallback(() => {
     document.body.style.overflow = '';
-    triggerRef.current?.focus();
-    triggerRef.current = null;
+    if (triggerRef.current) {
+      triggerRef.current.focus({ preventScroll: true });
+      triggerRef.current = null;
+    }
   }, []);
 
   // Covers the closes we do not initiate ourselves, notably Escape. Programmatic
@@ -78,7 +84,9 @@ export function PolicyDetailStatusScore({
     triggerRef.current = document.activeElement as HTMLElement;
     const dialog = dialogRef.current;
     if (dialog && !dialog.open) {
+      const scrollY = window.scrollY;
       dialog.showModal();
+      window.scrollTo({ top: scrollY, behavior: 'instant' });
       // Lock body scroll while modal is open
       document.body.style.overflow = 'hidden';
     }
@@ -141,6 +149,41 @@ export function PolicyDetailStatusScore({
   const countDisplay = aggregate ? text.ratingCount(aggregate.count) : '';
   const actionLabel = selected !== null ? text.ratedAction(selected) : text.rateAction;
 
+  const modal = (
+    <dialog
+      ref={dialogRef}
+      className="pd-rating-modal-dialog"
+      aria-label={text.title}
+    >
+      <div className="pd-rating-modal-sheet">
+        <div className="pd-rating-modal-head">
+          <div className="pd-rating-modal-title">
+            <strong>{text.title}</strong>
+            <span>{aggregate ? text.ratingCount(aggregate.count) : text.noRatings}</span>
+          </div>
+          <button
+            type="button"
+            className="pd-rating-modal-close"
+            onClick={closeModal}
+            aria-label={text.modalClose}
+          >
+            ✕
+          </button>
+        </div>
+        <CommunityImpactRating
+          language={language}
+          policyId={policyId}
+          aggregate={aggregate}
+          selected={selected}
+          pending={pending}
+          error={error}
+          onSelect={handleSelect}
+          forumLinks={forumLinks}
+        />
+      </div>
+    </dialog>
+  );
+
   return (
     <div className="pd-status-community-score">
       <dt>
@@ -156,45 +199,22 @@ export function PolicyDetailStatusScore({
         </button>
       </dt>
       <dd className="pd-status-score-value">
-        <strong>{averageDisplay}</strong>
-        <small>
-          / 10 {countDisplay ? `(${countDisplay})` : ''}
-        </small>
+        <button
+          type="button"
+          className="pd-status-score-trigger"
+          onClick={handleActionClick}
+          aria-label={`${text.scoreTitle}: ${averageDisplay} / 10`}
+        >
+          <strong>{averageDisplay}</strong>
+          <small>
+            / 10 {countDisplay ? `(${countDisplay})` : ''}
+          </small>
+        </button>
       </dd>
 
-      {/* Backdrop dismiss is bound as a native listener; see the effect above. */}
-      <dialog
-        ref={dialogRef}
-        className="pd-rating-modal-dialog"
-        aria-label={text.title}
-      >
-        <div className="pd-rating-modal-sheet">
-          <div className="pd-rating-modal-head">
-            <div className="pd-rating-modal-title">
-              <strong>{text.title}</strong>
-              <span>{aggregate ? text.ratingCount(aggregate.count) : text.noRatings}</span>
-            </div>
-            <button
-              type="button"
-              className="pd-rating-modal-close"
-              onClick={closeModal}
-              aria-label={text.modalClose}
-            >
-              ✕
-            </button>
-          </div>
-          <CommunityImpactRating
-            language={language}
-            policyId={policyId}
-            aggregate={aggregate}
-            selected={selected}
-            pending={pending}
-            error={error}
-            onSelect={handleSelect}
-            forumLinks={forumLinks}
-          />
-        </div>
-      </dialog>
+      {mounted && typeof document !== 'undefined'
+        ? createPortal(modal, document.body)
+        : null}
     </div>
   );
 }
