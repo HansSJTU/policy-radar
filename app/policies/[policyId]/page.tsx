@@ -34,6 +34,12 @@ import {
   PolicyProgress,
   PolicyScenarios,
 } from './policy-interactions';
+import { PolicyRatingProvider } from '../../community-impact-rating';
+import {
+  PolicyDetailStatusScore,
+  PolicyDetailSidebarRating,
+} from './policy-detail-rating';
+import { isForumLink } from '../../forum-links';
 import './policy-detail.css';
 
 export const dynamic = 'force-dynamic';
@@ -113,8 +119,11 @@ export default async function PolicyPage({ params, searchParams }: Props) {
     ['sources', english ? 'Sources' : '原始来源'],
   ];
   const sources = record.sources.filter(
-    (source) => !source.href.includes('uscardforum.com'),
+    (source) => !isForumLink(source.href),
   );
+  const forumLinks = record.sources
+    .filter((source) => isForumLink(source.href))
+    .map((source) => ({ label: source.label, href: source.href }));
   const official =
     sources.find((source) => source.href.includes('2026-14439')) ?? sources[0];
   const examples = getPolicyExamples(record.id, language);
@@ -173,43 +182,51 @@ export default async function PolicyPage({ params, searchParams }: Props) {
           <div className="pd-mobile-picker">
             <PolicyPicker id={policyId} language={language} options={options} />
           </div>
-          <div className="pd-layout">
-            <main className="pd-main">
-              <div className="pd-eyebrow">
-                <span>{p.group}</span>POLICY BRIEF
-              </div>
-              <div className="pd-title-row">
-                <h1>
-                  <GlossaryText text={p.title} />
-                </h1>
-                <ShareButton
-                  language={language}
-                  pageTitle={p.title}
-                  pageDescription={p.teaser}
-                  item={getPolicyShareItem(policyId, language)}
-                />
-              </div>
-              <dl
-                className="pd-status"
-                aria-label={
-                  english ? 'Current status and effect' : '当前状态与效力'
-                }
-              >
-                <div>
-                  <dt>{english ? 'Current status' : '当前状态'}</dt>
-                  <dd>{p.status}</dd>
+          <PolicyRatingProvider>
+            <div className="pd-layout">
+              <main className="pd-main">
+                <div className="pd-eyebrow">
+                  <span>{p.group}</span>POLICY BRIEF
                 </div>
-                <div>
-                  <dt>{english ? 'In effect?' : '是否生效'}</dt>
-                  <dd data-effect={p.effectState}>{p.effectLabel}</dd>
+                <div className="pd-title-row">
+                  <h1>
+                    <GlossaryText text={p.title} />
+                  </h1>
+                  <ShareButton
+                    language={language}
+                    pageTitle={p.title}
+                    pageDescription={p.teaser}
+                    item={getPolicyShareItem(policyId, language)}
+                  />
                 </div>
-                <div>
-                  <dt>{english ? 'Last checked' : '最后核对'}</dt>
-                  <dd>
-                    <time dateTime={detail.checkedOn}>{detail.checkedOn}</time> · ET
-                  </dd>
+                <div className="pd-status-shell">
+                <dl
+                  className="pd-status"
+                  aria-label={
+                    english ? 'Current status and effect' : '当前状态与效力'
+                  }
+                >
+                  <div>
+                    <dt>{english ? 'Current status' : '当前状态'}</dt>
+                    <dd>{p.status}</dd>
+                  </div>
+                  <div>
+                    <dt>{english ? 'In effect?' : '是否生效'}</dt>
+                    <dd data-effect={p.effectState}>{p.effectLabel}</dd>
+                  </div>
+                  <PolicyDetailStatusScore
+                    policyId={record.id}
+                    language={language}
+                    forumLinks={forumLinks}
+                  />
+                  <div>
+                    <dt>{english ? 'Last checked' : '最后核对'}</dt>
+                    <dd>
+                      <time dateTime={detail.checkedOn}>{detail.checkedOn}</time> · ET
+                    </dd>
+                  </div>
+                </dl>
                 </div>
-              </dl>
               <p className="pd-deck">
                 <GlossaryText text={p.summary} />
               </p>
@@ -427,7 +444,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <h2>{english ? 'Sources' : '原始来源'}</h2>
                   <span>05 / SOURCES</span>
                 </div>
-                {record.sources.map((source) => (
+                {sources.map((source) => (
                   <div className="pd-source" key={source.href}>
                     <FileText aria-hidden="true" />
                     <div>
@@ -471,6 +488,11 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 language={language}
                 options={options}
               />
+              <PolicyDetailSidebarRating
+                policyId={record.id}
+                language={language}
+                forumLinks={forumLinks}
+              />
               <span className="pd-aside-label">
                 {english ? 'ON THIS PAGE' : '本页内容'}
               </span>
@@ -509,6 +531,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
               </div>
             </aside>
           </div>
+          </PolicyRatingProvider>
           <footer className="pd-footer">
             <div>
               <strong>{english ? 'Stay Path Radar' : '留美路径雷达'}</strong>

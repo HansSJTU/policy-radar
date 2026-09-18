@@ -47,7 +47,7 @@ test('every English policy supplies a translated source label for each source', 
     'grace-period': 5,
     'ead-discretion': 3,
     'h4-ead': 2,
-    'perm-modernization': 4,
+    'perm-modernization': 5,
   };
   for (const [id, count] of Object.entries(sourceCounts)) {
     assert.equal(englishPolicies[id].sourceLabels.length, count, id);

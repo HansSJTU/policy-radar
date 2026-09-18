@@ -24,6 +24,7 @@ import {
   useCommunityImpactRatings,
 } from './community-impact-rating';
 import { shouldTriggerNiulai, type PolicyId } from './community-impact-model';
+import { isForumLink } from './forum-links';
 import { NiulaiEffect } from './niulai-effect';
 import { CptSchoolTracker } from './cpt-school-tracker';
 import { PolicyCard } from './policy-card';
@@ -301,7 +302,7 @@ export default function Home({ initialLanguage, initialPath = 'all' }: { initial
                 <CommunityImpactRating
                   language={language}
                   policyId={policy.id}
-                  forumLinks={policy.sources.filter((source) => new URL(source.href).hostname === 'www.uscardforum.com')}
+                  forumLinks={policy.sources.filter((source) => isForumLink(source.href))}
                   aggregate={communityImpact.aggregates[policy.id]}
                   selected={communityImpact.selections[policy.id] ?? null}
                   pending={communityImpact.pending[policy.id] ?? false}

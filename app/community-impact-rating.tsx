@@ -1,6 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+  type ReactNode,
+} from 'react';
 
 import {
   buildCommunityRatingChoices,
@@ -30,6 +37,9 @@ const copy = {
     scaleHint: '1 = 几乎无影响 · 10 = 路径被切断',
     myRating: (rating: number) => `我的评分 ${rating}`,
     buttonLabel: (rating: number) => `给这项政策打 ${rating} 分`,
+    rateAction: '参与打分 ↗',
+    ratedAction: (rating: number) => `已评 ${rating}分 ✎`,
+    modalClose: '关闭',
     unavailable: '均分暂时无法更新，你的选择已保留。',
     descriptions: [
       '对我的路径几乎没有负面影响',
@@ -53,6 +63,9 @@ const copy = {
     scaleHint: '1 = Minimal impact · 10 = Path cut off',
     myRating: (rating: number) => `My rating ${rating}`,
     buttonLabel: (rating: number) => `Rate this policy ${rating} out of 10`,
+    rateAction: 'Rate ↗',
+    ratedAction: (rating: number) => `Rated ${rating} ✎`,
+    modalClose: 'Close',
     unavailable: 'The average cannot update right now. Your choice is saved.',
     descriptions: [
       'Almost no negative impact on my path',
@@ -68,6 +81,8 @@ const copy = {
     ],
   },
 } as const;
+
+export { copy as ratingCopy };
 
 function readSelections() {
   try {
@@ -193,6 +208,22 @@ export function useCommunityImpactRatings() {
     loadFailed,
     submitRating,
   };
+}
+
+type PolicyRatingContextType = ReturnType<typeof useCommunityImpactRatings>;
+const PolicyRatingContext = createContext<PolicyRatingContextType | null>(null);
+
+export function PolicyRatingProvider({ children }: { children: ReactNode }) {
+  const ratings = useCommunityImpactRatings();
+  return (
+    <PolicyRatingContext.Provider value={ratings}>
+      {children}
+    </PolicyRatingContext.Provider>
+  );
+}
+
+export function usePolicyRatingContext() {
+  return useContext(PolicyRatingContext);
 }
 
 export function CommunityImpactRating({
