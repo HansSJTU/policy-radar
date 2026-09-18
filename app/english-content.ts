@@ -67,8 +67,8 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     current: 'DHS published RIN 1615-AD20 on August 25, 2026. The proposal would add $103,265 to the existing filing fees for each cap-subject H-1B petition. Cap-exempt petitions would not pay this surcharge. The September 10 correction replaces historical receipt figures in Table 13; it does not change the proposed amount, scope, or September 24 comment deadline.',
     route: ['OPT → H-1B', 'H-1B selection'],
     milestones: [
-      { date: '2026-09-10', text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.' },
       { date: '2026-08-25', text: 'DHS published the $103,265 fee NPRM.' },
+      { date: '2026-09-10', text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.' },
     ],
     next: [
       { date: '2026-09-24', text: 'The public comment period closes, providing the clearest current opportunity to participate.' },
@@ -180,7 +180,6 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     current: 'On August 12, ICE/SEVP already instructed DSOs to authorize CPT only when the degree could not be completed without it and the training was required for every student pursuing that degree, alongside compliance duties. The August 24 Q&A further explained that optional internship courses do not qualify, all students includes Americans, and sponsoring employers need cooperative agreements with schools.',
     route: ['CPT', 'Day-1 CPT', 'Internships'],
     milestones: [
-      {"date": "2026-09-15", "text": "Bryn Mawr announced a pause on new optional CPT; this is a university implementation notice, not a new federal rule."},
       { date: '2026-08-12', text: 'SEVP Broadcast 2608-01 already required training indispensable to the degree and required for every student, and emphasized DSO and school duties.' },
       { date: 'After 2026-08-12', text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.' },
       { date: '2026-08-24', text: 'Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements.' },

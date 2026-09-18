@@ -86,11 +86,11 @@ export const policies: Array<{
       'DHS 在 2026-08-25 正式发布 RIN 1615-AD20，拟在现有费用之外，对每份 cap-subject H-1B petition 加收 $103,265。Cap-exempt 申请不在范围内。9·10 的更正只替换了 Table 13 的历史申请数量表，拟议金额、适用范围和 9·24 评论截止日都没变。',
     route: ['OPT → H-1B', 'H-1B 抽签'],
     milestones: [
-      { date: '2026-09-10', text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。' },
       {
         date: '2026-08-25',
         text: '新的 $103,265 收费 NPRM 发布。',
       },
+      { date: '2026-09-10', text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。' },
     ],
     next: [
       { date: '2026-09-24', text: '公众评论截止；这是当前最明确的参与节点。' },
@@ -281,7 +281,6 @@ export const policies: Array<{
       'ICE/SEVP 在 8·12 要求 DSO 只批准完成学位不可缺少、且对该学位所有学生均为必需的 CPT，并强调学校和 DSO 的合规责任。8·24 的问答进一步说明，只有选修实习课不符合标准，“全员”也包括美国学生。问答还重申，雇主与学校要有 cooperative agreement（合作协议）。',
     route: ['CPT', 'Day-1 CPT', '实习'],
     milestones: [
-      {"date": "2026-09-15", "text": "Bryn Mawr 校方宣布暂停新的非全员必需 CPT；这是学校执行通知，不是新的联邦规则。"},
       {
         date: '2026-08-12',
         text: 'SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。',
