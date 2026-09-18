@@ -68,8 +68,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     route: ['OPT → H-1B', 'H-1B selection'],
     milestones: [
       { date: '2026-09-10', text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.' },
-      { date: '2026-06-08', text: 'A federal district court vacated implementation of the earlier presidential proclamation imposing a $100,000 fee; the government is appealing.' },
-      { date: '2026-08-25', text: 'DHS published a new $103,265 fee NPRM under a different legal authority.' },
+      { date: '2026-08-25', text: 'DHS published the $103,265 fee NPRM.' },
     ],
     next: [
       { date: '2026-09-24', text: 'The public comment period closes, providing the clearest current opportunity to participate.' },

@@ -88,12 +88,8 @@ export const policies: Array<{
     milestones: [
       { date: '2026-09-10', text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。' },
       {
-        date: '2026-06-08',
-        text: '旧总统公告的 $100k 实施被联邦地区法院撤销，政府正在上诉。',
-      },
-      {
         date: '2026-08-25',
-        text: '新的 $103,265 收费 NPRM 发布，使用不同法律路径。',
+        text: '新的 $103,265 收费 NPRM 发布。',
       },
     ],
     next: [
