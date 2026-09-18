@@ -350,7 +350,7 @@ main { width: 100%; min-width: 0; }
 .community-forum-links a { color: var(--blue); font-size: .8125rem; text-underline-offset: 3px; }
 
 .process-mobile-head { display: none; }
-.process-row { margin: 0 0 0 96px; padding: 24px 0 50px; border-bottom: 1px solid #e5eaf2; }
+.process-row { margin: 0 0 0 96px; padding: 24px 0 62px; border-bottom: 1px solid #e5eaf2; }
 .process-steps { position: relative; width: 100%; display: flex; align-items: center; gap: 0; padding-right: 45px; }
 .process-steps > i { position: relative; flex: 1; height: 4px; border-radius: 0; background: #e0e7f0; font-style: normal; }
 .process-steps > i:first-child { border-radius: 999px 0 0 999px; }
@@ -364,7 +364,7 @@ main { width: 100%; min-width: 0; }
 .process-steps.federal-rulemaking > i.current > b { background: var(--blue); box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px rgba(49,95,146,.1); }
 .process-steps.administrative-guidance > i.complete > b { background: #d2a35b; box-shadow: 0 0 0 1px #d2a35b; }
 .process-steps.administrative-guidance > i.current > b { background: #a96e18; box-shadow: 0 0 0 1px #a96e18, 0 0 0 5px rgba(169,110,24,.1); }
-.process-steps > i > em { position: absolute; right: 2px; top: 13px; width: 90px; color: #65758e; font-size: .75rem; font-style: normal; line-height: 1.4; text-align: center; white-space: normal; transform: translateX(50%); }
+.process-steps > i > em { position: absolute; right: 2px; top: 13px; width: 112px; color: #65758e; font-size: .75rem; font-style: normal; line-height: 1.4; text-align: center; white-space: normal; transform: translateX(50%); }
 .process-steps.federal-rulemaking > i.complete > em { color: #667d98; }
 .process-steps.federal-rulemaking > i.current > em { color: var(--blue); font-weight: 800; }
 .process-steps.administrative-guidance > i.complete > em { color: #9a753e; }
@@ -775,12 +775,12 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .process-block { position: relative; margin-top: 20px; border-bottom: 1px solid #e5eaf2; }
   .process-block::after { position: absolute; z-index: 8; top: 36px; right: 0; bottom: 14px; width: 28px; content: ''; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255,255,255,.96)); }
   .process-mobile-head { min-height: 42px; display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--muted); }
-  .process-mobile-head span { color: var(--ink-soft); font-size: .8125rem; font-weight: 780; }
-  .process-mobile-head small { color: var(--blue); font-size: .75rem; font-weight: 700; }
+  .process-mobile-head span { color: var(--ink-soft); font-size: .8125rem; font-weight: 780; white-space: nowrap; flex-shrink: 0; }
+  .process-mobile-head small { color: var(--blue); font-size: .75rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; }
   .process-row {
     margin: 0;
     padding-top: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 58px;
     overflow-x: auto;
     border: 0;
     overscroll-behavior-x: contain;
@@ -790,7 +790,7 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .process-row::-webkit-scrollbar { display: none; }
   .process-steps { min-width: 760px; padding-right: 76px; padding-left: 20px; }
   .process-steps > i { scroll-snap-align: start; }
-  .process-steps > i > em { top: 16px; width: 108px; font-size: .75rem; line-height: 1.4; }
+  .process-steps > i > em { top: 16px; width: 112px; font-size: .75rem; line-height: 1.4; }
   .litigation-track { margin: 8px 0 0; padding: 0; }
   .litigation-heading { margin-bottom: 12px; }
   .litigation-events { display: grid; grid-template-columns: 1fr; padding: 0; }

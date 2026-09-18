@@ -25,7 +25,7 @@ export const homeCopy = {
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
     ranking: 'Highest-impact barriers', rankingHint: 'Colors identify path categories · Sorted by path impact, highest first', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
     viewProcess: (name: string) => `Explain ${name}`, policySpecific: 'This policy: ', complete: 'Completed', currentStage: 'Current stage', upcomingStage: 'Not reached',
-    impact: 'Path impact', processProgress: 'Rulemaking progress', swipe: 'Swipe to see the full process →', currentProcess: 'Current process: ', litigation: 'Court proceedings',
+    impact: 'Path impact', processProgress: 'Rulemaking progress', swipe: 'Swipe for full process →', currentProcess: 'Current process: ', litigation: 'Court proceedings',
     past: 'Past', now: 'Now', expected: 'Expected',
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
