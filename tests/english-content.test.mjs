@@ -38,7 +38,7 @@ test('the English policy and school datasets contain no Chinese copy', () => {
 test('every English policy supplies a translated source label for each source', () => {
   const sourceCounts = {
     'opt-fee': 3,
-    'h1b-fee': 5,
+    'h1b-fee': 3,
     'h1b-weighted-selection': 2,
     'duration-status': 11,
     'cpt-guidance': 4,

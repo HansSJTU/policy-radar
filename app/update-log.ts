@@ -64,19 +64,6 @@ const chineseUpdates: ContentUpdate[] = [
         { label: 'UT Dallas ISSO · 9·17 CPT 政策通知', href: 'https://isso.utdallas.edu/2026/09/17/update-on-cpt-policy-sevp-broadcast/' },
         { label: 'UC Irvine International Center · CPT 页面', href: 'https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/' },
       ],
-    }, {
-      id: 'h1b-fee-old-proclamation-status',
-      category: '规则制定',
-      title: '#02 补充旧 $100,000 公告收费的诉讼与到期状态',
-      summary: '麻省联邦地区法院在 6·08 撤销旧总统公告的实施，第一巡回上诉法院在 7·24 驳回政府的中止请求。USCIS 目前不收取这笔付款；公告文本写明该限制在 9·21 到期。',
-      before: '旧公告收费只有一条 6·08 里程碑：“被联邦地区法院撤销，政府正在上诉”。页面没有说明当前是否收取，也没有到期日。',
-      after: '里程碑补齐 2025-09-19 签署、6·08 撤销、7·24 第一巡回法院驳回中止请求。当前状态写明 USCIS 目前不要求缴纳；新增 9·21 到期日与上诉未结的说明。',
-      details: ['新增的两条来源是公告 10973 正文与 USCIS 官方公告页，后者载明第一巡回法院 7·24 的裁定与 DHS 的立场。本项与 #02 的 $103,265 新提案是两条不同的法律路径，分别核对。'],
-      sources: [
-        { label: '总统公告 10973（2025-09-24 刊登）', href: 'https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers' },
-        { label: 'USCIS 公告 · $100k 撤销与第一巡回法院 7·24 裁定', href: 'https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers' },
-        { label: 'Federal Register NPRM · RIN 1615-AD20', href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions' },
-      ],
     }],
   },
 {
@@ -871,19 +858,6 @@ const englishUpdates: ContentUpdate[] = [
       sources: [
         { label: 'UT Dallas ISSO · September 17 CPT policy notice', href: 'https://isso.utdallas.edu/2026/09/17/update-on-cpt-policy-sevp-broadcast/' },
         { label: 'UC Irvine International Center · CPT page', href: 'https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/' },
-      ],
-    }, {
-      id: 'h1b-fee-old-proclamation-status',
-      category: 'Rulemaking',
-      title: 'Entry #02 adds the older $100,000 proclamation fee’s litigation and expiry status',
-      summary: 'The District of Massachusetts vacated implementation of the earlier proclamation on June 8, and the First Circuit denied the government’s stay request on July 24. USCIS is not currently collecting the payment, and the proclamation text expires the restriction on September 21.',
-      before: 'The older proclamation fee had a single June 8 milestone: implementation vacated by a federal district court and the government appealing. The page did not say whether the payment was currently collected and gave no expiry date.',
-      after: 'Milestones now cover the September 19, 2025 signature, the June 8 vacatur, and the July 24 First Circuit denial. The current status states that USCIS is not currently requiring the payment, and adds the September 21 textual expiry date with a note that the appeal remains pending.',
-      details: ['The two added sources are the text of Proclamation 10973 and the USCIS alert page recording the First Circuit’s July 24 order and DHS’s position. This is tracked separately from entry #02’s proposed $103,265 surcharge, which follows a different legal path.'],
-      sources: [
-        { label: 'Presidential Proclamation 10973 (published September 24, 2025)', href: 'https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers' },
-        { label: 'USCIS alert · $100,000 vacatur and the First Circuit’s July 24 order', href: 'https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers' },
-        { label: 'Federal Register NPRM · RIN 1615-AD20', href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions' },
       ],
     }],
   },
