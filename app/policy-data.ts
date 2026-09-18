@@ -83,21 +83,13 @@ export const policies: Array<{
     status: '正式 NPRM · 尚未生效',
     tone: 'amber',
     current:
-      'DHS 在 2026-08-25 正式发布 RIN 1615-AD20，拟在现有费用之外，对每份 cap-subject H-1B petition 加收 $103,265。Cap-exempt 申请不在范围内。9·10 的更正只替换了 Table 13 的历史申请数量表，拟议金额、适用范围和 9·24 评论截止日都没变。另有一条更早的收费：2025-09-19 总统公告 10973 的 $100,000 付款要求。麻省联邦地区法院已在 2026-06-08 撤销其实施，第一巡回上诉法院在 7·24 驳回政府的中止请求。USCIS 目前不要求缴纳这笔付款；上诉仍在进行。公告写明该限制在无延期时于 9·21 到期。',
+      'DHS 在 2026-08-25 正式发布 RIN 1615-AD20，拟在现有费用之外，对每份 cap-subject H-1B petition 加收 $103,265。Cap-exempt 申请不在范围内。9·10 的更正只替换了 Table 13 的历史申请数量表，拟议金额、适用范围和 9·24 评论截止日都没变。',
     route: ['OPT → H-1B', 'H-1B 抽签'],
     milestones: [
       { date: '2026-09-10', text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。' },
       {
-        date: '2025-09-19',
-        text: '总统公告 10973 签署，对部分 H-1B 入境要求 $100,000 付款，2025-09-21 起适用。',
-      },
-      {
         date: '2026-06-08',
-        text: '麻省联邦地区法院在 State of California v. Mullin 中撤销旧总统公告的实施；政府提起上诉。',
-      },
-      {
-        date: '2026-07-24',
-        text: '第一巡回上诉法院驳回政府的中止请求；撤销继续有效，上诉未结。',
+        text: '旧总统公告的 $100k 实施被联邦地区法院撤销，政府正在上诉。',
       },
       {
         date: '2026-08-25',
@@ -106,10 +98,6 @@ export const policies: Array<{
     ],
     next: [
       { date: '2026-09-24', text: '公众评论截止；这是当前最明确的参与节点。' },
-      {
-        date: '2026-09-21',
-        text: '公告 10973 的 $100,000 限制按文本到期日；是否延期、上诉如何裁决都还没有公开结论。',
-      },
       {
         date: '2026 年末—2027+',
         text: 'DHS 可能发布最终规则，之后仍可能遭遇诉讼。',
@@ -120,21 +108,12 @@ export const policies: Array<{
       '将大幅降低雇主为应届 F-1/OPT 员工参加 H-1B 抽签的意愿。',
       '费用不是只针对境外入境；提案按 cap-subject petition 划分。',
       '高校、研究机构等 cap-exempt 雇主不受这笔附加费约束，但其他规则仍适用。',
-      '旧的 $100,000 公告付款目前不收取。若上诉结果改变，缴费要求可能恢复。',
     ],
     sources: [
       { label: 'Federal Register 9·10 更正', href: 'https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf' },
       {
         label: 'Federal Register NPRM',
         href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions',
-      },
-      {
-        label: '总统公告 10973（2025-09-24 刊登）',
-        href: 'https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers',
-      },
-      {
-        label: 'USCIS 公告：$100k 撤销与第一巡回法院 7·24 裁定',
-        href: 'https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers',
       },
       {
         label: '美卡论坛讨论',
