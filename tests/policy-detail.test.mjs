@@ -158,16 +158,43 @@ test('emphasis markers in detail copy are balanced and never render literally', 
     }
   }
 
-  const { keyPoint, impacts } = getPolicyDetail('h1b-program-integrity', 'zh').editorial;
+  const { analysis, keyPoint, impacts } = getPolicyDetail('h1b-program-integrity', 'zh').editorial;
   assert.ok(keyPoint?.label && keyPoint.text);
   assert.match(keyPoint.text, /\*\*签证和入境审查\*\*/);
-  // The visa and entry emphasis lives in the callout only; the scope impact
-  // states the three conditions without repeating the stage comparison.
-  assert.doesNotMatch(impacts[0][1], /\*\*/);
+  assert.match(impacts[0][1], /\*\*这三个条件只决定是否进入审查范围，不决定结果\*\*/);
+  assert.match(analysis, /\*\*把裁员写进审查清单，不是给出处理结果\*\*/);
+  // Emphasis on this page stays restrained: one short phrase per section, and
+  // nothing else marked.
+  const count = (text) => (text.match(/\*\*/g) ?? []).length / 2;
+  assert.equal(count(analysis), 1);
+  assert.equal(count(keyPoint.text), 1);
+  assert.equal(count(impacts[0][1]), 1);
+  assert.equal(count(impacts.flat().join(' ')), 1);
 
   const english = getPolicyDetail('h1b-program-integrity', 'en').editorial;
-  assert.doesNotMatch(english.impacts[0][1], /\*\*/);
   assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
+  assert.match(english.analysis, /\*\*a factor on the review checklist, not an outcome\*\*/);
+  assert.match(
+    english.impacts[0][1],
+    /\*\*These conditions decide only whether a case falls inside the review scope, not the outcome\*\*/,
+  );
+  assert.equal(count(english.analysis), 1);
+  assert.equal(count(english.impacts.flat().join(' ')), 1);
+});
+
+test('emphasis stays restrained on every detail in both languages', async () => {
+  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  for (const id of POLICY_IDS) {
+    for (const language of ['zh', 'en']) {
+      const { editorial } = getPolicyDetail(id, language);
+      const fields = [editorial.analysis, editorial.keyPoint?.text, ...editorial.impacts.flat()];
+      const marks = fields.reduce(
+        (total, field) => total + (field?.match(/\*\*/g) ?? []).length / 2,
+        0,
+      );
+      assert.ok(marks <= 4, `${id} (${language}) marks ${marks} phrases`);
+    }
+  }
 });
 
 test('every detail has an explicit effect, audience, caveat and distinct background in both languages', async () => {
