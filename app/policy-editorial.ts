@@ -16,7 +16,7 @@ export type PolicyEditorial = {
   agency: string;
   rin: string;
   status: string;
-  effectState: 'not-in-effect' | 'in-effect' | 'guidance-in-use';
+  effectState: 'not-in-effect' | 'in-effect' | 'guidance-in-use' | 'executive-order-issued';
   effectLabel: string;
   audience: string;
   caveat: string;

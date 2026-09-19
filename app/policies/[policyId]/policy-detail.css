@@ -221,6 +221,7 @@
   color: #764707;
 }
 .pd-status [data-effect='in-effect'],
+.pd-status [data-effect='executive-order-issued'],
 .pd-status [data-effect='guidance-in-use'] {
   color: #1f5a42;
 }

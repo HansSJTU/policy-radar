@@ -22,6 +22,30 @@ export type ContentUpdate = {
 };
 
 const chineseUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-19",
+  "changes": [
+    {
+      "id": "h1b-program-integrity-added",
+      "category": "行政命令",
+      "title": "新增 #12 H-1B 裁员审查与跨部门协作行政命令",
+      "summary": "总统于 9·18 签署行政命令，要求跨部门 H-1B 审查考虑相关裁员，并在 30 天内开始复查既往 LCA 数据。",
+      "before": "网站收录 11 项政策，尚未单独收录 2026-09-18 H-1B 项目合规行政命令。",
+      "after": "新增 #12 h1b-program-integrity，共 12 项政策。标注行政命令已签署、部门落实待跟踪；它本身没有 NPRM 或公众评论阶段。",
+      "details": [
+        "命令要求考虑过去一年及计划中的、对同类美国工人就业产生负面影响的相关裁员，条件限定在提交申请的雇主、同类被裁岗位和时间三项，没有规定裁员即自动拒签。",
+        "按签署日加 30 个日历天计算，10·18 是 DOL 最迟开始复查既往 LCA 数据的期限，不是完成期限或另行宣布的生效日。",
+        "#02 的 $103,265 收费提案是 DHS 的另一份文件，与本命令分开跟踪。"
+      ],
+      "sources": [
+        {
+          "label": "白宫 · 9·18 行政命令全文",
+          "href": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
+        }
+      ]
+    }
+  ]
+},
   {
     date: '2026-09-17',
     changes: [{
@@ -817,6 +841,30 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-19",
+  "changes": [
+    {
+      "id": "h1b-program-integrity-added",
+      "category": "Executive order",
+      "title": "Added #12 H-1B layoff-review and interagency-coordination executive order",
+      "summary": "The President signed the order September 18, directing coordinated H-1B review that considers relevant layoffs and the start of a prior-LCA data review within 30 days.",
+      "before": "The site contained 11 policies and did not separately track the September 18, 2026 H-1B program-integrity executive order.",
+      "after": "Added #12 h1b-program-integrity, bringing the site to 12 policies. The order is signed, with agency implementation to be tracked; the order itself has no NPRM or public-comment stage.",
+      "details": [
+        "The order requires consideration of relevant past-year or planned layoffs negatively affecting similarly situated U.S. workers, limited by three conditions — the employer filing the case, comparable roles cut and timing; it does not mandate automatic visa denial after layoffs.",
+        "October 18, calculated as 30 calendar days after signature, is the deadline for DOL to begin reviewing prior LCA data, not to finish or a separately announced effective date.",
+        "The #02 $103,265 surcharge is a separate DHS document, tracked apart from this order."
+      ],
+      "sources": [
+        {
+          "label": "White House · September 18 executive order",
+          "href": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
+        }
+      ]
+    }
+  ]
+},
   {
     date: '2026-09-17',
     changes: [{

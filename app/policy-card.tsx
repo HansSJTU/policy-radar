@@ -110,7 +110,7 @@ export function PolicyCard({
 
       <div className="process-block">
         <div className="process-mobile-head" aria-hidden="true">
-          <span>{ui.processProgress}</span>
+          <span>{process.kind === 'executive-order' ? (language === 'en' ? 'Executive order progress' : '行政命令进度') : ui.processProgress}</span>
           <small>{ui.swipe}</small>
         </div>
         <div className="process-row" ref={centerCurrentProcessStage}>

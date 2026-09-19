@@ -144,6 +144,25 @@ const guidanceDescriptions = {
   ],
 };
 
+const executiveOrderDescriptions = {
+  zh: [
+    '总统签署行政命令，向部门作出指令；这一步没有 NPRM 或公众评论期。',
+    '国务院、劳工部与 DHS 在法律权限内落实跨部门协作和裁员审查要求；命令要求劳工部在 30 天内开始复查既往 LCA 数据，具体执行文件仍需跟踪。',
+    '核对部门发布的执行文件、实际审查与执法情况，以及是否出现后续规则或法院命令。',
+  ],
+  en: [
+    'The President signs an order directing agencies; this step has no NPRM or public-comment period.',
+    'State, DOL and DHS implement coordination and layoff-review directives within their legal authority. DOL must begin reviewing prior LCA data within 30 days; specific implementation documents still need tracking.',
+    'Check agency implementation documents, actual review and enforcement practices, and any later regulations or court orders.',
+  ],
+};
+
+const processDescriptions = {
+  'federal-rulemaking': federalDescriptions,
+  'administrative-guidance': guidanceDescriptions,
+  'executive-order': executiveOrderDescriptions,
+};
+
 export function PolicyProgress({
   track,
   language,
@@ -155,11 +174,7 @@ export function PolicyProgress({
     track.activeStage ?? track.lastCompletedStage ?? 0,
   );
   const english = language === 'en';
-  const descriptions = (
-    track.kind === 'federal-rulemaking'
-      ? federalDescriptions
-      : guidanceDescriptions
-  )[language];
+  const descriptions = processDescriptions[track.kind][language];
   return (
     <>
       <p className="pd-current">

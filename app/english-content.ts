@@ -11,6 +11,42 @@ export type EnglishPolicy = {
 };
 
 export const englishPolicies: Record<string, EnglishPolicy> = {
+  'h1b-program-integrity': {
+  "title": "H-1B Executive Order: Layoff Review and Interagency Coordination",
+  "tldr": "The President directs State, DOL and DHS to coordinate H-1B review and, in covered cases, to consider sponsor layoffs within the previous year or planned for the future. Scope is set by three conditions: the employer filing the case, comparable laid-off roles, and timing. DOL must begin reviewing prior LCA data within 30 days. The order does not state how layoffs map to an approval or denial outcome.",
+  "status": "Executive order signed · Tracking implementation",
+  "current": "On September 18, 2026, the President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program. Section 2 directs State, DOL and DHS to consult Commerce, Education and the SBA, using wage, employment, academic, industrial and other information to check statutory compliance. Section 3(a) requires consideration, in LCA, petition, visa and entry decisions involving H-1B workers entering or attempting to enter the United States for specialty-occupation work, of direct or indirect sponsor layoffs within the previous year or planned future layoffs that negatively affect similarly situated U.S. workers. Section 3(b) directs DOL’s Wage and Hour Division to begin reviewing previously submitted LCA data within 30 days to determine whether further action is warranted under existing law. The order is signed; implementation documents, review standards and application to domestic cases remain to be tracked. It does not establish automatic denial or a blanket suspension.",
+  "route": [
+    "H-1B",
+    "LCA",
+    "Visa and entry"
+  ],
+  "milestones": [
+    {
+      "date": "2026-09-18",
+      "text": "The President signed the order directing interagency coordination, consideration of relevant layoffs and review of prior LCA data."
+    }
+  ],
+  "next": [
+    {
+      "date": "2026-10-18",
+      "text": "Calculated as 30 calendar days after signature, this is the deadline for DOL to begin reviewing prior LCA data, not to finish the review or a common effective date."
+    },
+    {
+      "date": "Date unknown",
+      "text": "Watch State, DHS and DOL implementation documents and actual review practices. Any later regulatory amendments will be tracked under the applicable rulemaking process."
+    }
+  ],
+  "impacts": [
+    "“Relevant layoffs” turns on three conditions: the employer filing the case, laid-off roles comparable to the offered job, and layoffs within the previous year or already planned. Those conditions decide whether a case falls inside the review scope, not how it is decided.",
+    "Sharing wage, employment and academic information may add work for employers explaining jobs, qualifications and staffing; additional documentation and processing time are not yet established.",
+    "Previously submitted LCA data will be reviewed to assess further enforcement; review does not automatically invalidate every prior LCA or approved H-1B petition."
+  ],
+  "sourceLabels": [
+    "White House · September 18 executive order, sections 2–4",
+    "USCardForum · Layoffs, visa stamping and entry discussion"
+  ]
+},
   'perm-modernization': {
     title: 'PERM Labor Certification Reform',
     tldr: 'DOL plans to rewrite PERM recruitment so its channels track real hiring, raise the bar for showing no qualified U.S. worker was available, and strengthen protections for laid-off U.S. workers. The proposed rule went to White House OIRA review on September 14 and is not in effect.',
@@ -383,5 +419,6 @@ export const englishRouteStages: Record<string, { subtitle: string; policies: Re
     'grace-period': { title: 'End of 60-day grace period', state: 'NPRM published; comments open; not in effect' },
     'h4-ead': { title: 'H-4 EAD', state: 'Long-term agenda' },
     'perm-modernization': { title: 'PERM labor certification reform', state: 'Under OIRA review' },
+    'h1b-program-integrity': { title: 'H-1B layoff-review executive order', state: 'Signed · Tracking implementation' },
   } },
 };

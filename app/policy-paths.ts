@@ -50,6 +50,7 @@ export const routeStages: RouteStage[] = [
       { rank: '08', id: 'grace-period', title: '取消 60 天宽限期', state: '提案已发布，评论期内，未生效' },
       { rank: '10', id: 'h4-ead', title: 'H-4 EAD', state: '长期议程' },
       { rank: '11', id: 'perm-modernization', title: 'PERM 劳工认证改革', state: 'OIRA 审查中' },
+      { rank: '12', id: 'h1b-program-integrity', title: 'H-1B 裁员审查行政命令', state: '已签署 · 跟踪部门落实' },
     ],
   },
 ];

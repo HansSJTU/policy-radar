@@ -120,6 +120,8 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
           ? 'in-effect'
           : id === 'cpt-guidance'
             ? 'guidance-in-use'
+            : id === 'h1b-program-integrity'
+              ? 'executive-order-issued'
             : 'not-in-effect';
       assert.equal(editorial.effectState, expected);
     }
@@ -367,4 +369,3 @@ test('the status row collapses to one column on narrow screens and four on wide 
     'stacking must use grid-template-columns, not flex-direction',
   );
 });
-

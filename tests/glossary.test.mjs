@@ -77,6 +77,16 @@ test('annotates the agencies and filings used by the prevailing-wage policy', ()
   assert.deepEqual(terms, ['DOL', 'OEWS', 'LCA', 'PERM']);
 });
 
+test('annotates the layoff-comparison term used by the H-1B order and PERM', () => {
+  const terms = annotateGlossary(
+    '命令要求考虑同类美国工人受到的负面影响；英文原文是 similarly situated U.S. workers。',
+  )
+    .filter((segment) => segment.type === 'term')
+    .map((segment) => segment.value);
+
+  assert.deepEqual(terms, ['同类美国工人', 'similarly situated U.S. workers']);
+});
+
 test('annotates the approved CPT, status, and litigation terms', () => {
   const terms = annotateGlossary(
     'Course Credit CPT、Degree Requirement CPT、Thesis/Dissertation Requirement CPT、Advanced to Candidacy、CPT I-20、SEVIS、D/S、EAD、RIN、初步禁令、prevailing wage',

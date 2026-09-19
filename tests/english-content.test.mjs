@@ -21,7 +21,7 @@ function collectStrings(value) {
 }
 
 test('the English policy and school datasets contain no Chinese copy', () => {
-  assert.equal(Object.keys(englishPolicies).length, 11);
+  assert.equal(Object.keys(englishPolicies).length, 12);
   assert.equal(Object.keys(englishVerifiedSchools).length, 40);
   assert.equal(Object.keys(englishCommunitySchools).length, 5);
   assert.equal(Object.keys(englishRouteStages).length, 4);
@@ -48,6 +48,7 @@ test('every English policy supplies a translated source label for each source', 
     'ead-discretion': 3,
     'h4-ead': 2,
     'perm-modernization': 5,
+    'h1b-program-integrity': 2,
   };
   for (const [id, count] of Object.entries(sourceCounts)) {
     assert.equal(englishPolicies[id].sourceLabels.length, count, id);

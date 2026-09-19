@@ -12,6 +12,7 @@ export const POLICY_IDS = [
   'ead-discretion',
   'h4-ead',
   'perm-modernization',
+  'h1b-program-integrity',
 ] as const;
 
 export type PolicyId = (typeof POLICY_IDS)[number];

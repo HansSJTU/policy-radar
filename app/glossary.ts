@@ -236,6 +236,14 @@ export const glossaryEntries: GlossaryEntry[] = [
     explanationEn: 'The program within ICE that oversees F/M students, SEVIS, school certification, and compliance.',
   },
   {
+    term: '同类美国工人',
+    aliases: ['同类岗位', 'similarly situated U.S. workers'],
+    fullName: 'Similarly situated U.S. workers（同类美国工人）',
+    explanation: '指与拟聘岗位在工作职责、任职资格和地区上可比的美国员工，不是泛指公司裁掉的任何人。裁员审查和 PERM 的裁员保护都按这个口径比较岗位。',
+    fullNameEn: 'Similarly situated U.S. workers',
+    explanationEn: 'U.S. workers whose jobs are comparable to the offered position in duties, qualifications, and location, rather than anyone the company has laid off. Layoff review and PERM layoff protection compare jobs on this basis.',
+  },
+  {
     term: 'ICE',
     fullName: 'U.S. Immigration and Customs Enforcement（美国移民与海关执法局）',
     explanation: 'DHS 下属机构；其 SEVP 负责国际学生与学校监管。',

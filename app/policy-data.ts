@@ -68,7 +68,7 @@ export const policies: Array<{
       },
       {
         label: '美卡论坛讨论',
-        href: 'https://www.uscardforum.com/t/topic/521723',
+        href: 'https://www.uscardforum.com/t/topic/531864',
       },
     ],
   },
@@ -600,6 +600,51 @@ export const policies: Array<{
       { label: '美卡论坛讨论', href: 'https://www.uscardforum.com/t/topic/517411' },
     ],
   },
+{
+  "rank": 12,
+  "id": "h1b-program-integrity",
+  "title": "H-1B 行政命令：加强裁员审查与跨部门协作",
+  "tldr": "总统要求国务院、劳工部和 DHS 加强 H-1B 跨部门审查，在相关审查中考虑担保雇主过去一年及计划中的裁员：范围按“提交申请的雇主、同类被裁岗位、过去一年或已列入计划”三个条件限定，重点是进入或试图进入美国的案件。劳工部须在 30 天内开始复查既往 LCA 数据。命令没有写裁员与审批结果之间的对应关系。",
+  "status": "行政命令已签署 · 跟踪部门落实",
+  "tone": "amber",
+  "current": "总统于 2026-09-18 签署 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program。第 2 节要求国务院、劳工部和 DHS 与商务部、教育部及 SBA 协作，利用工资、就业、学历、产业等信息核查法定要求。第 3(a) 节要求在涉及进入或试图进入美国从事 specialty occupation 工作的 H-1B 人员的 LCA、petition、visa 和 entry 审查中，考虑担保雇主过去一年直接或间接进行、或未来计划进行的、对同类美国工人就业产生负面影响的裁员。第 3(b) 节要求劳工部工资工时司在签署后 30 天内开始复查既往 LCA 数据，以判断是否需要依法进一步采取行动。命令已签署；具体执行文件、审查标准及境内案件如何适用仍需跟踪，不能推断为自动拒签或统一暂停。",
+  "route": [
+    "H-1B",
+    "LCA",
+    "签证与入境"
+  ],
+  "milestones": [
+    {
+      "date": "2026-09-18",
+      "text": "总统签署行政命令，要求跨部门协作、考虑相关裁员并启动既往 LCA 数据复查。"
+    }
+  ],
+  "next": [
+    {
+      "date": "2026-10-18",
+      "text": "按签署后 30 个日历天计算，劳工部最迟须开始复查既往 LCA 数据；这是启动期限，不是完成期限或统一生效日。"
+    },
+    {
+      "date": "日期未定",
+      "text": "跟踪国务院、DHS、DOL 的执行文件及实际审查口径；后续若修改法规，另行跟踪适用的规则制定程序。"
+    }
+  ],
+  "impacts": [
+    "“相关裁员”由三个条件限定：提交申请的雇主、与拟聘岗位同类的被裁岗位、过去一年内或已列入计划；三个条件决定是否落入审查范围，不决定审批结果。",
+    "跨部门共享工资、就业及学历信息，可能增加雇主说明岗位、资质和用工情况的工作；新增材料与耗时尚不能确定。",
+    "既往提交的 LCA 数据将被复查，以判断是否需要进一步执法；复查不等于所有既往 LCA 或已批 H-1B 自动失效。"
+  ],
+  "sources": [
+    {
+      "label": "白宫 · 9·18 行政命令全文（第 2—4 节）",
+      "href": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
+    },
+    {
+      "label": "美卡论坛 · 裁员、贴签与入境讨论",
+      "href": "https://www.uscardforum.com/t/topic/533107"
+    }
+  ]
+},
 ];
 
 export function getPolicies(language: Language) {

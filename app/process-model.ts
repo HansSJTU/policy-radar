@@ -1,4 +1,4 @@
-export type ProcessKind = 'federal-rulemaking' | 'administrative-guidance';
+export type ProcessKind = 'federal-rulemaking' | 'administrative-guidance' | 'executive-order';
 
 export type LitigationMarker = {
   date: string;
@@ -51,6 +51,19 @@ const guidanceMeaning =
   'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。';
 
 const processTracks: Record<string, ProcessTrack> = {
+  'h1b-program-integrity': {
+    kind: 'executive-order',
+    name: '总统行政命令',
+    meaning: '总统行政命令向行政部门作出指令，本身不经过 NPRM、公众评论和最终规则这条流程。部门须在现有法律权限内落实；后续若制定或修改法规，仍须遵守适用的规则制定程序，也可能受到司法审查。',
+    detail: '总统于 2026-09-18 签署命令，要求跨部门协作并考虑雇主相关裁员情况。命令已向部门作出指令，具体执行文件和实际审查口径仍需跟踪；不能把签署等同于所有审查措施都已落地。',
+    currentSummary: '行政命令已签署，跟踪部门落实',
+    lastCompletedStage: 0,
+    activeStage: 1,
+    nextStage: 2,
+    waitingFor: '劳工部须在签署后 30 天内开始复查既往 LCA 数据（按日历天计算为 10·18 前）；关注国务院、DHS 和 DOL 的执行文件。',
+    stages: ['总统签署', '部门落实', '执行跟踪'],
+    litigation: [],
+  },
   'perm-modernization': {
     kind: 'federal-rulemaking',
     name: '联邦规则制定流程',
@@ -276,6 +289,15 @@ const englishProcessTracks: Record<
     | 'waitingFor'
   >
 > = {
+  'h1b-program-integrity': {
+    name: 'Presidential executive order',
+    meaning: 'An executive order directs executive agencies and does not itself follow the NPRM, public-comment and final-rule sequence. Agencies must act within existing legal authority; any later regulations must follow applicable rulemaking procedures, and implementation may face judicial review.',
+    detail: 'The President signed the order on September 18, 2026, directing interagency coordination and consideration of relevant employer layoffs. The directive has been issued; implementation documents and actual review practices still need tracking. Signature does not establish that every review measure is already operational.',
+    currentSummary: 'Order signed; tracking agency implementation',
+    waitingFor: 'DOL must begin reviewing prior LCA data within 30 days of signature (October 18 by calendar-day calculation); watch for State, DHS and DOL implementation documents.',
+    stages: ['President signs', 'Agency implementation', 'Implementation monitoring'],
+    litigation: [],
+  },
   'perm-modernization': {
     name: 'Federal rulemaking',
     meaning: federalMeaningEnglish,

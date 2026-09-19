@@ -5,6 +5,7 @@ import { getProcessTrack } from './process-model.ts';
 // Preserve the HEAD homepage presentation while details use the explicit progress model.
 const homeStatuses: Record<Language, Record<string, string>> = {
   zh: {
+    'h1b-program-integrity': '行政命令已签署 · 跟踪部门落实',
     'opt-fee': 'OIRA 审查已完成 · 尚未生效',
     'h1b-fee': '正式提案 · 评论截至 9 月 24 日',
     'duration-status': '法院全国暂缓 · 原 9·15 生效日已推迟',
@@ -18,6 +19,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
     'perm-modernization': 'OIRA 审查中 · 尚未生效',
   },
   en: {
+    'h1b-program-integrity': 'Executive order signed · Tracking implementation',
     'opt-fee': 'OIRA review completed · Not in effect',
     'h1b-fee': 'Formal proposal · Comments due September 24',
     'duration-status': 'Nationwide court stay · September 15 effective date postponed',
@@ -32,6 +34,7 @@ const homeStatuses: Record<Language, Record<string, string>> = {
   },
 };
 const homeStages: Record<string, number> = {
+  'h1b-program-integrity': 1,
   'opt-fee': 2,
   'h1b-fee': 3,
   'duration-status': 4,

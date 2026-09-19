@@ -4,6 +4,38 @@ import type { Language } from './language';
 // Explain the situation, relevant policy change, and consequence in connected prose.
 // Each impact can have zero, one, or several distinct examples.
 const examples: Record<PolicyId, [string[], string[]][]> = {
+  'h1b-program-integrity': [
+    [
+      [
+        '小林在湾区一家公司做数据分析，公司在去年 11 月裁掉了同团队三个同级的数据分析师；现在公司为他提交 H-1B petition，他准备回上海办签证。三个条件都满足：裁员的就是这家雇主，被裁岗位与他的岗位同类，时间也在过去一年内，所以这个案子属于命令要求考虑裁员的范围。',
+        '另一个人的公司在去年同一时间裁掉了整个法务团队，但为他申请的岗位是硬件工程师，法务与工程不同类，这条命令不要求把那次裁员当成本案因素。也就是说，“公司裁过员”本身不构成条件，关键看裁的是不是和你岗位同类的人。',
+      ],
+      [
+        'Lin works in data analysis at a Bay Area company that laid off three data analysts at the same level last November. The company is now filing an H-1B petition for Lin, who plans to get the visa stamped in Shanghai. All three conditions are met: the employer filing the petition is the one that laid people off, the laid-off roles are comparable to Lin’s, and the layoff falls within the previous year. The case therefore falls inside the scope the order tells agencies to consider.',
+        'A different employer also cut staff last November, eliminating its entire legal team, but is filing for a hardware engineer. Legal and engineering are not comparable roles, so the order does not direct that layoff to be treated as a factor in this case. A company having laid people off is not itself the trigger; whether the people cut held roles comparable to the offered job is what matters.',
+      ],
+    ],
+    [
+      [
+        '小陈的公司先提交了 LCA，三个月后裁掉了两个软件工程师，现在又要为他申请 H-1B，岗位也是软件工程师。裁员发生在提交之后，且岗位与拟聘岗位同类。在这种顺序下，裁员和这次申请直接相关，审查时需要说明岗位为什么仍然存在空缺、为什么没有先从被裁的人里重新雇佣。',
+        '小周的情况是：裁员来自公司在另一个国家的分公司，而且被裁的是比招聘岗位高两级的职位。命令提到的是“直接或间接”进行的裁员，是否把关联公司的情况也算进来，要看部门怎么解释；层级差得远的岗位一般不构成同类比较。同一条命令，两种情形的确定性并不一样。',
+      ],
+      [
+        'Chen’s employer filed an LCA first, then laid off two software engineers three months later, and is now filing an H-1B petition for Chen in the same job. The layoff came after the filing and involved comparable roles, so the two events are directly connected, and the filing record has to explain why the position is still open and why the laid-off workers were not rehired first.',
+        'Zhou’s situation is different: the layoffs happened at a foreign affiliate, and the people cut held roles two levels above the position being sponsored. The order refers to layoffs made directly or indirectly, so whether an affiliate’s cuts count depends on how agencies interpret it, and roles that far apart are generally not a comparable comparison. The same order leaves these two situations with different degrees of certainty.',
+      ],
+    ],
+    [
+      [
+        '小陈的 H-1B 已经批准，雇主去年提交过好几份 LCA。劳工部现在复查的是这家雇主的 LCA 数据，看有没有需要进一步执法的线索：只有复查发现线索、并依法进入后续程序，才会牵涉到具体案件，所以“雇主的 LCA 数据被复查”不等于小陈的批准会被撤销。',
+        '如果复查之后真的对雇主立案，处理的依据是 INA § 212(n)(2)(G)，对象是雇主这个实体，不是小陈个人。小陈需要关注的时点是：部门有没有公布复查结果、有没有针对这家雇主的具体程序，而不是把“数据被复查”直接理解成自己的身份出问题。',
+      ],
+      [
+        'Chen’s H-1B petition is already approved and the employer filed several LCAs last year. What DOL is reviewing now is this employer’s LCA data, looking for leads that might warrant further enforcement. Specific cases come into play only if the review produces such a lead and a separate proceeding follows under law, so an employer’s LCA data being reviewed does not mean Chen’s approval will be revoked.',
+        'If review later leads to a case against the employer, the basis is INA section 212(n)(2)(G) and the target is the employer as an entity, not Chen personally. The points for Chen to watch are whether the agency publishes review results and whether any employer-specific proceeding is opened, rather than reading a data review as a problem with his own status.',
+      ],
+    ],
+  ],
   'perm-modernization': [
     [
       ['一家企业准备为小陈办理 PERM。如果最终规则要求更完整的招聘记录，HR 就可能需要补充整理求职申请和招聘结果，准备时间也可能增加。这是假设要求提高后的影响；目前还不能认定必须补做某种广告或增加特定材料。'],

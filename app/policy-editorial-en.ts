@@ -930,4 +930,99 @@ export const englishPolicyEditorial: PolicyEditorial[] = [
     ],
     related: ['prevailing-wage', 'h1b-reform'],
   },
+{
+  "id": "h1b-program-integrity",
+  "discovery": {
+    "status": "Executive order signed",
+    "identities": [
+      "H-1B",
+      "Employers"
+    ],
+    "summary": "The President directs interagency coordination and requires consideration of the sponsoring employer’s relevant layoffs in H-1B review. The order does not say what happens to a case once layoffs are considered.",
+    "audience": "H-1B applicants, holders and sponsoring employers, especially cases involving visas and entry.",
+    "next": {
+      "date": "2026-10-18",
+      "text": "Calculated from the 30-day directive, DOL must begin reviewing prior LCA data by this date."
+    }
+  },
+  "title": "H-1B Executive Order: Layoff Review and Interagency Coordination",
+  "short": "H-1B layoff-review executive order",
+  "group": "H-1B",
+  "agency": "President / State / DOL / DHS",
+  "rin": "September 18, 2026 executive order · Number pending verification",
+  "status": "Executive order signed · Tracking implementation",
+  "effectState": "executive-order-issued",
+  "effectLabel": "Signed directive to agencies · Implementation still being tracked",
+  "audience": "H-1B applicants, holders and sponsoring employers; under the section 3(a) wording, the emphasis is on workers entering or attempting to enter the United States, and on employers with comparable-role layoffs in the previous year or already planned.",
+  "caveat": "The order only requires relevant layoffs to be considered. It states no formula converting a layoff into a denial and does not automatically invalidate existing H-1B status. What layoffs actually mean for a case depends on later agency documents.",
+  "summary": "The order directs State, DOL and DHS to use additional agencies’ information for H-1B compliance checks and requires consideration of the sponsoring employer’s layoffs within the previous year or planned for the future. “Relevant” is not any layoff anywhere: the order defines it by the employer filing the case, the roles cut and the timing, and it frames the covered review around workers entering or attempting to enter the United States. DOL’s Wage and Hour Division must also begin reviewing previously submitted LCA data within 30 days to assess further enforcement.",
+  "background": "The President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program on September 18, 2026. It is a presidential directive to executive agencies, rather than an agency proposed rule. Section 2 addresses coordination; section 3 covers layoffs, LCA data review and implementation authority; section 4 requires implementation consistent with applicable law and available appropriations. The order’s direct effects are to direct agencies and to make layoffs a factor to consider; the text itself sets no review standard, evidence list or processing deadline.",
+  "note": "The order itself has no NPRM or public-comment stage; any later agency regulations must follow applicable procedures.",
+  "deck": "How might employer layoffs affect an H-1B petition, visa application or entry?",
+  "headline": "Layoffs are an explicit review factor; specific consequences depend on agency implementation.",
+  "analysis": "Our assessment: what the order actually adds is a factor on the review checklist, not an outcome. Three things are clear — the review looks at the employer filing your case, the roles cut must be comparable to the offered job, and the timing is limited to the previous year or layoffs already planned. What is not clear is weight and consequence: the order does not say layoffs bar approval, what evidence to file, or how long review may take. Section 3(a) is also worded around H-1B workers entering or attempting to enter the United States, so whether domestic extensions and change-of-employer cases follow the same standard depends on State, DHS and DOL implementation documents. Until those appear, any claim that a given layoff percentage means denial is not what the order says.",
+  "teaser": "The September 18 order requires consideration of the sponsoring employer’s relevant layoffs and sets three scope conditions. It does not make layoffs a denial, and consequences still depend on agency implementation.",
+  "impacts": [
+    [
+      "What counts as a “relevant layoff”: three conditions",
+      "Section 3(a) directs that, in LCA, petition, visa and entry review involving H-1B workers entering or attempting to enter the United States, agencies consider direct or indirect sponsor layoffs within the previous year, or planned future layoffs, that negatively affect similarly situated U.S. workers. That breaks into three conditions. First, the employer must be the one filing the LCA or petition for this case; layoffs at a parent, affiliate or client matter only if they fall within the direct or indirect scope. Second, the roles cut must be comparable in duties and level to the offered job, so cuts in unrelated departments or at senior levels do not fall under this provision. Third, timing is limited to layoffs within the previous year and those already announced or planned, so older layoffs are outside it. These conditions decide whether a case falls inside the review scope; they do not decide the outcome, because the order sets no relationship between layoff counts or rates and the decision on a case."
+    ],
+    [
+      "Cross-checking wages, qualifications and jobs",
+      "State, DOL and DHS must consult Commerce, Education and the SBA for wage, employment, academic, industrial and other information to check statutory compliance. Our assessment is that explanation and verification work may increase; the order sets no uniform new degree or wage threshold."
+    ],
+    [
+      "Previously submitted LCA data is included",
+      "DOL’s Wage and Hour Division must begin reviewing prior LCA data within 30 days to assess further action under INA section 212(n)(2)(G). What is being reviewed is the employer’s filed LCA data rather than one person’s qualifications again: a lead must emerge before any investigation or enforcement proceeding follows, so a data review does not automatically invalidate an LCA or an approved H-1B petition."
+    ]
+  ],
+  "outlook": "Watch whether DOL begins the data review on time. More important is whether State, DHS and DOL implementation documents answer two questions: how comparable roles are compared, and what weight layoffs carry in adjudication. Until those standards appear, this entry can confirm only that layoffs are a factor to consider, with consequences pending; any later regulatory changes require separate tracking of rulemaking and effective dates.",
+  "scenarios": [
+    [
+      "Agencies implement under existing authority",
+      "Operational standards become clearer",
+      "Agencies publish policies, operational guidance or enforcement explanations.",
+      "Layoffs, wages and job information may be checked more systematically. Effects depend on the specific documents, without a presumed uniform denial outcome.",
+      "State, DHS and DOL implementation documents and actual case handling."
+    ],
+    [
+      "LCA data review leads to individual action",
+      "Some employers face further investigation",
+      "Wage and Hour review identifies a legal basis for further action.",
+      "Affected employers and cases would be subject to that action; this does not mean every LCA or H-1B petition is revoked.",
+      "DOL confirmation that review has begun, the grounds for investigation and its scope."
+    ],
+    [
+      "Later rules or court orders change implementation",
+      "Procedure and scope may shift",
+      "Agencies pursue amendments requiring rulemaking, or a court issues an order in an actual dispute.",
+      "Check regulatory terms, applicable dates or judicial relief separately. This is a possible outcome, not an assertion that litigation or a new rule already exists.",
+      "Official agency documents and court orders, rather than forum speculation alone."
+    ]
+  ],
+  "scope": [
+    [
+      "Policy type",
+      "A presidential executive order directing agencies, tracked separately from federal regulations and SEVP administrative guidance."
+    ],
+    [
+      "Relevant stages",
+      "Section 2 covers H-1B petitions, LCAs and visas; section 3(a) also expressly addresses entry. Application to specific cases needs to be checked against agency documents."
+    ],
+    [
+      "Layoff scope",
+      "Set by three conditions together: the employer filing the LCA or petition, laid-off roles comparable to the offered job, and timing within the previous year or already planned. A case must meet all three to fall inside this review; the order does not say what follows."
+    ],
+    [
+      "No new fee in this order",
+      "The order itself sets no new H-1B fee and does not change current filing fees. The #02 $103,265 surcharge is a separate DHS proposal, tracked apart from this order."
+    ]
+  ],
+  "related": [
+    "h1b-reform",
+    "h1b-fee",
+    "prevailing-wage",
+    "perm-modernization"
+  ]
+},
 ];

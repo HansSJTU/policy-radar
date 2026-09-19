@@ -15,6 +15,8 @@ import type { Language } from './language';
 // Curated source-level developments (federal rulemaking, litigation, official
 // guidance). Individual campus notices belong to the CPT school tracker instead.
 export const briefingItems: BriefingItem[] = [
+  { id: 'h1b-integrity-order-signed', date: '2026-09-18', policyId: 'h1b-program-integrity', rank: 12, policy: 'H-1B 裁员审查行政命令', summary: '总统签署行政命令，要求跨部门协作、考虑相关裁员并开始复查既往 LCA 数据；原文没有规定裁员即拒签。', timing: 'recent', confirmed: true },
+  { id: 'h1b-integrity-lca-review-deadline', date: '2026-10-18', policyId: 'h1b-program-integrity', rank: 12, policy: 'H-1B 裁员审查行政命令', summary: '按签署后 30 个日历天计算，DOL 最迟须开始复查既往 LCA 数据；不是完成期限或统一生效日。', timing: 'upcoming', confirmed: true },
 {
   "id": "duration-nationwide-stay",
   "date": "2026-09-14",
@@ -174,6 +176,8 @@ export const briefingItems: BriefingItem[] = [
 ];
 
 export const englishBriefing: Record<string, Pick<BriefingItem, 'policy' | 'summary'>> = {
+  'h1b-integrity-order-signed': { policy: 'H-1B layoff-review executive order', summary: 'The President signed an order directing interagency coordination, consideration of relevant layoffs and review of prior LCA data; it does not impose automatic denial after layoffs.' },
+  'h1b-integrity-lca-review-deadline': { policy: 'H-1B layoff-review executive order', summary: 'Calculated as 30 calendar days after signature, DOL must begin reviewing prior LCA data by this date; it is not a completion deadline or common effective date.' },
   'duration-nationwide-stay': { policy: 'D/S final rule', summary: 'The court postponed the entire rule nationwide and barred further implementation. This is not permanent vacatur; the September 15 effective date is postponed.' },
   'duration-status-conference': { policy: 'D/S final rule', summary: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.' },
   'perm-modernization-oira': { policy: 'PERM labor certification reform', summary: 'DOL submitted its PERM recruitment and employer-compliance reform proposal for OIRA prepublication review; it is not in effect.' },

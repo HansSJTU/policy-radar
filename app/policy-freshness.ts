@@ -2,10 +2,11 @@ import type { PolicyId } from './community-impact-model';
 import type { Language } from './language';
 
 // Last site update, not a certification that every source is fully verified.
-export const SITE_UPDATED_ON = '2026-09-17';
+export const SITE_UPDATED_ON = '2026-09-19';
 
 // Update each entry only when its sources are actually reviewed.
 export const policyCheckedOn: Record<PolicyId, string> = {
+  'h1b-program-integrity': '2026-09-19',
   'opt-fee': '2026-09-17',
   'h1b-fee': '2026-09-17',
   'duration-status': '2026-09-17',
@@ -20,6 +21,10 @@ export const policyCheckedOn: Record<PolicyId, string> = {
 };
 
 const verificationNotes: Partial<Record<PolicyId, Record<Language, string>>> = {
+  'h1b-program-integrity': {
+    zh: '核查范围：9·19 已读取白宫 9·18 行政命令全文及论坛原帖。本项只跟踪该命令本身，不引用同日其他文件。后续 Federal Register、DOL 与 USCIS 文件检索未找到可确认的新执行文件，不据此断言没有后续文件。命令编号和部门实际落实情况待跟踪。10·18 是按签署日加 30 个日历天计算的启动复查期限，不是另行公布的生效日。',
+    en: 'Review scope: the September 18 White House order and the forum opening post were read on September 19. This entry tracks the order itself and does not rely on other documents issued the same day. Searches for subsequent Federal Register, DOL and USCIS records did not locate a verifiable new implementation document; that does not prove none exists. The order number and actual implementation remain to be tracked. October 18 is calculated as 30 calendar days after signature for beginning the review, not a separately announced effective date.',
+  },
   'perm-modernization': {
     zh: '核查范围：9·17 复核统一议程与 9 月 14 日 OIRA 待审记录（标题为 Modernizing the Labor Market Test… (NPRM)，状态仍为待审）。Federal Register 正文检索未完成验证，未找到公开 NPRM 不等于证明不存在后续文件。',
     en: 'Review scope: the Unified Agenda and the September 14 pending OIRA record were rechecked September 17 (title “Modernizing the Labor Market Test… (NPRM)”, still pending). Federal Register document verification remains incomplete; failure to locate a public NPRM does not prove that no subsequent document exists.',

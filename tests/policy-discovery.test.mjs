@@ -43,6 +43,28 @@ const render = (component, props, language) =>
     ),
   );
 
+test('executive-order cards and progress explain agency implementation without a rulemaking or school workflow', () => {
+  for (const language of ['zh', 'en']) {
+    const { record } = getPolicyDetail('h1b-program-integrity', language);
+    const track = getProcessTrack(record.id, language);
+    const card = render(PolicyCard, {
+      policy: record, language, selectedPath: 'H-1B', policyPath: 'H-1B',
+      communityRating: null,
+    }, language);
+    assert.match(card, /class="process-steps executive-order"/);
+    assert.doesNotMatch(card, /commenton|提交公众评论|Submit a public comment/);
+    const progress = render(PolicyProgress, { track, language }, language);
+    const buttons = progress.match(/<button\b[^>]*>[\s\S]*?<\/button>/g);
+    assert.equal(buttons.length, 3);
+    assert.match(buttons[0], /class="complete"/);
+    assert.match(buttons[1], /aria-current="step"/);
+    assert.match(buttons[2], /class="upcoming"/);
+    const explanation = progress.match(/id="progress-result"[\s\S]*$/)[0];
+    assert.match(explanation, /国务院|State/);
+    assert.doesNotMatch(explanation, /学校|School|SEVP|DSO/);
+  }
+});
+
 test('restored homepage cards retain ratings, full progress and timeline with contextual detail links', () => {
   for (const language of ['zh', 'en']) {
     const { record } = getPolicyDetail('opt-fee', language);
