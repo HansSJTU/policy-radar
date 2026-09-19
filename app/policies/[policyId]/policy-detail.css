@@ -173,10 +173,6 @@
   padding: 0 2px;
   border-radius: 3px;
 }
-.pd-key-point .text-emphasis {
-  background: none;
-  padding: 0;
-}
 .pd-status-shell {
   container-type: inline-size;
   container-name: pdstatus;
