@@ -12,7 +12,8 @@ const bundle = await build({
     contents: `export { PolicyCard } from './app/policy-card.tsx';
       export { PolicyProgress } from './app/policies/[policyId]/policy-interactions.tsx';
       export { LanguageProvider } from './app/language-context.tsx';
-      export { CommunityImpactRating } from './app/community-impact-rating.tsx';`,
+      export { CommunityImpactRating } from './app/community-impact-rating.tsx';
+      export { GlossaryText } from './app/glossary-text.tsx';`,
     resolveDir: process.cwd(),
   },
   bundle: true,
@@ -33,6 +34,7 @@ const {
   PolicyProgress,
   LanguageProvider,
   CommunityImpactRating,
+  GlossaryText,
 } = compiled.exports;
 const render = (component, props, language) =>
   renderToStaticMarkup(
@@ -67,6 +69,30 @@ test('executive-order cards and progress explain agency implementation without a
     const explanation = progress.match(/id="progress-result"[\s\S]*$/)[0];
     assert.match(explanation, /国务院|State/);
     assert.doesNotMatch(explanation, /学校|School|SEVP|DSO/);
+  }
+});
+
+test('the visa and entry callout renders as emphasis instead of literal markers', () => {
+  for (const language of ['zh', 'en']) {
+    const { editorial } = getPolicyDetail('h1b-program-integrity', language);
+    const html = render(
+      GlossaryText,
+      { text: editorial.keyPoint.text },
+      language,
+    );
+    const emphasise = language === 'en' ? 'visa and entry review' : '签证和入境审查';
+
+    assert.match(html, /<strong class="text-emphasis">/);
+    assert.match(html, new RegExp(emphasise));
+    assert.doesNotMatch(html, /\*\*/);
+
+    const impact = render(GlossaryText, { text: editorial.impacts[0][1] }, language);
+    assert.match(impact, /<strong class="text-emphasis">/);
+    assert.doesNotMatch(impact, /\*\*/);
+    assert.equal(
+      (html.match(new RegExp(emphasise, 'g')) ?? []).length,
+      (editorial.keyPoint.text.match(/\*\*/g) ?? []).length / 2,
+    );
   }
 });
 

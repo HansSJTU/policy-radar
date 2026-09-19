@@ -27,6 +27,9 @@ export type PolicyEditorial = {
   deck: string;
   headline: string;
   analysis: string;
+  // Optional single point the page pulls out of the analysis and renders as a
+  // highlighted callout. Use "**…**" inside body copy for inline emphasis.
+  keyPoint?: { label: string; text: string };
   // Practitioner expectations for an upcoming rule. Always labeled as analysis,
   // never presented as published text or an effective requirement.
   possibilities?: {

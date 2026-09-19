@@ -9,10 +9,18 @@ const examples: Record<PolicyId, [string[], string[]][]> = {
       [
         '小林在湾区一家公司做数据分析，公司在去年 11 月裁掉了同团队三个同级的数据分析师；现在公司为他提交 H-1B petition，他准备回上海办签证。三个条件都满足：裁员的就是这家雇主，被裁岗位与他的岗位同类，时间也在过去一年内，所以这个案子属于命令要求考虑裁员的范围。',
         '另一个人的公司在去年同一时间裁掉了整个法务团队，但为他申请的岗位是硬件工程师，法务与工程不同类，这条命令不要求把那次裁员当成本案因素。也就是说，“公司裁过员”本身不构成条件，关键看裁的是不是和你岗位同类的人。',
+        '小林约了 10 月的面签，公司去年 11 月裁过三个同级数据分析师，他的岗位也是数据分析。看到裁员记录后，签证官最可能问三件事：这个岗位为什么还需要人、他的工作内容和被裁的人有什么不同、公司为什么招他而不是先招回被裁的人。他准备的答案要能对上雇佣信和 LCA 上的职责，讲清这些差别就够；命令没有规定必须补交新证明，所以不是“裁员过就一定要多交一份材料”。',
+        '还有一种情况：公司裁员的岗位和小林的岗位并不相同，他能拿出公司的招聘记录、在职人数变化或团队分工来说明两者不同类。三条限定条件不满足时，他不应该主动把这件事说成不利因素——命令要求考虑的是相关裁员，不是公司历史上的任何一次裁员。',
+        '小林已经拿到 H-1B 签证，第一次入境时被 CBP 要求做二次检查。他的公司去年裁过同类岗位，如果 CBP 问到裁员，需要说清三件事：岗位为什么仍然需要、他和被裁的人工作内容有什么不同、公司在为他申请前的招聘情况。带了雇佣信、岗位说明或公司组织架构说明会更好回答，但命令没有规定入境必须携带某份证明。',
+        'CBP 的处理方式是当场判断放行、带到二次检查还是拒绝入境，命令只要求把相关裁员作为考虑因素，没有写裁过员就不能入境。如果被裁岗位和小林的岗位并不相同，解释的重点就是说明两者不同类；说不清时，可以要求说明后续程序，而不是在口岸自行推测结果。',
       ],
       [
         'Lin works in data analysis at a Bay Area company that laid off three data analysts at the same level last November. The company is now filing an H-1B petition for Lin, who plans to get the visa stamped in Shanghai. All three conditions are met: the employer filing the petition is the one that laid people off, the laid-off roles are comparable to Lin’s, and the layoff falls within the previous year. The case therefore falls inside the scope the order tells agencies to consider.',
         'A different employer also cut staff last November, eliminating its entire legal team, but is filing for a hardware engineer. Legal and engineering are not comparable roles, so the order does not direct that layoff to be treated as a factor in this case. A company having laid people off is not itself the trigger; whether the people cut held roles comparable to the offered job is what matters.',
+        'Lin has a visa interview scheduled in October, and the company laid off three data analysts at the same level last November, in Lin’s own job category. The likeliest questions are why the position is still needed, how Lin’s duties differ from those of the people let go, and why the company is hiring rather than rehiring. Answers should line up with the duties on the offer letter and the LCA; explaining those distinctions is enough, and the order imposes no new required document.',
+        'In another case, the layoffs covered roles unlike Lin’s, and Lin can show recruiting records, headcount changes or team structure to explain why the two are not comparable. Where the three conditions are not met, this should not be volunteered as a negative factor: the order asks about relevant layoffs, not any layoff in the company’s history.',
+        'Lin holds an approved H-1B visa and is sent to secondary inspection on the first entry. If CBP asks about the company’s comparable-role layoffs last year, three points matter: why the position is still needed, how Lin’s duties differ from those of the people let go, and what the company’s recruiting looked like before filing. Carrying the offer letter, a job description or an org summary makes that easier to answer, though the order requires no specific document at entry.',
+        'CBP decides on the spot whether to admit, refer to secondary inspection or refuse entry. The order makes relevant layoffs a factor to consider; it does not say a layoff bars entry. Where the roles cut were unlike Lin’s, the explanation is simply that they are not comparable. If the record is unclear, the officer can be asked to explain the next step rather than leaving the outcome to guesswork at the port.',
       ],
     ],
     [

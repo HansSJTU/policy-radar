@@ -5,6 +5,7 @@ import { policyHref, legacyPolicyHref } from '../app/policy-links.ts';
 import { buildShareContent } from '../app/share-model.ts';
 import { getProcessTrack } from '../app/process-model.ts';
 import { getPolicyDetail } from '../app/policy-detail-model.ts';
+import { getPolicyExamples } from '../app/policy-examples.ts';
 
 test('policy links retain language and target the requested detail section', () => {
   assert.equal(policyHref('opt-fee', 'zh'), '/policies/opt-fee?lang=zh');
@@ -72,6 +73,35 @@ test('all existing policy IDs resolve with complete analysis and valid related l
     }
 });
 
+test('example groups stay aligned with rendered impacts in both languages', async () => {
+  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  for (const id of POLICY_IDS) {
+    for (const language of ['zh', 'en']) {
+      const { editorial } = getPolicyDetail(id, language);
+      const groups = getPolicyExamples(id, language);
+      assert.equal(
+        groups.length,
+        editorial.impacts.length,
+        `${id} (${language}) has unreachable or missing example groups`,
+      );
+    }
+  }
+
+  for (const language of ['zh', 'en']) {
+    const groups = getPolicyExamples('h1b-program-integrity', language);
+    for (const term of language === 'en'
+      ? ['visa interview', 'secondary inspection']
+      : ['面签', '二次检查']) {
+      assert.ok(groups[0].some((text) => text.includes(term)));
+    }
+    assert.ok(
+      groups[2].some((text) =>
+        text.includes(language === 'en' ? 'LCA data' : 'LCA 数据'),
+      ),
+    );
+  }
+});
+
 test('federal details share one process while litigation remains separate', () => {
   for (const language of ['zh', 'en']) {
     const federal = getProcessTrack('opt-fee', language).stages;
@@ -96,6 +126,45 @@ test('federal details share one process while litigation remains separate', () =
       federal,
     );
   }
+});
+
+test('emphasis markers in detail copy are balanced and never render literally', async () => {
+  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  for (const id of POLICY_IDS) {
+    for (const language of ['zh', 'en']) {
+      const { editorial } = getPolicyDetail(id, language);
+      const fields = [
+        editorial.summary,
+        editorial.background,
+        editorial.analysis,
+        editorial.teaser,
+        editorial.headline,
+        editorial.deck,
+        editorial.outlook,
+        editorial.caveat,
+        editorial.note,
+        editorial.keyPoint?.label,
+        editorial.keyPoint?.text,
+        ...editorial.impacts.flat(),
+        ...editorial.scope.flat(),
+        ...editorial.scenarios.flat(),
+      ].filter(Boolean);
+      for (const field of fields)
+        assert.equal(
+          (field.match(/\*\*/g) ?? []).length % 2,
+          0,
+          `${id} (${language}) has an unclosed emphasis marker: ${field.slice(0, 60)}`,
+        );
+    }
+  }
+
+  const { keyPoint, impacts } = getPolicyDetail('h1b-program-integrity', 'zh').editorial;
+  assert.ok(keyPoint?.label && keyPoint.text);
+  assert.match(impacts[0][1], /\*\*签证和入境审查\*\*/);
+
+  const english = getPolicyDetail('h1b-program-integrity', 'en').editorial;
+  assert.match(english.impacts[0][1], /\*\*visa and entry review\*\*/);
+  assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
 });
 
 test('every detail has an explicit effect, audience, caveat and distinct background in both languages', async () => {

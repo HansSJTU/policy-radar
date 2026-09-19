@@ -142,6 +142,41 @@
   line-height: 1.85;
   color: var(--ink-soft);
 }
+.pd-key-point {
+  margin-top: 16px;
+  padding: 18px 20px 19px;
+  background: var(--pd-surface);
+  border: 1px solid #e6b64c;
+  border-left: 4px solid #e6b64c;
+  border-radius: 0 11px 11px 0;
+  box-shadow: 0 1px 0 rgba(20, 32, 56, .04);
+}
+.pd-key-point-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: #96631a;
+}
+.pd-key-point p {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--ink);
+}
+.text-emphasis {
+  font-weight: 700;
+  color: var(--ink);
+  background: linear-gradient(transparent 62%, #ffe9a8 62%);
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.pd-key-point .text-emphasis {
+  background: none;
+  padding: 0;
+}
 .pd-status-shell {
   container-type: inline-size;
   container-name: pdstatus;
@@ -1032,6 +1067,13 @@
   .pd-impact h3 {
     font-size: 15px;
   }
+  .pd-key-point {
+    padding: 15px 16px 16px;
+  }
+  .pd-key-point p {
+    font-size: 13px;
+    line-height: 1.85;
+  }
   .pd-scenarios {
     gap: 6px;
   }
@@ -1200,6 +1242,8 @@ fieldset.pd-stages {
 .pd-impact .pd-example p {
   font-size: 14px;
   line-height: 1.8;
+  /* Fill the shared content width instead of rebalancing each paragraph. */
+  text-wrap: wrap;
 }
 .pd-scenario-intro {
   margin: 22px 0 14px;

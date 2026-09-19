@@ -9,6 +9,7 @@ import {
   GraduationCap,
   Radar,
   Route,
+  Star,
 } from 'lucide-react';
 import { resolveRequestLanguage } from '../../language-server';
 import { PageLanguageSwitch } from '../../page-language-switch';
@@ -339,6 +340,17 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     <GlossaryText text={p.analysis} />
                   </p>
                 </div>
+                {p.keyPoint && (
+                  <aside className="pd-key-point" data-key-point>
+                    <span className="pd-key-point-label">
+                      <Star aria-hidden="true" />
+                      <GlossaryText text={p.keyPoint.label} />
+                    </span>
+                    <p>
+                      <GlossaryText text={p.keyPoint.text} />
+                    </p>
+                  </aside>
+                )}
                 {p.impacts.map(([title, text], i) => {
                   const Icon = impactIcons[i % impactIcons.length];
                   return (
