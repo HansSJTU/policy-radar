@@ -87,8 +87,10 @@ test('the visa and entry callout renders as emphasis instead of literal markers'
     assert.doesNotMatch(html, /\*\*/);
 
     const impact = render(GlossaryText, { text: editorial.impacts[0][1] }, language);
-    assert.match(impact, /<strong class="text-emphasis">/);
+    // The scope impact carries the three conditions only; it renders without
+    // emphasis or literal markers.
     assert.doesNotMatch(impact, /\*\*/);
+    assert.doesNotMatch(impact, /<strong class="text-emphasis">/);
     assert.equal(
       (html.match(new RegExp(emphasise, 'g')) ?? []).length,
       (editorial.keyPoint.text.match(/\*\*/g) ?? []).length / 2,

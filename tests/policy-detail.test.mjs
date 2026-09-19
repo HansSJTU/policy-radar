@@ -160,10 +160,13 @@ test('emphasis markers in detail copy are balanced and never render literally', 
 
   const { keyPoint, impacts } = getPolicyDetail('h1b-program-integrity', 'zh').editorial;
   assert.ok(keyPoint?.label && keyPoint.text);
-  assert.match(impacts[0][1], /\*\*签证和入境审查\*\*/);
+  assert.match(keyPoint.text, /\*\*签证和入境审查\*\*/);
+  // The visa and entry emphasis lives in the callout only; the scope impact
+  // states the three conditions without repeating the stage comparison.
+  assert.doesNotMatch(impacts[0][1], /\*\*/);
 
   const english = getPolicyDetail('h1b-program-integrity', 'en').editorial;
-  assert.match(english.impacts[0][1], /\*\*visa and entry review\*\*/);
+  assert.doesNotMatch(english.impacts[0][1], /\*\*/);
   assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
 });
 
