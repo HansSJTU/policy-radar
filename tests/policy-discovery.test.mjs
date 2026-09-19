@@ -53,6 +53,11 @@ test('executive-order cards and progress explain agency implementation without a
     }, language);
     assert.match(card, /class="process-steps executive-order"/);
     assert.doesNotMatch(card, /commenton|提交公众评论|Submit a public comment/);
+    assert.match(
+      card,
+      new RegExp(language === 'en' ? 'Executive order progress' : '行政命令进度'),
+    );
+    assert.doesNotMatch(card, /Rulemaking progress|规则制定进度/);
     const progress = render(PolicyProgress, { track, language }, language);
     const buttons = progress.match(/<button\b[^>]*>[\s\S]*?<\/button>/g);
     assert.equal(buttons.length, 3);
@@ -62,6 +67,32 @@ test('executive-order cards and progress explain agency implementation without a
     const explanation = progress.match(/id="progress-result"[\s\S]*$/)[0];
     assert.match(explanation, /国务院|State/);
     assert.doesNotMatch(explanation, /学校|School|SEVP|DSO/);
+  }
+});
+
+test('the mobile progress heading names each card process instead of rulemaking for all', () => {
+  const expected = {
+    'opt-fee': { zh: '规则制定进度', en: 'Rulemaking progress' },
+    'cpt-guidance': { zh: '行政指引进度', en: 'Guidance progress' },
+    'h1b-program-integrity': { zh: '行政命令进度', en: 'Executive order progress' },
+  };
+  for (const [id, labels] of Object.entries(expected)) {
+    for (const language of ['zh', 'en']) {
+      const { record } = getPolicyDetail(id, language);
+      const html = render(PolicyCard, {
+        policy: record, language, selectedPath: 'H-1B', policyPath: 'H-1B',
+        communityRating: null,
+      }, language);
+      const heading = html.match(
+        /<div class="process-mobile-head"[^>]*>([\s\S]*?)<\/div>/,
+      )[1];
+      assert.match(heading, new RegExp(labels[language]), `${id} ${language}`);
+      const others = Object.values(expected)
+        .map((entry) => entry[language])
+        .filter((label) => label !== labels[language]);
+      for (const other of others)
+        assert.doesNotMatch(heading, new RegExp(other), `${id} ${language}`);
+    }
   }
 });
 

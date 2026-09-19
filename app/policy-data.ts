@@ -626,7 +626,8 @@ export const policies: Array<{
     },
     {
       "date": "日期未定",
-      "text": "跟踪国务院、DHS、DOL 的执行文件及实际审查口径；后续若修改法规，另行跟踪适用的规则制定程序。"
+      "text": "跟踪国务院、DHS、DOL 的执行文件及实际审查口径；后续若修改法规，另行跟踪适用的规则制定程序。",
+      "estimate": true
     }
   ],
   "impacts": [

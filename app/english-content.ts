@@ -34,7 +34,8 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     },
     {
       "date": "Date unknown",
-      "text": "Watch State, DHS and DOL implementation documents and actual review practices. Any later regulatory amendments will be tracked under the applicable rulemaking process."
+      "text": "Watch State, DHS and DOL implementation documents and actual review practices. Any later regulatory amendments will be tracked under the applicable rulemaking process.",
+      "estimate": true
     }
   ],
   "impacts": [
