@@ -23,6 +23,51 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-20",
+  "changes": [
+    {
+      "id": "duration-cra-introduced",
+      "category": "国会动向",
+      "title": "D/S 补充 CRA 撤销决议已提出",
+      "summary": "补录议员官网 9·14 公告与决议文本：拟通过 CRA 撤销 D/S 最终规则。",
+      "before": "D/S 条目记录法院全国暂缓及 10·02 状态会议，未收录国会决议。",
+      "after": "新增决议提出里程碑、原文来源与近期简报。提出不等于通过或成法，法院暂缓另行跟踪。",
+      "sources": [
+        {
+          "label": "Durbin 官网公告",
+          "href": "https://www.durbin.senate.gov/newsroom/press-releases/durbin-blumenthal-padilla-whitehouse-jayapal-raskin-introduce-cra-resolution-of-disapproval-regarding-regulation-that-changes-how-international-students-and-journalists-maintain-immigration-status"
+        },
+        {
+          "label": "联合否决决议文本",
+          "href": "https://www.durbin.senate.gov/download/cra-on-student-visa-rule&download=1"
+        }
+      ]
+    },
+    {
+      "id": "cpt-wm-rochester-purdue-evidence",
+      "category": "CPT 学校",
+      "title": "新增两校通知，Purdue ISS 升为校方公开证据",
+      "summary": "补录 William & Mary 9·16、Rochester 8·28 公告，并用 Purdue ISS 公开页面核实原邮件口径。",
+      "before": "45 条证据记录：40 条校方网页、5 条社区截图；44 所不同学校。",
+      "after": "47 条记录：43 条校方网页、4 条社区截图；46 所不同学校。Purdue ECE 与 ISS 仍为同校的两条记录。",
+      "sources": [
+        {
+          "label": "William & Mary",
+          "href": "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/"
+        },
+        {
+          "label": "University of Rochester",
+          "href": "https://www.rochester.edu/provost/important-update-for-international-students-on-cpt/"
+        },
+        {
+          "label": "Purdue ISS · CPT",
+          "href": "https://www.purdue.edu/gpp/iss/student/f1/employment/cpt.html"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-19",
   "changes": [
     {
@@ -841,6 +886,51 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-20",
+  "changes": [
+    {
+      "id": "duration-cra-introduced",
+      "category": "Congress",
+      "title": "D/S: add introduction of CRA disapproval resolution",
+      "summary": "Add the September 14 senator announcement and text proposing CRA disapproval of the D/S final rule.",
+      "before": "The entry tracked the nationwide stay and October 2 conference, without the congressional resolution.",
+      "after": "Add the introduction milestone, primary sources and briefing. Introduction is not passage or enactment; the court stay is tracked separately.",
+      "sources": [
+        {
+          "label": "Senator Durbin announcement",
+          "href": "https://www.durbin.senate.gov/newsroom/press-releases/durbin-blumenthal-padilla-whitehouse-jayapal-raskin-introduce-cra-resolution-of-disapproval-regarding-regulation-that-changes-how-international-students-and-journalists-maintain-immigration-status"
+        },
+        {
+          "label": "Joint resolution text",
+          "href": "https://www.durbin.senate.gov/download/cra-on-student-visa-rule&download=1"
+        }
+      ]
+    },
+    {
+      "id": "cpt-wm-rochester-purdue-evidence",
+      "category": "CPT schools",
+      "title": "Add two campus notices and verify Purdue ISS with a public page",
+      "summary": "Add William & Mary’s September 16 and Rochester’s August 28 notices; confirm the earlier Purdue ISS email through its public webpage.",
+      "before": "45 evidence entries: 40 public university pages and 5 community screenshots; 44 distinct schools.",
+      "after": "47 entries: 43 public university pages and 4 community screenshots; 46 distinct schools. Purdue ECE and ISS remain two records of one institution.",
+      "sources": [
+        {
+          "label": "William & Mary",
+          "href": "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/"
+        },
+        {
+          "label": "University of Rochester",
+          "href": "https://www.rochester.edu/provost/important-update-for-international-students-on-cpt/"
+        },
+        {
+          "label": "Purdue ISS · CPT",
+          "href": "https://www.purdue.edu/gpp/iss/student/f1/employment/cpt.html"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-19",
   "changes": [

@@ -52,7 +52,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     title: 'PERM Labor Certification Reform',
     tldr: 'DOL plans to rewrite PERM recruitment so its channels track real hiring, raise the bar for showing no qualified U.S. worker was available, and strengthen protections for laid-off U.S. workers. The proposed rule went to White House OIRA review on September 14 and is not in effect.',
     status: 'Under OIRA review · Not in effect',
-    current: 'DOL / ETA sent RIN 1205-AC29 to White House OIRA on September 14, 2026, for prepublication review of a proposed rule. The action sits under 20 CFR 656. This September 17 check did not locate a public NPRM, comment deadline or effective date. The agenda’s July 2026 entry was only a planned proposal month, not evidence of publication or effectiveness.',
+    current: 'DOL / ETA sent RIN 1205-AC29 to White House OIRA on September 14, 2026, for prepublication review of a proposed rule. The action sits under 20 CFR 656. This September 19 check did not locate a public NPRM, comment deadline or effective date. The agenda’s July 2026 entry was only a planned proposal month, not evidence of publication or effectiveness.',
     route: ['H-1B to green card', 'PERM', 'Employer sponsorship'],
     milestones: [
       { date: '2026 Unified Agenda', text: 'DOL outlined PERM recruitment, layoff-protection and employer-compliance reforms, with an original July target for an NPRM.' },
@@ -123,7 +123,7 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
   "title": "Court Stays the D/S Final Rule Nationwide",
   "tldr": "September 14 update: the court postponed the DHS rule ending D/S nationwide and barred further implementation. It will not take effect on September 15 as scheduled. The rule would replace F/J D/S with fixed periods generally capped at four years and add extension and academic-mobility restrictions; those new requirements are currently stayed.",
   "status": "Nationwide court stay · September 15 effective date postponed",
-  "current": "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. Opinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The September 15 effective date is postponed. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal. As of the September 17 check the docket still ended at entry 52, with no notice of appeal. Docket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date.",
+  "current": "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. Opinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The September 15 effective date is postponed. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal. The public docket mirror read on September 19 still ended at entry 52, with no visible notice of appeal; the mirror may lag. Docket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date. Separately, a September 14 announcement from Senator Durbin reports introduction of a CRA joint resolution to disapprove this final rule, with Jayapal and Raskin leading the House companion. Introduction alone does not repeal the rule and is not a court ruling; subsequent votes and enactment remain unverified.",
   "route": [
     "F-1",
     "CPT",
@@ -157,6 +157,10 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     {
       "date": "2026-09-14",
       "text": "The court issued a preliminary injunction postponing the entire rule nationwide and barring further implementation; this is not permanent vacatur."
+    },
+    {
+      "date": "2026-09-14",
+      "text": "Lawmakers announced introduction of a CRA joint resolution to disapprove the rule; introduction is not passage or enactment."
     }
   ],
   "next": [
@@ -186,7 +190,9 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
     "USCardForum litigation discussion",
     "Rice: PhD exit, master’s OPT and degree restrictions",
     "September 14 preliminary injunction (entry 51)",
-    "September 14 opinion (entry 50; nationwide scope at pp. 46–48)"
+    "September 14 opinion (entry 50; nationwide scope at pp. 46–48)",
+    "Senator Durbin: September 14 CRA resolution announcement",
+    "CRA joint resolution text (senator website)"
   ]
 },
   'h1b-weighted-selection': {
@@ -346,12 +352,24 @@ export const englishPolicies: Record<string, EnglishPolicy> = {
 };
 
 export const englishVerifiedSchools: Record<string, { state: string; detail: string }> = {
+"William & Mary": {
+  "state": "September 16: only catalog-required CPT is processed; other requests paused",
+  "detail": "ISSP processes training listed as a degree requirement in the academic catalog. Other requests are paused until further notice. The notice does not explain treatment of existing authorizations."
+},
+"University of Rochester": {
+  "state": "New non-required CPT paused; existing fall authorizations may continue under their terms",
+  "detail": "The August 28 notice pauses new CPT approvals except training required for all students to complete the degree. Already authorized Fall 2026 CPT may continue under its terms unless ISO advises otherwise. This adds an earlier notice to the tracker, not a policy issued today."
+},
+"Purdue University (ISS)": {
+  "state": "Public ISS page confirms degree-required or narrowly defined thesis-research CPT",
+  "detail": "The ISS page requires training for the primary degree, with a separate pathway for thesis or dissertation research requiring technology available only externally or essential data, plus research-credit enrollment. Older elective-course wording remains below; it does not establish reopening of ordinary elective CPT. The ECE email remains a separate record and the original ISS screenshot is preserved."
+},
 "Bryn Mawr College": {"state": "September 15: new optional CPT authorizations paused", "detail": "ISSA is pausing new CPT not required for every student in the degree program while reviewing its policies and procedures. The notice does not announce revocation of existing authorizations."},
 "University at Buffalo": {"state": "New non-degree-required CPT paused; degree-required requests continue", "detail": "The CPT page and FAQ require training necessary for every student to complete the degree; elective coursework or credit alone is insufficient. Previously approved Fall 2026 CPT may continue as planned. The page does not date this policy update."},
 "University of Michigan–Dearborn": {"state": "New CPT limited to two MS programs: Applied Behavior Analysis and Clinical Health Psychology", "detail": "OIA currently lists only MS in Applied Behavior Analysis and MS in Clinical Health Psychology as eligible for new CPT. Other students should not enroll in a CPT course or submit an application. Previously approved Fall 2026 CPT will not be canceled or modified. This entry covers Dearborn only; the CPT section has no separate update date."},
   'Washington State University': {
   "state": "Plans to restrict full-time academic-year CPT from Spring 2027, with required-internship exceptions",
-  "detail": "The August 7 university notice says full-time CPT during the academic year will no longer be approved from Spring 2027, except internships explicitly required by the curriculum. It predates the August SEVP memoranda and does not establish a current blanket pause or cancel summer/part-time CPT. The notice says it may not apply at every campus. Review scope: substantive official-page text was read through the search index; direct access is restricted and later implementation remains unverified."
+  "detail": "The August 7 university notice says full-time CPT during the academic year will no longer be approved from Spring 2027, except internships explicitly required by the curriculum. It predates the August SEVP memoranda and does not establish a current blanket pause or cancel summer/part-time CPT. The notice says it may not apply at every campus. Review scope: substantive official-page text was read through the search index; direct access is restricted and later implementation remains unverified. September 20 verification gap: the full original notice remained inaccessible, so the prior review date is retained."
 },
   'Boston College': { state: 'CPT approvals paused for off-campus activities not required of every student in the degree program', detail: 'The September 9 OISS notice requires training both for degree completion and for every student in the program; optional academic credit is insufficient. The notice does not specify treatment of existing authorizations.' },
   'Johns Hopkins University': { state: 'New and pending CPT requests limited to degree-required training', detail: 'The new OIS notice permits internships/practicums required for degree completion and consistent with the SEVP memos; qualifying requests continue to be processed. Older elective-course language remains lower on the page and does not establish reopening. Existing authorization treatment is unspecified.' },
@@ -368,7 +386,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'Boston University': { state: 'Some CPT approvals are paused', detail: 'Cases that are expressly required for graduation continue to be processed.' },
   UIUC: { state: 'Elective-course CPT is no longer approved', detail: 'Only training required of every student and supported by an employer cooperative agreement is accepted.' },
   'Texas A&M': { state: 'Tighter review, not a full pause', detail: 'New applications after August 24 must satisfy both the program-wide graduation requirement and cooperative-agreement standards.' },
-  'UT Dallas': { state: 'From September 17, only catalog-required internship courses are approved', detail: 'ISSO said on September 17 that, after consulting university legal counsel, its overall CPT policy is unchanged but one point is tightened under the SEVP clarification: only students whose degree catalog lists an internship course requirement can be approved for CPT. Students without that catalog requirement cannot be approved, and there are no case-by-case exceptions. Graduate students who must complete research off campus for a thesis or dissertation may use Academic CPT. This notice supersedes the earlier August 25 "no changes" post.' },
+  'UT Dallas': { state: 'From September 17, only catalog-required internship courses are approved', detail: 'ISSO said on September 17 that, after consulting university legal counsel, its overall CPT policy is unchanged but one point is tightened under the SEVP clarification: only students whose degree catalog lists an internship course requirement can be approved for CPT. Students without that catalog requirement cannot be approved, and there are no case-by-case exceptions. Graduate students who must complete research off campus for a thesis or dissertation may use Academic CPT. This notice supersedes the earlier August 25 "no changes" post. September 20 verification gap: the full original university notice could not be read; the prior review date and position are retained without inferring a change.' },
   'University of Michigan': { state: 'Elective-course CPT is no longer approved', detail: 'Only training required for every student in the degree program may be approved; existing authorizations may continue.' },
   'Northwestern University': { state: 'CPT not required for every student will not be approved', detail: 'In its September 3 notice, OISS says Northwestern cannot approve experiential learning that is not required for every student unless SEVP guidance changes. OISS is working with programs to establish eligibility.' },
   'Columbia University': { state: 'CPT not required for every student is paused; pre-August 24 approvals will not be rescinded', detail: 'ISSO approves only CPT that is integral to the curriculum, required for all students, and supported by a cooperative agreement. Other cases are paused; CPT approved before August 24 will not be rescinded.' },
@@ -384,7 +402,7 @@ export const englishVerifiedSchools: Record<string, { state: string; detail: str
   'New York University (Tandon Mathematics)': { state: 'The mathematics page says international-student CPT approvals have been paused since September 1', detail: 'The internship policy page covers mathematics undergraduates and graduates and directs students to OGS for further information. This entry records the public notice for Tandon Mathematics only and does not establish a university-wide NYU policy.' },
   'University of Southern California': { state: 'Only CPT required for graduation is approved from August 24', detail: 'OIS no longer accepts elective-course CPT that is not required for every student in the program. Documentation review may delay approvals; Fall 2026 CPT authorizations issued before August 24 will not be rescinded.' },
   'University of Alabama': { state: 'Stricter CPT eligibility review began August 31', detail: 'ISSS requires departments to document whether training is required for all students in the degree program or track, or is necessary for thesis-track master’s or doctoral students to complete their thesis or dissertation. Degree requirements must be supported by the academic catalog; an elective-course requirement alone does not qualify.' },
-  'UC Irvine': { state: 'Since September 14, CPT is approved only under three conditions', detail: 'Page readable on September 17: the August 17 Course Credit CPT suspension notice remains, but a newer September 14 notice at the top sets one standard. The International Center approves CPT only when all three conditions are met: it is a degree requirement, it is required of all students in the program, and a cooperative agreement exists between the school and the employer.' },
+  'UC Irvine': { state: 'Since September 14, CPT is approved only under three conditions', detail: 'Page readable on September 17: the August 17 Course Credit CPT suspension notice remains, but a newer September 14 notice at the top sets one standard. The International Center approves CPT only when all three conditions are met: it is a degree requirement, it is required of all students in the program, and a cooperative agreement exists between the school and the employer. September 20 verification gap: the full original university notice could not be read; the prior review date and position are retained without inferring a change.' },
   'University of Utah': { state: 'New CPT not required for every student is paused from September 3', detail: 'ISSS paused optional CPT authorizations. UAtlas still accepts requests, but optional cases will not be approved until review is complete. Existing authorizations continue under the employer, location, and dates on the current I-20.' },
   'University of Delaware': { state: 'New CPT not required for every student is paused', detail: 'The September 2 notice says CGPS paused optional CPT. Students may still submit requests, but no new optional authorizations will be issued until review is complete, and processing delays are expected.' },
   'UC San Diego': { state: 'All F-1 CPT request submission and processing is paused', detail: 'The ISEO page still pauses all CPT requests in iServices. Page 12 of the September 2 presentation plans reopening in mid-September and requires department confirmation that the internship is required. No exact reopening date is specified.' },
@@ -402,7 +420,6 @@ export const englishCommunitySchools: Record<string, string> = {
   Caltech: 'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
   'Purdue ECE': 'A department email screenshot says non-required internship/co-op CPT will not be approved this semester; students should separately consult ISS about work needed for thesis research. This statement covers ECE only.',
   'Goldey-Beacom College': 'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
-  'Purdue University (ISS)': 'A university-level ISS email screenshot says CPT must arise from an established course or thesis/dissertation research requirement; this entry is separate from the ECE department notice.',
 };
 
 export const englishRouteStages: Record<string, { subtitle: string; policies: Record<string, { title: string; state: string }> }> = {
