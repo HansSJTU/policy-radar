@@ -126,7 +126,7 @@ export const policies: Array<{
   "confidence": 85,
   "status": "法院全国暂缓 · 原 9·15 生效日已推迟",
   "tone": "amber",
-  "current": "麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令，或案件实体审理结束，没有设到期日。第 50 号意见第 46—48 页写明，这项救济覆盖全国，不限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。原定 9·15 生效的安排已经作废。法院还没有永久撤销规则，也没有作出有利于原告的简易判决。相关请求被无偏见驳回，可以再次提出。9·17 核查时案卷仍止于第 52 项，没有上诉记录；第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。",
+  "current": "麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令，或案件实体审理结束，没有设到期日。第 50 号意见第 46—48 页写明，这项救济覆盖全国，不限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。原定 9·15 生效的安排已经作废。法院还没有永久撤销规则，也没有作出有利于原告的简易判决。相关请求被无偏见驳回，可以再次提出。9·19 读取的公开案卷镜像仍止于第 52 项，未见上诉记录；镜像可能滞后。第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。另据议员官网 9·14 公告，Durbin 等参议员已提出 CRA 联合否决决议，拟撤销这项最终规则，Jayapal 和 Raskin 牵头众议院配套案。提出决议本身不撤销规则，也不是法院裁定；后续表决和成法进度仍待核实。",
   "route": [
     "F-1",
     "CPT",
@@ -160,6 +160,10 @@ export const policies: Array<{
     {
       "date": "2026-09-14",
       "text": "法院签发初步禁令，全国推迟整项规则生效并禁止继续实施；并非永久撤销。"
+    },
+    {
+      "date": "2026-09-14",
+      "text": "议员宣布提出 CRA 联合否决决议，拟撤销最终规则；提出不等于通过或成法。"
     }
   ],
   "next": [
@@ -222,6 +226,14 @@ export const policies: Array<{
     {
       "label": "9·14 法院意见（第 50 项；第 46—48 页全国范围）",
       "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0.pdf"
+    },
+    {
+      "label": "Durbin 官网 · 9·14 CRA 决议公告",
+      "href": "https://www.durbin.senate.gov/newsroom/press-releases/durbin-blumenthal-padilla-whitehouse-jayapal-raskin-introduce-cra-resolution-of-disapproval-regarding-regulation-that-changes-how-international-students-and-journalists-maintain-immigration-status"
+    },
+    {
+      "label": "CRA 联合否决决议文本（议员官网）",
+      "href": "https://www.durbin.senate.gov/download/cra-on-student-visa-rule&download=1"
     }
   ]
 },
@@ -576,7 +588,7 @@ export const policies: Array<{
     status: 'OIRA 审查中 · 尚未生效',
     tone: 'blue',
     current:
-      'DOL / ETA 的 RIN 1205-AC29 在 2026-09-14 送交白宫 OIRA，做拟议规则的发布前审查。议程把本项列在 20 CFR 656 之下。截至 9 月 17 日核查，没有找到公开的 NPRM 正文、评论截止日或生效日。议程里的 2026 年 7 月只是原计划的提案月份，不代表已经发布或生效。',
+      'DOL / ETA 的 RIN 1205-AC29 在 2026-09-14 送交白宫 OIRA，做拟议规则的发布前审查。议程把本项列在 20 CFR 656 之下。截至 9 月 19 日核查，没有找到公开的 NPRM 正文、评论截止日或生效日。议程里的 2026 年 7 月只是原计划的提案月份，不代表已经发布或生效。',
     route: ['H-1B → 绿卡', 'PERM', '雇主担保'],
     milestones: [
       { date: '2026 统一议程', text: 'DOL 列出 PERM 招聘、裁员保护及雇主合规的改革方向；原计划 7 月发布 NPRM。' },
