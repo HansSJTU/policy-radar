@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-22",
+  "changes": [
+    {
+      "id": "cpt-kennesaw-toledo",
+      "category": "CPT 学校",
+      "title": "补录 Kennesaw State 与 Toledo 的 CPT 限制",
+      "summary": "两校公开页面收紧非必需实践资格；这是补录既有通知，不是本日新规。",
+      "before": "47 条记录：43 条校方网页、4 条社区截图；46 所不同学校。",
+      "after": "49 条记录：45 条校方网页、4 条社区截图；48 所不同学校。Kennesaw State 页首仅列三个项目；Toledo 不属于全面暂停。",
+      "sources": [
+        {
+          "label": "Kennesaw State University",
+          "href": "https://campus.kennesaw.edu/current-students/academics/global-education/international-student-scholar-services/f-1/curricular-practical-training.php"
+        },
+        {
+          "label": "University of Toledo",
+          "href": "https://www.utoledo.edu/cisp/international/CPT.html"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-20",
   "changes": [
     {
@@ -886,6 +909,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-22",
+  "changes": [
+    {
+      "id": "cpt-kennesaw-toledo",
+      "category": "CPT campuses",
+      "title": "Add Kennesaw State and Toledo CPT restrictions",
+      "summary": "Public university pages narrow eligibility for optional training. These are additions of existing notices, not new rules issued today.",
+      "before": "47 evidence entries: 43 public university pages and 4 community reports; 46 distinct institutions.",
+      "after": "49 evidence entries: 45 public university pages and 4 community reports; 48 distinct institutions. Kennesaw State lists three programs; Toledo does not announce a blanket pause.",
+      "sources": [
+        {
+          "label": "Kennesaw State University",
+          "href": "https://campus.kennesaw.edu/current-students/academics/global-education/international-student-scholar-services/f-1/curricular-practical-training.php"
+        },
+        {
+          "label": "University of Toledo",
+          "href": "https://www.utoledo.edu/cisp/international/CPT.html"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-20",
   "changes": [
