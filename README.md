@@ -27,6 +27,22 @@ Policy status is based on primary materials from the Federal Register, DHS, USCI
 
 The impact ranking describes the structural effect a policy would have on the traditional stay path if implemented in its current direction. It does not indicate that the policy is already in effect or predict the likelihood of implementation.
 
+## Project structure
+
+| Path | What lives there |
+| --- | --- |
+| `content/policies/<id>.ts` | Everything about one policy, with Chinese and English copy side by side: status, summary, timeline, analysis, examples, process position, sources and review date. |
+| `app/policy-ids.ts` | The policy list. Its order is the impact rank shown on the site. |
+| `app/policy-data.ts` | Returns a policy localized to one language, plus its process track. |
+| `app/process-model.ts` | Shared copy and stage logic for federal rulemaking, SEVP guidance and executive orders. |
+| `app/briefing-feed.ts` | The rolling 30-day briefing, newest entry first. |
+| `app/cpt-schools.ts` | The CPT school tracker, with both languages on each record. |
+| `app/home-view.ts` | Builds the home page on the server, so the browser only downloads the current language and the fields each card shows. |
+| `app/policies/[policyId]/` | The policy detail page. |
+| `tests/` | Node test runner suites, including checks that both languages stay in step. |
+
+To update a policy, edit its file in `content/policies/`. Change `checkedOn` only after its sources have been reviewed, and update `SITE_UPDATED_ON` in `app/policy-freshness.ts` when the site changes.
+
 ## Local development
 
 Node.js 22.13 or later is required.

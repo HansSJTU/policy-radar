@@ -9,7 +9,9 @@ Contributions to the U.S. Stay Path Policy Radar are welcome.
 - Link every factual claim to a verifiable source. Prefer official documents, court records, and formal school notices.
 - Forum links may supplement community discussion or identify leads, but they do not replace official evidence.
 - Summaries must state the policy itself with a clear subject, verb, and object. Avoid subjective conclusions such as “this path is no longer viable.”
-- Update both supported languages. English content must not contain untranslated Chinese text.
+- Each policy lives in one file under `content/policies/`, with Chinese (`zh`) and English (`en`) copy side by side. Update both languages in the same change. English content must not contain untranslated Chinese text.
+- Keep one `status` per language; the home card, path map and detail page all show it.
+- List the primary government document first in `sources`; the detail page links it as the original document.
 - Clearly distinguish final rules, proposed rules, regulatory agenda items, administrative guidance, litigation, and media reports.
 - Do not commit personal data, visitor hashes, access logs, secrets, tokens, passwords, or `.env` contents.
 
