@@ -367,7 +367,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     </p>
                   </aside>
                 )}
-                {p.impacts.map(({ title, text, examples = [] }, i) => {
+                {p.impacts.map(({ title, text, examples = [], source }, i) => {
                   const Icon = impactIcons[i % impactIcons.length];
                   return (
                     <article className="pd-impact" key={title}>
@@ -397,16 +397,10 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                             </p>
                           </div>
                         ))}
-                        {policyId === 'duration-status' && i === 2 && (
+                        {source && (
                           <p className="pd-example-source">
-                            <a
-                              href="https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {english
-                                ? 'Source: Rice explanation of master’s OPT and degree restrictions ↗'
-                                : '依据：Rice 对硕士 OPT 与学位限制的解释 ↗'}
+                            <a href={source.href} target="_blank" rel="noopener noreferrer">
+                              {source.label} ↗
                             </a>
                           </p>
                         )}

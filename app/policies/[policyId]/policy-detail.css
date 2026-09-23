@@ -1125,6 +1125,9 @@ fieldset.pd-stages {
   line-height: 1.9;
   color: var(--ink-soft);
 }
+.pd-overview > p + p {
+  margin-top: 14px;
+}
 .pd-possibilities {
   margin-top: 22px;
   padding: 20px 22px 6px;

@@ -44,7 +44,7 @@ export const prevailingWage: PolicyContent = {
     audience: 'H-1B、H-1B1、E-3 与 PERM 的申请人及承担工资的雇主。',
     caveat: '提案改的是法定工资下限，和 H-1B 抽签权重是两套规则。',
     background:
-      'RIN 1205-AC30 在 2026-03-27 发布，评论期 5 月 26 日结束。提案要把四级门槛从约第 17、34、50、67 百分位挪到第 34、52、70、88 百分位。8 月的统一议程仍把它列在提案阶段。',
+      'RIN 1205-AC30 在 2026-03-27 发布，公众评论期 5 月 26 日结束。2026 年 8 月的统一议程仍把它列在提案阶段；DOL 还没有发布最终规则，现行工资等级的计算方式没有改变。',
     teaser: '一次性费用之外，持续工资成本可能进一步压缩雇主的担保空间。',
     headline: '持续多年的工资预算，可能成为另一道担保门槛。',
     analysis:
@@ -126,7 +126,7 @@ export const prevailingWage: PolicyContent = {
         text: 'DOL 可能修改提案并将最终规则送交 OIRA；目前没有公开完成日期。',
       },
       {
-        date: '日期待定',
+        date: '日期未定',
         text: '只有最终规则发布并到达其生效日后，新工资等级才会开始适用。',
         estimate: true,
       },
@@ -154,7 +154,7 @@ export const prevailingWage: PolicyContent = {
     caveat:
       'This proposal concerns required wage floors, separate from H-1B selection weights.',
     background:
-      'RIN 1205-AC30 was published on March 27, 2026 and comments closed May 26. It proposes moving the four levels from roughly the 17th, 34th, 50th and 67th percentiles to the 34th, 52nd, 70th and 88th; the August agenda still lists a proposal.',
+      'RIN 1205-AC30 was published on March 27, 2026, and comments closed May 26. The August 2026 Unified Agenda still lists it at the proposed-rule stage; DOL has not published a final rule, so the current wage-level calculation has not changed.',
     teaser:
       'Beyond one-time fees, ongoing wage costs may further reduce employers’ room to sponsor.',
     headline:

@@ -46,7 +46,7 @@ export const h1bFee: PolicyContent = {
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
     background:
-      'RIN 1615-AD20 在 2026-08-25 公布，评论截止到 9 月 24 日。这是现有费用之外新加的拟议附加费，按 cap-subject 申请划分范围。',
+      'RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。',
     teaser:
       '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
     headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
@@ -152,7 +152,7 @@ export const h1bFee: PolicyContent = {
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
     background:
-      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. This proposed fee would be additional to existing fees and applies by cap-subject filing.',
+      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.',
     teaser:
       'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
     headline:

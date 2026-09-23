@@ -106,7 +106,7 @@ export const h4Ead: PolicyContent = {
     ],
     next: [
       {
-        date: 'TBD',
+        date: '日期未定',
         text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。',
       },
     ],
@@ -223,7 +223,7 @@ export const h4Ead: PolicyContent = {
     ],
     next: [
       {
-        date: 'TBD',
+        date: 'Date unknown',
         text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.',
       },
     ],

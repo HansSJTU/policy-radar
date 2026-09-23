@@ -54,7 +54,13 @@ export type PolicyCopy = {
   // Practitioner expectations for an upcoming rule. Always labeled as analysis,
   // never presented as published text or an effective requirement.
   possibilities?: { heading: string; note: string; items: [string, string][] };
-  impacts: Array<{ title: string; text: string; examples?: string[] }>;
+  impacts: Array<{
+    title: string;
+    text: string;
+    examples?: string[];
+    // Where the examples' reading of the rule comes from, when not obvious.
+    source?: { label: string; href: string };
+  }>;
   outlook: string;
   scenarios: Array<{
     name: string;

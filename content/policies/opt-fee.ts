@@ -37,10 +37,10 @@ export const optFee: PolicyContent = {
     effectLabel: '尚未生效 · 金额未确认',
     agency: 'DHS / ICE',
     documentId: '1653-AB01',
-    tldr: 'ICE 打算新增 OPT 收费。媒体报道的金额是 10 万美元。官方没有公布收多少、谁交、哪些申请要交、能不能减免，不能认定由学生承担。',
+    tldr: 'ICE 打算新增 OPT 收费，媒体报道的金额是 10 万美元。收多少、谁交、哪些申请要交、能不能减免，官方都还没公布，不能认定由学生承担。',
     tags: ['OPT', 'H-1B 转换'],
     summary:
-      '9·11 进展（9·22 核对）：OIRA 已经带修改完成 OPT 收费提案的审查。但 10 万美元仍只是媒体报道。官方没有公布金额、谁交钱、哪些申请要交、有没有减免，所以不能认定由学生、雇主或学校承担。这项收费尚未生效。',
+      'OIRA 已在 9 月 11 日带修改完成 OPT 收费提案的审查，但提案正文还没公开。10 万美元只是媒体报道的数字：金额、谁交、哪些申请要交、有没有减免，官方都没公布，所以不能认定由学生、雇主或学校承担。这项收费尚未生效，现行 OPT 申请费也没变。',
     audience: '计划申请 OPT 或 STEM OPT 延期的 F-1 学生及其雇主。',
     caveat:
       '谁交钱、哪些申请要交、有没有减免，官方都还没公布。10 万美元只是媒体报道，不能认定由学生支付。',
@@ -157,7 +157,7 @@ export const optFee: PolicyContent = {
     tldr: 'ICE proposes a new OPT fee. Media reports suggest $100,000, but the official amount, payer, covered applications and exemptions remain unpublished; student payment cannot be assumed.',
     tags: ['OPT', 'H-1B transition'],
     summary:
-      'September 11 development (checked September 22): OIRA completed OPT fee proposal review with changes. The $100,000 figure remains media-reported. The official amount, payer, covered applications and exemptions are unpublished; student, employer or school payment cannot be assumed. It is not in effect.',
+      'OIRA completed its review of the OPT fee proposal, with changes, on September 11, but the proposal text is not yet public. The $100,000 figure comes from media reports: the official amount, who pays, which applications are covered and any exemptions are all unpublished, so payment by students, employers or schools cannot be assumed. The fee is not in effect, and the current OPT filing fee is unchanged.',
     audience:
       'F-1 students planning OPT or a STEM OPT extension and their employers.',
     caveat:

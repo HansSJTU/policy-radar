@@ -122,7 +122,7 @@ export const eadDiscretion: PolicyContent = {
         text: 'DHS 审阅评论并决定是否修改或发布最终规则；目前没有公开日期。',
       },
       {
-        date: '日期待定',
+        date: '日期未定',
         text: '若定稿，新标准只会按最终规则规定的生效日适用于相关初次或续期申请。',
         estimate: true,
       },

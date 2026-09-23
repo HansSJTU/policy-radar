@@ -32,7 +32,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     effectLabel: '已签署并向部门作出指令 · 具体执行待跟踪',
     agency: '总统 / 国务院 / DOL / DHS',
     documentId: '2026-09-18 行政命令 · 编号待核',
-    tldr: '总统要求国务院、劳工部和 DHS 加强 H-1B 跨部门审查，在相关审查中考虑担保雇主过去一年及计划中的裁员：范围按“提交申请的雇主、同类被裁岗位、过去一年或已列入计划”三个条件限定，重点是进入或试图进入美国的案件。劳工部须在 30 天内开始复查既往 LCA 数据。命令没有写裁员与审批结果之间的对应关系。',
+    tldr: '总统 9 月 18 日签署行政命令，要求国务院、劳工部和 DHS 加强 H-1B 跨部门审查，并考虑担保雇主的相关裁员：同一雇主、同类岗位、发生在过去一年内或已列入计划，三个条件都满足才算。针对的是进入或试图进入美国的 H-1B 人员。劳工部须在 30 天内开始复查既往 LCA 数据。命令没有写裁员会导致什么审批结果。',
     tags: ['H-1B', 'LCA', '签证与入境'],
     summary:
       '这份行政命令要求国务院、劳工部和 DHS 用更多部门的工资、就业和学历信息核查 H-1B 合规，并要求在相关审查中考虑担保雇主过去一年及计划中的裁员。这里的“相关”不是泛指公司任何一次裁员，命令用提交申请的雇主、被裁岗位、裁员时间三个条件来限定，也把适用环节写在进入或试图进入美国的案件上。劳工部工资工时司还须在 30 天内开始复查既往 LCA 数据，判断是否需要进一步执法。',
@@ -156,7 +156,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     agency: 'President / State / DOL / DHS',
     documentId:
       'September 18, 2026 executive order · Number pending verification',
-    tldr: 'The President directs State, DOL and DHS to coordinate H-1B review and, in covered cases, to consider sponsor layoffs within the previous year or planned for the future. Scope is set by three conditions: the employer filing the case, comparable laid-off roles, and timing. DOL must begin reviewing prior LCA data within 30 days. The order does not state how layoffs map to an approval or denial outcome.',
+    tldr: 'A September 18 executive order tells State, DOL and DHS to coordinate H-1B review and to weigh the sponsor’s relevant layoffs: same employer, comparable roles, and within the past year or planned. It covers H-1B workers entering or seeking to enter the United States. DOL must begin reviewing past LCA data within 30 days. The order does not say what outcome a layoff leads to.',
     tags: ['H-1B', 'LCA', 'Visa and entry'],
     summary:
       'The order directs State, DOL and DHS to use additional agencies’ information for H-1B compliance checks and requires consideration of the sponsoring employer’s layoffs within the previous year or planned for the future. “Relevant” is not any layoff anywhere: the order defines it by the employer filing the case, the roles cut and the timing, and it frames the covered review around workers entering or attempting to enter the United States. DOL’s Wage and Hour Division must also begin reviewing previously submitted LCA data within 30 days to assess further enforcement.',

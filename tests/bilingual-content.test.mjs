@@ -40,9 +40,10 @@ test('each policy has matching Chinese and English structure', () => {
     for (const key of ['milestones', 'next', 'impacts', 'scenarios', 'scope']) {
       assert.equal(zh[key].length, en[key].length, `${id} ${key}`);
     }
-    zh.impacts.forEach((impact, index) =>
-      assert.equal(impact.examples?.length ?? 0, en.impacts[index].examples?.length ?? 0, `${id} impact ${index} examples`),
-    );
+    zh.impacts.forEach((impact, index) => {
+      assert.equal(impact.examples?.length ?? 0, en.impacts[index].examples?.length ?? 0, `${id} impact ${index} examples`);
+      assert.equal(impact.source?.href, en.impacts[index].source?.href, `${id} impact ${index} source`);
+    });
     assert.equal(Boolean(zh.reviewNote), Boolean(en.reviewNote), `${id} reviewNote`);
     for (const source of sources) assert.ok(source.zh && source.en, `${id} ${source.href}`);
   }

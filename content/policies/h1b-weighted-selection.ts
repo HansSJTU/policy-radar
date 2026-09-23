@@ -39,7 +39,7 @@ export const h1bWeightedSelection: PolicyContent = {
     audience: '参加 cap-subject H-1B 注册的申请人，以及为这些岗位申报的雇主。',
     caveat: '拿到 1—4 份权重不等于你个人的中签率，也不会直接抬高法定工资门槛。',
     background:
-      'DHS 在 2025-12-29 发布 RIN 1615-AD01 最终规则。规则保留以受益人为中心的选择方式，普通名额和美国高学历名额的先后顺序也不变。',
+      'DHS 在 2025-12-29 发布 RIN 1615-AD01 最终规则，2026-02-27 生效，从 FY2027 注册季开始使用。USCIS 按职位对应的 OEWS 工资等级给出 1 到 4 份抽签权重。规则保留以受益人为中心的选择方式，普通名额和美国高学历名额的先后顺序也不变。',
     teaser: '工资等级影响抽签权重，入门岗位与较高等级岗位不再处于相同起点。',
     headline: '岗位对应的工资等级，已经成为抽签机会的一部分。',
     analysis:
@@ -138,7 +138,7 @@ export const h1bWeightedSelection: PolicyContent = {
     caveat:
       'One to four weights are not individual selection probabilities and do not themselves raise the required wage floor.',
     background:
-      'DHS published the RIN 1615-AD01 final rule on December 29, 2025, retaining beneficiary-centric selection and the existing order for regular and U.S. advanced-degree allocations.',
+      'DHS published the RIN 1615-AD01 final rule on December 29, 2025; it took effect on February 27, 2026 and applies beginning with the FY 2027 registration season. USCIS assigns one to four entries according to the position’s OEWS wage level. The rule retains beneficiary-centric selection and the existing order for regular and U.S. advanced-degree allocations.',
     teaser:
       'Wage level affects selection weight, so entry-level and higher-level roles no longer start on equal footing.',
     headline:

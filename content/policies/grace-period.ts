@@ -51,7 +51,7 @@ export const gracePeriod: PolicyContent = {
     tldr: 'DHS 打算取消 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1 和 TN 等身份在雇佣提前终止后的最长 60 天酌情宽限期。这项提案不涉及 F-1 完成学业后的宽限期。',
     tags: ['H-1B 失业', '换雇主', '转身份'],
     summary:
-      '9·11 进展（9·22 核对）：DHS 已正式发布拟议规则公告（NPRM）。提案要取消 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属在主申请人雇佣提前终止后的最长 60 天酌情宽限期。公众评论截止到 11·10 美东当日午夜前。这项提案尚未生效，现行规则没变，也不涉及 F-1 完成学业后的宽限期。',
+      'DHS 已在 9 月 11 日正式发布拟议规则（NPRM），提案要取消 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属在主申请人雇佣提前终止后的最长 60 天酌情宽限期。公众评论截止到 11·10 美东当日午夜前。这项提案尚未生效，现行规则没变，也不涉及 F-1 完成学业后的宽限期。',
     audience:
       '雇佣或相关活动提前终止的 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 持有人及其家属。',
     caveat:
@@ -171,7 +171,7 @@ export const gracePeriod: PolicyContent = {
     tldr: 'DHS plans to eliminate the discretionary grace period of up to 60 days after early termination of employment for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, TN, and related classifications. The proposal does not concern the F-1 post-completion grace period.',
     tags: ['H-1B job loss', 'Employer change', 'Change of status'],
     summary:
-      'September 11 development (checked September 22): DHS published its Notice of Proposed Rulemaking (NPRM). It would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
+      'On September 11, DHS published a Notice of Proposed Rulemaking (NPRM) that would remove the discretionary grace period of up to 60 days for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN holders and their dependents after the principal’s employment ends early. Public comments are due before midnight Eastern Time on November 10. It is not in effect; current rules remain unchanged, and the F-1 post-completion grace period is separate.',
     audience:
       'E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN workers whose employment or qualifying activity ends early, and their dependents.',
     caveat:
