@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* oxlint-disable next/no-img-element -- Evidence screenshots are served as-is from public/. */
 import { useEffect, useState } from 'react';
 import {
   ArrowUpRight,
@@ -10,13 +10,7 @@ import {
   ShieldAlert,
   X,
 } from 'lucide-react';
-import {
-  communitySchools,
-  verifiedSchools,
-  type CommunitySchool,
-  type VerifiedSchool,
-} from './cpt-schools';
-import { englishCommunitySchools, englishVerifiedSchools } from './english-content';
+import type { CommunitySchool, VerifiedSchool } from './cpt-schools';
 import { GlossaryText } from './glossary-text';
 import { homeCopy } from './home-copy';
 import type { Language } from './language';
@@ -25,12 +19,17 @@ import { ShareButton } from './share-button';
 
 type CptSchoolTrackerProps = {
   language: Language;
+  // Already localized by the server.
+  verifiedSchools: VerifiedSchool[];
+  communitySchools: CommunitySchool[];
   selectedEvidence: VerifiedSchool | CommunitySchool | null;
   setSelectedEvidence: (school: VerifiedSchool | CommunitySchool | null) => void;
 };
 
 export function CptSchoolTracker({
   language,
+  verifiedSchools,
+  communitySchools,
   selectedEvidence,
   setSelectedEvidence,
 }: CptSchoolTrackerProps) {
@@ -51,7 +50,7 @@ export function CptSchoolTracker({
     revealSharedSchool();
     window.addEventListener('hashchange', revealSharedSchool);
     return () => window.removeEventListener('hashchange', revealSharedSchool);
-  }, []);
+  }, [verifiedSchools, communitySchools]);
 
   useEffect(() => {
     if (!targetSchool) return;
@@ -80,17 +79,11 @@ export function CptSchoolTracker({
     };
   }, [selectedEvidence, setSelectedEvidence]);
 
-  const localizedVerifiedSchools = language === 'en'
-    ? verifiedSchools.map((school) => ({ ...school, ...englishVerifiedSchools[school.school] }))
-    : verifiedSchools;
-  const localizedCommunitySchools = language === 'en'
-    ? communitySchools.map((school) => ({ ...school, state: englishCommunitySchools[school.school] }))
-    : communitySchools;
   const normalizedQuery = schoolQuery.trim().toLowerCase();
-  const visibleVerified = localizedVerifiedSchools.filter((school) =>
+  const visibleVerified = verifiedSchools.filter((school) =>
     `${school.school} ${school.state} ${school.detail}`.toLowerCase().includes(normalizedQuery),
   );
-  const visibleCommunity = localizedCommunitySchools.filter((school) =>
+  const visibleCommunity = communitySchools.filter((school) =>
     `${school.school} ${school.state}`.toLowerCase().includes(normalizedQuery),
   );
 
@@ -186,12 +179,13 @@ export function CptSchoolTracker({
               {selectedEvidence.screenshots.length > 0
                 ? selectedEvidence.screenshots.map((screenshot, index) => (
                     <figure key={screenshot.src}>
-                      <Image
+                      <img
                         src={screenshot.src}
                         width={screenshot.width}
                         height={screenshot.height}
                         alt={`${selectedEvidence.school} ${ui.evidenceTitle} ${index + 1}`}
-                        unoptimized
+                        loading="lazy"
+                        decoding="async"
                       />
                       {selectedEvidence.screenshots.length > 1 && <figcaption>{index + 1} / {selectedEvidence.screenshots.length}</figcaption>}
                     </figure>

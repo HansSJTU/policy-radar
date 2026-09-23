@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import test from 'node:test';
 
-import { communitySchools, verifiedSchools } from '../app/cpt-schools.ts';
+import { communitySchools, getVerifiedSchools, verifiedSchools } from '../app/cpt-schools.ts';
 
 const source = await readFile(new URL('../app/home-copy.ts', import.meta.url), 'utf8');
 
@@ -87,7 +87,7 @@ test('current CPT status evidence is grouped without overstating public verifica
 });
 
 test('UC Berkeley describes the narrow thesis and dissertation CPT exception', () => {
-  const berkeley = verifiedSchools.find(({ school }) => school === 'UC Berkeley');
+  const berkeley = getVerifiedSchools('zh').find(({ school }) => school === 'UC Berkeley');
 
   assert.ok(berkeley);
   assert.equal(berkeley.state, 'Course Credit CPT 仍暂停；论文型 CPT 仅限严格个案');
@@ -110,7 +110,7 @@ test('screenshot evidence is bundled as nonempty project assets', async () => {
 });
 
 test('NYU public evidence is limited to Tandon Mathematics and retains no fabricated screenshot', () => {
-  const nyu = verifiedSchools.find(({ school }) => school === 'New York University (Tandon Mathematics)');
+  const nyu = getVerifiedSchools('zh').find(({ school }) => school === 'New York University (Tandon Mathematics)');
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
   assert.equal(nyu.href, 'https://math.nyu.edu/dynamic/sites/tandon/internships/');

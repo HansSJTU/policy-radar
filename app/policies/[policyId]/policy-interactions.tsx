@@ -8,18 +8,18 @@ import {
   getProcessStageLabel,
   type ProcessTrack,
 } from '../../process-model';
-import type { PolicyEditorial } from '../../policy-editorial';
+import type { PolicyCopy } from '@/content/policy-types';
 import { policyHref } from '../../policy-links';
 
 export function PolicyScenarios({
-  editorial,
+  scenarios,
   language,
 }: {
-  editorial: PolicyEditorial;
+  scenarios: PolicyCopy['scenarios'];
   language: Language;
 }) {
   const [selected, setSelected] = useState(0);
-  const scenario = editorial.scenarios[selected];
+  const scenario = scenarios[selected];
   const english = language === 'en';
   return (
     <>
@@ -39,10 +39,10 @@ export function PolicyScenarios({
         className="pd-scenarios"
         aria-label={english ? 'Scenario analysis' : '情景推演'}
       >
-        {editorial.scenarios.map((item, index) => (
+        {scenarios.map((item, index) => (
           <button
             type="button"
-            key={item[0]}
+            key={item.name}
             aria-pressed={selected === index}
             aria-controls="scenario-result"
             onClick={() => setSelected(index)}
@@ -61,8 +61,8 @@ export function PolicyScenarios({
                     : '查看影响 →'}
               </span>
             </span>
-            <strong>{item[0]}</strong>
-            <span className="pd-scenario-assumption">{item[2]}</span>
+            <strong>{item.name}</strong>
+            <span className="pd-scenario-assumption">{item.assumption}</span>
           </button>
         ))}
       </fieldset>
@@ -73,14 +73,14 @@ export function PolicyScenarios({
       >
         <span className="pd-kicker">
           {english ? 'IF THIS HAPPENS' : '如果这种情况发生'}{' '}
-          {String.fromCharCode(65 + selected)} · {scenario[0]}
+          {String.fromCharCode(65 + selected)} · {scenario.name}
         </span>
         <h3>
-          <GlossaryText text={scenario[1]} />
+          <GlossaryText text={scenario.headline} />
         </h3>
         <p>
           {english ? 'Assumption: ' : '假设：'}
-          <GlossaryText text={scenario[2]} />
+          <GlossaryText text={scenario.assumption} />
         </p>
         <dl>
           <div>
@@ -90,7 +90,7 @@ export function PolicyScenarios({
                 : '对你可能有什么影响'}
             </dt>
             <dd>
-              <GlossaryText text={scenario[3]} />
+              <GlossaryText text={scenario.effects} />
             </dd>
           </div>
           <div>
@@ -100,7 +100,7 @@ export function PolicyScenarios({
                 : '接下来要看什么，才能知道是否会这样发展'}
             </dt>
             <dd>
-              <GlossaryText text={scenario[4]} />
+              <GlossaryText text={scenario.signals} />
             </dd>
           </div>
         </dl>
@@ -108,60 +108,6 @@ export function PolicyScenarios({
     </>
   );
 }
-
-const federalDescriptions = {
-  zh: [
-    '机构拟定规则，或将项目列入统一议程。',
-    'OIRA 在提案公开前审查规则。',
-    '机构在 Federal Register 发布 NPRM，公开拟议文本。',
-    '公众提交意见，机构收集并审阅意见。评论期结束不等于规则生效。',
-    '机构发布最终规则，说明采纳的文本、对意见的回应和生效安排。',
-    '规则到达生效日期并开始适用；如有法院暂缓或禁令，需另行核对。',
-  ],
-  en: [
-    'The agency drafts the rule or lists it in the Unified Agenda.',
-    'OIRA reviews the proposal before publication.',
-    'The agency publishes the proposed text as an NPRM in the Federal Register.',
-    'The public submits comments and the agency reviews them. Closing comments does not make the rule effective.',
-    'The agency publishes the final text, responses to comments and effective-date arrangements.',
-    'The rule reaches its effective date and begins to apply, subject to any court stay or injunction.',
-  ],
-};
-const guidanceDescriptions = {
-  zh: [
-    'SEVP 发布合规风险通知。',
-    'SEVP 通过指引进一步解释现行规则。',
-    '学校与 DSO 将指引落实到具体授权。',
-    '继续观察检查与实际执法口径。',
-    '关注 SEVP 是否进一步补充或调整指引。',
-  ],
-  en: [
-    'SEVP issues a compliance-risk notice.',
-    'SEVP clarifies existing rules through guidance.',
-    'Schools and DSOs apply the guidance to authorizations.',
-    'Monitor inspections and enforcement practice.',
-    'Watch for further SEVP clarification or revised guidance.',
-  ],
-};
-
-const executiveOrderDescriptions = {
-  zh: [
-    '总统签署行政命令，向部门作出指令；这一步没有 NPRM 或公众评论期。',
-    '国务院、劳工部与 DHS 在法律权限内落实跨部门协作和裁员审查要求；命令要求劳工部在 30 天内开始复查既往 LCA 数据，具体执行文件仍需跟踪。',
-    '核对部门发布的执行文件、实际审查与执法情况，以及是否出现后续规则或法院命令。',
-  ],
-  en: [
-    'The President signs an order directing agencies; this step has no NPRM or public-comment period.',
-    'State, DOL and DHS implement coordination and layoff-review directives within their legal authority. DOL must begin reviewing prior LCA data within 30 days; specific implementation documents still need tracking.',
-    'Check agency implementation documents, actual review and enforcement practices, and any later regulations or court orders.',
-  ],
-};
-
-const processDescriptions = {
-  'federal-rulemaking': federalDescriptions,
-  'administrative-guidance': guidanceDescriptions,
-  'executive-order': executiveOrderDescriptions,
-};
 
 export function PolicyProgress({
   track,
@@ -174,7 +120,6 @@ export function PolicyProgress({
     track.activeStage ?? track.lastCompletedStage ?? 0,
   );
   const english = language === 'en';
-  const descriptions = processDescriptions[track.kind][language];
   return (
     <>
       <p className="pd-current">
@@ -221,7 +166,7 @@ export function PolicyProgress({
           <GlossaryText text={track.stages[selected]} />
         </strong>
         <p>
-          <GlossaryText text={descriptions[selected]} />
+          <GlossaryText text={track.descriptions[selected]} />
         </p>
       </div>
       {track.litigation.length > 0 && (

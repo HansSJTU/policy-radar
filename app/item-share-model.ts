@@ -1,20 +1,7 @@
 import type { Language } from './language';
 import type { VerifiedSchool, CommunitySchool } from './cpt-schools';
-import { getPolicyDetail, POLICY_SITE_URL } from './policy-detail-model.ts';
-import { policyHref } from './policy-links.ts';
+import { POLICY_SITE_URL } from './policy-links.ts';
 import { itemShareLabels, type ShareItem } from './share-model.ts';
-
-export function getPolicyShareItem(id: string, language: Language): ShareItem | undefined {
-  const detail = getPolicyDetail(id, language);
-  if (!detail) return undefined;
-  const p = detail.editorial;
-  return {
-    kind: 'policy', id, title: p.title, summary: p.summary,
-    status: `${p.status} · ${p.effectLabel}`,
-    scope: p.audience, caveat: [p.caveat, detail.verificationNote].filter(Boolean).join(' '), checkedOn: detail.checkedOn,
-    href: POLICY_SITE_URL + policyHref(id, language),
-  };
-}
 
 // The caller passes the same localized record rendered in the school card.
 export function getSchoolShareItem(school: VerifiedSchool | CommunitySchool, language: Language): ShareItem {

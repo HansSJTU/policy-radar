@@ -92,10 +92,10 @@
 .school-share-card > .share-card-trigger:focus-visible { outline: 2px solid #c7daef; outline-offset: 3px; }
 
 /* Equal-height controls; the text controls share a width, the menu is square. */
-:is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 80px; height: 40px; flex-shrink: 0; padding: 3px; border-radius: 9px; }
-:is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch :is(button, a) { min-width: 0; width: 36px; height: 32px; padding: 0; border-radius: 6px; }
-:is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger { flex-shrink: 0; width: 40px; height: 40px; border-radius: 9px; background: var(--card); border-color: var(--line); }
-:is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger svg { width: 20px; height: 20px; stroke-width: 1.7; }
+.top-actions .language-switch { width: 80px; height: 40px; flex-shrink: 0; padding: 3px; border-radius: 9px; }
+.top-actions .language-switch :is(button, a) { min-width: 0; width: 36px; height: 32px; padding: 0; border-radius: 6px; }
+.top-actions .mobile-menu-trigger { flex-shrink: 0; width: 40px; height: 40px; border-radius: 9px; background: var(--card); border-color: var(--line); }
+.top-actions .mobile-menu-trigger svg { width: 20px; height: 20px; stroke-width: 1.7; }
 @media (max-width: 1120px) {
   .topbar.product-bar { grid-template-columns: minmax(0, 1fr) auto; }
   .topbar.product-bar .nav-links { display: none; }
@@ -107,15 +107,15 @@
   .topbar.product-bar .brand { width: 100%; gap: 7px; font-size: .8125rem; }
   .topbar.product-bar .brand-mark { width: 30px; height: 30px; }
   .topbar.product-bar .brand > span:last-child { min-width: 0; max-width: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  :is(.topbar, .stats-page-bar, .updates-page-bar) :is(.top-actions, .stats-page-actions, .updates-page-actions) { gap: 4px; }
+  .topbar .top-actions { gap: 4px; }
   .share-trigger { width: 44px; min-width: 44px; height: 44px; padding: 0; }
   .share-trigger > span { display: none; }
   .policy-card > .share-card-trigger { top: 20px; right: 16px; }
   .policy-card-compact .policy-snapshot { padding-right: 0; }
   .policy-card-compact .rank-column { padding-right: 40px; }
-  :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch { width: 72px; height: 44px; }
-  :is(.top-actions, .stats-page-actions, .updates-page-actions) .language-switch :is(button, a) { width: 32px; height: 36px; }
-  :is(.top-actions, .stats-page-actions, .updates-page-actions) .mobile-menu-trigger { width: 44px; height: 44px; }
+  .top-actions .language-switch { width: 72px; height: 44px; }
+  .top-actions .language-switch :is(button, a) { width: 32px; height: 36px; }
+  .top-actions .mobile-menu-trigger { width: 44px; height: 44px; }
   .share-backdrop { display: block; position: fixed; inset: 0; z-index: 69; background: rgb(12 25 43 / 25%); }
   .share-positioner { position: fixed !important; inset: auto 0 0 !important; width: 100% !important; transform: none !important; }
   .share-panel { width: 100%; max-height: calc(100dvh - 20px); padding: 10px 20px max(24px, env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 22px 22px 0 0; box-shadow: 0 -12px 44px rgb(13 31 56 / 14%); }

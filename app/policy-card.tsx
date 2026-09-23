@@ -1,37 +1,43 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { ArrowUpRight, Clock3, Scale } from 'lucide-react';
 import { GlossaryText } from './glossary-text';
 import { CommunityImpactScore, type CommunityImpactAggregate } from './community-impact-rating';
 import { homeCopy } from './home-copy';
+import type { HomePolicy } from './home-view';
 import { centerCurrentProcessStage, showLatestTimeline } from './initial-scroll';
 import type { Language } from './language';
-import type { getPolicies } from './policy-data';
-import { getHomePolicyEditorial as getPolicyEditorial, getHomeProcessTrack as getProcessTrack } from './policy-home-model';
 import { policyHref } from './policy-links';
 import { ShareButton } from './share-button';
-import { getPolicyShareItem } from './item-share-model';
 
 type PolicyCardProps = {
-  policy: ReturnType<typeof getPolicies>[number];
+  policy: HomePolicy;
   language: Language;
   selectedPath: string;
-  policyPath?: string;
   communityRating: ReactNode;
   communityAggregate?: CommunityImpactAggregate;
 };
+
+// On narrow screens the timeline is vertical; older past events fold away.
+const VISIBLE_PAST_ON_MOBILE = 2;
+
+const stageState = (index: number, current: number) =>
+  index < current ? 'complete' : index === current ? 'current' : 'upcoming';
 
 export function PolicyCard({
   policy,
   language,
   selectedPath,
-  policyPath,
   communityRating,
   communityAggregate,
 }: PolicyCardProps) {
   const ui = homeCopy[language];
-  const process = getProcessTrack(policy.id, language);
-  const editorial = getPolicyEditorial(policy.id, language)!;
+  const { process } = policy;
+  const policyPath = policy.path;
   const flowHelpRef = useRef<HTMLDetailsElement>(null);
+  const [showEarlier, setShowEarlier] = useState(false);
+  const foldedCount = showEarlier
+    ? 0
+    : Math.max(policy.milestones.length - VISIBLE_PAST_ON_MOBILE, 0);
 
   useEffect(() => {
     const dismissOutside = (event: PointerEvent) => {
@@ -51,7 +57,7 @@ export function PolicyCard({
       id={`policy-${policy.id}`}
       data-policy-id={policy.id}
     >
-      <ShareButton language={language} item={getPolicyShareItem(policy.id, language)} compact />
+      <ShareButton language={language} item={policy.share} compact />
       <header className="policy-snapshot">
         <div className="rank-column">
           <div className="rank-number"><span>#</span>{String(policy.rank).padStart(2, '0')}</div>
@@ -72,18 +78,14 @@ export function PolicyCard({
                   <p className="flow-detail">{ui.policySpecific}<GlossaryText text={process.detail} /></p>
                   <ol>
                     {process.stages.map((stage, index) => {
-                      const stageState = index < process.currentStage
-                        ? 'complete'
-                        : index === process.currentStage
-                          ? 'current'
-                          : 'upcoming';
-                      const stageLabel = stageState === 'complete'
+                      const state = stageState(index, process.current);
+                      const stageLabel = state === 'complete'
                         ? ui.complete
-                        : stageState === 'current'
+                        : state === 'current'
                           ? ui.currentStage
                           : ui.upcomingStage;
                       return (
-                        <li className={stageState} key={stage}>
+                        <li className={state} key={stage}>
                           <i>{index + 1}</i>
                           <span><strong><GlossaryText text={stage} /></strong><small>{stageLabel}</small></span>
                         </li>
@@ -93,15 +95,15 @@ export function PolicyCard({
                 </div>
               </details>
             </div>
-            {policyPath && <span className="policy-category">{policyPath}</span>}
-            {policy.route.filter((tag) => tag !== policyPath).map((tag) => <i key={tag}><GlossaryText text={tag} /></i>)}
+            <span className="policy-category">{policyPath}</span>
+            {policy.tags.filter((tag) => tag !== policyPath).map((tag) => <i key={tag}><GlossaryText text={tag} /></i>)}
           </div>
-          <h3><a href={policyHref(policy.id, language, undefined, selectedPath)}>{editorial.title}</a></h3>
-          <div className="policy-status"><span className={`status-chip ${policy.tone}`}>{editorial.status}</span></div>
+          <h3><a href={policyHref(policy.id, language, undefined, selectedPath)}>{policy.title}</a></h3>
+          <div className="policy-status"><span className={`status-chip ${policy.tone}`}>{policy.status}</span></div>
           <p>
             <GlossaryText text={policy.tldr} />
             {policy.commentUrl && (
-              <> <a href={policy.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>{language === 'en' ? 'Submit a public comment ↗' : '提交公众评论 ↗'}</a></>
+              <> <a className="comment-link" href={policy.commentUrl} target="_blank" rel="noopener noreferrer">{language === 'en' ? 'Submit a public comment ↗' : '提交公众评论 ↗'}</a></>
             )}
           </p>
         </div>
@@ -114,12 +116,9 @@ export function PolicyCard({
           <small>{ui.swipe}</small>
         </div>
         <div className="process-row" ref={centerCurrentProcessStage}>
-          <div className={`process-steps ${process.kind}`} aria-label={`${ui.currentProcess}${process.stages[process.currentStage]}`}>
+          <div className={`process-steps ${process.kind}`} aria-label={`${ui.currentProcess}${process.stages[process.current]}`}>
             {process.stages.map((label, index) => (
-              <i
-                className={index < process.currentStage ? 'complete' : index === process.currentStage ? 'current' : 'upcoming'}
-                key={label}
-              >
+              <i className={stageState(index, process.current)} key={label}>
                 <b />
                 <em><GlossaryText text={label} /></em>
               </i>
@@ -148,9 +147,16 @@ export function PolicyCard({
         <div className="timeline-caption"><Clock3 aria-hidden="true" /><span>{ui.past}</span><i /> <strong>{ui.now}</strong><i /> <span>{ui.expected}</span></div>
         <div className="timeline-shell" ref={showLatestTimeline}>
           <ol className="time-axis">
+            {foldedCount > 0 && (
+              <li className="timeline-more">
+                <button type="button" onClick={() => setShowEarlier(true)}>
+                  {ui.earlierMilestones(foldedCount)}
+                </button>
+              </li>
+            )}
             {policy.milestones.map((item, index) => (
               <li
-                className={`timeline-node past${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
+                className={`timeline-node past${index < foldedCount ? ' earlier' : ''}${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
                 key={item.date + item.text}
               >
                 <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>

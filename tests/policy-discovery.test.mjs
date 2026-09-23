@@ -4,8 +4,11 @@ import test from 'node:test';
 import { build } from 'esbuild';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { getPolicyDetail } from '../app/policy-detail-model.ts';
-import { getProcessTrack } from '../app/process-model.ts';
+import { buildHomeView } from '../app/home-view.ts';
+import { getPolicy, getProcessTrack } from '../app/policy-data.ts';
+
+const homePolicy = (id, language) =>
+  buildHomeView(language).policies.find((policy) => policy.id === id);
 
 const bundle = await build({
   stdin: {
@@ -47,10 +50,9 @@ const render = (component, props, language) =>
 
 test('executive-order cards and progress explain agency implementation without a rulemaking or school workflow', () => {
   for (const language of ['zh', 'en']) {
-    const { record } = getPolicyDetail('h1b-program-integrity', language);
-    const track = getProcessTrack(record.id, language);
+    const track = getProcessTrack('h1b-program-integrity', language);
     const card = render(PolicyCard, {
-      policy: record, language, selectedPath: 'H-1B', policyPath: 'H-1B',
+      policy: homePolicy('h1b-program-integrity', language), language, selectedPath: 'H-1B',
       communityRating: null,
     }, language);
     assert.match(card, /class="process-steps executive-order"/);
@@ -74,7 +76,7 @@ test('executive-order cards and progress explain agency implementation without a
 
 test('the visa and entry callout renders as emphasis instead of literal markers', () => {
   for (const language of ['zh', 'en']) {
-    const { editorial } = getPolicyDetail('h1b-program-integrity', language);
+    const editorial = getPolicy('h1b-program-integrity', language);
     const html = render(
       GlossaryText,
       { text: editorial.keyPoint.text },
@@ -86,7 +88,7 @@ test('the visa and entry callout renders as emphasis instead of literal markers'
     assert.match(html, new RegExp(emphasise));
     assert.doesNotMatch(html, /\*\*/);
 
-    const impact = render(GlossaryText, { text: editorial.impacts[0][1] }, language);
+    const impact = render(GlossaryText, { text: editorial.impacts[0].text }, language);
     // The scope impact marks only the "decides scope, not outcome" clause, and
     // renders it as emphasis rather than literal markers.
     assert.doesNotMatch(impact, /\*\*/);
@@ -106,9 +108,8 @@ test('the mobile progress heading names each card process instead of rulemaking 
   };
   for (const [id, labels] of Object.entries(expected)) {
     for (const language of ['zh', 'en']) {
-      const { record } = getPolicyDetail(id, language);
       const html = render(PolicyCard, {
-        policy: record, language, selectedPath: 'H-1B', policyPath: 'H-1B',
+        policy: homePolicy(id, language), language, selectedPath: 'H-1B',
         communityRating: null,
       }, language);
       const heading = html.match(
@@ -126,14 +127,13 @@ test('the mobile progress heading names each card process instead of rulemaking 
 
 test('restored homepage cards retain ratings, full progress and timeline with contextual detail links', () => {
   for (const language of ['zh', 'en']) {
-    const { record } = getPolicyDetail('opt-fee', language);
+    const record = homePolicy('opt-fee', language);
     const html = render(
       PolicyCard,
       {
         policy: record,
         language,
         selectedPath: 'OPT',
-        policyPath: 'OPT',
         communityRating: React.createElement('aside', {
           'data-policy-rating': 'opt-fee',
         }),
@@ -166,7 +166,7 @@ test('the grace-period diagram renders published NPRM and active comments in eit
 
 test('homepage shows the live community average once in the former editorial-score position', () => {
   for (const language of ['zh', 'en']) {
-    const { record } = getPolicyDetail('opt-fee', language);
+    const record = homePolicy('opt-fee', language);
     const aggregate = { average: 9.6, count: 18 };
     const html = render(
       PolicyCard,
@@ -174,7 +174,6 @@ test('homepage shows the live community average once in the former editorial-sco
         policy: record,
         language,
         selectedPath: 'OPT',
-        policyPath: 'OPT',
         communityAggregate: aggregate,
         communityRating: React.createElement(CommunityImpactRating, {
           language,

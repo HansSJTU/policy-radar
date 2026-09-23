@@ -1,7 +1,8 @@
 'use client';
 
+/* oxlint-disable next/no-img-element -- Generated blob and data URLs need no image optimization. */
+
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
-import Image from 'next/image';
 import { Popover } from '@base-ui/react/popover';
 import { Check, ChevronLeft, Copy, Download, ImagePlus, Link, Mail, MessageCircle, MessagesSquare, Phone, Radar, Share, X } from 'lucide-react';
 import { recordShareEvent } from '@/components/share-analytics';
@@ -253,7 +254,7 @@ function ShareMenu({ language, pageTitle, pageDescription, item, compact = false
               <div className="share-image-content" aria-busy={imageBusy}>
                 {imageBusy && <output aria-live="polite">{ui.imageBusy}</output>}
                 {shareImage && item && <>
-                  <Image className="share-generated-image" src={shareImage.url} width={shareImage.width} height={shareImage.height} alt={`${item.title} · ${item.status} · ${item.scope} · ${itemShareLabels[language].checkedOn} ${item.checkedOn}`} unoptimized />
+                  <img className="share-generated-image" src={shareImage.url} width={shareImage.width} height={shareImage.height} decoding="async" alt={`${item.title} · ${item.status} · ${item.scope} · ${itemShareLabels[language].checkedOn} ${item.checkedOn}`} />
                   <a className="share-copy-button share-save-image" href={shareImage.url} download={`${item.kind}-${item.id}-${language}-${item.checkedOn}.png`} onClick={() => record('share_image', 'download')}><Download aria-hidden="true" />{ui.download}</a>
                   <p className="share-help">{ui.imageHelp}</p>
                 </>}
@@ -271,7 +272,7 @@ function ShareMenu({ language, pageTitle, pageDescription, item, compact = false
                 ) : (
                   <>
                     <div className="share-qr">
-                      {qr ? <Image src={qr} width={168} height={168} alt={ui.scan} unoptimized /> : <output>{qrFailed ? ui.qrFailure : ui.generating}</output>}
+                      {qr ? <img src={qr} width={168} height={168} alt={ui.scan} /> : <output>{qrFailed ? ui.qrFailure : ui.generating}</output>}
                     </div>
                     <strong>{ui.scan}</strong>
                     <p className="share-help">{ui.scanHelp}</p>

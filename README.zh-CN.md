@@ -27,6 +27,22 @@
 
 页面中的影响排序描述政策若按当前方向落地时，对传统留美路径的结构性影响。它不表示政策已经生效，也不代表发生概率。
 
+## 项目结构
+
+| 路径 | 内容 |
+| --- | --- |
+| `content/policies/<id>.ts` | 一项政策的全部内容，中英文并列：状态、摘要、时间线、分析、示例、流程位置、来源和核对日期。 |
+| `app/policy-ids.ts` | 政策列表，顺序就是网站上的影响排名。 |
+| `app/policy-data.ts` | 按语言返回一项政策，以及它的流程进度。 |
+| `app/process-model.ts` | 联邦规则制定、SEVP 指引和行政命令三类流程的共用文案与阶段判断。 |
+| `app/briefing-feed.ts` | 滚动 30 天动态，最新条目在最上面。 |
+| `app/cpt-schools.ts` | CPT 学校记录，每条记录同时包含两种语言。 |
+| `app/home-view.ts` | 在服务器上组装首页，浏览器只下载当前语言和卡片用到的字段。 |
+| `app/policies/[policyId]/` | 政策详情页。 |
+| `tests/` | Node 测试，包括检查两种语言内容是否一致。 |
+
+更新某项政策时，修改 `content/policies/` 里对应的文件。只有在真正复核来源后才修改 `checkedOn`；网站内容更新时，同步修改 `app/policy-freshness.ts` 里的 `SITE_UPDATED_ON`。
+
 ## 本地开发
 
 需要 Node.js 22.13 或更高版本。

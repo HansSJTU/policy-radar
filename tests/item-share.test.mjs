@@ -1,19 +1,19 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { getPolicyShareItem, getSchoolShareItem } from '../app/item-share-model.ts';
+import { getSchoolShareItem } from '../app/item-share-model.ts';
+import { getPolicyShareItem } from '../app/policy-share.ts';
 import { buildItemShareContent } from '../app/share-model.ts';
-import { POLICY_IDS } from '../app/community-impact-model.ts';
-import { getPolicyDetail } from '../app/policy-detail-model.ts';
-import { verifiedSchools, communitySchools } from '../app/cpt-schools.ts';
-import { englishVerifiedSchools, englishCommunitySchools } from '../app/english-content.ts';
+import { POLICY_IDS } from '../app/policy-ids.ts';
+import { getPolicy } from '../app/policy-data.ts';
+import { verifiedSchools, communitySchools, getVerifiedSchools, getCommunitySchools } from '../app/cpt-schools.ts';
 import { wrapShareText } from '../app/share-image.ts';
 
 test('all policies share the exact status, effect, scope and review date in both languages', () => {
   for (const language of ['zh', 'en']) for (const id of POLICY_IDS) {
     const item = getPolicyShareItem(id, language);
-    const { editorial, checkedOn } = getPolicyDetail(id, language);
+    const policy = getPolicy(id, language);
     const content = buildItemShareContent(item, language);
-    for (const value of [editorial.title, editorial.summary, editorial.status, editorial.effectLabel, editorial.audience, editorial.caveat, checkedOn]) {
+    for (const value of [policy.title, policy.summary, policy.status, policy.effectLabel, policy.audience, policy.caveat, policy.checkedOn]) {
       assert.ok(content.text.includes(value), `${language}/${id}: missing ${value}`);
     }
     assert.equal(new URL(content.url).pathname, `/policies/${id}`);
@@ -31,9 +31,8 @@ test('school anchors are unique, language independent and preserve each record r
     ids.add(school.id);
     assert.match(school.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
     for (const language of ['zh', 'en']) {
-      const localized = language === 'zh' ? school : 'href' in school
-        ? { ...school, ...englishVerifiedSchools[school.school] }
-        : { ...school, state: englishCommunitySchools[school.school] };
+      const localized = [...getVerifiedSchools(language), ...getCommunitySchools(language)]
+        .find(({ id }) => id === school.id);
       const item = getSchoolShareItem(localized, language);
       const content = buildItemShareContent(item, language);
       assert.equal(new URL(content.url).hash, `#school-${school.id}`);
@@ -47,13 +46,13 @@ test('school anchors are unique, language independent and preserve each record r
 });
 
 test('community reports never inherit a verified status, and department boundaries survive sharing', () => {
-  for (const school of communitySchools) {
+  for (const school of getCommunitySchools('zh')) {
     const item = getSchoolShareItem(school, 'zh');
     assert.equal(item.unverified, true);
     assert.match(item.status, /待核实/);
     assert.match(item.caveat, /截图.*尚无公开确认/);
   }
-  const nyu = verifiedSchools.find(s => s.school.includes('Tandon'));
+  const nyu = getVerifiedSchools('zh').find(s => s.school.includes('Tandon'));
   const content = buildItemShareContent(getSchoolShareItem(nyu, 'zh'), 'zh');
   assert.match(content.text, /Tandon Mathematics/);
   assert.match(content.text, /不外推 NYU 全校/);
@@ -85,20 +84,13 @@ test('image wrapping preserves qualifiers, long URLs, dates and Unicode without 
   }
 });
 
-test('policy review dates remain independent of the site update date', async () => {
-  const { policyCheckedOn, SITE_UPDATED_ON } = await import('../app/policy-freshness.ts');
-  const original = policyCheckedOn['h4-ead'];
-  const distinctDate = SITE_UPDATED_ON === '2026-09-10' ? '2026-09-11' : '2026-09-10';
-  try {
-    policyCheckedOn['h4-ead'] = distinctDate;
+test('shared policies carry their own review date, not the site update date', async () => {
+  const { policyContents } = await import('../content/policies/index.ts');
+  for (const content of policyContents) {
     for (const language of ['zh', 'en']) {
-      const detail = getPolicyDetail('h4-ead', language);
-      const item = getPolicyShareItem('h4-ead', language);
-      assert.equal(detail.checkedOn, distinctDate);
-      assert.equal(item.checkedOn, distinctDate);
-      assert.ok(buildItemShareContent(item, language).text.includes(distinctDate));
+      const item = getPolicyShareItem(content.id, language);
+      assert.equal(item.checkedOn, content.checkedOn);
+      assert.ok(buildItemShareContent(item, language).text.includes(content.checkedOn));
     }
-  } finally {
-    policyCheckedOn['h4-ead'] = original;
   }
 });
