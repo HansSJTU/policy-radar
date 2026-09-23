@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og';
-import { getPolicyDetail } from '../../../policy-detail-model';
+import { getPolicy } from '../../../policy-data';
 
 export async function GET(
   request: Request,
@@ -8,9 +8,8 @@ export async function GET(
   const { policyId } = await params;
   const language =
     new URL(request.url).searchParams.get('lang') === 'en' ? 'en' : 'zh';
-  const detail = getPolicyDetail(policyId, language);
-  if (!detail) return new Response('Not found', { status: 404 });
-  const p = detail.editorial;
+  const p = getPolicy(policyId, language);
+  if (!p) return new Response('Not found', { status: 404 });
   return new ImageResponse(
     <div
       style={{
@@ -25,7 +24,7 @@ export async function GET(
       }}
     >
       <div style={{ display: 'flex', fontSize: 24, color: '#c3a3f2' }}>
-        STAY PATH RADAR / {p.group}
+        STAY PATH RADAR / {p.path}
       </div>
       <div
         style={{
@@ -58,7 +57,7 @@ export async function GET(
         }}
       >
         <span>{p.status}</span>
-        <span>{detail.checkedOn} · ET</span>
+        <span>{p.checkedOn} · ET</span>
       </div>
     </div>,
     { width: 1200, height: 630 },

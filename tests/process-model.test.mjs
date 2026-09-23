@@ -1,10 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import {
-  getProcessTrack,
-  getProcessStageState,
-} from '../app/process-model.ts';
+import { getProcessTrack } from '../app/policy-data.ts';
+import { getCurrentStage, getProcessStageState } from '../app/process-model.ts';
 
 test('all federal rulemaking policies share one process bar', () => {
   const ids = [
@@ -19,7 +17,7 @@ test('all federal rulemaking policies share one process bar', () => {
     'h4-ead',
     'perm-modernization',
   ];
-  const tracks = ids.map(getProcessTrack);
+  const tracks = ids.map((id) => getProcessTrack(id));
 
   assert.ok(tracks.every((track) => track.kind === 'federal-rulemaking'));
   for (const track of tracks.slice(1)) {
@@ -120,7 +118,7 @@ test('an ongoing review is distinct from a completed review and a future proposa
 });
 
 test('all tracks keep completed, active and future stages disjoint and languages aligned', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+  const { POLICY_IDS } = await import('../app/policy-ids.ts');
   for (const id of POLICY_IDS) {
     const zh = getProcessTrack(id, 'zh');
     const en = getProcessTrack(id, 'en');
@@ -151,10 +149,26 @@ test('OPT completed review does not imply a published or effective rule', () => 
   }
 });
 
-test('OPT homepage labels publication as pending after review completion', async () => {
-  const { getHomeProcessTrack } = await import('../app/policy-home-model.ts');
+test('home cards highlight the active stage, or the last stage reached while waiting', async () => {
+  const { buildHomeView } = await import('../app/home-view.ts');
+  const expected = {
+    'opt-fee': 1,
+    'h1b-fee': 3,
+    'duration-status': 4,
+    'h1b-weighted-selection': 5,
+    'cpt-guidance': 2,
+    'prevailing-wage': 3,
+    'h1b-reform': 1,
+    'grace-period': 3,
+    'ead-discretion': 3,
+    'h4-ead': 0,
+    'perm-modernization': 1,
+    'h1b-program-integrity': 1,
+  };
   for (const language of ['zh', 'en']) {
-    const track = getHomeProcessTrack('opt-fee', language);
-    assert.match(track.stages[track.currentStage], /等待|Awaiting/);
+    for (const policy of buildHomeView(language).policies) {
+      assert.equal(policy.process.current, expected[policy.id], policy.id);
+      assert.equal(policy.process.current, getCurrentStage(getProcessTrack(policy.id, language)));
+    }
   }
 });

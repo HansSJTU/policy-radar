@@ -1,5 +1,8 @@
 import type { Language } from './language';
-import { POLICY_IDS, type PolicyId } from './community-impact-model.ts';
+import { isPolicyId } from './policy-ids.ts';
+import { isPolicyPath } from './policy-paths.ts';
+
+export const POLICY_SITE_URL = 'https://policy-radar.uspolicy.workers.dev';
 
 export function policyHref(
   id: string,
@@ -8,7 +11,7 @@ export function policyHref(
   from?: string,
 ): string {
   const origin =
-    from && ['all', 'F-1', 'CPT', 'OPT', 'H-1B'].includes(from)
+    from === 'all' || isPolicyPath(from)
       ? `&from=${encodeURIComponent(from)}`
       : '';
   return `/policies/${encodeURIComponent(id)}?lang=${language}${origin}${section ? `#${encodeURIComponent(section)}` : ''}`;
@@ -24,5 +27,5 @@ export function legacyPolicyHref(
   } catch {
     return null;
   }
-  return POLICY_IDS.includes(id as PolicyId) ? policyHref(id, language) : null;
+  return isPolicyId(id) ? policyHref(id, language) : null;
 }

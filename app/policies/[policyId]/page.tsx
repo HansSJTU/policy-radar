@@ -14,20 +14,19 @@ import {
 import { resolveRequestLanguage } from '../../language-server';
 import { PageLanguageSwitch } from '../../page-language-switch';
 import { ShareButton } from '../../share-button';
-import { getPolicyShareItem } from '../../item-share-model';
+import { getPolicyShareItem } from '../../policy-share';
 import { MobileSiteMenu } from '../../mobile-site-menu';
-import { getPolicies } from '../../policy-data';
-import { PublicCommentDistribution } from '../../public-comment-distribution';
 import {
-  getPolicyDetail,
-  getPolicyEditorial,
-  POLICY_SITE_URL,
-} from '../../policy-detail-model';
+  formatRank,
+  getPolicies,
+  getPolicy,
+  getProcessTrack,
+} from '../../policy-data';
+import { PublicCommentDistribution } from '../../public-comment-distribution';
 import { GlossaryText } from '../../glossary-text';
 import { LanguageProvider } from '../../language-context';
-import { getPolicyExamples } from '../../policy-examples';
-import { getProcessTrack } from '../../process-model';
-import { policyHref } from '../../policy-links';
+import { parsePathFilter } from '../../policy-paths';
+import { policyHref, POLICY_SITE_URL } from '../../policy-links';
 import { VisitorTracker } from '@/components/visitor-tracker';
 import {
   PolicyDirectory,
@@ -55,19 +54,18 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const [{ policyId }, search] = await Promise.all([params, searchParams]);
   const language = await resolveRequestLanguage(search?.lang);
-  const detail = getPolicyDetail(policyId, language);
-  if (!detail)
+  const policy = getPolicy(policyId, language);
+  if (!policy)
     return {
       title: 'Policy not found',
       robots: { index: false, follow: false },
     };
-  const { editorial } = detail;
   const canonical = POLICY_SITE_URL + policyHref(policyId, language);
-  const title = `${editorial.title}｜${language === 'en' ? 'Stay Path Radar' : '留美路径雷达'}`;
+  const title = `${policy.title}｜${language === 'en' ? 'Stay Path Radar' : '留美路径雷达'}`;
   const image = `${POLICY_SITE_URL}/policies/${policyId}/share-image?lang=${language}`;
   return {
     title,
-    description: editorial.teaser,
+    description: policy.teaser,
     alternates: {
       canonical,
       languages: {
@@ -76,18 +74,18 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: editorial.title,
-      description: editorial.teaser,
+      title: policy.title,
+      description: policy.teaser,
       type: 'article',
       url: canonical,
       siteName: 'Stay Path Radar',
       locale: language === 'en' ? 'en_US' : 'zh_CN',
-      images: [{ url: image, width: 1200, height: 630, alt: editorial.title }],
+      images: [{ url: image, width: 1200, height: 630, alt: policy.title }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: editorial.title,
-      description: editorial.teaser,
+      title: policy.title,
+      description: policy.teaser,
       images: [image],
     },
   };
@@ -114,20 +112,17 @@ function DotWrapText({ text }: { text: string }) {
 export default async function PolicyPage({ params, searchParams }: Props) {
   const [{ policyId }, search] = await Promise.all([params, searchParams]);
   const language = await resolveRequestLanguage(search?.lang);
-  const detail = getPolicyDetail(policyId, language);
-  if (!detail) notFound();
-  const { record, editorial: p } = detail;
+  const p = getPolicy(policyId, language);
+  if (!p) notFound();
   const english = language === 'en';
   const process = getProcessTrack(policyId, language);
   const home = `/?lang=${language}`;
-  const returnPath = ['F-1', 'CPT', 'OPT', 'H-1B'].includes(search?.from ?? '')
-    ? search!.from!
-    : 'all';
+  const returnPath = parsePathFilter(search?.from);
   const back = `${home}${returnPath === 'all' ? '' : `&path=${encodeURIComponent(returnPath)}`}#policy-${policyId}`;
   const items = getPolicies(language);
   const options = items.map((item) => ({
     id: item.id,
-    label: `${String(item.rank).padStart(2, '0')} · ${getPolicyEditorial(item.id, language)!.short}`,
+    label: `${formatRank(item.rank)} · ${item.short}`,
   }));
   const sections: [string, string][] = [
     ['overview', english ? 'Policy background' : '政策背景'],
@@ -137,21 +132,16 @@ export default async function PolicyPage({ params, searchParams }: Props) {
     ['timeline', english ? 'Key dates' : '关键时间'],
     ['sources', english ? 'Sources' : '原始来源'],
   ];
-  const sources = record.sources.filter(
-    (source) => !isForumLink(source.href),
-  );
-  const forumLinks = record.sources
-    .filter((source) => isForumLink(source.href))
-    .map((source) => ({ label: source.label, href: source.href }));
-  const official =
-    sources.find((source) => source.href.includes('2026-14439')) ?? sources[0];
-  const examples = getPolicyExamples(record.id, language);
+  const sources = p.sources.filter((source) => !isForumLink(source.href));
+  const forumLinks = p.sources.filter((source) => isForumLink(source.href));
+  // Sources are listed primary document first.
+  const official = sources[0];
   const impactIcons = [GraduationCap, BriefcaseBusiness, Route];
   return (
     <LanguageProvider language={language}>
       <div
         className="policy-detail-page"
-        data-path={p.group}
+        data-path={p.path}
         data-policy-id={policyId}
       >
         <VisitorTracker policyId={policyId} />
@@ -176,7 +166,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
           </nav>
           <div className="top-actions">
             <PageLanguageSwitch
-              from={returnPath}
+              hidden={{ from: returnPath }}
               action={`/policies/${policyId}`}
               language={language}
               label={english ? 'Switch language' : '切换语言'}
@@ -205,7 +195,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
             <div className="pd-layout">
               <main className="pd-main">
                 <div className="pd-eyebrow">
-                  <span>{p.group}</span>POLICY BRIEF
+                  <span>{p.path}</span>POLICY BRIEF
                 </div>
                 <div className="pd-title-row">
                   <h1>
@@ -238,7 +228,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     </dd>
                   </div>
                   <PolicyDetailStatusScore
-                    policyId={record.id}
+                    policyId={p.id}
                     language={language}
                     forumLinks={forumLinks}
                   />
@@ -248,7 +238,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                       <span className="pd-dot-flow">
                         <span className="pd-dot-flow-inner">
                           <span className="pd-dot-flow-item">
-                            <time dateTime={detail.checkedOn}>{detail.checkedOn}</time>
+                            <time dateTime={p.checkedOn}>{p.checkedOn}</time>
                           </span>
                           <span className="pd-dot-flow-item">ET</span>
                         </span>
@@ -270,16 +260,16 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 <div>
                   <dt>{english ? 'Key boundaries' : '关键边界'}</dt>
                   <dd>
-                    <GlossaryText text={[p.caveat, detail.verificationNote].filter(Boolean).join(' ')} />
+                    <GlossaryText text={[p.caveat, p.reviewNote].filter(Boolean).join(' ')} />
                   </dd>
                 </div>
                 <div>
                   <dt>{english ? 'Next to watch' : '下一步关注'}</dt>
                   <dd>
-                    {record.next[0].estimate &&
+                    {p.next[0].estimate &&
                       (english ? 'Estimated · ' : '预计 · ')}
-                    {record.next[0].date} ·{' '}
-                    <GlossaryText text={record.next[0].text} />
+                    {p.next[0].date} ·{' '}
+                    <GlossaryText text={p.next[0].text} />
                   </dd>
                 </div>
               </dl>
@@ -288,9 +278,9 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 <p>
                   <GlossaryText text={p.background} />
                 </p>
-                {record.commentUrl && (
+                {p.commentUrl && (
                   <p>
-                    <a href={record.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+                    <a href={p.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>
                       {english ? 'Submit a public comment on Regulations.gov ↗' : '前往 Regulations.gov 提交公众评论 ↗'}
                     </a>
                   </p>
@@ -351,7 +341,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     </p>
                   </aside>
                 )}
-                {p.impacts.map(([title, text], i) => {
+                {p.impacts.map(({ title, text, examples = [] }, i) => {
                   const Icon = impactIcons[i % impactIcons.length];
                   return (
                     <article className="pd-impact" key={title}>
@@ -365,10 +355,10 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                         <p>
                           <GlossaryText text={text} />
                         </p>
-                        {examples[i]?.map((example, index) => (
+                        {examples.map((example, index) => (
                           <div className="pd-example" key={example}>
                             <strong>
-                              {examples[i].length > 1
+                              {examples.length > 1
                                 ? english
                                   ? `Example ${index + 1} · Hypothetical`
                                   : `情况 ${index + 1} · 举个例子`
@@ -426,7 +416,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 </p>
                 <PolicyScenarios
                   key={policyId}
-                  editorial={p}
+                  scenarios={p.scenarios}
                   language={language}
                 />
                 <p className="pd-analysis-note">
@@ -441,7 +431,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                       : '哪些边界会改变上面的判断？'}
                   </summary>
                   <dl>
-                    {p.scope.map(([label, text]) => (
+                    {p.scope.map(({ label, text }) => (
                       <div key={label}>
                         <dt>{label}</dt>
                         <dd>
@@ -470,7 +460,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <span>04 / TIMELINE</span>
                 </div>
                 <ol className="pd-timeline">
-                  {record.milestones.map((event) => (
+                  {p.milestones.map((event) => (
                     <li key={event.date + event.text}>
                       <time>{event.date}</time>
                       <p>
@@ -509,7 +499,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 </div>
                 <div className="pd-related">
                   {p.related.map((id) => {
-                    const related = getPolicyEditorial(id, language)!;
+                    const related = getPolicy(id, language)!;
                     return (
                       <a href={policyHref(id, language)} key={id}>
                         <strong>
@@ -530,7 +520,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 options={options}
               />
               <PolicyDetailSidebarRating
-                policyId={record.id}
+                policyId={p.id}
                 language={language}
                 forumLinks={forumLinks}
               />
@@ -551,12 +541,12 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   </div>
                   <div>
                     <dt>{english ? 'Document identifier' : '文件编号'}</dt>
-                    <dd>{p.rin}</dd>
+                    <dd>{p.documentId}</dd>
                   </div>
                   <div>
                     <dt>{english ? 'Related paths' : '相关路径'}</dt>
                     <dd>
-                      <GlossaryText text={record.route.join(' · ')} />
+                      <GlossaryText text={p.tags.join(' · ')} />
                     </dd>
                   </div>
                 </dl>

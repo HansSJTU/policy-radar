@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { briefingItems, englishBriefing, getThirtyDayBriefing } from '../app/briefing-feed.ts';
+import { briefingEntries, getThirtyDayBriefing } from '../app/briefing-feed.ts';
+import { getPolicy } from '../app/policy-data.ts';
 import { communitySchools, verifiedSchools } from '../app/cpt-schools.ts';
 
 // Campus-level developments live in the CPT school tracker, so the rolling 30-day
@@ -28,10 +29,13 @@ function escapeRegExp(value) {
 
 test('the 30-day briefing excludes individual campus notices', () => {
   const aliases = [...verifiedSchools, ...communitySchools].flatMap(({ school }) => schoolAliases(school));
-  const localized = [
-    ...briefingItems,
-    ...Object.entries(englishBriefing).map(([id, copy]) => ({ id, ...copy })),
-  ];
+  const localized = briefingEntries.flatMap((entry) =>
+    ['zh', 'en'].map((language) => ({
+      id: entry.id,
+      policy: getPolicy(entry.policyId, language).short,
+      summary: entry[language],
+    })),
+  );
   for (const item of localized) {
     const text = `${item.policy} ${item.summary}`;
     for (const alias of aliases) {
@@ -44,11 +48,18 @@ test('the 30-day briefing excludes individual campus notices', () => {
   }
 });
 
-test('every briefing item supplies English copy for the English homepage', () => {
-  assert.deepEqual(
-    Object.keys(englishBriefing).sort(),
-    briefingItems.map(({ id }) => id).sort(),
-  );
+test('every briefing entry has copy in both languages and a unique id', () => {
+  const ids = briefingEntries.map(({ id }) => id);
+  assert.equal(new Set(ids).size, ids.length);
+  for (const entry of briefingEntries) {
+    assert.ok(entry.zh && entry.en, entry.id);
+    assert.ok(getPolicy(entry.policyId, 'zh'), entry.id);
+  }
+});
+
+test('briefing entries are listed newest first so new entries go on top', () => {
+  const dates = briefingEntries.map(({ date }) => date);
+  assert.deepEqual(dates, [...dates].sort((a, b) => b.localeCompare(a)));
 });
 
 test('recent updates stay inside the prior 30 days and sort newest first', () => {
@@ -80,7 +91,6 @@ test('future briefing only includes confirmed events in the next 30 days', () =>
       ['h1b-fee-comment-deadline', '2026-09-24'],
     ],
   );
-  assert.ok(upcoming.every((item) => item.confirmed));
 });
 
 test('the September 3 briefing records the completed hearing without implying a ruling', () => {

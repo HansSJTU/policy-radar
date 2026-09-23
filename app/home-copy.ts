@@ -1,12 +1,10 @@
 import type { ProcessKind } from './process-model';
 import { SITE_UPDATED_ON } from './policy-freshness';
-import { POLICY_IDS } from './community-impact-model';
-import { communitySchools, verifiedSchools } from './cpt-schools';
 
 export const homeCopy = {
   zh: {
     brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
-    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: `${POLICY_IDS.length} 项动态 · ${verifiedSchools.length + communitySchools.length} 条学校／院系记录`,
+    switchLabel: '切换网站语言', chinese: '中', english: 'EN', heroTitle: '留美路径政策雷达', heroCount: (policies: number, schools: number) => `${policies} 项动态 · ${schools} 条学校／院系记录`,
     routeTitle: '你的留美路径', routeHint: '选择阶段，查看相关政策', morePolicies: (count: number) => `另有 ${count} 项政策`, showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
     ranking: '最难绕开的关卡', rankingHint: '颜色对应路径分类 · 按路径冲击分数从高到低排序', filterAria: '按签证路径筛选', all: '全部', items: '项',
@@ -21,7 +19,7 @@ export const homeCopy = {
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
-    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: `${POLICY_IDS.length} policy developments · ${verifiedSchools.length + communitySchools.length} school/department records`,
+    switchLabel: 'Switch site language', chinese: '中', english: 'EN', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: (policies: number, schools: number) => `${policies} policy developments · ${schools} school/department records`,
     routeTitle: 'Your path in the U.S.', routeHint: 'Select a stage to explore its policies', morePolicies: (count: number) => `${count} more policies`, showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
     ranking: 'Highest-impact barriers', rankingHint: 'Colors identify path categories · Sorted by path impact, highest first', filterAria: 'Filter by immigration path', all: 'All', items: 'items',

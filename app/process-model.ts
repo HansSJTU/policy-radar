@@ -1,4 +1,14 @@
-export type ProcessKind = 'federal-rulemaking' | 'administrative-guidance' | 'executive-order';
+import type { PolicyContent } from '../content/policy-types.ts';
+import type { Language } from './language';
+
+// How a policy moves from idea to effect. The copy for each kind of process is
+// defined once here; each policy only records where it stands and adds its own
+// detail (see `process` in content/policies/*.ts).
+
+export type ProcessKind =
+  | 'federal-rulemaking'
+  | 'administrative-guidance'
+  | 'executive-order';
 
 export type LitigationMarker = {
   date: string;
@@ -22,446 +32,138 @@ export type ProcessTrack = {
   nextStage: number | null;
   waitingFor: string | null;
   stages: readonly string[];
+  // One plain-language explanation per stage.
+  descriptions: readonly string[];
   litigation: LitigationMarker[];
 };
 
-import type { Language } from './language';
+type ProcessKindCopy = {
+  name: string;
+  meaning: string;
+  stages: readonly string[];
+  descriptions: readonly string[];
+};
 
-const federalRulemakingStages = [
-  '拟稿／议程',
-  'OIRA 审查',
-  'NPRM 发布',
-  '公众评论',
-  '最终规则',
-  '生效',
-] as const;
-
-const administrativeGuidanceStages = [
-  '风险通知',
-  '口径细化',
-  '学校执行',
-  '执法观察',
-  '后续指引',
-] as const;
-
-const federalMeaning =
-  '行政机关要改一条有法律约束力的联邦法规，通常先拟稿，交给 OIRA 做发布前审查，再发布 NPRM 征求公众意见。回应意见之后，才能发布最终规则，并在指定日期生效。诉讼是规则发布之后的司法审查。它会影响规则能不能生效、什么时候生效，但不是行政流程里的一段。';
-
-const guidanceMeaning =
-  'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。';
-
-const processTracks: Record<string, ProcessTrack> = {
-  'h1b-program-integrity': {
-    kind: 'executive-order',
-    name: '总统行政命令',
-    meaning: '总统行政命令向行政部门作出指令，本身不经过 NPRM、公众评论和最终规则这条流程。部门须在现有法律权限内落实；后续若制定或修改法规，仍须遵守适用的规则制定程序，也可能受到司法审查。',
-    detail: '总统于 2026-09-18 签署命令，要求跨部门协作并考虑雇主相关裁员情况。命令已向部门作出指令，具体执行文件和实际审查口径仍需跟踪；不能把签署等同于所有审查措施都已落地。',
-    currentSummary: '行政命令已签署，跟踪部门落实',
-    lastCompletedStage: 0,
-    activeStage: 1,
-    nextStage: 2,
-    waitingFor: '劳工部须在签署后 30 天内开始复查既往 LCA 数据（按日历天计算为 10·18 前）；关注国务院、DHS 和 DOL 的执行文件。',
-    stages: ['总统签署', '部门落实', '执行跟踪'],
-    litigation: [],
+const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
+  'federal-rulemaking': {
+    zh: {
+      name: '联邦规则制定流程',
+      meaning:
+        '行政机关要改一条有法律约束力的联邦法规，通常先拟稿，交给 OIRA 做发布前审查，再发布 NPRM 征求公众意见。回应意见之后，才能发布最终规则，并在指定日期生效。诉讼是规则发布之后的司法审查。它会影响规则能不能生效、什么时候生效，但不是行政流程里的一段。',
+      stages: ['拟稿／议程', 'OIRA 审查', 'NPRM 发布', '公众评论', '最终规则', '生效'],
+      descriptions: [
+        '机构拟定规则，或将项目列入统一议程。',
+        'OIRA 在提案公开前审查规则。',
+        '机构在 Federal Register 发布 NPRM，公开拟议文本。',
+        '公众提交意见，机构收集并审阅意见。评论期结束不等于规则生效。',
+        '机构发布最终规则，说明采纳的文本、对意见的回应和生效安排。',
+        '规则到达生效日期并开始适用；如有法院暂缓或禁令，需另行核对。',
+      ],
+    },
+    en: {
+      name: 'Federal rulemaking',
+      meaning:
+        'When a federal agency changes legally binding regulations, it generally drafts the rule, completes OIRA prepublication review, publishes an NPRM for public comment, responds to comments, and then issues a final rule with an effective date. Litigation is a parallel judicial review that can change whether or when a rule takes effect; it is not a stage of the agency process.',
+      stages: [
+        'Draft / agenda',
+        'OIRA review',
+        'NPRM published',
+        'Public comment',
+        'Final rule',
+        'Effective',
+      ],
+      descriptions: [
+        'The agency drafts the rule or lists it in the Unified Agenda.',
+        'OIRA reviews the proposal before publication.',
+        'The agency publishes the proposed text as an NPRM in the Federal Register.',
+        'The public submits comments and the agency reviews them. Closing comments does not make the rule effective.',
+        'The agency publishes the final text, responses to comments and effective-date arrangements.',
+        'The rule reaches its effective date and begins to apply, subject to any court stay or injunction.',
+      ],
+    },
   },
-  'perm-modernization': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail: 'DOL 在 2026-09-14 把 PERM 改革提案送交 OIRA，发布前审查还在进行。本次核查没有找到公开的 NPRM 正文，尚未生效。',
-    currentSummary: 'PERM 改革处于发布前审查',
-    lastCompletedStage: 0,
-    activeStage: 1,
-    nextStage: 2,
-    waitingFor: 'OIRA 审查结果及 DOL 发布 NPRM；具体条款、评论期限和生效日期待定。',
-    stages: federalRulemakingStages,
-    litigation: [],
+  'administrative-guidance': {
+    zh: {
+      name: 'SEVP 行政指引流程',
+      meaning:
+        'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。',
+      stages: ['风险通知', '口径细化', '学校执行', '执法观察', '后续指引'],
+      descriptions: [
+        'SEVP 发布合规风险通知。',
+        'SEVP 通过指引进一步解释现行规则。',
+        '学校与 DSO 将指引落实到具体授权。',
+        '继续观察检查与实际执法口径。',
+        '关注 SEVP 是否进一步补充或调整指引。',
+      ],
+    },
+    en: {
+      name: 'SEVP administrative guidance',
+      meaning:
+        'SEVP/ICE uses Broadcast messages, FAQs, and similar materials to explain existing rules, and schools and DSOs apply that guidance directly. Because guidance does not amend the CFR, it generally has no NPRM, public-comment, or final-rule stages. Implementation can be rapid, but guidance has less legal force than a regulation.',
+      stages: [
+        'Risk notice',
+        'Standard clarified',
+        'School implementation',
+        'Enforcement monitoring',
+        'Further guidance',
+      ],
+      descriptions: [
+        'SEVP issues a compliance-risk notice.',
+        'SEVP clarifies existing rules through guidance.',
+        'Schools and DSOs apply the guidance to authorizations.',
+        'Monitor inspections and enforcement practice.',
+        'Watch for further SEVP clarification or revised guidance.',
+      ],
+    },
   },
-  'opt-fee': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      'OIRA 在 9 月 11 日带修改完成 OPT 收费提案的审查。目前没有公开的 NPRM，金额和缴费方未公布，尚未生效。',
-    currentSummary: '正文与金额尚未公开',
-    lastCompletedStage: 1,
-    activeStage: null,
-    nextStage: 2,
-    waitingFor: '等待 NPRM 正文及公众评论期；确认金额、缴费方和适用范围。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'h1b-fee': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail: 'NPRM 已发布，目前在公众评论阶段。DHS 审阅意见后才能发布最终规则。',
-    currentSummary: '正式提案开放评论',
-    lastCompletedStage: 2,
-    activeStage: 3,
-    nextStage: 4,
-    waitingFor: '9 月 24 日评论截止，随后由 DHS 审阅意见。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'h1b-weighted-selection': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      'DHS 已完成 NPRM、公众评论和最终规则阶段。规则自 2026-02-27 生效，并从 FY2027 H-1B 注册季开始使用工资等级加权选择。',
-    currentSummary: '最终规则已生效并开始执行',
-    lastCompletedStage: 5,
-    activeStage: null,
-    nextStage: null,
-    waitingFor: null,
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'duration-status': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      "法院在 9·14 依据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直到另行命令或实体审理结束。原 9·15 生效安排已经改变。",
-    currentSummary: "全国暂缓已签发，生效日已推迟",
-    lastCompletedStage: 4,
-    activeStage: null,
-    nextStage: 5,
-    waitingFor:
-      "10·02 中午 12 点状态会议；关注后续法院命令及上诉，不是新生效日。",
-    stages: federalRulemakingStages,
-    litigation: [
-      {
-        date: '8·18',
-        label: '提起诉讼',
-        afterStage: 4,
-        progress: 53,
-        status: 'filed',
-        align: 'left',
-        lane: 'base',
-      },
-      {
-        date: '9·02',
-        label: '拟议反对意见',
-        afterStage: 4,
-        progress: 70,
-        status: 'filed',
-        align: 'left',
-        lane: 'raised',
-      },
-      {
-        date: '9·03',
-        label: '听证后待裁定',
-        afterStage: 4,
-        progress: 80,
-        status: 'filed',
-        align: 'right',
-        lane: 'base',
-      },
-      {
-  "date": "9·14",
-  "label": "全国暂缓",
-  "afterStage": 4,
-  "progress": 90,
-  "status": "filed",
-  "align": "right",
-  "lane": "raised"
-},
-    ],
-  },
-  'cpt-guidance': {
-    kind: 'administrative-guidance',
-    name: 'SEVP 行政指引流程',
-    meaning: guidanceMeaning,
-    detail:
-      'SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。',
-    currentSummary: '学校已按新口径执行',
-    lastCompletedStage: 1,
-    activeStage: 2,
-    nextStage: 3,
-    waitingFor: '学校更新执行通知，以及 SEVP 是否补充解释；没有统一恢复日期。',
-    stages: administrativeGuidanceStages,
-    litigation: [],
-  },
-  'prevailing-wage': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      'DOL 已经发布 NPRM，公众评论期在 2026 年 5 月 26 日结束。目前仍在提案阶段，DOL 要审阅意见之后才能发布最终规则。',
-    currentSummary: '公众评论期已结束，等待后续规则',
-    lastCompletedStage: 3,
-    activeStage: null,
-    nextStage: 4,
-    waitingFor: 'DOL 审阅意见、修改提案或推进最终规则；日期未定。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'h1b-reform': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail: '拟议规则处于 OIRA 发布前审查，正文尚未公开。',
-    currentSummary: 'OMB 发布前审查',
-    lastCompletedStage: 0,
-    activeStage: 1,
-    nextStage: 2,
-    waitingFor: 'OIRA 完成审查及 DHS 公开提案；尚无确认发布日期。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'grace-period': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      'NPRM 在 9 月 11 日正式刊登，公众评论期到 11 月 10 日。目前还没有最终规则。',
-    currentSummary: 'NPRM 已发布，公众评论期内',
-    lastCompletedStage: 2,
-    activeStage: 3,
-    nextStage: 4,
-    waitingFor: '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'ead-discretion': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail:
-      'DHS 已经发布 NPRM，公众评论期在 2026 年 8 月 4 日结束。目前还没有最终规则或生效日期。',
-    currentSummary: '公众评论期已结束，尚未形成最终规则',
-    lastCompletedStage: 3,
-    activeStage: null,
-    nextStage: 4,
-    waitingFor: 'DHS 审阅意见并决定是否修改或定稿；日期未定。',
-    stages: federalRulemakingStages,
-    litigation: [],
-  },
-  'h4-ead': {
-    kind: 'federal-rulemaking',
-    name: '联邦规则制定流程',
-    meaning: federalMeaning,
-    detail: '目前只是统一议程中的长期项目，尚未进入 OIRA 审查或 NPRM 阶段。',
-    currentSummary: '长期议程，暂无日期',
-    lastCompletedStage: 0,
-    activeStage: null,
-    nextStage: 1,
-    waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
-    stages: federalRulemakingStages,
-    litigation: [],
+  'executive-order': {
+    zh: {
+      name: '总统行政命令',
+      meaning:
+        '总统行政命令向行政部门作出指令，本身不经过 NPRM、公众评论和最终规则这条流程。部门须在现有法律权限内落实；后续若制定或修改法规，仍须遵守适用的规则制定程序，也可能受到司法审查。',
+      stages: ['总统签署', '部门落实', '执行跟踪'],
+      descriptions: [
+        '总统签署行政命令，向部门作出指令；这一步没有 NPRM 或公众评论期。',
+        '国务院、劳工部与 DHS 在法律权限内落实跨部门协作和裁员审查要求；命令要求劳工部在 30 天内开始复查既往 LCA 数据，具体执行文件仍需跟踪。',
+        '核对部门发布的执行文件、实际审查与执法情况，以及是否出现后续规则或法院命令。',
+      ],
+    },
+    en: {
+      name: 'Presidential executive order',
+      meaning:
+        'An executive order directs executive agencies and does not itself follow the NPRM, public-comment and final-rule sequence. Agencies must act within existing legal authority; any later regulations must follow applicable rulemaking procedures, and implementation may face judicial review.',
+      stages: [
+        'President signs',
+        'Agency implementation',
+        'Implementation monitoring',
+      ],
+      descriptions: [
+        'The President signs an order directing agencies; this step has no NPRM or public-comment period.',
+        'State, DOL and DHS implement coordination and layoff-review directives within their legal authority. DOL must begin reviewing prior LCA data within 30 days; specific implementation documents still need tracking.',
+        'Check agency implementation documents, actual review and enforcement practices, and any later regulations or court orders.',
+      ],
+    },
   },
 };
 
-const federalRulemakingStagesEnglish = [
-  'Draft / agenda',
-  'OIRA review',
-  'NPRM published',
-  'Public comment',
-  'Final rule',
-  'Effective',
-] as const;
-
-const administrativeGuidanceStagesEnglish = [
-  'Risk notice',
-  'Standard clarified',
-  'School implementation',
-  'Enforcement monitoring',
-  'Further guidance',
-] as const;
-
-const federalMeaningEnglish =
-  'When a federal agency changes legally binding regulations, it generally drafts the rule, completes OIRA prepublication review, publishes an NPRM for public comment, responds to comments, and then issues a final rule with an effective date. Litigation is a parallel judicial review that can change whether or when a rule takes effect; it is not a stage of the agency process.';
-const guidanceMeaningEnglish =
-  'SEVP/ICE uses Broadcast messages, FAQs, and similar materials to explain existing rules, and schools and DSOs apply that guidance directly. Because guidance does not amend the CFR, it generally has no NPRM, public-comment, or final-rule stages. Implementation can be rapid, but guidance has less legal force than a regulation.';
-
-const englishProcessTracks: Record<
-  string,
-  Pick<
-    ProcessTrack,
-    | 'name'
-    | 'meaning'
-    | 'detail'
-    | 'currentSummary'
-    | 'stages'
-    | 'litigation'
-    | 'waitingFor'
-  >
-> = {
-  'h1b-program-integrity': {
-    name: 'Presidential executive order',
-    meaning: 'An executive order directs executive agencies and does not itself follow the NPRM, public-comment and final-rule sequence. Agencies must act within existing legal authority; any later regulations must follow applicable rulemaking procedures, and implementation may face judicial review.',
-    detail: 'The President signed the order on September 18, 2026, directing interagency coordination and consideration of relevant employer layoffs. The directive has been issued; implementation documents and actual review practices still need tracking. Signature does not establish that every review measure is already operational.',
-    currentSummary: 'Order signed; tracking agency implementation',
-    waitingFor: 'DOL must begin reviewing prior LCA data within 30 days of signature (October 18 by calendar-day calculation); watch for State, DHS and DOL implementation documents.',
-    stages: ['President signs', 'Agency implementation', 'Implementation monitoring'],
-    litigation: [],
-  },
-  'perm-modernization': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail: 'DOL submitted its PERM reform proposal to OIRA on September 14, 2026. Prepublication review is ongoing; this check did not locate a public NPRM, and the reform is not in effect.',
-    currentSummary: 'PERM reform is in prepublication review',
-    waitingFor: 'The OIRA review outcome and a DOL NPRM; detailed provisions, comment deadline and effective date remain unknown.',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'opt-fee': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'OIRA completed OPT fee proposal review with changes on September 11. No public NPRM was located; the amount and payer are unpublished and the fee is not in effect.',
-    waitingFor: 'Publication of an NPRM and comment period, specifying the amount, payer and coverage.',
-    currentSummary: 'Rule text and fee amount are not public',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'h1b-fee': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'The NPRM is public and the comment period is open. DHS must review the comments before it can issue a final rule.',
-    waitingFor:
-      'The September 24 comment deadline, followed by DHS review of comments.',
-    currentSummary: 'Published proposal open for comment',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'h1b-weighted-selection': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'DHS completed the NPRM, public-comment, and final-rule stages. The rule took effect on February 27, 2026 and applies wage-level-weighted selection beginning with the FY 2027 H-1B registration season.',
-    waitingFor: null,
-    currentSummary: 'Final rule in effect and implemented',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'duration-status': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      "On September 14, the court postponed the entire final rule nationwide under APA § 705 and barred DHS/ICE from implementation until further order or resolution on the merits. The September 15 effective date is postponed.",
-    waitingFor:
-      "October 2 status conference at noon; monitor later court orders and appeals. This is not an effective date.",
-    currentSummary: "Nationwide stay issued; effective date postponed",
-    stages: federalRulemakingStagesEnglish,
-    litigation: [
-      {
-        date: '8·18',
-        label: 'Lawsuit filed',
-        afterStage: 4,
-        progress: 53,
-        status: 'filed',
-        align: 'left',
-        lane: 'base',
-      },
-      {
-        date: '9·02',
-        label: 'Proposed opposition',
-        afterStage: 4,
-        progress: 70,
-        status: 'filed',
-        align: 'left',
-        lane: 'raised',
-      },
-      {
-        date: '9·03',
-        label: 'Hearing held; decision pending',
-        afterStage: 4,
-        progress: 80,
-        status: 'filed',
-        align: 'right',
-        lane: 'base',
-      },
-      {
-  "date": "9·14",
-  "label": "Nationwide stay",
-  "afterStage": 4,
-  "progress": 90,
-  "status": "filed",
-  "align": "right",
-  "lane": "raised"
-},
-    ],
-  },
-  'cpt-guidance': {
-    name: 'SEVP administrative guidance',
-    meaning: guidanceMeaningEnglish,
-    detail:
-      'SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.',
-    waitingFor:
-      'School implementation updates and any further SEVP clarification; there is no common resumption date.',
-    currentSummary: 'Schools are applying the new standard',
-    stages: administrativeGuidanceStagesEnglish,
-    litigation: [],
-  },
-  'prevailing-wage': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'DOL published an NPRM and the public comment period closed on May 26, 2026. The initiative remains a proposal while DOL reviews comments.',
-    waitingFor:
-      'DOL review of comments, revisions or further action toward a final rule; no date is set.',
-    currentSummary: 'Comment period closed; awaiting further rulemaking',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'h1b-reform': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'The proposed rule is in OIRA prepublication review. Its text is not yet public.',
-    waitingFor:
-      'Completion of OIRA review and publication of the DHS proposal; no publication date is confirmed.',
-    currentSummary: 'OMB prepublication review',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'grace-period': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'The NPRM was published September 11, with public comments due November 10. It is not a final rule.',
-    waitingFor:
-      'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
-    currentSummary: 'NPRM published; public comments open',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'ead-discretion': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'DHS published the NPRM and the public comment period closed on August 4, 2026. There is no final rule or effective date.',
-    waitingFor:
-      'DHS review of comments and a decision on revisions or a final rule; no date is set.',
-    currentSummary: 'Comment period closed; no final rule',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-  'h4-ead': {
-    name: 'Federal rulemaking',
-    meaning: federalMeaningEnglish,
-    detail:
-      'The initiative is only a long-term item in the Unified Agenda. It has not entered OIRA review or the NPRM stage.',
-    waitingFor:
-      'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
-    currentSummary: 'Long-term agenda item with no date',
-    stages: federalRulemakingStagesEnglish,
-    litigation: [],
-  },
-};
-
-export function getProcessTrack(
-  policyId: string,
-  language: Language = 'zh',
+export function buildProcessTrack(
+  content: PolicyContent,
+  language: Language,
 ): ProcessTrack {
-  const track = processTracks[policyId];
-  if (!track) throw new Error(`Unknown policy process: ${policyId}`);
-  if (language === 'en') return { ...track, ...englishProcessTracks[policyId] };
-  return track;
+  const { kind, lastCompletedStage, activeStage, nextStage, litigation = [] } =
+    content.process;
+  return {
+    kind,
+    ...processKinds[kind][language],
+    ...content[language].process,
+    lastCompletedStage,
+    activeStage,
+    nextStage,
+    litigation: litigation.map(({ zh, en, ...event }) => ({
+      ...event,
+      label: language === 'en' ? en : zh,
+    })),
+  };
 }
 
 export type ProcessStageState = 'complete' | 'active' | 'upcoming';
@@ -474,6 +176,12 @@ export function getProcessStageState(
     return 'complete';
   if (index === track.activeStage) return 'active';
   return 'upcoming';
+}
+
+// The stage a compact progress bar highlights: the one in progress, or the
+// last one reached while the policy waits for its next step.
+export function getCurrentStage(track: ProcessTrack): number {
+  return track.activeStage ?? track.lastCompletedStage ?? 0;
 }
 
 export function getProcessStageLabel(

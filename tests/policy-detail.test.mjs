@@ -3,9 +3,8 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { policyHref, legacyPolicyHref } from '../app/policy-links.ts';
 import { buildShareContent } from '../app/share-model.ts';
-import { getProcessTrack } from '../app/process-model.ts';
-import { getPolicyDetail } from '../app/policy-detail-model.ts';
-import { getPolicyExamples } from '../app/policy-examples.ts';
+import { getPolicy, getProcessTrack } from '../app/policy-data.ts';
+import { POLICY_IDS } from '../app/policy-ids.ts';
 
 test('policy links retain language and target the requested detail section', () => {
   assert.equal(policyHref('opt-fee', 'zh'), '/policies/opt-fee?lang=zh');
@@ -41,61 +40,54 @@ test('policy sharing uses its own summary and drops acquisition and navigation p
 });
 
 test('detail selection does not fall back to a different policy or language', () => {
-  assert.equal(getPolicyDetail('unknown-policy', 'zh'), undefined);
-  const english = getPolicyDetail('h4-ead', 'en');
-  assert.equal(english.record.id, 'h4-ead');
-  assert.equal(english.editorial.id, 'h4-ead');
-  assert.doesNotMatch(JSON.stringify(english), /[\u3400-\u9fff]/u);
-  assert.equal(
-    getPolicyDetail('opt-fee', 'zh').editorial.title,
-    'OPT 可能增收 10 万美元',
-  );
+  assert.equal(getPolicy('unknown-policy', 'zh'), undefined);
+  const english = getPolicy('h4-ead', 'en');
+  assert.equal(english.id, 'h4-ead');
+  assert.doesNotMatch(JSON.stringify(english), /[㐀-鿿]/u);
+  assert.equal(getPolicy('opt-fee', 'zh').title, 'OPT 可能增收 10 万美元');
 });
 
-test('all existing policy IDs resolve with complete analysis and valid related links', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+test('all existing policy IDs resolve with complete analysis and valid related links', () => {
   for (const language of ['zh', 'en'])
     for (const id of POLICY_IDS) {
-      const detail = getPolicyDetail(id, language);
-      assert.equal(detail.record.id, id);
-      assert.equal(detail.editorial.scenarios.length, 3);
+      const policy = getPolicy(id, language);
+      assert.equal(policy.id, id);
+      assert.equal(policy.scenarios.length, 3);
       const process = getProcessTrack(id, language);
       assert.ok(
         process.stages[process.activeStage ?? process.lastCompletedStage],
       );
+      assert.equal(process.descriptions.length, process.stages.length);
       assert.ok(
-        detail.record.sources.every(
+        policy.sources.every(
           (source) => source.label && source.href.startsWith('https://'),
         ),
       );
-      for (const related of detail.editorial.related)
-        assert.ok(getPolicyDetail(related, language), `${id} → ${related}`);
+      assert.ok(policy.next.length > 0, `${id} has no next step`);
+      for (const related of policy.related)
+        assert.ok(getPolicy(related, language), `${id} → ${related}`);
     }
 });
 
-test('example groups stay aligned with rendered impacts in both languages', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
-  for (const id of POLICY_IDS) {
-    for (const language of ['zh', 'en']) {
-      const { editorial } = getPolicyDetail(id, language);
-      const groups = getPolicyExamples(id, language);
-      assert.equal(
-        groups.length,
-        editorial.impacts.length,
-        `${id} (${language}) has unreachable or missing example groups`,
-      );
-    }
-  }
+test('the first non-forum source is the primary government document', () => {
+  const primary = (id) =>
+    getPolicy(id, 'zh').sources.find(({ href }) => !href.includes('uscardforum.com')).href;
+  assert.match(primary('duration-status'), /2026-14439/);
+  assert.match(primary('h1b-fee'), /federalregister\.gov\/documents\/2026\/08\/25/);
+  assert.match(primary('cpt-guidance'), /ice\.gov\/doclib\/sevis/);
+});
 
+test('examples sit under the impact they illustrate in both languages', () => {
   for (const language of ['zh', 'en']) {
-    const groups = getPolicyExamples('h1b-program-integrity', language);
+    const { impacts } = getPolicy('h1b-program-integrity', language);
     for (const term of language === 'en'
       ? ['visa interview', 'secondary inspection']
       : ['面签', '二次检查']) {
-      assert.ok(groups[0].some((text) => text.includes(term)));
+      assert.ok(impacts[0].examples.some((text) => text.includes(term)));
     }
+    assert.equal(impacts[1].examples, undefined);
     assert.ok(
-      groups[2].some((text) =>
+      impacts[2].examples.some((text) =>
         text.includes(language === 'en' ? 'LCA data' : 'LCA 数据'),
       ),
     );
@@ -128,26 +120,26 @@ test('federal details share one process while litigation remains separate', () =
   }
 });
 
-test('emphasis markers in detail copy are balanced and never render literally', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+const impactStrings = (policy) =>
+  policy.impacts.flatMap(({ title, text, examples = [] }) => [title, text, ...examples]);
+
+test('emphasis markers in detail copy are balanced and never render literally', () => {
   for (const id of POLICY_IDS) {
     for (const language of ['zh', 'en']) {
-      const { editorial } = getPolicyDetail(id, language);
+      const policy = getPolicy(id, language);
       const fields = [
-        editorial.summary,
-        editorial.background,
-        editorial.analysis,
-        editorial.teaser,
-        editorial.headline,
-        editorial.deck,
-        editorial.outlook,
-        editorial.caveat,
-        editorial.note,
-        editorial.keyPoint?.label,
-        editorial.keyPoint?.text,
-        ...editorial.impacts.flat(),
-        ...editorial.scope.flat(),
-        ...editorial.scenarios.flat(),
+        policy.summary,
+        policy.background,
+        policy.analysis,
+        policy.teaser,
+        policy.headline,
+        policy.outlook,
+        policy.caveat,
+        policy.keyPoint?.label,
+        policy.keyPoint?.text,
+        ...impactStrings(policy),
+        ...policy.scope.flatMap(({ label, text }) => [label, text]),
+        ...policy.scenarios.flatMap(Object.values),
       ].filter(Boolean);
       for (const field of fields)
         assert.equal(
@@ -158,36 +150,40 @@ test('emphasis markers in detail copy are balanced and never render literally', 
     }
   }
 
-  const { analysis, keyPoint, impacts } = getPolicyDetail('h1b-program-integrity', 'zh').editorial;
+  const { analysis, keyPoint, impacts } = getPolicy('h1b-program-integrity', 'zh');
   assert.ok(keyPoint?.label && keyPoint.text);
   assert.match(keyPoint.text, /\*\*签证和入境审查\*\*/);
-  assert.match(impacts[0][1], /\*\*这三个条件只决定是否进入审查范围，不决定结果\*\*/);
+  assert.match(impacts[0].text, /\*\*这三个条件只决定是否进入审查范围，不决定结果\*\*/);
   assert.match(analysis, /\*\*把裁员写进审查清单，不是给出处理结果\*\*/);
   // Emphasis on this page stays restrained: one short phrase per section, and
   // nothing else marked.
   const count = (text) => (text.match(/\*\*/g) ?? []).length / 2;
+  const impactTexts = (list) => list.flatMap(({ title, text }) => [title, text]).join(' ');
   assert.equal(count(analysis), 1);
   assert.equal(count(keyPoint.text), 1);
-  assert.equal(count(impacts[0][1]), 1);
-  assert.equal(count(impacts.flat().join(' ')), 1);
+  assert.equal(count(impacts[0].text), 1);
+  assert.equal(count(impactTexts(impacts)), 1);
 
-  const english = getPolicyDetail('h1b-program-integrity', 'en').editorial;
+  const english = getPolicy('h1b-program-integrity', 'en');
   assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
   assert.match(english.analysis, /\*\*a factor on the review checklist, not an outcome\*\*/);
   assert.match(
-    english.impacts[0][1],
+    english.impacts[0].text,
     /\*\*These conditions decide only whether a case falls inside the review scope, not the outcome\*\*/,
   );
   assert.equal(count(english.analysis), 1);
-  assert.equal(count(english.impacts.flat().join(' ')), 1);
+  assert.equal(count(impactTexts(english.impacts)), 1);
 });
 
-test('emphasis stays restrained on every detail in both languages', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+test('emphasis stays restrained on every detail in both languages', () => {
   for (const id of POLICY_IDS) {
     for (const language of ['zh', 'en']) {
-      const { editorial } = getPolicyDetail(id, language);
-      const fields = [editorial.analysis, editorial.keyPoint?.text, ...editorial.impacts.flat()];
+      const policy = getPolicy(id, language);
+      const fields = [
+        policy.analysis,
+        policy.keyPoint?.text,
+        ...policy.impacts.flatMap(({ title, text }) => [title, text]),
+      ];
       const marks = fields.reduce(
         (total, field) => total + (field?.match(/\*\*/g) ?? []).length / 2,
         0,
@@ -197,11 +193,10 @@ test('emphasis stays restrained on every detail in both languages', async () => 
   }
 });
 
-test('every detail has an explicit effect, audience, caveat and distinct background in both languages', async () => {
-  const { POLICY_IDS } = await import('../app/community-impact-model.ts');
+test('every detail has an explicit effect, audience, caveat and distinct background in both languages', () => {
   for (const id of POLICY_IDS) {
     for (const language of ['zh', 'en']) {
-      const { editorial } = getPolicyDetail(id, language);
+      const policy = getPolicy(id, language);
       for (const field of [
         'status',
         'effectLabel',
@@ -210,10 +205,10 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
         'summary',
         'background',
       ])
-        assert.ok(editorial[field]);
-      assert.notEqual(editorial.summary, editorial.background);
+        assert.ok(policy[field]);
+      assert.notEqual(policy.summary, policy.background);
       if (language === 'en')
-        assert.doesNotMatch(JSON.stringify(editorial), /[\u3400-\u9fff]/u);
+        assert.doesNotMatch(JSON.stringify(policy), /[㐀-鿿]/u);
       const expected =
         id === 'h1b-weighted-selection'
           ? 'in-effect'
@@ -222,73 +217,63 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
             : id === 'h1b-program-integrity'
               ? 'executive-order-issued'
             : 'not-in-effect';
-      assert.equal(editorial.effectState, expected);
+      assert.equal(policy.effectState, expected);
     }
   }
-  assert.match(
-    getPolicyDetail('opt-fee', 'zh').editorial.effectLabel,
-    /金额未确认/,
-  );
-  assert.match(
-    getPolicyDetail('grace-period', 'en').editorial.effectLabel,
-    /Current rule unchanged/,
-  );
+  assert.match(getPolicy('opt-fee', 'zh').effectLabel, /金额未确认/);
+  assert.match(getPolicy('grace-period', 'en').effectLabel, /Current rule unchanged/);
 });
 
 test('grace-period publication is distinct from final effectiveness', () => {
   for (const language of ['zh', 'en']) {
-    const detail = getPolicyDetail('grace-period', language);
-    assert.equal(detail.checkedOn, '2026-09-22');
-    assert.equal(detail.editorial.effectState, 'not-in-effect');
-    assert.ok(detail.record.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
-    assert.ok(detail.record.milestones.some(({ date }) => date === '2026-09-10'));
-    assert.ok(detail.record.next.some(({ date }) => date === '2026-11-10'));
-    assert.match(detail.record.current, /USCIS|DHS/);
-    assert.doesNotMatch(detail.record.current, /提案尚未公开|proposal is not yet public/);
+    const policy = getPolicy('grace-period', language);
+    assert.equal(policy.checkedOn, '2026-09-22');
+    assert.equal(policy.effectState, 'not-in-effect');
+    assert.ok(policy.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-09-10'));
+    assert.ok(policy.next.some(({ date }) => date === '2026-11-10'));
+    assert.match(policy.background, /USCIS|DHS/);
+    assert.doesNotMatch(policy.background, /提案尚未公开|proposal is not yet public/);
   }
 });
 
 test('PERM expectations stay labeled as analysis and cite the Justice Department settlement', () => {
   for (const language of ['zh', 'en']) {
-    const { editorial, record } = getPolicyDetail('perm-modernization', language);
-    assert.equal(editorial.possibilities.items.length, 5);
+    const policy = getPolicy('perm-modernization', language);
+    assert.equal(policy.possibilities.items.length, 5);
     assert.equal(
-      editorial.possibilities.items.filter(([, text]) => text.length > 0).length,
+      policy.possibilities.items.filter(([, text]) => text.length > 0).length,
       5,
     );
-    const text = JSON.stringify(editorial.possibilities);
+    const text = JSON.stringify(policy.possibilities);
     assert.match(text, /OpenAI/);
     assert.match(text, /ATS/);
     assert.ok(
-      record.sources.some(({ href }) =>
+      policy.sources.some(({ href }) =>
         href.includes('justice.gov/opa/pr/civil-rights-division-secures-settlement-openai'),
       ),
     );
-    assert.ok(record.milestones.some(({ date }) => date === '2026-08-04'));
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-08-04'));
   }
-  assert.match(
-    getPolicyDetail('perm-modernization', 'zh').editorial.possibilities.note,
-    /不是 DOL 已公布的条款/,
-  );
-  assert.match(
-    getPolicyDetail('perm-modernization', 'en').editorial.possibilities.heading,
-    /expect/i,
-  );
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /不是 DOL 已公布的条款/);
+  assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /expect/i);
 });
 
 test('D/S relief is consistent across details, homepage and share copy', async () => {
-  const { getPolicyShareItem } = await import('../app/item-share-model.ts');
+  const { getPolicyShareItem } = await import('../app/policy-share.ts');
   const { buildItemShareContent } = await import('../app/share-model.ts');
-  const { getHomePolicyEditorial } = await import('../app/policy-home-model.ts');
+  const { buildHomeView } = await import('../app/home-view.ts');
   for (const language of ['zh', 'en']) {
-    const detail = getPolicyDetail('duration-status', language);
-    assert.equal(detail.editorial.effectState, 'not-in-effect');
-    assert.equal(detail.editorial.discovery.next.date, '2026-10-02');
-    assert.ok(detail.record.sources.some(source => source.href.endsWith('.51.0.pdf')));
+    const policy = getPolicy('duration-status', language);
+    assert.equal(policy.effectState, 'not-in-effect');
+    assert.equal(policy.next[0].date, '2026-10-02');
+    assert.ok(policy.sources.some(source => source.href.endsWith('.51.0.pdf')));
     const text = buildItemShareContent(getPolicyShareItem('duration-status', language), language).text;
     const expression = language === 'zh' ? /全国暂缓/ : /Nationwide court stay/;
     assert.match(text, expression);
-    assert.match(getHomePolicyEditorial('duration-status', language).status, expression);
+    const home = buildHomeView(language);
+    assert.match(home.policies.find(({ id }) => id === 'duration-status').status, expression);
+    assert.match(home.paths[0].policies[0].status, expression);
   }
 });
 

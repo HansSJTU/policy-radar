@@ -1,29 +1,13 @@
 import { isUuid } from '../lib/identifiers.ts';
+import { isPolicyId, type PolicyId } from './policy-ids.ts';
 
-export const POLICY_IDS = [
-  'opt-fee',
-  'h1b-fee',
-  'duration-status',
-  'h1b-weighted-selection',
-  'cpt-guidance',
-  'prevailing-wage',
-  'h1b-reform',
-  'grace-period',
-  'ead-discretion',
-  'h4-ead',
-  'perm-modernization',
-  'h1b-program-integrity',
-] as const;
-
-export type PolicyId = (typeof POLICY_IDS)[number];
+export { POLICY_IDS, type PolicyId } from './policy-ids.ts';
 
 export type CommunityRatingSubmission = {
   policyId: PolicyId;
   rating: number;
   visitorId: string;
 };
-
-const policyIdSet = new Set<string>(POLICY_IDS);
 
 export function parseCommunityRating(
   input: unknown,
@@ -32,8 +16,7 @@ export function parseCommunityRating(
 
   const { policyId, rating, visitorId } = input as Record<string, unknown>;
   if (
-    typeof policyId !== 'string' ||
-    !policyIdSet.has(policyId) ||
+    !isPolicyId(policyId) ||
     typeof rating !== 'number' ||
     !Number.isInteger(rating) ||
     rating < 1 ||
@@ -44,7 +27,7 @@ export function parseCommunityRating(
   }
 
   return {
-    policyId: policyId as PolicyId,
+    policyId,
     rating,
     visitorId,
   };

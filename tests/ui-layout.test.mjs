@@ -30,7 +30,7 @@ test('homepage briefing sends readers to the detail timeline', () => {
 });
 
 test('briefing headings carry a category tag colored by the shared stay-path tokens', () => {
-  assert.match(policyPage, /className="briefing-tag" data-path=\{path\}/);
+  assert.match(policyPage, /className="briefing-tag" data-path=\{item\.path\}/);
   assert.match(
     css,
     /\.briefing-tag\s*\{[^}]*color: var\(--path-ink\)[^}]*background: var\(--path-bg\)/s,
