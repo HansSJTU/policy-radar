@@ -6,30 +6,45 @@ import { useEffect, useState } from 'react';
 
 const asset = '/animations/niulai-cutout-v5.png';
 
+// The cut-out is only fetched the first time someone triggers the effect, so
+// ordinary visits never download it.
 export function NiulaiEffect({ triggerToken }: { triggerToken: number }) {
+  const [mounted, setMounted] = useState(false);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
     if (triggerToken === 0) return;
 
+    let cancelled = false;
     let resetTimer: number | undefined;
+    let clearFrame: number | undefined;
     let startFrame: number | undefined;
-    const clearFrame = window.requestAnimationFrame(() => {
-      setActive(false);
-      startFrame = window.requestAnimationFrame(() => {
-        setActive(true);
-        resetTimer = window.setTimeout(() => setActive(false), 2050);
+    const image = new Image();
+    image.src = asset;
+    void image
+      .decode()
+      .catch(() => undefined)
+      .then(() => {
+        if (cancelled) return;
+        setMounted(true);
+        clearFrame = window.requestAnimationFrame(() => {
+          setActive(false);
+          startFrame = window.requestAnimationFrame(() => {
+            setActive(true);
+            resetTimer = window.setTimeout(() => setActive(false), 2050);
+          });
+        });
       });
-    });
 
     return () => {
-      window.cancelAnimationFrame(clearFrame);
+      cancelled = true;
+      if (clearFrame !== undefined) window.cancelAnimationFrame(clearFrame);
       if (startFrame !== undefined) window.cancelAnimationFrame(startFrame);
       if (resetTimer !== undefined) window.clearTimeout(resetTimer);
     };
   }, [triggerToken]);
 
-  return <NiulaiPuppet active={active} />;
+  return mounted ? <NiulaiPuppet active={active} /> : null;
 }
 
 export function NiulaiPuppet({ active }: { active: boolean }) {

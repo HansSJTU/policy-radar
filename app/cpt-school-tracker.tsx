@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* oxlint-disable next/no-img-element -- Evidence screenshots are served as-is from public/. */
 import { useEffect, useState } from 'react';
 import {
   ArrowUpRight,
@@ -179,12 +179,13 @@ export function CptSchoolTracker({
               {selectedEvidence.screenshots.length > 0
                 ? selectedEvidence.screenshots.map((screenshot, index) => (
                     <figure key={screenshot.src}>
-                      <Image
+                      <img
                         src={screenshot.src}
                         width={screenshot.width}
                         height={screenshot.height}
                         alt={`${selectedEvidence.school} ${ui.evidenceTitle} ${index + 1}`}
-                        unoptimized
+                        loading="lazy"
+                        decoding="async"
                       />
                       {selectedEvidence.screenshots.length > 1 && <figcaption>{index + 1} / {selectedEvidence.screenshots.length}</figcaption>}
                     </figure>

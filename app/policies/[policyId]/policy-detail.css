@@ -97,25 +97,6 @@
   color: var(--ink-soft);
   line-height: 1.7;
 }
-.pd-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 0 0 10px;
-}
-.pd-meta > span {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-  font-size: 12px;
-  color: var(--pd-muted);
-}
-.pd-meta > span svg {
-  width: 14px;
-  height: 14px;
-}
 .pd-answer {
   padding: 25px 26px 24px;
   background: var(--pd-answer);
@@ -1024,12 +1005,6 @@
   }
   .pd-main .pd-deck {
     font-size: 1rem;
-  }
-  .pd-meta {
-    margin: 0 0 10px;
-  }
-  .pd-meta > span {
-    font-size: 11px;
   }
   .pd-answer {
     padding: 20px 19px;
