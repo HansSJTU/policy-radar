@@ -43,6 +43,9 @@ import { isForumLink } from '../../forum-links';
 import './policy-detail.css';
 
 export const dynamic = 'force-dynamic';
+
+// Timeline labels that only say "next"; the row heading already says so.
+const genericNextLabels = new Set(['下一步', 'Next step']);
 type Props = {
   params: Promise<{ policyId: string }>;
   searchParams?: Promise<{ lang?: string; from?: string }>;
@@ -91,11 +94,21 @@ export async function generateMetadata({
   };
 }
 
+// " · " separates status phrases; a bare "·" is part of a date such as 9·15.
+const splitStatus = (text: string) => text.split(/\s+·\s+/);
+
+// The effect gets its own slot, so drop status phrases that repeat it.
+function statusWithoutEffect(status: string, effect: string) {
+  const effectParts = new Set(splitStatus(effect));
+  const kept = splitStatus(status).filter((part) => !effectParts.has(part));
+  return kept.length > 0 ? kept.join(' · ') : status;
+}
+
 function DotWrapText({ text }: { text: string }) {
-  if (!text || !text.includes('·')) {
+  const parts = splitStatus(text);
+  if (parts.length < 2) {
     return <>{text}</>;
   }
-  const parts = text.split(/\s*·\s*/);
   return (
     <span className="pd-dot-flow">
       <span className="pd-dot-flow-inner">
@@ -137,6 +150,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
   // Sources are listed primary document first.
   const official = sources[0];
   const impactIcons = [GraduationCap, BriefcaseBusiness, Route];
+  const next = p.next[0];
   return (
     <LanguageProvider language={language}>
       <div
@@ -218,7 +232,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   <div>
                     <dt>{english ? 'Current status' : '当前状态'}</dt>
                     <dd>
-                      <DotWrapText text={p.status} />
+                      <DotWrapText text={statusWithoutEffect(p.status, p.effectLabel)} />
                     </dd>
                   </div>
                   <div>
@@ -260,27 +274,39 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 <div>
                   <dt>{english ? 'Key boundaries' : '关键边界'}</dt>
                   <dd>
-                    <GlossaryText text={[p.caveat, p.reviewNote].filter(Boolean).join(' ')} />
+                    <GlossaryText text={p.caveat} />
                   </dd>
                 </div>
                 <div>
                   <dt>{english ? 'Next to watch' : '下一步关注'}</dt>
                   <dd>
-                    {p.next[0].estimate &&
-                      (english ? 'Estimated · ' : '预计 · ')}
-                    {p.next[0].date} ·{' '}
-                    <GlossaryText text={p.next[0].text} />
+                    {next.estimate && (english ? 'Estimated · ' : '预计 · ')}
+                    {!genericNextLabels.has(next.date) && `${next.date} · `}
+                    <GlossaryText text={next.text} />
                   </dd>
                 </div>
+                {p.reviewNote && (
+                  <div className="pd-review-note">
+                    <dt>{english ? 'Review scope' : '核查范围'}</dt>
+                    <dd>
+                      <GlossaryText text={p.reviewNote} />
+                    </dd>
+                  </div>
+                )}
               </dl>
               <section id="overview" className="pd-overview pd-section">
-                <h2>{english ? 'Policy background' : '政策背景'}</h2>
-                <p>
-                  <GlossaryText text={p.background} />
-                </p>
+                <div className="pd-section-heading">
+                  <h2>{english ? 'Policy background' : '政策背景'}</h2>
+                  <span>00 / BACKGROUND</span>
+                </div>
+                {p.background.split('\n').map((paragraph) => (
+                  <p key={paragraph}>
+                    <GlossaryText text={paragraph} />
+                  </p>
+                ))}
                 {p.commentUrl && (
                   <p>
-                    <a href={p.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+                    <a className="comment-link" href={p.commentUrl} target="_blank" rel="noopener noreferrer">
                       {english ? 'Submit a public comment on Regulations.gov ↗' : '前往 Regulations.gov 提交公众评论 ↗'}
                     </a>
                   </p>

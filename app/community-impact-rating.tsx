@@ -339,6 +339,7 @@ export function CommunityImpactScore({
     <div
       className="rank-score community-score"
       data-community-score={policyId}
+      data-empty={aggregate ? undefined : ''}
       aria-label={`${text.scoreTitle}: ${aggregate ? `${score} / 10` : text.noRatings}`}
       aria-live="polite"
     >

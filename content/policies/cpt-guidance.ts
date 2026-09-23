@@ -51,7 +51,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '核查范围：9·22 复核两份 SEVP 备忘录，学校复核于 9·22 完成。UT Dallas、UC Irvine 与 Washington State 的原文读取仍有缺口，保留上次成功核对日期，不视为政策反转。Penn、Johns Hopkins 和 Purdue 页面保留的新旧文字差异已在单项说明。其余社区截图仍不是校方公开确认。',
+      '9·22 复核两份 SEVP 备忘录，学校复核于 9·22 完成。UT Dallas、UC Irvine 与 Washington State 的原文读取仍有缺口，保留上次成功核对日期，不视为政策反转。Penn、Johns Hopkins 和 Purdue 页面保留的新旧文字差异已在单项说明。其余社区截图仍不是校方公开确认。',
     background:
       '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -172,7 +172,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'Review scope: both SEVP memos were reviewed September 22, with campus checks completed September 22. Original-page access gaps remain for UT Dallas, UC Irvine and Washington State; prior successful review dates are retained, without inferring a policy reversal. Individual entries explain older and newer wording on Penn, Johns Hopkins and Purdue pages. Remaining community screenshots are not public university confirmation.',
+      'Both SEVP memos were reviewed September 22, with campus checks completed September 22. Original-page access gaps remain for UT Dallas, UC Irvine and Washington State; prior successful review dates are retained, without inferring a policy reversal. Individual entries explain older and newer wording on Penn, Johns Hopkins and Purdue pages. Remaining community screenshots are not public university confirmation.',
     background:
       'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
     teaser:

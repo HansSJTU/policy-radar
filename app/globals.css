@@ -59,6 +59,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 button:not(:disabled) { cursor: pointer; }
 :where(a, button, summary, input):focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
 p { text-wrap: pretty; }
+.comment-link { text-decoration: underline; text-underline-offset: 3px; }
 main { width: 100%; min-width: 0; }
 
 .glossary-term {
@@ -307,7 +308,7 @@ main { width: 100%; min-width: 0; }
 .policy-category { padding: 3px 7px; border-radius: 5px; color: var(--path-ink); background: var(--path-bg); font-size: .75rem; font-weight: 650; line-height: 1.5; white-space: nowrap; }
 .policy-title-group h3 { margin: 14px 0 0; font-size: clamp(1.5rem, 2.1vw, 1.875rem); line-height: 1.3; letter-spacing: -.035em; }
 .policy-title-group > p { max-width: 800px; margin: 12px 0 0; color: #526178; font-size: 1rem; line-height: 1.8; }
-.community-impact { grid-column: 3; grid-row: 1; align-self: start; min-width: 0; padding: 16px; border: 1px solid #dce4ee; border-radius: 12px; background: linear-gradient(145deg, #fff, #f7f9fc); container-type: inline-size; container-name: rating; }
+.community-impact { grid-column: 3; grid-row: 1; align-self: start; min-width: 0; padding: 14px; border: 1px solid #dce4ee; border-radius: 12px; background: #fbfcfe; container-type: inline-size; container-name: rating; }
 .community-impact-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; }
 .community-rating-title { color: var(--ink); font-size: .875rem; line-height: 1.5; font-weight: 650; }
 .community-rating-count { color: var(--muted); font-size: .75rem; line-height: 1.5; font-variant-numeric: tabular-nums; }
@@ -316,21 +317,20 @@ main { width: 100%; min-width: 0; }
 .rank-score.community-score > span { color: var(--ink-soft); }
 .rank-score.community-score strong { color: var(--red-dark); font: 700 2.25rem/1.1 ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.055em; }
 .rank-score.community-score small { margin-left: 0; font-size: .625rem; }
-.impact-scale { margin: 12px 0 0; padding: 4px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; border: 1px solid #e1e7ef; border-radius: 10px; background: #edf1f6; }
-.impact-scale button { min-width: 0; height: 40px; padding: 0; border: 1px solid transparent; border-radius: 6px; color: #52647a; background: transparent; cursor: pointer; font: 600 .875rem/1 ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; transition: border-color .14s ease, color .14s ease, background .14s ease, box-shadow .14s ease; }
+.rank-score.community-score[data-empty] strong { color: #a3aebd; font-weight: 500; }
+.impact-scale { margin: 10px 0 0; padding: 3px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; border: 1px solid #e1e7ef; border-radius: 9px; background: #edf1f6; }
+.impact-scale button { min-width: 0; height: 34px; padding: 0; border: 1px solid transparent; border-radius: 6px; color: #52647a; background: transparent; cursor: pointer; font: 600 .875rem/1 ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; transition: border-color .14s ease, color .14s ease, background .14s ease, box-shadow .14s ease; }
 .impact-scale button:hover:not(:disabled) { color: var(--ink); border-color: #d4deeb; background: #fff; }
 .impact-scale button[aria-pressed="true"] { color: #fff; border-color: #263f5e; background: #263f5e; box-shadow: 0 1px 3px rgba(23,43,70,.16); }
 .impact-scale button[aria-pressed="true"]:hover:not(:disabled) { color: #fff; border-color: #1c324d; background: #1c324d; }
 .impact-scale button:focus-visible { z-index: 2; outline: 2px solid var(--blue); outline-offset: 2px; }
 .impact-scale button:disabled { cursor: wait; opacity: .62; }
 .rating-feedback {
-  margin: 10px 0 0;
-  padding-top: 10px;
-  border-top: 1px solid #e5eaf2;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: .8125rem;
   line-height: 1.5;
-  min-height: 52px;
+  min-height: 2lh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,8 +345,8 @@ main { width: 100%; min-width: 0; }
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px 16px;
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 8px;
+  padding-top: 8px;
   border-top: 1px solid #e5eaf2;
 }
 .community-forum-links a { color: var(--blue); font-size: .8125rem; text-underline-offset: 3px; }
@@ -415,6 +415,7 @@ main { width: 100%; min-width: 0; }
 .timeline-node.present time { color: var(--red); }
 .timeline-node p { margin: 7px 0 0; color: var(--muted); font-size: .875rem; line-height: 1.75; }
 .timeline-node.present p { color: var(--ink-soft); font-weight: 700; }
+.timeline-more { display: none; }
 .timeline-estimate { flex: 0 0 auto; padding: 1px 4px; border: 1px dashed #aeb7c4; border-radius: 3px; color: var(--gray); font-family: var(--font-sans, sans-serif); font-size: .625rem; line-height: 1.4; font-weight: 400; }
 
 .disclosure-content { display: flow-root; }
@@ -807,6 +808,10 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
   .timeline-node.present > b { top: 0; left: calc(var(--timeline-axis-x) - var(--timeline-content-x)); }
   .timeline-node time { font-size: .875rem; }
   .timeline-node p { margin-top: 6px; font-size: .9375rem; line-height: 1.75; }
+  .timeline-node.earlier { display: none; }
+  .timeline-more { position: relative; display: block; padding: 0 0 22px; }
+  .timeline-more::after { content: ''; position: absolute; top: 0; bottom: 0; left: calc(var(--timeline-axis-x) - var(--timeline-content-x)); border-left: 2px dotted var(--green); transform: translateX(-50%); }
+  .timeline-more button { min-height: 32px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); background: var(--card); font-size: .8125rem; font-weight: 600; }
 
   .school-head { align-items: flex-start; flex-direction: column; }
   .school-search { width: 100%; }
@@ -866,7 +871,7 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
 
 }
 
-@container rating (min-width: 440px) {
+@container rating (min-width: 250px) {
   .impact-scale { grid-template-columns: repeat(10, minmax(0, 1fr)); }
 }
 

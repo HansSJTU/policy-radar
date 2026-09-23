@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { ArrowUpRight, Clock3, Scale } from 'lucide-react';
 import { GlossaryText } from './glossary-text';
 import { CommunityImpactScore, type CommunityImpactAggregate } from './community-impact-rating';
@@ -17,6 +17,9 @@ type PolicyCardProps = {
   communityAggregate?: CommunityImpactAggregate;
 };
 
+// On narrow screens the timeline is vertical; older past events fold away.
+const VISIBLE_PAST_ON_MOBILE = 2;
+
 const stageState = (index: number, current: number) =>
   index < current ? 'complete' : index === current ? 'current' : 'upcoming';
 
@@ -31,6 +34,10 @@ export function PolicyCard({
   const { process } = policy;
   const policyPath = policy.path;
   const flowHelpRef = useRef<HTMLDetailsElement>(null);
+  const [showEarlier, setShowEarlier] = useState(false);
+  const foldedCount = showEarlier
+    ? 0
+    : Math.max(policy.milestones.length - VISIBLE_PAST_ON_MOBILE, 0);
 
   useEffect(() => {
     const dismissOutside = (event: PointerEvent) => {
@@ -96,7 +103,7 @@ export function PolicyCard({
           <p>
             <GlossaryText text={policy.tldr} />
             {policy.commentUrl && (
-              <> <a href={policy.commentUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>{language === 'en' ? 'Submit a public comment ↗' : '提交公众评论 ↗'}</a></>
+              <> <a className="comment-link" href={policy.commentUrl} target="_blank" rel="noopener noreferrer">{language === 'en' ? 'Submit a public comment ↗' : '提交公众评论 ↗'}</a></>
             )}
           </p>
         </div>
@@ -140,9 +147,16 @@ export function PolicyCard({
         <div className="timeline-caption"><Clock3 aria-hidden="true" /><span>{ui.past}</span><i /> <strong>{ui.now}</strong><i /> <span>{ui.expected}</span></div>
         <div className="timeline-shell" ref={showLatestTimeline}>
           <ol className="time-axis">
+            {foldedCount > 0 && (
+              <li className="timeline-more">
+                <button type="button" onClick={() => setShowEarlier(true)}>
+                  {ui.earlierMilestones(foldedCount)}
+                </button>
+              </li>
+            )}
             {policy.milestones.map((item, index) => (
               <li
-                className={`timeline-node past${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
+                className={`timeline-node past${index < foldedCount ? ' earlier' : ''}${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
                 key={item.date + item.text}
               >
                 <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>

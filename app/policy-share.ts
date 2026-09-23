@@ -13,7 +13,13 @@ export function getPolicyShareItem(id: string, language: Language): ShareItem | 
     summary: policy.summary,
     status: `${policy.status} · ${policy.effectLabel}`,
     scope: policy.audience,
-    caveat: [policy.caveat, policy.reviewNote].filter(Boolean).join(' '),
+    caveat: [
+      policy.caveat,
+      policy.reviewNote &&
+        `${language === 'en' ? 'Review scope: ' : '核查范围：'}${policy.reviewNote}`,
+    ]
+      .filter(Boolean)
+      .join(' '),
     checkedOn: policy.checkedOn,
     href: POLICY_SITE_URL + policyHref(id, language),
   };

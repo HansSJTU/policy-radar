@@ -138,7 +138,7 @@ export const durationStatus: PolicyContent = {
     caveat:
       '法院暂缓的是整项最终规则，但不是永久撤销，也不会自动撤销 8 月那份独立的 CPT 行政指引。',
     reviewNote:
-      '核查范围：9·22 读取第 51 项禁令及公开案卷镜像，最新可见仍为 9·14 第 52 项、10·02 状态会议通知；镜像可能滞后。9·20 读取议员官网 CRA 公告及决议文本，文本未填决议编号，后续表决与成法进度未核实。不得把提出决议理解为规则已撤销。',
+      '9·22 读取第 51 项禁令及公开案卷镜像，最新可见仍为 9·14 第 52 项、10·02 状态会议通知；镜像可能滞后。9·20 读取议员官网 CRA 公告及决议文本，文本未填决议编号，后续表决与成法进度未核实。不得把提出决议理解为规则已撤销。',
     background:
       '麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令，或案件实体审理结束，没有设到期日。第 50 号意见第 46—48 页写明，这项救济覆盖全国，不只限于原告成员学校。原定 9·15 生效的安排已经作废。法院还没有永久撤销规则，也没有作出有利于原告的简易判决。相关请求被无偏见驳回，可以再次提出。9·22 读取的公开案卷镜像仍止于第 52 项，未见上诉记录；镜像可能滞后。第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。另据议员官网 9·14 公告，Durbin 等参议员已提出 CRA 联合否决决议，拟撤销这项最终规则，Jayapal 和 Raskin 牵头众议院配套案。提出决议本身不撤销规则，也不是法院裁定；后续表决和成法进度仍待核实。',
     teaser: '全国暂缓已生效；规则能不能恢复，要看后续命令。',
@@ -267,7 +267,7 @@ export const durationStatus: PolicyContent = {
     caveat:
       'This nationwide stay covers the entire final rule, not permanent vacatur. It does not automatically rescind separate CPT guidance.',
     reviewNote:
-      'Review scope: the entry 51 injunction and public docket mirror were read September 22; the latest visible record remains September 14 entry 52 scheduling the October 2 conference. The mirror may lag. The senator’s CRA announcement and resolution text were read September 20; the text leaves the resolution number blank, and subsequent votes or enactment were not verified. Introduction does not mean repeal.',
+      'The entry 51 injunction and public docket mirror were read September 22; the latest visible record remains September 14 entry 52 scheduling the October 2 conference. The mirror may lag. The senator’s CRA announcement and resolution text were read September 20; the text leaves the resolution number blank, and subsequent votes or enactment were not verified. Introduction does not mean repeal.',
     background:
       'At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. Opinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The September 15 effective date is postponed. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal. The public docket mirror read on September 22 still ended at entry 52, with no visible notice of appeal; the mirror may lag. Docket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date. Separately, a September 14 announcement from Senator Durbin reports introduction of a CRA joint resolution to disapprove this final rule, with Jayapal and Raskin leading the House companion. Introduction alone does not repeal the rule and is not a court ruling; subsequent votes and enactment remain unverified.',
     teaser:
