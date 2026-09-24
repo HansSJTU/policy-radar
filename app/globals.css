@@ -110,7 +110,7 @@ main { width: 100%; min-width: 0; }
   height: 72px;
   padding: 0 max(24px, calc((100vw - 1192px) / 2));
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   border-bottom: 1px solid var(--line);
   background: rgba(255,255,255,.94);
