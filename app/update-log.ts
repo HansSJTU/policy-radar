@@ -23,6 +23,28 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
 {
+  "date": "2026-09-23",
+  "changes": [
+    {
+      "id": "h1b-program-integrity-eo-14431",
+      "category": "行政命令",
+      "title": "#12 补充编号：第 14431 号行政命令",
+      "summary": "联邦公报于 9·23 刊登 9·18 签署的 H-1B 裁员审查行政命令，编号为 EO 14431（FR Doc. 2026-19555）。",
+      "before": "文件编号显示为“2026-09-18 行政命令 · 编号待核”；来源为白宫原文与论坛讨论。",
+      "after": "文件编号改为“行政命令 14431”，新增 9·23 联邦公报刊登里程碑与来源。命令内容、状态和 10·18 启动 LCA 复查的期限不变。",
+      "details": [
+        "编号与刊登信息来自检索结果中的联邦公报官网条目；本次未能直接打开联邦公报全文，未逐字比对刊登文本。该缺口已写入条目核查说明。"
+      ],
+      "sources": [
+        {
+          "label": "联邦公报 · EO 14431",
+          "href": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b"
+        }
+      ]
+    }
+  ]
+},
+{
   "date": "2026-09-22",
   "changes": [
     {
@@ -909,6 +931,28 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+{
+  "date": "2026-09-23",
+  "changes": [
+    {
+      "id": "h1b-program-integrity-eo-14431",
+      "category": "Executive order",
+      "title": "#12 now carries its number: Executive Order 14431",
+      "summary": "The Federal Register published the September 18 H-1B layoff-review order on September 23 as EO 14431 (FR Doc. 2026-19555).",
+      "before": "The document ID read “September 18, 2026 executive order · Number pending verification”; sources were the White House text and a forum discussion.",
+      "after": "The document ID now reads “Executive Order 14431”, with a September 23 Federal Register milestone and source. The order’s content, status and the October 18 deadline to begin the LCA review are unchanged.",
+      "details": [
+        "The number and publication details come from Federal Register listings in search results; the full Federal Register text could not be opened directly in this check and was not compared word for word. The entry’s review note discloses this gap."
+      ],
+      "sources": [
+        {
+          "label": "Federal Register · EO 14431",
+          "href": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b"
+        }
+      ]
+    }
+  ]
+},
 {
   "date": "2026-09-22",
   "changes": [
