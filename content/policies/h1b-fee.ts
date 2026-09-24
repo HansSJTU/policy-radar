@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-22',
+  checkedOn: '2026-09-23',
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0298-0001',
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {

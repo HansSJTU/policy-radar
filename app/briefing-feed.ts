@@ -66,6 +66,14 @@ export const briefingEntries: BriefingEntry[] = [
     en: 'The President signed an order directing interagency coordination, consideration of relevant layoffs and review of prior LCA data; it does not impose automatic denial after layoffs.',
   },
   {
+    id: 'duration-cra-senate-calendar',
+    date: '2026-09-17',
+    policyId: 'duration-status',
+    timing: 'recent',
+    zh: '参议院司法委员会经请愿被解除审议，CRA 撤销决议 S.J.Res.213 列入参议院一般议程；这只是程序进展，不是表决或通过，与法院暂缓分开跟踪。',
+    en: 'The Senate Judiciary Committee was discharged by petition and CRA disapproval resolution S.J.Res.213 was placed on the Senate calendar. This is a procedural step, not a vote or passage, and is tracked separately from the court stay.',
+  },
+  {
     id: 'duration-effective-date',
     date: '2026-09-15',
     policyId: 'duration-status',
