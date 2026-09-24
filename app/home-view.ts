@@ -59,7 +59,10 @@ export type HomePathColumn = {
   key: PolicyPath;
   number: string;
   subtitle: string;
-  policies: Array<Pick<Policy, 'id' | 'rank' | 'short' | 'status'>>;
+  policies: Array<
+    Pick<Policy, 'id' | 'rank' | 'short' | 'status'> &
+      Pick<ProcessTrack, 'kind' | 'label'>
+  >;
 };
 
 export type HomeBriefingRow = BriefingItem & {
@@ -126,7 +129,10 @@ export function buildHomeView(language: Language): HomeView {
       subtitle: pathSubtitles[key][language],
       policies: policies
         .filter((policy) => policy.path === key)
-        .map(({ id, rank, short, status }) => ({ id, rank, short, status })),
+        .map(({ id, rank, short, status }) => {
+          const { kind, label } = getProcessTrack(id, language);
+          return { id, rank, short, status, kind, label };
+        }),
     })),
     briefing: {
       recent: briefing.recent.map((item) => toBriefingRow(item, language)),

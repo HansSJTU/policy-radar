@@ -213,6 +213,7 @@ main { width: 100%; min-width: 0; }
 .route-policy > span { color: #a6bad3; font: .75rem/1.5 ui-monospace, monospace; }
 .route-policy > strong { overflow: visible; font-size: inherit; line-height: inherit; text-overflow: clip; white-space: normal; font-weight: 600; overflow-wrap: anywhere; }
 .route-policy > small { grid-column: 2; color: #b8c8dc; font-size: .75rem; line-height: 1.5; }
+.route-policy > .route-policy-kind { grid-column: 2; justify-self: start; padding: 0 6px; border: 1px solid rgba(193,217,255,.28); border-radius: 5px; color: #dce7f7; background: rgba(193,217,255,.1); font-family: inherit; font-size: .6875rem; font-weight: 600; line-height: 1.5; white-space: nowrap; }
 .route-policy > svg { position: absolute; right: 0; top: calc(var(--route-policy-top) + .5lh - 6.5px); width: 13px; color: #8fa7c6; transition: transform var(--motion-base) var(--motion-ease), color var(--motion-fast) var(--motion-ease); height: 13px; }
 .route-policy:hover > svg { color: #fff; transform: translate(2px,-2px); }
 

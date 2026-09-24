@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 import { briefingEntries } from '../app/briefing-feed.ts';
 import { buildHomeView } from '../app/home-view.ts';
-import { getPolicies } from '../app/policy-data.ts';
+import { getPolicies, getProcessTrack } from '../app/policy-data.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import {
   filterByPath,
@@ -35,6 +35,20 @@ test('stage columns keep rank order and show each policy’s one status', () => 
         assert.equal(entry.short, policy.short);
       }
     }
+  }
+});
+
+test('stage columns tag each policy with its policy type', () => {
+  const zh = buildHomeView('zh').paths.flatMap((stage) => stage.policies);
+  const en = buildHomeView('en').paths.flatMap((stage) => stage.policies);
+  const byId = (entries) => new Map(entries.map((entry) => [entry.id, entry]));
+  assert.equal(byId(zh).get('h1b-program-integrity').label, '行政命令');
+  assert.equal(byId(zh).get('cpt-guidance').label, '行政指引');
+  assert.equal(byId(zh).get('opt-fee').label, '联邦法规');
+  assert.equal(byId(en).get('h1b-program-integrity').label, 'Executive order');
+  for (const entry of [...zh, ...en]) {
+    assert.equal(entry.kind, getProcessTrack(entry.id).kind, entry.id);
+    assert.ok(entry.label, `${entry.id} has no policy-type tag`);
   }
 });
 

@@ -67,6 +67,7 @@ function RoutePolicyLink({ policy, language, onNavigate }: {
     >
       <span>#{String(policy.rank).padStart(2, '0')}</span>
       <strong>{policy.short}</strong>
+      <span className="route-policy-kind" data-kind={policy.kind}>{policy.label}</span>
       <small><GlossaryText text={policy.status} /></small>
       <ArrowUpRight aria-hidden="true" />
     </a>

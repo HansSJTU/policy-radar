@@ -22,6 +22,8 @@ export type LitigationMarker = {
 
 export type ProcessTrack = {
   kind: ProcessKind;
+  // Short policy-type tag, e.g. on the home path map.
+  label: string;
   name: string;
   meaning: string;
   detail: string;
@@ -38,6 +40,7 @@ export type ProcessTrack = {
 };
 
 type ProcessKindCopy = {
+  label: string;
   name: string;
   meaning: string;
   stages: readonly string[];
@@ -47,6 +50,7 @@ type ProcessKindCopy = {
 const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
   'federal-rulemaking': {
     zh: {
+      label: '联邦法规',
       name: '联邦规则制定流程',
       meaning:
         '行政机关要改一条有法律约束力的联邦法规，通常先拟稿，交给 OIRA 做发布前审查，再发布 NPRM 征求公众意见。回应意见之后，才能发布最终规则，并在指定日期生效。诉讼是规则发布之后的司法审查。它会影响规则能不能生效、什么时候生效，但不是行政流程里的一段。',
@@ -61,6 +65,7 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       ],
     },
     en: {
+      label: 'Regulation',
       name: 'Federal rulemaking',
       meaning:
         'When a federal agency changes legally binding regulations, it generally drafts the rule, completes OIRA prepublication review, publishes an NPRM for public comment, responds to comments, and then issues a final rule with an effective date. Litigation is a parallel judicial review that can change whether or when a rule takes effect; it is not a stage of the agency process.',
@@ -84,6 +89,7 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
   },
   'administrative-guidance': {
     zh: {
+      label: '行政指引',
       name: 'SEVP 行政指引流程',
       meaning:
         'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。',
@@ -97,6 +103,7 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       ],
     },
     en: {
+      label: 'Guidance',
       name: 'SEVP administrative guidance',
       meaning:
         'SEVP/ICE uses Broadcast messages, FAQs, and similar materials to explain existing rules, and schools and DSOs apply that guidance directly. Because guidance does not amend the CFR, it generally has no NPRM, public-comment, or final-rule stages. Implementation can be rapid, but guidance has less legal force than a regulation.',
@@ -118,6 +125,7 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
   },
   'executive-order': {
     zh: {
+      label: '行政命令',
       name: '总统行政命令',
       meaning:
         '总统行政命令向行政部门作出指令，本身不经过 NPRM、公众评论和最终规则这条流程。部门须在现有法律权限内落实；后续若制定或修改法规，仍须遵守适用的规则制定程序，也可能受到司法审查。',
@@ -129,6 +137,7 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       ],
     },
     en: {
+      label: 'Executive order',
       name: 'Presidential executive order',
       meaning:
         'An executive order directs executive agencies and does not itself follow the NPRM, public-comment and final-rule sequence. Agencies must act within existing legal authority; any later regulations must follow applicable rulemaking procedures, and implementation may face judicial review.',
