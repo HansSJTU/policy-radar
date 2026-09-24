@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, type MouseEvent, type ReactNode } from 'react';
+import { Fragment, memo, type MouseEvent, type ReactNode } from 'react';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { annotateGlossary, type GlossarySegment } from './glossary';
 import { useLanguage } from './language-context';
@@ -89,7 +89,9 @@ function renderEmphasis(
   return nodes;
 }
 
-export function GlossaryText({ text }: { text: string }) {
+// Memoized: a page carries hundreds of these popovers, and the homepage
+// re-renders every card when ratings load or an evidence modal opens.
+export const GlossaryText = memo(function GlossaryText({ text }: { text: string }) {
   const language = useLanguage();
   return (
     <>
@@ -98,4 +100,4 @@ export function GlossaryText({ text }: { text: string }) {
         : renderGlossary(text, 'g', language)}
     </>
   );
-}
+});

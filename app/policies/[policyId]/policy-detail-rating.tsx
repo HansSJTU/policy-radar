@@ -94,8 +94,26 @@ export function PolicyDetailStatusScore({
 
   const closeModal = useCallback(() => {
     const dialog = dialogRef.current;
-    if (dialog?.open) dialog.close();
-    releaseModal();
+    if (!dialog?.open) {
+      releaseModal();
+      return;
+    }
+    if (dialog.dataset.closing !== undefined) return;
+    const finish = () => {
+      delete dialog.dataset.closing;
+      if (dialog.open) dialog.close();
+      releaseModal();
+    };
+    // data-closing starts the exit animation; close once it has played.
+    dialog.dataset.closing = '';
+    const exits = [...dialog.querySelectorAll<HTMLElement>(':scope > div')].flatMap(
+      (layer) => layer.getAnimations?.() ?? [],
+    );
+    // Animations only settle while the page renders; the timer covers hidden tabs.
+    void Promise.race([
+      Promise.all(exits.map((animation) => animation.finished)),
+      new Promise((resolve) => setTimeout(resolve, 400)),
+    ]).then(finish, finish);
   }, [releaseModal]);
 
   // Backdrop dismiss. The dialog fills the viewport (see .pd-rating-modal-dialog),

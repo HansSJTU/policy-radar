@@ -3,6 +3,7 @@
   display: inline-flex; align-items: center; justify-content: center; gap: 7px;
   border: 1px solid var(--line); border-radius: 9px; color: var(--ink);
   background: var(--card); font-size: .8125rem; font-weight: 600;
+  transition: var(--motion-colors);
 }
 .share-trigger:hover { background: var(--paper); }
 .share-trigger[data-popup-open] { color: var(--blue); background: #edf4fd; border-color: #b8cde9; }
@@ -17,13 +18,18 @@
   background: var(--card); color: var(--ink); outline: none;
   box-shadow: 0 18px 55px rgb(13 31 56 / 17%), 0 3px 8px rgb(13 31 56 / 5%);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  transform-origin: var(--transform-origin);
+  transition: opacity var(--motion-fast) var(--motion-ease), transform var(--motion-base) var(--motion-ease);
 }
+/* Base UI marks the first and last frames, so the panel eases in and out. */
+.share-panel[data-starting-style], .share-panel[data-ending-style] { opacity: 0; transform: translateY(-4px) scale(.97); }
 .share-handle { display: none; }
 .share-panel-header { display: flex; align-items: center; gap: 8px; margin-bottom: 15px; }
 .share-panel-header h2 { flex: 1; margin: 0; font-size: 1.0625rem; font-weight: 650; line-height: 1.4; letter-spacing: -.02em; }
 .share-icon-button {
   display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px;
   padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--muted);
+  transition: var(--motion-colors);
 }
 .share-icon-button:hover { background: var(--paper); }
 .share-icon-button svg { width: 20px; height: 20px; stroke-width: 1.7; }
@@ -33,7 +39,7 @@
 .share-preview strong { display: block; font-size: .8125rem; font-weight: 600; overflow-wrap: anywhere; }
 .share-preview > div > span { display: block; margin-top: 2px; color: var(--muted); font-size: .6875rem; }
 .share-channels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin: 0 -5px 16px; }
-.share-channel { display: flex; flex-direction: column; align-items: center; gap: 8px; min-height: 82px; padding: 8px 2px; border: 0; border-radius: 11px; color: var(--ink); background: transparent; font: inherit; font-size: .75rem; white-space: nowrap; text-decoration: none; }
+.share-channel { display: flex; flex-direction: column; align-items: center; gap: 8px; min-height: 82px; padding: 8px 2px; border: 0; border-radius: 11px; color: var(--ink); background: transparent; font: inherit; font-size: .75rem; white-space: nowrap; text-decoration: none; transition: var(--motion-colors); }
 .share-channel:hover { background: var(--paper); }
 .share-channel > span { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; border: 1px solid var(--line); background: var(--paper); }
 .share-channel svg { width: 24px; height: 24px; stroke-width: 1.7; }
@@ -42,7 +48,7 @@
 .share-link-row { display: flex; align-items: center; gap: 8px; padding: 5px 5px 5px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); }
 .share-link-row > svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--muted); }
 .share-link-row input { min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--muted); font-size: .6875rem; text-overflow: ellipsis; }
-.share-copy-button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; flex-shrink: 0; min-height: 32px; min-width: 90px; padding: 0 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--card); font-size: .75rem; font-weight: 550; }
+.share-copy-button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; flex-shrink: 0; min-height: 32px; min-width: 90px; padding: 0 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--card); font-size: .75rem; font-weight: 550; transition: var(--motion-colors); }
 .share-copy-button svg { width: 14px; height: 14px; }
 .share-copy-button:hover { background: var(--paper); }
 .share-copy-button:disabled { cursor: wait; opacity: .7; }
@@ -83,7 +89,6 @@
 .school-share-card > .share-card-trigger {
   position: absolute; top: 22px; right: 22px;
   color: #c7daef; border-color: rgba(193,210,232,.18); background: rgba(171,199,231,.06);
-  transition: color .16s ease, border-color .16s ease, background .16s ease;
 }
 .school-share-card > .share-card-trigger:hover,
 .school-share-card > .share-card-trigger[data-popup-open] {
@@ -116,9 +121,12 @@
   .top-actions .language-switch { width: 72px; height: 44px; }
   .top-actions .language-switch :is(button, a) { width: 32px; height: 36px; }
   .top-actions .mobile-menu-trigger { width: 44px; height: 44px; }
-  .share-backdrop { display: block; position: fixed; inset: 0; z-index: 69; background: rgb(12 25 43 / 25%); }
+  .share-backdrop { display: block; position: fixed; inset: 0; z-index: 69; background: rgb(12 25 43 / 25%); transition: opacity var(--motion-base) var(--motion-ease); }
+  .share-backdrop[data-starting-style], .share-backdrop[data-ending-style] { opacity: 0; }
   .share-positioner { position: fixed !important; inset: auto 0 0 !important; width: 100% !important; transform: none !important; }
-  .share-panel { width: 100%; max-height: calc(100dvh - 20px); padding: 10px 20px max(24px, env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 22px 22px 0 0; box-shadow: 0 -12px 44px rgb(13 31 56 / 14%); }
+  .share-panel { width: 100%; max-height: calc(100dvh - 20px); padding: 10px 20px max(24px, env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 22px 22px 0 0; box-shadow: 0 -12px 44px rgb(13 31 56 / 14%); transition: transform var(--motion-slow) var(--motion-ease); }
+  .share-panel[data-starting-style], .share-panel[data-ending-style] { opacity: 1; transform: translateY(100%); }
+  .share-panel[data-ending-style] { transition-duration: var(--motion-base); transition-timing-function: cubic-bezier(.4, 0, 1, 1); }
   .share-handle { display: block; width: 32px; height: 4px; margin: 0 auto 12px; border-radius: 8px; background: var(--line); }
   .share-panel-header { margin-bottom: 12px; }
   .share-panel-header h2 { font-size: 1.125rem; }

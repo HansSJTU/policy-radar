@@ -1,5 +1,5 @@
 /* oxlint-disable next/no-img-element -- Evidence screenshots are served as-is from public/. */
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {
   ArrowUpRight,
   CheckCircle2,
@@ -36,7 +36,20 @@ export function CptSchoolTracker({
   const [schoolQuery, setSchoolQuery] = useState('');
   const [schoolTab, setSchoolTab] = useState<'verified' | 'community'>('verified');
   const [targetSchool, setTargetSchool] = useState('');
+  // Closing plays the exit animation first, then clears the selection.
+  const [closingEvidence, setClosingEvidence] = useState(false);
   const ui = homeCopy[language];
+  const finishClosingEvidence = useCallback(() => {
+    setClosingEvidence(false);
+    setSelectedEvidence(null);
+  }, [setSelectedEvidence]);
+
+  useEffect(() => {
+    if (!closingEvidence) return;
+    // animationend normally finishes first; hidden tabs never deliver it.
+    const timer = window.setTimeout(finishClosingEvidence, 400);
+    return () => window.clearTimeout(timer);
+  }, [closingEvidence, finishClosingEvidence]);
 
   useEffect(() => {
     const revealSharedSchool = () => {
@@ -68,7 +81,7 @@ export function CptSchoolTracker({
 
     const previousOverflow = document.body.style.overflow;
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setSelectedEvidence(null);
+      if (event.key === 'Escape') setClosingEvidence(true);
     };
     document.body.style.overflow = 'hidden';
     window.addEventListener('keydown', closeOnEscape);
@@ -77,7 +90,7 @@ export function CptSchoolTracker({
       document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', closeOnEscape);
     };
-  }, [selectedEvidence, setSelectedEvidence]);
+  }, [selectedEvidence]);
 
   const normalizedQuery = schoolQuery.trim().toLowerCase();
   const visibleVerified = verifiedSchools.filter((school) =>
@@ -148,10 +161,13 @@ export function CptSchoolTracker({
 
       {selectedEvidence && (
         <div
-          className="evidence-modal-backdrop"
+          className={`evidence-modal-backdrop${closingEvidence ? ' closing' : ''}`}
           role="presentation"
           onMouseDown={(event) => {
-            if (event.target === event.currentTarget) setSelectedEvidence(null);
+            if (event.target === event.currentTarget) setClosingEvidence(true);
+          }}
+          onAnimationEnd={(event) => {
+            if (closingEvidence && event.target === event.currentTarget) finishClosingEvidence();
           }}
         >
           <dialog
@@ -166,7 +182,7 @@ export function CptSchoolTracker({
                 <h2 id="evidence-modal-title">{selectedEvidence.school}</h2>
                 <p><GlossaryText text={selectedEvidence.state} /></p>
               </div>
-              <button type="button" autoFocus onClick={() => setSelectedEvidence(null)} aria-label={ui.closeEvidence}>
+              <button type="button" autoFocus onClick={() => setClosingEvidence(true)} aria-label={ui.closeEvidence}>
                 <X aria-hidden="true" />
               </button>
             </header>

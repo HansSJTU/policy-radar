@@ -35,9 +35,8 @@ export function PolicyCard({
   const policyPath = policy.path;
   const flowHelpRef = useRef<HTMLDetailsElement>(null);
   const [showEarlier, setShowEarlier] = useState(false);
-  const foldedCount = showEarlier
-    ? 0
-    : Math.max(policy.milestones.length - VISIBLE_PAST_ON_MOBILE, 0);
+  const foldableCount = Math.max(policy.milestones.length - VISIBLE_PAST_ON_MOBILE, 0);
+  const foldedCount = showEarlier ? 0 : foldableCount;
 
   useEffect(() => {
     const dismissOutside = (event: PointerEvent) => {
@@ -156,7 +155,7 @@ export function PolicyCard({
             )}
             {policy.milestones.map((item, index) => (
               <li
-                className={`timeline-node past${index < foldedCount ? ' earlier' : ''}${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
+                className={`timeline-node past${index < foldedCount ? ' earlier' : ''}${showEarlier && index < foldableCount ? ' revealed' : ''}${index === policy.milestones.length - 1 ? ' to-present' : ''}`}
                 key={item.date + item.text}
               >
                 <b /><time>{item.date}</time><p><GlossaryText text={item.text} /></p>

@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { GlossaryText } from '../../glossary-text';
 import type { Language } from '../../language';
+import { useEnterOnChange } from '../../motion';
 import {
   getProcessStageState,
   getProcessStageLabel,
@@ -19,6 +20,8 @@ export function PolicyScenarios({
   language: Language;
 }) {
   const [selected, setSelected] = useState(0);
+  const panelRef = useRef<HTMLDivElement>(null);
+  useEnterOnChange(panelRef, selected);
   const scenario = scenarios[selected];
   const english = language === 'en';
   return (
@@ -70,6 +73,7 @@ export function PolicyScenarios({
         className="pd-scenario-panel"
         id="scenario-result"
         aria-live="polite"
+        ref={panelRef}
       >
         <span className="pd-kicker">
           {english ? 'IF THIS HAPPENS' : '如果这种情况发生'}{' '}
@@ -119,6 +123,8 @@ export function PolicyProgress({
   const [selected, setSelected] = useState(
     track.activeStage ?? track.lastCompletedStage ?? 0,
   );
+  const noteRef = useRef<HTMLDivElement>(null);
+  useEnterOnChange(noteRef, selected);
   const english = language === 'en';
   return (
     <>
@@ -160,7 +166,7 @@ export function PolicyProgress({
           </button>
         ))}
       </fieldset>
-      <div className="pd-progress-note" id="progress-result" aria-live="polite">
+      <div className="pd-progress-note" id="progress-result" aria-live="polite" ref={noteRef}>
         <strong>
           {getProcessStageLabel(track, selected, language)} ·{' '}
           <GlossaryText text={track.stages[selected]} />
