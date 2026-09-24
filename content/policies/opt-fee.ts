@@ -5,7 +5,7 @@ export const optFee: PolicyContent = {
   path: 'OPT',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-22',
+  checkedOn: '2026-09-23',
   related: ['h1b-fee', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',
@@ -45,7 +45,7 @@ export const optFee: PolicyContent = {
     caveat:
       '谁交钱、哪些申请要交、有没有减免，官方都还没公布。10 万美元只是媒体报道，不能认定由学生支付。',
     reviewNote:
-      '9·22 读取 OIRA 结案记录、联邦公报检索及新旧论坛主题的最新可访问回复。未核实公开 NPRM，官方金额和缴费方仍待正文确认；论坛回复不是官方条款。',
+      '9·23 读取 OIRA 结案记录（9·11 带修改完成审查），并用联邦公报 API 按 RIN 与标题检索、查看公开预览清单，均未发现公开 NPRM；论坛主题最新回复为 9·16。官方金额和缴费方仍待正文确认；论坛回复不是官方条款。',
     background:
       'ICE 在 2026-08-20 把 Optional Practical Training Fees 送交 OIRA。9·11 的结案记录是 Consistent with Change，也就是带修改完成审查。这只是发布前的审查结束，既不是最终规则，也不代表收费生效。目前还没有公开的 NPRM，缴费责任要等正式条款才能确定。',
     teaser: '这笔高额成本可能落在毕业后的第一份工作上，改变学生和雇主的选择。',
@@ -163,7 +163,7 @@ export const optFee: PolicyContent = {
     caveat:
       'The payer, covered applications and exemptions are unpublished; $100,000 is media-reported and student payment cannot be assumed.',
     reviewNote:
-      'The OIRA conclusion record, Federal Register search and latest accessible replies in both forum topics were reviewed September 22. A public NPRM was not verified; the official amount and payer still require published text. Forum replies are not official terms.',
+      'The OIRA conclusion record (review completed with changes September 11) was read September 23, and Federal Register API searches by RIN and title plus the public inspection list found no public NPRM; the latest forum reply dates from September 16. The official amount and payer still require published text. Forum replies are not official terms.',
     background:
       'ICE submitted Optional Practical Training Fees on August 20, 2026; the September 11 OIRA conclusion is Consistent with Change. Completed prepublication review is not a final rule or an effective fee. No public NPRM was located; payment responsibility awaits official provisions.',
     teaser:

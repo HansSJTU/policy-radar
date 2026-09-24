@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-22',
+  checkedOn: '2026-09-23',
   related: ['ead-discretion', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -102,7 +102,7 @@ export const h4Ead: PolicyContent = {
     ],
     milestones: [
       { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-16', text: '没有 NPRM、评论期或生效日。' },
+      { date: '截至 2026-09-23', text: '没有 NPRM、评论期或生效日，也未送 OIRA 审查。' },
     ],
     next: [
       {
@@ -217,8 +217,8 @@ export const h4Ead: PolicyContent = {
         text: 'The initiative appeared on the government’s long-term rulemaking agenda.',
       },
       {
-        date: 'As of 2026-09-16',
-        text: 'No NPRM, comment period, or effective date has been announced.',
+        date: 'As of 2026-09-23',
+        text: 'No NPRM, comment period, or effective date has been announced, and no OIRA review is pending.',
       },
     ],
     next: [

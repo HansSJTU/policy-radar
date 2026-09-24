@@ -26,6 +26,60 @@ const chineseUpdates: ContentUpdate[] = [
   "date": "2026-09-23",
   "changes": [
     {
+      "id": "duration-cra-senate-calendar",
+      "category": "国会动向",
+      "title": "D/S 撤销决议列入参议院议程",
+      "summary": "S.J.Res.213 于 9·17 经请愿解除参议院司法委员会审议，列入参议院一般议程（第 668 号）；众议院配套案为 H.J.Res.215。",
+      "before": "D/S 条目只记录 9·14 提出 CRA 决议，决议文本未填编号，后续进度未核实。",
+      "after": "补入两院决议编号、9·17 列入参议院议程的里程碑与 GovInfo 来源，并加入 30 天简报。列入议程不是表决或通过；法院全国暂缓另行跟踪，案卷镜像仍止于第 52 项。",
+      "sources": [
+        {
+          "label": "GovInfo · S.J.Res.213 列入议程文本",
+          "href": "https://www.govinfo.gov/app/details/BILLS-119sjres213pcs"
+        },
+        {
+          "label": "GovInfo · H.J.Res.215",
+          "href": "https://www.govinfo.gov/app/details/BILLS-119hjres215ih"
+        }
+      ]
+    },
+    {
+      "id": "h1b-program-integrity-fr-text-verified",
+      "category": "行政命令",
+      "title": "#12 联邦公报刊登文本已逐字核对",
+      "summary": "当日稍晚读取 GovInfo 刊登文本（91 FR 60501—60503），与白宫原文逐字比对，除排版、页码标记和签名行外一致。",
+      "before": "上一条日志的编号与刊登信息来自检索结果中的联邦公报条目，刊登文本未逐字比对。",
+      "after": "条目核查说明改为已核对刊登文本；来源与里程碑补充 91 FR 页码。命令内容、状态和 10·18 期限不变。上一条日志原文保留供对照。",
+      "sources": [
+        {
+          "label": "GovInfo · 2026-19555",
+          "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/pdf/2026-19555.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cpt-vanderbilt-stony-brook-uci",
+      "category": "CPT 学校",
+      "title": "补录 Vanderbilt 与 Stony Brook，更新 UC Irvine",
+      "summary": "新增两校公开通知；UC Irvine 页面已改为常设政策说明，并新增论文必需 CPT 路径。这些是补录既有通知与页面变化，不是本日新规。",
+      "before": "49 条记录：45 条校方网页、4 条社区截图；48 所不同学校。UT Dallas、UC Irvine、Washington State 因原文无法读取而保留 9·17 核查日期。",
+      "after": "51 条记录：47 条校方网页、4 条社区截图；50 所不同学校。三校恢复直接读取并更新核查日期；8 所学校页面拒绝了本次访问，保留 9·22 核查日期并在单项注明。",
+      "sources": [
+        {
+          "label": "Vanderbilt University",
+          "href": "https://www.vanderbilt.edu/isss/2026/09/15/updates-to-curricular-practical-training-eligibility/"
+        },
+        {
+          "label": "Stony Brook University",
+          "href": "https://www.stonybrook.edu/visa/resources/news-and-events/immigration-policy-updates/cpt-new-guidance.html"
+        },
+        {
+          "label": "UC Irvine",
+          "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+        }
+      ]
+    },
+    {
       "id": "h1b-program-integrity-eo-14431",
       "category": "行政命令",
       "title": "#12 补充编号：第 14431 号行政命令",
@@ -934,6 +988,60 @@ const englishUpdates: ContentUpdate[] = [
 {
   "date": "2026-09-23",
   "changes": [
+    {
+      "id": "duration-cra-senate-calendar",
+      "category": "Congress",
+      "title": "D/S disapproval resolution placed on the Senate calendar",
+      "summary": "On September 17, S.J.Res.213 was discharged from the Senate Judiciary Committee by petition and placed on the Senate calendar under General Orders (Calendar No. 668); the House companion is H.J.Res.215.",
+      "before": "The D/S entry recorded only the September 14 introduction of a CRA resolution; the text left the number blank and later steps were unverified.",
+      "after": "Added both resolution numbers, a September 17 Senate-calendar milestone, GovInfo sources and a 30-day briefing item. Placement on the calendar is not a vote or passage; the nationwide court stay is tracked separately, and the docket mirror still ends at entry 52.",
+      "sources": [
+        {
+          "label": "GovInfo · S.J.Res.213 as placed on the calendar",
+          "href": "https://www.govinfo.gov/app/details/BILLS-119sjres213pcs"
+        },
+        {
+          "label": "GovInfo · H.J.Res.215",
+          "href": "https://www.govinfo.gov/app/details/BILLS-119hjres215ih"
+        }
+      ]
+    },
+    {
+      "id": "h1b-program-integrity-fr-text-verified",
+      "category": "Executive order",
+      "title": "#12 Federal Register text compared word for word",
+      "summary": "Later the same day, the GovInfo published text (91 FR 60501–60503) was read and compared with the White House text; they match apart from formatting, page markers and the signature line.",
+      "before": "The previous log item took the number and publication details from Federal Register listings in search results, without a word-for-word comparison.",
+      "after": "The entry’s review note now reflects the checked published text, and the source and milestone add the 91 FR pages. The order’s content, status and the October 18 deadline are unchanged. The previous log item is kept as written for comparison.",
+      "sources": [
+        {
+          "label": "GovInfo · 2026-19555",
+          "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/pdf/2026-19555.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cpt-vanderbilt-stony-brook-uci",
+      "category": "CPT campuses",
+      "title": "Add Vanderbilt and Stony Brook; update UC Irvine",
+      "summary": "Two public campus notices were added, and the UC Irvine page is now a standing policy page with a new thesis/dissertation CPT pathway. These are additions of existing notices and a page change, not new rules issued today.",
+      "before": "49 evidence entries: 45 public university pages and 4 community reports; 48 distinct institutions. UT Dallas, UC Irvine and Washington State kept September 17 review dates because their pages could not be read.",
+      "after": "51 evidence entries: 47 public university pages and 4 community reports; 50 distinct institutions. Those three pages were read directly again and their dates updated; 8 university pages refused access during this check, so their September 22 dates are retained and noted in each entry.",
+      "sources": [
+        {
+          "label": "Vanderbilt University",
+          "href": "https://www.vanderbilt.edu/isss/2026/09/15/updates-to-curricular-practical-training-eligibility/"
+        },
+        {
+          "label": "Stony Brook University",
+          "href": "https://www.stonybrook.edu/visa/resources/news-and-events/immigration-policy-updates/cpt-new-guidance.html"
+        },
+        {
+          "label": "UC Irvine",
+          "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+        }
+      ]
+    },
     {
       "id": "h1b-program-integrity-eo-14431",
       "category": "Executive order",
