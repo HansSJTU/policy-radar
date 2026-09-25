@@ -9,6 +9,10 @@ import { recordShareEvent } from '@/components/share-analytics';
 import type { ShareMethod } from './analytics-model';
 import type { Language } from './language';
 import { buildItemShareContent, buildShareContent, buildShareLinks, itemShareLabels, type ShareContent, type ShareItem } from './share-model';
+import { preloadable, whenIdle } from './lazy-module';
+
+const loadShareImage = preloadable(() => import('./share-image'));
+const loadQrCode = preloadable(() => import('qrcode-generator'));
 
 const copy = {
   zh: {
@@ -101,11 +105,16 @@ function ShareMenu({ language, pageTitle, pageDescription, item, compact = false
 
   useEffect(() => () => { if (shareImage) URL.revokeObjectURL(shareImage.url); }, [shareImage]);
 
+  useEffect(() => whenIdle(() => {
+    void loadShareImage().catch(() => {});
+    void loadQrCode().catch(() => {});
+  }), []);
+
 
   useEffect(() => {
     if (!open || !wechat || mobile || !content) return;
     let cancelled = false;
-    void import('qrcode-generator').then(({ default: qrcode }) => {
+    void loadQrCode().then(({ default: qrcode }) => {
       const code = qrcode(0, 'M');
       code.addData(content.url);
       code.make();
@@ -205,7 +214,7 @@ function ShareMenu({ language, pageTitle, pageDescription, item, compact = false
     const current = operation.current.id;
     setImageBusy(true);
     try {
-      const { generateShareImage } = await import('./share-image');
+      const { generateShareImage } = await loadShareImage();
       const result = await generateShareImage(item, content, language);
       if (current !== operation.current.id) return;
       setShareImage({ url: URL.createObjectURL(result.blob), width: result.width, height: result.height });
