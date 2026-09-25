@@ -52,6 +52,11 @@ test('Wrangler config serves app routes and binds both analytics stores', () => 
   assert.ok(wranglerConfig, 'wrangler.jsonc must exist');
   assert.equal(wranglerConfig.name, 'policy-radar');
   assert.equal(wranglerConfig.main, 'vinext/server/fetch-handler');
+  assert.equal(wranglerConfig.workers_dev, true);
+  assert.deepEqual(wranglerConfig.routes, [
+    { pattern: 'stayradar.org', custom_domain: true },
+    { pattern: 'www.stayradar.org', custom_domain: true },
+  ]);
   assert.deepEqual(wranglerConfig.compatibility_flags, ['nodejs_compat']);
   assert.deepEqual(wranglerConfig.assets, {
     directory: 'dist/client',
