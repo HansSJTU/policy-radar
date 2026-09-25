@@ -7,11 +7,11 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-1683B6.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Live site](https://img.shields.io/badge/site-live-2EA44F)](https://policy-radar.uspolicy.workers.dev/)
+[![Live site](https://img.shields.io/badge/site-live-2EA44F)](https://stayradar.org/)
 
 A tracker for U.S. policies affecting the `F-1 → CPT → OPT → H-1B` path. The home page ranks policies by their potential impact on the path and shows each policy's procedural stage, past and expected milestones, practical effects, and primary sources.
 
-Live site: [policy-radar.uspolicy.workers.dev](https://policy-radar.uspolicy.workers.dev/).
+Live site: [stayradar.org](https://stayradar.org/).
 
 ## Features
 

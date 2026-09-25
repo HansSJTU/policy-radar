@@ -2,7 +2,7 @@ import type { Language } from './language';
 import { isPolicyId } from './policy-ids.ts';
 import { isPolicyPath } from './policy-paths.ts';
 
-export const POLICY_SITE_URL = 'https://policy-radar.uspolicy.workers.dev';
+export const POLICY_SITE_URL = 'https://stayradar.org';
 
 export function localizedPageUrl(path: string, language: Language): string {
   return `${POLICY_SITE_URL}${path}?lang=${language}`;

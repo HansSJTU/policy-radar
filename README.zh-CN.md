@@ -7,11 +7,11 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-1683B6.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Live site](https://img.shields.io/badge/site-live-2EA44F)](https://policy-radar.uspolicy.workers.dev/)
+[![Live site](https://img.shields.io/badge/site-live-2EA44F)](https://stayradar.org/)
 
 一份面向 `F-1 → CPT → OPT → H-1B` 路径的政策追踪站。主页按路径影响排序展示政策内容、程序进度、过去与未来时间点、具体影响及原始来源。
 
-正式网站：[policy-radar.uspolicy.workers.dev](https://policy-radar.uspolicy.workers.dev/)。
+正式网站：[stayradar.org](https://stayradar.org/)。
 
 ## 功能
 
