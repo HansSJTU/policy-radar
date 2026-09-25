@@ -52,6 +52,40 @@ export function languageFromAcceptLanguage(
   return preferences[0]?.language ?? 'en';
 }
 
+// Chinese-language communities whose readers often browse with English
+// browser settings. A visit arriving from one of them opens in Chinese.
+const CHINESE_COMMUNITY_DOMAINS = [
+  '1p3a.com',
+  '1point3acres.com',
+  'uscardforum.com',
+  'xiaohongshu.com',
+  'xhslink.com',
+  'weixin.qq.com',
+  'zhihu.com',
+  'douban.com',
+  'v2ex.com',
+  'weibo.com',
+  'weibo.cn',
+  'huaren.us',
+];
+
+export function languageFromReferrer(
+  referrer: string | null | undefined,
+): Language | undefined {
+  let host: string;
+  try {
+    host = new URL(referrer ?? '').hostname.toLowerCase();
+  } catch {
+    return undefined;
+  }
+
+  return CHINESE_COMMUNITY_DOMAINS.some(
+    (domain) => host === domain || host.endsWith(`.${domain}`),
+  )
+    ? 'zh'
+    : undefined;
+}
+
 export function isEnglish(language: Language): boolean {
   return language === 'en';
 }

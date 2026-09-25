@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   brandHomeLabel,
   languageFromAcceptLanguage,
+  languageFromReferrer,
   parseLanguage,
 } from '../app/language.ts';
 
@@ -22,6 +23,23 @@ test('uses the highest-priority supported browser language', () => {
 test('defaults unsupported or missing browser languages to English', () => {
   assert.equal(languageFromAcceptLanguage('fr-FR,fr;q=0.9'), 'en');
   assert.equal(languageFromAcceptLanguage(undefined), 'en');
+});
+
+test('opens visits from Chinese communities in Chinese', () => {
+  assert.equal(languageFromReferrer('https://www.uscardforum.com/t/topic/527162'), 'zh');
+  assert.equal(languageFromReferrer('https://link.1p3a.com/'), 'zh');
+  assert.equal(languageFromReferrer('https://link.1point3acres.com/?url=x'), 'zh');
+  assert.equal(languageFromReferrer('https://mp.weixin.qq.com/s/abc'), 'zh');
+  assert.equal(languageFromReferrer('https://www.xiaohongshu.com/explore/1'), 'zh');
+});
+
+test('leaves other referrers to the browser language', () => {
+  assert.equal(languageFromReferrer('https://www.google.com/'), undefined);
+  assert.equal(languageFromReferrer('https://notuscardforum.com/'), undefined);
+  assert.equal(languageFromReferrer('https://uscardforum.com.example.org/'), undefined);
+  assert.equal(languageFromReferrer(''), undefined);
+  assert.equal(languageFromReferrer(null), undefined);
+  assert.equal(languageFromReferrer('not a url'), undefined);
 });
 
 test('labels the brand as the site home without matching back-to-top blockers', () => {

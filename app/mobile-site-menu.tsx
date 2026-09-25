@@ -36,7 +36,7 @@ type MenuItem = {
 export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
   const [open, setOpen] = useState(false);
   const english = language === 'en';
-  const home = english ? '/?lang=en' : '/';
+  const home = `/?lang=${language}`;
   const github = getGitHubProjectLink(language);
   const copy = english
     ? { label: 'Open site menu', title: 'Navigate', policies: 'Policies', schools: 'CPT Schools', updates: 'Updates', stats: 'Traffic' }
@@ -57,14 +57,14 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
     {
       id: 'updates',
       label: copy.updates,
-      href: english ? '/updates?lang=en' : '/updates',
+      href: `/updates?lang=${language}`,
       icon: <Clock3 aria-hidden="true" />,
       current: current === 'updates',
     },
     {
       id: 'stats',
       label: copy.stats,
-      href: english ? '/stats?lang=en' : '/stats',
+      href: `/stats?lang=${language}`,
       icon: <BarChart3 aria-hidden="true" />,
       current: current === 'stats',
     },

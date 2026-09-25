@@ -3,6 +3,7 @@ import { cookies, headers } from 'next/headers';
 import {
   LANGUAGE_COOKIE,
   languageFromAcceptLanguage,
+  languageFromReferrer,
   parseLanguage,
   type Language,
 } from './language';
@@ -22,5 +23,8 @@ export async function resolveRequestLanguage(
   }
 
   const requestHeaders = await headers();
-  return languageFromAcceptLanguage(requestHeaders.get('accept-language'));
+  return (
+    languageFromReferrer(requestHeaders.get('referer')) ??
+    languageFromAcceptLanguage(requestHeaders.get('accept-language'))
+  );
 }

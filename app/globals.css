@@ -982,6 +982,9 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
 .updates-hero { padding: 48px 0 32px; }
 .updates-hero h1 { margin: 13px 0 0; font-family: inherit; font-size: clamp(2.25rem, 4.5vw, 3.5rem); font-weight: 750; line-height: 1.2; letter-spacing: -.05em; }
 .updates-hero p { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.75; }
+.updates-feed-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); background: var(--card); font-size: .875rem; font-weight: 600; text-decoration: none; transition: var(--motion-colors); }
+.updates-feed-link svg { width: 15px; height: 15px; color: var(--amber); }
+.updates-feed-link:hover { border-color: var(--ink-soft); color: var(--ink); }
 .updates-feed { display: grid; gap: 28px; }
 .update-release { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--card); box-shadow: 0 2px 6px rgba(23,43,70,.025); }
 .update-release > header { min-height: 112px; padding: 26px 30px; display: flex; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); background: linear-gradient(120deg, rgba(49,95,146,.09), rgba(255,255,255,.5) 60%); }
@@ -991,7 +994,7 @@ footer p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.7; 
 .update-release > header time { color: var(--ink); font: 750 25px/1.05 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.045em; }
 .update-release > header span { color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .update-change-list { margin: 0; padding: 12px 30px 30px; list-style: none; }
-.update-change { position: relative; padding: 30px 0 30px 44px; }
+.update-change { position: relative; padding: 30px 0 30px 44px; scroll-margin-top: var(--site-header-height); }
 .update-change:not(:last-child) { border-bottom: 1px solid rgba(223,229,237,.72); }
 .update-change::before { position: absolute; top: 0; bottom: 0; left: 11px; width: 1px; background: var(--line); content: ''; }
 .update-change:first-child::before { top: 43px; }

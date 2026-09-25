@@ -1,23 +1,12 @@
-import { SITE_UPDATED_ON } from './policy-freshness';
 import type { Metadata } from 'next';
 import './globals.css';
 import './share.css';
 import { resolveRequestLanguage } from './language-server';
+import { siteMetadata } from './site-metadata';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const language = await resolveRequestLanguage();
-
-  return language === 'zh'
-    ? {
-        title: '留美路径政策雷达｜F-1 → CPT → OPT → H-1B',
-        description:
-          `更新于 ${SITE_UPDATED_ON} 的美国学生与工作签证政策状态、时间线、影响及严重度排序。`,
-      }
-    : {
-        title: 'U.S. Stay Path Policy Radar | F-1 → CPT → OPT → H-1B',
-        description:
-          `U.S. student and employment visa policy status, timelines, impact, and severity ranking. Updated ${SITE_UPDATED_ON}.`,
-      };
+  const { title, description } = siteMetadata(await resolveRequestLanguage());
+  return { title, description };
 }
 
 export default async function RootLayout({

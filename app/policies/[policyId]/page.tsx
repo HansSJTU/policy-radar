@@ -26,7 +26,11 @@ import { PublicCommentDistribution } from '../../public-comment-distribution';
 import { GlossaryText } from '../../glossary-text';
 import { LanguageProvider } from '../../language-context';
 import { parsePathFilter } from '../../policy-paths';
-import { policyHref, POLICY_SITE_URL } from '../../policy-links';
+import {
+  languageAlternates,
+  policyHref,
+  POLICY_SITE_URL,
+} from '../../policy-links';
 import { VisitorTracker } from '@/components/visitor-tracker';
 import {
   PolicyDirectory,
@@ -40,6 +44,7 @@ import {
   PolicyDetailSidebarRating,
 } from './policy-detail-rating';
 import { isForumLink } from '../../forum-links';
+import { jsonLdScript, policyJsonLd } from '../../structured-data';
 import './policy-detail.css';
 
 export const dynamic = 'force-dynamic';
@@ -63,19 +68,14 @@ export async function generateMetadata({
       title: 'Policy not found',
       robots: { index: false, follow: false },
     };
-  const canonical = POLICY_SITE_URL + policyHref(policyId, language);
+  const alternates = languageAlternates(`/policies/${policy.id}`, language);
+  const canonical = alternates.canonical;
   const title = `${policy.title}｜${language === 'en' ? 'Stay Path Radar' : '留美路径雷达'}`;
   const image = `${POLICY_SITE_URL}/policies/${policyId}/share-image?lang=${language}`;
   return {
     title,
     description: policy.teaser,
-    alternates: {
-      canonical,
-      languages: {
-        'zh-CN': POLICY_SITE_URL + policyHref(policyId, 'zh'),
-        en: POLICY_SITE_URL + policyHref(policyId, 'en'),
-      },
-    },
+    alternates,
     openGraph: {
       title: policy.title,
       description: policy.teaser,
@@ -159,6 +159,12 @@ export default async function PolicyPage({ params, searchParams }: Props) {
         data-policy-id={policyId}
       >
         <VisitorTracker policyId={policyId} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(policyJsonLd(p, language)),
+          }}
+        />
         <header className="topbar product-bar">
           <a className="brand" href={home}>
             <span className="brand-mark">

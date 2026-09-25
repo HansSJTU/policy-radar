@@ -9,6 +9,7 @@ import { brandHomeLabel } from '@/app/language';
 import type { Language } from '@/app/language';
 import { GitHubProjectLink } from '@/app/github-link';
 import { SITE_UPDATED_ON } from '@/app/policy-freshness';
+import { languageAlternates } from '@/app/policy-links';
 import { resolveRequestLanguage } from '@/app/language-server';
 import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
@@ -107,6 +108,7 @@ export async function generateMetadata({
   return {
     title: statsCopy[language].title,
     description: statsCopy[language].description,
+    alternates: languageAlternates('/stats', language),
   };
 }
 
@@ -129,15 +131,15 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
   return (
     <main className="stats-page">
       <header className="topbar product-bar">
-        <a className="brand" href={language === 'en' ? '/?lang=en' : '/'} aria-label={brandHomeLabel(language)}>
+        <a className="brand" href={`/?lang=${language}`} aria-label={brandHomeLabel(language)}>
           <span className="brand-mark"><Radar aria-hidden="true" /></span>
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
-          <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
-          <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
-          <a href={language === 'en' ? '/updates?lang=en' : '/updates'}>{ui.updates}</a>
-          <a href={language === 'en' ? '/stats?lang=en' : '/stats'} aria-current="page">{ui.stats}</a>
+          <a href={`/?lang=${language}#ranking`}>{ui.policies}</a>
+          <a href={`/?lang=${language}#cpt-schools`}>{ui.cptSchools}</a>
+          <a href={`/updates?lang=${language}`}>{ui.updates}</a>
+          <a href={`/stats?lang=${language}`} aria-current="page">{ui.stats}</a>
         </nav>
         <div className="top-actions">
           <GitHubProjectLink language={language} />
