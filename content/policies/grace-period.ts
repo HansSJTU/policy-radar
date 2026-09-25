@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-23',
+  checkedOn: '2026-09-24',
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
