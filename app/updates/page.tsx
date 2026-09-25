@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   CalendarDays,
   Radar,
+  Rss,
 } from 'lucide-react';
 
 import { brandHomeLabel } from '@/app/language';
@@ -13,6 +14,8 @@ import { resolveRequestLanguage } from '@/app/language-server';
 import { PageLanguageSwitch } from '@/app/page-language-switch';
 import { SITE_UPDATED_ON } from '@/app/policy-freshness';
 import { getUpdateLog } from '@/app/update-log';
+import { languageAlternates } from '@/app/policy-links';
+import { changeAnchor, feedUrl } from '@/app/update-feed';
 import { ShareButton } from '@/app/share-button';
 import { MobileSiteMenu } from '@/app/mobile-site-menu';
 
@@ -36,6 +39,7 @@ const updatesCopy = {
     kicker: 'CONTENT CHANGELOG',
     title: '更新记录',
     entryLabel: '次内容变化',
+    subscribe: '用 RSS 订阅更新',
     before: '更新前',
     after: '更新后',
     sources: '来源',
@@ -57,6 +61,7 @@ const updatesCopy = {
     kicker: 'CONTENT CHANGELOG',
     title: 'Updates',
     entryLabel: 'content changes',
+    subscribe: 'Subscribe via RSS',
     before: 'Before',
     after: 'After',
     sources: 'Sources',
@@ -78,6 +83,10 @@ export async function generateMetadata({
   return {
     title: updatesCopy[language].metadataTitle,
     description: updatesCopy[language].metadataDescription,
+    alternates: {
+      ...languageAlternates('/updates', language),
+      types: { 'application/atom+xml': feedUrl(language) },
+    },
   };
 }
 
@@ -89,15 +98,15 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
   return (
     <main className="updates-page">
       <header className="topbar product-bar">
-        <a className="brand" href={language === 'en' ? '/?lang=en' : '/'} aria-label={brandHomeLabel(language)}>
+        <a className="brand" href={`/?lang=${language}`} aria-label={brandHomeLabel(language)}>
           <span className="brand-mark"><Radar aria-hidden="true" /></span>
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
-          <a href={language === 'en' ? '/?lang=en#ranking' : '/#ranking'}>{ui.policies}</a>
-          <a href={language === 'en' ? '/?lang=en#cpt-schools' : '/#cpt-schools'}>{ui.cptSchools}</a>
-          <a href={language === 'en' ? '/updates?lang=en' : '/updates'} aria-current="page">{ui.updates}</a>
-          <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
+          <a href={`/?lang=${language}#ranking`}>{ui.policies}</a>
+          <a href={`/?lang=${language}#cpt-schools`}>{ui.cptSchools}</a>
+          <a href={`/updates?lang=${language}`} aria-current="page">{ui.updates}</a>
+          <a href={`/stats?lang=${language}`}>{ui.stats}</a>
         </nav>
         <div className="top-actions">
           <GitHubProjectLink language={language} />
@@ -115,6 +124,10 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
       <section className="updates-hero">
         <span className="section-kicker">{ui.kicker}</span>
         <h1>{ui.title}</h1>
+        <a className="updates-feed-link" href={`/feed.xml?lang=${language}`}>
+          <Rss aria-hidden="true" />
+          {ui.subscribe}
+        </a>
       </section>
 
       <section className="updates-feed" aria-label={ui.title}>
@@ -141,7 +154,7 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
 
             <ol className="update-change-list">
               {entry.changes.map((change) => (
-                <li className="update-change" key={change.id}>
+                <li className="update-change" id={changeAnchor(change)} key={change.id}>
                   <div className="update-change-number" aria-hidden="true" />
                   <div className="update-change-body">
                     <span className="update-change-category">

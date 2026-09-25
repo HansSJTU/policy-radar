@@ -108,7 +108,7 @@ export default function Home({ view, language, initialPath = 'all' }: {
     window.history.pushState(null, '', url);
     document.getElementById(`policy-${id}`)?.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
   };
-  const updatesHref = language === 'en' ? '/updates?lang=en' : '/updates';
+  const updatesHref = `/updates?lang=${language}`;
   const selectRankingPath = (path: PathFilter) => {
     setSelectedPath(path);
     const url = new URL(window.location.href);
@@ -141,7 +141,7 @@ export default function Home({ view, language, initialPath = 'all' }: {
           <a href="#ranking">{ui.policies}</a>
           <a href="#cpt-schools">{ui.cptSchools}</a>
           <a href={updatesHref}>{ui.updates}</a>
-          <a href={language === 'en' ? '/stats?lang=en' : '/stats'}>{ui.stats}</a>
+          <a href={`/stats?lang=${language}`}>{ui.stats}</a>
         </nav>
         <div className="top-actions">
           <GitHubProjectLink language={language} />

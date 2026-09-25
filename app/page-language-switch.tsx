@@ -2,8 +2,11 @@
 
 import { useEffect, type MouseEvent } from 'react';
 
-import { persistLanguage } from '@/app/language-client';
-import type { Language } from '@/app/language';
+import {
+  hasPersistedLanguage,
+  persistLanguage,
+} from '@/app/language-client';
+import { languageFromReferrer, type Language } from '@/app/language';
 
 // Each page is rendered in one language on the server, so switching reloads the
 // page in the other language. With JavaScript the current query and section are
@@ -21,6 +24,14 @@ export function PageLanguageSwitch({
 }) {
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    // A first visit from a Chinese community opened in Chinese; keep that
+    // for later direct visits, which carry no referrer.
+    if (
+      !hasPersistedLanguage() &&
+      languageFromReferrer(document.referrer) === language
+    ) {
+      persistLanguage(language);
+    }
   }, [language]);
 
   const switchTo = (event: MouseEvent<HTMLButtonElement>, next: Language) => {

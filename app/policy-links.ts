@@ -4,6 +4,23 @@ import { isPolicyPath } from './policy-paths.ts';
 
 export const POLICY_SITE_URL = 'https://policy-radar.uspolicy.workers.dev';
 
+export function localizedPageUrl(path: string, language: Language): string {
+  return `${POLICY_SITE_URL}${path}?lang=${language}`;
+}
+
+// Each page renders in either language. The `?lang=` URLs are the indexable
+// versions; the bare path picks a language per visitor, so it is x-default.
+export function languageAlternates(path: string, language: Language) {
+  return {
+    canonical: localizedPageUrl(path, language),
+    languages: {
+      'zh-CN': localizedPageUrl(path, 'zh'),
+      en: localizedPageUrl(path, 'en'),
+      'x-default': POLICY_SITE_URL + path,
+    },
+  };
+}
+
 export function policyHref(
   id: string,
   language: Language,
