@@ -22,6 +22,29 @@ export type ContentUpdate = {
 };
 
 const chineseUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-24',
+    changes: [
+      {
+        id: 'cpt-texas-state-added',
+        category: 'CPT 学校',
+        title: '补录 Texas State 的 CPT 课程必需条件',
+        summary: '校方说明仅注册实习课或取得学分不足以符合 CPT 资格；页面仍保留申请流程，未称全面暂停。校方未注明这段口径的更新日期，本条是补录。',
+        before: '51 条记录：47 条校方网页、4 条社区截图；50 所不同学校。',
+        after: '52 条记录：48 条校方网页、4 条社区截图；51 所不同学校。',
+        sources: [{ label: 'Texas State University ISSS', href: 'https://www.international.txst.edu/current-f1-students/work-authorization/cpt.html' }],
+      },
+      {
+        id: 'cpt-columbia-hardship-fund',
+        category: 'CPT 学校',
+        title: 'Columbia 更新 CPT 应对时间线及困难基金信息',
+        summary: '校方 9·24 页面列明受影响学生的应对安排，并称 2026 秋季困难基金于 9·23 开放；CPT 审批标准未变。',
+        before: 'CPT 条目记录 Columbia 的必修要求、暂停范围和既有授权处理，未列困难基金。',
+        after: '补充校方 9·24 时间线及 9·23 困难基金开放信息；原审批口径不变。',
+        sources: [{ label: 'Columbia ISSO · F-1 CPT', href: 'https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training' }],
+      },
+    ],
+  },
 {
   "date": "2026-09-23",
   "changes": [
@@ -985,6 +1008,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-24',
+    changes: [
+      {
+        id: 'cpt-texas-state-added',
+        category: 'CPT campuses',
+        title: 'Add Texas State’s curriculum-required CPT conditions',
+        summary: 'The university says course enrollment or credit alone is insufficient and retains an application process, without announcing a blanket pause. The wording has no dated update; this adds an existing explanation.',
+        before: '51 evidence entries: 47 public university pages and 4 community reports; 50 distinct institutions.',
+        after: '52 evidence entries: 48 public university pages and 4 community reports; 51 distinct institutions.',
+        sources: [{ label: 'Texas State University ISSS', href: 'https://www.international.txst.edu/current-f1-students/work-authorization/cpt.html' }],
+      },
+      {
+        id: 'cpt-columbia-hardship-fund',
+        category: 'CPT campuses',
+        title: 'Columbia updates its CPT response timeline and hardship fund information',
+        summary: 'The September 24 university page describes support for affected students and says the Fall 2026 hardship fund opened September 23; CPT approval standards remain unchanged.',
+        before: 'The CPT entry described Columbia’s requirement, pause scope and existing authorizations without the hardship fund.',
+        after: 'Add the September 24 response timeline and September 23 fund opening; the approval policy is unchanged.',
+        sources: [{ label: 'Columbia ISSO · F-1 CPT', href: 'https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training' }],
+      },
+    ],
+  },
 {
   "date": "2026-09-23",
   "changes": [

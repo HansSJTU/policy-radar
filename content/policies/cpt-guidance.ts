@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: '2026-09-23',
+  checkedOn: '2026-09-24',
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -51,7 +51,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '9·23 ICE 网站拒绝了本次访问，两份 SEVP 备忘录原文未能重读；改以 NAFSA 动态和各校公开页面核对，未见 8·24 之后的新 CPT 广播。学校复核于 9·23 完成：UT Dallas、UC Irvine 与 Washington State 已恢复直接读取；Buffalo、UM–Dearborn、UC Davis、Michigan、Columbia、Harvard、Penn 与 Johns Hopkins 的页面拒绝了本次访问，保留 9·22 核查日期并在单项说明。Penn、Johns Hopkins 和 Purdue 页面保留的新旧文字差异已在单项说明。社区截图仍不是校方公开确认。',
+      '9·24 重读 ICE 两份 SEVP 备忘录并复核学校来源。UT Dallas、UC Irvine、Washington State 与 Boston College 的完整校方原文仍无法读取，保留各自此前核查日期；其他已读取页面按单项日期更新。Columbia 9·24 更新应对时间线，并注明 9·23 秋季困难基金开放，CPT 审批标准未变。社区截图仍非校方公开确认。',
     background:
       '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -172,7 +172,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'The ICE website refused access on September 23, so the two SEVP memos were not re-read; NAFSA updates and campus pages were checked instead and showed no new CPT broadcast after August 24. Campus checks were completed September 23: UT Dallas, UC Irvine and Washington State could be read directly again, while the Buffalo, UM–Dearborn, UC Davis, Michigan, Columbia, Harvard, Penn and Johns Hopkins pages refused access, so their September 22 review dates are retained and noted in each entry. Individual entries explain older and newer wording on Penn, Johns Hopkins and Purdue pages. Community screenshots are not public university confirmation.',
+      'Both ICE/SEVP broadcasts were reread September 24 and campus sources rechecked. Full original pages for UT Dallas, UC Irvine, Washington State and Boston College remained inaccessible, so their earlier review dates are retained; readable pages carry their own current dates. Columbia updated its response timeline September 24 and noted a Fall hardship fund opened September 23, without changing CPT eligibility. Community screenshots remain unverified by public university notices.',
     background:
       'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
     teaser:

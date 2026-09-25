@@ -5,6 +5,7 @@ import { getPolicyShareItem } from '../app/policy-share.ts';
 import { buildItemShareContent } from '../app/share-model.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import { getPolicy } from '../app/policy-data.ts';
+import { SITE_UPDATED_ON } from '../app/policy-freshness.ts';
 import { verifiedSchools, communitySchools, getVerifiedSchools, getCommunitySchools } from '../app/cpt-schools.ts';
 import { wrapShareText } from '../app/share-image.ts';
 
@@ -91,6 +92,26 @@ test('shared policies carry their own review date, not the site update date', as
       const item = getPolicyShareItem(content.id, language);
       assert.equal(item.checkedOn, content.checkedOn);
       assert.ok(buildItemShareContent(item, language).text.includes(content.checkedOn));
+    }
+  }
+});
+
+
+test('H-4 share keeps its actual review date when the site date is later', () => {
+  const checkedOn = '2026-09-07';
+  assert.notEqual(checkedOn, SITE_UPDATED_ON);
+  for (const language of ['zh', 'en']) {
+    const policy = getPolicy('h4-ead', language);
+    const originalDate = policy.checkedOn;
+    try {
+      policy.checkedOn = checkedOn;
+      const item = getPolicyShareItem('h4-ead', language);
+      assert.equal(item.checkedOn, checkedOn);
+      const { text } = buildItemShareContent(item, language);
+      assert.ok(text.includes(checkedOn));
+      assert.ok(!text.includes(SITE_UPDATED_ON));
+    } finally {
+      policy.checkedOn = originalDate;
     }
   }
 });

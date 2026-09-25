@@ -5,7 +5,7 @@ export const permModernization: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-23',
+  checkedOn: '2026-09-24',
   related: ['prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -56,7 +56,7 @@ export const permModernization: PolicyContent = {
     caveat:
       '本项只涉及永久劳工认证（绿卡），与 H-1B 抽签改革无关，也不同于 #06 的工资等级提案（RIN 1205-AC30）。',
     reviewNote:
-      '9·23 读取 OIRA 9·14 送审记录及当前待审清单，该提案仍在审查中；联邦公报 API 按 RIN 检索未找到 NPRM。检索未命中不证明不存在后续文件。',
+      '9·24 重读 OIRA 9·14 待审记录并按 RIN 检索联邦公报；尚未核实公开 NPRM，检索未命中不证明没有后续文件。',
     background:
       'PERM 是雇主替外籍员工办职业移民绿卡时，先要拿到的劳工认证。雇主必须证明自己认真招过美国人，但招不到合适人选。这项改革列在 20 CFR 656 之下，DOL 已于 2026-09-14 把拟议规则送交白宫 OIRA，做发布前审查。统一议程原定 2026 年 7 月发布拟议规则（NPRM）；截至 9 月 22 日核查，没有找到公开正文。计划月份不等于发布日，更不等于生效日。',
     teaser: '招聘方式一旦改写，雇主准备 PERM 的工作量和时间安排都会变。',
@@ -197,7 +197,7 @@ export const permModernization: PolicyContent = {
     caveat:
       'This concerns permanent labor certification only. It is unrelated to H-1B cap selection and separate from the #06 wage-level proposal, RIN 1205-AC30.',
     reviewNote:
-      'The September 14 OIRA submission record and the current list of rules under review were read September 23; the proposal remains under review. A Federal Register API search by RIN found no NPRM. A search miss is not proof that no later document exists.',
+      'The September 14 pending OIRA record and Federal Register RIN search were reviewed September 24. No public NPRM was verified; a search miss does not prove none exists.',
     background:
       'PERM is the labor certification an employer must obtain before sponsoring a foreign worker for an employment-based green card: the employer has to show it recruited U.S. workers in good faith and found no qualified person. The reform sits under 20 CFR 656, and DOL sent the proposed rule to the White House OIRA for prepublication review on September 14, 2026. The Unified Agenda originally targeted July 2026 for an NPRM; this September 22 check did not locate published text. A target month is not a publication date, and even less an effective date.',
     teaser:
