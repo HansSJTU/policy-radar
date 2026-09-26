@@ -148,6 +148,7 @@ export function CptSchoolTracker({
                   <div><i className="school-state lead" /><span>{ui.verifyPending}</span></div>
                   <h3>{school.school}</h3>
                   <p><GlossaryText text={school.state} /></p>
+                  <p><GlossaryText text={school.detail} /></p>
                   <small><Images aria-hidden="true" /><span>{school.screenshots.length > 0 ? ui.viewEvidence : ui.viewReport}</span><ArrowUpRight className="school-evidence-arrow" aria-hidden="true" /></small>
                 </button>
                 <ShareButton language={language} item={getSchoolShareItem(school, language)} compact />

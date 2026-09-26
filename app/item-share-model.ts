@@ -9,7 +9,7 @@ export function getSchoolShareItem(school: VerifiedSchool | CommunitySchool, lan
   return {
     kind: 'school', id: school.id, title: `${school.school} · CPT`,
     status: verified ? school.state : itemShareLabels[language].unverified,
-    summary: verified ? school.detail : school.state,
+    summary: verified ? school.detail : `${school.state} ${school.detail}`,
     scope: `${school.school} · F-1 CPT`,
     checkedOn: school.checkedOn,
     caveat: language === 'en'

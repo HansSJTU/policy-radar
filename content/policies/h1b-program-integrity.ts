@@ -5,7 +5,7 @@ export const h1bProgramIntegrity: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'executive-order-issued',
-  checkedOn: '2026-09-24',
+  checkedOn: '2026-09-26',
   related: ['h1b-reform', 'h1b-fee', 'prevailing-wage', 'perm-modernization'],
   process: {
     kind: 'executive-order',
@@ -46,7 +46,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     caveat:
       '命令只要求把相关裁员纳入考虑，没有写出裁员与拒签之间的换算标准，也没有宣布现有 H-1B 自动失效。真有裁员时后果如何，要看部门后续文件。',
     reviewNote:
-      '9·24 重读白宫命令与联邦公报刊登文本（第 14431 号，9·23 刊于 91 FR 60501—60503）。按联邦公报检索未核实新的执行文件；机构网站公告未逐项确认，检索未命中不证明不存在。10·18 是按签署日推算的启动复查期限，不是生效日。',
+      '9·26 重读白宫命令与联邦公报刊登文本（第 14431 号，9·23 刊于 91 FR 60501—60503）。按联邦公报检索未核实新的执行文件；机构网站公告未逐项确认，检索未命中不证明不存在。10·18 是按签署日推算的启动复查期限，不是生效日。',
     background:
       '总统于 2026-09-18 签署 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program。它是总统对行政部门的指令，不是机构发布的拟议规则。第 2 节规定跨部门协作，第 3 节规定裁员审查、LCA 数据复查和执行授权，第 4 节要求依适用法律及可用拨款实施。命令的直接效果有两个：向部门作出指令，以及把裁员列为需要考虑的因素；命令正文没有写审查标准、需要的证明材料和审查时限。',
     teaser:
@@ -173,7 +173,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     caveat:
       'The order only requires relevant layoffs to be considered. It states no formula converting a layoff into a denial and does not automatically invalidate existing H-1B status. What layoffs actually mean for a case depends on later agency documents.',
     reviewNote:
-      'The White House order and published Federal Register text (EO 14431, printed September 23 at 91 FR 60501–60503) were reread September 24. A Federal Register search did not verify a new implementation document; agency website announcements were not individually confirmed, and a search miss does not prove none exist. October 18 is the calculated deadline to begin review, not an effective date.',
+      'The White House order and published Federal Register text (EO 14431, printed September 23 at 91 FR 60501–60503) were reread September 26. A Federal Register search did not verify a new implementation document; agency website announcements were not individually confirmed, and a search miss does not prove none exist. October 18 is the calculated deadline to begin review, not an effective date.',
     background:
       'The President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program on September 18, 2026. It is a presidential directive to executive agencies, rather than an agency proposed rule. Section 2 addresses coordination; section 3 covers layoffs, LCA data review and implementation authority; section 4 requires implementation consistent with applicable law and available appropriations. The order’s direct effects are to direct agencies and to make layoffs a factor to consider; the text itself sets no review standard, evidence list or processing deadline.',
     teaser:

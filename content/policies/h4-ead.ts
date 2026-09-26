@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-24',
+  checkedOn: '2026-09-26',
   related: ['ead-discretion', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',

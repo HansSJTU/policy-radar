@@ -50,6 +50,14 @@ export const briefingEntries: BriefingEntry[] = [
     en: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.',
   },
   {
+    id: 'h1b-fee-comments-closed',
+    date: '2026-09-24',
+    policyId: 'h1b-fee',
+    timing: 'recent',
+    zh: '拟议附加费的公众评论期已结束；DHS 尚未发布最终规则，103,265 美元收费未生效。',
+    en: 'The proposed surcharge comment period closed; DHS has not published a final rule, and the $103,265 fee is not in effect.',
+  },
+  {
     id: 'h1b-fee-comment-deadline',
     date: '2026-09-24',
     policyId: 'h1b-fee',
