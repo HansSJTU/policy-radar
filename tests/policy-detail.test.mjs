@@ -227,7 +227,7 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
 test('grace-period publication is distinct from final effectiveness', () => {
   for (const language of ['zh', 'en']) {
     const policy = getPolicy('grace-period', language);
-    assert.equal(policy.checkedOn, '2026-09-24');
+    assert.equal(policy.checkedOn, '2026-09-26');
     assert.equal(policy.effectState, 'not-in-effect');
     assert.ok(policy.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
     assert.ok(policy.milestones.some(({ date }) => date === '2026-09-10'));

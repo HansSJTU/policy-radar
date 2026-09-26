@@ -23,6 +23,34 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-26',
+    changes: [
+      {
+        id: 'h1b-fee-comments-closed',
+        category: 'H-1B 拟议收费',
+        title: '#02 103,265 美元附加费提案的评论期已结束',
+        summary: '联邦公报列明 9·24 评论截止日；该日期已过，DHS 尚未发布最终规则，提案未生效。',
+        before: '状态为“正式提案 · 评论截至 9 月 24 日”；9·24 评论截止列在未来节点，首页仍显示提交评论入口。',
+        after: '状态改为“正式提案 · 评论期已结束”；9·24 移入已发生里程碑，未来等待 DHS 审阅，关闭提交评论入口。',
+        sources: [{ label: 'Federal Register · 2026-17324', href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions' }],
+      },
+      {
+        id: 'cpt-four-public-notices-added',
+        category: 'CPT 学校',
+        title: '新增 PLU、IU Global、Rutgers 与 UCF 的公开 CPT 通知',
+        summary: 'PLU 9·25 公告收紧毕业必需条件；其余三校较早的公开通知分别说明暂停大部分申请、继续处理明确合格申请，以及收紧全员必需标准。本次补录不代表三校当日新规。',
+        before: '52 条记录：48 条校方网页、4 条社区截图；51 所不同学校。',
+        after: '56 条记录：52 条校方网页、4 条社区截图；55 所不同学校。四条都是新增校方网页证据，不改变既有四条社区截图的证据级别。',
+        sources: [
+          { label: 'Pacific Lutheran University ISS', href: 'https://www.plu.edu/iss/announcements/' },
+          { label: 'Indiana University · IU Global', href: 'https://www.oid.iu.edu/resources/visa-immigration-updates.html' },
+          { label: 'Rutgers Global Alerts', href: 'https://global.rutgers.edu/all-alerts' },
+          { label: 'UCF Global', href: 'https://global.ucf.edu/immigrationupdates/' },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-24',
     changes: [
       {
@@ -1008,6 +1036,34 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-26',
+    changes: [
+      {
+        id: 'h1b-fee-comments-closed',
+        category: 'Proposed H-1B fee',
+        title: '#02 Proposed $103,265 surcharge comment period closed',
+        summary: 'The Federal Register set a September 24 comment deadline. That date has passed; DHS has not issued a final rule, and the proposal is not in effect.',
+        before: 'Status said “Proposed rule · Comments due September 24”; the deadline was in future steps and the site offered a submit-comment link.',
+        after: 'Status says “Proposed rule · Comment period closed”; September 24 is a past milestone, DHS review is next, and the submit-comment link is removed.',
+        sources: [{ label: 'Federal Register · 2026-17324', href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions' }],
+      },
+      {
+        id: 'cpt-four-public-notices-added',
+        category: 'CPT schools',
+        title: 'Add public CPT notices from PLU, IU Global, Rutgers and UCF',
+        summary: 'PLU’s September 25 notice narrows eligibility to graduation-required training. Earlier notices from the other three describe a pause for most requests, continued review for clearly eligible requests, and a program-wide requirement. Their addition does not imply they issued new rules today.',
+        before: '52 evidence entries: 48 public university pages and 4 community reports; 51 distinct institutions.',
+        after: '56 evidence entries: 52 public university pages and 4 community reports; 55 distinct institutions. These are four new public-page entries; the four community reports retain their evidence level.',
+        sources: [
+          { label: 'Pacific Lutheran University ISS', href: 'https://www.plu.edu/iss/announcements/' },
+          { label: 'Indiana University · IU Global', href: 'https://www.oid.iu.edu/resources/visa-immigration-updates.html' },
+          { label: 'Rutgers Global Alerts', href: 'https://global.rutgers.edu/all-alerts' },
+          { label: 'UCF Global', href: 'https://global.ucf.edu/immigrationupdates/' },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-24',
     changes: [

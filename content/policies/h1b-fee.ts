@@ -5,13 +5,12 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-24',
-  commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0298-0001',
+  checkedOn: '2026-09-26',
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
-    lastCompletedStage: 2,
-    activeStage: 3,
+    lastCompletedStage: 3,
+    activeStage: null,
     nextStage: 4,
   },
   sources: [
@@ -34,7 +33,7 @@ export const h1bFee: PolicyContent = {
   zh: {
     title: 'H-1B 拟加收 103,265 美元',
     short: 'H-1B 10.3 万美元附加费',
-    status: '正式提案 · 评论截至 9 月 24 日',
+    status: '正式提案 · 评论期已结束',
     effectLabel: '尚未生效',
     agency: 'DHS / USCIS',
     documentId: '1615-AD20',
@@ -121,9 +120,9 @@ export const h1bFee: PolicyContent = {
         date: '2026-09-10',
         text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。',
       },
+      { date: '2026-09-24', text: 'NPRM 公众评论期截止；提案尚未生效。' },
     ],
     next: [
-      { date: '2026-09-24', text: '公众评论截止；这是当前最明确的参与节点。' },
       {
         date: '2026 年末—2027+',
         text: 'DHS 可能发布最终规则，之后仍可能遭遇诉讼。',
@@ -132,15 +131,15 @@ export const h1bFee: PolicyContent = {
     ],
     process: {
       detail:
-        'NPRM 已发布，目前在公众评论阶段。DHS 审阅意见后才能发布最终规则。',
-      currentSummary: '正式提案开放评论',
-      waitingFor: '9 月 24 日评论截止，随后由 DHS 审阅意见。',
+        'NPRM 已发布，9 月 24 日评论期结束。DHS 审阅意见后才能发布最终规则。',
+      currentSummary: '评论期已结束，等待 DHS 审阅',
+      waitingFor: 'DHS 审阅评论，并决定是否发布最终规则及其文本。',
     },
   },
   en: {
     title: 'Proposed $103,265 H-1B Surcharge',
     short: '$103,265 H-1B Surcharge',
-    status: 'Proposed rule · Comments due September 24',
+    status: 'Proposed rule · Comment period closed',
     effectLabel: 'Not in effect',
     agency: 'DHS / USCIS',
     documentId: '1615-AD20',
@@ -241,12 +240,9 @@ export const h1bFee: PolicyContent = {
         date: '2026-09-10',
         text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.',
       },
+      { date: '2026-09-24', text: 'The NPRM comment period closed; the proposal is not in effect.' },
     ],
     next: [
-      {
-        date: '2026-09-24',
-        text: 'The public comment period closes, providing the clearest current opportunity to participate.',
-      },
       {
         date: 'Late 2026–2027+',
         text: 'DHS may issue a final rule, which could then face litigation.',
@@ -255,10 +251,9 @@ export const h1bFee: PolicyContent = {
     ],
     process: {
       detail:
-        'The NPRM is public and the comment period is open. DHS must review the comments before it can issue a final rule.',
-      currentSummary: 'Published proposal open for comment',
-      waitingFor:
-        'The September 24 comment deadline, followed by DHS review of comments.',
+        'The NPRM is public and the comment period closed September 24. DHS must review comments before it can issue a final rule.',
+      currentSummary: 'Comment period closed; DHS review pending',
+      waitingFor: 'DHS review of comments and a decision on final text.',
     },
   },
 };

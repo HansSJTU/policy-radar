@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: '2026-09-24',
+  checkedOn: '2026-09-26',
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -51,7 +51,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '9·24 重读 ICE 两份 SEVP 备忘录并复核学校来源。UT Dallas、UC Irvine、Washington State 与 Boston College 的完整校方原文仍无法读取，保留各自此前核查日期；其他已读取页面按单项日期更新。Columbia 9·24 更新应对时间线，并注明 9·23 秋季困难基金开放，CPT 审批标准未变。社区截图仍非校方公开确认。',
+      '9·26 重读 ICE 两份 SEVP 备忘录并复核 48 条既有校方网页记录及 4 条社区截图；新增 4 条校方公开通知。Boston University 原页本次只返回标题，保留其 9·24 核查日期并在单项披露。其余可读取的学校原页按单项日期更新；社区截图仍非校方公开确认。',
     background:
       '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -172,7 +172,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'Both ICE/SEVP broadcasts were reread September 24 and campus sources rechecked. Full original pages for UT Dallas, UC Irvine, Washington State and Boston College remained inaccessible, so their earlier review dates are retained; readable pages carry their own current dates. Columbia updated its response timeline September 24 and noted a Fall hardship fund opened September 23, without changing CPT eligibility. Community screenshots remain unverified by public university notices.',
+      'Both ICE/SEVP broadcasts, all 48 previously listed public university pages and four community screenshots were rechecked September 26; four public university notices were added. The Boston University URL returned only a title, so its September 24 review date remains and the gap appears on that entry. Other readable university pages carry their own current dates. Community screenshots do not establish public university confirmation.',
     background:
       'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
     teaser:
