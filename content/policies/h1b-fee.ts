@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-26',
+  checkedOn: '2026-09-27',
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -23,6 +23,21 @@ export const h1bFee: PolicyContent = {
       href: 'https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf',
       zh: 'Federal Register 9·10 更正',
       en: 'Federal Register September 10 correction',
+    },
+    {
+      href: 'https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/',
+      zh: '白宫 9·18 另项 100,000 美元入境限制延长公告',
+      en: 'White House September 18 extension of separate $100,000 entry restriction',
+    },
+    {
+      href: 'https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf',
+      zh: '麻省地区法院 6·08 撤销执行政策判决',
+      en: 'District court June 8 vacatur of implementation policy',
+    },
+    {
+      href: 'https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf',
+      zh: '第一巡回法院 7·24 拒绝暂缓判决',
+      en: 'First Circuit July 24 denial of stay',
     },
     {
       href: 'https://www.uscardforum.com/t/topic/527162',
@@ -44,8 +59,10 @@ export const h1bFee: PolicyContent = {
     audience:
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
+    reviewNote:
+      '9·27 复核收费 NPRM、联邦公报检索、白宫另项公告及相关两级法院命令。USCIS 当前收费说明页本次无法直接读取；不能仅凭延长公告推断 100,000 美元已恢复征收。',
     background:
-      'RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。',
+      'RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。',
     teaser:
       '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
     headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
@@ -150,8 +167,10 @@ export const h1bFee: PolicyContent = {
     audience:
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
+    reviewNote:
+      'The fee NPRM, Federal Register search, separate White House proclamation and both court orders were reviewed September 27. The current USCIS payment guidance could not be read directly; extension alone does not establish that collection of the $100,000 payment has resumed.',
     background:
-      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.',
+      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.',
     teaser:
       'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
     headline:

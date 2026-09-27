@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-26',
+  checkedOn: '2026-09-27',
   related: ['opt-fee', 'h4-ead'],
   process: {
     kind: 'federal-rulemaking',
