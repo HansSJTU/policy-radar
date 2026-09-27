@@ -23,6 +23,33 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-27',
+    changes: [
+      {
+        id: 'ucsb-cpt-current-page',
+        category: 'CPT 学校',
+        title: 'UCSB 当前页面重新列出 CPT 申请流程',
+        summary: '校方现行页面说明合格申请如何提交及获批后如何取得 CPT I-20；此前暂停通知不再显示，但未给出撤销暂停日期或全面恢复声明。',
+        before: '条目以 8 月截图和旧公告称 UCSB 自 8·17 暂停签发 CPT。',
+        after: '条目改为描述现行官网流程，旧截图保留为历史证据；不声称所有类别无条件恢复。',
+        sources: [{ label: 'UCSB OISS · Curricular Practical Training', href: 'https://oiss.ucsb.edu/curricular-practical-training' }],
+      },
+      {
+        id: 'h1b-separate-100k-proclamation-context',
+        category: 'H-1B 收费',
+        title: '区分另项 100,000 美元入境限制与 103,265 美元提案',
+        summary: '白宫 9·18 将针对部分境外 H-1B 的旧限制延至 2027·09·21；机构执行政策被地区法院撤销，第一巡回法院拒绝暂缓。延长公告不代表恢复征收，也不使 103,265 美元 NPRM 生效。',
+        before: '#02 只解释 103,265 美元 NPRM，没有交代另项 100,000 美元限制的延期及诉讼状态。',
+        after: '详情与 30 天简报将两项政策分开叙述，附白宫公告和两级法院命令。',
+        sources: [
+          { label: 'White House · September 18 proclamation', href: 'https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/' },
+          { label: 'District of Massachusetts · June 8 order', href: 'https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf' },
+          { label: 'First Circuit · July 24 order', href: 'https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf' },
+        ],
+      },
+    ],
+  },
+  {
     date: '2026-09-26',
     changes: [
       {
@@ -1036,6 +1063,33 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-27',
+    changes: [
+      {
+        id: 'ucsb-cpt-current-page',
+        category: 'CPT schools',
+        title: 'UCSB now displays a CPT application process',
+        summary: 'The current university page describes applying and receiving a CPT I-20 after approval. The earlier pause notice is gone, but no removal date or blanket resumption announcement appears.',
+        before: 'The entry described issuance as paused since August 17 based on earlier university material and screenshots.',
+        after: 'The entry reflects the current university page and retains older screenshots as history, without claiming unrestricted resumption.',
+        sources: [{ label: 'UCSB OISS · Curricular Practical Training', href: 'https://oiss.ucsb.edu/curricular-practical-training' }],
+      },
+      {
+        id: 'h1b-separate-100k-proclamation-context',
+        category: 'H-1B fees',
+        title: 'Distinguish the separate $100,000 entry restriction from the proposed $103,265 fee',
+        summary: 'The White House extended the restriction for certain overseas H-1B cases to September 21, 2027. The district court vacated its agency implementation policy and the First Circuit denied a stay. Extension does not itself restore collection or activate the separate $103,265 NPRM.',
+        before: 'Policy #02 covered only the $103,265 NPRM, without distinguishing the extension and litigation of the other $100,000 policy.',
+        after: 'The detail and 30-day briefing distinguish the two measures and link the proclamation and both court orders.',
+        sources: [
+          { label: 'White House · September 18 proclamation', href: 'https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/' },
+          { label: 'District of Massachusetts · June 8 order', href: 'https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf' },
+          { label: 'First Circuit · July 24 order', href: 'https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf' },
+        ],
+      },
+    ],
+  },
   {
     date: '2026-09-26',
     changes: [

@@ -66,6 +66,14 @@ export const briefingEntries: BriefingEntry[] = [
     en: 'The NPRM comment period closes. DHS will then review the record and decide whether to revise the proposal.',
   },
   {
+    id: 'h1b-separate-entry-proclamation-renewed',
+    date: '2026-09-18',
+    policyId: 'h1b-fee',
+    timing: 'recent',
+    zh: '白宫把另项针对部分境外 H-1B 申请的 100,000 美元入境限制延至 2027·09·21；执行政策已遭法院撤销，上诉庭拒绝暂缓。这不是 103,265 美元收费提案，也不证明已恢复征收。',
+    en: 'The White House extended the separate $100,000 entry restriction for certain overseas H-1B cases to September 21, 2027. Courts vacated its implementation policy and denied a stay; this is distinct from the proposed $103,265 fee and does not itself restore collection.',
+  },
+  {
     id: 'h1b-integrity-order-signed',
     date: '2026-09-18',
     policyId: 'h1b-program-integrity',
