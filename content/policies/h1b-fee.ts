@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-27',
+  checkedOn: '2026-09-28',
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -60,7 +60,7 @@ export const h1bFee: PolicyContent = {
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
     reviewNote:
-      '9·27 复核收费 NPRM、联邦公报检索、白宫另项公告及相关两级法院命令。USCIS 当前收费说明页本次无法直接读取；不能仅凭延长公告推断 100,000 美元已恢复征收。',
+      '9·28 复核收费 NPRM、联邦公报检索、白宫另项公告及相关两级法院命令。USCIS 当前收费说明页本次无法直接读取；不能仅凭延长公告推断 100,000 美元已恢复征收。',
     background:
       'RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。',
     teaser:
@@ -168,7 +168,7 @@ export const h1bFee: PolicyContent = {
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
     reviewNote:
-      'The fee NPRM, Federal Register search, separate White House proclamation and both court orders were reviewed September 27. The current USCIS payment guidance could not be read directly; extension alone does not establish that collection of the $100,000 payment has resumed.',
+      'The fee NPRM, Federal Register search, separate White House proclamation and both court orders were reviewed September 28. The current USCIS payment guidance could not be read directly; extension alone does not establish that collection of the $100,000 payment has resumed.',
     background:
       'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.',
     teaser:

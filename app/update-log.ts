@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-09-28',
+    changes: [
+      {
+        id: 'northwestern-cpt-september-25-page',
+        category: 'CPT 学校',
+        title: 'Northwestern 公布全员必需条件与 CPT 申请步骤',
+        summary: 'OISS 标注 9·25 更新的页面明确：实践须为项目所有学生毕业所必需，完成必需实践后不能再申请额外 CPT；合格申请需合作协议、学业负责人确认和 CPT I-20。页面下方旧文案仍在，不能据此推断选修实习恢复。',
+        before: '条目仅依据 9·03 通知描述非全员必需 CPT 停批，未列现行申请流程。',
+        after: '条目改为描述 9·25 页面列出的资格和办理条件，旧通知截图保留作历史对照。',
+        sources: [{ label: 'Northwestern OISS · Curricular Practical Training', href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/' }],
+      },
+      {
+        id: 'oregon-cpt-current-page-clarification',
+        category: 'CPT 学校',
+        title: 'Oregon 当前 CPT 页面补充 DMA 项目和学分口径',
+        summary: 'ISSS 当前页面将 DMA 结业项目列为可能符合条件的必需实践，并称学分数依项目和导师决定。旧页面的一学分统一最低要求不再显示；校方未注明修订日期，不能据此断定个别项目无需学分。',
+        before: '条目列全员必需、硕士论文／毕业项目及博士论文，未列 DMA 或当前学分说明。',
+        after: '补齐当前官网范围和学分说明，保留选修实习不能单独支持 CPT 的限制。',
+        sources: [{ label: 'University of Oregon ISSS · Curricular Practical Training', href: 'https://isss.uoregon.edu/curricular-practical-training-cpt' }],
+      },
+    ],
+  },
+  {
     date: '2026-09-27',
     changes: [
       {
@@ -1063,6 +1086,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-09-28',
+    changes: [
+      {
+        id: 'northwestern-cpt-september-25-page',
+        category: 'CPT schools',
+        title: 'Northwestern sets out the program-wide requirement and CPT application steps',
+        summary: 'The OISS page updated September 25 requires training for every student to graduate, disallows further CPT after the required experiential component is complete, and describes the cooperative agreement, academic certification and CPT I-20 process. Older wording remains lower on the page and does not establish that elective internships reopened.',
+        before: 'The entry relied on the September 3 notice and did not describe the current application process.',
+        after: 'The entry now states the eligibility and process on the September 25 page and retains the earlier screenshot as history.',
+        sources: [{ label: 'Northwestern OISS · Curricular Practical Training', href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/' }],
+      },
+      {
+        id: 'oregon-cpt-current-page-clarification',
+        category: 'CPT schools',
+        title: 'Oregon CPT page adds DMA projects and revises credit guidance',
+        summary: 'The current ISSS page includes required DMA culminating projects and says credit registration depends on the program and advisor. The former uniform one-credit minimum no longer appears. The page does not date the revision, and its removal does not establish that particular programs need no credit.',
+        before: 'The entry listed program-wide requirements and required master’s and doctoral research, without DMA or the current credit guidance.',
+        after: 'The entry reflects the current scope and credit guidance while retaining the restriction on optional internship credit.',
+        sources: [{ label: 'University of Oregon ISSS · Curricular Practical Training', href: 'https://isss.uoregon.edu/curricular-practical-training-cpt' }],
+      },
+    ],
+  },
   {
     date: '2026-09-27',
     changes: [
