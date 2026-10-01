@@ -4,6 +4,7 @@ import {
   selectPolicyImpactAggregates,
   upsertPolicyImpactRating,
 } from './schema';
+import { selectGenuinePolicyImpactAggregates } from './genuine-policy-ratings-query';
 
 export type PolicyImpactAggregate = {
   average: number;
@@ -73,4 +74,12 @@ export async function savePolicyImpactRating(
   const aggregate = (await getPolicyImpactAggregates(db))[policyId];
   if (!aggregate) throw new Error('Rating aggregate was not created');
   return aggregate;
+}
+
+export async function getGenuinePolicyImpactAggregates(db: D1Database): Promise<PolicyImpactAggregateMap> {
+  await ensurePolicyImpactRatingsSchema(db);
+  const result = await db.prepare(selectGenuinePolicyImpactAggregates).all<PolicyImpactAggregateRow>();
+  return Object.fromEntries(result.results.map((row) => [row.policy_id, {
+    average: Number(row.average), count: Number(row.rating_count),
+  }]));
 }

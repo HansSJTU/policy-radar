@@ -138,6 +138,7 @@ export default function Home({ view, language, initialPath = 'all' }: {
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
+          <a href={`/radar?lang=${language}`}>{language === 'zh' ? '我的雷达' : 'My radar'}</a>
           <a href="#ranking">{ui.policies}</a>
           <a href="#cpt-schools">{ui.cptSchools}</a>
           <a href={updatesHref}>{ui.updates}</a>

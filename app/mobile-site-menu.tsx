@@ -9,6 +9,7 @@ import {
   GitFork,
   GraduationCap,
   Menu,
+  Radar,
 } from 'lucide-react';
 
 import { getGitHubProjectLink } from '@/app/github-project';
@@ -20,7 +21,7 @@ import {
 } from '@/components/ui/popover';
 
 type MobileSiteMenuProps = {
-  current: 'home' | 'updates' | 'stats';
+  current: 'home' | 'updates' | 'stats' | 'radar';
   language: Language;
 };
 
@@ -42,6 +43,13 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
     ? { label: 'Open site menu', title: 'Navigate', policies: 'Policies', schools: 'CPT Schools', updates: 'Updates', stats: 'Traffic' }
     : { label: '打开网站菜单', title: '页面导航', policies: '政策', schools: 'CPT 学校', updates: '更新记录', stats: '访问统计' };
   const items: MenuItem[] = [
+    {
+      id: 'radar',
+      label: english ? 'My radar' : '我的雷达',
+      href: `/radar?lang=${language}`,
+      icon: <Radar aria-hidden="true" />,
+      current: current === 'radar',
+    },
     {
       id: 'policies',
       label: copy.policies,
