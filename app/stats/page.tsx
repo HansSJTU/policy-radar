@@ -24,6 +24,7 @@ const statsCopy = {
     description: '留美路径政策雷达最近 30 天的匿名独立访客与页面浏览量。',
     brand: '留美路径雷达',
     navLabel: '页面导航',
+    radar: '我的雷达',
     policies: '政策',
     cptSchools: 'CPT 学校',
     updates: '更新记录',
@@ -59,6 +60,7 @@ const statsCopy = {
       'Anonymous unique visitors and page views for the U.S. Stay Path Policy Radar over the last 30 days.',
     brand: 'Stay Path Radar',
     navLabel: 'Page navigation',
+    radar: 'My radar',
     policies: 'Policies',
     cptSchools: 'CPT Schools',
     updates: 'Updates',
@@ -136,6 +138,7 @@ export default async function StatsPage({ searchParams }: StatsPageProps) {
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
+          <a href={`/radar?lang=${language}`}>{ui.radar}</a>
           <a href={`/?lang=${language}#ranking`}>{ui.policies}</a>
           <a href={`/?lang=${language}#cpt-schools`}>{ui.cptSchools}</a>
           <a href={`/updates?lang=${language}`}>{ui.updates}</a>

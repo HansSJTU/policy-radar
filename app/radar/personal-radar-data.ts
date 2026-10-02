@@ -7,6 +7,7 @@ import {
   addMonths,
   chooseImpact,
   forecastPlacement,
+  monthsUntil,
   type RadarPolicy,
 } from './personal-radar-model.ts';
 
@@ -196,6 +197,10 @@ export function buildPersonalPolicies(
           : historySources.map((s) => ({ label: s[language], href: s.href })),
       estimateBaseline: dates ? ESTIMATE_BASELINE : null,
       estimateDates: dates,
+      estimateMonths:
+        dates && !placement.expired
+          ? [monthsUntil(dates[0], today), monthsUntil(dates[1], today)]
+          : null,
       timeConfidence: dates
         ? litigation || longTerm
           ? 'very-low'

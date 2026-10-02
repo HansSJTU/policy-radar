@@ -13,9 +13,11 @@ import {
 import type { Language } from '../language';
 import type { PolicyId } from '../policy-ids';
 import {
+  annularSector,
   arcLabels,
   dragBoundary,
   moduloSector,
+  monthsRadius,
   moveBoundary,
   placePolicies,
   radarGeometry,
@@ -23,6 +25,8 @@ import {
   SECTOR_STEP,
   sectorsInRange,
   severityColor,
+  timeLabelBoxes,
+  timeLabelY,
   timeLabels,
   type Boundary,
   type RadarPolicy,
@@ -97,12 +101,7 @@ export default function PersonalRadarChart(props: Props) {
     if (!element) return;
     const measure = () => {
       const width = element.clientWidth;
-      if (width)
-        setSize({
-          width,
-          compact:
-            width < 360 || window.matchMedia('(max-width:600px)').matches,
-        });
+      if (width) setSize({ width, compact: width < 440 });
     };
     measure();
     const observer = new ResizeObserver(measure);
@@ -141,19 +140,24 @@ export default function PersonalRadarChart(props: Props) {
     start: degrees.start / SECTOR_STEP,
     end: degrees.end / SECTOR_STEP,
   });
-  const visible = useMemo(
-    () =>
-      entries.filter(
-        (p) =>
-          showAll || drag !== null || sectorsInRange(range).includes(p.sector),
-      ),
-    [entries, showAll, drag, range],
-  );
   const placed = useMemo(
     () =>
-      placePolicies(visible, size.width, language, size.compact, labelWidths),
-    [visible, size, language, labelWidths],
+      placePolicies(entries, size.width, language, size.compact, labelWidths),
+    [entries, size, language, labelWidths],
   );
+  const inRange = sectorsInRange(range);
+  const visible = placed.filter(
+    ({ entry }) => showAll || drag !== null || inRange.includes(entry.sector),
+  );
+  const labelBoxes = timeLabelBoxes(g, language, labelWidths);
+  // The estimate window of the hovered, focused or selected policy.
+  const focused = visible.find(
+    ({ entry }) => entry.id === (highlighted ?? active),
+  )?.entry;
+  const span = focused?.estimateMonths;
+  const spanFrom = focused
+    ? SECTOR_KEYS.indexOf(focused.sector) * SECTOR_STEP
+    : 0;
   const [sx, sy] = g.point(g.radius, degrees.start),
     [ex, ey] = g.point(g.radius, degrees.end);
   const full = degrees.end - degrees.start >= 359.9;
@@ -261,6 +265,29 @@ export default function PersonalRadarChart(props: Props) {
             >
               <circle cx="6" cy="6" r=".8" fill="var(--pr-dot-grid)" />
             </pattern>
+            {/* Radial lines stop short of the time labels; rings and the dot
+                grid stay visible behind them. */}
+            <mask
+              id={`${patternId}-labels`}
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width={g.width}
+              height={g.height}
+            >
+              <rect width={g.width} height={g.height} fill="white" />
+              {labelBoxes.map((b, i) => (
+                <rect
+                  key={i}
+                  x={b.x - 3}
+                  y={b.y - 1}
+                  width={b.width + 6}
+                  height={b.height + 2}
+                  rx="3"
+                  fill="black"
+                />
+              ))}
+            </mask>
           </defs>
           <circle
             cx={g.cx}
@@ -279,6 +306,23 @@ export default function PersonalRadarChart(props: Props) {
             />
           ) : (
             <path data-selection-wedge d={wedge} fill="var(--pr-selection)" />
+          )}
+          {focused && span && (
+            <path
+              key={focused.id}
+              className="pr-window"
+              data-window={focused.id}
+              d={annularSector(
+                g,
+                spanFrom + 1.5,
+                spanFrom + SECTOR_STEP - 1.5,
+                monthsRadius(g, span[0]),
+                Math.max(
+                  monthsRadius(g, span[1]),
+                  monthsRadius(g, span[0]) + 2,
+                ),
+              )}
+            />
           )}
           {g.rings.map((radius, i) => (
             <circle
@@ -304,9 +348,33 @@ export default function PersonalRadarChart(props: Props) {
               />
             );
           })}
+          <g mask={`url(#${patternId}-labels)`}>
+            {SECTOR_KEYS.map((sector, i) => {
+              const [x, y] = g.point(g.radius, i * SECTOR_STEP),
+                [x1, y1] = g.point(g.radius * 0.1, i * SECTOR_STEP);
+              return (
+                <path
+                  key={sector}
+                  d={`M ${x1} ${y1} L ${x} ${y}`}
+                  stroke="var(--pr-stage-line)"
+                  strokeWidth=".9"
+                />
+              );
+            })}
+            {(['start', 'end'] as const).map((edge) => {
+              const [x, y] = g.point(g.radius, degrees[edge]);
+              return (
+                <path
+                  key={edge}
+                  d={`M ${g.cx} ${g.cy} L ${x} ${y}`}
+                  stroke="var(--pr-time-line)"
+                  strokeWidth="1.1"
+                />
+              );
+            })}
+          </g>
           {SECTOR_KEYS.map((sector, i) => {
-            const [x, y] = g.point(g.radius, i * SECTOR_STEP),
-              [x1, y1] = g.point(g.radius * 0.1, i * SECTOR_STEP);
+            const [x, y] = g.point(g.radius, i * SECTOR_STEP);
             const angle = (i + 0.5) * SECTOR_STEP,
               [tx, ty] = g.point(g.radius + 22, angle);
             const rotation =
@@ -323,11 +391,6 @@ export default function PersonalRadarChart(props: Props) {
             );
             return (
               <g key={sector}>
-                <path
-                  d={`M ${x1} ${y1} L ${x} ${y}`}
-                  stroke="var(--pr-stage-line)"
-                  strokeWidth=".9"
-                />
                 <circle
                   className="pr-snap-stop"
                   data-snap-target={target}
@@ -364,22 +427,16 @@ export default function PersonalRadarChart(props: Props) {
           {(['start', 'end'] as const).map((edge) => {
             const [x, y] = g.point(g.radius, degrees[edge]);
             return (
-              <g key={edge}>
-                <path
-                  d={`M ${g.cx} ${g.cy} L ${x} ${y}`}
-                  stroke="var(--pr-time-line)"
-                  strokeWidth="1.1"
-                />
-                <path
-                  className="pr-boundary-hit"
-                  d={`M ${g.cx} ${g.cy} L ${x} ${y}`}
-                  stroke="transparent"
-                  strokeWidth="18"
-                  fill="none"
-                  pointerEvents="stroke"
-                  onPointerDown={(event) => begin(event, edge)}
-                />
-              </g>
+              <path
+                key={edge}
+                className="pr-boundary-hit"
+                d={`M ${g.cx} ${g.cy} L ${x} ${y}`}
+                stroke="transparent"
+                strokeWidth="18"
+                fill="none"
+                pointerEvents="stroke"
+                onPointerDown={(event) => begin(event, edge)}
+              />
             );
           })}
           {timeLabels[language].map((label, i) => (
@@ -387,7 +444,7 @@ export default function PersonalRadarChart(props: Props) {
               key={i}
               className="pr-time-label"
               x={g.cx}
-              y={g.cy - g.rings[i] + (language === 'en' ? 9 : -6)}
+              y={timeLabelY(g, language, i)}
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize="11"
@@ -413,7 +470,7 @@ export default function PersonalRadarChart(props: Props) {
             </text>
           )}
         </svg>
-        {placed.map(({ entry, x, y }) => (
+        {visible.map(({ entry, x, y }) => (
           <button
             key={entry.id}
             type="button"

@@ -13,6 +13,8 @@ import {
   dragBoundary,
   forecastPlacement,
   labelClearance,
+  markRadius,
+  monthsRadius,
   moveBoundary,
   parseProfile,
   placePolicies,
@@ -23,7 +25,7 @@ import {
   SECTOR_STEP,
   sectorsInRange,
   severityColor,
-  timeLabels,
+  timeLabelBoxes,
 } from '../app/radar/personal-radar-model.ts';
 import { selectGenuinePolicyImpactAggregates } from '../db/genuine-policy-ratings-query.ts';
 import {
@@ -180,35 +182,71 @@ test('severity is a continuous red/orange/white scale with contrasting number in
   assert.notEqual(severityColor(8.1).fill, severityColor(8.9).fill);
 });
 
-test('time labels stay single-line and points avoid their reserved space at mobile and desktop widths', () => {
+test('every mark sits inside its own stage and time band, clear of labels and other marks', () => {
   for (const language of ['zh', 'en'])
-    for (const width of [286, 290, 320, 360, 396, 440, 540]) {
+    for (const width of [286, 290, 320, 345, 360, 396, 440, 540]) {
       const entries = buildPersonalPolicies(language, {}, '2026-09-30');
-      const compact = width < 360;
+      const compact = width < 440;
       const g = radarGeometry(width);
-      const labels = timeLabels[language].map((text, i) => {
-        const w = language === 'zh' ? text.length * 11 : [30, 46, 90][i];
-        return {
-          x: g.cx - w / 2,
-          y: g.cy - g.rings[i] + (language === 'en' ? 9 : -6) - 6,
-          width: w,
-          height: 12,
-        };
-      });
-      for (const { entry, x, y } of placePolicies(
-        entries,
-        width,
-        language,
-        compact,
-      )) {
-        const radius = entry.inForce ? (compact ? 12 : 13) : compact ? 14 : 18;
+      const labels = timeLabelBoxes(g, language);
+      const placed = placePolicies(entries, width, language, compact);
+      assert.deepEqual(
+        placed.map((p) => p.entry.id),
+        entries.map((p) => p.id),
+      );
+      placed.forEach(({ entry, x, y }, i) => {
+        const where = `${language}/${width}/${entry.id}`;
+        const radius = markRadius(entry.inForce, compact);
+        const rho = Math.hypot(x - g.cx, y - g.cy);
+        const angle =
+          ((Math.atan2(x - g.cx, g.cy - y) * 180) / Math.PI + 360) % 360;
+        const offset = angle - SECTOR_KEYS.indexOf(entry.sector) * SECTOR_STEP;
         assert.ok(
-          labelClearance([x, y], radius, labels, []) < 0.05,
-          `${language}/${width}/${entry.id} overlaps a time label`,
+          offset > 0 && offset < SECTOR_STEP,
+          `${where} left its stage`,
         );
-        assert.ok(x >= 0 && x <= width && y >= 0 && y <= g.height);
-      }
+        if (entry.ring > 0) {
+          const near = Math.min(offset, SECTOR_STEP - offset);
+          assert.ok(
+            rho * Math.sin((near * Math.PI) / 180) >= radius / 2,
+            `${where} straddles a stage divider`,
+          );
+        }
+        const inner = entry.ring ? g.rings[entry.ring - 1] : 0;
+        assert.ok(
+          rho >= inner && rho <= g.rings[entry.ring],
+          `${where} left its time band`,
+        );
+        assert.equal(
+          labelClearance([x, y], radius, labels, [], 1),
+          0,
+          `${where} overlaps a time label`,
+        );
+        for (const other of placed.slice(0, i))
+          assert.ok(
+            Math.hypot(x - other.x, y - other.y) >=
+              radius + markRadius(other.entry.inForce, compact),
+            `${where} overlaps ${other.entry.id}`,
+          );
+      });
     }
+});
+
+test('estimate windows map onto the labelled rings and disappear once in force or elapsed', () => {
+  const g = radarGeometry(540);
+  assert.equal(monthsRadius(g, -3), g.rings[0]);
+  assert.equal(monthsRadius(g, 6), g.rings[1]);
+  assert.equal(monthsRadius(g, 18), g.rings[2]);
+  assert.equal(monthsRadius(g, 60), g.radius);
+  for (const p of buildPersonalPolicies('en', {}, '2026-09-30')) {
+    if (p.inForce) assert.equal(p.estimateMonths, null);
+    else if (p.estimateMonths) {
+      const [from, to] = p.estimateMonths;
+      assert.ok(from < to, p.id);
+    }
+  }
+  const elapsed = buildPersonalPolicies('en', {}, '2040-01-01');
+  assert.ok(elapsed.every((p) => p.estimateMonths === null));
 });
 
 test('server-rendered facts have the same aligned schema in both languages', async () => {

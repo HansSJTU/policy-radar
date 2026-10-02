@@ -29,6 +29,7 @@ const updatesCopy = {
     metadataDescription: '留美路径政策雷达的政策、时间与 CPT 学校材料更新记录。',
     brand: '留美路径雷达',
     navLabel: '页面导航',
+    radar: '我的雷达',
     policies: '政策',
     cptSchools: 'CPT 学校',
     updates: '更新记录',
@@ -51,6 +52,7 @@ const updatesCopy = {
       'Content updates to policy status, dates, and CPT school evidence in the U.S. Stay Path Policy Radar.',
     brand: 'Stay Path Radar',
     navLabel: 'Page navigation',
+    radar: 'My radar',
     policies: 'Policies',
     cptSchools: 'CPT Schools',
     updates: 'Updates',
@@ -103,6 +105,7 @@ export default async function UpdatesPage({ searchParams }: UpdatesPageProps) {
           <span>{ui.brand}</span>
         </a>
         <nav className="nav-links" aria-label={ui.navLabel}>
+          <a href={`/radar?lang=${language}`}>{ui.radar}</a>
           <a href={`/?lang=${language}#ranking`}>{ui.policies}</a>
           <a href={`/?lang=${language}#cpt-schools`}>{ui.cptSchools}</a>
           <a href={`/updates?lang=${language}`} aria-current="page">{ui.updates}</a>
