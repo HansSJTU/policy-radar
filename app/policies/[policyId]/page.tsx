@@ -176,6 +176,9 @@ export default async function PolicyPage({ params, searchParams }: Props) {
             className="nav-links"
             aria-label={english ? 'Site navigation' : '网站导航'}
           >
+            <a href={`/radar?lang=${language}`}>
+              {english ? 'My radar' : '我的雷达'}
+            </a>
             <a href={`${home}#ranking`}>{english ? 'Policies' : '政策'}</a>
             <a href={`${home}#cpt-schools`}>
               {english ? 'CPT Schools' : 'CPT 学校'}

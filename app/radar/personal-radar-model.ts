@@ -34,6 +34,8 @@ export type RadarPolicy = {
   timeSources: SourceLink[];
   estimateBaseline: string | null;
   estimateDates: [string, string] | null;
+  // Months from today to each end of the estimate; null once in force or elapsed.
+  estimateMonths: [number, number] | null;
   timeConfidence: 'low' | 'very-low' | null;
   estimateExpired: boolean;
 };
@@ -192,12 +194,15 @@ export function addMonths(date: string, months: number): string {
   d.setUTCDate(Math.min(day, last));
   return d.toISOString().slice(0, 10);
 }
+export function monthsUntil(date: string, today: string) {
+  return (Date.parse(date) - Date.parse(today)) / ((86400000 * 365.25) / 12);
+}
 export function forecastPlacement(
   dates: [string, string],
   today: string,
 ): { ring: Ring; expired: boolean } {
-  const midpoint = (Date.parse(dates[0]) + Date.parse(dates[1])) / 2;
-  const months = (midpoint - Date.parse(today)) / ((86400000 * 365.25) / 12);
+  const months =
+    (monthsUntil(dates[0], today) + monthsUntil(dates[1], today)) / 2;
   const expired = dates[1] < today;
   return {
     ring: expired ? 3 : months <= 6 ? 1 : months <= 18 ? 2 : 3,
@@ -212,6 +217,7 @@ export function labelClearance(
   radius: number,
   labels: Box[],
   placed: Mark[],
+  padding = 4,
 ) {
   const gaps = labels.map(
     (b) =>
@@ -220,10 +226,10 @@ export function labelClearance(
         Math.max(b.y - y, 0, y - b.y - b.height),
       ) -
       radius -
-      4,
+      padding,
   );
   placed.forEach((p) =>
-    gaps.push(Math.hypot(x - p.x, y - p.y) - radius - p.radius - 4),
+    gaps.push(Math.hypot(x - p.x, y - p.y) - radius - p.radius - padding),
   );
   return gaps.reduce((sum, gap) => sum + Math.max(0, -gap) ** 2, 0);
 }
@@ -231,7 +237,7 @@ export function radarGeometry(width: number) {
   const height = width + 4,
     cx = width / 2,
     cy = height / 2,
-    radius = Math.max(65, width / 2 - 42);
+    radius = Math.max(65, width / 2 - 36);
   const point = (r: number, degrees: number): [number, number] => [
     Math.round(cx + r * Math.sin((degrees * Math.PI) / 180)),
     Math.round(cy - r * Math.cos((degrees * Math.PI) / 180)),
@@ -243,9 +249,69 @@ export function radarGeometry(width: number) {
     cy,
     radius,
     point,
-    rings: [0.3, 0.53, 0.76, 1].map((v) => v * radius),
+    rings: [0.26, 0.5, 0.78, 1].map((v) => v * radius),
   };
 }
+export type RadarGeometry = ReturnType<typeof radarGeometry>;
+export function markRadius(inForce: boolean, compact: boolean) {
+  return inForce ? (compact ? 12 : 13) : compact ? 14 : 18;
+}
+export function timeLabelY(g: RadarGeometry, language: Language, i: number) {
+  return g.cy - g.rings[i] + (language === 'en' ? 9 : -6);
+}
+export function timeLabelBoxes(
+  g: RadarGeometry,
+  language: Language,
+  measuredWidths?: number[],
+): Box[] {
+  return timeLabels[language].map((text, i) => {
+    const width =
+      measuredWidths?.[i] ??
+      (language === 'zh' ? text.length * 11 : [30, 46, 90][i]);
+    return {
+      x: g.cx - width / 2,
+      y: timeLabelY(g, language, i) - 6,
+      width,
+      height: 12,
+    };
+  });
+}
+// Months from today → radius on the same scale as the labelled rings:
+// today, half a year, a year and a half, then the rim at three years.
+export function monthsRadius(g: RadarGeometry, months: number) {
+  const stops: Array<[number, number]> = [
+    [0, g.rings[0]],
+    [6, g.rings[1]],
+    [18, g.rings[2]],
+    [36, g.rings[3]],
+  ];
+  const m = Math.max(0, Math.min(36, months));
+  const upper = stops.findIndex(([stop]) => stop >= m);
+  if (upper <= 0) return stops[0][1];
+  const [m0, r0] = stops[upper - 1],
+    [m1, r1] = stops[upper];
+  return r0 + ((r1 - r0) * (m - m0)) / (m1 - m0);
+}
+export function annularSector(
+  g: RadarGeometry,
+  from: number,
+  to: number,
+  inner: number,
+  outer: number,
+) {
+  const [ax, ay] = g.point(outer, from),
+    [bx, by] = g.point(outer, to),
+    [cx, cy] = g.point(inner, to),
+    [dx, dy] = g.point(inner, from);
+  return `M ${ax} ${ay} A ${outer} ${outer} 0 0 1 ${bx} ${by} L ${cx} ${cy} A ${inner} ${inner} 0 0 0 ${dx} ${dy} Z`;
+}
+// Gap between a mark and the nearer stage divider; negative means it crosses.
+function dividerGap(rho: number, offset: number, radius: number) {
+  const near = Math.min(offset, SECTOR_STEP - offset);
+  return rho * Math.sin((near * Math.PI) / 180) - radius;
+}
+// Positions depend on every policy, not on which ones are visible, so
+// toggling other policies or dragging the range never moves a mark.
 export function placePolicies(
   entries: RadarPolicy[],
   width: number,
@@ -254,65 +320,83 @@ export function placePolicies(
   measuredWidths?: number[],
 ) {
   const g = radarGeometry(width);
-  const labels = timeLabels[language].map((text, i) => {
-    const size =
-      measuredWidths?.[i] ??
-      (language === 'zh' ? text.length * 11 : [30, 46, 90][i]);
-    return {
-      x: g.cx - size / 2,
-      y: g.cy - g.rings[i] + (language === 'en' ? 9 : -6) - 6,
-      width: size,
-      height: 12,
-    };
-  });
-  const placed: Mark[] = [];
-  return entries.map((entry) => {
+  // Labels get a little extra air on each side; marks may still use it
+  // when a cell is crowded, but never overlap the text itself.
+  const labels = timeLabelBoxes(g, language, measuredWidths).map((b) => ({
+    ...b,
+    x: b.x - 3,
+    width: b.width + 6,
+  }));
+  if (width >= 380) {
+    const you = language === 'zh' ? 12 : 22;
+    labels.push({ x: g.cx - you / 2, y: g.cy + 8, width: you, height: 13 });
+  }
+  const centre: Mark = { x: g.cx, y: g.cy, radius: 4 };
+  const cells = entries.map((entry) => {
     const sector = SECTOR_KEYS.indexOf(entry.sector);
     const peers = entries.filter(
       (p) => p.sector === entry.sector && p.ring === entry.ring,
     );
     const index = peers.indexOf(entry);
-    const offset =
-      sector === 0
-        ? SECTOR_STEP * 0.7
-        : sector === 6 && entry.ring === 2
-          ? 5
-          : peers.length === 1
-            ? SECTOR_STEP / 2
-            : 3 + ((SECTOR_STEP - 6) * index) / (peers.length - 1);
-    const radius =
-      peers.length >= 3 && entry.ring === 2
-        ? g.radius * (index % 2 ? 0.75 : 0.56)
-        : g.radius * [0.22, 0.43, 0.65, 0.88][entry.ring];
-    const preferred = g.point(radius, sector * SECTOR_STEP + offset);
-    const markRadius = entry.inForce ? (compact ? 12 : 13) : compact ? 14 : 18;
-    let [x, y] = preferred;
-    if (labelClearance(preferred, markRadius, labels, placed) > 0) {
-      const [inner, outer] = [
-        [0.16, 0.27],
-        [0.34, 0.5],
-        [0.54, 0.74],
-        [0.8, 0.92],
-      ][entry.ring];
-      let best = labelClearance(preferred, markRadius, labels, placed) * 10000;
-      for (let fraction = inner; fraction <= outer + 0.001; fraction += 0.02) {
-        for (let angle = 5; angle < SECTOR_STEP - 4; angle += 2) {
-          const candidate = g.point(
-            g.radius * fraction,
-            sector * SECTOR_STEP + angle,
-          );
+    const mark = markRadius(entry.inForce, compact);
+    const inner = entry.ring ? g.rings[entry.ring - 1] : 0;
+    const outer = entry.ring === 3 ? g.radius - mark - 3 : g.rings[entry.ring];
+    const from = sector * SECTOR_STEP;
+    // Peers fan out to the cell's corners while staying clear of the stage
+    // dividers; with three or more, the middle ones drop to the inner arc,
+    // where the cell is narrower.
+    const depth =
+      entry.ring === 0
+        ? 0.62
+        : peers.length > 2
+          ? index % 2
+            ? 0.15
+            : 0.85
+          : 0.55;
+    const rho = inner + (outer - inner) * depth;
+    const edge = Math.min(
+      SECTOR_STEP / 2,
+      (Math.asin(Math.min(1, (mark + 2) / rho)) * 180) / Math.PI,
+    );
+    const preferred = g.point(
+      rho,
+      from +
+        (peers.length === 1
+          ? SECTOR_STEP / 2
+          : edge + ((SECTOR_STEP - 2 * edge) * index) / (peers.length - 1)),
+    );
+    return { entry, mark, inner, outer, from, preferred };
+  });
+  const marks: Mark[] = cells.map(({ preferred: [x, y], mark }) => ({
+    x,
+    y,
+    radius: mark,
+  }));
+  // One greedy pass, then two passes that re-place each mark against all
+  // of the others, so an early mark cannot corner a later peer.
+  for (let pass = 0; pass < 3; pass++)
+    cells.forEach(({ mark, inner, outer, from, preferred }, i) => {
+      const others = [
+        centre,
+        ...marks.filter((_, j) => j !== i && (pass > 0 || j < i)),
+      ];
+      let best = Infinity;
+      for (let f = 0.1; f <= 0.901; f += 0.04) {
+        const rho = inner + (outer - inner) * f;
+        for (let offset = 2; offset <= SECTOR_STEP - 2; offset += 1) {
+          const candidate = g.point(rho, from + offset);
           const cost =
-            labelClearance(candidate, markRadius, labels, placed) * 10000 +
+            labelClearance(candidate, mark, labels, others, 1) * 10000 +
+            labelClearance(candidate, mark, labels, others) * 40 +
+            Math.max(0, 2 - dividerGap(rho, offset, mark)) ** 2 * 40 +
             (candidate[0] - preferred[0]) ** 2 +
             (candidate[1] - preferred[1]) ** 2;
           if (cost < best) {
             best = cost;
-            [x, y] = candidate;
+            marks[i] = { x: candidate[0], y: candidate[1], radius: mark };
           }
         }
       }
-    }
-    placed.push({ x, y, radius: markRadius });
-    return { entry, x, y };
-  });
+    });
+  return cells.map(({ entry }, i) => ({ entry, x: marks[i].x, y: marks[i].y }));
 }
