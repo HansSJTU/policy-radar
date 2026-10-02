@@ -30,6 +30,7 @@ const verifiedForumEvidence = {
 };
 
 const verifiedWithoutForumEvidence = [
+  'Carnegie Mellon University (CMU)',
   'UC Berkeley',
   'UC Davis',
   'Boston University',
@@ -72,9 +73,9 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 52);
+  assert.equal(verifiedSchools.length, 53);
   assert.equal(communitySchools.length, 4);
-  assert.equal(verifiedSchools.length + communitySchools.length, 56);
+  assert.equal(verifiedSchools.length + communitySchools.length, 57);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));

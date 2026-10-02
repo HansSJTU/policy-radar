@@ -40,6 +40,22 @@ export type CommunitySchool = Omit<CommunitySchoolRecord, 'zh' | 'en'> & {
 // A community screenshot review does not confirm its current policy status.
 export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
+    id: 'carnegie-mellon-university',
+    checkedOn: '2026-10-01',
+    school: 'Carnegie Mellon University (CMU)',
+    href: 'https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html',
+    tone: 'tighten',
+    zh: {
+      state: '毕业必修 CPT；选修实习改申请 pre-completion OPT',
+      detail: 'OIE 8·27 公告要求实习为项目全体学生的毕业必修环节；选修实习需先获批 pre-completion OPT。现行 CPT 页排除独立研究，仍列申请步骤，但标注正在修订；论文完成所需校外工作的处理方式仍在审查。CSD 博士资源页仍有“essential though not required”的冲突措辞，不能据此确认博士 CPT 已恢复。公告未说明既有授权如何处理。本条为补录既有官方通知；现行页面未注明修订日期。',
+    },
+    en: {
+      state: 'CPT for graduation-required training; elective internships use pre-completion OPT',
+      detail: 'The August 27 OIE notice requires internships for every student to graduate and directs elective internships to approved pre-completion OPT. The CPT page excludes independent study and retains application steps, but is under construction; thesis/dissertation-related external work remains under review. The CSD doctoral page still uses conflicting “essential though not required” wording, which does not confirm reopened doctoral CPT. Existing authorizations are not addressed. This entry adds an earlier official notice; the current CPT page gives no revision date.',
+    },
+    screenshots: [],
+  },
+  {
     id: 'pacific-lutheran-university',
     checkedOn: '2026-10-01',
     school: 'Pacific Lutheran University',

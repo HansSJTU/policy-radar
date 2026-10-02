@@ -26,6 +26,20 @@ const chineseUpdates: ContentUpdate[] = [
     date: '2026-10-01',
     changes: [
       {
+        id: 'cmu-cpt-official-notice-added',
+        category: 'CPT 学校清单',
+        title: '补录 CMU 官方 CPT 收紧通知与现行申请要求',
+        summary: '补入此前遗漏的 CMU OIE 8·27 公告及现行 CPT 页面：全员毕业必修实践才符合要求，选修实习需改申请 pre-completion OPT；论文相关校外工作仍在审查。不是 10·01 新发布的通知。',
+        before: '56 条记录：52 条校方网页、4 条社区截图；55 所不同学校。未收录 CMU。',
+        after: '57 条记录：53 条校方网页、4 条社区截图；56 所不同学校。新增 CMU 校方网页记录，社区证据级别不变。',
+        details: ['保留现行页仍在修订、CSD 博士页口径冲突及既有授权处理未说明的限制，不声称全校停批或博士 CPT 已恢复。'],
+        sources: [
+          { label: 'CMU OIE · 8·27 CPT 公告', href: 'https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html' },
+          { label: 'CMU OIE · 现行 CPT 页面', href: 'https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html' },
+          { label: 'CMU CSD · 博士 CPT 资源页', href: 'https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt' },
+        ],
+      },
+      {
         id: 'duration-government-appeal-september-30',
         category: 'D/S 诉讼',
         title: 'D/S 案政府上诉，暂缓令仍按原命令执行',
@@ -1121,6 +1135,20 @@ const englishUpdates: ContentUpdate[] = [
   {
     date: '2026-10-01',
     changes: [
+      {
+        id: 'cmu-cpt-official-notice-added',
+        category: 'CPT school list',
+        title: 'Add omitted CMU CPT notice and current application requirements',
+        summary: 'Adds the August 27 OIE notice and current CPT page: training must be required for all students to graduate, elective internships need pre-completion OPT, and thesis/dissertation-related external work remains under review. This is an earlier notice, not an October 1 announcement.',
+        before: '56 evidence entries: 52 public university pages and 4 community reports; 55 distinct institutions. CMU was missing.',
+        after: '57 evidence entries: 53 public university pages and 4 community reports; 56 distinct institutions. Adds CMU public-page evidence; community evidence levels are unchanged.',
+        details: ['Discloses the page under construction, conflicting CSD doctoral wording and unspecified treatment of existing approvals; does not claim a university-wide pause or reopened doctoral CPT.'],
+        sources: [
+          { label: 'CMU OIE · August 27 CPT notice', href: 'https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html' },
+          { label: 'CMU OIE · Current CPT page', href: 'https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html' },
+          { label: 'CMU CSD · Doctoral CPT resources', href: 'https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt' },
+        ],
+      },
       {
         id: 'duration-government-appeal-september-30',
         category: 'D/S litigation',

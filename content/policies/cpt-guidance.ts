@@ -35,6 +35,21 @@ export const cptGuidance: PolicyContent = {
       zh: 'Bryn Mawr · 9·15 校方通知',
       en: 'Bryn Mawr · September 15 notice',
     },
+    {
+      href: 'https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html',
+      zh: 'CMU OIE · 8·27 CPT 公告',
+      en: 'CMU OIE · August 27 CPT notice',
+    },
+    {
+      href: 'https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html',
+      zh: 'CMU OIE · 现行 CPT 要求与申请步骤',
+      en: 'CMU OIE · Current CPT requirements and application steps',
+    },
+    {
+      href: 'https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt',
+      zh: 'CMU CSD · 博士 CPT 页面（与 OIE 口径冲突）',
+      en: 'CMU CSD · Doctoral CPT page (wording conflicts with OIE)',
+    },
   ],
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
@@ -51,7 +66,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '10·01 重读 ICE 两份 SEVP 备忘录及 4 条社区截图，并检查 52 条校方网页记录。UC San Diego 现行页面已列出符合条件者的申请流程及经核实项目，不再显示先前的全部请求暂停通知，但未注明恢复日期；Northwestern 9·29 页面已去除先前冲突的旧措辞。Johns Hopkins 官网本次直连被拒，仅见昨日索引摘要，未完整复核，该校仍保留上次完整核对日期。学校未公开通知及各校恢复日期无法逐一核实；社区截图不是现行校方公开确认。',
+      '10·01 重读 ICE 两份 SEVP 备忘录及 4 条社区截图，并检查此前清单的 52 条校方网页记录；同日补核 CMU OIE 公告、现行 CPT 页及 CSD 博士资源页，清单现有 53 条校方网页记录。CMU 选修实习需改申请 pre-completion OPT，论文相关校外工作仍在审查，CSD 页面与 OIE 口径冲突。UC San Diego 现行页面已列出符合条件者的申请流程及经核实项目，不再显示先前的全部请求暂停通知，但未注明恢复日期；Northwestern 9·29 页面已去除先前冲突的旧措辞。Johns Hopkins 官网本次直连被拒，仅见昨日索引摘要，未完整复核，该校仍保留上次完整核对日期。学校未公开通知及各校恢复日期无法逐一核实；社区截图不是现行校方公开确认。',
     background:
       '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -172,7 +187,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'Both ICE/SEVP broadcasts and four community screenshots were reread October 1, and all 52 public school-page records were checked. UC San Diego’s current page now lists an application process and verified programs rather than the earlier blanket request pause, but does not date the change; Northwestern’s September 29 page removed conflicting older wording. Johns Hopkins blocked direct access; only a search excerpt indexed yesterday was available, so its prior full-review date remains. Unpublished notices and resumption dates remain unverified, and screenshots are not current public school confirmation.',
+      'Both ICE/SEVP broadcasts and four community screenshots were reread October 1, and the previously listed 52 public school-page records were checked. CMU’s OIE notice, current CPT page and CSD doctoral page were separately reviewed the same day, bringing the list to 53 public-page records. CMU directs elective internships to pre-completion OPT; thesis/dissertation-related external work remains under review, and CSD wording conflicts with OIE. UC San Diego’s current page now lists an application process and verified programs rather than the earlier blanket request pause, but does not date the change; Northwestern’s September 29 page removed conflicting older wording. Johns Hopkins blocked direct access; only a search excerpt indexed yesterday was available, so its prior full-review date remains. Unpublished notices and resumption dates remain unverified, and screenshots are not current public school confirmation.',
     background:
       'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
     teaser:
