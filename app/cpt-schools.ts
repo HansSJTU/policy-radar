@@ -41,7 +41,7 @@ export type CommunitySchool = Omit<CommunitySchoolRecord, 'zh' | 'en'> & {
 export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     id: 'pacific-lutheran-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Pacific Lutheran University',
     href: 'https://www.plu.edu/iss/announcements/',
     tone: 'tighten',
@@ -57,7 +57,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'indiana-university-iu-global',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Indiana University (IU Global)',
     href: 'https://www.oid.iu.edu/resources/visa-immigration-updates.html',
     tone: 'pause',
@@ -73,7 +73,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'rutgers-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Rutgers University (Rutgers Global)',
     href: 'https://global.rutgers.edu/all-alerts',
     tone: 'tighten',
@@ -89,7 +89,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-central-florida',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Central Florida',
     href: 'https://global.ucf.edu/immigrationupdates/',
     tone: 'tighten',
@@ -105,7 +105,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'texas-state-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Texas State University',
     href: 'https://www.international.txst.edu/current-f1-students/work-authorization/cpt.html',
     tone: 'tighten',
@@ -123,7 +123,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'vanderbilt-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Vanderbilt University',
     href: 'https://www.vanderbilt.edu/isss/2026/09/15/updates-to-curricular-practical-training-eligibility/',
     tone: 'tighten',
@@ -142,7 +142,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'stony-brook-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Stony Brook University',
     href: 'https://www.stonybrook.edu/visa/resources/news-and-events/immigration-policy-updates/cpt-new-guidance.html',
     tone: 'tighten',
@@ -161,7 +161,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'kennesaw-state-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Kennesaw State University',
     href: 'https://campus.kennesaw.edu/current-students/academics/global-education/international-student-scholar-services/f-1/curricular-practical-training.php',
     tone: 'tighten',
@@ -180,7 +180,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-toledo',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Toledo',
     href: 'https://www.utoledo.edu/cisp/international/CPT.html',
     tone: 'tighten',
@@ -199,7 +199,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'william-and-mary',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'William & Mary',
     href: 'https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/',
     tone: 'pause',
@@ -218,7 +218,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-rochester',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Rochester',
     href: 'https://www.rochester.edu/provost/important-update-for-international-students-on-cpt/',
     tone: 'pause',
@@ -237,7 +237,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'purdue-university-iss',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Purdue University (ISS)',
     href: 'https://www.purdue.edu/gpp/iss/student/f1/employment/cpt.html',
     tone: 'tighten',
@@ -258,7 +258,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'bryn-mawr-college',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Bryn Mawr College',
     href: 'https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements',
     tone: 'pause',
@@ -276,7 +276,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-at-buffalo',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University at Buffalo',
     href: 'https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-.html',
     tone: 'pause',
@@ -295,7 +295,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-michigan-dearborn',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Michigan–Dearborn',
     href: 'https://umdearborn.edu/office-international-affairs/important-updates',
     tone: 'pause',
@@ -314,7 +314,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-berkeley',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UC Berkeley',
     href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
     tone: 'pause',
@@ -333,7 +333,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-davis',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UC Davis',
     href: 'https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars',
     tone: 'pause',
@@ -350,24 +350,24 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'boston-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Boston University',
     href: 'https://www.bu.edu/isso/2026/08/28/additional-sevp-guidance-further-restricts-cpt-eligibility/',
     tone: 'pause',
     zh: {
       state: '暂停部分 CPT 审批',
-      detail: '8·28 校方公告称，明确属于毕业要求的 CPT 继续处理；其他模式在校内审查期间暂缓审批。9·28 已重新读取公告全文，原页未公布全面恢复日期。',
+      detail: '8·28 校方公告称，明确属于毕业要求的 CPT 继续处理；其他模式在校内审查期间暂缓审批。10·01 通过校方公开文章接口重读公告全文；网页正文直连仅返回标题，未核实其后另有全面恢复公告。',
     },
     en: {
       state: 'Some CPT approvals are paused',
       detail:
-        'The August 28 notice says CPT clearly required for program completion continues to be processed while other models are paused for review. The full notice was reread September 28; it does not announce a date for full resumption.',
+        'The August 28 notice says CPT clearly required for program completion continues to be processed while other models are paused for review. The notice body was reread October 1 through the university’s public article API because direct page access returned only its title; no later full-resumption notice was verified.',
     },
     screenshots: [],
   },
   {
     id: 'uiuc',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UIUC',
     href: 'https://blogs.illinois.edu/view/7559/791491523',
     tone: 'pause',
@@ -387,7 +387,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'texas-a-m',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Texas A&M',
     href: 'https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html',
     tone: 'tighten',
@@ -405,7 +405,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ut-dallas',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UT Dallas',
     href: 'https://isso.utdallas.edu/2026/09/17/update-on-cpt-policy-sevp-broadcast/',
     tone: 'tighten',
@@ -424,7 +424,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-michigan',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Michigan',
     href: 'https://internationalcenter.umich.edu/about/news/updated-guidance-curricular-practical-training-cpt',
     tone: 'pause',
@@ -448,19 +448,19 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'northwestern-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Northwestern University',
     href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/',
     tone: 'tighten',
     zh: {
       state: '仅处理项目全员必需的 CPT',
       detail:
-        'OISS 的 9·25 更新页面明确要求实践为项目所有学生毕业所必需；必需实践要求已完成者不能再申请额外 CPT。符合条件者须提交校方与雇主的合作协议，通过 OISS 门户申请，由学业负责人确认全员必需，获批后领取注明 CPT 的 I-20。页面下方仍留有旧版“integral to or required”措辞，不能据此推断选修实习重新开放；此前 9·03 通知截图保留作历史对照。',
+        'OISS 9·29 更新的页面要求实践为项目所有学生毕业所必需；完成必需实践后不能再申请额外 CPT。符合条件者须提交校方与雇主的合作协议，通过 OISS 门户申请，由学业负责人确认全员必需，获批后领取注明 CPT 的 I-20。9·25 版本下方曾保留冲突的旧版“integral to or required”措辞，9·29 页面已删去；此前 9·03 通知截图保留作历史对照。',
     },
     en: {
       state: 'CPT processed only when required for every student',
       detail:
-        'The OISS page updated September 25 requires training for every student in the program to graduate and bars additional CPT after required experiential learning is complete. Eligible students submit an employer-school cooperative agreement through the OISS portal; an academic approver certifies the program-wide requirement, and OISS issues a CPT-authorized I-20 after approval. Older “integral to or required” wording remains lower on the same page and does not establish that elective internships reopened. The September 3 notice screenshot is retained as history.',
+        'The OISS page updated September 29 requires training for every student in the program to graduate and bars further CPT after required experiential learning is complete. Eligible students submit an employer-school cooperative agreement through the OISS portal; an academic approver certifies the program-wide requirement before OISS issues a CPT I-20. The September 29 page removed conflicting older “integral to or required” wording that remained on September 25. The September 3 screenshot is retained as history.',
     },
     screenshots: [
       {
@@ -472,7 +472,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'columbia-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Columbia University',
     href: 'https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training',
     tone: 'tighten',
@@ -497,7 +497,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'harvard-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Harvard University',
     href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
     tone: 'tighten',
@@ -515,7 +515,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-washington',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Washington',
     href: 'https://iss.washington.edu/follow-up-on-cpt-policy/',
     tone: 'pause',
@@ -534,7 +534,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-maryland-college-park',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Maryland, College Park',
     href: 'https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt',
     tone: 'pause',
@@ -553,7 +553,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'trine-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Trine University',
     href: 'https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx',
     tone: 'continue',
@@ -572,7 +572,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'mit',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'MIT',
     href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
     tone: 'pause',
@@ -593,19 +593,19 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ucsb',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UCSB',
     href: 'https://oiss.ucsb.edu/curricular-practical-training',
     tone: 'continue',
     zh: {
       state: '现行官网列出 CPT 申请及审批流程',
       detail:
-        '9·28 OISS 页面说明合格学生可通过 UCSBGlobal 申请，获批后领取带 CPT 授权的 I-20；此前 8 月暂停通知已不显示。页面没有注明何时撤销暂停，也没有宣布所有 CPT 类型无条件恢复。附图保留此前暂停公告，供历史对照。',
+        '10·01 OISS 页面说明符合条件者可通过 UCSBGlobal 申请，获批后领取带 CPT 授权的 I-20。页面将实践表述为“与学位相关且为项目组成部分”，不再采用先前“学位课程要求”的文字，但未注明修改日期，也未宣布所有 CPT 类型无条件恢复；此前 8 月暂停通知已不显示。附图保留旧公告供对照。',
     },
     en: {
       state: 'Current university page describes CPT applications and approvals',
       detail:
-        'The OISS page read September 28 directs eligible students to apply through UCSBGlobal and says approved students receive a CPT-authorized I-20. The earlier August pause notice is no longer displayed. The page does not date the removal or announce unrestricted resumption of every CPT category. Attached screenshots preserve the earlier pause for historical comparison.',
+        'The OISS page read October 1 directs eligible students to apply through UCSBGlobal and says approved students receive a CPT-authorized I-20. It now calls training related to and integral to the degree rather than a degree-course requirement, without dating that wording change or announcing unrestricted eligibility. The August pause notice is no longer displayed; screenshots preserve the earlier notice as history.',
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_ucsb_1.jpeg', width: 1080, height: 1677 },
@@ -614,7 +614,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'new-york-university-tandon-mathematics',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'New York University (Tandon Mathematics)',
     href: 'https://math.nyu.edu/dynamic/sites/tandon/internships/',
     tone: 'pause',
@@ -633,7 +633,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-southern-california',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Southern California',
     href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/',
     tone: 'tighten',
@@ -651,7 +651,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-alabama',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Alabama',
     href: 'https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/',
     tone: 'tighten',
@@ -669,19 +669,19 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-irvine',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UC Irvine',
     href: 'https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/',
     tone: 'tighten',
     zh: {
       state: '只批准学位必需或论文必需的 CPT，并须有合作协议',
       detail:
-        '9·28 复查的国际中心页面为常设政策说明：按当前 SEVP 指引，选修课、可选实习或可选工作不能获批 CPT；获批须同时满足学位必需，以及雇主与学校之间有合作协议。页面列出设有实习或实地研究学位要求的项目，并新增硕士论文／博士论文必需 CPT：仅限已进入候选阶段（Advanced to Candidacy）的论文型硕士或博士生，且实践为完成论文所必需、无法以其他方法或数据收集方式合理替代。此前页面上的 8·17 Course Credit CPT 暂停通知和 9·14 置顶通知已不再显示；页面未标注更新日期，也未说明已有授权如何处理。附图为此前暂停 Course Credit CPT 的邮件截图，保留供对照。',
+        '10·01 复查的国际中心页面为常设政策说明：按当前 SEVP 指引，选修课、可选实习或可选工作不能获批 CPT；获批须同时满足学位必需，以及雇主与学校之间有合作协议。页面列出设有实习或实地研究学位要求的项目，并新增硕士论文／博士论文必需 CPT：仅限已进入候选阶段（Advanced to Candidacy）的论文型硕士或博士生，且实践为完成论文所必需、无法以其他方法或数据收集方式合理替代。此前页面上的 8·17 Course Credit CPT 暂停通知和 9·14 置顶通知已不再显示；页面未标注更新日期，也未说明已有授权如何处理。附图为此前暂停 Course Credit CPT 的邮件截图，保留供对照。',
     },
     en: {
       state: 'Only degree-required or thesis/dissertation-required CPT, with a cooperative agreement',
       detail:
-        'The International Center page rechecked September 28 is a standing policy page: under current SEVP guidance, CPT cannot be approved for elective courses, optional internships or optional employment, and approval requires both a degree requirement and a cooperative agreement between the employer and the campus. The page lists programs with an internship or field-study degree requirement and adds Master’s Thesis/Doctoral Dissertation Requirement CPT, limited to thesis-track master’s or doctoral students who have Advanced to Candidacy, when the training is required to complete the thesis or dissertation and cannot reasonably be replaced by another method or data-collection process. The earlier August 17 Course Credit CPT pause notice and the September 14 top notice no longer appear; the page shows no update date and does not address existing authorizations. The attached screenshot shows the earlier Course Credit CPT pause email, kept for comparison.',
+        'The International Center page rechecked October 1 is a standing policy page: under current SEVP guidance, CPT cannot be approved for elective courses, optional internships or optional employment, and approval requires both a degree requirement and a cooperative agreement between the employer and the campus. The page lists programs with an internship or field-study degree requirement and adds Master’s Thesis/Doctoral Dissertation Requirement CPT, limited to thesis-track master’s or doctoral students who have Advanced to Candidacy, when the training is required to complete the thesis or dissertation and cannot reasonably be replaced by another method or data-collection process. The earlier August 17 Course Credit CPT pause notice and the September 14 top notice no longer appear; the page shows no update date and does not address existing authorizations. The attached screenshot shows the earlier Course Credit CPT pause email, kept for comparison.',
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_uci.jpeg', width: 1080, height: 1731 },
@@ -689,7 +689,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-utah',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Utah',
     href: 'https://www.isss.utah.edu/news/posts/2026/cpt-broadcast-message-update.php',
     tone: 'pause',
@@ -708,7 +708,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-delaware',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Delaware',
     href: 'https://www.udel.edu/academics/global/isss/announcements/',
     tone: 'pause',
@@ -726,25 +726,25 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-san-diego',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UC San Diego',
     href: 'https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html',
-    tone: 'pause',
+    tone: 'tighten',
     zh: {
-      state: '暂停全部 F-1 CPT 请求的提交与处理',
+      state: '现行官网列出合格项目的 CPT 申请流程',
       detail:
-        'ISEO 专页仍暂停 iServices 上的全部 CPT 请求。9·02 说明会第 12 页预计 9 月中旬重开，并要求院系证明实习为必需。该时间只是计划，尚无具体日期。',
+        'ISEO 现行页面不再显示此前 iServices 全部请求暂停通知，并列出获校内核实的 CPT 项目与申请步骤：实践须为该项目所有学生毕业所必需，学生须有相关职位、课程或合作教育安排，由院系和 ISEO 审核，取得注明 CPT 的 I-20 后才能开始工作。已列项目包括本科生物工程、电影艺术、环境系统、全球健康、城市规划及生物工程硕士；未列项目可请院系提交资格审查。页面还说明研究生夏季合作教育路径。官网未注明何时恢复提交或这些项目何时获准，不能推断所有项目都恢复。',
     },
     en: {
-      state: 'All F-1 CPT request submission and processing is paused',
+      state: 'Current site lists a CPT application process for qualifying programs',
       detail:
-        'The ISEO page still pauses all CPT requests in iServices. Page 12 of the September 2 presentation plans reopening in mid-September and requires department confirmation that the internship is required. No exact reopening date is specified.',
+        'ISEO no longer displays its prior pause of all iServices CPT requests and now lists verified programs and application steps. Training must be required for every student in the program; eligible students need a related job and a course or cooperative education arrangement, then department and ISEO review and a CPT-authorized I-20 before work. Listed programs include undergraduate Bioengineering, Cinematic Arts, Environmental Systems, Global Health, Urban Studies and the Bioengineering MEng. Departments may seek review for unlisted programs; a graduate summer cooperative education route is also described. The site does not date reopening or approval of these programs, so this is not unrestricted resumption.',
     },
     screenshots: [],
   },
   {
     id: 'university-of-maryland-baltimore-county',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Maryland, Baltimore County',
     href: 'https://isss.umbc.edu/updates/',
     tone: 'tighten',
@@ -763,7 +763,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'george-washington-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'George Washington University',
     href: 'https://internationalservices.gwu.edu/updated-guidance-curricular-practical-training-cpt',
     tone: 'pause',
@@ -781,7 +781,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-colorado-boulder',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Colorado Boulder',
     href: 'https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs',
     tone: 'tighten',
@@ -799,7 +799,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-wisconsin-milwaukee',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Wisconsin-Milwaukee',
     href: 'https://uwm.edu/cie/services/students/employment/curricular-practical-training/',
     tone: 'tighten',
@@ -818,7 +818,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-oregon',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Oregon',
     href: 'https://isss.uoregon.edu/curricular-practical-training-cpt',
     tone: 'tighten',
@@ -837,7 +837,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-kansas',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Kansas',
     href: 'https://iss.ku.edu/f-1-cpt-curricular-practical-training',
     tone: 'pause',
@@ -855,7 +855,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'george-mason-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'George Mason University',
     href: 'https://oips.gmu.edu/current-immigration-information/',
     tone: 'pause',
@@ -874,7 +874,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ucla',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UCLA',
     href: 'https://internationalcenter.ucla.edu/September8message',
     tone: 'pause',
@@ -895,7 +895,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-pennsylvania',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'University of Pennsylvania (UPenn)',
     href: 'https://global.upenn.edu/isss/cpt/',
     tone: 'tighten',
@@ -914,7 +914,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'northeastern-university-coe-masters',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Northeastern University (COE Master’s)',
     href: 'https://coe.northeastern.edu/academics-experiential-learning/co-op-experiential-learning/co-op/graduate-co-op/co-op-faqs/',
     tone: 'tighten',
@@ -933,7 +933,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'georgetown-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Georgetown University',
     href: 'https://internationalservices.georgetown.edu/immigration-updates/',
     tone: 'tighten',
@@ -952,7 +952,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'james-madison-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'James Madison University',
     href: 'https://www.jmu.edu/global/isss/announcements.shtml',
     tone: 'pause',
@@ -971,7 +971,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'boston-college',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Boston College',
     href: 'https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html',
     tone: 'pause',
@@ -997,31 +997,31 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '新申请和待审 CPT 仅限符合毕业要求的实践',
       detail:
-        'OIS 页首新通知称，只批准毕业必需且符合 SEVP 备忘录的实习／实践。此类请求继续处理。页面下方仍有旧的选修课程口径，不能据此认定选修 CPT 已恢复。公告没有说明已有的授权如何处理。',
+        'OIS 页首新通知称，只批准毕业必需且符合 SEVP 备忘录的实习／实践。此类请求继续处理。9·28 全文核查时页面下方仍有旧的选修课程口径，不能据此认定选修 CPT 已恢复。10·01 校方原页直连被拒，仅检索到近期索引摘要，未能完整复核后续页面变化；已有授权如何处理也未核实。',
     },
     en: {
       state: 'New and pending CPT requests limited to degree-required training',
       detail:
-        'The new OIS notice permits internships/practicums required for degree completion and consistent with the SEVP memos; qualifying requests continue to be processed. Older elective-course language remains lower on the page and does not establish reopening. Existing authorization treatment is unspecified.',
+        'The new OIS notice permits internships/practicums required for degree completion and consistent with the SEVP memos; qualifying requests continue to be processed. The current search-indexed university excerpt confirms the required-program standard, but direct access to the full page was blocked October 1; the last full-page review remains September 28. Existing authorization treatment and any later page changes could not be fully checked.',
     },
     screenshots: [],
   },
   {
     id: 'washington-state-university',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Washington State University',
     href: 'https://ip.wsu.edu/august-7th-2026-special-immigration-advisory/',
     tone: 'tighten',
     zh: {
       state: '计划自 2027 春季限制学年内全职 CPT，保留必需实习例外',
       detail:
-        '8·07 校方公告称，自 2027 年春季起，学年内不再批准全职 CPT，课程明确要求实习的项目除外（例如 Hospitality Business Management、Clinical Psychology）。该通知早于 8 月 SEVP 备忘录，不代表当前全面停批，也没有说明是否取消暑期或兼职 CPT。公告注明内容可能不适用于所有校区。9·28 已直接读取公告原文；9·11 的后续移民通告未涉及 CPT，未见 WSU 针对 SEVP 备忘录的新 CPT 通知。',
+        '8·07 校方公告称，自 2027 年春季起，学年内不再批准全职 CPT，课程明确要求实习的项目除外（例如 Hospitality Business Management、Clinical Psychology）。该通知早于 8 月 SEVP 备忘录，不代表当前全面停批，也没有说明是否取消暑期或兼职 CPT。公告注明内容可能不适用于所有校区。10·01 已直接读取公告原文；9·11 的后续移民通告未涉及 CPT，未见 WSU 针对 SEVP 备忘录的新 CPT 通知。',
     },
     en: {
       state:
         'Plans to restrict full-time academic-year CPT from Spring 2027, with required-internship exceptions',
       detail:
-        'The August 7 university notice says full-time CPT during the academic year will no longer be approved from Spring 2027, except in programs with an internship explicitly required by the curriculum (for example, Hospitality Business Management and Clinical Psychology). It predates the August SEVP memoranda and does not establish a current blanket pause or cancel summer/part-time CPT. The notice says it may not apply at every campus. The original notice was reread directly on September 28; the later September 11 advisory does not address CPT, and no WSU CPT notice responding to the SEVP memoranda was found.',
+        'The August 7 university notice says full-time CPT during the academic year will no longer be approved from Spring 2027, except in programs with an internship explicitly required by the curriculum (for example, Hospitality Business Management and Clinical Psychology). It predates the August SEVP memoranda and does not establish a current blanket pause or cancel summer/part-time CPT. The notice says it may not apply at every campus. The original notice was reread directly on October 1; the later September 11 advisory does not address CPT, and no WSU CPT notice responding to the SEVP memoranda was found.',
     },
     screenshots: [],
   },
@@ -1030,17 +1030,17 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
 export const communitySchools: CommunitySchoolRecord[] = [
   {
     id: 'unc-chapel-hill',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'UNC–Chapel Hill',
     zh: {
       state: 'ISSS 邮件截图：除严格毕业要求外暂停',
-      detail: '9·28 重读保存的邮件截图；仅能确认当时邮件内容，未核实校方公开公告或此后是否调整。',
+      detail: '10·01 重读保存的邮件截图；仅能确认当时邮件内容，未核实校方公开公告或此后是否调整。',
     },
     en: {
       state:
         'An ISSS email screenshot says CPT is paused except where it is a strict graduation requirement.',
       detail:
-        'The saved email screenshot was reread September 28. It supports the message at that time; no public university notice or later status was verified.',
+        'The saved email screenshot was reread October 1. It supports the message at that time; no public university notice or later status was verified.',
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_unc.jpeg', width: 1080, height: 1875 },
@@ -1048,17 +1048,17 @@ export const communitySchools: CommunitySchoolRecord[] = [
   },
   {
     id: 'caltech',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Caltech',
     zh: {
       state: 'ISP 通知截图：暂停全部新 CPT，当前参与者不受影响',
-      detail: '9·28 重读保存的通知截图；仅能确认当时通知，未核实校方公开公告或此后是否调整。',
+      detail: '10·01 重读保存的通知截图；仅能确认当时通知，未核实校方公开公告或此后是否调整。',
     },
     en: {
       state:
         'An ISP notice screenshot says all new CPT is paused; current participants are unaffected.',
       detail:
-        'The saved notice screenshot was reread September 28. It supports the notice at that time; no public university notice or later status was verified.',
+        'The saved notice screenshot was reread October 1. It supports the notice at that time; no public university notice or later status was verified.',
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_caltech.jpeg', width: 1080, height: 1413 },
@@ -1066,18 +1066,18 @@ export const communitySchools: CommunitySchoolRecord[] = [
   },
   {
     id: 'purdue-ece',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Purdue ECE',
     zh: {
       state:
         'ECE 邮件截图称本学期不批非必需的实习／co-op CPT；论文研究请另问 ISS；仅限 ECE 口径',
-      detail: '9·28 重读保存的 ECE 邮件截图；仅能确认该院系当时口径，未核实校方公开公告或此后是否调整，不能外推普渡全校。',
+      detail: '10·01 重读保存的 ECE 邮件截图；仅能确认该院系当时口径，未核实校方公开公告或此后是否调整，不能外推普渡全校。',
     },
     en: {
       state:
         'A department email screenshot says non-required internship/co-op CPT will not be approved this semester; students should separately consult ISS about work needed for thesis research. This statement covers ECE only.',
       detail:
-        'The saved ECE email screenshot was reread September 28. It supports that department’s message at the time; no public university notice or later status was verified, and it cannot be generalized to Purdue University.',
+        'The saved ECE email screenshot was reread October 1. It supports that department’s message at the time; no public university notice or later status was verified, and it cannot be generalized to Purdue University.',
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 },
@@ -1085,18 +1085,18 @@ export const communitySchools: CommunitySchoolRecord[] = [
   },
   {
     id: 'goldey-beacom-college',
-    checkedOn: '2026-09-28',
+    checkedOn: '2026-10-01',
     school: 'Goldey-Beacom College',
     zh: {
       state:
         '学校邮件截图称暂停新的 CPT 审核与批准；尚未加入 SEVIS 的申请暂不获批',
-      detail: '9·28 重读保存的学校邮件截图；仅能确认当时邮件内容，未核实校方公开公告或此后是否调整。',
+      detail: '10·01 重读保存的学校邮件截图；仅能确认当时邮件内容，未核实校方公开公告或此后是否调整。',
     },
     en: {
       state:
         'A school email screenshot says new CPT review and approval are paused; requests not already added in SEVIS will not be approved for now.',
       detail:
-        'The saved email screenshot was reread September 28. It supports the message at that time; no public university notice or later status was verified.',
+        'The saved email screenshot was reread October 1. It supports the message at that time; no public university notice or later status was verified.',
     },
     screenshots: [
       {

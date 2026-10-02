@@ -50,6 +50,14 @@ export const briefingEntries: BriefingEntry[] = [
     en: 'In-person status conference at noon, Courtroom 1, Boston. This is a court proceeding, not a new effective date.',
   },
   {
+    id: 'duration-government-appeal',
+    date: '2026-09-30',
+    policyId: 'duration-status',
+    timing: 'recent',
+    zh: 'DHS/ICE 等提出上诉，第一巡回法院案号 26-2112；上诉本身不解除全国暂缓令，现行 D/S 继续适用。',
+    en: 'DHS/ICE and others appealed; First Circuit case 26-2112 was assigned. Filing alone does not lift the nationwide stay, and the current D/S framework continues.',
+  },
+  {
     id: 'h1b-fee-comments-closed',
     date: '2026-09-24',
     policyId: 'h1b-fee',

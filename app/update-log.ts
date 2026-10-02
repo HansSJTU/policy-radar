@@ -23,6 +23,38 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    date: '2026-10-01',
+    changes: [
+      {
+        id: 'duration-government-appeal-september-30',
+        category: 'D/S 诉讼',
+        title: 'D/S 案政府上诉，暂缓令仍按原命令执行',
+        summary: '9·30 地区法院案卷第 53—55 项显示政府提出上诉、记录移送，并获第一巡回法院案号 26-2112。未核实有上诉法院中止暂缓令的命令；上诉本身不使 9·14 全国暂缓失效。',
+        before: '诉讼进展止于 9·14 全国暂缓及 10·02 状态会议排期。',
+        after: '加入 9·30 上诉及案号，保留全国暂缓状态，并披露上诉案卷未独立读取。',
+        sources: [{ label: '法院案卷公开镜像 · 第 53—55 项', href: 'https://www.courtlistener.com/docket/74661796/feed/' }],
+      },
+      {
+        id: 'ucsd-cpt-current-application-process',
+        category: 'CPT 学校',
+        title: 'UC San Diego 现行官网改列合格项目申请流程',
+        summary: 'ISEO 页面不再显示此前“全部 CPT 请求暂停”通知，列出经审核项目和 iServices 申请、院系／ISEO 审批流程；未注明恢复日期，也不代表全校所有项目开放。',
+        before: '学校条目仍标为暂停全部 F-1 CPT 请求。',
+        after: '改为记录符合条件项目可申请及其程序，未列项目仍需院系申请核实。',
+        sources: [{ label: 'UC San Diego ISEO · F-1 CPT', href: 'https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html' }],
+      },
+      {
+        id: 'northwestern-cpt-september-29-cleanup',
+        category: 'CPT 学校',
+        title: 'Northwestern 9·29 页面删去冲突的旧版 CPT 口径',
+        summary: 'OISS 现行页面仍要求实践为项目所有学生毕业所必需，且不再保留 9·25 页面下方“integral to or required”的旧措辞；选修实习并未因此开放。',
+        before: '条目提醒同页下方仍有旧版措辞。',
+        after: '更新为 9·29 页面统一使用全员必需标准，保留历史通知截图。',
+        sources: [{ label: 'Northwestern OISS · Curricular Practical Training', href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/' }],
+      },
+    ],
+  },
+  {
     date: '2026-09-28',
     changes: [
       {
@@ -1086,6 +1118,38 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    date: '2026-10-01',
+    changes: [
+      {
+        id: 'duration-government-appeal-september-30',
+        category: 'D/S litigation',
+        title: 'Government appeals D/S case; nationwide stay remains operative',
+        summary: 'September 30 district docket entries 53–55 show the government appeal, record transfer and First Circuit case 26-2112. No appellate order lifting the stay was verified; filing an appeal alone does not undo the September 14 nationwide relief.',
+        before: 'The litigation timeline ended with the September 14 stay and October 2 conference schedule.',
+        after: 'Adds the appeal and case number while retaining the stay status and disclosing the appellate-docket gap.',
+        sources: [{ label: 'Public court docket mirror · entries 53–55', href: 'https://www.courtlistener.com/docket/74661796/feed/' }],
+      },
+      {
+        id: 'ucsd-cpt-current-application-process',
+        category: 'CPT schools',
+        title: 'UC San Diego now lists applications for qualifying CPT programs',
+        summary: 'The ISEO page no longer shows its earlier pause of all CPT requests and lists verified programs plus iServices, department and ISEO review. It does not date the change or authorize every program.',
+        before: 'The school entry still said all F-1 CPT requests were paused.',
+        after: 'Records the current limited application route and review for unlisted programs.',
+        sources: [{ label: 'UC San Diego ISEO · F-1 CPT', href: 'https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html' }],
+      },
+      {
+        id: 'northwestern-cpt-september-29-cleanup',
+        category: 'CPT schools',
+        title: 'Northwestern removes conflicting older CPT wording on September 29',
+        summary: 'The OISS page still requires training for every student to graduate, but no longer retains the September 25 page’s older “integral to or required” wording. It does not reopen elective internships.',
+        before: 'The entry warned that older wording remained lower on the same page.',
+        after: 'Reflects the September 29 page’s consistent program-wide standard while retaining historical screenshots.',
+        sources: [{ label: 'Northwestern OISS · Curricular Practical Training', href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/' }],
+      },
+    ],
+  },
   {
     date: '2026-09-28',
     changes: [
