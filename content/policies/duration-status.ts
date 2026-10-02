@@ -5,7 +5,7 @@ export const durationStatus: PolicyContent = {
   path: 'F-1',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-09-28',
+  checkedOn: '2026-10-01',
   related: ['cpt-guidance', 'opt-fee', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -73,8 +73,8 @@ export const durationStatus: PolicyContent = {
     },
     {
       href: 'https://www.courtlistener.com/docket/74661796/feed/',
-      zh: '法院案卷更新（含第 51、52 项）',
-      en: 'Court docket updates (including entries 51 and 52)',
+      zh: '法院案卷更新（含第 51—55 项）',
+      en: 'Court docket updates (including entries 51–55)',
     },
     {
       href: 'https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf#page=70',
@@ -139,18 +139,18 @@ export const durationStatus: PolicyContent = {
     effectLabel: '尚未生效 · 法院全国暂缓',
     agency: 'DHS / ICE',
     documentId: '最终规则 2026-14439',
-    tldr: '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则：规则不会在原定的 9 月 15 日生效，DHS 也不得继续实施。这项规则原本要把 F/J 的停留改成通常不超过四年的固定期限，并增加延期和学业流动限制；这些要求现在都不执行。',
+    tldr: '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则。它原拟把 F/J 停留改成通常最长四年的固定期限，并增加延期和学业流动限制；原定 9 月 15 日的生效日已推迟，这些要求目前都不执行。政府 9 月 30 日提出上诉，但上诉本身不解除暂缓令，现行 D/S 继续适用。',
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则。规则不会在原定的 9 月 15 日生效，DHS 也不得继续实施。规则原本要改成通常不超过四年的固定停留期限，并加严延期和学业流动；这些要求现在都暂停执行。',
+      '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则。原定 9 月 15 日的生效日已推迟，固定停留期限、延期及学业流动新要求均不执行。政府 9 月 30 日已提出上诉；上诉本身不解除暂缓令。',
     audience:
       '受最终规则影响的 F/J/I 身份持有人、他们的家属、学校和雇主。救济范围不限原告成员学校。',
     caveat:
       '法院暂缓的是整项最终规则，但不是永久撤销，也不会自动撤销 8 月那份独立的 CPT 行政指引。',
     reviewNote:
-      '9·28 读取公开案卷镜像，最新可见仍为 9·14 第 52 项、10·02 状态会议通知；镜像可能滞后，法院官方日程未单独核实。复查 GovInfo 两院 CRA 决议文本，参议院 S.J.Res.213 已列入议程，未核实后续表决或成法；列入议程不撤销规则。',
+      '10·01 读取公开案卷镜像：9·30 第 53—55 项显示政府提出上诉、记录移送并获第一巡回法院案号 26-2112。未独立读取上诉法院案卷或核实改变全国暂缓令的后续命令；镜像可能滞后。10·02 状态会议仍见于第 52 项，法院官方日程未单独核实。GovInfo 两院 CRA 文本已复查，未核实后续表决或成法。',
     background:
-      '麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令或案件实体审理结束，没有设到期日；原定 9·15 生效的安排已经作废。\n第 50 号意见第 46—48 页写明，这项救济覆盖全国，不只限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。法院还没有永久撤销规则，也没有作出有利于原告的简易判决；相关请求被无偏见驳回，可以再次提出。\n第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。9·28 读取的公开案卷镜像仍止于第 52 项，未见上诉记录；镜像可能滞后。\n国会方面，Durbin 等参议员 9·14 提出 CRA 联合否决决议 S.J.Res.213，拟撤销这项最终规则；Jayapal 牵头的众议院配套案为 H.J.Res.215。9·17 参议院司法委员会依 5 U.S.C. 802(c) 经请愿被解除审议，S.J.Res.213 列入参议院一般议程（第 668 号）。这只是程序进展，不是表决或通过；决议须经两院通过并由总统签署（或推翻否决）才会生效，也不是法院裁定。',
+      '麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令或案件实体审理结束，没有设到期日；原定 9·15 生效的安排已经作废。\n第 50 号意见第 46—48 页写明，这项救济覆盖全国，不只限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。法院还没有永久撤销规则，也没有作出有利于原告的简易判决；相关请求被无偏见驳回，可以再次提出。\n第 52 项另定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。公开案卷镜像的 9·30 第 53 项显示 DHS/ICE 等就第 50 项法院意见提出上诉；第 54 项记录移送，第 55 项记载第一巡回法院案号 26-2112。提出上诉本身不会解除第 51 项全国暂缓令；如上诉法院另行下令，须按新命令核对。\n国会方面，Durbin 等参议员 9·14 提出 CRA 联合否决决议 S.J.Res.213，拟撤销这项最终规则；Jayapal 牵头的众议院配套案为 H.J.Res.215。9·17 参议院司法委员会依 5 U.S.C. 802(c) 经请愿被解除审议，S.J.Res.213 列入参议院一般议程（第 668 号）。这只是程序进展，不是表决或通过；决议须经两院通过并由总统签署（或推翻否决）才会生效，也不是法院裁定。',
     teaser: '全国暂缓已生效；规则能不能恢复，要看后续命令。',
     headline: 'D/S 新规实施已被全国暂停，现行制度继续。',
     keyPoint: {
@@ -188,7 +188,7 @@ export const durationStatus: PolicyContent = {
       },
     ],
     outlook:
-      '接下来要看法院是否改动暂缓令、政府是否上诉，以及 10 月 2 日状态会议怎么安排。状态会议不是新生效日，初步救济也不等于最终胜诉。',
+      '接下来要看上诉法院或地区法院是否改动暂缓令，以及 10 月 2 日状态会议怎么安排。状态会议不是新生效日，初步救济也不等于最终胜诉。',
     scenarios: [
       {
         name: '暂缓继续',
@@ -254,6 +254,10 @@ export const durationStatus: PolicyContent = {
         date: '2026-09-17',
         text: '参议院司法委员会经请愿被解除审议，S.J.Res.213 列入参议院一般议程（第 668 号）；这不是表决或通过。',
       },
+      {
+        date: '2026-09-30',
+        text: 'DHS/ICE 等提出上诉；地区法院案卷第 53—55 项显示记录移送及第一巡回法院案号 26-2112。上诉本身不解除全国暂缓令。',
+      },
     ],
     next: [
       {
@@ -262,7 +266,7 @@ export const durationStatus: PolicyContent = {
       },
       {
         date: '日期未定',
-        text: '等待后续法院命令或实体裁判；目前没有新的规则生效日期。',
+        text: '等待上诉或地区法院后续命令及实体裁判；目前没有新的规则生效日期。',
       },
     ],
     process: {
@@ -270,7 +274,7 @@ export const durationStatus: PolicyContent = {
         '法院在 9·14 依据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直到另行命令或实体审理结束。原 9·15 生效安排已经改变。',
       currentSummary: '全国暂缓已签发，生效日已推迟',
       waitingFor:
-        '10·02 中午 12 点状态会议；关注后续法院命令及上诉，不是新生效日。',
+        '政府已上诉；关注上诉或地区法院后续命令及 10·02 状态会议，后者不是新生效日。',
     },
   },
   en: {
@@ -280,18 +284,18 @@ export const durationStatus: PolicyContent = {
     effectLabel: 'Not in effect · Nationwide court stay',
     agency: 'DHS / ICE',
     documentId: 'Final Rule 2026-14439',
-    tldr: 'On September 14 the court postponed the DHS rule ending D/S nationwide and barred further implementation, so the rule will not take effect on September 15 as scheduled. It would replace D/S for F and J status with fixed periods generally capped at four years and add extension and academic-mobility restrictions; none of those requirements apply while the stay lasts.',
+    tldr: 'On September 14 the court stayed the DHS rule ending D/S nationwide. It would replace D/S for F and J status with fixed admission periods generally capped at four years and add extension and academic-mobility restrictions; its September 15 effective date was postponed and those requirements remain inoperative. The government appealed on September 30, but filing alone does not lift the stay.',
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      'On September 14 the court postponed the DHS rule ending D/S nationwide and barred further implementation. It will not take effect on September 15 as scheduled. The rule would replace D/S for F and J status with fixed periods generally capped at four years and add extension and academic-mobility restrictions; those requirements are stayed.',
+      'On September 14 the court postponed the DHS rule ending D/S nationwide, including its September 15 effective date. Its fixed admission periods, extension filings and academic-mobility restrictions are stayed. The government appealed on September 30; the appeal itself does not lift the stay.',
     audience:
       'F/J/I holders and related dependents, schools and employers covered by the rule; relief is not limited to plaintiff-member schools.',
     caveat:
       'This nationwide stay covers the entire final rule, not permanent vacatur. It does not automatically rescind separate CPT guidance.',
     reviewNote:
-      'The public docket mirror was read September 28; the latest visible entry remains September 14 entry 52 scheduling the October 2 conference. The mirror may lag and the court calendar was not independently confirmed. GovInfo texts for both CRA resolutions were rechecked; S.J.Res.213 remains on the Senate calendar, with no later vote or enactment verified. Calendar placement does not repeal the rule.',
+      'The public docket mirror read October 1 shows September 30 entries 53–55: the government appealed, the record was transmitted, and First Circuit case 26-2112 was assigned. The appellate docket and any later order altering the nationwide stay were not independently retrieved; the mirror may lag. Entry 52 still schedules the October 2 conference, but the official court calendar was not separately confirmed. GovInfo CRA texts were rechecked; no later vote or enactment was verified.',
     background:
-      'At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. The September 15 effective date is postponed.\nOpinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal.\nDocket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston. That is not a new effective date. The public docket mirror read on September 28 still ended at entry 52, with no visible notice of appeal; the mirror may lag.\nIn Congress, Senator Durbin and colleagues introduced CRA joint resolution S.J.Res.213 on September 14 to disapprove this final rule; the House companion led by Representative Jayapal is H.J.Res.215. On September 17 the Senate Judiciary Committee was discharged by petition under 5 U.S.C. 802(c), and S.J.Res.213 was placed on the Senate calendar under General Orders (Calendar No. 668). This is a procedural step, not a vote or passage; the resolution would take effect only if both chambers pass it and the President signs it or a veto is overridden, and it is not a court ruling.',
+      'At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. The September 15 effective date is postponed.\nOpinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal.\nDocket entry 52 schedules an in-person status conference for October 2 at noon in Courtroom 1, Boston, not a new effective date. September 30 entry 53 records an appeal by DHS/ICE and others from opinion 50; entry 54 records transmittal of the record, and entry 55 assigns First Circuit case number 26-2112. An appeal filing alone does not lift the nationwide relief in entry 51; any later appellate order must be assessed on its own terms.\nIn Congress, Senator Durbin and colleagues introduced CRA joint resolution S.J.Res.213 on September 14 to disapprove this final rule; the House companion led by Representative Jayapal is H.J.Res.215. On September 17 the Senate Judiciary Committee was discharged by petition under 5 U.S.C. 802(c), and S.J.Res.213 was placed on the Senate calendar under General Orders (Calendar No. 668). This is a procedural step, not a vote or passage; the resolution would take effect only if both chambers pass it and the President signs it or a veto is overridden, and it is not a court ruling.',
     teaser:
       'Nationwide relief is in place; any resumption depends on later orders.',
     headline:
@@ -334,7 +338,7 @@ export const durationStatus: PolicyContent = {
       },
     ],
     outlook:
-      'Watch for changes to the stay, any government appeal, and the October 2 status conference. The conference is not an effective date, and preliminary relief is not a final merits victory.',
+      'Watch for any trial or appellate order changing the stay and the October 2 status conference. The conference is not an effective date, and preliminary relief is not a final merits victory.',
     scenarios: [
       {
         name: 'Stay remains',
@@ -406,6 +410,10 @@ export const durationStatus: PolicyContent = {
         date: '2026-09-17',
         text: 'The Senate Judiciary Committee was discharged by petition, and S.J.Res.213 was placed on the Senate calendar under General Orders (Calendar No. 668); this is not a vote or passage.',
       },
+      {
+        date: '2026-09-30',
+        text: 'DHS/ICE and others filed an appeal; district docket entries 53–55 show the record transfer and First Circuit case 26-2112. Filing alone does not lift the nationwide stay.',
+      },
     ],
     next: [
       {
@@ -414,7 +422,7 @@ export const durationStatus: PolicyContent = {
       },
       {
         date: 'Date unknown',
-        text: 'Await further court orders or a merits decision; no new effective date is set.',
+        text: 'Await trial or appellate orders and a merits decision; no new effective date is set.',
       },
     ],
     process: {
@@ -422,7 +430,7 @@ export const durationStatus: PolicyContent = {
         'On September 14, the court postponed the entire final rule nationwide under APA § 705 and barred DHS/ICE from implementation until further order or resolution on the merits. The September 15 effective date is postponed.',
       currentSummary: 'Nationwide stay issued; effective date postponed',
       waitingFor:
-        'October 2 status conference at noon; monitor later court orders and appeals. This is not an effective date.',
+        'The government has appealed; monitor trial and appellate orders and the October 2 status conference. The conference is not an effective date.',
     },
   },
 };

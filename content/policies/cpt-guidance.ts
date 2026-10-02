@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: '2026-09-28',
+  checkedOn: '2026-10-01',
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -51,7 +51,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '9·28 重读 ICE 两份 SEVP 备忘录、52 条校方网页记录及 4 条社区截图。Northwestern 9·25 页面重列全员必需条件与申请步骤；Oregon 当前页面补充 DMA 结业项目和学分口径，但未注明修订日期。UCSB 现行官网仍未公布此前暂停撤销日期。学校未公开通知及各校暂停撤销日期无法通过公开页面核实；社区截图仍非校方公开确认。',
+      '10·01 重读 ICE 两份 SEVP 备忘录及 4 条社区截图，并检查 52 条校方网页记录。UC San Diego 现行页面已列出符合条件者的申请流程及经核实项目，不再显示先前的全部请求暂停通知，但未注明恢复日期；Northwestern 9·29 页面已去除先前冲突的旧措辞。Johns Hopkins 官网本次直连被拒，仅见昨日索引摘要，未完整复核，该校仍保留上次完整核对日期。学校未公开通知及各校恢复日期无法逐一核实；社区截图不是现行校方公开确认。',
     background:
       '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -172,7 +172,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'Both ICE/SEVP broadcasts, all 52 public university pages and four community screenshots were reread September 28. Northwestern’s September 25 page now lays out the program-wide requirement and application steps; Oregon’s current page adds DMA culminating projects and revises its credit guidance without dating the revision. UCSB still gives no date when its earlier pause was removed. Unpublished school notices and pause-removal dates remain unverified on public pages; community screenshots do not establish public university confirmation.',
+      'Both ICE/SEVP broadcasts and four community screenshots were reread October 1, and all 52 public school-page records were checked. UC San Diego’s current page now lists an application process and verified programs rather than the earlier blanket request pause, but does not date the change; Northwestern’s September 29 page removed conflicting older wording. Johns Hopkins blocked direct access; only a search excerpt indexed yesterday was available, so its prior full-review date remains. Unpublished notices and resumption dates remain unverified, and screenshots are not current public school confirmation.',
     background:
       'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
     teaser:
