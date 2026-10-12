@@ -44,7 +44,7 @@ test('detail selection does not fall back to a different policy or language', ()
   const english = getPolicy('h4-ead', 'en');
   assert.equal(english.id, 'h4-ead');
   assert.doesNotMatch(JSON.stringify(english), /[㐀-鿿]/u);
-  assert.equal(getPolicy('opt-fee', 'zh').title, 'OPT 可能增收 10 万美元');
+  assert.equal(getPolicy('opt-fee', 'zh').title, 'OPT 拟收费：首次 7 万美元、后续 3 万美元');
 });
 
 test('all existing policy IDs resolve with complete analysis and valid related links', () => {
@@ -220,7 +220,12 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
       assert.equal(policy.effectState, expected);
     }
   }
-  assert.match(getPolicy('opt-fee', 'zh').effectLabel, /金额未确认/);
+  const opt = getPolicy('opt-fee', 'zh');
+  assert.match(opt.effectLabel, /尚未生效/);
+  assert.match(opt.summary, /70,000.*30,000/);
+  assert.match(opt.summary, /学校.*缴费/);
+  assert.match(opt.scope[0].text, /成本转给.*学生.*雇主/);
+  assert.ok(opt.next.some(({ date }) => date === '2026-11-09'));
   assert.match(getPolicy('grace-period', 'en').effectLabel, /Current rule unchanged/);
 });
 
@@ -265,7 +270,9 @@ test('D/S relief is consistent across details, homepage and share copy', async (
   for (const language of ['zh', 'en']) {
     const policy = getPolicy('duration-status', language);
     assert.equal(policy.effectState, 'not-in-effect');
-    assert.equal(policy.next[0].date, '2026-10-02');
+    assert.equal(policy.next.some(({ date }) => date === '2026-10-02'), false);
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-10-02'));
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-10-09'));
     assert.ok(policy.sources.some(source => source.href.endsWith('.51.0.pdf')));
     const text = buildItemShareContent(getPolicyShareItem('duration-status', language), language).text;
     const expression = language === 'zh' ? /全国暂缓/ : /Nationwide court stay/;

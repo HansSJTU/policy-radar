@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -13,62 +13,94 @@ export const cptGuidance: PolicyContent = {
     lastCompletedStage: 1,
     activeStage: 2,
     nextStage: 3,
+    litigation: [
+      {
+        "date": "2026-10-05",
+        "zh": "起诉并申请暂缓",
+        "en": "Complaint and relief requested",
+        "afterStage": 2,
+        "progress": 65,
+        "status": "filed",
+        "align": "left",
+        "lane": "base"
+      }
+    ],
   },
   sources: [
     {
-      href: 'https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf',
-      zh: 'SEVP 8·12 Broadcast',
-      en: 'SEVP August 12 Broadcast',
+      "href": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf",
+      "zh": "SEVP 8·12 Broadcast",
+      "en": "SEVP August 12 Broadcast"
     },
     {
-      href: 'https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf',
-      zh: 'SEVP 8·24 Broadcast',
-      en: 'SEVP August 24 Broadcast',
+      "href": "https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf",
+      "zh": "SEVP 8·24 Broadcast",
+      "en": "SEVP August 24 Broadcast"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/524965',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.uscardforum.com/t/topic/524965",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
     },
     {
-      href: 'https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements',
-      zh: 'Bryn Mawr · 9·15 校方通知',
-      en: 'Bryn Mawr · September 15 notice',
+      "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements",
+      "zh": "Bryn Mawr · 9·15 校方通知",
+      "en": "Bryn Mawr · September 15 notice"
     },
     {
-      href: 'https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html',
-      zh: 'CMU OIE · 8·27 CPT 公告',
-      en: 'CMU OIE · August 27 CPT notice',
+      "href": "https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html",
+      "zh": "CMU OIE · 8·27 CPT 公告",
+      "en": "CMU OIE · August 27 CPT notice"
     },
     {
-      href: 'https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html',
-      zh: 'CMU OIE · 现行 CPT 要求与申请步骤',
-      en: 'CMU OIE · Current CPT requirements and application steps',
+      "href": "https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html",
+      "zh": "CMU OIE · 现行 CPT 要求与申请步骤",
+      "en": "CMU OIE · Current CPT requirements and application steps"
     },
     {
-      href: 'https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt',
-      zh: 'CMU CSD · 博士 CPT 页面（与 OIE 口径冲突）',
-      en: 'CMU CSD · Doctoral CPT page (wording conflicts with OIE)',
+      "href": "https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt",
+      "zh": "CMU CSD · 博士 CPT 页面（与 OIE 口径冲突）",
+      "en": "CMU CSD · Doctoral CPT page (wording conflicts with OIE)"
     },
+    {
+      "href": "https://www.nafsa.org/sites/default/files/media/document/CPT%20Complaint%20AAU%20v.%20DHS%20.pdf",
+      "zh": "CPT 10·05 诉状 · AAU v. DHS（当事方提交）",
+      "en": "CPT October 5 complaint · AAU v. DHS (party filing)"
+    },
+    {
+      "href": "https://www.aau.edu/uploads/files/general/Motion-for-Preliminary-Injunction-and-Stay-of-Agency-Action-CPT-Case.pdf",
+      "zh": "10·05 初步禁令及行政行动暂缓申请（不是法院命令）",
+      "en": "October 5 preliminary-injunction/stay motion (not a court order)"
+    },
+    {
+      "href": "https://www.aau.edu/uploads/files/general/Memo-in-Support-of-PI-and-Stay-AAU-v-DHS.pdf",
+      "zh": "10·06 支持暂缓的法律意见（当事方提交）",
+      "en": "October 6 memorandum supporting relief (party filing)"
+    },
+    {
+      "href": "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html",
+      "zh": "CMU OIE · 10·08 CPT 诉讼通知",
+      "en": "CMU OIE · October 8 CPT litigation notice"
+    }
   ],
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
     short: '8·12 / 8·24 CPT 指引',
-    status: '学校已按新口径执行',
+    status: "学校按新口径执行 · 已起诉并申请暂缓",
     effectLabel: '指引已执行 · 按学校与项目核对',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: 'ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT。只注册一门选修实习课通常不够，实习雇主还必须和学校签有 cooperative agreement（合作协议）。',
+    tldr: "ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT。只注册一门选修实习课通常不够，实习雇主还必须和学校签有 cooperative agreement（合作协议）。 四个高教协会已起诉并请求暂缓这两份指引；提起诉讼本身不恢复选修 CPT。",
     tags: ['CPT', 'Day-1 CPT', '实习'],
     summary:
-      'SEVP 要求 CPT 实习是该专业所有学生毕业的必修环节，而且雇主和学校之间要有合作协议。只注册一门选修实习课，通常拿不到 CPT 授权。',
+      "SEVP 要求 CPT 实习是该专业所有学生毕业的必修环节，而且雇主和学校之间要有合作协议。只注册一门选修实习课，通常拿不到 CPT 授权。 AAU、Presidents’ Alliance、NAFSA 与 AICUM 已在麻省联邦法院起诉并申请暂缓；尚未核实改变指引执行的法院命令。",
     audience: '需要 CPT 实习授权的学生、学校与 DSO。',
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      '10·01 重读 ICE 两份 SEVP 备忘录及 4 条社区截图，并检查此前清单的 52 条校方网页记录；同日补核 CMU OIE 公告、现行 CPT 页及 CSD 博士资源页，清单现有 53 条校方网页记录。CMU 选修实习需改申请 pre-completion OPT，论文相关校外工作仍在审查，CSD 页面与 OIE 口径冲突。UC San Diego 现行页面已列出符合条件者的申请流程及经核实项目，不再显示先前的全部请求暂停通知，但未注明恢复日期；Northwestern 9·29 页面已去除先前冲突的旧措辞。Johns Hopkins 官网本次直连被拒，仅见昨日索引摘要，未完整复核，该校仍保留上次完整核对日期。学校未公开通知及各校恢复日期无法逐一核实；社区截图不是现行校方公开确认。',
+      "10·11 重读两份 ICE 广播、诉状、暂缓申请与支持意见，核对 57 条校方网页记录及 4 条保存截图（新增 Yale、Oklahoma、UVA、UIC）。Johns Hopkins 全文已通过公开网页读取，旧访问缺口已解除。最新 CPT 法院案卷及暂缓裁定仍未完整核实；CMU 博士页口径冲突、NYU 数学系当前审批状态和 UPenn 同页冲突另在学校条目披露。未公开通知和个案恢复进度无法逐一确认；截图不是现行校方公开确认。",
     background:
-      '8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。',
+      "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。尚未完整读取最新 CPT 案卷或核实已签发暂缓令，学校是否恢复须看后续命令及各校通知。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
     headline: '实习能否获批，越来越取决于学位本身的课程结构。',
     analysis:
@@ -140,56 +172,61 @@ export const cptGuidance: PolicyContent = {
     ],
     milestones: [
       {
-        date: '2026-08-12',
-        text: 'SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。',
+        "date": "2026-08-12",
+        "text": "SEVP Broadcast 2608-01：已提出学位不可缺少、全员必需标准，并强调 DSO 与学校责任。"
       },
       {
-        date: '2026-08-12 后',
-        text: '多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。',
+        "date": "2026-08-12 后",
+        "text": "多所高校暂停 Course Credit / optional CPT，或改为只批学位强制项目。"
       },
       {
-        date: '2026-08-24',
-        text: 'Broadcast 2608-02：进一步解释选修课、全员适用与合作协议要求。',
+        "date": "2026-08-24",
+        "text": "Broadcast 2608-02：进一步解释选修课、全员适用与合作协议要求。"
       },
+      {
+        "date": "2026-10-05",
+        "text": "四个高教协会提起 AAU v. DHS 并申请初步禁令及行政行动暂缓；不是法院已经暂缓。"
+      },
+      {
+        "date": "2026-10-06",
+        "text": "原告提交支持暂缓的法律意见，争议仍需法院处理。"
+      }
     ],
     next: [
       {
-        date: '现在',
-        text: '每所学校按自身课程设置和法律意见执行；没有统一恢复日期。',
+        "date": "日期未定",
+        "text": "跟踪初步禁令／行政行动暂缓请求的排期与裁定；未确认听证或恢复日期。"
       },
       {
-        date: '未来数周',
-        text: '学校可能继续更新政策；SEVP 也可能补充问答或采取执法行动。',
-        estimate: true,
-      },
+        "date": "日期未定",
+        "text": "各校按课程及后续官方文件核对资格；诉讼本身不替代 DSO 批准。"
+      }
     ],
     process: {
-      detail:
-        'SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。',
-      currentSummary: '学校已按新口径执行',
-      waitingFor:
-        '学校更新执行通知，以及 SEVP 是否补充解释；没有统一恢复日期。',
+      "detail": "SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。",
+      "currentSummary": "学校继续核对新口径，四协会已请求法院暂缓",
+      "waitingFor": "法院对暂缓请求的安排与裁定，以及学校明确的资格和恢复通知；未核实已签发暂缓令。"
     },
   },
   en: {
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
-    status: 'Schools are applying the new standard',
+    status: "Schools apply new guidance · Lawsuit and stay request filed",
     effectLabel: 'Guidance in use · Check school and program',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: 'ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school.',
+    tldr: "ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school. Four higher-education associations sued and requested a stay; filing suit alone does not restore elective CPT.",
     tags: ['CPT', 'Day-1 CPT', 'Internships'],
     summary:
-      'SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with a cooperative agreement between the employer and school. Enrollment in an elective internship course alone generally does not qualify.',
+      "SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with a cooperative agreement between the employer and school. Enrollment in an elective internship course alone generally does not qualify. AAU, Presidents’ Alliance, NAFSA and AICUM sued in federal court in Massachusetts and requested relief; no court order changing guidance implementation was verified.",
     audience: 'students seeking CPT authorization, their schools and DSOs.',
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      'Both ICE/SEVP broadcasts and four community screenshots were reread October 1, and the previously listed 52 public school-page records were checked. CMU’s OIE notice, current CPT page and CSD doctoral page were separately reviewed the same day, bringing the list to 53 public-page records. CMU directs elective internships to pre-completion OPT; thesis/dissertation-related external work remains under review, and CSD wording conflicts with OIE. UC San Diego’s current page now lists an application process and verified programs rather than the earlier blanket request pause, but does not date the change; Northwestern’s September 29 page removed conflicting older wording. Johns Hopkins blocked direct access; only a search excerpt indexed yesterday was available, so its prior full-review date remains. Unpublished notices and resumption dates remain unverified, and screenshots are not current public school confirmation.',
+      "Both ICE broadcasts, the complaint, relief motion and memorandum were reread October 11, with 57 public school-page records and four saved screenshots reviewed (Yale, Oklahoma, UVA and UIC added). Johns Hopkins full text was retrieved through its public page, resolving the earlier access gap. The latest CPT docket and any operative stay remain incompletely verified. CMU doctoral wording, NYU Mathematics’ current approval status and conflicting Penn wording are disclosed on those records. Unpublished notices and individual reopening remain unverified; screenshots are not current public confirmation.",
     background:
-      'The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.',
+      "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. The latest CPT docket and any operative stay were not fully verified; reopening depends on later orders and school notices.",
     teaser:
       'The question shifts from whether a student can take an internship course to whether the internship is required by the degree.',
     headline:
@@ -271,35 +308,40 @@ export const cptGuidance: PolicyContent = {
     ],
     milestones: [
       {
-        date: '2026-08-12',
-        text: 'SEVP Broadcast 2608-01 already required training indispensable to the degree and required for every student, and emphasized DSO and school duties.',
+        "date": "2026-08-12",
+        "text": "SEVP Broadcast 2608-01 already required training indispensable to the degree and required for every student, and emphasized DSO and school duties."
       },
       {
-        date: 'After 2026-08-12',
-        text: 'Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement.',
+        "date": "After 2026-08-12",
+        "text": "Several universities paused course-credit or optional CPT, or limited approval to programs with a mandatory degree requirement."
       },
       {
-        date: '2026-08-24',
-        text: 'Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements.',
+        "date": "2026-08-24",
+        "text": "Broadcast 2608-02 further explained elective courses, the all-student standard, and cooperative agreements."
       },
+      {
+        "date": "2026-10-05",
+        "text": "Four associations filed AAU v. DHS and requested a preliminary injunction and stay of agency action; this is not a court-granted stay."
+      },
+      {
+        "date": "2026-10-06",
+        "text": "Plaintiffs filed a memorandum supporting relief; the dispute remains for the court to address."
+      }
     ],
     next: [
       {
-        date: 'Now',
-        text: 'Each school is applying the guidance to its own curriculum and legal advice; there is no single reopening date.',
+        "date": "Date unknown",
+        "text": "Track scheduling and rulings on preliminary-injunction/stay requests; no hearing or reopening date is confirmed."
       },
       {
-        date: 'Coming weeks',
-        text: 'Schools may continue updating their policies, and SEVP may issue additional guidance or take enforcement action.',
-        estimate: true,
-      },
+        "date": "Date unknown",
+        "text": "Schools assess curricula and later official records; litigation alone does not replace DSO authorization."
+      }
     ],
     process: {
-      detail:
-        'SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.',
-      currentSummary: 'Schools are applying the new standard',
-      waitingFor:
-        'School implementation updates and any further SEVP clarification; there is no common resumption date.',
+      "detail": "SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.",
+      "currentSummary": "Schools assess the new standard; four associations request court relief",
+      "waitingFor": "Court scheduling and rulings on relief, plus explicit school eligibility/reopening notices; no operative stay was verified."
     },
   },
 };

@@ -5,274 +5,295 @@ export const optFee: PolicyContent = {
   path: 'OPT',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['h1b-fee', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',
-    lastCompletedStage: 1,
-    activeStage: null,
-    nextStage: 2,
+    lastCompletedStage: 2,
+    activeStage: 3,
+    nextStage: 4,
   },
   sources: [
     {
-      href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1506461',
-      zh: 'OIRA 9·11 结案记录',
-      en: 'OIRA September 11 conclusion',
+      "href": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees",
+      "zh": "Federal Register 10·08 OPT 收费 NPRM",
+      "en": "Federal Register October 8 OPT fee NPRM"
     },
     {
-      href: 'https://ois.uic.edu/news-stories/dhs-advances-proposed-rulemaking-on-opt-fees/',
-      zh: 'UIC 状态说明',
-      en: 'UIC status update',
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-10-08/pdf/2026-20660.pdf",
+      "zh": "OPT 收费 NPRM 官方 PDF",
+      "en": "Official OPT fee NPRM PDF"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/531864',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.regulations.gov/commenton/ICEB-2026-0100-0001",
+      "zh": "ICEB-2026-0100 评论入口",
+      "en": "ICEB-2026-0100 comment portal"
     },
+    {
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1506461",
+      "zh": "OIRA 9·11 结案记录",
+      "en": "OIRA September 11 conclusion"
+    },
+    {
+      "href": "https://iss.washington.edu/dhs-proposes-new-opt-fees/",
+      "zh": "华盛顿大学 10·09 提案说明",
+      "en": "University of Washington October 9 proposal update"
+    },
+    {
+      "href": "https://ois.uic.edu/news-stories/dhs-advances-proposed-rulemaking-on-opt-fees/",
+      "zh": "UIC 8·26 历史状态说明",
+      "en": "UIC August 26 historical status update"
+    },
+    {
+      "href": "https://www.uscardforum.com/t/topic/531864",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
+    }
   ],
   zh: {
-    title: 'OPT 可能增收 10 万美元',
-    short: 'OPT 10 万美元费用',
-    status: 'OIRA 审查已完成 · 尚未生效',
-    effectLabel: '尚未生效 · 金额未确认',
+    title: "OPT 拟收费：首次 7 万美元、后续 3 万美元",
+    short: "OPT 首次 7 万美元收费",
+    status: "正式提案 · 评论期至 11 月 9 日",
+    effectLabel: "尚未生效 · 学校拟先缴费",
     agency: 'DHS / ICE',
     documentId: '1653-AB01',
-    tldr: 'ICE 打算新增 OPT 收费，媒体报道的金额是 10 万美元。收多少、谁交、哪些申请要交、能不能减免，官方都还没公布，不能认定由学生承担。',
+    tldr: "ICE 提议由学校在 DSO 推荐 OPT 前缴费：首次 70,000 美元，已缴首次费用后的每次后续 OPT 30,000 美元，包括 STEM 延期。学校可把经济成本转给学生或雇主；提案尚未生效。",
     tags: ['OPT', 'H-1B 转换'],
     summary:
-      'OIRA 已在 9 月 11 日带修改完成 OPT 收费提案的审查，但提案正文还没公开。10 万美元只是媒体报道的数字：金额、谁交、哪些申请要交、有没有减免，官方都没公布，所以不能认定由学生、雇主或学校承担。这项收费尚未生效，现行 OPT 申请费也没变。',
-    audience: '计划申请 OPT 或 STEM OPT 延期的 F-1 学生及其雇主。',
+      "ICE 在 10 月 8 日公布正式提案，拟要求学校在 DSO 录入 OPT 推荐前为每名学生缴费：首次 70,000 美元，之后每次后续 OPT 30,000 美元。范围包括毕业前、毕业后和 STEM OPT 延期。学校是向政府缴费的一方，但正文允许学校向学生、全体学生或雇主转移经济成本。公众评论截止 11 月 9 日；这项新费用尚未生效。",
+    audience: "准备申请毕业前、毕业后或 STEM OPT 的 F-1 学生、SEVP 认证学校及相关雇主。",
     caveat:
-      '谁交钱、哪些申请要交、有没有减免，官方都还没公布。10 万美元只是媒体报道，不能认定由学生支付。',
+      "学校拟负责向政府先缴费，但不必自行吸收全部成本；具体资助与转嫁安排取决于学校。",
     reviewNote:
-      '10·01 读取 OIRA 9·11 结案记录，并按 RIN 检索联邦公报及论坛可访问回复；未核实公开 NPRM。官方金额、缴费方和适用范围仍待正式正文确认；论坛回复不是官方条款。',
+      "10·11 重读 10·08 正式 NPRM 与官方 PDF，确认金额、学校先缴费责任、允许成本转嫁、过渡条款及两项评论期限；联邦公报官方 API 按 RIN 检索截至当天仅列此提案。Regulations.gov 动态案卷未完整读取；学校具体资助或转嫁办法、最终规则和实际生效日期尚未确认。",
     background:
-      'ICE 在 2026-08-20 把 Optional Practical Training Fees 送交 OIRA。9·11 的结案记录是 Consistent with Change，也就是带修改完成审查。这只是发布前的审查结束，既不是最终规则，也不代表收费生效。目前还没有公开的 NPRM，缴费责任要等正式条款才能确定。',
-    teaser: '这笔高额成本可能落在毕业后的第一份工作上，改变学生和雇主的选择。',
-    headline: '毕业后的第一份美国工作，可能先面对一笔高额入场成本。',
+      "ICE 在 2026-08-20 把 Optional Practical Training Fees 送交 OIRA，9·11 带修改完成审查。10·08 的 NPRM（2026-20660，91 FR 64566，ICEB-2026-0100）首次公布具体收费：70,000 美元首次费、30,000 美元后续费。此前媒体报道的单笔 100,000 美元不能继续当作本提案的首次收费。\n学校拟在 DSO 向 SEVIS 录入推荐前缴费；未缴费就不能推荐，USCIS 也不能据此批准工作许可。正文没有禁止学校向学生、全体学生或雇主转嫁经济成本。它覆盖各类 OPT，不包括 CPT；单纯换雇主不会触发新一笔后续费。\n拟议过渡界线是最终规则公布后的第 60 天，不是 NPRM 公布后的第 60 天。界线之后的第一次新 OPT 推荐拟收 70,000 美元，即使学生此前参加过 OPT；只有已缴首次费后的后续推荐才拟收 30,000 美元。现有 EAD 不会因为这份提案自动失效。\n学校可在相关 EAD 或延期尚未获批时申请退款，并先撤除 SEVIS 推荐；SEVP 拟逐案决定，获批后不退费，退款决定不可行政上诉。规则一般评论截止 11·09，信息收集评论截止 12·07；最终规则和实际生效日期尚未确认。",
+    teaser: "学校的 OPT 推荐拟先经过缴费环节，学生和雇主还要看学校怎样分配成本。",
+    headline: "第一份毕业工作，可能先遇到学校缴费与资助安排这一关。",
     analysis:
-      '如果这笔 10 万美元收费大范围落地，毕业后留美工作的账要重算。学生得先拿得出这笔钱。如果由雇主承担，雇主可能抬高应届生的招聘门槛。压力会前移到转 H-1B 之前。',
+      "提案把向政府缴费的责任放在学校，学校却可以把经济成本转给学生或雇主。影响会从 DSO 推荐前就开始：学校是否愿意资助、学生是否承担费用、雇主是否参与，都可能决定能否完成推荐。首次 7 万美元加一次后续 3 万美元会形成 10 万美元的两次费用总额，但这不等于每次申请都收 10 万美元。",
     impacts: [
       {
-        title: '对学生：先过资金关，再谈工作回报',
-        text: '如果由申请人在递交时支付，钱要在拿到工资之前先出。储蓄不多、背着教育贷款，或者起薪不高的学生，留美工作的账最难算。',
-        examples: [
-          '小林马上硕士毕业了，也拿到了全职 offer，打算申请 OPT 然后入职。但如果最终规定要求学生自己掏 10 万美元来办 OPT，那他在还没赚到第一笔工资之前，就得先凑出这笔钱。要是自己拿不出、家里也帮不上，就算工作已经定了，他也可能没法通过 OPT 去上班。目前这只是假设费用由学生付，具体谁出钱还没公布。',
-          '小周在犹豫要不要去美国读硕士，家里只准备了学费和生活费，指着毕业后能在美国工作把钱赚回来。但如果以后申请 OPT 还要额外再交 10 万美元，那毕业工作的计划就多了一笔没算进去的开销。这个影响可能现在就会让他重新考虑要不要接受 offer，而不只是等到毕业再说。',
-        ],
+        "title": "对学生：先看学校怎样资助或分配费用",
+        "text": "学校拟先缴首次 7 万美元。若学校把费用转给学生，学生会在 DSO 推荐前面对资金需求；若有资助，个人负担可能不同。",
+        "examples": [
+          "小林已拿到毕业后的全职 offer，但如果最终规则采用这套收费，学校必须先为他的 OPT 推荐缴 7 万美元。学校可以自行资助，也可能要求小林或雇主提供资金。能否完成推荐，取决于学校安排和资金来源；不能直接认定小林必须向政府支付。",
+          "小周正在选择美国硕士项目。如果最终规则落地，不同学校是否资助 OPT、如何向学生或雇主分配费用，可能影响毕业后的工作成本。提案没有确定各校将采取哪种办法。"
+        ]
       },
       {
-        title: '对雇主：应届生 offer 可能更难拿',
-        text: '如果由企业承担，公司要在员工证明自己之前先掏一笔预算。入门岗位和预算有限的小公司受影响更大，招聘可能更偏向能很快出成绩的人。',
-        examples: [
-          '一家小公司准备招刚毕业的小陈，连工资预算都批好了。但如果规定改成雇主来付这 10 万美元 OPT 费用，或者公司决定帮他出，那公司就得在工资以外再掏一笔钱。要是预算加不了，公司就可能撤回或推迟 offer——这不是小陈不行，而是招他变贵了。',
-        ],
+        "title": "对学校和雇主：推荐前需要安排资金",
+        "text": "学校拟成为向政府缴费的一方，DSO 推荐和 USCIS 工作许可将受缴费限制。雇主可能被要求资助，但提案没有统一规定雇主必须承担费用。",
+        "examples": [
+          "一家小公司已为新毕业生小陈批好工资预算。如果学校要求雇主资助首次 7 万美元 OPT 费用，公司就得评估额外预算，可能推迟 offer 或与学校协商。法律上的政府缴费方仍是学校，是否由公司最终负担取决于资助安排。"
+        ]
       },
       {
-        title: '对留美路径：压力前移到 OPT 这一站',
-        text: '很多学生先靠 OPT 工作，再争取转 H-1B。费用一高，这段过渡会更难走。雇主愿不愿意出钱、别的地区有没有机会，都会变得更关键。',
-      },
+        "title": "对后续 OPT：不能只按 STEM 延期算 3 万美元",
+        "text": "后续费覆盖多种新 OPT 推荐，包括 STEM 延期。若此前未为该学生缴过首次 7 万美元，最终规则界线后的第一次推荐拟先收 7 万美元；已有首次付款后才适用 3 万美元后续费。"
+      }
     ],
     outlook:
-      '我们的预判：下一轮争论会集中在“谁付、谁免、谁受影响”。最终条款决定这笔钱主要压在学生身上、雇主预算上，还是某几类申请人身上。',
+      "下一步看公众评论是否改变金额、学校缴费责任和过渡条款，也要看学校是否公布资助或转嫁安排。正式提案已经给出机制，最终规则仍可能修改。",
     scenarios: [
       {
-        name: '高额广泛收费',
-        headline: '常规 OPT 路径的可负担性大幅下降',
-        assumption: '10 万美元适用于大多数新申请，减免很少。',
-        effects:
-          '学生可能放弃自费留美求职，企业也会少招应届生。出得起钱的学生和扛得住成本的雇主会更有优势。',
-        signals:
-          '正式提案保留这个收费量级，范围很广，也没有实质减免或过渡安排。',
+        "name": "按现有提案落地",
+        "headline": "学校资助能力与成本分配影响 OPT 可用性",
+        "assumption": "最终规则保留首次 7 万美元、后续 3 万美元和学校先缴费机制。",
+        "effects": "学校需要决定是否资助及怎样筹款；经济成本可能由学校、学生或雇主承担，资源不同的学校和学生可能面对不同结果。",
+        "signals": "最终条文保留金额、推荐前付款要求，以及学校随后公布的资助办法。"
       },
       {
-        name: '缩小范围／减免',
-        headline: '同样是 F-1，毕业后的选择可能明显分化',
-        assumption: '高额收费只覆盖部分申请，或者配有豁免和过渡安排。',
-        effects:
-          '影响会集中在被覆盖的人身上。真正决定结果的是申请类别、豁免条件和时间界线，而不是笼统地问“留不留得下”。',
-        signals:
-          '文本里出现分档收费、特定豁免，或者给在读、已递交的人留过渡条款。',
+        "name": "金额或过渡安排调整",
+        "headline": "受影响群体与时间界线可能改变",
+        "assumption": "评论后最终条文降低金额、缩小范围，或调整旧 OPT 与新推荐的过渡安排。",
+        "effects": "学校和学生的负担会随具体条文变化；不能仅凭已持有 OPT 或计划延期就判断是否免首次费。",
+        "signals": "最终规则对收费档次、适用范围、已有 OPT 与首次已缴费条件的修改。"
       },
       {
-        name: '延后／未推进',
-        headline: '短期成本压力缓和，规划仍受政策悬念影响',
-        assumption: '规则制定拖长、提案被撤回，或者最终没有实施。',
-        effects:
-          '只要没有新的生效规则，申请人就不用付这笔钱。但一直悬着不决，仍会影响择校和雇主的招聘预算。',
-        signals:
-          'OIRA 撤回记录，或者后续公告显示方向变了；只是迟迟不公布，还不足以判断已经放弃。',
-      },
+        "name": "延后／未实施",
+        "headline": "现行申请流程继续，新收费仍是规划悬念",
+        "assumption": "规则制定延后、提案撤回，或没有新的生效规则。",
+        "effects": "提案本身不产生新缴费义务；现有 OPT 与 EAD 不因 NPRM 自动失效。学校与雇主仍可能提前评估预算。",
+        "signals": "正式撤回、修订或实施公告，以及最终规则和生效日期；仅未及时发布不足以证明放弃。"
+      }
     ],
     scope: [
       {
-        label: '缴费方',
-        text: '学生付，直接压现金流；雇主付，招聘的账要重算。',
+        "label": "谁缴、谁负担",
+        "text": "学校拟向政府先缴费；正文允许把经济成本转给学生、全体学生或雇主。"
       },
       {
-        label: '适用范围',
-        text: '管不管初次 OPT 和 STEM 延期；谁能豁免；已递交的人怎么办。',
+        "label": "哪些 OPT",
+        "text": "毕业前、毕业后和 STEM OPT 均在拟议范围；CPT 不在本提案范围；单纯换雇主不触发费用。"
       },
       {
-        label: '生效与过渡',
-        text: '递交时间线和过渡期，决定哪几届毕业生会被波及。',
-      },
+        "label": "过渡与首次费",
+        "text": "以最终规则公布后第 60 天的新 DSO 推荐为拟议界线；此前未缴首次费不能自动按 3 万美元后续费计算。"
+      }
     ],
     milestones: [
-      { date: '2026-08-20', text: 'RIN 1653-AB01 送交 OMB/OIRA 审查。' },
       {
-        date: '2026-08-26',
-        text: '高校提醒：$100k 来自媒体报道，不是已公布政府文本。',
+        "date": "2026-08-20",
+        "text": "RIN 1653-AB01 送交 OMB/OIRA 审查。"
       },
       {
-        date: '2026-09-11',
-        text: 'OIRA 带修改完成审查；不等于 NPRM 已发布或收费已生效。',
+        "date": "2026-08-26",
+        "text": "高校提醒：$100k 来自媒体报道，不是已公布政府文本。"
       },
+      {
+        "date": "2026-09-11",
+        "text": "OIRA 带修改完成审查；不等于 NPRM 已发布或收费已生效。"
+      },
+      {
+        "date": "2026-10-08",
+        "text": "正式 NPRM 公布学校先缴首次 70,000 美元、后续 30,000 美元；一般评论截止 11·09，信息收集评论截止 12·07。"
+      }
     ],
     next: [
       {
-        date: '下一步',
-        text: '等待 Federal Register 公开 NPRM，确认金额、缴费方、适用范围及评论期限。',
+        "date": "2026-11-09",
+        "text": "规则公众评论截止，线上评论须在当天美东时间 23:59 前提交。"
       },
       {
-        date: '日期未定',
-        text: 'NPRM 刊登、最终规则及生效时间均未确认。',
-        estimate: true,
+        "date": "2026-12-07",
+        "text": "信息收集（PRA）评论截止；与规则一般评论期限不同。"
       },
+      {
+        "date": "日期未定",
+        "text": "等待最终规则及实际生效安排；拟议收费界线为最终规则公布后的第 60 天。",
+        "estimate": true
+      }
     ],
     process: {
-      detail:
-        'OIRA 在 9 月 11 日带修改完成 OPT 收费提案的审查。目前没有公开的 NPRM，金额和缴费方未公布，尚未生效。',
-      currentSummary: '正文与金额尚未公开',
-      waitingFor: '等待 NPRM 正文及公众评论期；确认金额、缴费方和适用范围。',
+      "detail": "ICE 在 10 月 8 日公布 NPRM，拟由学校在 OPT 推荐前缴首次 7 万美元、后续 3 万美元。一般评论期至 11 月 9 日；最终规则与实际生效日期尚未确认。",
+      "currentSummary": "正式提案公开，公众评论进行中",
+      "waitingFor": "11 月 9 日一般评论截止、12 月 7 日信息收集评论截止，以及 DHS 对最终条文的决定。"
     },
   },
   en: {
-    title: 'OPT May Carry a $100,000 Fee',
-    short: '$100,000 OPT Fee',
-    status: 'OIRA review completed · Not in effect',
-    effectLabel: 'Not in effect · Amount unconfirmed',
+    title: "Proposed OPT Fees: $70,000 Initially, $30,000 Subsequently",
+    short: "Proposed $70,000 Initial OPT Fee",
+    status: "Proposed rule · Comments through November 9",
+    effectLabel: "Not in effect · Schools would pay first",
     agency: 'DHS / ICE',
     documentId: '1653-AB01',
-    tldr: 'ICE proposes a new OPT fee. Media reports suggest $100,000, but the official amount, payer, covered applications and exemptions remain unpublished; student payment cannot be assumed.',
+    tldr: "ICE proposes school payment before a DSO recommends OPT: $70,000 initially and $30,000 for each later OPT after the initial fee has been paid, including STEM extensions. Schools may pass the cost to students or employers. The proposal is not in effect.",
     tags: ['OPT', 'H-1B transition'],
     summary:
-      'OIRA completed its review of the OPT fee proposal, with changes, on September 11, but the proposal text is not yet public. The $100,000 figure comes from media reports: the official amount, who pays, which applications are covered and any exemptions are all unpublished, so payment by students, employers or schools cannot be assumed. The fee is not in effect, and the current OPT filing fee is unchanged.',
+      "ICE published an NPRM October 8 requiring schools to pay before a DSO enters an OPT recommendation: $70,000 initially and $30,000 for each subsequent OPT. It covers pre-completion, post-completion and STEM OPT extensions. Schools would remit the fee to the government, but the text permits passing the economic cost to students, all students or employers. General comments close November 9; the new fees are not in effect.",
     audience:
-      'F-1 students planning OPT or a STEM OPT extension and their employers.',
+      "F-1 students seeking pre-completion, post-completion or STEM OPT, SEVP-certified schools and relevant employers.",
     caveat:
-      'The payer, covered applications and exemptions are unpublished; $100,000 is media-reported and student payment cannot be assumed.',
+      "Schools would remit the fee first but need not absorb the whole economic cost; funding and pass-through arrangements would vary by school.",
     reviewNote:
-      'The September 11 OIRA conclusion and current Federal Register RIN search were reviewed October 1 along with accessible forum replies. No public NPRM was verified. The official amount, payer and scope await published text; forum replies are not official terms.',
+      "The October 8 NPRM and official PDF were reread October 11 to confirm fees, school prepayment, permitted cost pass-through, transition terms and both comment deadlines. The official Federal Register RIN API lists only this proposal through the check date. The live Regulations.gov docket was not fully retrieved; school funding arrangements, final text and an actual effective date remain unconfirmed.",
     background:
-      'ICE submitted Optional Practical Training Fees on August 20, 2026; the September 11 OIRA conclusion is Consistent with Change. Completed prepublication review is not a final rule or an effective fee. No public NPRM was located; payment responsibility awaits official provisions.',
+      "ICE submitted Optional Practical Training Fees to OIRA August 20, 2026; review concluded with changes September 11. The October 8 NPRM (2026-20660, 91 FR 64566, ICEB-2026-0100) publishes a $70,000 initial fee and $30,000 subsequent fee. The earlier media-reported single $100,000 amount no longer describes the proposed initial fee.\nSchools would pay before a DSO enters a recommendation in SEVIS. Without payment, the DSO could not recommend OPT and USCIS could not grant employment authorization. The text does not prohibit schools from passing the economic cost to F-1 students, all students or employers. It covers all OPT types and excludes CPT; an employer change alone would not trigger a subsequent fee.\nThe proposed transition boundary is 60 days after FINAL-rule publication, not NPRM publication. The first new OPT recommendation after that boundary would require $70,000 even if the student previously participated in OPT; the $30,000 subsequent fee applies after the initial fee has been paid. This proposal does not automatically invalidate existing EADs.\nSchools could seek a discretionary refund before the associated EAD or extension is granted, after removing the SEVIS recommendation. No refund would follow authorization, and refund decisions would have no administrative appeal. General comments close November 9 and information-collection comments December 7; a final rule and actual effective date remain unconfirmed.",
     teaser:
-      'A major cost at the first post-graduation job could change the choices students and employers make.',
+      "Schools would fund the OPT recommendation first; students and employers would also need to understand how each school allocates the cost.",
     headline:
-      'The first U.S. job after graduation could come with a steep entry cost.',
+      "The first post-graduation job could depend on the school’s OPT funding arrangements.",
     analysis:
-      'If a $100,000 fee is broadly implemented, it could significantly change the economics of working in the U.S. Students would need greater financial capacity, employers covering the fee could raise the bar for new-graduate hiring, and the pressure would arrive before the H-1B transition.',
+      "The school would remit payment, while the economic cost could be passed to students or employers. That could affect the process before a DSO recommendation: school funding, student resources and employer support may determine whether it can proceed. A $70,000 initial fee plus one $30,000 subsequent fee totals $100,000 across two recommendations; it is not a $100,000 fee for every application.",
     impacts: [
       {
-        title: 'For students: financing comes before returns',
-        text: 'If applicants must pay when filing, the expense would come before they earn income from the job. Students with limited savings, education debt, or lower expected starting salaries would face a greater challenge in making U.S. employment financially viable.',
-        examples: [
-          'Lin is finishing a master’s and has a full-time offer, with plans to start after obtaining OPT. If the final rule requires the student to pay $100,000 when applying, Lin would need that money before receiving a first paycheck. If neither Lin nor the family can afford it, the offer alone would not make starting work through OPT possible. This assumes the student pays; the payer has not been announced.',
-          'Zhou is deciding whether to accept a US master’s offer. The family has budgeted for tuition and living costs and hopes Zhou will work in the US afterward. If OPT later requires another $100,000 from the student, that work plan would carry a cost outside the original budget. The possible fee could affect the admission decision now, not only decisions after graduation.',
-        ],
+        "title": "For students: school funding and cost allocation matter",
+        "text": "Schools would first pay $70,000. A school passing the cost to the student could create a funding need before the DSO recommendation; school support could produce a different personal burden.",
+        "examples": [
+          "Lin has a full-time offer after graduation. If the final rule adopts this mechanism, the school must first pay $70,000 for the OPT recommendation. It could fund the payment itself or seek funds from Lin or the employer. Completing the recommendation would depend on the funding arrangement; direct government payment by Lin cannot be assumed.",
+          "Zhou is comparing US master’s programs. If the proposal becomes effective, school OPT support and allocation of costs to students or employers could affect the price of post-graduation work. The proposal does not establish which funding approach each school will choose."
+        ]
       },
       {
-        title: 'For employers: new-graduate offers may become harder to secure',
-        text: 'If employers pay, they would commit more money before an employee has demonstrated value. Entry-level roles and small companies with limited budgets may be more sensitive and may favor candidates who can produce returns sooner.',
-        examples: [
-          'A small company has budgeted a salary for new graduate Chen. If the final rule makes the employer responsible for the OPT fee, or the company chooses to cover it, the company would need another $100,000 beyond salary. Without a larger hiring budget, it might withdraw or delay the offer because of the added cost, not because Chen is unsuitable for the role.',
-        ],
+        "title": "For schools and employers: funding precedes the recommendation",
+        "text": "Schools would remit the payment, with DSO recommendations and USCIS authorization dependent on it. Employers could be asked to fund it, but the proposal does not uniformly require employers to bear the cost.",
+        "examples": [
+          "A small company has budgeted Chen’s salary. If the school requests employer support for the $70,000 initial OPT fee, the company would assess the added budget and might delay the offer or negotiate with the school. The school remains the government payer; whether the company bears the cost depends on the funding arrangement."
+        ]
       },
       {
-        title: 'For the U.S. pathway: pressure moves to the OPT stage',
-        text: 'For students who rely on OPT to begin working and later seek H-1B status, a high fee could make that bridge less accessible. Employer support for the fee and job options in other places may become more important.',
-      },
+        "title": "For later OPT: a STEM extension is not automatically $30,000",
+        "text": "Subsequent fees cover several types of new OPT recommendation, including STEM extensions. If the $70,000 initial fee has not previously been paid for the student, the first recommendation after the final-rule boundary would first require $70,000; the $30,000 subsequent fee applies after that initial payment."
+      }
     ],
     outlook:
-      'Our outlook: the next debate will center on who pays, who is exempt, and who is affected. Those provisions will determine whether the cost falls mainly on student finances, employer hiring budgets, or particular applicants.',
+      "Watch whether public comments change the fees, school-payment mechanism or transition provisions, and whether schools announce funding or pass-through policies. The NPRM now specifies the mechanism, but a final rule could revise it.",
     scenarios: [
       {
-        name: 'Broad high fee',
-        headline: 'The standard OPT path becomes far less affordable',
-        assumption:
-          'The $100,000 fee applies to most new applications, with limited relief.',
-        effects:
-          'Students may be less willing to fund a U.S. job search themselves, while employers may tighten new-graduate hiring. Applicants with financial resources and employers able to absorb the cost would have a relative advantage.',
-        signals:
-          'A formal proposal keeps the fee at this level, applies it broadly, and provides no meaningful waiver or transition protection.',
+        "name": "Current proposal implemented",
+        "headline": "School support and cost allocation affect OPT access",
+        "assumption": "A final rule retains the $70,000 initial fee, $30,000 subsequent fee and school prepayment mechanism.",
+        "effects": "Schools would decide whether to fund the fees and how to obtain funds. Schools, students or employers could bear the economic cost, producing different outcomes across institutions and students with different resources.",
+        "signals": "Final text retains the amounts and pre-recommendation payment requirement, followed by school funding policies."
       },
       {
-        name: 'Narrower scope or relief',
-        headline: 'Post-graduation options diverge sharply among F-1 students',
-        assumption:
-          'The high fee applies only to some applications or includes exemptions and transition measures.',
-        effects:
-          'The burden would concentrate on covered groups. Application category, exemption criteria, and timing boundaries would explain outcomes better than a single question of whether students can stay.',
-        signals:
-          'The text introduces tiered fees, specific exemptions, or transition terms for current students and pending applicants.',
+        "name": "Fees or transition terms revised",
+        "headline": "Coverage and timing boundaries could change",
+        "assumption": "Following comments, final text reduces amounts, narrows coverage or revises transition treatment of existing OPT and new recommendations.",
+        "effects": "The burden would depend on the final terms. Existing OPT participation or a planned extension alone cannot establish an exemption from the initial fee.",
+        "signals": "Changes to fee tiers, coverage, existing OPT treatment and the prior initial-payment condition."
       },
       {
-        name: 'Delayed or abandoned',
-        headline:
-          'Near-term cost pressure eases, but uncertainty still affects planning',
-        assumption:
-          'Later rulemaking takes longer, the rule is withdrawn, or the proposal never reaches final implementation.',
-        effects:
-          'Without a new effective rule, applicants would not yet bear this added cost. Continued uncertainty could still influence school choices and future hiring budgets.',
-        signals:
-          'An OIRA withdrawal record or later announcement changes the plan; publication delay alone is not enough to conclude that it has been abandoned.',
-      },
+        "name": "Delayed or not implemented",
+        "headline": "Current application rules continue while the proposed fees remain uncertain",
+        "assumption": "Rulemaking is delayed, withdrawn or produces no new effective rule.",
+        "effects": "The proposal alone creates no new payment obligation or automatic loss of existing OPT or EADs. Schools and employers might still assess future budgets.",
+        "signals": "Formal withdrawal, revisions or implementation announcements and a final rule with an effective date; publication delay alone does not prove abandonment."
+      }
     ],
     scope: [
       {
-        label: 'Who pays',
-        text: 'Student payment affects cash flow; employer payment changes the cost-benefit calculation for hiring.',
+        "label": "Remitter and economic cost",
+        "text": "Schools would pay the government first; the text permits passing the economic cost to students, all students or employers."
       },
       {
-        label: 'Covered applications',
-        text: 'Initial OPT, STEM extensions, exempt groups, and protection for existing cases.',
+        "label": "Covered OPT",
+        "text": "Pre-completion, post-completion and STEM OPT are covered; CPT is excluded. An employer change alone does not trigger the fee."
       },
       {
-        label: 'Effective date and transition',
-        text: 'Filing cutoffs and transition periods determine which graduating classes are affected.',
-      },
+        "label": "Transition and initial payment",
+        "text": "The proposed boundary follows final-rule publication by 60 days. Without prior initial-fee payment, a student does not automatically qualify for the $30,000 subsequent fee."
+      }
     ],
     milestones: [
       {
-        date: '2026-08-20',
-        text: 'RIN 1653-AB01 was submitted to OMB/OIRA for review.',
+        "date": "2026-08-20",
+        "text": "RIN 1653-AB01 was submitted to OMB/OIRA for review."
       },
       {
-        date: '2026-08-26',
-        text: 'Universities cautioned that the $100,000 figure came from media reporting, not a published government document.',
+        "date": "2026-08-26",
+        "text": "Universities cautioned that the $100,000 figure came from media reporting, not a published government document."
       },
       {
-        date: '2026-09-11',
-        text: 'OIRA completed review with changes; this does not mean an NPRM was published or a fee took effect.',
+        "date": "2026-09-11",
+        "text": "OIRA completed review with changes; this does not mean an NPRM was published or a fee took effect."
       },
+      {
+        "date": "2026-10-08",
+        "text": "The NPRM publishes school prepayment of $70,000 initially and $30,000 subsequently; general comments close November 9 and information-collection comments December 7."
+      }
     ],
     next: [
       {
-        date: 'Next step',
-        text: 'Await a published NPRM to confirm the amount, payer, coverage and comment deadline.',
+        "date": "2026-11-09",
+        "text": "General rule comments close; online comments must arrive by 11:59 p.m. Eastern Time."
       },
       {
-        date: 'Date unknown',
-        text: 'NPRM publication, a final rule and any effective date remain unconfirmed.',
-        estimate: true,
+        "date": "2026-12-07",
+        "text": "Information-collection (PRA) comments close, separately from the general rule comment deadline."
       },
+      {
+        "date": "Date unknown",
+        "text": "Await a final rule and actual implementation terms; the proposed fee boundary is 60 days after final-rule publication.",
+        "estimate": true
+      }
     ],
     process: {
-      detail:
-        'OIRA completed OPT fee proposal review with changes on September 11. No public NPRM was located; the amount and payer are unpublished and the fee is not in effect.',
-      currentSummary: 'Rule text and fee amount are not public',
-      waitingFor:
-        'Publication of an NPRM and comment period, specifying the amount, payer and coverage.',
+      "detail": "ICE published the October 8 NPRM proposing school payment of $70,000 initially and $30,000 subsequently before an OPT recommendation. General comments close November 9; a final rule and actual effective date remain unconfirmed.",
+      "currentSummary": "Published NPRM; public comments open",
+      "waitingFor": "November 9 general comments, December 7 information-collection comments, and DHS’s decision on final text."
     },
   },
+  commentUrl: "https://www.regulations.gov/commenton/ICEB-2026-0100-0001",
 };

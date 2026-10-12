@@ -23,6 +23,140 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-11",
+    "changes": [
+      {
+        "id": "opt-fee-october-8-nprm",
+        "category": "#01 OPT 收费",
+        "title": "正式 OPT 提案公布首次 7 万美元、后续 3 万美元及学校缴费责任",
+        "summary": "10·08 NPRM 公布具体金额、推荐前付款、成本可转嫁及过渡条件；一般评论截止 11·09，PRA 评论截止 12·07，尚未生效。",
+        "before": "仍以媒体单笔 100,000 美元报道为标题；状态停在 OIRA 结案，金额、缴费方与提案日期待公布。",
+        "after": "改为正式提案和评论中；首次 70,000 美元、已缴首次费后的后续 OPT 30,000 美元，学校先缴且可转嫁经济成本。",
+        "details": [
+          "适用于毕业前、毕业后及 STEM OPT；单纯换雇主不触发费用。",
+          "过渡界线拟为最终规则公布后第 60 天；此前参加过 OPT 但未缴首次费，不自动适用 30,000 美元。现有 EAD 不因 NPRM 自动失效。"
+        ],
+        "sources": [
+          {
+            "label": "Federal Register · 10·08 NPRM",
+            "href": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+          }
+        ]
+      },
+      {
+        "id": "cpt-associations-october-5-lawsuit",
+        "category": "#05 CPT 指引",
+        "title": "补入四个高教协会挑战 CPT 指引的诉讼与暂缓请求",
+        "summary": "10·05 提起 AAU v. DHS（1:26-cv-14520）并申请初步禁令／行政行动暂缓，10·06 提交支持意见；申请暂缓不等于法院已准许。",
+        "before": "只跟踪两份 SEVP 广播与学校执行，尚未收录新诉讼。",
+        "after": "详情、流程说明和 30 天简报加入诉讼及请求，明确与 D/S 暂缓案不同；最新案卷／暂缓裁定仍有核查缺口。",
+        "sources": [
+          {
+            "label": "10·05 诉状（当事方提交）",
+            "href": "https://www.nafsa.org/sites/default/files/media/document/CPT%20Complaint%20AAU%20v.%20DHS%20.pdf"
+          },
+          {
+            "label": "初步禁令及暂缓申请（不是法院命令）",
+            "href": "https://www.aau.edu/uploads/files/general/Motion-for-Preliminary-Injunction-and-Stay-of-Agency-Action-CPT-Case.pdf"
+          }
+        ]
+      },
+      {
+        "id": "duration-october-conference-and-procedure",
+        "category": "#03 D/S 诉讼",
+        "title": "10·02 状态会议已举行，政府提交后续程序请求",
+        "summary": "第 56 项确认会议举行，第 59 项政府意见请求暂停地区诉讼等待上诉，或采用备选排期；不是规则恢复令。",
+        "before": "把 10·02 状态会议列为未来事件，后续案卷止于 9·30 上诉。",
+        "after": "将会议记为历史，补入 10·09 书面提交；政府称已申请加速上诉，法院是否采纳及第 60 项正文仍未核实。",
+        "sources": [
+          {
+            "label": "10·09 政府意见 · 第 59 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.59.0.pdf"
+          },
+          {
+            "label": "法院案卷公开镜像 · 第 56、59—60 项",
+            "href": "https://clearinghouse.net/case/48393/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-september-30-order",
+        "category": "#02 H-1B 收费",
+        "title": "补入另项 100,000 美元收费政策的 9·30 法院禁令",
+        "summary": "Global Nurse Force 第 130 号命令撤销机构政策，并禁止按原公告及延长公告执行，直到完成 APA 通知评论及 RFA 分析。",
+        "before": "另项 100,000 美元背景仅列 6·08 撤销、7·24 拒绝暂缓及 9·18 延长公告。",
+        "after": "补入 9·30 命令、10·20 联合说明和 10·27 案件管理会议排期；这些不是 103,265 美元 NPRM 的裁判或生效日期。",
+        "details": [
+          "后续案卷和当前法院日历未完整读取；排期仅按 9·30 命令记载，不声称已再次确认。"
+        ],
+        "sources": [
+          {
+            "label": "GovInfo · Global Nurse Force 第 130 号命令",
+            "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-four-public-school-additions-october-11",
+        "category": "CPT 学校清单",
+        "title": "补入 Yale、Oklahoma、UVA、UIC 的校方网页证据",
+        "summary": "新增四条公开校方记录，区分毕业必需 CPT、部分或全部新请求暂停及诉讼跟踪，不改变既有社区截图的证据级别。",
+        "before": "57 条记录：53 条校方网页、4 条社区截图；56 所不同学校。",
+        "after": "61 条记录：57 条校方网页、4 条社区截图；60 所不同学校。",
+        "details": [
+          "Yale 10·07 确认仅处理全员毕业必需实践；Oklahoma 10·08 页面仍暂停 8·24 起新请求。",
+          "UVA 继续处理学位必需实践，暂停非必需课程学分型 CPT；UIC 10·07 说明核对资格及跟踪诉讼，未宣布全校停批或全面恢复。"
+        ],
+        "sources": [
+          {
+            "label": "Yale OISS · 10·07",
+            "href": "https://oiss.yale.edu/news/cpt-update-sevp-broadcast-messages-and-pending-litigation"
+          },
+          {
+            "label": "Oklahoma ISS · 10·08 页面",
+            "href": "https://www.ou.edu/globalengagement/iss/curricular-practical-training"
+          },
+          {
+            "label": "UVA ISSP · CPT Update",
+            "href": "https://issp.virginia.edu/cpt-update"
+          },
+          {
+            "label": "UIC OIS · 10·07",
+            "href": "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/"
+          }
+        ]
+      },
+      {
+        "id": "kansas-degree-required-cpt-page",
+        "category": "CPT 学校",
+        "title": "Kansas 现行页面改为授权毕业必需 CPT",
+        "summary": "ISS 页首不再显示先前暂停所有请求的通知，现称可授权学位必需的实习／实践；没有注明调整日期。",
+        "before": "条目称暂停全部 CPT 请求。",
+        "after": "改为记录现行毕业必需实践授权口径及申请流程，不声称所有选修实习恢复。",
+        "sources": [
+          {
+            "label": "Kansas ISS · F-1 CPT",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "nyu-tandon-pause-notice-absent",
+        "category": "CPT 学校",
+        "title": "NYU Tandon 数学系页面不再显示旧暂停通知",
+        "summary": "现行页面列通用 CPT 申请步骤；这不足以证明暂停解除，当前审批和恢复日期仍需校方确认。",
+        "before": "条目称校方页面明确自 9·01 暂停 CPT 审批。",
+        "after": "改为披露旧通知不再显示及现行审批缺口，不外推 NYU 全校，也不声称已经恢复。",
+        "sources": [
+          {
+            "label": "NYU Tandon Mathematics · Internships",
+            "href": "https://math.nyu.edu/dynamic/sites/tandon/internships/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     date: '2026-10-01',
     changes: [
       {
@@ -1132,6 +1266,140 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-11",
+    "changes": [
+      {
+        "id": "opt-fee-october-8-nprm",
+        "category": "#01 OPT fees",
+        "title": "Published OPT proposal specifies $70,000 initial/$30,000 subsequent fees and school payment",
+        "summary": "The October 8 NPRM specifies pre-recommendation payment, permitted cost pass-through and transition terms. General comments close November 9, PRA comments December 7; the fee is not effective.",
+        "before": "Title used the reported single $100,000 amount; status stopped at OIRA conclusion with amount, payer and publication awaiting disclosure.",
+        "after": "Published proposal with comments open: $70,000 initially and $30,000 for later OPT after initial payment; schools prepay and may pass through economic costs.",
+        "details": [
+          "Covers pre-completion, post-completion and STEM OPT; an employer change alone does not trigger payment.",
+          "The proposed boundary is 60 days after final-rule publication. Prior OPT without initial-fee payment does not automatically qualify for $30,000. The NPRM does not automatically invalidate existing EADs."
+        ],
+        "sources": [
+          {
+            "label": "Federal Register · October 8 NPRM",
+            "href": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+          }
+        ]
+      },
+      {
+        "id": "cpt-associations-october-5-lawsuit",
+        "category": "#05 CPT guidance",
+        "title": "Add higher-education associations’ CPT lawsuit and relief requests",
+        "summary": "AAU v. DHS (1:26-cv-14520) was filed October 5 with preliminary-injunction/stay requests, followed by supporting argument October 6. Requested relief is not court-granted relief.",
+        "before": "Tracked two SEVP broadcasts and school practice without the new lawsuit.",
+        "after": "Details, process copy and briefing add the case and requests, distinguish D/S litigation, and disclose incomplete latest-docket/stay verification.",
+        "sources": [
+          {
+            "label": "October 5 complaint (party filing)",
+            "href": "https://www.nafsa.org/sites/default/files/media/document/CPT%20Complaint%20AAU%20v.%20DHS%20.pdf"
+          },
+          {
+            "label": "Preliminary-injunction/stay motion (not a court order)",
+            "href": "https://www.aau.edu/uploads/files/general/Motion-for-Preliminary-Injunction-and-Stay-of-Agency-Action-CPT-Case.pdf"
+          }
+        ]
+      },
+      {
+        "id": "duration-october-conference-and-procedure",
+        "category": "#03 D/S litigation",
+        "title": "October 2 conference occurred; government filed next-step requests",
+        "summary": "Entry 56 records the conference. The government’s entry 59 seeks a district-proceedings stay pending appeal or an alternative schedule, not restoration of the rule.",
+        "before": "October 2 conference remained a future event; later docket coverage ended at September 30 appeal.",
+        "after": "Records the held conference and October 9 submissions. The government reports expedited-appeal filing; court adoption and entry 60 text remain unverified.",
+        "sources": [
+          {
+            "label": "October 9 government brief · entry 59",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.59.0.pdf"
+          },
+          {
+            "label": "Public docket mirror · entries 56, 59–60",
+            "href": "https://clearinghouse.net/case/48393/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-september-30-order",
+        "category": "#02 H-1B fees",
+        "title": "Add September 30 injunction against the separate $100,000 agency policy",
+        "summary": "Global Nurse Force order 130 vacates agency policies and bars implementation under the original/extended proclamations until APA notice-and-comment and RFA analyses are completed.",
+        "before": "Separate $100,000 background ended with June 8 vacatur, July 24 stay denial and September 18 extension.",
+        "after": "Adds the September 30 order and its October 20 statement/October 27 conference dates, distinct from the $103,265 NPRM and its effective timing.",
+        "details": [
+          "Later dockets/current calendar were not fully read; scheduling is attributed to the September 30 order, not independently reconfirmed."
+        ],
+        "sources": [
+          {
+            "label": "GovInfo · Global Nurse Force order 130",
+            "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-four-public-school-additions-october-11",
+        "category": "CPT school list",
+        "title": "Add public CPT records for Yale, Oklahoma, UVA and UIC",
+        "summary": "Four official-page records distinguish required training, limited/all new-request pauses and litigation tracking without upgrading existing screenshot reports.",
+        "before": "57 evidence entries: 53 public university pages and 4 community reports; 56 distinct institutions.",
+        "after": "61 evidence entries: 57 public university pages and 4 community reports; 60 distinct institutions.",
+        "details": [
+          "Yale’s October 7 notice processes only program-wide required training; Oklahoma’s October 8 page retains the pause for requests since August 24.",
+          "UVA processes degree-required training but pauses optional course-credit CPT. UIC’s October 7 notice reviews eligibility and tracks litigation without announcing a blanket pause or unrestricted reopening."
+        ],
+        "sources": [
+          {
+            "label": "Yale OISS · October 7",
+            "href": "https://oiss.yale.edu/news/cpt-update-sevp-broadcast-messages-and-pending-litigation"
+          },
+          {
+            "label": "Oklahoma ISS · October 8 page",
+            "href": "https://www.ou.edu/globalengagement/iss/curricular-practical-training"
+          },
+          {
+            "label": "UVA ISSP · CPT Update",
+            "href": "https://issp.virginia.edu/cpt-update"
+          },
+          {
+            "label": "UIC OIS · October 7",
+            "href": "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/"
+          }
+        ]
+      },
+      {
+        "id": "kansas-degree-required-cpt-page",
+        "category": "CPT schools",
+        "title": "Kansas current page permits degree-required CPT",
+        "summary": "The ISS notice no longer pauses all requests and now permits degree-required internships/practica without dating the change.",
+        "before": "The entry said all CPT requests were paused.",
+        "after": "Records the current required-training authorization route and application process, without reopening all elective internships.",
+        "sources": [
+          {
+            "label": "Kansas ISS · F-1 CPT",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "nyu-tandon-pause-notice-absent",
+        "category": "CPT schools",
+        "title": "NYU Tandon Mathematics page no longer shows the old pause notice",
+        "summary": "Current generic application instructions do not establish lifting of the pause; approvals and a reopening date remain unverified.",
+        "before": "The entry said the university page expressly paused approvals from September 1.",
+        "after": "Discloses the absent notice and current-approval gap without claiming reopening or a university-wide NYU policy.",
+        "sources": [
+          {
+            "label": "NYU Tandon Mathematics · Internships",
+            "href": "https://math.nyu.edu/dynamic/sites/tandon/internships/"
+          }
+        ]
+      }
+    ]
+  },
   {
     date: '2026-10-01',
     changes: [

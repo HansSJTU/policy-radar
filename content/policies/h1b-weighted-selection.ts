@@ -5,7 +5,7 @@ export const h1bWeightedSelection: PolicyContent = {
   path: 'H-1B',
   tone: 'red',
   effectState: 'in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['prevailing-wage', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -111,9 +111,9 @@ export const h1bWeightedSelection: PolicyContent = {
     ],
     next: [
       {
-        date: '后续 cap 季',
-        text: 'USCIS 将继续按职位、工作地点和申报工资对应的 OEWS 等级进行加权选择，除非规则日后被修改。',
-      },
+        "date": "日期未定",
+        "text": "USCIS 将继续按职位、工作地点和申报工资对应的 OEWS 等级进行加权选择，除非规则日后被修改。"
+      }
     ],
     process: {
       detail:
@@ -121,6 +121,7 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: '最终规则已生效并开始执行',
       waitingFor: null,
     },
+    reviewNote: "10·11 重读最终规则、当前议程及白宫 9·18 公告，核对 FY2027 实施；联邦公报按 RIN 查询仅列既有提案与最终规则。USCIS 当前注册页与完整分档数据未能读取；个人中签率和后续诉讼未完整核实。",
   },
   en: {
     title: 'H-1B Selection Now Weights Wage Levels',
@@ -232,9 +233,9 @@ export const h1bWeightedSelection: PolicyContent = {
     ],
     next: [
       {
-        date: 'Future cap seasons',
-        text: 'USCIS will continue weighting selection by the OEWS level for the occupation, work location, and offered wage unless the rule is later changed.',
-      },
+        "date": "Date unknown",
+        "text": "USCIS will continue weighting selection by the OEWS level for the occupation, work location, and offered wage unless the rule is later changed."
+      }
     ],
     process: {
       detail:
@@ -242,5 +243,6 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: 'Final rule in effect and implemented',
       waitingFor: null,
     },
+    reviewNote: "The final rule, current agenda and September 18 proclamation were reviewed October 11, corroborating FY2027 implementation. The Federal Register RIN query lists the existing proposal and final rule. Current USCIS registration pages and full wage-level data were inaccessible; individual selection odds and later litigation remain incompletely verified.",
   },
 };
