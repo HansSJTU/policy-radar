@@ -22,7 +22,7 @@ test('content files cover every ranked policy in rank order', () => {
 });
 
 test('the English policy and school copy contains no Chinese', () => {
-  assert.equal(verifiedSchools.length, 53);
+  assert.equal(verifiedSchools.length, 57);
   assert.equal(communitySchools.length, 4);
   const strings = collectStrings([
     policyContents.map((policy) => policy.en),
@@ -54,8 +54,9 @@ test('the English D/S entry preserves the hearing and records nationwide relief'
   assert.match(policy.background, /nationwide relief/);
   assert.match(policy.background, /did not permanently vacate/);
   assert.ok(policy.milestones.some(({ date, text }) => date === '2026-09-03' && /arguments/.test(text)));
-  assert.equal(policy.next.some(({ date }) => ['2026-09-03', '2026-09-14', '2026-09-15'].includes(date)), false);
-  assert.ok(policy.next.some(({ date, text }) => date === '2026-10-02' && /not a new effective date/.test(text)));
+  assert.equal(policy.next.some(({ date }) => ['2026-09-03', '2026-09-14', '2026-09-15', '2026-10-02'].includes(date)), false);
+  assert.ok(policy.milestones.some(({ date, text }) => date === '2026-10-02' && /conference/.test(text)));
+  assert.ok(policy.milestones.some(({ date, text }) => date === '2026-10-09' && /government/i.test(text)));
   assert.ok(policy.sources.some(({ label }) => /hearing transcript/.test(label)));
   assert.ok(policy.sources.some(({ label }) => /preliminary injunction/.test(label)));
 });

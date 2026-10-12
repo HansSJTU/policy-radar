@@ -5,7 +5,7 @@ export const h1bReform: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['h1b-fee', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -120,21 +120,21 @@ export const h1bReform: PolicyContent = {
     ],
     next: [
       {
-        date: '2026-09—年末',
-        text: '统一议程的 2026 年 8 月 NPRM 目标月份已过，正文仍未公开；可能发布 NPRM 并开放评论。',
-        estimate: true,
+        "date": "日期未定",
+        "text": "等待 OIRA 审查结论及公开 NPRM；议程原 8 月目标已经过去，未确认新的发布日期。"
       },
       {
-        date: '2027+',
-        text: '若推进，最终规则与诉讼更可能发生在 2027 年以后。',
-        estimate: true,
-      },
+        "date": "日期未定",
+        "text": "后续评论、最终规则及诉讼安排须以正式文件为准，具体年份未确认。",
+        "estimate": true
+      }
     ],
     process: {
       detail: '拟议规则处于 OIRA 发布前审查，正文尚未公开。',
       currentSummary: 'OIRA 发布前审查',
       waitingFor: 'OIRA 完成审查及 DHS 公开提案；尚无确认发布日期。',
     },
+    reviewNote: "10·11 重读 OIRA 当前待审记录、跨记录检索及统一议程；仍列 8·24 收件、提案待审。联邦公报官方 API 按 RIN 截至当天未列公开文件；完整 OIRA 结案历史与新版议程仍有访问缺口，具体条款和发布日期未确认。",
   },
   en: {
     title:
@@ -244,15 +244,14 @@ export const h1bReform: PolicyContent = {
     ],
     next: [
       {
-        date: 'Sep.–late 2026',
-        text: 'DHS may publish an NPRM and open a public comment period.',
-        estimate: true,
+        "date": "Date unknown",
+        "text": "Await the OIRA conclusion and a public NPRM; the agenda’s August target has passed, with no confirmed new publication date."
       },
       {
-        date: '2027+',
-        text: 'If the rule advances, a final rule and related litigation are more likely in 2027 or later.',
-        estimate: true,
-      },
+        "date": "Date unknown",
+        "text": "Later comments, final rulemaking and litigation depend on published records; no specific year is confirmed.",
+        "estimate": true
+      }
     ],
     process: {
       detail:
@@ -261,5 +260,6 @@ export const h1bReform: PolicyContent = {
       waitingFor:
         'Completion of OIRA review and publication of the DHS proposal; no publication date is confirmed.',
     },
+    reviewNote: "The current OIRA submission, broader review search and agenda were read October 11 and still show the August 24 proposal pending. The official Federal Register RIN API lists no published document through the check date. Complete concluded-review history and newer agenda access remain incomplete; terms and publication timing are unconfirmed.",
   },
 };

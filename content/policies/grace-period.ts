@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
@@ -160,6 +160,7 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     },
+    reviewNote: "10·11 重读 9·11 NPRM、OIRA 记录，并查询联邦公报官方 RIN 接口；仅列原提案，评论仍截止 11·10。Regulations.gov 动态案卷及 USCIS 现行失业后选项原页未能读取，部门后续说明未完整核实。",
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
@@ -297,5 +298,6 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
     },
+    reviewNote: "The September 11 NPRM, OIRA record and official Federal Register RIN API were checked October 11; only the original proposal is listed, with November 10 comments. The live Regulations.gov docket and USCIS post-termination options page were inaccessible, leaving later agency guidance incompletely verified.",
   },
 };

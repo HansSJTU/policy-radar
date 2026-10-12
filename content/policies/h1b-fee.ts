@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -15,35 +15,45 @@ export const h1bFee: PolicyContent = {
   },
   sources: [
     {
-      href: 'https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions',
-      zh: 'Federal Register NPRM',
-      en: 'Federal Register NPRM',
+      "href": "https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions",
+      "zh": "Federal Register NPRM",
+      "en": "Federal Register NPRM"
     },
     {
-      href: 'https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf',
-      zh: 'Federal Register 9·10 更正',
-      en: 'Federal Register September 10 correction',
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf",
+      "zh": "Federal Register 9·10 更正",
+      "en": "Federal Register September 10 correction"
     },
     {
-      href: 'https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/',
-      zh: '白宫 9·18 另项 100,000 美元入境限制延长公告',
-      en: 'White House September 18 extension of separate $100,000 entry restriction',
+      "href": "https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/",
+      "zh": "白宫 9·18 另项 100,000 美元入境限制延长公告",
+      "en": "White House September 18 extension of separate $100,000 entry restriction"
     },
     {
-      href: 'https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf',
-      zh: '麻省地区法院 6·08 撤销执行政策判决',
-      en: 'District court June 8 vacatur of implementation policy',
+      "href": "https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf",
+      "zh": "麻省地区法院 6·08 撤销执行政策判决",
+      "en": "District court June 8 vacatur of implementation policy"
     },
     {
-      href: 'https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf',
-      zh: '第一巡回法院 7·24 拒绝暂缓判决',
-      en: 'First Circuit July 24 denial of stay',
+      "href": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+      "zh": "第一巡回法院 7·24 拒绝暂缓判决",
+      "en": "First Circuit July 24 denial of stay"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/527162',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.uscardforum.com/t/topic/527162",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
     },
+    {
+      "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+      "zh": "Global Nurse Force 9·30 法院命令",
+      "en": "Global Nurse Force September 30 court order"
+    },
+    {
+      "href": "https://www.govinfo.gov/app/details/USCOURTS-cand-4_25-cv-08454/USCOURTS-cand-4_25-cv-08454-17/context",
+      "zh": "Global Nurse Force 官方法院文献记录",
+      "en": "Global Nurse Force official court publication record"
+    }
   ],
   zh: {
     title: 'H-1B 拟加收 103,265 美元',
@@ -60,9 +70,9 @@ export const h1bFee: PolicyContent = {
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
     reviewNote:
-      '10·01 复核收费 NPRM、联邦公报检索、白宫另项公告及相关两级法院命令。USCIS 当前收费说明页本次无法直接读取；不能仅凭延长公告推断 100,000 美元已恢复征收。',
+      "10·11 已复核 103,265 美元 NPRM、9·10 更正，以及另项 100,000 美元收费的 6·08、7·24、9·30 法院命令。USCIS 当前收费说明、完整后续案卷和法院日历本次无法直接读取；未核实 9·30 后的新暂缓或上诉命令，不能仅凭白宫延长公告认定恢复收费。",
     background:
-      'RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。',
+      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。10·20 须提交联合案件管理说明，10·27 下午 2 时（法院当地时间）举行案件管理会议。",
     teaser:
       '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
     headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
@@ -132,19 +142,36 @@ export const h1bFee: PolicyContent = {
       },
     ],
     milestones: [
-      { date: '2026-08-25', text: '新的 $103,265 收费 NPRM 发布。' },
       {
-        date: '2026-09-10',
-        text: 'Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。',
+        "date": "2026-08-25",
+        "text": "新的 $103,265 收费 NPRM 发布。"
       },
-      { date: '2026-09-24', text: 'NPRM 公众评论期截止；提案尚未生效。' },
+      {
+        "date": "2026-09-10",
+        "text": "Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。"
+      },
+      {
+        "date": "2026-09-24",
+        "text": "NPRM 公众评论期截止；提案尚未生效。"
+      },
+      {
+        "date": "2026-09-30",
+        "text": "另项 100,000 美元收费：Global Nurse Force 案撤销机构政策，并禁止执行原公告及延长公告下的收费政策；不属于 103,265 美元 NPRM 的裁判。"
+      }
     ],
     next: [
       {
-        date: '2026 年末—2027+',
-        text: 'DHS 可能发布最终规则，之后仍可能遭遇诉讼。',
-        estimate: true,
+        "date": "2026-10-20",
+        "text": "另项 100,000 美元收费案：9·30 第 130 号命令要求提交联合案件管理说明；后续日历未单独核实。"
       },
+      {
+        "date": "2026-10-27",
+        "text": "另项 100,000 美元收费案：9·30 命令排定下午 2 时（法院当地时间）Zoom 案件管理会议；不是 103,265 美元提案的生效日。"
+      },
+      {
+        "date": "日期未定",
+        "text": "跟踪 103,265 美元提案的最终规则，以及另项收费的后续法院命令；实际生效安排未确定。"
+      }
     ],
     process: {
       detail:
@@ -168,9 +195,9 @@ export const h1bFee: PolicyContent = {
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
     reviewNote:
-      'The fee NPRM, Federal Register search, separate White House proclamation and both court orders were reviewed October 1. The current USCIS payment guidance could not be read directly; extension alone does not establish that collection of the $100,000 payment has resumed.',
+      "The $103,265 NPRM, September 10 correction and June 8, July 24 and September 30 court orders concerning the separate $100,000 payment were reviewed October 11. Current USCIS fee guidance, complete later dockets and the court calendar were inaccessible; later stay or appellate orders were not verified. The proclamation extension alone does not establish resumed collection.",
     background:
-      'RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.',
+      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. A joint case management statement is due October 20, with a case management conference October 27 at 2 p.m. court local time.",
     teaser:
       'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
     headline:
@@ -254,19 +281,36 @@ export const h1bFee: PolicyContent = {
       },
     ],
     milestones: [
-      { date: '2026-08-25', text: 'DHS published the $103,265 fee NPRM.' },
       {
-        date: '2026-09-10',
-        text: 'Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged.',
+        "date": "2026-08-25",
+        "text": "DHS published the $103,265 fee NPRM."
       },
-      { date: '2026-09-24', text: 'The NPRM comment period closed; the proposal is not in effect.' },
+      {
+        "date": "2026-09-10",
+        "text": "Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged."
+      },
+      {
+        "date": "2026-09-24",
+        "text": "The NPRM comment period closed; the proposal is not in effect."
+      },
+      {
+        "date": "2026-09-30",
+        "text": "Separate $100,000 payment: Global Nurse Force vacates agency policies and bars implementation under the original and extended proclamations; this is not a ruling on the $103,265 NPRM."
+      }
     ],
     next: [
       {
-        date: 'Late 2026–2027+',
-        text: 'DHS may issue a final rule, which could then face litigation.',
-        estimate: true,
+        "date": "2026-10-20",
+        "text": "Separate $100,000 case: September 30 order 130 requires a joint case management statement; the later calendar was not separately verified."
       },
+      {
+        "date": "2026-10-27",
+        "text": "Separate $100,000 case: the September 30 order sets a Zoom case management conference at 2 p.m. court local time; this is not an effective date for the $103,265 proposal."
+      },
+      {
+        "date": "Date unknown",
+        "text": "Track final rulemaking for the $103,265 proposal and later orders in the separate fee case; actual implementation timing is undetermined."
+      }
     ],
     process: {
       detail:

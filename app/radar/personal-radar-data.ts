@@ -24,8 +24,8 @@ export const personalEstimates: Record<PolicyId, Estimate> = {
     score: 9,
     months: [6, 18],
     why: {
-      zh: '若最终设立高额 OPT 费用，可能严重限制工作授权路径；金额、缴费方与豁免尚未公布，不能把报道中的金额视作已确定费用。',
-      en: 'A substantial final OPT fee could severely restrict this work-authorization route. Amount, payer and exemptions remain unpublished; reported amounts are not established fees.',
+      zh: '10·08 提案拟收首次 7 万美元、后续 3 万美元，可能严重限制 OPT 路径；学校先缴费但可转嫁经济成本，最终条文与生效日仍未确定。',
+      en: 'The October 8 proposal would charge $70,000 initially and $30,000 subsequently, potentially severely restricting OPT. Schools would remit payment but may pass through costs; final terms and an effective date remain undetermined.',
     },
   },
   'h1b-fee': {

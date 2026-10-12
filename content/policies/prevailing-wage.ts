@@ -5,7 +5,7 @@ export const prevailingWage: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: '2026-10-01',
+  checkedOn: "2026-10-11",
   related: ['h1b-weighted-selection', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -43,7 +43,7 @@ export const prevailingWage: PolicyContent = {
       'DOL 打算把 H-1B、H-1B1、E-3 和 PERM 使用的四级法定工资门槛，从约第 17、34、50、67 百分位提高到第 34、52、70、88 百分位。',
     audience: 'H-1B、H-1B1、E-3 与 PERM 的申请人及承担工资的雇主。',
     caveat: '提案改的是法定工资下限，和 H-1B 抽签权重是两套规则。',
-    reviewNote: '10·01 重读联邦公报提案并按 RIN 检索；尚未核实最终规则。DOL 新闻稿原页本次返回 403，状态以联邦公报原文及检索结果为准。',
+    reviewNote: "10·11 重读 NPRM、当前 DOL 统一议程与 OIRA 既往结案记录；议程仍列提案阶段，联邦公报官方 RIN 接口仅列既有 NPRM。DOL 新闻稿和 Regulations.gov 动态案卷未能读取，未完整核实部门后续说明。",
     background:
       'RIN 1205-AC30 在 2026-03-27 发布，公众评论期 5 月 26 日结束。2026 年 8 月的统一议程仍把它列在提案阶段；DOL 还没有发布最终规则，现行工资等级的计算方式没有改变。',
     teaser: '一次性费用之外，持续工资成本可能进一步压缩雇主的担保空间。',
@@ -123,14 +123,14 @@ export const prevailingWage: PolicyContent = {
     ],
     next: [
       {
-        date: '下一步',
-        text: 'DOL 可能修改提案并将最终规则送交 OIRA；目前没有公开完成日期。',
+        "date": "日期未定",
+        "text": "DOL 可能修改提案并将最终规则送交 OIRA；目前没有公开完成日期。"
       },
       {
-        date: '日期未定',
-        text: '只有最终规则发布并到达其生效日后，新工资等级才会开始适用。',
-        estimate: true,
-      },
+        "date": "日期未定",
+        "text": "只有最终规则发布并到达其生效日后，新工资等级才会开始适用。",
+        "estimate": true
+      }
     ],
     process: {
       detail:
@@ -154,7 +154,7 @@ export const prevailingWage: PolicyContent = {
       'H-1B, H-1B1, E-3 and PERM applicants and employers funding their wages.',
     caveat:
       'This proposal concerns required wage floors, separate from H-1B selection weights.',
-    reviewNote: 'The Federal Register NPRM and RIN search were reviewed October 1; no final rule was verified. The linked DOL release returned 403, so status rests on the primary Federal Register text and search.',
+    reviewNote: "The NPRM, current DOL agenda and historical OIRA conclusion were reread October 11. The agenda retains the proposed-rule stage, and the official Federal Register RIN API lists only the existing NPRM. The DOL release and live Regulations.gov docket were inaccessible; later agency guidance remains incompletely verified.",
     background:
       'RIN 1205-AC30 was published on March 27, 2026, and comments closed May 26. The August 2026 Unified Agenda still lists it at the proposed-rule stage; DOL has not published a final rule, so the current wage-level calculation has not changed.',
     teaser:
@@ -255,14 +255,14 @@ export const prevailingWage: PolicyContent = {
     ],
     next: [
       {
-        date: 'Next step',
-        text: 'DOL may revise the proposal and send a final rule to OIRA; no completion date is public.',
+        "date": "Date unknown",
+        "text": "DOL may revise the proposal and send a final rule to OIRA; no completion date is public."
       },
       {
-        date: 'Date unknown',
-        text: 'The new wage levels would apply only after a final rule is published and reaches its effective date.',
-        estimate: true,
-      },
+        "date": "Date unknown",
+        "text": "The new wage levels would apply only after a final rule is published and reaches its effective date.",
+        "estimate": true
+      }
     ],
     process: {
       detail:

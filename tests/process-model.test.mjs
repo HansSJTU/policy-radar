@@ -139,20 +139,22 @@ test('all tracks keep completed, active and future stages disjoint and languages
   }
 });
 
-test('OPT completed review does not imply a published or effective rule', () => {
+test('OPT published proposal has an active comment stage without an effective rule', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('opt-fee', language);
-    assert.equal(track.lastCompletedStage, 1);
-    assert.equal(track.activeStage, null);
-    assert.equal(getProcessStageState(track, 2), 'upcoming');
-    assert.match(track.detail, /缴费方未公布|payer are unpublished/);
+    assert.equal(track.lastCompletedStage, 2);
+    assert.equal(track.activeStage, 3);
+    assert.equal(getProcessStageState(track, 2), 'complete');
+    assert.equal(getProcessStageState(track, 4), 'upcoming');
+    assert.equal(getProcessStageState(track, 5), 'upcoming');
+    assert.match(track.detail, /11 月 9 日|November 9/);
   }
 });
 
 test('home cards highlight the active stage, or the last stage reached while waiting', async () => {
   const { buildHomeView } = await import('../app/home-view.ts');
   const expected = {
-    'opt-fee': 1,
+    'opt-fee': 3,
     'h1b-fee': 3,
     'duration-status': 4,
     'h1b-weighted-selection': 5,
