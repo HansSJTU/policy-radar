@@ -5,8 +5,12 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-12",
-  related: ['ead-discretion', 'grace-period'],
+  checkedOn: "2026-10-13",
+  related: [
+    "ead-auto-extension",
+    "ead-discretion",
+    "grace-period"
+  ],
   process: {
     kind: 'federal-rulemaking',
     lastCompletedStage: 0,
@@ -15,15 +19,20 @@ export const h4Ead: PolicyContent = {
   },
   sources: [
     {
-      href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1615-AD14&pubId=202510',
-      zh: '统一议程 RIN 1615-AD14',
-      en: 'Unified Agenda RIN 1615-AD14',
+      "href": "https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1615-AD14&pubId=202510",
+      "zh": "统一议程 RIN 1615-AD14",
+      "en": "Unified Agenda RIN 1615-AD14"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/528394',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations-and-fashion-models/employment-authorization-for-certain-h-4-dependent-spouses",
+      "zh": "USCIS · 现行 H-4 配偶工作许可资格",
+      "en": "USCIS · current H-4 spouse employment-authorization eligibility"
     },
+    {
+      "href": "https://www.uscardforum.com/t/topic/528394",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
+    }
   ],
   zh: {
     title: '部分 H-4 配偶工作许可拟被取消',
@@ -39,7 +48,7 @@ export const h4Ead: PolicyContent = {
     audience: '依赖现行规则取得工作许可的符合条件 H-4 配偶及其家庭。',
     caveat: '本议程不直接取消主申请人的 H-1B 身份，也没有让已有工作许可失效。',
     background:
-      'RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。',
+      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·13 公开承接该规定的最终稿预览。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
     teaser: '若未来撤销，家庭第二份收入和配偶职业连续性可能同时承压。',
     headline: '双收入家庭的规划，可能面对结构性变化。',
     analysis:
@@ -101,8 +110,14 @@ export const h4Ead: PolicyContent = {
       { label: '当前阶段', text: '尚无正式提案、评论窗口或生效日期。' },
     ],
     milestones: [
-      { date: '2026 统一议程', text: '项目进入政府长期规则议程。' },
-      { date: '截至 2026-09-23', text: '没有 NPRM、评论期或生效日，也未送 OIRA 审查。' },
+      {
+        "date": "2026 统一议程",
+        "text": "项目进入政府长期规则议程。"
+      },
+      {
+        "date": "截至 2026-10-13",
+        "text": "AD14 仍为长期议程、提案日期未定；未取得该项公开 NPRM，OIRA 检索未返回该项记录。"
+      }
     ],
     next: [
       {
@@ -115,7 +130,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·12 通过 RIN 搜索及原页复核，当前议程仍列长期行动、NPRM 日期待定；OIRA 按 RIN 检索未返回 AD14 记录，待审清单亦未列此项，联邦公报查询未列公开文件。USCIS 现行资格原页本次返回 404，资格说明未能直接复核；历史 AC15 不当作新 AD14 提案。",
+    reviewNote: "10·13 复核 AD14 长期议程、OIRA 待审／结案检索及联邦公报查询，未取得该项撤销资格的公开提案。已找到并读取迁移后的 USCIS H-4 原页，确认主申请人获批 I-140 或符合 AC21 延期条件时的配偶申请资格。今天另取得 AD05 EAD 自动延期最终稿预览；它承接 2025·10·30 起的续期规则，不是 AD14 资格撤销提案。后续资格提案、完整部门说明及诉讼仍待核实。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -133,7 +148,7 @@ export const h4Ead: PolicyContent = {
     caveat:
       'The agenda does not directly cancel the principal H-1B status or invalidate existing work authorization.',
     background:
-      'RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.',
+      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final-rule preview carrying that provision forward became public October 13. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
     teaser:
       'A future rescission could strain both a family’s second income and the spouse’s career continuity.',
     headline:
@@ -214,13 +229,13 @@ export const h4Ead: PolicyContent = {
     ],
     milestones: [
       {
-        date: '2026 Unified Agenda',
-        text: 'The initiative appeared on the government’s long-term rulemaking agenda.',
+        "date": "2026 Unified Agenda",
+        "text": "The initiative appeared on the government’s long-term rulemaking agenda."
       },
       {
-        date: 'As of 2026-09-23',
-        text: 'No NPRM, comment period, or effective date has been announced, and no OIRA review is pending.',
-      },
+        "date": "As of 2026-10-13",
+        "text": "AD14 remains a long-term agenda item with no proposal date; no public AD14 NPRM was obtained and the OIRA search returned no record for it."
+      }
     ],
     next: [
       {
@@ -235,6 +250,6 @@ export const h4Ead: PolicyContent = {
       waitingFor:
         'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
     },
-    reviewNote: "RIN discovery and the agenda were checked October 12: the item remains a long-term action with an undetermined NPRM date. The OIRA RIN search returns no AD14 record, the pending list has no such item, and the Federal Register query lists no published document. The current USCIS eligibility URL returned 404 and was not directly reverified; historical AC15 records were not treated as a new AD14 proposal.",
+    reviewNote: "The AD14 long-term agenda, OIRA pending/concluded searches and Federal Register query were reviewed October 13; no public AD14 eligibility-rescission proposal was obtained. The relocated USCIS H-4 page was found and read, confirming spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 EAD-renewal final-rule preview was also read: it carries forward the October 30, 2025 renewal rule, not AD14 eligibility rescission. A later eligibility proposal, complete agency guidance and litigation remain unverified.",
   },
 };
