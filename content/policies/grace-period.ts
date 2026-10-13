@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-11",
+  checkedOn: "2026-10-12",
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
@@ -16,30 +16,35 @@ export const gracePeriod: PolicyContent = {
   },
   sources: [
     {
-      href: 'https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf',
-      zh: 'Federal Register NPRM 正式版（9·11）',
-      en: 'Federal Register published NPRM (September 11)',
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf",
+      "zh": "Federal Register NPRM 正式版（9·11）",
+      "en": "Federal Register published NPRM (September 11)"
     },
     {
-      href: 'https://public-inspection.federalregister.gov/2026-18631.pdf',
-      zh: 'Federal Register NPRM 预览稿（9·10）',
-      en: 'Federal Register NPRM preview (September 10)',
+      "href": "https://public-inspection.federalregister.gov/2026-18631.pdf",
+      "zh": "Federal Register NPRM 预览稿（9·10）",
+      "en": "Federal Register NPRM preview (September 10)"
     },
     {
-      href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1496261',
-      zh: 'OIRA 完成记录',
-      en: 'OIRA completion record',
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1496261",
+      "zh": "OIRA 完成记录",
+      "en": "OIRA completion record"
     },
     {
-      href: 'https://www.fragomen.com/insights/united-states-dhs-proposal-to-eliminate-60-day-nonimmigrant-grace-period-clears-federal-review.html',
-      zh: 'Fragomen 8·28 更新',
-      en: 'Fragomen August 28 update',
+      "href": "https://www.fragomen.com/insights/united-states-dhs-proposal-to-eliminate-60-day-nonimmigrant-grace-period-clears-federal-review.html",
+      "zh": "Fragomen 8·28 更新",
+      "en": "Fragomen August 28 update"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/523657',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.uscardforum.com/t/topic/523657",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
     },
+    {
+      "href": "https://www.uscis.gov/working-in-the-united-states/information-for-employers-and-employees/options-for-nonimmigrant-workers-following-termination-of-employment",
+      "zh": "USCIS 当前失业后身份选项",
+      "en": "USCIS current post-termination options"
+    }
   ],
   zh: {
     title: '失业后的最长 60 天宽限期拟取消',
@@ -160,7 +165,7 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     },
-    reviewNote: "10·11 重读 9·11 NPRM、OIRA 记录，并查询联邦公报官方 RIN 接口；仅列原提案，评论仍截止 11·10。Regulations.gov 动态案卷及 USCIS 现行失业后选项原页未能读取，部门后续说明未完整核实。",
+    reviewNote: "10·12 重读 9·11 NPRM、OIRA 跨记录检索及联邦公报 RIN 接口；仅列原提案，评论截止仍为 11·10。USCIS 现行失业后选项原页已读取，仍说明这些工作身份及家属可获最长 60 天酌情宽限期。Regulations.gov 动态案卷未能读取，后续部门说明未完整核实。",
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
@@ -298,6 +303,6 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
     },
-    reviewNote: "The September 11 NPRM, OIRA record and official Federal Register RIN API were checked October 11; only the original proposal is listed, with November 10 comments. The live Regulations.gov docket and USCIS post-termination options page were inaccessible, leaving later agency guidance incompletely verified.",
+    reviewNote: "The September 11 NPRM, OIRA review search and Federal Register RIN API were checked October 12; only the original proposal is listed, with November 10 comments. The current USCIS post-termination options page was retrieved and still describes the discretionary up-to-60-day grace period for these classifications and dependents. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
   },
 };

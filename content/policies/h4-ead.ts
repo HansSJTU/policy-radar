@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-11",
+  checkedOn: "2026-10-12",
   related: ['ead-discretion', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -115,7 +115,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·11 通过 RIN 搜索及原页复核，当前议程仍列长期行动、NPRM 日期待定；OIRA 待审清单未列 AD14，联邦公报官方按 RIN 查询未列公开文件。完整 OIRA 结案历史及 USCIS 现行资格原页未能读取；没有把历史 AC15 记录当作新 AD14 提案。",
+    reviewNote: "10·12 通过 RIN 搜索及原页复核，当前议程仍列长期行动、NPRM 日期待定；OIRA 按 RIN 检索未返回 AD14 记录，待审清单亦未列此项，联邦公报查询未列公开文件。USCIS 现行资格原页本次返回 404，资格说明未能直接复核；历史 AC15 不当作新 AD14 提案。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -235,6 +235,6 @@ export const h4Ead: PolicyContent = {
       waitingFor:
         'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
     },
-    reviewNote: "RIN discovery and the agenda were checked October 11 and still show a long-term action with an undetermined NPRM date. AD14 is absent from the pending-review list, and the official Federal Register RIN query lists no published record. Complete concluded-review history and current USCIS eligibility pages were inaccessible; historical AC15 records were not treated as a new AD14 proposal.",
+    reviewNote: "RIN discovery and the agenda were checked October 12: the item remains a long-term action with an undetermined NPRM date. The OIRA RIN search returns no AD14 record, the pending list has no such item, and the Federal Register query lists no published document. The current USCIS eligibility URL returned 404 and was not directly reverified; historical AC15 records were not treated as a new AD14 proposal.",
   },
 };

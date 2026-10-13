@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-10-11",
+  checkedOn: "2026-10-12",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -98,7 +98,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      "10·11 重读两份 ICE 广播、诉状、暂缓申请与支持意见，核对 57 条校方网页记录及 4 条保存截图（新增 Yale、Oklahoma、UVA、UIC）。Johns Hopkins 全文已通过公开网页读取，旧访问缺口已解除。最新 CPT 法院案卷及暂缓裁定仍未完整核实；CMU 博士页口径冲突、NYU 数学系当前审批状态和 UPenn 同页冲突另在学校条目披露。未公开通知和个案恢复进度无法逐一确认；截图不是现行校方公开确认。",
+      "10·12 重读两份 ICE 广播、诉状、暂缓申请和支持意见，复核全部 57 条校方网页记录及 4 条保存截图；学校／院系范围和证据级别未变。最新 CPT 法院案卷及暂缓裁定未完整核实，论坛最新回复接口被拒；CMU 博士口径冲突、NYU 数学系审批缺口及 UPenn 同页冲突另在学校条目披露。截图只支持当时内容，不能确认当前校方政策。",
     background:
       "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。尚未完整读取最新 CPT 案卷或核实已签发暂缓令，学校是否恢复须看后续命令及各校通知。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -224,7 +224,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      "Both ICE broadcasts, the complaint, relief motion and memorandum were reread October 11, with 57 public school-page records and four saved screenshots reviewed (Yale, Oklahoma, UVA and UIC added). Johns Hopkins full text was retrieved through its public page, resolving the earlier access gap. The latest CPT docket and any operative stay remain incompletely verified. CMU doctoral wording, NYU Mathematics’ current approval status and conflicting Penn wording are disclosed on those records. Unpublished notices and individual reopening remain unverified; screenshots are not current public confirmation.",
+      "Both ICE broadcasts, the complaint, relief motion and supporting memorandum were reread October 12, with all 57 public school-page records and four saved screenshots rechecked; school/department scope and evidence levels were preserved. The latest CPT docket and any operative stay remain incompletely verified, and access to latest forum replies was blocked. CMU doctoral wording, NYU Mathematics approval gaps and conflicting Penn text are disclosed on those records. Screenshots establish only the earlier messages, not current university policy.",
     background:
       "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. The latest CPT docket and any operative stay were not fully verified; reopening depends on later orders and school notices.",
     teaser:
