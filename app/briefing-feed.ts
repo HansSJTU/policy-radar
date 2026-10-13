@@ -74,6 +74,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Calculated as 30 calendar days after signature, DOL must begin reviewing prior LCA data by this date; it is not a completion deadline or common effective date."
   },
   {
+    "id": "duration-plaintiffs-procedural-plan",
+    "date": "2026-10-09",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "原告第 60 项请求立即作出撤销规则的最终判决，反对暂停地区诉讼；其引用的上诉相对期限尚未以法院原命令独立核实，不能当成确定排期或恢复生效日。",
+    "en": "Plaintiffs’ entry 60 seeks immediate final judgment vacating the rule and opposes pausing district proceedings. Its quoted appellate periods were not independently checked against the original order and are not confirmed calendar deadlines or a rule-resumption date."
+  },
+  {
     "id": "duration-next-step-submissions",
     "date": "2026-10-09",
     "policyId": "duration-status",

@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-12",
+    "changes": [
+      {
+        "id": "duration-plaintiffs-october-9-plan",
+        "category": "#03 D/S 诉讼",
+        "title": "补入原告要求立即最终判决并撤销规则的程序方案",
+        "summary": "第 60 项正文已取得：原告反对暂停地区诉讼，请求立即作出撤销规则的最终判决；这份提交不是法院已准许的判决。",
+        "before": "已收录第 59 项政府暂停诉讼请求；第 60 项原告正文未取得，原告立场与其引用的上诉程序未展示。",
+        "after": "详情、历史时间线及 30 天简报补入原告立场；文件引用上诉 21／30／10 天相对期限，但原命令与正式排期尚未独立核实。",
+        "details": [
+          "原告提出 10·16 提供行政记录、10·23 补充意见和 10·30 答复的备选地区程序；未核实法院采纳，不列为已确定的未来期限。",
+          "引用的上诉开篇期限从书面排期入案卷起算，不能直接从 10·09 算起；本次未核实改变第 51 项全国暂缓令的新命令。"
+        ],
+        "sources": [
+          {
+            "label": "10·09 原告程序方案 · 第 60 项（当事方提交）",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.60.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-11",
     "changes": [
       {
@@ -1266,6 +1289,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-12",
+    "changes": [
+      {
+        "id": "duration-plaintiffs-october-9-plan",
+        "category": "#03 D/S litigation",
+        "title": "Add plaintiffs’ request for immediate final judgment vacating the rule",
+        "summary": "Entry 60 is now available: plaintiffs oppose pausing district proceedings and request immediate final judgment vacating the rule. The filing is not a judgment granting that relief.",
+        "before": "Entry 59 recorded the government’s stay request; entry 60 was unavailable, leaving plaintiffs’ position and quoted appellate procedure undisplayed.",
+        "after": "The detail page, historical timeline and 30-day briefing now include plaintiffs’ position. The filing quotes relative appellate periods of 21/30/10 days, but the original order and entered schedule remain independently unverified.",
+        "details": [
+          "Plaintiffs propose October 16 record production, October 23 supplemental briefs and October 30 replies as an alternative district procedure. Court adoption was not verified, so these are not listed as confirmed future deadlines.",
+          "The quoted opening-brief period starts when a briefing schedule enters the docket, not automatically on October 9. No new order changing entry 51’s nationwide relief was verified in this check."
+        ],
+        "sources": [
+          {
+            "label": "October 9 plaintiffs’ procedural plan · entry 60 (party filing)",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.60.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-11",
     "changes": [

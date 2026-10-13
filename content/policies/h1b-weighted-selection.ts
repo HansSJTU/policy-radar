@@ -5,7 +5,7 @@ export const h1bWeightedSelection: PolicyContent = {
   path: 'H-1B',
   tone: 'red',
   effectState: 'in-effect',
-  checkedOn: "2026-10-11",
+  checkedOn: "2026-10-12",
   related: ['prevailing-wage', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -15,15 +15,20 @@ export const h1bWeightedSelection: PolicyContent = {
   },
   sources: [
     {
-      href: 'https://www.federalregister.gov/documents/2025/12/29/2025-23853/weighted-selection-process-for-registrants-and-petitioners-seeking-to-file-cap-subject-h-1b',
-      zh: 'Federal Register 最终规则',
-      en: 'Federal Register final rule',
+      "href": "https://www.federalregister.gov/documents/2025/12/29/2025-23853/weighted-selection-process-for-registrants-and-petitioners-seeking-to-file-cap-subject-h-1b",
+      "zh": "Federal Register 最终规则",
+      "en": "Federal Register final rule"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/415560',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://www.uscardforum.com/t/topic/415560",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
     },
+    {
+      "href": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "zh": "USCIS 当前 cap 季说明",
+      "en": "USCIS current cap-season guidance"
+    }
   ],
   zh: {
     title: 'H-1B 已改为工资等级加权抽签',
@@ -121,7 +126,7 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: '最终规则已生效并开始执行',
       waitingFor: null,
     },
-    reviewNote: "10·11 重读最终规则、当前议程及白宫 9·18 公告，核对 FY2027 实施；联邦公报按 RIN 查询仅列既有提案与最终规则。USCIS 当前注册页与完整分档数据未能读取；个人中签率和后续诉讼未完整核实。",
+    reviewNote: "10·12 重读最终规则与 USCIS 当前 cap 季原页，确认 FY2027 实施及 IV／III／II／I 分别进入选择池 4／3／2／1 次；联邦公报按 RIN 查询仅列既有提案和最终规则。完整分档数据、个人中签率及后续诉讼仍未完整核实。",
   },
   en: {
     title: 'H-1B Selection Now Weights Wage Levels',
@@ -243,6 +248,6 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: 'Final rule in effect and implemented',
       waitingFor: null,
     },
-    reviewNote: "The final rule, current agenda and September 18 proclamation were reviewed October 11, corroborating FY2027 implementation. The Federal Register RIN query lists the existing proposal and final rule. Current USCIS registration pages and full wage-level data were inaccessible; individual selection odds and later litigation remain incompletely verified.",
+    reviewNote: "The final rule and current USCIS cap-season page were reread October 12, confirming FY2027 implementation and IV/III/II/I entries of 4/3/2/1. The Federal Register RIN query lists the existing proposal and final rule. Full wage-level data, individual selection odds and later litigation remain incompletely verified.",
   },
 };

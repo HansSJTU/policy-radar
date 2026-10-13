@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-11",
+  checkedOn: "2026-10-12",
   related: ['opt-fee', 'h4-ead'],
   process: {
     kind: 'federal-rulemaking',
@@ -133,7 +133,7 @@ export const eadDiscretion: PolicyContent = {
       currentSummary: '公众评论期已结束，尚未形成最终规则',
       waitingFor: 'DHS 审阅意见并决定是否修改或定稿；日期未定。',
     },
-    reviewNote: "10·11 重读 6·05 NPRM、当前议程和 OIRA 记录；联邦公报按 RIN 查询仅列该提案，议程仍列提案阶段及 8·04 评论结束日。Regulations.gov 动态案卷未能读取，完整审查历史和部门后续执行说明未完整核实。",
+    reviewNote: "10·12 重读 6·05 NPRM、当前议程及 OIRA 待审／结案跨记录检索；OIRA 只列原提案 3·31 结案，联邦公报仅列 6·05 NPRM，议程仍列提案阶段和 8·04 评论结束日。Regulations.gov 动态案卷及部门后续执行说明未完整核实。",
   },
   en: {
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
@@ -262,6 +262,6 @@ export const eadDiscretion: PolicyContent = {
       waitingFor:
         'DHS review of comments and a decision on revisions or a final rule; no date is set.',
     },
-    reviewNote: "The June 5 NPRM, current agenda and OIRA record were reread October 11. The Federal Register RIN query lists only that proposal; the agenda retains the proposed-rule stage and August 4 comment close. The live Regulations.gov docket, complete review history and later agency implementation guidance were not fully verified.",
+    reviewNote: "The June 5 NPRM, current agenda and OIRA search across pending/concluded reviews were reread October 12. OIRA lists only the original proposal concluded March 31, the Federal Register lists only the June 5 NPRM, and the agenda retains the proposal stage and August 4 comment close. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
   },
 };
