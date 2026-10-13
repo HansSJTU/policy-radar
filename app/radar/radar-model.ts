@@ -130,6 +130,8 @@ export const RADAR_PLACEMENT: Record<
   'prevailing-wage': { sector: 'h1b-petition', ring: 'eighteen-months' },
   'h1b-reform': { sector: 'h1b-petition', ring: 'eighteen-months' },
   'grace-period': { sector: 'h1b-work', ring: 'eighteen-months' },
+  'ead-auto-extension': { sector: 'family', ring: 'active' },
+  'nonimmigrant-deference': { sector: 'h1b-work', ring: 'eighteen-months' },
   'ead-discretion': { sector: 'opt', ring: 'half-year' },
   'h4-ead': { sector: 'family', ring: 'unknown' },
   'perm-modernization': { sector: 'family', ring: 'eighteen-months' },
@@ -139,10 +141,10 @@ export const RADAR_PLACEMENT: Record<
 // Demo snapshot of stayradar.org on 2026-09-27 with launch seeds removed.
 // Counts are exact (shown count minus seed count); averages are
 // back-calculated from one-decimal figures, so they can be off by about 0.1.
-export const DEMO_RATINGS: Record<
+export const DEMO_RATINGS: Partial<Record<
   PolicyId,
   { average: number; genuine: number }
-> = {
+>> = {
   'opt-fee': { average: 9.6, genuine: 30 },
   'h1b-fee': { average: 9.2, genuine: 26 },
   'duration-status': { average: 7.1, genuine: 12 },

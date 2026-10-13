@@ -74,6 +74,38 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Calculated as 30 calendar days after signature, DOL must begin reviewing prior LCA data by this date; it is not a completion deadline or common effective date."
   },
   {
+    "id": "deference-publication-scheduled",
+    "date": "2026-10-14",
+    "policyId": "nonimmigrant-deference",
+    "timing": "upcoming",
+    "zh": "预定刊登取消 I-129 既往批准尊重原则的 NPRM；评论期按刊登后 30 天计算，尚未取得确定日历截止日，不是生效日。",
+    "en": "Publication of the I-129 deference NPRM is scheduled; comments run 30 days from publication, but the calendar deadline is not yet confirmed. This is not an effective date."
+  },
+  {
+    "id": "ead-extension-final-publication-scheduled",
+    "date": "2026-10-14",
+    "policyId": "ead-auto-extension",
+    "timing": "upcoming",
+    "zh": "预定刊登并生效的最终规则原样承接 2025 临时最终规则；续期申请界线仍为 2025·10·30，不是明天首次取消。",
+    "en": "The final rule is scheduled for publication and effectiveness, adopting the 2025 IFR unchanged. The renewal cutoff remains October 30, 2025; removal does not first begin tomorrow."
+  },
+  {
+    "id": "deference-nprm-preview",
+    "date": "2026-10-13",
+    "policyId": "nonimmigrant-deference",
+    "timing": "recent",
+    "zh": "DHS 公开 NPRM 预览，拟删除 I-129 中对相同当事方、相同事实既往批准的一般尊重原则；尚未生效，不自动拒绝续期。",
+    "en": "DHS released an NPRM preview proposing removal of general deference to prior I-129 approvals involving the same parties and facts; not in effect and not automatic renewal denial."
+  },
+  {
+    "id": "ead-extension-final-preview",
+    "date": "2026-10-13",
+    "policyId": "ead-auto-extension",
+    "timing": "recent",
+    "zh": "最终稿预览原样承接取消部分 EAD 自动延期的 2025 规则；保留界线前合格申请和法定例外，与 H-4 资格撤销议程分开。",
+    "en": "The final-rule preview adopts the 2025 removal of certain EAD extensions unchanged, retaining qualifying pre-cutoff applications and legal exceptions; separate from H-4 eligibility rescission."
+  },
+  {
     "id": "duration-plaintiffs-procedural-plan",
     "date": "2026-10-09",
     "policyId": "duration-status",

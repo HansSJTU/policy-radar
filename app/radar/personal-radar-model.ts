@@ -254,10 +254,13 @@ export function radarGeometry(width: number) {
 }
 export type RadarGeometry = ReturnType<typeof radarGeometry>;
 export function markRadius(inForce: boolean, compact: boolean) {
-  return inForce ? (compact ? 12 : 13) : compact ? 14 : 18;
+  // Keep the small in-force circle clear of labels as tracked items grow.
+  return inForce ? (compact ? 11 : 13) : compact ? 14 : 18;
 }
 export function timeLabelY(g: RadarGeometry, language: Language, i: number) {
-  return g.cy - g.rings[i] + (language === 'en' ? 9 : -6);
+  // The narrow English Today label must leave room for in-force family items.
+  const offset = language === 'en' ? (i === 0 && g.width < 440 ? -4 : 9) : -6;
+  return g.cy - g.rings[i] + offset;
 }
 export function timeLabelBoxes(
   g: RadarGeometry,
@@ -381,17 +384,21 @@ export function placePolicies(
         ...marks.filter((_, j) => j !== i && (pass > 0 || j < i)),
       ];
       let best = Infinity;
+      let bestOverlap = Infinity;
       for (let f = 0.1; f <= 0.901; f += 0.04) {
         const rho = inner + (outer - inner) * f;
         for (let offset = 2; offset <= SECTOR_STEP - 2; offset += 1) {
           const candidate = g.point(rho, from + offset);
+          // Prefer a collision-free candidate absolutely; a small overlap
+          // must not be cheaper than moving farther from the preferred point.
+          const overlap = labelClearance(candidate, mark, labels, others, 1);
           const cost =
-            labelClearance(candidate, mark, labels, others, 1) * 10000 +
             labelClearance(candidate, mark, labels, others) * 40 +
             Math.max(0, 2 - dividerGap(rho, offset, mark)) ** 2 * 40 +
             (candidate[0] - preferred[0]) ** 2 +
             (candidate[1] - preferred[1]) ** 2;
-          if (cost < best) {
+          if (overlap < bestOverlap || (overlap === bestOverlap && cost < best)) {
+            bestOverlap = overlap;
             best = cost;
             marks[i] = { x: candidate[0], y: candidate[1], radius: mark };
           }

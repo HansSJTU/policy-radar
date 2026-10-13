@@ -9,10 +9,12 @@ export const POLICY_IDS = [
   'prevailing-wage',
   'h1b-reform',
   'grace-period',
+  'ead-auto-extension',
   'ead-discretion',
   'h4-ead',
   'perm-modernization',
   'h1b-program-integrity',
+  'nonimmigrant-deference',
 ] as const;
 
 export type PolicyId = (typeof POLICY_IDS)[number];

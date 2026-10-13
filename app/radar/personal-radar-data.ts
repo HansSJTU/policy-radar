@@ -18,6 +18,7 @@ type Estimate = {
   score: number;
   why: Record<Language, string>;
   months?: [number, number];
+  baseline?: string;
 };
 export const personalEstimates: Record<PolicyId, Estimate> = {
   'opt-fee': {
@@ -82,6 +83,22 @@ export const personalEstimates: Record<PolicyId, Estimate> = {
       en: 'Removing the grace period could sharply reduce transition time after covered employment ends. It does not mean everyone must leave immediately and does not cover the F-1 graduation grace period.',
     },
   },
+  'ead-auto-extension': {
+    score: 8,
+    why: {
+      zh: '受覆盖的 EAD 续期在旧卡到期后可能造成工作授权空档；取决于申请日期、类别及独立授权，不等于取消 H-4 资格或 STEM OPT 的独立延期。',
+      en: 'Covered EAD renewals may leave a work-authorization gap after card expiration, depending on filing date, category and independent authorization. This does not remove H-4 eligibility or the separate STEM OPT extension.',
+    },
+  },
+  'nonimmigrant-deference': {
+    score: 5,
+    months: [6, 18],
+    baseline: '2026-10-13',
+    why: {
+      zh: '若取消对既往批准的一般尊重，I-129 续期的证据和审查负担可能增加；属于较大程序影响，不代表自动拒绝或个人拒签概率。',
+      en: 'Removing general deference could increase evidence and review burdens for I-129 renewals. This is a substantial procedural impact, not automatic denial or an individual denial probability.',
+    },
+  },
   'ead-discretion': {
     score: 8,
     months: [3, 12],
@@ -140,12 +157,13 @@ export function buildPersonalPolicies(
   const zh = language === 'zh';
   return getPolicies(language).map((policy) => {
     const estimate = personalEstimates[policy.id];
+    const estimateBaseline = estimate.baseline ?? ESTIMATE_BASELINE;
     const inForce = policy.effectState !== 'not-in-effect';
     const dates: [string, string] | null =
       !inForce && estimate.months
         ? [
-            addMonths(ESTIMATE_BASELINE, estimate.months[0]),
-            addMonths(ESTIMATE_BASELINE, estimate.months[1]),
+            addMonths(estimateBaseline, estimate.months[0]),
+            addMonths(estimateBaseline, estimate.months[1]),
           ]
         : null;
     const placement = dates
@@ -195,7 +213,7 @@ export function buildPersonalPolicies(
         inForce || litigation
           ? policy.sources.filter((s) => !s.href.includes('uscardforum.com'))
           : historySources.map((s) => ({ label: s[language], href: s.href })),
-      estimateBaseline: dates ? ESTIMATE_BASELINE : null,
+      estimateBaseline: dates ? estimateBaseline : null,
       estimateDates: dates,
       estimateMonths:
         dates && !placement.expired

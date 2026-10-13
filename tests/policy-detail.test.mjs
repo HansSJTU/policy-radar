@@ -210,7 +210,7 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
       if (language === 'en')
         assert.doesNotMatch(JSON.stringify(policy), /[㐀-鿿]/u);
       const expected =
-        id === 'h1b-weighted-selection'
+        (id === 'h1b-weighted-selection' || id === 'ead-auto-extension')
           ? 'in-effect'
           : id === 'cpt-guidance'
             ? 'guidance-in-use'

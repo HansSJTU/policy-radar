@@ -23,6 +23,50 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-13",
+    "changes": [
+      {
+        "id": "nonimmigrant-deference-october-13-preview",
+        "category": "#14 工作身份续期审查",
+        "title": "新增取消既往批准尊重原则的 I-129 提案预览",
+        "summary": "10·13 公开 RIN 1615-AD26 的 46 页 NPRM 预览，预定 10·14 刊登；不是已生效规则。",
+        "before": "尚未收录 AD26；综合 H-1B 改革 AD00 仍单独跟踪 OIRA 审查。",
+        "after": "新增独立条目、原文及简报，说明相同当事方和事实的续期拟不再一般尊重既往资格认定，不能等同自动拒绝。",
+        "details": [
+          "预览中的评论期限为刊登后 30 天占位符；具体日历截止日待正式版本确认。"
+        ],
+        "sources": [
+          {
+            "label": "官方 NPRM 预览 · FR Doc. 2026-20941",
+            "href": "https://public-inspection.federalregister.gov/2026-20941.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ead-auto-extension-october-13-final-preview",
+        "category": "#09 EAD 续期自动延期",
+        "title": "补入已执行的 EAD 自动延期取消规则及今天的最终稿预览",
+        "summary": "最终稿预览原样承接 2025·10·30 临时最终规则，预定 10·14 刊登；不是明天首次取消。",
+        "before": "未独立展示 AD05 自动延期规则；H-4 条目仅跟踪未来申请资格撤销议程。",
+        "after": "新增独立条目，区分 2025·10·30 续期递交界线、界线前合格延期和法定例外，并在 H-4 详情关联说明。",
+        "details": [
+          "部分 H-4、c9 等受覆盖续期不再凭收据自动延期；有效卡片和 H-4 申请资格不因此自动取消。",
+          "STEM OPT 180 天延期、TPS 法定公告例外及 E／L 随身份工作授权不能套用同一结论。"
+        ],
+        "sources": [
+          {
+            "label": "2025·10·30 临时最终规则 · 已生效",
+            "href": "https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf"
+          },
+          {
+            "label": "10·13 最终稿预览 · 原样承接",
+            "href": "https://public-inspection.federalregister.gov/2026-20955.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-12",
     "changes": [
       {
@@ -1289,6 +1333,50 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-13",
+    "changes": [
+      {
+        "id": "nonimmigrant-deference-october-13-preview",
+        "category": "#14 Work-petition renewals",
+        "title": "Add the proposal preview to remove I-129 prior-approval deference",
+        "summary": "The 46-page RIN 1615-AD26 NPRM preview was released October 13, with publication scheduled October 14; it is not effective.",
+        "before": "AD26 was not tracked; broader H-1B reform AD00 remained a separate OIRA-review item.",
+        "after": "A separate entry, source and briefing explain proposed removal of general deference in same-parties, same-facts renewals without implying automatic denial.",
+        "details": [
+          "The preview leaves comments at 30 days after publication; the calendar deadline awaits the published version."
+        ],
+        "sources": [
+          {
+            "label": "Official NPRM preview · FR Doc. 2026-20941",
+            "href": "https://public-inspection.federalregister.gov/2026-20941.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ead-auto-extension-october-13-final-preview",
+        "category": "#09 EAD renewal extensions",
+        "title": "Add the operative EAD-extension removal and today’s final-rule preview",
+        "summary": "The final preview adopts the October 30, 2025 IFR unchanged, with publication scheduled October 14; removal does not first begin tomorrow.",
+        "before": "AD05 automatic-extension removal was not separately presented; the H-4 entry tracked future eligibility rescission only.",
+        "after": "A separate entry distinguishes the October 30, 2025 filing cutoff, qualifying earlier extensions and legal exceptions, with a linked explanation on the H-4 detail page.",
+        "details": [
+          "Covered H-4, c9 and other renewals no longer receive receipt-based automatic extensions; valid cards and H-4 eligibility are not automatically canceled.",
+          "The separate STEM OPT 180-day provision, statutory/TPS exceptions and E/L status-based authorization require distinct checks."
+        ],
+        "sources": [
+          {
+            "label": "October 30, 2025 IFR · in effect",
+            "href": "https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf"
+          },
+          {
+            "label": "October 13 final-rule preview · unchanged adoption",
+            "href": "https://public-inspection.federalregister.gov/2026-20955.pdf"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-12",
     "changes": [

@@ -2,6 +2,8 @@ import { POLICY_IDS, type PolicyId } from '../../app/policy-ids.ts';
 import type { PolicyContent } from '../policy-types.ts';
 import { cptGuidance } from './cpt-guidance.ts';
 import { durationStatus } from './duration-status.ts';
+import { eadAutoExtension } from './ead-auto-extension.ts';
+import { nonimmigrantDeference } from './nonimmigrant-deference.ts';
 import { eadDiscretion } from './ead-discretion.ts';
 import { gracePeriod } from './grace-period.ts';
 import { h1bFee } from './h1b-fee.ts';
@@ -22,10 +24,12 @@ const contentById: Record<PolicyId, PolicyContent> = {
   'prevailing-wage': prevailingWage,
   'h1b-reform': h1bReform,
   'grace-period': gracePeriod,
+  'ead-auto-extension': eadAutoExtension,
   'ead-discretion': eadDiscretion,
   'h4-ead': h4Ead,
   'perm-modernization': permModernization,
   'h1b-program-integrity': h1bProgramIntegrity,
+  'nonimmigrant-deference': nonimmigrantDeference,
 };
 
 // Ranked order: see app/policy-ids.ts.

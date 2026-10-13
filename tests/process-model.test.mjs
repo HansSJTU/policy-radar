@@ -162,6 +162,8 @@ test('home cards highlight the active stage, or the last stage reached while wai
     'prevailing-wage': 3,
     'h1b-reform': 1,
     'grace-period': 3,
+    'ead-auto-extension': 5,
+    'nonimmigrant-deference': 2,
     'ead-discretion': 3,
     'h4-ead': 0,
     'perm-modernization': 1,
