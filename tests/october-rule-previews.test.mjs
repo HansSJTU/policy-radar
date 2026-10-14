@@ -4,7 +4,7 @@ import { getPolicy } from '../app/policy-data.ts';
 import { briefingEntries } from '../app/briefing-feed.ts';
 import { buildPersonalPolicies } from '../app/radar/personal-radar-data.ts';
 
-test('EAD final preview preserves the operative 2025 cutoff and stays separate from H-4 eligibility rescission', () => {
+test('EAD final rule preserves the operative 2025 cutoff and stays separate from H-4 eligibility rescission', () => {
   const ead = getPolicy('ead-auto-extension', 'en');
   const h4 = getPolicy('h4-ead', 'en');
   assert.equal(ead.effectState, 'in-effect');
@@ -15,16 +15,23 @@ test('EAD final preview preserves the operative 2025 cutoff and stays separate f
   assert.match(ead.caveat, /STEM OPT/);
   assert.ok(h4.related.includes('ead-auto-extension'));
   assert.match(h4.background, /distinct from AD14/);
-  assert.equal(ead.sources[0].href, 'https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf');
+  assert.match(ead.sources[0].href, /federalregister\.gov\/documents\/2026\/10\/14\/2026-20955\//);
+  assert.equal(ead.sources[1].href, 'https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf');
+  assert.match(ead.status, /effective October 14/);
+  assert.ok(ead.milestones.some(({ date }) => date === '2026-10-14'));
+  assert.ok(!ead.next.some(({ date }) => date === '2026-10-14'));
 });
 
-test('deference preview is a proposal with a scheduled publication, not a confirmed comment deadline or automatic denial', () => {
+test('deference NPRM is a published proposal with a November 13 comment deadline, not automatic denial', () => {
   const policy = getPolicy('nonimmigrant-deference', 'en');
   assert.equal(policy.effectState, 'not-in-effect');
-  assert.match(policy.status, /preview.*scheduled October 14/);
+  assert.match(policy.status, /Comments due November 13/);
+  assert.match(policy.sources[0].href, /federalregister\.gov\/documents\/2026\/10\/14\/2026-20941\//);
   assert.match(policy.caveat, /does not automatically deny/);
-  assert.match(policy.reviewNote, /not a confirmed calendar deadline/);
+  assert.match(policy.reviewNote, /91 FR 65119/);
+  assert.ok(policy.next.some(({date}) => date === '2026-11-13'));
   assert.ok(policy.next.some(({date}) => date === 'Date unknown'));
+  assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-11-13' && e.timing === 'upcoming'));
   assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-10-13' && e.timing === 'recent'));
   assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-10-14' && e.timing === 'upcoming'));
 });

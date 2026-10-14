@@ -15,7 +15,7 @@ export const cptGuidance: PolicyContent = {
     nextStage: 3,
     litigation: [
       {
-        "date": "2026-10-05",
+        "date": "10·05",
         "zh": "起诉并申请暂缓",
         "en": "Complaint and relief requested",
         "afterStage": 2,
@@ -23,6 +23,16 @@ export const cptGuidance: PolicyContent = {
         "status": "filed",
         "align": "left",
         "lane": "base"
+      },
+      {
+        "date": "11·06",
+        "zh": "暂缓申请听证",
+        "en": "Relief hearing",
+        "afterStage": 2,
+        "progress": 85,
+        "status": "upcoming",
+        "align": "right",
+        "lane": "raised"
       }
     ],
   },
@@ -78,6 +88,11 @@ export const cptGuidance: PolicyContent = {
       "en": "October 6 memorandum supporting relief (party filing)"
     },
     {
+      "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/",
+      "zh": "AAU v. DHS 地区法院案卷（含 10·13 听证通知）",
+      "en": "AAU v. DHS district docket (including the October 13 hearing notice)"
+    },
+    {
       "href": "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html",
       "zh": "CMU OIE · 10·08 CPT 诉讼通知",
       "en": "CMU OIE · October 8 CPT litigation notice"
@@ -86,21 +101,21 @@ export const cptGuidance: PolicyContent = {
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
     short: '8·12 / 8·24 CPT 指引',
-    status: "学校按新口径执行 · 已起诉并申请暂缓",
+    status: "学校按新口径执行 · 暂缓申请 11·06 听证",
     effectLabel: '指引已执行 · 按学校与项目核对',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT。只注册一门选修实习课通常不够，实习雇主还必须和学校签有 cooperative agreement（合作协议）。 四个高教协会已起诉并请求暂缓这两份指引；提起诉讼本身不恢复选修 CPT。",
+    tldr: "ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT。只注册一门选修实习课通常不够，实习雇主还必须和学校签有 cooperative agreement（合作协议）。 四个高教协会已起诉并请求暂缓这两份指引，法院定于 11·06 听证；起诉和听证本身都不恢复选修 CPT。",
     tags: ['CPT', 'Day-1 CPT', '实习'],
     summary:
-      "SEVP 要求 CPT 实习是该专业所有学生毕业的必修环节，而且雇主和学校之间要有合作协议。只注册一门选修实习课，通常拿不到 CPT 授权。 AAU、Presidents’ Alliance、NAFSA 与 AICUM 已在麻省联邦法院起诉并申请暂缓；尚未核实改变指引执行的法院命令。",
+      "SEVP 要求 CPT 实习是该专业所有学生毕业的必修环节，而且雇主和学校之间要有合作协议。只注册一门选修实习课，通常拿不到 CPT 授权。 AAU、Presidents’ Alliance、NAFSA 与 AICUM 已在麻省联邦法院起诉并申请暂缓，法院定于 11·06 听证；截至 10·13，案卷中没有改变指引执行的法院命令。",
     audience: '需要 CPT 实习授权的学生、学校与 DSO。',
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      "10·13 重读两份 ICE 广播、诉状、暂缓申请和支持意见，复核全部 57 条校方网页记录及 4 条保存截图；学校／院系范围和证据级别未变。最新 CPT 法院案卷及暂缓裁定未完整核实，论坛最新回复接口被拒；CMU 博士口径冲突、NYU 数学系审批缺口及 UPenn 同页冲突另在学校条目披露。截图只支持当时内容，不能确认当前校方政策。",
+      "10·13 重读两份 ICE 广播、诉状、暂缓申请和支持意见，复核全部 57 条校方网页记录及 4 条保存截图；学校／院系范围和证据级别未变。CPT 案卷公开镜像更新至 10·13 第 19 项听证通知，未见准许暂缓的命令；论坛最新回复接口被拒；CMU 博士口径冲突、NYU 数学系审批缺口及 UPenn 同页冲突另在学校条目披露。截图只支持当时内容，不能确认当前校方政策。",
     background:
-      "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。尚未完整读取最新 CPT 案卷或核实已签发暂缓令，学校是否恢复须看后续命令及各校通知。",
+      "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。10·13 案卷第 19 项把初步禁令与行政行动暂缓申请的听证定在 11·06 下午 3 点（美东），由 Julia E. Kobick 法官主持；截至 10·13，案卷中没有准许暂缓的命令。学校是否恢复须看之后的裁定及各校通知。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
     headline: '实习能否获批，越来越取决于学位本身的课程结构。',
     analysis:
@@ -117,7 +132,7 @@ export const cptGuidance: PolicyContent = {
         title: '对学校：课程文件与雇主协议更关键',
         text: '学校可能重新审项目手册、实习要求和合作协议。就算最后能批，材料核对也会拖慢申请节奏。',
         examples: [
-          '你和室友在同一所大学，但你的专业规定实习是全体学生必须完成的，室友的专业只把实习当作选修课。按新规，学校得分别看两个专业的要求——你的情况可能过关，室友的不行。所以关键看专业怎么规定，跟是不是同一所学校没关系。',
+          '小林找的实习已经满足专业必修要求了，但学校还没跟实习公司签合作协议。新规同时要求学校和雇主之间有这份协议，所以光满足课程要求还不够。要是协议签不下来，就算公司已经让他去上班，学校还是可能不批 CPT。',
           '小陈去年靠一门选修实习课成功批了 CPT，今年同一家公司又请他回去。但今年的新申请得按新规来审——实习必须是全体学生的必修要求。如果那门课还是选修课，去年的批准记录不能替代今年的课程要求。所以就算公司和岗位都没变，今年也可能批不下来。',
         ],
       },
@@ -125,7 +140,7 @@ export const cptGuidance: PolicyContent = {
         title: '对实习招聘：同校不同项目也可能分化',
         text: '企业更难确定学生什么时候能入职。某个院系的通知，不能代表全校所有学生。',
         examples: [
-          '小林找的实习已经满足专业必修要求了，但学校还没跟实习公司签合作协议。新规同时要求学校和雇主之间有这份协议，所以光满足课程要求还不够。要是协议签不下来，就算公司已经让他去上班，学校还是可能不批 CPT。',
+          '你和室友在同一所大学，但你的专业规定实习是全体学生必须完成的，室友的专业只把实习当作选修课。按新规，学校得分别看两个专业的要求——你的情况可能过关，室友的不行。所以关键看专业怎么规定，跟是不是同一所学校没关系。',
         ],
       },
     ],
@@ -190,12 +205,16 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-10-06",
         "text": "原告提交支持暂缓的法律意见，争议仍需法院处理。"
+      },
+      {
+        "date": "2026-10-13",
+        "text": "法院定于 11·06 就初步禁令与行政行动暂缓申请举行听证（案卷第 19 项）；这是排期，不是裁定。"
       }
     ],
     next: [
       {
-        "date": "日期未定",
-        "text": "跟踪初步禁令／行政行动暂缓请求的排期与裁定；未确认听证或恢复日期。"
+        "date": "2026-11-06",
+        "text": "初步禁令与行政行动暂缓申请听证，美东下午 3 点；法院不一定当庭裁定，听证日也不是恢复日期。"
       },
       {
         "date": "日期未定",
@@ -204,29 +223,29 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。",
-      "currentSummary": "学校继续核对新口径，四协会已请求法院暂缓",
-      "waitingFor": "法院对暂缓请求的安排与裁定，以及学校明确的资格和恢复通知；未核实已签发暂缓令。"
+      "currentSummary": "学校继续核对新口径，暂缓申请定于 11·06 听证",
+      "waitingFor": "11·06 听证及之后的裁定，以及学校明确的资格和恢复通知；截至 10·13 没有准许暂缓的命令。"
     },
   },
   en: {
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
-    status: "Schools apply new guidance · Lawsuit and stay request filed",
+    status: "Schools apply new guidance · Relief hearing November 6",
     effectLabel: 'Guidance in use · Check school and program',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school. Four higher-education associations sued and requested a stay; filing suit alone does not restore elective CPT.",
+    tldr: "ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school. Four higher-education associations sued and requested a stay, with a hearing set for November 6; neither the suit nor the hearing restores elective CPT.",
     tags: ['CPT', 'Day-1 CPT', 'Internships'],
     summary:
-      "SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with a cooperative agreement between the employer and school. Enrollment in an elective internship course alone generally does not qualify. AAU, Presidents’ Alliance, NAFSA and AICUM sued in federal court in Massachusetts and requested relief; no court order changing guidance implementation was verified.",
+      "SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with a cooperative agreement between the employer and school. Enrollment in an elective internship course alone generally does not qualify. AAU, Presidents’ Alliance, NAFSA and AICUM sued in federal court in Massachusetts and requested relief, with a hearing set for November 6. Through October 13, the docket shows no order changing guidance implementation.",
     audience: 'students seeking CPT authorization, their schools and DSOs.',
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      "Both ICE broadcasts, the complaint, relief motion and supporting memorandum were reread October 13, with all 57 public school-page records and four saved screenshots rechecked; school/department scope and evidence levels were preserved. The latest CPT docket and any operative stay remain incompletely verified, and access to latest forum replies was blocked. CMU doctoral wording, NYU Mathematics approval gaps and conflicting Penn text are disclosed on those records. Screenshots establish only the earlier messages, not current university policy.",
+      "Both ICE broadcasts, the complaint, relief motion and supporting memorandum were reread October 13, with all 57 public school-page records and four saved screenshots rechecked; school/department scope and evidence levels were preserved. The public CPT docket mirror runs through the October 13 hearing notice (entry 19) and shows no order granting relief; access to latest forum replies was blocked. CMU doctoral wording, NYU Mathematics approval gaps and conflicting Penn text are disclosed on those records. Screenshots establish only the earlier messages, not current university policy.",
     background:
-      "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. The latest CPT docket and any operative stay were not fully verified; reopening depends on later orders and school notices.",
+      "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. On October 13, entry 19 set the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET before District Judge Julia E. Kobick; through that date, the docket shows no order granting relief. Reopening depends on later rulings and school notices.",
     teaser:
       'The question shifts from whether a student can take an internship course to whether the internship is required by the degree.',
     headline:
@@ -246,7 +265,7 @@ export const cptGuidance: PolicyContent = {
           'For schools: curriculum documents and employer agreements matter more',
         text: 'Schools may reexamine program handbooks, internship requirements, and cooperation agreements. Even when approval remains available, document review may affect timing.',
         examples: [
-          'You and a roommate attend the same university, but your degree requires an internship for everyone while the roommate’s offers it only as an elective. The new interpretation requires separate checks of those curricula. Your internship may meet that condition while the roommate’s does not; the distinction is the degree requirement, not the university name.',
+          'Lin’s internship meets the degree requirement, but the school has not signed a cooperation agreement with the employer. The guidance also requires that agreement, so the academic requirement alone is insufficient. An employer’s invitation cannot replace CPT authorization when the agreement requirement remains unmet.',
           'Chen obtained CPT through an elective last year and receives a return offer from the same employer. A new request reviewed under the all-student degree requirement cannot rely on last year’s approval if the course remains optional. The employer and job may be unchanged, but a new CPT authorization could still be unavailable.',
         ],
       },
@@ -254,7 +273,7 @@ export const cptGuidance: PolicyContent = {
         title: 'For internship hiring: outcomes may differ within one school',
         text: 'Employers may face less predictable start dates and student availability. A notice from one department cannot represent every student at the school.',
         examples: [
-          'Lin’s internship meets the degree requirement, but the school has not signed a cooperation agreement with the employer. The guidance also requires that agreement, so the academic requirement alone is insufficient. An employer’s invitation cannot replace CPT authorization when the agreement requirement remains unmet.',
+          'You and a roommate attend the same university, but your degree requires an internship for everyone while the roommate’s offers it only as an elective. The new interpretation requires separate checks of those curricula. Your internship may meet that condition while the roommate’s does not; the distinction is the degree requirement, not the university name.',
         ],
       },
     ],
@@ -326,12 +345,16 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-10-06",
         "text": "Plaintiffs filed a memorandum supporting relief; the dispute remains for the court to address."
+      },
+      {
+        "date": "2026-10-13",
+        "text": "The court set the preliminary-injunction and stay motion for a hearing on November 6 (entry 19); this is a schedule, not a ruling."
       }
     ],
     next: [
       {
-        "date": "Date unknown",
-        "text": "Track scheduling and rulings on preliminary-injunction/stay requests; no hearing or reopening date is confirmed."
+        "date": "2026-11-06",
+        "text": "Hearing on the preliminary-injunction and stay motion at 3 p.m. ET; the court may not rule from the bench, and the hearing date is not a reopening date."
       },
       {
         "date": "Date unknown",
@@ -340,8 +363,8 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.",
-      "currentSummary": "Schools assess the new standard; four associations request court relief",
-      "waitingFor": "Court scheduling and rulings on relief, plus explicit school eligibility/reopening notices; no operative stay was verified."
+      "currentSummary": "Schools assess the new standard; relief hearing set for November 6",
+      "waitingFor": "The November 6 hearing and any later ruling, plus explicit school eligibility/reopening notices; through October 13 no order granted relief."
     },
   },
 };

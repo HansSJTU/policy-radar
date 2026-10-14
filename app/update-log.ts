@@ -23,6 +23,84 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-14",
+    "changes": [
+      {
+        "id": "nonimmigrant-deference-october-14-published",
+        "category": "#14 工作身份续期审查",
+        "title": "取消既往批准尊重原则的 NPRM 正式刊登，评论截至 11·13",
+        "summary": "10·14 刊登于 91 FR 65119，评论截止 11·13；尚未生效，不自动拒绝续期。",
+        "before": "状态为预览公开、预定 10·14 刊登，评论期限只有“刊登后 30 天”占位。",
+        "after": "改为正式提案和评论中，原文链接改为联邦公报刊登版，并在下一步与 30 天简报中列出 11·13 评论截止。",
+        "sources": [
+          {
+            "label": "Federal Register · 10·14 NPRM",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
+          }
+        ]
+      },
+      {
+        "id": "ead-auto-extension-october-14-final-rule",
+        "category": "#09 EAD 续期自动延期",
+        "title": "取消部分 EAD 续期自动延期的最终规则刊登并生效",
+        "summary": "10·14 刊登于 91 FR 65306 并于当日生效，原样承接 2025 临时最终规则；续期界线仍为 2025·10·30。",
+        "before": "状态为最终稿预览公开、预定 10·14 刊登。",
+        "after": "改为最终规则 10·14 生效，原文链接改为刊登版；强调取消自 2025·10·30 起已在执行，不是 10·14 才首次取消。",
+        "sources": [
+          {
+            "label": "Federal Register · 10·14 最终规则",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents"
+          }
+        ]
+      },
+      {
+        "id": "cpt-relief-hearing-november-6",
+        "category": "#05 CPT 指引",
+        "title": "CPT 诉讼的暂缓申请定于 11·06 听证",
+        "summary": "AAU v. DHS 案卷第 19 项（10·13）把初步禁令与行政行动暂缓申请的听证定在 11·06 美东下午 3 点；听证不是裁定。",
+        "before": "写作“未确认听证或恢复日期”，未核实最新案卷。",
+        "after": "状态、时间线、下一步、诉讼标记和 30 天简报加入 11·06 听证；截至 10·14 案卷中没有准许暂缓的命令。",
+        "sources": [
+          {
+            "label": "AAU v. DHS 地区法院案卷",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-ninth-circuit-appeal",
+        "category": "#02 H-1B 附加费",
+        "title": "另项 10 万美元收费案：政府上诉并申请暂停地区诉讼",
+        "summary": "Global Nurse Force 案中，政府 10·09 就 9·30 命令向第九巡回法院上诉并申请暂停地区诉讼程序；上诉本身不暂停该命令，也不涉及 103,265 美元 NPRM。",
+        "before": "写作 9·30 后的上诉或暂缓命令未核实，10·20、10·27 排期照常列出。",
+        "after": "背景、时间线和简报补入上诉与暂停诉讼动议，并注明 10·20、10·27 排期可能调整。",
+        "sources": [
+          {
+            "label": "Global Nurse Force 案卷公开镜像",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/"
+          }
+        ]
+      },
+      {
+        "id": "october-14-content-review-corrections",
+        "category": "内容核对",
+        "title": "逐条核对政策内容，修正范围表述与错位例子",
+        "summary": "对照联邦公报、行政命令原文、OIRA 记录与法院案卷复核 14 条政策；文号、刊登日、评论截止与生效日均一致，另修正以下问题。",
+        "details": [
+          "#13 行政命令：第 3(a) 节要求在 LCA、petition、签证和入境四个环节都考虑裁员，重点提示不再写成只落在签证和入境；“处境相近”的美国工人命令未定义，不再断言其他部门裁员不算。",
+          "#07 H-1B 分类改革、#11 H-4 EAD、#05 CPT 指引：把放错位置的例子移回对应的影响标题下。",
+          "把会过时的“今天／明天”改成具体日期，涉及 EAD 自动延期、H-4 核查说明及 3 条学校记录；CPT 详情页的诉讼说明改为指引适用的表述。"
+        ],
+        "sources": [
+          {
+            "label": "Federal Register · 行政命令 14431",
+            "href": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-13",
     "changes": [
       {
@@ -1333,6 +1411,84 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-14",
+    "changes": [
+      {
+        "id": "nonimmigrant-deference-october-14-published",
+        "category": "#14 Work-petition renewals",
+        "title": "The NPRM removing prior-approval deference is published, with comments due November 13",
+        "summary": "Published October 14 at 91 FR 65119 with comments due November 13; it is not in effect and does not automatically deny renewals.",
+        "before": "The entry showed a public preview scheduled for October 14 publication, with only a 30-days-after-publication placeholder for comments.",
+        "after": "The entry now shows a published proposal with comments open, links the published Federal Register version, and lists the November 13 deadline in next steps and the 30-day briefing.",
+        "sources": [
+          {
+            "label": "Federal Register · October 14 NPRM",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
+          }
+        ]
+      },
+      {
+        "id": "ead-auto-extension-october-14-final-rule",
+        "category": "#09 EAD renewal extensions",
+        "title": "The final rule removing certain EAD renewal extensions is published and effective",
+        "summary": "Published October 14 at 91 FR 65306 and effective that day, adopting the 2025 IFR unchanged; the renewal cutoff remains October 30, 2025.",
+        "before": "The entry showed a public final-rule preview scheduled for October 14 publication.",
+        "after": "The entry now shows the final rule effective October 14 and links the published version, stressing that removal has applied since October 30, 2025 rather than first beginning October 14.",
+        "sources": [
+          {
+            "label": "Federal Register · October 14 final rule",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents"
+          }
+        ]
+      },
+      {
+        "id": "cpt-relief-hearing-november-6",
+        "category": "#05 CPT guidance",
+        "title": "CPT relief motion set for a November 6 hearing",
+        "summary": "AAU v. DHS docket entry 19 (October 13) sets the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET; a hearing is not a ruling.",
+        "before": "The entry said no hearing or reopening date was confirmed and the latest docket was unverified.",
+        "after": "Status, timeline, next steps, the litigation marker and the 30-day briefing include the November 6 hearing; through October 14 the docket shows no order granting relief.",
+        "sources": [
+          {
+            "label": "AAU v. DHS district docket",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-ninth-circuit-appeal",
+        "category": "#02 H-1B surcharge",
+        "title": "Separate $100,000 case: government appeals and moves to stay district proceedings",
+        "summary": "In Global Nurse Force, the government appealed the September 30 order to the Ninth Circuit on October 9 and moved to stay district proceedings. The appeal alone does not stay that order and does not concern the $103,265 NPRM.",
+        "before": "Later appeals or stay orders after September 30 were described as unverified, and the October 20 and 27 settings were listed unchanged.",
+        "after": "Background, timeline and briefing add the appeal and stay motion and note that the October 20 and 27 settings may change.",
+        "sources": [
+          {
+            "label": "Global Nurse Force public docket mirror",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/"
+          }
+        ]
+      },
+      {
+        "id": "october-14-content-review-corrections",
+        "category": "Content review",
+        "title": "Policy-by-policy review corrects scope wording and misplaced examples",
+        "summary": "All 14 policies were rechecked against the Federal Register, the executive order text, OIRA records and court dockets. Document numbers, publication dates, comment deadlines and effective dates match; the following problems were corrected.",
+        "details": [
+          "#13 Executive order: section 3(a) requires layoffs to be considered in the LCA, petition, visa and entry, so the key point no longer limits the change to visa and entry; the order does not define similarly situated U.S. workers, so the entry no longer says layoffs in other departments do not count.",
+          "#07 H-1B classification reform, #11 H-4 EAD and #05 CPT guidance: misplaced examples moved under the impact they illustrate.",
+          "Today/tomorrow wording that would go stale was replaced with dates in the EAD extension entry, the H-4 review note and three school records; the CPT litigation note now uses guidance rather than rulemaking wording."
+        ],
+        "sources": [
+          {
+            "label": "Federal Register · Executive Order 14431",
+            "href": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-13",
     "changes": [

@@ -118,6 +118,9 @@ export const upsertPolicyImpactRating = `
     updated_at = CURRENT_TIMESTAMP
 `;
 
+// A policy's launch seed stops counting once it has this many real ratings.
+export const SEED_RETIREMENT_REAL_RATINGS = 10;
+
 export const selectPolicyImpactAggregates = `
   WITH real_totals AS (
     SELECT
@@ -126,30 +129,38 @@ export const selectPolicyImpactAggregates = `
       COUNT(*) AS rating_count
     FROM policy_impact_ratings
     GROUP BY policy_id
+  ), active_seeds AS (
+    SELECT
+      policy_impact_seed_ratings.policy_id,
+      policy_impact_seed_ratings.rating_total AS rating_total,
+      policy_impact_seed_ratings.seed_count AS seed_count
+    FROM policy_impact_seed_ratings
+    LEFT JOIN real_totals
+      ON real_totals.policy_id = policy_impact_seed_ratings.policy_id
+    WHERE policy_impact_seed_ratings.is_fake = 1
+      AND COALESCE(real_totals.rating_count, 0) < ${SEED_RETIREMENT_REAL_RATINGS}
   ), policy_ids AS (
     SELECT policy_id FROM real_totals
     UNION
-    SELECT policy_id FROM policy_impact_seed_ratings WHERE is_fake = 1
+    SELECT policy_id FROM active_seeds
   )
   SELECT
     policy_ids.policy_id,
     ROUND(
       (
         COALESCE(real_totals.rating_total, 0) +
-        COALESCE(policy_impact_seed_ratings.rating_total, 0)
+        COALESCE(active_seeds.rating_total, 0)
       ) * 1.0 /
       (
         COALESCE(real_totals.rating_count, 0) +
-        COALESCE(policy_impact_seed_ratings.seed_count, 0)
+        COALESCE(active_seeds.seed_count, 0)
       ),
       1
     ) AS average,
     COALESCE(real_totals.rating_count, 0) +
-      COALESCE(policy_impact_seed_ratings.seed_count, 0) AS rating_count
+      COALESCE(active_seeds.seed_count, 0) AS rating_count
   FROM policy_ids
   LEFT JOIN real_totals USING (policy_id)
-  LEFT JOIN policy_impact_seed_ratings
-    ON policy_impact_seed_ratings.policy_id = policy_ids.policy_id
-    AND policy_impact_seed_ratings.is_fake = 1
+  LEFT JOIN active_seeds USING (policy_id)
   ORDER BY policy_ids.policy_id ASC
 `;

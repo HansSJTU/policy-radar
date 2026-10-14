@@ -48,7 +48,7 @@ export const h4Ead: PolicyContent = {
     audience: '依赖现行规则取得工作许可的符合条件 H-4 配偶及其家庭。',
     caveat: '本议程不直接取消主申请人的 H-1B 身份，也没有让已有工作许可失效。',
     background:
-      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·13 公开承接该规定的最终稿预览。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
+      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·14 刊登并生效的最终规则原样承接该规定。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
     teaser: '若未来撤销，家庭第二份收入和配偶职业连续性可能同时承压。',
     headline: '双收入家庭的规划，可能面对结构性变化。',
     analysis:
@@ -58,14 +58,14 @@ export const h4Ead: PolicyContent = {
         title: '对家庭财务：第二份收入可能需要重估',
         text: '靠两份收入付房租、学费和日常开销的家庭，一旦少了配偶这份，能周转的余地会小很多。',
         examples: [
-          '小林现在靠 H-4 配偶身份申请了 EAD，并在这张卡下面工作。但这项改革计划要取消的就是 H-4 配偶申请工作许可的资格。如果最终真的取消了，她就没法再靠这条规定拿工作许可了，哪怕雇主还想用她。不过现有的 EAD 怎么处理、什么时候受影响，还得看后续规则，现在不能要求她马上停工。',
+          '小林和她丈夫按两个人的收入来安排房租、托儿费和日常开销。如果她因为 H-4 EAD 被取消而没法继续工作，家里就少了一份工资，但每月固定支出不会自动减少。所以家庭预算受影响，是因为配偶失去了工作许可资格，而不是这项政策直接动了她丈夫的 H-1B。',
         ],
       },
       {
         title: '对配偶职业：中断的影响可能持续更久',
         text: '就算家里短期扛得住，职业空档、错过晋升、福利变化，都会影响以后重新找工作。',
         examples: [
-          '小林和她丈夫按两个人的收入来安排房租、托儿费和日常开销。如果她因为 H-4 EAD 被取消而没法继续工作，家里就少了一份工资，但每月固定支出不会自动减少。所以家庭预算受影响，是因为配偶失去了工作许可资格，而不是这项政策直接动了她丈夫的 H-1B。',
+          '小林现在靠 H-4 配偶身份申请了 EAD，并在这张卡下面工作。但这项改革计划要取消的就是 H-4 配偶申请工作许可的资格。如果最终真的取消了，她就没法再靠这条规定拿工作许可了，哪怕雇主还想用她。不过现有的 EAD 怎么处理、什么时候受影响，还得看后续规则，现在不能要求她马上停工。',
         ],
       },
       {
@@ -130,7 +130,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·13 复核 AD14 长期议程、OIRA 待审／结案检索及联邦公报查询，未取得该项撤销资格的公开提案。已找到并读取迁移后的 USCIS H-4 原页，确认主申请人获批 I-140 或符合 AC21 延期条件时的配偶申请资格。今天另取得 AD05 EAD 自动延期最终稿预览；它承接 2025·10·30 起的续期规则，不是 AD14 资格撤销提案。后续资格提案、完整部门说明及诉讼仍待核实。",
+    reviewNote: "10·13 复核 AD14 长期议程、OIRA 待审／结案检索及联邦公报查询，未取得该项撤销资格的公开提案。已找到并读取迁移后的 USCIS H-4 原页，确认主申请人获批 I-140 或符合 AC21 延期条件时的配偶申请资格。10·13 另取得 AD05 EAD 自动延期最终稿预览；它承接 2025·10·30 起的续期规则，不是 AD14 资格撤销提案。后续资格提案、完整部门说明及诉讼仍待核实。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -148,7 +148,7 @@ export const h4Ead: PolicyContent = {
     caveat:
       'The agenda does not directly cancel the principal H-1B status or invalidate existing work authorization.',
     background:
-      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final-rule preview carrying that provision forward became public October 13. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
+      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final rule adopting that provision unchanged was published and took effect October 14. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
     teaser:
       'A future rescission could strain both a family’s second income and the spouse’s career continuity.',
     headline:
@@ -160,7 +160,7 @@ export const h4Ead: PolicyContent = {
         title: 'For family finances: the second income may need reassessment',
         text: 'Families that rely on two incomes for housing, education, and everyday expenses could lose substantial budget flexibility if spousal income disappears.',
         examples: [
-          'Lin currently obtains an EAD through qualifying H-4 spouse eligibility. The plan targets removal of that eligibility category. If the final rule removes the basis Lin uses, employer support would not allow a new permit under that provision. Treatment and timing for existing EADs depend on the future rule; this does not call for stopping work now.',
+          'Lin and her husband budget for rent, childcare, and groceries using two incomes. If removal of H-4 EAD eligibility prevents Lin from continuing work, her income may disappear while fixed expenses remain. The budget effect comes from the spouse’s work-permit eligibility, not direct cancellation of the husband’s H-1B.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const h4Ead: PolicyContent = {
           'For a spouse’s career: an interruption can have lasting effects',
         text: 'Even when a family can absorb the near-term income loss, a career gap and changes in advancement and benefits can affect a later return to work.',
         examples: [
-          'Lin and her husband budget for rent, childcare, and groceries using two incomes. If removal of H-4 EAD eligibility prevents Lin from continuing work, her income may disappear while fixed expenses remain. The budget effect comes from the spouse’s work-permit eligibility, not direct cancellation of the husband’s H-1B.',
+          'Lin currently obtains an EAD through qualifying H-4 spouse eligibility. The plan targets removal of that eligibility category. If the final rule removes the basis Lin uses, employer support would not allow a new permit under that provision. Treatment and timing for existing EADs depend on the future rule; this does not call for stopping work now.',
         ],
       },
       {

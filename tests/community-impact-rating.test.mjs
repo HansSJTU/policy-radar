@@ -160,6 +160,43 @@ test('re-rating one policy replaces the vote and preserves the aggregate count',
   ]);
 });
 
+test('a launch seed counts until its policy has ten real ratings', async (t) => {
+  assert.equal(ratingSchema.SEED_RETIREMENT_REAL_RATINGS, 10);
+
+  const miniflare = new Miniflare({
+    modules: true,
+    script: 'export default { fetch() { return new Response("ok") } }',
+    d1Databases: { DB: 'community-impact-seed-retirement-test' },
+  });
+  t.after(() => miniflare.dispose());
+  const db = await miniflare.getD1Database('DB');
+  await db.prepare(ratingSchema.createPolicyImpactRatingsTable).run();
+  await db.prepare(ratingSchema.createPolicyImpactSeedRatingsTable).run();
+  await db
+    .prepare(
+      `INSERT INTO policy_impact_seed_ratings (policy_id, seed_count, rating_total, note)
+       VALUES ('opt-fee', 10, 100, 'test seed'), ('h1b-fee', 10, 100, 'test seed')`,
+    )
+    .run();
+
+  const rate = (policyId, index) =>
+    db
+      .prepare(ratingSchema.upsertPolicyImpactRating)
+      .bind(policyId, `00000000-0000-4000-8000-${String(index).padStart(12, '0')}`, 1)
+      .run();
+  for (let index = 0; index < 9; index += 1) await rate('opt-fee', index);
+  for (let index = 0; index < 10; index += 1) await rate('h1b-fee', index);
+
+  const result = await db
+    .prepare(ratingSchema.selectPolicyImpactAggregates)
+    .all();
+
+  assert.deepEqual(result.results, [
+    { policy_id: 'h1b-fee', average: 1, rating_count: 10 },
+    { policy_id: 'opt-fee', average: 5.7, rating_count: 19 },
+  ]);
+});
+
 test('launch seed data is explicitly fake, bounded, and removable without real votes', () => {
   const rows = [
     ...seedSql.matchAll(

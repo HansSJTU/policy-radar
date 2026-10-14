@@ -58,15 +58,15 @@ export const h1bReform: PolicyContent = {
         title: '对派驻人员：客户现场证据可能更重要',
         text: '合同、工作地点、岗位职责和实际安排对不对得上，会直接影响案件准备。项目经常变的岗位，协调成本更高。',
         examples: [
-          '小林看中了一家机构，目前这家机构符合 H-1B 免抽签条件，所以 HR 跟他说这份工作不用参加抽签。但这次改革要重新定义免抽签资格。如果最终标准把这机构排除在外，那它就没法再按原来的条件免抽签了，小林“不用抽签”的想法也得跟着变。具体哪些机构会受影响，得等正式规则出来才知道。',
+          '小陈是外包公司的员工，工资由外包公司发，但实际在客户那边上班。这次改革重点就是要管这种第三方派驻。如果最终规则要求更详细地说明实际工作地点、项目内容和工作安排，外包公司就得补材料，光拿本公司的雇佣合同可能不够用。不过具体要补什么，现在还没公布。',
+          '小陈还是那个外包公司的员工，但上一个项目结束了，被派到另一家客户那里。发工资的雇主没变，但实际干活的地方和项目换了。如果新规要求第三方派驻要详细说明，那公司可能也得为新项目补材料。具体要怎么做还没公布，所以现在不能说这次换客户就一定得办什么新手续。',
         ],
       },
       {
         title: '对 cap-exempt 路径：需要重新核对资格依据',
         text: '如果豁免定义改了，机构和岗位之间的关系会成为关键。不能只凭雇主名字就认定以后一定免抽签。',
         examples: [
-          '小陈是外包公司的员工，工资由外包公司发，但实际在客户那边上班。这次改革重点就是要管这种第三方派驻。如果最终规则要求更详细地说明实际工作地点、项目内容和工作安排，外包公司就得补材料，光拿本公司的雇佣合同可能不够用。不过具体要补什么，现在还没公布。',
-          '小陈还是那个外包公司的员工，但上一个项目结束了，被派到另一家客户那里。发工资的雇主没变，但实际干活的地方和项目换了。如果新规要求第三方派驻要详细说明，那公司可能也得为新项目补材料。具体要怎么做还没公布，所以现在不能说这次换客户就一定得办什么新手续。',
+          '小林看中了一家机构，目前这家机构符合 H-1B 免抽签条件，所以 HR 跟他说这份工作不用参加抽签。但这次改革要重新定义免抽签资格。如果最终标准把这机构排除在外，那它就没法再按原来的条件免抽签了，小林“不用抽签”的想法也得跟着变。具体哪些机构会受影响，得等正式规则出来才知道。',
         ],
       },
       {
@@ -169,15 +169,15 @@ export const h1bReform: PolicyContent = {
         title: 'For placed workers: client-site evidence may matter more',
         text: 'Consistency among contracts, worksites, duties, and actual arrangements may become more important to case preparation. Roles with frequent project changes could face higher coordination costs.',
         examples: [
-          'An organization currently qualifies for an H-1B cap exemption, so HR tells Lin the job does not require annual cap selection. The reform plans to revise that eligibility. If the final definition excludes the organization, it cannot continue relying on the old qualification. That could change Lin’s expectations, although the unpublished text does not yet identify the affected organizations.',
+          'Chen is employed and paid by a staffing company but works at a client. The reform targets third-party placements, potentially bringing closer review of the location, project, and actual arrangement. If the final rule adds evidence requirements, the employer would need to supply them rather than rely only on its employment contract. The specific new documents have not been announced.',
+          'Chen remains with the same staffing employer but moves to a new client after a project ends. Because the reform targets the placement arrangement rather than only the payroll employer, a final requirement for fuller project evidence could also matter for that assignment. This illustrates possible preparation needs, not a confirmed requirement for a new type of filing.',
         ],
       },
       {
         title: 'For cap-exempt paths: eligibility grounds need a fresh review',
         text: 'If exemption definitions change, the relationship between an institution and a role may become decisive. An employer’s name alone cannot establish that a future filing will remain cap-exempt.',
         examples: [
-          'Chen is employed and paid by a staffing company but works at a client. The reform targets third-party placements, potentially bringing closer review of the location, project, and actual arrangement. If the final rule adds evidence requirements, the employer would need to supply them rather than rely only on its employment contract. The specific new documents have not been announced.',
-          'Chen remains with the same staffing employer but moves to a new client after a project ends. Because the reform targets the placement arrangement rather than only the payroll employer, a final requirement for fuller project evidence could also matter for that assignment. This illustrates possible preparation needs, not a confirmed requirement for a new type of filing.',
+          'An organization currently qualifies for an H-1B cap exemption, so HR tells Lin the job does not require annual cap selection. The reform plans to revise that eligibility. If the final definition excludes the organization, it cannot continue relying on the old qualification. That could change Lin’s expectations, although the unpublished text does not yet identify the affected organizations.',
         ],
       },
       {

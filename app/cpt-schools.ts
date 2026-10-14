@@ -210,13 +210,13 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '9·15 公告：只批准同一学位项目全体学生必需的 CPT',
       detail:
-        'ISSS 9·15 公告称，已按 SEVP 指引及对“integral”的更窄解释调整做法：只为同一学位项目全体学生必需的实践授权 CPT；选修实习及其他非完成学位所必需的实践不符合资格。公告未说明已有授权如何处理，也没有宣布全面暂停。这是补录既有通知，不是本日新规。',
+        'ISSS 9·15 公告称，已按 SEVP 指引及对“integral”的更窄解释调整做法：只为同一学位项目全体学生必需的实践授权 CPT；选修实习及其他非完成学位所必需的实践不符合资格。公告未说明已有授权如何处理，也没有宣布全面暂停。这是补录的较早通知，不是新发布的规定。',
     },
     en: {
       state:
         'September 15 notice: CPT only for training required of all students in the degree program',
       detail:
-        'The September 15 ISSS notice says Vanderbilt has aligned its practice with SEVP guidance and its narrower reading of “integral”: CPT is authorized only for practical training required of all students in the same degree program, and elective internships and other training not required for degree completion do not qualify. The notice does not address existing authorizations or announce a blanket pause. This adds an earlier notice to the tracker, not a rule issued today.',
+        'The September 15 ISSS notice says Vanderbilt has aligned its practice with SEVP guidance and its narrower reading of “integral”: CPT is authorized only for practical training required of all students in the same degree program, and elective internships and other training not required for degree completion do not qualify. The notice does not address existing authorizations or announce a blanket pause. This is an earlier notice added to the tracker, not a newly issued rule.',
     },
     screenshots: [],
   },
@@ -229,13 +229,13 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '9·08 公告：学分或选课不再构成 CPT 资格，须为全体学生必修',
       detail:
-        'VIS 9·08 公告按 SEVP 两份广播修订 CPT 资格标准与审核流程：实践须为既定课程体系中对全体学生必修的部分，且完成学位取决于该要求。作为选修的实习或研究课即使可满足学位要求也不符合；可通过其他不含实践的课程或选项毕业时不予授权；院系此前批准过同类学生，不代表继续符合资格。VIS 逐案审核，院系须出具证明，必要时补充材料。公告没有宣布全面暂停，也未说明已有授权如何处理。这是补录既有通知，不是本日新规。',
+        'VIS 9·08 公告按 SEVP 两份广播修订 CPT 资格标准与审核流程：实践须为既定课程体系中对全体学生必修的部分，且完成学位取决于该要求。作为选修的实习或研究课即使可满足学位要求也不符合；可通过其他不含实践的课程或选项毕业时不予授权；院系此前批准过同类学生，不代表继续符合资格。VIS 逐案审核，院系须出具证明，必要时补充材料。公告没有宣布全面暂停，也未说明已有授权如何处理。这是补录的较早通知，不是新发布的规定。',
     },
     en: {
       state:
         'September 8 notice: credit or enrollment alone no longer qualifies; training must be required of all students',
       detail:
-        'The September 8 VIS notice revises CPT eligibility criteria and review procedures under the two SEVP broadcasts: training must be a required component of the established curriculum for all students, with degree completion depending on it. An elective internship or research course does not qualify even if it satisfies a degree requirement; CPT is not authorized when the degree can be completed through another option without practical training; and a department’s past approvals do not establish continued eligibility. VIS reviews each request, departments must certify the requirement, and more documentation may be requested. The notice does not announce a blanket pause or address existing authorizations. This adds an earlier notice to the tracker, not a rule issued today.',
+        'The September 8 VIS notice revises CPT eligibility criteria and review procedures under the two SEVP broadcasts: training must be a required component of the established curriculum for all students, with degree completion depending on it. An elective internship or research course does not qualify even if it satisfies a degree requirement; CPT is not authorized when the degree can be completed through another option without practical training; and a department’s past approvals do not establish continued eligibility. VIS reviews each request, departments must certify the requirement, and more documentation may be requested. The notice does not announce a blanket pause or address existing authorizations. This is an earlier notice added to the tracker, not a newly issued rule.',
     },
     screenshots: [],
   },
@@ -305,13 +305,13 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '暂停非学位必需的新 CPT；已有秋季授权可按原条件继续',
       detail:
-        '8·28 校方通知称，ISO 暂停批准新的 CPT，学位必需的实践除外；须为项目全体学生完成学位所必需。已批准的 2026 秋季 CPT 可按授权条件继续，除非 ISO 另行通知。此为补录较早公告，不是本日新政策。',
+        '8·28 校方通知称，ISO 暂停批准新的 CPT，学位必需的实践除外；须为项目全体学生完成学位所必需。已批准的 2026 秋季 CPT 可按授权条件继续，除非 ISO 另行通知。这是补录的较早通知，不是新发布的政策。',
     },
     en: {
       state:
         'New non-required CPT paused; existing fall authorizations may continue under their terms',
       detail:
-        'The August 28 notice pauses new CPT approvals except training required for all students to complete the degree. Already authorized Fall 2026 CPT may continue under its terms unless ISO advises otherwise. This adds an earlier notice to the tracker, not a policy issued today.',
+        'The August 28 notice pauses new CPT approvals except training required for all students to complete the degree. Already authorized Fall 2026 CPT may continue under its terms unless ISO advises otherwise. This is an earlier notice added to the tracker, not a newly issued policy.',
     },
     screenshots: [],
   },
