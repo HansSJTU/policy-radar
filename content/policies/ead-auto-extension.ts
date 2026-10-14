@@ -51,7 +51,7 @@ export const eadAutoExtension: PolicyContent = {
       "绿卡等待期",
       "续期停工风险"
     ],
-    "summary": "DHS 已从 2025·10·30 起取消部分 EAD 续期申请的自动延期：递交续期不再自动延长过期或即将过期卡片的效力及适用的工作授权。10·13 公开的最终稿预览不修改原临时最终规则，预定 10·14 刊登并于刊登日生效；不是明天首次取消。",
+    "summary": "DHS 已从 2025·10·30 起取消部分 EAD 续期申请的自动延期：递交续期不再自动延长过期或即将过期卡片的效力及适用的工作授权。10·13 公开的最终稿预览不修改原临时最终规则，预定 10·14 刊登并于刊登日生效；取消从 2025·10·30 起已在执行，不是 10·14 才首次取消。",
     "audience": "依赖受覆盖 EAD 续期自动延期继续工作的人员，包括符合条件的 H-4 配偶（c26）与身份调整待审人员（c9）等；不能外推所有工作许可类别。",
     "caveat": "旧界线仍是续期申请递交日 2025·10·30；此前合格申请的自动延期不被追溯取消。法定及 TPS 公告例外、STEM OPT 的独立 180 天条款、随有效身份自带的工作授权须分开核对。",
     "reviewNote": "10·13 已读取 2025 临时最终规则的适用及过渡条款、196 页最终稿预览和公开记录。USCIS 自动延期页明确标为存档，并保留取消提示及较早说明，不能把其旧表格视为所有新申请仍可延期。逐类别例外、最新 TPS 公告、完整后续诉讼及个案可否继续工作尚未全部核实；10·14 刊登版本须再核对。",
@@ -95,7 +95,7 @@ export const eadAutoExtension: PolicyContent = {
         "name": "最终稿正式刊登",
         "headline": "规则定稿，申请界线没有重置",
         "assumption": "最终规则按预览原样承接临时最终规则并正式刊登。",
-        "effects": "现有 2025·10·30 界线继续适用，不产生明天首次取消或所有有效卡片失效的结论。",
+        "effects": "现有 2025·10·30 界线继续适用，不能得出 10·14 才首次取消或所有有效卡片失效的结论。",
         "signals": "正式刊登版本、后续部门说明及法院命令。"
       }
     ],
@@ -142,7 +142,7 @@ export const eadAutoExtension: PolicyContent = {
       }
     ],
     "process": {
-      "detail": "取消自动延期的临时最终规则已执行；今天公开的是承接原条款的最终稿预览。",
+      "detail": "取消自动延期的临时最终规则已执行；10·13 公开的是承接原条款的最终稿预览。",
       "currentSummary": "2025 规则已执行，最终稿预览待正式刊登",
       "waitingFor": null
     }
@@ -160,7 +160,7 @@ export const eadAutoExtension: PolicyContent = {
       "Adjustment pending",
       "Renewal work gaps"
     ],
-    "summary": "Since October 30, 2025, DHS has removed automatic extensions for certain EAD renewals: filing no longer automatically extends expiring cards and applicable work authorization. The October 13 final-rule preview adopts the IFR unchanged and is scheduled for October 14 publication, effective on publication. This is not the first removal tomorrow.",
+    "summary": "Since October 30, 2025, DHS has removed automatic extensions for certain EAD renewals: filing no longer automatically extends expiring cards and applicable work authorization. The October 13 final-rule preview adopts the IFR unchanged and is scheduled for October 14 publication, effective on publication. Removal has applied since October 30, 2025; it does not first begin on October 14.",
     "audience": "People relying on covered EAD-renewal extensions, including qualifying H-4 spouses (c26) and adjustment applicants (c9), among other categories; not every work-permit category.",
     "caveat": "The renewal-filing cutoff remains October 30, 2025; qualifying earlier extensions are not retroactively canceled. Statutory and TPS-notice exceptions, the separate STEM OPT 180-day provision and employment authorization incident to valid status require distinct checks.",
     "reviewNote": "The 2025 IFR’s coverage and transition terms, the 196-page final-rule preview and its public record were read October 13. The USCIS auto-extension page is explicitly archived, retaining the removal alert and older guidance; its old table does not establish extension eligibility for all new applications. Category-specific exceptions, latest TPS notices, complete later litigation and individual work eligibility were not fully verified. The October 14 published version needs another check.",
@@ -204,7 +204,7 @@ export const eadAutoExtension: PolicyContent = {
         "name": "Final rule formally published",
         "headline": "Finalization leaves the filing cutoff intact",
         "assumption": "The published final rule adopts the IFR unchanged as previewed.",
-        "effects": "The existing October 30, 2025 cutoff continues; publication does not first remove extensions tomorrow or invalidate all valid cards.",
+        "effects": "The existing October 30, 2025 cutoff continues; publication does not first remove extensions on October 14 or invalidate all valid cards.",
         "signals": "Published text, subsequent agency guidance and court orders."
       }
     ],
@@ -251,7 +251,7 @@ export const eadAutoExtension: PolicyContent = {
       }
     ],
     "process": {
-      "detail": "The IFR removing automatic extensions is already in force; today’s preview carries its provisions forward as a final rule.",
+      "detail": "The IFR removing automatic extensions is already in force; the October 13 preview carries its provisions forward as a final rule.",
       "currentSummary": "2025 rule in force; final-rule preview awaits publication",
       "waitingFor": null
     }

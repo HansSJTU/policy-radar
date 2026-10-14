@@ -50,6 +50,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "General OPT-fee NPRM comments close at 11:59 p.m. ET, docket ICEB-2026-0100; this is not a fee effective date."
   },
   {
+    "id": "cpt-relief-hearing",
+    "date": "2026-11-06",
+    "policyId": "cpt-guidance",
+    "timing": "upcoming",
+    "zh": "AAU v. DHS：法院就 CPT 指引的初步禁令与暂缓申请举行听证，美东下午 3 点；听证不等于裁定，也不是恢复选修 CPT 的日期。",
+    "en": "AAU v. DHS: hearing on the preliminary-injunction and stay motion against the CPT guidance, 3 p.m. ET. A hearing is not a ruling or a date for elective CPT to resume."
+  },
+  {
     "id": "h1b-separate-fee-case-management",
     "date": "2026-10-27",
     "policyId": "h1b-fee",
@@ -62,8 +70,8 @@ export const briefingEntries: BriefingEntry[] = [
     "date": "2026-10-20",
     "policyId": "h1b-fee",
     "timing": "upcoming",
-    "zh": "另项 100,000 美元收费案：9·30 第 130 号命令要求双方提交联合案件管理说明；后续排期变化未核实。",
-    "en": "Separate $100,000 payment case: September 30 order 130 requires a joint case-management statement; later scheduling changes were not verified."
+    "zh": "另项 100,000 美元收费案：9·30 第 130 号命令要求双方提交联合案件管理说明；政府已申请暂停地区诉讼程序，排期可能调整。",
+    "en": "Separate $100,000 payment case: September 30 order 130 requires a joint case-management statement; the government has moved to stay district proceedings, so the schedule may change."
   },
   {
     "id": "h1b-integrity-lca-review-deadline",
@@ -86,8 +94,8 @@ export const briefingEntries: BriefingEntry[] = [
     "date": "2026-10-14",
     "policyId": "ead-auto-extension",
     "timing": "upcoming",
-    "zh": "预定刊登并生效的最终规则原样承接 2025 临时最终规则；续期申请界线仍为 2025·10·30，不是明天首次取消。",
-    "en": "The final rule is scheduled for publication and effectiveness, adopting the 2025 IFR unchanged. The renewal cutoff remains October 30, 2025; removal does not first begin tomorrow."
+    "zh": "预定刊登并生效的最终规则原样承接 2025 临时最终规则；续期申请界线仍为 2025·10·30，不是 10·14 才首次取消。",
+    "en": "The final rule is scheduled for publication and effectiveness, adopting the 2025 IFR unchanged. The renewal cutoff remains October 30, 2025; removal does not first begin on October 14."
   },
   {
     "id": "deference-nprm-preview",
@@ -104,6 +112,14 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "最终稿预览原样承接取消部分 EAD 自动延期的 2025 规则；保留界线前合格申请和法定例外，与 H-4 资格撤销议程分开。",
     "en": "The final-rule preview adopts the 2025 removal of certain EAD extensions unchanged, retaining qualifying pre-cutoff applications and legal exceptions; separate from H-4 eligibility rescission."
+  },
+  {
+    "id": "h1b-separate-fee-ninth-circuit-appeal",
+    "date": "2026-10-09",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "另项 100,000 美元收费案：政府就 9·30 命令向第九巡回法院上诉，并申请暂停地区诉讼程序；上诉本身不暂停该命令，也不涉及 103,265 美元 NPRM。",
+    "en": "Separate $100,000 case: the government appealed the September 30 order to the Ninth Circuit and moved to stay district proceedings. The appeal alone does not stay that order and does not concern the $103,265 NPRM."
   },
   {
     "id": "duration-plaintiffs-procedural-plan",

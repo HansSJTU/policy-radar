@@ -186,9 +186,13 @@ export function PolicyProgress({
               : '诉讼进展 · 并行司法审查'}
           </h3>
           <p>
-            {english
-              ? 'Litigation is separate from federal rulemaking. Court orders may affect whether or when the rule takes effect.'
-              : '诉讼独立于联邦规则制定流程；法院命令可能影响规则能否或何时生效。'}
+            {track.kind === 'administrative-guidance'
+              ? english
+                ? 'Litigation is separate from the guidance process. Court orders may affect whether the guidance continues to be applied.'
+                : '诉讼独立于行政指引流程；法院命令可能影响指引能否继续执行。'
+              : english
+                ? 'Litigation is separate from federal rulemaking. Court orders may affect whether or when the rule takes effect.'
+                : '诉讼独立于联邦规则制定流程；法院命令可能影响规则能否或何时生效。'}
           </p>
           <ol>
             {track.litigation.map((event) => (

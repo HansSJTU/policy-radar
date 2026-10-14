@@ -53,6 +53,11 @@ export const h1bFee: PolicyContent = {
       "href": "https://www.govinfo.gov/app/details/USCOURTS-cand-4_25-cv-08454/USCOURTS-cand-4_25-cv-08454-17/context",
       "zh": "Global Nurse Force 官方法院文献记录",
       "en": "Global Nurse Force official court publication record"
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/",
+      "zh": "Global Nurse Force 案卷公开镜像（含 10·09 上诉）",
+      "en": "Global Nurse Force public docket mirror (including the October 9 appeal)"
     }
   ],
   zh: {
@@ -70,9 +75,9 @@ export const h1bFee: PolicyContent = {
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
     reviewNote:
-      "10·13 已复核 103,265 美元 NPRM、9·10 更正，以及另项 100,000 美元收费的 6·08、7·24、9·30 法院命令。USCIS 当前收费说明、完整后续案卷和法院日历本次无法直接读取；未核实 9·30 后的新暂缓或上诉命令，不能仅凭白宫延长公告认定恢复收费。",
+      "10·13 已复核 103,265 美元 NPRM、9·10 更正，以及另项 100,000 美元收费的 6·08、7·24、9·30 法院命令。USCIS 当前收费说明本次无法直接读取。Global Nurse Force 公开案卷镜像更新至 10·13：政府 10·09 已向第九巡回法院上诉并申请暂停地区诉讼程序，未见暂停 9·30 命令的裁定；不能仅凭白宫延长公告或上诉认定恢复收费。",
     background:
-      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。10·20 须提交联合案件管理说明，10·27 下午 2 时（法院当地时间）举行案件管理会议。",
+      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。10·20 须提交联合案件管理说明，10·27 下午 2 时（法院当地时间）举行案件管理会议。\n政府 10·09 就第 130 号命令向第九巡回法院提起上诉（第 132 项），同日申请暂停地区诉讼程序（第 133 项，回应期限 10·23、答复 10·30），10·13 又就此提出行政动议（第 136 项，回应期限 10·19）。上诉和这些动议本身不暂停 9·30 命令；第九巡回法院是否另有命令、10·20 与 10·27 的安排是否调整，以法院后续命令为准。",
     teaser:
       '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
     headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
@@ -157,12 +162,16 @@ export const h1bFee: PolicyContent = {
       {
         "date": "2026-09-30",
         "text": "另项 100,000 美元收费：Global Nurse Force 案撤销机构政策，并禁止执行原公告及延长公告下的收费政策；不属于 103,265 美元 NPRM 的裁判。"
+      },
+      {
+        "date": "2026-10-09",
+        "text": "另项 100,000 美元收费案：政府向第九巡回法院上诉，并申请暂停地区诉讼程序；上诉本身不暂停 9·30 命令。"
       }
     ],
     next: [
       {
         "date": "2026-10-20",
-        "text": "另项 100,000 美元收费案：9·30 第 130 号命令要求提交联合案件管理说明；后续日历未单独核实。"
+        "text": "另项 100,000 美元收费案：9·30 第 130 号命令要求提交联合案件管理说明；政府已申请暂停地区诉讼程序，排期可能调整。"
       },
       {
         "date": "2026-10-27",
@@ -195,9 +204,9 @@ export const h1bFee: PolicyContent = {
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
     reviewNote:
-      "The $103,265 NPRM, September 10 correction and June 8, July 24 and September 30 court orders concerning the separate $100,000 payment were reviewed October 13. Current USCIS fee guidance, complete later dockets and the court calendar were inaccessible; later stay or appellate orders were not verified. The proclamation extension alone does not establish resumed collection.",
+      "The $103,265 NPRM, September 10 correction and June 8, July 24 and September 30 court orders concerning the separate $100,000 payment were reviewed October 13. Current USCIS fee guidance was inaccessible. The Global Nurse Force public docket mirror, updated October 13, shows an October 9 government appeal to the Ninth Circuit and a motion to stay district proceedings, with no order staying the September 30 ruling. Neither the proclamation extension nor the appeal establishes resumed collection.",
     background:
-      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. A joint case management statement is due October 20, with a case management conference October 27 at 2 p.m. court local time.",
+      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. A joint case management statement is due October 20, with a case management conference October 27 at 2 p.m. court local time.\nOn October 9 the government appealed order 130 to the Ninth Circuit (entry 132) and moved to stay district proceedings (entry 133; responses due October 23, replies October 30), followed by an October 13 administrative motion on that request (entry 136; responses due October 19). The appeal and motions do not themselves stay the September 30 order; any Ninth Circuit order and any change to the October 20 and 27 settings must be checked in later court orders.",
     teaser:
       'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
     headline:
@@ -296,12 +305,16 @@ export const h1bFee: PolicyContent = {
       {
         "date": "2026-09-30",
         "text": "Separate $100,000 payment: Global Nurse Force vacates agency policies and bars implementation under the original and extended proclamations; this is not a ruling on the $103,265 NPRM."
+      },
+      {
+        "date": "2026-10-09",
+        "text": "Separate $100,000 case: the government appealed to the Ninth Circuit and moved to stay district proceedings; the appeal alone does not stay the September 30 order."
       }
     ],
     next: [
       {
         "date": "2026-10-20",
-        "text": "Separate $100,000 case: September 30 order 130 requires a joint case management statement; the later calendar was not separately verified."
+        "text": "Separate $100,000 case: September 30 order 130 requires a joint case management statement; the government has moved to stay district proceedings, so the schedule may change."
       },
       {
         "date": "2026-10-27",
