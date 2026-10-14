@@ -34,6 +34,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Information-collection (PRA) comments on OPT fees close; general rule comments close November 9. These are distinct deadlines."
   },
   {
+    "id": "deference-comment-deadline",
+    "date": "2026-11-13",
+    "policyId": "nonimmigrant-deference",
+    "timing": "upcoming",
+    "zh": "取消 I-129 既往批准尊重原则的 NPRM 评论截止，美东当日午夜前，案卷 USCIS-2026-0529；不是生效日。",
+    "en": "Comments close on the NPRM removing deference to prior I-129 approvals, before midnight ET; docket USCIS-2026-0529. This is not an effective date."
+  },
+  {
     "id": "grace-comment-deadline",
     "date": "2026-11-10",
     "policyId": "grace-period",
@@ -80,6 +88,22 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "upcoming",
     "zh": "按签署后 30 个日历天计算，DOL 最迟须开始复查既往 LCA 数据；不是完成期限或统一生效日。",
     "en": "Calculated as 30 calendar days after signature, DOL must begin reviewing prior LCA data by this date; it is not a completion deadline or common effective date."
+  },
+  {
+    "id": "deference-nprm-published",
+    "date": "2026-10-14",
+    "policyId": "nonimmigrant-deference",
+    "timing": "recent",
+    "zh": "取消 I-129 既往批准尊重原则的 NPRM 正式刊登（91 FR 65119），评论截至 11·13；尚未生效，不自动拒绝续期。",
+    "en": "The NPRM removing deference to prior I-129 approvals was published (91 FR 65119), with comments due November 13. It is not in effect and does not automatically deny renewals."
+  },
+  {
+    "id": "ead-extension-final-rule-published",
+    "date": "2026-10-14",
+    "policyId": "ead-auto-extension",
+    "timing": "recent",
+    "zh": "取消部分 EAD 续期自动延期的最终规则刊登并当日生效（91 FR 65306），原样承接 2025 临时最终规则；续期界线仍为 2025·10·30。",
+    "en": "The final rule removing certain EAD renewal extensions was published and took effect (91 FR 65306), adopting the 2025 IFR unchanged; the renewal cutoff remains October 30, 2025."
   },
   {
     "id": "deference-publication-scheduled",

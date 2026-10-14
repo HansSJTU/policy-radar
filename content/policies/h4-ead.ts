@@ -48,7 +48,7 @@ export const h4Ead: PolicyContent = {
     audience: '依赖现行规则取得工作许可的符合条件 H-4 配偶及其家庭。',
     caveat: '本议程不直接取消主申请人的 H-1B 身份，也没有让已有工作许可失效。',
     background:
-      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·13 公开承接该规定的最终稿预览。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
+      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·14 刊登并生效的最终规则原样承接该规定。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
     teaser: '若未来撤销，家庭第二份收入和配偶职业连续性可能同时承压。',
     headline: '双收入家庭的规划，可能面对结构性变化。',
     analysis:
@@ -148,7 +148,7 @@ export const h4Ead: PolicyContent = {
     caveat:
       'The agenda does not directly cancel the principal H-1B status or invalidate existing work authorization.',
     background:
-      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final-rule preview carrying that provision forward became public October 13. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
+      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final rule adopting that provision unchanged was published and took effect October 14. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
     teaser:
       'A future rescission could strain both a family’s second income and the spouse’s career continuity.',
     headline:

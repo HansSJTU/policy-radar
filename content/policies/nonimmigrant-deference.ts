@@ -5,27 +5,27 @@ export const nonimmigrantDeference: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-10-13",
+  "checkedOn": "2026-10-14",
   "related": [
     "h1b-reform",
     "grace-period"
   ],
   "process": {
     "kind": "federal-rulemaking",
-    "lastCompletedStage": 0,
-    "activeStage": 2,
-    "nextStage": 3
+    "lastCompletedStage": 2,
+    "activeStage": 3,
+    "nextStage": 4
   },
   "sources": [
     {
-      "href": "https://public-inspection.federalregister.gov/2026-20941.pdf",
-      "zh": "10·13 NPRM 预览原文 · 预定 10·14 刊登",
-      "en": "October 13 NPRM preview · publication scheduled October 14"
+      "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility",
+      "zh": "Federal Register 10·14 NPRM（91 FR 65119）",
+      "en": "Federal Register October 14 NPRM (91 FR 65119)"
     },
     {
-      "href": "https://www.federalregister.gov/api/v1/public_inspection_documents/2026-20941",
-      "zh": "联邦公报 · 公开预览记录",
-      "en": "Federal Register · public-inspection record"
+      "href": "https://public-inspection.federalregister.gov/2026-20941.pdf",
+      "zh": "10·13 NPRM 公开预览稿",
+      "en": "October 13 NPRM public-inspection preview"
     },
     {
       "href": "https://www.govinfo.gov/content/pkg/FR-2024-12-18/pdf/2024-29354.pdf",
@@ -37,20 +37,20 @@ export const nonimmigrantDeference: PolicyContent = {
   "zh": {
     "title": "工作身份续期拟取消对既往批准的尊重原则",
     "short": "续期既往批准审查",
-    "status": "NPRM 预览已公开 · 预定 10·14 刊登",
+    "status": "正式提案 · 评论截至 11 月 13 日",
     "effectLabel": "尚未生效 · 现行规则未变",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "DHS 拟删除 Form I-129 审理中对相同当事方、相同基本事实的既往批准一般予以尊重的规定，使续期可以重新审查资格。提案预览已公开，尚未生效。",
+    "tldr": "DHS 拟删除 Form I-129 审理中对相同当事方、相同基本事实的既往批准一般予以尊重的规定，使续期可以重新审查资格。提案已于 10·14 正式刊登，评论截至 11·13，尚未生效。",
     "tags": [
       "H-1B 续期",
       "I-129",
       "资格审查"
     ],
-    "summary": "DHS 拟删除 8 CFR 214.1(c)(5)，取消 USCIS 在相同当事方和相同基本事实的 Form I-129 申请中一般尊重既往资格认定的规则。10·13 公开的 NPRM 预览预定 10·14 正式刊登；目前不是最终规则。",
+    "summary": "DHS 拟删除 8 CFR 214.1(c)(5)，取消 USCIS 在相同当事方和相同基本事实的 Form I-129 申请中一般尊重既往资格认定的规则。NPRM 于 10·14 正式刊登（91 FR 65119），公众评论截至 11·13；目前不是最终规则。",
     "audience": "通过 Form I-129 申请延长工作或停留的非移民雇员及申请雇主，包括适用该表格的 H-1B、L-1、O-1，以及 E、TN 等申请。",
     "caveat": "拟议调整不自动拒绝续期，也不取消已经批准的身份或许可；现行 deference 本来就有重大错误、事实变化和新重要信息等例外，申请人仍须证明资格。",
-    "reviewNote": "10·13 已读取 46 页官方预览及联邦公报公开记录，并核对现行尊重原则的规则来源。正式刊登尚未发生，预览中的评论截止日仍是“刊登后 30 天”占位符；不写成已确定日历期限。Regulations.gov 动态案卷被拒，OIRA 按 RIN 检索未返回记录，完整审查历史、后续说明及诉讼未核实。",
+    "reviewNote": "10·13 已读取 46 页官方预览，并核对现行尊重原则的规则来源。10·14 联邦公报官方接口显示已正式刊登（91 FR 65119），评论截止 11·13；刊登版与预览是否有文字差异未逐字核对。Regulations.gov 动态案卷被拒，OIRA 按 RIN 检索未返回记录，完整审查历史、后续说明及诉讼未核实。",
     "background": "现行 8 CFR 214.1(c)(5) 一般要求 USCIS 在相同当事方、相同基本事实的 I-129 请求中尊重既往资格认定；它不免除提交证据的责任，也允许因重大错误、重大变化或新重要信息重新审查。\n本次 RIN 1615-AD26 提议删除并保留空置该款，理由包括独立核对资格与申请人的举证责任。它与尚在 OIRA 审查中的 RIN 1615-AD00 综合 H-1B 改革是不同项目。",
     "teaser": "之前获批，未来可能更难作为续期审查的稳定基础。",
     "headline": "续期的证据准备可能增加，既往批准不等于未来结果。",
@@ -71,7 +71,7 @@ export const nonimmigrantDeference: PolicyContent = {
         ]
       }
     ],
-    "outlook": "先核对正式刊登、30 天评论窗口与最终文本；只有后续最终规则及其生效条款，才能确定何时改变实际审理要求。",
+    "outlook": "先看 11·13 评论截止后的最终文本；只有后续最终规则及其生效条款，才能确定何时改变实际审理要求。",
     "scenarios": [
       {
         "name": "提案进入评论",
@@ -113,41 +113,46 @@ export const nonimmigrantDeference: PolicyContent = {
       {
         "date": "2026-10-13",
         "text": "NPRM 预览公开，提议删除 8 CFR 214.1(c)(5)。"
+      },
+      {
+        "date": "2026-10-14",
+        "text": "NPRM 正式刊登（91 FR 65119），公众评论截至 11·13；尚未生效。"
       }
     ],
     "next": [
       {
-        "date": "2026-10-14",
-        "text": "预定正式刊登；仍须核对刊登版本与具体评论日期。"
+        "date": "2026-11-13",
+        "text": "公众评论截止（美东当日午夜前），案卷 USCIS-2026-0529；不是生效日。"
       },
       {
         "date": "日期未定",
-        "text": "预览要求刊登后 30 天内评论；最终规则及生效日尚未确定。"
+        "text": "最终规则及生效日尚未确定。",
+        "estimate": true
       }
     ],
     "process": {
-      "detail": "NPRM 预览已公开，等待正式刊登；OIRA 审查历史未独立核实。",
-      "currentSummary": "提案预览公开，尚未改变现行审理规则",
-      "waitingFor": "正式刊登、评论窗口及后续最终规则。"
+      "detail": "NPRM 于 10·14 正式刊登，公众评论截至 11·13；OIRA 审查历史未独立核实。",
+      "currentSummary": "正式提案公开，公众评论进行中",
+      "waitingFor": "11·13 评论截止，以及 DHS 是否发布最终规则。"
     }
   },
   "en": {
     "title": "Proposed Removal of Deference to Prior Work-Petition Approvals",
     "short": "Prior-Approval Deference",
-    "status": "NPRM preview public · publication scheduled October 14",
+    "status": "Proposed rule · Comments due November 13",
     "effectLabel": "Not in effect · Current rules unchanged",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "DHS proposes removing general deference to prior eligibility approvals in Form I-129 requests involving the same parties and underlying facts, allowing renewed eligibility review. The proposal preview is public but not in effect.",
+    "tldr": "DHS proposes removing general deference to prior eligibility approvals in Form I-129 requests involving the same parties and underlying facts, allowing renewed eligibility review. The proposal was published October 14 with comments due November 13; it is not in effect.",
     "tags": [
       "Work-petition renewals",
       "I-129",
       "Eligibility review"
     ],
-    "summary": "DHS proposes removing 8 CFR 214.1(c)(5), which generally requires USCIS to defer to prior eligibility determinations in Form I-129 requests involving the same parties and underlying facts. The October 13 NPRM preview is scheduled for October 14 publication; it is not a final rule.",
+    "summary": "DHS proposes removing 8 CFR 214.1(c)(5), which generally requires USCIS to defer to prior eligibility determinations in Form I-129 requests involving the same parties and underlying facts. The NPRM was published October 14 (91 FR 65119), with public comments due November 13; it is not a final rule.",
     "audience": "Nonimmigrant workers and petitioners extending employment or stay through Form I-129, including H-1B, L-1, O-1 and E or TN requests using that form.",
     "caveat": "The proposal does not automatically deny renewals or cancel existing approvals or status. Current deference already has material-error, changed-facts and new-information exceptions, and petitioners must still establish eligibility.",
-    "reviewNote": "The 46-page official preview, public-inspection record and regulatory source of current deference were reviewed October 13. Formal publication has not occurred; the preview leaves the comment date as 30 days after publication, not a confirmed calendar deadline. The live Regulations.gov docket was blocked and the OIRA RIN search returned no record; complete review history, later guidance and litigation remain unverified.",
+    "reviewNote": "The 46-page official preview and the regulatory source of current deference were reviewed October 13. On October 14 the official Federal Register API showed publication at 91 FR 65119 with comments due November 13; the published text was not compared word for word with the preview. The live Regulations.gov docket was blocked and the OIRA RIN search returned no record; complete review history, later guidance and litigation remain unverified.",
     "background": "Current 8 CFR 214.1(c)(5) generally requires deference to prior eligibility determinations for I-129 requests with the same parties and underlying facts. It does not remove the evidence burden and allows reconsideration for material error, material changes or new material information.\nRIN 1615-AD26 proposes removing and reserving that paragraph to support independent eligibility review and the burden of proof. It is separate from broader H-1B reform RIN 1615-AD00, which remains under OIRA review.",
     "teaser": "A prior approval could become a less stable foundation for a later renewal.",
     "headline": "Renewals may require more evidence; prior approval does not guarantee a future outcome.",
@@ -168,7 +173,7 @@ export const nonimmigrantDeference: PolicyContent = {
         ]
       }
     ],
-    "outlook": "First check formal publication, the 30-day comment window and final text. Only a later final rule and its effective provisions can establish when actual adjudication requirements change.",
+    "outlook": "Watch the final text after comments close November 13. Only a later final rule and its effective provisions can establish when actual adjudication requirements change.",
     "scenarios": [
       {
         "name": "Proposal enters comments",
@@ -210,22 +215,27 @@ export const nonimmigrantDeference: PolicyContent = {
       {
         "date": "2026-10-13",
         "text": "NPRM preview released, proposing removal of 8 CFR 214.1(c)(5)."
+      },
+      {
+        "date": "2026-10-14",
+        "text": "NPRM published (91 FR 65119), with public comments due November 13; not in effect."
       }
     ],
     "next": [
       {
-        "date": "2026-10-14",
-        "text": "Publication scheduled; verify the published version and exact comment date."
+        "date": "2026-11-13",
+        "text": "Public comments due before midnight Eastern Time; docket USCIS-2026-0529. This is not an effective date."
       },
       {
         "date": "Date unknown",
-        "text": "The preview calls for comments within 30 days after publication; final text and an effective date are undetermined."
+        "text": "Final text and an effective date are undetermined.",
+        "estimate": true
       }
     ],
     "process": {
-      "detail": "The NPRM preview is public and awaits formal publication; OIRA review history was not independently verified.",
-      "currentSummary": "Proposal preview public; current adjudication rules unchanged",
-      "waitingFor": "Formal publication, comments and a later final rule."
+      "detail": "The NPRM was published October 14, with public comments due November 13; OIRA review history was not independently verified.",
+      "currentSummary": "Published NPRM; public comments open",
+      "waitingFor": "The November 13 comment deadline and any DHS final rule."
     }
   }
 };
