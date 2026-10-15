@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-10-14",
   related: [
     "ead-auto-extension",
     "ead-discretion",
@@ -115,7 +115,7 @@ export const h4Ead: PolicyContent = {
         "text": "项目进入政府长期规则议程。"
       },
       {
-        "date": "截至 2026-10-13",
+        "date": "截至 2026-10-14",
         "text": "AD14 仍为长期议程、提案日期未定；未取得该项公开 NPRM，OIRA 检索未返回该项记录。"
       }
     ],
@@ -130,7 +130,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·13 复核 AD14 长期议程、OIRA 待审／结案检索及联邦公报查询，未取得该项撤销资格的公开提案。已找到并读取迁移后的 USCIS H-4 原页，确认主申请人获批 I-140 或符合 AC21 延期条件时的配偶申请资格。10·13 另取得 AD05 EAD 自动延期最终稿预览；它承接 2025·10·30 起的续期规则，不是 AD14 资格撤销提案。后续资格提案、完整部门说明及诉讼仍待核实。",
+    reviewNote: "10·14 复核 AD14 长期议程、OIRA 待审／结案检索和联邦公报查询，未取得撤销 H-4 EAD 资格的公开提案。USCIS H-4 原页仍列主申请人获批 I-140 或符合 AC21 延期时的配偶申请资格。另项 AD05 EAD 自动延期最终规则已于 10·14 刊登生效，正文原样承接 2025·10·30 起的续期界线，并非 AD14 资格撤销。后续资格提案、完整部门说明及诉讼仍有核查缺口。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -233,7 +233,7 @@ export const h4Ead: PolicyContent = {
         "text": "The initiative appeared on the government’s long-term rulemaking agenda."
       },
       {
-        "date": "As of 2026-10-13",
+        "date": "As of 2026-10-14",
         "text": "AD14 remains a long-term agenda item with no proposal date; no public AD14 NPRM was obtained and the OIRA search returned no record for it."
       }
     ],
@@ -250,6 +250,6 @@ export const h4Ead: PolicyContent = {
       waitingFor:
         'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
     },
-    reviewNote: "The AD14 long-term agenda, OIRA pending/concluded searches and Federal Register query were reviewed October 13; no public AD14 eligibility-rescission proposal was obtained. The relocated USCIS H-4 page was found and read, confirming spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 EAD-renewal final-rule preview was also read: it carries forward the October 30, 2025 renewal rule, not AD14 eligibility rescission. A later eligibility proposal, complete agency guidance and litigation remain unverified.",
+    reviewNote: "The AD14 long-term agenda, OIRA pending/concluded searches and Federal Register query were reviewed October 14; no public H-4 EAD eligibility-rescission proposal was obtained. The USCIS H-4 page still lists spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 EAD-renewal final rule was published and effective October 14, adopting the October 30, 2025 renewal cutoff unchanged; it is not AD14 eligibility rescission. Later eligibility proposals, complete agency guidance and litigation remain incompletely verified.",
   },
 };

@@ -26,6 +26,20 @@ const chineseUpdates: ContentUpdate[] = [
     "date": "2026-10-14",
     "changes": [
       {
+        "id": "h1b-separate-fee-appeal-26-6667-schedule",
+        "category": "#02 H-1B 附加费（另项 100,000 美元收费诉讼）",
+        "title": "取得第九巡回上诉案号及书面排期通知",
+        "summary": "地区案卷第 138 项附载第九巡回 26-6667 排期：主书状 11·06、答辩 12·04；通知不恢复收费。",
+        "before": "仅记载政府 10·09 上诉及暂停地区诉讼的请求，未列上诉案号或确定的上诉书状日期。",
+        "after": "补充 10·09 签发、10·14 录入地区案卷的法院通知：26-6667 主书状 11·06、答辩 12·04，可选回复在答辩送达后 21 天；最新地区排期仍有核查缺口，9·30 命令未因这份通知而暂停。",
+        "sources": [
+          {
+            "label": "第九巡回上诉案号与书面排期通知 · 地区案卷第 138 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.138.0.pdf"
+          }
+        ]
+      },
+      {
         "id": "nonimmigrant-deference-october-14-published",
         "category": "#14 工作身份续期审查",
         "title": "取消既往批准尊重原则的 NPRM 正式刊登，评论截至 11·13",
@@ -1414,6 +1428,20 @@ const englishUpdates: ContentUpdate[] = [
   {
     "date": "2026-10-14",
     "changes": [
+      {
+        "id": "h1b-separate-fee-appeal-26-6667-schedule",
+        "category": "#02 H-1B surcharge (separate $100,000 payment litigation)",
+        "title": "Ninth Circuit appeal number and briefing dates confirmed from court notice",
+        "summary": "District entry 138 contains the Ninth Circuit schedule for 26-6667: opening brief November 6, answering brief December 4; it does not resume collection.",
+        "before": "The October 9 appeal and request to pause district proceedings were recorded without an appellate case number or confirmed appellate briefing dates.",
+        "after": "Add the October 9 court notice recorded in the district docket October 14: appeal 26-6667, opening brief November 6, answering brief December 4, optional reply within 21 days after service. The latest district schedule remains incompletely verified; this notice does not stay the September 30 order.",
+        "sources": [
+          {
+            "label": "Ninth Circuit appeal number and briefing schedule · district entry 138",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.138.0.pdf"
+          }
+        ]
+      },
       {
         "id": "nonimmigrant-deference-october-14-published",
         "category": "#14 Work-petition renewals",
