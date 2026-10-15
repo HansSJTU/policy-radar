@@ -34,6 +34,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Information-collection (PRA) comments on OPT fees close; general rule comments close November 9. These are distinct deadlines."
   },
   {
+    "id": "h1b-separate-fee-appeal-answering-brief",
+    "date": "2026-12-04",
+    "policyId": "h1b-fee",
+    "timing": "upcoming",
+    "zh": "另项 100,000 美元收费案：第九巡回 26-6667 答辩书状期限，按原始排期通知；不是收费生效日。",
+    "en": "Separate $100,000 case: answering brief due in Ninth Circuit 26-6667 under the original schedule notice; not a collection effective date."
+  },
+  {
     "id": "deference-comment-deadline",
     "date": "2026-11-13",
     "policyId": "nonimmigrant-deference",
@@ -64,6 +72,14 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "upcoming",
     "zh": "AAU v. DHS：法院就 CPT 指引的初步禁令与暂缓申请举行听证，美东下午 3 点；听证不等于裁定，也不是恢复选修 CPT 的日期。",
     "en": "AAU v. DHS: hearing on the preliminary-injunction and stay motion against the CPT guidance, 3 p.m. ET. A hearing is not a ruling or a date for elective CPT to resume."
+  },
+  {
+    "id": "h1b-separate-fee-appeal-opening-brief",
+    "date": "2026-11-06",
+    "policyId": "h1b-fee",
+    "timing": "upcoming",
+    "zh": "另项 100,000 美元收费案：第九巡回 26-6667 政府主书状期限；排期本身不暂停 9·30 命令，也不恢复收费。",
+    "en": "Separate $100,000 case: government opening brief due in Ninth Circuit 26-6667. Scheduling does not stay the September 30 order or resume collection."
   },
   {
     "id": "h1b-separate-fee-case-management",
@@ -111,7 +127,8 @@ export const briefingEntries: BriefingEntry[] = [
     "policyId": "nonimmigrant-deference",
     "timing": "upcoming",
     "zh": "预定刊登取消 I-129 既往批准尊重原则的 NPRM；评论期按刊登后 30 天计算，尚未取得确定日历截止日，不是生效日。",
-    "en": "Publication of the I-129 deference NPRM is scheduled; comments run 30 days from publication, but the calendar deadline is not yet confirmed. This is not an effective date."
+    "en": "Publication of the I-129 deference NPRM is scheduled; comments run 30 days from publication, but the calendar deadline is not yet confirmed. This is not an effective date.",
+    "supersededOn": "2026-10-14"
   },
   {
     "id": "ead-extension-final-publication-scheduled",
@@ -119,7 +136,16 @@ export const briefingEntries: BriefingEntry[] = [
     "policyId": "ead-auto-extension",
     "timing": "upcoming",
     "zh": "预定刊登并生效的最终规则原样承接 2025 临时最终规则；续期申请界线仍为 2025·10·30，不是 10·14 才首次取消。",
-    "en": "The final rule is scheduled for publication and effectiveness, adopting the 2025 IFR unchanged. The renewal cutoff remains October 30, 2025; removal does not first begin on October 14."
+    "en": "The final rule is scheduled for publication and effectiveness, adopting the 2025 IFR unchanged. The renewal cutoff remains October 30, 2025; removal does not first begin on October 14.",
+    "supersededOn": "2026-10-14"
+  },
+  {
+    "id": "h1b-separate-fee-appeal-schedule-recorded",
+    "date": "2026-10-14",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "另项 100,000 美元收费案：地区案卷录入第九巡回 10·09 排期通知，上诉案号 26-6667，主书状 11·06、答辩 12·04；不是恢复收费命令。",
+    "en": "Separate $100,000 case: the district docket recorded the Ninth Circuit’s October 9 notice for appeal 26-6667, with opening and answering briefs due November 6 and December 4. It does not restore collection."
   },
   {
     "id": "deference-nprm-preview",

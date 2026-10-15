@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-10-14",
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
@@ -165,7 +165,7 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     },
-    reviewNote: "10·13 重读 9·11 NPRM、OIRA 跨记录检索及联邦公报 RIN 接口；仅列原提案，评论截止仍为 11·10。USCIS 现行失业后选项原页已读取，仍说明这些工作身份及家属可获最长 60 天酌情宽限期。Regulations.gov 动态案卷未能读取，后续部门说明未完整核实。",
+    reviewNote: "10·14 重读 9·11 NPRM、OIRA 跨记录检索及联邦公报 RIN 接口；仅列原提案，评论截止仍为 11·10。USCIS 现行失业后选项原页已读取，仍说明这些工作身份及家属可获最长 60 天酌情宽限期。Regulations.gov 动态案卷未能读取，后续部门说明未完整核实。",
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
@@ -303,6 +303,6 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
     },
-    reviewNote: "The September 11 NPRM, OIRA review search and Federal Register RIN API were checked October 13; only the original proposal is listed, with November 10 comments. The current USCIS post-termination options page was retrieved and still describes the discretionary up-to-60-day grace period for these classifications and dependents. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
+    reviewNote: "The September 11 NPRM, OIRA review search and Federal Register RIN API were checked October 14; only the original proposal is listed, with November 10 comments. The current USCIS post-termination options page was retrieved and still describes the discretionary up-to-60-day grace period for these classifications and dependents. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
   },
 };

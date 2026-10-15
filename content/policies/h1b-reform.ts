@@ -5,7 +5,7 @@ export const h1bReform: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-10-14",
   related: [
     "h1b-fee",
     "grace-period",
@@ -138,7 +138,7 @@ export const h1bReform: PolicyContent = {
       currentSummary: 'OIRA 发布前审查',
       waitingFor: 'OIRA 完成审查及 DHS 公开提案；尚无确认发布日期。',
     },
-    reviewNote: "10·13 重读 OIRA 待审记录、当前队列、按 RIN 的待审／结案检索及议程跨版检索；仅列 8·24 收件的待审提案，当前议程仍为提案阶段。联邦公报 RIN 查询截至当天未列公开文件；具体条款、发布日期及后续部门说明未确认。",
+    reviewNote: "10·14 重读 OIRA 待审记录、当前队列、按 RIN 的待审／结案检索及议程跨版检索；仅列 8·24 收件的待审提案，当前议程仍为提案阶段。联邦公报 RIN 查询截至当天未列公开文件；具体条款、发布日期及后续部门说明未确认。",
   },
   en: {
     title:
@@ -264,6 +264,6 @@ export const h1bReform: PolicyContent = {
       waitingFor:
         'Completion of OIRA review and publication of the DHS proposal; no publication date is confirmed.',
     },
-    reviewNote: "On October 13, the OIRA submission, pending list, RIN search across pending/concluded reviews and agenda editions were checked. The review search lists only the August 24 proposal pending; the current agenda retains the proposed-rule stage. The Federal Register RIN query lists no published record through the check date; terms, publication timing and later agency guidance remain unconfirmed.",
+    reviewNote: "On October 14, the OIRA submission, pending list, RIN search across pending/concluded reviews and agenda editions were checked. The review search lists only the August 24 proposal pending; the current agenda retains the proposed-rule stage. The Federal Register RIN query lists no published record through the check date; terms, publication timing and later agency guidance remain unconfirmed.",
   },
 };
