@@ -382,13 +382,13 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '新 CPT 仅限两个硕士项目，其他项目暂不受理',
       detail:
-        "此前 OIA 页面只列 MS in Applied Behavior Analysis 与 MS in Clinical Health Psychology 可申请新 CPT，其他项目暂时不要注册 CPT 课程或提交申请，已批准的 2026 秋季 CPT 不取消、不修改。10·21 原页及替代读取均被拒，未能重新确认当前项目范围或是否有后续调整；保留此前记录，不据此确认仍停批或已经恢复。仅限 Dearborn 校区，CPT 栏此前未单独标注更新日期。",
+        "10·21 已通过网页重新读取 OIA 原页，解除此前访问缺口。新 CPT 仍只限 MS in Applied Behavior Analysis 与 MS in Clinical Health Psychology；其他项目不要注册 CPT 课程或提交申请。已批准的 2026 秋季 CPT 不取消、不修改。页面明确 D/S 全国暂缓不改变此 CPT 口径；10·08 更新介绍诉讼，没有宣布扩大资格。仅限 Dearborn 校区，未确认其他后续调整。",
     },
     en: {
       state:
         'New CPT limited to two MS programs: Applied Behavior Analysis and Clinical Health Psychology',
       detail:
-        "The previously read OIA page limited new CPT to MS in Applied Behavior Analysis and MS in Clinical Health Psychology, told other students not to enroll in a CPT course or apply, and preserved approved Fall 2026 CPT. Both direct and alternative access were blocked October 21, so current program coverage and later changes could not be reverified. This retains the earlier record without confirming a continuing pause or reopening. It covers Dearborn only; the earlier CPT section had no separate update date.",
+        "The original OIA page was reread through web retrieval October 21, resolving the earlier access gap. New CPT remains limited to MS in Applied Behavior Analysis and MS in Clinical Health Psychology; other students should not enroll in a CPT course or apply. Approved Fall 2026 CPT will not be canceled or modified. The page expressly separates the D/S stay from these CPT restrictions; its October 8 update reports litigation without expanding eligibility. This covers Dearborn only; other subsequent changes remain unverified.",
     },
     screenshots: [],
   },
