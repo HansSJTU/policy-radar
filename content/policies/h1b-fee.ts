@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-14",
+  checkedOn: "2026-10-21",
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -68,6 +68,21 @@ export const h1bFee: PolicyContent = {
       "href": "https://www.courtlistener.com/docket/71541425/feed/",
       "zh": "Global Nurse Force · 公开案卷摘要（排期条目可能不含全文）",
       "en": "Global Nurse Force · Current docket feed (some schedule entries lack full text)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.140.0.pdf",
+      "zh": "原告 · 10·15 反对暂停地区诉讼及行政程序请求（第 140 项，非裁定）",
+      "en": "Plaintiffs · October 15 opposition to district-stay and administrative motions (entry 140, not an order)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.141.0.pdf",
+      "zh": "政府 · 10·19 支持暂停地区诉讼的回复（第 141 项，非裁定）",
+      "en": "Government · October 19 reply supporting a district-proceedings stay (entry 141, not an order)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.142.0.pdf",
+      "zh": "双方 · 10·20 联合案件管理说明（第 142 项，非裁定）",
+      "en": "Parties · October 20 joint case management statement (entry 142, not an order)"
     }
   ],
   zh: {
@@ -85,9 +100,9 @@ export const h1bFee: PolicyContent = {
       '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
     caveat: '这项附加费不打算向 cap-exempt 申请收取。',
     reviewNote:
-      "10·14 重读 103,265 美元 NPRM、9·10 更正及另项 100,000 美元收费案的既有法院命令。已读取第 138 项附载的第九巡回法院通知：上诉案号 26-6667，政府主书状 11·06、答辩 12·04；该通知不暂停 9·30 命令。第 135、136 项是政府就地区诉讼暂缓听证提出的通知及加快处理请求，不是准许暂缓。公开案卷摘要 另列 10·14 排期条目，但未取得该条完整内容；最新地区排期、完整上诉后续命令及 USCIS 收费执行说明仍有核查缺口，不能推定恢复收取。",
+      "10·21 复核 103,265 美元 NPRM、9·10 更正及另项 100,000 美元案第 130 项命令。第 138 项所附通知列第九巡回 26-6667 政府主书状 11·06、答辩 12·04。已读取原告 10·15 第 140 项反对意见、政府 10·19 第 141 项回复及双方 10·20 第 142 项联合说明；后者仍列 10·27 案件管理会议，并称暂停地区诉讼请求待裁。这些是当事人文件，不解除 9·30 命令或恢复收费。完整后续地区及上诉命令、最新 USCIS 收费执行说明仍未完整核实；双方建议的实体排期不能写成法院期限。",
     background:
-      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。10·20 须提交联合案件管理说明，10·27 下午 2 时（法院当地时间）举行案件管理会议。\n政府 10·09 就第 130 号命令向第九巡回法院提起上诉（第 132 项），同日申请暂停地区诉讼程序（第 133 项，回应期限 10·23、答复 10·30），10·13 又就此提出行政动议（第 136 项，回应期限 10·19）。上诉和这些动议本身不暂停 9·30 命令；第九巡回法院是否另有命令、10·20 与 10·27 的安排是否调整，以法院后续命令为准。\n10·14 地区案卷录入第 138 项，附载第九巡回法院 10·09 签发的排期通知：上诉案号 26-6667，政府主书状须于 11·06 提交，答辩于 12·04 提交，可选回复在答辩送达后 21 天内提交。这是上诉书面排期，不是收费生效日，也未暂停 9·30 命令。公开案卷摘要 另列 10·14 地区排期条目但无完整内容，最新地区安排仍待核实。",
+      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。双方 10·20 已提交联合案件管理说明；9·30 命令及联合说明仍列 10·27 下午 2 时（太平洋时间）Zoom 案件管理会议。\n政府 10·09 就第 130 号命令向第九巡回法院提起上诉（第 132 项），同日申请暂停地区诉讼程序（第 133 项），10·13 又就此提出行政动议（第 136 项）。上诉和这些动议本身不暂停 9·30 命令；第九巡回法院是否另有命令、10·27 的安排是否调整，以法院后续命令为准。\n10·14 地区案卷录入第 138 项，附载第九巡回法院 10·09 签发的排期通知：上诉案号 26-6667，政府主书状须于 11·06 提交，答辩于 12·04 提交，可选回复在答辩送达后 21 天内提交。这是上诉书面排期，不是收费生效日，也未暂停 9·30 命令。公开案卷摘要 另列 10·14 地区排期条目但无完整内容，最新地区安排仍待核实。\n10·15 原告第 140 项反对暂停地区诉讼，10·19 政府第 141 项回复支持暂停。10·20 双方第 142 项联合说明称相关暂停请求仍待处理，并提出不同的后续实体排期方案；这些建议尚不是法院命令，也不恢复收费。",
     teaser:
       '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
     headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
@@ -180,16 +195,24 @@ export const h1bFee: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "地区案卷第 138 项录入第九巡回 10·09 排期通知：案号 26-6667，政府主书状 11·06、答辩 12·04；不恢复收费。"
+      },
+      {
+        "date": "2026-10-15",
+        "text": "另项 100,000 美元案：原告第 140 项反对政府暂停地区诉讼及相关行政程序请求，要求维持案件管理安排。这是当事人意见，不是法院裁定，也不恢复收费。"
+      },
+      {
+        "date": "2026-10-19",
+        "text": "另项 100,000 美元案：政府第 141 项回复继续请求暂停地区诉讼；这是当事人意见，不是法院准许暂缓。"
+      },
+      {
+        "date": "2026-10-20",
+        "text": "另项 100,000 美元案：双方提交第 142 项联合案件管理说明，仍列 10·27 下午 2 点（太平洋时间）Zoom 会议，并说明暂停地区诉讼请求尚待处理；双方提出的实体排期并非已获法院采纳。"
       }
     ],
     next: [
       {
-        "date": "2026-10-20",
-        "text": "另项 100,000 美元收费案：9·30 第 130 号命令要求提交联合案件管理说明；政府已申请暂停地区诉讼程序，排期可能调整。"
-      },
-      {
         "date": "2026-10-27",
-        "text": "另项 100,000 美元收费案：9·30 命令排定下午 2 时（法院当地时间）Zoom 案件管理会议；不是 103,265 美元提案的生效日。"
+        "text": "另项 100,000 美元案：9·30 命令及 10·20 联合说明仍列下午 2 点（太平洋时间）Zoom 案件管理会议；后续是否调整待核实，不是 103,265 美元提案的生效日。"
       },
       {
         "date": "2026-11-06",
@@ -226,9 +249,9 @@ export const h1bFee: PolicyContent = {
       'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
     reviewNote:
-      "The $103,265 NPRM, September 10 correction and existing orders in the separate $100,000 case were reread October 14. District entry 138 contains the Ninth Circuit notice for appeal 26-6667: opening brief November 6, answering brief December 4. It does not stay the September 30 order. Entries 135–136 are the government’s hearing notice and request for expedited handling of a district-proceedings stay, not an order granting relief. The public feed also lists an October 14 scheduling entry whose full content was unavailable. The latest district schedule, complete subsequent appellate orders and USCIS collection guidance remain incompletely verified; resumed collection cannot be inferred.",
+      "The $103,265 NPRM, September 10 correction and order 130 in the separate $100,000 case were reviewed October 21. The notice attached to entry 138 lists a November 6 government opening brief and December 4 answering brief in Ninth Circuit 26-6667. Plaintiffs’ October 15 opposition (140), the government’s October 19 reply (141) and the October 20 joint statement (142) were read; the statement still lists an October 27 case management conference and describes the district-stay requests as pending. These are party filings, not a lifting of the September 30 order or resumed collection. Complete subsequent district and appellate orders and latest USCIS collection guidance remain incompletely verified; the parties’ proposed merits schedule is not a court deadline.",
     background:
-      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. A joint case management statement is due October 20, with a case management conference October 27 at 2 p.m. court local time.\nOn October 9 the government appealed order 130 to the Ninth Circuit (entry 132) and moved to stay district proceedings (entry 133; responses due October 23, replies October 30), followed by an October 13 administrative motion on that request (entry 136; responses due October 19). The appeal and motions do not themselves stay the September 30 order; any Ninth Circuit order and any change to the October 20 and 27 settings must be checked in later court orders.\nOn October 14, district entry 138 recorded the Ninth Circuit’s October 9 schedule notice for appeal 26-6667: the government’s opening brief is due November 6, the answering brief December 4, and an optional reply within 21 days after service of the answering brief. These are appellate briefing dates, not collection dates, and the notice does not stay the September 30 order. The public feed also lists an October 14 district scheduling entry without its full content; the latest district settings remain unverified.",
+      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. The parties filed their joint case management statement October 20; the September 30 order and joint statement still list an October 27 Zoom conference at 2 p.m. Pacific.\nOn October 9 the government appealed order 130 to the Ninth Circuit (entry 132) and moved to stay district proceedings (entry 133), followed by an October 13 administrative motion on that request (entry 136). The appeal and motions do not themselves stay the September 30 order; any Ninth Circuit order and any change to the October 27 setting must be checked in later court orders.\nOn October 14, district entry 138 recorded the Ninth Circuit’s October 9 schedule notice for appeal 26-6667: the government’s opening brief is due November 6, the answering brief December 4, and an optional reply within 21 days after service of the answering brief. These are appellate briefing dates, not collection dates, and the notice does not stay the September 30 order. The public feed also lists an October 14 district scheduling entry without its full content; the latest district settings remain unverified.\nPlaintiffs opposed a district-proceedings stay in entry 140 on October 15; the government supported a stay in its October 19 reply, entry 141. The October 20 joint statement, entry 142, describes the stay requests as pending and proposes differing merits schedules. Those proposals are not court orders and do not resume collection.",
     teaser:
       'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
     headline:
@@ -335,16 +358,24 @@ export const h1bFee: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "District entry 138 recorded the Ninth Circuit’s October 9 schedule notice for appeal 26-6667: opening brief November 6, answering brief December 4; the notice does not resume collection."
+      },
+      {
+        "date": "2026-10-15",
+        "text": "Separate $100,000 case: plaintiffs’ entry 140 opposes a stay of district proceedings and related administrative relief, requesting that case-management arrangements continue. It is a party filing, not a court order or a resumption of collection."
+      },
+      {
+        "date": "2026-10-19",
+        "text": "Separate $100,000 case: the government’s entry 141 reply continues to seek a stay of district proceedings; it is a party filing, not an order granting a stay."
+      },
+      {
+        "date": "2026-10-20",
+        "text": "Separate $100,000 case: the parties filed joint case management statement 142, still listing the October 27 Zoom conference at 2 p.m. Pacific and describing the district-stay requests as pending. Their proposed merits schedule has not been adopted by the court."
       }
     ],
     next: [
       {
-        "date": "2026-10-20",
-        "text": "Separate $100,000 case: September 30 order 130 requires a joint case management statement; the government has moved to stay district proceedings, so the schedule may change."
-      },
-      {
         "date": "2026-10-27",
-        "text": "Separate $100,000 case: the September 30 order sets a Zoom case management conference at 2 p.m. court local time; this is not an effective date for the $103,265 proposal."
+        "text": "Separate $100,000 case: the September 30 order and October 20 joint statement list a Zoom case management conference at 2 p.m. Pacific, subject to later scheduling changes; not an effective date for the $103,265 proposal."
       },
       {
         "date": "2026-11-06",
