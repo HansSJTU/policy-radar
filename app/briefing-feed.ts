@@ -82,12 +82,44 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 case: government opening brief due in Ninth Circuit 26-6667. Scheduling does not stay the September 30 order or resume collection."
   },
   {
+    "id": "duration-replies-november2",
+    "date": "2026-11-02",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "zh": "简易判决回复意见截止；不是暂缓令到期日或规则生效日。",
+    "en": "Reply memoranda on summary judgment are due; this is not the stay’s expiration or a rule effective date."
+  },
+  {
+    "id": "cpt-government-response-october28",
+    "date": "2026-10-28",
+    "policyId": "cpt-guidance",
+    "timing": "upcoming",
+    "zh": "政府答复起诉及初步禁令／暂缓申请的延长期限；11·06 听证另行进行。",
+    "en": "Extended deadline for the government’s response to the complaint and preliminary-injunction/stay motion; the hearing remains separately scheduled for November 6."
+  },
+  {
     "id": "h1b-separate-fee-case-management",
     "date": "2026-10-27",
     "policyId": "h1b-fee",
     "timing": "upcoming",
-    "zh": "另项 100,000 美元案：9·30 命令排定下午 2 时（法院当地时间）Zoom 案件管理会议，后续日历未独立核实；不属于 103,265 美元 NPRM。",
-    "en": "Separate $100,000 case: September 30 order sets a Zoom case-management conference at 2 p.m. court local time; a later calendar was not independently verified. This is distinct from the $103,265 NPRM."
+    "zh": "另项 100,000 美元案：9·30 命令及 10·20 联合说明仍列下午 2 时（太平洋时间）Zoom 案件管理会议；后续调整待核实，不属于 103,265 美元 NPRM。",
+    "en": "Separate $100,000 case: the September 30 order and October 20 joint statement list a Zoom case-management conference at 2 p.m. Pacific, subject to later scheduling changes. This is distinct from the $103,265 NPRM."
+  },
+  {
+    "id": "duration-summary-judgment-october26",
+    "date": "2026-10-26",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "zh": "简易判决动议及补充意见截止；不是法院作出最终判决的日期，全国暂缓没有因此解除。",
+    "en": "Summary-judgment motions and supplemental memoranda are due; this is not a judgment date and does not lift the nationwide stay."
+  },
+  {
+    "id": "duration-record-october23",
+    "date": "2026-10-23",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "zh": "第 61 项命令：被告传送行政记录并向地区法院提交索引；不是规则生效日。",
+    "en": "Order 61: defendants transmit the administrative record and file its index in district court; not a rule effective date."
   },
   {
     "id": "h1b-separate-fee-joint-statement",
@@ -98,12 +130,44 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 payment case: September 30 order 130 requires a joint case-management statement; the government has moved to stay district proceedings, so the schedule may change."
   },
   {
+    "id": "h1b-separate-fee-joint-statement-october20",
+    "date": "2026-10-20",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "另项 100,000 美元案：双方提交联合案件管理说明，仍列 10·27 Zoom 会议；暂停地区诉讼请求待裁，建议排期不是法院命令。",
+    "en": "Separate $100,000 case: the parties filed a joint case management statement still listing the October 27 Zoom conference. District-stay requests remain pending; proposed dates are not court orders."
+  },
+  {
+    "id": "cpt-response-extension-october19",
+    "date": "2026-10-19",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "法院第 22 项电子命令将政府答复起诉及暂缓申请延至 10·28；未暂停 CPT 指引。",
+    "en": "Electronic order 22 extends the government’s response to the complaint and relief motion to October 28; it does not stay the CPT guidance."
+  },
+  {
     "id": "h1b-integrity-lca-review-deadline",
     "date": "2026-10-18",
     "policyId": "h1b-program-integrity",
     "timing": "upcoming",
     "zh": "按签署后 30 个日历天计算，DOL 最迟须开始复查既往 LCA 数据；不是完成期限或统一生效日。",
     "en": "Calculated as 30 calendar days after signature, DOL must begin reviewing prior LCA data by this date; it is not a completion deadline or common effective date."
+  },
+  {
+    "id": "duration-summary-judgment-order-october16",
+    "date": "2026-10-16",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "法院第 61 项命令排定 10·23 行政记录、10·26 简易判决动议、11·02 回复；9·14 全国暂缓继续。",
+    "en": "Court order 61 sets the record for October 23, summary-judgment motions for October 26 and replies for November 2; the September 14 nationwide stay continues."
+  },
+  {
+    "id": "h1b-separate-fee-opposition-october15",
+    "date": "2026-10-15",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "另项 100,000 美元收费案：原告第 140 项反对政府暂停地区诉讼及相关程序请求；这是当事人意见，不是法院裁定或恢复收费。",
+    "en": "Separate $100,000 case: plaintiffs’ entry 140 opposes the government’s district-proceedings stay and related request; this is a party filing, not a court order or resumed collection."
   },
   {
     "id": "deference-nprm-published",

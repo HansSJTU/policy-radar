@@ -23,6 +23,97 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-21",
+    "changes": [
+      {
+        "id": "duration-october16-summary-judgment-order",
+        "category": "#03 D/S 固定停留期限",
+        "title": "取得 10·16 简易判决排期命令，全国暂缓继续",
+        "summary": "第 61 项命令排定行政记录 10·23、简易判决动议 10·26、回复 11·02；没有解除 9·14 暂缓令。",
+        "before": "下一步仅写日期未定，等待法院处理双方程序方案。",
+        "after": "详情、当前程序、里程碑、下一步和 30 天简报列出法院确定的三个书面期限，明确它们不是判决日、暂缓令到期日或新生效日。",
+        "sources": [
+          {
+            "label": "地区法院 10·16 命令 · 第 61 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.61.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-october19-response-extension",
+        "category": "#05 CPT 诉讼",
+        "title": "政府答复延至 10·28，11·06 听证安排未变",
+        "summary": "10·19 第 22 项命令准许延长起诉及暂缓申请的答复期限，不暂停指引。",
+        "before": "仅列 11·06 听证，未列政府答复延长期限。",
+        "after": "摘要、当前程序、下一步和简报加入 10·28 政府答复，保留听证不是恢复日期的说明。",
+        "sources": [
+          {
+            "label": "法院第 22 项电子命令",
+            "href": "https://www.courtlistener.com/docket/74919449/feed/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-october15-20-filings",
+        "category": "#02 H-1B 附加费（另项 100,000 美元收费案）",
+        "title": "补入另项收费案双方意见及联合案件管理说明",
+        "summary": "10·15 原告反对、10·19 政府回复、10·20 联合说明均为当事人文件；尚不改变 9·30 命令。",
+        "before": "最新文件只列政府暂停地区诉讼请求及第九巡回排期通知。",
+        "after": "加入第 140、141、142 项及来源，把已提交的 10·20 联合说明从下一步移入历史；10·27 会议按 9·30 命令及联合说明列示。暂停地区诉讼请求仍待裁，建议的实体排期不是法院期限，也不恢复收费。",
+        "sources": [
+          {
+            "label": "原告 10·15 反对意见 · 第 140 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.140.0.pdf"
+          },
+          {
+            "label": "政府 10·19 回复 · 第 141 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.141.0.pdf"
+          },
+          {
+            "label": "双方 10·20 联合说明 · 第 142 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.142.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-adelphi-ncstate-wmu-public-records",
+        "category": "#05 CPT 学校记录",
+        "title": "补入 Adelphi、NC State 与 Western Michigan 官方政策",
+        "summary": "学校列表由 61 条增至 64 条记录：60 条校方网页、4 条社区截图；63 所不同学校。",
+        "before": "61 条记录：57 条校方网页、4 条社区截图；60 所不同学校，未收录这三所学校。",
+        "after": "新增三条校方网页记录，既有社区证据等级不变。Adelphi 10·15 修订强调课程必需与合作协议；NC State 限学位必需或严格论文研究；WMU 10·16 通知将收紧安排放在 2027 春季，不能写成当前全面停批。",
+        "sources": [
+          {
+            "label": "Adelphi · 10·15 CPT 政策",
+            "href": "https://www.adelphi.edu/policies/curricular-practical-training-cpt-policy/"
+          },
+          {
+            "label": "NC State · CPT",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          },
+          {
+            "label": "Western Michigan · 10·16 通知",
+            "href": "https://wmich.edu/international/immigration/news"
+          }
+        ]
+      },
+      {
+        "id": "cpt-uic-october16-hearing-notice",
+        "category": "#05 CPT 学校记录",
+        "title": "UIC 通知补充 11·06 听证",
+        "summary": "10·16 修改的校方通知新增听证日期，没有扩大 CPT 授权资格。",
+        "before": "UIC 条目仅介绍诉讼和核对授权资格，未列听证日期。",
+        "after": "条目加入 11·06 听证，并继续明确没有宣布全面停批、恢复或已有授权失效。",
+        "sources": [
+          {
+            "label": "UIC · 10·16 修改的通知",
+            "href": "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-14",
     "changes": [
       {
@@ -1425,6 +1516,97 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-21",
+    "changes": [
+      {
+        "id": "duration-october16-summary-judgment-order",
+        "category": "#03 D/S fixed admission periods",
+        "title": "October 16 summary-judgment schedule obtained; nationwide stay continues",
+        "summary": "Order 61 sets the record for October 23, motions for October 26 and replies for November 2, without lifting the September 14 stay.",
+        "before": "Next steps had no fixed date while court treatment of the parties’ proposals was awaited.",
+        "after": "The detail, current process, milestones, next steps and 30-day briefing now show the three court-ordered deadlines, distinguishing them from a judgment date, stay expiration or new effective date.",
+        "sources": [
+          {
+            "label": "District court October 16 order · entry 61",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.61.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-october19-response-extension",
+        "category": "#05 CPT litigation",
+        "title": "Government response extended to October 28; November 6 hearing unchanged",
+        "summary": "October 19 order 22 extends the response to the complaint and relief motion without staying the guidance.",
+        "before": "Only the November 6 hearing was listed, without the extended government response date.",
+        "after": "The summary, current process, next steps and briefing add the October 28 response deadline, retaining that a hearing is not a reopening date.",
+        "sources": [
+          {
+            "label": "Electronic court order 22",
+            "href": "https://www.courtlistener.com/docket/74919449/feed/"
+          }
+        ]
+      },
+      {
+        "id": "h1b-separate-fee-october15-20-filings",
+        "category": "#02 H-1B surcharge (separate $100,000 case)",
+        "title": "Add both parties’ filings and the joint case management statement",
+        "summary": "The October 15 opposition, October 19 reply and October 20 joint statement are party filings, without changing the September 30 order.",
+        "before": "Latest documents covered the government’s district-stay request and the Ninth Circuit scheduling notice.",
+        "after": "Add entries 140, 141 and 142 with sources, moving the filed October 20 statement from next steps to history. Retain the October 27 conference from the September 30 order and joint statement. District-stay requests remain pending; proposed merits dates are not court deadlines or resumed collection.",
+        "sources": [
+          {
+            "label": "Plaintiffs’ October 15 opposition · entry 140",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.140.0.pdf"
+          },
+          {
+            "label": "Government October 19 reply · entry 141",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.141.0.pdf"
+          },
+          {
+            "label": "October 20 joint statement · entry 142",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.142.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "cpt-adelphi-ncstate-wmu-public-records",
+        "category": "#05 CPT school records",
+        "title": "Add official Adelphi, NC State and Western Michigan policies",
+        "summary": "The list increases from 61 to 64 evidence entries: 60 public university pages and four community reports, covering 63 distinct institutions.",
+        "before": "61 evidence entries: 57 public university pages and four community reports; 60 distinct institutions. These three schools were not listed.",
+        "after": "Three public-page records are added without upgrading existing community evidence. Adelphi’s October 15 revision requires curricular necessity and a cooperative agreement; NC State limits CPT to degree requirements or indispensable thesis research; WMU’s October 16 notice applies changes from spring 2027, not a current blanket pause.",
+        "sources": [
+          {
+            "label": "Adelphi · October 15 CPT policy",
+            "href": "https://www.adelphi.edu/policies/curricular-practical-training-cpt-policy/"
+          },
+          {
+            "label": "NC State · CPT",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          },
+          {
+            "label": "Western Michigan · October 16 notice",
+            "href": "https://wmich.edu/international/immigration/news"
+          }
+        ]
+      },
+      {
+        "id": "cpt-uic-october16-hearing-notice",
+        "category": "#05 CPT school records",
+        "title": "UIC notice adds the November 6 hearing",
+        "summary": "The university notice modified October 16 adds a hearing date without broadening CPT eligibility.",
+        "before": "The UIC record described litigation and eligibility review without the hearing date.",
+        "after": "The record adds the November 6 hearing while retaining that no blanket pause, unrestricted reopening or invalidation of existing approvals is announced.",
+        "sources": [
+          {
+            "label": "UIC · notice modified October 16",
+            "href": "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-14",
     "changes": [

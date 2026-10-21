@@ -5,7 +5,7 @@ export const durationStatus: PolicyContent = {
   path: 'F-1',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-14",
+  checkedOn: "2026-10-21",
   related: ['cpt-guidance', 'opt-fee', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -170,6 +170,11 @@ export const durationStatus: PolicyContent = {
       "href": "https://www.uscis.gov/i-765",
       "zh": "USCIS I-765 · 暂缓令与适用表格版本",
       "en": "USCIS I-765 · Court stay and accepted form editions"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.61.0.pdf",
+      "zh": "地区法院 · 10·16 行政记录与简易判决排期命令（第 61 项）",
+      "en": "District court · October 16 record and summary-judgment scheduling order (entry 61)"
     }
   ],
   zh: {
@@ -182,15 +187,15 @@ export const durationStatus: PolicyContent = {
     tldr: '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则。它原拟把 F/J 停留改成通常最长四年的固定期限，并增加延期和学业流动限制；原定 9 月 15 日的生效日已推迟，这些要求目前都不执行。政府 9 月 30 日提出上诉，但上诉本身不解除暂缓令，现行 D/S 继续适用。',
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      '法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则。原定 9 月 15 日的生效日已推迟，固定停留期限、延期及学业流动新要求均不执行。政府 9 月 30 日已提出上诉；上诉本身不解除暂缓令。',
+      "法院在 9 月 14 日全国暂缓了 DHS 取消 D/S 的最终规则，固定停留期限、延期及学业流动新要求均不执行。10 月 16 日，法院排定行政记录及简易判决书面程序：行政记录 10 月 23 日、动议 10 月 26 日、回复 11 月 2 日。新命令只安排程序，没有解除暂缓或确定新的生效日；政府上诉仍单独跟踪。",
     audience:
       '受最终规则影响的 F/J/I 身份持有人、他们的家属、学校和雇主。救济范围不限原告成员学校。',
     caveat:
       '法院暂缓的是整项最终规则，但不是永久撤销，也不会自动撤销 8 月那份独立的 CPT 行政指引。',
     reviewNote:
-      "10·14 重读第 51 项命令及第 59、60 项双方提交，公开地区案卷摘要 和当日更新的镜像仍列至第 60 项。第 60 项引用 10·09 上诉庭 21／30／10 天的相对期限，但原命令、正式书面排期入案卷时间及完整上诉后续记录仍未独立核实；双方地区排期请求亦不是裁定。USCIS 当前 I-539、I-765 页面明确仍按旧规定办理，不接受 09/15/26 版两份表格。10·13 官方参议院日历列 S.J.Res.213 第 668 号；10·14 日历链接未取得有效文件，众议院后续行动仍未完整核实。",
+      "10·21 读取 10·16 第 61 项命令全文及第 51 项全国暂缓令，核实行政记录、简易判决动议和回复期限。地区公开摘要列至 10·21 第 62 项：仅认定第 46 项超页申请已无争议，不解除暂缓。USCIS I-539、I-765 现页仍按旧规定办理，不接受 09/15/26 版。上诉庭独立命令、正式书面排期入案卷时间及完整后续记录未取得；第 60 项引用的相对期限不能直接换算为确定日期。参议院日历及众议院 CRA 最新后续行动本次仍未完整核实。",
     background:
-      "麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令或案件实体审理结束，没有设到期日；原定 9·15 生效的安排已经作废。\n第 50 号意见第 46—48 页写明，这项救济覆盖全国，不只限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。法院还没有永久撤销规则，也没有作出有利于原告的简易判决；相关请求被无偏见驳回，可以再次提出。\n第 52 项原定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。公开案卷镜像的 9·30 第 53 项显示 DHS/ICE 等就第 50 项法院意见提出上诉；第 54 项记录移送，第 55 项记载第一巡回法院案号 26-2112。提出上诉本身不会解除第 51 项全国暂缓令；如上诉法院另行下令，须按新命令核对。\n10·02 状态会议已举行，案卷第 56 项要求双方 10·09 提交后续程序方案。10·09 第 59 项政府意见请求先暂停地区诉讼、等待上诉；若法院不暂停，政府提出行政记录送达及简易判决书面程序的备选时间表。文件另称政府已在 10·07 申请加速第一巡回法院上诉。以上都是当事方请求，未核实法院已采纳；第 60 项原告意见反对暂停地区诉讼，要求法院立即作出最终判决、依据 APA § 706 撤销整项规则；原告不反对提供行政记录，并提出 10·16、10·23、10·30 的备选补充书面程序，未确认法院采纳。这些是原告请求，不是已生效排期或永久撤销判决。\n第 60 项另引用第一巡回法院 10·09 关于书面提交的文字：开篇意见／附录在书面排期入案卷后 21 天，对方意见在开篇送达后 30 天，答复在对方意见送达后 10 天。本次未独立读取该上诉庭原命令或后续完整案卷，不能从 10·09 直接推算确定期限，也不是规则恢复生效日。\n国会方面，Durbin 等参议员 9·14 提出 CRA 联合否决决议 S.J.Res.213，拟撤销这项最终规则；Jayapal 牵头的众议院配套案为 H.J.Res.215。9·17 参议院司法委员会依 5 U.S.C. 802(c) 经请愿被解除审议，S.J.Res.213 列入参议院一般议程（第 668 号）。这只是程序进展，不是表决或通过；决议须经两院通过并由总统签署（或推翻否决）才会生效，也不是法院裁定。",
+      "麻省联邦法院在 2026-09-14 美东下午 4:55 签发第 51 号初步禁令。命令同时依据 APA § 705 推迟整项最终规则生效，并禁止 DHS/ICE 采取任何进一步实施行动。这一状态持续到法院另有命令或案件实体审理结束，没有设到期日；原定 9·15 生效的安排已经作废。\n第 50 号意见第 46—48 页写明，这项救济覆盖全国，不只限于原告成员学校；第 42 页认定该最终规则在 APA 意义上属于 arbitrary and capricious。法院还没有永久撤销规则，也没有作出有利于原告的简易判决；相关请求被无偏见驳回，可以再次提出。\n第 52 项原定 10·02 中午 12 点在波士顿第 1 法庭开现场状态会议，这个日期不是新的生效日。公开案卷镜像的 9·30 第 53 项显示 DHS/ICE 等就第 50 项法院意见提出上诉；第 54 项记录移送，第 55 项记载第一巡回法院案号 26-2112。提出上诉本身不会解除第 51 项全国暂缓令；如上诉法院另行下令，须按新命令核对。\n10·02 状态会议已举行，案卷第 56 项要求双方 10·09 提交后续程序方案。10·09 第 59 项政府意见请求先暂停地区诉讼、等待上诉；若法院不暂停，政府提出行政记录送达及简易判决书面程序的备选时间表。文件另称政府已在 10·07 申请加速第一巡回法院上诉。以上当事方请求本身不是法院排期；第 60 项原告意见反对暂停地区诉讼，要求法院立即作出最终判决、依据 APA § 706 撤销整项规则；原告不反对提供行政记录，并提出 10·16、10·23、10·30 的备选补充书面程序；该方案本身不是法院排期。这些是原告请求，不是已生效排期或永久撤销判决。\n10·16 第 61 项命令已排定书面程序：10·23 传送行政记录并提交索引、10·26 简易判决动议及补充意见、11·02 回复。该命令没有解除全国暂缓或设定新的生效日。\n第 60 项另引用第一巡回法院 10·09 关于书面提交的文字：开篇意见／附录在书面排期入案卷后 21 天，对方意见在开篇送达后 30 天，答复在对方意见送达后 10 天。本次未独立读取该上诉庭原命令或后续完整案卷，不能从 10·09 直接推算确定期限，也不是规则恢复生效日。\n国会方面，Durbin 等参议员 9·14 提出 CRA 联合否决决议 S.J.Res.213，拟撤销这项最终规则；Jayapal 牵头的众议院配套案为 H.J.Res.215。9·17 参议院司法委员会依 5 U.S.C. 802(c) 经请愿被解除审议，S.J.Res.213 列入参议院一般议程（第 668 号）。这只是程序进展，不是表决或通过；决议须经两院通过并由总统签署（或推翻否决）才会生效，也不是法院裁定。",
     teaser: '全国暂缓已生效；规则能不能恢复，要看后续命令。',
     headline: 'D/S 新规实施已被全国暂停，现行制度继续。',
     keyPoint: {
@@ -318,18 +323,34 @@ export const durationStatus: PolicyContent = {
       {
         "date": "2026-10-09",
         "text": "原告第 60 项反对暂停地区诉讼，要求立即最终判决并撤销规则；备选排期及上诉相对期限仅按其文件记载，未核实法院采纳。"
+      },
+      {
+        "date": "2026-10-16",
+        "text": "法院第 61 项命令排定：10·23 传送行政记录并提交索引，10·26 提交简易判决动议及不超过 20 页的补充意见，11·02 提交不超过 10 页的回复。没有解除 9·14 全国暂缓令。"
       }
     ],
     next: [
       {
+        "date": "2026-10-23",
+        "text": "被告向原告传送行政记录，并向法院提交行政记录索引。"
+      },
+      {
+        "date": "2026-10-26",
+        "text": "简易判决动议及补充法律意见截止；不是最终判决日期。"
+      },
+      {
+        "date": "2026-11-02",
+        "text": "回复意见截止；不是暂缓令到期日或规则生效日。"
+      },
+      {
         "date": "日期未定",
-        "text": "跟踪地区法院对双方程序方案或实体请求的处理，核对上诉庭独立命令与正式书面排期；未确认新的规则生效日期。"
+        "text": "跟踪法院对实体动议的裁定及上诉庭后续命令；未确认新的规则生效日期。"
       }
     ],
     process: {
       "detail": "法院在 9·14 依据 APA § 705 全国推迟整项最终规则生效，并禁止 DHS/ICE 继续实施，直到另行命令或实体审理结束。原 9·15 生效安排已经改变。",
-      "currentSummary": "全国暂缓按原命令跟踪，双方后续程序方案已提交",
-      "waitingFor": "地区法院处理双方程序方案或实体请求，以及上诉庭独立命令与正式排期；双方意见都不是法院裁定。"
+      "currentSummary": "全国暂缓继续；行政记录与简易判决程序已排期",
+      "waitingFor": "10·23 行政记录、10·26 简易判决动议、11·02 回复，之后等待法院裁定；上诉程序单独跟踪。"
     },
   },
   en: {
@@ -342,15 +363,15 @@ export const durationStatus: PolicyContent = {
     tldr: 'On September 14 the court stayed the DHS rule ending D/S nationwide. It would replace D/S for F and J status with fixed admission periods generally capped at four years and add extension and academic-mobility restrictions; its September 15 effective date was postponed and those requirements remain inoperative. The government appealed on September 30, but filing alone does not lift the stay.',
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      'On September 14 the court postponed the DHS rule ending D/S nationwide, including its September 15 effective date. Its fixed admission periods, extension filings and academic-mobility restrictions are stayed. The government appealed on September 30; the appeal itself does not lift the stay.',
+      "The September 14 nationwide stay continues to block the DHS rule ending D/S, including fixed admission periods, extension filings and academic-mobility restrictions. An October 16 order sets the administrative record for October 23, summary-judgment motions for October 26 and replies for November 2. It schedules proceedings without lifting the stay or setting a new effective date; the government’s appeal is tracked separately.",
     audience:
       'F/J/I holders and related dependents, schools and employers covered by the rule; relief is not limited to plaintiff-member schools.',
     caveat:
       'This nationwide stay covers the entire final rule, not permanent vacatur. It does not automatically rescind separate CPT guidance.',
     reviewNote:
-      "Entry 51 and parties’ entries 59–60 were reread October 14; the district feed and mirror updated that day still end at entry 60. Entry 60 quotes the October 9 appellate order’s relative 21/30/10-day periods, but the original order, entry time of the formal briefing schedule and complete later appeal docket remain independently unverified. District scheduling requests are not rulings. Current USCIS I-539 and I-765 pages confirm processing under prior regulations and rejection of the 09/15/26 editions. The October 13 official Senate calendar lists S.J.Res.213 as No. 668; the October 14 calendar URL returned no valid document, and later House actions remain incompletely checked.",
+      "The complete October 16 order (entry 61) and September 14 nationwide-stay order (entry 51) were read October 21, confirming the record, summary-judgment and reply deadlines. The public district feed lists through October 21 entry 62, which only finds entry 46’s excess-pages motion moot and does not lift the stay. Current USCIS I-539 and I-765 pages still apply the prior rules and reject the 09/15/26 editions. Independent appellate orders, entry of a formal briefing schedule and the full subsequent docket were not obtained; the relative periods quoted in entry 60 cannot be converted directly to fixed dates. The latest Senate calendar and subsequent House CRA actions remain incompletely verified.",
     background:
-      "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. The September 15 effective date is postponed.\nOpinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal.\nDocket entry 52 originally scheduled an in-person status conference for October 2 at noon in Courtroom 1, Boston, not a new effective date. September 30 entry 53 records an appeal by DHS/ICE and others from opinion 50; entry 54 records transmittal of the record, and entry 55 assigns First Circuit case number 26-2112. An appeal filing alone does not lift the nationwide relief in entry 51; any later appellate order must be assessed on its own terms.\nEntry 56 records the October 2 conference and requires next-step submissions by October 9. In its October 9 entry 59 brief, the government asks to pause district proceedings pending appeal, or alternatively adopt a proposed record-production and summary-judgment schedule. It also reports filing an October 7 motion to expedite the First Circuit appeal. These are party requests, not verified court-adopted deadlines or a lifting of relief; entry 60 is now available. Plaintiffs oppose a district-proceedings stay and seek immediate final judgment vacating the entire rule under APA § 706. They do not oppose producing the administrative record and propose alternative supplemental submissions on October 16, 23 and 30; court adoption was not verified. These are party requests, not operative deadlines or a permanent-vacatur judgment.\nEntry 60 also quotes First Circuit language dated October 9: opening brief/appendix 21 days after a briefing schedule enters the docket, response 30 days after service of the opening brief, and reply 10 days after service of the response. The original appellate order and complete later docket were not independently retrieved. These periods cannot be converted into fixed deadlines by counting from October 9, and they are not a rule effective date.\nIn Congress, Senator Durbin and colleagues introduced CRA joint resolution S.J.Res.213 on September 14 to disapprove this final rule; the House companion led by Representative Jayapal is H.J.Res.215. On September 17 the Senate Judiciary Committee was discharged by petition under 5 U.S.C. 802(c), and S.J.Res.213 was placed on the Senate calendar under General Orders (Calendar No. 668). This is a procedural step, not a vote or passage; the resolution would take effect only if both chambers pass it and the President signs it or a veto is overridden, and it is not a court ruling.",
+      "At 4:55 p.m. ET on September 14, 2026, the District of Massachusetts issued docket entry 51, which both postpones the entire final rule under APA § 705 and preliminarily enjoins DHS/ICE from taking any further implementation action until a further court order or resolution on the merits, with no expiration date. The September 15 effective date is postponed.\nOpinion 50, pages 46–48, expressly grants nationwide relief, not relief limited to plaintiff-member schools, and page 42 holds the final rule arbitrary and capricious under the APA. The court did not permanently vacate the rule or grant summary judgment; those requests were denied without prejudice to renewal.\nDocket entry 52 originally scheduled an in-person status conference for October 2 at noon in Courtroom 1, Boston, not a new effective date. September 30 entry 53 records an appeal by DHS/ICE and others from opinion 50; entry 54 records transmittal of the record, and entry 55 assigns First Circuit case number 26-2112. An appeal filing alone does not lift the nationwide relief in entry 51; any later appellate order must be assessed on its own terms.\nEntry 56 records the October 2 conference and requires next-step submissions by October 9. In its October 9 entry 59 brief, the government asks to pause district proceedings pending appeal, or alternatively adopt a proposed record-production and summary-judgment schedule. It also reports filing an October 7 motion to expedite the First Circuit appeal. These party requests are not court-adopted deadlines by themselves or a lifting of relief; entry 60 is now available. Plaintiffs oppose a district-proceedings stay and seek immediate final judgment vacating the entire rule under APA § 706. They do not oppose producing the administrative record and propose alternative supplemental submissions on October 16, 23 and 30; the proposal itself is not a court-adopted deadline. These are party requests, not operative deadlines or a permanent-vacatur judgment.\nOrder 61 of October 16 now sets record transmission and an index for October 23, summary-judgment motions and supplemental memoranda for October 26, and replies for November 2. It does not lift the nationwide stay or set a new effective date.\nEntry 60 also quotes First Circuit language dated October 9: opening brief/appendix 21 days after a briefing schedule enters the docket, response 30 days after service of the opening brief, and reply 10 days after service of the response. The original appellate order and complete later docket were not independently retrieved. These periods cannot be converted into fixed deadlines by counting from October 9, and they are not a rule effective date.\nIn Congress, Senator Durbin and colleagues introduced CRA joint resolution S.J.Res.213 on September 14 to disapprove this final rule; the House companion led by Representative Jayapal is H.J.Res.215. On September 17 the Senate Judiciary Committee was discharged by petition under 5 U.S.C. 802(c), and S.J.Res.213 was placed on the Senate calendar under General Orders (Calendar No. 668). This is a procedural step, not a vote or passage; the resolution would take effect only if both chambers pass it and the President signs it or a veto is overridden, and it is not a court ruling.",
     teaser:
       'Nationwide relief is in place; any resumption depends on later orders.',
     headline:
@@ -481,23 +502,39 @@ export const durationStatus: PolicyContent = {
       },
       {
         "date": "2026-10-09",
-        "text": "Entries 59–60 record written submissions. The government’s entry 59 requests a district-proceedings stay or an alternative schedule; court adoption was not verified."
+        "text": "Entries 59–60 record written submissions. The government’s entry 59 requests a district-proceedings stay or an alternative schedule; the proposal itself is not a court-adopted deadline."
       },
       {
         "date": "2026-10-09",
         "text": "Plaintiffs’ entry 60 opposes pausing district proceedings and seeks immediate final judgment vacating the rule. Alternative scheduling and quoted appellate periods are recorded as party statements, not independently confirmed adopted deadlines."
+      },
+      {
+        "date": "2026-10-16",
+        "text": "Order 61 requires transmission of the administrative record and filing of its index by October 23, summary-judgment motions with supplemental memoranda of up to 20 pages by October 26, and replies of up to 10 pages by November 2. It does not lift the September 14 nationwide stay."
       }
     ],
     next: [
       {
+        "date": "2026-10-23",
+        "text": "Defendants must transmit the administrative record to plaintiffs and file its index with the court."
+      },
+      {
+        "date": "2026-10-26",
+        "text": "Summary-judgment motions and supplemental memoranda are due; this is not a judgment date."
+      },
+      {
+        "date": "2026-11-02",
+        "text": "Reply memoranda are due; this is not the stay’s expiration or a rule effective date."
+      },
+      {
         "date": "Date unknown",
-        "text": "Track district-court treatment of both parties’ procedural or merits requests and independently verify appellate orders and an entered briefing schedule; no new rule effective date is confirmed."
+        "text": "Track a ruling on the merits motions and subsequent appellate orders; no new rule effective date is confirmed."
       }
     ],
     process: {
       "detail": "On September 14, the court postponed the entire final rule nationwide under APA § 705 and barred DHS/ICE from implementation until further order or resolution on the merits. The September 15 effective date is postponed.",
-      "currentSummary": "Nationwide stay tracked under the existing order; both parties’ next-step proposals filed",
-      "waitingFor": "District-court treatment of procedural or merits requests, and independent appellate orders and an entered schedule; neither party’s filing is a court ruling."
+      "currentSummary": "Nationwide stay continues; record and summary-judgment briefing scheduled",
+      "waitingFor": "Administrative record October 23, summary-judgment motions October 26 and replies November 2, then a court ruling; the appeal is tracked separately."
     },
   },
 };
