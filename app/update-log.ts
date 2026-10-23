@@ -23,6 +23,39 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-23",
+    "changes": [
+      {
+        "id": "duration-october22-extension-request",
+        "category": "#03 D/S 诉讼",
+        "title": "政府申请延长书面期限，未核实法院批准",
+        "summary": "10·22 第 63 项请求改为 10·30 动议、11·06 回复，全国暂缓不变。",
+        "before": "最新程序文件为 10·16 第 61 项命令：行政记录 10·23、动议 10·26、回复 11·02。",
+        "after": "加入第 63 项申请、历史和简报，保留第 61 项法院期限并标明延期未获独立核实批准。政府文件称上诉主书状及附录 11·09 到期，明确仅为当事人记载，未取得独立上诉排期。",
+        "sources": [
+          {
+            "label": "政府 10·22 延期动议 · 第 63 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.63.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "trine-spring2027-semester-cpt",
+        "category": "#05 CPT 学校记录 · Trine",
+        "title": "Trine 新增 2027 春季按学期授权及重新申请要求",
+        "summary": "同一雇主也须每学期获批；11·16 前既有批准不因本次调整撤销。",
+        "before": "仅列申请开放、2026–27 截止日期和审理流程；原页下一开始日为 2026·12·14、2027·05·24，一年期授权。",
+        "after": "改列 2027 春季起按学期授权、开课日起止限制、每学期重新申请、续期不自动延长，以及既有批准保护。下一可开始日更新为 2027·01·11、2027·06·14，原截止日未变；披露页内仍有一年期续期旧说明，过渡衔接待 DSO 确认。学校数和证据等级不变。",
+        "sources": [
+          {
+            "label": "Trine · CPT Information",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "changes": [
       {
@@ -1516,6 +1549,39 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-23",
+    "changes": [
+      {
+        "id": "duration-october22-extension-request",
+        "category": "#03 D/S litigation",
+        "title": "Government seeks briefing extensions; no granting order verified",
+        "summary": "October 22 entry 63 requests motions on October 30 and replies on November 6; the nationwide stay is unchanged.",
+        "before": "Latest procedural document was order 61 of October 16: record October 23, motions October 26, replies November 2.",
+        "after": "Add motion 63, history and briefing while retaining order 61’s deadlines and identifying the unverified request. Attribute the reported November 9 appellate opening brief/appendix deadline to the government; an independent appellate schedule was not obtained.",
+        "sources": [
+          {
+            "label": "Government October 22 extension motion · entry 63",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.63.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "trine-spring2027-semester-cpt",
+        "category": "#05 CPT school record · Trine",
+        "title": "Trine adds semester authorizations and renewals from Spring 2027",
+        "summary": "New approval each semester even with the same employer; pre-November 16 approvals are not rescinded by this change.",
+        "before": "The tracker listed open applications, 2026–27 deadlines and review steps. The source previously gave December 14, 2026 and May 24, 2027 next starts and one-year authorization.",
+        "after": "Add semester authorizations, class-date limits, new applications each semester, no automatic extension from renewal requests, and protection for existing approvals. Next available starts become January 11 and June 14, 2027, with deadlines unchanged. Disclose retained one-year extension text and unclarified transition; school count and evidence level are unchanged.",
+        "sources": [
+          {
+            "label": "Trine · CPT Information",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-21",
     "changes": [
