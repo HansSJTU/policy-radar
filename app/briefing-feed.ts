@@ -122,6 +122,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Order 61: defendants transmit the administrative record and file its index in district court; not a rule effective date."
   },
   {
+    "id": "duration-october22-extension-motion",
+    "date": "2026-10-22",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "政府第 63 项申请将简易判决动议由 10·26 延至 10·30、回复由 11·02 延至 11·06；未取得准许命令，仍保留第 61 项现行期限，全国暂缓不变。",
+    "en": "Government entry 63 requests moving summary-judgment motions from October 26 to October 30 and replies from November 2 to November 6. No granting order was obtained; order 61’s deadlines and the nationwide stay are retained."
+  },
+  {
     "id": "h1b-separate-fee-joint-statement",
     "date": "2026-10-20",
     "policyId": "h1b-fee",
