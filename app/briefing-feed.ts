@@ -87,7 +87,8 @@ export const briefingEntries: BriefingEntry[] = [
     "policyId": "duration-status",
     "timing": "upcoming",
     "zh": "简易判决回复意见截止；不是暂缓令到期日或规则生效日。",
-    "en": "Reply memoranda on summary judgment are due; this is not the stay’s expiration or a rule effective date."
+    "en": "Reply memoranda on summary judgment are due; this is not the stay’s expiration or a rule effective date.",
+    "supersededOn": "2026-10-23"
   },
   {
     "id": "cpt-government-response-october28",
@@ -111,7 +112,8 @@ export const briefingEntries: BriefingEntry[] = [
     "policyId": "duration-status",
     "timing": "upcoming",
     "zh": "简易判决动议及补充意见截止；不是法院作出最终判决的日期，全国暂缓没有因此解除。",
-    "en": "Summary-judgment motions and supplemental memoranda are due; this is not a judgment date and does not lift the nationwide stay."
+    "en": "Summary-judgment motions and supplemental memoranda are due; this is not a judgment date and does not lift the nationwide stay.",
+    "supersededOn": "2026-10-23"
   },
   {
     "id": "duration-record-october23",
@@ -120,6 +122,14 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "upcoming",
     "zh": "第 61 项命令：被告传送行政记录并向地区法院提交索引；不是规则生效日。",
     "en": "Order 61: defendants transmit the administrative record and file its index in district court; not a rule effective date."
+  },
+  {
+    "id": "duration-october23-unverified-extension-ruling",
+    "date": "2026-10-23",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "公开摘要新增延期裁定及第 65 项通知；正文未取得，延期结果和最新期限待核实。旧排期暂不列作确认的未来日期，不表示政府请求已获准。",
+    "en": "The public feed adds an extension ruling and notice 65. Their texts, disposition and current deadlines remain unverified. Old calendar cards are withheld as unconfirmed, not because the government’s request is assumed granted."
   },
   {
     "id": "duration-october22-extension-motion",

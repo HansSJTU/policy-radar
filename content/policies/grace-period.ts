@@ -170,7 +170,7 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     },
-    reviewNote: "10·23 复核 9·11 NPRM、OIRA 检索及联邦公报 RIN 接口，仍仅列原提案和 11·10 评论截止。USCIS 离职后选择页面虽仍描述最长 60 天酌情宽限期及家属，但已标为归档，不能作为最新部门指引。另通过网页读取 eCFR 214.1(l)(2)（编纂截至 10·21），仍列这些类别及家属的最长 60 天条款。Regulations.gov 动态案卷和后续部门说明仍未完整核实。",
+    reviewNote: "10·23 复核 9·11 NPRM、OIRA 检索及联邦公报 RIN 接口，仍仅列原提案和 11·10 评论截止。USCIS 离职后选择页面虽仍描述最长 60 天酌情宽限期及家属，但已标为归档，不能作为最新部门指引。另通过网页读取 eCFR 214.1(l)(2)（编纂截至 10·22），仍列这些类别及家属的最长 60 天条款。Regulations.gov 动态案卷和后续部门说明仍未完整核实。",
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
@@ -308,6 +308,6 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
     },
-    reviewNote: "The September 11 NPRM, OIRA search and Federal Register RIN API were checked October 23; only the original proposal with November 10 comments is listed. The USCIS post-termination options page still describes the discretionary up-to-60-day period and dependents, but is marked archived and is not current agency guidance. Separately, eCFR 214.1(l)(2), compiled through October 21, was read through web retrieval and still contains the up-to-60-day provision for these classifications and dependents. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
+    reviewNote: "The September 11 NPRM, OIRA search and Federal Register RIN API were checked October 23; only the original proposal with November 10 comments is listed. The USCIS post-termination options page still describes the discretionary up-to-60-day period and dependents, but is marked archived and is not current agency guidance. Separately, eCFR 214.1(l)(2), compiled through October 22, was read through web retrieval and still contains the up-to-60-day provision for these classifications and dependents. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
   },
 };

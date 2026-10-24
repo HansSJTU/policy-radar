@@ -52,6 +52,34 @@ const chineseUpdates: ContentUpdate[] = [
             "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
           }
         ]
+      },
+      {
+        "id": "duration-october23-ruling-record-gap",
+        "category": "#03 D/S 诉讼",
+        "title": "出现 10·23 延期裁定记录，最新排期正文待核实",
+        "summary": "摘要新增延期裁定和第 65 项通知，尚不能确认延期是否获准或新期限。",
+        "before": "最新摘要只列第 63 项申请；下一步及未来简报仍将 10·26、11·02 列作现行法院期限。",
+        "after": "加入 10·23 新记录和具体访问缺口。第 61 项日期及第 63 项请求保留在历史中，旧的未来日期卡片停止展示，下一步改为日期未定并等待正文。未把政府请求写成获准，也未推断第 65 项就是行政记录提交。",
+        "sources": [
+          {
+            "label": "法院公开案卷摘要 · 10·23 新记录",
+            "href": "https://www.courtlistener.com/docket/74661796/feed/"
+          }
+        ]
+      },
+      {
+        "id": "cpt-georgia-tech-public-source",
+        "category": "#05 CPT 学校记录 · Georgia Tech",
+        "title": "新增 Georgia Tech 官方资格与表单时间说明",
+        "summary": "新表单最迟 11·16 提供，本硕限定列出的学位必需项目，博士须为论文必需。",
+        "before": "64 条证据记录：60 条校方网页、4 条社区截图；63 所不同学校，未收录 Georgia Tech。",
+        "after": "新增一条校方网页，变为 65 条记录：61 条校方网页、4 条社区截图；64 所不同学校。列明本硕项目、严格博士论文条件及合作协议，说明未来表单日期不等于已恢复审批；已有授权处理及发布日期未确认。",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · CPT",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
+          }
+        ]
       }
     ]
   },
@@ -1577,6 +1605,34 @@ const englishUpdates: ContentUpdate[] = [
           {
             "label": "Trine · CPT Information",
             "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      },
+      {
+        "id": "duration-october23-ruling-record-gap",
+        "category": "#03 D/S litigation",
+        "title": "October 23 extension ruling appears; current schedule remains unverified",
+        "summary": "The feed adds an extension ruling and notice 65, without texts confirming disposition or new deadlines.",
+        "before": "The latest feed covered motion 63 only; next steps and upcoming briefing still treated October 26 and November 2 as current court deadlines.",
+        "after": "Add the October 23 records and concrete access gaps. Keep order 61’s dates and motion 63’s requests as history, withhold old upcoming date cards and use Date unknown pending the texts. Do not assume the extension was granted or that notice 65 submitted the record.",
+        "sources": [
+          {
+            "label": "Public court docket feed · October 23 records",
+            "href": "https://www.courtlistener.com/docket/74661796/feed/"
+          }
+        ]
+      },
+      {
+        "id": "cpt-georgia-tech-public-source",
+        "category": "#05 CPT school record · Georgia Tech",
+        "title": "Add Georgia Tech’s official criteria and form-availability date",
+        "summary": "New forms are due by November 16; listed bachelor’s/master’s programs and indispensable doctoral research are eligible categories.",
+        "before": "64 evidence entries: 60 public university pages and four community reports; 63 distinct institutions, without Georgia Tech.",
+        "after": "Add one public-page record: 65 evidence entries, comprising 61 public pages and four community reports; 64 distinct institutions. Specify programs, narrow doctoral research and the agreement requirement. The future form date does not establish resumed processing; existing-approval treatment and publication date remain unspecified.",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · CPT",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
           }
         ]
       }

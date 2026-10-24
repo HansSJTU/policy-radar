@@ -1152,6 +1152,22 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
       "detail": "The October 16 I3S notice sets spring 2027 implementation of a requirement that training be mandatory for all students in the established curriculum. WMU reports approximately 52 programs requiring off-campus experience and links its approved-program list. This is a future campus arrangement, not a new federal effective date; it does not announce a current blanket pause or invalidation of existing approvals."
     },
     "screenshots": []
+  },
+  {
+    "id": "georgia-institute-of-technology",
+    "checkedOn": "2026-10-23",
+    "school": "Georgia Institute of Technology (Georgia Tech)",
+    "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt",
+    "tone": "tighten",
+    "zh": {
+      "state": "新 CPT 表单称最迟 11·16 提供；限学位必需实践",
+      "detail": "OIE 现页称新申请表及合作协议表最迟于 2026·11·16 提供，并非已恢复审批。本科合格项目仅列 Construction Science and Management、Public Policy；硕士仅列 City & Regional Planning、Digital Media、Robotics。博士须为完成论文必需且无其他方法满足数据或访问需要，证明细则也待 11·16 提供；须签合作协议。页面未标明此安排的发布日期，也未说明既有授权处理方式，不能外推为所有项目恢复或现有授权失效。"
+    },
+    "en": {
+      "state": "New CPT form due by November 16; degree-required training only",
+      "detail": "OIE says the new request and cooperative-agreement forms will be available by November 16, 2026, not that processing has resumed. Listed bachelor’s programs are Construction Science and Management and Public Policy; master’s programs are City & Regional Planning, Digital Media and Robotics. Doctoral training must be indispensable to dissertation data/access needs, with confirmation details also due by November 16; a signed agreement is required. No publication date or treatment of existing approvals is stated. This does not establish reopening for all programs or invalidation of existing authorization."
+    },
+    "screenshots": []
   }
 ];
 

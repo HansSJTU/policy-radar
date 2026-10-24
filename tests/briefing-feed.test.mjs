@@ -129,3 +129,18 @@ test('nationwide D/S stay removes the superseded effective date while preserving
     assert.ok(getThirtyDayBriefing('2026-09-13', language).upcoming.some(item => item.id === 'duration-effective-date'));
   }
 });
+
+
+test('an unread later D/S ruling withholds old deadline cards while preserving earlier snapshots', () => {
+  const oldDeadlines = ['duration-summary-judgment-october26', 'duration-replies-november2'];
+  for (const language of ['zh', 'en']) {
+    const before = getThirtyDayBriefing('2026-10-22', language);
+    const current = getThirtyDayBriefing('2026-10-23', language);
+    for (const id of oldDeadlines) {
+      assert.ok(before.upcoming.some(item => item.id === id));
+      assert.ok(!current.upcoming.some(item => item.id === id));
+    }
+    assert.ok(current.recent.some(item => item.id === 'duration-october23-unverified-extension-ruling'));
+    assert.ok(!current.upcoming.some(item => item.policyId === 'duration-status' && ['2026-10-30', '2026-11-06'].includes(item.date)));
+  }
+});
