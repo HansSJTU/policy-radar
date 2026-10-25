@@ -23,6 +23,51 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-25",
+    "changes": [
+      {
+        "id": "duration-order64-and-record65-confirmed",
+        "category": "#03 D/S 诉讼",
+        "title": "核实延期电子命令与行政记录索引，动议 10·30、回复 11·02",
+        "summary": "第 64 项没有采用政府请求的 11·06 回复日期；全国暂缓继续。",
+        "before": "仅取得 10·23 延期裁定及第 65 项标题，下一步为日期未定，未来旧排期卡片停显。",
+        "after": "读取第 64 项完整电子命令及第 65 项索引通知和三份附件。当前下一步及未来简报列法院明确的 10·30 动议、11·02 回复，解除标题正文缺口；不将索引提交表述为全部行政记录已逐份核验，不改变全国暂缓。此前核查快照和旧命令日期保留。",
+        "sources": [
+          {
+            "label": "法院第 64 项完整电子命令",
+            "href": "https://www.courtlistener.com/docket/74661796/presidents-alliance-on-higher-education-and-immigration-v-united-states/?order_by=desc#entry-64"
+          },
+          {
+            "label": "第 65 项行政记录索引提交通知",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.65.0.pdf"
+          },
+          {
+            "label": "地区法院案卷另一镜像",
+            "href": "https://clearinghouse.net/case/48393/"
+          }
+        ]
+      },
+      {
+        "id": "perm-oira-conclusion-october23",
+        "category": "#12 PERM 劳工认证改革",
+        "title": "OIRA 于 10·23 以 Consistent with Change 结案",
+        "summary": "发布前审查完成；公开 NPRM、评论期限和生效日仍待核实。",
+        "before": "网站显示 OIRA 审查中，采用 9·14 待审链接，流程停在进行中的 OIRA 审查。",
+        "after": "以新的结案记录 rrid=1533011 为首要来源，状态与流程改为 OIRA 已完成、等待 NPRM；同步摘要、下一步、情景和简报，保留送审历史。结案记录未公开具体修改，联邦公报 RIN 查询未列公开提案，不推断条款或实施日期。",
+        "sources": [
+          {
+            "label": "OIRA 结案详情 · 1205-AC29",
+            "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1533011"
+          },
+          {
+            "label": "OIRA 按 RIN 的跨记录检索",
+            "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1205-AC29"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "changes": [
       {
@@ -1577,6 +1622,51 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-25",
+    "changes": [
+      {
+        "id": "duration-order64-and-record65-confirmed",
+        "category": "#03 D/S litigation",
+        "title": "Extension order and record index verified: motions October 30, replies November 2",
+        "summary": "Order 64 does not adopt the requested November 6 reply date; the nationwide stay continues.",
+        "before": "Only October 23 ruling/notice titles were obtained; next steps were undated and older upcoming deadline cards withheld.",
+        "after": "Read the complete electronic order 64, index notice 65 and three attachments. Current next steps and upcoming briefing now show the court’s October 30 motion and November 2 reply dates, resolving the title-only gap. Filing an index does not mean every record was individually reviewed and does not lift nationwide relief. Earlier audit snapshots and order dates remain intact.",
+        "sources": [
+          {
+            "label": "Court entry 64: complete electronic order",
+            "href": "https://www.courtlistener.com/docket/74661796/presidents-alliance-on-higher-education-and-immigration-v-united-states/?order_by=desc#entry-64"
+          },
+          {
+            "label": "Record-index filing notice 65",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.65.0.pdf"
+          },
+          {
+            "label": "Second district docket mirror",
+            "href": "https://clearinghouse.net/case/48393/"
+          }
+        ]
+      },
+      {
+        "id": "perm-oira-conclusion-october23",
+        "category": "#12 PERM labor certification reform",
+        "title": "OIRA concluded review October 23 as Consistent with Change",
+        "summary": "Prepublication review is complete; a public NPRM, comment deadline and effective date remain unverified.",
+        "before": "The site showed ongoing OIRA review, linked the September 14 pending record and marked OIRA as the active stage.",
+        "after": "Lead with conclusion detail rrid=1533011 and mark OIRA complete, awaiting an NPRM. Update summary, next steps, scenario and briefing while preserving submission history. The conclusion does not disclose specific revisions; the Federal Register RIN query lists no public proposal, so terms and implementation dates are not inferred.",
+        "sources": [
+          {
+            "label": "OIRA conclusion detail · 1205-AC29",
+            "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1533011"
+          },
+          {
+            "label": "OIRA cross-record RIN search",
+            "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1205-AC29"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-23",
     "changes": [

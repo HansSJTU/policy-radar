@@ -144,3 +144,16 @@ test('an unread later D/S ruling withholds old deadline cards while preserving e
     assert.ok(!current.upcoming.some(item => item.policyId === 'duration-status' && ['2026-10-30', '2026-11-06'].includes(item.date)));
   }
 });
+
+test('verified order 64 restores only its actual deadlines after the title-only snapshot', () => {
+  for (const language of ['zh', 'en']) {
+    const prior = getThirtyDayBriefing('2026-10-24', language);
+    const current = getThirtyDayBriefing('2026-10-25', language);
+    const dates = current.upcoming.filter(item => item.policyId === 'duration-status');
+    assert.deepEqual(dates.map(item => item.date), ['2026-10-30', '2026-11-02']);
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-motions-order64-october30'));
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-replies-order64-november2'));
+    assert.ok(current.recent.some(item => item.id === 'duration-order64-record65-verified'));
+    assert.ok(!dates.some(item => item.date === '2026-11-06'));
+  }
+});

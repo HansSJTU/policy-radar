@@ -5,60 +5,65 @@ export const permModernization: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-23",
+  checkedOn: "2026-10-25",
   related: ['prevailing-wage', 'h1b-reform'],
   process: {
-    kind: 'federal-rulemaking',
-    lastCompletedStage: 0,
-    activeStage: 1,
-    nextStage: 2,
+    "kind": "federal-rulemaking",
+    "lastCompletedStage": 1,
+    "activeStage": null,
+    "nextStage": 2
   },
   sources: [
     {
-      href: 'https://www.reginfo.gov/public/do/eoDetails?rrid=1532863',
-      zh: 'OIRA 9·14 送审记录 · RIN 1205-AC29',
-      en: 'OIRA September 14 submission · RIN 1205-AC29',
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1533011",
+      "zh": "OIRA 10·23 结案记录 · Consistent with Change · RIN 1205-AC29",
+      "en": "OIRA October 23 conclusion · Consistent with Change · RIN 1205-AC29"
     },
     {
-      href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29',
-      zh: '统一议程 · PERM 改革摘要',
-      en: 'Unified Agenda · PERM reform abstract',
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1532863",
+      "zh": "OIRA 9·14 送审记录 · RIN 1205-AC29",
+      "en": "OIRA September 14 submission · RIN 1205-AC29"
     },
     {
-      href: 'https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers',
-      zh: '司法部 · OpenAI PERM 和解新闻稿（2026-08-04）',
-      en: 'Justice Department · OpenAI PERM settlement (August 4, 2026)',
+      "href": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=1205-AC29",
+      "zh": "统一议程 · PERM 改革摘要",
+      "en": "Unified Agenda · PERM reform abstract"
     },
     {
-      href: 'https://meltzerhellrung.com/dol-is-planning-to-give-perm-its-first-real-update-since-2005-heres-what-employers-should-expect/',
-      zh: 'Meltzer Hellrung · PERM 改革预期分析（2026-07-16）',
-      en: 'Meltzer Hellrung · What to expect from the PERM update (July 16, 2026)',
+      "href": "https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers",
+      "zh": "司法部 · OpenAI PERM 和解新闻稿（2026-08-04）",
+      "en": "Justice Department · OpenAI PERM settlement (August 4, 2026)"
     },
     {
-      href: 'https://www.uscardforum.com/t/topic/517411',
-      zh: '美卡论坛讨论',
-      en: 'USCardForum discussion',
+      "href": "https://meltzerhellrung.com/dol-is-planning-to-give-perm-its-first-real-update-since-2005-heres-what-employers-should-expect/",
+      "zh": "Meltzer Hellrung · PERM 改革预期分析（2026-07-16）",
+      "en": "Meltzer Hellrung · What to expect from the PERM update (July 16, 2026)"
     },
+    {
+      "href": "https://www.uscardforum.com/t/topic/517411",
+      "zh": "美卡论坛讨论",
+      "en": "USCardForum discussion"
+    }
   ],
   zh: {
     title: 'PERM 劳工认证拟改革招聘与雇主合规要求',
     short: 'PERM 劳工认证改革',
-    status: 'OIRA 审查中 · 尚未生效',
-    effectLabel: '尚未生效 · 现行 PERM 规则未因送审改变',
+    status: "OIRA 已结案 · 等待公开提案",
+    effectLabel: "尚未生效 · 现行 PERM 规则未变",
     agency: 'DOL / ETA',
     documentId: '1205-AC29',
-    tldr: 'DOL 计划改写 PERM 的招聘要求，让招聘渠道更贴近现实，并提高“招不到美国人”的举证门槛。改革还会加强对被裁美国工人的保护。拟议规则已于 9 月 14 日送交白宫 OIRA 审查，尚未生效。',
+    tldr: "DOL 拟更新 PERM 招聘、裁员保护及雇主合规要求。OIRA 于 10·23 以“Consistent with Change”结束提案发布前审查；截至本次核查尚未取得公开 NPRM，具体条款及生效日期未定。",
     tags: ['H-1B → 绿卡', 'PERM', '雇主担保'],
     summary:
-      'DOL 计划改写 PERM 的招聘测试（labor market test）。新规则要让招聘渠道更贴近公司平时招人的做法。同时，证明“确实招不到合格美国人”的门槛会更高。改革还会加强对被裁美国工人的保护，并对雇主的非歧视招聘、雇佣和材料留存提出更严要求。',
+      "DOL 拟更新 PERM 招聘渠道、被裁美国工人保护与雇主非歧视招聘及留档要求。OIRA 于 10·23 以“Consistent with Change”结束提案发布前审查；本次尚未取得公开 NPRM，具体修改、评论期限及生效安排仍待正文。",
     audience:
       '打算通过雇主担保办绿卡的员工，以及替员工办 PERM 的雇主，包括目前持 H-1B 的人。',
     caveat:
       '本项只涉及永久劳工认证（绿卡），与 H-1B 抽签改革无关，也不同于 #06 的工资等级提案（RIN 1205-AC30）。',
     reviewNote:
-      "10·23 重读 OIRA 9·14 送审记录、当前待审清单和 DOL 统一议程，并按 RIN／标题检索后续文件；OIRA 仍显示提案待审，未核实结案或公开 NPRM。招聘、裁员保护及留档的具体条款和生效日期仍待正式正文。联邦公报官方 RIN 查询截至当天未列公开文件。",
+      "10·25 读取新的 OIRA 结案详情（rrid=1533011），按 RIN 检索交叉确认 9·14 收件、10·23 结案及“Consistent with Change”。旧待审链接已不再显示项目内容，当前待审队列不再列 AC29。联邦公报官方 RIN 查询仍未列公开 NPRM；DOL OFLC 公告原页被拒，具体修改、评论期限、最终规则及过渡安排仍待正式正文。OIRA 结案不能替代提案发布或生效。",
     background:
-      "PERM 是雇主替外籍员工办职业移民绿卡时，先要拿到的劳工认证。雇主必须证明自己认真招过美国人，但招不到合适人选。这项改革列在 20 CFR 656 之下，DOL 已于 2026-09-14 把拟议规则送交白宫 OIRA，做发布前审查。统一议程原定 2026 年 7 月发布拟议规则（NPRM）；10 月 14 日核查时，OIRA 仍列提案待审，联邦公报 RIN 查询未列公开正文。计划月份不等于发布日，更不等于生效日。",
+      "PERM 是雇主替外籍员工办职业移民绿卡时，先要拿到的劳工认证。雇主必须证明自己认真招过美国人，但招不到合适人选。这项改革列在 20 CFR 656 之下，DOL 已于 2026-09-14 把拟议规则送交白宫 OIRA，做发布前审查。统一议程原定 2026 年 7 月发布拟议规则（NPRM）；10 月 14 日核查时，OIRA 仍列提案待审，联邦公报 RIN 查询未列公开正文。计划月份不等于发布日，更不等于生效日。\nOIRA 于 10·23 以“Consistent with Change”结束此次发布前审查，新结案详情为 rrid=1533011；原送审记录不再显示项目内容。这个行政审查结果不公开说明具体改了哪些条款。10·25 联邦公报官方 RIN 查询仍未列公开 NPRM，不能把结案当成提案已经发布或新要求已经生效。",
     teaser: '招聘方式一旦改写，雇主准备 PERM 的工作量和时间安排都会变。',
     headline: '绿卡担保的准备过程，可能要把更多时间花在招聘和留档上。',
     analysis:
@@ -113,15 +118,14 @@ export const permModernization: PolicyContent = {
       },
     ],
     outlook:
-      '我们的判断：接下来看 OIRA 什么时候结束审查、NPRM 正文怎么写。重点盯四件事：招聘渠道清单、裁员相关的通知和核查义务、材料留存年限，以及新规怎么适用于已提交的案件。在这些内容公开之前，我们不会给出具体的延期月数或通过概率。',
+      "OIRA 已结案，接下来等待 DOL 公开 NPRM。重点核对招聘渠道、裁员相关的通知与核查义务、留档年限，以及已提交案件的过渡安排；公开正文前不推断具体修改或生效日期。",
     scenarios: [
       {
-        name: '审查继续，或方案调整',
-        headline: '继续按现行规则准备',
-        assumption: 'OIRA 审查还没结束，或者 DOL 修改了方案。',
-        effects:
-          '雇主可以照现行规则准备案件；只看议程摘要，推不出将来会加什么要求。',
-        signals: 'OIRA 是否结案，以及 DOL 是否发布正式提案。',
+        "name": "结案后等待公开提案",
+        "headline": "现行规则继续适用",
+        "assumption": "OIRA 已结束审查，DOL 尚未公开 NPRM 或仍在准备发布。",
+        "effects": "雇主可继续按现行规则准备案件；结案标签没有公开拟议条款，不能据此添加具体义务。",
+        "signals": "DOL 与联邦公报是否发布正式提案及具体修改。"
       },
       {
         name: 'NPRM 发布并开放评论',
@@ -147,7 +151,7 @@ export const permModernization: PolicyContent = {
       },
       {
         label: '当前阶段',
-        text: '9 月 14 日进入 OIRA 审查；本次核查没有找到公开的 NPRM、评论截止日或生效日。',
+        text: "9·14 送审，10·23 以 Consistent with Change 结案；公开 NPRM、评论期限及生效日期仍未核实。",
       },
     ],
     milestones: [
@@ -160,46 +164,48 @@ export const permModernization: PolicyContent = {
         text: '司法部与 OpenAI 达成 PERM 和解，要求其在官网发布职位并接受电子申请。',
       },
       { date: '2026-09-14', text: '拟议规则送交白宫 OIRA，进入发布前审查。' },
+      {
+        "date": "2026-10-23",
+        "text": "OIRA 以 Consistent with Change 结束 9·14 送交的提案发布前审查；不是 NPRM 发布或新规生效。"
+      }
     ],
     next: [
       {
-        date: '日期未定',
-        text: '统一议程的 2026 年 7 月 NPRM 目标月份已过；等待 OIRA 审查结果和 DOL 发布 NPRM，确认招聘渠道、适用案件和评论期限。',
+        "date": "日期未定",
+        "text": "OIRA 已于 10·23 结案；等待 DOL 公开 NPRM，确认招聘渠道、适用案件及评论期限。"
       },
       {
-        date: '日期未定',
-        text: '最终规则、生效日期和存量案件的过渡安排，要等后续文件才能明确。',
-        estimate: true,
-      },
+        "date": "日期未定",
+        "text": "最终规则、生效日期和存量案件的过渡安排，要等后续文件才能明确。",
+        "estimate": true
+      }
     ],
     process: {
-      detail:
-        'DOL 在 2026-09-14 把 PERM 改革提案送交 OIRA，发布前审查还在进行。本次核查没有找到公开的 NPRM 正文，尚未生效。',
-      currentSummary: 'PERM 改革处于发布前审查',
-      waitingFor:
-        'OIRA 审查结果及 DOL 发布 NPRM；具体条款、评论期限和生效日期待定。',
+      "detail": "OIRA 于 2026-10-23 以 Consistent with Change 结束 PERM 提案发布前审查；本次未取得公开 NPRM，尚未生效。",
+      "currentSummary": "OIRA 已结案，等待公开 NPRM",
+      "waitingFor": "DOL 发布 NPRM 及评论期限；具体修改、最终规则和生效安排待定。"
     },
   },
   en: {
     title: 'PERM Reform Would Update Recruitment and Employer Compliance',
     short: 'PERM Labor Certification Reform',
-    status: 'Under OIRA review · Not in effect',
+    status: "OIRA review concluded · Public proposal awaited",
     effectLabel:
-      'Not in effect · Submission has not changed current PERM rules',
+      "Not in effect · Current PERM rules unchanged",
     agency: 'DOL / ETA',
     documentId: '1205-AC29',
-    tldr: 'DOL plans to rewrite PERM recruitment so its channels track real hiring, raise the bar for showing no qualified U.S. worker was available, and strengthen protections for laid-off U.S. workers. The proposed rule went to White House OIRA review on September 14 and is not in effect.',
+    tldr: "DOL proposes to revise PERM recruitment, layoff protections and employer compliance. OIRA concluded prepublication review on October 23 as “Consistent with Change.” No public NPRM was obtained in this check; detailed provisions and an effective date remain undetermined.",
     tags: ['H-1B to green card', 'PERM', 'Employer sponsorship'],
     summary:
-      'DOL plans to rewrite the PERM labor market test so that recruitment channels track how employers actually hire, while raising the bar for showing that no qualified U.S. worker could be found. The reform would also strengthen protections for laid-off U.S. workers and impose stricter nondiscrimination, hiring and recordkeeping duties on employers.',
+      "DOL proposes to revise PERM recruitment channels, protections for laid-off U.S. workers, nondiscrimination and employer recordkeeping. OIRA concluded prepublication review October 23 as “Consistent with Change.” No public NPRM was obtained in this check; specific revisions, a comment deadline and implementation arrangements await published text.",
     audience:
       'Employees pursuing employer-sponsored green cards, and the employers filing PERM for them, including people currently in H-1B status.',
     caveat:
       'This concerns permanent labor certification only. It is unrelated to H-1B cap selection and separate from the #06 wage-level proposal, RIN 1205-AC30.',
     reviewNote:
-      "On October 23, the September 14 OIRA submission, current pending-review list and DOL agenda were reread, with later documents searched by RIN and title. OIRA still shows the proposal pending; no conclusion or public NPRM was verified. Specific recruitment, layoff-protection and retention terms and an effective date await published text. The official Federal Register RIN query lists no published record through the check date.",
+      "On October 25, the new OIRA conclusion detail (rrid=1533011) and RIN search confirmed receipt on September 14, conclusion on October 23 and “Consistent with Change.” The old pending link no longer displays this record, and AC29 is absent from the current pending queue. The official Federal Register RIN query still lists no public NPRM. The DOL OFLC announcement page was blocked; specific revisions, comment deadlines, a final rule and transition provisions await published text. OIRA conclusion is neither proposal publication nor implementation.",
     background:
-      "PERM is the labor certification an employer must obtain before sponsoring a foreign worker for an employment-based green card: the employer has to show it recruited U.S. workers in good faith and found no qualified person. The reform sits under 20 CFR 656, and DOL sent the proposed rule to the White House OIRA for prepublication review on September 14, 2026. The Unified Agenda originally targeted July 2026 for an NPRM; the October 14 check still showed the proposal pending at OIRA, with no published text listed in the Federal Register RIN query. A target month is not a publication date, and even less an effective date.",
+      "PERM is the labor certification an employer must obtain before sponsoring a foreign worker for an employment-based green card: the employer has to show it recruited U.S. workers in good faith and found no qualified person. The reform sits under 20 CFR 656, and DOL sent the proposed rule to the White House OIRA for prepublication review on September 14, 2026. The Unified Agenda originally targeted July 2026 for an NPRM; the October 14 check still showed the proposal pending at OIRA, with no published text listed in the Federal Register RIN query. A target month is not a publication date, and even less an effective date.\nOIRA concluded prepublication review on October 23 as “Consistent with Change,” under the new detail rrid=1533011; the old submission link no longer displays the record. The conclusion does not disclose which provisions changed. The official Federal Register RIN query on October 25 still lists no public NPRM. Conclusion cannot be treated as publication of a proposal or implementation of new requirements.",
     teaser:
       'If recruitment rules are rewritten, the work and timing of preparing a PERM case change with them.',
     headline:
@@ -257,16 +263,14 @@ export const permModernization: PolicyContent = {
       },
     ],
     outlook:
-      'Our assessment: watch when OIRA closes review and what the NPRM actually says. Four things matter most: the recruitment-channel list, layoff-related notice and review duties, the record-retention period, and how a new rule would apply to cases already filed. Until those terms are public, we will not state a delay in months or a probability of adoption.',
+      "With OIRA review concluded, await a public DOL NPRM. Check recruitment channels, layoff-related notice and review duties, record-retention periods and transition arrangements for filed cases. Do not infer specific revisions or an effective date before published text.",
     scenarios: [
       {
-        name: 'Review continues, or the plan changes',
-        headline: 'Current rules keep applying',
-        assumption: 'OIRA review remains open, or DOL revises the plan.',
-        effects:
-          'Employers can prepare cases under current rules. An agenda abstract alone cannot establish what requirements would be added later.',
-        signals:
-          'Whether OIRA closes review and whether DOL publishes a formal proposal.',
+        "name": "Review concluded; public proposal awaited",
+        "headline": "Current rules continue to apply",
+        "assumption": "OIRA has completed review, while DOL has not publicly issued an NPRM or is preparing publication.",
+        "effects": "Employers can prepare under current rules. The conclusion label does not disclose proposed terms or establish specific new obligations.",
+        "signals": "A formal DOL/Federal Register proposal and the actual revisions."
       },
       {
         name: 'An NPRM opens for comment',
@@ -299,7 +303,7 @@ export const permModernization: PolicyContent = {
       },
       {
         label: 'Current stage',
-        text: 'Entered OIRA review September 14; this check did not locate a public NPRM, comment deadline or effective date.',
+        text: "Submitted September 14; OIRA concluded review October 23 as Consistent with Change. A public NPRM, comment deadline and effective date remain unverified.",
       },
     ],
     milestones: [
@@ -315,24 +319,26 @@ export const permModernization: PolicyContent = {
         date: '2026-09-14',
         text: 'The proposed rule entered White House OIRA prepublication review.',
       },
+      {
+        "date": "2026-10-23",
+        "text": "OIRA concluded the proposal submitted September 14 as Consistent with Change; this is neither NPRM publication nor a new rule taking effect."
+      }
     ],
     next: [
       {
-        date: 'Date unknown',
-        text: 'Await the OIRA review outcome and a DOL NPRM specifying recruitment channels, covered cases and the comment deadline.',
+        "date": "Date unknown",
+        "text": "OIRA concluded review October 23. Await a public DOL NPRM specifying recruitment channels, covered cases and the comment deadline."
       },
       {
-        date: 'Date unknown',
-        text: 'A final rule, effective date and transition provisions for existing cases remain to be determined.',
-        estimate: true,
-      },
+        "date": "Date unknown",
+        "text": "A final rule, effective date and transition provisions for existing cases remain to be determined.",
+        "estimate": true
+      }
     ],
     process: {
-      detail:
-        'DOL submitted its PERM reform proposal to OIRA on September 14, 2026. Prepublication review is ongoing; this check did not locate a public NPRM, and the reform is not in effect.',
-      currentSummary: 'PERM reform is in prepublication review',
-      waitingFor:
-        'The OIRA review outcome and a DOL NPRM; detailed provisions, comment deadline and effective date remain unknown.',
+      "detail": "OIRA concluded PERM prepublication review on October 23, 2026 as Consistent with Change. No public NPRM was obtained in this check; the reform is not in effect.",
+      "currentSummary": "OIRA concluded; public NPRM awaited",
+      "waitingFor": "A DOL NPRM and comment deadline; specific changes, a final rule and implementation arrangements remain undetermined."
     },
   },
 };
