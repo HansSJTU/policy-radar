@@ -12,6 +12,8 @@ export type BriefingEntry = {
   timing: 'recent' | 'upcoming';
   // A later development that makes this upcoming date obsolete.
   supersededOn?: string;
+  // First site snapshot with verified support; keep earlier audit gaps intact.
+  availableOn?: string;
   zh: string;
   en: string;
 };
@@ -91,6 +93,24 @@ export const briefingEntries: BriefingEntry[] = [
     "supersededOn": "2026-10-23"
   },
   {
+    "id": "duration-replies-order64-november2",
+    "date": "2026-11-02",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "availableOn": "2026-10-25",
+    "zh": "第 64 项电子命令明确要求回复在 11·02 前提交，未采用政府请求的 11·06；不是全国暂缓到期日。",
+    "en": "Electronic order 64 expressly requires replies by November 2, not the requested November 6; this is not the nationwide stay’s expiration."
+  },
+  {
+    "id": "duration-motions-order64-october30",
+    "date": "2026-10-30",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "availableOn": "2026-10-25",
+    "zh": "第 64 项电子命令延长后的简易判决动议期限；不是判决日或新规生效日。",
+    "en": "Extended summary-judgment motion deadline under electronic order 64; not a judgment or rule effective date."
+  },
+  {
     "id": "cpt-government-response-october28",
     "date": "2026-10-28",
     "policyId": "cpt-guidance",
@@ -116,6 +136,14 @@ export const briefingEntries: BriefingEntry[] = [
     "supersededOn": "2026-10-23"
   },
   {
+    "id": "duration-order64-record65-verified",
+    "date": "2026-10-25",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "核实 10·23 第 64 项完整电子命令：动议 10·30、回复 11·02；政府已提交第 65 项行政记录索引通知及附件。全国暂缓继续。",
+    "en": "Verified complete October 23 electronic order 64: motions October 30, replies November 2. Government record-index notice 65 and attachments were filed; the nationwide stay continues."
+  },
+  {
     "id": "duration-record-october23",
     "date": "2026-10-23",
     "policyId": "duration-status",
@@ -130,6 +158,15 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "公开摘要新增延期裁定及第 65 项通知；正文未取得，延期结果和最新期限待核实。旧排期暂不列作确认的未来日期，不表示政府请求已获准。",
     "en": "The public feed adds an extension ruling and notice 65. Their texts, disposition and current deadlines remain unverified. Old calendar cards are withheld as unconfirmed, not because the government’s request is assumed granted."
+  },
+  {
+    "id": "perm-oira-concluded-october23",
+    "date": "2026-10-23",
+    "policyId": "perm-modernization",
+    "timing": "recent",
+    "availableOn": "2026-10-25",
+    "zh": "OIRA 以 Consistent with Change 结束 PERM 提案发布前审查；尚未核实公开 NPRM，结案不等于生效。",
+    "en": "OIRA concluded PERM prepublication review as Consistent with Change; no public NPRM was verified, and conclusion is not implementation."
   },
   {
     "id": "duration-october22-extension-motion",
@@ -545,6 +582,7 @@ export function getThirtyDayBriefing(
     .filter(
       (entry) =>
         entry.timing === 'recent' &&
+        (!entry.availableOn || asOf >= entry.availableOn) &&
         daysFromNow(entry) <= 0 &&
         daysFromNow(entry) >= -29,
     )
@@ -559,6 +597,7 @@ export function getThirtyDayBriefing(
     .filter(
       (entry) =>
         entry.timing === 'upcoming' &&
+        (!entry.availableOn || asOf >= entry.availableOn) &&
         (!entry.supersededOn || asOf < entry.supersededOn) &&
         daysFromNow(entry) >= 1 &&
         daysFromNow(entry) <= 30,

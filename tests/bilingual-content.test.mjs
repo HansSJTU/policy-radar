@@ -10,6 +10,22 @@ import { policyContents } from '../content/policies/index.ts';
 
 const han = /[㐀-鿿]/u;
 
+test('PERM has cleared OIRA while the D/S order keeps replies on November 2', () => {
+  const perm = policyContents.find(({ id }) => id === 'perm-modernization');
+  assert.equal(perm.process.lastCompletedStage, 1);
+  assert.equal(perm.process.activeStage, null);
+  assert.equal(perm.process.nextStage, 2);
+  assert.equal(perm.effectState, 'not-in-effect');
+  assert.match(perm.sources[0].href, /rrid=1533011/);
+  const duration = policyContents.find(({ id }) => id === 'duration-status');
+  for (const language of ['zh', 'en']) {
+    assert.deepEqual(duration[language].next.slice(0, 2).map(({ date }) => date), ['2026-10-30', '2026-11-02']);
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
+    assert.match(perm[language].reviewNote, /Consistent with Change/);
+    assert.match(duration[language].reviewNote, /64/);
+  }
+});
+
 function collectStrings(value) {
   if (typeof value === 'string') return [value];
   if (Array.isArray(value)) return value.flatMap(collectStrings);
