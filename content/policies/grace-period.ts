@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-25",
+  checkedOn: "2026-10-26",
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
@@ -170,7 +170,7 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         '公众评论在 11 月 10 日美东当日午夜前截止。之后要关注最终规则和生效安排。',
     },
-    reviewNote: "10·25 复核 9·11 NPRM、OIRA 检索及联邦公报 RIN 接口，仍仅列原提案和 11·10 评论截止。USCIS 离职后选择原页及替代读取未取得有效现页，先前读到的归档说明不能当作最新指引；另经网页和替代读取 eCFR 214.1(l)(2)，仍列这些类别及家属的最长 60 天条款。Regulations.gov 动态案卷和后续部门说明仍未完整核实。",
+    reviewNote: "10·26 复核 9·11 NPRM、OIRA 检索及联邦公报 RIN 接口，仍仅列原提案和 11·10 评论截止。USCIS 离职后选择原页本次可直接读取，但明确标为归档，不能当作最新指引；另经网页和替代读取 eCFR 214.1(l)(2)，仍列这些类别及家属的最长 60 天条款。Regulations.gov 动态案卷和后续部门说明仍未完整核实。",
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
@@ -308,6 +308,6 @@ export const gracePeriod: PolicyContent = {
       waitingFor:
         'Public comments due November 10 before midnight Eastern Time; then monitor any final rule and effective-date provisions.',
     },
-    reviewNote: "On October 25, the September 11 NPRM, OIRA search and Federal Register RIN API were reviewed; the original proposal and November 10 comment deadline remain the only matching rulemaking record. Neither direct nor alternative retrieval obtained valid current USCIS termination-options text; the previously read archived page is not current guidance. Web and alternative retrieval of eCFR 214.1(l)(2) still show the listed categories and dependents with up to 60 days. The dynamic Regulations.gov docket and later agency instructions remain incompletely verified.",
+    reviewNote: "On October 26, the September 11 NPRM, OIRA search and Federal Register RIN API were reviewed; the original proposal and November 10 comment deadline remain the only matching rulemaking record. The USCIS termination-options page was retrieved directly but is explicitly archived and is not current guidance. Web and alternative retrieval of eCFR 214.1(l)(2) still show the listed categories and dependents with up to 60 days. The dynamic Regulations.gov docket and later agency instructions remain incompletely verified.",
   },
 };
