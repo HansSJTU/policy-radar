@@ -68,6 +68,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "General OPT-fee NPRM comments close at 11:59 p.m. ET, docket ICEB-2026-0100; this is not a fee effective date."
   },
   {
+    "id": "duration-appeal-opening-november9",
+    "date": "2026-11-09",
+    "policyId": "duration-status",
+    "timing": "upcoming",
+    "availableOn": "2026-10-26",
+    "zh": "第一巡回法院 10·19 排期所列政府上诉主书状／附录期限；答辩、回复分别在相应送达后 30 天、10 天计算。不是规则恢复生效日。",
+    "en": "Government appellate opening brief/appendix due under the First Circuit’s October 19 schedule; response and reply periods run 30 and 10 days from the respective service dates. Not a rule effective date."
+  },
+  {
     "id": "cpt-relief-hearing",
     "date": "2026-11-06",
     "policyId": "cpt-guidance",
@@ -201,6 +210,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Electronic order 22 extends the government’s response to the complaint and relief motion to October 28; it does not stay the CPT guidance."
   },
   {
+    "id": "duration-appeal-october19-schedule",
+    "date": "2026-10-19",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "availableOn": "2026-10-26",
+    "zh": "上诉案卷独立确认政府主书状／附录 11·09 到期，解除此前仅依赖政府动议记载的缺口；后续按送达日计算，全国暂缓继续。",
+    "en": "The appellate docket independently confirms November 9 for the government’s opening brief/appendix, resolving reliance on a party filing. Later periods run from service; the nationwide stay continues."
+  },
+  {
     "id": "h1b-integrity-lca-review-deadline",
     "date": "2026-10-18",
     "policyId": "h1b-program-integrity",
@@ -215,6 +233,15 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "法院第 61 项命令排定 10·23 行政记录、10·26 简易判决动议、11·02 回复；9·14 全国暂缓继续。",
     "en": "Court order 61 sets the record for October 23, summary-judgment motions for October 26 and replies for November 2; the September 14 nationwide stay continues."
+  },
+  {
+    "id": "cloudera-perm-settlement",
+    "date": "2026-10-16",
+    "policyId": "h1b-program-integrity",
+    "timing": "recent",
+    "availableOn": "2026-10-26",
+    "zh": "DOJ 公布 Cloudera 和解：PERM 自我禁入 24 个月，从最近一次申请撤回日起算，期间不得提交 ETA Form 9089 或刊登 PERM 招聘广告；实际起止日未核实。",
+    "en": "DOJ announced Cloudera’s settlement: 24 months of PERM self-debarment from the latest application withdrawal, without ETA Form 9089 filings or PERM recruitment advertisements. Actual start/end dates remain unverified."
   },
   {
     "id": "h1b-separate-fee-opposition-october15",
@@ -313,6 +340,15 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "ICE 正式提议学校在 OPT 推荐前先缴首次 70,000 美元、后续 30,000 美元，允许成本转嫁；一般评论截止 11·09，新收费尚未生效。",
     "en": "ICE formally proposes school prepayment of $70,000 initially and $30,000 subsequently, allowing cost pass-through. General comments close November 9; the fees are not in effect."
+  },
+  {
+    "id": "targeted-perm-october8-announcement",
+    "date": "2026-10-08",
+    "policyId": "h1b-program-integrity",
+    "timing": "recent",
+    "availableOn": "2026-10-26",
+    "zh": "白宫发布会中，劳工部官员宣布暂停微软、Adobe 等被点名企业的新 PERM 申请和待审处理；属于定向执法，最新企业书面状态待核实，不等于全国停办或 AC29 提案发布。",
+    "en": "At a White House press conference, a DOL official announced suspension of new and pending PERM applications for named employers including Microsoft and Adobe. This is targeted enforcement; current written employer status is unverified, not a nationwide halt or AC29 proposal publication."
   },
   {
     "id": "cpt-relief-memorandum",
@@ -547,7 +583,7 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "NPRM 评论期已结束。DHS 正在审阅意见，OPT 和 H-4 EAD 的现行审查标准暂时没变。",
     "en": "The NPRM comment period closed. DHS is reviewing comments, while current OPT and H-4 EAD standards remain unchanged."
-  }
+  },
 ];
 
 const dayMs = 86_400_000;
