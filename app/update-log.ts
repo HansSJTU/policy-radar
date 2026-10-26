@@ -23,6 +23,47 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-26",
+    "changes": [
+      {
+        "id": "duration-independent-appeal-schedule",
+        "category": "#03 D/S 诉讼",
+        "title": "独立核实上诉排期：政府主书状／附录 11·09 到期",
+        "summary": "第一巡回法院 10·19 案卷排期与 10·09 相对期限命令已取得；全国暂缓继续。",
+        "before": "11·09 仅按政府第 63 项记载，上诉最新排期未独立核实，下一步列日期未定。",
+        "after": "加入第一巡回 26-2112 公开案卷，当前摘要、下一步和简报列明 11·09 政府主书状／附录；后续答辩在主书状送达后 30 天、回复在答辩送达后 10 天，不预设固定 12·09 期限。保留此前来源缺口的历史快照，明确排期没有解除全国暂缓。",
+        "sources": [
+          {
+            "label": "第一巡回法院 26-2112 公开案卷 · 10·09 与 10·19 排期记录",
+            "href": "https://www.courtlistener.com/docket/74908049/feed/"
+          }
+        ]
+      },
+      {
+        "id": "targeted-perm-enforcement-and-cloudera",
+        "category": "#13 跨部门审查 · 相关 PERM 执法",
+        "title": "补入微软、Adobe 等定向 PERM 暂停公告及 Cloudera 和解",
+        "summary": "区分企业个案、既往 LCA 数据复查和 AC29 规则制定；Cloudera 的 24 个月从最近一次撤回申请日起算。",
+        "before": "条目仅列行政命令及既往 LCA 数据复查的落实缺口，未列 10·08 企业定向 PERM 公告或 10·16 Cloudera 和解。",
+        "after": "增加白宫 10·08 发布会中的定向暂停公告，以及 DOJ 公布的 Cloudera 和解第 17 段：撤回相关未决 PERM，最近一次撤回日起自我禁入 24 个月，期间不得提交 ETA Form 9089 或刊登 PERM 招聘广告。披露最新企业书面暂停／恢复通知及实际起止日期缺口；不表述为全国 PERM 停办、现有 H-1B 自动失效、LCA 复查已启动或 AC29 NPRM 已发布。",
+        "sources": [
+          {
+            "label": "白宫 · 10·08 发布会视频",
+            "href": "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/"
+          },
+          {
+            "label": "DOJ · 10·16 Cloudera 和解公告",
+            "href": "https://www.justice.gov/opa/pr/us-departments-justice-and-labor-secure-settlement-cloudera-enforce-two-year-perm-debarment"
+          },
+          {
+            "label": "Cloudera 和解原文 · 第 17 段",
+            "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-25",
     "changes": [
       {
@@ -1622,6 +1663,47 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-26",
+    "changes": [
+      {
+        "id": "duration-independent-appeal-schedule",
+        "category": "#03 D/S litigation",
+        "title": "Independently verified appellate schedule: opening brief/appendix due November 9",
+        "summary": "The First Circuit’s October 19 schedule and October 9 relative-deadline order were obtained; the nationwide stay continues.",
+        "before": "November 9 was attributed only to government motion 63; the independent appellate schedule remained a gap and the next step was undated.",
+        "after": "Added the First Circuit 26-2112 public docket. Current summary, next steps and briefing now list November 9 for the government’s opening brief/appendix, response 30 days after service of the opening brief and reply 10 days after service of the response, without assuming December 9 as fixed. Earlier gap snapshots remain historical; scheduling does not lift the nationwide stay.",
+        "sources": [
+          {
+            "label": "First Circuit 26-2112 public docket · October 9 and October 19 schedule records",
+            "href": "https://www.courtlistener.com/docket/74908049/feed/"
+          }
+        ]
+      },
+      {
+        "id": "targeted-perm-enforcement-and-cloudera",
+        "category": "#13 Interagency review · Related PERM enforcement",
+        "title": "Added targeted PERM announcement and Cloudera settlement",
+        "summary": "Separate employer cases from prior-LCA review and AC29 rulemaking; Cloudera’s 24 months run from its latest application withdrawal.",
+        "before": "The entry covered the executive order and prior-LCA implementation gap, without the October 8 targeted PERM announcement or October 16 Cloudera settlement.",
+        "after": "Added the targeted suspension announcement in the White House October 8 video and DOJ’s Cloudera settlement paragraph 17: withdraw affected pending PERMs, then self-debar for 24 months from the latest withdrawal, without ETA Form 9089 filings or PERM recruitment advertisements. Current written employer suspension/resumption notices and actual period dates remain unverified. These do not establish a nationwide PERM halt, automatic H-1B invalidation, initiation of LCA review or publication of the AC29 NPRM.",
+        "sources": [
+          {
+            "label": "White House · October 8 press-conference video",
+            "href": "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/"
+          },
+          {
+            "label": "DOJ · October 16 Cloudera settlement announcement",
+            "href": "https://www.justice.gov/opa/pr/us-departments-justice-and-labor-secure-settlement-cloudera-enforce-two-year-perm-debarment"
+          },
+          {
+            "label": "Cloudera settlement · paragraph 17",
+            "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-25",
     "changes": [

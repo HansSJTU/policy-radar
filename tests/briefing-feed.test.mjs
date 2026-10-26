@@ -157,3 +157,19 @@ test('verified order 64 restores only its actual deadlines after the title-only 
     assert.ok(!dates.some(item => item.date === '2026-11-06'));
   }
 });
+
+test('independently verified appeal dates enter only the October 26 snapshot', () => {
+  for (const language of ['zh', 'en']) {
+    const prior = getThirtyDayBriefing('2026-10-25', language);
+    const current = getThirtyDayBriefing('2026-10-26', language);
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-appeal-opening-november9'));
+    assert.ok(current.upcoming.some(item => item.id === 'duration-appeal-opening-november9' && item.date === '2026-11-09'));
+    assert.ok(current.recent.some(item => item.id === 'duration-appeal-october19-schedule'));
+    assert.ok(!getThirtyDayBriefing('2026-11-10', language).upcoming.some(item =>
+      item.policyId === 'duration-status' && item.date === '2026-12-09'));
+    for (const id of ['cloudera-perm-settlement', 'targeted-perm-october8-announcement']) {
+      assert.ok(!prior.recent.some(item => item.id === id));
+      assert.ok(current.recent.some(item => item.id === id));
+    }
+  }
+});

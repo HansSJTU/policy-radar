@@ -25,6 +25,21 @@ export const h1bProgramIntegrity: PolicyContent = {
       en: 'Federal Register · Published September 23 (EO 14431, 91 FR 60501)',
     },
     {
+      "href": "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/",
+      "zh": "白宫 · 10·08 签证欺诈发布会（相关 PERM 定向暂停公告）",
+      "en": "White House · October 8 visa-fraud press conference (related targeted PERM announcement)"
+    },
+    {
+      "href": "https://www.justice.gov/opa/pr/us-departments-justice-and-labor-secure-settlement-cloudera-enforce-two-year-perm-debarment",
+      "zh": "DOJ · 10·16 Cloudera PERM 和解公告",
+      "en": "DOJ · October 16 Cloudera PERM settlement announcement"
+    },
+    {
+      "href": "https://www.justice.gov/crt/media/1465571/dl?inline=",
+      "zh": "Cloudera 和解原文 · 第 III 部分第 17 段（PDF 第 7 页）",
+      "en": "Cloudera settlement · Part III, paragraph 17 (PDF p. 7)"
+    },
+    {
       href: 'https://www.uscardforum.com/t/topic/533107',
       zh: '美卡论坛 · 裁员、贴签与入境讨论',
       en: 'USCardForum · Layoffs, visa stamping and entry discussion',
@@ -46,9 +61,9 @@ export const h1bProgramIntegrity: PolicyContent = {
     caveat:
       '命令只要求把相关裁员纳入考虑，没有写出裁员与拒签之间的换算标准，也没有宣布现有 H-1B 自动失效。真有裁员时后果如何，要看部门后续文件。',
     reviewNote:
-      "10·26 重读白宫命令及正式联邦公报第 3(b) 节，直接读取 DHS、USCIS 公告清单，并通过替代读取核对 DOL/WHD 公开页面并检索执行文件。按 30 个日历天计算的 10·18 启动期限已过，但未取得 DOL 确认既往 LCA 数据复查已启动的文件。DOL 原页直连及国务院页面部分被拒，替代读取的 DOL 清单不能确认完整最新公告，公开清单也不能证明所有内部执行；不能把信息缺口当作没有执行，或把启动期限写成完成期限／统一生效日。具体落实仍未完整核实。",
+      "10·26 重读白宫命令及正式联邦公报第 3(b) 节，直接读取 DHS、USCIS 公告清单，并通过替代读取核对 DOL/WHD 公开页面并检索执行文件。按 30 个日历天计算的 10·18 启动期限已过，但未取得 DOL 确认既往 LCA 数据复查已启动的文件。DOL 原页直连及国务院页面部分被拒，替代读取的 DOL 清单不能确认完整最新公告，公开清单也不能证明所有内部执行；不能把信息缺口当作没有执行，或把启动期限写成完成期限／统一生效日。具体落实仍未完整核实。 本次另读取白宫 10·08 发布会视频字幕、DOJ 10·16 公告及 Cloudera 和解第 17 段，补充相关 PERM 个案执法。微软、Adobe 等最新书面暂停范围、后续恢复情况，以及 Cloudera 最近一次撤回 PERM 的实际日期未核实；这些来源不能用于认定本令 LCA 复查已启动。",
     background:
-      '总统于 2026-09-18 签署 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program。它是总统对行政部门的指令，不是机构发布的拟议规则。第 2 节规定跨部门协作，第 3 节规定裁员审查、LCA 数据复查和执行授权，第 4 节要求依适用法律及可用拨款实施。命令的直接效果有两个：向部门作出指令，以及把裁员列为需要考虑的因素；命令正文没有写审查标准、需要的证明材料和审查时限。',
+      "总统于 2026-09-18 签署 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program。它是总统对行政部门的指令，不是机构发布的拟议规则。第 2 节规定跨部门协作，第 3 节规定裁员审查、LCA 数据复查和执行授权，第 4 节要求依适用法律及可用拨款实施。命令的直接效果有两个：向部门作出指令，以及把裁员列为需要考虑的因素；命令正文没有写审查标准、需要的证明材料和审查时限。\n相关 PERM 个案执法须与本令的 LCA 复查分开核对。白宫 10·08 发布会视频中，劳工部官员宣布暂停受理微软、Adobe 等被点名企业的新 PERM 申请及处理待审申请。这是针对企业的执法公告，不是全国 PERM 项目停办；本次未取得这些企业最新书面暂停／恢复通知，不能断言截至核查日每家仍在暂停。\nDOJ 10·16 公布 Cloudera 和解。协议第 III 部分第 17 段要求撤回使用无效招聘邮箱的相关未决 PERM 申请，并自我禁入 PERM 24 个月，期间不得提交 ETA Form 9089 或刊登 PERM 招聘广告。24 个月从最近一次 PERM 申请撤回日起算，不是从新闻公布日起算；实际起止日期未核实。\n这些企业个案不等于现有 H-1B 身份自动失效，也不证明本令第 3(b) 节的既往 LCA 数据复查已经启动。PERM 认证、H-1B 的 LCA 和 #12 PERM 劳工认证改革（1205-AC29）是不同事项；公告或和解不等于该改革的 NPRM 已发布。",
     teaser:
       '9·18 行政命令要求审查中考虑担保雇主的相关裁员，并明确了三个限定条件；它不等于裁员即拒签，具体后果仍取决于部门执行。',
     headline: '裁员被明确列为审查因素，具体后果还要看部门如何落实。',
@@ -79,6 +94,14 @@ export const h1bProgramIntegrity: PolicyContent = {
           '小陈的 H-1B 已经批准，雇主去年提交过好几份 LCA。劳工部现在复查的是这家雇主的 LCA 数据，找的是有没有值得进一步执法的线索；只有复查出线索、依法进入后续程序，才会牵涉到具体案件，所以“数据被复查”不等于小陈的批准会被撤销，也不发生在他面前。',
           '如果复查之后真的对雇主立案，依据是 INA § 212(n)(2)(G)，对象是雇主这个实体，不是小陈个人。他要看的是部门有没有公布复查结果、有没有针对这家雇主的程序，而不是把“数据被复查”当成自己的身份出问题。',
         ],
+      },
+      {
+        "title": "相关 PERM 个案：先核对担保雇主",
+        "text": "10·08 官员宣布针对微软、Adobe 等企业的 PERM 暂停；Cloudera 的和解则要求自最近一次 PERM 撤回日起自我禁入 24 个月，限制新申报和招聘广告。两者范围与起算依据不同，需分别核对雇主通知和和解条款；不能据此认定所有雇主停止 PERM 或已有 H-1B 身份失效。",
+        "source": {
+          "label": "依据：Cloudera 和解第 17 段；10·08 公告见下方来源",
+          "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+        }
       },
     ],
     outlook:
@@ -136,6 +159,14 @@ export const h1bProgramIntegrity: PolicyContent = {
         date: '2026-09-23',
         text: '联邦公报刊登该命令，编号为第 14431 号行政命令（91 FR 60501—60503，FR Doc. 2026-19555）。',
       },
+      {
+        "date": "2026-10-08",
+        "text": "相关 PERM 个案：劳工部官员在白宫发布会宣布暂停微软、Adobe 等被点名企业的新申请及待审处理；各企业最新书面范围与后续状态待核实。"
+      },
+      {
+        "date": "2026-10-16",
+        "text": "DOJ 公布 Cloudera 和解；第 17 段要求自最近一次 PERM 申请撤回日起自我禁入 24 个月，期间不得申报 ETA Form 9089 或刊登 PERM 招聘广告。"
+      },
     ],
     next: [
       {
@@ -169,9 +200,9 @@ export const h1bProgramIntegrity: PolicyContent = {
     caveat:
       'The order only requires relevant layoffs to be considered. It states no formula converting a layoff into a denial and does not automatically invalidate existing H-1B status. What layoffs actually mean for a case depends on later agency documents.',
     reviewNote:
-      "On October 26, the White House order and Federal Register section 3(b) were reread, with DHS/USCIS announcement lists read directly and public DOL/WHD pages checked through alternative retrieval and implementation documents searched. The October 18 initiation deadline, calculated as 30 calendar days after signature, has passed, but no DOL document confirming the prior-LCA review had begun was obtained. Direct DOL and some State pages were blocked, and the retrieved DOL lists do not verify complete current announcements; public lists cannot establish all internal implementation. The gap does not show nonimplementation, and the initiation deadline is not a completion or common effective date. Detailed implementation remains incompletely verified.",
+      "On October 26, the White House order and Federal Register section 3(b) were reread, with DHS/USCIS announcement lists read directly and public DOL/WHD pages checked through alternative retrieval and implementation documents searched. The October 18 initiation deadline, calculated as 30 calendar days after signature, has passed, but no DOL document confirming the prior-LCA review had begun was obtained. Direct DOL and some State pages were blocked, and the retrieved DOL lists do not verify complete current announcements; public lists cannot establish all internal implementation. The gap does not show nonimplementation, and the initiation deadline is not a completion or common effective date. Detailed implementation remains incompletely verified. This check also read the White House October 8 video transcript, DOJ October 16 announcement and paragraph 17 of the Cloudera settlement for related PERM enforcement. Current written suspension scope and subsequent resumption for Microsoft, Adobe and other named employers, and Cloudera’s actual latest PERM withdrawal date, remain unverified. Those sources do not establish initiation of this order’s LCA review.",
     background:
-      'The President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program on September 18, 2026. It is a presidential directive to executive agencies, rather than an agency proposed rule. Section 2 addresses coordination; section 3 covers layoffs, LCA data review and implementation authority; section 4 requires implementation consistent with applicable law and available appropriations. The order’s direct effects are to direct agencies and to make layoffs a factor to consider; the text itself sets no review standard, evidence list or processing deadline.',
+      "The President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program on September 18, 2026. It is a presidential directive to executive agencies, rather than an agency proposed rule. Section 2 addresses coordination; section 3 covers layoffs, LCA data review and implementation authority; section 4 requires implementation consistent with applicable law and available appropriations. The order’s direct effects are to direct agencies and to make layoffs a factor to consider; the text itself sets no review standard, evidence list or processing deadline.\nRelated PERM enforcement must be checked separately from this order’s LCA review. In the White House’s October 8 press-conference video, a DOL official announced suspension of new PERM applications and processing of pending applications for named employers including Microsoft and Adobe. This was targeted enforcement, not a nationwide PERM shutdown. Current written suspension/resumption notices for these employers were not obtained, so the announcement does not establish that every named company remains suspended as of this check.\nDOJ announced the Cloudera settlement on October 16. Part III, paragraph 17 requires withdrawal of outstanding PERM applications tied to a nonfunctional recruiting email and 24 months of self-debarment, with no ETA Form 9089 filings or PERM recruitment advertisements. The period runs from the most recent PERM application withdrawal, not the press-release date; actual start/end dates remain unverified.\nThese employer-specific actions do not automatically invalidate existing H-1B status or establish that section 3(b)’s prior-LCA-data review has begun. PERM certification, H-1B LCAs and the separate #12 PERM modernization rulemaking (1205-AC29) are distinct; an announcement or settlement is not publication of that NPRM.",
     teaser:
       'The September 18 order requires consideration of the sponsoring employer’s relevant layoffs and sets three scope conditions. It does not make layoffs a denial, and consequences still depend on agency implementation.',
     headline:
@@ -203,6 +234,14 @@ export const h1bProgramIntegrity: PolicyContent = {
           'Chen’s H-1B petition is already approved and the employer filed several LCAs last year. What DOL is reviewing now is this employer’s LCA data, looking for leads that might warrant further enforcement. Specific cases come into play only if the review produces such a lead and a separate proceeding follows under law, so a data review neither means Chen’s approval will be revoked nor happens in front of him.',
           'If review later leads to a case against the employer, the basis is INA section 212(n)(2)(G) and the target is the employer as an entity, not Chen personally. What Chen should watch is whether the agency publishes review results and whether any employer-specific proceeding is opened, rather than reading a data review as a problem with his own status.',
         ],
+      },
+      {
+        "title": "Related PERM cases: check the sponsoring employer",
+        "text": "The October 8 announcement targeted named employers including Microsoft and Adobe. Cloudera’s settlement separately requires 24 months of self-debarment from its latest PERM withdrawal, covering new filings and recruitment advertisements. Check the relevant employer notice and settlement terms separately; these actions do not establish a nationwide PERM halt or invalidate existing H-1B status.",
+        "source": {
+          "label": "Source: Cloudera settlement, paragraph 17; October 8 announcement listed below",
+          "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+        }
       },
     ],
     outlook:
@@ -265,6 +304,14 @@ export const h1bProgramIntegrity: PolicyContent = {
       {
         date: '2026-09-23',
         text: 'The Federal Register published the order as Executive Order 14431 (91 FR 60501–60503, FR Doc. 2026-19555).',
+      },
+      {
+        "date": "2026-10-08",
+        "text": "Related PERM enforcement: a DOL official announced suspension of new and pending applications for named employers including Microsoft and Adobe at a White House press conference. Current written scope and subsequent status remain unverified."
+      },
+      {
+        "date": "2026-10-16",
+        "text": "DOJ announced the Cloudera settlement. Paragraph 17 requires 24 months of self-debarment from the latest PERM withdrawal, without ETA Form 9089 filings or PERM recruitment advertisements."
       },
     ],
     next: [
