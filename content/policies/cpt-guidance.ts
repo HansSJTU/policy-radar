@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-10-26",
+  checkedOn: "2026-10-27",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -123,7 +123,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      "10·26 复核两份 ICE 原始广播 PDF、SEVP 最新清单、CPT 案公开记录及全部 65 条学校记录（61 条校方网页、4 条保存截图；64 所不同学校）。CPT 案最新可读第 24 项仍仅涉律师退出代理，第 22 项列政府答复 10·28，11·06 下午 3 点听证；未核实后续暂缓命令。通过网页复核 UVA 原 CPT 通知，确认必需实践继续处理；CMU 博士口径冲突、NYU 数学系审批缺口、UPenn 同页冲突及 Trine 一年期旧说明仍在各校条目披露。论坛开帖可读，最新回复接口被拒。保存截图仅确认当时内容，不确认当前校方政策。",
+      "10·27 通过公开替代读取复核两份 ICE 广播及 SEVP 清单，并读取 CPT 案记录、全部 66 条学校记录（62 条校方网页、4 条保存截图；65 所不同学校）。新增 Wyoming 10·26 通知：仍接受收紧标准下的 CPT 请求，机会减少，未宣布全面停批或无条件恢复。最新可读第 24 项仍仅涉律师退出代理，第 22 项列政府答复 10·28，11·06 下午 3 点听证；未核实后续暂缓命令。部分校方原页经网页或公开替代读取取得。CMU 博士口径冲突、NYU 数学系审批缺口、UPenn 同页冲突及 Trine 一年期旧说明仍逐项披露。论坛开帖可读，最新回复接口被拒。保存截图仅确认当时内容，不确认当前政策；UNC 公开页仍在修订，Caltech 一般 CPT 说明没有确认截图暂停是否解除。",
     background:
       "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。10·13 案卷第 19 项把初步禁令与行政行动暂缓申请的听证定在 11·06 下午 3 点（美东），由 Julia E. Kobick 法官主持；10·19 第 22 项电子命令把政府对起诉及初步禁令／暂缓申请的答复延至 10·28；截至 10·23 读取的公开摘要，未取得准许暂缓的命令。学校是否恢复须看之后的裁定及各校通知。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -261,7 +261,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      "On October 26, both original ICE broadcast PDFs were read directly, alongside the current SEVP list, CPT docket and all 65 school records (61 public university pages and four saved screenshots; 64 distinct institutions). The latest readable CPT entry 24 concerns counsel withdrawal only; order 22 sets the response for October 28, with a November 6 hearing at 3 p.m. ET. No later stay order was verified. UVA’s original notice was reread through web retrieval and confirms continued processing of mandatory training. CMU doctoral conflicts, the NYU Mathematics processing gap, conflicting Penn text and Trine’s retained one-year language remain disclosed per school. Forum opening posts were readable but latest-reply endpoints were blocked. Saved screenshots verify historical messages, not current university policy.",
+      "On October 27, public alternative retrieval supplied both ICE broadcasts and the SEVP list; the CPT docket and all 66 school records were reviewed (62 public university pages and four saved screenshots; 65 distinct institutions). Wyoming’s October 26 notice was added: requests under narrowed standards continue, with fewer opportunities, without a blanket halt or unrestricted reopening. The latest readable entry 24 concerns counsel withdrawal only; order 22 sets the response for October 28 and hearing for November 6 at 3 p.m. ET. No later stay was verified. Some university originals required web or public alternative retrieval. CMU doctoral conflicts, the NYU Mathematics processing gap, conflicting Penn text and Trine’s retained one-year language remain disclosed individually. Forum opening posts were readable but latest-reply endpoints were blocked. Saved screenshots support historical messages only; UNC’s public page remains under revision, and Caltech’s general CPT instructions do not establish that the screenshot pause was lifted.",
     background:
       "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. On October 13, entry 19 set the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET before District Judge Julia E. Kobick; October 19 electronic order 22 extends the government’s response to the complaint and relief motion to October 28. No order granting relief was obtained from the public feed read October 23. Reopening depends on later rulings and school notices.",
     teaser:
