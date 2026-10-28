@@ -128,6 +128,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Extended deadline for the government’s response to the complaint and preliminary-injunction/stay motion; the hearing remains separately scheduled for November 6."
   },
   {
+    "id": "h1b-separate-fee-october28-title",
+    "date": "2026-10-28",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "另项 100,000 美元案新增涉及案件管理会议、暂停动议和听证排期的案卷标题；正文未取得，裁定结果及新排期待核实，不能据此认定恢复收费。",
+    "en": "The separate $100,000 case adds a docket title concerning case management, a stay motion and hearing settings. Operative text, disposition and new dates remain unverified; the title does not establish resumed collection."
+  },
+  {
     "id": "h1b-separate-fee-case-management",
     "date": "2026-10-27",
     "policyId": "h1b-fee",

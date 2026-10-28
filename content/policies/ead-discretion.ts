@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-27",
+  checkedOn: "2026-10-28",
   related: [
     "opt-fee",
     "h4-ead",
@@ -33,6 +33,11 @@ export const eadDiscretion: PolicyContent = {
       zh: '美卡论坛讨论',
       en: 'USCardForum discussion',
     },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AC98",
+      "zh": "OIRA · 1615-AC98 待审／结案跨记录检索",
+      "en": "OIRA · 1615-AC98 pending/concluded review search"
+    }
   ],
   zh: {
     title: 'I-765 拟扩大犯罪记录审查',
@@ -137,7 +142,7 @@ export const eadDiscretion: PolicyContent = {
       currentSummary: '公众评论期已结束，尚未形成最终规则',
       waitingFor: 'DHS 审阅意见并决定是否修改或定稿；日期未定。',
     },
-    reviewNote: "10·27 重读 6·05 NPRM、当前议程及 OIRA 待审／结案跨记录检索；OIRA 只列原提案 3·31 结案，联邦公报仅列 6·05 NPRM，议程仍列提案阶段和 8·04 评论结束日。Regulations.gov 动态案卷及部门后续执行说明未完整核实。",
+    reviewNote: "10·28 重读 6·05 NPRM，并检索联邦公报的同 RIN 后续记录；联邦公报仍只列原提案，8·04 评论期限已过，未取得新的最终规则。Regulations.gov 动态案卷、完整最新部门执行说明及后续诉讼仍未完整核实。同 RIN 的待审／结案检索仅列 3·31 结案记录。",
   },
   en: {
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
@@ -266,6 +271,6 @@ export const eadDiscretion: PolicyContent = {
       waitingFor:
         'DHS review of comments and a decision on revisions or a final rule; no date is set.',
     },
-    reviewNote: "The June 5 NPRM, current agenda and OIRA search across pending/concluded reviews were reread October 27. OIRA lists only the original proposal concluded March 31, the Federal Register lists only the June 5 NPRM, and the agenda retains the proposal stage and August 4 comment close. The live Regulations.gov docket and later agency guidance remain incompletely verified.",
+    reviewNote: "On October 28, the June 5 NPRM and Federal Register searches for later records under the same RIN were reviewed. The Federal Register still lists only the proposal; the August 4 comment deadline has passed and no new final rule was obtained. The live Regulations.gov docket, complete current agency instructions and subsequent litigation remain incompletely verified. The pending/concluded RIN search lists only the March 31 conclusion.",
   },
 };

@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-27",
+  checkedOn: "2026-10-28",
   related: [
     "ead-auto-extension",
     "ead-discretion",
@@ -37,6 +37,11 @@ export const h4Ead: PolicyContent = {
       "href": "https://www.uscardforum.com/t/topic/528394",
       "zh": "美卡论坛讨论",
       "en": "USCardForum discussion"
+    },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD14",
+      "zh": "OIRA · 1615-AD14 待审／结案跨记录检索",
+      "en": "OIRA · 1615-AD14 pending/concluded review search"
     }
   ],
   zh: {
@@ -147,7 +152,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·27 复核 AD14 长期议程、OIRA 待审／结案检索和联邦公报查询，未取得撤销 H-4 EAD 资格的公开提案。经公开替代读取的 USCIS H-4 资格页及 eCFR 274a.12(c)(26) 仍列主申请人获批 I-140 或符合 AC21 延期时的配偶申请资格。另项 AD05 EAD 自动延期最终规则已于 10·14 刊登生效，正文原样承接 2025·10·30 起的续期界线，并非 AD14 资格撤销。后续资格提案、完整部门说明及诉讼仍有核查缺口。 USCIS 原页直连被拒，使用当前规范路径的公开替代读取；eCFR 页面自报内容更新至 10·23。",
+    reviewNote: "10·28 重读 AD14 长期议程、联邦公报同 RIN 检索、USCIS H-4 配偶资格页及 eCFR 274a.12(c)(26)。议程仍无 NPRM 日期，联邦公报未列 AD14 提案；资格页及条文仍列主申请人获批 I-140 或符合 AC21 延期时的配偶申请资格。另项 AD05 自动延期最终规则不等于撤销 H-4 EAD 资格。后续完整资格规则、部门说明及诉讼仍有核查缺口。同 RIN 的 OIRA 搜索返回无结果，不能据此确认完整审查历史。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -279,6 +284,6 @@ export const h4Ead: PolicyContent = {
       waitingFor:
         'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
     },
-    reviewNote: "The AD14 long-term agenda, OIRA pending/concluded searches and Federal Register query were reviewed October 27; no public H-4 EAD eligibility-rescission proposal was obtained. The USCIS H-4 eligibility page obtained through public alternative retrieval, together with eCFR 274a.12(c)(26), retains spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 EAD-renewal final rule was published and effective October 14, adopting the October 30, 2025 renewal cutoff unchanged; it is not AD14 eligibility rescission. Later eligibility proposals, complete agency guidance and litigation remain incompletely verified. Direct USCIS access was blocked; public alternative retrieval used the current canonical path. The eCFR page identifies its text as current through October 23.",
+    reviewNote: "On October 28, the AD14 long-term agenda, Federal Register RIN search, USCIS H-4 spouse eligibility page and eCFR 274a.12(c)(26) were reread. The agenda still gives no NPRM date and the Federal Register lists no AD14 proposal. The page and regulation retain spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 automatic-extension final rule does not rescind H-4 EAD eligibility. Complete subsequent eligibility rulemaking, agency guidance and litigation remain gaps. The OIRA RIN search returns no result; complete review history cannot be established from that alone.",
   },
 };

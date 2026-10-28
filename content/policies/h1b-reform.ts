@@ -5,7 +5,7 @@ export const h1bReform: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-27",
+  checkedOn: "2026-10-28",
   related: [
     "h1b-fee",
     "grace-period",
@@ -33,6 +33,11 @@ export const h1bReform: PolicyContent = {
       zh: '美卡论坛讨论',
       en: 'USCardForum discussion',
     },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD00",
+      "zh": "OIRA · 1615-AD00 待审／结案跨记录检索",
+      "en": "OIRA · 1615-AD00 pending/concluded review search"
+    }
   ],
   zh: {
     title: 'H-1B 分类改革：豁免与派驻路径待重审',
@@ -138,7 +143,7 @@ export const h1bReform: PolicyContent = {
       currentSummary: 'OIRA 发布前审查',
       waitingFor: 'OIRA 完成审查及 DHS 公开提案；尚无确认发布日期。',
     },
-    reviewNote: "10·27 重读 OIRA 待审记录、当前队列、按 RIN 的待审／结案检索及议程跨版检索；仅列 8·24 收件的待审提案，当前议程仍为提案阶段。联邦公报 RIN 查询截至当天未列公开文件；具体条款、发布日期及后续部门说明未确认。",
+    reviewNote: "10·28 重读 OIRA 送审记录、议程；已读取的送审记录仍列 8·24 收件、提案待审。联邦公报 RIN 查询未列公开文件。具体条款、发布日期及后续完整部门说明仍未确认，不能把审查中写成已经生效。同 RIN 的待审／结案检索仅列 8·24 收件的待审提案。",
   },
   en: {
     title:
@@ -264,6 +269,6 @@ export const h1bReform: PolicyContent = {
       waitingFor:
         'Completion of OIRA review and publication of the DHS proposal; no publication date is confirmed.',
     },
-    reviewNote: "On October 27, the OIRA submission, pending list, RIN search across pending/concluded reviews and agenda editions were checked. The review search lists only the August 24 proposal pending; the current agenda retains the proposed-rule stage. The Federal Register RIN query lists no published record through the check date; terms, publication timing and later agency guidance remain unconfirmed.",
+    reviewNote: "On October 28, the OIRA submission and agenda were reviewed. The retrieved review record still lists the August 24 proposal as pending. The Federal Register RIN query lists no published record. Terms, publication timing and complete subsequent agency instructions remain unconfirmed; review is not implementation. The pending/concluded RIN search lists only the proposal received August 24 as pending.",
   },
 };

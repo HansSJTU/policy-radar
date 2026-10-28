@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-28",
+    "changes": [
+      {
+        "id": "h1b-fee-october28-docket-title",
+        "category": "#02 H-1B 附加费 · 另项 100,000 美元案",
+        "title": "补入 10·28 案卷条目，会议及暂停动议结果待核实",
+        "summary": "公开镜像新增涉及会议、暂停动议与听证排期的标题，但没有正文；移除已过的 10·27 未来事项。",
+        "before": "下一步仍列 10·27 Zoom 案件管理会议；核查说明称会议时间尚未到，最新案卷仅至 10·26 律师通知。",
+        "after": "时间线及简报补入 10·28 新案卷标题，明确正文、动议裁定结果及新排期尚未取得；10·27 仅保留在历史文件记载中，不再作为未来日期。不据标题认定会议已按原日期举行、动议获准／被拒或恢复收费；103,265 美元 NPRM 的提案状态不变。",
+        "sources": [
+          {
+            "label": "法院案卷 · 10·28 新条目（仅标题）",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/?order_by=desc#minute-entry-483258424"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-27",
     "changes": [
       {
@@ -1682,6 +1701,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-28",
+    "changes": [
+      {
+        "id": "h1b-fee-october28-docket-title",
+        "category": "#02 H-1B surcharge · separate $100,000 case",
+        "title": "Add October 28 docket entry; conference and stay outcome unverified",
+        "summary": "The public mirror adds a title concerning a conference, stay motion and hearing settings without operative text; remove the elapsed October 27 future step.",
+        "before": "Next steps still listed the October 27 Zoom conference; the review note said it had not yet occurred, and the latest docket covered the October 26 attorney notice.",
+        "after": "The timeline and briefing add the October 28 docket title, expressly leaving the operative text, motion outcome and new settings unverified. October 27 remains in historical documents and is no longer a future date. The title does not establish that the conference occurred as scheduled, that the motion was granted/denied or that collection resumed. The $103,265 NPRM remains a proposal.",
+        "sources": [
+          {
+            "label": "Court docket · October 28 new entry (title only)",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/?order_by=desc#minute-entry-483258424"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-27",
     "changes": [
