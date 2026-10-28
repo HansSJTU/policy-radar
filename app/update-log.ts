@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-27",
+    "changes": [
+      {
+        "id": "cpt-wyoming-public-notice",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Wyoming 校方通知：收紧标准下继续接受 CPT 请求",
+        "summary": "10·26 通知称仍能批准部分请求，但许多学生的机会减少；不是全校停批或无条件恢复。",
+        "before": "65 条证据记录：61 条校方网页、4 条社区截图；64 所不同学校，未收录 Wyoming。",
+        "after": "新增 Wyoming 公开通知后为 66 条记录：62 条校方网页、4 条社区截图；65 所不同学校。说明学生可继续寻找机会并尽早提交 ISS 核查，未逐项核实所有合格项目或已有授权处理；11·06 听证不等于恢复日期。",
+        "sources": [
+          {
+            "label": "University of Wyoming · 10·26 校方通讯",
+            "href": "https://www.uwyo.edu/uwgrad/newsletter/isa-immigration-support-fall2026.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-26",
     "changes": [
       {
@@ -1663,6 +1682,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-27",
+    "changes": [
+      {
+        "id": "cpt-wyoming-public-notice",
+        "category": "#05 CPT school tracker",
+        "title": "Add Wyoming’s notice: CPT requests continue under narrowed standards",
+        "summary": "The October 26 notice says some requests can still be approved, with fewer opportunities for many students; it is neither a blanket halt nor unrestricted reopening.",
+        "before": "65 evidence entries: 61 public university pages and four community reports; 64 distinct institutions, without Wyoming.",
+        "after": "Adding Wyoming’s public notice brings the list to 66 evidence entries: 62 public university pages and four community reports; 65 distinct institutions. Students may continue seeking opportunities and submit early for ISS review. Every qualifying program and existing-authorization treatment remain unspecified; the November 6 hearing is not a reopening date.",
+        "sources": [
+          {
+            "label": "University of Wyoming · October 26 university newsletter",
+            "href": "https://www.uwyo.edu/uwgrad/newsletter/isa-immigration-support-fall2026.html"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-26",
     "changes": [

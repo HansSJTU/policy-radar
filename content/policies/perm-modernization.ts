@@ -5,7 +5,7 @@ export const permModernization: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-26",
+  checkedOn: "2026-10-27",
   related: ['prevailing-wage', 'h1b-reform'],
   process: {
     "kind": "federal-rulemaking",
@@ -61,7 +61,7 @@ export const permModernization: PolicyContent = {
     caveat:
       '本项只涉及永久劳工认证（绿卡），与 H-1B 抽签改革无关，也不同于 #06 的工资等级提案（RIN 1205-AC30）。',
     reviewNote:
-      "10·26 读取新的 OIRA 结案详情（rrid=1533011），按 RIN 检索交叉确认 9·14 收件、10·23 结案及“Consistent with Change”。旧待审链接已不再显示项目内容，当前待审队列不再列 AC29。联邦公报官方 RIN 查询仍未列公开 NPRM；DOL OFLC 公告原页被拒，替代读取仅取得旧公告清单，未确认最新部门公告，具体修改、评论期限、最终规则及过渡安排仍待正式正文。OIRA 结案不能替代提案发布或生效。",
+      "10·27 读取新的 OIRA 结案详情（rrid=1533011），按 RIN 检索交叉确认 9·14 收件、10·23 结案及“Consistent with Change”。旧待审链接已不再显示项目内容，当前待审队列不再列 AC29。联邦公报官方 RIN 查询仍未列公开 NPRM；DOL OFLC 公告原页被拒，替代读取仅取得旧公告清单，未确认最新部门公告，具体修改、评论期限、最终规则及过渡安排仍待正式正文。OIRA 结案不能替代提案发布或生效。",
     background:
       "PERM 是雇主替外籍员工办职业移民绿卡时，先要拿到的劳工认证。雇主必须证明自己认真招过美国人，但招不到合适人选。这项改革列在 20 CFR 656 之下，DOL 已于 2026-09-14 把拟议规则送交白宫 OIRA，做发布前审查。统一议程原定 2026 年 7 月发布拟议规则（NPRM）；10 月 14 日核查时，OIRA 仍列提案待审，联邦公报 RIN 查询未列公开正文。计划月份不等于发布日，更不等于生效日。\nOIRA 于 10·23 以“Consistent with Change”结束此次发布前审查，新结案详情为 rrid=1533011；原送审记录不再显示项目内容。这个行政审查结果不公开说明具体改了哪些条款。10·25 联邦公报官方 RIN 查询仍未列公开 NPRM，不能把结案当成提案已经发布或新要求已经生效。",
     teaser: '招聘方式一旦改写，雇主准备 PERM 的工作量和时间安排都会变。',
@@ -203,7 +203,7 @@ export const permModernization: PolicyContent = {
     caveat:
       'This concerns permanent labor certification only. It is unrelated to H-1B cap selection and separate from the #06 wage-level proposal, RIN 1205-AC30.',
     reviewNote:
-      "On October 26, the new OIRA conclusion detail (rrid=1533011) and RIN search confirmed receipt on September 14, conclusion on October 23 and “Consistent with Change.” The old pending link no longer displays this record, and AC29 is absent from the current pending queue. The official Federal Register RIN query still lists no public NPRM. The DOL OFLC announcement page was blocked, and alternative retrieval yielded only an older announcement list without verifying the latest agency updates; specific revisions, comment deadlines, a final rule and transition provisions await published text. OIRA conclusion is neither proposal publication nor implementation.",
+      "On October 27, the new OIRA conclusion detail (rrid=1533011) and RIN search confirmed receipt on September 14, conclusion on October 23 and “Consistent with Change.” The old pending link no longer displays this record, and AC29 is absent from the current pending queue. The official Federal Register RIN query still lists no public NPRM. The DOL OFLC announcement page was blocked, and alternative retrieval yielded only an older announcement list without verifying the latest agency updates; specific revisions, comment deadlines, a final rule and transition provisions await published text. OIRA conclusion is neither proposal publication nor implementation.",
     background:
       "PERM is the labor certification an employer must obtain before sponsoring a foreign worker for an employment-based green card: the employer has to show it recruited U.S. workers in good faith and found no qualified person. The reform sits under 20 CFR 656, and DOL sent the proposed rule to the White House OIRA for prepublication review on September 14, 2026. The Unified Agenda originally targeted July 2026 for an NPRM; the October 14 check still showed the proposal pending at OIRA, with no published text listed in the Federal Register RIN query. A target month is not a publication date, and even less an effective date.\nOIRA concluded prepublication review on October 23 as “Consistent with Change,” under the new detail rrid=1533011; the old submission link no longer displays the record. The conclusion does not disclose which provisions changed. The official Federal Register RIN query on October 25 still lists no public NPRM. Conclusion cannot be treated as publication of a proposal or implementation of new requirements.",
     teaser:

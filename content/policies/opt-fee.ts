@@ -5,7 +5,7 @@ export const optFee: PolicyContent = {
   path: 'OPT',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-26",
+  checkedOn: "2026-10-27",
   related: ['h1b-fee', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',
@@ -65,7 +65,7 @@ export const optFee: PolicyContent = {
     caveat:
       "学校拟负责向政府先缴费，但不必自行吸收全部成本；具体资助与转嫁安排取决于学校。",
     reviewNote:
-      "10·26 重读 10·08 正式 NPRM 与官方 PDF，确认金额、学校先缴费责任、允许成本转嫁、过渡条款及两项评论期限；联邦公报官方 API 按 RIN 检索截至当天仅列此提案。Regulations.gov 动态案卷未完整读取；学校具体资助或转嫁办法、最终规则和实际生效日期尚未确认。",
+      "10·27 重读 10·08 正式 NPRM 与官方 PDF，确认金额、学校先缴费责任、允许成本转嫁、过渡条款及两项评论期限；联邦公报官方 API 按 RIN 检索截至当天仅列此提案。Regulations.gov 动态案卷未完整读取；学校具体资助或转嫁办法、最终规则和实际生效日期尚未确认。",
     background:
       "ICE 在 2026-08-20 把 Optional Practical Training Fees 送交 OIRA，9·11 带修改完成审查。10·08 的 NPRM（2026-20660，91 FR 64566，ICEB-2026-0100）首次公布具体收费：70,000 美元首次费、30,000 美元后续费。此前媒体报道的单笔 100,000 美元不能继续当作本提案的首次收费。\n学校拟在 DSO 向 SEVIS 录入推荐前缴费；未缴费就不能推荐，USCIS 也不能据此批准工作许可。正文没有禁止学校向学生、全体学生或雇主转嫁经济成本。它覆盖各类 OPT，不包括 CPT；单纯换雇主不会触发新一笔后续费。\n拟议过渡界线是最终规则公布后的第 60 天，不是 NPRM 公布后的第 60 天。界线之后的第一次新 OPT 推荐拟收 70,000 美元，即使学生此前参加过 OPT；只有已缴首次费后的后续推荐才拟收 30,000 美元。现有 EAD 不会因为这份提案自动失效。\n学校可在相关 EAD 或延期尚未获批时申请退款，并先撤除 SEVIS 推荐；SEVP 拟逐案决定，获批后不退费，退款决定不可行政上诉。规则一般评论截止 11·09，信息收集评论截止 12·07；最终规则和实际生效日期尚未确认。",
     teaser: "学校的 OPT 推荐拟先经过缴费环节，学生和雇主还要看学校怎样分配成本。",
@@ -187,7 +187,7 @@ export const optFee: PolicyContent = {
     caveat:
       "Schools would remit the fee first but need not absorb the whole economic cost; funding and pass-through arrangements would vary by school.",
     reviewNote:
-      "The October 8 NPRM and official PDF were reread October 26 to confirm fees, school prepayment, permitted cost pass-through, transition terms and both comment deadlines. The official Federal Register RIN API lists only this proposal through the check date. The live Regulations.gov docket was not fully retrieved; school funding arrangements, final text and an actual effective date remain unconfirmed.",
+      "The October 8 NPRM and official PDF were reread October 27 to confirm fees, school prepayment, permitted cost pass-through, transition terms and both comment deadlines. The official Federal Register RIN API lists only this proposal through the check date. The live Regulations.gov docket was not fully retrieved; school funding arrangements, final text and an actual effective date remain unconfirmed.",
     background:
       "ICE submitted Optional Practical Training Fees to OIRA August 20, 2026; review concluded with changes September 11. The October 8 NPRM (2026-20660, 91 FR 64566, ICEB-2026-0100) publishes a $70,000 initial fee and $30,000 subsequent fee. The earlier media-reported single $100,000 amount no longer describes the proposed initial fee.\nSchools would pay before a DSO enters a recommendation in SEVIS. Without payment, the DSO could not recommend OPT and USCIS could not grant employment authorization. The text does not prohibit schools from passing the economic cost to F-1 students, all students or employers. It covers all OPT types and excludes CPT; an employer change alone would not trigger a subsequent fee.\nThe proposed transition boundary is 60 days after FINAL-rule publication, not NPRM publication. The first new OPT recommendation after that boundary would require $70,000 even if the student previously participated in OPT; the $30,000 subsequent fee applies after the initial fee has been paid. This proposal does not automatically invalidate existing EADs.\nSchools could seek a discretionary refund before the associated EAD or extension is granted, after removing the SEVIS recommendation. No refund would follow authorization, and refund decisions would have no administrative appeal. General comments close November 9 and information-collection comments December 7; a final rule and actual effective date remain unconfirmed.",
     teaser:
