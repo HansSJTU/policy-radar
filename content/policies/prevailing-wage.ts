@@ -5,7 +5,7 @@ export const prevailingWage: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-27",
+  checkedOn: "2026-10-28",
   related: ['h1b-weighted-selection', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -29,6 +29,11 @@ export const prevailingWage: PolicyContent = {
       zh: '美卡论坛讨论',
       en: 'USCardForum discussion',
     },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1205-AC30",
+      "zh": "OIRA · 1205-AC30 待审／结案跨记录检索",
+      "en": "OIRA · 1205-AC30 pending/concluded review search"
+    }
   ],
   zh: {
     title: 'H-1B / PERM 法定工资门槛拟上调',
@@ -43,7 +48,7 @@ export const prevailingWage: PolicyContent = {
       'DOL 打算把 H-1B、H-1B1、E-3 和 PERM 使用的四级法定工资门槛，从约第 17、34、50、67 百分位提高到第 34、52、70、88 百分位。',
     audience: 'H-1B、H-1B1、E-3 与 PERM 的申请人及承担工资的雇主。',
     caveat: '提案改的是法定工资下限，和 H-1B 抽签权重是两套规则。',
-    reviewNote: "10·27 重读 NPRM、当前 DOL 统一议程与 OIRA 既往结案记录；议程仍列提案阶段，联邦公报官方 RIN 接口仅列既有 NPRM。DOL 3·26 新闻稿经公开替代读取取得，原页直连被拒；Regulations.gov 动态案卷及完整最新部门说明仍未核实。",
+    reviewNote: "10·28 重读 NPRM，并按 RIN 查询后续联邦公报记录；联邦公报仍只列 3·27 提案。DOL 3·26 新闻稿原页被拒，公开替代文本已读取；最新 OFLC 公告原页被拒，替代文本是较早列表。Regulations.gov 动态案卷及完整最新部门说明仍未核实。同 RIN 的待审／结案检索列 2·20、3·25 两项既往结案记录。",
     background:
       'RIN 1205-AC30 在 2026-03-27 发布，公众评论期 5 月 26 日结束。2026 年 8 月的统一议程仍把它列在提案阶段；DOL 还没有发布最终规则，现行工资等级的计算方式没有改变。',
     teaser: '一次性费用之外，持续工资成本可能进一步压缩雇主的担保空间。',
@@ -154,7 +159,7 @@ export const prevailingWage: PolicyContent = {
       'H-1B, H-1B1, E-3 and PERM applicants and employers funding their wages.',
     caveat:
       'This proposal concerns required wage floors, separate from H-1B selection weights.',
-    reviewNote: "The NPRM, current DOL agenda and historical OIRA conclusion were reread October 27. The agenda retains the proposed-rule stage, and the official Federal Register RIN API lists only the existing NPRM. The March 26 DOL release was obtained through public alternative retrieval after direct access was blocked. The live Regulations.gov docket and complete later agency guidance remain incompletely verified.",
+    reviewNote: "On October 28, the NPRM and Federal Register RIN search were reviewed; the Federal Register still lists only the March 27 proposal. Direct access to DOL’s March 26 release was blocked and public alternative text was read. The current OFLC announcement page was blocked and its alternative supplied an older list. The live Regulations.gov docket and complete current agency guidance remain incompletely verified. The pending/concluded RIN search lists the earlier February 20 and March 25 conclusions.",
     background:
       'RIN 1205-AC30 was published on March 27, 2026, and comments closed May 26. The August 2026 Unified Agenda still lists it at the proposed-rule stage; DOL has not published a final rule, so the current wage-level calculation has not changed.',
     teaser:
