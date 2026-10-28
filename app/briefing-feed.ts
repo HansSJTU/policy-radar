@@ -120,10 +120,19 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Extended summary-judgment motion deadline under electronic order 64; not a judgment or rule effective date."
   },
   {
+    "id": "cpt-government-opposition-october28",
+    "date": "2026-10-28",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "政府提交反对初步禁令及行政行动暂缓的意见（第 27 项）；第 26 项命令仅准许超页。11·06 下午 3 时美东听证安排未变，未取得准许暂缓的命令。",
+    "en": "The government filed its opposition to preliminary relief and a stay (entry 27); order 26 only permits excess pages. The November 6 hearing at 3 p.m. ET remains scheduled, with no order granting relief obtained."
+  },
+  {
     "id": "cpt-government-response-october28",
     "date": "2026-10-28",
     "policyId": "cpt-guidance",
     "timing": "upcoming",
+    "supersededOn": "2026-10-28",
     "zh": "政府答复起诉及初步禁令／暂缓申请的延长期限；11·06 听证另行进行。",
     "en": "Extended deadline for the government’s response to the complaint and preliminary-injunction/stay motion; the hearing remains separately scheduled for November 6."
   },

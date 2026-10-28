@@ -26,6 +26,24 @@ const chineseUpdates: ContentUpdate[] = [
     "date": "2026-10-28",
     "changes": [
       {
+        "id": "cpt-government-opposition-october28",
+        "category": "#05 CPT 指引诉讼",
+        "title": "政府提交反对暂缓意见，11·06 听证安排未变",
+        "summary": "取得第 27 项政府反对意见全文及两份广播附件；第 26 项命令仅准许超页，未裁定暂缓。",
+        "before": "当前程序等待 10·28 政府答复；核查说明称公开案卷最新仍至第 24 项，未取得后续答复正文。",
+        "after": "摘要、状态、诉讼路径、时间线及简报补入政府反对初步禁令／行政行动暂缓的意见，移除已履行的未来答复事项；保留 10·19 延期历史和 11·06 下午 3 时美东听证。明确政府关于资格、最终行政行动及既有规定的主张不是法院认定，未取得准许暂缓的命令。",
+        "sources": [
+          {
+            "label": "政府反对意见全文 · 第 27 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.0.pdf"
+          },
+          {
+            "label": "地区法院案卷 · 第 26 项超页命令及第 27 项提交",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/"
+          }
+        ]
+      },
+      {
         "id": "h1b-fee-october28-docket-title",
         "category": "#02 H-1B 附加费 · 另项 100,000 美元案",
         "title": "补入 10·28 案卷条目，会议及暂停动议结果待核实",
@@ -1704,6 +1722,24 @@ const englishUpdates: ContentUpdate[] = [
   {
     "date": "2026-10-28",
     "changes": [
+      {
+        "id": "cpt-government-opposition-october28",
+        "category": "#05 CPT guidance litigation",
+        "title": "Government opposition filed; November 6 hearing unchanged",
+        "summary": "Obtained the full opposition (entry 27) and both broadcast exhibits; order 26 only permits excess pages without deciding relief.",
+        "before": "Current process awaited the October 28 government response; the review note said the public docket ended at entry 24 with no later response text obtained.",
+        "after": "Summaries, status, litigation track, timeline and briefing now report the opposition to preliminary relief and a stay, removing the fulfilled response step from future events. The October 19 extension remains in history and the November 6 hearing at 3 p.m. ET remains scheduled. Government standing, final-agency-action and existing-requirements arguments are identified as party arguments, with no order granting relief obtained.",
+        "sources": [
+          {
+            "label": "Full government opposition · entry 27",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.0.pdf"
+          },
+          {
+            "label": "District docket · excess-page order 26 and filing 27",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/"
+          }
+        ]
+      },
       {
         "id": "h1b-fee-october28-docket-title",
         "category": "#02 H-1B surcharge · separate $100,000 case",
