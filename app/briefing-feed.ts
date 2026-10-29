@@ -120,6 +120,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Extended summary-judgment motion deadline under electronic order 64; not a judgment or rule effective date."
   },
   {
+    "id": "h1b-separate-fee-entry144-text",
+    "date": "2026-10-28",
+    "availableOn": "2026-10-29",
+    "policyId": "h1b-fee",
+    "timing": "recent",
+    "zh": "第 144 项纯文字记录写法院拒绝暂停地区诉讼动议并要求行政记录；会议、记录期限及后续会议日期相互冲突，待法院澄清。不是暂停 9·30 命令或恢复另项收费。",
+    "en": "Text-only entry 144 records denial of a district-proceedings stay and directs record production. Conflicting conference, record and later-setting dates require court clarification. It does not stay the September 30 order or resume separate-fee collection."
+  },
+  {
     "id": "cpt-government-opposition-october28",
     "date": "2026-10-28",
     "policyId": "cpt-guidance",

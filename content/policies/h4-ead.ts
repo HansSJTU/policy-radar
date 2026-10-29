@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-28",
+  checkedOn: "2026-10-29",
   related: [
     "ead-auto-extension",
     "ead-discretion",
@@ -139,6 +139,10 @@ export const h4Ead: PolicyContent = {
       {
         "date": "截至 2026-10-27",
         "text": "AD14 仍列长期议程、提案日期未定；本次联邦公报检索未取得公开 NPRM，现行 H-4 EAD 资格规范仍保留。"
+      },
+      {
+        "date": "截至 2026-10-29",
+        "text": "复核 AD14 长期议程、联邦公报及现行资格页与条文：提案日期仍未定，未取得 AD14 NPRM，现行 H-4 EAD 资格仍保留。"
       }
     ],
     next: [
@@ -152,7 +156,7 @@ export const h4Ead: PolicyContent = {
       currentSummary: '长期议程，暂无日期',
       waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
     },
-    reviewNote: "10·28 重读 AD14 长期议程、联邦公报同 RIN 检索、USCIS H-4 配偶资格页及 eCFR 274a.12(c)(26)。议程仍无 NPRM 日期，联邦公报未列 AD14 提案；资格页及条文仍列主申请人获批 I-140 或符合 AC21 延期时的配偶申请资格。另项 AD05 自动延期最终规则不等于撤销 H-4 EAD 资格。后续完整资格规则、部门说明及诉讼仍有核查缺口。同 RIN 的 OIRA 搜索返回无结果，不能据此确认完整审查历史。",
+    reviewNote: "10·29 重读 AD14 长期议程、联邦公报同 RIN 检索、USCIS H-4 配偶资格页及 eCFR 274a.12(c)(26)。议程仍无 NPRM 日期，联邦公报未列 AD14 提案；资格页及条文仍列主申请人获批 I-140 或符合 AC21 延期时的配偶申请资格。另项 AD05 自动延期最终规则不等于撤销 H-4 EAD 资格。后续完整资格规则、部门说明及诉讼仍有核查缺口。同 RIN 的 OIRA 搜索返回无结果，不能据此确认完整审查历史。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
@@ -269,6 +273,10 @@ export const h4Ead: PolicyContent = {
       {
         "date": "As of 2026-10-27",
         "text": "AD14 remains a long-term agenda item with no proposal date; this Federal Register search obtained no public NPRM, and current H-4 EAD eligibility provisions remain."
+      },
+      {
+        "date": "As of 2026-10-29",
+        "text": "Rechecked the AD14 long-term agenda, Federal Register and current eligibility page/regulation: the proposal date remains unknown, no AD14 NPRM was obtained, and existing H-4 EAD eligibility remains in place."
       }
     ],
     next: [
@@ -284,6 +292,6 @@ export const h4Ead: PolicyContent = {
       waitingFor:
         'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
     },
-    reviewNote: "On October 28, the AD14 long-term agenda, Federal Register RIN search, USCIS H-4 spouse eligibility page and eCFR 274a.12(c)(26) were reread. The agenda still gives no NPRM date and the Federal Register lists no AD14 proposal. The page and regulation retain spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 automatic-extension final rule does not rescind H-4 EAD eligibility. Complete subsequent eligibility rulemaking, agency guidance and litigation remain gaps. The OIRA RIN search returns no result; complete review history cannot be established from that alone.",
+    reviewNote: "On October 29, the AD14 long-term agenda, Federal Register RIN search, USCIS H-4 spouse eligibility page and eCFR 274a.12(c)(26) were reread. The agenda still gives no NPRM date and the Federal Register lists no AD14 proposal. The page and regulation retain spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 automatic-extension final rule does not rescind H-4 EAD eligibility. Complete subsequent eligibility rulemaking, agency guidance and litigation remain gaps. The OIRA RIN search returns no result; complete review history cannot be established from that alone.",
   },
 };

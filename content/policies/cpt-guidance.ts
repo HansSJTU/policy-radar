@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-10-28",
+  checkedOn: "2026-10-29",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -148,7 +148,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      "10·28 复核两份 ICE 广播、SEVP 列表、CPT 案卷及全部 66 条学校记录（62 条校方网页、4 条已保存截图；65 所不同学校）。晚间读取至 10·28 第 27 项政府反对暂缓意见全文及两个广播附件；第 26 项电子命令仅准许超页提交。11·06 下午 3 时美东听证安排未变，未取得准许暂缓的命令；公开镜像可能滞后。部分校方页面须经网页工具或公开替代文本读取。CMU 博士口径冲突、NYU Mathematics 办理状态、Penn 页内冲突及 Trine 保留的一年期措辞仍逐项披露。论坛 CPT 汇总仅读至 9·14 附近回复，尾部接口被拒，不能确认最新社区消息；截图仅支持历史消息，UNC 页面仍在修订，Caltech 通用申请说明不足以确认恢复。",
+      "10·29 复核两份 ICE 广播、SEVP 列表、CPT 案卷及全部 68 条学校记录（64 条校方网页、4 条已保存截图；67 所不同学校）。案卷仍至 10·28 第 27 项政府反对暂缓意见及两个广播附件；第 26 项仅准许超页，11·06 下午 3 时美东听证安排未变，未取得准许暂缓的命令，公开镜像可能滞后。新增 Queens College 与 BGSU 校方记录；BGSU 称已有授权将复核、必要时撤销，未核实个人撤销结果。Georgia Tech 新增秋季延期不获授权，Trine 更新开工、申请及续期过渡安排。部分校方页经网页工具或公开替代文本读取；CMU 博士口径、NYU Mathematics、Penn 页内冲突及 Trine 申请窗口／处理方式冲突仍逐项披露。论坛汇总仅读至 9·14 附近，尾部接口被拒，不能确认最新社区消息；截图仅支持历史消息，UNC 页面仍在修订，Caltech 和 GBC 通用申请说明不足以确认恢复。",
     background:
       "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。10·13 案卷第 19 项把初步禁令与行政行动暂缓申请的听证定在 11·06 下午 3 点（美东），由 Julia E. Kobick 法官主持；10·19 第 22 项电子命令把政府对起诉及初步禁令／暂缓申请的答复延至 10·28；截至 10·23 读取的公开摘要，未取得准许暂缓的命令。学校是否恢复须看之后的裁定及各校通知。\n10·28 政府提交第 27 项反对初步禁令及行政行动暂缓的意见（27 页），并附两份广播原文。政府主张原告缺乏诉讼资格、广播不是可审查的最终行政行动，只解释既有规定且不需公告评论，并否认存在不可弥补损害；这些是政府的诉讼主张，不是法院认定。同日第 26 项电子命令只准许超页提交，不处理暂缓请求的实体结果。11·06 听证安排未变，未取得暂停指引的命令。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
@@ -267,7 +267,7 @@ export const cptGuidance: PolicyContent = {
     process: {
       "detail": "SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。",
       "currentSummary": "政府已提交反对暂缓意见，11·06 听证",
-      "waitingFor": "11·06 下午 3 时美东听证及之后的裁定，以及学校明确的资格和恢复通知；10·28 案卷已至第 27 项，未取得准许暂缓的命令。"
+      "waitingFor": "11·06 下午 3 时美东听证及之后的裁定，以及学校明确的资格和恢复通知；10·29 复核案卷仍至第 27 项，未取得准许暂缓的命令。"
     },
   },
   en: {
@@ -286,7 +286,7 @@ export const cptGuidance: PolicyContent = {
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      "On October 28, both ICE broadcasts, the SEVP list, CPT docket and all 66 school records were reviewed (62 public university pages and four saved screenshots; 65 distinct institutions). The evening review reached October 28 entry 27 and read the full government opposition and both broadcast exhibits. Electronic order 26 only permits excess pages. The November 6 hearing at 3 p.m. ET remains scheduled; no order granting relief was obtained, and public mirrors may lag. Some university pages required web or public alternative retrieval. CMU doctoral conflicts, NYU Mathematics processing, conflicting Penn text and Trine’s retained one-year wording remain disclosed individually. The forum roundup was read only through replies around September 14; its tail endpoint was blocked, leaving latest community reports unverified. Screenshots support historical messages; UNC’s page remains under revision and Caltech’s general instructions do not establish reopening.",
+      "On October 29, both ICE broadcasts, the SEVP list, CPT docket and all 68 school records were reviewed (64 public university pages and four saved screenshots; 67 distinct institutions). The docket still reaches the October 28 government opposition and both exhibits in entry 27; order 26 only permits excess pages. The November 6 hearing at 3 p.m. ET remains scheduled, with no order granting relief obtained; public mirrors may lag. Queens College and BGSU public records were added; BGSU says existing approvals will be reevaluated and rescinded when necessary, without individual outcomes verified. Georgia Tech adds a Fall extension restriction and Trine updates start, application and renewal-transition instructions. Some pages required web or public alternative retrieval. CMU doctoral, NYU Mathematics, Penn and Trine application-window/processing conflicts remain disclosed individually. The forum roundup was read only through replies around September 14; tail access was blocked, leaving latest reports unverified. Screenshots support historical messages; UNC’s page remains under revision and generic Caltech/GBC instructions do not verify reopening.",
     background:
       "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. On October 13, entry 19 set the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET before District Judge Julia E. Kobick; October 19 electronic order 22 extends the government’s response to the complaint and relief motion to October 28. No order granting relief was obtained from the public feed read October 23. Reopening depends on later rulings and school notices.\nOn October 28, the government filed its 27-page opposition to the preliminary-injunction and stay motion (entry 27), attaching both broadcasts. It argues that plaintiffs lack standing, the broadcasts are not reviewable final agency action, merely interpret existing requirements without requiring notice and comment, and cause no irreparable harm. These are government arguments, not judicial findings. Electronic order 26 that day only permits excess pages and does not decide the merits of relief. The November 6 hearing remains scheduled, and no order staying the guidance was obtained.",
     teaser:
@@ -415,7 +415,7 @@ export const cptGuidance: PolicyContent = {
     process: {
       "detail": "SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.",
       "currentSummary": "Government opposition filed; relief hearing November 6",
-      "waitingFor": "The November 6 hearing at 3 p.m. ET and later ruling, plus explicit school eligibility/reopening notices; the October 28 docket now reaches entry 27, with no order granting relief obtained."
+      "waitingFor": "The November 6 hearing at 3 p.m. ET and later ruling, plus explicit school eligibility/reopening notices; the docket reread October 29 still reaches entry 27, with no order granting relief obtained."
     },
   },
 };
