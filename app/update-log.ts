@@ -23,6 +23,71 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-29",
+    "changes": [
+      {
+        "id": "h1b-fee-entry144-text-and-date-conflict",
+        "category": "#02 H-1B 附加费 · 另项 100,000 美元案",
+        "title": "取得第 144 项正文：拒绝暂停地区诉讼，日期冲突待澄清",
+        "summary": "正文明确记录第 133 项动议被拒；会议及行政记录期限的日期相互矛盾，不推算或采用为已核实排期。",
+        "before": "10·28 条目仅有标题，无法确认动议结果、会议日期或新的排期。",
+        "after": "新增第 144 项纯文字记录，确认其记载拒绝暂停地区诉讼并要求行政记录；披露录入 10·28、会议 12·01、21 天括注 11·17、后续会议 11·24 的冲突。当前下一步等待法院澄清，保留上诉 11·06／12·04 原书面排期，不表述为恢复收费或改变 103,265 美元 NPRM 状态。",
+        "sources": [
+          {
+            "label": "法院第 144 项纯文字记录",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/?order_by=desc#entry-144"
+          }
+        ]
+      },
+      {
+        "id": "georgia-tech-fall-cpt-extension-restriction",
+        "category": "#05 CPT 学校追踪 · Georgia Tech",
+        "title": "补入秋季 CPT 延期不获授权的校方限制",
+        "summary": "OIE 新增秋季 CPT 延期限制；新表单最迟 11·16 提供的说明仍在。",
+        "before": "条目仅列新表单及学位必需项目，称既有授权处理方式未说明。",
+        "after": "状态和详情加入 2026 秋季所做 CPT 的延期请求不获授权；不外推为撤销所有已有 I-20。公告日期、例外及具体授权影响仍未说明。",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · CPT 官方页面",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "trine-cpt-start-and-renewal-transition",
+        "category": "#05 CPT 学校追踪 · Trine",
+        "title": "更新新生开工、申请处理及 2027·06·13 续期过渡界线",
+        "summary": "新生不能因提前取得 I-20 而提前开工；原一年期续期说明已被过渡安排替换。",
+        "before": "条目披露下方仍保留一年期续期措辞，与 2027 春季按学期授权衔接不明。",
+        "after": "续期过渡最迟 2027·06·13，或更早项目／资格终止日；新生最早按开课日工作，2027 春季为 01·11。补入 OPT 随 SEVIS transfer release 结束、错误／缺件须新申请和待审续期不延长旧授权；页面补件队列、30／60 天窗口等冲突继续披露。",
+        "sources": [
+          {
+            "label": "Trine · 研究生 CPT 官方页面",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      },
+      {
+        "id": "queens-bgsu-public-cpt-records",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Queens College 暂停与 BGSU 复核现有授权的公开记录",
+        "summary": "Queens College 暂停申请；BGSU 按全员必需标准审查，既有授权必要时可能撤销。",
+        "before": "66 条证据记录：62 条校方网页、4 条社区截图；65 所不同学校，未收录这两所学校。",
+        "after": "68 条证据记录：64 条校方网页、4 条社区截图；67 所不同学校。Queens College 的学位必需实践须先联系 ISSO，不外推整个 CUNY；BGSU 仅称已有授权将复核、必要时撤销，不写成全部已撤销。两项校方通知发布日期及个别授权结果未核实。",
+        "sources": [
+          {
+            "label": "Queens College (CUNY)",
+            "href": "https://www.qc.cuny.edu/academics/iss/iss-virtual-office-assistant/cpt/"
+          },
+          {
+            "label": "Bowling Green State University (BGSU)",
+            "href": "https://www.bgsu.edu/international-programs-and-partnerships/immigration-updates-f-1-j-1-students"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-28",
     "changes": [
       {
@@ -1719,6 +1784,71 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-29",
+    "changes": [
+      {
+        "id": "h1b-fee-entry144-text-and-date-conflict",
+        "category": "#02 H-1B surcharge · separate $100,000 case",
+        "title": "Entry 144 text obtained: district-stay motion denied; conflicting dates unresolved",
+        "summary": "The text records denial of motion 133; conflicting conference and record-production dates are not inferred or adopted as confirmed settings.",
+        "before": "The October 28 entry supplied only a title, leaving the motion outcome, conference date and new settings unverified.",
+        "after": "Add text-only entry 144 recording denial of a district-proceedings stay and directing record production. Disclose the conflict among the October 28 entry date, December 1 conference, 21-day deadline parenthetically labeled November 17 and November 24 further conference. Await court clarification; retain the original November 6/December 4 appellate schedule without claiming resumed collection or a change to the separate $103,265 NPRM.",
+        "sources": [
+          {
+            "label": "Court text-only entry 144",
+            "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/?order_by=desc#entry-144"
+          }
+        ]
+      },
+      {
+        "id": "georgia-tech-fall-cpt-extension-restriction",
+        "category": "#05 CPT school tracker · Georgia Tech",
+        "title": "Add official restriction on Fall CPT extensions",
+        "summary": "OIE adds a Fall CPT extension restriction while still promising new forms by November 16.",
+        "before": "The entry described new forms and degree-required programs, with treatment of existing approvals unspecified.",
+        "after": "Status and detail now state that extensions for CPT performed in Fall 2026 will not be authorized, without generalizing to revocation of every existing I-20. Publication date, exceptions and individual authorization effects remain unspecified.",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · Official CPT page",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "trine-cpt-start-and-renewal-transition",
+        "category": "#05 CPT school tracker · Trine",
+        "title": "Update new-student starts, application handling and June 13, 2027 renewal transition",
+        "summary": "An early I-20 does not permit work before classes begin; transition instructions replace the old one-year renewal wording.",
+        "before": "The entry disclosed retained one-year renewal text with no explanation of the transition to Spring 2027 semester approvals.",
+        "after": "Transition extensions end by June 13, 2027 or an earlier program/eligibility end. New-student work starts no earlier than classes, January 11 for Spring 2027. Add OPT ending on SEVIS transfer release, new applications for incomplete/incorrect filings and no work extension while renewal is pending. Conflicting correction-queue and 30/60-day window instructions remain disclosed.",
+        "sources": [
+          {
+            "label": "Trine · Official graduate CPT page",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      },
+      {
+        "id": "queens-bgsu-public-cpt-records",
+        "category": "#05 CPT school tracker",
+        "title": "Add Queens College pause and BGSU review of existing CPT",
+        "summary": "Queens College pauses applications; BGSU applies the all-student requirement and may rescind existing approvals when necessary.",
+        "before": "66 evidence entries: 62 public university pages and four community screenshots; 65 distinct institutions, excluding these two schools.",
+        "after": "68 evidence entries: 64 public university pages and four community screenshots; 67 distinct institutions. Degree-required training at Queens College needs ISSO guidance, without generalizing to all CUNY campuses. BGSU says approvals will be reevaluated and rescinded when necessary, not that all have been rescinded. Campus publication dates and individual authorization outcomes remain unverified.",
+        "sources": [
+          {
+            "label": "Queens College (CUNY)",
+            "href": "https://www.qc.cuny.edu/academics/iss/iss-virtual-office-assistant/cpt/"
+          },
+          {
+            "label": "Bowling Green State University (BGSU)",
+            "href": "https://www.bgsu.edu/international-programs-and-partnerships/immigration-updates-f-1-j-1-students"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-28",
     "changes": [
