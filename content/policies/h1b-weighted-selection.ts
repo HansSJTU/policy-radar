@@ -5,7 +5,7 @@ export const h1bWeightedSelection: PolicyContent = {
   path: 'H-1B',
   tone: 'red',
   effectState: 'in-effect',
-  checkedOn: "2026-10-29",
+  checkedOn: "2026-10-30",
   related: ['prevailing-wage', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -126,7 +126,7 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: '最终规则已生效并开始执行',
       waitingFor: null,
     },
-    reviewNote: "10·29 重读最终规则及 USCIS cap-season 页，确认 FY2027 起使用 IV／III／II／I 分别 4／3／2／1 次入池。联邦公报 RIN 检索仍列原提案及最终规则。完整工资等级数据、个人中签概率及后续诉讼未完整核实。",
+    reviewNote: "10·30 重读最终规则及 USCIS cap-season 页，确认 FY2027 起使用 IV／III／II／I 分别 4／3／2／1 次入池。联邦公报 RIN 检索仍列原提案及最终规则。完整工资等级数据、个人中签概率及后续诉讼未完整核实。",
   },
   en: {
     title: 'H-1B Selection Now Weights Wage Levels',
@@ -248,6 +248,6 @@ export const h1bWeightedSelection: PolicyContent = {
       currentSummary: 'Final rule in effect and implemented',
       waitingFor: null,
     },
-    reviewNote: "On October 29, the final rule and USCIS cap-season page were reread, confirming FY2027 implementation and IV/III/II/I entries of 4/3/2/1. The Federal Register RIN search still lists the proposal and final rule. Complete wage-level data, individual selection odds and later litigation remain incompletely verified.",
+    reviewNote: "On October 30, the final rule and USCIS cap-season page were reread, confirming FY2027 implementation and IV/III/II/I entries of 4/3/2/1. The Federal Register RIN search still lists the proposal and final rule. Complete wage-level data, individual selection odds and later litigation remain incompletely verified.",
   },
 };

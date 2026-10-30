@@ -93,6 +93,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 case: government opening brief due in Ninth Circuit 26-6667. Scheduling does not stay the September 30 order or resume collection."
   },
   {
+    "id": "cpt-reply-november4",
+    "date": "2026-11-04",
+    "policyId": "cpt-guidance",
+    "timing": "upcoming",
+    "zh": "按第 29 项准许的第 28 项动议，原告最迟提交不超过 15 页的回复；这是书状日期，不是恢复 CPT 或法院裁定的日期。",
+    "en": "Under motion 28 granted by order 29, plaintiffs may file a reply of up to 15 pages by this date; this is not a CPT reopening or ruling date."
+  },
+  {
     "id": "duration-replies-november2",
     "date": "2026-11-02",
     "policyId": "duration-status",
@@ -111,10 +119,27 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Electronic order 64 expressly requires replies by November 2, not the requested November 6; this is not the nationwide stay’s expiration."
   },
   {
+    "id": "cpt-reply-permission-october30",
+    "date": "2026-10-30",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "法院第 29 项准许原告提交第 28 项请求的回复（11·04 前、最多 15 页）；11·06 听证不变。准许书状不等于暂停指引，实际回复尚未取得。",
+    "en": "Order 29 grants plaintiffs’ motion 28 to file a reply of up to 15 pages by November 4; the November 6 hearing is unchanged. Briefing permission does not stay guidance; the actual reply was not obtained."
+  },
+  {
+    "id": "duration-october30-filing-types",
+    "date": "2026-10-30",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "公开案卷新增第 66 项简易判决及第 67 项支持动议意见条目；正文、提交方和具体请求未取得，不能写成法院已判决。全国暂缓继续。",
+    "en": "The public docket adds summary-judgment entry 66 and supporting-memorandum entry 67. Text, filer and requested relief were not obtained; these are not a court judgment. The nationwide stay continues."
+  },
+  {
     "id": "duration-motions-order64-october30",
     "date": "2026-10-30",
     "policyId": "duration-status",
     "timing": "upcoming",
+    "supersededOn": "2026-10-30",
     "availableOn": "2026-10-25",
     "zh": "第 64 项电子命令延长后的简易判决动议期限；不是判决日或新规生效日。",
     "en": "Extended summary-judgment motion deadline under electronic order 64; not a judgment or rule effective date."
