@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-10-29",
+  checkedOn: "2026-10-30",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -33,6 +33,16 @@ export const cptGuidance: PolicyContent = {
         "status": "filed",
         "align": "left",
         "lane": "raised"
+      },
+      {
+        "date": "10·30",
+        "zh": "准许提交回复",
+        "en": "Reply brief permitted",
+        "afterStage": 2,
+        "progress": 80,
+        "status": "filed",
+        "align": "left",
+        "lane": "base"
       },
       {
         "date": "11·06",
@@ -131,26 +141,36 @@ export const cptGuidance: PolicyContent = {
       "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.2.pdf",
       "zh": "第 27-2 项附件 B · 8·24 广播原文",
       "en": "Exhibit B, entry 27-2 · August 24 broadcast"
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-29",
+      "zh": "法院 10·30 第 29 项电子命令 · 准许回复书状（非暂缓）",
+      "en": "Court October 30 electronic order 29 · Reply permitted (not a stay)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.28.0.pdf",
+      "zh": "原告第 28 项回复许可动议 · 11·04 前、最多 15 页",
+      "en": "Plaintiffs’ reply-permission motion 28 · Up to 15 pages by November 4"
     }
   ],
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
     short: '8·12 / 8·24 CPT 指引',
-    status: "学校按新口径执行 · 政府反对暂缓，11·06 听证",
+    status: "指引仍执行 · 原告获准提交回复，11·06 听证",
     effectLabel: '指引已执行 · 按学校与项目核对',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT。只注册一门选修实习课通常不够，实习雇主还必须和学校签有 cooperative agreement（合作协议）。 四个高教协会已起诉并请求暂缓，政府 10·28 提交反对意见，法院定于 11·06 听证；政府意见和听证本身都不恢复选修 CPT。",
+    tldr: "ICE/SEVP 要求学校只批准“完成学位必需、且该项目所有学生都要做”的实习作为 CPT；选修实习课通常不够，雇主还须与学校签合作协议。法院 10·30 准许原告按其动议最迟 11·04 提交不超过 15 页的回复书状，11·06 听证安排未变；准许书状不等于暂停指引。",
     tags: ['CPT', 'Day-1 CPT', '实习'],
     summary:
-      "SEVP 要求 CPT 实习是该专业所有学生毕业的必修环节，而且雇主和学校之间要有合作协议。只注册一门选修实习课，通常拿不到 CPT 授权。四个高教协会已在麻省联邦法院起诉并申请暂缓；政府 10·28 提交反对意见，11·06 下午 3 时美东听证安排未变。政府意见不是法院裁定，未取得准许暂缓的命令。",
+      "SEVP 要求 CPT 实习是该专业所有学生毕业的必需环节，且雇主与学校须有合作协议。四个高教协会已申请初步禁令及行政行动暂缓；政府 10·28 提交反对意见。法院 10·30 第 29 项准许原告第 28 项动议所请求的最迟 11·04、不超过 15 页的回复，11·06 下午 3 时美东听证未变；这只是书面程序许可，未取得暂停指引的命令。",
     audience: '需要 CPT 实习授权的学生、学校与 DSO。',
     caveat:
       '选修课型的 CPT 和学位必需的实践，要分开核对。已经批下来的授权，以学校的明确通知为准。',
     reviewNote:
-      "10·29 复核两份 ICE 广播、SEVP 列表、CPT 案卷及全部 68 条学校记录（64 条校方网页、4 条已保存截图；67 所不同学校）。案卷仍至 10·28 第 27 项政府反对暂缓意见及两个广播附件；第 26 项仅准许超页，11·06 下午 3 时美东听证安排未变，未取得准许暂缓的命令，公开镜像可能滞后。新增 Queens College 与 BGSU 校方记录；BGSU 称已有授权将复核、必要时撤销，未核实个人撤销结果。Georgia Tech 新增秋季延期不获授权，Trine 更新开工、申请及续期过渡安排。部分校方页经网页工具或公开替代文本读取；CMU 博士口径、NYU Mathematics、Penn 页内冲突及 Trine 申请窗口／处理方式冲突仍逐项披露。论坛汇总仅读至 9·14 附近，尾部接口被拒，不能确认最新社区消息；截图仅支持历史消息，UNC 页面仍在修订，Caltech 和 GBC 通用申请说明不足以确认恢复。",
+      "10·30 复核两份 ICE 广播、SEVP 列表、CPT 案卷及全部 71 条学校记录（67 条校方网页、4 条保存截图；70 所不同学校）。18:55 美东读取的案卷至第 29 项：第 28 项动议全文请求最迟 11·04 提交不超过 15 页回复；第 29 项电子命令准许该动议。拟议命令附件不是已签发命令，亦未取得实际回复书状或准许暂缓的命令；11·06 下午 3 时美东听证未变。19:00 重试案卷返回 202 空响应，无法确认更晚记录，镜像可能滞后。新增 Illinois Tech、Arizona、UConn 公开记录，MIT 日期表已更新；CMU、NYU Mathematics、Penn、Trine 等范围或文字冲突仍逐项披露。部分校方页经网页或公开替代文本读取。论坛汇总仅读至 9·14 附近，尾部接口被拒；四份截图仅支持历史消息，UNC 页面仍在修订，Caltech／GBC 通用说明不能确认恢复。",
     background:
-      "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。10·13 案卷第 19 项把初步禁令与行政行动暂缓申请的听证定在 11·06 下午 3 点（美东），由 Julia E. Kobick 法官主持；10·19 第 22 项电子命令把政府对起诉及初步禁令／暂缓申请的答复延至 10·28；截至 10·23 读取的公开摘要，未取得准许暂缓的命令。学校是否恢复须看之后的裁定及各校通知。\n10·28 政府提交第 27 项反对初步禁令及行政行动暂缓的意见（27 页），并附两份广播原文。政府主张原告缺乏诉讼资格、广播不是可审查的最终行政行动，只解释既有规定且不需公告评论，并否认存在不可弥补损害；这些是政府的诉讼主张，不是法院认定。同日第 26 项电子命令只准许超页提交，不处理暂缓请求的实体结果。11·06 听证安排未变，未取得暂停指引的命令。",
+      "8 月 12 日的 Broadcast 强调学校和 DSO 的合规责任。8 月 24 日的问答进一步说明，“全员”也包括美国学生，并重申实习雇主和学校要有 cooperative agreement（合作协议）。\n四个高教协会在 10·05 提起 AAU v. DHS（1:26-cv-14520），挑战 8·12、8·24 广播对“integral”的解释及其执行，指控其违反 APA；这些法律主张属于原告意见，不是法院认定。同日申请初步禁令与行政行动暂缓，10·06 提交支持意见。该案与 D/S 全国暂缓案不同，D/S 命令不自动改变 CPT 指引。10·13 案卷第 19 项把初步禁令与行政行动暂缓申请的听证定在 11·06 下午 3 点（美东），由 Julia E. Kobick 法官主持；10·19 第 22 项电子命令把政府对起诉及初步禁令／暂缓申请的答复延至 10·28；截至 10·23 读取的公开摘要，未取得准许暂缓的命令。学校是否恢复须看之后的裁定及各校通知。\n10·28 政府提交第 27 项反对初步禁令及行政行动暂缓的意见（27 页），并附两份广播原文。政府主张原告缺乏诉讼资格、广播不是可审查的最终行政行动，只解释既有规定且不需公告评论，并否认存在不可弥补损害；这些是政府的诉讼主张，不是法院认定。同日第 26 项电子命令只准许超页提交，不处理暂缓请求的实体结果。11·06 听证安排未变，未取得暂停指引的命令。\n10·29 原告第 28 项申请请求最迟 11·04 提交不超过 15 页的回复，以回应政府关于诉讼资格、追溯适用、最终行政行动及法规文字的论点；政府对该程序请求不持立场。10·30 第 29 项电子命令准许第 28 项动议，要求正式递交获准文件并在标题标明获准日期。第 28-1 项只是原告附上的未签署拟议命令，不能替代法院第 29 项。准许提交书状不表示原告实体胜诉、指引被暂停或各校恢复 CPT。",
     teaser: '从“能否选一门实习课”，转向“实习是否属于学位必需环节”。',
     headline: '实习能否获批，越来越取决于学位本身的课程结构。',
     analysis:
@@ -252,9 +272,21 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-10-28",
         "text": "政府提交第 27 项反对初步禁令及行政行动暂缓的意见，附两份广播；第 26 项命令仅准许超页提交，未裁定是否暂缓。11·06 听证安排未变。"
+      },
+      {
+        "date": "2026-10-29",
+        "text": "原告第 28 项动议请求最迟 11·04 提交不超过 15 页的回复；所附拟议命令不是法院命令。"
+      },
+      {
+        "date": "2026-10-30",
+        "text": "法院第 29 项电子命令准许第 28 项回复动议；这只是书状许可，11·06 听证未变，不暂停指引。"
       }
     ],
     next: [
+      {
+        "date": "2026-11-04",
+        "text": "按法院第 29 项准许的第 28 项动议，原告最迟提交不超过 15 页的回复；须核实实际入卷，不是裁定或恢复日期。"
+      },
       {
         "date": "2026-11-06",
         "text": "初步禁令与行政行动暂缓申请听证，美东下午 3 点；法院不一定当庭裁定，听证日也不是恢复日期。"
@@ -266,29 +298,29 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP 先发布合规风险通知，再细化 CPT 口径；学校和 DSO 已开始按新口径执行。",
-      "currentSummary": "政府已提交反对暂缓意见，11·06 听证",
-      "waitingFor": "11·06 下午 3 时美东听证及之后的裁定，以及学校明确的资格和恢复通知；10·29 复核案卷仍至第 27 项，未取得准许暂缓的命令。"
+      "currentSummary": "原告获准 11·04 前提交回复；11·06 听证",
+      "waitingFor": "按获准第 28 项动议，原告最迟 11·04 提交不超过 15 页的回复；11·06 下午 3 时美东听证及之后裁定。须核实回复实际入卷和校方通知，程序许可不恢复 CPT。"
     },
   },
   en: {
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
-    status: "Schools apply guidance · Government opposes relief; hearing November 6",
+    status: "Guidance in use · Plaintiffs may file reply; hearing November 6",
     effectLabel: 'Guidance in use · Check school and program',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP says schools should authorize CPT only when the training is necessary to complete the degree and is a graduation requirement for every student in the program. Registering for an optional internship course is generally not enough, and the employer must have a cooperative agreement with the school. Four higher-education associations sued and requested a stay; the government filed its opposition October 28, with a hearing set for November 6. Neither the opposition nor the hearing restores elective CPT.",
+    tldr: "ICE/SEVP limits CPT to training necessary for degree completion and required of every student in the program; an elective internship course is generally insufficient, and an employer-school cooperative agreement is required. On October 30, the court granted plaintiffs’ motion to file a reply of up to 15 pages by November 4. The November 6 hearing remains scheduled; permission to brief does not stay the guidance.",
     tags: ['CPT', 'Day-1 CPT', 'Internships'],
     summary:
-      "SEVP requires CPT training to be mandatory for every student in the program to complete the degree, with an employer-school cooperative agreement. Enrollment in an elective internship course alone generally does not qualify. Four higher-education associations sued in Massachusetts and requested relief; the government filed its opposition October 28. The November 6 hearing at 3 p.m. ET remains scheduled. The opposition is not a court ruling, and no order granting relief was obtained.",
+      "SEVP requires CPT training to be necessary for every student’s degree completion, with an employer-school cooperative agreement. Four associations sought preliminary relief and a stay; the government opposed that request October 28. On October 30, order 29 granted motion 28 requesting a reply of no more than 15 pages by November 4. The November 6 hearing at 3 p.m. ET is unchanged. This is briefing permission, and no order staying the guidance was obtained.",
     audience: 'students seeking CPT authorization, their schools and DSOs.',
     caveat:
       'Distinguish elective-course CPT from required degree practice; check explicit school notices for existing authorizations.',
     reviewNote:
-      "On October 29, both ICE broadcasts, the SEVP list, CPT docket and all 68 school records were reviewed (64 public university pages and four saved screenshots; 67 distinct institutions). The docket still reaches the October 28 government opposition and both exhibits in entry 27; order 26 only permits excess pages. The November 6 hearing at 3 p.m. ET remains scheduled, with no order granting relief obtained; public mirrors may lag. Queens College and BGSU public records were added; BGSU says existing approvals will be reevaluated and rescinded when necessary, without individual outcomes verified. Georgia Tech adds a Fall extension restriction and Trine updates start, application and renewal-transition instructions. Some pages required web or public alternative retrieval. CMU doctoral, NYU Mathematics, Penn and Trine application-window/processing conflicts remain disclosed individually. The forum roundup was read only through replies around September 14; tail access was blocked, leaving latest reports unverified. Screenshots support historical messages; UNC’s page remains under revision and generic Caltech/GBC instructions do not verify reopening.",
+      "On October 30, both ICE broadcasts, the SEVP list, CPT docket and all 71 school records were reviewed (67 public university pages and four saved screenshots; 70 distinct institutions). The docket read at 18:55 ET reached entry 29: full motion 28 requests a reply of up to 15 pages by November 4, and electronic order 29 grants that motion. The proposed-order exhibit is not an issued order; neither an actual reply nor an order granting relief was obtained. The November 6 hearing at 3 p.m. ET is unchanged. A 19:00 docket retry returned an empty 202 response, leaving later records unverified; mirrors may lag. Public Illinois Tech, Arizona and UConn records were added and MIT’s date table updated. CMU, NYU Mathematics, Penn and Trine scope/text conflicts remain disclosed individually. Some pages required web or public alternative retrieval. Forum reading reaches replies around September 14 with tail access blocked. Screenshots support historical messages; UNC’s page remains under revision and generic Caltech/GBC instructions do not verify reopening.",
     background:
-      "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. On October 13, entry 19 set the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET before District Judge Julia E. Kobick; October 19 electronic order 22 extends the government’s response to the complaint and relief motion to October 28. No order granting relief was obtained from the public feed read October 23. Reopening depends on later rulings and school notices.\nOn October 28, the government filed its 27-page opposition to the preliminary-injunction and stay motion (entry 27), attaching both broadcasts. It argues that plaintiffs lack standing, the broadcasts are not reviewable final agency action, merely interpret existing requirements without requiring notice and comment, and cause no irreparable harm. These are government arguments, not judicial findings. Electronic order 26 that day only permits excess pages and does not decide the merits of relief. The November 6 hearing remains scheduled, and no order staying the guidance was obtained.",
+      "The August 12 Broadcast emphasized school and DSO compliance duties. The August 24 FAQ clarified that all students includes U.S. students and reiterated the employer-school cooperative agreement requirement.\nOn October 5, four associations filed AAU v. DHS (1:26-cv-14520), challenging the August 12/24 interpretation and enforcement as violating the APA. These are plaintiffs’ allegations, not judicial findings. They requested a preliminary injunction and stay the same day and filed supporting argument October 6. This is a separate case from the nationwide D/S relief, which does not automatically change CPT guidance. On October 13, entry 19 set the preliminary-injunction and stay motion for a hearing on November 6 at 3 p.m. ET before District Judge Julia E. Kobick; October 19 electronic order 22 extends the government’s response to the complaint and relief motion to October 28. No order granting relief was obtained from the public feed read October 23. Reopening depends on later rulings and school notices.\nOn October 28, the government filed its 27-page opposition to the preliminary-injunction and stay motion (entry 27), attaching both broadcasts. It argues that plaintiffs lack standing, the broadcasts are not reviewable final agency action, merely interpret existing requirements without requiring notice and comment, and cause no irreparable harm. These are government arguments, not judicial findings. Electronic order 26 that day only permits excess pages and does not decide the merits of relief. The November 6 hearing remains scheduled, and no order staying the guidance was obtained.\nPlaintiffs’ October 29 motion 28 requests a reply of no more than 15 pages by November 4 to address government standing, retroactivity, final-agency-action and regulatory-text arguments; the government takes no position on this procedural request. Electronic order 29 on October 30 grants motion 28, directing counsel to file the authorized document with the permission date in its caption. Entry 28-1 is only an unsigned proposed order attached by plaintiffs, not a substitute for court order 29. Permission to brief is not a merits victory, a stay of guidance or a campus reopening.",
     teaser:
       'The question shifts from whether a student can take an internship course to whether the internship is required by the degree.',
     headline:
@@ -400,9 +432,21 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-10-28",
         "text": "The government filed its opposition to the preliminary-injunction and stay motion (entry 27), attaching both broadcasts. Order 26 only permits excess pages without deciding relief. The November 6 hearing remains scheduled."
+      },
+      {
+        "date": "2026-10-29",
+        "text": "Plaintiffs’ motion 28 requests a reply of up to 15 pages by November 4; its proposed-order exhibit is not a court order."
+      },
+      {
+        "date": "2026-10-30",
+        "text": "Electronic order 29 grants reply motion 28. This is briefing permission; the November 6 hearing is unchanged and the guidance is not stayed."
       }
     ],
     next: [
+      {
+        "date": "2026-11-04",
+        "text": "Under motion 28 granted by order 29, plaintiffs may file a reply of up to 15 pages by this date. Verify actual filing; this is not a ruling or reopening date."
+      },
       {
         "date": "2026-11-06",
         "text": "Hearing on the preliminary-injunction and stay motion at 3 p.m. ET; the court may not rule from the bench, and the hearing date is not a reopening date."
@@ -414,8 +458,8 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP first issued a compliance-risk notice and then narrowed the CPT standard. Schools and DSOs are already applying that interpretation.",
-      "currentSummary": "Government opposition filed; relief hearing November 6",
-      "waitingFor": "The November 6 hearing at 3 p.m. ET and later ruling, plus explicit school eligibility/reopening notices; the docket reread October 29 still reaches entry 27, with no order granting relief obtained."
+      "currentSummary": "Reply permitted by November 4; hearing November 6",
+      "waitingFor": "Under granted motion 28, plaintiffs may file a reply of up to 15 pages by November 4; the November 6 hearing at 3 p.m. ET and later ruling follow. Verify actual filing and campus notices; briefing permission does not restore CPT."
     },
   },
 };

@@ -5,7 +5,7 @@ export const eadAutoExtension: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "in-effect",
-  "checkedOn": "2026-10-29",
+  "checkedOn": "2026-10-30",
   "related": [
     "h4-ead",
     "ead-discretion"
@@ -64,7 +64,7 @@ export const eadAutoExtension: PolicyContent = {
     "summary": "DHS 已从 2025·10·30 起取消部分 EAD 续期申请的自动延期：递交续期不再自动延长过期或即将过期卡片的效力及适用的工作授权。10·14 刊登并于当日生效的最终规则不修改原临时最终规则；取消从 2025·10·30 起已在执行，不是 10·14 才首次取消。",
     "audience": "依赖受覆盖 EAD 续期自动延期继续工作的人员，包括符合条件的 H-4 配偶（c26）与身份调整待审人员（c9）等；不能外推所有工作许可类别。",
     "caveat": "旧界线仍是续期申请递交日 2025·10·30；此前合格申请的自动延期不被追溯取消。法定及 TPS 公告例外、STEM OPT 的独立 180 天条款、随有效身份自带的工作授权须分开核对。",
-    "reviewNote": "10·29 重读 10·14 最终规则、联邦公报同 RIN 检索、现行 Policy Manual 10 USCIS-PM A.4(I) 及自动延期存档页，仍为原样承接临时规则，续期界线保持 2025·10·30。存档页明确归档，不作为最新办理指引；现行手册仍列界线前及时续期及法定／Federal Register 例外。另读 USCIS 10·29 执法综述，其中提到取消自动延期，未提供新的类别规则。最新 TPS 通知、完整后续诉讼及个人工作资格仍未完整核实。",
+    "reviewNote": "10·30 重读 10·14 最终规则、联邦公报同 RIN 检索、现行 Policy Manual 10 USCIS-PM A.4(I) 及自动延期存档页，仍为原样承接临时规则，续期界线保持 2025·10·30。存档页明确归档，不作为最新办理指引；现行手册仍列界线前及时续期及法定／Federal Register 例外。另读 USCIS 10·29 执法综述，其中提到取消自动延期，未提供新的类别规则。最新 TPS 通知、完整后续诉讼及个人工作资格仍未完整核实。",
     "background": "2025·10·30 临时最终规则修改 8 CFR 274a.13：旧的最长 540 天自动延期仅保留给该日前递交、符合规定的续期申请；该日及之后递交的受覆盖续期不再因收据自动延期。\n2026·10·14 刊登并生效的最终规则明确“原样承接”临时最终规则（without change），保留原来的申请日期界线。它并不删除 H-4 配偶的 EAD 申请资格，也不是 RIN 1615-AD14 的资格撤销议程。",
     "teaser": "仍能申请 EAD，不代表续期等待期间一定能继续工作。",
     "headline": "续期收据与实际工作授权，需要分别确认。",
@@ -173,7 +173,7 @@ export const eadAutoExtension: PolicyContent = {
     "summary": "Since October 30, 2025, DHS has removed automatic extensions for certain EAD renewals: filing no longer automatically extends expiring cards and applicable work authorization. The final rule published and effective October 14 adopts the IFR unchanged. Removal has applied since October 30, 2025; it does not first begin on October 14.",
     "audience": "People relying on covered EAD-renewal extensions, including qualifying H-4 spouses (c26) and adjustment applicants (c9), among other categories; not every work-permit category.",
     "caveat": "The renewal-filing cutoff remains October 30, 2025; qualifying earlier extensions are not retroactively canceled. Statutory and TPS-notice exceptions, the separate STEM OPT 180-day provision and employment authorization incident to valid status require distinct checks.",
-    "reviewNote": "On October 29, the October 14 final rule, same-RIN Federal Register search, current Policy Manual 10 USCIS-PM A.4(I) and archived automatic-extension page were reread. The final rule still adopts the interim rule unchanged, retaining the October 30, 2025 renewal cutoff. The archived page is not treated as current processing guidance; the manual retains pre-cutoff timely-renewal and statutory/Federal Register exceptions. The October 29 USCIS enforcement overview mentions ending automatic extensions without adding new category rules. Latest TPS notices, complete subsequent litigation and individual work eligibility remain incompletely verified.",
+    "reviewNote": "On October 30, the October 14 final rule, same-RIN Federal Register search, current Policy Manual 10 USCIS-PM A.4(I) and archived automatic-extension page were reread. The final rule still adopts the interim rule unchanged, retaining the October 30, 2025 renewal cutoff. The archived page is not treated as current processing guidance; the manual retains pre-cutoff timely-renewal and statutory/Federal Register exceptions. The October 29 USCIS enforcement overview mentions ending automatic extensions without adding new category rules. Latest TPS notices, complete subsequent litigation and individual work eligibility remain incompletely verified.",
     "background": "The October 30, 2025 IFR amended 8 CFR 274a.13: the former up-to-540-day extension remains available only to qualifying renewal applications filed before that date. Covered renewals filed on or after it no longer receive automatic extensions merely through a receipt.\nThe final rule published and effective October 14, 2026 adopts the IFR without change and retains its filing cutoff. It does not remove H-4 EAD eligibility and is separate from the RIN 1615-AD14 eligibility-rescission agenda.",
     "teaser": "Eligibility to apply for an EAD does not guarantee work authorization while a renewal is pending.",
     "headline": "A renewal receipt and actual work authorization require separate checks.",

@@ -19,7 +19,7 @@ test('PERM has cleared OIRA while the D/S order keeps replies on November 2', ()
   assert.match(perm.sources[0].href, /rrid=1533011/);
   const duration = policyContents.find(({ id }) => id === 'duration-status');
   for (const language of ['zh', 'en']) {
-    assert.deepEqual(duration[language].next.slice(0, 2).map(({ date }) => date), ['2026-10-30', '2026-11-02']);
+    assert.deepEqual(duration[language].next.slice(0, 2).map(({ date }) => date), ['2026-11-02', '2026-11-09']);
     assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
     assert.match(perm[language].reviewNote, /Consistent with Change/);
     assert.match(duration[language].reviewNote, /64/);
@@ -38,7 +38,7 @@ test('content files cover every ranked policy in rank order', () => {
 });
 
 test('the English policy and school copy contains no Chinese', () => {
-  assert.equal(verifiedSchools.length, 64);
+  assert.equal(verifiedSchools.length, 67);
   assert.equal(communitySchools.length, 4);
   const strings = collectStrings([
     policyContents.map((policy) => policy.en),

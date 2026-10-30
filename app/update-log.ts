@@ -23,6 +23,79 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-30",
+    "changes": [
+      {
+        "id": "cpt-reply-permission-and-november4",
+        "category": "#05 CPT 指引诉讼",
+        "title": "法院准许原告 11·04 前提交最多 15 页回复",
+        "summary": "第 29 项电子命令准许第 28 项程序动议；11·06 听证未变，不是准许暂停指引。",
+        "before": "当前程序只列政府 10·28 反对意见及 11·06 听证，尚未列原告回复安排。",
+        "after": "加入 10·29 申请、10·30 准许及 11·04 回复日期，同步摘要、状态、诉讼路径、时间线与简报。第 28-1 项为未签署拟议命令，实际回复书状未取得；指引仍在执行。",
+        "sources": [
+          {
+            "label": "第 29 项电子命令",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-29"
+          },
+          {
+            "label": "第 28 项回复许可动议全文",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.28.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "duration-october30-document-types",
+        "category": "#03 D/S 全国暂缓诉讼",
+        "title": "补入 10·30 新文件条目，正文及提交方待核实",
+        "summary": "第 66、67 项分别显示简易判决和支持动议意见类型；不据类型认定法院已作判决。",
+        "before": "镜像最新仍至第 65 项，当前程序和下一步列 10·30 简易判决动议期限。",
+        "after": "新增第 66、67 项历史及简报，当前下一步核实正文、提交方及是否有其他提交；原 11·02 回复和 11·09 上诉排期保留。没有取得新实体裁定，全国暂缓状态不变；19:00 空响应的缺口单独披露。",
+        "sources": [
+          {
+            "label": "地区案卷第 66、67 项（仅文件类型）",
+            "href": "https://www.courtlistener.com/docket/74661796/presidents-alliance-on-higher-education-and-immigration-v-united-states/?order_by=desc#entry-66"
+          }
+        ]
+      },
+      {
+        "id": "mit-cpt-calendar-2027",
+        "category": "#05 CPT 学校追踪 · MIT",
+        "title": "补入修订后的 2027 CPT 日历窗口",
+        "summary": "春季改列 01·30 开始、暑期改列 08·17 结束、秋季改列 08·18 开始；资格限制未解除。",
+        "before": "条目仅列非全员学位必需的新 CPT 暂停及校方联系秋季已获批学生，未列 2027 日历。",
+        "after": "补入 2027 春季 01·30—05·19、暑期 05·20—08·17、秋季 08·18—12·17，并保留学期兼职限制、特定学生更晚开始及须实际获批的条件。日历不代表选修 CPT 恢复。",
+        "sources": [
+          {
+            "label": "MIT ISO · 现行 CPT 页面日期表",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "illinois-arizona-uconn-public-cpt",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Illinois Tech、Arizona 和 UConn 校方记录",
+        "summary": "三校均限制非必需 CPT；分别保留旧学分措辞、严格论文路径及公告日期冲突。",
+        "before": "68 条记录：64 条校方网页、4 条社区截图；67 所不同学校。",
+        "after": "71 条记录：67 条校方网页、4 条社区截图；70 所不同学校。Illinois Tech 暂停无强制实践要求项目，Arizona 保留学位／论文必需实践个案，UConn 要求指出公开的全员必需课程要求；不外推所有 CPT 停办或已有授权失效。UConn 页面 8·30 与所称邮件 8·31 的日期冲突未解决。",
+        "sources": [
+          {
+            "label": "Illinois Institute of Technology (Illinois Tech)",
+            "href": "https://www.iit.edu/global-services/student-employment/curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Arizona",
+            "href": "https://international.arizona.edu/international-students/cpt"
+          },
+          {
+            "label": "University of Connecticut (UConn)",
+            "href": "https://international.global.uconn.edu/2026/08/30/immigration-changes-regarding-internships/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-29",
     "changes": [
       {
@@ -1784,6 +1857,79 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-30",
+    "changes": [
+      {
+        "id": "cpt-reply-permission-and-november4",
+        "category": "#05 CPT guidance litigation",
+        "title": "Court permits a reply of up to 15 pages by November 4",
+        "summary": "Electronic order 29 grants procedural motion 28; the November 6 hearing is unchanged and guidance is not stayed.",
+        "before": "Current procedure listed the October 28 government opposition and November 6 hearing without a plaintiffs’ reply step.",
+        "after": "Add the October 29 request, October 30 permission and November 4 reply date to summaries, status, litigation track, timeline and briefing. Entry 28-1 is an unsigned proposed order; the actual reply was not obtained. Guidance remains in use.",
+        "sources": [
+          {
+            "label": "Electronic court order 29",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-29"
+          },
+          {
+            "label": "Full reply-permission motion 28",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.28.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "duration-october30-document-types",
+        "category": "#03 D/S nationwide-stay litigation",
+        "title": "Add October 30 document entries; text and filers unverified",
+        "summary": "Entries 66/67 show summary-judgment and supporting-memorandum types; those labels do not establish a court judgment.",
+        "before": "The mirror ended at entry 65, and current procedure/next steps listed the October 30 summary-judgment deadline.",
+        "after": "Add entries 66/67 to history and briefing; await text, filers and any other submissions. Retain the original November 2 reply and November 9 appellate schedule. No new merits ruling was obtained; the nationwide stay remains, with the 19:00 empty-response gap disclosed.",
+        "sources": [
+          {
+            "label": "District entries 66/67 (document types only)",
+            "href": "https://www.courtlistener.com/docket/74661796/presidents-alliance-on-higher-education-and-immigration-v-united-states/?order_by=desc#entry-66"
+          }
+        ]
+      },
+      {
+        "id": "mit-cpt-calendar-2027",
+        "category": "#05 CPT school tracker · MIT",
+        "title": "Add revised 2027 CPT calendar windows",
+        "summary": "Spring now starts January 30, Summer ends August 17 and Fall starts August 18; eligibility restrictions remain.",
+        "before": "The entry described the pause of non-program-wide-required new CPT and contact with previously approved Fall students, without the 2027 calendar.",
+        "after": "Add Spring January 30–May 19, Summer May 20–August 17 and Fall August 18–December 17, retaining term part-time limits, later starts for some students and actual-approval requirements. A calendar does not reopen elective CPT.",
+        "sources": [
+          {
+            "label": "MIT ISO · Current CPT date table",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "illinois-arizona-uconn-public-cpt",
+        "category": "#05 CPT school tracker",
+        "title": "Add official Illinois Tech, Arizona and UConn records",
+        "summary": "All three restrict non-required CPT, with retained credit wording, a narrow research pathway and a notice-date conflict disclosed.",
+        "before": "68 evidence entries: 64 public university pages and four community screenshots; 67 distinct institutions.",
+        "after": "71 evidence entries: 67 public university pages and four community screenshots; 70 distinct institutions. Illinois Tech pauses programs without mandatory training; Arizona retains narrow degree/thesis cases; UConn requires a published all-student curricular requirement. Do not generalize to a blanket CPT halt or revoked existing approvals. UConn’s August 30 page/August 31 email date conflict is unresolved.",
+        "sources": [
+          {
+            "label": "Illinois Institute of Technology (Illinois Tech)",
+            "href": "https://www.iit.edu/global-services/student-employment/curricular-practical-training-cpt"
+          },
+          {
+            "label": "University of Arizona",
+            "href": "https://international.arizona.edu/international-students/cpt"
+          },
+          {
+            "label": "University of Connecticut (UConn)",
+            "href": "https://international.global.uconn.edu/2026/08/30/immigration-changes-regarding-internships/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-29",
     "changes": [
