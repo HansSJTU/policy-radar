@@ -119,6 +119,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Electronic order 64 expressly requires replies by November 2, not the requested November 6; this is not the nationwide stay’s expiration."
   },
   {
+    "id": "duration-cross-motions-text-october30",
+    "date": "2026-10-30",
+    "availableOn": "2026-10-31",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "已取得第 66、67、68 项正文，确认双方 10·30 各自请求简易判决；第 69 项支持意见和附件正文未取得。均为当事方申请，全国暂缓未解除；原排期 11·02 回复。",
+    "en": "Entries 66/67/68 now confirm both sides sought summary judgment October 30; entry 69’s supporting text/exhibits were not obtained. These are party requests; nationwide relief remains, with replies originally due November 2."
+  },
+  {
     "id": "cpt-reply-permission-october30",
     "date": "2026-10-30",
     "policyId": "cpt-guidance",

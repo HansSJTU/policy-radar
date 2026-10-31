@@ -23,6 +23,51 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-10-31",
+    "changes": [
+      {
+        "id": "duration-cross-motions-text-confirmed",
+        "category": "#03 D/S 全国暂缓诉讼",
+        "title": "取得双方 10·30 简易判决动议正文",
+        "summary": "第 66、67 项为政府动议与支持意见，第 68 项为原告再次申请；不是法院已判决。",
+        "before": "只取得第 66、67 项文件类型，提交方与具体请求均未验证；尚未列第 68、69 项。",
+        "after": "取得第 66、67、68 项正文，确认双方分别请求各项争议判其胜诉。政府意见另提出发回但不撤销或限缩救济的备选主张，均非裁定。第 69 项支持意见及附件仍未取得，不归纳其论证。同步状态、摘要、流程、时间线、诉讼标记和简报；全国暂缓与原 11·02 回复、11·09 上诉排期保留。",
+        "sources": [
+          {
+            "label": "第 66 项政府动议",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.66.0.pdf"
+          },
+          {
+            "label": "第 67 项政府支持意见",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.67.0.pdf"
+          },
+          {
+            "label": "第 68 项原告再次申请",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.68.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "case-western-uno-cpt-public-records",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Case Western 与 Nebraska–Omaha 校方记录",
+        "summary": "前者暂停新申请，后者限于全员毕业必需实习；不推断已有授权失效或其他校区口径。",
+        "before": "71 条记录：67 条校方网页、4 条社区截图；70 所不同学校。",
+        "after": "73 条记录：69 条校方网页、4 条社区截图；72 所不同学校。Case Western 自 9·08 暂停新申请并修订流程；UNO 9·17 公开通知要求全员毕业必需及先取得授权 I-20。这是新增已存在的公开通知，不是两校今天才改变政策；已有授权处理和后续调整的缺口逐项保留。",
+        "sources": [
+          {
+            "label": "Case Western Reserve University (CWRU)",
+            "href": "https://case.edu/visa/international-students/international-student-employment/f-1-student-employment-and-training"
+          },
+          {
+            "label": "University of Nebraska at Omaha (UNO)",
+            "href": "https://web.unomaha.edu/curricular-practical-training-cpt-information"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-30",
     "changes": [
       {
@@ -1857,6 +1902,51 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-10-31",
+    "changes": [
+      {
+        "id": "duration-cross-motions-text-confirmed",
+        "category": "#03 D/S nationwide-stay litigation",
+        "title": "Obtain both sides’ October 30 summary-judgment motions",
+        "summary": "Entries 66/67 are the government motion/memorandum; entry 68 is plaintiffs’ renewed motion. None is a court judgment.",
+        "before": "Only entries 66/67 document types were verified; filers and requested relief were unknown, with entries 68/69 not yet listed.",
+        "after": "Obtain full entries 66/67/68, confirming opposing requests for judgment on all claims. The government alternatively seeks remand without vacatur or narrower relief; these are party arguments. Entry 69’s supporting text/exhibits remain unavailable and are not summarized. Update status, summaries, procedure, timeline, litigation marker and briefing while retaining nationwide relief and the original November 2 reply/November 9 appellate schedule.",
+        "sources": [
+          {
+            "label": "Government motion 66",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.66.0.pdf"
+          },
+          {
+            "label": "Government memorandum 67",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.67.0.pdf"
+          },
+          {
+            "label": "Plaintiffs’ renewed motion 68",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.68.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "case-western-uno-cpt-public-records",
+        "category": "#05 CPT school tracker",
+        "title": "Add official Case Western and Nebraska–Omaha records",
+        "summary": "Case Western pauses new applications; UNO limits training to an all-student graduation requirement, without invalidating existing approvals or generalizing across campuses.",
+        "before": "71 evidence entries: 67 public university pages and four community screenshots; 70 distinct institutions.",
+        "after": "73 evidence entries: 69 public university pages and four community screenshots; 72 distinct institutions. Case Western pauses new applications from September 8 while revising its process. UNO’s public September 17 notice requires an all-student graduation requirement and an authorized I-20 before starting. These are newly tracked historical notices, not policy changes first made today; existing-approval treatment and later-revision gaps remain explicit.",
+        "sources": [
+          {
+            "label": "Case Western Reserve University (CWRU)",
+            "href": "https://case.edu/visa/international-students/international-student-employment/f-1-student-employment-and-training"
+          },
+          {
+            "label": "University of Nebraska at Omaha (UNO)",
+            "href": "https://web.unomaha.edu/curricular-practical-training-cpt-information"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-30",
     "changes": [
