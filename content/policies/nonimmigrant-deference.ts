@@ -5,7 +5,7 @@ export const nonimmigrantDeference: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-10-30",
+  "checkedOn": "2026-10-31",
   "related": [
     "h1b-reform",
     "grace-period"
@@ -60,7 +60,7 @@ export const nonimmigrantDeference: PolicyContent = {
     "summary": "DHS 拟删除 8 CFR 214.1(c)(5)，取消 USCIS 在相同当事方和相同基本事实的 Form I-129 申请中一般尊重既往资格认定的规则。NPRM 于 10·14 正式刊登（91 FR 65119），公众评论截至 11·13；目前不是最终规则。",
     "audience": "通过 Form I-129 申请延长工作或停留的非移民雇员及申请雇主，包括适用该表格的 H-1B、L-1、O-1，以及 E、TN 等申请。",
     "caveat": "拟议调整不自动拒绝续期，也不取消已经批准的身份或许可；现行 deference 本来就有重大错误、事实变化和新重要信息等例外，申请人仍须证明资格。",
-    "reviewNote": "10·30 重读已刊登 NPRM（91 FR 65119），并按 RIN 检索后续联邦公报记录；正文仍列 11·13 美东午夜前评论，拟删除并保留 8 CFR 214.1(c)(5)，尚未生效。现行 eCFR 既往批准尊重原则另行复核。Regulations.gov 动态案卷、完整 OIRA 历史、后续部门说明及诉讼仍未完整核实。同 RIN 的 OIRA 搜索返回无结果，完整审查历史仍待核实。",
+    "reviewNote": "10·31 重读已刊登 NPRM（91 FR 65119），并按 RIN 检索后续联邦公报记录；正文仍列 11·13 美东午夜前评论，拟删除并保留 8 CFR 214.1(c)(5)，尚未生效。现行 eCFR 既往批准尊重原则另行复核。Regulations.gov 动态案卷、完整 OIRA 历史、后续部门说明及诉讼仍未完整核实。同 RIN 的 OIRA 搜索返回无结果，完整审查历史仍待核实。",
     "background": "现行 8 CFR 214.1(c)(5) 一般要求 USCIS 在相同当事方、相同基本事实的 I-129 请求中尊重既往资格认定；它不免除提交证据的责任，也允许因重大错误、重大变化或新重要信息重新审查。\n本次 RIN 1615-AD26 提议删除并保留空置该款，理由包括独立核对资格与申请人的举证责任。它与尚在 OIRA 审查中的 RIN 1615-AD00 综合 H-1B 改革是不同项目。",
     "teaser": "之前获批，未来可能更难作为续期审查的稳定基础。",
     "headline": "续期的证据准备可能增加，既往批准不等于未来结果。",
@@ -162,7 +162,7 @@ export const nonimmigrantDeference: PolicyContent = {
     "summary": "DHS proposes removing 8 CFR 214.1(c)(5), which generally requires USCIS to defer to prior eligibility determinations in Form I-129 requests involving the same parties and underlying facts. The NPRM was published October 14 (91 FR 65119), with public comments due November 13; it is not a final rule.",
     "audience": "Nonimmigrant workers and petitioners extending employment or stay through Form I-129, including H-1B, L-1, O-1 and E or TN requests using that form.",
     "caveat": "The proposal does not automatically deny renewals or cancel existing approvals or status. Current deference already has material-error, changed-facts and new-information exceptions, and petitioners must still establish eligibility.",
-    "reviewNote": "On October 30, the published NPRM (91 FR 65119) and Federal Register searches for later records under the RIN were reviewed. The text retains comments before midnight ET November 13 and the proposal to remove and reserve 8 CFR 214.1(c)(5); it is not in effect. The current eCFR deference provision was separately checked. The live Regulations.gov docket, complete OIRA history, later agency guidance and litigation remain incompletely verified. The OIRA RIN search returns no result; complete review history remains unverified.",
+    "reviewNote": "On October 31, the published NPRM (91 FR 65119) and Federal Register searches for later records under the RIN were reviewed. The text retains comments before midnight ET November 13 and the proposal to remove and reserve 8 CFR 214.1(c)(5); it is not in effect. The current eCFR deference provision was separately checked. The live Regulations.gov docket, complete OIRA history, later agency guidance and litigation remain incompletely verified. The OIRA RIN search returns no result; complete review history remains unverified.",
     "background": "Current 8 CFR 214.1(c)(5) generally requires deference to prior eligibility determinations for I-129 requests with the same parties and underlying facts. It does not remove the evidence burden and allows reconsideration for material error, material changes or new material information.\nRIN 1615-AD26 proposes removing and reserving that paragraph to support independent eligibility review and the burden of proof. It is separate from broader H-1B reform RIN 1615-AD00, which remains under OIRA review.",
     "teaser": "A prior approval could become a less stable foundation for a later renewal.",
     "headline": "Renewals may require more evidence; prior approval does not guarantee a future outcome.",

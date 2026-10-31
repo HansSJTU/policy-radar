@@ -112,7 +112,7 @@ test('federal details share one process while litigation remains separate', () =
     }
     const litigation = getProcessTrack('duration-status', language);
     assert.equal(litigation.lastCompletedStage, 4);
-    assert.equal(litigation.litigation.length, 4);
+    assert.equal(litigation.litigation.length, 5);
     assert.notDeepEqual(
       getProcessTrack('cpt-guidance', language).stages,
       federal,
