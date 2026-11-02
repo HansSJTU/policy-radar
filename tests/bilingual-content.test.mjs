@@ -21,8 +21,6 @@ test('PERM has cleared OIRA while the D/S order keeps replies on November 2', ()
   for (const language of ['zh', 'en']) {
     assert.deepEqual(duration[language].next.slice(0, 2).map(({ date }) => date), ['2026-11-02', '2026-11-09']);
     assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
-    assert.match(perm[language].reviewNote, /Consistent with Change/);
-    assert.match(duration[language].reviewNote, /64/);
   }
 });
 
@@ -60,7 +58,6 @@ test('each policy has matching Chinese and English structure', () => {
       assert.equal(impact.examples?.length ?? 0, en.impacts[index].examples?.length ?? 0, `${id} impact ${index} examples`);
       assert.equal(impact.source?.href, en.impacts[index].source?.href, `${id} impact ${index} source`);
     });
-    assert.equal(Boolean(zh.reviewNote), Boolean(en.reviewNote), `${id} reviewNote`);
     for (const source of sources) assert.ok(source.zh && source.en, `${id} ${source.href}`);
   }
 });

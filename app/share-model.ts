@@ -20,15 +20,15 @@ export const itemShareLabels = {
     brand: '留美路径雷达', policy: '政策追踪', school: 'CPT 学校追踪',
     status: '当前状态', scope: '适用范围', checkedOn: '最后核对',
     caveat: '请留意', entry: '查看原文与最新状态',
-    freshness: '状态可能已变化，请打开原文复核。',
-    unverified: '社区线索 · 待核实',
+    freshness: '状态可能已经变了，点开原文看最新情况。',
+    unverified: '邮件截图 · 学校还没公开发布',
   },
   en: {
     brand: 'Stay Path Radar', policy: 'POLICY TRACKER', school: 'CPT SCHOOL TRACKER',
     status: 'Current status', scope: 'Applies to', checkedOn: 'Last checked',
     caveat: 'Keep in mind', entry: 'Read the full record & latest status',
-    freshness: 'Status may have changed. Open the record to recheck.',
-    unverified: 'Community report · Unverified',
+    freshness: 'Status may have changed. Open the record for the latest.',
+    unverified: 'Email screenshot · Not yet posted by the school',
   },
 };
 

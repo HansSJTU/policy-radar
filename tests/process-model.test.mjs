@@ -55,10 +55,10 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: '提起诉讼' },
-      { date: '9·02', label: '拟议反对意见' },
-      { date: '9·03', label: '听证后待裁定' },
+      { date: '9·02', label: '政府反对' },
+      { date: '9·03', label: '听证，未当庭裁定' },
       { date: '9·14', label: '全国暂缓' },
-      { date: '10·30', label: '双方申请简易判决' },
+      { date: '10·30', label: '双方请求判决' },
     ],
   );
   assert.deepEqual(
@@ -82,10 +82,10 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: 'Lawsuit filed' },
-      { date: '9·02', label: 'Proposed opposition' },
-      { date: '9·03', label: 'Hearing held; decision pending' },
+      { date: '9·02', label: 'Government opposes' },
+      { date: '9·03', label: 'Hearing; no ruling yet' },
       { date: '9·14', label: 'Nationwide stay' },
-      { date: '10·30', label: 'Cross-motions filed' },
+      { date: '10·30', label: 'Both sides seek judgment' },
     ],
   );
   assert.match(track.currentSummary, /全国暂缓/);

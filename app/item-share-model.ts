@@ -14,11 +14,11 @@ export function getSchoolShareItem(school: VerifiedSchool | CommunitySchool, lan
     checkedOn: school.checkedOn,
     caveat: language === 'en'
       ? verified
-        ? 'Limited to the school, campus or department named here. Confirm individual eligibility with your DSO.'
-        : 'Screenshot reviewed; current policy is not publicly confirmed. Limited to the named school or department. Check with your DSO.'
+        ? 'Applies only to the school, campus or department named here. Ask your DSO about your own case.'
+        : 'Based on an email screenshot; the school has not posted this policy publicly. Applies only to this school or department. Ask your DSO.'
       : verified
-        ? '仅限本条列明的学校、校区或院系；个人资格请向 DSO 确认。'
-        : '已核对截图，当前政策尚无公开确认。仅限本条学校或院系，请向 DSO 核实。',
+        ? '只适用于这所学校、校区或院系；自己的情况请问 DSO。'
+        : '依据是邮件截图，学校还没在网上公开这项政策。只适用于这所学校或院系，具体请问 DSO。',
     href: `${POLICY_SITE_URL}/?lang=${language}#school-${school.id}`,
     unverified: !verified,
   };

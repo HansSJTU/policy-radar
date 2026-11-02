@@ -18,8 +18,8 @@ export const eadAutoExtension: PolicyContent = {
     "litigation": [
       {
         "date": "9·11",
-        "zh": "七原告个案救济",
-        "en": "Seven-plaintiff relief",
+        "zh": "七名原告获个案保护",
+        "en": "Relief for seven plaintiffs",
         "afterStage": 5,
         "progress": 45,
         "status": "filed",
@@ -31,13 +31,13 @@ export const eadAutoExtension: PolicyContent = {
   "sources": [
     {
       "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents",
-      "zh": "Federal Register 10·14 最终规则（91 FR 65306）· 原样承接",
-      "en": "Federal Register October 14 final rule (91 FR 65306) · adopts the IFR unchanged"
+      "zh": "Federal Register 10·14 最终规则（91 FR 65306）· 照原样定稿",
+      "en": "Federal Register October 14 final rule (91 FR 65306) · interim rule kept unchanged"
     },
     {
       "href": "https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf",
-      "zh": "2025·10·30 已生效临时最终规则 · 原始条文及续期界线",
-      "en": "October 30, 2025 effective interim final rule · original text and filing cutoff"
+      "zh": "2025·10·30 临时规则 · 原始条文和分界日",
+      "en": "October 30, 2025 interim rule · original text and cutoff"
     },
     {
       "href": "https://www.uscis.gov/eadautoextend",
@@ -61,239 +61,237 @@ export const eadAutoExtension: PolicyContent = {
     },
     {
       "href": "https://www.adhikarilaw.com/wp-content/uploads/2026/09/Jane-Doe-1-v.-United-States-Department-of-Homeland-Security-8-26-cv-00060-C.D.-Cal.-Sep-11-2026-ECF-No.-46_TRO.pdf",
-      "zh": "Jane Doe 第 46 项初步禁令原文 · 9·11 录入（律所托管，救济见第 17 页）",
-      "en": "Jane Doe preliminary-injunction order 46 · entered September 11 (law-firm host; relief on PDF page 17)"
+      "zh": "Jane Doe 案初步禁令（第 46 项，9·11 生效；保护范围见第 17 页）",
+      "en": "Jane Doe preliminary injunction (entry 46, entered September 11; relief on PDF page 17)"
     },
     {
       "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc",
-      "zh": "Jane Doe 公开案卷 · 后续报告／排期仅取得标题",
-      "en": "Jane Doe public docket · later report/scheduling titles only"
+      "zh": "Jane Doe 公开案卷",
+      "en": "Jane Doe public docket"
     }
   ],
   "zh": {
     "title": "部分 EAD 续期自动延期已取消",
     "short": "EAD 续期自动延期",
-    "status": "取消自动延期已执行 · 最终规则 10·14 生效",
-    "effectLabel": "自 2025·10·30 起执行 · 保留法定例外",
+    "status": "已执行 · 最终规则 10·14 生效",
+    "effectLabel": "2025·10·30 起执行 · 法定例外仍然有效",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD05 · 2025-19702 / 2026-20955",
-    "tldr": "DHS 已取消 2025 年 10 月 30 日起递交的部分 EAD 续期申请所享有的自动延期。10·14 刊登并生效的最终规则原样承接该规定；此前合格续期和法定例外仍须分别核对。 9·11 录入的初步禁令仅救济七名具名原告，明确不是全国禁令；该命令早于最终规则，后续处理仍待核实。",
+    "tldr": "2025 年 10 月 30 日起递交的部分 EAD 续期，旧卡到期后不再自动延期。10·14 的最终规则照原样定稿，分界日不变。9·11 法院的初步禁令只保护起诉的七个人，对其他人无效。",
     "tags": [
       "H-4 EAD",
       "绿卡等待期",
       "续期停工风险"
     ],
-    "summary": "DHS 已从 2025·10·30 起取消部分 EAD 续期申请的自动延期：递交续期不再自动延长过期或即将过期卡片的效力及适用的工作授权。10·14 刊登并于当日生效的最终规则不修改原临时最终规则；取消从 2025·10·30 起已在执行，不是 10·14 才首次取消。 9·11 录入的初步禁令仅救济七名具名原告，明确不是全国禁令；该命令早于最终规则，后续处理仍待核实。",
-    "audience": "依赖受覆盖 EAD 续期自动延期继续工作的人员，包括符合条件的 H-4 配偶（c26）与身份调整待审人员（c9）等；不能外推所有工作许可类别。",
-    "caveat": "旧界线仍是续期申请递交日 2025·10·30；此前合格申请的自动延期不被追溯取消。法定及 TPS 公告例外、STEM OPT 的独立 180 天条款、随有效身份自带的工作授权须分开核对。",
-    "reviewNote": "11·01 重读 10·14 最终规则、联邦公报同 RIN 检索、现行 Policy Manual 10 USCIS-PM A.4(I)、存档页及 USCIS 10·29 综述，仍保留 2025·10·30 续期界线和法定例外。另取得 Jane Doe 1 v. DHS 第 46 项法院命令全文（律所公开托管）：9·10 签署、9·11 录入，初步禁令仅救济七名具名原告，明确未发全国禁令。该命令早于 10·14 最终规则，不能据此认定最终规则被暂停或原告目前的工作资格。案卷 feed／公开替代读取仅见 10·29 第 52 项报告及 10·30 排期通知等标题，未取得正文；裸案卷 202 空响应。此后如何处理最终规则、实际是否上诉、当前个案救济及最新 TPS 公告仍未完整核实。",
-    "background": "2025·10·30 临时最终规则修改 8 CFR 274a.13：旧的最长 540 天自动延期仅保留给该日前递交、符合规定的续期申请；该日及之后递交的受覆盖续期不再因收据自动延期。\n2026·10·14 刊登并生效的最终规则明确“原样承接”临时最终规则（without change），保留原来的申请日期界线。它并不删除 H-4 配偶的 EAD 申请资格，也不是 RIN 1615-AD14 的资格撤销议程。\n另案 Jane Doe 1 v. DHS（8:26-cv-00060）第 46 项初步禁令于 2026·09·10 签署、9·11 录入，命令仅对七名具名原告立即排除 2025 临时最终规则的适用，并称政府可在案件待决期间提供 EAD 实现救济；法院明确未签发全国禁令。法院认证可申请中间上诉，不代表已经上诉。该命令早于 10·14 最终规则，后续是否调整救济、如何处理最终规则及目前个案资格未取得正文确认。",
-    "teaser": "仍能申请 EAD，不代表续期等待期间一定能继续工作。",
-    "headline": "续期收据与实际工作授权，需要分别确认。",
-    "analysis": "对于仅凭这类 EAD 工作的人，旧卡到期而新卡尚未批准时，取消自动延期可能造成工作空档。影响取决于递交日期、类别、原卡期限及是否有独立授权，不能要求所有人仅凭这份最终规则立即停工。",
+    "summary": "从 2025·10·30 起，递交部分 EAD 续期后，旧卡到期就不再自动延长。10·14 刊登并生效的最终规则照原样保留这项规定，分界日不变。另一个案子 Jane Doe 1 v. DHS 的初步禁令（9·11 生效）只保护起诉的七个人，法院没有在全国范围暂停。",
+    "audience": "靠 EAD 续期自动延期继续工作的人，比如 H-4 配偶（c26）、等绿卡调整身份的人（c9）。",
+    "caveat": "看递交日：2025·10·30 前递交的续期，符合条件的仍按旧规则自动延期。法律规定的例外、TPS 公告的延期、STEM OPT 的 180 天延期，以及不靠 EAD、凭身份本身就能工作的情况，都不受影响。",
+    "background": "2025·10·30 的临时规则修改了 8 CFR 274a.13：最长 540 天的自动延期，只留给这天之前递交、符合条件的续期；这天及以后递交的相关类别续期，拿到收据也不再自动延期。\n2026·10·14 刊登并生效的最终规则照原样保留临时规则，分界日不变。它和 RIN 1615-AD14（拟取消 H-4 配偶申请 EAD 的资格）是两回事。\n另一个案子 Jane Doe 1 v. DHS（8:26-cv-00060）：法院 9·10 签署、9·11 生效的初步禁令（第 46 项）只对起诉的七个人暂停 2025 年的临时规则，政府可以在官司期间给他们发 EAD。法院没有在全国范围暂停，并允许政府先就这个命令上诉。",
+    "teaser": "续期还没批，旧卡一到期就可能得停工。",
+    "headline": "续期收据不再自动延长工作授权。",
+    "analysis": "只靠这类 EAD 工作的人，如果旧卡到期时新卡还没批下来，就得停工。实际影响看递交日期、EAD 类别、旧卡到期日，以及有没有别的工作许可。",
     "impacts": [
       {
-        "title": "对 H-4 等依赖 EAD 的人员：可能出现授权空档",
-        "text": "符合申请资格并及时递交续期，不再保证受覆盖的新续期可在旧卡到期后继续工作。",
+        "title": "对 H-4 等靠 EAD 工作的人：可能停工",
+        "text": "按时递交续期，也不能保证旧卡到期后还能继续工作。",
         "examples": [
-          "H-4 配偶在 2025·10·30 或之后递交受覆盖续期，不能仅以收据主张原有 540 天自动延期；旧卡仍有效时不因最终规则刊登而失效。"
+          "H-4 配偶 2025·10·30 以后递交续期，旧卡到期后就不能凭收据继续工作；旧卡到期前照常有效。"
         ]
       },
       {
-        "title": "对雇主与家庭：需核对过渡界线和授权依据",
-        "text": "旧申请、法定例外及随身份自带的授权可能产生不同结果，不能统一处理。",
+        "title": "对雇主和家庭：先看递交日和工作许可的来源",
+        "text": "早递交的续期、法律例外、凭身份本身就能工作的人，结果各不相同。",
         "examples": [
-          "两名 c9 续期申请人分别在界线前后递交，是否能凭旧卡与收据继续工作可能不同。E／L 配偶如有有效的随身份工作授权，也不能仅凭 EAD 到期就认定必须停工。"
+          "两个 c9 申请人，一个在分界日前递交续期、一个在之后：前者仍可凭收据按旧规则延期，后者不行。E、L 签证的配偶凭身份本身就能工作，EAD 到期也可以继续上班。"
         ]
       }
     ],
-    "outlook": "继续核对 USCIS 当前说明与相关法院命令；对工作空档的判断应回到具体类别、申请日期和独立授权，不能只看“最终规则”标题。",
+    "outlook": "关注 USCIS 之后的说明和 Jane Doe 案的后续命令。自己会不会停工，看 EAD 类别、递交日期和有没有别的工作许可。",
     "scenarios": [
       {
-        "name": "界线后递交的受覆盖续期",
-        "headline": "旧卡到期后可能不能凭收据工作",
-        "assumption": "续期在 2025·10·30 或之后递交，且没有适用的独立授权或例外。",
-        "effects": "新授权未取得前可能出现工作空档，需核对具体到期和资格条件。",
-        "signals": "续期递交日、EAD 类别、卡片期限和其他授权依据。"
+        "name": "分界日之后递交的续期",
+        "headline": "旧卡到期后不能凭收据工作",
+        "assumption": "续期在 2025·10·30 或之后递交，也没有别的工作许可或例外。",
+        "effects": "新卡批下来之前会停工。",
+        "signals": "续期递交日、EAD 类别、旧卡到期日和其他工作许可。"
       },
       {
-        "name": "界线前合格申请或独立例外",
-        "headline": "不能按取消自动延期一概停工",
-        "assumption": "符合旧申请的延期条件，或有法定／TPS 例外、独立的随身份工作授权。",
-        "effects": "是否继续获授权取决于各自条件及期限，原规则不追溯取消此前合格延期。",
-        "signals": "申请收据、类别专属条件、有效 I-94 及最新法定或 TPS 公告。"
+        "name": "分界日前递交，或有例外",
+        "headline": "可以继续工作",
+        "assumption": "续期符合旧规则的延期条件，或有法律／TPS 例外，或凭身份本身就能工作。",
+        "effects": "按各自条件和期限继续获得授权。",
+        "signals": "续期收据、该类别的具体条件、有效的 I-94，以及最新的法律或 TPS 公告。"
       },
       {
-        "name": "最终规则已刊登",
-        "headline": "规则定稿，申请界线没有重置",
-        "assumption": "10·14 最终规则原样承接临时最终规则。",
-        "effects": "现有 2025·10·30 界线继续适用，不能得出 10·14 才首次取消或所有有效卡片失效的结论。",
-        "signals": "正式刊登版本、后续部门说明及法院命令。"
+        "name": "最终规则已公布",
+        "headline": "规则定稿，分界日不变",
+        "assumption": "10·14 的最终规则照原样保留 2025 年的临时规则。",
+        "effects": "2025·10·30 的分界日继续有效；现在有效的卡不受影响。",
+        "signals": "正式刊登的文本、USCIS 之后的说明和法院命令。"
       }
     ],
     "scope": [
       {
-        "label": "日期界线",
-        "text": "受覆盖续期于 2025·10·30 或之后递交；最终规则没有重设这条界线。"
+        "label": "分界日",
+        "text": "2025·10·30 或之后递交的相关类别续期；最终规则没有改这个日期。"
       },
       {
-        "label": "旧申请",
-        "text": "此前符合条件的续期仍按原规定核对最长 540 天及其他类别限制，不保证每案都获 540 天。"
+        "label": "之前递交的续期",
+        "text": "分界日前递交、符合条件的续期，仍按旧规定最长延期 540 天，具体看类别。"
       },
       {
-        "label": "保留例外",
-        "text": "法律及适用 TPS 公告另有规定的延期保留；STEM OPT 180 天延期是不同条款。"
+        "label": "仍然有效的例外",
+        "text": "法律和 TPS 公告另行规定的延期照常；STEM OPT 的 180 天延期是另一条规定。"
       },
       {
-        "label": "不等于取消资格",
-        "text": "不自动撤销有效卡片或 H-4 EAD 申请资格；E／L 随身份工作授权须单独核对。"
+        "label": "资格不变",
+        "text": "有效的卡照常有效，H-4 配偶仍可申请 EAD；E、L 签证的配偶凭身份本身就能工作。"
       }
     ],
     "milestones": [
       {
         "date": "2025-10-30",
-        "text": "临时最终规则刊登并生效，建立新旧续期申请日期界线。"
+        "text": "临时规则刊登并生效，以递交日划出新旧分界。"
       },
       {
         "date": "2025-12-01",
-        "text": "临时最终规则评论期截止。"
+        "text": "临时规则评论截止。"
       },
       {
         "date": "2026-09-11",
-        "text": "Jane Doe 案第 46 项初步禁令录入（9·10 签署），仅救济七名具名原告，明确不发全国禁令；早于最终规则。"
+        "text": "Jane Doe 案初步禁令生效（9·10 签署），只保护起诉的七个人，不是全国暂停。"
       },
       {
         "date": "2026-10-13",
-        "text": "最终稿预览公开，原样承接 2025 临时最终规则。"
+        "text": "最终规则预览公开，照原样保留 2025 年的临时规则。"
       },
       {
         "date": "2026-10-14",
-        "text": "最终规则刊登并于当日生效（91 FR 65306）；2025·10·30 的续期界线不变。"
+        "text": "最终规则刊登并当天生效（91 FR 65306）；2025·10·30 的分界日不变。"
       }
     ],
     "next": [
       {
         "date": "日期未定",
-        "text": "跟踪部门说明及 Jane Doe 案后续命令，核实七原告救济在 10·14 最终规则后的处理。"
+        "text": "USCIS 后续说明及 Jane Doe 案后续命令。"
       }
     ],
     "process": {
-      "detail": "取消自动延期的临时最终规则自 2025·10·30 起执行；10·14 最终规则原样承接并生效。 9·11 录入的初步禁令仅救济七名具名原告，明确不是全国禁令；该命令早于最终规则，后续处理仍待核实。",
-      "currentSummary": "一般规则已执行；另有早于最终规则的七原告救济",
-      "waitingFor": "核实 Jane Doe 案最新报告／排期正文、最终规则出台后的救济及是否实际上诉；不将历史个案命令视为全国恢复自动延期。"
+      "detail": "取消自动延期的临时规则 2025·10·30 起执行；10·14 最终规则照原样定稿并生效。9·11 的初步禁令只保护起诉的七个人。",
+      "currentSummary": "规则已执行；起诉的七人获个案保护",
+      "waitingFor": "Jane Doe 案后续命令，以及政府是否上诉。"
     }
   },
   "en": {
     "title": "Automatic Extensions Removed for Certain EAD Renewals",
     "short": "EAD Renewal Extensions",
-    "status": "Removal in force · final rule effective October 14",
-    "effectLabel": "In force since October 30, 2025 · statutory exceptions retained",
+    "status": "In force · final rule effective October 14",
+    "effectLabel": "In force since October 30, 2025 · Legal exceptions still apply",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD05 · 2025-19702 / 2026-20955",
-    "tldr": "DHS has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025. The final rule published and effective October 14 adopts that provision unchanged; earlier qualifying renewals and legal exceptions require separate checks. A preliminary injunction entered September 11 grants relief only to seven named plaintiffs and expressly declines nationwide relief. It predates the final rule; later treatment remains unverified.",
+    "tldr": "For certain EAD renewals filed since October 30, 2025, the old card no longer stays valid automatically after it expires. The October 14 final rule keeps this unchanged, with the same cutoff date. A September 11 court order protects only the seven people who sued.",
     "tags": [
       "H-4 EAD",
       "Adjustment pending",
       "Renewal work gaps"
     ],
-    "summary": "Since October 30, 2025, DHS has removed automatic extensions for certain EAD renewals: filing no longer automatically extends expiring cards and applicable work authorization. The final rule published and effective October 14 adopts the IFR unchanged. Removal has applied since October 30, 2025; it does not first begin on October 14. A preliminary injunction entered September 11 grants relief only to seven named plaintiffs and expressly declines nationwide relief. It predates the final rule; later treatment remains unverified.",
-    "audience": "People relying on covered EAD-renewal extensions, including qualifying H-4 spouses (c26) and adjustment applicants (c9), among other categories; not every work-permit category.",
-    "caveat": "The renewal-filing cutoff remains October 30, 2025; qualifying earlier extensions are not retroactively canceled. Statutory and TPS-notice exceptions, the separate STEM OPT 180-day provision and employment authorization incident to valid status require distinct checks.",
-    "reviewNote": "On November 1, the October 14 final rule, same-RIN Federal Register search, current Policy Manual 10 USCIS-PM A.4(I), archived page and October 29 USCIS overview were reread; the October 30, 2025 renewal cutoff and legal exceptions remain. Full court order 46 in Jane Doe 1 v. DHS was obtained from a law-firm public host. Signed September 10 and entered September 11, the preliminary injunction grants relief only to seven named plaintiffs and expressly declines nationwide relief. It predates the October 14 final rule and does not establish that the final rule is stayed or the plaintiffs’ current work eligibility. A docket feed/alternative public retrieval supplies only titles for the October 29 report 52, October 30 scheduling notice and other entries; their text was not obtained and the bare docket returned an empty 202. Later treatment of the final rule, any actual appeal, current individual relief and latest TPS notices remain incompletely verified.",
-    "background": "The October 30, 2025 IFR amended 8 CFR 274a.13: the former up-to-540-day extension remains available only to qualifying renewal applications filed before that date. Covered renewals filed on or after it no longer receive automatic extensions merely through a receipt.\nThe final rule published and effective October 14, 2026 adopts the IFR without change and retains its filing cutoff. It does not remove H-4 EAD eligibility and is separate from the RIN 1615-AD14 eligibility-rescission agenda.\nIn separate Jane Doe 1 v. DHS (8:26-cv-00060), preliminary-injunction order 46 was signed September 10, 2026 and entered September 11. It immediately sets aside the 2025 IFR only as to seven named plaintiffs and permits the government to effectuate relief through EADs pending the case. The court expressly declines nationwide relief. Certification for an interlocutory appeal does not establish an appeal was filed. The order predates the October 14 final rule; later relief, treatment of that final rule and current individual eligibility have not been confirmed from operative text.",
-    "teaser": "Eligibility to apply for an EAD does not guarantee work authorization while a renewal is pending.",
-    "headline": "A renewal receipt and actual work authorization require separate checks.",
-    "analysis": "For people working only through these EADs, expiration before a renewal approval can cause a work gap without automatic extension. The result depends on filing date, category, card validity and independent authorization. The final rule does not require everyone to stop work immediately.",
+    "summary": "Since October 30, 2025, filing certain EAD renewals no longer keeps the old card valid after it expires. The final rule published and effective October 14 keeps this unchanged, with the same cutoff date. In a separate case, Jane Doe 1 v. DHS, a preliminary injunction entered September 11 protects only the seven people who sued; the court did not pause the rule nationwide.",
+    "audience": "People who relied on EAD renewals being extended automatically to keep working, such as H-4 spouses (c26) and people waiting on a green-card adjustment (c9).",
+    "caveat": "It depends on the filing date: eligible renewals filed before October 30, 2025 keep the old automatic extension. Exceptions in the law, TPS notice extensions, the STEM OPT 180-day extension and people whose status itself allows work without an EAD are not affected.",
+    "background": "The October 30, 2025 interim rule changed 8 CFR 274a.13: the automatic extension of up to 540 days now applies only to eligible renewals filed before that date. For renewals in the affected categories filed on or after it, a receipt no longer extends the card.\nThe final rule published and effective October 14, 2026 keeps the interim rule unchanged, with the same cutoff. It is separate from RIN 1615-AD14, which would remove H-4 spouses’ ability to apply for an EAD.\nIn a separate case, Jane Doe 1 v. DHS (8:26-cv-00060), a preliminary injunction (entry 46) signed September 10 and entered September 11 sets aside the 2025 interim rule only for the seven people who sued, and lets the government give them EADs while the case goes on. The court did not pause the rule nationwide and allowed an immediate appeal of its order.",
+    "teaser": "If your renewal is still pending when the old card expires, you may have to stop working.",
+    "headline": "A renewal receipt no longer extends work authorization.",
+    "analysis": "If you work only on one of these EADs and the old card expires before the renewal is approved, you have to stop working. How this hits you depends on your filing date, EAD category, card expiration and any other work authorization.",
     "impacts": [
       {
-        "title": "For EAD-dependent workers: renewal may leave an authorization gap",
-        "text": "Eligibility and timely filing no longer guarantee continued work after card expiration for covered new renewals.",
+        "title": "For people working on an EAD: you may have to stop work",
+        "text": "Filing on time no longer guarantees you can keep working after the old card expires.",
         "examples": [
-          "An H-4 spouse filing a covered renewal on or after October 30, 2025 cannot rely solely on the receipt for the former 540-day extension. A currently valid card is not invalidated by the final rule."
+          "An H-4 spouse who filed a renewal after October 30, 2025 cannot keep working on the receipt once the old card expires; until then the old card is still valid."
         ]
       },
       {
-        "title": "For employers and families: verify the cutoff and authorization basis",
-        "text": "Earlier applications, legal exceptions and status-based authorization can yield different outcomes and cannot be treated uniformly.",
+        "title": "For employers and families: check the filing date and the basis for working",
+        "text": "Earlier filings, legal exceptions and people whose status itself allows work each end up differently.",
         "examples": [
-          "Two c9 applicants filing on opposite sides of the cutoff may have different receipt-based work eligibility. An E or L spouse with valid status-based employment authorization is not necessarily required to stop work because an EAD expires."
+          "Two c9 applicants file on either side of the cutoff: the earlier one still gets the old extension on the receipt, the later one does not. E and L spouses can work on their status alone, so they can keep working when an EAD expires."
         ]
       }
     ],
-    "outlook": "Check current USCIS guidance and relevant court orders. Work-gap assessments must use the actual category, filing date and independent authorization, rather than the final-rule headline alone.",
+    "outlook": "Watch for USCIS guidance and later Jane Doe orders. Whether you face a gap depends on your category, filing date and other authorization.",
     "scenarios": [
       {
-        "name": "Covered renewal filed after the cutoff",
-        "headline": "A receipt may not authorize work after the old card expires",
-        "assumption": "The renewal was filed on or after October 30, 2025 with no applicable independent authorization or exception.",
-        "effects": "A work gap may occur until new authorization is obtained, subject to individual expiration and eligibility conditions.",
-        "signals": "Renewal filing date, EAD category, card validity and other authorization bases."
+        "name": "Renewal filed after the cutoff",
+        "headline": "No work on the receipt after the old card expires",
+        "assumption": "The renewal was filed on or after October 30, 2025, with no other work authorization or exception.",
+        "effects": "Work stops until the new card is approved.",
+        "signals": "Renewal filing date, EAD category, card expiration and any other work authorization."
       },
       {
-        "name": "Qualifying earlier renewal or separate exception",
-        "headline": "Removal does not require a blanket work stoppage",
-        "assumption": "The earlier filing satisfies extension conditions, or a statutory/TPS exception or independent status-based authorization applies.",
-        "effects": "Continued authorization depends on its own conditions and limits; the rule does not retroactively cancel qualifying earlier extensions.",
-        "signals": "Receipt, category-specific conditions, valid I-94 and current legal or TPS notices."
+        "name": "Filed before the cutoff, or an exception applies",
+        "headline": "Work can continue",
+        "assumption": "The renewal meets the old extension rules, or a legal/TPS exception applies, or the person’s status itself allows work.",
+        "effects": "Authorization continues under its own conditions and limits.",
+        "signals": "The receipt, rules for the category, a valid I-94 and current legal or TPS notices."
       },
       {
         "name": "Final rule published",
-        "headline": "Finalization leaves the filing cutoff intact",
-        "assumption": "The October 14 final rule adopts the IFR unchanged.",
-        "effects": "The existing October 30, 2025 cutoff continues; publication does not first remove extensions on October 14 or invalidate all valid cards.",
-        "signals": "Published text, subsequent agency guidance and court orders."
+        "headline": "Rule finalized, cutoff unchanged",
+        "assumption": "The October 14 final rule keeps the 2025 interim rule unchanged.",
+        "effects": "The October 30, 2025 cutoff still applies; currently valid cards are unaffected.",
+        "signals": "The published text, later USCIS guidance and court orders."
       }
     ],
     "scope": [
       {
-        "label": "Filing cutoff",
-        "text": "Covered renewals filed on or after October 30, 2025; the final rule does not reset that cutoff."
+        "label": "Cutoff date",
+        "text": "Renewals in the affected categories filed on or after October 30, 2025; the final rule did not change that date."
       },
       {
-        "label": "Earlier applications",
-        "text": "Qualifying earlier renewals remain subject to the former up-to-540-day provision and category limits; 540 days is not guaranteed in every case."
+        "label": "Earlier filings",
+        "text": "Eligible renewals filed before the cutoff keep the old extension of up to 540 days, depending on category."
       },
       {
-        "label": "Retained exceptions",
-        "text": "Extensions otherwise provided by law or applicable TPS notices remain; STEM OPT’s 180-day extension uses a separate provision."
+        "label": "Exceptions that still apply",
+        "text": "Extensions given by law or TPS notices still apply; the STEM OPT 180-day extension is a separate provision."
       },
       {
-        "label": "Not eligibility rescission",
-        "text": "Valid cards and H-4 EAD application eligibility are not automatically canceled; E/L status-based authorization requires its own check."
+        "label": "Eligibility unchanged",
+        "text": "Valid cards stay valid and H-4 spouses can still apply for an EAD; E and L spouses can work on their status alone."
       }
     ],
     "milestones": [
       {
         "date": "2025-10-30",
-        "text": "IFR published and effective, establishing the renewal-filing cutoff."
+        "text": "The interim rule was published and took effect, setting the filing-date cutoff."
       },
       {
         "date": "2025-12-01",
-        "text": "IFR comment period closed."
+        "text": "Comments on the interim rule closed."
       },
       {
         "date": "2026-09-11",
-        "text": "Jane Doe preliminary-injunction order 46 entered (signed September 10): relief only for seven named plaintiffs, expressly not nationwide; predates the final rule."
+        "text": "Jane Doe preliminary injunction entered (signed September 10): it protects only the seven people who sued, not everyone."
       },
       {
         "date": "2026-10-13",
-        "text": "Final-rule preview released, adopting the 2025 IFR unchanged."
+        "text": "Final-rule preview released, keeping the 2025 interim rule unchanged."
       },
       {
         "date": "2026-10-14",
-        "text": "Final rule published and effective (91 FR 65306); the October 30, 2025 renewal cutoff is unchanged."
+        "text": "Final rule published and effective the same day (91 FR 65306); the October 30, 2025 cutoff is unchanged."
       }
     ],
     "next": [
       {
         "date": "Date unknown",
-        "text": "Track agency guidance and later Jane Doe orders, including treatment of seven-plaintiff relief after the October 14 final rule."
+        "text": "USCIS guidance and later Jane Doe orders."
       }
     ],
     "process": {
-      "detail": "The IFR removing automatic extensions has applied since October 30, 2025; the October 14 final rule adopts it unchanged and is in effect. A preliminary injunction entered September 11 grants relief only to seven named plaintiffs and expressly declines nationwide relief. It predates the final rule; later treatment remains unverified.",
-      "currentSummary": "General rule in force; separate seven-plaintiff relief predates final rule",
-      "waitingFor": "Verify latest Jane Doe report/scheduling text, relief after the final rule and any actual appeal; historical individual relief does not restore extensions nationwide."
+      "detail": "The interim rule ending automatic extensions has applied since October 30, 2025; the October 14 final rule keeps it unchanged and is in effect. The September 11 preliminary injunction protects only the seven people who sued.",
+      "currentSummary": "Rule in force; seven plaintiffs individually protected",
+      "waitingFor": "Later Jane Doe orders and whether the government appeals."
     }
   }
 };

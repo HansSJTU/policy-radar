@@ -476,19 +476,6 @@
 .pd-essentials dd {
   margin: 0;
 }
-/* What was checked and when: secondary to the caveat above it. */
-.pd-review-note {
-  color: var(--pd-muted);
-}
-.pd-essentials .pd-review-note dt {
-  color: var(--pd-muted);
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-.pd-essentials .pd-review-note dd {
-  font-size: 0.875rem;
-  line-height: 1.75;
-}
 .pd-section {
   margin-top: 32px;
   padding-top: 31px;

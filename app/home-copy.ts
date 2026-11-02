@@ -13,9 +13,9 @@ export const homeCopy = {
     past: '过去', now: '现在', expected: '预计', earlierMilestones: (count: number) => `显示更早的 ${count} 条`,
     schoolTitle: 'CPT：哪些学校停了？', schoolIntro: '大多停的是选修课／学分型 CPT，不是所有 CPT。', search: '搜索学校或政策', evidenceAria: 'CPT 学校证据级别',
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
-    noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
+    noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图。Purdue ECE（院系）与 Purdue ISS（全校）分开列出。', verifyPending: '学校还没公开发布',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: `更新于 ${SITE_UPDATED_ON}（美东）。每项的核查范围和缺口写在详情里。预计日期可能因规则修改或诉讼变化而移动。做个人决定前，请复核原始文件并咨询专业人士。`, seedDisclosure: '部分真实评分不足 10 份的政策，社区影响均分里含 10–20 个上线初始化用的模拟样本，评分人数也把它们算在内。这些样本在数据库里单独标记；一项政策满 10 份真实评分后，它的模拟样本不再计入。', top: '回到顶部 ↑',
+    footer: `更新于 ${SITE_UPDATED_ON}（美东）。预计日期可能随规则修改或诉讼变化。做个人决定前，请看原始文件并咨询专业人士。`, seedDisclosure: '部分真实评分不足 10 份的政策，社区影响均分里含 10–20 个上线初始化用的模拟样本，评分人数也把它们算在内。这些样本在数据库里单独标记；一项政策满 10 份真实评分后，它的模拟样本不再计入。', top: '回到顶部 ↑',
   },
   en: {
     brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
@@ -28,8 +28,8 @@ export const homeCopy = {
     past: 'Past', now: 'Now', expected: 'Expected', earlierMilestones: (count: number) => `Show ${count} earlier`,
     schoolTitle: 'CPT: Which schools have paused approvals?', schoolIntro: 'Most pauses concern elective or course-credit CPT, not every form of CPT.', search: 'Search schools or policies', evidenceAria: 'CPT school evidence level',
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
-    noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
+    noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site. Purdue ECE (department) and Purdue ISS (university-wide) are listed separately.', verifyPending: 'Not yet posted by the school',
     viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
-    footer: `Updated ${SITE_UPDATED_ON} (Eastern Time). See individual entries for review scope and gaps. Estimated dates may change. Verify primary sources and obtain professional advice before making individual decisions.`, seedDisclosure: 'For some policies with fewer than 10 genuine ratings, the average and rating count include 10–20 synthetic launch samples. They are marked separately in the database and stop counting once a policy reaches 10 genuine ratings.', top: 'Back to top ↑',
+    footer: `Updated ${SITE_UPDATED_ON} (Eastern Time). Estimated dates may change. Verify primary sources and obtain professional advice before making individual decisions.`, seedDisclosure: 'For some policies with fewer than 10 genuine ratings, the average and rating count include 10–20 synthetic launch samples. They are marked separately in the database and stop counting once a policy reaches 10 genuine ratings.', top: 'Back to top ↑',
   },
 };

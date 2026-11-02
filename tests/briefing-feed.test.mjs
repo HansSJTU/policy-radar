@@ -102,7 +102,7 @@ test('the September 3 briefing records the completed hearing without implying a 
   assert.match(hearing.summary, /留待裁定/);
   assert.match(hearing.summary, /没有当庭裁决/);
   assert.ok(filing);
-  assert.match(filing.summary, /不是法院裁定/);
+  assert.match(filing.summary, /政府提交反对意见/);
   assert.equal(upcoming.some(({ id }) => id === 'duration-injunction-hearing'), false);
 });
 

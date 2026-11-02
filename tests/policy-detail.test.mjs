@@ -153,8 +153,8 @@ test('emphasis markers in detail copy are balanced and never render literally', 
   const { analysis, keyPoint, impacts } = getPolicy('h1b-program-integrity', 'zh');
   assert.ok(keyPoint?.label && keyPoint.text);
   assert.match(keyPoint.text, /\*\*签证和入境审查\*\*/);
-  assert.match(impacts[0].text, /\*\*这三个条件只决定是否进入审查范围，不决定结果\*\*/);
-  assert.match(analysis, /\*\*把裁员写进审查清单，不是给出处理结果\*\*/);
+  assert.match(impacts[0].text, /\*\*这三个条件决定是否进入审查范围\*\*/);
+  assert.match(analysis, /\*\*把裁员写进审查清单，而没有规定处理结果\*\*/);
   // Emphasis on this page stays restrained: one short phrase per section, and
   // nothing else marked.
   const count = (text) => (text.match(/\*\*/g) ?? []).length / 2;
@@ -166,10 +166,10 @@ test('emphasis markers in detail copy are balanced and never render literally', 
 
   const english = getPolicy('h1b-program-integrity', 'en');
   assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
-  assert.match(english.analysis, /\*\*a factor on the review checklist, not an outcome\*\*/);
+  assert.match(english.analysis, /\*\*a factor on the review checklist, without a set outcome\*\*/);
   assert.match(
     english.impacts[0].text,
-    /\*\*These conditions decide only whether a case falls inside the review scope, not the outcome\*\*/,
+    /\*\*These conditions decide whether a case falls inside the review scope\*\*/,
   );
   assert.equal(count(english.analysis), 1);
   assert.equal(count(impactTexts(english.impacts)), 1);

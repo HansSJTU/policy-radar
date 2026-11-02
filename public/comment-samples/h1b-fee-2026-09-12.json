@@ -9090,14 +9090,14 @@
       "stance": "unclear",
       "themes": [],
       "summary": {
-        "zh": "无可供判断的评论正文。",
-        "en": "No comment body is available to determine a position."
+        "zh": "没有评论正文。",
+        "en": "There is no comment text to read a position from."
       },
       "postedDate": "2026-08-26T04:00:00Z",
       "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "sourceNote": {
-        "zh": "未取得评论正文且未列出附件，无法判断立场。",
-        "en": "No comment body was available and no attachments were listed, so stance cannot be determined."
+        "zh": "没有评论正文，也没有附件，看不出立场。",
+        "en": "No comment text and no attachments, so no position can be read."
       }
     },
     {
@@ -9235,8 +9235,8 @@
       "postedDate": "2026-08-31T04:00:00Z",
       "textSha256": "972a2dee3e10de63af2f99daa8419cbe8d49621458a83e8f1db3ebf87d6e0216",
       "sourceNote": {
-        "zh": "官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。",
-        "en": "Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -9296,8 +9296,8 @@
       "postedDate": "2026-08-31T04:00:00Z",
       "textSha256": "9e75b97815ac22f4fcf27ef47c045d8c5e25287f5c616975d0d21db0791ff73b",
       "sourceNote": {
-        "zh": "官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。",
-        "en": "Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -9402,8 +9402,8 @@
       "postedDate": "2026-08-28T04:00:00Z",
       "textSha256": "14d9c2153ea01f75704b811804fac68ef0991ecff42be6233b1861008bdd1f9c",
       "sourceNote": {
-        "zh": "官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。",
-        "en": "Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -10118,8 +10118,8 @@
       "postedDate": "2026-09-01T04:00:00Z",
       "textSha256": "32f544db6bd960adade40fa5f37162346388998097245b800dcb6ae0f17c4208",
       "sourceNote": {
-        "zh": "官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。",
-        "en": "Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -10136,8 +10136,8 @@
       "postedDate": "2026-09-10T04:00:00Z",
       "textSha256": "005481229d1b0098b41c1096468c51f249f7ee1fe2119aaf912cb4ad670f98d0",
       "sourceNote": {
-        "zh": "正文保留未填写的模板提示；分类依据已有论述，未补写缺失内容。",
-        "en": "The body retains an unfilled template prompt; classification uses the supplied arguments without inventing missing content."
+        "zh": "评论里留着没填的模板提示，按已写的内容归类。",
+        "en": "The comment still contains an unfilled template prompt; classified from what was written."
       }
     },
     {
@@ -11382,8 +11382,8 @@
       "postedDate": "2026-09-09T04:00:00Z",
       "textSha256": "005481229d1b0098b41c1096468c51f249f7ee1fe2119aaf912cb4ad670f98d0",
       "sourceNote": {
-        "zh": "正文保留未填写的模板提示；分类依据已有论述，未补写缺失内容。",
-        "en": "The body retains an unfilled template prompt; classification uses the supplied arguments without inventing missing content."
+        "zh": "评论里留着没填的模板提示，按已写的内容归类。",
+        "en": "The comment still contains an unfilled template prompt; classified from what was written."
       }
     },
     {

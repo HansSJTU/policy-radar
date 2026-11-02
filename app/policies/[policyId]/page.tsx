@@ -281,7 +281,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                   </dd>
                 </div>
                 <div>
-                  <dt>{english ? 'Key boundaries' : '关键边界'}</dt>
+                  <dt>{english ? 'Keep in mind' : '要注意'}</dt>
                   <dd>
                     <GlossaryText text={p.caveat} />
                   </dd>
@@ -294,14 +294,6 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     <GlossaryText text={next.text} />
                   </dd>
                 </div>
-                {p.reviewNote && (
-                  <div className="pd-review-note">
-                    <dt>{english ? 'Review scope' : '核查范围'}</dt>
-                    <dd>
-                      <GlossaryText text={p.reviewNote} />
-                    </dd>
-                  </div>
-                )}
               </dl>
               <section id="overview" className="pd-overview pd-section">
                 <div className="pd-section-heading">
@@ -427,8 +419,8 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                       </strong>
                       <p>
                         {english
-                          ? 'Review the program, authorization type and dates.'
-                          : '查看学校、院系与项目记录，核对授权类型和日期。'}
+                          ? 'See what your school, department and program require.'
+                          : '看看你的学校、院系和项目怎么规定。'}
                       </p>
                     </div>
                     <ArrowRight aria-hidden="true" />
@@ -450,14 +442,14 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                 />
                 <p className="pd-analysis-note">
                   {english
-                    ? 'These scenarios are our analysis, not probability rankings. We revise them as evidence changes.'
-                    : '情景为本站推演，不代表概率排序；随新文本与执行证据更新。'}
+                    ? 'These scenarios are our analysis and get updated as new documents come out.'
+                    : '这些情况是本站的推演，会随新文件和实际执行情况更新。'}
                 </p>
                 <details className="pd-scope">
                   <summary>
                     {english
-                      ? 'Which boundaries could change this analysis?'
-                      : '哪些边界会改变上面的判断？'}
+                      ? 'What would change this analysis?'
+                      : '哪些条件会改变上面的判断？'}
                   </summary>
                   <dl>
                     {p.scope.map(({ label, text }) => (
