@@ -23,6 +23,47 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-01",
+    "changes": [
+      {
+        "id": "ead-seven-plaintiff-injunction-text",
+        "category": "#09 EAD 自动延期诉讼",
+        "title": "补入仅救济七名原告的历史初步禁令",
+        "summary": "取得 9·11 录入的第 46 项原文，法院明确不发全国禁令；不能据此认定 10·14 最终规则被暂停。",
+        "before": "已列自动延期取消及 10·14 原样承接的最终规则，未记录 Jane Doe 个案命令正文。",
+        "after": "新增 9·10 签署、9·11 录入的初步禁令、来源、历史时间线和诉讼标记，明确只对七名具名原告救济。中间上诉认证不等于已经上诉；10·14 最终规则后的处理、10·29 报告和 10·30 排期正文未核实。一般规则状态保持已执行，简报按实际 9·11 事件日期和 11·01 取得日期记录。",
+        "sources": [
+          {
+            "label": "Jane Doe order 46 · PDF page 17",
+            "href": "https://www.adhikarilaw.com/wp-content/uploads/2026/09/Jane-Doe-1-v.-United-States-Department-of-Homeland-Security-8-26-cv-00060-C.D.-Cal.-Sep-11-2026-ECF-No.-46_TRO.pdf"
+          },
+          {
+            "label": "Jane Doe public docket",
+            "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc"
+          }
+        ]
+      },
+      {
+        "id": "pcc-depaul-cpt-public-records",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 PCC 与 DePaul 校方 CPT 记录",
+        "summary": "PCC 暂停非必需课程；DePaul 列三类课程结构且须个案审批，不代表任意选修实习恢复。",
+        "before": "73 条记录：69 条校方网页、4 条社区截图；72 所不同学校。",
+        "after": "75 条记录：71 条校方网页、4 条社区截图；74 所不同学校。PCC 通知未标注具体日期；DePaul 就业页标注 9·14，并列灵活项目要求路径，其与另一页面全员必需表述的适用范围须向 ISS 确认。均为新增已存在的公开政策，不是两校今日才改变政策；已有授权及具体项目审批仍有缺口。",
+        "sources": [
+          {
+            "label": "Portland Community College (PCC)",
+            "href": "https://www.pcc.edu/international-students/student-resources/"
+          },
+          {
+            "label": "DePaul University",
+            "href": "https://offices.depaul.edu/global-engagement/student-resources/student-services/Pages/employment.aspx"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-31",
     "changes": [
       {
@@ -1902,6 +1943,47 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-01",
+    "changes": [
+      {
+        "id": "ead-seven-plaintiff-injunction-text",
+        "category": "#09 EAD automatic-extension litigation",
+        "title": "Add historical preliminary injunction limited to seven plaintiffs",
+        "summary": "Order 46 entered September 11 expressly declines nationwide relief; it does not establish that the October 14 final rule is stayed.",
+        "before": "The removal of extensions and unchanged October 14 final rule were tracked without the Jane Doe individual-order text.",
+        "after": "Add the preliminary injunction signed September 10 and entered September 11, its sources, historical milestone and litigation marker, limiting relief to seven named plaintiffs. Interlocutory-appeal certification does not mean an appeal was filed. Post-final-rule treatment and the October 29 report/October 30 scheduling text remain unverified. The general rule remains in force; briefing records the actual September 11 event and November 1 acquisition dates.",
+        "sources": [
+          {
+            "label": "Jane Doe order 46 · PDF page 17",
+            "href": "https://www.adhikarilaw.com/wp-content/uploads/2026/09/Jane-Doe-1-v.-United-States-Department-of-Homeland-Security-8-26-cv-00060-C.D.-Cal.-Sep-11-2026-ECF-No.-46_TRO.pdf"
+          },
+          {
+            "label": "Jane Doe public docket",
+            "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc"
+          }
+        ]
+      },
+      {
+        "id": "pcc-depaul-cpt-public-records",
+        "category": "#05 CPT school tracker",
+        "title": "Add official PCC and DePaul CPT records",
+        "summary": "PCC pauses non-required courses; DePaul lists three program structures with individual review, without reopening arbitrary elective internships.",
+        "before": "73 evidence entries: 69 official university/college pages and four community screenshots; 72 distinct institutions.",
+        "after": "75 evidence entries: 71 official university/college pages and four community screenshots; 74 distinct institutions. PCC’s notice is undated. DePaul labels its employment policy September 14 and lists a flexible program-requirement route; ISS must clarify its scope against the other page’s all-student wording. These are newly tracked historical policies, not changes first made today. Existing approvals and actual program approvals remain gaps.",
+        "sources": [
+          {
+            "label": "Portland Community College (PCC)",
+            "href": "https://www.pcc.edu/international-students/student-resources/"
+          },
+          {
+            "label": "DePaul University",
+            "href": "https://offices.depaul.edu/global-engagement/student-resources/student-services/Pages/employment.aspx"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-10-31",
     "changes": [
