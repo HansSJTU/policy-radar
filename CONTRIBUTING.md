@@ -13,6 +13,7 @@ Contributions to the U.S. Stay Path Policy Radar are welcome.
 - Keep one `status` per language; the home card, path map and detail page all show it.
 - List the primary government document first in `sources`; the detail page links it as the original document.
 - Clearly distinguish final rules, proposed rules, regulatory agenda items, administrative guidance, litigation, and media reports.
+- Write what is true, plainly. Do not list what a source fails to prove or narrate how it was checked (“not verified”, “cannot be generalized”, “text not obtained”); that belongs in the PR description. See `AGENTS.md`.
 - Do not commit personal data, visitor hashes, access logs, secrets, tokens, passwords, or `.env` contents.
 
 ## Development workflow

@@ -11,10 +11,10 @@ test('EAD final rule preserves the operative 2025 cutoff and stays separate from
   assert.equal(h4.effectState, 'not-in-effect');
   assert.match(ead.summary, /Since October 30, 2025/);
   assert.match(ead.summary, /unchanged/);
-  assert.match(ead.caveat, /not retroactively canceled/);
+  assert.match(ead.caveat, /keep the old automatic extension/);
   assert.match(ead.caveat, /STEM OPT/);
   assert.ok(h4.related.includes('ead-auto-extension'));
-  assert.match(h4.background, /distinct from AD14/);
+  assert.match(h4.background, /separate from AD14/);
   assert.match(ead.sources[0].href, /federalregister\.gov\/documents\/2026\/10\/14\/2026-20955\//);
   assert.equal(ead.sources[1].href, 'https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf');
   assert.match(ead.status, /effective October 14/);
@@ -27,8 +27,7 @@ test('deference NPRM is a published proposal with a November 13 comment deadline
   assert.equal(policy.effectState, 'not-in-effect');
   assert.match(policy.status, /Comments due November 13/);
   assert.match(policy.sources[0].href, /federalregister\.gov\/documents\/2026\/10\/14\/2026-20941\//);
-  assert.match(policy.caveat, /does not automatically deny/);
-  assert.match(policy.reviewNote, /91 FR 65119/);
+  assert.match(policy.caveat, /decided on their merits/);
   assert.ok(policy.next.some(({date}) => date === '2026-11-13'));
   assert.ok(policy.next.some(({date}) => date === 'Date unknown'));
   assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-11-13' && e.timing === 'upcoming'));

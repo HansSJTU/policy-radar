@@ -25,8 +25,8 @@ export const h1bReform: PolicyContent = {
     },
     {
       href: 'https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1615-AD00&pubId=202510',
-      zh: '统一议程摘要',
-      en: 'Unified Agenda summary',
+      zh: '统一议程摘要（政府规则计划表）',
+      en: 'Unified Agenda summary (the government’s rulemaking plan)',
     },
     {
       href: 'https://www.uscardforum.com/t/topic/527527',
@@ -35,240 +35,238 @@ export const h1bReform: PolicyContent = {
     },
     {
       "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD00",
-      "zh": "OIRA · 1615-AD00 待审／结案跨记录检索",
-      "en": "OIRA · 1615-AD00 pending/concluded review search"
+      "zh": "OIRA · 1615-AD00 审查记录检索",
+      "en": "OIRA · 1615-AD00 review search"
     }
   ],
   zh: {
-    title: 'H-1B 分类改革：豁免与派驻路径待重审',
-    short: 'H-1B 分类体系改革',
+    title: 'H-1B 改革：免抽签资格和外派岗位要重新审',
+    short: 'H-1B 资格改革',
     status: 'OIRA 审查中 · 尚未生效',
-    effectLabel: '尚未生效 · 正文未公开',
+    effectLabel: '尚未生效 · 提案内容未公开',
     agency: 'DHS / USCIS',
     documentId: '1615-AD00',
-    tldr: 'DHS 打算重新界定 H-1B cap-exempt 资格，并加强对有违规记录雇主和第三方工作地点的审查。具体资格边界和证明要求，要以 NPRM 正文为准。',
+    tldr: 'DHS 打算重新规定哪些雇主可以免抽签（cap-exempt），并加严审查有违规记录的雇主和派到客户那里上班的岗位。提案正在 OIRA 审查，具体内容还没公开。',
     tags: ['H-1B', '第三方派驻', 'Cap-exempt'],
     summary:
-      'DHS 打算重新界定 H-1B 免年度名额限制（cap-exempt）的资格，并加强对有违规记录雇主和第三方工作地点的审查。具体边界和材料要求，要等提案正文。',
-    audience: 'cap-exempt 雇主、第三方派驻人员及有违规记录的企业。',
-    caveat: '议程摘要只给了方向。具体资格边界和证明材料，要等公开提案。',
+      'DHS 打算重新规定 H-1B 免抽签（cap-exempt）的资格，并加严审查有违规记录的雇主，以及员工被派到客户现场工作的情况。具体标准和要交的材料，要等提案公开。',
+    audience: '免抽签的雇主（如大学、研究机构）、被外派到客户现场的员工，以及有违规记录的公司。',
+    caveat: '目前只有政府规则计划表里的一段摘要，具体怎么改要等提案公开。',
     background:
-      'RIN 1615-AD00 在 2026-08-24 送交 OIRA。免抽签资格和费用范围有关联，但这项分类改革和 H-1B 附加费是两条不同的规则。',
-    teaser: '豁免资格与第三方派驻审查若调整，部分岗位的证明成本可能上升。',
-    headline: '免抽签和派驻岗位，可能需要重新证明合规基础。',
+      '这项规则（RIN 1615-AD00）2026-08-24 送交 OIRA 审查。免抽签资格会影响谁要交 #02 的附加费，但这两项是不同的规则。',
+    teaser: '免抽签和外派岗位如果改规，有些工作要证明的东西会多很多。',
+    headline: '免抽签和外派岗位，可能要重新证明自己合格。',
     analysis:
-      '议程涉及三件事：cap-exempt 资格、违规雇主、第三方工作地点审查。如果这些方向写进正式条款，最先感受到的是材料变多、办理变慢。之后才会传导到企业愿意提供哪些岗位。',
+      '计划里有三件事：谁能免抽签、有违规记录的雇主、外派到客户现场的岗位。如果写进正式规则，最先感到的是材料变多、审批变慢，然后才是公司愿意提供哪些岗位。',
     impacts: [
       {
-        title: '对派驻人员：客户现场证据可能更重要',
-        text: '合同、工作地点、岗位职责和实际安排对不对得上，会直接影响案件准备。项目经常变的岗位，协调成本更高。',
+        title: '对外派员工：客户现场的证明更重要',
+        text: '合同、工作地点、岗位职责和实际工作是否一致，会直接影响申请。经常换项目的岗位，准备起来更麻烦。',
         examples: [
-          '小陈是外包公司的员工，工资由外包公司发，但实际在客户那边上班。这次改革重点就是要管这种第三方派驻。如果最终规则要求更详细地说明实际工作地点、项目内容和工作安排，外包公司就得补材料，光拿本公司的雇佣合同可能不够用。不过具体要补什么，现在还没公布。',
-          '小陈还是那个外包公司的员工，但上一个项目结束了，被派到另一家客户那里。发工资的雇主没变，但实际干活的地方和项目换了。如果新规要求第三方派驻要详细说明，那公司可能也得为新项目补材料。具体要怎么做还没公布，所以现在不能说这次换客户就一定得办什么新手续。',
+          '小陈是外包公司的员工，工资由外包公司发，但实际在客户那边上班。这次改革重点就是第三方派驻。如果最终规则要求更详细地说明实际工作地点、项目内容和工作安排，外包公司就得补材料，光有本公司的雇佣合同可能不够。',
+          '小陈还是那个外包公司的员工，上一个项目结束后被派到另一家客户。发工资的雇主没变，但干活的地方和项目换了。如果新规要求详细说明第三方派驻，公司可能也要为新项目补材料。',
         ],
       },
       {
-        title: '对 cap-exempt 路径：需要重新核对资格依据',
-        text: '如果豁免定义改了，机构和岗位之间的关系会成为关键。不能只凭雇主名字就认定以后一定免抽签。',
+        title: '对免抽签的工作：资格要重新确认',
+        text: '如果免抽签的定义改了，机构和岗位是什么关系会变得很关键。现在免抽签的雇主，改规后不一定还免。',
         examples: [
-          '小林看中了一家机构，目前这家机构符合 H-1B 免抽签条件，所以 HR 跟他说这份工作不用参加抽签。但这次改革要重新定义免抽签资格。如果最终标准把这机构排除在外，那它就没法再按原来的条件免抽签了，小林“不用抽签”的想法也得跟着变。具体哪些机构会受影响，得等正式规则出来才知道。',
+          '小林看中了一家机构，目前这家机构符合 H-1B 免抽签条件，HR 跟他说这份工作不用抽签。但这次改革要重新定义免抽签资格；如果最终标准把这家机构排除在外，它就不能再免抽签，小林也得重新打算。',
         ],
       },
       {
-        title: '对企业：合规历史可能影响办理成本',
-        text: '如果对违规记录的审查加强，企业过去的合规问题会变成更多材料、解释和时间成本。',
+        title: '对公司：过去的违规记录会增加成本',
+        text: '如果加严审查违规记录，公司过去的问题会变成更多材料、解释和等待时间。',
         examples: [
-          '小周拿到一家公司的 offer，但这公司以前违反过 H-1B 规定。这次改革要加强对这类雇主的审查，所以公司帮小周提交申请时，过去的违规记录可能会被重点盯着。就算小周本人工资和学历都够，也抵消不了雇主的黑历史。具体审查会严到什么程度，还得等规则正文。',
+          '小周拿到一家公司的 offer，但这家公司以前违反过 H-1B 规定。改革要加强对这类雇主的审查，所以公司为小周提交申请时，过去的违规记录可能被重点审查。小周本人工资和学历再合格，也绕不开雇主的记录。',
         ],
       },
     ],
     outlook:
-      '我们的预判：正式提案出来后，重点比较两件事——资格门槛怎么变，证明材料要多多少。前者可能改变你能走哪条路，后者会让原来的路更贵、更慢。',
+      '我们的判断：提案公开后，重点看两件事——资格门槛怎么变、要多交多少材料。前者决定你能不能走这条路，后者决定这条路贵不贵、慢不慢。',
     scenarios: [
       {
-        name: '豁免边界收紧',
-        headline: '部分免抽签安排可能需要重评',
-        assumption: 'NPRM 提高或重新界定 cap-exempt 资格条件。',
+        name: '免抽签范围收紧',
+        headline: '部分免抽签的工作要重新评估',
+        assumption: '提案提高或重新规定免抽签的条件。',
         effects:
-          '依赖特定机构关系的职位可能要补强依据；有些人会重新评估还能不能走免抽签。',
-        signals: '豁免定义、关联关系要求，以及现有案件怎么过渡。',
+          '靠和大学等机构合作而免抽签的岗位要补证明；有人会重新考虑还能不能走免抽签。',
+        signals: '免抽签的新定义、对合作关系的要求，以及在办案件怎么处理。',
       },
       {
-        name: '派驻证明增加',
-        headline: '同一岗位也可能需要更多准备时间',
-        assumption: '提案保留这条路径，但提高第三方地点的证明要求。',
+        name: '外派证明加码',
+        headline: '同样的岗位，准备时间更长',
+        assumption: '外派仍然可以，但对客户现场的证明要求提高。',
         effects:
-          '企业和客户之间的文件协调会变慢，项目频繁变更的用工模式受影响更大。',
-        signals: '工作地点、合同、监督关系和检查要求的具体条文。',
+          '公司和客户之间来回准备文件会更慢，经常换项目的用工方式受影响最大。',
+        signals: '关于工作地点、合同、谁来管理员工和现场检查的具体条文。',
       },
       {
         name: '改革范围缩小',
-        headline: '主要变化可能集中在执法与材料层面',
-        assumption: '最终公开的内容比议程方向更窄。',
-        effects: '对多数规范雇主的资格影响有限，但材料准备和合规管理仍会增加。',
-        signals: 'NPRM 和议程摘要的逐项差异，以及后续的评论回应。',
+        headline: '主要是加强执法、多交材料',
+        assumption: '公开的提案比计划表里写的范围窄。',
+        effects: '守规矩的雇主资格基本不受影响，但准备材料和合规工作还是会增加。',
+        signals: '提案和计划表摘要逐条对比，以及之后 DHS 对评论的回应。',
       },
     ],
     scope: [
       {
-        label: '关注对象',
-        text: 'Cap-exempt 雇主、第三方派驻及有违规记录的企业。',
+        label: '涉及谁',
+        text: '免抽签的雇主、外派到客户现场的员工，以及有违规记录的公司。',
       },
       {
-        label: '当前依据',
-        text: '议程摘要只说方向；正式资格边界要看公开文本。',
+        label: '现在知道多少',
+        text: '只有计划表里的方向；具体标准要看提案原文。',
       },
       {
-        label: '与附加费关系',
-        text: '免抽签资格和费用范围相关，但是两条不同的规则。',
+        label: '和附加费的关系',
+        text: '免抽签资格决定谁不用交 #02 的附加费，但两者是不同的规则。',
       },
     ],
     milestones: [
-      { date: '2025-10 议程', text: 'DHS 首次较清楚披露改革方向。' },
-      { date: '2026-08-24', text: '拟议规则送交 OIRA，进入发布前审查。' },
+      { date: '2025-10 议程', text: 'DHS 在规则计划表里写明改革方向。' },
+      { date: '2026-08-24', text: '提案送交 OIRA 审查。' },
     ],
     next: [
       {
         "date": "日期未定",
-        "text": "等待 OIRA 审查结论及公开 NPRM；议程原 8 月目标已经过去，未确认新的发布日期。"
+        "text": "OIRA 审完、DHS 公开提案；原定 8 月，新日期还没公布。"
       },
       {
         "date": "日期未定",
-        "text": "后续评论、最终规则及诉讼安排须以正式文件为准，具体年份未确认。",
+        "text": "提案公开后先征求公众意见，之后才是最终规则。",
         "estimate": true
       }
     ],
     process: {
-      detail: '拟议规则处于 OIRA 发布前审查，正文尚未公开。',
-      currentSummary: 'OIRA 发布前审查',
-      waitingFor: 'OIRA 完成审查及 DHS 公开提案；尚无确认发布日期。',
+      detail: '提案正在 OIRA 审查，内容还没公开。',
+      currentSummary: 'OIRA 审查中',
+      waitingFor: 'OIRA 审完，DHS 公开提案。',
     },
-    reviewNote: "11·01 重读 OIRA 送审记录、议程；已读取的送审记录仍列 8·24 收件、提案待审。联邦公报 RIN 查询未列公开文件。具体条款、发布日期及后续完整部门说明仍未确认，不能把审查中写成已经生效。同 RIN 的待审／结案检索仅列 8·24 收件的待审提案。",
   },
   en: {
     title:
-      'H-1B Classification Reform: Exemptions and Third-Party Placements Under Review',
-    short: 'H-1B Classification Reform',
+      'H-1B Reform: Cap-Exempt Status and Client-Site Jobs Under Review',
+    short: 'H-1B Eligibility Reform',
     status: 'Under OIRA review · Not in effect',
-    effectLabel: 'Not in effect · Text unpublished',
+    effectLabel: 'Not in effect · Proposal not yet public',
     agency: 'DHS / USCIS',
     documentId: '1615-AD00',
-    tldr: 'DHS plans to redefine eligibility for cap-exempt H-1B petitions and increase scrutiny of employers with compliance violations and third-party worksites. The precise eligibility lines and evidence requirements will not be known until the NPRM is public.',
+    tldr: 'DHS plans to redefine which employers can skip the H-1B lottery (cap-exempt) and to scrutinize employers with past violations and jobs placed at client sites more closely. The proposal is under OIRA review and its text is not public yet.',
     tags: ['H-1B', 'Third-party placement', 'Cap-exempt'],
     summary:
-      'DHS plans to redefine H-1B cap-exempt eligibility and increase scrutiny of employers with program violations and third-party worksites. The precise eligibility boundaries and evidence requirements await the published proposal.',
+      'DHS plans to redefine who qualifies as cap-exempt for H-1B and to look harder at employers with past violations and at workers placed at client sites. The exact standards and paperwork will be known once the proposal is published.',
     audience:
-      'cap-exempt employers, workers at third-party sites and employers with violation records.',
+      'Cap-exempt employers (such as universities and research institutes), workers placed at client sites, and companies with past violations.',
     caveat:
-      'The agenda gives direction only; eligibility boundaries and evidence requirements await the public proposal.',
+      'So far there is only a short summary in the government’s rulemaking plan; the details will come with the published proposal.',
     background:
-      'RIN 1615-AD00 entered OIRA review on August 24, 2026. Exemption eligibility relates to fee coverage, but classification reform and the H-1B surcharge are separate rules.',
+      'The rule (RIN 1615-AD00) went to OIRA for review on August 24, 2026. Cap-exempt status affects who pays the #02 surcharge, but they are separate rules.',
     teaser:
-      'Changes to exemption eligibility and third-party placement review could increase the cost of proving some roles qualify.',
+      'If the rules for cap-exempt and client-site jobs change, some jobs will need a lot more proof.',
     headline:
-      'Cap-exempt and placement-based roles may need to reestablish their compliance basis.',
+      'Cap-exempt and client-site jobs may have to prove again that they qualify.',
     analysis:
-      'The agenda addresses cap-exempt eligibility, noncompliant employers, and scrutiny of third-party worksites. If those directions become formal provisions, the first effects may be heavier evidence burdens and longer processing, followed by changes in the roles employers are willing to offer.',
+      'The plan covers three things: who can be cap-exempt, employers with past violations and jobs placed at client sites. If they become rules, the first effect will be more paperwork and slower approvals; changes in which jobs companies offer would follow.',
     impacts: [
       {
-        title: 'For placed workers: client-site evidence may matter more',
-        text: 'Consistency among contracts, worksites, duties, and actual arrangements may become more important to case preparation. Roles with frequent project changes could face higher coordination costs.',
+        title: 'For workers at client sites: proof about the client site matters more',
+        text: 'Whether the contract, worksite, duties and actual work line up will directly affect the petition. Jobs that change projects often will be harder to document.',
         examples: [
-          'Chen is employed and paid by a staffing company but works at a client. The reform targets third-party placements, potentially bringing closer review of the location, project, and actual arrangement. If the final rule adds evidence requirements, the employer would need to supply them rather than rely only on its employment contract. The specific new documents have not been announced.',
-          'Chen remains with the same staffing employer but moves to a new client after a project ends. Because the reform targets the placement arrangement rather than only the payroll employer, a final requirement for fuller project evidence could also matter for that assignment. This illustrates possible preparation needs, not a confirmed requirement for a new type of filing.',
+          'Chen is employed and paid by a staffing company but works at a client. The reform targets third-party placements. If the final rule requires more detail on the actual worksite, project and arrangement, the staffing company would have to supply it; its own employment contract may not be enough.',
+          'Chen stays with the same staffing employer but moves to a new client after a project ends. The payroll employer is unchanged, but the worksite and project are new. If the rule requires fuller evidence for third-party placements, the company may need to document the new assignment too.',
         ],
       },
       {
-        title: 'For cap-exempt paths: eligibility grounds need a fresh review',
-        text: 'If exemption definitions change, the relationship between an institution and a role may become decisive. An employer’s name alone cannot establish that a future filing will remain cap-exempt.',
+        title: 'For cap-exempt jobs: eligibility needs rechecking',
+        text: 'If the definition changes, the institution’s relationship to the job becomes key. An employer that is cap-exempt today may not be after the change.',
         examples: [
-          'An organization currently qualifies for an H-1B cap exemption, so HR tells Lin the job does not require annual cap selection. The reform plans to revise that eligibility. If the final definition excludes the organization, it cannot continue relying on the old qualification. That could change Lin’s expectations, although the unpublished text does not yet identify the affected organizations.',
+          'An organization currently qualifies for an H-1B cap exemption, so HR tells Lin the job does not require cap selection. The reform plans to redefine that eligibility. If the final definition excludes the organization, it can no longer file cap-exempt, and Lin would need a new plan.',
         ],
       },
       {
-        title: 'For employers: compliance history may affect filing costs',
-        text: 'If review of violations intensifies, past compliance problems may produce more documentation, explanation, and delay.',
+        title: 'For companies: past violations raise costs',
+        text: 'If past violations get more scrutiny, a company’s history turns into more paperwork, more explaining and more waiting.',
         examples: [
-          'Zhou’s prospective employer has previously violated H-1B program requirements. The reform explicitly proposes closer scrutiny of employers with that history, which could affect the petition filed for Zhou. The concern comes from employer compliance, even if Zhou’s salary and qualifications are suitable. The detailed review standards remain unpublished.',
+          'Zhou’s prospective employer has previously violated H-1B program requirements. The reform proposes closer scrutiny of employers with that history, which could affect the petition filed for Zhou. Zhou’s own salary and qualifications do not offset the employer’s record.',
         ],
       },
     ],
     outlook:
-      'Our outlook: when a formal proposal appears, the key comparison will be between changes to eligibility and added proof requirements. The former could alter available paths; the latter could raise the cost of using existing ones.',
+      'Our view: once the proposal is out, look at two things: how the eligibility bar changes and how much more paperwork is required. The first decides whether a path is open to you; the second, how costly and slow it is.',
     scenarios: [
       {
-        name: 'Exemption boundary narrows',
-        headline: 'Some cap-exempt arrangements may need reassessment',
+        name: 'Cap-exempt status narrowed',
+        headline: 'Some cap-exempt jobs need a second look',
         assumption:
-          'The NPRM raises or redefines cap-exempt eligibility requirements.',
+          'The proposal raises or redefines the cap-exempt requirements.',
         effects:
-          'Roles relying on particular institutional relationships may need stronger support. Some job seekers may reassess whether the cap-exempt path remains available.',
+          'Jobs that are cap-exempt through ties to a university or similar institution would need more proof; some job seekers will rethink whether that path is still open.',
         signals:
-          'Exemption definitions, affiliation requirements, and transition terms for current cases.',
+          'The new definition, what affiliation is required and how pending cases are handled.',
       },
       {
         name: 'More placement evidence',
-        headline: 'The same role may require more preparation time',
+        headline: 'The same job takes longer to prepare',
         assumption:
-          'The proposal preserves the pathway but raises evidence requirements for third-party sites.',
+          'Client-site placements stay allowed, but proof requirements go up.',
         effects:
-          'Document coordination between employers and clients may slow, and work models with frequent project changes may be more affected.',
+          'Paperwork between the employer and the client slows down, and staffing models with frequent project changes are hit hardest.',
         signals:
-          'Specific provisions on worksites, contracts, supervision, and inspections.',
+          'The specific rules on worksites, contracts, who supervises the worker and site inspections.',
       },
       {
         name: 'Reform scope narrows',
-        headline: 'Most changes may focus on enforcement and documentation',
+        headline: 'Mostly more enforcement and paperwork',
         assumption:
-          'The public proposal is narrower than the direction described in the agenda.',
+          'The published proposal is narrower than the plan described.',
         effects:
-          'Eligibility effects may be limited for most compliant employers, while document preparation and compliance management could still increase.',
+          'Compliant employers keep their eligibility, but paperwork and compliance work still increase.',
         signals:
-          'A provision-by-provision comparison of the NPRM and agenda summary, followed by responses to comments.',
+          'A line-by-line comparison of the proposal with the plan summary, then DHS’s response to comments.',
       },
     ],
     scope: [
       {
-        label: 'Focus populations',
-        text: 'Cap-exempt employers, third-party placements, and companies with compliance violations.',
+        label: 'Who it affects',
+        text: 'Cap-exempt employers, workers placed at client sites and companies with past violations.',
       },
       {
-        label: 'Current basis',
-        text: 'The agenda summary describes the direction; public text is needed to establish formal eligibility boundaries.',
+        label: 'What we know now',
+        text: 'Only the direction in the rulemaking plan; the exact standards will be in the proposal.',
       },
       {
-        label: 'Relationship to surcharge',
-        text: 'Cap-exempt eligibility relates to fee coverage but belongs to a separate rule.',
+        label: 'Link to the surcharge',
+        text: 'Cap-exempt status decides who skips the #02 surcharge, but they are separate rules.',
       },
     ],
     milestones: [
       {
         date: 'October 2025 agenda',
-        text: 'DHS first described the reform direction in relatively specific terms.',
+        text: 'DHS described the reform in its rulemaking plan.',
       },
       {
         date: '2026-08-24',
-        text: 'The proposed rule entered OIRA prepublication review.',
+        text: 'The proposal went to OIRA for review.',
       },
     ],
     next: [
       {
         "date": "Date unknown",
-        "text": "Await the OIRA conclusion and a public NPRM; the agenda’s August target has passed, with no confirmed new publication date."
+        "text": "OIRA finishes review and DHS publishes the proposal; it was planned for August and no new date has been announced."
       },
       {
         "date": "Date unknown",
-        "text": "Later comments, final rulemaking and litigation depend on published records; no specific year is confirmed.",
+        "text": "Once published, the proposal opens for public comment before any final rule.",
         "estimate": true
       }
     ],
     process: {
       detail:
-        'The proposed rule is in OIRA prepublication review. Its text is not yet public.',
-      currentSummary: 'OIRA prepublication review',
+        'The proposal is under OIRA review; its text is not public yet.',
+      currentSummary: 'Under OIRA review',
       waitingFor:
-        'Completion of OIRA review and publication of the DHS proposal; no publication date is confirmed.',
+        'OIRA finishes review and DHS publishes the proposal.',
     },
-    reviewNote: "On November 1, the OIRA submission and agenda were reviewed. The retrieved review record still lists the August 24 proposal as pending. The Federal Register RIN query lists no published record. Terms, publication timing and complete subsequent agency instructions remain unconfirmed; review is not implementation. The pending/concluded RIN search lists only the proposal received August 24 as pending.",
   },
 };

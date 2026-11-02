@@ -115,7 +115,7 @@ test('NYU public evidence is limited to Tandon Mathematics and retains no fabric
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
   assert.equal(nyu.href, 'https://math.nyu.edu/dynamic/sites/tandon/internships/');
-  assert.match(nyu.detail, /不外推 NYU 全校/);
+  assert.match(nyu.detail, /仅限 Tandon 数学系/);
   assert.equal(communitySchools.some(({ school }) => school.startsWith('New York University')), false);
 });
 

@@ -59,9 +59,9 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
         '机构拟定规则，或将项目列入统一议程。',
         'OIRA 在提案公开前审查规则。',
         '机构在 Federal Register 发布 NPRM，公开拟议文本。',
-        '公众提交意见，机构收集并审阅意见。评论期结束不等于规则生效。',
+        '公众提交意见，机构审阅。评论截止后，还要发最终规则才会生效。',
         '机构发布最终规则，说明采纳的文本、对意见的回应和生效安排。',
-        '规则到达生效日期并开始适用；如有法院暂缓或禁令，需另行核对。',
+        '规则到了生效日期开始适用；法院的暂缓或禁令可以让它暂停。',
       ],
     },
     en: {
@@ -81,9 +81,9 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
         'The agency drafts the rule or lists it in the Unified Agenda.',
         'OIRA reviews the proposal before publication.',
         'The agency publishes the proposed text as an NPRM in the Federal Register.',
-        'The public submits comments and the agency reviews them. Closing comments does not make the rule effective.',
+        'The public comments and the agency reviews them. A final rule still has to follow before anything takes effect.',
         'The agency publishes the final text, responses to comments and effective-date arrangements.',
-        'The rule reaches its effective date and begins to apply, subject to any court stay or injunction.',
+        'The rule takes effect on its start date; a court stay or injunction can pause it.',
       ],
     },
   },
@@ -93,12 +93,12 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       name: 'SEVP 行政指引流程',
       meaning:
         'SEVP／ICE 用 Broadcast、FAQ 这类材料解释现行规则，由学校和 DSO 直接落实。它不改 CFR，所以通常没有 NPRM、公众评论和最终规则这几步。执行可以很快，但法律层级低于正式法规。',
-      stages: ['风险通知', '口径细化', '学校执行', '执法观察', '后续指引'],
+      stages: ['风险通知', '细化标准', '学校执行', '执法观察', '后续指引'],
       descriptions: [
         'SEVP 发布合规风险通知。',
         'SEVP 通过指引进一步解释现行规则。',
         '学校与 DSO 将指引落实到具体授权。',
-        '继续观察检查与实际执法口径。',
+        '观察实际检查和执法情况。',
         '关注 SEVP 是否进一步补充或调整指引。',
       ],
     },
@@ -132,8 +132,8 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       stages: ['总统签署', '部门落实', '执行跟踪'],
       descriptions: [
         '总统签署行政命令，向部门作出指令；这一步没有 NPRM 或公众评论期。',
-        '国务院、劳工部与 DHS 在法律权限内落实跨部门协作和裁员审查要求；命令要求劳工部在 30 天内开始复查既往 LCA 数据，具体执行文件仍需跟踪。',
-        '核对部门发布的执行文件、实际审查与执法情况，以及是否出现后续规则或法院命令。',
+        '国务院、劳工部和 DHS 在现有权限内落实跨部门协作和裁员审查；劳工部要在 30 天内开始复查以前提交的 LCA。',
+        '看各部门的执行文件、实际审查和执法情况，以及有没有新的规则或法院命令。',
       ],
     },
     en: {
@@ -148,8 +148,8 @@ const processKinds: Record<ProcessKind, Record<Language, ProcessKindCopy>> = {
       ],
       descriptions: [
         'The President signs an order directing agencies; this step has no NPRM or public-comment period.',
-        'State, DOL and DHS implement coordination and layoff-review directives within their legal authority. DOL must begin reviewing prior LCA data within 30 days; specific implementation documents still need tracking.',
-        'Check agency implementation documents, actual review and enforcement practices, and any later regulations or court orders.',
+        'State, DOL and DHS carry out the coordination and layoff-review instructions within their existing powers. DOL must start re-checking past LCAs within 30 days.',
+        'Watch agency documents, how cases are actually reviewed and enforced, and any new regulations or court orders.',
       ],
     },
   },
@@ -212,8 +212,8 @@ export function getProcessStageLabel(
   return index === track.nextStage
     ? english
       ? 'Next · Not yet reached'
-      : '下一节点 · 尚未发生'
+      : '下一步 · 还没发生'
     : english
       ? 'Not yet reached'
-      : '尚未发生';
+      : '还没发生';
 }

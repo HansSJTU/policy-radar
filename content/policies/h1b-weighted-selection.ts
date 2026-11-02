@@ -37,96 +37,95 @@ export const h1bWeightedSelection: PolicyContent = {
     effectLabel: '已生效 · 2026-02-27',
     agency: 'DHS / USCIS',
     documentId: '1615-AD01',
-    tldr: 'USCIS 已经把 cap-subject H-1B 的等概率随机抽签，改成按工资等级加权：Level I、II、III、IV 分别获得 1、2、3、4 份权重。规则 2026-02-27 生效，从 FY2027 注册季开始使用。',
+    tldr: 'H-1B 抽签不再人人机会均等，改为按工资等级加权：Level I、II、III、IV 分别进池 1、2、3、4 次。规则 2026-02-27 生效，从 FY2027 抽签季开始用。',
     tags: ['OPT → H-1B', 'H-1B 抽签', 'Cap-subject'],
     summary:
-      'USCIS 已经把受年度名额限制的 H-1B 等概率抽签，改为按工资等级加权：Level I、II、III、IV 分别获得 1、2、3、4 份权重。权重不等于固定的个人中签率。',
-    audience: '参加 cap-subject H-1B 注册的申请人，以及为这些岗位申报的雇主。',
-    caveat: '拿到 1—4 份权重不等于你个人的中签率，也不会直接抬高法定工资门槛。',
+      '要抽签的 H-1B 不再人人机会均等，改为按工资等级加权：Level I、II、III、IV 分别进池 1、2、3、4 次。规则 2026-02-27 生效，从 FY2027 抽签季开始用。',
+    audience: '参加 H-1B 抽签的人，以及为他们注册的雇主。',
+    caveat: '进池次数多，中签机会更大，但实际中签率要看当年报名的人有多少、分布如何。这项规则只改抽签方式，不提高雇主必须支付的最低工资。',
     background:
-      'DHS 在 2025-12-29 发布 RIN 1615-AD01 最终规则，2026-02-27 生效，从 FY2027 注册季开始使用。USCIS 按职位对应的 OEWS 工资等级给出 1 到 4 份抽签权重。规则保留以受益人为中心的选择方式，普通名额和美国高学历名额的先后顺序也不变。',
-    teaser: '工资等级影响抽签权重，入门岗位与较高等级岗位不再处于相同起点。',
-    headline: '岗位对应的工资等级，已经成为抽签机会的一部分。',
+      'DHS 2025-12-29 发布最终规则（RIN 1615-AD01），2026-02-27 生效，从 FY2027 抽签季开始用。USCIS 按岗位对应的 OEWS 工资等级，让每人进池 1 到 4 次。每人仍只算一个人（不论有几家雇主为他注册），普通名额和美国硕士名额的抽签顺序也不变。',
+    teaser: '工资等级决定进池次数，入门岗位和高等级岗位不再站在同一起跑线。',
+    headline: '岗位的工资等级，现在直接影响抽签机会。',
     analysis:
-      '工资加权把岗位条件和抽签机会绑得更紧。入门级职位的毕业生，要把选工作和选身份路径放在一起考虑。但权重只是一种机制，不能直接当成个人的中签概率。',
+      '加权抽签把岗位条件和中签机会绑在一起。拿入门级 offer 的毕业生，选工作时要同时考虑抽签。',
     impacts: [
       {
-        title: '对毕业生：第一份工作的岗位结构更重要',
-        text: '入门职位通常对应 Level I，权重最低。更有经验、对应更高等级的职位占优。但只看年薪高低，判断不出属于哪个等级。',
+        title: '对毕业生：第一份工作的工资等级更重要',
+        text: '入门职位通常是 Level I，只进池 1 次；要求更多经验、等级更高的职位占优。不过只看年薪高低，看不出是哪个等级。',
         examples: [
-          '小林和小陈都交了 H-1B 抽签申请，但小林的工资属于 Level I，小陈属于 Level IV。新规按工资等级给抽签权重，所以小林拿 1 份权重，小陈拿 4 份。权重高不代表一定能中，也不能直接算出每个人具体的中签概率。',
+          '小林和小陈都报了 H-1B 抽签，小林的工资属于 Level I，小陈属于 Level IV。小林进池 1 次，小陈进池 4 次；最后中不中，还要看当年有多少人报名。',
         ],
       },
       {
-        title: '对 offer 比较：职业与地点不能省略',
-        text: '工资等级看的是具体职业和工作地点。跨地区、跨岗位直接比薪资数字，很容易算错抽签优势。',
+        title: '比较 offer 时：同样年薪，等级可能不同',
+        text: '工资等级看的是具体职业和工作地点。跨城市、跨岗位直接比工资数字，很容易算错抽签优势。',
         examples: [
-          '小李接到两份年薪都是 10 万的工作，但岗位不一样，城市也不一样。工资等级要看具体职业和地区的工资数据，所以这两份 offer 可能分属不同等级。新规是按等级来分配权重的，也就是说，同样年薪不一定能拿到同样的抽签机会。',
-          '小陈想通过加薪来提高 H-1B 中签率。因为新规按工资等级分配权重，所以他得搞清楚一件事：加薪后能不能升到更高的等级？如果涨完还在原来的等级，那这次加薪对抽签权重没有任何影响。',
+          '小李拿到两份年薪都是 10 万的 offer，岗位不同，城市也不同。工资等级按职业和地区的工资数据算，所以这两份 offer 可能属于不同等级；同样年薪，进池次数可能不一样。',
+          '小陈想靠加薪提高中签机会。关键是加薪后能不能升到更高等级；如果涨完还在原来的等级，进池次数不变。',
         ],
       },
       {
-        title: '对雇主：工资、职责与申报要能相互支持',
-        text: '企业会更看重岗位和工资数据对不对得上。为了拿更高权重去改岗位标签，代替不了真实职责和合规申报。',
+        title: '对雇主：工资等级要和真实职责对得上',
+        text: '企业会更注意岗位和工资数据是否一致。等级要对应真实职责，申报必须如实。',
       },
     ],
     outlook:
-      '我们的判断：高等级的相对优势会持续。但优势最后能变成多少机会，还要看当季的申请池。如果新的费用或工资门槛也落地，雇主的预算压力可能抵消一部分这种优势。',
+      '我们的判断：高等级的优势会一直存在，但能换来多少中签机会，要看每年报名的人。如果新收费或更高的工资门槛也落地，雇主的预算压力会抵消一部分优势。',
     scenarios: [
       {
-        name: '现行机制延续',
-        headline: '较高工资等级继续具有相对优势',
-        assumption: '规则保持不变，申请结构没有明显变化。',
+        name: '现行抽签方式不变',
+        headline: '高工资等级继续占优',
+        assumption: '规则不变，报名人群也没有明显变化。',
         effects:
-          'Level I 的人会更看重岗位成长和下一轮申请机会；权重高也不保证入选。',
-        signals: 'USCIS 下一季注册说明和实际选择数据。',
+          'Level I 的人会更看重岗位晋升，以及下一年再抽的机会。',
+        signals: 'USCIS 下一季的注册说明和实际抽中数据。',
       },
       {
-        name: '申请结构变化',
-        headline: '同一等级的实际机会也可能变化',
-        assumption: '高等级申请的人数占比上升，或者总申请人数明显变化。',
+        name: '报名人群变化',
+        headline: '同一等级的中签机会也会变',
+        assumption: '高等级报名的比例上升，或者总报名人数明显变化。',
         effects:
-          '抽签池变了，个人机会就变。上一年的估算或结果，不能直接当成下一年的固定概率。',
-        signals: '按等级划分的申请分布、当季名额和选择轮次。',
+          '抽签池变了，个人机会就跟着变；上一年的结果只能当参考。',
+        signals: '各等级的报名人数、当年名额和抽签轮数。',
       },
       {
-        name: '叠加新成本',
-        headline: '抽签更有利，不一定代表更容易获得担保',
-        assumption: '新的 H-1B 费用或更高的法定工资门槛落地。',
+        name: '再加上新的成本',
+        headline: '抽签占优，不代表雇主更愿意担保',
+        assumption: '新的 H-1B 收费或更高的最低工资要求落地。',
         effects:
-          '有些雇主可能因为成本减少申请。岗位的抽签优势，和企业的支付意愿可能对不上。',
+          '有些雇主会因为成本少报几个人。抽签占优的岗位，雇主也不一定愿意出这笔钱。',
         signals: '收费和工资规则的最终文本，以及企业的担保政策。',
       },
     ],
     scope: [
-      { label: '适用范围', text: 'Cap-subject H-1B 注册与选择机制。' },
-      { label: '权重与概率', text: '1—4 份权重不等于固定的个人中签率。' },
+      { label: '适用范围', text: '要抽签的 H-1B 注册和抽签。' },
+      { label: '进池次数和中签率', text: '进池次数决定相对优势；实际中签率每年随报名人数变化。' },
       {
-        label: '另一项工资规则',
-        text: '这项选择机制本身不提高职位必须支付的法定工资门槛。',
+        label: '工资门槛是另一项规则',
+        text: '这项规则只改抽签方式，不改雇主必须支付的最低工资（见 #06）。',
       },
     ],
     milestones: [
-      { date: '2025-09-24', text: 'DHS 发布工资等级加权抽签 NPRM。' },
+      { date: '2025-09-24', text: 'DHS 公布工资加权抽签提案。' },
       {
         date: '2025-12-29',
-        text: '最终规则发布，保留提案中的 Level I 至 IV 四档权重。',
+        text: '最终规则发布，保留 Level I 至 IV 分别进池 1 到 4 次。',
       },
-      { date: '2026-02-27', text: '规则生效，并适用于 FY2027 H-1B 注册季。' },
+      { date: '2026-02-27', text: '规则生效，FY2027 H-1B 抽签开始使用。' },
     ],
     next: [
       {
         "date": "日期未定",
-        "text": "USCIS 将继续按职位、工作地点和申报工资对应的 OEWS 等级进行加权选择，除非规则日后被修改。"
+        "text": "下一个抽签季继续按工资等级加权。"
       }
     ],
     process: {
       detail:
-        'DHS 已完成 NPRM、公众评论和最终规则阶段。规则自 2026-02-27 生效，并从 FY2027 H-1B 注册季开始使用工资等级加权选择。',
-      currentSummary: '最终规则已生效并开始执行',
+        'DHS 已走完提案、公众评论和最终规则。规则 2026-02-27 生效，从 FY2027 抽签季开始按工资等级加权。',
+      currentSummary: '最终规则已生效',
       waitingFor: null,
     },
-    reviewNote: "11·01 重读最终规则及 USCIS cap-season 页，确认 FY2027 起使用 IV／III／II／I 分别 4／3／2／1 次入池。联邦公报 RIN 检索仍列原提案及最终规则。完整工资等级数据、个人中签概率及后续诉讼未完整核实。",
   },
   en: {
     title: 'H-1B Selection Now Weights Wage Levels',
@@ -135,119 +134,118 @@ export const h1bWeightedSelection: PolicyContent = {
     effectLabel: 'In effect · February 27, 2026',
     agency: 'DHS / USCIS',
     documentId: '1615-AD01',
-    tldr: 'USCIS replaced equal-probability selection for cap-subject H-1B cases with a wage-level-weighted process. Wage Levels I, II, III, and IV receive one, two, three, and four entries respectively. The rule took effect on February 27, 2026 and applies beginning with the FY 2027 registration season.',
+    tldr: 'The H-1B lottery no longer gives everyone the same odds. Entries now depend on wage level: Levels I, II, III and IV go into the pool 1, 2, 3 and 4 times. The rule took effect February 27, 2026 and applies from the FY 2027 lottery.',
     tags: ['OPT → H-1B', 'H-1B selection', 'Cap-subject'],
     summary:
-      'USCIS has replaced equal-chance cap-subject H-1B selection with wage-level weighting: Levels I, II, III and IV receive 1, 2, 3 and 4 entries, respectively. These weights do not translate into fixed individual selection probabilities.',
+      'The H-1B lottery no longer gives everyone equal odds: Levels I, II, III and IV now go into the pool 1, 2, 3 and 4 times. The rule took effect February 27, 2026 and applies from the FY 2027 lottery.',
     audience:
-      'cap-subject H-1B registrants and employers reporting the offered position.',
+      'People entering the H-1B lottery and the employers registering them.',
     caveat:
-      'One to four weights are not individual selection probabilities and do not themselves raise the required wage floor.',
+      'More entries mean better odds, but actual odds depend on how many people register that year and at which levels. The rule changes only the lottery, not the minimum wage employers must pay.',
     background:
-      'DHS published the RIN 1615-AD01 final rule on December 29, 2025; it took effect on February 27, 2026 and applies beginning with the FY 2027 registration season. USCIS assigns one to four entries according to the position’s OEWS wage level. The rule retains beneficiary-centric selection and the existing order for regular and U.S. advanced-degree allocations.',
+      'DHS published the final rule (RIN 1615-AD01) on December 29, 2025; it took effect February 27, 2026 and applies from the FY 2027 lottery. USCIS enters each person 1 to 4 times based on the job’s OEWS wage level. Each person still counts once no matter how many employers register them, and the order of the regular and U.S. master’s draws is unchanged.',
     teaser:
-      'Wage level affects selection weight, so entry-level and higher-level roles no longer start on equal footing.',
+      'Your wage level sets how many times you are entered, so entry-level and senior roles no longer start even.',
     headline:
-      'The wage level assigned to a role is now part of its selection chances.',
+      'Your job’s wage level now directly affects your lottery odds.',
     analysis:
-      'Wage weighting ties job conditions more closely to selection chances. For graduates in entry-level roles, employment choices and immigration strategy now need to be assessed together. Weight is a mechanism, however, and does not directly state an individual probability of selection.',
+      'The weighted lottery links the job you take to your odds. Graduates with entry-level offers now have to think about the lottery when choosing a job.',
     impacts: [
       {
-        title: 'For graduates: the structure of the first job matters more',
-        text: 'An entry-level role assigned Level I receives less weight. Roles requiring more experience or assigned higher levels have a relative advantage, but annual salary alone does not determine the level.',
+        title: 'For graduates: your first job’s wage level matters more',
+        text: 'Entry-level jobs are usually Level I and get one entry; roles needing more experience, at higher levels, have the edge. Salary alone does not tell you the level.',
         examples: [
-          'Lin and Chen enter H-1B selection with jobs at wage Levels I and IV respectively. The new system assigns one selection weight to Lin and four to Chen instead of equal weights. Chen’s higher level gives more weight but does not guarantee selection or directly establish either person’s individual probability.',
+          'Lin and Chen both register for the H-1B lottery, Lin at wage Level I and Chen at Level IV. Lin is entered once and Chen four times; whether either is picked still depends on how many people register that year.',
         ],
       },
       {
-        title: 'When comparing offers: occupation and location matter',
-        text: 'Wage level depends on the specific occupation and work location. Comparing salary numbers across regions and roles can produce the wrong conclusion about selection advantage.',
+        title: 'Comparing offers: same salary, different level',
+        text: 'Wage level depends on the occupation and the work location. Comparing salary numbers across cities or roles can mislead you about your odds.',
         examples: [
-          'Li receives two $100,000 offers for different jobs or locations. Wage levels depend on the relevant occupation and geographic wage data, so the offers may fall into different levels. Because selection weights follow those levels rather than salary figures alone, equal salaries do not necessarily mean equal weights.',
-          'Chen hopes a raise will improve the H-1B selection chance. Under the new system, the question is whether the increased salary qualifies for a higher wage level. If it remains in the same level, the raise does not increase the selection weight.',
+          'Li has two $100,000 offers for different jobs in different cities. Wage level is set by occupation and local wage data, so the two offers may fall in different levels and get different numbers of entries.',
+          'Chen hopes a raise will improve his odds. What matters is whether the raise moves him up a level; if he stays in the same level, his number of entries doesn’t change.',
         ],
       },
       {
         title:
-          'For employers: wages, duties, and filings must support one another',
-        text: 'Employers may pay more attention to consistency between the role and wage data. Changing labels merely to increase weight cannot replace real duties and a compliant filing.',
+          'For employers: the wage level must match the real job',
+        text: 'Employers will check more carefully that the role matches the wage data. The level has to reflect the real duties, and filings must be accurate.',
       },
     ],
     outlook:
-      'Our assessment: higher levels will retain a relative advantage, but how many opportunities that produces still depends on the season’s applicant pool. If new fees or wage floors also take effect, employer budgets could offset some of the procedural advantage.',
+      'Our view: higher levels will keep their edge, but how much it helps depends on who registers each year. If new fees or higher wage floors also take effect, employer budgets could cancel out part of that edge.',
     scenarios: [
       {
         name: 'Current system continues',
-        headline: 'Higher wage levels retain a relative advantage',
+        headline: 'Higher wage levels keep their edge',
         assumption:
-          'The rule remains in place and the applicant mix does not change significantly.',
+          'The rule stays and the mix of registrants doesn’t change much.',
         effects:
-          'Level I applicants may place more weight on role growth and later filing opportunities. More entries still do not guarantee selection.',
+          'Level I applicants will care more about promotion and their chances in the next lottery.',
         signals:
-          'USCIS instructions for the next registration season and actual selection data.',
+          'USCIS’s instructions for the next lottery and actual selection numbers.',
       },
       {
-        name: 'Applicant mix changes',
-        headline: 'Actual chances can change even within the same level',
+        name: 'Registrant mix changes',
+        headline: 'Odds change even within the same level',
         assumption:
-          'The share of higher-level registrations rises or the total registration volume changes significantly.',
+          'More registrants come in at higher levels, or total registrations change a lot.',
         effects:
-          'Changes in the selection pool alter individual chances. Estimates or results from one year cannot serve as a fixed probability for the next.',
+          'Changes in the pool change individual chances; last year’s results are only a rough guide.',
         signals:
-          'The distribution of registrations by level, annual allocation, and number of selection rounds.',
+          'Registrations by level, that year’s cap and the number of lottery rounds.',
       },
       {
         name: 'New costs added',
         headline:
-          'Better selection odds may not make sponsorship easier to obtain',
+          'Better odds don’t make sponsorship easier',
         assumption:
-          'A new H-1B fee or a higher statutory wage floor takes effect.',
+          'A new H-1B fee or higher wage floor takes effect.',
         effects:
-          'Some employers may file fewer petitions because of the cost, separating a role’s selection advantage from the employer’s willingness to pay.',
+          'Some employers will register fewer people because of cost. A role with good odds may still not be worth the money to the employer.',
         signals:
           'Final fee and wage-rule text, along with employer sponsorship policies.',
       },
     ],
     scope: [
       {
-        label: 'Covered process',
-        text: 'Cap-subject H-1B registration and selection.',
+        label: 'What it covers',
+        text: 'Registration and selection in the H-1B lottery.',
       },
       {
-        label: 'Weight and probability',
-        text: 'One to four entries do not equal a fixed individual selection rate.',
+        label: 'Entries and odds',
+        text: 'Entries set your relative advantage; actual odds change every year with the number of registrants.',
       },
       {
-        label: 'Separate wage rule',
-        text: 'This selection mechanism does not itself raise the statutory wage an employer must pay.',
+        label: 'Wage floors are a separate rule',
+        text: 'This rule changes only the lottery, not the minimum wage employers must pay (see #06).',
       },
     ],
     milestones: [
       {
         date: '2025-09-24',
-        text: 'DHS published the wage-level-weighted selection NPRM.',
+        text: 'DHS proposed the wage-weighted lottery.',
       },
       {
         date: '2025-12-29',
-        text: 'DHS published the final rule with the proposed four wage-level weights unchanged.',
+        text: 'DHS published the final rule, keeping 1 to 4 entries for Levels I to IV.',
       },
       {
         date: '2026-02-27',
-        text: 'The rule took effect and applied to the FY 2027 H-1B registration season.',
+        text: 'The rule took effect and was used for the FY 2027 H-1B lottery.',
       },
     ],
     next: [
       {
         "date": "Date unknown",
-        "text": "USCIS will continue weighting selection by the OEWS level for the occupation, work location, and offered wage unless the rule is later changed."
+        "text": "The next lottery will also be weighted by wage level."
       }
     ],
     process: {
       detail:
-        'DHS completed the NPRM, public-comment, and final-rule stages. The rule took effect on February 27, 2026 and applies wage-level-weighted selection beginning with the FY 2027 H-1B registration season.',
-      currentSummary: 'Final rule in effect and implemented',
+        'DHS completed the proposal, public comment and final rule. The rule took effect February 27, 2026 and weights the lottery by wage level from FY 2027.',
+      currentSummary: 'Final rule in effect',
       waitingFor: null,
     },
-    reviewNote: "On November 1, the final rule and USCIS cap-season page were reread, confirming FY2027 implementation and IV/III/II/I entries of 4/3/2/1. The Federal Register RIN search still lists the proposal and final rule. Complete wage-level data, individual selection odds and later litigation remain incompletely verified.",
   },
 };

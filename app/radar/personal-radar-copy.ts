@@ -48,7 +48,7 @@ export const personalRadarCopy = {
     count: (n: number) => `${n} 份真实评分`,
     aiCount: (n: number) => `${n}/10 份真实评分 · AI 分数不计入社区均分`,
     unavailable: '社区评分暂时不可用',
-    unavailableNote: '暂时显示 AI 估计；未把读取失败计作零份评分。',
+    unavailableNote: '暂时显示 AI 估计。',
     currentMatch: '匹配当前身份',
     nextMatch: '位于接下来的路径',
     outside: '在所选路径之外，显示供参考。',
@@ -56,9 +56,9 @@ export const personalRadarCopy = {
     scoreBasis: '影响估计',
     timingBasis: '时间估计',
     baseline: '估计基准日',
-    conditional: '对受适用条件影响者的后果强度；不代表个人风险或规则发生概率。',
+    conditional: '衡量的是规则适用到你身上时影响有多重，不是规则会不会落地的概率。',
     timeNote:
-      '点位按时间区间归类，并非精确倒计时；AI 估计可能提前、延后或不落地。做个人决定前，请复核原始文件并咨询专业人士。',
+      '点的位置代表一个时间区间，不是倒计时；AI 估计可能提前、推迟或落空。做个人决定前，请看原始文件并咨询专业人士。',
     privacy: '身份与计划仅保存在当前浏览器。',
     close: '关闭政策浮窗',
     note: '不足 10 份真实评分时显示独立的 AI 影响预估。满 10 份后使用真实均分。',
@@ -112,7 +112,7 @@ export const personalRadarCopy = {
       `${n}/10 genuine ratings · AI excluded from community average`,
     unavailable: 'Community ratings temporarily unavailable',
     unavailableNote:
-      'Showing AI estimates for now; a failed request is not counted as zero votes.',
+      'Showing AI estimates for now.',
     currentMatch: 'Matches your current stage',
     nextMatch: 'On your upcoming path',
     outside: 'Outside your selected path; shown for context.',
@@ -121,9 +121,9 @@ export const personalRadarCopy = {
     timingBasis: 'Timing estimate',
     baseline: 'Estimate baseline',
     conditional:
-      'Consequence severity for people covered by the conditions; not personal risk or the probability of a rule taking effect.',
+      'How hard the rule would hit people it applies to, not how likely it is to happen.',
     timeNote:
-      'Positions represent time ranges, not precise countdowns. AI estimates may arrive earlier, later, or never take effect. Verify primary sources and obtain professional advice before making individual decisions.',
+      'Positions show time ranges, not countdowns. AI estimates may come early, late or not at all. Check the original documents and get professional advice before making personal decisions.',
     privacy: 'Your status and plan are saved only in this browser.',
     close: 'Close policy popup',
     note: 'Below 10 genuine ratings, a separate AI estimate is shown. At 10 ratings, the genuine average takes priority.',

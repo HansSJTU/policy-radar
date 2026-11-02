@@ -47,7 +47,7 @@ const statsCopy = {
     countryViews: '浏览量',
     countryEmpty: '下一次主页访问后开始显示国家统计。',
     legend: '图例',
-    method: '统计口径',
+    method: '统计方法',
     visitorMethod: '同一浏览器在同一自然日只计算一次。',
     viewMethod: '政策雷达主页每加载一次计算一次。',
     privacy:
