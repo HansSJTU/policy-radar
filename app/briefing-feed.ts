@@ -549,6 +549,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "OIRA completed review with changes. The amount and payer remain unpublished; it is not in effect."
   },
   {
+    "id": "ead-seven-plaintiff-order-september11",
+    "date": "2026-09-11",
+    "availableOn": "2026-11-01",
+    "policyId": "ead-auto-extension",
+    "timing": "recent",
+    "zh": "已取得 Jane Doe 第 46 项初步禁令：9·10 签署、9·11 录入，仅救济七名具名原告，明确未发全国禁令。早于 10·14 最终规则，后续处理尚未核实，不能推断全国恢复自动延期。",
+    "en": "Full Jane Doe preliminary-injunction order 46 obtained: signed September 10, entered September 11, relief only for seven named plaintiffs and expressly not nationwide. It predates the October 14 final rule; later treatment remains unverified and nationwide extensions are not restored."
+  },
+  {
     "id": "grace-preview",
     "date": "2026-09-10",
     "policyId": "grace-period",

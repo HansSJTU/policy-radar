@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-31",
+  checkedOn: "2026-11-01",
   related: [
     "opt-fee",
     "h4-ead",
@@ -142,7 +142,7 @@ export const eadDiscretion: PolicyContent = {
       currentSummary: '公众评论期已结束，尚未形成最终规则',
       waitingFor: 'DHS 审阅意见并决定是否修改或定稿；日期未定。',
     },
-    reviewNote: "10·31 重读 6·05 NPRM，并检索联邦公报的同 RIN 后续记录；联邦公报仍只列原提案，8·04 评论期限已过，未取得新的最终规则。Regulations.gov 动态案卷、完整最新部门执行说明及后续诉讼仍未完整核实。同 RIN 的待审／结案检索仅列 3·31 结案记录。",
+    reviewNote: "11·01 重读 6·05 NPRM，并检索联邦公报的同 RIN 后续记录；联邦公报仍只列原提案，8·04 评论期限已过，未取得新的最终规则。Regulations.gov 动态案卷、完整最新部门执行说明及后续诉讼仍未完整核实。同 RIN 的待审／结案检索仅列 3·31 结案记录。",
   },
   en: {
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
@@ -271,6 +271,6 @@ export const eadDiscretion: PolicyContent = {
       waitingFor:
         'DHS review of comments and a decision on revisions or a final rule; no date is set.',
     },
-    reviewNote: "On October 31, the June 5 NPRM and Federal Register searches for later records under the same RIN were reviewed. The Federal Register still lists only the proposal; the August 4 comment deadline has passed and no new final rule was obtained. The live Regulations.gov docket, complete current agency instructions and subsequent litigation remain incompletely verified. The pending/concluded RIN search lists only the March 31 conclusion.",
+    reviewNote: "On November 1, the June 5 NPRM and Federal Register searches for later records under the same RIN were reviewed. The Federal Register still lists only the proposal; the August 4 comment deadline has passed and no new final rule was obtained. The live Regulations.gov docket, complete current agency instructions and subsequent litigation remain incompletely verified. The pending/concluded RIN search lists only the March 31 conclusion.",
   },
 };
