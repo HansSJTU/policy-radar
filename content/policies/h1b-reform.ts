@@ -5,7 +5,7 @@ export const h1bReform: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: [
     "h1b-fee",
     "grace-period",
@@ -52,6 +52,7 @@ export const h1bReform: PolicyContent = {
       'DHS 打算重新规定 H-1B 免抽签（cap-exempt）的资格，并加严审查有违规记录的雇主，以及员工被派到客户现场工作的情况。具体标准和要交的材料，要等提案公开。',
     audience: '免抽签的雇主（如大学、研究机构）、被外派到客户现场的员工，以及有违规记录的公司。',
     caveat: '目前只有政府规则计划表里的一段摘要，具体怎么改要等提案公开。',
+    reviewNote: "OIRA 同 RIN 检索及送审页仍列 8·24 收件、审查中；尚未取得公开提案。具体修订内容、发布时间及完整后续部门说明仍待核实。",
     background:
       '这项规则（RIN 1615-AD00）2026-08-24 送交 OIRA 审查。免抽签资格会影响谁要交 #02 的附加费，但这两项是不同的规则。',
     teaser: '免抽签和外派岗位如果改规，有些工作要证明的东西会多很多。',
@@ -160,6 +161,7 @@ export const h1bReform: PolicyContent = {
       'Cap-exempt employers (such as universities and research institutes), workers placed at client sites, and companies with past violations.',
     caveat:
       'So far there is only a short summary in the government’s rulemaking plan; the details will come with the published proposal.',
+    reviewNote: "The OIRA same-RIN search and review page still show receipt on August 24 and review in progress; no public proposal was obtained. Specific revisions, publication timing and complete later agency guidance remain unverified.",
     background:
       'The rule (RIN 1615-AD00) went to OIRA for review on August 24, 2026. Cap-exempt status affects who pays the #02 surcharge, but they are separate rules.',
     teaser:

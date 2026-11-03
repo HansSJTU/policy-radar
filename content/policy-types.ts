@@ -42,6 +42,8 @@ export type PolicyCopy = {
   summary: string;
   audience: string;
   caveat: string;
+  // Per-item review scope and unresolved source gaps.
+  reviewNote?: string;
   background: string;
   teaser: string;
   headline: string;

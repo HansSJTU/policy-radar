@@ -5,7 +5,7 @@ export const gracePeriod: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   commentUrl: 'https://www.regulations.gov/commenton/USCIS-2026-0364-0001',
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
@@ -66,6 +66,7 @@ export const gracePeriod: PolicyContent = {
       '工作提前结束（被裁、辞职或被解雇）的 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属。',
     caveat:
       '这只是提案，现在失业照样有最长 60 天宽限期。即使按原样定稿，有其他合法身份的人仍然可以留下。F-1 毕业后的宽限期是另一套规则。',
+    reviewNote: "已核对提案及现行 8 CFR 214.1(l)(2)。USCIS 离职后选择页标为存档；Regulations.gov 仅返回应用外壳，完整最新评论和最新办理说明尚未核实。",
     background:
       '提案（2026-18631）9 月 10 日公开预览，9 月 11 日正式刊登（91 FR 57807），案卷号 USCIS-2026-0364。它要删掉给予 60 天宽限期的条款 8 CFR 214.1(l)(2)，并相应修改“特殊情况 EAD”（compelling-circumstances EAD）里引用这条的地方。公众评论 2026 年 11 月 10 日美东午夜前截止。最终规则和生效日期都还没定。',
     teaser: '被裁后没有缓冲期，找新工作、换身份、安排家人都会更急。',
@@ -186,6 +187,7 @@ export const gracePeriod: PolicyContent = {
       'H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN workers whose job ends early (layoff, resignation or firing), and their families.',
     caveat:
       'This is only a proposal; if you lose your job now, you still get up to 60 days. Even if adopted as written, people with another lawful status could stay. The F-1 grace period after graduation is a separate rule.',
+    reviewNote: "The proposal and current 8 CFR 214.1(l)(2) were checked. USCIS marks its termination-options page archived. Regulations.gov returns only an application shell; complete latest comments and current processing instructions remain unverified.",
     background:
       'The proposal (2026-18631) was previewed September 10 and published September 11 (91 FR 57807); docket USCIS-2026-0364. It would delete 8 CFR 214.1(l)(2), the provision that grants the 60-day grace period, and update the compelling-circumstances EAD rule that refers to it. Public comments close before midnight Eastern Time on November 10, 2026. No final rule or start date has been set.',
     teaser:

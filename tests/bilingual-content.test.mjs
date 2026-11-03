@@ -10,7 +10,7 @@ import { policyContents } from '../content/policies/index.ts';
 
 const han = /[㐀-鿿]/u;
 
-test('PERM has cleared OIRA while the D/S order keeps replies on November 2', () => {
+test('PERM has cleared OIRA and D/S records the government reply before November 9 appeal briefing', () => {
   const perm = policyContents.find(({ id }) => id === 'perm-modernization');
   assert.equal(perm.process.lastCompletedStage, 1);
   assert.equal(perm.process.activeStage, null);
@@ -19,7 +19,9 @@ test('PERM has cleared OIRA while the D/S order keeps replies on November 2', ()
   assert.match(perm.sources[0].href, /rrid=1533011/);
   const duration = policyContents.find(({ id }) => id === 'duration-status');
   for (const language of ['zh', 'en']) {
-    assert.deepEqual(duration[language].next.slice(0, 2).map(({ date }) => date), ['2026-11-02', '2026-11-09']);
+    assert.equal(duration[language].next[0].date, '2026-11-09');
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-02'));
+    assert.ok(duration[language].milestones.some(({ date }) => date === '2026-11-02'));
     assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
   }
 });

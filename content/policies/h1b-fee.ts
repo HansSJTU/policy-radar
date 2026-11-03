@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -84,6 +84,7 @@ export const h1bFee: PolicyContent = {
     audience:
       '要参加 H-1B 抽签的人和为他们担保的雇主，包括美国硕士名额和 F-1 在境内转 H-1B。',
     caveat: '免抽签（cap-exempt）的申请，比如大学和非营利研究机构，不收这笔费。',
+    reviewNote: "103,265 美元提案未见新的最终规则。另项 10 万美元案第 144 项同时列 12·01 会议、11·17 记录期限及 11·24 后续会议，日期冲突仍待法院澄清；完整后续上诉命令和最新收费说明尚未核实。",
     background:
       "这项提案（RIN 1615-AD20）2026-08-25 公布，公众评论 9 月 24 日截止。9 月 10 日的更正只改了 Table 13 里的历史申请数，金额、范围和截止日都没变。\n别和另一笔 10 万美元的 H-1B 入境费搞混：那笔针对部分人在美国境外的申请，白宫 9·18 把它延长到 2027-09-21。但收这笔钱的执行政策已被法院撤销两次：麻省地区法院 6·08 撤销（第一巡回法院 7·24 拒绝在上诉期间暂缓）；加州北区法院 9·30 在 Global Nurse Force v. Trump（4:25-cv-08454-HSG）再次撤销，并禁止政府按原公告 10973 和延长公告 11069 收费，除非先走完公开征求意见的规则程序。所以这 10 万美元现在收不了。\n政府 10·09 向第九巡回法院上诉（案号 26-6667），政府上诉书 11·06、原告答辩 12·04 到期。地区法院 10·28 拒绝暂停地区诉讼，并要求政府交出行政记录。上诉期间 9·30 的命令继续有效。",
     teaser:
@@ -219,6 +220,7 @@ export const h1bFee: PolicyContent = {
     audience:
       'People going through the H-1B lottery and the employers sponsoring them, including U.S. master’s-cap cases and F-1 changes of status.',
     caveat: 'Cap-exempt petitions, such as those filed by universities and nonprofit research institutions, do not pay this fee.',
+    reviewNote: "No new final rule was found for the $103,265 proposal. In the separate $100,000 case, entry 144 lists a December 1 conference, November 17 record deadline and November 24 follow-up; the conflicting dates still need court clarification. Complete later appellate orders and latest collection guidance remain unverified.",
     background:
       "The proposal (RIN 1615-AD20) was published August 25, 2026, with comments due September 24. A September 10 correction changed only the historical filing counts in Table 13; the amount, scope and deadline stayed the same.\nDon’t confuse it with the separate $100,000 H-1B entry fee, which applies to some petitions for people outside the U.S. and was extended by the White House on September 18 through September 21, 2027. Courts have twice struck down the policy used to collect that fee: the District of Massachusetts on June 8 (the First Circuit refused to pause that ruling on July 24), and the Northern District of California on September 30 in Global Nurse Force v. Trump (4:25-cv-08454-HSG), which bars collection under Proclamation 10973 and its extension, Proclamation 11069, until the government goes through public notice and comment. So the $100,000 cannot be collected now.\nThe government appealed to the Ninth Circuit on October 9 (No. 26-6667); its opening brief is due November 6 and plaintiffs’ answering brief December 4. On October 28 the district court refused to pause the district case and ordered the government to turn over its administrative record. The September 30 order stays in force during the appeal.",
     teaser:

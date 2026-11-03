@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: [
     "opt-fee",
     "h4-ead",
@@ -53,6 +53,7 @@ export const eadDiscretion: PolicyContent = {
     audience: '有刑事记录、要申请 OPT、H-4 EAD 等工作许可的人。',
     caveat:
       '普通民事交通罚单不算刑事记录。已经签发的 EAD 继续有效。',
+    reviewNote: "同 RIN 检索仍列原提案。完整动态评论案卷、最新部门执行说明和后续诉讼尚未核实。",
     background:
       '提案（RIN 1615-AC98）2026-06-05 公布，评论 8 月 4 日截止。新标准覆盖 8 CFR 274a.12(c) 下的大多数工作许可类别，并要求首次和续期 I-765 都采集生物信息（指纹、照片）。',
     teaser:
@@ -158,6 +159,7 @@ export const eadDiscretion: PolicyContent = {
       'People with a criminal record who apply for work permits such as OPT or H-4 EAD.',
     caveat:
       'Ordinary civil traffic tickets are not criminal records. EADs already issued stay valid.',
+    reviewNote: "The same-RIN search still lists the proposal. The complete live comment docket, latest agency implementation instructions and later litigation remain unverified.",
     background:
       'The proposal (RIN 1615-AC98) was published June 5, 2026; comments closed August 4. It covers most work-permit categories under 8 CFR 274a.12(c) and requires biometrics (fingerprints and photo) for first-time and renewal I-765s.',
     teaser:

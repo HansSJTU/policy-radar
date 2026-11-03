@@ -120,6 +120,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "D/S case: summary-judgment replies due (order 64 kept November 2)."
   },
   {
+    "id": "duration-government-reply-november2",
+    "date": "2026-11-02",
+    "availableOn": "2026-11-02",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "政府提交回复，要求法院判其胜诉；备选请求为发回 DHS 但保留规则、限缩救济。原告要求撤销整项规则。全国暂缓继续，上诉书和附录原定 11·09 截止。",
+    "en": "The government files its reply seeking judgment in its favor, or return to DHS while keeping the rule and narrower relief. Plaintiffs seek to strike down the whole rule. The nationwide pause continues; appellate brief/appendix are originally due November 9."
+  },
+  {
     "id": "duration-cross-motions-text-october30",
     "date": "2026-10-30",
     "availableOn": "2026-10-31",

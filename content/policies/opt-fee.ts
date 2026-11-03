@@ -5,7 +5,7 @@ export const optFee: PolicyContent = {
   path: 'OPT',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['h1b-fee', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',
@@ -64,6 +64,7 @@ export const optFee: PolicyContent = {
     audience: "准备申请 OPT（毕业前、毕业后或 STEM 延期）的 F-1 学生，以及他们的学校和雇主。",
     caveat:
       "交费的是学校，但学校不必自己承担；这笔钱最后由学校、学生还是雇主出，各校会不一样。",
+    reviewNote: "已核对提案及同 RIN 后续检索。Regulations.gov 评论页仅显示应用外壳，完整最新评论和学校如何分摊费用尚未核实。",
     background:
       "ICE 2026-08-20 把这项收费规则送交 OIRA 审查，9·11 审完（有修改）。10·08 正式提案（2026-20660，91 FR 64566，案卷 ICEB-2026-0100）公布了金额：第一次 7 万美元，之后每次 3 万美元。此前媒体传的“10 万美元一笔”不是最终提出的方案。\nDSO 在 SEVIS 里推荐 OPT 之前，学校要先交费；不交费，DSO 不能推荐，USCIS 也不会批 OPT 工作许可。学校可以让学生或雇主出这笔钱。所有类型的 OPT 都收费，CPT 不收；只是换雇主不用再交。\n新收费从最终规则公布后第 60 天开始。这天之后的第一次 OPT 推荐收 7 万美元，就算学生以前用过 OPT 也一样；交过这 7 万之后，以后每次推荐收 3 万。已经拿到的 EAD 不受影响。\nOPT 或延期批下来之前，学校可以撤回推荐、申请退款，由 SEVP 逐个决定；批下来之后不退，退款被拒也不能申诉。规则评论 11·09 截止，表格与数据收集部分（PRA）的评论 12·07 截止。",
     teaser: "学校先交钱，DSO 才能推荐 OPT；这笔钱最后谁出，要看学校。",
@@ -184,6 +185,7 @@ export const optFee: PolicyContent = {
       "F-1 students planning to apply for OPT (pre-completion, post-completion or a STEM extension), plus their schools and employers.",
     caveat:
       "The school pays, but it does not have to absorb the cost; whether the school, the student or the employer ends up paying will vary by school.",
+    reviewNote: "The proposal and later same-RIN records were checked. The Regulations.gov comment page returns only an application shell; complete latest comments and school cost-sharing arrangements remain unverified.",
     background:
       "ICE sent the fee rule to OIRA for review on August 20, 2026; review finished, with changes, on September 11. The October 8 proposal (2026-20660, 91 FR 64566, docket ICEB-2026-0100) set the amounts: $70,000 the first time and $30,000 each time after. The single $100,000 fee reported earlier by the media is not what was proposed.\nThe school pays before the DSO recommends OPT in SEVIS. Without payment, the DSO cannot recommend OPT and USCIS will not approve the work permit. The school can have the student or employer cover the cost. Every type of OPT is covered; CPT is not. Changing employers does not trigger another fee.\nThe fees start 60 days after the final rule is published. The first OPT recommendation after that date costs $70,000, even for a student who used OPT before; after that, each recommendation costs $30,000. EADs already issued are not affected.\nBefore the OPT or extension is approved, the school can withdraw the recommendation and ask for a refund, which SEVP decides case by case. There is no refund after approval and no appeal of a refund denial. Comments on the rule close November 9; comments on its paperwork (PRA) part close December 7.",
     teaser:

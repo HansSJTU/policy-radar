@@ -5,7 +5,7 @@ export const permModernization: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['prevailing-wage', 'h1b-reform'],
   process: {
     "kind": "federal-rulemaking",
@@ -65,6 +65,7 @@ export const permModernization: PolicyContent = {
       '打算通过雇主担保办绿卡的员工，以及替员工办 PERM 的雇主，包括目前持 H-1B 的人。',
     caveat:
       '这项只管绿卡第一步的劳工认证，和 H-1B 抽签无关，也不是 #06 的工资提案（RIN 1205-AC30）。',
+    reviewNote: "OIRA 仍列 10·23 带修改结束审查，同 RIN 联邦公报检索未列公开提案。OFLC 最新公告原页受阻，替代列表较旧；具体条文、评论期限和过渡安排尚未核实。",
     background:
       "PERM 是雇主替外籍员工办职业移民绿卡的第一步：雇主要证明自己认真招过美国人、没找到合适人选。改革涉及 20 CFR 656。DOL 2026-09-14 把提案送交白宫 OIRA 审查；政府规则计划表原定 7 月公布。\nOIRA 10·23 审完（rrid=1533011），结论是“Consistent with Change”，意思是要求修改后同意发布，但没公开改了什么。提案还没刊登，现行 PERM 规则照旧。",
     teaser: '招聘规则一改，雇主准备 PERM 的工作量和时间都会变。',
@@ -205,6 +206,7 @@ export const permModernization: PolicyContent = {
       'Employees pursuing employer-sponsored green cards, and the employers filing PERM for them, including people currently in H-1B status.',
     caveat:
       'This is only about the labor certification step of a green card. It has nothing to do with the H-1B lottery and is separate from the #06 wage proposal (RIN 1205-AC30).',
+    reviewNote: "OIRA still lists review concluded with changes October 23; the Federal Register same-RIN search lists no public proposal. The latest OFLC announcement page was blocked and its alternative list is older. Specific text, comment deadlines and transition arrangements remain unverified.",
     background:
       "PERM is the first step of an employment-based green card: the employer has to show it genuinely tried to hire U.S. workers and found no qualified one. The reform covers 20 CFR 656. DOL sent the proposal to the White House’s OIRA for review on September 14, 2026; the government’s rulemaking plan had aimed for July.\nOIRA finished on October 23 (rrid=1533011) with “Consistent with Change,” meaning it cleared publication after changes, without saying what changed. The proposal has not been published, and current PERM rules still apply.",
     teaser:

@@ -5,7 +5,7 @@ export const eadAutoExtension: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "in-effect",
-  "checkedOn": "2026-11-01",
+  "checkedOn": "2026-11-02",
   "related": [
     "h4-ead",
     "ead-discretion"
@@ -86,6 +86,7 @@ export const eadAutoExtension: PolicyContent = {
     "summary": "从 2025·10·30 起，递交部分 EAD 续期后，旧卡到期就不再自动延长。10·14 刊登并生效的最终规则照原样保留这项规定，分界日不变。另一个案子 Jane Doe 1 v. DHS 的初步禁令（9·11 生效）只保护起诉的七个人，法院没有在全国范围暂停。",
     "audience": "靠 EAD 续期自动延期继续工作的人，比如 H-4 配偶（c26）、等绿卡调整身份的人（c9）。",
     "caveat": "看递交日：2025·10·30 前递交的续期，符合条件的仍按旧规则自动延期。法律规定的例外、TPS 公告的延期、STEM OPT 的 180 天延期，以及不靠 EAD、凭身份本身就能工作的情况，都不受影响。",
+    reviewNote: "已核对最终规则、现行 USCIS 手册及七原告初步禁令。Jane Doe 案最新可读条目仍只有 10·29 报告和 10·30 排期等标题，正文尚未取得；10·14 最终规则后的个案救济、是否实际上诉及最新 TPS 公告仍未完整核实。",
     "background": "2025·10·30 的临时规则修改了 8 CFR 274a.13：最长 540 天的自动延期，只留给这天之前递交、符合条件的续期；这天及以后递交的相关类别续期，拿到收据也不再自动延期。\n2026·10·14 刊登并生效的最终规则照原样保留临时规则，分界日不变。它和 RIN 1615-AD14（拟取消 H-4 配偶申请 EAD 的资格）是两回事。\n另一个案子 Jane Doe 1 v. DHS（8:26-cv-00060）：法院 9·10 签署、9·11 生效的初步禁令（第 46 项）只对起诉的七个人暂停 2025 年的临时规则，政府可以在官司期间给他们发 EAD。法院没有在全国范围暂停，并允许政府先就这个命令上诉。",
     "teaser": "续期还没批，旧卡一到期就可能得停工。",
     "headline": "续期收据不再自动延长工作授权。",
@@ -198,6 +199,7 @@ export const eadAutoExtension: PolicyContent = {
     "summary": "Since October 30, 2025, filing certain EAD renewals no longer keeps the old card valid after it expires. The final rule published and effective October 14 keeps this unchanged, with the same cutoff date. In a separate case, Jane Doe 1 v. DHS, a preliminary injunction entered September 11 protects only the seven people who sued; the court did not pause the rule nationwide.",
     "audience": "People who relied on EAD renewals being extended automatically to keep working, such as H-4 spouses (c26) and people waiting on a green-card adjustment (c9).",
     "caveat": "It depends on the filing date: eligible renewals filed before October 30, 2025 keep the old automatic extension. Exceptions in the law, TPS notice extensions, the STEM OPT 180-day extension and people whose status itself allows work without an EAD are not affected.",
+    reviewNote: "The final rule, current USCIS manual and seven-plaintiff preliminary injunction were checked. Latest readable Jane Doe entries supply only October 29 report/October 30 scheduling titles; their text was not obtained. Individual relief after the October 14 final rule, any actual appeal and latest TPS notices remain incompletely verified.",
     "background": "The October 30, 2025 interim rule changed 8 CFR 274a.13: the automatic extension of up to 540 days now applies only to eligible renewals filed before that date. For renewals in the affected categories filed on or after it, a receipt no longer extends the card.\nThe final rule published and effective October 14, 2026 keeps the interim rule unchanged, with the same cutoff. It is separate from RIN 1615-AD14, which would remove H-4 spouses’ ability to apply for an EAD.\nIn a separate case, Jane Doe 1 v. DHS (8:26-cv-00060), a preliminary injunction (entry 46) signed September 10 and entered September 11 sets aside the 2025 interim rule only for the seven people who sued, and lets the government give them EADs while the case goes on. The court did not pause the rule nationwide and allowed an immediate appeal of its order.",
     "teaser": "If your renewal is still pending when the old card expires, you may have to stop working.",
     "headline": "A renewal receipt no longer extends work authorization.",

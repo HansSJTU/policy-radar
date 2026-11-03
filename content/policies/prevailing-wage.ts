@@ -5,7 +5,7 @@ export const prevailingWage: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['h1b-weighted-selection', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -48,6 +48,7 @@ export const prevailingWage: PolicyContent = {
       'DOL 打算把 H-1B、H-1B1、E-3 和 PERM 的四级最低工资，从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。评论期已结束，还没有最终规则。',
     audience: 'H-1B、H-1B1、E-3 和 PERM 的申请人，以及要付工资的雇主。',
     caveat: '这项提案改的是雇主必须付的最低工资，和 H-1B 抽签按工资等级加权（#04）是两套规则。',
+    reviewNote: "同 RIN 检索仍列原提案。DOL 新闻稿通过公开替代文本读取；最新 OFLC 公告原页受阻，替代列表较旧。动态评论案卷和完整最新部门说明尚未核实。",
     background:
       '提案（RIN 1205-AC30）2026-03-27 公布，公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案；DOL 还没发最终规则，现在的工资等级算法没变。',
     teaser: '除了一次性费用，每年多付的工资也会让雇主更不愿担保。',
@@ -158,6 +159,7 @@ export const prevailingWage: PolicyContent = {
       'H-1B, H-1B1, E-3 and PERM applicants and the employers paying them.',
     caveat:
       'This proposal is about the minimum wage employers must pay; it is separate from the wage-weighted H-1B lottery (#04).',
+    reviewNote: "The same-RIN search still lists the proposal. The DOL release was read through public alternative text; the latest OFLC page was blocked and its alternative list is older. The live comment docket and complete current agency guidance remain unverified.",
     background:
       'The proposal (RIN 1205-AC30) was published March 27, 2026; comments closed May 26. The August 2026 government rulemaking plan still lists it as a proposal. DOL has not issued a final rule, so wage levels are still calculated the current way.',
     teaser:

@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -137,6 +137,7 @@ export const cptGuidance: PolicyContent = {
     audience: '要申请 CPT 的学生，以及学校和 DSO。',
     caveat:
       '选修课型 CPT 和学位必修的实习要分开看。已经批下来的 CPT 会不会受影响，看学校通知。',
+    reviewNote: "两份 8 月广播、SEVP 列表及全部 75 条学校记录已核对。公开替代案卷可读第 29 项准许回复命令，实际回复及更晚命令尚未取得；11·04 回复、11·06 听证仍按原排期显示。9 个直连受阻校方页经网页工具读取；4 份截图只支持历史消息，论坛后续回复仍有访问缺口。11·02 新广播涉及 Portal 升级和官员年度核验，未改变 CPT 资格。",
     background:
       "8 月 12 日的 Broadcast 强调学校和 DSO 要对 CPT 审批负责。8 月 24 日的问答进一步说明：“所有学生”也包括美国学生，并重申雇主和学校之间要有合作协议（cooperative agreement）。\n10·05，四个高校协会起诉 DHS（AAU v. DHS，1:26-cv-14520），认为这两份广播对“integral”（学位不可缺少）的解释和执行违反《行政程序法》（APA），并请法院先暂停指引。这个案子和 D/S 案是两回事，D/S 的暂缓管不到 CPT。听证定在 11·06 美东下午 3 点，由 Julia E. Kobick 法官主持。\n10·28 政府提交 27 页反对意见，理由是：原告没有资格起诉；广播只是解释现有规定、不是新规，所以不用先征求公众意见，法院也不能审；而且学生没有受到无法弥补的损害。10·30 法院允许原告在 11·04 前交一份不超过 15 页的回应。",
     teaser: '关键不再是能不能选一门实习课，而是你的专业是否要求所有人都实习。',
@@ -285,6 +286,7 @@ export const cptGuidance: PolicyContent = {
     audience: 'Students seeking CPT authorization, their schools and DSOs.',
     caveat:
       'Elective-course CPT and degree-required internships are treated differently. Whether CPT you already have is affected depends on your school’s notice.',
+    reviewNote: "Both August broadcasts, the SEVP list and all 75 school records were checked. Alternative public docket text includes order 29 allowing a reply; the actual reply and later orders were not obtained. November 4/6 dates retain the original schedule. Nine directly blocked school pages were read through web retrieval. Four screenshots support historical reports, and later forum replies remain incompletely accessible. November 2 broadcasts concern a Portal upgrade and annual official verification, without changing CPT eligibility.",
     background:
       "The August 12 Broadcast stressed that schools and DSOs are responsible for CPT approvals. The August 24 FAQ added that “all students” includes U.S. students and repeated that the employer and school need a cooperative agreement.\nOn October 5, four higher-education associations sued DHS (AAU v. DHS, 1:26-cv-14520), arguing that the broadcasts’ reading of “integral” and how it is enforced violate the Administrative Procedure Act (APA), and asked the court to pause the guidance in the meantime. This is a separate case from the D/S one; the D/S stay does not cover CPT. The hearing is set for November 6 at 3 p.m. ET before Judge Julia E. Kobick.\nOn October 28 the government filed a 27-page opposition, arguing that the plaintiffs cannot sue, that the broadcasts only explain existing rules rather than create new ones (so no public comment was needed and a court cannot review them), and that students suffer no irreparable harm. On October 30 the court let plaintiffs file a reply of up to 15 pages by November 4.",
     teaser:
