@@ -294,12 +294,6 @@ export default async function PolicyPage({ params, searchParams }: Props) {
                     <GlossaryText text={next.text} />
                   </dd>
                 </div>
-                {p.reviewNote && (
-                  <div className="pd-review-note">
-                    <dt>{english ? 'Review scope' : '核查范围'}</dt>
-                    <dd><GlossaryText text={p.reviewNote} /></dd>
-                  </div>
-                )}
               </dl>
               <section id="overview" className="pd-overview pd-section">
                 <div className="pd-section-heading">

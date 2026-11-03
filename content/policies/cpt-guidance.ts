@@ -130,46 +130,45 @@ export const cptGuidance: PolicyContent = {
     effectLabel: '正在执行 · 各校做法不同',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP 要求：只有“这个专业所有学生毕业都必须做”的实习才能批 CPT，选修实习课通常不行，雇主还得和学校签合作协议。四个高校协会已起诉，请法院暂停这份指引，11·06 开庭听证。法院裁定前，指引照常执行。",
+    tldr: "ICE/SEVP 8 月给学校发了两份通知，收紧 CPT 标准：只有“这个专业所有学生毕业都必须做”的实习才能批 CPT，选修一门实习课通常不够，雇主还要和学校签合作协议。很多学校已经按新标准暂停或收紧 CPT。四个高校协会起诉，请法院先暂停这份指引，11·06 开庭。法院裁定之前，指引照常执行。",
     tags: ['CPT', 'Day-1 CPT', '实习'],
     summary:
-      "SEVP 要求 CPT 实习必须是这个专业所有学生毕业都要完成的环节，而且雇主要和学校签合作协议。四个高校协会请法院暂停这份指引；政府 10·28 反对，原告 11·04 前回应，法院 11·06 美东下午 3 点开庭。法院裁定前，指引照常执行。",
-    audience: '要申请 CPT 的学生，以及学校和 DSO。',
+      "SEVP 是 ICE 下面管国际学生和学校的部门。它 8 月发给学校的两份通知（Broadcast）要求：CPT 实习必须是这个专业所有学生毕业都要完成的环节，而且雇主要和学校签合作协议。很多学校因此暂停了“选一门实习课就批 CPT”的做法。四个高校协会起诉，请法院在判决前先暂停这份指引；政府 10·28 提交反对意见，原告 11·04 前回应，法院 11·06 美东下午 3 点开庭听双方辩论。法院裁定之前，指引照常执行。",
+    audience: "要申请 CPT 的学生（包括打算读 Day 1 CPT 项目的人），以及学校和负责批 CPT 的 DSO。",
     caveat:
-      '选修课型 CPT 和学位必修的实习要分开看。已经批下来的 CPT 会不会受影响，看学校通知。',
-    reviewNote: "两份 8 月广播、SEVP 列表及全部 75 条学校记录已核对。公开替代案卷可读第 29 项准许回复命令，实际回复及更晚命令尚未取得；11·04 回复、11·06 听证仍按原排期显示。9 个直连受阻校方页经网页工具读取；4 份截图只支持历史消息，论坛后续回复仍有访问缺口。11·02 新广播涉及 Portal 升级和官员年度核验，未改变 CPT 资格。",
+      "选修课型 CPT 和学位必修的实习要分开看。已经批下来的 CPT 怎么处理，以你学校的通知为准。",
     background:
-      "8 月 12 日的 Broadcast 强调学校和 DSO 要对 CPT 审批负责。8 月 24 日的问答进一步说明：“所有学生”也包括美国学生，并重申雇主和学校之间要有合作协议（cooperative agreement）。\n10·05，四个高校协会起诉 DHS（AAU v. DHS，1:26-cv-14520），认为这两份广播对“integral”（学位不可缺少）的解释和执行违反《行政程序法》（APA），并请法院先暂停指引。这个案子和 D/S 案是两回事，D/S 的暂缓管不到 CPT。听证定在 11·06 美东下午 3 点，由 Julia E. Kobick 法官主持。\n10·28 政府提交 27 页反对意见，理由是：原告没有资格起诉；广播只是解释现有规定、不是新规，所以不用先征求公众意见，法院也不能审；而且学生没有受到无法弥补的损害。10·30 法院允许原告在 11·04 前交一份不超过 15 页的回应。",
-    teaser: '关键不再是能不能选一门实习课，而是你的专业是否要求所有人都实习。',
-    headline: '实习能不能批，越来越看你的专业课程怎么规定。',
+      "CPT 是 F-1 学生在读期间，因为课程需要去校外实习或工作的许可。它不经过移民局，由学校的 DSO 审批，批下来后写在你的 I-20 上（CPT I-20）。联邦法规的要求是：CPT 必须是学校既定课程“不可分割的一部分”（integral part of an established curriculum）。\n8 月 12 日的 Broadcast 2608-01 强调学校和 DSO 要对 CPT 审批负责，并把“不可分割”解释为学位必须、所有学生都要做。8 月 24 日的问答（Broadcast 2608-02）进一步说明：“所有学生”也包括美国学生；雇主和学校之间要有合作协议（cooperative agreement），把实习和课程联系起来。\n10 月 5 日，美国大学协会（AAU）等四个高校协会起诉 DHS（AAU v. DHS，案号 1:26-cv-14520）。他们认为，这两份通知对“integral”的解释和执行方式违反《行政程序法》（APA）：实际上改了 CPT 的规则，却没有先公开征求意见。他们请法院在判决前先暂停这份指引。听证定在 11 月 6 日美东下午 3 点，由 Julia E. Kobick 法官主持。这个案子和 D/S 案分开审理，D/S 案的全国暂缓只管 D/S 规则。\n10 月 28 日政府提交了 27 页的反对意见，理由有三条：一是原告没有起诉资格，也就是协会本身没有受到足够具体的伤害；二是这两份通知只是解释现有规定、不是新规，所以不需要先征求公众意见，法院也不能审查；三是学生没有受到“无法弥补的损害”，而这是法院在判决前暂停一项政策的前提条件之一。10 月 30 日，法院允许原告在 11 月 4 日前交一份不超过 15 页的回应。",
+    teaser: "关键不再是能不能选一门实习课，而是你的专业是否要求所有人都实习。",
+    headline: "实习能不能批，越来越看你的专业课程怎么规定。",
     analysis:
-      '新标准把 CPT 和“学位必须的实习”绑在一起，靠选修实习课拿 CPT 的路基本被堵住。各校、各院系的课程要求不同，结果会差别很大。',
+      "新标准把 CPT 和“学位必须的实习”绑在一起，靠选修一门实习课拿 CPT 的路基本被堵住了。各校、各院系的课程要求不同，结果会差别很大：同一所大学，有的专业所有人都要实习，可以照常批；有的专业实习是选修，就可能批不了。读 Day 1 CPT 项目的同学尤其要看学校最新通知。",
     impacts: [
       {
-        title: '对学生：多选一门实习课解决不了',
-        text: '再选一门实习课，通常还是不符合新标准。能不能批，主要看专业的毕业要求和学校怎么认定。',
-        examples: [
-          '小林找到实习，想注册一门选修实习课来申请 CPT。但新标准要求实习必须是这个专业所有学生毕业都要完成的，光拿学分不够。如果他的专业不实习也能毕业，这门选修课就不算数，学校很可能批不了。',
-        ],
+        "title": "对学生：多选一门实习课解决不了",
+        "text": "再选一门实习课，通常还是不符合新标准。能不能批，主要看专业的毕业要求和学校怎么认定。",
+        "examples": [
+          "小林找到实习，想注册一门选修实习课来申请 CPT。新标准要求实习必须是这个专业所有学生毕业都要完成的，光拿学分不够。如果他的专业不实习也能毕业，这门选修课就不算数，学校很可能批不了。"
+        ]
       },
       {
-        title: '对学校：课程规定和雇主协议更关键',
-        text: '学校可能重新审查项目手册、实习要求和合作协议。就算最后能批，审材料也会让申请变慢。',
-        examples: [
-          '小林的实习已经符合专业必修要求，但学校还没和实习公司签合作协议。新标准两样都要；缺了协议，就算公司已经让他上班，学校也可能不批。',
-          '小陈去年靠一门选修实习课批了 CPT，今年同一家公司又请他回去。今年要按新标准审：实习必须是全体学生的必修要求。如果那门课还是选修，今年就可能批不下来，公司和岗位没变也一样。',
-        ],
+        "title": "对学校：课程规定和雇主协议更关键",
+        "text": "学校可能重新审查项目手册、实习要求和合作协议。就算最后能批，审材料也会让申请变慢。",
+        "examples": [
+          "小林的实习已经符合专业必修要求，但学校还没和实习公司签合作协议。新标准两样都要；缺了协议，就算公司已经让他上班，学校也可能不批。",
+          "小陈去年靠一门选修实习课批了 CPT，今年同一家公司又请他回去。今年要按新标准审：实习必须是所有学生的必修要求。如果那门课还是选修，今年就可能批不下来，公司和岗位没变也一样。"
+        ]
       },
       {
-        title: '对实习招聘：同一所学校，不同专业结果不同',
-        text: '企业更难确定实习生什么时候能入职。某个院系的通知只适用于这个院系。',
-        examples: [
-          '你和室友在同一所大学，你的专业要求所有人都实习，室友的专业把实习当选修。按新标准，你的可能批，室友的不行。看的是专业怎么规定，不是学校名字。',
-        ],
-      },
+        "title": "对实习招聘：同一所学校，不同专业结果不同",
+        "text": "企业更难确定实习生什么时候能入职。某个院系的通知只适用于这个院系。",
+        "examples": [
+          "你和室友在同一所大学，你的专业要求所有人都实习，室友的专业把实习当选修。按新标准，你的可能批，室友的不行。看的是专业怎么规定，不是学校名字。"
+        ]
+      }
     ],
     outlook:
-      '我们的判断：近期会有更多学校按专业发通知。就算恢复，也会是符合条件的专业先恢复，而不是所有选修实习一起恢复。',
+      "我们的判断：近期会有更多学校按专业发通知。11·06 听证后，如果法院暂停指引，学校可能逐步恢复原来的做法；如果法院不暂停，恢复也会是符合条件的专业先恢复，而不是所有选修实习一起恢复。",
     scenarios: [
       {
         name: '继续收紧',
@@ -197,17 +196,17 @@ export const cptGuidance: PolicyContent = {
     ],
     scope: [
       {
-        label: '关键标准',
-        text: '实习是不是学位必须的环节，以及学校怎么理解“所有学生都要做”。',
+        "label": "关键标准",
+        "text": "实习是不是学位必须的环节，以及学校怎么理解“所有学生都要做”。"
       },
       {
-        label: '已有授权',
-        text: '已经拿到的 CPT I-20 会不会受影响，看学校有没有针对已批 CPT 发通知。',
+        "label": "已有授权",
+        "text": "已经拿到的 CPT I-20 怎么处理，看学校针对已批 CPT 发的通知。"
       },
       {
-        label: '看清范围',
-        text: '看学校通知时，分清是哪个学校、院系、项目、哪类 CPT、从哪天开始。',
-      },
+        "label": "看清范围",
+        "text": "读学校通知时，分清是哪个学校、院系、项目、哪类 CPT、从哪天开始。"
+      }
     ],
     milestones: [
       {
@@ -236,11 +235,11 @@ export const cptGuidance: PolicyContent = {
       },
       {
         "date": "2026-10-19",
-        "text": "法院准许政府延期至 10·28 答复。"
+        "text": "法院准许政府延期到 10·28 答复。"
       },
       {
         "date": "2026-10-28",
-        "text": "政府提交反对意见，认为原告无权起诉、广播不能被法院审查。"
+        "text": "政府提交反对意见，认为原告没有起诉资格、通知不能被法院审查。"
       },
       {
         "date": "2026-10-29",
@@ -279,49 +278,47 @@ export const cptGuidance: PolicyContent = {
     effectLabel: 'In use · Varies by school',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP says CPT can be approved only for an internship every student in the program must complete to graduate; an elective internship course usually does not count, and the employer must sign a cooperative agreement with the school. Four higher-education associations have sued to pause the guidance, with a hearing on November 6. Until the court rules, the guidance applies.",
+    tldr: "In August, ICE/SEVP sent schools two notices tightening CPT: CPT can be approved only for an internship every student in the program must complete to graduate, an elective internship course usually does not count, and the employer must sign a cooperative agreement with the school. Many schools have paused or narrowed CPT as a result. Four higher-education associations sued to pause the guidance, with a hearing on November 6. Until the court rules, the guidance applies.",
     tags: ['CPT', 'Day-1 CPT', 'Internships'],
     summary:
-      "SEVP requires CPT training to be something every student in the program must complete to graduate, with a cooperative agreement between the employer and the school. Four higher-education associations asked the court to pause the guidance; the government opposed on October 28, plaintiffs respond by November 4 and the court holds a hearing November 6 at 3 p.m. ET. Until the court rules, the guidance applies.",
-    audience: 'Students seeking CPT authorization, their schools and DSOs.',
+      "SEVP is the part of ICE that oversees international students and schools. Its two August notices to schools (Broadcasts) require CPT training to be something every student in the program must complete to graduate, with a cooperative agreement between the employer and the school. Many schools have stopped approving CPT just because a student enrolls in an internship course. Four higher-education associations asked the court to pause the guidance before a final ruling; the government opposed on October 28, plaintiffs respond by November 4 and the court hears both sides on November 6 at 3 p.m. ET. Until the court rules, the guidance applies.",
+    audience: "Students seeking CPT (including anyone planning a Day 1 CPT program), their schools and the DSOs who approve CPT.",
     caveat:
-      'Elective-course CPT and degree-required internships are treated differently. Whether CPT you already have is affected depends on your school’s notice.',
-    reviewNote: "Both August broadcasts, the SEVP list and all 75 school records were checked. Alternative public docket text includes order 29 allowing a reply; the actual reply and later orders were not obtained. November 4/6 dates retain the original schedule. Nine directly blocked school pages were read through web retrieval. Four screenshots support historical reports, and later forum replies remain incompletely accessible. November 2 broadcasts concern a Portal upgrade and annual official verification, without changing CPT eligibility.",
+      "Elective-course CPT and degree-required internships are treated differently. For CPT you already have, follow your school’s notice.",
     background:
-      "The August 12 Broadcast stressed that schools and DSOs are responsible for CPT approvals. The August 24 FAQ added that “all students” includes U.S. students and repeated that the employer and school need a cooperative agreement.\nOn October 5, four higher-education associations sued DHS (AAU v. DHS, 1:26-cv-14520), arguing that the broadcasts’ reading of “integral” and how it is enforced violate the Administrative Procedure Act (APA), and asked the court to pause the guidance in the meantime. This is a separate case from the D/S one; the D/S stay does not cover CPT. The hearing is set for November 6 at 3 p.m. ET before Judge Julia E. Kobick.\nOn October 28 the government filed a 27-page opposition, arguing that the plaintiffs cannot sue, that the broadcasts only explain existing rules rather than create new ones (so no public comment was needed and a court cannot review them), and that students suffer no irreparable harm. On October 30 the court let plaintiffs file a reply of up to 15 pages by November 4.",
+      "CPT is permission for F-1 students to work or intern off campus during their studies because their curriculum calls for it. It does not go through USCIS: your school’s DSO approves it and records it on your I-20 (a CPT I-20). The federal regulation says CPT must be an “integral part of an established curriculum.”\nThe August 12 Broadcast 2608-01 stressed that schools and DSOs are responsible for CPT approvals and read “integral” as required for the degree and done by every student. The August 24 FAQ (Broadcast 2608-02) added that “all students” includes U.S. students, and that the employer and school need a cooperative agreement tying the internship to the curriculum.\nOn October 5, the Association of American Universities (AAU) and three other higher-education associations sued DHS (AAU v. DHS, No. 1:26-cv-14520). They argue that the notices’ reading of “integral” and how it is enforced violate the Administrative Procedure Act (APA): the notices effectively changed the CPT rules without first taking public comment. They asked the court to pause the guidance until it rules. The hearing is set for November 6 at 3 p.m. ET before Judge Julia E. Kobick. This case is separate from the D/S case; the nationwide stay there covers only the D/S rule.\nOn October 28 the government filed a 27-page opposition with three arguments: first, the plaintiffs lack standing, meaning the associations themselves have not suffered a concrete enough injury to sue; second, the notices only explain existing rules rather than create new ones, so no public comment was needed and a court cannot review them; third, students suffer no “irreparable harm,” which is one of the conditions for a court to pause a policy before ruling. On October 30 the court let plaintiffs file a reply of up to 15 pages by November 4.",
     teaser:
-      'What matters now is not whether you can take an internship course, but whether your program requires everyone to do one.',
+      "What matters now is not whether you can take an internship course, but whether your program requires everyone to do one.",
     headline:
-      'Whether your internship is approved now depends on how your program’s curriculum is written.',
+      "Whether your internship is approved now depends on how your program’s curriculum is written.",
     analysis:
-      'The new standard ties CPT to internships the degree requires, which largely closes off CPT through an elective internship course. Because schools and departments write their curricula differently, outcomes will vary widely.',
+      "The new standard ties CPT to internships the degree requires, which largely closes off CPT through an elective internship course. Because schools and departments write their curricula differently, outcomes vary widely: at the same university, a program that requires everyone to intern may keep approving CPT, while one where the internship is elective may not. Students in Day 1 CPT programs should watch their school’s latest notices closely.",
     impacts: [
       {
-        title: 'For students: adding an internship course won’t fix it',
-        text: 'An extra internship course usually still won’t meet the new standard. Approval depends on your program’s graduation requirements and how your school reads them.',
-        examples: [
-          'Lin wants CPT by enrolling in an elective internship course. The new standard requires an internship every student in the program must complete to graduate; earning credit is not enough. If students in his program can graduate without one, the elective doesn’t count and the school likely cannot approve CPT.',
-        ],
+        "title": "For students: adding an internship course won’t fix it",
+        "text": "An extra internship course usually still won’t meet the new standard. Approval depends on your program’s graduation requirements and how your school reads them.",
+        "examples": [
+          "Lin wants CPT by enrolling in an elective internship course. The new standard requires an internship every student in the program must complete to graduate; earning credit is not enough. If students in his program can graduate without one, the elective doesn’t count and the school likely cannot approve CPT."
+        ]
       },
       {
-        title:
-          'For schools: curriculum rules and employer agreements matter more',
-        text: 'Schools may re-review program handbooks, internship requirements and cooperative agreements. Even when CPT can be approved, the paperwork slows things down.',
-        examples: [
-          'Lin’s internship meets the degree requirement, but the school has not signed a cooperative agreement with the employer. The guidance requires both; without the agreement the school may not approve CPT, even if the employer wants Lin to start.',
-          'Chen got CPT through an elective last year, and the same company wants him back. This year’s request is judged by the new all-student standard. If the course is still an elective, CPT may be denied this time, even with the same company and job.',
-        ],
+        "title": "For schools: curriculum rules and employer agreements matter more",
+        "text": "Schools may re-review program handbooks, internship requirements and cooperative agreements. Even when CPT can be approved, the paperwork slows things down.",
+        "examples": [
+          "Lin’s internship meets the degree requirement, but the school has not signed a cooperative agreement with the employer. The guidance requires both; without the agreement the school may not approve CPT, even if the employer wants Lin to start.",
+          "Chen got CPT through an elective last year, and the same company wants him back. This year’s request is judged by the new all-student standard. If the course is still an elective, CPT may be denied this time, even with the same company and job."
+        ]
       },
       {
-        title: 'For internship hiring: results differ even within one school',
-        text: 'Employers can’t easily tell when an intern can start. A notice from one department applies only to that department.',
-        examples: [
-          'You and your roommate go to the same university. Your program requires everyone to do an internship; your roommate’s treats it as an elective. Under the new standard yours may be approved and theirs not. What counts is the program’s rule, not the school’s name.',
-        ],
-      },
+        "title": "For internship hiring: results differ even within one school",
+        "text": "Employers can’t easily tell when an intern can start. A notice from one department applies only to that department.",
+        "examples": [
+          "You and your roommate go to the same university. Your program requires everyone to do an internship; your roommate’s treats it as an elective. Under the new standard yours may be approved and theirs not. What counts is the program’s rule, not the school’s name."
+        ]
+      }
     ],
     outlook:
-      'Our view: more schools will issue program-by-program notices soon. Any reopening will start with programs that qualify, not with every elective internship.',
+      "Our view: more schools will issue program-by-program notices soon. If the court pauses the guidance after the November 6 hearing, schools may gradually return to their old practice; if it does not, any reopening will start with programs that qualify, not with every elective internship.",
     scenarios: [
       {
         name: 'Further tightening',
@@ -356,17 +353,17 @@ export const cptGuidance: PolicyContent = {
     ],
     scope: [
       {
-        label: 'The key test',
-        text: 'Whether the internship is a required part of the degree, and how your school reads “required of all students.”',
+        "label": "The key test",
+        "text": "Whether the internship is a required part of the degree, and how your school reads “required of all students.”"
       },
       {
-        label: 'Existing authorization',
-        text: 'Whether an existing CPT I-20 is affected depends on whether your school has sent a notice about approved CPT.',
+        "label": "Existing authorization",
+        "text": "For a CPT I-20 you already have, follow your school’s notice about approved CPT."
       },
       {
-        label: 'Check the scope',
-        text: 'When reading a notice, note the school, department, program, type of CPT and start date.',
-      },
+        "label": "Check the scope",
+        "text": "When reading a notice, note the school, department, program, type of CPT and start date."
+      }
     ],
     milestones: [
       {
@@ -399,7 +396,7 @@ export const cptGuidance: PolicyContent = {
       },
       {
         "date": "2026-10-28",
-        "text": "The government opposed, arguing the plaintiffs cannot sue and the broadcasts cannot be reviewed by a court."
+        "text": "The government opposed, arguing the plaintiffs lack standing and the notices cannot be reviewed by a court."
       },
       {
         "date": "2026-10-29",

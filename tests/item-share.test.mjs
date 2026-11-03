@@ -14,7 +14,7 @@ test('all policies share the exact status, effect, scope and review date in both
     const item = getPolicyShareItem(id, language);
     const policy = getPolicy(id, language);
     const content = buildItemShareContent(item, language);
-    for (const value of [policy.title, policy.summary, policy.status, policy.effectLabel, policy.audience, policy.caveat, policy.reviewNote, policy.checkedOn]) {
+    for (const value of [policy.title, policy.summary, policy.status, policy.effectLabel, policy.audience, policy.caveat, policy.checkedOn]) {
       assert.ok(content.text.includes(value), `${language}/${id}: missing ${value}`);
     }
     assert.equal(new URL(content.url).pathname, `/policies/${id}`);
