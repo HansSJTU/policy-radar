@@ -57,43 +57,45 @@ export const optFee: PolicyContent = {
     effectLabel: "尚未生效 · 拟由学校先交费",
     agency: 'DHS / ICE',
     documentId: '1653-AB01',
-    tldr: "ICE 提议：DSO 推荐 OPT 之前，学校要先为每名学生交费，第一次 7 万美元，之后每次 OPT（含 STEM 延期）3 万美元。学校可以把这笔钱转给学生或雇主。目前只是提案，还没生效。",
+    tldr: "申请 OPT 的第一步，是学校的 DSO 在 SEVIS 系统里为你“推荐”。ICE 提议：推荐之前，学校要先为每名学生向政府交一笔钱，第一次 7 万美元，之后每次 OPT（包括 STEM 延期）3 万美元。学校可以自己出，也可以让学生或雇主出。公众评论 11 月 9 日截止，现在还没生效，OPT 照常申请。",
     tags: ['OPT', 'H-1B 转换'],
     summary:
-      "ICE 10 月 8 日正式提出：DSO 在 SEVIS 里推荐 OPT 之前，学校要为每名学生向政府缴费，第一次 70,000 美元，之后每次 30,000 美元。毕业前 OPT、毕业后 OPT 和 STEM 延期都算在内。钱由学校交给政府，但学校可以让学生或雇主来出。公众评论 11 月 9 日截止。",
-    audience: "准备申请 OPT（毕业前、毕业后或 STEM 延期）的 F-1 学生，以及他们的学校和雇主。",
+      "ICE 10 月 8 日正式提出：DSO 在 SEVIS 里推荐 OPT 之前，学校要为每名学生向政府缴费，第一次 70,000 美元，之后每次 30,000 美元。毕业前 OPT、毕业后 OPT 和 STEM 延期都算在内。钱由学校交给政府，但学校可以让学生或雇主来出。公众评论 11 月 9 日截止，最终规则出来之前不收费。",
+    audience: "准备申请 OPT（毕业前、毕业后或 STEM 延期）的 F-1 学生，以及他们的学校和雇主。正在挑学校的准留学生也值得关注：各校对这笔钱的态度可能很不一样。",
     caveat:
-      "交费的是学校，但学校不必自己承担；这笔钱最后由学校、学生还是雇主出，各校会不一样。",
-    reviewNote: "已核对提案及同 RIN 后续检索。Regulations.gov 评论页仅显示应用外壳，完整最新评论和学校如何分摊费用尚未核实。",
+      "交费的是学校，最后由学校、学生还是雇主出钱，各校可以自己决定。",
     background:
-      "ICE 2026-08-20 把这项收费规则送交 OIRA 审查，9·11 审完（有修改）。10·08 正式提案（2026-20660，91 FR 64566，案卷 ICEB-2026-0100）公布了金额：第一次 7 万美元，之后每次 3 万美元。此前媒体传的“10 万美元一笔”不是最终提出的方案。\nDSO 在 SEVIS 里推荐 OPT 之前，学校要先交费；不交费，DSO 不能推荐，USCIS 也不会批 OPT 工作许可。学校可以让学生或雇主出这笔钱。所有类型的 OPT 都收费，CPT 不收；只是换雇主不用再交。\n新收费从最终规则公布后第 60 天开始。这天之后的第一次 OPT 推荐收 7 万美元，就算学生以前用过 OPT 也一样；交过这 7 万之后，以后每次推荐收 3 万。已经拿到的 EAD 不受影响。\nOPT 或延期批下来之前，学校可以撤回推荐、申请退款，由 SEVP 逐个决定；批下来之后不退，退款被拒也不能申诉。规则评论 11·09 截止，表格与数据收集部分（PRA）的评论 12·07 截止。",
+      "现在申请 OPT 的流程是：学校的 DSO 先在 SEVIS 里推荐，给你一份更新过的 I-20；你再拿着它向 USCIS 递交 I-765，申请 EAD 工卡。这项提案在第一步前面加了一道收费。\nICE 2026-08-20 把这项收费规则（RIN 1653-AB01）送交 OIRA 审查，9·11 审完并做了修改。10·08 正式提案公布（文件号 2026-20660，91 FR 64566，案卷 ICEB-2026-0100），金额是第一次 7 万美元，之后每次 3 万美元。\n具体怎么收：学校交了费，DSO 才能推荐，USCIS 才会批 OPT 工卡。学校可以让学生或雇主出这笔钱。所有类型的 OPT 都收费；CPT 不收；OPT 期间只是换雇主，也不用再交。\n从哪天开始：最终规则公布后第 60 天起。这天之后的第一次 OPT 推荐收 7 万美元，就算学生以前用过 OPT 也一样；交过这 7 万之后，以后每次推荐收 3 万。已经拿到的 EAD 照常有效。\n能不能退：OPT 或延期批下来之前，学校可以撤回推荐、申请退款，由 SEVP 逐个决定；批下来之后不退，退款被拒也不能申诉。\n两个截止日：规则本身的公众评论 11·09 截止；提案里还涉及新表格和数据收集，按《文书削减法》（PRA）要另外征求意见，这部分 12·07 截止。",
     teaser: "学校先交钱，DSO 才能推荐 OPT；这笔钱最后谁出，要看学校。",
     headline: "毕业后第一份工作，可能先卡在学校交不交这笔钱。",
     analysis:
-      "提案让学校向政府交费，但学校可以把钱转给学生或雇主。影响在 DSO 推荐之前就开始：学校愿不愿意出钱、学生出不出得起、雇主肯不肯分担，决定推荐能不能办下来。第一次 7 万加一次后续 3 万，合计 10 万美元。",
+      "提案让学校向政府交费，学校可以把钱转给学生或雇主。所以影响在 DSO 推荐之前就开始了：学校愿不愿意出钱、学生出不出得起、雇主肯不肯分担，决定推荐能不能办下来。算一笔账：用一次毕业后 OPT、再用一次 STEM 延期，第一次 7 万加后续 3 万，一共 10 万美元。",
     impacts: [
       {
         "title": "对学生：先看学校出不出这笔钱",
         "text": "学校要先交 7 万美元。学校如果让学生出，学生在 DSO 推荐前就得准备好这笔钱；学校如果资助，学生就不用出或少出。",
         "examples": [
-          "小林已拿到毕业后的全职 offer。如果最终规则采用这套收费，学校得先为他的 OPT 推荐缴 7 万美元。学校可能自己出，也可能让小林或雇主出钱；钱没落实，推荐就办不下来。",
+          "小林已经拿到毕业后的全职 offer。如果最终规则采用这套收费，学校得先为他的 OPT 推荐交 7 万美元。学校可能自己出，也可能让小林或雇主出；钱没落实，推荐就办不下来。",
           "小周正在挑美国硕士项目。如果规则落地，学校是否资助 OPT、怎么在学生和雇主之间分摊费用，会直接影响毕业后找工作的成本。"
         ]
       },
       {
         "title": "对学校和雇主：推荐之前先把钱落实",
-        "text": "学校向政府交费，交了费 DSO 才能推荐、USCIS 才能批。学校可能请雇主出钱，但提案没有要求雇主必须出。",
+        "text": "学校向政府交费，交了费 DSO 才能推荐、USCIS 才能批。雇主出不出钱、出多少，由学校和雇主商量。",
         "examples": [
-          "一家小公司已为新毕业生小陈批好工资预算。如果学校要求雇主承担首次 7 万美元 OPT 费用，公司得重新算预算，可能推迟 offer 或和学校谈分摊。"
+          "一家小公司已经为新毕业生小陈批好了工资预算。如果学校要求雇主承担第一次 7 万美元的 OPT 费用，公司得重新算预算，可能推迟 offer，或者和学校谈怎么分摊。"
         ]
       },
       {
-        "title": "对后续 OPT：STEM 延期不一定只收 3 万",
-        "text": "后续每次 OPT 推荐（包括 STEM 延期）收 3 万美元，前提是这名学生已经交过第一次的 7 万。没交过的，新规生效后的第一次推荐先收 7 万。"
+        "title": "对后续 OPT：STEM 延期要看你交没交过第一笔",
+        "text": "后续每次 OPT 推荐（包括 STEM 延期）收 3 万美元，前提是这名学生已经交过第一次的 7 万。没交过的，新规生效后的第一次推荐先收 7 万。",
+        "examples": [
+          "小王在新规生效前已经开始用毕业后 OPT，没交过任何费用。新规生效后他申请 STEM 延期，这是新规下他的第一次推荐，所以要交 7 万，而不是 3 万。"
+        ]
       }
     ],
     outlook:
-      "接下来看评论期后金额、学校交费方式和过渡安排会不会改，以及各校怎么决定这笔钱谁出。",
+      "接下来看两件事：评论期过后，金额、交费方式和过渡安排会不会改；各校最终怎么决定这笔钱由谁出。",
     scenarios: [
       {
         "name": "按现有提案落地",
@@ -124,11 +126,11 @@ export const optFee: PolicyContent = {
       },
       {
         "label": "哪些 OPT",
-        "text": "毕业前、毕业后和 STEM OPT 都收；CPT 不收；只换雇主不收。"
+        "text": "毕业前 OPT、毕业后 OPT 和 STEM 延期都收；CPT 不收；OPT 期间只换雇主不收。"
       },
       {
         "label": "从何时开始",
-        "text": "最终规则公布 60 天后的新推荐开始收费；没交过第一次费的，先收 7 万。"
+        "text": "最终规则公布 60 天后的新推荐开始收费；没交过第一笔的，先收 7 万。"
       }
     ],
     milestones: [
@@ -137,26 +139,22 @@ export const optFee: PolicyContent = {
         "text": "收费规则（RIN 1653-AB01）送交 OIRA 审查。"
       },
       {
-        "date": "2026-08-26",
-        "text": "高校提醒：10 万美元来自媒体报道，政府尚未公布文本。"
-      },
-      {
         "date": "2026-09-11",
-        "text": "OIRA 带修改完成审查。"
+        "text": "OIRA 审完，提案修改后放行。"
       },
       {
         "date": "2026-10-08",
-        "text": "正式提案公布：学校先交第一次 7 万、之后每次 3 万；规则评论 11·09 截止，PRA 评论 12·07 截止。"
+        "text": "正式提案公布：学校先交第一次 7 万、之后每次 3 万；规则评论 11·09 截止，表格和数据收集部分（PRA）的评论 12·07 截止。"
       }
     ],
     next: [
       {
         "date": "2026-11-09",
-        "text": "规则公众评论截止，网上评论须在美东时间当天 23:59 前提交。"
+        "text": "规则的公众评论截止，网上评论要在美东时间当天 23:59 前提交。"
       },
       {
         "date": "2026-12-07",
-        "text": "表格与数据收集部分（PRA）的评论截止。"
+        "text": "表格和数据收集部分（PRA）的评论截止。"
       },
       {
         "date": "日期未定",
@@ -165,9 +163,9 @@ export const optFee: PolicyContent = {
       }
     ],
     process: {
-      "detail": "ICE 在 10 月 8 日公布 NPRM，拟由学校在 OPT 推荐前缴首次 7 万美元、后续 3 万美元。一般评论期至 11 月 9 日。",
-      "currentSummary": "正式提案已公布，正在收集评论",
-      "waitingFor": "11·09 规则评论截止、12·07 PRA 评论截止，之后 DHS 决定最终条文。"
+      "detail": "ICE 10 月 8 日公布提案，拟由学校在 OPT 推荐前交第一次 7 万美元、之后每次 3 万美元。规则的公众评论到 11 月 9 日。",
+      "currentSummary": "正式提案已公布，正在收集公众评论",
+      "waitingFor": "11·09 规则评论截止、12·07 表格部分评论截止，之后 DHS 决定最终条文。"
     },
   },
   en: {
@@ -177,46 +175,48 @@ export const optFee: PolicyContent = {
     effectLabel: "Not in effect · Schools would pay first",
     agency: 'DHS / ICE',
     documentId: '1653-AB01',
-    tldr: "ICE proposes that before a DSO recommends OPT, the school must pay a fee for each student: $70,000 the first time and $30,000 for each later OPT, including STEM extensions. Schools can pass the cost to students or employers. It is only a proposal for now.",
+    tldr: "The first step of applying for OPT is a “recommendation” your school’s DSO enters in SEVIS. ICE proposes that before that recommendation, the school must pay the government a fee for each student: $70,000 the first time and $30,000 for each later OPT (including a STEM extension). The school can pay it or pass it to the student or employer. Comments close November 9; it is not in effect, and OPT applications continue as usual.",
     tags: ['OPT', 'H-1B transition'],
     summary:
-      "On October 8 ICE formally proposed that before a DSO recommends OPT in SEVIS, the school must pay the government a fee for each student: $70,000 the first time and $30,000 each time after. Pre-completion OPT, post-completion OPT and STEM extensions all count. The school pays the government, but it can have the student or employer cover the cost. Public comments close November 9.",
+      "On October 8 ICE formally proposed that before a DSO recommends OPT in SEVIS, the school must pay the government a fee for each student: $70,000 the first time and $30,000 each time after. Pre-completion OPT, post-completion OPT and STEM extensions all count. The school pays the government, but it can have the student or employer cover the cost. Public comments close November 9, and nothing is charged until a final rule takes effect.",
     audience:
-      "F-1 students planning to apply for OPT (pre-completion, post-completion or a STEM extension), plus their schools and employers.",
+      "F-1 students planning to apply for OPT (before graduation, after graduation or a STEM extension), their schools and employers. Prospective students choosing schools should also watch: schools may handle this cost very differently.",
     caveat:
-      "The school pays, but it does not have to absorb the cost; whether the school, the student or the employer ends up paying will vary by school.",
-    reviewNote: "The proposal and later same-RIN records were checked. The Regulations.gov comment page returns only an application shell; complete latest comments and school cost-sharing arrangements remain unverified.",
+      "The school pays the fee; each school decides whether it, the student or the employer ultimately covers it.",
     background:
-      "ICE sent the fee rule to OIRA for review on August 20, 2026; review finished, with changes, on September 11. The October 8 proposal (2026-20660, 91 FR 64566, docket ICEB-2026-0100) set the amounts: $70,000 the first time and $30,000 each time after. The single $100,000 fee reported earlier by the media is not what was proposed.\nThe school pays before the DSO recommends OPT in SEVIS. Without payment, the DSO cannot recommend OPT and USCIS will not approve the work permit. The school can have the student or employer cover the cost. Every type of OPT is covered; CPT is not. Changing employers does not trigger another fee.\nThe fees start 60 days after the final rule is published. The first OPT recommendation after that date costs $70,000, even for a student who used OPT before; after that, each recommendation costs $30,000. EADs already issued are not affected.\nBefore the OPT or extension is approved, the school can withdraw the recommendation and ask for a refund, which SEVP decides case by case. There is no refund after approval and no appeal of a refund denial. Comments on the rule close November 9; comments on its paperwork (PRA) part close December 7.",
+      "Today, applying for OPT works like this: your school’s DSO first recommends you in SEVIS and gives you an updated I-20; you then file Form I-765 with USCIS for an EAD work permit. This proposal adds a fee before the first step.\nICE sent the fee rule (RIN 1653-AB01) to OIRA for review on August 20, 2026; review finished, with changes, on September 11. The proposal was published October 8 (document 2026-20660, 91 FR 64566, docket ICEB-2026-0100), setting the amounts at $70,000 the first time and $30,000 each time after.\nHow it would work: only after the school pays can the DSO recommend you and USCIS approve your OPT work permit. The school can have the student or employer cover the cost. Every type of OPT is charged; CPT is not; and simply changing employers during OPT does not trigger another fee.\nWhen it would start: 60 days after the final rule is published. The first OPT recommendation after that date costs $70,000, even for a student who has used OPT before; once that is paid, each later recommendation costs $30,000. EADs already issued stay valid.\nRefunds: before OPT or an extension is approved, the school can withdraw the recommendation and ask for a refund, which SEVP decides case by case; after approval there is no refund, and a denied refund cannot be appealed.\nTwo deadlines: comments on the rule itself close November 9; the proposal also creates new forms and data collection, which under the Paperwork Reduction Act (PRA) get their own comment period, closing December 7.",
     teaser:
       "The school has to pay before the DSO can recommend OPT; who ends up paying depends on the school.",
     headline:
       "Your first job after graduation may hinge on whether your school pays this fee.",
     analysis:
-      "The school pays the government but can pass the cost to students or employers. The effect starts before the DSO recommendation: whether the school pays, whether the student can afford it and whether the employer will share the cost decides whether the recommendation goes through. $70,000 the first time plus one $30,000 renewal adds up to $100,000.",
+      "The proposal has schools pay the government, and schools can pass the cost to students or employers. So the effect starts before the DSO recommendation: whether the school is willing to pay, whether the student can afford it, and whether the employer will share it decide whether the recommendation goes through. Do the math: one post-completion OPT plus one STEM extension means $70,000 plus $30,000, or $100,000 in total.",
     impacts: [
       {
         "title": "For students: it depends on whether your school pays",
         "text": "The school pays $70,000 first. If the school passes it on, the student needs the money before the DSO recommends OPT; if the school covers it, the student pays less or nothing.",
         "examples": [
-          "Lin has a full-time offer after graduation. If the final rule adopts this mechanism, the school must first pay $70,000 for the OPT recommendation. It may pay itself or ask Lin or the employer for the money; until the money is arranged, the recommendation cannot go through.",
-          "Zhou is comparing US master’s programs. If the rule takes effect, whether a school funds OPT and how it splits the cost between students and employers will directly affect the cost of working after graduation."
+          "Lin has a full-time offer after graduation. If the final rule adopts this mechanism, the school must first pay $70,000 for his OPT recommendation. It may pay itself or ask Lin or the employer for the money; until the money is arranged, the recommendation cannot go through.",
+          "Zhou is comparing U.S. master’s programs. If the rule takes effect, whether a school funds OPT and how it splits the cost between students and employers will directly affect the cost of working after graduation."
         ]
       },
       {
         "title": "For schools and employers: the money comes before the recommendation",
-        "text": "The school pays the government; only then can the DSO recommend and USCIS approve. Schools may ask employers to pay, but the proposal does not require it.",
+        "text": "The school pays the government; only then can the DSO recommend and USCIS approve. Whether and how much the employer contributes is for the school and employer to work out.",
         "examples": [
-          "A small company has budgeted Chen’s salary. If the school asks the employer to cover the $70,000 initial OPT fee, the company has to rework its budget and may delay the offer or negotiate a split with the school."
+          "A small company has budgeted Chen’s salary. If the school asks the employer to cover the $70,000 first-time OPT fee, the company has to rework its budget and may delay the offer or negotiate a split with the school."
         ]
       },
       {
-        "title": "For later OPT: a STEM extension is not always $30,000",
-        "text": "Each later OPT recommendation, including a STEM extension, costs $30,000 only if the student has already paid the $70,000 first fee. Otherwise the first recommendation after the rule starts costs $70,000."
+        "title": "For later OPT: a STEM extension depends on whether you paid the first fee",
+        "text": "Each later OPT recommendation, including a STEM extension, costs $30,000 only if the student has already paid the $70,000 first fee. Otherwise the first recommendation after the rule starts costs $70,000.",
+        "examples": [
+          "Wang started post-completion OPT before the rule took effect and never paid a fee. When he applies for a STEM extension after the rule starts, that is his first recommendation under the rule, so it costs $70,000, not $30,000."
+        ]
       }
     ],
     outlook:
-      "Next, watch whether comments change the amounts, how schools pay or the transition rules, and how each school decides who pays.",
+      "Two things to watch: whether the amounts, payment method and transition change after the comment period, and how each school decides who pays.",
     scenarios: [
       {
         "name": "Current proposal implemented",
@@ -242,55 +242,51 @@ export const optFee: PolicyContent = {
     ],
     scope: [
       {
-        "label": "Who pays",
-        "text": "The school pays the government and can pass the cost to students or employers."
+        "label": "Who pays the government, who covers it",
+        "text": "The school pays the government; it can pass the cost to the student or the employer."
       },
       {
         "label": "Which OPT",
-        "text": "Pre-completion, post-completion and STEM OPT are covered; CPT is not; changing employers alone costs nothing."
+        "text": "Pre-completion OPT, post-completion OPT and STEM extensions are all charged; CPT is not; changing employers during OPT is not."
       },
       {
         "label": "When it starts",
-        "text": "Recommendations made from 60 days after the final rule is published; anyone who has not paid the first fee pays $70,000 first."
+        "text": "New recommendations from 60 days after the final rule is published; students who never paid the first fee pay $70,000 first."
       }
     ],
     milestones: [
       {
         "date": "2026-08-20",
-        "text": "RIN 1653-AB01 was submitted to OMB/OIRA for review."
-      },
-      {
-        "date": "2026-08-26",
-        "text": "Universities noted that the $100,000 figure came from media reports; no government text had been published."
+        "text": "The fee rule (RIN 1653-AB01) went to OIRA for review."
       },
       {
         "date": "2026-09-11",
-        "text": "OIRA completed review with changes."
+        "text": "OIRA finished review and cleared the proposal with changes."
       },
       {
         "date": "2026-10-08",
-        "text": "The proposal is published: schools pay $70,000 first and $30,000 each time after; rule comments close November 9, PRA comments December 7."
+        "text": "The proposal was published: schools pay $70,000 first and $30,000 each time after; rule comments close November 9, comments on forms and data collection (PRA) December 7."
       }
     ],
     next: [
       {
         "date": "2026-11-09",
-        "text": "General rule comments close; online comments must arrive by 11:59 p.m. Eastern Time."
+        "text": "Public comments on the rule close; online comments must be in by 11:59 p.m. Eastern Time."
       },
       {
         "date": "2026-12-07",
-        "text": "Comments on the rule’s paperwork (PRA) part close."
+        "text": "Comments on the forms and data collection (PRA) close."
       },
       {
         "date": "Date unknown",
-        "text": "The final rule and its effective date; fees would start 60 days after it is published.",
+        "text": "The final rule and its start date; fees begin 60 days after the final rule is published.",
         "estimate": true
       }
     ],
     process: {
-      "detail": "ICE published the October 8 NPRM proposing school payment of $70,000 initially and $30,000 subsequently before an OPT recommendation. General comments close November 9.",
-      "currentSummary": "Proposal published; comments open",
-      "waitingFor": "Rule comments close November 9 and PRA comments December 7; then DHS decides the final text."
+      "detail": "ICE published the proposal on October 8: schools would pay $70,000 the first time and $30,000 each time after, before an OPT recommendation. Public comments on the rule run until November 9.",
+      "currentSummary": "Proposal published; public comments open",
+      "waitingFor": "Rule comments close November 9 and forms comments December 7; then DHS decides the final text."
     },
   },
   commentUrl: "https://www.regulations.gov/commenton/ICEB-2026-0100-0001",

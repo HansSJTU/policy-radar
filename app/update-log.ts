@@ -49,7 +49,7 @@ const chineseUpdates: ContentUpdate[] = [
         "title": "NC State 更新春季日历；Toledo 公布新版表单并恢复合格申请处理",
         "summary": "学校数量保持 75 条记录、74 所不同学校；两校仍按必需实践条件审批。",
         "before": "NC State 条目只写必修／论文资格条件；Toledo 条目只列 9·08 资格要求及合格实践可以申请。",
-        "after": "NC State 春季申请 11·02 开放，最早 12·13 开始；2027 全职 01·25、兼职 03·06、延期 03·12 截止，暑期申请 03·22 开放。Toledo 已提供修订表单并恢复处理满足所有相关学生毕业要求的实践；通知没有写恢复日期。",
+        "after": "NC State 春季申请 11·02 开放，最早 12·13 开始；2027 全职 01·25、兼职 03·06、延期 03·12 截止，暑期申请 03·22 开放。Toledo 已提供修订表单并恢复处理满足所有相关学生毕业要求的实践。",
         "sources": [
           {
             "label": "NC State OIS CPT dates",
@@ -70,7 +70,7 @@ const chineseUpdates: ContentUpdate[] = [
         "id": "ead-seven-plaintiff-injunction-text",
         "category": "#09 EAD 自动延期诉讼",
         "title": "补入只救济七名原告的初步禁令",
-        "summary": "Jane Doe 案第 46 项（9·11 录入）只保护起诉的七个人，法院没有在全国范围暂停；10·14 最终规则照常生效。",
+        "summary": "Jane Doe 案的初步禁令（9·11 录入）保护起诉的七个人；其他人按 10·14 生效的最终规则办。",
         "before": "已列出取消自动延期和 10·14 的最终规则，没有 Jane Doe 案的个案命令。",
         "after": "新增 9·10 签署、9·11 录入的初步禁令及来源、时间线和诉讼标记，写明只保护起诉的七个人，法院允许先就这个命令上诉。一般规则状态仍为已执行。",
         "sources": [
@@ -767,7 +767,7 @@ const chineseUpdates: ContentUpdate[] = [
         "title": "补入：四个高校协会起诉，请法院暂停 CPT 指引",
         "summary": "10·05 起诉（AAU v. DHS，1:26-cv-14520）并请求暂停指引，10·06 提交理由；在法院裁定前指引照常执行。",
         "before": "只跟踪两份 SEVP 广播和学校执行情况，还没有这起诉讼。",
-        "after": "详情、流程说明和简报加入这起诉讼，并写明它和 D/S 案是两回事。",
+        "after": "详情、流程说明和简报加入这起诉讼，并写明它和 D/S 案分开审理。",
         "sources": [
           {
             "label": "10·05 诉状",
@@ -959,7 +959,7 @@ const chineseUpdates: ContentUpdate[] = [
         id: 'h1b-separate-100k-proclamation-context',
         category: 'H-1B 收费',
         title: '分清另一笔 10 万美元入境费和 103,265 美元附加费提案',
-        summary: '白宫 9·18 把针对部分境外 H-1B 的 10 万美元入境费延长到 2027·09·21；但收这笔钱的政策已被地区法院撤销，第一巡回法院也拒绝暂缓，所以目前收不了。它和 103,265 美元附加费提案是两回事。',
+        summary: '白宫 9·18 把针对部分境外 H-1B 的 10 万美元入境费延长到 2027·09·21；但收这笔钱的政策已被地区法院撤销，第一巡回法院也拒绝暂缓，所以目前收不了。103,265 美元附加费是 DHS 另外的提案。',
         before: '#02 只讲了 103,265 美元提案，没有交代另一笔 10 万美元入境费的延期和诉讼。',
         after: '详情和 30 天简报把两件事分开写，附上白宫公告和两级法院的命令。',
         sources: [
@@ -1176,7 +1176,7 @@ const chineseUpdates: ContentUpdate[] = [
       "before": "网站收录 11 项政策，还没有这份行政命令。",
       "after": "新增 #12，共 12 项政策。状态：已签署，各部门落实中；行政命令不经过提案和公众评论。",
       "details": [
-        "命令要求考虑的裁员要同时满足三条：递交申请的雇主、同类岗位、过去一年内或已计划；命令没说有裁员就拒签。",
+        "命令要求考虑的裁员要同时满足三条：递交申请的雇主、同类岗位、过去一年内或已计划。裁员是审查时要考虑的一项因素。",
         "10·18（签署后 30 天）是劳工部开始复查以前 LCA 的最晚日期。",
         "#02 的 103,265 美元附加费是 DHS 的另一份提案，分开跟踪。"
       ],
@@ -1245,7 +1245,7 @@ const chineseUpdates: ContentUpdate[] = [
       "after": "40 条公开校方证据、5 条社区证据，共 45 条，覆盖 44 所不同学校／校区。Purdue 两条院系／校级证据仍只计一所学校。",
       "details": [
         "Buffalo 和 Dearborn 已批的 2026 秋季 CPT 可以继续。Dearborn 只开放应用行为分析和临床健康心理学两个硕士项目，本条只适用于 Dearborn 校区。",
-        "Berkeley 明确说 CPT 指引和 D/S 新规是两回事：D/S 被暂缓，选修型 CPT 不会因此恢复。"
+        "Berkeley 明确说 CPT 指引和 D/S 新规分开执行：D/S 被暂缓，选修型 CPT 仍然暂停。"
       ],
       "sources": [
         {
@@ -1819,11 +1819,11 @@ const chineseUpdates: ContentUpdate[] = [
         category: '诉讼进展',
         title: 'D/S 案：政府提交反对意见',
         summary:
-          '政府 9·02 提交超页申请，并附上反对意见（Exhibit A）：请法院驳回 APA § 705 暂缓、初步禁令，以及在行政记录提交前直接判决的请求，并主张任何救济都只应限于原告。这份文件是政府的意见，不是法院裁定；9·03 听证和 9·15 生效日都没变。',
+          '政府 9·02 提交超页申请，并附上反对意见（Exhibit A）：请法院驳回 APA § 705 暂缓、初步禁令，以及在行政记录提交前直接判决的请求，并主张就算暂缓，也只应保护原告。9·03 听证和 9·15 生效日照旧。',
         before: '政府答辩期限延至 2026-09-02，禁令申请在等政府答辩。',
         after: '政府 2026-09-02 提交反对意见；法院还没裁定。',
         details: [
-          '政府说四年上限不等于要求学生四年内毕业，超期的人可以申请延期。',
+          '政府说，四年上限到了还没毕业的学生，可以申请延期。',
           '政府认为原告说的招生减少、合规成本和项目调整只是推测或经济损失，不算无法弥补的损害。',
           '政府反对在全国范围暂停，认为就算给救济，也只应限于本案原告及其成员。',
         ],
@@ -2011,7 +2011,7 @@ const englishUpdates: ContentUpdate[] = [
         "title": "NC State updates Spring dates; Toledo publishes revised forms and resumes qualifying processing",
         "summary": "Counts remain 75 evidence entries and 74 institutions; both retain mandatory-training conditions.",
         "before": "NC State described only required-training/research eligibility; Toledo listed September 8 requirements and qualifying applications.",
-        "after": "NC State opens Spring applications November 2, with starts from December 13; 2027 full-time requests close January 25, part-time March 6 and extensions March 12. Summer applications open March 22. Toledo offers revised forms and resumes training that satisfies every relevant student’s graduation requirement; its notice does not date reopening.",
+        "after": "NC State opens Spring applications November 2, with starts from December 13; 2027 full-time requests close January 25, part-time March 6 and extensions March 12. Summer applications open March 22. Toledo offers revised forms and resumes processing training that satisfies every relevant student’s graduation requirement.",
         "sources": [
           {
             "label": "NC State OIS CPT dates",
@@ -2032,7 +2032,7 @@ const englishUpdates: ContentUpdate[] = [
         "id": "ead-seven-plaintiff-injunction-text",
         "category": "#09 EAD automatic-extension litigation",
         "title": "Add the preliminary injunction limited to seven plaintiffs",
-        "summary": "Jane Doe order 46 (entered September 11) covers only the seven people who sued; the court declined nationwide relief, and the October 14 final rule is in effect.",
+        "summary": "The Jane Doe preliminary injunction (entered September 11) protects the seven people who sued; everyone else follows the final rule in effect since October 14.",
         "before": "The end of automatic extensions and the October 14 final rule were listed, but not the Jane Doe order.",
         "after": "Add the preliminary injunction signed September 10 and entered September 11, with sources, timeline entry and litigation marker, limiting relief to the seven people who sued; the court allowed an immediate appeal of the order. The general rule remains in force.",
         "sources": [
@@ -2192,7 +2192,7 @@ const englishUpdates: ContentUpdate[] = [
         "category": "#02 H-1B surcharge · separate $100,000 case",
         "title": "Separate fee case: district-stay motion denied",
         "summary": "Entry 144 records denial of stay motion 133 and orders the administrative record produced.",
-        "before": "October 28 showed only a docket title, without the motion outcome, conference date or new schedule.",
+        "before": "October 28 listed a new docket entry; its contents were added once available.",
         "after": "Add minute entry 144: stay of district proceedings denied and record production ordered. The conference and deadline dates in the entry are inconsistent and will be added once the court clarifies them. The November 6/December 4 appellate schedule and the $103,265 proposal’s status are unchanged.",
         "sources": [
           {
@@ -3138,7 +3138,7 @@ const englishUpdates: ContentUpdate[] = [
       "before": "The site tracked 11 policies and did not yet include this order.",
       "after": "Added #12, for 12 policies in total. Status: signed, agencies implementing; an executive order has no proposal or comment stage.",
       "details": [
-        "The layoffs to be considered must meet three conditions: the employer filing the case, similar jobs, and within the past year or planned. The order does not say layoffs mean denial.",
+        "The layoffs to be considered must meet three conditions: the employer filing the case, similar jobs, and within the past year or planned. Layoffs become one factor in the review.",
         "October 18 (30 days after signing) is the latest date for DOL to start re-checking past LCAs.",
         "The #02 $103,265 surcharge is a separate DHS document, tracked apart from this order."
       ],
@@ -3207,7 +3207,7 @@ const englishUpdates: ContentUpdate[] = [
       "after": "40 public university entries and 5 community entries: 45 records covering 44 distinct institutions/campuses. The two Purdue office/department records still count as one institution.",
       "details": [
         "Buffalo and Dearborn let approved Fall 2026 CPT continue. Dearborn opens only the Applied Behavior Analysis and Clinical Health Psychology MS programs; this entry covers the Dearborn campus only.",
-        "Berkeley says the CPT guidance is separate from the D/S rule: the D/S stay does not bring back optional CPT."
+        "Berkeley says the CPT guidance and the D/S rule run separately: the D/S rule is stayed, and optional CPT remains paused."
       ],
       "sources": [
         {
@@ -3785,7 +3785,7 @@ const englishUpdates: ContentUpdate[] = [
         before: 'The government response was due September 2; the injunction request was awaiting that response.',
         after: 'The government attached its proposed opposition to its September 2 page-limit motion; the court has not ruled.',
         details: [
-          'The government says the four-year cap doesn’t mean students must graduate in four years, because they can apply to extend their stay.',
+          'The government says students still studying when the four-year cap arrives can apply to extend their stay.',
           'It calls the enrollment losses, compliance costs and program changes the plaintiffs describe speculative or purely economic, not irreparable harm.',
           'It opposes nationwide relief and argues that any remedy should be limited to the plaintiffs and their members.',
         ],

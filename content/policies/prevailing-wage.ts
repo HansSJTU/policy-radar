@@ -42,19 +42,18 @@ export const prevailingWage: PolicyContent = {
     effectLabel: '尚未生效',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: 'DOL 提议提高 H-1B、H-1B1、E-3 和 PERM 的最低工资要求：四个工资等级从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。还只是提案。',
+    tldr: "雇主办 H-1B 或 PERM 绿卡，给你的工资不能低于劳工部（DOL）定的最低线。DOL 提议大幅抬高这条线：入门级岗位的最低工资，从“同地区同职业里比约 17% 的人高”提高到“比约 34% 的人高”，其余三级也一起上调。公众评论已结束，最终规则还没出，现在仍按旧标准算。",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      'DOL 打算把 H-1B、H-1B1、E-3 和 PERM 的四级最低工资，从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。评论期已结束，还没有最终规则。',
-    audience: 'H-1B、H-1B1、E-3 和 PERM 的申请人，以及要付工资的雇主。',
-    caveat: '这项提案改的是雇主必须付的最低工资，和 H-1B 抽签按工资等级加权（#04）是两套规则。',
-    reviewNote: "同 RIN 检索仍列原提案。DOL 新闻稿通过公开替代文本读取；最新 OFLC 公告原页受阻，替代列表较旧。动态评论案卷和完整最新部门说明尚未核实。",
+      "H-1B、H-1B1、E-3 和 PERM 都要求雇主付的工资不低于一条最低线，这条线分四个等级，按岗位要求的经验和职责高低来定。DOL 打算把四个等级从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。“第 34 百分位”的意思是：把同地区做这份工作的人按工资从低到高排，这个数比其中 34% 的人高。公众评论期已结束，DOL 还没发最终规则。",
+    audience: "H-1B、H-1B1（新加坡、智利公民的工作签证）、E-3（澳大利亚公民的工作签证）和 PERM 绿卡的申请人，以及要付工资的雇主。OPT 期间准备找 H-1B 担保的同学尤其要留意。",
+    caveat: "这项提案定的是雇主必须付的最低工资。H-1B 抽签按工资等级加权（#04）是另一套规则，已经在执行。",
     background:
-      '提案（RIN 1205-AC30）2026-03-27 公布，公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案；DOL 还没发最终规则，现在的工资等级算法没变。',
-    teaser: '除了一次性费用，每年多付的工资也会让雇主更不愿担保。',
-    headline: '多年的工资成本，可能成为又一道担保门槛。',
+      "雇主为 H-1B 员工递交 LCA（劳工条件申请）、为 PERM 绿卡申请工资认定时，都要先确定这个岗位的“现行工资”，也就是最低线。DOL 用劳工统计局的 OEWS 工资数据，把每个职业、每个地区的工资分成四个等级：一级对应入门岗位，四级对应资深岗位。雇主按岗位要求选等级，工资至少要达到那一级。\n2025 年 9 月 19 日，总统公告要求 DOL 着手调整这些等级。2026 年 3 月 27 日，DOL 公布提案（RIN 1205-AC30），60 天的公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案阶段。DOL 发最终规则之前，工资等级仍按现在的方法算。",
+    teaser: "除了一次性费用，每年多付的工资也会让雇主更不愿担保。",
+    headline: "多年的工资成本，可能成为又一道担保门槛。",
     analysis:
-      '如果定稿，影响落在长期的用人成本上，而不只是一笔申请费。本来就卡在预算边上的岗位，雇主只有三个选择：涨工资、改招聘计划，或者不担保。',
+      "如果定稿，雇主多出的是每年的工资，而且会持续好几年，而不只是一笔申请费。对本来就卡在预算边上的岗位，雇主只有三个选择：涨工资、调整招聘计划，或者不再担保。入门级岗位受的冲击最大，因为一级工资的涨幅最大（从约第 17 百分位翻倍到第 34 百分位）。",
     impacts: [
       {
         title: '对求职者：有些岗位可能不再担保',
@@ -81,7 +80,7 @@ export const prevailingWage: PolicyContent = {
       },
     ],
     outlook:
-      '我们的判断：影响会因职业、地区和雇主预算差别很大。最终涨多少、有没有过渡期，决定成本是一下子压下来，还是逐步落到新申请上。',
+      "我们的判断：影响会因职业、地区和雇主预算差别很大。最终涨多少、有没有过渡期，决定成本是一下子压下来，还是随着新申请逐步落地。",
     scenarios: [
       {
         name: '按提案上调',
@@ -108,40 +107,49 @@ export const prevailingWage: PolicyContent = {
       },
     ],
     scope: [
-      { label: '涉及哪些签证', text: 'H-1B、H-1B1、E-3 和 PERM 的工资要求。' },
-      { label: '提议的新标准', text: '四个等级提高到同地区同职业工资的约第 34、52、70、88 百分位。' },
       {
-        label: '现在用哪个标准',
-        text: '现行工资标准不变；新标准从何时、对哪些申请适用，看最终规则。',
+        "label": "涉及哪些签证",
+        "text": "H-1B、H-1B1、E-3 和 PERM 的最低工资要求。"
       },
+      {
+        "label": "提议的新标准",
+        "text": "四个等级提高到同地区同职业工资的约第 34、52、70、88 百分位。"
+      },
+      {
+        "label": "现在用哪个标准",
+        "text": "现行工资标准照常适用。新标准从哪天起、对哪些申请适用，由最终规则写明。"
+      }
     ],
     milestones: [
       {
-        date: '2025-09-19',
-        text: '总统公告要求 DOL 着手调整 H-1B 工资等级。',
+        "date": "2025-09-19",
+        "text": "总统公告要求 DOL 着手调整 H-1B 工资等级。"
       },
       {
-        date: '2026-03-27',
-        text: 'DOL 公布提案：四级工资提高到第 34、52、70、88 百分位。',
+        "date": "2026-03-27",
+        "text": "DOL 公布提案：四级工资提高到第 34、52、70、88 百分位。"
       },
-      { date: '2026-05-26', text: '60 天公众评论截止，DOL 开始审评论。' },
+      {
+        "date": "2026-05-26",
+        "text": "60 天公众评论期结束，DOL 开始审阅意见。"
+      }
     ],
     next: [
       {
         "date": "日期未定",
-        "text": "DOL 可能修改提案并把最终规则送 OIRA 审查；没有公布时间。"
+        "text": "DOL 可能修改提案，再把最终规则送 OIRA 审查。"
       },
       {
         "date": "日期未定",
-        "text": "最终规则发布并到生效日后，新工资标准才开始适用。",
+        "text": "最终规则公布、到了生效日，新工资标准才开始适用。",
         "estimate": true
       }
     ],
     process: {
       detail:
-        'DOL 已公布提案，公众评论 2026 年 5 月 26 日结束。DOL 审完评论后才能发最终规则。',
+        "DOL 已公布提案，公众评论 2026 年 5 月 26 日结束。DOL 审阅完意见后，才能发最终规则。",
       currentSummary: '评论期已结束，等待最终规则',
-      waitingFor: 'DOL 审评论、修改提案或推进最终规则；日期未定。',
+      waitingFor: "DOL 审阅意见、修改提案或推进最终规则。",
     },
   },
   en: {
@@ -151,23 +159,22 @@ export const prevailingWage: PolicyContent = {
     effectLabel: 'Not in effect',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: 'DOL proposes raising the minimum wages for H-1B, H-1B1, E-3 and PERM: the four wage levels would move from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. It is only a proposal.',
+    tldr: "When an employer sponsors you for H-1B or a PERM green card, your pay cannot fall below a minimum set by the Department of Labor (DOL). DOL proposes raising that minimum sharply: for entry-level jobs, from “more than about 17% of people in the same job and area earn” to “more than about 34%,” with the other three levels rising too. Comments have closed and there is no final rule, so the current levels still apply.",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      'DOL plans to move the four minimum-wage levels for H-1B, H-1B1, E-3 and PERM from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. Comments have closed; there is no final rule.',
+      "H-1B, H-1B1, E-3 and PERM all require employers to pay at least a minimum wage, set at four levels according to how much experience and responsibility the job requires. DOL plans to move the four levels from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. “34th percentile” means: line up everyone doing this job in the area from lowest to highest paid, and the wage is higher than 34% of them. The comment period has closed and DOL has not issued a final rule.",
     audience:
-      'H-1B, H-1B1, E-3 and PERM applicants and the employers paying them.',
+      "Applicants for H-1B, H-1B1 (the work visa for citizens of Singapore and Chile), E-3 (the work visa for Australian citizens) and PERM green cards, and the employers paying them. Students on OPT hoping for H-1B sponsorship should pay particular attention.",
     caveat:
-      'This proposal is about the minimum wage employers must pay; it is separate from the wage-weighted H-1B lottery (#04).',
-    reviewNote: "The same-RIN search still lists the proposal. The DOL release was read through public alternative text; the latest OFLC page was blocked and its alternative list is older. The live comment docket and complete current agency guidance remain unverified.",
+      "This proposal sets the minimum wage employers must pay. The wage-weighted H-1B lottery (#04) is a separate rule that is already in effect.",
     background:
-      'The proposal (RIN 1205-AC30) was published March 27, 2026; comments closed May 26. The August 2026 government rulemaking plan still lists it as a proposal. DOL has not issued a final rule, so wage levels are still calculated the current way.',
+      "When an employer files an LCA (Labor Condition Application) for an H-1B worker, or seeks a wage determination for a PERM green card, it first has to find the job’s “prevailing wage,” which is the minimum. DOL uses the Bureau of Labor Statistics’ OEWS wage data to split pay for each occupation and area into four levels: Level I for entry-level jobs up to Level IV for senior ones. The employer picks the level that matches the job’s requirements and must pay at least that much.\nOn September 19, 2025, a presidential proclamation told DOL to start revising those levels. On March 27, 2026, DOL published the proposal (RIN 1205-AC30), and the 60-day comment period closed May 26. The August 2026 government rulemaking plan still lists it at the proposal stage. Until DOL issues a final rule, wage levels are calculated the current way.",
     teaser:
-      'Beyond one-time fees, paying more every year would make employers less willing to sponsor.',
+      "Beyond one-time fees, paying more every year would make employers less willing to sponsor.",
     headline:
-      'Years of higher salary could become another barrier to sponsorship.',
+      "Years of higher salary could become another barrier to sponsorship.",
     analysis:
-      'If adopted, the cost is ongoing salary, not a one-time filing fee. For jobs already at the edge of the budget, employers have three choices: pay more, change hiring plans or stop sponsoring.',
+      "If adopted, the employer’s extra cost is salary every year, for years, not a one-time filing fee. For jobs already at the edge of the budget, employers have three choices: pay more, change hiring plans or stop sponsoring. Entry-level jobs are hit hardest, because Level I rises the most (roughly doubling, from about the 17th to the 34th percentile).",
     impacts: [
       {
         title: 'For job seekers: some jobs may stop offering sponsorship',
@@ -195,7 +202,7 @@ export const prevailingWage: PolicyContent = {
       },
     ],
     outlook:
-      'Our view: the effect will vary a lot by occupation, region and employer budget. The final numbers and any transition period will decide whether costs hit all at once or phase in with new filings.',
+      "Our view: the effect will vary a lot by occupation, region and employer budget. The final numbers and any transition period will decide whether costs hit all at once or phase in as new filings come in.",
     scenarios: [
       {
         name: 'Raised as proposed',
@@ -232,49 +239,49 @@ export const prevailingWage: PolicyContent = {
     ],
     scope: [
       {
-        label: 'Which visas',
-        text: 'Wage requirements for H-1B, H-1B1, E-3 and PERM.',
+        "label": "Which visas",
+        "text": "Minimum wage requirements for H-1B, H-1B1, E-3 and PERM."
       },
       {
-        label: 'Proposed levels',
-        text: 'The four levels would move to about the 34th, 52nd, 70th and 88th percentiles of local pay for the job.',
+        "label": "Proposed levels",
+        "text": "The four levels would move to about the 34th, 52nd, 70th and 88th percentiles of local pay for the job."
       },
       {
-        label: 'What applies now',
-        text: 'Current wage levels still apply; when and to which filings new ones apply depends on the final rule.',
-      },
+        "label": "What applies now",
+        "text": "Current wage levels still apply. The final rule will say from when, and to which filings, new levels apply."
+      }
     ],
     milestones: [
       {
-        date: '2025-09-19',
-        text: 'A presidential proclamation told DOL to start revising H-1B wage levels.',
+        "date": "2025-09-19",
+        "text": "A presidential proclamation told DOL to start revising H-1B wage levels."
       },
       {
-        date: '2026-03-27',
-        text: 'DOL published the proposal: four levels at the 34th, 52nd, 70th and 88th percentiles.',
+        "date": "2026-03-27",
+        "text": "DOL published the proposal: four levels at the 34th, 52nd, 70th and 88th percentiles."
       },
       {
-        date: '2026-05-26',
-        text: 'The 60-day comment period closed and DOL began reviewing comments.',
-      },
+        "date": "2026-05-26",
+        "text": "The 60-day public comment period closed and DOL began reviewing comments."
+      }
     ],
     next: [
       {
         "date": "Date unknown",
-        "text": "DOL may revise the proposal and send a final rule to OIRA; no timeline has been announced."
+        "text": "DOL may revise the proposal and then send a final rule to OIRA for review."
       },
       {
         "date": "Date unknown",
-        "text": "New wage levels apply only once a final rule is published and takes effect.",
+        "text": "New wage levels apply only once a final rule is published and its start date arrives.",
         "estimate": true
       }
     ],
     process: {
       detail:
-        'DOL published the proposal and comments closed May 26, 2026. DOL has to review the comments before issuing a final rule.',
+        "DOL published the proposal and comments closed May 26, 2026. DOL has to review the comments before issuing a final rule.",
       currentSummary: 'Comment period closed; awaiting a final rule',
       waitingFor:
-        'DOL’s review of comments and next steps toward a final rule; no date set.',
+        "DOL’s review of comments and next steps toward a final rule.",
     },
   },
 };

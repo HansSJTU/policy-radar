@@ -40,7 +40,7 @@ test('the September 3 content update records the hearing, government opposition,
   assert.match(text, /第 47 项/);
   assert.match(text, /留待裁定/);
   assert.match(text, /没有当庭作出裁决/);
-  assert.match(text, /不是法院裁定/);
+  assert.match(text, /法院还没裁定/);
   assert.match(text, /APA § 705/);
   assert.match(text, /21 所/);
   assert.match(text, /23 所/);

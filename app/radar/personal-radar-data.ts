@@ -126,8 +126,8 @@ export const personalEstimates: Record<PolicyId, Estimate> = {
   'h1b-program-integrity': {
     score: 6,
     why: {
-      zh: '行政命令让裁员和合规成为审查内容，但没说有裁员就拒；具体看各部门怎么执行。',
-      en: 'The order adds layoff and compliance checks but does not say layoffs mean denial; it depends on how agencies carry it out.',
+      zh: '行政命令把雇主裁员和合规情况加进审查，裁员是要考虑的一项因素；具体分量看各部门怎么执行。',
+      en: 'The order adds layoffs and compliance to the review as one factor among others; how much weight they carry depends on how agencies carry it out.',
     },
   },
 };

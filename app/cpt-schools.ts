@@ -47,11 +47,11 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     "tone": "tighten",
     "zh": {
       "state": "暂停：非必修课程不再签发 CPT",
-      "detail": "OISS 公开 CPT 段落称，收到 2026 年 8 月 SEVP 广播后，已停止为完成学位或项目并非必需的课程签发 CPT，并正与移民律师修订政策。该段没有写暂停起始日或新政策何时出台。 已有授权和具体必修课程个案的处理尚未核实。"
+      "detail": "OISS 公开 CPT 段落称，收到 2026 年 8 月 SEVP 广播后，已停止为完成学位或项目并非必需的课程签发 CPT，并正与移民律师修订政策。"
     },
     "en": {
       "state": "Paused: no CPT for courses the program doesn’t require",
-      "detail": "The public OISS CPT section says that, following the August 2026 SEVP broadcasts, it stopped issuing CPT for classes not required to complete a degree or program and is revising its policy with immigration attorneys. No start date or timeline for the new policy is given. Treatment of existing authorizations and individual required-course cases remains unverified."
+      "detail": "The public OISS CPT section says that, following the August 2026 SEVP broadcasts, it stopped issuing CPT for classes not required to complete a degree or program and is revising its policy with immigration attorneys."
     },
     "screenshots": []
   },
@@ -427,13 +427,13 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     zh: {
       state: '已恢复处理必修实践 CPT，采用新版申请表',
       detail:
-        "OISSS 按 SEVP 2608-02 要求实践是课程要求中必需的组成部分；只注册实习课或拿学分不够。符合条件的必需实践仍可申请兼职或全职 CPT，秋春学期全职须为学位所必需。 另一个校方移民更新页现明确：修订后的申请表已上线，OISSS 已恢复处理符合要求的请求。学术／co-op／学院审批人须确认实践是所有相关学生都必须完成的毕业要求，且已注册相应必修课程；须先取得 CPT I-20 并等到授权开始日。通知未标注恢复日期，也未说明已有授权如何处理。",
+        "OISSS 按 SEVP 2608-02 要求实践是课程要求中必需的组成部分；只注册实习课或拿学分不够。符合条件的必需实践仍可申请兼职或全职 CPT，秋春学期全职须为学位所必需。 另一个校方移民更新页现明确：修订后的申请表已上线，OISSS 已恢复处理符合要求的请求。学术／co-op／学院审批人须确认实践是所有相关学生都必须完成的毕业要求，且已注册相应必修课程；须先取得 CPT I-20 并等到授权开始日。",
     },
     en: {
       state:
         'Required-training CPT processing resumed with revised forms',
       detail:
-        "Under SEVP 2608-02, OISSS requires training to be an integral, required part of the established curriculum; course enrollment or credit alone is not enough. Qualifying required training can still get part-time or full-time CPT; full-time during Fall/Spring must be degree-required. The official immigration-update page now states that revised request forms are available and OISSS has resumed processing qualifying requests. Academic/co-op/college approvers must confirm a mandatory graduation requirement for all students in the curriculum and required enrollment. The authorized I-20 and its start date must precede work. The notice does not date reopening or address existing authorizations.",
+        "Under SEVP 2608-02, OISSS requires training to be an integral, required part of the established curriculum; course enrollment or credit alone is not enough. Qualifying required training can still get part-time or full-time CPT; full-time during Fall/Spring must be degree-required. The official immigration-update page now states that revised request forms are available and OISSS has resumed processing qualifying requests. Academic/co-op/college approvers must confirm a mandatory graduation requirement for all students in the curriculum and required enrollment. The authorized I-20 and its start date must precede work.",
     },
     screenshots: [],
   },
@@ -1289,11 +1289,11 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
     "tone": "tighten",
     "zh": {
       "state": "只批所有学生必修或论文必需的 CPT",
-      "detail": "OIS 现行页面按 8·24 指引，排除选修实习、co-op 和选修研究；可批的是项目全体学生毕业必需的实践，或不做校外环节就完成不了的论文研究，后者须导师给出有力的书面说明。还须有雇主合作协议和课程或研究学分。 春季 2027 CPT 自 2026·11·02 开放申请，最早授权开始日为 2026·12·13。全职申请截至 2027·01·25、兼职截至 03·06、延期截至 03·12；当学期完成学业者最晚 05·08 结束，继续在读者最晚 05·18 结束。暑期申请 03·22 开放。仍须符合上述必修或论文条件并先获 I-20 授权。页内历史秋季兼职截止误列为 2028·10·16，该年份尚待 OIS 澄清。"
+      "detail": "OIS 现行页面按 8·24 指引，排除选修实习、co-op 和选修研究；可批的是项目全体学生毕业必需的实践，或不做校外环节就完成不了的论文研究，后者须导师给出有力的书面说明。还须有雇主合作协议和课程或研究学分。 春季 2027 CPT 自 2026·11·02 开放申请，最早授权开始日为 2026·12·13。全职申请截至 2027·01·25、兼职截至 03·06、延期截至 03·12；当学期完成学业者最晚 05·08 结束，继续在读者最晚 05·18 结束。暑期申请 03·22 开放。仍须符合上述必修或论文条件并先获 I-20 授权。"
     },
     "en": {
       "state": "Only program-required CPT or essential thesis research",
-      "detail": "The current OIS page applies the August 24 guidance and excludes elective internships, co-ops and research. It allows training required of all program students, or off-campus research without which a thesis or dissertation cannot be completed, backed by a strong written advisor justification. A cooperative agreement and course or research enrollment are also required. Spring 2027 CPT applications open November 2, 2026, with authorization starting no earlier than December 13, 2026. Full-time requests close January 25, 2027; part-time March 6; extensions March 12. Authorization ends by May 8 for students completing that semester, or May 18 for continuing students. Summer applications open March 22. The required-training/research conditions and prior authorized I-20 still apply. The historical Fall part-time deadline is printed as October 16, 2028; OIS has not clarified that year."
+      "detail": "The current OIS page applies the August 24 guidance and excludes elective internships, co-ops and research. It allows training required of all program students, or off-campus research without which a thesis or dissertation cannot be completed, backed by a strong written advisor justification. A cooperative agreement and course or research enrollment are also required. Spring 2027 CPT applications open November 2, 2026, with authorization starting no earlier than December 13, 2026. Full-time requests close January 25, 2027; part-time March 6; extensions March 12. Authorization ends by May 8 for students completing that semester, or May 18 for continuing students. Summer applications open March 22. The required-training/research conditions and prior authorized I-20 still apply."
     },
     "screenshots": []
   },
@@ -1338,13 +1338,13 @@ export const communitySchools: CommunitySchoolRecord[] = [
     school: 'UNC–Chapel Hill',
     zh: {
       state: 'ISSS 邮件截图：只有严格的毕业要求才批，其余暂停',
-      detail: "ISSS 邮件截图（见附图）。校方公开 CPT 页目前只写流程修订中、请联系顾问，没有公布新的范围。 本次重读保存截图，但未取得支持当前状态的校方公开通知；该条仍为历史社区消息。",
+      detail: "ISSS 邮件截图（见附图）。校方公开 CPT 页目前只写流程修订中、请联系顾问，没有公布新的范围。 这是学校之前发出的通知，最新安排以学校公告为准。",
     },
     en: {
       state:
         'ISSS email screenshot: paused except strict graduation requirements',
       detail:
-        "ISSS email screenshot (attached). The public CPT page currently says only that processes are being revised and directs students to advisers; no new scope has been published. The saved screenshot was reread, but no public university notice confirming current status was obtained. This remains a historical community report.",
+        "ISSS email screenshot (attached). The public CPT page currently says only that processes are being revised and directs students to advisers; no new scope has been published. This is an earlier school notice; check the school’s latest announcements for current arrangements.",
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_unc.jpeg', width: 1080, height: 1875 },
@@ -1356,13 +1356,13 @@ export const communitySchools: CommunitySchoolRecord[] = [
     school: 'Caltech',
     zh: {
       state: 'ISP 通知截图：新 CPT 全部暂停，在做的人不受影响',
-      detail: "ISP 通知截图（见附图）。校方 F-1 就业页仍保留一般 CPT 申请说明，没有发布恢复公告。 本次重读保存截图，但未取得支持当前状态的校方公开通知；该条仍为历史社区消息。",
+      detail: "ISP 通知截图（见附图）。校方 F-1 就业页仍保留一般 CPT 申请说明，没有发布恢复公告。 这是学校之前发出的通知，最新安排以学校公告为准。",
     },
     en: {
       state:
         'ISP notice screenshot: all new CPT paused; current CPT unaffected',
       detail:
-        "ISP notice screenshot (attached). Caltech’s F-1 employment page still carries general CPT application instructions; no reopening has been announced. The saved screenshot was reread, but no public university notice confirming current status was obtained. This remains a historical community report.",
+        "ISP notice screenshot (attached). Caltech’s F-1 employment page still carries general CPT application instructions; no reopening has been announced. This is an earlier school notice; check the school’s latest announcements for current arrangements.",
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_caltech.jpeg', width: 1080, height: 1413 },
@@ -1375,13 +1375,13 @@ export const communitySchools: CommunitySchoolRecord[] = [
     zh: {
       state:
         'ECE 邮件截图：本学期不批非必修实习／co-op；论文研究另问 ISS',
-      detail: "ECE 院系邮件截图（见附图），代表 ECE 院系说法；普渡全校说法见 Purdue University (ISS) 条目。 本次重读保存截图，但未取得支持当前状态的校方公开通知；该条仍为历史社区消息。",
+      detail: "ECE 院系邮件截图（见附图），代表 ECE 院系说法；普渡全校说法见 Purdue University (ISS) 条目。 这是学校之前发出的通知，最新安排以学校公告为准。",
     },
     en: {
       state:
         'ECE email screenshot: no non-required internship/co-op CPT this semester; ask ISS about thesis research',
       detail:
-        "ECE department email screenshot (attached), reflecting the ECE department’s position; for Purdue’s university-wide policy, see the Purdue University (ISS) entry. The saved screenshot was reread, but no public university notice confirming current status was obtained. This remains a historical community report.",
+        "ECE department email screenshot (attached), reflecting the ECE department’s position; for Purdue’s university-wide policy, see the Purdue University (ISS) entry. This is an earlier school notice; check the school’s latest announcements for current arrangements.",
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_purdue.jpeg', width: 1320, height: 1893 },
@@ -1394,13 +1394,13 @@ export const communitySchools: CommunitySchoolRecord[] = [
     zh: {
       state:
         '学校邮件截图：新 CPT 暂停审批；还没进 SEVIS 的暂不批',
-      detail: "学校邮件截图（见附图）。校方公开 Career Services 页只有一般 CPT 说明，没有发布恢复公告。 本次重读保存截图，但未取得支持当前状态的校方公开通知；该条仍为历史社区消息。",
+      detail: "学校邮件截图（见附图）。校方公开 Career Services 页只有一般 CPT 说明，没有发布恢复公告。 这是学校之前发出的通知，最新安排以学校公告为准。",
     },
     en: {
       state:
         'School email screenshot: new CPT approvals paused; requests not yet in SEVIS won’t be approved for now',
       detail:
-        "School email screenshot (attached). The public Career Services page has only general CPT information; no reopening has been announced. The saved screenshot was reread, but no public university notice confirming current status was obtained. This remains a historical community report.",
+        "School email screenshot (attached). The public Career Services page has only general CPT information; no reopening has been announced. This is an earlier school notice; check the school’s latest announcements for current arrangements.",
     },
     screenshots: [
       {

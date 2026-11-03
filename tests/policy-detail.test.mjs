@@ -259,7 +259,7 @@ test('PERM expectations stay labeled as analysis and cite the Justice Department
     );
     assert.ok(policy.milestones.some(({ date }) => date === '2026-08-04'));
   }
-  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /不是 DOL 已公布的条款/);
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /以 DOL 公布的提案为准/);
   assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /expect/i);
 });
 
