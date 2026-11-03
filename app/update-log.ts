@@ -23,6 +23,47 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-02",
+    "changes": [
+      {
+        "id": "duration-government-reply-november2",
+        "category": "#03 D/S 全国暂缓诉讼",
+        "title": "政府已交 11·02 回复，双方争议包括是否撤销整项规则",
+        "summary": "政府请求法院判其胜诉，原告请求撤销整项规则；全国暂缓继续。",
+        "before": "当前程序列 11·02 最后一轮回复截止及 11·09 政府上诉书，等待法院判决。",
+        "after": "记录政府第 70 项回复：请求判政府胜诉，备选主张发回 DHS 但保留规则、限缩救济；补入原告第 69 项补充意见。将已发生的政府回复放入时间线，下一已排定期限保留 11·09。",
+        "sources": [
+          {
+            "label": "Government reply 70",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.70.0.pdf"
+          },
+          {
+            "label": "Plaintiffs’ memorandum 69",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.69.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ncsu-spring-calendar-toledo-processing",
+        "category": "#05 CPT 学校追踪",
+        "title": "NC State 更新春季日历；Toledo 公布新版表单并恢复合格申请处理",
+        "summary": "学校数量保持 75 条记录、74 所不同学校；两校仍按必需实践条件审批。",
+        "before": "NC State 条目只写必修／论文资格条件；Toledo 条目只列 9·08 资格要求及合格实践可以申请。",
+        "after": "NC State 春季申请 11·02 开放，最早 12·13 开始；2027 全职 01·25、兼职 03·06、延期 03·12 截止，暑期申请 03·22 开放。Toledo 已提供修订表单并恢复处理满足所有相关学生毕业要求的实践；通知没有写恢复日期。",
+        "sources": [
+          {
+            "label": "NC State OIS CPT dates",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          },
+          {
+            "label": "Toledo OISSS immigration update",
+            "href": "https://www.utoledo.edu/cisp/international/immigration-update/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-01",
     "changes": [
       {
@@ -1943,6 +1984,47 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-02",
+    "changes": [
+      {
+        "id": "duration-government-reply-november2",
+        "category": "#03 D/S nationwide-pause litigation",
+        "title": "Government files November 2 reply; dispute includes striking down the whole rule",
+        "summary": "The government seeks judgment in its favor; plaintiffs seek to strike down the rule. Nationwide relief continues.",
+        "before": "Current procedure listed November 2 final replies and November 9 government appeal briefing, with a ruling pending.",
+        "after": "Record government reply 70 seeking judgment in its favor, or return to DHS while keeping the rule and narrower relief; add plaintiffs’ memorandum 69. Move the filed government reply into the timeline and retain November 9 as the next scheduled deadline.",
+        "sources": [
+          {
+            "label": "Government reply 70",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.70.0.pdf"
+          },
+          {
+            "label": "Plaintiffs’ memorandum 69",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.69.0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ncsu-spring-calendar-toledo-processing",
+        "category": "#05 CPT school tracker",
+        "title": "NC State updates Spring dates; Toledo publishes revised forms and resumes qualifying processing",
+        "summary": "Counts remain 75 evidence entries and 74 institutions; both retain mandatory-training conditions.",
+        "before": "NC State described only required-training/research eligibility; Toledo listed September 8 requirements and qualifying applications.",
+        "after": "NC State opens Spring applications November 2, with starts from December 13; 2027 full-time requests close January 25, part-time March 6 and extensions March 12. Summer applications open March 22. Toledo offers revised forms and resumes training that satisfies every relevant student’s graduation requirement; its notice does not date reopening.",
+        "sources": [
+          {
+            "label": "NC State OIS CPT dates",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          },
+          {
+            "label": "Toledo OISSS immigration update",
+            "href": "https://www.utoledo.edu/cisp/international/immigration-update/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-01",
     "changes": [

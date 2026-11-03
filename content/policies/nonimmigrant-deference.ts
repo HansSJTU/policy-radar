@@ -5,7 +5,7 @@ export const nonimmigrantDeference: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-11-01",
+  "checkedOn": "2026-11-02",
   "related": [
     "h1b-reform",
     "grace-period"
@@ -60,6 +60,7 @@ export const nonimmigrantDeference: PolicyContent = {
     "summary": "DHS 提议删除 8 CFR 214.1(c)(5)。这一条要求 USCIS 在雇主、员工和基本事实都没变的 Form I-129 续期中，一般参照上次的批准。提案 10·14 正式刊登（91 FR 65119），公众评论 11·13 截止。",
     "audience": "用 Form I-129 延期的工作签证持有人和雇主，包括 H-1B、L-1、O-1，以及用这张表的 E、TN 申请。",
     "caveat": "续期照样按材料审，已经批下来的身份和许可不受影响。现在的参照原则本来就有例外（上次批错了、情况变了、出现新的重要信息），申请人也一直要自己证明资格。",
+    reviewNote: "已核对已刊登提案和同 RIN 检索。Regulations.gov 仅返回应用外壳，完整最新评论尚未核实；OIRA 同 RIN 无结果，完整审查历史仍有缺口。",
     "background": "现行 8 CFR 214.1(c)(5) 规定：Form I-129 续期时，如果雇主、员工和基本事实都没变，USCIS 一般参照上次的资格认定。申请人仍要交证据；上次批错了、情况有重大变化或出现新的重要信息时，也可以重新审。\n这次的提案（RIN 1615-AD26）要删掉这一条，理由是每次都应独立审核资格、由申请人自己证明。它和还在 OIRA 审查的 H-1B 综合改革（#07，RIN 1615-AD00）是两回事。",
     "teaser": "上次批过，下次续期不一定还能顺利过。",
     "headline": "续期可能要从头证明资格。",
@@ -161,6 +162,7 @@ export const nonimmigrantDeference: PolicyContent = {
     "summary": "DHS proposes deleting 8 CFR 214.1(c)(5), which generally requires USCIS to follow its earlier approval when an I-129 renewal involves the same employer, worker and basic facts. The proposal was published October 14 (91 FR 65119); public comments close November 13.",
     "audience": "Work-visa holders and employers extending through Form I-129, including H-1B, L-1, O-1 and E or TN cases filed on that form.",
     "caveat": "Renewals are still decided on their merits, and existing approvals and status are unaffected. Current deference already has exceptions for material error, changed facts and new information, and petitioners must still prove eligibility.",
+    reviewNote: "The published proposal and same-RIN search were checked. Regulations.gov returns only an application shell, leaving complete latest comments unverified. OIRA returns no same-RIN result, leaving complete review history a gap.",
     "background": "Current 8 CFR 214.1(c)(5) says that when an I-129 renewal involves the same employer, worker and basic facts, USCIS generally follows its earlier eligibility decision. Applicants still have to submit evidence, and USCIS can look again if the earlier approval was a mistake, the facts changed materially or important new information appears.\nThis proposal (RIN 1615-AD26) would delete that provision so that eligibility is reviewed fresh each time and the applicant carries the burden of proof. It is separate from the broader H-1B reform (#07, RIN 1615-AD00) still under OIRA review.",
     "teaser": "Being approved last time would no longer smooth the way for your renewal.",
     "headline": "Renewals may need to prove eligibility from scratch.",

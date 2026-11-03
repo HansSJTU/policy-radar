@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: [
     "ead-auto-extension",
     "ead-discretion",
@@ -57,6 +57,7 @@ export const h4Ead: PolicyContent = {
       'DHS 打算撤销 2015 年那条让部分 H-4 配偶可以申请 EAD 的规则。撤销后，这类配偶不能再凭这条规则拿工作许可；持 H-1B 的一方身份不变。还没有正式提案。',
     audience: '现在凭这条规则工作的 H-4 配偶，以及他们的家庭。',
     caveat: '持 H-1B 的一方身份不受影响；已经拿到的工作许可继续有效。',
+    reviewNote: "AD14 议程、现行配偶资格页及条文已核对；联邦公报未列新的资格撤销提案。同 RIN OIRA 搜索无结果，完整审查历史及后续资格规则、部门说明和诉讼仍未完整核实。",
     background:
       "这项规则（RIN 1615-AD14）要撤销的是 2015 年那条规则，提案日期写的是“待定”。目前没有公开文本、评论期或生效日期。\n另一项规则（RIN 1615-AD05）已经从 2025·10·30 起取消部分 EAD 续期的自动延期，10·14 的最终规则原样定稿。这和 AD14 是两回事：H-4 配偶现在仍然可以申请 EAD，只是续期收据不再自动延长工作许可。",
     teaser: '如果真的撤销，家里少一份收入，配偶的职业也会中断。',
@@ -152,6 +153,7 @@ export const h4Ead: PolicyContent = {
       'H-4 spouses working under this rule today, and their families.',
     caveat:
       'The H-1B holder’s status is not affected, and work permits already issued stay valid.',
+    reviewNote: "The AD14 agenda, current spouse-eligibility page and regulation were checked; the Federal Register lists no new eligibility-rescission proposal. The OIRA same-RIN search returns no result, leaving complete review history and later eligibility rules, agency guidance and litigation incompletely verified.",
     background:
       "This rule (RIN 1615-AD14) would undo the 2015 rule; its proposal date is listed as “to be determined.” There is no public text, comment period or start date.\nA different rule (RIN 1615-AD05) has already ended automatic extensions for certain EAD renewals filed since October 30, 2025, and was finalized unchanged on October 14. That is separate from AD14: H-4 spouses can still apply for an EAD, but a renewal receipt no longer extends the work permit automatically.",
     teaser:

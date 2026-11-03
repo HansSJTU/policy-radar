@@ -5,7 +5,7 @@ export const durationStatus: PolicyContent = {
   path: 'F-1',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['cpt-guidance', 'opt-fee', 'grace-period'],
   process: {
     kind: 'federal-rulemaking',
@@ -54,6 +54,7 @@ export const durationStatus: PolicyContent = {
         lane: 'raised',
       },
       { date: '10·30', zh: '双方请求判决', en: 'Both sides seek judgment', afterStage: 4, progress: 98, status: 'filed', align: 'right', lane: 'base' },
+      { date: '11·02', zh: '政府交回复', en: 'Government reply filed', afterStage: 4, progress: 99, status: 'filed', align: 'left', lane: 'raised' },
     ],
   },
   sources: [
@@ -181,25 +182,36 @@ export const durationStatus: PolicyContent = {
       "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.68.0.pdf",
       "zh": "原告 10·30 判决请求（第 68 项）",
       "en": "Plaintiffs’ October 30 motion for judgment (entry 68)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.69.0.pdf",
+      "zh": "原告 10·30 补充意见 · 第 69 项",
+      "en": "Plaintiffs’ October 30 supplemental memorandum · entry 69"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.70.0.pdf",
+      "zh": "政府 11·02 回复 · 第 70 项",
+      "en": "Government November 2 reply · entry 70"
     }
   ],
   zh: {
     title: 'D/S 最终规则被法院全国暂缓',
     short: 'D/S 固定期限',
-    status: "全国暂缓 · 等待法院判决",
+    status: "全国暂缓 · 政府已交 11·02 回复",
     effectLabel: '尚未生效 · 法院全国暂缓',
     agency: 'DHS / ICE',
     documentId: '最终规则 2026-14439',
-    tldr: "法院 9 月 14 日在全国范围暂缓了 DHS 取消 D/S 的新规。新规原本要把 F/J 学生的停留改成固定期限（通常最长四年），还要加延期手续和转学、换学位的限制；现在这些都不执行，D/S 照旧。政府已上诉，上诉期间暂缓继续有效。双方 10·30 都请求法院直接判决，等法院裁定。",
+    tldr: "D/S 最终规则仍全国暂缓，现行 F/J 规定继续适用。政府 11·02 交回复，要求法院判其胜诉；原告要求撤销整项规则。下一项已排定期限是 11·09 政府上诉书和附录。",
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      "D/S 新规仍在全国暂缓中。地区法院：双方 10·30 都请求法院根据书面材料直接判决，11·02 交最后一轮回复，之后等判决。上诉法院：政府的上诉书 11·09 到期。法院作出新命令之前，D/S 照旧。",
+      "D/S 最终规则仍全国暂缓。政府 11·02 提交第 70 项回复，要求驳回原告请求并判政府胜诉；如果法院认为仍需救济，政府主张把规则发回 DHS、保留规则，或限缩保护范围。原告 10·30 第 69 项补充意见请求撤销整项规则。法院尚待判决，政府上诉书和附录按原排期 11·09 截止。",
     audience:
       'F、J、I 签证持有人及其家属、学校和雇主。暂缓适用于全国，不只是起诉学校的学生。',
     caveat:
       '这是暂缓，不是最终判决；法院最后可能撤销新规，也可能维持。8 月的 CPT 指引是另一回事，不受这个案子影响。',
+    reviewNote: "已取得 10·30 原告第 69 项补充意见、Hughes 第 69-1 项声明及 11·02 政府第 70 项回复。第 69 项附件 A—N 的 PDF 仍返回 404，尚未逐份核实；也未确认原告是否另交 11·02 回复。第 65 项全部行政记录、完整后续上诉命令及最新 CRA 行动仍有缺口。全国暂缓继续按第 51 项命令显示。",
     background:
-      "2026-09-14 美东下午 4:55，麻省联邦法院发出初步禁令（第 51 项）：在全国范围推迟整项新规生效，并禁止 DHS/ICE 执行，直到法院另有命令或作出最终判决。原定 9·15 的生效日因此作废。\n法院意见（第 50 项）第 46—48 页写明暂缓适用于全国，不只是起诉学校；第 42 页认定新规“武断且任意”（arbitrary and capricious），这是《行政程序法》（APA）下认定规则违法的标准。不过法院还没有正式撤销新规；原告当时要求直接判决的请求被驳回，但允许以后再提。\n政府 9·30 上诉，第一巡回法院案号 26-2112，并获准加快审理：政府书面意见和附录 11·09 到期，原告收到后 30 天内答辩，政府再在 10 天内回复。上诉期间暂缓继续有效。\n地区法院也在推进最终判决。10·16 法院排定书面程序；10·23 把双方提交判决请求的期限延到 10·30，最后一轮回复仍是 11·02；政府已交出行政记录。10·30 双方都请求法院直接判决：政府要求全部胜诉，退一步也希望法院只把规则发回 DHS 修改而不撤销，或缩小暂缓范围；原告要求全部胜诉、撤销整项新规。\n国会方面，参议员 Durbin 等 9·14 依据《国会审查法》（CRA）提出推翻新规的决议 S.J.Res.213，众议院版本是 H.J.Res.215。9·17 S.J.Res.213 进入参议院待议清单（第 668 号），还没有表决；要生效，须两院都通过并经总统签署（或推翻否决）。",
+      "2026-09-14 美东下午 4:55，麻省联邦法院发出初步禁令（第 51 项）：在全国范围推迟整项新规生效，并禁止 DHS/ICE 执行，直到法院另有命令或作出最终判决。原定 9·15 的生效日因此作废。\n法院意见（第 50 项）第 46—48 页写明暂缓适用于全国，不只是起诉学校；第 42 页认定新规“武断且任意”（arbitrary and capricious），这是《行政程序法》（APA）下认定规则违法的标准。不过法院还没有正式撤销新规；原告当时要求直接判决的请求被驳回，但允许以后再提。\n政府 9·30 上诉，第一巡回法院案号 26-2112，并获准加快审理：政府书面意见和附录 11·09 到期，原告收到后 30 天内答辩，政府再在 10 天内回复。上诉期间暂缓继续有效。\n地区法院也在推进最终判决。10·16 法院排定书面程序；10·23 把双方提交判决请求的期限延到 10·30，最后一轮回复仍是 11·02；政府已交出行政记录。10·30 双方都请求法院直接判决：政府要求全部胜诉，退一步也希望法院只把规则发回 DHS 修改而不撤销，或缩小暂缓范围；原告要求全部胜诉、撤销整项新规。\n国会方面，参议员 Durbin 等 9·14 依据《国会审查法》（CRA）提出推翻新规的决议 S.J.Res.213，众议院版本是 H.J.Res.215。9·17 S.J.Res.213 进入参议院待议清单（第 668 号），还没有表决；要生效，须两院都通过并经总统签署（或推翻否决）。\n11·02 政府提交第 70 项回复，主张 SEVIS 无法替代新规则要求的额外审查、DHS 有权规定停留期限，并请求法院判政府胜诉。作为备选，政府请求把规则发回部门补充说明但保留规则，并将救济限于原告及其成员。原告 10·30 第 69 项补充意见则主张 DHS 未充分考虑 SEVIS 现有工具、学术流动限制违法，应撤销整项最终规则。这些是双方的请求；全国暂缓仍继续。",
     teaser: '全国暂缓已生效，现行 D/S 继续。',
     headline: 'D/S 新规已在全国暂缓，现行制度照旧。',
     keyPoint: {
@@ -237,7 +249,7 @@ export const durationStatus: PolicyContent = {
       },
     ],
     outlook:
-      "接下来看三件事：11·02 地区法院最后一轮回复、11·09 政府上诉书、地区法院的判决。只有法院的新命令才会改变暂缓。",
+      "继续关注地区法院判决及 11·09 政府上诉书。政府与原告对是否撤销整项规则的主张不同，当前仍适用全国暂缓。",
     scenarios: [
       {
         name: '暂缓继续',
@@ -335,45 +347,46 @@ export const durationStatus: PolicyContent = {
       {
         "date": "2026-10-30",
         "text": "双方都请求法院直接判决。"
+      },
+      {
+        "date": "2026-11-02",
+        "text": "政府提交第 70 项回复，要求判其胜诉；备选请求为发回 DHS 但保留规则、限缩救济。全国暂缓继续。"
       }
     ],
     next: [
-      {
-        "date": "2026-11-02",
-        "text": "地区法院最后一轮回复截止。"
-      },
       {
         "date": "2026-11-09",
         "text": "政府向第一巡回法院提交上诉书和附录。"
       },
       {
         "date": "日期未定",
-        "text": "地区法院判决；原告在收到政府上诉书 30 天内答辩。"
+        "text": "等待地区法院判决；原告上诉答辩期限仍从收到政府上诉书起算 30 天。"
       }
     ],
     process: {
       "detail": "法院 9·14 在全国范围推迟整项新规生效，并禁止 DHS/ICE 执行，直到法院另有命令或作出最终判决。原定 9·15 的生效日作废。",
-      "currentSummary": "全国暂缓；等待法院判决",
-      "waitingFor": "11·02 最后一轮回复之后的地区法院判决，以及 11·09 开始的上诉书。"
+      "currentSummary": "全国暂缓；政府 11·02 回复已交，等待判决",
+      "waitingFor": "地区法院后续判决，以及原排期 11·09 政府上诉书和附录。"
     },
   },
   en: {
     title: 'Court Stays the D/S Final Rule Nationwide',
     short: 'D/S Fixed Admission Period',
-    status: "Nationwide court stay · Awaiting ruling",
+    status: "Nationwide court stay · Government reply filed November 2",
     effectLabel: 'Not in effect · Nationwide court stay',
     agency: 'DHS / ICE',
     documentId: 'Final Rule 2026-14439',
-    tldr: "On September 14 a court paused, nationwide, the DHS rule ending D/S. The rule would have replaced D/S for F and J students with fixed stays (usually up to four years) and added extension filings and limits on transferring or changing degree level. None of that applies now; D/S continues as before. The government has appealed, and the pause stays in place during the appeal. On October 30 both sides asked the court to decide the case on the written record; a ruling is pending.",
+    tldr: "The D/S final rule remains paused nationwide and current F/J rules continue. The government filed its reply November 2 seeking judgment in its favor; plaintiffs seek to strike down the whole rule. Its appellate brief and appendix are next due November 9.",
     tags: ['F-1', 'CPT', 'OPT'],
     summary:
-      "The D/S rule is still paused nationwide. In the district court, both sides asked on October 30 for a decision on the written record; final replies are due November 2, then the court rules. In the appeals court, the government’s brief is due November 9. Until a court orders otherwise, D/S continues as before.",
+      "The D/S final rule remains paused nationwide. In reply 70 filed November 2, the government asks the court to deny plaintiffs’ requests and rule for the government. If relief is warranted, it instead seeks return to DHS while keeping the rule, or narrower protection. Plaintiffs’ October 30 memorandum 69 asks the court to strike down the entire rule. A ruling is pending; the government’s appellate brief and appendix remain due November 9 under the original schedule.",
     audience:
       'F, J and I visa holders, their families, schools and employers. The pause applies nationwide, not only to students at the schools that sued.',
     caveat:
       'This is a pause, not a final ruling; the court could still strike down or uphold the rule. The August CPT guidance is separate and not affected by this case.',
+    reviewNote: "Plaintiffs’ October 30 memorandum 69, Hughes declaration 69-1 and the government’s November 2 reply 70 were obtained. Exhibit A–N PDFs still return 404 and were not individually verified; a separate November 2 plaintiffs’ reply has not been confirmed. Complete entry 65 administrative records, later appellate orders and latest CRA action remain gaps. Nationwide relief continues under order 51.",
     background:
-      "At 4:55 p.m. ET on September 14, 2026, the federal court in Massachusetts issued a preliminary injunction (entry 51). It postpones the entire rule nationwide and bars DHS/ICE from enforcing it until the court orders otherwise or issues a final ruling. The September 15 start date is off.\nThe court’s opinion (entry 50, pp. 46–48) grants nationwide relief, not just relief for the schools that sued, and page 42 finds the rule “arbitrary and capricious,” the test for an unlawful rule under the Administrative Procedure Act (APA). The court did not permanently vacate the rule yet; plaintiffs’ early request for a final judgment was denied, but they may ask again.\nThe government appealed on September 30 (First Circuit No. 26-2112), and the appeal is on a fast track: the government’s brief and appendix are due November 9, plaintiffs answer within 30 days of receiving it, and the government replies within 10 days after that. The pause stays in place during the appeal.\nThe district court is moving toward a final ruling at the same time. On October 16 it set a written schedule; on October 23 it moved the deadline for both sides’ judgment requests to October 30 and kept final replies due November 2. The government has turned over the administrative record. On October 30 both sides asked the court to decide the case on the papers: the government asks to win outright, or at least to have the rule sent back to DHS without being struck down, or the pause narrowed; plaintiffs ask to win outright and have the whole rule struck down.\nIn Congress, Senator Durbin and colleagues introduced S.J.Res.213 on September 14 to overturn the rule under the Congressional Review Act (CRA); the House version is H.J.Res.215. On September 17 S.J.Res.213 was placed on the Senate calendar (No. 668). There has been no vote; it would take effect only if both chambers pass it and the President signs it or a veto is overridden.",
+      "At 4:55 p.m. ET on September 14, 2026, the federal court in Massachusetts issued a preliminary injunction (entry 51). It postpones the entire rule nationwide and bars DHS/ICE from enforcing it until the court orders otherwise or issues a final ruling. The September 15 start date is off.\nThe court’s opinion (entry 50, pp. 46–48) grants nationwide relief, not just relief for the schools that sued, and page 42 finds the rule “arbitrary and capricious,” the test for an unlawful rule under the Administrative Procedure Act (APA). The court did not permanently vacate the rule yet; plaintiffs’ early request for a final judgment was denied, but they may ask again.\nThe government appealed on September 30 (First Circuit No. 26-2112), and the appeal is on a fast track: the government’s brief and appendix are due November 9, plaintiffs answer within 30 days of receiving it, and the government replies within 10 days after that. The pause stays in place during the appeal.\nThe district court is moving toward a final ruling at the same time. On October 16 it set a written schedule; on October 23 it moved the deadline for both sides’ judgment requests to October 30 and kept final replies due November 2. The government has turned over the administrative record. On October 30 both sides asked the court to decide the case on the papers: the government asks to win outright, or at least to have the rule sent back to DHS without being struck down, or the pause narrowed; plaintiffs ask to win outright and have the whole rule struck down.\nIn Congress, Senator Durbin and colleagues introduced S.J.Res.213 on September 14 to overturn the rule under the Congressional Review Act (CRA); the House version is H.J.Res.215. On September 17 S.J.Res.213 was placed on the Senate calendar (No. 668). There has been no vote; it would take effect only if both chambers pass it and the President signs it or a veto is overridden.\nOn November 2 the government filed reply 70, arguing that SEVIS cannot replace the additional screening required by the rule and that DHS may set admission periods. It asks to win outright, or alternatively to have the rule returned to DHS for fuller explanation while keeping it in place, with relief limited to plaintiffs and their members. Plaintiffs’ October 30 memorandum 69 argues that DHS failed to account for existing SEVIS tools, that academic-mobility restrictions are unlawful, and that the whole final rule should be struck down. These are opposing requests; the nationwide pause continues.",
     teaser:
       'Nationwide stay in place; current D/S continues.',
     headline:
@@ -416,7 +429,7 @@ export const durationStatus: PolicyContent = {
       },
     ],
     outlook:
-      "Three things to watch: final district-court replies on November 2, the government’s appeal brief on November 9, and the district court’s ruling. Only a new court order can change the pause.",
+      "Watch for the district court’s ruling and the government’s November 9 appellate brief. The sides disagree on striking down the entire rule; the nationwide pause remains in place.",
     scenarios: [
       {
         name: 'Pause continues',
@@ -517,26 +530,26 @@ export const durationStatus: PolicyContent = {
       {
         "date": "2026-10-30",
         "text": "Both sides asked the court to decide the case on the written record."
+      },
+      {
+        "date": "2026-11-02",
+        "text": "Government files reply 70 seeking judgment in its favor, or return to DHS while keeping the rule and narrower relief. The nationwide pause continues."
       }
     ],
     next: [
-      {
-        "date": "2026-11-02",
-        "text": "Final district-court replies due."
-      },
       {
         "date": "2026-11-09",
         "text": "Government’s appeal brief and appendix due in the First Circuit."
       },
       {
         "date": "Date unknown",
-        "text": "District-court ruling; plaintiffs answer the appeal brief within 30 days of receiving it."
+        "text": "Await the district court’s ruling; plaintiffs’ appellate response remains due 30 days after service of the government’s brief."
       }
     ],
     process: {
       "detail": "On September 14 the court postponed the entire rule nationwide and barred DHS/ICE from enforcing it until further order or a final ruling. The September 15 start date is off.",
-      "currentSummary": "Nationwide stay; awaiting the court’s ruling",
-      "waitingFor": "The district court’s ruling after November 2 replies, and appeal briefing from November 9."
+      "currentSummary": "Nationwide stay; government reply filed November 2, ruling pending",
+      "waitingFor": "The district court’s ruling and the government’s appellate brief/appendix due November 9 under the original schedule."
     },
   },
 };

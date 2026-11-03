@@ -5,7 +5,7 @@ export const h1bWeightedSelection: PolicyContent = {
   path: 'H-1B',
   tone: 'red',
   effectState: 'in-effect',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['prevailing-wage', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
@@ -43,6 +43,7 @@ export const h1bWeightedSelection: PolicyContent = {
       '要抽签的 H-1B 不再人人机会均等，改为按工资等级加权：Level I、II、III、IV 分别进池 1、2、3、4 次。规则 2026-02-27 生效，从 FY2027 抽签季开始用。',
     audience: '参加 H-1B 抽签的人，以及为他们注册的雇主。',
     caveat: '进池次数多，中签机会更大，但实际中签率要看当年报名的人有多少、分布如何。这项规则只改抽签方式，不提高雇主必须支付的最低工资。',
+    reviewNote: "最终规则与 USCIS cap-season 页面已核对；FY2027 开始使用的规则未见变化。个别注册结果、完整后续办理通知及诉讼尚未逐项核实。",
     background:
       'DHS 2025-12-29 发布最终规则（RIN 1615-AD01），2026-02-27 生效，从 FY2027 抽签季开始用。USCIS 按岗位对应的 OEWS 工资等级，让每人进池 1 到 4 次。每人仍只算一个人（不论有几家雇主为他注册），普通名额和美国硕士名额的抽签顺序也不变。',
     teaser: '工资等级决定进池次数，入门岗位和高等级岗位不再站在同一起跑线。',
@@ -142,6 +143,7 @@ export const h1bWeightedSelection: PolicyContent = {
       'People entering the H-1B lottery and the employers registering them.',
     caveat:
       'More entries mean better odds, but actual odds depend on how many people register that year and at which levels. The rule changes only the lottery, not the minimum wage employers must pay.',
+    reviewNote: "The final rule and USCIS cap-season page were checked; the rule applying from FY2027 is unchanged in those sources. Individual registration outcomes, complete later processing notices and litigation were not individually verified.",
     background:
       'DHS published the final rule (RIN 1615-AD01) on December 29, 2025; it took effect February 27, 2026 and applies from the FY 2027 lottery. USCIS enters each person 1 to 4 times based on the job’s OEWS wage level. Each person still counts once no matter how many employers register them, and the order of the regular and U.S. master’s draws is unchanged.',
     teaser:

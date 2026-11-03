@@ -5,7 +5,7 @@ export const h1bProgramIntegrity: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'executive-order-issued',
-  checkedOn: "2026-11-01",
+  checkedOn: "2026-11-02",
   related: ['h1b-reform', 'h1b-fee', 'prevailing-wage', 'perm-modernization'],
   process: {
     kind: 'executive-order',
@@ -60,6 +60,7 @@ export const h1bProgramIntegrity: PolicyContent = {
       'H-1B 申请人、持有人和担保雇主；最相关的是雇主过去一年有裁员或已宣布裁员的情况。',
     caveat:
       '命令只要求把相关裁员纳入考虑，没说有裁员就拒，现有 H-1B 身份不受影响。具体怎么审，看各部门之后的文件。',
+    reviewNote: "已核对行政命令、DOJ 公告及相关和解文件。DOL 开始回查 LCA 数据的具体日期、最新部门联合执行文件及个别企业后续处理尚未完整核实。",
     background:
       "总统 2026-09-18 签署这份行政命令（英文名 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program）。它是总统给政府部门的指示，不是新法规。第 2 节要求各部门协作，第 3 节讲裁员审查、LCA 复查和执法，第 4 节要求在现有法律和预算范围内执行。命令没写审查标准、要交什么材料或多久审完。\n同一时期还有两件针对具体公司的 PERM 执法。白宫 10·08 发布会上，劳工部官员宣布暂停微软、Adobe 等点名公司的新 PERM 申请，也暂停处理它们在办的申请；其他公司的 PERM 照常。DOJ 10·16 公布和 Cloudera 的和解：撤回用失效招聘邮箱的在办 PERM，并从最近一次撤回日起 24 个月内不得办 PERM（不能递交 ETA Form 9089，也不能登 PERM 招聘广告）。\nPERM、H-1B 的 LCA 和 #12 PERM 改革（1205-AC29）是三件不同的事。",
     teaser:
@@ -197,6 +198,7 @@ export const h1bProgramIntegrity: PolicyContent = {
       'H-1B applicants, holders and sponsoring employers, especially where the employer had layoffs in the past year or has announced them.',
     caveat:
       'The order only says relevant layoffs must be considered; it does not say a layoff means denial, and existing H-1B status is unaffected. How cases are reviewed in practice will come from later agency documents.',
+    reviewNote: "The executive order, DOJ announcement and related settlement were checked. The specific start date of DOL’s LCA-data review, latest joint implementation documents and later individual-employer outcomes remain incompletely verified.",
     background:
       "The President signed the order (Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program) on September 18, 2026. It is an instruction from the President to agencies, not a new regulation. Section 2 calls for coordination; section 3 covers layoff review, re-checking LCAs and enforcement; section 4 says it must be carried out within existing law and budgets. The order sets no review standard, list of documents or deadline.\nTwo PERM actions against specific companies came at the same time. At an October 8 White House press conference, a DOL official announced that new PERM applications from named companies including Microsoft and Adobe were suspended, along with processing of their pending ones; PERM continues normally for everyone else. On October 16 DOJ announced a settlement with Cloudera: it must withdraw pending PERM cases that used a dead recruiting email and file no PERM for 24 months from its latest withdrawal (no ETA Form 9089 and no PERM job ads).\nPERM, H-1B LCAs and the #12 PERM reform (1205-AC29) are three different things.",
     teaser:
