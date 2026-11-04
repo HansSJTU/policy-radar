@@ -120,6 +120,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "D/S case: final written replies due (the court’s October 23 scheduling order kept November 2)."
   },
   {
+    "id": "duration-plaintiffs-response-november2",
+    "date": "2026-11-02",
+    "availableOn": "2026-11-03",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "D/S 案：原告回应政府，主张 DHS 没有充分分析成本收益、SEVIS 替代方案和公众意见，32 天的评论期也太短。他们要求法院撤销整项新规。全国暂缓继续，政府上诉书 11·09 到期。",
+    "en": "D/S case: plaintiffs responded that DHS inadequately assessed costs and benefits, SEVIS alternatives and public comments, and that the 32-day comment period was too short. They ask the court to strike down the whole rule. The nationwide pause continues; the government’s appeal brief is due November 9."
+  },
+  {
     "id": "duration-government-reply-november2",
     "date": "2026-11-02",
     "availableOn": "2026-11-02",

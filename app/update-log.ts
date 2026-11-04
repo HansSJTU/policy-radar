@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-03",
+    "changes": [
+      {
+        "id": "duration-plaintiffs-response-november2",
+        "category": "#03 D/S 全国暂缓诉讼",
+        "title": "原告 11·02 回应政府，要求撤销整项新规",
+        "summary": "原告反对政府的成本收益分析和公众评论程序，并要求法院判原告胜诉。全国暂缓继续。",
+        "before": "当前程序记录政府 11·02 的回复，等待地区法院判决和 11·09 政府上诉书。",
+        "after": "加入原告 11·02 的回应：主张 DHS 没有充分衡量成本收益、考虑 SEVIS 替代方案和公众意见，32 天评论期太短；请求驳回政府的判决请求并撤销整项新规。双方书面回应均已提交，全国暂缓继续。",
+        "sources": [
+          {
+            "label": "原告 11·02 回应 · 第 71 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.71.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "changes": [
       {
@@ -1984,6 +2003,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-03",
+    "changes": [
+      {
+        "id": "duration-plaintiffs-response-november2",
+        "category": "#03 D/S nationwide-stay litigation",
+        "title": "Plaintiffs’ November 2 response asks to strike down the whole rule",
+        "summary": "Plaintiffs challenge the government’s cost-benefit analysis and public-comment process and ask the court to rule for them. The nationwide pause continues.",
+        "before": "The current stage recorded the government’s November 2 reply, with a district-court ruling pending and the government’s appellate brief due November 9.",
+        "after": "Adds plaintiffs’ November 2 response: DHS inadequately weighed costs and benefits, considered SEVIS alternatives and addressed public comments; the 32-day comment period was too short. Plaintiffs ask the court to deny the government’s request for judgment and strike down the whole rule. Both sides have filed responses, and the nationwide pause continues.",
+        "sources": [
+          {
+            "label": "Plaintiffs’ November 2 response · entry 71",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.71.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-02",
     "changes": [
