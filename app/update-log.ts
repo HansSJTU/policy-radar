@@ -23,6 +23,43 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-04",
+    "changes": [
+      {
+        "id": "cpt-reply-and-audio-november4",
+        "category": "#05 CPT 指引诉讼",
+        "title": "原告已交回应，11·06 听证开放电话旁听",
+        "summary": "原告要求暂停两份通知；指引继续执行，11·06 听证照常。",
+        "before": "原告 11·04 回应截止，之后在 11·06 美东下午 3 点听证。",
+        "after": "原告 11·04 已提交回应，主张两份通知改变长期 CPT 做法、应先征求公众意见。法院同日准许公众登记后电话旁听。将回应移入已发生事件，下一步为 11·06 听证。",
+        "sources": [
+          {
+            "label": "原告 11·04 回应 · 第 32 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.32.0.pdf"
+          },
+          {
+            "label": "法院 11·04 电话旁听命令 · 第 31 项",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-31"
+          }
+        ]
+      },
+      {
+        "id": "ead-doe-hearing-november16",
+        "category": "#09 EAD 自动延期诉讼",
+        "title": "Jane Doe 案安排 11·16 听证",
+        "summary": "法院将听取政府结束案件的请求，并召开排期会议。",
+        "before": "只列 Jane Doe 案后续命令，日期未定。",
+        "after": "补入法院 10·22 要求双方说明最终规则如何影响案件的命令，以及 10·30 将听证改至 11·16 的通知。听证为美西下午 4 点／美东晚上 7 点；一般规则继续执行。",
+        "sources": [
+          {
+            "label": "法院 10·22 命令及 10·30 改期通知 · 第 50、53 项",
+            "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc#entry-53"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "changes": [
       {
@@ -2003,6 +2040,43 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-04",
+    "changes": [
+      {
+        "id": "cpt-reply-and-audio-november4",
+        "category": "#05 CPT guidance litigation",
+        "title": "Plaintiffs replied; November 6 hearing allows public telephone access",
+        "summary": "Plaintiffs seek a pause of the notices; the guidance remains in use and the November 6 hearing stands.",
+        "before": "Plaintiffs’ reply was due November 4, followed by the November 6 hearing at 3 p.m. ET.",
+        "after": "Plaintiffs filed their November 4 reply, arguing that the notices changed longstanding CPT practice and required public comment. The court also allowed registered public telephone access. The reply is now a past event; the next step is the November 6 hearing.",
+        "sources": [
+          {
+            "label": "Plaintiffs’ November 4 reply · entry 32",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.32.0.pdf"
+          },
+          {
+            "label": "Court’s November 4 telephone-access order · entry 31",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-31"
+          }
+        ]
+      },
+      {
+        "id": "ead-doe-hearing-november16",
+        "category": "#09 EAD automatic-extension litigation",
+        "title": "Jane Doe case has a November 16 hearing",
+        "summary": "The court will hear the government’s request to end the case and hold a scheduling conference.",
+        "before": "Later Jane Doe orders were listed with no date.",
+        "after": "Adds the October 22 order asking how the final rule affects the case and the October 30 notice moving the hearing to November 16. The hearing is 4 p.m. Pacific / 7 p.m. Eastern; the general rule remains in force.",
+        "sources": [
+          {
+            "label": "Court’s October 22 order and October 30 scheduling notice · entries 50, 53",
+            "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc#entry-53"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-03",
     "changes": [
