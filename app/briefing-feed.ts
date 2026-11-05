@@ -45,6 +45,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 fee case: plaintiffs’ answering brief due in the Ninth Circuit (No. 26-6667)."
   },
   {
+    "id": "ead-doe-hearing-november16",
+    "date": "2026-11-16",
+    "availableOn": "2026-11-04",
+    "policyId": "ead-auto-extension",
+    "timing": "upcoming",
+    "zh": "Jane Doe 案：法院听取政府结束案件的请求，并召开排期会议，美西下午 4 点／美东晚上 7 点。",
+    "en": "Jane Doe case: hearing on the government’s request to end the case and scheduling conference, 4 p.m. Pacific / 7 p.m. Eastern."
+  },
+  {
     "id": "deference-comment-deadline",
     "date": "2026-11-13",
     "policyId": "nonimmigrant-deference",
@@ -102,6 +111,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "CPT lawsuit: plaintiffs’ reply to the government’s opposition is due (up to 15 pages)."
   },
   {
+    "id": "cpt-plaintiffs-reply-november4",
+    "date": "2026-11-04",
+    "availableOn": "2026-11-04",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "原告提交回应，主张两份通知改变了长期允许选修实习计学分申请 CPT 的做法，请求法院暂缓。法院同时开放登记后电话旁听；11·06 美东下午 3 点听证，指引继续执行。",
+    "en": "Plaintiffs replied that the notices changed the longstanding practice of allowing elective internships for credit to qualify for CPT and asked the court for a pause. The court also allowed registered public telephone access. The hearing is November 6 at 3 p.m. ET; the guidance remains in use."
+  },
+  {
     "id": "duration-replies-november2",
     "date": "2026-11-02",
     "policyId": "duration-status",
@@ -136,6 +154,15 @@ export const briefingEntries: BriefingEntry[] = [
     "timing": "recent",
     "zh": "D/S 案：政府交最后一轮回复，要求判政府赢；退一步，请法院只把规则发回 DHS 补充说明、新规保留，并让暂缓只保护起诉方。原告要求撤销整项新规。全国暂缓继续，政府上诉书 11·09 到期。",
     "en": "D/S case: the government filed its final reply asking to win; as a fallback, it asks the court to send the rule back to DHS for more explanation while keeping it, and to limit the pause to the plaintiffs. Plaintiffs want the whole rule struck down. The nationwide pause continues; the government’s appeal brief is due November 9."
+  },
+  {
+    "id": "ead-doe-hearing-rescheduled-october30",
+    "date": "2026-10-30",
+    "availableOn": "2026-11-04",
+    "policyId": "ead-auto-extension",
+    "timing": "recent",
+    "zh": "Jane Doe 案：法院把政府请求结束案件的听证和排期会议改至 11·16，美西下午 4 点／美东晚上 7 点。",
+    "en": "Jane Doe case: the court moved the hearing on the government’s request to end the case and the scheduling conference to November 16, 4 p.m. Pacific / 7 p.m. Eastern."
   },
   {
     "id": "duration-cross-motions-text-october30",

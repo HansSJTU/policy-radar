@@ -25,6 +25,16 @@ export const eadAutoExtension: PolicyContent = {
         "status": "filed",
         "align": "right",
         "lane": "base"
+      },
+      {
+        "date": "11·16",
+        "zh": "诉讼听证",
+        "en": "Lawsuit hearing",
+        "afterStage": 5,
+        "progress": 80,
+        "status": "upcoming",
+        "align": "left",
+        "lane": "raised"
       }
     ]
   },
@@ -68,6 +78,11 @@ export const eadAutoExtension: PolicyContent = {
       "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc",
       "zh": "Jane Doe 公开案卷",
       "en": "Jane Doe public docket"
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/72122041/jane-doe-1-v-united-states-department-of-homeland-security/?order_by=desc#entry-53",
+      "zh": "法院 10·22 命令及 10·30 改期通知 · 第 50、53 项",
+      "en": "Court’s October 22 order and October 30 scheduling notice · entries 50, 53"
     }
   ],
   "zh": {
@@ -77,16 +92,16 @@ export const eadAutoExtension: PolicyContent = {
     "effectLabel": "2025·10·30 起执行 · 法定例外仍然有效",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD05 · 2025-19702 / 2026-20955",
-    "tldr": "如果你靠 EAD（工卡）工作，又在 2025 年 10 月 30 日或之后递交了续期，那么旧卡一到期就得停工，等新卡批下来才能接着上班。以前递交续期后，旧卡可以自动多用一段时间（最长 540 天），这段缓冲现在没有了。10·14 的最终规则把这条规定正式定了下来，日期不变。法院 9·11 的禁令只保护起诉的七个人。",
+    "tldr": "如果你靠 EAD（工卡）工作，又在 2025 年 10 月 30 日或之后递交了续期，那么旧卡一到期就得停工，等新卡批下来才能接着上班。以前递交续期后，旧卡可以自动多用一段时间（最长 540 天），这段缓冲现在没有了。10·14 的最终规则把这条规定正式定了下来，日期不变。法院 9·11 的禁令只保护起诉的七个人。法院将政府请求结束案件的听证改到 11·16。",
     "tags": [
       "H-4 EAD",
       "绿卡等待期",
       "续期停工风险"
     ],
-    "summary": "EAD 就是工卡。过去，很多人只要在旧卡到期前递交续期，拿到收据后，旧卡就能自动延长最长 540 天，新卡还没批也能接着上班。2025 年 10 月 30 日起，DHS 取消了这段自动延期：这天或之后递交的相关类别续期，旧卡到期就是到期，新卡批下来之前不能工作。2026 年 10 月 14 日，最终规则正式刊登并当天生效，内容照原样保留，分界日还是 2025·10·30。在另一个案子 Jane Doe 1 v. DHS 里，法院 9·11 发出初步禁令，只保护起诉的七个人。",
+    "summary": "EAD 就是工卡。过去，很多人只要在旧卡到期前递交续期，拿到收据后，旧卡就能自动延长最长 540 天，新卡还没批也能接着上班。2025 年 10 月 30 日起，DHS 取消了这段自动延期：这天或之后递交的相关类别续期，旧卡到期就是到期，新卡批下来之前不能工作。2026 年 10 月 14 日，最终规则正式刊登并当天生效，内容照原样保留，分界日还是 2025·10·30。在另一个案子 Jane Doe 1 v. DHS 里，法院 9·11 发出初步禁令，只保护起诉的七个人。法院将政府请求结束案件的听证改到 11·16。",
     "audience": "靠 EAD 工作、需要续卡的人。最常见的是 H-4 配偶（工卡类别 c26）和已经递交绿卡调整身份申请、正在等结果的人（类别 c9）。c26、c9 这类编号印在工卡的 Category 一栏。",
     "caveat": "先看你的续期是哪天递交的：2025·10·30 之前递交、符合条件的续期，仍按旧规则自动延期。另外几种情况照常继续：法律本身规定的延期、TPS 公告给的延期、STEM OPT 申请期间的 180 天延期，以及凭身份本身就能工作、不需要 EAD 的人（比如 E、L 签证持有人的配偶）。",
-    "background": "2025 年 10 月 30 日，DHS 发布临时规则，修改了联邦法规 8 CFR 274a.13。以前，符合条件的人递交 EAD 续期后，旧卡可以自动延长最长 540 天；从这天起，只有这天之前递交、符合条件的续期还能延期，这天及以后递交的相关类别续期，拿到收据也不再自动延期。公众意见征集到 2025 年 12 月 1 日结束。\n2026 年 10 月 13 日，最终规则在联邦公报上预先公开，10 月 14 日正式刊登并当天生效（91 FR 65306）。最终规则照原样保留了临时规则，分界日仍是 2025·10·30。另一项提案 RIN 1615-AD14 打算取消 H-4 配偶申请 EAD 的资格，那是单独的一件事，现在还在提案阶段。\nJane Doe 1 v. DHS（案号 8:26-cv-00060）是几位工卡持有人起诉的案子。法院 9 月 10 日签署、9 月 11 日生效的初步禁令，只对起诉的七个人暂停 2025 年的临时规则，政府可以在官司进行期间给这七个人发 EAD。其他人仍按新规则办。法院还允许政府现在就对这个命令上诉，不用等官司打完。",
+    "background": "2025 年 10 月 30 日，DHS 发布临时规则，修改了联邦法规 8 CFR 274a.13。以前，符合条件的人递交 EAD 续期后，旧卡可以自动延长最长 540 天；从这天起，只有这天之前递交、符合条件的续期还能延期，这天及以后递交的相关类别续期，拿到收据也不再自动延期。公众意见征集到 2025 年 12 月 1 日结束。\n2026 年 10 月 13 日，最终规则在联邦公报上预先公开，10 月 14 日正式刊登并当天生效（91 FR 65306）。最终规则照原样保留了临时规则，分界日仍是 2025·10·30。另一项提案 RIN 1615-AD14 打算取消 H-4 配偶申请 EAD 的资格，那是单独的一件事，现在还在提案阶段。\nJane Doe 1 v. DHS（案号 8:26-cv-00060）是几位工卡持有人起诉的案子。法院 9 月 10 日签署、9 月 11 日生效的初步禁令，只对起诉的七个人暂停 2025 年的临时规则，政府可以在官司进行期间给这七个人发 EAD。其他人仍按新规则办。法院还允许政府现在就对这个命令上诉，不用等官司打完。\n10 月 22 日，法院要求双方说明：10 月 14 日的最终规则出台后，这个案件是否还有需要法院解决的争议。10 月 30 日的排期通知把政府请求结束案件的听证和排期会议，改到 11 月 16 日美西下午 4 点（美东晚上 7 点）。届时法院将听取双方意见，决定案件接下来怎么审理。",
     "teaser": "续期还没批下来、旧卡就到期，可能得先停工。",
     "headline": "续期收据不再自动延长工卡。",
     "analysis": "影响最大的是只靠这类 EAD 工作的人。新卡在旧卡到期前批下来，一切照常；没批下来，从旧卡到期那天起就得停工，一直等到新卡到手。续期越早递交，越有机会在旧卡到期前拿到新卡。会不会停工，要看四件事：续期是哪天递交的、工卡是什么类别、旧卡哪天到期，以及有没有别的工作许可。",
@@ -169,9 +184,21 @@ export const eadAutoExtension: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "最终规则正式刊登并当天生效（91 FR 65306），2025·10·30 的分界日不变。"
+      },
+      {
+        "date": "2026-10-22",
+        "text": "法院要求双方说明，10·14 最终规则出台后，案件是否还有需要法院解决的争议。"
+      },
+      {
+        "date": "2026-10-30",
+        "text": "法院将政府请求结束案件的听证和排期会议改至 11·16。"
       }
     ],
     "next": [
+      {
+        "date": "2026-11-16",
+        "text": "政府请求结束案件的听证及排期会议，美西下午 4 点／美东晚上 7 点。"
+      },
       {
         "date": "日期未定",
         "text": "USCIS 的后续说明，以及 Jane Doe 案的后续命令。"
@@ -179,8 +206,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "process": {
       "detail": "取消自动延期的临时规则从 2025·10·30 起执行；10·14 的最终规则照原样定稿并生效。9·11 的初步禁令保护起诉的七个人。",
-      "currentSummary": "规则已执行；起诉的七人另受法院保护",
-      "waitingFor": "Jane Doe 案后续命令，以及政府是否上诉。"
+      "currentSummary": "规则已执行；11·16 听取政府结束案件的请求",
+      "waitingFor": "11·16 听证后，法院决定案件接下来怎么审理。"
     }
   },
   "en": {
@@ -190,16 +217,16 @@ export const eadAutoExtension: PolicyContent = {
     "effectLabel": "In force since October 30, 2025 · Legal exceptions still apply",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD05 · 2025-19702 / 2026-20955",
-    "tldr": "If you work on an EAD (work permit) and filed your renewal on or after October 30, 2025, you have to stop working when the old card expires and wait for the new one. Before, filing a renewal kept the old card valid for a while longer (up to 540 days); that cushion is gone. The October 14 final rule makes this permanent, with the same cutoff date. A September 11 court order protects only the seven people who sued.",
+    "tldr": "If you work on an EAD (work permit) and filed your renewal on or after October 30, 2025, you have to stop working when the old card expires and wait for the new one. Before, filing a renewal kept the old card valid for a while longer (up to 540 days); that cushion is gone. The October 14 final rule makes this permanent, with the same cutoff date. A September 11 court order protects only the seven people who sued. The court moved the hearing on the government’s request to end the case to November 16.",
     "tags": [
       "H-4 EAD",
       "Adjustment pending",
       "Renewal work gaps"
     ],
-    "summary": "An EAD is a work permit card. It used to be that if you filed a renewal before the old card expired, the receipt kept the old card valid for up to 540 more days, so you could keep working while USCIS processed the new one. Since October 30, 2025, DHS has ended that automatic extension: for renewals in the affected categories filed on or after that date, the old card expires on its printed date and you cannot work until the new card arrives. The final rule published and effective October 14, 2026 keeps this unchanged, with the same cutoff date. In a separate case, Jane Doe 1 v. DHS, a preliminary injunction entered September 11 protects the seven people who sued.",
+    "summary": "An EAD is a work permit card. It used to be that if you filed a renewal before the old card expired, the receipt kept the old card valid for up to 540 more days, so you could keep working while USCIS processed the new one. Since October 30, 2025, DHS has ended that automatic extension: for renewals in the affected categories filed on or after that date, the old card expires on its printed date and you cannot work until the new card arrives. The final rule published and effective October 14, 2026 keeps this unchanged, with the same cutoff date. In a separate case, Jane Doe 1 v. DHS, a preliminary injunction entered September 11 protects the seven people who sued. The court moved the hearing on the government’s request to end the case to November 16.",
     "audience": "People who work on an EAD and need to renew it. The most common are H-4 spouses (card category c26) and people with a pending green-card adjustment application (category c9). The category code is printed on the card under “Category.”",
     "caveat": "Check your filing date first: eligible renewals filed before October 30, 2025 keep the old automatic extension. Several other cases also continue as before: extensions written into the law, extensions granted by TPS notices, the 180-day STEM OPT extension, and people whose status itself allows work without an EAD (such as spouses of E and L visa holders).",
-    "background": "On October 30, 2025, DHS issued an interim rule changing the federal regulation at 8 CFR 274a.13. Before, eligible people who filed an EAD renewal kept the old card valid for up to 540 days. From that date, only eligible renewals filed before it keep that extension; for renewals in the affected categories filed on or after it, a receipt no longer extends the card. Public comments closed on December 1, 2025.\nThe final rule was posted for public inspection in the Federal Register on October 13, 2026 and published and effective on October 14 (91 FR 65306). It keeps the interim rule unchanged, with the same October 30, 2025 cutoff. A separate proposal, RIN 1615-AD14, would end H-4 spouses’ ability to apply for an EAD; that one is still a proposal.\nJane Doe 1 v. DHS (No. 8:26-cv-00060) was brought by several EAD holders. A preliminary injunction signed September 10 and entered September 11 sets aside the 2025 interim rule for the seven people who sued, and lets the government issue them EADs while the case goes on. Everyone else follows the new rule. The court also let the government appeal this order right away instead of waiting for the end of the case.",
+    "background": "On October 30, 2025, DHS issued an interim rule changing the federal regulation at 8 CFR 274a.13. Before, eligible people who filed an EAD renewal kept the old card valid for up to 540 days. From that date, only eligible renewals filed before it keep that extension; for renewals in the affected categories filed on or after it, a receipt no longer extends the card. Public comments closed on December 1, 2025.\nThe final rule was posted for public inspection in the Federal Register on October 13, 2026 and published and effective on October 14 (91 FR 65306). It keeps the interim rule unchanged, with the same October 30, 2025 cutoff. A separate proposal, RIN 1615-AD14, would end H-4 spouses’ ability to apply for an EAD; that one is still a proposal.\nJane Doe 1 v. DHS (No. 8:26-cv-00060) was brought by several EAD holders. A preliminary injunction signed September 10 and entered September 11 sets aside the 2025 interim rule for the seven people who sued, and lets the government issue them EADs while the case goes on. Everyone else follows the new rule. The court also let the government appeal this order right away instead of waiting for the end of the case.\nOn October 22, the court asked both sides to explain whether the October 14 final rule left a dispute for the court to decide in this case. An October 30 scheduling notice moved the hearing on the government’s request to end the case and the scheduling conference to November 16 at 4 p.m. Pacific (7 p.m. Eastern). The court will hear both sides on how the case should proceed.",
     "teaser": "If your renewal is still pending when the old card expires, you may have to stop working for a while.",
     "headline": "A renewal receipt no longer extends your work permit.",
     "analysis": "The people hit hardest are those who work only on one of these EADs. If the new card arrives before the old one expires, nothing changes. If it does not, you stop working on the expiration date and wait until the new card is in hand. The earlier you file, the better your chance of getting the new card in time. Whether you face a gap comes down to four things: your filing date, your card category, when the old card expires, and whether you have any other work authorization.",
@@ -282,9 +309,21 @@ export const eadAutoExtension: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "The final rule was published and took effect the same day (91 FR 65306); the October 30, 2025 cutoff is unchanged."
+      },
+      {
+        "date": "2026-10-22",
+        "text": "The court asked both sides whether the October 14 final rule left a dispute for it to decide."
+      },
+      {
+        "date": "2026-10-30",
+        "text": "The court moved the hearing on the government’s request to end the case and the scheduling conference to November 16."
       }
     ],
     "next": [
+      {
+        "date": "2026-11-16",
+        "text": "Hearing on the government’s request to end the case and scheduling conference, 4 p.m. Pacific / 7 p.m. Eastern."
+      },
       {
         "date": "Date unknown",
         "text": "Further USCIS instructions and later orders in the Jane Doe case."
@@ -292,8 +331,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "process": {
       "detail": "The interim rule ending automatic extensions has applied since October 30, 2025; the October 14 final rule keeps it unchanged and is in effect. The September 11 preliminary injunction protects the seven people who sued.",
-      "currentSummary": "Rule in force; the seven plaintiffs have separate court protection",
-      "waitingFor": "Later Jane Doe orders and whether the government appeals."
+      "currentSummary": "Rule in force; hearing November 16 on the request to end the case",
+      "waitingFor": "The November 16 hearing and the court’s decision on how the case proceeds."
     }
   }
 };
