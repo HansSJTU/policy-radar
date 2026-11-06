@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-03",
+  checkedOn: "2026-11-05",
   related: [
     "ead-auto-extension",
     "ead-discretion",

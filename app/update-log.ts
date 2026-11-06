@@ -23,6 +23,29 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-05",
+    "changes": [
+      {
+        "id": "brown-colorado-state-cpt-public-notices",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Brown 与科罗拉多州立大学校方记录",
+        "summary": "两校只批课程要求中的必需实践；学校追踪增至 77 条记录、76 所学校。",
+        "before": "75 条记录：71 条校方网页、4 条社区截图；74 所不同学校。",
+        "after": "77 条记录：73 条校方网页、4 条社区截图；76 所不同学校。Brown 9·02 通知只处理所有学生毕业都必需的实践；CSU 8·24 通知只批学位或主修课程中明确要求的实践，续期和新实践均按新标准审查。两份通知此前已发布，现在新增收录。",
+        "sources": [
+          {
+            "label": "Brown University · 9·02 校方通知",
+            "href": "https://isss.brown.edu/news/2026-09-02/cpt-update"
+          },
+          {
+            "label": "Colorado State University (CSU) · 8·24 校方通知",
+            "href": "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "changes": [
       {
@@ -2040,6 +2063,29 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-05",
+    "changes": [
+      {
+        "id": "brown-colorado-state-cpt-public-notices",
+        "category": "#05 CPT school tracker",
+        "title": "Add Brown and Colorado State university notices",
+        "summary": "Both schools restrict CPT to required curricular training; the tracker now has 77 evidence entries for 76 institutions.",
+        "before": "75 evidence entries: 71 public university pages and four community reports; 74 distinct institutions.",
+        "after": "77 evidence entries: 73 public university pages and four community reports; 76 distinct institutions. Brown’s September 2 notice permits only training every student needs to graduate. CSU’s August 24 notice requires training explicitly required by the degree or major; extensions and new experiences follow the updated standard. Both notices were published earlier and are newly tracked.",
+        "sources": [
+          {
+            "label": "Brown University · September 2 notice",
+            "href": "https://isss.brown.edu/news/2026-09-02/cpt-update"
+          },
+          {
+            "label": "Colorado State University (CSU) · August 24 notice",
+            "href": "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-04",
     "changes": [
