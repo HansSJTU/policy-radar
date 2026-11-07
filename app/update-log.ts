@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-06",
+    "changes": [
+      {
+        "id": "unc-charlotte-cpt-public-notice",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 UNC Charlotte 校方记录",
+        "summary": "校外实习须在课程目录中列为所有学生完成学位或论文的必需环节。学校追踪增至 78 条记录、77 所学校。",
+        "before": "77 条记录：73 条校方网页、4 条社区截图；76 所不同学校。",
+        "after": "78 条记录：74 条校方网页、4 条社区截图；77 所不同学校。UNC Charlotte 10·21 通知只允许课程目录明确要求所有学生完成的校外实习，选修或可选实习课不符合 CPT 条件。这份通知此前已发布，现在新增收录。",
+        "sources": [
+          {
+            "label": "UNC Charlotte ISSO · 10·21 CPT 通知",
+            "href": "https://isso.charlotte.edu/our-population/alerts/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "changes": [
       {
@@ -2063,6 +2082,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-06",
+    "changes": [
+      {
+        "id": "unc-charlotte-cpt-public-notice",
+        "category": "#05 CPT school tracker",
+        "title": "Add UNC Charlotte’s public university notice",
+        "summary": "Off-campus internships must be catalog requirements for every student’s degree or dissertation. The tracker now has 78 entries across 77 institutions.",
+        "before": "77 evidence entries: 73 public university pages and 4 community reports; 76 distinct institutions.",
+        "after": "78 evidence entries: 74 public university pages and 4 community reports; 77 distinct institutions. UNC Charlotte’s October 21 notice limits CPT to off-campus internships the catalog requires of all students; optional or elective internship courses do not qualify. This previously published notice is newly added to the tracker.",
+        "sources": [
+          {
+            "label": "UNC Charlotte ISSO · October 21 CPT notice",
+            "href": "https://isso.charlotte.edu/our-population/alerts/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-05",
     "changes": [
