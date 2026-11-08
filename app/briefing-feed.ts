@@ -87,10 +87,39 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "D/S appeal: the government’s brief and appendix are due in the First Circuit. Plaintiffs answer within 30 days of receiving them, and the government replies 10 days after that."
   },
   {
+    "id": "wage-final-rule-oira-november6",
+    "date": "2026-11-06",
+    "availableOn": "2026-11-07",
+    "policyId": "prevailing-wage",
+    "timing": "recent",
+    "zh": "DOL 将工资最终规则送 OIRA 做公布前审查。现行工资标准继续适用，最终幅度和生效日由公布的最终规则确定。",
+    "en": "DOL sent the wage final rule to OIRA for review before publication. Current wage levels continue to apply; the published final rule will set the final levels and effective date."
+  },
+  {
+    "id": "cpt-hearing-held-november6",
+    "date": "2026-11-06",
+    "availableOn": "2026-11-07",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "法官已听取双方关于暂停 CPT 指引的辩论，决定稍后裁定。指引继续执行。",
+    "en": "The judge heard both sides on pausing the CPT guidance and decided to rule later. The guidance remains in use."
+  },
+  {
+    "id": "duration-government-record-excerpts-november6",
+    "date": "2026-11-06",
+    "availableOn": "2026-11-07",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "政府补交判决请求引用的行政记录目录和摘录，供法官审阅。D/S 全国暂缓继续。",
+    "en": "The government filed the record index and excerpts cited in its request for judgment for the judge to review. The nationwide D/S stay continues."
+  },
+
+  {
     "id": "cpt-relief-hearing",
     "date": "2026-11-06",
     "policyId": "cpt-guidance",
     "timing": "upcoming",
+    "supersededOn": "2026-11-07",
     "zh": "CPT 诉讼（AAU v. DHS）：法院开庭，听双方辩论要不要在判决前先暂停 CPT 指引，美东下午 3 点。",
     "en": "CPT lawsuit (AAU v. DHS): hearing on whether to pause the CPT guidance before a final ruling, 3 p.m. ET."
   },

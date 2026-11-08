@@ -23,6 +23,53 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-07",
+    "changes": [
+      {
+        "id": "wage-final-rule-oira-november6",
+        "category": "#06 工资门槛",
+        "title": "工资最终规则进入 OIRA 审查",
+        "summary": "公布前审查已开始；现行工资标准继续适用。",
+        "before": "评论期已结束，等待 DOL 推进最终规则。",
+        "after": "OIRA 11·06 收到 DOL 最终规则，阶段推进为最终规则审查。下一步等 OIRA 审完、DOL 公布条文和生效日。提案的四级百分位仍标为提案数字。",
+        "sources": [
+          {
+            "label": "OIRA · 11·06 最终规则审查记录",
+            "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1596562"
+          }
+        ]
+      },
+      {
+        "id": "cpt-hearing-held-november6",
+        "category": "#05 CPT 指引诉讼",
+        "title": "CPT 已听证，等待法院裁定",
+        "summary": "法官听取双方意见后，决定稍后裁定是否暂停指引。",
+        "before": "11·06 听证列为下一步，流程标为待发生。",
+        "after": "法院 11·06 已听取双方关于暂缓请求的意见，并留待裁定。听证移入里程碑，下一步等待裁定，指引继续执行。",
+        "sources": [
+          {
+            "label": "法院 11·06 庭审记录 · 第 33 项",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-33"
+          }
+        ]
+      },
+      {
+        "id": "duration-government-record-excerpts-november6",
+        "category": "#03 D/S 全国暂缓诉讼",
+        "title": "政府补交行政记录目录和摘录",
+        "summary": "政府把判决请求所引用的材料交给法院，全国暂缓继续。",
+        "before": "最新提交事件为双方 11·02 书面回应。",
+        "after": "补入政府 11·06 提交通知：提交此前判决请求引用的行政记录目录及摘录，供法官审阅。全国暂缓和 11·09 上诉书排期保持。",
+        "sources": [
+          {
+            "label": "政府 11·06 提交通知 · 第 72 项",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.72.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "changes": [
       {
@@ -2082,6 +2129,53 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-07",
+    "changes": [
+      {
+        "id": "wage-final-rule-oira-november6",
+        "category": "#06 Wage floors",
+        "title": "Wage final rule enters OIRA review",
+        "summary": "Review before publication has started; current wage levels continue to apply.",
+        "before": "Comments had closed; the site awaited DOL’s next final-rule step.",
+        "after": "OIRA received DOL’s final rule on November 6. The process now shows active final-rule review, followed by publication and the effective date. The four proposed percentiles remain identified as proposal figures.",
+        "sources": [
+          {
+            "label": "OIRA · November 6 final-rule review",
+            "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1596562"
+          }
+        ]
+      },
+      {
+        "id": "cpt-hearing-held-november6",
+        "category": "#05 CPT guidance litigation",
+        "title": "CPT hearing held; court ruling pending",
+        "summary": "After hearing both sides, the judge will decide later whether to pause the guidance.",
+        "before": "The November 6 hearing was a next step and an upcoming litigation marker.",
+        "after": "The court heard both sides on November 6 and took the request under advisement. The hearing is now a milestone; the next step is a ruling. The guidance remains in use.",
+        "sources": [
+          {
+            "label": "Court’s November 6 hearing notes · entry 33",
+            "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-33"
+          }
+        ]
+      },
+      {
+        "id": "duration-government-record-excerpts-november6",
+        "category": "#03 D/S nationwide-stay litigation",
+        "title": "Government files record index and excerpts",
+        "summary": "The government filed materials cited in its request for judgment; the nationwide stay continues.",
+        "before": "The latest filing event was the parties’ November 2 written responses.",
+        "after": "Add the government’s November 6 notice filing an index and excerpts of the administrative record cited in its earlier request for judgment. The nationwide stay and November 9 appeal-brief schedule remain.",
+        "sources": [
+          {
+            "label": "Government’s November 6 filing notice · entry 72",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.72.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-06",
     "changes": [

@@ -5,15 +5,20 @@ export const prevailingWage: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-02",
+  checkedOn: "2026-11-07",
   related: ['h1b-weighted-selection', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
     lastCompletedStage: 3,
-    activeStage: null,
-    nextStage: 4,
+    activeStage: 4,
+    nextStage: 5,
   },
   sources: [
+    {
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1596562",
+      "zh": "OIRA · 11·06 收到工资最终规则，审查中",
+      "en": "OIRA · Wage final rule received November 6; review pending"
+    },
     {
       href: 'https://www.federalregister.gov/d/2026-06017',
       zh: 'Federal Register NPRM',
@@ -38,18 +43,18 @@ export const prevailingWage: PolicyContent = {
   zh: {
     title: 'H-1B / PERM 最低工资要求拟上调',
     short: 'H-1B / PERM 最低工资',
-    status: '评论期已结束 · 尚未生效',
+    status: "最终规则送 OIRA 审查 · 尚未生效",
     effectLabel: '尚未生效',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: "雇主办 H-1B 或 PERM 绿卡，给你的工资不能低于劳工部（DOL）定的最低线。DOL 提议大幅抬高这条线：入门级岗位的最低工资，从“同地区同职业里比约 17% 的人高”提高到“比约 34% 的人高”，其余三级也一起上调。公众评论已结束，最终规则还没出，现在仍按旧标准算。",
+    tldr: "雇主办 H-1B 或 PERM 绿卡，给你的工资不能低于劳工部（DOL）定的最低线。DOL 提议大幅抬高这条线：入门级岗位的最低工资，从“同地区同职业里比约 17% 的人高”提高到“比约 34% 的人高”，其余三级也一起上调。最终规则 11·06 送到白宫 OIRA 做公布前审查，现行工资标准继续适用。",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      "H-1B、H-1B1、E-3 和 PERM 都要求雇主付的工资不低于一条最低线，这条线分四个等级，按岗位要求的经验和职责高低来定。DOL 打算把四个等级从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。“第 34 百分位”的意思是：把同地区做这份工作的人按工资从低到高排，这个数比其中 34% 的人高。公众评论期已结束，DOL 还没发最终规则。",
+      "H-1B、H-1B1、E-3 和 PERM 都要求雇主付的工资不低于一条最低线，这条线分四个等级，按岗位要求的经验和职责高低来定。DOL 打算把四个等级从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。“第 34 百分位”的意思是：把同地区做这份工作的人按工资从低到高排，这个数比其中 34% 的人高。DOL 已在 11·06 把最终规则送 OIRA 做公布前审查，现行工资标准继续适用。",
     audience: "H-1B、H-1B1（新加坡、智利公民的工作签证）、E-3（澳大利亚公民的工作签证）和 PERM 绿卡的申请人，以及要付工资的雇主。OPT 期间准备找 H-1B 担保的同学尤其要留意。",
-    caveat: "这项提案定的是雇主必须付的最低工资。H-1B 抽签按工资等级加权（#04）是另一套规则，已经在执行。",
+    caveat: "这项提案定的是雇主必须付的最低工资。H-1B 抽签按工资等级加权（#04）是另一套规则，已经在执行。上面的百分位来自 3·27 提案；最终幅度、适用申请和过渡安排由公布的最终规则确定。",
     background:
-      "雇主为 H-1B 员工递交 LCA（劳工条件申请）、为 PERM 绿卡申请工资认定时，都要先确定这个岗位的“现行工资”，也就是最低线。DOL 用劳工统计局的 OEWS 工资数据，把每个职业、每个地区的工资分成四个等级：一级对应入门岗位，四级对应资深岗位。雇主按岗位要求选等级，工资至少要达到那一级。\n2025 年 9 月 19 日，总统公告要求 DOL 着手调整这些等级。2026 年 3 月 27 日，DOL 公布提案（RIN 1205-AC30），60 天的公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案阶段。DOL 发最终规则之前，工资等级仍按现在的方法算。",
+      "雇主为 H-1B 员工递交 LCA（劳工条件申请）、为 PERM 绿卡申请工资认定时，都要先确定这个岗位的“现行工资”，也就是最低线。DOL 用劳工统计局的 OEWS 工资数据，把每个职业、每个地区的工资分成四个等级：一级对应入门岗位，四级对应资深岗位。雇主按岗位要求选等级，工资至少要达到那一级。\n2025 年 9 月 19 日，总统公告要求 DOL 着手调整这些等级。2026 年 3 月 27 日，DOL 公布提案（RIN 1205-AC30），60 天的公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案阶段。DOL 发最终规则之前，工资等级仍按现在的方法算。\n11 月 6 日，OIRA 收到 DOL 的最终规则草案（RIN 1205-AC30），进入公布前审查。这是白宫对重要规则发布前的审查。接下来等 OIRA 审完，再由 DOL 公布最终条文和生效日期。",
     teaser: "除了一次性费用，每年多付的工资也会让雇主更不愿担保。",
     headline: "多年的工资成本，可能成为又一道担保门槛。",
     analysis:
@@ -103,7 +108,7 @@ export const prevailingWage: PolicyContent = {
         headline: '工资成本暂时不变，雇主留有余地',
         assumption: 'DOL 继续审阅或重写提案。',
         effects: '眼前压力小一些，但做多年担保计划时仍要预留涨薪空间。',
-        signals: '最终规则何时送 OIRA、计划表的变化和后续公告。',
+        signals: "OIRA 审查何时结束，以及 DOL 是否修改或撤回草案。",
       },
     ],
     scope: [
@@ -132,12 +137,16 @@ export const prevailingWage: PolicyContent = {
       {
         "date": "2026-05-26",
         "text": "60 天公众评论期结束，DOL 开始审阅意见。"
+      },
+      {
+        "date": "2026-11-06",
+        "text": "DOL 将工资最终规则送 OIRA，进入公布前审查。"
       }
     ],
     next: [
       {
         "date": "日期未定",
-        "text": "DOL 可能修改提案，再把最终规则送 OIRA 审查。"
+        "text": "OIRA 完成最终规则审查；随后 DOL 公布最终条文、过渡安排和生效日期。"
       },
       {
         "date": "日期未定",
@@ -147,28 +156,28 @@ export const prevailingWage: PolicyContent = {
     ],
     process: {
       detail:
-        "DOL 已公布提案，公众评论 2026 年 5 月 26 日结束。DOL 审阅完意见后，才能发最终规则。",
-      currentSummary: '评论期已结束，等待最终规则',
-      waitingFor: "DOL 审阅意见、修改提案或推进最终规则。",
+        "公众评论 5 月 26 日结束。OIRA 11 月 6 日收到 DOL 的最终规则草案，正在做公布前审查。现行工资标准继续适用。",
+      currentSummary: "最终规则已送 OIRA，等待公布前审查完成",
+      waitingFor: "OIRA 完成审查，以及 DOL 公布最终规则和生效日期。",
     },
   },
   en: {
     title: 'Proposed Increase to H-1B / PERM Wage Floors',
     short: 'H-1B / PERM Wage Floors',
-    status: 'Comment period closed · Not in effect',
+    status: "Final rule at OIRA · Not in effect",
     effectLabel: 'Not in effect',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: "When an employer sponsors you for H-1B or a PERM green card, your pay cannot fall below a minimum set by the Department of Labor (DOL). DOL proposes raising that minimum sharply: for entry-level jobs, from “more than about 17% of people in the same job and area earn” to “more than about 34%,” with the other three levels rising too. Comments have closed and there is no final rule, so the current levels still apply.",
+    tldr: "When an employer sponsors you for H-1B or a PERM green card, your pay cannot fall below a minimum set by the Department of Labor (DOL). DOL proposes raising that minimum sharply: for entry-level jobs, from “more than about 17% of people in the same job and area earn” to “more than about 34%,” with the other three levels rising too. On November 6, DOL sent the draft final rule to the White House’s OIRA for review before publication. Current wage levels continue to apply.",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      "H-1B, H-1B1, E-3 and PERM all require employers to pay at least a minimum wage, set at four levels according to how much experience and responsibility the job requires. DOL plans to move the four levels from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. “34th percentile” means: line up everyone doing this job in the area from lowest to highest paid, and the wage is higher than 34% of them. The comment period has closed and DOL has not issued a final rule.",
+      "H-1B, H-1B1, E-3 and PERM all require employers to pay at least a minimum wage, set at four levels according to how much experience and responsibility the job requires. DOL plans to move the four levels from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. “34th percentile” means: line up everyone doing this job in the area from lowest to highest paid, and the wage is higher than 34% of them. On November 6, DOL sent the draft final rule to OIRA for review before publication. Current wage levels continue to apply.",
     audience:
       "Applicants for H-1B, H-1B1 (the work visa for citizens of Singapore and Chile), E-3 (the work visa for Australian citizens) and PERM green cards, and the employers paying them. Students on OPT hoping for H-1B sponsorship should pay particular attention.",
     caveat:
-      "This proposal sets the minimum wage employers must pay. The wage-weighted H-1B lottery (#04) is a separate rule that is already in effect.",
+      "This proposal sets the minimum wage employers must pay. The wage-weighted H-1B lottery (#04) is a separate rule that is already in effect. The percentiles above come from the March 27 proposal; the published final rule will set the final levels, affected filings and transition arrangements.",
     background:
-      "When an employer files an LCA (Labor Condition Application) for an H-1B worker, or seeks a wage determination for a PERM green card, it first has to find the job’s “prevailing wage,” which is the minimum. DOL uses the Bureau of Labor Statistics’ OEWS wage data to split pay for each occupation and area into four levels: Level I for entry-level jobs up to Level IV for senior ones. The employer picks the level that matches the job’s requirements and must pay at least that much.\nOn September 19, 2025, a presidential proclamation told DOL to start revising those levels. On March 27, 2026, DOL published the proposal (RIN 1205-AC30), and the 60-day comment period closed May 26. The August 2026 government rulemaking plan still lists it at the proposal stage. Until DOL issues a final rule, wage levels are calculated the current way.",
+      "When an employer files an LCA (Labor Condition Application) for an H-1B worker, or seeks a wage determination for a PERM green card, it first has to find the job’s “prevailing wage,” which is the minimum. DOL uses the Bureau of Labor Statistics’ OEWS wage data to split pay for each occupation and area into four levels: Level I for entry-level jobs up to Level IV for senior ones. The employer picks the level that matches the job’s requirements and must pay at least that much.\nOn September 19, 2025, a presidential proclamation told DOL to start revising those levels. On March 27, 2026, DOL published the proposal (RIN 1205-AC30), and the 60-day comment period closed May 26. The August 2026 government rulemaking plan still lists it at the proposal stage. Until DOL issues a final rule, wage levels are calculated the current way.\nOn November 6, OIRA received DOL’s draft final rule (RIN 1205-AC30) for review before publication. This is the White House’s review of major rules before release. Next, OIRA completes its review and DOL publishes the final text and effective date.",
     teaser:
       "Beyond one-time fees, paying more every year would make employers less willing to sponsor.",
     headline:
@@ -234,7 +243,7 @@ export const prevailingWage: PolicyContent = {
         effects:
           'Less pressure for now, but multiyear sponsorship plans should still leave room for raises.',
         signals:
-          'When a final rule goes to OIRA, changes to the rulemaking plan and later announcements.',
+          "When OIRA completes its review and whether DOL revises or withdraws the draft.",
       },
     ],
     scope: [
@@ -263,12 +272,16 @@ export const prevailingWage: PolicyContent = {
       {
         "date": "2026-05-26",
         "text": "The 60-day public comment period closed and DOL began reviewing comments."
+      },
+      {
+        "date": "2026-11-06",
+        "text": "DOL sent the wage final rule to OIRA for review before publication."
       }
     ],
     next: [
       {
         "date": "Date unknown",
-        "text": "DOL may revise the proposal and then send a final rule to OIRA for review."
+        "text": "OIRA completes final-rule review; DOL then publishes the final text, transition arrangements and effective date."
       },
       {
         "date": "Date unknown",
@@ -278,10 +291,10 @@ export const prevailingWage: PolicyContent = {
     ],
     process: {
       detail:
-        "DOL published the proposal and comments closed May 26, 2026. DOL has to review the comments before issuing a final rule.",
-      currentSummary: 'Comment period closed; awaiting a final rule',
+        "Comments closed May 26. OIRA received DOL’s draft final rule on November 6 and is reviewing it before publication. Current wage levels continue to apply.",
+      currentSummary: "Final rule at OIRA; review before publication pending",
       waitingFor:
-        "DOL’s review of comments and next steps toward a final rule.",
+        "OIRA completing its review and DOL publishing the final rule and effective date.",
     },
   },
 };
