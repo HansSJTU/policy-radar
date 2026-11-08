@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-11-05",
+  checkedOn: "2026-11-07",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -56,11 +56,11 @@ export const cptGuidance: PolicyContent = {
       },
       {
         "date": "11·06",
-        "zh": "开庭听证",
-        "en": "Hearing",
+        "zh": "已听证，等待裁定",
+        "en": "Hearing held; ruling pending",
         "afterStage": 2,
         "progress": 85,
-        "status": "upcoming",
+        "status": "filed",
         "align": "right",
         "lane": "raised"
       }
@@ -141,24 +141,29 @@ export const cptGuidance: PolicyContent = {
       "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-31",
       "zh": "法院 11·04 电话旁听命令 · 第 31 项",
       "en": "Court’s November 4 telephone-access order · entry 31"
-    }
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/74919449/association-of-american-universities-v-us-department-of-homeland/?order_by=desc#entry-33",
+      "zh": "法院 11·06 庭审记录 · 第 33 项",
+      "en": "Court’s November 6 hearing notes · entry 33"
+    },
   ],
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
     short: '8·12 / 8·24 CPT 指引',
-    status: "指引执行中 · 原告已回应，11·06 听证",
+    status: "指引执行中 · 11·06 已听证，等待裁定",
     effectLabel: '正在执行 · 各校做法不同',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "ICE/SEVP 8 月给学校发了两份通知，收紧 CPT 标准：只有“这个专业所有学生毕业都必须做”的实习才能批 CPT，选修一门实习课通常不够，雇主还要和学校签合作协议。很多学校已经按新标准暂停或收紧 CPT。四个高校协会起诉，并在 11·04 回应政府，要求法院先暂停这份指引；11·06 开庭。法院裁定之前，指引照常执行。",
+    tldr: "ICE/SEVP 8 月给学校发了两份通知，收紧 CPT 标准：只有“这个专业所有学生毕业都必须做”的实习才能批 CPT，选修一门实习课通常不够，雇主还要和学校签合作协议。很多学校已经按新标准暂停或收紧 CPT。四个高校协会起诉，并在 11·04 回应政府，要求法院先暂停这份指引。法官 11·06 已听取双方意见，稍后决定是否暂停指引。法院裁定之前，指引照常执行。",
     tags: ['CPT', 'Day-1 CPT', '实习'],
     summary:
-      "SEVP 是 ICE 下面管国际学生和学校的部门。它 8 月发给学校的两份通知（Broadcast）要求：CPT 实习必须是这个专业所有学生毕业都要完成的环节，而且雇主要和学校签合作协议。很多学校因此暂停了“选一门实习课就批 CPT”的做法。四个高校协会起诉，请法院在判决前先暂停这份指引；政府 10·28 提交反对意见。原告 11·04 提交回应，主张指引改变了长期允许选修实习计学分的做法，应先征求公众意见。法院 11·06 美东下午 3 点开庭听双方辩论。法院裁定之前，指引照常执行。",
+      "SEVP 是 ICE 下面管国际学生和学校的部门。它 8 月发给学校的两份通知（Broadcast）要求：CPT 实习必须是这个专业所有学生毕业都要完成的环节，而且雇主要和学校签合作协议。很多学校因此暂停了“选一门实习课就批 CPT”的做法。四个高校协会起诉，请法院在判决前先暂停这份指引；政府 10·28 提交反对意见。原告 11·04 提交回应，主张指引改变了长期允许选修实习计学分的做法，应先征求公众意见。法官 11·06 已听取双方意见，稍后决定是否暂停指引。法院裁定之前，指引照常执行。",
     audience: "要申请 CPT 的学生（包括打算读 Day 1 CPT 项目的人），以及学校和负责批 CPT 的 DSO。",
     caveat:
       "选修课型 CPT 和学位必修的实习要分开看。已经批下来的 CPT 怎么处理，以你学校的通知为准。",
     background:
-      "CPT 是 F-1 学生在读期间，因为课程需要去校外实习或工作的许可。它不经过移民局，由学校的 DSO 审批，批下来后写在你的 I-20 上（CPT I-20）。联邦法规的要求是：CPT 必须是学校既定课程“不可分割的一部分”（integral part of an established curriculum）。\n8 月 12 日的 Broadcast 2608-01 强调学校和 DSO 要对 CPT 审批负责，并把“不可分割”解释为学位必须、所有学生都要做。8 月 24 日的问答（Broadcast 2608-02）进一步说明：“所有学生”也包括美国学生；雇主和学校之间要有合作协议（cooperative agreement），把实习和课程联系起来。\n10 月 5 日，美国大学协会（AAU）等四个高校协会起诉 DHS（AAU v. DHS，案号 1:26-cv-14520）。他们认为，这两份通知对“integral”的解释和执行方式违反《行政程序法》（APA）：实际上改了 CPT 的规则，却没有先公开征求意见。他们请法院在判决前先暂停这份指引。听证定在 11 月 6 日美东下午 3 点，由 Julia E. Kobick 法官主持。这个案子和 D/S 案分开审理，D/S 案的全国暂缓只管 D/S 规则。\n10 月 28 日政府提交了 27 页的反对意见，理由有三条：一是原告没有起诉资格，也就是协会本身没有受到足够具体的伤害；二是这两份通知只是解释现有规定、不是新规，所以不需要先征求公众意见，法院也不能审查；三是学生没有受到“无法弥补的损害”，而这是法院在判决前暂停一项政策的前提条件之一。10 月 30 日，法院允许原告在 11 月 4 日前交一份不超过 15 页的回应。\n11 月 4 日，原告提交回应。他们主张，过去的法规和长期做法允许选修实习计学分后申请 CPT，两份通知实际改变了这个标准，应该先征求公众意见。他们还说，学生已经失去实习机会，学校和 DSO 也面临处罚压力，请法院在案件审理期间暂停两份通知，并禁止政府按新的解释执行。法院同日允许公众通过电话旁听 11 月 6 日的听证；想旁听的人须到法院官方日历登记。",
+      "CPT 是 F-1 学生在读期间，因为课程需要去校外实习或工作的许可。它不经过移民局，由学校的 DSO 审批，批下来后写在你的 I-20 上（CPT I-20）。联邦法规的要求是：CPT 必须是学校既定课程“不可分割的一部分”（integral part of an established curriculum）。\n8 月 12 日的 Broadcast 2608-01 强调学校和 DSO 要对 CPT 审批负责，并把“不可分割”解释为学位必须、所有学生都要做。8 月 24 日的问答（Broadcast 2608-02）进一步说明：“所有学生”也包括美国学生；雇主和学校之间要有合作协议（cooperative agreement），把实习和课程联系起来。\n10 月 5 日，美国大学协会（AAU）等四个高校协会起诉 DHS（AAU v. DHS，案号 1:26-cv-14520）。他们认为，这两份通知对“integral”的解释和执行方式违反《行政程序法》（APA）：实际上改了 CPT 的规则，却没有先公开征求意见。他们请法院在判决前先暂停这份指引。听证于 11 月 6 日美东下午 3 点举行，由 Julia E. Kobick 法官主持。这个案子和 D/S 案分开审理，D/S 案的全国暂缓只管 D/S 规则。\n10 月 28 日政府提交了 27 页的反对意见，理由有三条：一是原告没有起诉资格，也就是协会本身没有受到足够具体的伤害；二是这两份通知只是解释现有规定、不是新规，所以不需要先征求公众意见，法院也不能审查；三是学生没有受到“无法弥补的损害”，而这是法院在判决前暂停一项政策的前提条件之一。10 月 30 日，法院允许原告在 11 月 4 日前交一份不超过 15 页的回应。\n11 月 4 日，原告提交回应。他们主张，过去的法规和长期做法允许选修实习计学分后申请 CPT，两份通知实际改变了这个标准，应该先征求公众意见。他们还说，学生已经失去实习机会，学校和 DSO 也面临处罚压力，请法院在案件审理期间暂停两份通知，并禁止政府按新的解释执行。法院同日允许公众通过电话旁听 11 月 6 日的听证。\n11 月 6 日，法官听取双方关于是否先暂停指引的辩论，决定稍后再裁定。学校继续按现行指引处理 CPT。",
     teaser: "关键不再是能不能选一门实习课，而是你的专业是否要求所有人都实习。",
     headline: "实习能不能批，越来越看你的专业课程怎么规定。",
     analysis:
@@ -272,12 +277,16 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-11-04",
         "text": "原告提交回应，请求法院暂停两份通知并禁止按新的解释执行；法院准许公众登记后电话旁听 11·06 听证。"
+      },
+      {
+        "date": "2026-11-06",
+        "text": "法官听取双方关于是否暂停指引的意见，决定稍后裁定。"
       }
     ],
     next: [
       {
-        "date": "2026-11-06",
-        "text": "法院就是否暂停指引开庭听证，美东下午 3 点。公众可在法院官方日历登记电话旁听。"
+        "date": "日期未定",
+        "text": "法院决定是否在案件审理期间暂停两份 CPT 通知。"
       },
       {
         "date": "日期未定",
@@ -286,27 +295,27 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP 先提醒学校注意合规，再收紧 CPT 标准；学校和 DSO 已经按新标准审批。",
-      "currentSummary": "指引执行中；原告已回应，11·06 听证",
-      "waitingFor": "11·06 美东下午 3 点听证，以及法院对暂缓请求的裁定。"
+      "currentSummary": "指引执行中；11·06 已听证，等待法院裁定",
+      "waitingFor": "法院对暂停指引请求的裁定。"
     },
   },
   en: {
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
-    status: "Guidance in use · Reply filed; hearing November 6",
+    status: "Guidance in use · November 6 hearing held; ruling pending",
     effectLabel: 'In use · Varies by school',
     agency: 'ICE / SEVP',
     documentId: 'Broadcast 2608-01 / 02',
-    tldr: "In August, ICE/SEVP sent schools two notices tightening CPT: CPT can be approved only for an internship every student in the program must complete to graduate, an elective internship course usually does not count, and the employer must sign a cooperative agreement with the school. Many schools have paused or narrowed CPT as a result. Four higher-education associations sued to pause the guidance and replied to the government on November 4. The hearing is November 6. Until the court rules, the guidance applies.",
+    tldr: "In August, ICE/SEVP sent schools two notices tightening CPT: CPT can be approved only for an internship every student in the program must complete to graduate, an elective internship course usually does not count, and the employer must sign a cooperative agreement with the school. Many schools have paused or narrowed CPT as a result. Four higher-education associations sued to pause the guidance and replied to the government on November 4. The judge heard both sides on November 6 and will decide later whether to pause the guidance. Until the court rules, the guidance applies.",
     tags: ['CPT', 'Day-1 CPT', 'Internships'],
     summary:
-      "SEVP is the part of ICE that oversees international students and schools. Its two August notices to schools (Broadcasts) require CPT training to be something every student in the program must complete to graduate, with a cooperative agreement between the employer and the school. Many schools have stopped approving CPT just because a student enrolls in an internship course. Four higher-education associations asked the court to pause the guidance before a final ruling; the government opposed on October 28. Plaintiffs replied on November 4, arguing that the notices changed the longstanding practice of allowing elective internships for credit and required public comment. The court hears both sides on November 6 at 3 p.m. ET. Until the court rules, the guidance applies.",
+      "SEVP is the part of ICE that oversees international students and schools. Its two August notices to schools (Broadcasts) require CPT training to be something every student in the program must complete to graduate, with a cooperative agreement between the employer and the school. Many schools have stopped approving CPT just because a student enrolls in an internship course. Four higher-education associations asked the court to pause the guidance before a final ruling; the government opposed on October 28. Plaintiffs replied on November 4, arguing that the notices changed the longstanding practice of allowing elective internships for credit and required public comment. The judge heard both sides on November 6 and will decide later whether to pause the guidance. Until the court rules, the guidance applies.",
     audience: "Students seeking CPT (including anyone planning a Day 1 CPT program), their schools and the DSOs who approve CPT.",
     caveat:
       "Elective-course CPT and degree-required internships are treated differently. For CPT you already have, follow your school’s notice.",
     background:
-      "CPT is permission for F-1 students to work or intern off campus during their studies because their curriculum calls for it. It does not go through USCIS: your school’s DSO approves it and records it on your I-20 (a CPT I-20). The federal regulation says CPT must be an “integral part of an established curriculum.”\nThe August 12 Broadcast 2608-01 stressed that schools and DSOs are responsible for CPT approvals and read “integral” as required for the degree and done by every student. The August 24 FAQ (Broadcast 2608-02) added that “all students” includes U.S. students, and that the employer and school need a cooperative agreement tying the internship to the curriculum.\nOn October 5, the Association of American Universities (AAU) and three other higher-education associations sued DHS (AAU v. DHS, No. 1:26-cv-14520). They argue that the notices’ reading of “integral” and how it is enforced violate the Administrative Procedure Act (APA): the notices effectively changed the CPT rules without first taking public comment. They asked the court to pause the guidance until it rules. The hearing is set for November 6 at 3 p.m. ET before Judge Julia E. Kobick. This case is separate from the D/S case; the nationwide stay there covers only the D/S rule.\nOn October 28 the government filed a 27-page opposition with three arguments: first, the plaintiffs lack standing, meaning the associations themselves have not suffered a concrete enough injury to sue; second, the notices only explain existing rules rather than create new ones, so no public comment was needed and a court cannot review them; third, students suffer no “irreparable harm,” which is one of the conditions for a court to pause a policy before ruling. On October 30 the court let plaintiffs file a reply of up to 15 pages by November 4.\nOn November 4, plaintiffs filed their reply. They argue that the regulation and longstanding practice allowed elective internships for academic credit to qualify for CPT, and that the notices changed that standard and required public comment. They also describe students already losing internships and schools and DSOs facing threats of penalties. They ask the court to pause the notices during the case and bar enforcement of the new interpretation. The court also allowed public telephone access to the November 6 hearing; listeners must register through the official court calendar.",
+      "CPT is permission for F-1 students to work or intern off campus during their studies because their curriculum calls for it. It does not go through USCIS: your school’s DSO approves it and records it on your I-20 (a CPT I-20). The federal regulation says CPT must be an “integral part of an established curriculum.”\nThe August 12 Broadcast 2608-01 stressed that schools and DSOs are responsible for CPT approvals and read “integral” as required for the degree and done by every student. The August 24 FAQ (Broadcast 2608-02) added that “all students” includes U.S. students, and that the employer and school need a cooperative agreement tying the internship to the curriculum.\nOn October 5, the Association of American Universities (AAU) and three other higher-education associations sued DHS (AAU v. DHS, No. 1:26-cv-14520). They argue that the notices’ reading of “integral” and how it is enforced violate the Administrative Procedure Act (APA): the notices effectively changed the CPT rules without first taking public comment. They asked the court to pause the guidance until it rules. The hearing took place on November 6 at 3 p.m. ET before Judge Julia E. Kobick. This case is separate from the D/S case; the nationwide stay there covers only the D/S rule.\nOn October 28 the government filed a 27-page opposition with three arguments: first, the plaintiffs lack standing, meaning the associations themselves have not suffered a concrete enough injury to sue; second, the notices only explain existing rules rather than create new ones, so no public comment was needed and a court cannot review them; third, students suffer no “irreparable harm,” which is one of the conditions for a court to pause a policy before ruling. On October 30 the court let plaintiffs file a reply of up to 15 pages by November 4.\nOn November 4, plaintiffs filed their reply. They argue that the regulation and longstanding practice allowed elective internships for academic credit to qualify for CPT, and that the notices changed that standard and required public comment. They also describe students already losing internships and schools and DSOs facing threats of penalties. They ask the court to pause the notices during the case and bar enforcement of the new interpretation. The court also allowed public telephone access to the November 6 hearing.\nOn November 6, the judge heard both sides on whether to pause the guidance and decided to rule later. Schools continue to process CPT under the current guidance.",
     teaser:
       "What matters now is not whether you can take an internship course, but whether your program requires everyone to do one.",
     headline:
@@ -429,12 +438,16 @@ export const cptGuidance: PolicyContent = {
       {
         "date": "2026-11-04",
         "text": "Plaintiffs filed their reply seeking a pause of the notices and a bar on enforcing the new interpretation; the court allowed registered public telephone access to the November 6 hearing."
+      },
+      {
+        "date": "2026-11-06",
+        "text": "The judge heard both sides on pausing the guidance and decided to rule later."
       }
     ],
     next: [
       {
-        "date": "2026-11-06",
-        "text": "Hearing on whether to pause the guidance, 3 p.m. ET. The public may register for telephone access through the official court calendar."
+        "date": "Date unknown",
+        "text": "The court decides whether to pause the two CPT notices while the case proceeds."
       },
       {
         "date": "Date unknown",
@@ -443,8 +456,8 @@ export const cptGuidance: PolicyContent = {
     ],
     process: {
       "detail": "SEVP first warned schools about compliance, then narrowed the CPT standard. Schools and DSOs are already applying it.",
-      "currentSummary": "Guidance in use; reply filed, hearing November 6",
-      "waitingFor": "The November 6 hearing at 3 p.m. ET and the court’s ruling on the request to pause the guidance."
+      "currentSummary": "Guidance in use; November 6 hearing held, ruling pending",
+      "waitingFor": "The court’s ruling on the request to pause the guidance."
     },
   },
 };
