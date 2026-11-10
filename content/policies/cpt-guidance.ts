@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'guidance-in-use',
-  checkedOn: "2026-11-08",
+  checkedOn: "2026-11-09",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
