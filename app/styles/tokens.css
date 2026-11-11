@@ -1,0 +1,88 @@
+/* Design variables. DESIGN.md「设计变量」is the source of truth: change it first. */
+:root {
+  /* Neutrals: cool ink on blue-white paper. */
+  --ink: #101d33;
+  --ink-soft: #34435b;
+  --muted: #5c6a80;
+  --faint: #7c889b;
+  --paper: #f6f8fb;
+  --paper-2: #edf1f6;
+  --card: #ffffff;
+  --line: #e2e7ee;
+  --line-strong: #cbd4df;
+
+  /* Status and warning colors. Color never encodes the path stage. */
+  --red: #d1453b;
+  --red-dark: #a3302a;
+  --amber: #8f5a0a;
+  --green: #1c6f52;
+  --blue: #2a5caa;
+  --gray: #738094;
+  --tone-red-bg: #fdf0ee;
+  --tone-amber-bg: #fbf3e4;
+  --tone-blue-bg: #edf3fb;
+  --tone-green-bg: #eaf5ef;
+  --tone-gray-bg: var(--paper-2);
+
+  /* Two weights only. */
+  --w-normal: 400;
+  --w-strong: 600;
+
+  /* Radii. --radius stays 14px for cards and panels. */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --radius: 14px;
+  --r-lg: 20px;
+  --r-full: 999px;
+
+  /* Elevation: hairline first, shadow second. */
+  --elev-1: 0 1px 2px rgb(16 29 51 / 4%);
+  --elev-2: 0 1px 2px rgb(16 29 51 / 4%), 0 8px 24px rgb(16 29 51 / 6%);
+  --elev-3: 0 2px 6px rgb(16 29 51 / 5%), 0 24px 60px rgb(16 29 51 / 16%);
+
+  /* Type. Monospace is for dates, identifiers and values only. */
+  --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  --font-num: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --fs-display: clamp(2rem, 1.45rem + 2.4vw, 3.25rem);
+  --fs-h2: clamp(1.625rem, 1.35rem + 1.1vw, 2.125rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + .6vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-sm: .875rem;
+  --fs-xs: .8125rem;
+  --fs-2xs: .75rem;
+  --tracking-tight: -.02em;
+
+  /* Layout. */
+  --page-max: 1192px;
+  --page-gutter: 24px;
+  --page-inline: max(var(--page-gutter), calc((100vw - var(--page-max)) / 2));
+  --site-header-height: 64px;
+
+  /* Motion. */
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+  --motion-fast: 160ms;
+  --motion-base: 240ms;
+  --motion-slow: 320ms;
+  --motion-colors: color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), border-color var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
+  --disclosure-duration: 320ms;
+
+  /* shadcn bridge. */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--blue);
+  --primary: var(--ink);
+  --primary-foreground: #fff;
+  --secondary: var(--paper-2);
+  --secondary-foreground: var(--ink);
+  --muted-foreground: var(--muted);
+
+  /* Stage tags share one neutral treatment; the stage is told by position and label. */
+  --path-color: var(--line-strong);
+  --path-ink: var(--ink-soft);
+  --path-bg: var(--paper-2);
+}
+@media (max-width: 720px) {
+  :root { --page-gutter: 16px; --site-header-height: 56px; }
+}

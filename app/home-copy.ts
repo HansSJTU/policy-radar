@@ -3,11 +3,10 @@ import { SITE_UPDATED_ON } from './policy-freshness';
 
 export const homeCopy = {
   zh: {
-    brand: '留美路径雷达', navLabel: '页面导航', policies: '政策', cptSchools: 'CPT 学校', updates: '更新记录', stats: '访问统计',
-    switchLabel: '切换网站语言', heroTitle: '留美路径政策雷达', heroCount: (policies: number, schools: number) => `${policies} 项动态 · ${schools} 条学校／院系记录`,
+    heroTitle: '留美路径政策雷达', heroCount: (policies: number, schools: number) => `${policies} 项动态 · ${schools} 条学校／院系记录`,
     routeTitle: '你的留美路径', routeHint: '选择阶段，查看相关政策', morePolicies: (count: number) => `另有 ${count} 项政策`, showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
-    briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点',
-    ranking: '最难绕开的关卡', rankingHint: '按对留美路径的潜在冲击排序，#01 最大 · 颜色对应路径阶段', filterAria: '按签证路径筛选', all: '全部', items: '项',
+    briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点', moreBriefing: (count: number) => `另有 ${count} 条`,
+    ranking: '最难绕开的关卡', rankingHint: '按对留美路径的潜在冲击排序，#01 最大', filterAria: '按签证路径筛选', all: '全部', items: '项',
     viewProcess: (name: string) => `查看${name}说明`, policySpecific: '本项政策：', complete: '已完成', currentStage: '当前阶段', upcomingStage: '尚未到达',
     processProgress: { 'federal-rulemaking': '规则制定进度', 'administrative-guidance': '行政指引进度', 'executive-order': '行政命令进度' } satisfies Record<ProcessKind, string>, swipe: '左右滑动查看完整流程 →', currentProcess: '当前流程：', litigation: '诉讼进展',
     past: '过去', now: '现在', expected: '预计', earlierMilestones: (count: number) => `显示更早的 ${count} 条`,
@@ -15,14 +14,13 @@ export const homeCopy = {
     verified: '校方网页已核实', community: '邮件截图', paused: '暂停部分 CPT', tightened: '收紧', unchanged: '暂未改变', officialPage: '校方页面',
     noSchool: '没有匹配的学校。', evidencePrefix: '以下条目依据已下载到本站的校方邮件截图，未全部找到公开校页。Purdue ECE 与 Purdue ISS 分开标注，不能相互外推。', verifyPending: '待公开来源复核',
     viewEvidence: '查看邮件截图', viewReport: '邮件截图待补', evidenceTitle: '邮件截图', closeEvidence: '关闭邮件截图', noScreenshot: '尚未找到对应的邮件截图。',
-    footer: `更新于 ${SITE_UPDATED_ON}（美东）。每项的核查范围和缺口写在详情里。预计日期可能因规则修改或诉讼变化而移动。做个人决定前，请复核原始文件并咨询专业人士。`, seedDisclosure: '部分政策的社区影响均分里，每项包含 10–20 个用于上线初始化的模拟样本。这些样本在数据库里单独标记，等真实评分积累起来后会删除。', top: '回到顶部 ↑',
+    footer: `更新于 ${SITE_UPDATED_ON}（美东）。每项的核查范围和缺口写在详情里。预计日期可能因规则修改或诉讼变化而移动。做个人决定前，请复核原始文件并咨询专业人士。`, seedDisclosure: '部分政策的社区影响均分里，每项包含 10–20 个用于上线初始化的模拟样本。这些样本在数据库里单独标记，等真实评分积累起来后会删除。',
   },
   en: {
-    brand: 'Stay Path Radar', navLabel: 'Page navigation', policies: 'Policies', cptSchools: 'CPT Schools', updates: 'Updates', stats: 'Traffic',
-    switchLabel: 'Switch site language', heroTitle: 'U.S. Stay Path Policy Radar', heroCount: (policies: number, schools: number) => `${policies} policy developments · ${schools} school/department records`,
+    heroTitle: 'U.S. Stay Path Policy Radar', heroCount: (policies: number, schools: number) => `${policies} policy developments · ${schools} school/department records`,
     routeTitle: 'Your path in the U.S.', routeHint: 'Select a stage to explore its policies', morePolicies: (count: number) => `${count} more policies`, showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
-    briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days',
-    ranking: 'Highest-impact barriers', rankingHint: 'Ranked by potential impact on the stay path, #01 highest · Colors mark the path stage', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
+    briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days', moreBriefing: (count: number) => `${count} more`,
+    ranking: 'Highest-impact barriers', rankingHint: 'Ranked by potential impact on the stay path, #01 highest', filterAria: 'Filter by immigration path', all: 'All', items: 'items',
     viewProcess: (name: string) => `Explain ${name}`, policySpecific: 'This policy: ', complete: 'Completed', currentStage: 'Current stage', upcomingStage: 'Not reached',
     processProgress: { 'federal-rulemaking': 'Rulemaking progress', 'administrative-guidance': 'Guidance progress', 'executive-order': 'Executive order progress' } satisfies Record<ProcessKind, string>, swipe: 'Swipe for full process →', currentProcess: 'Current process: ', litigation: 'Court proceedings',
     past: 'Past', now: 'Now', expected: 'Expected', earlierMilestones: (count: number) => `Show ${count} earlier`,
@@ -30,6 +28,6 @@ export const homeCopy = {
     verified: 'Verified on university website', community: 'Email screenshots', paused: 'Some CPT paused', tightened: 'Tighter review', unchanged: 'No current change', officialPage: 'University page',
     noSchool: 'No matching school.', evidencePrefix: 'The following entries rely on university email screenshots stored on this site; not every item has a public university webpage. Purdue ECE and Purdue ISS are listed separately and should not be generalized across scopes.', verifyPending: 'Awaiting a public source',
     viewEvidence: 'View email screenshot', viewReport: 'Email screenshot pending', evidenceTitle: 'Email screenshots', closeEvidence: 'Close email screenshots', noScreenshot: 'No corresponding email screenshot has been located.',
-    footer: `Updated ${SITE_UPDATED_ON} (Eastern Time). See individual entries for review scope and gaps. Estimated dates may change. Verify primary sources and obtain professional advice before making individual decisions.`, seedDisclosure: 'Some policy averages include 10–20 synthetic launch samples each. They are marked separately in the database and will be removed after genuine ratings accumulate.', top: 'Back to top ↑',
+    footer: `Updated ${SITE_UPDATED_ON} (Eastern Time). See individual entries for review scope and gaps. Estimated dates may change. Verify primary sources and obtain professional advice before making individual decisions.`, seedDisclosure: 'Some policy averages include 10–20 synthetic launch samples each. They are marked separately in the database and will be removed after genuine ratings accumulate.',
   },
 };

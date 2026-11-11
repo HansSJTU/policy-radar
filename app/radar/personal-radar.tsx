@@ -11,13 +11,12 @@ import {
   useSyncExternalStore,
   type ReactNode,
 } from 'react';
-import { ArrowRight, ArrowUpRight, Radar, X } from 'lucide-react';
-import { GitHubProjectLink } from '../github-link';
-import { brandHomeLabel, type Language } from '../language';
+import { ArrowRight, ArrowUpRight, X } from 'lucide-react';
+import type { Language } from '../language';
 import type { PolicyId } from '../policy-ids';
-import { PageLanguageSwitch } from '../page-language-switch';
-import { MobileSiteMenu } from '../mobile-site-menu';
 import { ShareButton } from '../share-button';
+import { SiteFooter } from '../site-footer';
+import { SiteHeader } from '../site-header';
 import { VisitorTracker } from '@/components/visitor-tracker';
 import PersonalRadarChart, { policyStyle } from './personal-radar-chart';
 import { personalRadarCopy } from './personal-radar-copy';
@@ -304,42 +303,14 @@ export default function PersonalRadar({
   return (
     <main id="top" lang={language === 'zh' ? 'zh-CN' : 'en'}>
       <VisitorTracker />
-      <header className="topbar product-bar">
-        <a
-          className="brand"
-          href={`/?lang=${language}`}
-          aria-label={brandHomeLabel(language)}
-        >
-          <span className="brand-mark">
-            <Radar aria-hidden="true" />
-          </span>
-          <span>{ui.brand}</span>
-        </a>
-        <nav className="nav-links" aria-label={ui.nav}>
-          <a href={`/radar?lang=${language}`} aria-current="page">
-            {ui.myRadar}
-          </a>
-          <a href={`/?lang=${language}#ranking`}>{ui.policies}</a>
-          <a href={`/?lang=${language}#cpt-schools`}>{ui.cptSchools}</a>
-          <a href={`/updates?lang=${language}`}>{ui.updates}</a>
-          <a href={`/stats?lang=${language}`}>{ui.stats}</a>
-        </nav>
-        <div className="top-actions">
-          <GitHubProjectLink language={language} />
-          <ShareButton language={language} pageTitle={ui.myRadar} />
-          <PageLanguageSwitch
-            action="/radar"
-            language={language}
-            label={ui.language}
-            hidden={{ stage: profile.stage, goal: profile.goal }}
-          />
-          <MobileSiteMenu current="radar" language={language} />
-          <div className="asof">
-            <span />
-            <time dateTime={checkedOn}>{checkedOn} · ET</time>
-          </div>
-        </div>
-      </header>
+      <SiteHeader
+        language={language}
+        current="radar"
+        languageAction="/radar"
+        languageHidden={{ stage: profile.stage, goal: profile.goal }}
+        share={<ShareButton language={language} pageTitle={ui.myRadar} />}
+        checkedOn={checkedOn}
+      />
       <div className="pr" ref={root}>
         <div className="pr-main">
           <div className="pr-eyebrow">
@@ -648,21 +619,10 @@ export default function PersonalRadar({
           </dialog>
         )}
       </div>
-      <footer>
-        <div>
-          <span className="brand-mark">
-            <Radar aria-hidden="true" />
-          </span>
-          <strong>{ui.brand}</strong>
-        </div>
-        <div className="footer-notes">
-          <p>{ui.timeNote}</p>
-          <p>{ui.privacy}</p>
-        </div>
-        <div className="footer-actions">
-          <a href="#top">{ui.top}</a>
-        </div>
-      </footer>
+      <SiteFooter language={language}>
+        <p>{ui.timeNote}</p>
+        <p>{ui.privacy}</p>
+      </SiteFooter>
     </main>
   );
 }

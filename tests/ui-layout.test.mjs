@@ -1,11 +1,17 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import test from 'node:test';
 
-const css = await readFile(
-  new URL('../app/globals.css', import.meta.url),
-  'utf8',
-);
+// globals.css only imports the sheets in app/styles/, so read those.
+const styles = new URL('../app/styles/', import.meta.url);
+const css = (
+  await Promise.all(
+    (await readdir(styles))
+      .filter((name) => name.endsWith('.css'))
+      .sort()
+      .map((name) => readFile(new URL(name, styles), 'utf8')),
+  )
+).join('\n');
 const policyPage = (
   await Promise.all(
     [
@@ -29,14 +35,21 @@ test('homepage briefing sends readers to the detail timeline', () => {
   assert.match(policyPage, /className="timeline-shell" ref=\{showLatestTimeline\}/);
 });
 
-test('briefing headings carry a category tag colored by the shared stay-path tokens', () => {
+test('briefing headings carry a stage tag drawn from the shared stay-path tokens', () => {
   assert.match(policyPage, /className="briefing-tag" data-path=\{item\.path\}/);
   assert.match(
     css,
     /\.briefing-tag\s*\{[^}]*color: var\(--path-ink\)[^}]*background: var\(--path-bg\)/s,
   );
-  assert.match(css, /\[data-path="F-1"\]\s*\{[^}]*--path-ink/s);
-  assert.match(css, /\[data-path="H-1B"\]\s*\{[^}]*--path-ink/s);
+});
+
+test('the path stage is never encoded by color (DESIGN.md rule 1)', () => {
+  assert.match(css, /:root\s*\{[^}]*--path-ink:/s);
+  assert.doesNotMatch(
+    css,
+    /\[data-path[^\]]*\]\s*\{[^}]*--path-(?:color|ink|bg)\s*:/s,
+  );
+  assert.doesNotMatch(policyPage, /颜色对应路径阶段|Colors mark the path stage/);
 });
 
 test('the homepage footer discloses synthetic launch samples in both languages', () => {

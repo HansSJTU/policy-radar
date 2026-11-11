@@ -104,7 +104,7 @@ export function CptSchoolTracker({
     <>
       <section className="school-section" id="cpt-schools" aria-labelledby="schools-title">
         <div className="school-head">
-          <div><span className="section-kicker">CPT SCHOOL TRACKER</span><h2 id="schools-title">{ui.schoolTitle}</h2><p>{ui.schoolIntro}</p></div>
+          <div><h2 id="schools-title">{ui.schoolTitle}</h2><p>{ui.schoolIntro}</p></div>
           <label className="school-search"><Search aria-hidden="true" /><input value={schoolQuery} onChange={(event) => setSchoolQuery(event.target.value)} placeholder={ui.search} aria-label={ui.search} /></label>
         </div>
 

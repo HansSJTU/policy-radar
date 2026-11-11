@@ -1,20 +1,19 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
-import { ArrowUpRight, ChevronDown, Radar } from 'lucide-react';
+import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import { animateDisclosure } from './disclosure-animation';
 import { GlossaryText } from './glossary-text';
 import { VisitorTracker } from '@/components/visitor-tracker';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { LanguageProvider } from './language-context';
-import { brandHomeLabel, type Language } from './language';
-import { PageLanguageSwitch } from './page-language-switch';
+import type { Language } from './language';
 import { policyHref, legacyPolicyHref } from './policy-links';
 import { filterByPath, POLICY_PATHS, type PathFilter } from './policy-paths';
-import { GitHubProjectLink } from './github-link';
 import { ShareButton } from '@/app/share-button';
-import { MobileSiteMenu } from './mobile-site-menu';
+import { SiteFooter } from './site-footer';
+import { SiteHeader } from './site-header';
 import {
   CommunityImpactRating,
   useCommunityImpactRatings,
@@ -47,6 +46,28 @@ function BriefingRow({ item, view, language, selectedPath }: {
       <span><GlossaryText text={item.summary} /></span>
       <ArrowUpRight aria-hidden="true" />
     </a>
+  );
+}
+
+// Rows shown before the rest fold away, so a panel never scrolls on its own.
+const BRIEFING_VISIBLE = 3;
+
+function BriefingList({ items, row, moreLabel }: {
+  items: HomeBriefingRow[];
+  row: (item: HomeBriefingRow) => ReactNode;
+  moreLabel: (count: number) => string;
+}) {
+  const rest = items.slice(BRIEFING_VISIBLE);
+  return (
+    <div className="briefing-list">
+      {items.slice(0, BRIEFING_VISIBLE).map(row)}
+      {rest.length > 0 && (
+        <details className="briefing-more" ref={animateDisclosure}>
+          <summary>{moreLabel(rest.length)}<ChevronDown aria-hidden="true" /></summary>
+          <div className="disclosure-content">{rest.map(row)}</div>
+        </details>
+      )}
+    </div>
   );
 }
 
@@ -108,7 +129,6 @@ export default function Home({ view, language, initialPath = 'all' }: {
     window.history.pushState(null, '', url);
     document.getElementById(`policy-${id}`)?.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
   };
-  const updatesHref = `/updates?lang=${language}`;
   const selectRankingPath = (path: PathFilter) => {
     setSelectedPath(path);
     const url = new URL(window.location.href);
@@ -132,37 +152,18 @@ export default function Home({ view, language, initialPath = 'all' }: {
       <VisitorTracker />
       <NiulaiEffect triggerToken={niulaiTriggerToken} />
       <main>
-      <header className="topbar product-bar">
-        <a className="brand" href="#top" aria-label={brandHomeLabel(language)}>
-          <span className="brand-mark"><Radar aria-hidden="true" /></span>
-          <span>{ui.brand}</span>
-        </a>
-        <nav className="nav-links" aria-label={ui.navLabel}>
-          <a href={`/radar?lang=${language}`}>{language === 'zh' ? '我的雷达' : 'My radar'}</a>
-          <a href="#ranking">{ui.policies}</a>
-          <a href="#cpt-schools">{ui.cptSchools}</a>
-          <a href={updatesHref}>{ui.updates}</a>
-          <a href={`/stats?lang=${language}`}>{ui.stats}</a>
-        </nav>
-        <div className="top-actions">
-          <GitHubProjectLink language={language} />
-          <ShareButton language={language} />
-          <PageLanguageSwitch
-            action="/"
-            language={language}
-            label={ui.switchLabel}
-            hidden={selectedPath === 'all' ? {} : { path: selectedPath }}
-          />
-          <MobileSiteMenu current="home" language={language} />
-          <div className="asof"><span /><time dateTime={view.updatedOn}>{view.updatedOn} · ET</time></div>
-        </div>
-      </header>
+      <SiteHeader
+        language={language}
+        current="home"
+        languageAction="/"
+        languageHidden={selectedPath === 'all' ? {} : { path: selectedPath }}
+        share={<ShareButton language={language} />}
+        checkedOn={view.updatedOn}
+      />
 
       <section className="workspace-hero" id="top">
         <div className="workspace-title">
-          <div>
-            <h1>{ui.heroTitle}</h1>
-          </div>
+          <h1>{ui.heroTitle}</h1>
           <p>{ui.heroCount(view.policies.length, view.schools.verified.length + view.schools.community.length)}</p>
         </div>
 
@@ -208,32 +209,36 @@ export default function Home({ view, language, initialPath = 'all' }: {
       <section className="briefing-board" aria-label={ui.briefingAria}>
         <article className="briefing-panel briefing-recent">
           <header>
-            <div><span>RECENT 30 DAYS</span><h2>{ui.recent}</h2></div>
+            <h2>{ui.recent}</h2>
             <small>{view.briefing.dates.recent}</small>
           </header>
-          <div className="briefing-list">
-            {view.briefing.recent.map((item) => (
+          <BriefingList
+            items={view.briefing.recent}
+            moreLabel={ui.moreBriefing}
+            row={(item) => (
               <BriefingRow item={item} view="timeline" language={language} selectedPath={selectedPath} key={item.id} />
-            ))}
-          </div>
+            )}
+          />
         </article>
 
         <article className="briefing-panel briefing-upcoming">
           <header>
-            <div><span>NEXT 30 DAYS</span><h2>{ui.upcoming}</h2></div>
+            <h2>{ui.upcoming}</h2>
             <small>{view.briefing.dates.upcoming}</small>
           </header>
-          <div className="briefing-list">
-            {view.briefing.upcoming.map((item) => (
+          <BriefingList
+            items={view.briefing.upcoming}
+            moreLabel={ui.moreBriefing}
+            row={(item) => (
               <BriefingRow item={item} view="progress" language={language} selectedPath={selectedPath} key={item.id} />
-            ))}
-          </div>
+            )}
+          />
         </article>
       </section>
 
       <section className="report-section" id="ranking" aria-labelledby="ranking-title">
         <div className="ranking-head">
-          <div><span className="section-kicker">IMPACT RANKING</span><h2 id="ranking-title">{ui.ranking}</h2><p className="ranking-hint">{ui.rankingHint}</p></div>
+          <div><h2 id="ranking-title">{ui.ranking}</h2><p className="ranking-hint">{ui.rankingHint}</p></div>
         </div>
         <div className="path-console">
             <fieldset className="path-controls">
@@ -288,16 +293,10 @@ export default function Home({ view, language, initialPath = 'all' }: {
         setSelectedEvidence={setSelectedEvidence}
       />
 
-      <footer>
-        <div><span className="brand-mark"><Radar aria-hidden="true" /></span><strong>{ui.brand}</strong></div>
-        <div className="footer-notes">
-          <p>{ui.footer}</p>
-          <p className="seed-disclosure">{ui.seedDisclosure}</p>
-        </div>
-        <div className="footer-actions">
-          <a href="#top">{ui.top}</a>
-        </div>
-      </footer>
+      <SiteFooter language={language}>
+        <p>{ui.footer}</p>
+        <p className="seed-disclosure">{ui.seedDisclosure}</p>
+      </SiteFooter>
       </main>
     </TooltipProvider>
     </LanguageProvider>
