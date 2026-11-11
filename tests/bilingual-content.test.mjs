@@ -10,7 +10,7 @@ import { policyContents } from '../content/policies/index.ts';
 
 const han = /[㐀-鿿]/u;
 
-test('PERM has cleared OIRA and D/S records the government reply before November 9 appeal briefing', () => {
+test('PERM has cleared OIRA and D/S preserves past filings without an expired future deadline', () => {
   const perm = policyContents.find(({ id }) => id === 'perm-modernization');
   assert.equal(perm.process.lastCompletedStage, 1);
   assert.equal(perm.process.activeStage, null);
@@ -19,7 +19,9 @@ test('PERM has cleared OIRA and D/S records the government reply before November
   assert.match(perm.sources[0].href, /rrid=1533011/);
   const duration = policyContents.find(({ id }) => id === 'duration-status');
   for (const language of ['zh', 'en']) {
-    assert.equal(duration[language].next[0].date, '2026-11-09');
+    assert.equal(duration[language].next[0].date, language === 'zh' ? '日期未定' : 'Date unknown');
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-09'));
+    assert.ok(duration[language].milestones.some(({ date }) => date === '2026-10-19'));
     assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-02'));
     assert.ok(duration[language].milestones.some(({ date }) => date === '2026-11-02'));
     assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
@@ -38,7 +40,7 @@ test('content files cover every ranked policy in rank order', () => {
 });
 
 test('the English policy and school copy contains no Chinese', () => {
-  assert.equal(verifiedSchools.length, 74);
+  assert.equal(verifiedSchools.length, 75);
   assert.equal(communitySchools.length, 4);
   const strings = collectStrings([
     policyContents.map((policy) => policy.en),

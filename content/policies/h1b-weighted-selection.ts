@@ -5,7 +5,7 @@ export const h1bWeightedSelection: PolicyContent = {
   path: 'H-1B',
   tone: 'red',
   effectState: 'in-effect',
-  checkedOn: "2026-11-09",
+  checkedOn: "2026-11-10",
   related: ['prevailing-wage', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',

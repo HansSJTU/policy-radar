@@ -23,6 +23,67 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-10",
+    "changes": [
+      {
+        "id": "opt-rule-comments-closed-november9",
+        "category": "#01 OPT 收费提案",
+        "title": "规则评论结束，PRA 意见征集继续",
+        "summary": "规则本身的评论于 11·09 结束；表格和数据收集部分仍到 12·07。收费尚未生效。",
+        "before": "正式提案，规则公众评论到 11 月 9 日；下一步列有 11·09 评论截止。",
+        "after": "规则评论已结束，11·09 移入已发生的里程碑。表格和数据收集部分（PRA）的意见征集到 12·07，之后 DHS 决定最终条文。",
+        "sources": [
+          {
+            "label": "Federal Register · OPT 收费提案及已结束的评论期",
+            "href": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+          }
+        ]
+      },
+      {
+        "id": "mit-2027-cpt-calendar-november10",
+        "category": "#05 CPT 学校追踪",
+        "title": "MIT 调整 2027 暑期和秋季 CPT 日期",
+        "summary": "暑期可延至 8 月 20 日，秋季从 8 月 21 日开始；申请资格要求继续适用。",
+        "before": "2027 暑期 05·20—08·17；秋季 08·18—12·17。",
+        "after": "2027 暑期 05·20—08·20（兼职或全职）；秋季 08·21—12·17（仅兼职）。",
+        "sources": [
+          {
+            "label": "MIT ISO · CPT 日期表",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "ucsb-cpt-course-requirement-november10",
+        "category": "#05 CPT 学校追踪",
+        "title": "UCSB 明确修课学生的实践要求",
+        "summary": "CPT 须配合要求所有修课学生完成实践的课程。",
+        "before": "官网列出 CPT 申请流程，并把实践表述为与学位相关且为项目组成部分。",
+        "after": "OISS 页面要求实践与学位相关、是课程要求的一部分，并修读要求所有修课学生完成实践的课程。获批后领取 CPT I-20，按授权日期开始。",
+        "sources": [
+          {
+            "label": "UCSB OISS · CPT 资格与申请",
+            "href": "https://oiss.ucsb.edu/curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "ucla-extension-cpt-public-notice",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 UCLA Extension 证书项目记录",
+        "summary": "非证书项目所有学生必需的 CPT 申请暂停。学校追踪增至 79 条记录，仍为 77 所不同大学。",
+        "before": "78 条记录：74 条校方网页、4 条社区截图；77 所不同大学。",
+        "after": "79 条记录：75 条校方网页、4 条社区截图；77 所不同大学。UCLA Extension 暂停处理 8·12 起递交、实践并非证书项目所有学生必需环节的申请。该校方通知现新增收录，范围为 Extension 证书项目。UCLA 与其 Extension、Purdue ISS 与 ECE 分别按同一所大学去重。",
+        "sources": [
+          {
+            "label": "UCLA Extension · 国际学生 CPT 通知及所属院系",
+            "href": "https://www.uclaextension.edu/international-students"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "changes": [
       {
@@ -2129,6 +2190,67 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-10",
+    "changes": [
+      {
+        "id": "opt-rule-comments-closed-november9",
+        "category": "#01 OPT Fee Proposal",
+        "title": "Rule comments closed; PRA comments continue",
+        "summary": "Comments on the rule closed November 9; forms and data-collection comments run through December 7. Fees are not in effect.",
+        "before": "Proposed rule with comments through November 9; November 9 comment deadline listed as next.",
+        "after": "Rule comments are closed, and November 9 is a completed milestone. Comments on forms and data collection (PRA) continue through December 7; DHS then decides the final text.",
+        "sources": [
+          {
+            "label": "Federal Register · OPT fee proposal and closed comment window",
+            "href": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+          }
+        ]
+      },
+      {
+        "id": "mit-2027-cpt-calendar-november10",
+        "category": "#05 CPT School Tracker",
+        "title": "MIT adjusts Summer and Fall 2027 CPT dates",
+        "summary": "Summer can run through August 20 and Fall starts August 21; existing eligibility conditions continue.",
+        "before": "Summer 2027 May 20–August 17; Fall August 18–December 17.",
+        "after": "Summer 2027 May 20–August 20 (part- or full-time); Fall August 21–December 17 (part-time only).",
+        "sources": [
+          {
+            "label": "MIT ISO · CPT date table",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "ucsb-cpt-course-requirement-november10",
+        "category": "#05 CPT School Tracker",
+        "title": "UCSB specifies the course practical-work requirement",
+        "summary": "CPT must accompany a course requiring practical work from every enrolled student.",
+        "before": "The page listed CPT application steps and described training as related to and integral to the degree.",
+        "after": "OISS requires training related to the degree and integral to the curriculum, with enrollment in a course requiring practical work from every student. Approved students receive a CPT I-20 and start on the authorized date.",
+        "sources": [
+          {
+            "label": "UCSB OISS · CPT eligibility and application",
+            "href": "https://oiss.ucsb.edu/curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "ucla-extension-cpt-public-notice",
+        "category": "#05 CPT School Tracker",
+        "title": "Add UCLA Extension certificate-program evidence",
+        "summary": "CPT not required of every student in the certificate program is paused. The tracker reaches 79 entries and remains at 77 distinct universities.",
+        "before": "78 evidence entries: 74 public university pages and four community reports; 77 distinct universities.",
+        "after": "79 evidence entries: 75 public university pages and four community reports; 77 distinct universities. UCLA Extension suspends applications submitted since August 12 for training not required of every student in the certificate program. This existing university notice is newly included for Extension certificate programs. UCLA and its Extension, and Purdue ISS and ECE, each count as one university.",
+        "sources": [
+          {
+            "label": "UCLA Extension · international-student CPT notice and institutional affiliation",
+            "href": "https://www.uclaextension.edu/international-students"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-07",
     "changes": [

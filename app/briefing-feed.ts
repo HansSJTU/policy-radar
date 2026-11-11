@@ -70,6 +70,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Comments close on the proposal to end the 60-day grace period after a job ends, before midnight ET; file on regulations.gov under docket USCIS-2026-0364."
   },
   {
+    "id": "opt-rule-comments-closed-november9",
+    "date": "2026-11-09",
+    "availableOn": "2026-11-10",
+    "policyId": "opt-fee",
+    "timing": "recent",
+    "zh": "OPT 收费规则的公众评论已结束，DHS 接下来评估意见并决定最终条文；表格和数据收集部分（PRA）的意见征集到 12·07。提案尚未生效。",
+    "en": "Public comments on the OPT-fee rule closed. DHS next evaluates comments and decides the final text; comments on forms and data collection (PRA) continue through December 7. The proposal is not in effect."
+  },
+  {
     "id": "opt-fee-general-comment-deadline",
     "date": "2026-11-09",
     "policyId": "opt-fee",

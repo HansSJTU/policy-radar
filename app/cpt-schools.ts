@@ -40,8 +40,24 @@ export type CommunitySchool = Omit<CommunitySchoolRecord, 'zh' | 'en'> & {
 // A community screenshot review does not confirm its current policy status.
 export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
+    "id": "ucla-extension",
+    "checkedOn": "2026-11-10",
+    "school": "UCLA Extension",
+    "href": "https://www.uclaextension.edu/international-students",
+    "tone": "pause",
+    "zh": {
+      "state": "非证书项目所有学生必需的 CPT 暂停",
+      "detail": "ISS 暂停处理 2026 年 8 月 12 日起递交、实践不是所有学生完成证书项目的必需环节的 CPT 申请，直至另行通知。条目涵盖 UCLA Extension 证书项目。"
+    },
+    "en": {
+      "state": "CPT paused when not required of every student in the certificate program",
+      "detail": "ISS has suspended review and processing of CPT applications submitted on or after August 12, 2026 when the training is not an official certificate requirement for every student in the program, until further notice. This entry covers UCLA Extension certificate programs."
+    },
+    "screenshots": []
+  },
+  {
     "id": "unc-charlotte",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of North Carolina at Charlotte (UNC Charlotte)",
     "href": "https://isso.charlotte.edu/our-population/alerts/",
     "tone": "tighten",
@@ -57,7 +73,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "brown-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Brown University",
     "href": "https://isss.brown.edu/news/2026-09-02/cpt-update",
     "tone": "tighten",
@@ -73,7 +89,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "colorado-state-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Colorado State University (CSU)",
     "href": "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/",
     "tone": "tighten",
@@ -89,7 +105,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "portland-community-college",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Portland Community College (PCC)",
     "href": "https://www.pcc.edu/international-students/student-resources/",
     "tone": "tighten",
@@ -121,7 +137,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "case-western-reserve-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Case Western Reserve University (CWRU)",
     "href": "https://case.edu/visa/international-students/international-student-employment/f-1-student-employment-and-training",
     "tone": "pause",
@@ -137,7 +153,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-nebraska-omaha",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Nebraska at Omaha (UNO)",
     "href": "https://web.unomaha.edu/curricular-practical-training-cpt-information",
     "tone": "tighten",
@@ -153,7 +169,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "illinois-institute-of-technology",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Illinois Institute of Technology (Illinois Tech)",
     "href": "https://www.iit.edu/global-services/student-employment/curricular-practical-training-cpt",
     "tone": "tighten",
@@ -169,7 +185,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-arizona",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Arizona",
     "href": "https://international.arizona.edu/international-students/cpt",
     "tone": "tighten",
@@ -185,7 +201,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-connecticut",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Connecticut (UConn)",
     "href": "https://international.global.uconn.edu/2026/08/30/immigration-changes-regarding-internships/",
     "tone": "tighten",
@@ -201,7 +217,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "queens-college-cuny",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Queens College (CUNY)",
     "href": "https://www.qc.cuny.edu/academics/iss/iss-virtual-office-assistant/cpt/",
     "tone": "pause",
@@ -217,7 +233,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "bowling-green-state-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Bowling Green State University (BGSU)",
     "href": "https://www.bgsu.edu/international-programs-and-partnerships/immigration-updates-f-1-j-1-students",
     "tone": "tighten",
@@ -233,7 +249,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-wyoming",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Wyoming",
     "href": "https://www.uwyo.edu/uwgrad/newsletter/isa-immigration-support-fall2026.html",
     "tone": "tighten",
@@ -249,7 +265,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-oklahoma",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Oklahoma",
     "href": "https://www.ou.edu/globalengagement/iss/curricular-practical-training",
     "tone": "pause",
@@ -265,7 +281,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "yale-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Yale University",
     "href": "https://oiss.yale.edu/news/cpt-update-sevp-broadcast-messages-and-pending-litigation",
     "tone": "tighten",
@@ -281,7 +297,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-virginia",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Virginia (UVA)",
     "href": "https://issp.virginia.edu/cpt-update",
     "tone": "tighten",
@@ -297,7 +313,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "university-of-illinois-chicago",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "University of Illinois Chicago (UIC)",
     "href": "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/",
     "tone": "tighten",
@@ -329,7 +345,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'pacific-lutheran-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Pacific Lutheran University',
     href: 'https://www.plu.edu/iss/announcements/',
     tone: 'tighten',
@@ -345,7 +361,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'indiana-university-iu-global',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Indiana University (IU Global)',
     href: 'https://www.oid.iu.edu/resources/visa-immigration-updates.html',
     tone: 'pause',
@@ -361,7 +377,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'rutgers-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Rutgers University (Rutgers Global)',
     href: 'https://global.rutgers.edu/all-alerts',
     tone: 'tighten',
@@ -377,7 +393,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-central-florida',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Central Florida',
     href: 'https://global.ucf.edu/immigrationupdates/',
     tone: 'tighten',
@@ -393,7 +409,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'texas-state-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Texas State University',
     href: 'https://www.international.txst.edu/current-f1-students/work-authorization/cpt.html',
     tone: 'tighten',
@@ -411,7 +427,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'vanderbilt-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Vanderbilt University',
     href: 'https://www.vanderbilt.edu/isss/2026/09/15/updates-to-curricular-practical-training-eligibility/',
     tone: 'tighten',
@@ -430,7 +446,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'stony-brook-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Stony Brook University',
     href: 'https://www.stonybrook.edu/visa/resources/news-and-events/immigration-policy-updates/cpt-new-guidance.html',
     tone: 'tighten',
@@ -468,7 +484,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-toledo',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Toledo',
     href: 'https://www.utoledo.edu/cisp/international/immigration-update/',
     tone: 'tighten',
@@ -487,7 +503,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'william-and-mary',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'William & Mary',
     href: 'https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/',
     tone: 'pause',
@@ -506,7 +522,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-rochester',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Rochester',
     href: 'https://www.rochester.edu/provost/important-update-for-international-students-on-cpt/',
     tone: 'pause',
@@ -525,7 +541,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'purdue-university-iss',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Purdue University (ISS)',
     href: 'https://www.purdue.edu/gpp/iss/student/f1/employment/cpt.html',
     tone: 'tighten',
@@ -546,7 +562,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'bryn-mawr-college',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Bryn Mawr College',
     href: 'https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements',
     tone: 'pause',
@@ -564,7 +580,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-at-buffalo',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University at Buffalo',
     href: 'https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-.html',
     tone: 'pause',
@@ -583,7 +599,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-michigan-dearborn',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Michigan–Dearborn',
     href: 'https://umdearborn.edu/office-international-affairs/important-updates',
     tone: 'pause',
@@ -602,7 +618,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-berkeley',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UC Berkeley',
     href: 'https://internationaloffice.berkeley.edu/students/employment/cpt',
     tone: 'pause',
@@ -621,7 +637,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-davis',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UC Davis',
     href: 'https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars',
     tone: 'pause',
@@ -638,7 +654,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'boston-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Boston University',
     href: 'https://www.bu.edu/isso/2026/08/28/additional-sevp-guidance-further-restricts-cpt-eligibility/',
     tone: 'pause',
@@ -655,7 +671,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uiuc',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UIUC',
     href: 'https://blogs.illinois.edu/view/7559/791491523',
     tone: 'pause',
@@ -675,7 +691,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'texas-a-m',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Texas A&M',
     href: 'https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html',
     tone: 'tighten',
@@ -693,7 +709,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ut-dallas',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UT Dallas',
     href: 'https://isso.utdallas.edu/2026/09/17/update-on-cpt-policy-sevp-broadcast/',
     tone: 'tighten',
@@ -712,7 +728,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-michigan',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Michigan',
     href: 'https://internationalcenter.umich.edu/about/news/updated-guidance-curricular-practical-training-cpt',
     tone: 'pause',
@@ -736,7 +752,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'northwestern-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Northwestern University',
     href: 'https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/',
     tone: 'tighten',
@@ -760,7 +776,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'columbia-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Columbia University',
     href: 'https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training',
     tone: 'tighten',
@@ -785,7 +801,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'harvard-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Harvard University',
     href: 'https://www.hio.harvard.edu/employment-training/curricular-practical-training',
     tone: 'tighten',
@@ -803,7 +819,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-washington',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Washington',
     href: 'https://iss.washington.edu/follow-up-on-cpt-policy/',
     tone: 'pause',
@@ -822,7 +838,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-maryland-college-park',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Maryland, College Park',
     href: 'https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt',
     tone: 'pause',
@@ -860,20 +876,20 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'mit',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'MIT',
     href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
     tone: 'pause',
     zh: {
       state: '暂停：不是学位必修的新 CPT',
       detail:
-        "MIT 暂停一类新 CPT：8·24 当日已收到或待审、且实践并非全专业学生完成学位必需的申请。校方会联系已获 2026 秋季 CPT 授权的学生商量后续。最新日期表：2027 春季 01·30—05·19（仅兼职）、暑期 05·20—08·17（兼职或全职）、秋季 08·18—12·17（仅兼职），后续年度也已更新。日期表适用于符合资格的申请；部分学生另有更晚的开始限制，请向 ISO 确认。",
+        "MIT 暂停一类新 CPT：8·24 当日已收到或待审、且实践并非全专业学生完成学位必需的申请。校方会联系已获 2026 秋季 CPT 授权的学生商量后续。最新日期表：2027 春季 01·30—05·19（仅兼职）、暑期 05·20—08·20（兼职或全职）、秋季 08·21—12·17（仅兼职），后续年度也已更新。日期表适用于符合资格的申请；部分学生另有更晚的开始限制，请向 ISO 确认。",
     },
     en: {
       state:
         'Paused: new CPT not required for the degree',
       detail:
-        "MIT paused new CPT requests received or pending as of August 24 when the training is not required for every student to complete the degree, and will contact students already issued Fall 2026 CPT to discuss options. The current date table lists Spring 2027 January 30–May 19 (part-time), Summer May 20–August 17 (part- or full-time) and Fall August 18–December 17 (part-time), with later years updated too. The calendar applies to eligible requests; some students face later start restrictions, so confirm with ISO.",
+        "MIT paused new CPT requests received or pending as of August 24 when the training is not required for every student to complete the degree, and will contact students already issued Fall 2026 CPT to discuss options. The current date table lists Spring 2027 January 30–May 19 (part-time), Summer May 20–August 20 (part- or full-time) and Fall August 21–December 17 (part-time), with later years updated too. The calendar applies to eligible requests; some students face later start restrictions, so confirm with ISO.",
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_mit.jpeg', width: 1080, height: 2341 },
@@ -881,19 +897,19 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ucsb',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UCSB',
     href: 'https://oiss.ucsb.edu/curricular-practical-training',
-    tone: 'continue',
+    tone: 'tighten',
     zh: {
-      state: '官网列出 CPT 申请和审批流程',
+      state: "课程须要求所有修课学生完成实践",
       detail:
-        "OISS 现行页面说明符合条件者可通过 UCSBGlobal 申请，获批后领取带 CPT 授权的 I-20。页面把实践表述为“与学位相关且为项目组成部分”，此前 8 月的暂停通知已撤下。附图为旧公告，保留供对照。",
+        "OISS 现行页面说明符合条件者可通过 UCSBGlobal 申请，获批后领取带 CPT 授权的 I-20。实践须与学位相关、是课程要求的一部分。学生须修读要求所有修课学生完成实践的课程。此前 8 月的暂停通知已撤下。附图为旧公告，保留供对照。",
     },
     en: {
-      state: 'Site lists how to apply for and get CPT',
+      state: "The course must require practical work of every enrolled student",
       detail:
-        "The current OISS page directs eligible students to apply through UCSBGlobal; approved students receive a CPT-authorized I-20. It describes training as related to and integral to the degree, and the August pause notice has been taken down. The screenshot shows the earlier notice for comparison.",
+        "The current OISS page directs eligible students to apply through UCSBGlobal; approved students receive a CPT-authorized I-20. Training must relate to the degree and be integral to the curriculum. Students must enroll in a course that requires practical work from every enrolled student. The August pause notice has been taken down. The screenshot shows the earlier notice for comparison.",
     },
     screenshots: [
       { src: '/cpt-evidence/cpt_ucsb_1.jpeg', width: 1080, height: 1677 },
@@ -921,7 +937,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-southern-california',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Southern California',
     href: 'https://ois.usc.edu/important-update-regarding-curricular-practical-training/',
     tone: 'tighten',
@@ -939,7 +955,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-alabama',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Alabama',
     href: 'https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/',
     tone: 'tighten',
@@ -957,7 +973,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-irvine',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UC Irvine',
     href: 'https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/',
     tone: 'tighten',
@@ -977,7 +993,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-utah',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Utah',
     href: 'https://www.isss.utah.edu/news/posts/2026/cpt-broadcast-message-update.php',
     tone: 'pause',
@@ -996,7 +1012,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-delaware',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Delaware',
     href: 'https://www.udel.edu/academics/global/isss/announcements/',
     tone: 'pause',
@@ -1014,7 +1030,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'uc-san-diego',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UC San Diego',
     href: 'https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html',
     tone: 'tighten',
@@ -1032,7 +1048,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-maryland-baltimore-county',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Maryland, Baltimore County',
     href: 'https://isss.umbc.edu/updates/',
     tone: 'tighten',
@@ -1051,7 +1067,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'george-washington-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'George Washington University',
     href: 'https://internationalservices.gwu.edu/updated-guidance-curricular-practical-training-cpt',
     tone: 'pause',
@@ -1069,7 +1085,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-colorado-boulder',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Colorado Boulder',
     href: 'https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs',
     tone: 'tighten',
@@ -1087,7 +1103,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-wisconsin-milwaukee',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Wisconsin-Milwaukee',
     href: 'https://uwm.edu/cie/services/students/employment/curricular-practical-training/',
     tone: 'tighten',
@@ -1106,7 +1122,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-oregon',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Oregon',
     href: 'https://isss.uoregon.edu/curricular-practical-training-cpt',
     tone: 'tighten',
@@ -1125,7 +1141,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'university-of-kansas',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'University of Kansas',
     href: 'https://iss.ku.edu/f-1-cpt-curricular-practical-training',
     tone: "tighten",
@@ -1143,7 +1159,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'george-mason-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'George Mason University',
     href: 'https://oips.gmu.edu/current-immigration-information/',
     tone: 'pause',
@@ -1162,7 +1178,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'ucla',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'UCLA',
     href: 'https://internationalcenter.ucla.edu/September8message',
     tone: 'pause',
@@ -1221,7 +1237,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'georgetown-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Georgetown University',
     href: 'https://internationalservices.georgetown.edu/immigration-updates/',
     tone: 'tighten',
@@ -1240,7 +1256,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'james-madison-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'James Madison University',
     href: 'https://www.jmu.edu/global/isss/announcements.shtml',
     tone: 'pause',
@@ -1259,7 +1275,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'boston-college',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Boston College',
     href: 'https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html',
     tone: 'pause',
@@ -1278,7 +1294,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'johns-hopkins-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Johns Hopkins University',
     href: 'https://ois.jhu.edu/students/current-f-1-students/f-1-training-and-employment/curricular-practical-training/',
     tone: 'tighten',
@@ -1296,7 +1312,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     id: 'washington-state-university',
-    checkedOn: "2026-11-09",
+    checkedOn: "2026-11-10",
     school: 'Washington State University',
     href: 'https://ip.wsu.edu/august-7th-2026-special-immigration-advisory/',
     tone: 'tighten',
@@ -1315,7 +1331,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "adelphi-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Adelphi University",
     "href": "https://www.adelphi.edu/policies/curricular-practical-training-cpt-policy/",
     "tone": "tighten",
@@ -1331,7 +1347,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "north-carolina-state-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "North Carolina State University (NC State)",
     "href": "https://internationalservices.ncsu.edu/curricular-practical-training/",
     "tone": "tighten",
@@ -1347,7 +1363,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "western-michigan-university",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Western Michigan University (WMU)",
     "href": "https://wmich.edu/international/immigration/news",
     "tone": "tighten",
@@ -1363,7 +1379,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   },
   {
     "id": "georgia-institute-of-technology",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "school": "Georgia Institute of Technology (Georgia Tech)",
     "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt",
     "tone": "tighten",

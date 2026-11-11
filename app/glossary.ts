@@ -21,6 +21,14 @@ export type GlossarySegment =
 
 export const glossaryEntries: GlossaryEntry[] = [
   {
+    term: 'PRA',
+    aliases: ['《文书削减法》'],
+    fullName: 'Paperwork Reduction Act（文书削减法）',
+    explanation: '要求联邦部门说明表格和数据收集会让公众花多少时间和费用，并就这些负担征求意见的法律。OPT 提案的这部分意见征集与规则本身的评论有各自的截止日。',
+    fullNameEn: 'Paperwork Reduction Act',
+    explanationEn: 'A law requiring federal agencies to explain the time and cost their forms and data collection impose on the public and seek comments on those burdens. For the OPT proposal, these comments have a separate deadline from comments on the rule itself.',
+  },
+  {
     term: 'Thesis/Dissertation Requirement CPT',
     aliases: ['thesis/dissertation-required CPT'],
     fullName: 'Thesis/Dissertation Requirement CPT（论文要求型 CPT）',
