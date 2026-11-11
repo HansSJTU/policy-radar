@@ -168,7 +168,7 @@ test('all tracks keep completed, active and future stages disjoint and languages
   }
 });
 
-test('OPT published proposal has an active comment stage without an effective rule', () => {
+test('OPT separates closed rule comments from ongoing PRA comments without an effective rule', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('opt-fee', language);
     assert.equal(track.lastCompletedStage, 2);
@@ -177,6 +177,8 @@ test('OPT published proposal has an active comment stage without an effective ru
     assert.equal(getProcessStageState(track, 4), 'upcoming');
     assert.equal(getProcessStageState(track, 5), 'upcoming');
     assert.match(track.detail, /11 月 9 日|November 9/);
+    assert.match(track.waitingFor, /12·07|December 7/);
+    assert.match(track.currentSummary, /PRA/);
   }
 });
 

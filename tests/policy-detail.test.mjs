@@ -225,7 +225,10 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
   assert.match(opt.summary, /70,000.*30,000/);
   assert.match(opt.summary, /学校.*缴费/);
   assert.match(opt.scope[0].text, /成本转给.*学生.*雇主/);
-  assert.ok(opt.next.some(({ date }) => date === '2026-11-09'));
+  assert.ok(opt.milestones.some(({ date }) => date === '2026-11-09'));
+  assert.ok(!opt.next.some(({ date }) => date === '2026-11-09'));
+  assert.ok(opt.next.some(({ date }) => date === '2026-12-07'));
+  assert.match(opt.status, /评论已截止/);
   assert.match(getPolicy('grace-period', 'en').effectLabel, /Current rule unchanged/);
 });
 
