@@ -23,6 +23,43 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-11",
+    "changes": [
+      {
+        "id": "grace-period-comments-closed-november10",
+        "category": "#08 失业后 60 天宽限期提案",
+        "title": "公众评论结束，现行宽限期继续适用",
+        "summary": "提案评论于 11·10 结束。DHS 接下来审阅、回应意见，再决定是否发布最终规则。",
+        "before": "正式提案，公众评论截至 11 月 10 日；流程显示正在评论，下一步列有评论截止日。",
+        "after": "评论已结束，11·10 成为已发生的里程碑；流程显示评论完成、等待最终规则。现行最长 60 天失业宽限期继续适用。",
+        "sources": [
+          {
+            "label": "Federal Register · 9·11 提案及已结束的评论期",
+            "href": "https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period"
+          }
+        ]
+      },
+      {
+        "id": "ohio-denver-cpt-public-notices",
+        "category": "#05 CPT 学校追踪",
+        "title": "新增 Ohio State 和 Denver 校方 CPT 记录",
+        "summary": "新增两所学校的既有公开规定：学位必需实践及符合条件的论文研究可申请，选修实践受限。",
+        "before": "79 条记录：75 条校方网页、4 条社区截图；77 所不同学校。",
+        "after": "81 条记录：77 条校方网页、4 条社区截图；79 所不同学校。Ohio State 列明学位必需实践和博士论文必需数据研究的条件，院系主任须书面说明论文研究的必要性。Denver 8·31 通知保留学位必需和已批准论文必需的实践，博士生须进入论文阶段。两份既有规定新增收录；UCLA 与 Extension、Purdue ISS 与 ECE 仍各按一所大学去重。",
+        "sources": [
+          {
+            "label": "Ohio State OIA · CPT 条件",
+            "href": "https://oia.osu.edu/international-students/employment/curricular-practical-training"
+          },
+          {
+            "label": "University of Denver ISSS · 8·31 CPT 通知",
+            "href": "https://internationalization.du.edu/isss/resources/immigration-updates"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "changes": [
       {
@@ -2190,6 +2227,43 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-11",
+    "changes": [
+      {
+        "id": "grace-period-comments-closed-november10",
+        "category": "#08 60-Day Grace Period Proposal",
+        "title": "Comments closed; the current grace period continues",
+        "summary": "Comments closed November 10. DHS next reads and responds to comments before deciding whether to issue a final rule.",
+        "before": "Proposed rule with comments through November 10; the process showed active comments and listed the deadline as next.",
+        "after": "Comments are complete, November 10 is a completed milestone, and a final rule is the next stage. The current grace period of up to 60 days after job loss remains available.",
+        "sources": [
+          {
+            "label": "Federal Register · September 11 proposal and closed comment period",
+            "href": "https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period"
+          }
+        ]
+      },
+      {
+        "id": "ohio-denver-cpt-public-notices",
+        "category": "#05 CPT School Tracker",
+        "title": "Add Ohio State and Denver public CPT records",
+        "summary": "Add two schools’ existing public requirements: degree-required training and qualifying thesis research are eligible; optional training is restricted.",
+        "before": "79 evidence entries: 75 public university pages and four community reports; 77 distinct institutions.",
+        "after": "81 evidence entries: 77 public university pages and four community reports; 79 distinct institutions. Ohio State specifies conditions for degree-required training and doctoral research producing data necessary for the dissertation, explained in writing by the department chair. Denver’s August 31 notice retains degree-required and approved thesis-required training; doctoral students must reach the dissertation stage. These existing requirements are newly included. UCLA/Extension and Purdue ISS/ECE each still count as one university.",
+        "sources": [
+          {
+            "label": "Ohio State OIA · CPT requirements",
+            "href": "https://oia.osu.edu/international-students/employment/curricular-practical-training"
+          },
+          {
+            "label": "University of Denver ISSS · August 31 CPT notice",
+            "href": "https://internationalization.du.edu/isss/resources/immigration-updates"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-10",
     "changes": [

@@ -126,16 +126,17 @@ test('administrative guidance has its own process and color family', () => {
   assert.notDeepEqual(track.stages, getProcessTrack('opt-fee').stages);
 });
 
-test('published grace-period NPRM opens comments without final effectiveness', () => {
+test('grace-period comments are complete while the final rule remains upcoming', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('grace-period', language);
-    assert.equal(track.lastCompletedStage, 2);
-    assert.equal(track.activeStage, 3);
+    assert.equal(track.lastCompletedStage, 3);
+    assert.equal(track.activeStage, null);
     assert.equal(track.nextStage, 4);
     assert.equal(getProcessStageState(track, 2), 'complete');
-    assert.equal(getProcessStageState(track, 3), 'active');
+    assert.equal(getProcessStageState(track, 3), 'complete');
     assert.equal(getProcessStageState(track, 4), 'upcoming');
-    assert.match(track.waitingFor, /11 月 10 日|November 10/);
+    assert.match(track.currentSummary, /公众评论已结束|Public comments closed/);
+    assert.match(track.waitingFor, /最终规则|final rule/);
   }
 });
 

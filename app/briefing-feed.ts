@@ -62,6 +62,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Comments close on the proposal to stop deferring to earlier I-129 approvals at extension time, before midnight ET; file on regulations.gov under docket USCIS-2026-0529."
   },
   {
+    "id": "grace-period-comments-closed-november10",
+    "date": "2026-11-10",
+    "availableOn": "2026-11-11",
+    "policyId": "grace-period",
+    "timing": "recent",
+    "zh": "取消失业后最长 60 天宽限期提案的公众评论已结束。DHS 接下来阅读、回应意见，再决定最终规则；现行宽限期继续适用。",
+    "en": "Public comments on the proposal to end the up-to-60-day grace period after job loss closed. DHS next reads and responds to comments before deciding on a final rule. The current grace period remains available."
+  },
+  {
     "id": "grace-comment-deadline",
     "date": "2026-11-10",
     "policyId": "grace-period",
