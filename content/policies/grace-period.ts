@@ -10,11 +10,16 @@ export const gracePeriod: PolicyContent = {
   related: ['h1b-reform', 'h4-ead', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',
-    lastCompletedStage: 2,
-    activeStage: 3,
+    lastCompletedStage: 3,
+    activeStage: null,
     nextStage: 4,
   },
   sources: [
+    {
+      "href": "https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period",
+      "zh": "Federal Register · 9·11 提案及已结束的评论期",
+      "en": "Federal Register · September 11 proposal and closed comment period"
+    },
     {
       "href": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf",
       "zh": "Federal Register NPRM 正式版（9·11）",
@@ -54,20 +59,20 @@ export const gracePeriod: PolicyContent = {
   zh: {
     title: '失业后的最长 60 天宽限期拟取消',
     short: '取消失业后 60 天宽限期',
-    status: '正式提案 · 评论截至 11 月 10 日',
+    status: '正式提案 · 评论已结束',
     effectLabel: '尚未生效 · 现行规则未变',
     agency: 'DHS / USCIS',
     documentId: '1615-AD22',
-    tldr: "现在 H-1B 等工作签证持有人被裁或离职后，可以在美国合法多待最长 60 天，用来找新雇主、转身份或者安排离开。DHS 提议取消这段宽限期。公众评论 11 月 10 日截止，现在失业照样有 60 天。F-1 毕业后的宽限期是另一套规则，不在这次提案里。",
+    tldr: "现在 H-1B 等工作签证持有人被裁或离职后，可以在美国合法多待最长 60 天，用来找新雇主、转身份或者安排离开。DHS 提议取消这段宽限期。公众评论已于 11 月 10 日结束，现行最长 60 天宽限期继续适用。F-1 毕业后的宽限期是另一套规则，不在这次提案里。",
     tags: ['H-1B 失业', '换雇主', '转身份'],
     summary:
-      "宽限期是工作提前结束后，法律给你的一段缓冲：最长 60 天，而且不超过 I-94 上的到期日。这段时间里你的身份还在，可以找新雇主递交申请、转成别的身份，或者准备离境。DHS 9 月 11 日正式提议，取消 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属的这段宽限期。公众评论 11·10 美东午夜前截止。最终规则出来并生效之前，60 天宽限期照常适用。",
+      "宽限期是工作提前结束后，法律给你的一段缓冲：最长 60 天，而且不超过 I-94 上的到期日。这段时间里你的身份还在，可以找新雇主递交申请、转成别的身份，或者准备离境。DHS 9 月 11 日正式提议，取消 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属的这段宽限期。公众评论已于 11·10 结束。最终规则出来并生效之前，60 天宽限期照常适用。",
     audience:
       "工作提前结束（被裁、辞职或被解雇）的 H-1B、H-1B1、E-1、E-2、E-3、L-1、O-1、TN 持有人及其家属。对 F-1 学生来说，这关系到以后拿到 H-1B 之后的工作稳定性。",
     caveat:
       "现在失业，照样有最长 60 天宽限期。F-1 毕业后的宽限期是另一套规则，不在这次提案里。",
     background:
-      "这段宽限期写在联邦法规 8 CFR 214.1(l)(2) 里。提案（文件号 2026-18631）9 月 10 日在联邦公报上预先公开，9 月 11 日正式刊登（91 FR 57807），公众评论的案卷号是 USCIS-2026-0364。\n提案要删掉 8 CFR 214.1(l)(2) 这一整条，并相应修改另一条引用它的规定：“特殊情况 EAD”（compelling-circumstances EAD）。那是一种给在等绿卡排期、又遇到严重困难的人申请的工卡。\n公众评论 2026 年 11 月 10 日美东午夜前截止。之后 DHS 要阅读、回应这些意见，再决定最终规则写什么、哪天生效。",
+      "这段宽限期写在联邦法规 8 CFR 214.1(l)(2) 里。提案（文件号 2026-18631）9 月 10 日在联邦公报上预先公开，9 月 11 日正式刊登（91 FR 57807），公众评论的案卷号是 USCIS-2026-0364。\n提案要删掉 8 CFR 214.1(l)(2) 这一整条，并相应修改另一条引用它的规定：“特殊情况 EAD”（compelling-circumstances EAD）。那是一种给在等绿卡排期、又遇到严重困难的人申请的工卡。\n公众评论已于 2026 年 11 月 10 日结束。DHS 接下来要阅读、回应这些意见，再决定最终规则写什么、哪天生效。",
     teaser: '被裁后没有缓冲期，找新工作、换身份、安排家人都会更急。',
     headline: '被裁之后的缓冲时间，可能整个没了。',
     analysis:
@@ -162,13 +167,13 @@ export const gracePeriod: PolicyContent = {
       {
         "date": "2026-09-11",
         "text": "提案正式刊登，公众评论 11 月 10 日截止。"
+      },
+      {
+        "date": "2026-11-10",
+        "text": "公众评论结束；现行最长 60 天失业宽限期继续适用，DHS 接下来审阅意见。"
       }
     ],
     next: [
-      {
-        "date": "2026-11-10",
-        "text": "公众评论截止（美东时间午夜前），在 regulations.gov 的案卷 USCIS-2026-0364 下提交。"
-      },
       {
         "date": "日期未定",
         "text": "DHS 审阅意见后，决定最终规则和生效日期。",
@@ -177,29 +182,29 @@ export const gracePeriod: PolicyContent = {
     ],
     process: {
       detail:
-        "提案 9 月 11 日正式刊登，公众评论到 11 月 10 日。之后是 DHS 审阅意见、决定最终规则。",
-      currentSummary: "提案已公布，正在收集公众评论",
+        "提案 9 月 11 日正式刊登，公众评论已于 11 月 10 日结束。DHS 接下来审阅意见、决定最终规则。",
+      currentSummary: "公众评论已结束，等待最终规则",
       waitingFor:
-        "公众评论 11 月 10 日美东午夜前截止，之后看 DHS 会不会发最终规则。",
+        "DHS 审阅、回应公众意见后，决定是否发布最终规则及生效日期。",
     },
   },
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
     short: 'Ending the 60-Day Grace Period',
-    status: 'Proposed rule · Comments due November 10',
+    status: 'Proposed rule · Comment period closed',
     effectLabel: 'Not in effect · Current rule unchanged',
     agency: 'DHS / USCIS',
     documentId: '1615-AD22',
-    tldr: "Today, if an H-1B or other work-visa holder is laid off or quits, they can stay in the U.S. lawfully for up to 60 more days to find a new employer, change status or arrange to leave. DHS proposes ending that grace period. Comments close November 10, and if you lose your job now you still get the 60 days. The F-1 grace period after graduation is a separate rule and not part of this proposal.",
+    tldr: "Today, if an H-1B or other work-visa holder is laid off or quits, they can stay in the U.S. lawfully for up to 60 more days to find a new employer, change status or arrange to leave. DHS proposes ending that grace period. Comments closed November 10; the current grace period of up to 60 days remains available. The F-1 grace period after graduation is a separate rule and not part of this proposal.",
     tags: ['H-1B job loss', 'Employer change', 'Change of status'],
     summary:
-      "The grace period is a cushion the regulations give you after a job ends early: up to 60 days, and no later than the end date on your I-94. During that time you keep your status and can have a new employer file for you, switch to another status or prepare to leave. On September 11 DHS formally proposed ending this grace period for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN workers and their families. Public comments close before midnight Eastern Time on November 10. Until a final rule takes effect, the 60-day grace period still applies.",
+      "The grace period is a cushion the regulations give you after a job ends early: up to 60 days, and no later than the end date on your I-94. During that time you keep your status and can have a new employer file for you, switch to another status or prepare to leave. On September 11 DHS formally proposed ending this grace period for H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN workers and their families. Public comments closed November 10. Until a final rule takes effect, the 60-day grace period still applies.",
     audience:
       "H-1B, H-1B1, E-1, E-2, E-3, L-1, O-1 and TN workers whose jobs end early (laid off, resigned or fired), and their families. For F-1 students, this is about job security after you get an H-1B.",
     caveat:
       "If you lose your job now, you still get up to 60 days. The F-1 grace period after graduation is a separate rule and not part of this proposal.",
     background:
-      "The grace period is set out in the federal regulation at 8 CFR 214.1(l)(2). The proposal (document 2026-18631) was posted for public inspection in the Federal Register on September 10 and published September 11 (91 FR 57807); the comment docket is USCIS-2026-0364.\nIt would delete 8 CFR 214.1(l)(2) entirely and update another provision that refers to it: the compelling-circumstances EAD, a work permit that people waiting in the green-card backlog can apply for when facing serious hardship.\nPublic comments close before midnight Eastern Time on November 10, 2026. DHS then has to read and respond to them before deciding what the final rule says and when it starts.",
+      "The grace period is set out in the federal regulation at 8 CFR 214.1(l)(2). The proposal (document 2026-18631) was posted for public inspection in the Federal Register on September 10 and published September 11 (91 FR 57807); the comment docket is USCIS-2026-0364.\nIt would delete 8 CFR 214.1(l)(2) entirely and update another provision that refers to it: the compelling-circumstances EAD, a work permit that people waiting in the green-card backlog can apply for when facing serious hardship.\nPublic comments closed November 10, 2026. DHS now has to read and respond to them before deciding what the final rule says and when it starts.",
     teaser:
       'Without a buffer after a layoff, finding a job, changing status and planning for family all get more urgent.',
     headline:
@@ -302,13 +307,13 @@ export const gracePeriod: PolicyContent = {
       {
         "date": "2026-09-11",
         "text": "The proposal was published; public comments close November 10."
+      },
+      {
+        "date": "2026-11-10",
+        "text": "Public comments closed. The current grace period of up to 60 days after job loss remains available while DHS reviews comments."
       }
     ],
     next: [
-      {
-        "date": "2026-11-10",
-        "text": "Public comments due before midnight Eastern Time, filed on regulations.gov under docket USCIS-2026-0364."
-      },
       {
         "date": "Date unknown",
         "text": "After reviewing comments, DHS decides on a final rule and its start date.",
@@ -317,10 +322,10 @@ export const gracePeriod: PolicyContent = {
     ],
     process: {
       detail:
-        "The proposal was published September 11 and public comments run until November 10. DHS then reviews comments and decides on a final rule.",
-      currentSummary: "Proposal published; public comments open",
+        "The proposal was published September 11 and public comments closed November 10. DHS now reviews comments and decides on a final rule.",
+      currentSummary: "Public comments closed; awaiting a final rule",
       waitingFor:
-        "Public comments close before midnight Eastern Time on November 10; then whether DHS issues a final rule.",
+        "After reading and responding to comments, DHS decides whether to issue a final rule and when it would take effect.",
     },
   },
 };

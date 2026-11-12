@@ -238,7 +238,9 @@ test('grace-period publication is distinct from final effectiveness', () => {
     assert.equal(policy.effectState, 'not-in-effect');
     assert.ok(policy.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
     assert.ok(policy.milestones.some(({ date }) => date === '2026-09-10'));
-    assert.ok(policy.next.some(({ date }) => date === '2026-11-10'));
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-11-10'));
+    assert.ok(!policy.next.some(({ date }) => date === '2026-11-10'));
+    assert.match(policy.status, /评论已结束|Comment period closed/);
     assert.match(policy.background, /USCIS|DHS/);
     assert.doesNotMatch(policy.background, /提案尚未公开|proposal is not yet public/);
   }
