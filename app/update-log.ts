@@ -23,6 +23,39 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-12",
+    "changes": [
+      {
+        "id": "brown-cpt-degree-scope-november12",
+        "category": "#05 CPT 学校追踪",
+        "title": "Brown 本科 CPT 暂停，按学位列出资格",
+        "summary": "11·09 更新的规定：本科 CPT 无限期暂停；6 个硕士项目可申请，博士论文必需实践仅在极少数情形下考虑。",
+        "before": "只批所有学生毕业都必须完成的实践；全校政策和项目正在核对，待审申请由顾问联系。",
+        "after": "本科 CPT 暂停，含可选职业实践方向、独立研究课和 Brown in Washington 等可选校外学期。硕士仅限 PRIME、数据科学、公共事务、教学、城市教育政策、公共卫生 6 个项目。已获批的博士论文计划要求在校外机构工作才能完成论文的，可向 ISSS 申请个别考虑。",
+        "sources": [
+          {
+            "label": "Brown ISSS · 11·09 更新的 CPT 规定",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          }
+        ]
+      },
+      {
+        "id": "uci-jd-summer-cpt-november12",
+        "category": "#05 CPT 学校追踪",
+        "title": "UC Irvine 项目表新增 J.D.，限暑期",
+        "summary": "国际中心的学位必需实践项目表列入法学院 J.D.，只适用于暑期。",
+        "before": "学校记录概述学位必需项目及论文必需实践条件，未单列法学院 J.D.。",
+        "after": "学校记录补充法学院 J.D. 已列入项目表，限暑期；学位或论文必需实践与合作协议等条件继续适用。",
+        "sources": [
+          {
+            "label": "UC Irvine 国际中心 · CPT 项目表",
+            "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-11",
     "changes": [
       {
@@ -2227,6 +2260,39 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-12",
+    "changes": [
+      {
+        "id": "brown-cpt-degree-scope-november12",
+        "category": "#05 CPT School Tracker",
+        "title": "Brown suspends undergraduate CPT and lists eligibility by degree",
+        "summary": "The November 9 update suspends undergraduate CPT indefinitely; six master’s programs are eligible and dissertation-required training is considered only in very limited cases.",
+        "before": "Only training every student needs to graduate; campus policies and programs under review, with advisers contacting pending applicants.",
+        "after": "Undergraduate CPT is suspended, including optional professional tracks, independent study and optional semester-away programs such as Brown in Washington. Master’s requests are limited to PRIME, Data Science, Public Affairs, Teaching, Urban Education Policy and Public Health. ISSS may consider limited cases where an approved dissertation proposal requires employment with an external organization to complete the dissertation.",
+        "sources": [
+          {
+            "label": "Brown ISSS · CPT requirements updated November 9",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          }
+        ]
+      },
+      {
+        "id": "uci-jd-summer-cpt-november12",
+        "category": "#05 CPT School Tracker",
+        "title": "UC Irvine adds J.D. to its table, for summer only",
+        "summary": "The International Center’s degree-required training table includes the School of Law’s J.D. for summer only.",
+        "before": "The school record summarized degree- and thesis-required training without separately listing the School of Law’s J.D.",
+        "after": "The record now specifies that the School of Law’s J.D. appears in the program table for summer only. Degree- or thesis-required training and cooperative-agreement conditions continue to apply.",
+        "sources": [
+          {
+            "label": "UC Irvine International Center · CPT program table",
+            "href": "https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-11",
     "changes": [
