@@ -41,19 +41,36 @@ async function waitForServer(origin, worker) {
   throw new Error('wrangler dev did not start within 60 seconds');
 }
 
-async function render(origin, { language, source, file }) {
-  // The root layout reads the language from the cookie, as for a reader who
-  // already chose it, so `<html lang>` matches the page.
-  const response = await fetch(origin + source, {
-    redirect: 'manual',
-    headers: { cookie: `${LANGUAGE_COOKIE}=${language}` },
-  });
-  if (response.status !== 200) {
-    throw new Error(`${source} returned ${response.status}`);
+const PNG_SIGNATURE = Buffer.from([0x89, 0x50, 0x4e, 0x47]);
+
+// A response can be 200 and still be cut short, for instance an image drawn
+// while the renderer is still loading. Check the body before keeping it.
+function isComplete(file, body) {
+  if (file.endsWith('.png')) {
+    return body.length > 1000 && body.subarray(0, 4).equals(PNG_SIGNATURE);
   }
-  const target = path.join(clientDir, file);
-  await mkdir(path.dirname(target), { recursive: true });
-  await writeFile(target, Buffer.from(await response.arrayBuffer()));
+  return body.includes('</html>');
+}
+
+async function render(origin, { language, source, file }) {
+  let problem = '';
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    // The root layout reads the language from the cookie, as for a reader who
+    // already chose it, so `<html lang>` matches the page.
+    const response = await fetch(origin + source, {
+      redirect: 'manual',
+      headers: { cookie: `${LANGUAGE_COOKIE}=${language}` },
+    });
+    const body = Buffer.from(await response.arrayBuffer());
+    if (response.status === 200 && isComplete(file, body)) {
+      const target = path.join(clientDir, file);
+      await mkdir(path.dirname(target), { recursive: true });
+      await writeFile(target, body);
+      return;
+    }
+    problem = `status ${response.status}, ${body.length} bytes`;
+  }
+  throw new Error(`${source} did not render completely (${problem})`);
 }
 
 // Start from an empty directory so the Worker renders every page itself.
@@ -104,8 +121,13 @@ worker.stderr.on('data', (chunk) => {
 
 try {
   await waitForServer(origin, worker);
-  const queue = staticFiles();
-  const total = queue.length;
+  const files = staticFiles();
+  // Images come out empty when drawn alongside other renders, so draw them
+  // one at a time before rendering the pages in parallel.
+  for (const item of files.filter((entry) => entry.file.endsWith('.png'))) {
+    await render(origin, item);
+  }
+  const queue = files.filter((entry) => !entry.file.endsWith('.png'));
   await Promise.all(
     Array.from({ length: 4 }, async () => {
       for (let item = queue.shift(); item; item = queue.shift()) {
@@ -113,7 +135,7 @@ try {
       }
     }),
   );
-  console.log(`Prerendered ${total} static pages and images.`);
+  console.log(`Prerendered ${files.length} static pages and images.`);
 } catch (error) {
   if (stderr) console.error(stderr);
   throw error;
