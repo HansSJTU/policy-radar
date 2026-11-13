@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { resolveRequestLanguage } from '../language-server';
 import { SITE_UPDATED_ON } from '../policy-freshness';
+import { languageAlternates } from '../policy-links';
 import { buildPersonalPolicies } from './personal-radar-data';
 import PersonalRadar from './personal-radar';
 import './personal-radar.css';
@@ -23,6 +24,8 @@ export async function generateMetadata({
       language === 'zh'
         ? '根据当前身份和下一步计划，查看与你有关的政策、影响程度及预计时间。'
         : 'Explore policy changes, impact and estimated timing along your current status and next steps.',
+    // Shared radars carry ?stage=…&goal=…; they are all one page to Google.
+    alternates: languageAlternates('/radar', language),
   };
 }
 

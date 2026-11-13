@@ -22,6 +22,13 @@ test('gives each language its own canonical URL and names both versions', () => 
   });
 });
 
+test('gives every indexable page a canonical URL', async () => {
+  for (const file of ['app/page.tsx', 'app/policies/[policyId]/page.tsx', 'app/updates/page.tsx', 'app/stats/page.tsx', 'app/radar/page.tsx']) {
+    const source = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
+    assert.match(source, /alternates[:,]/, file);
+  }
+});
+
 test('points every hreflang alternate at a canonical URL', () => {
   const canonicals = new Set(sitemap().map((entry) => entry.url));
   for (const entry of sitemap()) {
