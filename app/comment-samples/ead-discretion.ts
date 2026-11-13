@@ -194,8 +194,8 @@ export default {
         en: 'The organization explicitly strongly opposes the proposal in its body text, with detailed reasons in an attachment.',
       },
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
       postedDate: '2026-08-04T04:00:00Z',
       textSha256:
@@ -254,12 +254,12 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件，无法据此判断提案立场。',
-        en: 'The body only refers to an attachment and does not establish a proposal stance.',
+        zh: '正文只写了“见附件”，看不出立场。',
+        en: 'The text only says “see attachment,” so no position can be read.',
       },
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
@@ -811,8 +811,8 @@ export default {
       textSha256:
         '040c8846033d8116dd47d8196d8d885bf476996a29479b7c8f8a7dc7c4806b87',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -875,8 +875,8 @@ export default {
       textSha256:
         'ddb7b018f7c31fd247e21e3fa3dc4ac5134043a7870059d764b22a2009697b4f',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1777,8 +1777,8 @@ export default {
       textSha256:
         'dd4cdd82391d2cd7a6ab80acdcc4ac116ec83498c30d4d33a719667d085644df',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1823,8 +1823,8 @@ export default {
       textSha256:
         '4cff94ca30699ef7a5393d0d85530b713fe1dd6e8050871eda5b818879b60c97',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -2048,15 +2048,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件，无法判断立场。',
-        en: 'The body only refers to an attachment and does not establish a stance.',
+        zh: '正文只写了“见附件”，看不出立场。',
+        en: 'The text only says “see attachment,” so no position can be read.',
       },
       postedDate: '2026-08-03T04:00:00Z',
       textSha256:
         '69b8e0ae0de125e1ba22c5680b01989718bd2706dfe91cd1e78d648287a694a8',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -2251,15 +2251,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件，无法判断立场。',
-        en: 'The body only refers to an attachment and does not establish a stance.',
+        zh: '正文只写了“见附件”，看不出立场。',
+        en: 'The text only says “see attachment,” so no position can be read.',
       },
       postedDate: '2026-08-04T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '已尝试官方附件下载，均返回HTTP 403；分类仅依据可读正文，附件内容未获核实。',
-        en: 'Official attachment downloads were attempted and returned HTTP 403; classification uses readable body text only, and attachment contents were not verified.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {

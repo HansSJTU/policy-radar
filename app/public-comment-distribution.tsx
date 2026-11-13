@@ -163,8 +163,8 @@ export function PublicCommentDistribution({
           </details>
           <p className="pd-comment-note">
             {en
-              ? 'This describes the sample, not public opinion or the probability of a final rule. Posted submissions are self-selected and may include coordinated campaigns.'
-              : '这是样本分布，不代表整体民意或规则通过概率。公众提交具有自选择性，也可能包含组织化评论。'}
+              ? 'This is the spread across a random sample. People choose to write in, and some comments come from organized campaigns.'
+              : '这是随机样本的分布。写评论的人是自愿提交的，其中也有组织发动的评论。'}
           </p>
         </>
       ) : (

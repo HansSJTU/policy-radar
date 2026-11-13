@@ -42,8 +42,6 @@ export type PolicyCopy = {
   summary: string;
   audience: string;
   caveat: string;
-  // What was checked, when, and what is still unverified.
-  reviewNote?: string;
   background: string;
   teaser: string;
   headline: string;

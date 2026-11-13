@@ -35,13 +35,36 @@ test('H-1B weighted selection is a completed federal rulemaking now in effect', 
 });
 
 test('comment-closed proposals complete comments while the final rule remains a future event', () => {
-  for (const id of ['prevailing-wage', 'ead-discretion']) {
+  for (const id of ['ead-discretion']) {
     const track = getProcessTrack(id);
     assert.equal(track.stages[track.lastCompletedStage], '公众评论');
     assert.match(track.currentSummary, /评论期.*结束/);
     assert.equal(track.activeStage, null);
     assert.equal(track.nextStage, 4);
     assert.equal(getProcessStageState(track, 4), 'upcoming');
+  }
+});
+
+
+test('wage final-rule review is active before publication and effectiveness', async () => {
+  const { getPolicy } = await import('../app/policy-data.ts');
+  for (const language of ['zh', 'en']) {
+    const track = getProcessTrack('prevailing-wage', language);
+    assert.equal(track.lastCompletedStage, 3);
+    assert.equal(track.activeStage, 4);
+    assert.equal(track.nextStage, 5);
+    assert.equal(getProcessStageState(track, 3), 'complete');
+    assert.equal(getProcessStageState(track, 4), 'active');
+    assert.equal(getProcessStageState(track, 5), 'upcoming');
+    const policy = getPolicy('prevailing-wage', language);
+    assert.equal(policy.effectState, 'not-in-effect');
+    assert.match(policy.sources[0].href, /rrid=1596562/);
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-11-06'));
+    const cpt = getProcessTrack('cpt-guidance', language);
+    assert.equal(cpt.litigation.at(-1).status, 'filed');
+    const cptPolicy = getPolicy('cpt-guidance', language);
+    assert.ok(cptPolicy.milestones.some(({ date }) => date === '2026-11-06'));
+    assert.ok(!cptPolicy.next.some(({ date }) => date === '2026-11-06'));
   }
 });
 
@@ -55,9 +78,11 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
     track.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: '提起诉讼' },
-      { date: '9·02', label: '拟议反对意见' },
-      { date: '9·03', label: '听证后待裁定' },
+      { date: '9·02', label: '政府反对' },
+      { date: '9·03', label: '听证，未当庭裁定' },
       { date: '9·14', label: '全国暂缓' },
+      { date: '10·30', label: '双方请求判决' },
+      { date: '11·02', label: '政府交回复' },
     ],
   );
   assert.deepEqual(
@@ -70,19 +95,23 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { afterStage: 4, progress: 70 },
       { afterStage: 4, progress: 80 },
       { afterStage: 4, progress: 90 },
+      { afterStage: 4, progress: 98 },
+      { afterStage: 4, progress: 99 },
     ],
   );
   assert.deepEqual(
     track.litigation.map(({ lane }) => lane),
-    ['base', 'raised', 'base', 'raised'],
+    ['base', 'raised', 'base', 'raised', 'base', 'raised'],
   );
   assert.deepEqual(
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
     [
       { date: '8·18', label: 'Lawsuit filed' },
-      { date: '9·02', label: 'Proposed opposition' },
-      { date: '9·03', label: 'Hearing held; decision pending' },
+      { date: '9·02', label: 'Government opposes' },
+      { date: '9·03', label: 'Hearing; no ruling yet' },
       { date: '9·14', label: 'Nationwide stay' },
+      { date: '10·30', label: 'Both sides seek judgment' },
+      { date: '11·02', label: 'Government reply filed' },
     ],
   );
   assert.match(track.currentSummary, /全国暂缓/);
@@ -97,16 +126,17 @@ test('administrative guidance has its own process and color family', () => {
   assert.notDeepEqual(track.stages, getProcessTrack('opt-fee').stages);
 });
 
-test('published grace-period NPRM opens comments without final effectiveness', () => {
+test('grace-period comments are complete while the final rule remains upcoming', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('grace-period', language);
-    assert.equal(track.lastCompletedStage, 2);
-    assert.equal(track.activeStage, 3);
+    assert.equal(track.lastCompletedStage, 3);
+    assert.equal(track.activeStage, null);
     assert.equal(track.nextStage, 4);
     assert.equal(getProcessStageState(track, 2), 'complete');
-    assert.equal(getProcessStageState(track, 3), 'active');
+    assert.equal(getProcessStageState(track, 3), 'complete');
     assert.equal(getProcessStageState(track, 4), 'upcoming');
-    assert.match(track.waitingFor, /11 月 10 日|November 10/);
+    assert.match(track.currentSummary, /公众评论已结束|Public comments closed/);
+    assert.match(track.waitingFor, /最终规则|final rule/);
   }
 });
 
@@ -139,7 +169,7 @@ test('all tracks keep completed, active and future stages disjoint and languages
   }
 });
 
-test('OPT published proposal has an active comment stage without an effective rule', () => {
+test('OPT separates closed rule comments from ongoing PRA comments without an effective rule', () => {
   for (const language of ['zh', 'en']) {
     const track = getProcessTrack('opt-fee', language);
     assert.equal(track.lastCompletedStage, 2);
@@ -148,6 +178,8 @@ test('OPT published proposal has an active comment stage without an effective ru
     assert.equal(getProcessStageState(track, 4), 'upcoming');
     assert.equal(getProcessStageState(track, 5), 'upcoming');
     assert.match(track.detail, /11 月 9 日|November 9/);
+    assert.match(track.waitingFor, /12·07|December 7/);
+    assert.match(track.currentSummary, /PRA/);
   }
 });
 
@@ -159,11 +191,11 @@ test('home cards highlight the active stage, or the last stage reached while wai
     'duration-status': 4,
     'h1b-weighted-selection': 5,
     'cpt-guidance': 2,
-    'prevailing-wage': 3,
+    'prevailing-wage': 4,
     'h1b-reform': 1,
     'grace-period': 3,
     'ead-auto-extension': 5,
-    'nonimmigrant-deference': 2,
+    'nonimmigrant-deference': 3,
     'ead-discretion': 3,
     'h4-ead': 0,
     'perm-modernization': 1,

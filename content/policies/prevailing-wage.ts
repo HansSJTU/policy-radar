@@ -5,15 +5,20 @@ export const prevailingWage: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-11-12",
   related: ['h1b-weighted-selection', 'h1b-fee'],
   process: {
     kind: 'federal-rulemaking',
     lastCompletedStage: 3,
-    activeStage: null,
-    nextStage: 4,
+    activeStage: 4,
+    nextStage: 5,
   },
   sources: [
+    {
+      "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1596562",
+      "zh": "OIRA · 11·06 收到工资最终规则，审查中",
+      "en": "OIRA · Wage final rule received November 6; review pending"
+    },
     {
       href: 'https://www.federalregister.gov/d/2026-06017',
       zh: 'Federal Register NPRM',
@@ -29,247 +34,267 @@ export const prevailingWage: PolicyContent = {
       zh: '美卡论坛讨论',
       en: 'USCardForum discussion',
     },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1205-AC30",
+      "zh": "OIRA · 1205-AC30 审查记录检索",
+      "en": "OIRA · 1205-AC30 review search"
+    }
   ],
   zh: {
-    title: 'H-1B / PERM 法定工资门槛拟上调',
-    short: 'H-1B / PERM 工资门槛',
-    status: '评论期已结束 · 尚未生效',
+    title: 'H-1B / PERM 最低工资要求拟上调',
+    short: 'H-1B / PERM 最低工资',
+    status: "最终规则送 OIRA 审查 · 尚未生效",
     effectLabel: '尚未生效',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: 'DOL 提议把 H-1B、H-1B1、E-3 和 PERM 使用的四级法定工资门槛，从约第 17、34、50、67 百分位提高到第 34、52、70、88 百分位。这项提案尚未生效。',
+    tldr: "雇主办 H-1B 或 PERM 绿卡，给你的工资不能低于劳工部（DOL）定的最低线。DOL 提议大幅抬高这条线：入门级岗位的最低工资，从“同地区同职业里比约 17% 的人高”提高到“比约 34% 的人高”，其余三级也一起上调。最终规则 11·06 送到白宫 OIRA 做公布前审查，现行工资标准继续适用。",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      'DOL 打算把 H-1B、H-1B1、E-3 和 PERM 使用的四级法定工资门槛，从约第 17、34、50、67 百分位提高到第 34、52、70、88 百分位。',
-    audience: 'H-1B、H-1B1、E-3 与 PERM 的申请人及承担工资的雇主。',
-    caveat: '提案改的是法定工资下限，和 H-1B 抽签权重是两套规则。',
-    reviewNote: "10·13 重读 NPRM、当前 DOL 统一议程与 OIRA 既往结案记录；议程仍列提案阶段，联邦公报官方 RIN 接口仅列既有 NPRM。DOL 新闻稿和 Regulations.gov 动态案卷未能读取，未完整核实部门后续说明。",
+      "H-1B、H-1B1、E-3 和 PERM 都要求雇主付的工资不低于一条最低线，这条线分四个等级，按岗位要求的经验和职责高低来定。DOL 打算把四个等级从同地区同职业工资的约第 17、34、50、67 百分位，提高到第 34、52、70、88 百分位。“第 34 百分位”的意思是：把同地区做这份工作的人按工资从低到高排，这个数比其中 34% 的人高。DOL 已在 11·06 把最终规则送 OIRA 做公布前审查，现行工资标准继续适用。",
+    audience: "H-1B、H-1B1（新加坡、智利公民的工作签证）、E-3（澳大利亚公民的工作签证）和 PERM 绿卡的申请人，以及要付工资的雇主。OPT 期间准备找 H-1B 担保的同学尤其要留意。",
+    caveat: "这项提案定的是雇主必须付的最低工资。H-1B 抽签按工资等级加权（#04）是另一套规则，已经在执行。上面的百分位来自 3·27 提案；最终幅度、适用申请和过渡安排由公布的最终规则确定。",
     background:
-      'RIN 1205-AC30 在 2026-03-27 发布，公众评论期 5 月 26 日结束。2026 年 8 月的统一议程仍把它列在提案阶段；DOL 还没有发布最终规则，现行工资等级的计算方式没有改变。',
-    teaser: '一次性费用之外，持续工资成本可能进一步压缩雇主的担保空间。',
-    headline: '持续多年的工资预算，可能成为另一道担保门槛。',
+      "雇主为 H-1B 员工递交 LCA（劳工条件申请）、为 PERM 绿卡申请工资认定时，都要先确定这个岗位的“现行工资”，也就是最低线。DOL 用劳工统计局的 OEWS 工资数据，把每个职业、每个地区的工资分成四个等级：一级对应入门岗位，四级对应资深岗位。雇主按岗位要求选等级，工资至少要达到那一级。\n2025 年 9 月 19 日，总统公告要求 DOL 着手调整这些等级。2026 年 3 月 27 日，DOL 公布提案（RIN 1205-AC30），60 天的公众评论 5 月 26 日截止。2026 年 8 月的政府规则计划表仍把它列为提案阶段。DOL 发最终规则之前，工资等级仍按现在的方法算。\n11 月 6 日，OIRA 收到 DOL 的最终规则草案（RIN 1205-AC30），进入公布前审查。这是白宫对重要规则发布前的审查。接下来等 OIRA 审完，再由 DOL 公布最终条文和生效日期。",
+    teaser: "除了一次性费用，每年多付的工资也会让雇主更不愿担保。",
+    headline: "多年的工资成本，可能成为又一道担保门槛。",
     analysis:
-      '如果这项提案定稿，影响会落在长期的用工成本上，而不只是一笔申请费。本来就卡在预算边界的职位，雇主只有三个选择：涨工资、改招聘计划，或者放弃担保。',
+      "如果定稿，雇主多出的是每年的工资，而且会持续好几年，而不只是一笔申请费。对本来就卡在预算边上的岗位，雇主只有三个选择：涨工资、调整招聘计划，或者不再担保。入门级岗位受的冲击最大，因为一级工资的涨幅最大（从约第 17 百分位翻倍到第 34 百分位）。",
     impacts: [
       {
-        title: '对求职者：部分岗位可能退出可担保范围',
-        text: '如果雇主没法把工资提到门槛，这类岗位可能就不招了。入门岗位和预算紧张的单位受影响更大。',
+        title: '对求职者：有些岗位可能不再担保',
+        text: '雇主付不到新的最低工资，这类岗位可能就不招外籍员工了。入门岗位和预算紧的单位受影响更大。',
         examples: [
-          '假设某个岗位现在的法定工资门槛是每年 8 万美元，雇主也按这个数给了 offer。但如果新标准把这个岗位的门槛提到 9 万，而且适用于这份申请，雇主就得把 offer 提到至少 9 万才能过关。要是公司不愿加钱，那就没法按原工资办下来。这里的金额只是举例说明，不是真实标准。',
-          '小林和小陈都因为新标准得涨工资。小林的公司愿意把 offer 提到新门槛；小陈的公司不愿加预算，只肯给原来的工资。所以两个人面对的是同一个要求，但只有愿意涨薪的雇主才能继续办下去。',
+          '假设某个岗位现在的最低工资要求是每年 8 万美元，雇主也按这个数给了 offer。如果新标准把它提到 9 万，而且适用于这份申请，雇主就得把 offer 提到至少 9 万；公司不愿加钱，就没法按原工资办。（金额仅为举例。）',
+          '小林和小陈都因为新标准需要涨工资。小林的公司愿意把 offer 提上去，小陈的公司不肯加预算。要求一样，但只有愿意涨薪的雇主才能继续办。',
         ],
       },
       {
-        title: '对在职者：影响也可能出现在下一次申请',
-        text: '延期或换雇主需要提交新的 LCA 时，也要按届时适用的规则重新核对工资。别只盯着第一次担保。',
+        title: '对在职员工：下一次申请时也会遇到',
+        text: '延期或换雇主需要新的 LCA 时，也要按当时的规则重新核工资，不只是第一次担保才受影响。',
         examples: [
-          '小陈上次办 H-1B 的时候，工资是符合当时门槛的。现在他想跳槽，新公司愿意给同样的工资。但如果新标准生效了，而且这个岗位的门槛已经涨了，那公司就得把 offer 再往上提，才能让新申请达标。以前批过不代表现在也能过。',
-          '小王的H-1B签证和原来的LCA（也就是劳工条件申请）都快到期了，公司准备帮他续三年，所以得重新办一份LCA。虽然公司、岗位、工作地点都没变，但如果新的工资标准适用于这次申请，公司就得按新标准重新核一遍他的工资。要是小王现在的工资低于新的法定门槛，公司就必须给他涨薪，才能满足延期申请的要求。如果公司不愿意增加这笔预算，那就没法按现在的工资水平帮他办延期。至于哪些延期申请会受到新标准的影响，还得等最终的规则和过渡安排公布后才能确定。',
+          '小陈上次办 H-1B 时工资符合当时的要求。现在他跳槽，新公司给同样的工资。如果新标准已经生效、这个岗位的最低工资涨了，新公司就得把 offer 提上去。上次够，这次不一定够。',
+          '小王的 H-1B 和原来的 LCA（劳工条件申请）都快到期，公司准备帮他续三年，得重新办一份 LCA。公司、岗位、地点都没变，但如果新标准适用于这次申请，就得按新标准重新核他的工资；低于新的最低工资，公司就必须给他涨薪，不愿意加预算就没法按现在的工资续。哪些延期会受影响，要等最终规则和过渡安排。',
         ],
       },
       {
-        title: '对长期路径：PERM 预算可能同步承压',
-        text: '如果 PERM 也一起调整，企业从工作签证到绿卡的多年预算都要重算。抽签和工资门槛仍然是两件事。',
+        title: '对绿卡：PERM 预算也要重算',
+        text: '如果 PERM 也一起调整，公司从工作签证到绿卡这几年的工资预算都要重算。',
         examples: [
-          '小李的公司准备给他办 PERM 绿卡，长期用工预算也是按现在的工资水平安排的。如果新标准把这个岗位的法定工资门槛提高了，公司就得重新算今后的人工成本。这不是一次性费用，而是持续性的工资支出，所以公司可能会重新考虑还值不值得继续办绿卡。',
+          '小李的公司准备给他办 PERM 绿卡，用人预算按现在的工资定的。如果新标准提高了这个岗位的最低工资，公司就得重算今后的人工成本。这是每年都要多付的工资，不是一次性费用，公司可能会重新考虑还办不办。',
         ],
       },
     ],
     outlook:
-      '我们的预判：实际影响会因职业、地区和雇主预算而分化。最终涨多少、过渡期怎么安排，决定成本是一次性压下来，还是分批落到新申请上。',
+      "我们的判断：影响会因职业、地区和雇主预算差别很大。最终涨多少、有没有过渡期，决定成本是一下子压下来，还是随着新申请逐步落地。",
     scenarios: [
       {
         name: '按提案上调',
-        headline: '边际岗位更难维持担保预算',
-        assumption: '提案里的四级工资结构基本保留。',
+        headline: '预算边上的岗位更难维持担保',
+        assumption: '提案里的四级工资基本不变。',
         effects:
-          '有些雇主会涨工资，有些会减少受覆盖岗位。资金充裕的企业更容易消化。',
-        signals: '最终的工资计算方式、覆盖范围和企业的薪资预算。',
+          '有的雇主会涨工资，有的会减少担保岗位。资金充裕的公司更容易消化。',
+        signals: '最终的工资算法、适用范围和企业的薪资预算。',
       },
       {
-        name: '调幅／过渡调整',
-        headline: '成本仍会上升，但调整窗口可能更长',
-        assumption: '最终文本降低涨幅，或者给出实质性过渡安排。',
+        name: '涨幅或过渡期调整',
+        headline: '成本照样上升，但有更多时间调整',
+        assumption: '最终规则降低涨幅，或者给出像样的过渡期。',
         effects:
-          '雇主可以分期调整招聘和薪资。申请时间和过渡条件会影响不同员工的待遇。',
-        signals: '分阶段实施、存量申请怎么处理、生效边界在哪。',
+          '雇主可以分阶段调整招聘和工资；什么时候递交申请，会影响你按哪套标准算。',
+        signals: '是否分阶段实施、在办申请怎么算、从哪天开始。',
       },
       {
         name: '暂未定稿',
-        headline: '当前成本结构延续，企业保留预算弹性',
-        assumption: '机构继续审阅或重写提案。',
-        effects: '眼前压力可能减轻，但多年担保规划仍要预留涨薪空间。',
-        signals: '最终规则何时送审、议程变动和后续公告。',
+        headline: '工资成本暂时不变，雇主留有余地',
+        assumption: 'DOL 继续审阅或重写提案。',
+        effects: '眼前压力小一些，但做多年担保计划时仍要预留涨薪空间。',
+        signals: "OIRA 审查何时结束，以及 DOL 是否修改或撤回草案。",
       },
     ],
     scope: [
-      { label: '覆盖项目', text: 'H-1B、H-1B1、E-3 及 PERM 的相关工资要求。' },
-      { label: '提案结构', text: '四级门槛拟移至约第 34、52、70、88 百分位。' },
       {
-        label: '当前适用',
-        text: '提案还没有改变现行工资标准；最终怎么适用，要看生效日和过渡条款。',
+        "label": "涉及哪些签证",
+        "text": "H-1B、H-1B1、E-3 和 PERM 的最低工资要求。"
       },
+      {
+        "label": "提议的新标准",
+        "text": "四个等级提高到同地区同职业工资的约第 34、52、70、88 百分位。"
+      },
+      {
+        "label": "现在用哪个标准",
+        "text": "现行工资标准照常适用。新标准从哪天起、对哪些申请适用，由最终规则写明。"
+      }
     ],
     milestones: [
       {
-        date: '2025-09-19',
-        text: '总统公告要求 DOL 启动规则制定，调整 H-1B prevailing wage 等级。',
+        "date": "2025-09-19",
+        "text": "总统公告要求 DOL 着手调整 H-1B 工资等级。"
       },
       {
-        date: '2026-03-27',
-        text: 'DOL 发布 NPRM，提出第 34、52、70、88 百分位的新四级工资结构。',
+        "date": "2026-03-27",
+        "text": "DOL 公布提案：四级工资提高到第 34、52、70、88 百分位。"
       },
-      { date: '2026-05-26', text: '60 天公众评论期结束，DOL 开始审阅意见。' },
+      {
+        "date": "2026-05-26",
+        "text": "60 天公众评论期结束，DOL 开始审阅意见。"
+      },
+      {
+        "date": "2026-11-06",
+        "text": "DOL 将工资最终规则送 OIRA，进入公布前审查。"
+      }
     ],
     next: [
       {
         "date": "日期未定",
-        "text": "DOL 可能修改提案并将最终规则送交 OIRA；目前没有公开完成日期。"
+        "text": "OIRA 完成最终规则审查；随后 DOL 公布最终条文、过渡安排和生效日期。"
       },
       {
         "date": "日期未定",
-        "text": "只有最终规则发布并到达其生效日后，新工资等级才会开始适用。",
+        "text": "最终规则公布、到了生效日，新工资标准才开始适用。",
         "estimate": true
       }
     ],
     process: {
       detail:
-        'DOL 已经发布 NPRM，公众评论期在 2026 年 5 月 26 日结束。目前仍在提案阶段，DOL 要审阅意见之后才能发布最终规则。',
-      currentSummary: '公众评论期已结束，等待后续规则',
-      waitingFor: 'DOL 审阅意见、修改提案或推进最终规则；日期未定。',
+        "公众评论 5 月 26 日结束。OIRA 11 月 6 日收到 DOL 的最终规则草案，正在做公布前审查。现行工资标准继续适用。",
+      currentSummary: "最终规则已送 OIRA，等待公布前审查完成",
+      waitingFor: "OIRA 完成审查，以及 DOL 公布最终规则和生效日期。",
     },
   },
   en: {
     title: 'Proposed Increase to H-1B / PERM Wage Floors',
     short: 'H-1B / PERM Wage Floors',
-    status: 'Comment period closed · Not in effect',
+    status: "Final rule at OIRA · Not in effect",
     effectLabel: 'Not in effect',
     agency: 'DOL',
     documentId: '1205-AC30',
-    tldr: 'DOL proposes raising the four prevailing-wage thresholds used for H-1B, H-1B1, E-3, and PERM cases from roughly the 17th, 34th, 50th, and 67th percentiles to the 34th, 52nd, 70th, and 88th percentiles. The proposal is not in effect.',
+    tldr: "When an employer sponsors you for H-1B or a PERM green card, your pay cannot fall below a minimum set by the Department of Labor (DOL). DOL proposes raising that minimum sharply: for entry-level jobs, from “more than about 17% of people in the same job and area earn” to “more than about 34%,” with the other three levels rising too. On November 6, DOL sent the draft final rule to the White House’s OIRA for review before publication. Current wage levels continue to apply.",
     tags: ['OPT → H-1B', 'H-1B', 'PERM'],
     summary:
-      'DOL proposes raising the four prevailing-wage thresholds used for H-1B, H-1B1, E-3 and PERM from approximately the 17th, 34th, 50th and 67th percentiles to the 34th, 52nd, 70th and 88th percentiles.',
+      "H-1B, H-1B1, E-3 and PERM all require employers to pay at least a minimum wage, set at four levels according to how much experience and responsibility the job requires. DOL plans to move the four levels from roughly the 17th, 34th, 50th and 67th percentiles of local pay for the job to the 34th, 52nd, 70th and 88th. “34th percentile” means: line up everyone doing this job in the area from lowest to highest paid, and the wage is higher than 34% of them. On November 6, DOL sent the draft final rule to OIRA for review before publication. Current wage levels continue to apply.",
     audience:
-      'H-1B, H-1B1, E-3 and PERM applicants and employers funding their wages.',
+      "Applicants for H-1B, H-1B1 (the work visa for citizens of Singapore and Chile), E-3 (the work visa for Australian citizens) and PERM green cards, and the employers paying them. Students on OPT hoping for H-1B sponsorship should pay particular attention.",
     caveat:
-      'This proposal concerns required wage floors, separate from H-1B selection weights.',
-    reviewNote: "The NPRM, current DOL agenda and historical OIRA conclusion were reread October 13. The agenda retains the proposed-rule stage, and the official Federal Register RIN API lists only the existing NPRM. The DOL release and live Regulations.gov docket were inaccessible; later agency guidance remains incompletely verified.",
+      "This proposal sets the minimum wage employers must pay. The wage-weighted H-1B lottery (#04) is a separate rule that is already in effect. The percentiles above come from the March 27 proposal; the published final rule will set the final levels, affected filings and transition arrangements.",
     background:
-      'RIN 1205-AC30 was published on March 27, 2026, and comments closed May 26. The August 2026 Unified Agenda still lists it at the proposed-rule stage; DOL has not published a final rule, so the current wage-level calculation has not changed.',
+      "When an employer files an LCA (Labor Condition Application) for an H-1B worker, or seeks a wage determination for a PERM green card, it first has to find the job’s “prevailing wage,” which is the minimum. DOL uses the Bureau of Labor Statistics’ OEWS wage data to split pay for each occupation and area into four levels: Level I for entry-level jobs up to Level IV for senior ones. The employer picks the level that matches the job’s requirements and must pay at least that much.\nOn September 19, 2025, a presidential proclamation told DOL to start revising those levels. On March 27, 2026, DOL published the proposal (RIN 1205-AC30), and the 60-day comment period closed May 26. The August 2026 government rulemaking plan still lists it at the proposal stage. Until DOL issues a final rule, wage levels are calculated the current way.\nOn November 6, OIRA received DOL’s draft final rule (RIN 1205-AC30) for review before publication. This is the White House’s review of major rules before release. Next, OIRA completes its review and DOL publishes the final text and effective date.",
     teaser:
-      'Beyond one-time fees, ongoing wage costs may further reduce employers’ room to sponsor.',
+      "Beyond one-time fees, paying more every year would make employers less willing to sponsor.",
     headline:
-      'A multiyear wage commitment could become another sponsorship barrier.',
+      "Years of higher salary could become another barrier to sponsorship.",
     analysis:
-      'If the proposed increase to statutory wage floors is finalized, the effect would appear in ongoing employment costs, not just a filing fee. Roles already near budget limits may face a choice among higher pay, revised hiring plans, or no sponsorship.',
+      "If adopted, the employer’s extra cost is salary every year, for years, not a one-time filing fee. For jobs already at the edge of the budget, employers have three choices: pay more, change hiring plans or stop sponsoring. Entry-level jobs are hit hardest, because Level I rises the most (roughly doubling, from about the 17th to the 34th percentile).",
     impacts: [
       {
-        title: 'For job seekers: some roles may no longer support sponsorship',
-        text: 'Employers unable to raise pay to the applicable floor may reduce hiring for those roles. Entry-level jobs and budget-constrained organizations may be more sensitive.',
+        title: 'For job seekers: some jobs may stop offering sponsorship',
+        text: 'If an employer can’t pay the new minimum, it may stop hiring visa holders for that job. Entry-level roles and tight-budget employers are hit hardest.',
         examples: [
-          'Suppose a role currently has an $80,000 annual wage threshold and an offer at that amount. If a new applicable threshold becomes $90,000, the employer must raise the offer to at least $90,000 to meet that requirement. Without the added budget, it cannot file on the original salary. These figures illustrate the calculation rather than actual wage standards.',
-          'Both Lin’s and Chen’s roles require higher pay under a new applicable standard. Lin’s employer raises the offer to meet the threshold, while Chen’s insists on the old salary. The requirement is similar, but the employers’ willingness to meet it determines whether the respective filings can satisfy that wage condition.',
+          'Say a job’s minimum wage is $80,000 a year today and the offer matches it. If the new standard raises it to $90,000 and applies to this petition, the employer must raise the offer to at least $90,000; without the extra budget, it cannot file at the original salary. (Figures are illustrative.)',
+          'Under the new standard, both Lin and Chen would need a raise. Lin’s company agrees; Chen’s won’t add budget. Same requirement, but only the employer willing to pay more can go ahead.',
         ],
       },
       {
         title:
-          'For current workers: the effect may arrive with the next filing',
-        text: 'An extension or employer change requiring a new LCA may need a fresh wage review under future applicable rules; attention should not stop at initial sponsorship.',
+          'For current workers: it can hit at your next filing',
+        text: 'When an extension or job change needs a new LCA, your pay is checked against the rules in force then, not just at first sponsorship.',
         examples: [
-          'Chen’s salary met the legal threshold for the previous H-1B filing. A new employer now offers the same pay. If the new wage standard applies to this petition and raises the threshold for the role, the new employer must increase the offer accordingly. Meeting the previous filing’s standard does not satisfy a higher standard applicable to this one.',
-          'Wang’s H-1B and existing Labor Condition Application (LCA) are both nearing expiration. The company plans to extend his employment for another three years, so it needs a new LCA. Even with the same employer, role, and work location, if the new wage standard applies to this filing, the company must check his pay against the new standard. If his current salary falls below the new required wage, the company must raise it to meet the extension’s wage requirement. Without the extra budget, it may be unable to proceed at his current pay. Which extensions would be covered depends on the final rule and transition provisions.',
+          'Chen’s pay met the minimum for his last H-1B. A new employer now offers the same salary. If the new standard is in effect and the minimum for this job has gone up, the new employer has to raise the offer. Enough last time may not be enough now.',
+          'Wang’s H-1B and his Labor Condition Application (LCA) both expire soon, and the company wants to extend him for three years, which needs a new LCA. Same company, job and location, but if the new standard applies, his pay is checked against it; if he is below the new minimum, the company must give him a raise, or it cannot extend him at his current pay. Which extensions are covered depends on the final rule and its transition terms.',
         ],
       },
       {
-        title: 'For long-term paths: PERM budgets may also face pressure',
-        text: 'If the PERM adjustment also takes effect, employers may recalculate years of employment costs from work visa through permanent residence. Selection and wage floors remain separate issues.',
+        title: 'For green cards: PERM budgets need a rethink',
+        text: 'If PERM wages rise too, employers have to redo salary budgets for the years from work visa to green card.',
         examples: [
-          'Li’s employer budgets for PERM sponsorship using the existing wage level. If a new applicable standard raises the wage requirement for that case, the employer must revisit the salary budget. That is a change to wage costs rather than a one-time legal or filing fee, and it could affect willingness to proceed.',
+          'Li’s company is starting his PERM green card and budgeted at today’s wage. If the new standard raises the minimum for his job, the company has to redo its salary costs. That is extra pay every year, not a one-time fee, and the company may reconsider whether to continue.',
         ],
       },
     ],
     outlook:
-      'Our outlook: the practical effect will vary by occupation, region, and employer budget. The final increases and transition terms will determine whether costs arrive at once or phase into new filings.',
+      "Our view: the effect will vary a lot by occupation, region and employer budget. The final numbers and any transition period will decide whether costs hit all at once or phase in as new filings come in.",
     scenarios: [
       {
         name: 'Raised as proposed',
         headline:
-          'Roles at the margin become harder to sustain within sponsorship budgets',
+          'Jobs at the edge of the budget lose sponsorship',
         assumption:
-          'The proposed four-level wage structure remains largely intact.',
+          'The proposed four wage levels stay mostly as written.',
         effects:
-          'Some employers may raise wages while others reduce covered roles. Better-funded companies would be relatively better able to absorb the adjustment.',
+          'Some employers will pay more; others will sponsor fewer jobs. Well-funded companies cope more easily.',
         signals:
-          'The final wage methodology, covered filings, and employer compensation budgets.',
+          'The final wage method, who it covers and employers’ salary budgets.',
       },
       {
-        name: 'Increase or transition revised',
+        name: 'Smaller increase or longer transition',
         headline:
-          'Costs still rise, but employers may have more time to adjust',
+          'Costs still rise, with more time to adjust',
         assumption:
-          'The final text lowers the increases or provides a meaningful transition period.',
+          'The final rule lowers the increases or gives a real transition period.',
         effects:
-          'Employers may phase changes into hiring and pay. Filing dates and transition criteria would affect workers differently.',
+          'Employers can phase in hiring and pay changes; when you file decides which standard applies to you.',
         signals:
-          'Phased implementation, treatment of existing cases, and effective-date boundaries in the final rule.',
+          'Whether it phases in, how pending cases are treated and when it starts.',
       },
       {
         name: 'No final rule yet',
         headline:
-          'Current costs continue while employers retain budget flexibility',
-        assumption: 'The agency continues reviewing or rewrites the proposal.',
+          'Wage costs stay put for now',
+        assumption: 'DOL keeps reviewing or rewrites the proposal.',
         effects:
-          'Immediate pressure may ease, but multiyear sponsorship plans may still reserve room for wage adjustments.',
+          'Less pressure for now, but multiyear sponsorship plans should still leave room for raises.',
         signals:
-          'Submission of a final rule for review, agenda changes, and later announcements.',
+          "When OIRA completes its review and whether DOL revises or withdraws the draft.",
       },
     ],
     scope: [
       {
-        label: 'Covered programs',
-        text: 'Relevant wage requirements for H-1B, H-1B1, E-3, and PERM.',
+        "label": "Which visas",
+        "text": "Minimum wage requirements for H-1B, H-1B1, E-3 and PERM."
       },
       {
-        label: 'Proposed structure',
-        text: 'The four levels would move to approximately the 34th, 52nd, 70th, and 88th percentiles.',
+        "label": "Proposed levels",
+        "text": "The four levels would move to about the 34th, 52nd, 70th and 88th percentiles of local pay for the job."
       },
       {
-        label: 'Current standard',
-        text: 'The proposal has not changed current wage standards; future coverage depends on effective-date and transition terms.',
-      },
+        "label": "What applies now",
+        "text": "Current wage levels still apply. The final rule will say from when, and to which filings, new levels apply."
+      }
     ],
     milestones: [
       {
-        date: '2025-09-19',
-        text: 'A presidential proclamation directed DOL to begin rulemaking on H-1B prevailing-wage levels.',
+        "date": "2025-09-19",
+        "text": "A presidential proclamation told DOL to start revising H-1B wage levels."
       },
       {
-        date: '2026-03-27',
-        text: 'DOL published an NPRM proposing four levels at the 34th, 52nd, 70th, and 88th percentiles.',
+        "date": "2026-03-27",
+        "text": "DOL published the proposal: four levels at the 34th, 52nd, 70th and 88th percentiles."
       },
       {
-        date: '2026-05-26',
-        text: 'The 60-day public comment period closed and DOL began reviewing comments.',
+        "date": "2026-05-26",
+        "text": "The 60-day public comment period closed and DOL began reviewing comments."
       },
+      {
+        "date": "2026-11-06",
+        "text": "DOL sent the wage final rule to OIRA for review before publication."
+      }
     ],
     next: [
       {
         "date": "Date unknown",
-        "text": "DOL may revise the proposal and send a final rule to OIRA; no completion date is public."
+        "text": "OIRA completes final-rule review; DOL then publishes the final text, transition arrangements and effective date."
       },
       {
         "date": "Date unknown",
-        "text": "The new wage levels would apply only after a final rule is published and reaches its effective date.",
+        "text": "New wage levels apply only once a final rule is published and its start date arrives.",
         "estimate": true
       }
     ],
     process: {
       detail:
-        'DOL published an NPRM and the public comment period closed on May 26, 2026. The initiative remains a proposal while DOL reviews comments.',
-      currentSummary: 'Comment period closed; awaiting further rulemaking',
+        "Comments closed May 26. OIRA received DOL’s draft final rule on November 6 and is reviewing it before publication. Current wage levels continue to apply.",
+      currentSummary: "Final rule at OIRA; review before publication pending",
       waitingFor:
-        'DOL review of comments, revisions or further action toward a final rule; no date is set.',
+        "OIRA completing its review and DOL publishing the final rule and effective date.",
     },
   },
 };

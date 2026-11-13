@@ -112,7 +112,7 @@ test('federal details share one process while litigation remains separate', () =
     }
     const litigation = getProcessTrack('duration-status', language);
     assert.equal(litigation.lastCompletedStage, 4);
-    assert.equal(litigation.litigation.length, 4);
+    assert.equal(litigation.litigation.length, 6);
     assert.notDeepEqual(
       getProcessTrack('cpt-guidance', language).stages,
       federal,
@@ -153,8 +153,8 @@ test('emphasis markers in detail copy are balanced and never render literally', 
   const { analysis, keyPoint, impacts } = getPolicy('h1b-program-integrity', 'zh');
   assert.ok(keyPoint?.label && keyPoint.text);
   assert.match(keyPoint.text, /\*\*签证和入境审查\*\*/);
-  assert.match(impacts[0].text, /\*\*这三个条件只决定是否进入审查范围，不决定结果\*\*/);
-  assert.match(analysis, /\*\*把裁员写进审查清单，不是给出处理结果\*\*/);
+  assert.match(impacts[0].text, /\*\*这三个条件决定是否进入审查范围\*\*/);
+  assert.match(analysis, /\*\*把裁员写进审查清单，而没有规定处理结果\*\*/);
   // Emphasis on this page stays restrained: one short phrase per section, and
   // nothing else marked.
   const count = (text) => (text.match(/\*\*/g) ?? []).length / 2;
@@ -166,10 +166,10 @@ test('emphasis markers in detail copy are balanced and never render literally', 
 
   const english = getPolicy('h1b-program-integrity', 'en');
   assert.match(english.keyPoint.text, /\*\*visa and entry review\*\*/);
-  assert.match(english.analysis, /\*\*a factor on the review checklist, not an outcome\*\*/);
+  assert.match(english.analysis, /\*\*a factor on the review checklist, without a set outcome\*\*/);
   assert.match(
     english.impacts[0].text,
-    /\*\*These conditions decide only whether a case falls inside the review scope, not the outcome\*\*/,
+    /\*\*These conditions decide whether a case falls inside the review scope\*\*/,
   );
   assert.equal(count(english.analysis), 1);
   assert.equal(count(impactTexts(english.impacts)), 1);
@@ -225,7 +225,10 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
   assert.match(opt.summary, /70,000.*30,000/);
   assert.match(opt.summary, /学校.*缴费/);
   assert.match(opt.scope[0].text, /成本转给.*学生.*雇主/);
-  assert.ok(opt.next.some(({ date }) => date === '2026-11-09'));
+  assert.ok(opt.milestones.some(({ date }) => date === '2026-11-09'));
+  assert.ok(!opt.next.some(({ date }) => date === '2026-11-09'));
+  assert.ok(opt.next.some(({ date }) => date === '2026-12-07'));
+  assert.match(opt.status, /评论已截止/);
   assert.match(getPolicy('grace-period', 'en').effectLabel, /Current rule unchanged/);
 });
 
@@ -235,7 +238,9 @@ test('grace-period publication is distinct from final effectiveness', () => {
     assert.equal(policy.effectState, 'not-in-effect');
     assert.ok(policy.sources.some(({ href }) => href.endsWith('/2026-18631.pdf')));
     assert.ok(policy.milestones.some(({ date }) => date === '2026-09-10'));
-    assert.ok(policy.next.some(({ date }) => date === '2026-11-10'));
+    assert.ok(policy.milestones.some(({ date }) => date === '2026-11-10'));
+    assert.ok(!policy.next.some(({ date }) => date === '2026-11-10'));
+    assert.match(policy.status, /评论已结束|Comment period closed/);
     assert.match(policy.background, /USCIS|DHS/);
     assert.doesNotMatch(policy.background, /提案尚未公开|proposal is not yet public/);
   }
@@ -259,7 +264,7 @@ test('PERM expectations stay labeled as analysis and cite the Justice Department
     );
     assert.ok(policy.milestones.some(({ date }) => date === '2026-08-04'));
   }
-  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /不是 DOL 已公布的条款/);
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /以 DOL 公布的提案为准/);
   assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /expect/i);
 });
 

@@ -353,9 +353,10 @@
   width: 32px;
   height: 32px;
 }
+/* Matches markRadius(true, true) in personal-radar-model.ts. */
 .pr .pr-chart[data-compact='true'] .pr-dot > span {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 .pr .pr-chart[data-compact='true'] .pr-dot[data-force='false']:after {
   inset: 2px;

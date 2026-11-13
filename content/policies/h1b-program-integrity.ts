@@ -5,7 +5,7 @@ export const h1bProgramIntegrity: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'executive-order-issued',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-11-02",
   related: ['h1b-reform', 'h1b-fee', 'prevailing-wage', 'perm-modernization'],
   process: {
     kind: 'executive-order',
@@ -25,269 +25,304 @@ export const h1bProgramIntegrity: PolicyContent = {
       en: 'Federal Register · Published September 23 (EO 14431, 91 FR 60501)',
     },
     {
+      "href": "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/",
+      "zh": "白宫 · 10·08 签证欺诈发布会（含 PERM 暂停公告）",
+      "en": "White House · October 8 visa-fraud press conference (PERM suspension announcement)"
+    },
+    {
+      "href": "https://www.justice.gov/opa/pr/us-departments-justice-and-labor-secure-settlement-cloudera-enforce-two-year-perm-debarment",
+      "zh": "DOJ · 10·16 Cloudera PERM 和解公告",
+      "en": "DOJ · October 16 Cloudera PERM settlement announcement"
+    },
+    {
+      "href": "https://www.justice.gov/crt/media/1465571/dl?inline=",
+      "zh": "Cloudera 和解原文 · 第 III 部分第 17 段（PDF 第 7 页）",
+      "en": "Cloudera settlement · Part III, paragraph 17 (PDF p. 7)"
+    },
+    {
       href: 'https://www.uscardforum.com/t/topic/533107',
-      zh: '美卡论坛 · 裁员、贴签与入境讨论',
+      zh: '美卡论坛 · 裁员、面签和入境讨论',
       en: 'USCardForum · Layoffs, visa stamping and entry discussion',
     },
   ],
   zh: {
-    title: 'H-1B 行政命令：加强裁员审查与跨部门协作',
+    title: 'H-1B 行政命令：审查时要看雇主有没有裁员',
     short: 'H-1B 裁员审查行政命令',
-    status: '行政命令已签署 · 跟踪部门落实',
-    effectLabel: '已签署并向部门作出指令 · 具体执行待跟踪',
+    status: '已签署 · 各部门落实中',
+    effectLabel: '已签署 · 各部门落实中',
     agency: '总统 / 国务院 / DOL / DHS',
     documentId: '行政命令 14431',
-    tldr: '总统 9 月 18 日签署行政命令，要求国务院、劳工部和 DHS 加强 H-1B 跨部门审查，并考虑担保雇主的相关裁员：同一雇主、同类岗位、发生在过去一年内或已列入计划，三个条件都满足才算。针对的是进入或试图进入美国的 H-1B 人员。劳工部须在 30 天内开始复查既往 LCA 数据。命令没有写裁员会导致什么审批结果。',
+    tldr: "总统 9 月 18 日签署行政命令：国务院、劳工部和 DHS 审 H-1B 时要互相共享信息，并且要考虑担保雇主最近的相关裁员。“相关”有三个条件，同时满足才算：同一家雇主、同类岗位、过去一年内或已经计划的裁员。最可能当面被问到的是面签和入境。裁员是审查时要考虑的一项因素，怎么权衡由审查官员个案判断。劳工部还要复查雇主以前提交的 LCA。",
     tags: ['H-1B', 'LCA', '签证与入境'],
     summary:
-      '这份行政命令要求国务院、劳工部和 DHS 用更多部门的工资、就业和学历信息核查 H-1B 合规，并要求在相关审查中考虑担保雇主过去一年及计划中的裁员。这里的“相关”不是泛指公司任何一次裁员，命令用提交申请的雇主、被裁岗位、裁员时间三个条件来限定，也把适用环节写在进入或试图进入美国的案件上。劳工部工资工时司还须在 30 天内开始复查既往 LCA 数据，判断是否需要进一步执法。',
+      "命令要求国务院（管签证）、劳工部（管 LCA）和 DHS（管 H-1B 申请和入境）借助其他部门的工资、就业和学历数据核查 H-1B，并在审查时考虑担保雇主过去一年或计划中的相关裁员。“相关”有三个条件：就是为你递交申请的这家雇主、裁的是和你同类的岗位、时间在过去一年内或已经列入计划。命令重点写的是入境或准备入境的 H-1B 人员。另外，劳工部工资工时司要在 30 天内开始复查雇主以前提交的 LCA，看有没有需要执法的地方。",
     audience:
-      'H-1B 申请人、持有人和担保雇主；按第 3(a) 节的文字，重点是正在或准备从境外进入美国的案件，以及雇主过去一年或计划中有同类岗位裁员的案件。',
+      "H-1B 申请人、持有人和担保雇主。最需要留意的是：你的雇主过去一年有裁员，或者已经宣布要裁员，而你近期要面签或入境。",
     caveat:
-      '命令只要求把相关裁员纳入考虑，没有写出裁员与拒签之间的换算标准，也没有宣布现有 H-1B 自动失效。真有裁员时后果如何，要看部门后续文件。',
-    reviewNote:
-      "10·13 重读白宫命令与正式联邦公报，并读取 USCIS 当前公告清单、检索后续执行文件。DOL／WHD 和国务院部分公告页本次被拒；DHS 新闻页显示较早更新日，不能据此证明最新执行情况。未核实既往 LCA 数据复查已启动或新的裁员审查标准。10·18 是按日历天计算的启动期限，不是完成期限或统一生效日。",
+      "裁员是审查时要考虑的一项，怎么权衡由各部门和审查官员决定；已经拿到的 H-1B 身份照常有效。",
     background:
-      '总统于 2026-09-18 签署 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program。它是总统对行政部门的指令，不是机构发布的拟议规则。第 2 节规定跨部门协作，第 3 节规定裁员审查、LCA 数据复查和执行授权，第 4 节要求依适用法律及可用拨款实施。命令的直接效果有两个：向部门作出指令，以及把裁员列为需要考虑的因素；命令正文没有写审查标准、需要的证明材料和审查时限。',
+      "总统 2026-09-18 签署这份行政命令，英文名是 Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program，9 月 23 日刊登在联邦公报上，编号第 14431 号。行政命令是总统给政府部门下的工作指示：各部门要按它调整做法，但它本身不改联邦法规，所以不用走提案和公众评论。\n命令分几节：第 2 节要求各部门协作、共享数据；第 3 节讲裁员审查、复查 LCA 和执法；第 4 节说一切要在现有法律和预算范围内执行。具体的审查标准、材料清单和时限，由各部门在之后的执行文件里规定。\n同一时期还有两件针对具体公司的 PERM 执法。PERM 是办职业移民绿卡的第一步（劳工证）。10·08 白宫发布会上，劳工部官员宣布暂停微软、Adobe 等点名公司的新 PERM 申请，也暂停处理它们在办的申请；其他公司的 PERM 照常。10·16 司法部（DOJ）公布和 Cloudera 公司的和解：Cloudera 要撤回用失效招聘邮箱办理的在办 PERM，并且从最近一次撤回日起 24 个月内不得办 PERM，既不能递交 PERM 申请表（ETA Form 9089），也不能登 PERM 招聘广告。\nPERM 执法、H-1B 的 LCA 复查和 #12 PERM 改革（1205-AC29）是三件不同的事。",
     teaser:
-      '9·18 行政命令要求审查中考虑担保雇主的相关裁员，并明确了三个限定条件；它不等于裁员即拒签，具体后果仍取决于部门执行。',
-    headline: '裁员被明确列为审查因素，具体后果还要看部门如何落实。',
+      "9·18 行政命令让雇主的裁员成为 H-1B 审查要看的一项，但只限三种情况；具体怎么用，看各部门执行。",
+    headline: '雇主裁员，成了 H-1B 审查要看的一项。',
     analysis:
-      '我们的判断：这条命令真正新增的是**把裁员写进审查清单，不是给出处理结果**。能确定三点：审查针对为你提交申请的那家雇主，被裁岗位要与拟聘岗位同类，时间限于过去一年或已宣布的计划裁员。不确定的是权重和后果——命令没写裁员就不能批准，也没写要补什么材料、会拖多久。第 3(a) 节的文字还落在进入或试图进入美国的 H-1B 人员上，境内延期和转雇主案件是否同一口径，要等国务院、DHS 和 DOL 的执行文件；在那之前，“裁员几成就拒签”不是命令的原文。',
+      "我们的判断：这条命令新增的是**把裁员写进审查清单，而没有规定处理结果**。能确定的有三点：看的是为你递交申请的那家雇主；被裁的岗位要和你的岗位同类；时间限于过去一年或已宣布的裁员。裁员在审批里占多大分量、要不要补材料、会不会拖慢审批，由各部门的执行文件来定。命令第 3(a) 节点名的是入境或准备入境的 H-1B 人员；在美国境内延期、换雇主时怎么看裁员，也等各部门的文件写明。",
     keyPoint: {
-      label: '重点 · 变化落在签证和入境审查',
-      text: 'LCA 和 petition 是雇主在美国境内提交的书面材料，申请人本人不出面；**签证和入境审查**是面对面的环节——签证官在窗口问话，CBP 官员在口岸决定放不放行，判断都在当场作出。命令把“担保雇主的相关裁员”写进这两个环节，等于把公司层面的裁员情况带进了面签问答和入境问话，所以变化最明显的是要去面签或入境的人，而不是已经在美国境内等延期的人。至于签证官会问什么、要额外交什么材料，命令都没写，要等国务院和 DHS 的执行文件。',
+      "label": "重点：真正当面被问到，是在面签和入境时",
+      "text": "第 3(a) 节要求在四个环节都考虑雇主的相关裁员：LCA、petition、签证和入境。LCA 是雇主向劳工部提交的工资和工作条件申报，petition 是雇主向 USCIS 递交的 H-1B 申请（I-129），这两样都是书面材料，你本人不出面。**签证和入境审查**则是面对面的：签证官在窗口问你话，海关（CBP）官员在口岸决定放不放你入境，都是当场判断。所以公司裁员最可能在面签和入境时被直接问到。在美国境内延期、换雇主时怎么看裁员、要不要多交材料，等国务院、DHS 和劳工部的执行文件。"
     },
     impacts: [
       {
-        title: '什么算“相关裁员”：三个限定条件',
-        text: '命令要求的考虑对象是：担保雇主过去一年直接或间接进行、或计划进行，并对同类美国工人就业有负面影响的裁员。拆开看是三个条件，缺一不可：裁员雇主须是为这份申请提交 LCA 或 petition 的雇主，母公司、关联公司或客户的裁员只有在属于“直接或间接”范围时才算；被裁岗位要与拟聘岗位在职责和层级上同类，裁其他部门或层级明显更高的岗位不算；时间只看过去一年内发生的，以及已经宣布、列在计划中的裁员。**这三个条件只决定是否进入审查范围，不决定结果**——命令没有写裁员数量、比例与审批结果之间的对应关系。',
-        examples: [
-          '小林在湾区做数据分析，公司去年 11 月裁掉了同团队三个同级数据分析师；现在公司为他提交 petition，他约了 10 月回上海面签。他的案子三个条件都对得上：裁员的是这家雇主，被裁岗位与他的岗位同类，时间也在过去一年内，所以落在命令要求考虑裁员的范围内。看到裁员记录，签证官最可能问三件事：这个岗位为什么还需要人、他的工作内容与被裁的人有什么不同、公司为什么招他而不是先招回被裁的人。答案要和雇佣信、LCA 上的职责对得上；命令没有规定必须补交新材料，所以不是“裁过员就一定要多交一份材料”。',
-          '小林拿着已批的 H-1B 签证第一次入境，被 CBP 要求二次检查。口岸问到的是同一组问题：岗位为什么仍然需要、他和被裁的人职责有何不同、公司在申请前的招聘情况。带雇佣信、岗位说明或组织架构说明会更好回答，但命令没有规定入境必须带某份证明。CBP 的处理是当场判断放行、二次检查还是拒绝入境——命令只要求把相关裁员作为考虑因素，没写裁过员就不能入境；说不清时，可以要求说明后续程序，而不是在口岸自行推测结果。',
-          '如果被裁岗位和小林的并不相同，他在窗口和口岸要讲的都是同一句：两者不同类。他可以用公司的招聘记录、在职人数变化或团队分工来说明。三条限定条件不满足时，不必主动把这件事说成不利因素——命令要求考虑的是相关裁员，不是公司历史上的任何一次裁员。',
-        ],
+        "title": "什么算“相关裁员”：三个条件",
+        "text": "命令要求考虑的裁员要同时满足三条。一是裁员的就是为这份申请递交 LCA 或 petition 的雇主；母公司、关联公司或客户的裁员，只有算作这家雇主“直接或间接”的裁员才算。二是裁员影响了和你处境相近的美国员工，也就是职责、资格要求和地区都可比的同类岗位，具体怎么认定由各部门执行时决定。三是发生在过去一年内，或者已经宣布、列入计划。**这三个条件决定是否进入审查范围**；进入范围以后，由审查官员综合判断。",
+        "examples": [
+          "小林在湾区做数据分析，公司去年 11 月裁掉了同团队三个同级的数据分析师；现在公司为他递交 petition，他约了 10 月回上海面签。三个条件都对得上：裁员的是这家雇主，被裁岗位和他同类，时间在过去一年内。签证官最可能问三件事：这个岗位为什么还需要人、他的工作和被裁的人有什么不同、公司为什么招他而不是招回被裁的人。回答要和雇佣信、LCA 上写的职责一致。",
+          "小林拿着已批的 H-1B 签证第一次入境，被海关带去二次检查，也就是到另一个房间进一步问话。口岸问的是同一组问题：岗位为什么还需要人、他和被裁的人职责有什么不同、公司递交申请前是怎么招人的。带上雇佣信、岗位说明或组织架构说明会更好回答。海关当场决定放行、继续检查还是拒绝入境，相关裁员是官员要考虑的一项因素。没听懂时，可以请官员说明下一步怎么办。",
+          "如果被裁的岗位和小林的并不同类，他在窗口和口岸要讲清楚的就是这一点，可以用公司的招聘记录、在职人数变化或团队分工来说明。命令要求考虑的只是相关裁员；公司其他时间、其他岗位的裁员不算。"
+        ]
       },
       {
-        title: '工资、学历与岗位信息交叉核查',
-        text: '国务院、DOL 和 DHS 须与商务部、教育部及 SBA 协作，获得工资、就业、学历、产业等信息核查法定要求。我们的判断是说明和核对材料的工作可能增加；命令没有给出统一的新学历或工资门槛。',
+        "title": "工资、学历和岗位信息会被交叉核对",
+        "text": "国务院、劳工部和 DHS 要和商务部、教育部、小企业管理局（SBA）合作，用工资、就业、学历和行业数据核对申请。我们估计要解释和核对的材料会变多；学历和工资的门槛还是现在的标准。"
       },
       {
-        title: '既往 LCA 数据也会被复查',
-        text: 'DOL 工资工时司须在 30 天内开始复查既往提交的 LCA 数据，判断是否有必要依 INA § 212(n)(2)(G) 进一步采取行动。复查对象是雇主提交过的 LCA 数据，不是重新审一遍某个人的资格：先有线索，才进入后续调查或执法程序，所以“数据被复查”不等于这张 LCA 或已批的 H-1B 自动失效。',
-        examples: [
-          '小陈的 H-1B 已经批准，雇主去年提交过好几份 LCA。劳工部现在复查的是这家雇主的 LCA 数据，找的是有没有值得进一步执法的线索；只有复查出线索、依法进入后续程序，才会牵涉到具体案件，所以“数据被复查”不等于小陈的批准会被撤销，也不发生在他面前。',
-          '如果复查之后真的对雇主立案，依据是 INA § 212(n)(2)(G)，对象是雇主这个实体，不是小陈个人。他要看的是部门有没有公布复查结果、有没有针对这家雇主的程序，而不是把“数据被复查”当成自己的身份出问题。',
-        ],
+        "title": "以前提交的 LCA 也会被复查",
+        "text": "劳工部工资工时司要在 30 天内开始复查雇主以前提交的 LCA，看要不要依据 INA § 212(n)(2)(G) 采取行动。INA 是《移民与国籍法》，这一条授权劳工部在有合理理由时主动调查 H-1B 雇主。复查的对象是雇主，目的是找执法线索；发现问题才会立案调查。已批的 LCA 和 H-1B 照常有效。",
+        "examples": [
+          "小陈的 H-1B 已经批了，雇主去年递交过好几份 LCA。劳工部现在复查的是这家雇主的 LCA 数据，找值得执法的线索。只有查出问题、另外立案，才会牵涉具体员工；小陈的批准照常有效。",
+          "如果复查后真的对雇主立案，依据是 INA § 212(n)(2)(G)，调查对象是雇主，不是小陈个人。他要关注的是劳工部有没有公布复查结果、有没有针对这家雇主的调查程序。"
+        ]
       },
+      {
+        "title": "相关 PERM 执法：先看你的雇主有没有被点名",
+        "text": "10·08 官员宣布暂停微软、Adobe 等公司的 PERM；Cloudera 和解要求它从最近一次撤回 PERM 起 24 个月内不得新办 PERM、不得登招聘广告。两件事范围不同，要分别看雇主通知和和解条款。其他公司的 PERM 照常，已有的 H-1B 身份也照常。",
+        "source": {
+          "label": "依据：Cloudera 和解第 17 段；10·08 公告见下方来源",
+          "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+        }
+      }
     ],
     outlook:
-      '先看 DOL 是否按期启动数据复查。更关键的是国务院、DHS 和 DOL 的执行文件会不会写清两件事：同类岗位怎么比，以及裁员在审批里占什么权重。这两个口径没出来之前，本项只能确认“裁员被列入考虑”，具体后果待定；后续文件若提出新法规，应另行跟踪规则制定与生效安排。',
+      '先看劳工部有没有开始复查。更关键的是各部门的执行文件会不会写清两件事：怎么判断岗位“同类”，裁员在审批里占多大分量。如果之后要改法规，再单独跟踪。',
     scenarios: [
       {
-        name: '部门依现有权限落实',
-        headline: '执行口径逐渐明确',
+        name: '各部门按现有权力执行',
+        headline: '执行标准慢慢清楚',
         assumption: '部门发布政策、操作指引或执法说明。',
         effects:
-          '可能更系统地核对裁员、工资及岗位信息；实际影响取决于具体文件，不能预设统一拒签结果。',
-        signals: '国务院、DHS、DOL 的执行文件及实际案件情况。',
+          '裁员、工资和岗位信息会被更系统地核对；实际影响看具体文件。',
+        signals: '国务院、DHS 和劳工部的执行文件，以及实际案例。',
       },
       {
-        name: 'LCA 数据复查引出个案行动',
+        name: 'LCA 复查查出问题',
         headline: '部分雇主面临进一步调查',
-        assumption: '工资工时司复查数据后认定有依法进一步行动的依据。',
+        assumption: '工资工时司复查后，认为有依据进一步执法。',
         effects:
-          '受影响的是被依法调查的雇主及有关案件，不等于所有 LCA 或 H-1B 申请一并撤销。',
-        signals: 'DOL 是否宣布启动复查、调查依据及适用范围。',
+          '受影响的是被调查的雇主及相关案件。',
+        signals: '劳工部是否宣布开始复查、调查依据和范围。',
       },
       {
-        name: '后续规则或法院命令改变执行',
-        headline: '程序与范围可能调整',
-        assumption: '部门启动需要规则制定的修改，或法院对实际争议作出命令。',
+        name: '新法规或法院命令改变执行',
+        headline: '程序和范围可能调整',
+        assumption: '各部门推动需要改法规的变化，或法院在具体案件中下令。',
         effects:
-          '另行核对法规条款、适用日期或司法救济范围；此处是可能走向，不是已发生的诉讼或规则。',
-        signals: '正式部门文件及法院命令，而非仅凭论坛推测。',
+          '按新的法规、生效日期或法院命令重新看。',
+        signals: '正式的部门文件和法院命令。',
       },
     ],
     scope: [
       {
-        label: '政策类型',
-        text: '总统行政命令，向行政部门作出指令；与正式法规、SEVP 行政指引分别跟踪。',
+        "label": "这是什么",
+        "text": "总统给政府部门的工作指示。各部门按它调整审查做法，联邦法规本身不变。"
       },
       {
-        label: '相关环节',
-        text: '第 2 节涉及 H-1B petitions、LCA 和签证；第 3(a) 节还明确提到入境，具体案件适用须结合部门文件。',
+        "label": "涉及哪些环节",
+        "text": "LCA、petition、签证；第 3(a) 节还明确写了入境。"
       },
       {
-        label: '裁员范围',
-        text: '由三个条件共同限定：提交 LCA 或 petition 的雇主、与拟聘岗位同类的被裁岗位、过去一年内或已列入计划的时间。三个条件都满足才落入本项审查；命令没有写落入之后的结果。',
+        "label": "什么裁员算数",
+        "text": "同时满足三条：递交申请的雇主、和你同类的岗位、过去一年内或已计划。"
       },
       {
-        label: '不是新收费',
-        text: '本命令自身没有设定新的 H-1B 费用，也不改变现行收费标准；#02 的 $103,265 是 DHS 的独立收费提案，与本命令分开跟踪。',
-      },
+        "label": "费用",
+        "text": "这份命令只管审查和执法。#02 的 103,265 美元附加费是 DHS 另外的提案。"
+      }
     ],
     milestones: [
       {
         date: '2026-09-18',
-        text: '总统签署行政命令，要求跨部门协作、考虑相关裁员并启动既往 LCA 数据复查。',
+        text: '总统签署行政命令：各部门协作、考虑相关裁员、复查以前的 LCA。',
       },
       {
         date: '2026-09-23',
-        text: '联邦公报刊登该命令，编号为第 14431 号行政命令（91 FR 60501—60503，FR Doc. 2026-19555）。',
+        text: '联邦公报刊登，编号第 14431 号行政命令（91 FR 60501—60503）。',
+      },
+      {
+        "date": "2026-10-08",
+        "text": "相关 PERM 执法：劳工部官员在白宫发布会上宣布，暂停微软、Adobe 等点名公司的新 PERM 申请和在办申请。"
+      },
+      {
+        "date": "2026-10-16",
+        "text": "DOJ 公布 Cloudera 和解：从最近一次撤回 PERM 起 24 个月内不得办 PERM。"
       },
     ],
     next: [
       {
-        date: '2026-10-18',
-        text: '按签署后 30 个日历天计算，劳工部最迟须开始复查既往 LCA 数据；这是启动期限，不是完成期限或统一生效日。',
-      },
-      {
-        date: '日期未定',
-        text: '跟踪国务院、DHS、DOL 的执行文件及实际审查口径；后续若修改法规，另行跟踪适用的规则制定程序。',
-        estimate: true,
-      },
+        "date": "日期未定",
+        "text": "劳工部开始复查以前的 LCA（命令要求 10·18 前开始），以及各部门的执行文件。",
+        "estimate": true
+      }
     ],
     process: {
       detail:
-        '总统于 2026-09-18 签署命令，要求跨部门协作并考虑雇主相关裁员情况。命令已向部门作出指令，具体执行文件和实际审查口径仍需跟踪；不能把签署等同于所有审查措施都已落地。',
-      currentSummary: '行政命令已签署，跟踪部门落实',
+        "总统 2026-09-18 签署命令，要求各部门协作并考虑雇主的相关裁员。各部门正在落实，下一步是发布执行文件和审查标准。",
+      currentSummary: '已签署，各部门落实中',
       waitingFor:
-        '劳工部须在签署后 30 天内开始复查既往 LCA 数据（按日历天计算为 10·18 前）；关注国务院、DHS 和 DOL 的执行文件。',
+        "劳工部开始复查以前的 LCA，以及国务院、DHS 和劳工部的执行文件。",
     },
   },
   en: {
-    title: 'H-1B Executive Order: Layoff Review and Interagency Coordination',
+    title: 'H-1B Executive Order: Employer Layoffs Become Part of Review',
     short: 'H-1B Layoff-Review Executive Order',
-    status: 'Executive order signed · Tracking implementation',
+    status: 'Signed · Agencies implementing',
     effectLabel:
-      'Signed directive to agencies · Implementation still being tracked',
+      'Signed · Agencies implementing',
     agency: 'President / State / DOL / DHS',
     documentId: 'Executive Order 14431',
-    tldr: 'A September 18 executive order tells State, DOL and DHS to coordinate H-1B review and to weigh the sponsor’s relevant layoffs: same employer, comparable roles, and within the past year or planned. It covers H-1B workers entering or seeking to enter the United States. DOL must begin reviewing past LCA data within 30 days. The order does not say what outcome a layoff leads to.',
+    tldr: "A September 18 executive order tells the State Department, the Department of Labor and DHS to share information when reviewing H-1B cases, and to consider the sponsoring employer’s recent relevant layoffs. “Relevant” means all three: the same employer, similar jobs, and within the past year or already planned. You are most likely to be asked about it at the visa interview or at the border. Layoffs are one factor in the review, and the reviewing officer weighs them case by case. DOL will also re-check employers’ past LCAs.",
     tags: ['H-1B', 'LCA', 'Visa and entry'],
     summary:
-      'The order directs State, DOL and DHS to use additional agencies’ information for H-1B compliance checks and requires consideration of the sponsoring employer’s layoffs within the previous year or planned for the future. “Relevant” is not any layoff anywhere: the order defines it by the employer filing the case, the roles cut and the timing, and it frames the covered review around workers entering or attempting to enter the United States. DOL’s Wage and Hour Division must also begin reviewing previously submitted LCA data within 30 days to assess further enforcement.',
+      "The order tells the State Department (visas), DOL (LCAs) and DHS (H-1B petitions and entry) to use other agencies’ wage, employment and education data to check H-1B cases, and to consider the sponsor’s relevant layoffs from the past year or planned. “Relevant” has three conditions: the employer filing for you, jobs similar to yours, and timing within the past year or already planned. The order focuses on H-1B workers entering or about to enter the U.S. DOL’s Wage and Hour Division must also start re-checking employers’ past LCAs within 30 days to see whether enforcement is needed.",
     audience:
-      'H-1B applicants, holders and sponsoring employers; under the section 3(a) wording, the emphasis is on workers entering or attempting to enter the United States, and on employers with comparable-role layoffs in the previous year or already planned.',
+      "H-1B applicants, holders and sponsoring employers. Pay most attention if your employer had layoffs in the past year or has announced them, and you have a visa interview or entry coming up.",
     caveat:
-      'The order only requires relevant layoffs to be considered. It states no formula converting a layoff into a denial and does not automatically invalidate existing H-1B status. What layoffs actually mean for a case depends on later agency documents.',
-    reviewNote:
-      "The White House order and published Federal Register text were reread October 13, with the current USCIS alerts list retrieved and later implementation documents searched. Some DOL/WHD and State announcement pages were blocked; the DHS news page carries an older update date and cannot establish current implementation. Commencement of prior-LCA-data review or a new layoff-review standard was not verified. October 18 is the calculated deadline to begin review, not to finish it or a common effective date.",
+      "Layoffs are one factor in the review, weighed by the agencies and the reviewing officer; H-1B status you already hold stays valid.",
     background:
-      'The President signed Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program on September 18, 2026. It is a presidential directive to executive agencies, rather than an agency proposed rule. Section 2 addresses coordination; section 3 covers layoffs, LCA data review and implementation authority; section 4 requires implementation consistent with applicable law and available appropriations. The order’s direct effects are to direct agencies and to make layoffs a factor to consider; the text itself sets no review standard, evidence list or processing deadline.',
+      "The President signed the order, Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program, on September 18, 2026; it was published in the Federal Register on September 23 as Executive Order 14431. An executive order is the President’s working instruction to federal agencies: they adjust how they operate, but the order itself does not change federal regulations, so it skips the proposal and public-comment steps.\nThe order has several sections: section 2 calls for agencies to coordinate and share data; section 3 covers layoff review, re-checking LCAs and enforcement; section 4 says everything must be done within existing law and budgets. The specific review standards, document lists and timelines will be set in the agencies’ implementing documents.\nAround the same time came two PERM enforcement actions aimed at specific companies. PERM is the labor certification that is the first step of an employment-based green card. At an October 8 White House briefing, a Labor Department official announced a suspension of new and pending PERM applications for named companies including Microsoft and Adobe; other companies’ PERM cases continue as usual. On October 16 the Justice Department (DOJ) announced a settlement with Cloudera: Cloudera must withdraw pending PERM cases that used an inactive recruiting mailbox, and for 24 months from its latest withdrawal it may not file PERM applications (ETA Form 9089) or post PERM job ads.\nPERM enforcement, the H-1B LCA review and the #12 PERM reform (1205-AC29) are three separate matters.",
     teaser:
-      'The September 18 order requires consideration of the sponsoring employer’s relevant layoffs and sets three scope conditions. It does not make layoffs a denial, and consequences still depend on agency implementation.',
+      "The September 18 order makes an employer’s layoffs something H-1B reviewers look at, within three conditions; how it’s used is up to the agencies.",
     headline:
-      'Layoffs are an explicit review factor; specific consequences depend on agency implementation.',
+      'Employer layoffs are now on the H-1B review checklist.',
     analysis:
-      'Our assessment: what the order adds is **a factor on the review checklist, not an outcome**. Three things are clear — the review looks at the employer filing your case, the roles cut must be comparable to the offered job, and the timing is limited to the previous year or layoffs already planned. What is not clear is weight and consequence: the order does not say layoffs bar approval, what evidence to file, or how long review may take. Section 3(a) is also worded around H-1B workers entering or attempting to enter the United States, so whether domestic extensions and change-of-employer cases follow the same standard depends on State, DHS and DOL implementation documents. Until those appear, a claim that a given layoff percentage means denial is not what the order says.',
+      "Our view: what the order adds is **a factor on the review checklist, without a set outcome**. Three things are clear: it looks at the employer filing for you; the jobs cut must be similar to yours; and the timing is the past year or layoffs already announced. How much weight layoffs carry, whether extra documents are needed and whether reviews slow down will be set by the agencies’ implementing documents. Section 3(a) names H-1B workers entering or about to enter the U.S.; how extensions and job changes inside the country treat layoffs will also come from those documents.",
     keyPoint: {
-      label: 'Key point · The change lands on visa and entry review',
-      text: 'LCAs and petitions are paper filings an employer submits inside the United States, without the applicant present; **visa and entry review** happen face to face — a consular officer questions the applicant at the window and a CBP officer decides admission at the port, with the judgment made on the spot. By writing the sponsoring employer’s relevant layoffs into those two stages, the order brings company-level layoffs into the visa interview and the inspection, so the people most likely to feel a difference are those going for visa stamping or entering, not those already waiting on a domestic extension. What an officer must ask and what extra evidence an applicant must file are not stated, and will come from State and DHS implementation documents.',
+      "label": "Key point: you’re most likely to face it at the visa interview and the border",
+      "text": "Section 3(a) says relevant layoffs must be considered at four points: the LCA, the petition, the visa and entry. The LCA is the employer’s wage and working-conditions filing with DOL, and the petition is the employer’s H-1B filing with USCIS (Form I-129); both are paperwork you don’t appear for. The **visa and entry review** steps happen face to face: a consular officer questions you at the window and a CBP officer decides at the border whether to let you in, both on the spot. So company layoffs are most likely to come up directly at the visa interview and at entry. How extensions and job changes inside the U.S. will treat layoffs, and whether extra documents are needed, will come from State, DHS and DOL."
     },
     impacts: [
       {
-        title: 'What counts as a “relevant layoff”: three conditions',
-        text: 'What the order requires agencies to consider is a layoff by the sponsoring employer, made in the previous year or planned, that negatively affects similarly situated U.S. workers. Three conditions must all be met: the employer must be the one filing the LCA or petition for this case, since layoffs at a parent, affiliate or client count only if they fall within the “direct or indirect” scope; the roles cut must be comparable in duties and level to the offered job, so cuts in other departments or at clearly more senior levels do not count; and the timing is limited to layoffs within the previous year or already announced and planned. **These conditions decide only whether a case falls inside the review scope, not the outcome**, because the order sets no relationship between layoff counts or rates and the decision on a case.',
-        examples: [
-          'Lin works in data analysis at a Bay Area company that laid off three data analysts at the same level last November. The company is now filing an H-1B petition for Lin, who has a visa interview scheduled in October in Shanghai. All three conditions line up: the employer filing the case is the one that laid people off, the roles cut are comparable to Lin’s, and the layoff falls within the previous year, so the case sits inside the scope the order tells agencies to consider. Seeing that record, the consular officer is most likely to ask three things: why the position is still needed, how Lin’s duties differ from those of the people let go, and why the company is hiring rather than rehiring. Answers should match the duties on the offer letter and the LCA; the order requires no new document, so a layoff does not by itself mean extra paperwork.',
-          'Lin holds an approved H-1B visa and is sent to secondary inspection on the first entry. The questions at the port are the same set: why the position is still needed, how Lin’s duties differ from those of the people let go, and what the company’s recruiting looked like before filing. Carrying the offer letter, a job description or an org summary makes that easier, though the order requires no specific document at entry. CBP decides on the spot whether to admit, refer to secondary inspection or refuse entry: the order makes relevant layoffs a factor to consider and does not say a layoff bars entry. If the record is unclear, the officer can be asked to explain the next step rather than leaving the outcome to guesswork at the port.',
-          'Where the roles cut were unlike Lin’s, the answer at the window and at the port is the same: they are not comparable. Recruiting records, headcount changes or team structure can show that. Where the three conditions are not met, this need not be volunteered as a negative factor: the order asks about relevant layoffs, not any layoff in the company’s history.',
-        ],
+        "title": "What counts as a “relevant layoff”: three conditions",
+        "text": "The layoffs agencies must consider have to meet all three conditions. First, they were made by the employer filing this LCA or petition; cuts at a parent, affiliate or client count only as that employer’s “direct or indirect” layoffs. Second, they affected similarly situated U.S. workers, meaning comparable jobs in duties, qualifications and location, as agencies define it in practice. Third, they happened in the past year or are announced and planned. **These conditions decide whether a case falls inside the review scope**; once inside, the reviewing officer weighs the whole picture.",
+        "examples": [
+          "Lin works in data analysis at a Bay Area company that laid off three data analysts at the same level last November. The company is now filing an H-1B petition for Lin, who has a visa interview in October in Shanghai. All three conditions line up: same employer, comparable roles, within the past year. The consular officer is most likely to ask why the position is still needed, how Lin’s duties differ from those of the people let go, and why the company is hiring rather than rehiring. Answers should match the duties in the offer letter and the LCA.",
+          "Lin holds an approved H-1B visa and is sent to secondary inspection on first entry, meaning further questioning in a separate room. The questions at the port are the same: why the position is still needed, how Lin’s duties differ, and how the company recruited before filing. An offer letter, job description or org summary makes them easier to answer. CBP decides on the spot whether to admit, keep inspecting or refuse entry, and relevant layoffs are one factor the officer considers. If something is unclear, Lin can ask the officer to explain the next step.",
+          "If the roles cut were unlike Lin’s, that is the point to make at the window and at the port, backed by recruiting records, headcount changes or team structure. The order asks about relevant layoffs only; cuts at other times or in other kinds of jobs are outside it."
+        ]
       },
       {
-        title: 'Cross-checking wages, qualifications and jobs',
-        text: 'State, DOL and DHS must consult Commerce, Education and the SBA for wage, employment, academic, industrial and other information to check statutory compliance. Our assessment is that explanation and verification work may increase; the order sets no uniform new degree or wage threshold.',
+        "title": "Wages, degrees and jobs get cross-checked",
+        "text": "State, DOL and DHS must work with Commerce, Education and the Small Business Administration (SBA), using wage, employment, education and industry data to check filings. We expect more explaining and verifying; degree and wage requirements stay where they are today."
       },
       {
-        title: 'Previously submitted LCA data is included',
-        text: 'DOL’s Wage and Hour Division must begin reviewing prior LCA data within 30 days to assess further action under INA section 212(n)(2)(G). What is being reviewed is the employer’s filed LCA data rather than one person’s qualifications again: a lead must emerge before any investigation or enforcement proceeding follows, so a data review does not automatically invalidate an LCA or an approved H-1B petition.',
-        examples: [
-          'Chen’s H-1B petition is already approved and the employer filed several LCAs last year. What DOL is reviewing now is this employer’s LCA data, looking for leads that might warrant further enforcement. Specific cases come into play only if the review produces such a lead and a separate proceeding follows under law, so a data review neither means Chen’s approval will be revoked nor happens in front of him.',
-          'If review later leads to a case against the employer, the basis is INA section 212(n)(2)(G) and the target is the employer as an entity, not Chen personally. What Chen should watch is whether the agency publishes review results and whether any employer-specific proceeding is opened, rather than reading a data review as a problem with his own status.',
-        ],
+        "title": "Past LCAs get re-checked",
+        "text": "DOL’s Wage and Hour Division must start re-checking employers’ past LCAs within 30 days to see whether action is needed under INA section 212(n)(2)(G). The INA is the Immigration and Nationality Act, and this section lets DOL open its own investigation of an H-1B employer when it has reasonable cause. The review targets employers and looks for enforcement leads; an investigation follows only if it finds one. Approved LCAs and H-1Bs stay valid.",
+        "examples": [
+          "Chen’s H-1B is approved, and his employer filed several LCAs last year. DOL is now re-checking that employer’s LCA data for enforcement leads. Individual workers come into it only if a problem is found and a separate case is opened; Chen’s approval stays valid.",
+          "If the review leads to a case against the employer, the basis is INA section 212(n)(2)(G) and the target is the employer, not Chen. What Chen should watch is whether DOL publishes results and opens any proceeding against this employer."
+        ]
       },
+      {
+        "title": "Related PERM actions: check whether your employer is named",
+        "text": "On October 8 officials announced a PERM suspension for named companies including Microsoft and Adobe; Cloudera’s settlement bars it from new PERM filings and job ads for 24 months from its latest withdrawal. The two differ in scope, so check your employer’s notice and the settlement terms separately. Everyone else’s PERM continues as usual, and existing H-1B status continues too.",
+        "source": {
+          "label": "Source: Cloudera settlement, paragraph 17; October 8 announcement listed below",
+          "href": "https://www.justice.gov/crt/media/1465571/dl?inline="
+        }
+      }
     ],
     outlook:
-      'Watch whether DOL begins the data review on time. More important is whether State, DHS and DOL implementation documents answer two questions: how comparable roles are compared, and what weight layoffs carry in adjudication. Until those standards appear, this entry can confirm only that layoffs are a factor to consider, with consequences pending; any later regulatory changes require separate tracking of rulemaking and effective dates.',
+      'First, watch whether DOL starts its review. More important is whether the agencies’ documents settle two questions: how “similar jobs” are judged, and how much weight layoffs carry. If new regulations follow, we will track them separately.',
     scenarios: [
       {
-        name: 'Agencies implement under existing authority',
-        headline: 'Operational standards become clearer',
+        name: 'Agencies act under existing powers',
+        headline: 'Standards become clearer',
         assumption:
           'Agencies publish policies, operational guidance or enforcement explanations.',
         effects:
-          'Layoffs, wages and job information may be checked more systematically. Effects depend on the specific documents, without a presumed uniform denial outcome.',
+          'Layoffs, wages and job information get checked more systematically; actual effects depend on the documents.',
         signals:
-          'State, DHS and DOL implementation documents and actual case handling.',
+          'State, DHS and DOL documents, and real cases.',
       },
       {
-        name: 'LCA data review leads to individual action',
+        name: 'LCA review turns up problems',
         headline: 'Some employers face further investigation',
         assumption:
-          'Wage and Hour review identifies a legal basis for further action.',
+          'Wage and Hour finds grounds for enforcement after its review.',
         effects:
-          'Affected employers and cases would be subject to that action; this does not mean every LCA or H-1B petition is revoked.',
+          'The employers under investigation and their cases are affected.',
         signals:
-          'DOL confirmation that review has begun, the grounds for investigation and its scope.',
+          'Whether DOL announces the review, and the grounds and scope of any investigation.',
       },
       {
-        name: 'Later rules or court orders change implementation',
+        name: 'New rules or court orders change things',
         headline: 'Procedure and scope may shift',
         assumption:
-          'Agencies pursue amendments requiring rulemaking, or a court issues an order in an actual dispute.',
+          'Agencies pursue changes that need new regulations, or a court rules in an actual case.',
         effects:
-          'Check regulatory terms, applicable dates or judicial relief separately. This is a possible outcome, not an assertion that litigation or a new rule already exists.',
+          'Re-check against the new rules, start dates or court order.',
         signals:
-          'Official agency documents and court orders, rather than forum speculation alone.',
+          'Official agency documents and court orders.',
       },
     ],
     scope: [
       {
-        label: 'Policy type',
-        text: 'A presidential executive order directing agencies, tracked separately from federal regulations and SEVP administrative guidance.',
+        "label": "What it is",
+        "text": "The President’s working instruction to agencies. Agencies adjust how they review cases; federal regulations stay the same."
       },
       {
-        label: 'Relevant stages',
-        text: 'Section 2 covers H-1B petitions, LCAs and visas; section 3(a) also expressly addresses entry. Application to specific cases needs to be checked against agency documents.',
+        "label": "Which stages",
+        "text": "LCAs, petitions and visas; section 3(a) also names entry."
       },
       {
-        label: 'Layoff scope',
-        text: 'Set by three conditions together: the employer filing the LCA or petition, laid-off roles comparable to the offered job, and timing within the previous year or already planned. A case must meet all three to fall inside this review; the order does not say what follows.',
+        "label": "Which layoffs count",
+        "text": "All three: the employer filing for you, jobs similar to yours, within the past year or planned."
       },
       {
-        label: 'No new fee in this order',
-        text: 'The order itself sets no new H-1B fee and does not change current filing fees. The #02 $103,265 surcharge is a separate DHS proposal, tracked apart from this order.',
-      },
+        "label": "Fees",
+        "text": "This order covers review and enforcement. The $103,265 surcharge in #02 is a separate DHS proposal."
+      }
     ],
     milestones: [
       {
         date: '2026-09-18',
-        text: 'The President signed the order directing interagency coordination, consideration of relevant layoffs and review of prior LCA data.',
+        text: 'The President signed the order: agencies coordinate, consider relevant layoffs and re-check past LCAs.',
       },
       {
         date: '2026-09-23',
-        text: 'The Federal Register published the order as Executive Order 14431 (91 FR 60501–60503, FR Doc. 2026-19555).',
+        text: 'Published in the Federal Register as Executive Order 14431 (91 FR 60501–60503).',
+      },
+      {
+        "date": "2026-10-08",
+        "text": "Related PERM action: at a White House press conference, a DOL official announced a suspension of new and pending PERM cases for named companies including Microsoft and Adobe."
+      },
+      {
+        "date": "2026-10-16",
+        "text": "DOJ announced the Cloudera settlement: no PERM filings for 24 months from its latest withdrawal."
       },
     ],
     next: [
       {
-        date: '2026-10-18',
-        text: 'Calculated as 30 calendar days after signature, this is the deadline for DOL to begin reviewing prior LCA data, not to finish the review or a common effective date.',
-      },
-      {
-        date: 'Date unknown',
-        text: 'Watch State, DHS and DOL implementation documents and actual review practices. Any later regulatory amendments will be tracked under the applicable rulemaking process.',
-        estimate: true,
-      },
+        "date": "Date unknown",
+        "text": "DOL starts re-checking past LCAs (due to begin by October 18), and agencies issue their implementing documents.",
+        "estimate": true
+      }
     ],
     process: {
       detail:
-        'The President signed the order on September 18, 2026, directing interagency coordination and consideration of relevant employer layoffs. The directive has been issued; implementation documents and actual review practices still need tracking. Signature does not establish that every review measure is already operational.',
-      currentSummary: 'Order signed; tracking agency implementation',
+        "The President signed the order on September 18, 2026, directing agencies to coordinate and consider relevant layoffs. Agencies are putting it into practice; implementing documents and review standards come next.",
+      currentSummary: 'Signed; agencies implementing',
       waitingFor:
-        'DOL must begin reviewing prior LCA data within 30 days of signature (October 18 by calendar-day calculation); watch for State, DHS and DOL implementation documents.',
+        "DOL starting its review of past LCAs, and State, DHS and DOL implementing documents.",
     },
   },
 };

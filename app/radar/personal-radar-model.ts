@@ -254,12 +254,12 @@ export function radarGeometry(width: number) {
 }
 export type RadarGeometry = ReturnType<typeof radarGeometry>;
 export function markRadius(inForce: boolean, compact: boolean) {
-  // Keep the small in-force circle clear of labels as tracked items grow.
+  // The drawn dot sizes in personal-radar.css (.pr-dot) must match these.
   return inForce ? (compact ? 11 : 13) : compact ? 14 : 18;
 }
 export function timeLabelY(g: RadarGeometry, language: Language, i: number) {
   // The narrow English Today label must leave room for in-force family items.
-  const offset = language === 'en' ? (i === 0 && g.width < 440 ? -4 : 9) : -6;
+  const offset = language === 'en' ? (i === 0 && g.width < 440 ? -5 : 9) : -6;
   return g.cy - g.rings[i] + offset;
 }
 export function timeLabelBoxes(
@@ -375,10 +375,12 @@ export function placePolicies(
     y,
     radius: mark,
   }));
-  // One greedy pass, then two passes that re-place each mark against all
-  // of the others, so an early mark cannot corner a later peer.
-  for (let pass = 0; pass < 3; pass++)
+  // One greedy pass, then passes that re-place each mark against all of the
+  // others until nothing moves, so an early mark cannot corner a later peer.
+  for (let pass = 0, moved = true; pass < 8 && moved; pass++) {
+    moved = pass === 0;
     cells.forEach(({ mark, inner, outer, from, preferred }, i) => {
+      const before = marks[i];
       const others = [
         centre,
         ...marks.filter((_, j) => j !== i && (pass > 0 || j < i)),
@@ -389,12 +391,18 @@ export function placePolicies(
         const rho = inner + (outer - inner) * f;
         for (let offset = 2; offset <= SECTOR_STEP - 2; offset += 1) {
           const candidate = g.point(rho, from + offset);
+          const divider = dividerGap(rho, offset, mark);
           // Prefer a collision-free candidate absolutely; a small overlap
           // must not be cheaper than moving farther from the preferred point.
-          const overlap = labelClearance(candidate, mark, labels, others, 1);
+          // Outside the centre ring, a centre within half a radius of a stage
+          // divider counts as a collision too, so a crowded peer moves aside
+          // instead of pushing its neighbour onto the line.
+          const overlap =
+            labelClearance(candidate, mark, labels, others, 1) +
+            (inner > 0 ? Math.max(0, 1 - mark / 2 - divider) ** 2 : 0);
           const cost =
             labelClearance(candidate, mark, labels, others) * 40 +
-            Math.max(0, 2 - dividerGap(rho, offset, mark)) ** 2 * 40 +
+            Math.max(0, 2 - divider) ** 2 * 40 +
             (candidate[0] - preferred[0]) ** 2 +
             (candidate[1] - preferred[1]) ** 2;
           if (overlap < bestOverlap || (overlap === bestOverlap && cost < best)) {
@@ -404,6 +412,8 @@ export function placePolicies(
           }
         }
       }
+      if (marks[i].x !== before.x || marks[i].y !== before.y) moved = true;
     });
+  }
   return cells.map(({ entry }, i) => ({ entry, x: marks[i].x, y: marks[i].y }));
 }

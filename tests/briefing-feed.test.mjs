@@ -102,7 +102,7 @@ test('the September 3 briefing records the completed hearing without implying a 
   assert.match(hearing.summary, /留待裁定/);
   assert.match(hearing.summary, /没有当庭裁决/);
   assert.ok(filing);
-  assert.match(filing.summary, /不是法院裁定/);
+  assert.match(filing.summary, /政府提交反对意见/);
   assert.equal(upcoming.some(({ id }) => id === 'duration-injunction-hearing'), false);
 });
 
@@ -127,5 +127,49 @@ test('nationwide D/S stay removes the superseded effective date while preserving
     assert.ok(!upcoming.some(item => item.id === 'duration-effective-date'));
     assert.ok(upcoming.some(item => item.id === 'duration-status-conference' && item.date === '2026-10-02'));
     assert.ok(getThirtyDayBriefing('2026-09-13', language).upcoming.some(item => item.id === 'duration-effective-date'));
+  }
+});
+
+
+test('an unread later D/S ruling withholds old deadline cards while preserving earlier snapshots', () => {
+  const oldDeadlines = ['duration-summary-judgment-october26', 'duration-replies-november2'];
+  for (const language of ['zh', 'en']) {
+    const before = getThirtyDayBriefing('2026-10-22', language);
+    const current = getThirtyDayBriefing('2026-10-23', language);
+    for (const id of oldDeadlines) {
+      assert.ok(before.upcoming.some(item => item.id === id));
+      assert.ok(!current.upcoming.some(item => item.id === id));
+    }
+    assert.ok(current.recent.some(item => item.id === 'duration-october23-unverified-extension-ruling'));
+    assert.ok(!current.upcoming.some(item => item.policyId === 'duration-status' && ['2026-10-30', '2026-11-06'].includes(item.date)));
+  }
+});
+
+test('verified order 64 restores only its actual deadlines after the title-only snapshot', () => {
+  for (const language of ['zh', 'en']) {
+    const prior = getThirtyDayBriefing('2026-10-24', language);
+    const current = getThirtyDayBriefing('2026-10-25', language);
+    const dates = current.upcoming.filter(item => item.policyId === 'duration-status');
+    assert.deepEqual(dates.map(item => item.date), ['2026-10-30', '2026-11-02']);
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-motions-order64-october30'));
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-replies-order64-november2'));
+    assert.ok(current.recent.some(item => item.id === 'duration-order64-record65-verified'));
+    assert.ok(!dates.some(item => item.date === '2026-11-06'));
+  }
+});
+
+test('independently verified appeal dates enter only the October 26 snapshot', () => {
+  for (const language of ['zh', 'en']) {
+    const prior = getThirtyDayBriefing('2026-10-25', language);
+    const current = getThirtyDayBriefing('2026-10-26', language);
+    assert.ok(!prior.upcoming.some(item => item.id === 'duration-appeal-opening-november9'));
+    assert.ok(current.upcoming.some(item => item.id === 'duration-appeal-opening-november9' && item.date === '2026-11-09'));
+    assert.ok(current.recent.some(item => item.id === 'duration-appeal-october19-schedule'));
+    assert.ok(!getThirtyDayBriefing('2026-11-10', language).upcoming.some(item =>
+      item.policyId === 'duration-status' && item.date === '2026-12-09'));
+    for (const id of ['cloudera-perm-settlement', 'targeted-perm-october8-announcement']) {
+      assert.ok(!prior.recent.some(item => item.id === id));
+      assert.ok(current.recent.some(item => item.id === id));
+    }
   }
 });

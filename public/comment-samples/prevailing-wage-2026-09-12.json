@@ -1601,13 +1601,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -1630,13 +1630,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -1944,13 +1944,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-22T04:00:00Z",
       "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -2062,13 +2062,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-28T04:00:00Z",
       "textSha256": "7e8df5680e08fc9472ff254094563cc9117d6e93123cf39a675057c5d8a6e294",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -2138,13 +2138,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -2246,8 +2246,8 @@
       },
       "textSha256": "1d8bc9a5431baa728ac89cf540f93ef2e19a4f7885b03339d6355c60d86e2e61",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；保留原抽样记录，立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; the sampled record is retained and classification uses only the body."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -2287,13 +2287,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-06-12T04:00:00Z",
       "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -2362,13 +2362,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-04-28T04:00:00Z",
       "textSha256": "2a883c161cea6ac9fedd3d04649329a930a48a9eda15f44aabd15d80ca466d3b",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -2669,13 +2669,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "a0671ef1fd1bba6265082b965c33d00c516798e016e1a3f525858fc8fd79fbd1",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -3340,8 +3340,8 @@
       "postedDate": "2026-05-22T04:00:00Z",
       "textSha256": "7487e7627ff1b9fbe342bed02037d609bc7cb9afdb7c93ea90edc4398d58ab8d",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -3363,13 +3363,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-06-12T04:00:00Z",
       "textSha256": "13bdace37e2aac3ae62fe4f19517b95dd70dd5b09e1a46490a856af61f96e029",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -3497,14 +3497,14 @@
       "stance": "unclear",
       "themes": [],
       "summary": {
-        "zh": "正文仅指向附件，未能读取附件，无法判断立场。",
-        "en": "Body refers only to an inaccessible attachment, preventing a stance determination."
+        "zh": "正文只写了“见附件”，附件打不开，看不出立场。",
+        "en": "The text only says “see attachment,” which couldn’t be opened, so no position can be read."
       },
       "postedDate": "2026-04-29T04:00:00Z",
       "textSha256": "ac6d9b76a1413682c7dcf49d8e1664d99d06ffccbe39488df676e98eb2d3e7ef",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -3589,8 +3589,8 @@
       "postedDate": "2026-05-26T04:00:00Z",
       "textSha256": "d913ab42f180004a61693d1908461eb61d8e85caa25c9e2b75ff5e407555d444",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body."
+        "zh": "附件无法下载，按评论正文归类。",
+        "en": "Attachments couldn’t be downloaded; classified from the comment text."
       }
     },
     {
@@ -3640,8 +3640,8 @@
       "postedDate": "2026-05-01T04:00:00Z",
       "textSha256": "397c933052bc2f73dd66779749a3d5a6f9206e770b6bbb03394d0a163b1b25e2",
       "sourceNote": {
-        "zh": "官方附件下载返回 HTTP 403，未能读取；仅依据正文对国际博士后贡献的肯定判断政策方向，具体工资建议未获核实。",
-        "en": "The official attachment download returned HTTP 403. Direction is assessed only from the body’s support for international postdocs; specific wage recommendations remain unverified."
+        "zh": "附件无法下载；按正文对国际博士后的肯定判断方向。",
+        "en": "The attachment couldn’t be downloaded; direction is based on the text’s support for international postdocs."
       }
     },
     {
@@ -3740,13 +3740,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向附件，无法据此判断立场。",
-        "en": "Body refers only to an attachment and does not establish a stance."
+        "en": "The text only says “see attachment,” so no position can be read."
       },
       "postedDate": "2026-05-22T04:00:00Z",
       "textSha256": "f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     },
     {
@@ -4260,8 +4260,8 @@
       },
       "textSha256": "6df69a0e9f1ed51358920110bfb22348d58d589eb58032e0b6892ed2bac9d0f1",
       "sourceNote": {
-        "zh": "正文主要讨论另行制定的 H-1B 按工资选取机制；按相关政策收紧方向归类，不代表其明确赞成本项工资提案的具体条款。",
-        "en": "The body primarily discusses a separate wage-based H-1B selection mechanism. Its label describes the related tightening direction, not explicit approval of this wage proposal’s specific provisions."
+        "zh": "正文主要谈 H-1B 按工资加权抽签（另一项规则），按它对收紧的态度归类。",
+        "en": "The text is mainly about the wage-weighted H-1B lottery (a separate rule); classified by its view on tightening."
       }
     },
     {
@@ -4514,13 +4514,13 @@
       "themes": [],
       "summary": {
         "zh": "正文仅指向评论信附件，无法据此判断立场。",
-        "en": "Body refers only to an attached comment letter and does not establish a stance."
+        "en": "The text only points to an attached letter, so no position can be read."
       },
       "postedDate": "2026-05-22T04:00:00Z",
       "textSha256": "8eaff642594f6dd317267a7fb41cfbbd12f7b563aa0698740f2c78c0d039f1c6",
       "sourceNote": {
-        "zh": "官方附件下载返回HTTP 403，未能读取；立场仅依据正文。正文不足以判断立场。",
-        "en": "Official attachment downloads returned HTTP 403 and could not be read; classification uses only the body. The body is insufficient to determine stance."
+        "zh": "附件无法下载；评论正文没有表明立场。",
+        "en": "Attachments couldn’t be downloaded; the comment text doesn’t state a position."
       }
     }
   ],
@@ -4575,8 +4575,8 @@
       "zh": "工资保护与本土就业",
       "en": "Wage protection and domestic employment",
       "description": {
-        "zh": "对工资压低、劳工替代及公平竞争的关注；指控不视为已证实。",
-        "en": "Concerns about underpayment, displacement, and fair competition; allegations are not verified findings."
+        "zh": "关注压低工资、取代本地员工和公平竞争；这些是评论者的说法。",
+        "en": "Concerns about underpayment, displacing local workers and fair competition, as commenters describe them."
       }
     },
     {
@@ -4670,7 +4670,7 @@
       {
         "id": "ETA-2026-0001-1213",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0792",
@@ -4680,7 +4680,7 @@
       {
         "id": "ETA-2026-0001-1228",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0474",
@@ -4785,7 +4785,7 @@
       {
         "id": "ETA-2026-0001-1072",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0678",
@@ -4825,7 +4825,7 @@
       {
         "id": "ETA-2026-0001-1258",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-1232",
@@ -4850,7 +4850,7 @@
       {
         "id": "ETA-2026-0001-1217",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0476",
@@ -4900,7 +4900,7 @@
       {
         "id": "ETA-2026-0001-1289",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-1087",
@@ -4925,7 +4925,7 @@
       {
         "id": "ETA-2026-0001-0592",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0940",
@@ -5030,7 +5030,7 @@
       {
         "id": "ETA-2026-0001-1211",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-1006",
@@ -5260,7 +5260,7 @@
       {
         "id": "ETA-2026-0001-1286",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0071",
@@ -5305,7 +5305,7 @@
       {
         "id": "ETA-2026-0001-0595",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an inaccessible attachment, preventing a stance determination."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” which couldn’t be opened, so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0704",
@@ -5380,7 +5380,7 @@
       {
         "id": "ETA-2026-0001-1067",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attachment and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only says “see attachment,” so no position can be read."
       },
       {
         "id": "ETA-2026-0001-0707",
@@ -5635,7 +5635,7 @@
       {
         "id": "ETA-2026-0001-1034",
         "stance": "unclear",
-        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. Body refers only to an attached comment letter and does not establish a stance."
+        "rationale": "Body provides no discernible policy direction; attachment contents remain unavailable. The text only points to an attached letter, so no position can be read."
       }
     ]
   }

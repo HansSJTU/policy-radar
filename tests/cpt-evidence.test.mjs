@@ -32,6 +32,9 @@ const verifiedForumEvidence = {
 const verifiedWithoutForumEvidence = [
   'Carnegie Mellon University (CMU)',
   'UC Berkeley',
+  'UCLA Extension',
+  'The Ohio State University',
+  'University of Denver',
   'UC Davis',
   'Boston University',
   'Texas A&M',
@@ -73,9 +76,9 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 57);
+  assert.equal(verifiedSchools.length, 77);
   assert.equal(communitySchools.length, 4);
-  assert.equal(verifiedSchools.length + communitySchools.length, 61);
+  assert.equal(verifiedSchools.length + communitySchools.length, 81);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
@@ -115,7 +118,7 @@ test('NYU public evidence is limited to Tandon Mathematics and retains no fabric
   assert.ok(nyu);
   assert.deepEqual(nyu.screenshots, []);
   assert.equal(nyu.href, 'https://math.nyu.edu/dynamic/sites/tandon/internships/');
-  assert.match(nyu.detail, /不外推 NYU 全校/);
+  assert.match(nyu.detail, /仅限 Tandon 数学系/);
   assert.equal(communitySchools.some(({ school }) => school.startsWith('New York University')), false);
 });
 

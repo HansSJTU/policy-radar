@@ -5,7 +5,7 @@ export const h1bFee: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-11-02",
   related: ['opt-fee', 'prevailing-wage', 'h1b-reform'],
   process: {
     kind: 'federal-rulemaking',
@@ -26,13 +26,13 @@ export const h1bFee: PolicyContent = {
     },
     {
       "href": "https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/",
-      "zh": "白宫 9·18 另项 100,000 美元入境限制延长公告",
-      "en": "White House September 18 extension of separate $100,000 entry restriction"
+      "zh": "白宫 9·18 延长 10 万美元入境费的公告",
+      "en": "White House September 18 extension of the $100,000 entry fee"
     },
     {
       "href": "https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf",
-      "zh": "麻省地区法院 6·08 撤销执行政策判决",
-      "en": "District court June 8 vacatur of implementation policy"
+      "zh": "麻省地区法院 6·08 判决（撤销收费政策）",
+      "en": "District of Massachusetts June 8 ruling (collection policy struck down)"
     },
     {
       "href": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
@@ -53,6 +53,21 @@ export const h1bFee: PolicyContent = {
       "href": "https://www.govinfo.gov/app/details/USCOURTS-cand-4_25-cv-08454/USCOURTS-cand-4_25-cv-08454-17/context",
       "zh": "Global Nurse Force 官方法院文献记录",
       "en": "Global Nurse Force official court publication record"
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/",
+      "zh": "Global Nurse Force 公开案卷（含 10·09 上诉）",
+      "en": "Global Nurse Force public docket (including the October 9 appeal)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.138.0.pdf",
+      "zh": "第九巡回 26-6667 · 上诉书排期（地区案卷第 138 项）",
+      "en": "Ninth Circuit 26-6667 · Briefing schedule (district entry 138)"
+    },
+    {
+      "href": "https://www.courtlistener.com/docket/71541425/global-nurse-force-v-trump/?order_by=desc#entry-144",
+      "zh": "第 144 项会议记录 · 拒绝暂停地区诉讼",
+      "en": "Minute entry 144 · District-stay motion denied"
     }
   ],
   zh: {
@@ -62,122 +77,132 @@ export const h1bFee: PolicyContent = {
     effectLabel: '尚未生效',
     agency: 'DHS / USCIS',
     documentId: '1615-AD20',
-    tldr: 'DHS 提议在现有费用之外，对每份 cap-subject H-1B 申请加收 103,265 美元。美国硕士名额和 F-1 境内转身份都要交，cap-exempt 申请不用。',
+    tldr: "DHS 提议：凡是要参加抽签的 H-1B 申请（cap-subject），雇主在现有费用之外，每份再交 103,265 美元。抽美国硕士名额的要交，F-1 学生人在美国、直接从 OPT 转 H-1B 的也要交；大学等免抽签（cap-exempt）雇主的申请不用交。公众评论已在 9 月结束，最终规则还没出，现在不收。",
     tags: ['OPT → H-1B', 'H-1B 抽签'],
     summary:
-      'DHS 打算在现有费用之外，对每份受年度名额限制的 H-1B 申请加收 103,265 美元。美国硕士名额和 F-1 境内转身份也要交，cap-exempt 申请除外。',
+      "DHS 打算对每份要参加抽签的 H-1B 申请，在现有费用之外加收 103,265 美元。这笔钱由雇主付。范围很广：抽美国硕士名额的申请要交；F-1 学生不出境、在美国境内把身份从 F-1 转成 H-1B 的也要交。只有免抽签（cap-exempt）的申请不交，比如大学和非营利研究机构递交的申请。公众评论期已结束，DHS 还没发最终规则，这笔钱现在不收。",
     audience:
-      '走 cap-subject H-1B 的申请人，以及为他们担保的雇主，包括美国硕士名额和 F-1 境内转身份。',
-    caveat: '这项附加费不打算向 cap-exempt 申请收取。',
-    reviewNote:
-      "10·13 已复核 103,265 美元 NPRM、9·10 更正，以及另项 100,000 美元收费的 6·08、7·24、9·30 法院命令。USCIS 当前收费说明、完整后续案卷和法院日历本次无法直接读取；未核实 9·30 后的新暂缓或上诉命令，不能仅凭白宫延长公告认定恢复收费。",
+      "要参加 H-1B 抽签的人和为他们担保的雇主，包括抽美国硕士名额的人，以及 OPT 期间在美国境内转 H-1B 的 F-1 学生。",
+    caveat: "免抽签（cap-exempt）的申请，比如大学和非营利研究机构递交的，不收这笔费。",
     background:
-      "RIN 1615-AD20 在 2026-08-25 公布，公众评论截止到 9 月 24 日。9 月 10 日的更正只替换了 Table 13 的历史申请数量，拟议金额、适用范围和评论截止日都没变。\n另有不同的 100,000 美元 H-1B 入境限制：白宫 9·18 公告将其期限延至 2027-09-21，针对部分境外申请，不能与本页覆盖 cap-subject 申请的 103,265 美元 NPRM 混为一谈。麻省地区法院 6·08 撤销该限制的机构执行政策；第一巡回法院 7·24 拒绝在上诉期间暂停该判决。延长公告本身不证明机构已恢复征收。\n加州北区法院在 9·30 的 Global Nurse Force v. Trump（4:25-cv-08454-HSG，第 130 号命令）再次撤销并发回相关机构政策，禁止机构执行原公告 10973 及延长公告 11069 的收费政策，直到完成 APA 通知评论程序及 RFA 分析。法院同时拒绝暂缓执行该命令；它不等于撤销本页另项 103,265 美元 NPRM。10·20 须提交联合案件管理说明，10·27 下午 2 时（法院当地时间）举行案件管理会议。",
+      "这项提案（RIN 1615-AD20）2026-08-25 公布，公众评论 9 月 24 日截止。9 月 10 日联邦公报发了一份更正，只改了提案里一张表（Table 13）的历史申请数，金额、范围和截止日都没变。\n注意别和另一笔 10 万美元的 H-1B 入境费搞混。那笔钱来自总统公告 10973，针对的是部分人在美国境外的 H-1B 申请；白宫 9·18 又发公告 11069，把它延长到 2027-09-21。但政府收这笔钱的做法，已经两次被法院判为违法并撤销（作废）：\n第一次，麻省联邦地区法院 6·08 撤销了收费政策。7·24，第一巡回法院拒绝在上诉期间暂停这个判决，收费没能恢复。\n第二次，加州北区联邦法院 9·30 在 Global Nurse Force v. Trump 案（4:25-cv-08454-HSG）里再次撤销，并禁止政府按这两份公告收费，除非政府先走完公开征求意见的规则程序。所以这 10 万美元现在收不了。\n政府 10·09 向第九巡回法院上诉（案号 26-6667），政府上诉书 11·06 到期，原告答辩书 12·04 到期。地区法院 10·28 拒绝在上诉期间暂停自己这边的审理，并要求政府交出行政记录。上诉期间，9·30 的命令继续有效。",
     teaser:
-      '抽签之外，雇主能不能接受这笔高额担保成本，可能决定 offer 还能不能延续。',
-    headline: '雇主的担保预算，可能比能否抽中更先成为门槛。',
+      '抽签之前，先要看雇主肯不肯出这笔钱。',
+    headline: '雇主的担保预算，可能比抽签更早成为门槛。',
     analysis:
-      '这笔附加费如果落地，雇主为一份申请要投的钱会明显变多。对 OPT 转 H-1B 的应届生来说，雇主可能在决定要不要支持你申请时就开始算成本，而不是等抽签结果出来。',
+      "这笔附加费如果落地，雇主为一份申请要花的钱会多出十几万美元。对从 OPT 转 H-1B 的应届生来说，雇主会在决定要不要帮你注册抽签时就算这笔账，而不是等抽签结果出来再说。",
     impacts: [
       {
-        title: '对毕业生：offer 与担保承诺可能分离',
-        text: '企业愿意在你 OPT 期间雇你，不等于愿意承担后面的高额 H-1B 成本。费用一落地，企业会更早评估要不要留用。',
+        title: '对毕业生：公司雇你，不一定肯帮你办 H-1B',
+        text: '公司愿意在 OPT 期间雇你，不一定愿意出之后这笔高额的 H-1B 费用。费用一落地，公司会更早决定要不要留人。',
         examples: [
-          '小陈用 OPT 入职的时候，HR 说过以后会帮他申 H-1B。但如果收费提案真的通过了，而且他的申请属于要参加抽签的那种，公司就得在正常费用之外再多交 103,265 美元。HR 当初可能没把这笔钱算进去，所以公司得重新批预算，才能兑现之前的承诺。',
-          '小林用 OPT 干了一年了，主管挺满意，想把她留下来。但如果她申 H-1B 时要多交 103,265 美元，主管就得向上面申请这笔钱。要是财务不批，公司还是可能不给她申——她干得好不好，跟这笔费用免不免没有关系。',
+          '小陈用 OPT 入职时，HR 说过以后会帮他申 H-1B。如果这项收费通过，而他的申请要参加抽签，公司就得在原有费用之外再交 103,265 美元。HR 当初没算这笔钱，公司得重新批预算，才能兑现承诺。',
+          '小林用 OPT 干了一年，主管很满意，想留她。如果她的 H-1B 要多交 103,265 美元，主管得向上申请这笔钱；财务不批，公司就可能不给她申请。工作表现再好，也抵不过预算不批。',
         ],
       },
       {
         title: '对雇主：预算会向关键岗位集中',
-        text: '每份受覆盖的申请都要多花这笔钱，招聘预算可能向难替代、回报明确的岗位倾斜。小企业能调整的空间更小。',
+        text: '每份要抽签的申请都多花这笔钱，招聘预算会向难替代、回报明确的岗位倾斜。小公司能调整的余地更小。',
         examples: [
-          '一家小公司本来打算给三个员工申 H-1B（都是要抽签的那种）。如果提案按现在的金额生效，光这笔附加费三份加起来就是 309,795 美元，这还不算原来的申请费。如果公司只够付一个人的，那就只能减少担保人数，没法按原计划来。',
+          '一家小公司本来打算给三个员工申 H-1B（都要抽签）。按提案金额，光附加费三份就是 309,795 美元，还不算原来的申请费。公司如果只付得起一份，就只能少担保两个人。',
         ],
       },
       {
-        title: '对路径：cap-exempt 的相对吸引力可能上升',
-        text: '提案把 cap-exempt 排除在外，这类职位可能更受关注。但职位供给、个人匹配，以及另一项分类改革，仍会限制这条路径。',
+        title: '对路径：免抽签的工作会更抢手',
+        text: '免抽签（cap-exempt）的申请不收这笔费，这类工作会更受关注。不过这类岗位本来就少，而且 #07 改革可能收紧免抽签资格。',
         examples: [
-          '小李手上有两个 offer，一个是普通公司，一个是大学实验室。普通公司的 H-1B 要抽签，大学的不用。按现在的提案，普通公司得交这笔附加费，大学不用。所以就算两个岗位工资差不多，雇主实际花的钱不一样，这可能会影响他们愿不愿意帮小李办 H-1B。',
+          '小李手上有两个 offer：一家普通公司，一个大学实验室。公司的 H-1B 要抽签，大学的不用。按提案，公司要交附加费，大学不用。工资差不多，雇主实际花的钱却差很多，这会影响谁更愿意帮他办 H-1B。',
         ],
       },
     ],
     outlook:
-      '我们的预判：争论会围绕费用高低、法律依据和雇主能不能承受。对就业市场的影响，可能先出现在担保意愿和招聘预算上，再反映到实际申请量。',
+      '我们的判断：争论会集中在金额高低、法律依据和雇主能否负担上。就业市场上，最先变的是雇主肯不肯担保、预算给多少，之后才会体现在申请数量上。',
     scenarios: [
       {
-        name: '按提案定稿',
-        headline: '企业担保会更集中于高价值岗位',
-        assumption: '103,265 美元附加费保留，覆盖提案列出的 cap-subject 申请。',
-        effects:
-          '应届生和预算有限的企业受影响更大。有些雇主会直接减少承诺担保的岗位，不用等到提交申请才调整。',
-        signals: '最终费用、覆盖范围、生效时间，以及企业下一轮招聘的担保政策。',
+        "name": "按提案定稿",
+        "headline": "雇主只为最看重的岗位担保",
+        "assumption": "103,265 美元附加费保留，所有要抽签的申请都要交。",
+        "effects": "应届生和预算紧的公司受影响最大。有些雇主会直接减少愿意担保的岗位，不等到递交申请那一步。",
+        "signals": "最终金额、适用范围、生效时间，以及企业下一轮招聘的担保政策。"
       },
       {
-        name: '费用／范围调整',
-        headline: '担保意愿可能部分回升，但差异更大',
-        assumption: '最终规则降低金额，或者增加实质性例外。',
-        effects:
-          '成本压力可能缓解，但不同规模的雇主、申请类别和岗位之间仍会分化。例外覆盖了谁，比总金额更值得看。',
-        signals: '评论回应、修订后的费用模型和最终豁免条款。',
+        "name": "费用或范围调整",
+        "headline": "担保意愿部分回升，但各家差别更大",
+        "assumption": "最终规则降低金额，或增加实质性的豁免。",
+        "effects": "成本压力会小一些，但不同规模的雇主、不同岗位之间差别仍大。哪些人能豁免，比总金额更重要。",
+        "signals": "DHS 对公众意见的回应、调整后的金额和最终豁免条款。"
       },
       {
-        name: '实施被推迟',
-        headline: '短期预算压力缓和，长期承诺仍可能谨慎',
-        assumption: '规则制定拖长，或者法院命令暂缓实施。',
-        effects:
-          '企业可能继续按现在的成本办理，但对多年担保承诺留一手。暂缓一次不等于政策被否决。',
-        signals: '最终规则是否发布、法院命令的实际内容和适用范围。',
-      },
+        "name": "实施被推迟",
+        "headline": "短期预算压力缓和，长期担保仍会谨慎",
+        "assumption": "规则制定拖长，或者法院命令暂缓实施。",
+        "effects": "企业照现有费用继续办理，但对需要多年投入的担保会更谨慎。",
+        "signals": "最终规则有没有发布，以及法院命令的具体内容和适用范围。"
+      }
     ],
     scope: [
       {
-        label: '受覆盖申请',
-        text: '提案覆盖 cap-subject，包括美国高学历名额。境内转身份不能因为人已经在美国就排除。',
+        "label": "要交的",
+        "text": "所有要参加抽签的申请，包括美国硕士名额；人在美国境内从 F-1 转 H-1B 也要交。"
       },
-      { label: '未覆盖申请', text: 'Cap-exempt 不在附加费的拟议范围内。' },
       {
-        label: '费用关系',
-        text: '这是现有费用之外新加的拟议附加费，按 cap-subject 申请划分范围。',
+        "label": "不用交的",
+        "text": "免抽签（cap-exempt）的申请，比如大学和非营利研究机构递交的。"
       },
+      {
+        "label": "和现有费用的关系",
+        "text": "在现有申请费之外另加一笔，由雇主付。"
+      }
     ],
     milestones: [
       {
         "date": "2026-08-25",
-        "text": "新的 $103,265 收费 NPRM 发布。"
+        "text": "DHS 公布 103,265 美元附加费提案。"
       },
       {
         "date": "2026-09-10",
-        "text": "Federal Register 更正 Table 13 历史申请数量；金额、范围及评论期限未变。"
+        "text": "联邦公报发布更正，只改了一张表里的历史申请数；金额、范围和截止日不变。"
       },
       {
         "date": "2026-09-24",
-        "text": "NPRM 公众评论期截止；提案尚未生效。"
+        "text": "公众评论截止。"
       },
       {
         "date": "2026-09-30",
-        "text": "另项 100,000 美元收费：Global Nurse Force 案撤销机构政策，并禁止执行原公告及延长公告下的收费政策；不属于 103,265 美元 NPRM 的裁判。"
+        "text": "另一笔 10 万美元入境费：法院在 Global Nurse Force 案撤销收费政策，禁止按原公告和延长公告收费。"
+      },
+      {
+        "date": "2026-10-09",
+        "text": "10 万美元入境费案：政府向第九巡回法院上诉，并请地区法院先暂停审理。"
+      },
+      {
+        "date": "2026-10-14",
+        "text": "10 万美元入境费案：第九巡回法院排定政府上诉书 11·06、原告答辩书 12·04 到期。"
+      },
+      {
+        "date": "2026-10-28",
+        "text": "10 万美元入境费案：地区法院拒绝暂停审理，要求政府交出行政记录。"
       }
     ],
     next: [
       {
-        "date": "2026-10-20",
-        "text": "另项 100,000 美元收费案：9·30 第 130 号命令要求提交联合案件管理说明；后续日历未单独核实。"
+        "date": "2026-11-06",
+        "text": "10 万美元入境费案：政府向第九巡回法院提交上诉书。"
       },
       {
-        "date": "2026-10-27",
-        "text": "另项 100,000 美元收费案：9·30 命令排定下午 2 时（法院当地时间）Zoom 案件管理会议；不是 103,265 美元提案的生效日。"
+        "date": "2026-12-04",
+        "text": "10 万美元入境费案：原告答辩书截止。"
       },
       {
         "date": "日期未定",
-        "text": "跟踪 103,265 美元提案的最终规则，以及另项收费的后续法院命令；实际生效安排未确定。"
+        "text": "DHS 审阅公众意见后，决定 103,265 美元附加费的最终条文和生效日期。"
       }
     ],
     process: {
       detail:
-        'NPRM 已发布，9 月 24 日评论期结束。DHS 审阅意见后才能发布最终规则。',
-      currentSummary: '评论期已结束，等待 DHS 审阅',
-      waitingFor: 'DHS 审阅评论，并决定是否发布最终规则及其文本。',
+        "提案已公布，公众评论 9 月 24 日截止。DHS 审阅完意见后，才能发最终规则。",
+      currentSummary: "评论期已结束，等待 DHS 定稿",
+      waitingFor: "DHS 审阅公众意见，决定最终规则写什么。",
     },
   },
   en: {
@@ -187,136 +212,135 @@ export const h1bFee: PolicyContent = {
     effectLabel: 'Not in effect',
     agency: 'DHS / USCIS',
     documentId: '1615-AD20',
-    tldr: 'DHS proposes a $103,265 surcharge, in addition to existing fees, for every cap-subject H-1B petition. The proposal includes U.S. advanced-degree cases and F-1 change-of-status petitions; cap-exempt petitions are outside the surcharge.',
+    tldr: "DHS proposes that for every H-1B petition that goes through the lottery (cap-subject), the employer pays an extra $103,265 on top of existing fees. That includes U.S. master’s-cap cases and F-1 students switching straight from OPT to H-1B inside the U.S.; petitions from cap-exempt employers such as universities do not pay. Comments closed in September and there is no final rule, so nothing is charged now.",
     tags: ['OPT → H-1B', 'H-1B selection'],
     summary:
-      'DHS proposes a $103,265 surcharge on each cap-subject H-1B petition, on top of existing fees. U.S. advanced-degree cases and F-1 changes of status are included; cap-exempt petitions are excluded.',
+      "DHS plans to add $103,265 on top of existing fees for every H-1B petition that goes through the lottery. The employer pays it. The reach is wide: petitions under the U.S. master’s cap pay it, and so do F-1 students who change status to H-1B inside the U.S. without leaving. Only cap-exempt petitions, such as those filed by universities and nonprofit research institutions, are exempt. The comment period has closed, DHS has not issued a final rule, and the fee is not charged now.",
     audience:
-      'cap-subject H-1B applicants and sponsors, including U.S. advanced-degree cases and F-1 changes of status.',
-    caveat: 'Cap-exempt petitions are outside the proposed surcharge.',
-    reviewNote:
-      "The $103,265 NPRM, September 10 correction and June 8, July 24 and September 30 court orders concerning the separate $100,000 payment were reviewed October 13. Current USCIS fee guidance, complete later dockets and the court calendar were inaccessible; later stay or appellate orders were not verified. The proclamation extension alone does not establish resumed collection.",
+      "People going through the H-1B lottery and the employers sponsoring them, including U.S. master’s-cap cases and F-1 students on OPT changing to H-1B inside the U.S.",
+    caveat: "Cap-exempt petitions, such as those filed by universities and nonprofit research institutions, do not pay this fee.",
     background:
-      "RIN 1615-AD20 was published on August 25, 2026, with comments due September 24. A September 10 correction replaced the historical receipt figures in Table 13; it did not change the proposed amount, scope or comment deadline.\nA separate $100,000 H-1B entry restriction was extended by a September 18 White House proclamation through September 21, 2027. It concerns certain workers outside the United States and is distinct from this $103,265 cap-subject NPRM. The District of Massachusetts vacated the agency implementation policy June 8, and the First Circuit denied a stay pending appeal July 24. The extension alone does not establish that agencies may resume collection.\nOn September 30, the Northern District of California in Global Nurse Force v. Trump (4:25-cv-08454-HSG, docket 130) also vacated and remanded the agency policies and barred enforcement under Proclamation 10973 and its extension, Proclamation 11069, until APA notice-and-comment rulemaking and RFA analyses have been conducted. It denied a stay of its order. This does not invalidate the separate $103,265 NPRM covered here. A joint case management statement is due October 20, with a case management conference October 27 at 2 p.m. court local time.",
+      "The proposal (RIN 1615-AD20) was published August 25, 2026, with comments due September 24. A September 10 correction in the Federal Register changed only the historical filing counts in one table (Table 13); the amount, scope and deadline stayed the same.\nDon’t confuse it with a separate $100,000 H-1B entry fee. That one comes from Proclamation 10973 and applies to certain H-1B petitions for people outside the U.S.; on September 18 the White House issued Proclamation 11069 extending it to September 21, 2027. But the way the government collects it has twice been found unlawful and vacated (cancelled) by courts:\nFirst, on June 8 the federal district court in Massachusetts vacated the collection policy. On July 24 the First Circuit declined to put that ruling on hold during the appeal, so collection did not resume.\nSecond, on September 30 the Northern District of California vacated it again in Global Nurse Force v. Trump (No. 4:25-cv-08454-HSG) and barred the government from collecting under either proclamation unless it first goes through public-comment rulemaking. So the $100,000 fee cannot be collected now.\nThe government appealed to the Ninth Circuit on October 9 (No. 26-6667). Its opening brief is due November 6 and plaintiffs’ answering brief December 4. On October 28 the district court refused to pause its own proceedings during the appeal and ordered the government to turn over its administrative record. The September 30 order stays in force during the appeal.",
     teaser:
-      'Beyond selection, whether an employer will absorb a high sponsorship cost may determine whether an offer continues.',
+      'Before the lottery, the question is whether your employer will pay this fee.',
     headline:
-      'An employer’s sponsorship budget could become a barrier before selection does.',
+      'Your employer’s sponsorship budget could become the hurdle before the lottery does.',
     analysis:
-      'If adopted, the proposed surcharge would push the one-time sponsorship investment much higher. For new graduates moving from OPT to H-1B, employers may reassess the cost when deciding whether to support a petition, rather than waiting for the selection result.',
+      "If adopted, the surcharge would add more than $100,000 to the employer’s cost for each petition. For new graduates moving from OPT to H-1B, employers will weigh that cost when deciding whether to register you for the lottery at all, not after the results come in.",
     impacts: [
       {
         title:
-          'For graduates: an offer may not include a sponsorship commitment',
-        text: 'A company willing to employ a student during OPT may not be willing to bear a much higher later H-1B cost. If the fee takes effect, retention decisions may happen sooner.',
+          'For graduates: a job offer may not come with H-1B sponsorship',
+        text: 'A company happy to employ you on OPT may not want to pay a much higher H-1B cost later. If the fee takes effect, companies will decide sooner whether to keep you.',
         examples: [
-          'When Chen started on OPT, HR promised future H-1B sponsorship. If the proposal takes effect and the petition is cap-subject, filing it would require another $103,265 on top of existing fees. HR’s earlier promise may not have included that new charge, so the company would need fresh budget approval before it could follow through.',
-          'Lin’s manager wants to retain her after a successful year on OPT. If the upcoming H-1B petition requires the $103,265 surcharge, the manager would need company approval for that expense. Finance could refuse the extra budget and the company might not file, even though the manager values Lin’s work.',
+          'When Chen started on OPT, HR promised to sponsor his H-1B later. If the fee passes and his petition goes through the lottery, the company would pay another $103,265 on top of existing fees. HR did not budget for that, so the company would need new approval to keep its promise.',
+          'Lin’s manager wants to keep her after a strong year on OPT. If her H-1B petition carries the $103,265 fee, the manager needs company approval for it; if finance says no, the company may not file. Good performance does not help if the budget is not approved.',
         ],
       },
       {
         title: 'For employers: budgets may concentrate on critical roles',
-        text: 'If each covered petition carries the added cost, hiring budgets may shift toward hard-to-replace roles with clear business returns. Smaller businesses may have less room to adjust.',
+        text: 'With every lottery petition costing this much more, hiring budgets will shift toward hard-to-replace roles with clear payoff. Small companies have less room to adjust.',
         examples: [
-          'A small company plans three cap-subject H-1B petitions. At the proposed rate, the additional fees alone would total $309,795, before existing costs. If the company can fund only one petition, it may reduce the number of employees it sponsors rather than proceed with all three.',
+          'A small company planned three lottery H-1B petitions. At the proposed rate, the surcharge alone would be $309,795, before regular fees. If it can afford only one, two people lose sponsorship.',
         ],
       },
       {
         title:
-          'For pathways: cap-exempt roles may become relatively more attractive',
-        text: 'The proposal excludes cap-exempt petitions. Those roles may draw more interest, though limited openings, individual fit, and a separate classification reform would still constrain this path.',
+          'For your path: cap-exempt jobs become more attractive',
+        text: 'Cap-exempt petitions skip this fee, so those jobs will draw more interest. But there are few of them, and reform #07 may tighten who qualifies as cap-exempt.',
         examples: [
-          'Li receives offers from a company and a university lab. Suppose the company’s petition is cap-subject and the university’s qualifies as cap-exempt. The current proposal would charge the additional fee on the former but exclude the latter. Similar salaries could therefore come with different sponsorship costs and affect the employers’ willingness to file.',
+          'Li has two offers: a company and a university lab. The company’s H-1B goes through the lottery; the university’s is cap-exempt. Under the proposal, only the company pays the surcharge. Similar salaries, very different costs to the employer, which affects who is more willing to file for Li.',
         ],
       },
     ],
     outlook:
-      'Our outlook: debate will focus on the fee level, legal authority, and employers’ ability to absorb it. Labor-market effects may first appear in sponsorship willingness and budget decisions before they show up in petition volume.',
+      'Our view: the fight will be over the amount, the legal basis and whether employers can afford it. In the job market, the first change will be in employers’ willingness to sponsor and their budgets; filing numbers will follow.',
     scenarios: [
       {
-        name: 'Finalized as proposed',
-        headline: 'Employer sponsorship concentrates on high-value roles',
-        assumption:
-          'The $103,265 surcharge remains and covers the cap-subject petitions identified in the proposal.',
-        effects:
-          'New graduates and employers with limited budgets may be hit harder. Some employers may reduce the number of roles eligible for sponsorship before petitions are filed.',
-        signals:
-          'The final fee, coverage definition, effective date, and employer sponsorship policies for the next hiring cycle.',
+        "name": "Finalized as proposed",
+        "headline": "Employers sponsor only their most valued roles",
+        "assumption": "The $103,265 surcharge stays and applies to every lottery petition.",
+        "effects": "New graduates and companies with tight budgets are hit hardest. Some employers will cut the number of roles they sponsor before anyone files.",
+        "signals": "The final amount, who it covers, when it starts, and employers’ sponsorship policies for the next hiring season."
       },
       {
-        name: 'Fee or scope revised',
-        headline:
-          'Sponsorship interest partly recovers, with wider differences among employers',
-        assumption:
-          'The final rule lowers the amount or adds meaningful exceptions.',
-        effects:
-          'Cost pressure may ease, but outcomes would still vary by employer size, petition category, and role. Who qualifies for an exception would matter more than a single headline amount.',
-        signals:
-          'Responses to comments, a revised fee model, and final exemption terms.',
+        "name": "Fee or scope revised",
+        "headline": "Sponsorship partly recovers, but employers diverge more",
+        "assumption": "The final rule lowers the amount or adds real exemptions.",
+        "effects": "Cost pressure eases, but outcomes still vary by employer size and role. Who gets an exemption matters more than the headline number.",
+        "signals": "DHS’s response to public comments, the revised amount and the final exemptions."
       },
       {
-        name: 'Implementation delayed',
-        headline:
-          'Near-term budget pressure eases, while long-term commitments remain cautious',
-        assumption:
-          'Rulemaking takes longer or a later court order pauses implementation.',
-        effects:
-          'Employers may continue filing under current costs but remain cautious about multiyear sponsorship commitments. A temporary pause would not mean the policy has been invalidated.',
-        signals:
-          'Publication of a final rule, the actual terms and reach of any court order.',
-      },
+        "name": "Implementation delayed",
+        "headline": "Short-term budget pressure eases; long-term sponsorship stays cautious",
+        "assumption": "Rulemaking takes longer or a court order pauses implementation.",
+        "effects": "Employers keep filing at current costs but grow more cautious about multiyear sponsorship commitments.",
+        "signals": "Whether a final rule is published, and what any court order actually says and covers."
+      }
     ],
     scope: [
       {
-        label: 'Covered petitions',
-        text: 'The proposal covers cap-subject petitions, including the U.S. advanced-degree allocation; a change of status is not excluded simply because the worker is in the United States.',
+        "label": "Who pays",
+        "text": "Every petition that goes through the lottery, including the U.S. master’s cap and F-1 students changing to H-1B inside the U.S."
       },
       {
-        label: 'Excluded petitions',
-        text: 'Cap-exempt petitions fall outside the proposed surcharge.',
+        "label": "Who doesn’t",
+        "text": "Cap-exempt petitions, such as those filed by universities and nonprofit research institutions."
       },
       {
-        label: 'Relationship to other fees',
-        text: 'This is a proposed surcharge on top of existing fees; its scope turns on whether the petition is cap-subject.',
-      },
+        "label": "On top of existing fees",
+        "text": "An extra charge on top of current filing fees, paid by the employer."
+      }
     ],
     milestones: [
       {
         "date": "2026-08-25",
-        "text": "DHS published the $103,265 fee NPRM."
+        "text": "DHS published the $103,265 surcharge proposal."
       },
       {
         "date": "2026-09-10",
-        "text": "Federal Register corrected Table 13 historical receipt figures; the amount, scope and comment deadline are unchanged."
+        "text": "The Federal Register published a correction to the historical filing counts in one table; amount, scope and deadline unchanged."
       },
       {
         "date": "2026-09-24",
-        "text": "The NPRM comment period closed; the proposal is not in effect."
+        "text": "Public comments closed."
       },
       {
         "date": "2026-09-30",
-        "text": "Separate $100,000 payment: Global Nurse Force vacates agency policies and bars implementation under the original and extended proclamations; this is not a ruling on the $103,265 NPRM."
+        "text": "Separate $100,000 entry fee: in Global Nurse Force the court struck down the collection policy and barred collection under both proclamations."
+      },
+      {
+        "date": "2026-10-09",
+        "text": "$100,000 fee case: the government appealed to the Ninth Circuit and asked the district court to pause the case."
+      },
+      {
+        "date": "2026-10-14",
+        "text": "$100,000 fee case: the Ninth Circuit set the government’s opening brief for November 6 and plaintiffs’ answer for December 4."
+      },
+      {
+        "date": "2026-10-28",
+        "text": "$100,000 fee case: the district court refused to pause the case and ordered the government to turn over its administrative record."
       }
     ],
     next: [
       {
-        "date": "2026-10-20",
-        "text": "Separate $100,000 case: September 30 order 130 requires a joint case management statement; the later calendar was not separately verified."
+        "date": "2026-11-06",
+        "text": "$100,000 fee case: government’s opening brief due in the Ninth Circuit."
       },
       {
-        "date": "2026-10-27",
-        "text": "Separate $100,000 case: the September 30 order sets a Zoom case management conference at 2 p.m. court local time; this is not an effective date for the $103,265 proposal."
+        "date": "2026-12-04",
+        "text": "$100,000 fee case: plaintiffs’ answering brief due."
       },
       {
         "date": "Date unknown",
-        "text": "Track final rulemaking for the $103,265 proposal and later orders in the separate fee case; actual implementation timing is undetermined."
+        "text": "After reviewing public comments, DHS decides the final text and start date of the $103,265 surcharge."
       }
     ],
     process: {
       detail:
-        'The NPRM is public and the comment period closed September 24. DHS must review comments before it can issue a final rule.',
-      currentSummary: 'Comment period closed; DHS review pending',
-      waitingFor: 'DHS review of comments and a decision on final text.',
+        "The proposal is out and comments closed September 24. DHS has to review the comments before it can issue a final rule.",
+      currentSummary: "Comment period closed; awaiting DHS’s final decision",
+      waitingFor: "DHS’s review of public comments and its decision on the final rule.",
     },
   },
 };

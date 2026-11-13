@@ -43,8 +43,8 @@ export function PolicyScenarios({
         </h3>
         <p>
           {english
-            ? 'Choose a situation below to see its possible effects. These are alternatives, not steps or predictions of likelihood.'
-            : '点击下面任一种情况，查看它可能带来的影响。这是三种不同假设，不是流程步骤，也不是可能性排名。'}
+            ? 'Pick a situation to see what it would mean for you. The three are side-by-side possibilities, in no particular order.'
+            : '点一种情况，看看它会给你带来什么影响。三种情况是并列的可能，没有先后顺序。'}
         </p>
       </div>
       <fieldset
@@ -195,9 +195,13 @@ export function PolicyProgress({
               : '诉讼进展 · 并行司法审查'}
           </h3>
           <p>
-            {english
-              ? 'Litigation is separate from federal rulemaking. Court orders may affect whether or when the rule takes effect.'
-              : '诉讼独立于联邦规则制定流程；法院命令可能影响规则能否或何时生效。'}
+            {track.kind === 'administrative-guidance'
+              ? english
+                ? 'The lawsuit runs alongside the guidance. A court order could pause the guidance.'
+                : '诉讼和指引是两条线；法院的命令可能让指引暂停执行。'
+              : english
+                ? 'The lawsuit runs alongside rulemaking. A court order could pause the rule or delay when it starts.'
+                : '诉讼和规则制定是两条线；法院的命令可能让规则暂停或推迟生效。'}
           </p>
           <ol>
             {track.litigation.map((event) => (

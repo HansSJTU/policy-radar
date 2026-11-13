@@ -10,6 +10,24 @@ import { policyContents } from '../content/policies/index.ts';
 
 const han = /[㐀-鿿]/u;
 
+test('PERM has cleared OIRA and D/S preserves past filings without an expired future deadline', () => {
+  const perm = policyContents.find(({ id }) => id === 'perm-modernization');
+  assert.equal(perm.process.lastCompletedStage, 1);
+  assert.equal(perm.process.activeStage, null);
+  assert.equal(perm.process.nextStage, 2);
+  assert.equal(perm.effectState, 'not-in-effect');
+  assert.match(perm.sources[0].href, /rrid=1533011/);
+  const duration = policyContents.find(({ id }) => id === 'duration-status');
+  for (const language of ['zh', 'en']) {
+    assert.equal(duration[language].next[0].date, language === 'zh' ? '日期未定' : 'Date unknown');
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-09'));
+    assert.ok(duration[language].milestones.some(({ date }) => date === '2026-10-19'));
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-02'));
+    assert.ok(duration[language].milestones.some(({ date }) => date === '2026-11-02'));
+    assert.ok(!duration[language].next.some(({ date }) => date === '2026-11-06'));
+  }
+});
+
 function collectStrings(value) {
   if (typeof value === 'string') return [value];
   if (Array.isArray(value)) return value.flatMap(collectStrings);
@@ -22,7 +40,7 @@ test('content files cover every ranked policy in rank order', () => {
 });
 
 test('the English policy and school copy contains no Chinese', () => {
-  assert.equal(verifiedSchools.length, 57);
+  assert.equal(verifiedSchools.length, 77);
   assert.equal(communitySchools.length, 4);
   const strings = collectStrings([
     policyContents.map((policy) => policy.en),
@@ -44,7 +62,6 @@ test('each policy has matching Chinese and English structure', () => {
       assert.equal(impact.examples?.length ?? 0, en.impacts[index].examples?.length ?? 0, `${id} impact ${index} examples`);
       assert.equal(impact.source?.href, en.impacts[index].source?.href, `${id} impact ${index} source`);
     });
-    assert.equal(Boolean(zh.reviewNote), Boolean(en.reviewNote), `${id} reviewNote`);
     for (const source of sources) assert.ok(source.zh && source.en, `${id} ${source.href}`);
   }
 });

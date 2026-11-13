@@ -50,13 +50,13 @@ test('community reports never inherit a verified status, and department boundari
   for (const school of getCommunitySchools('zh')) {
     const item = getSchoolShareItem(school, 'zh');
     assert.equal(item.unverified, true);
-    assert.match(item.status, /待核实/);
-    assert.match(item.caveat, /截图.*尚无公开确认/);
+    assert.match(item.status, /还没公开/);
+    assert.match(item.caveat, /截图.*还没.*公开/);
   }
   const nyu = getVerifiedSchools('zh').find(s => s.school.includes('Tandon'));
   const content = buildItemShareContent(getSchoolShareItem(nyu, 'zh'), 'zh');
   assert.match(content.text, /Tandon Mathematics/);
-  assert.match(content.text, /不外推 NYU 全校/);
+  assert.match(content.text, /仅限 Tandon 数学系/);
   const old = getSchoolShareItem({ ...nyu, checkedOn: '2026-08-25' }, 'zh');
   assert.match(buildItemShareContent(old, 'zh').text, /最后核对：2026-08-25/);
 });

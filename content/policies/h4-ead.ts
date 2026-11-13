@@ -5,7 +5,7 @@ export const h4Ead: PolicyContent = {
   path: 'H-1B',
   tone: 'gray',
   effectState: 'not-in-effect',
-  checkedOn: "2026-10-13",
+  checkedOn: "2026-11-12",
   related: [
     "ead-auto-extension",
     "ead-discretion",
@@ -20,236 +20,226 @@ export const h4Ead: PolicyContent = {
   sources: [
     {
       "href": "https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1615-AD14&pubId=202510",
-      "zh": "统一议程 RIN 1615-AD14",
-      "en": "Unified Agenda RIN 1615-AD14"
+      "zh": "政府规则计划表 · RIN 1615-AD14",
+      "en": "Unified Agenda (rulemaking plan) · RIN 1615-AD14"
     },
     {
-      "href": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations-and-fashion-models/employment-authorization-for-certain-h-4-dependent-spouses",
-      "zh": "USCIS · 现行 H-4 配偶工作许可资格",
-      "en": "USCIS · current H-4 spouse employment-authorization eligibility"
+      "href": "https://www.ecfr.gov/current/title-8/section-274a.12#p-274a.12(c)(26)",
+      "zh": "eCFR · 现行 H-4 EAD 申请条件",
+      "en": "eCFR · current H-4 EAD eligibility"
+    },
+    {
+      "href": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses",
+      "zh": "USCIS · H-4 配偶工作许可申请条件",
+      "en": "USCIS · H-4 spouse work-permit eligibility"
     },
     {
       "href": "https://www.uscardforum.com/t/topic/528394",
       "zh": "美卡论坛讨论",
       "en": "USCardForum discussion"
+    },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD14",
+      "zh": "OIRA · 1615-AD14 审查记录检索",
+      "en": "OIRA · 1615-AD14 review search"
     }
   ],
   zh: {
     title: '部分 H-4 配偶工作许可拟被取消',
     short: 'H-4 配偶 EAD',
-    status: '长期议程 · 尚无提案日期',
+    status: '长期计划 · 还没有提案日期',
     effectLabel: '尚未生效 · 现行规则未变',
     agency: 'DHS / USCIS',
     documentId: '1615-AD14',
-    tldr: 'DHS 打算撤销 2015 年那条允许部分 H-4 配偶申请 EAD 的规则。撤销后，符合条件的 H-4 配偶将失去工作许可，但主申请人的 H-1B 身份不受直接影响。',
+    tldr: "H-1B 的配偶持 H-4 身份，本身不能工作。2015 年起，如果 H-1B 一方已经走上绿卡路（比如 I-140 已获批），配偶可以申请 EAD（工卡）上班。DHS 打算取消这项资格。持 H-1B 的一方不受影响。目前只写在政府的长期计划里，还没有提案，现在的规则照常。",
     tags: ['H-4 家庭', '家庭收入'],
     summary:
-      'DHS 打算撤销 2015 年那条允许部分 H-4 配偶申请 EAD 的规则，取消这类配偶凭该规则拿工作许可的资格。主申请人的 H-1B 身份不受直接影响。',
-    audience: '依赖现行规则取得工作许可的符合条件 H-4 配偶及其家庭。',
-    caveat: '本议程不直接取消主申请人的 H-1B 身份，也没有让已有工作许可失效。',
+      "DHS 打算撤销 2015 年的一条规则。按这条规则，部分 H-4 配偶可以申请 EAD 工作：主要是 H-1B 一方的 I-140（雇主为其递交的绿卡移民申请）已经获批，或者 H-1B 一方已经按 AC21 法律把身份延长到六年以上。撤销以后，这些配偶就不能再凭这条规则拿工卡；持 H-1B 的一方身份不变。现在它只出现在政府的长期计划里，还没有正式提案，也没有时间表。",
+    audience: "现在凭这条规则拿 EAD 工作的 H-4 配偶和他们的家庭，以及 H-1B 一方已经在办绿卡、配偶打算以后申请 H-4 EAD 的家庭。",
+    caveat: "持 H-1B 的一方身份不受影响；已经拿到的工卡继续有效；现在符合条件的配偶也照常可以申请。",
     background:
-      "RIN 1615-AD14 要撤销的是 2015 年那条规则。NPRM 日期标注为 To Be Determined（待定）。目前没有公开文本、评论窗口或生效日期。\n另项 RIN 1615-AD05 已自 2025·10·30 起取消部分新递交 EAD 续期申请的自动延期，10·13 公开承接该规定的最终稿预览。这与 AD14 拟取消 H-4 配偶申请 EAD 的资格是两回事：仍符合 H-4 EAD 资格，也不代表续期收据能自动延长工作授权。",
-    teaser: '若未来撤销，家庭第二份收入和配偶职业连续性可能同时承压。',
-    headline: '双收入家庭的规划，可能面对结构性变化。',
+      "这项计划的编号是 RIN 1615-AD14（RIN 是政府给每项规则分配的追踪编号），要撤销的是 2015 年开放 H-4 配偶工卡的规则。政府的规则计划表把它放在长期项目里，提案日期写的是“待定”。正常流程是：先公布拟议规则，征求公众意见，再发最终规则，最终规则里才会写生效日期。这几步现在一步都还没开始。\n另一项规则（RIN 1615-AD05）已经从 2025·10·30 起取消部分 EAD 续期的自动延期，10·14 的最终规则照原样定稿。那项规则管的是续卡期间能不能接着上班，AD14 管的是能不能申请工卡，两件事分开进行：H-4 配偶现在仍然可以申请 EAD，只是续期收据不再自动延长旧卡。",
+    teaser: "如果真的取消，家里会少一份收入，配偶的职业也会中断。",
+    headline: "双职工家庭的安排，可能要大改。",
     analysis:
-      '如果最终真的撤销，影响不只是少一份收入。配偶的职业会中断，福利安排和一家人住哪里都可能要重新考虑。但眼下它还在长期议程上，适合放进长期预案，不必按“马上就要失效”来安排生活。',
+      "如果最终取消，影响不只是少一份收入。配偶的职业会中断，医保等福利可能跟着工作一起没了，全家要不要继续留在美国也可能要重新考虑。不过它现在只在长期计划里，从提案到生效通常还要走很长的流程。可以把它放进长远打算，眼下的工作照常。",
     impacts: [
       {
-        title: '对家庭财务：第二份收入可能需要重估',
-        text: '靠两份收入付房租、学费和日常开销的家庭，一旦少了配偶这份，能周转的余地会小很多。',
-        examples: [
-          '小林现在靠 H-4 配偶身份申请了 EAD，并在这张卡下面工作。但这项改革计划要取消的就是 H-4 配偶申请工作许可的资格。如果最终真的取消了，她就没法再靠这条规定拿工作许可了，哪怕雇主还想用她。不过现有的 EAD 怎么处理、什么时候受影响，还得看后续规则，现在不能要求她马上停工。',
-        ],
+        "title": "对家庭收入：可能少一份工资",
+        "text": "靠两份收入付房租、学费和日常开销的家庭，少了配偶这份，周转余地会小很多。",
+        "examples": [
+          "小林和她丈夫按两个人的收入安排房租、托儿费和日常开销。如果 H-4 EAD 被取消、她没法继续工作，家里就少了一份工资，固定支出却不会变。受影响的是配偶的工卡，丈夫的 H-1B 不变。"
+        ]
       },
       {
-        title: '对配偶职业：中断的影响可能持续更久',
-        text: '就算家里短期扛得住，职业空档、错过晋升、福利变化，都会影响以后重新找工作。',
-        examples: [
-          '小林和她丈夫按两个人的收入来安排房租、托儿费和日常开销。如果她因为 H-4 EAD 被取消而没法继续工作，家里就少了一份工资，但每月固定支出不会自动减少。所以家庭预算受影响，是因为配偶失去了工作许可资格，而不是这项政策直接动了她丈夫的 H-1B。',
-        ],
+        "title": "对配偶的职业：中断的影响更长远",
+        "text": "就算家里短期扛得住，职业空档、错过晋升、失去福利，都会让以后重新找工作更难。",
+        "examples": [
+          "小林凭 H-4 配偶身份拿到 EAD，在这张卡下工作。计划要取消的正是这项申请资格。如果最终取消，雇主再想留她，她也没法凭这条规定拿新的工卡。手里的 EAD 怎么处理、从哪天起受影响，要等最终规则写明。"
+        ]
       },
       {
-        title: '对留美决定：可能由个人工作变成家庭取舍',
-        text: '这项议程不会直接取消主申请人的 H-1B。但全家算下来划不划算、职业机会还剩多少会变，住哪里也可能跟着变。',
-      },
+        "title": "对留美决定：从个人工作变成全家权衡",
+        "text": "持 H-1B 的一方身份不受影响。但全家留下来值不值得、配偶还有哪些机会，可能都会变，住在哪里也可能跟着变。"
+      }
     ],
     outlook:
-      '我们的判断：近期先看它会不会从长期议程变成正式提案。一旦推进，已有 EAD 怎么处理、续期和过渡期给多长，决定家庭是能慢慢调整，还是要一次性面对收入缺口。',
+      "我们的判断：近期先看它会不会从长期计划变成正式提案。如果推进，最关键的是三点：手里的 EAD 能不能用到期、续期怎么处理、过渡期给多长。这决定了家庭可以慢慢调整，还是要一下子面对收入缺口。",
     scenarios: [
       {
-        name: '停留在长期议程',
-        headline: '现行安排继续，保留长期风险观察',
-        assumption: '仍然没有 NPRM，现行规则没变。',
-        effects:
-          '家庭可以继续按现有授权安排工作。讨论风险适合放在长期预算里，不要假设许可马上要结束。',
-        signals: '议程阶段是否变化、是否送审或公布提案。',
+        "name": "一直停在长期计划",
+        "headline": "照常工作，长期留意",
+        "assumption": "一直没有提案，现行规则不变。",
+        "effects": "配偶照常凭现有工卡工作，这个风险放进长期预算里考虑就行。",
+        "signals": "规则计划表里的阶段有没有变化，有没有送 OIRA 审查或公布提案。"
       },
       {
-        name: '正式提案发布',
-        headline: '家庭与雇主开始评估过渡安排',
-        assumption: 'DHS 公布具体撤销方案和评论窗口。',
-        effects:
-          '配偶雇主会更关注未来续期，家庭也能照着条款算收入变化。提案发布本身不会终止工作许可。',
-        signals: '适用群体、已有卡片和续期怎么处理，以及拟议的过渡期。',
+        "name": "正式提案发布",
+        "headline": "家庭和雇主开始考虑怎么过渡",
+        "assumption": "DHS 公布具体的取消方案，并征求公众意见。",
+        "effects": "配偶的雇主会更关注以后的续期，家庭也能照着条款算收入变化。提案阶段，工卡照常有效。",
+        "signals": "适用哪些人、已有工卡和续期怎么处理、过渡期多长。"
       },
       {
-        name: '最终撤销实施',
-        headline: '收入与职业安排可能逐步或集中改变',
-        assumption: '走完规则制定程序后，撤销规则正式生效。',
-        effects:
-          '影响来得快还是慢，取决于存量保护和卡片处理方式。家庭可能要重新权衡主申请人的工作收益和配偶的职业机会。',
-        signals: '最终生效条款、存量卡片安排，以及可能影响执行的法院命令。',
-      },
+        "name": "最终取消生效",
+        "headline": "收入和职业安排逐步或一次性改变",
+        "assumption": "走完提案、征求意见和最终规则的流程后，取消正式生效。",
+        "effects": "影响来得快还是慢，看已有的卡能不能用到期。家庭可能要重新权衡 H-1B 这份工作的收益和配偶的职业机会。",
+        "signals": "最终生效日期、已有工卡怎么处理，以及可能影响执行的法院命令。"
+      }
     ],
     scope: [
       {
-        label: '相关对象',
-        text: '依赖现行规则取得工作许可的符合条件 H-4 配偶。',
+        "label": "涉及谁",
+        "text": "现在凭这条规则拿工卡的 H-4 配偶，以及以后打算申请的人。"
       },
-      { label: '主申请人', text: '本议程不直接取消 H-1B 身份或抽签资格。' },
-      { label: '当前阶段', text: '尚无正式提案、评论窗口或生效日期。' },
+      {
+        "label": "持 H-1B 的一方",
+        "text": "H-1B 身份和抽签资格都不受影响。"
+      },
+      {
+        "label": "现在到哪一步",
+        "text": "只在长期计划里。提案、意见征集和生效日期都还没有。"
+      }
     ],
     milestones: [
       {
         "date": "2026 统一议程",
-        "text": "项目进入政府长期规则议程。"
-      },
-      {
-        "date": "截至 2026-10-13",
-        "text": "AD14 仍为长期议程、提案日期未定；未取得该项公开 NPRM，OIRA 检索未返回该项记录。"
+        "text": "列入政府规则计划表的长期项目。"
       }
     ],
     next: [
       {
-        date: '日期未定',
-        text: '若推进，仍须经历 NPRM、评论、最终规则与可能诉讼。',
-      },
+        "date": "日期未定",
+        "text": "如果推进，DHS 要先公布提案、征求公众意见，再发最终规则；之后也可能有人起诉。"
+      }
     ],
     process: {
-      detail: '目前只是统一议程中的长期项目，尚未进入 OIRA 审查或 NPRM 阶段。',
-      currentSummary: '长期议程，暂无日期',
-      waitingFor: '是否从长期议程进入正式规则制定；尚无提案日期。',
+      detail: "目前只在政府规则计划表的长期项目里，还没有送 OIRA 审查，也没有提案。",
+      currentSummary: '长期计划，暂无日期',
+      waitingFor: "它会不会从长期计划进入正式的规则制定流程。",
     },
-    reviewNote: "10·13 复核 AD14 长期议程、OIRA 待审／结案检索及联邦公报查询，未取得该项撤销资格的公开提案。已找到并读取迁移后的 USCIS H-4 原页，确认主申请人获批 I-140 或符合 AC21 延期条件时的配偶申请资格。今天另取得 AD05 EAD 自动延期最终稿预览；它承接 2025·10·30 起的续期规则，不是 AD14 资格撤销提案。后续资格提案、完整部门说明及诉讼仍待核实。",
   },
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
     short: 'H-4 Spousal EAD',
-    status: 'Long-term agenda · No proposal date',
+    status: 'Long-term plan · No proposal date',
     effectLabel: 'Not in effect · Current rules unchanged',
     agency: 'DHS / USCIS',
     documentId: '1615-AD14',
-    tldr: 'DHS plans to rescind the 2015 rule that allows certain H-4 spouses to apply for employment authorization. The policy would end work authorization for eligible H-4 spouses but would not directly terminate the principal applicant’s H-1B status.',
+    tldr: "Spouses of H-1B workers hold H-4 status, which does not allow work on its own. Since 2015, if the H-1B holder is on the green-card path (for example, an approved I-140), the spouse can apply for an EAD (work permit). DHS plans to end that eligibility. The H-1B holder is not affected. For now it is only on the government’s long-term plan, with no proposal, and the current rule still applies.",
     tags: ['H-4 families', 'Household income'],
     summary:
-      'DHS plans to reverse the 2015 rule that allows certain H-4 spouses to apply for an EAD, removing their eligibility for work authorization under that rule. It would not directly change the principal worker’s H-1B status.',
+      "DHS plans to undo a 2015 rule that lets some H-4 spouses apply for an EAD. Under that rule, the spouse qualifies mainly when the H-1B holder has an approved I-140 (the employer’s green-card petition) or has extended H-1B status beyond six years under the AC21 law. If the rule is undone, those spouses could no longer get a work permit this way; the H-1B holder’s status is unchanged. For now it appears only on the government’s long-term plan, with no formal proposal and no timeline.",
     audience:
-      'eligible H-4 spouses working under the current rule and their families.',
+      "H-4 spouses who work on an EAD under this rule today and their families, plus families where the H-1B holder is in the green-card process and the spouse plans to apply later.",
     caveat:
-      'The agenda does not directly cancel the principal H-1B status or invalidate existing work authorization.',
+      "The H-1B holder’s status is unchanged, work permits already issued stay valid, and spouses who qualify today can still apply.",
     background:
-      "RIN 1615-AD14 targets the related 2015 rule, with the NPRM date listed as To Be Determined. There is no public text, comment window or effective date.\nSeparate RIN 1615-AD05 has removed automatic extensions for certain EAD renewals filed on or after October 30, 2025; a final-rule preview carrying that provision forward became public October 13. That is distinct from AD14’s planned removal of H-4 EAD eligibility: continuing eligibility does not mean a renewal receipt automatically extends work authorization.",
+      "The plan is tracked as RIN 1615-AD14 (a RIN is the tracking number the government gives each rule). It would undo the 2015 rule that opened work permits to H-4 spouses. The government’s rulemaking plan lists it as a long-term item with the proposal date “to be determined.” The normal path is: publish a proposed rule, take public comments, then issue a final rule, which is where a start date would appear. None of those steps has started.\nA different rule, RIN 1615-AD05, has already ended automatic extensions for certain EAD renewals filed since October 30, 2025, and was finalized unchanged on October 14. That rule is about whether you can keep working while a renewal is pending, and is separate from AD14, which is about eligibility. H-4 spouses can still apply for an EAD today; a renewal receipt just no longer extends the old card.",
     teaser:
-      'A future rescission could strain both a family’s second income and the spouse’s career continuity.',
+      "If it happens, the family loses an income and the spouse’s career is interrupted.",
     headline:
-      'Dual-income families could face a structural change in their planning.',
+      "Two-income families may have to rethink their plans.",
     analysis:
-      'If the relevant H-4 EAD rule is eventually rescinded, the pressure would extend beyond one lost income to a spouse’s career interruption, benefits, and the family’s choice of where to live. For now, this remains on the long-term agenda and belongs in long-range scenarios rather than day-to-day plans that assume authorization will soon end.',
+      "If the rule is eventually undone, the hit goes beyond one lost paycheck. The spouse’s career stops, benefits such as health insurance may go with the job, and the family may rethink whether to stay in the U.S. at all. But it is only on the long-term plan for now, and a rule usually takes a long time to get from proposal to effect. Factor it into long-range planning; day-to-day work continues as usual.",
     impacts: [
       {
-        title: 'For family finances: the second income may need reassessment',
-        text: 'Families that rely on two incomes for housing, education, and everyday expenses could lose substantial budget flexibility if spousal income disappears.',
-        examples: [
-          'Lin currently obtains an EAD through qualifying H-4 spouse eligibility. The plan targets removal of that eligibility category. If the final rule removes the basis Lin uses, employer support would not allow a new permit under that provision. Treatment and timing for existing EADs depend on the future rule; this does not call for stopping work now.',
-        ],
+        "title": "For family finances: one income could go",
+        "text": "Families that pay rent, tuition and daily costs on two incomes would have far less room if the spouse’s income stopped.",
+        "examples": [
+          "Lin and her husband budget for rent, childcare and groceries on two incomes. If H-4 EAD eligibility is removed and Lin cannot keep working, her income disappears while fixed expenses stay. The change hits the spouse’s work permit; the husband’s H-1B is unchanged."
+        ]
       },
       {
-        title:
-          'For a spouse’s career: an interruption can have lasting effects',
-        text: 'Even when a family can absorb the near-term income loss, a career gap and changes in advancement and benefits can affect a later return to work.',
-        examples: [
-          'Lin and her husband budget for rent, childcare, and groceries using two incomes. If removal of H-4 EAD eligibility prevents Lin from continuing work, her income may disappear while fixed expenses remain. The budget effect comes from the spouse’s work-permit eligibility, not direct cancellation of the husband’s H-1B.',
-        ],
+        "title": "For the spouse’s career: the gap lasts",
+        "text": "Even if the family can manage in the short term, a career gap, missed promotions and lost benefits make it harder to go back to work later.",
+        "examples": [
+          "Lin works on an EAD she got through H-4 spouse eligibility, which is exactly what the plan would remove. If it is removed, Lin could not get a new permit this way even if her employer wants to keep her. What happens to existing EADs, and from when, will be set out in the final rule."
+        ]
       },
       {
-        title:
-          'For decisions about staying: an individual job becomes a family tradeoff',
-        text: 'The principal worker’s H-1B status would not be directly ended by this agenda item, but the family’s net benefit and career options could change, affecting where it chooses to live.',
-      },
+        "title": "For staying in the U.S.: a family decision, not just one job",
+        "text": "The H-1B holder’s status is unaffected. But whether staying still makes sense for the whole family, and what options the spouse has, could change, and so could where you live."
+      }
     ],
     outlook:
-      'Our assessment: the next near-term signal is whether this moves from the long-term agenda to a formal proposal. If it does, treatment of existing EADs, renewals, and transition timing will determine whether families adjust gradually or face a concentrated income change.',
+      "Our view: the first thing to watch is whether this moves from the long-term plan to a formal proposal. If it does, three details matter most: whether existing EADs last until they expire, how renewals are handled, and how long the transition is. Those decide whether families can adjust gradually or lose the income all at once.",
     scenarios: [
       {
-        name: 'Remains on the long-term agenda',
-        headline:
-          'Current arrangements continue while the long-term risk remains under review',
-        assumption:
-          'No NPRM is published and the current rule does not change.',
-        effects:
-          'Families can continue working under valid current authorization. Future risk is better used in long-term budgeting than as a basis for assuming authorization will soon end.',
-        signals:
-          'Whether the agenda stage changes, the action is submitted for review, or a proposal is published.',
+        "name": "Stays on the long-term plan",
+        "headline": "Keep working; keep an eye on it",
+        "assumption": "No proposal comes out and the current rule stays.",
+        "effects": "Spouses keep working on their current permits; families just factor this risk into long-term budgeting.",
+        "signals": "Whether its stage in the rulemaking plan changes, or it goes to OIRA or is published as a proposal."
       },
       {
-        name: 'Formal proposal published',
-        headline:
-          'Families and employers begin evaluating transition arrangements',
-        assumption:
-          'DHS publishes a specific rescission plan and comment window.',
-        effects:
-          'Employers of H-4 spouses may pay closer attention to future renewals, and families could assess income changes from actual terms. Publication of a proposal alone would not end work authorization.',
-        signals:
-          'Covered groups, treatment of existing cards and renewals, and the proposed transition period.',
+        "name": "Formal proposal published",
+        "headline": "Families and employers start planning for a transition",
+        "assumption": "DHS publishes a specific plan and opens public comments.",
+        "effects": "The spouse’s employer will watch future renewals more closely, and families can work out the income impact from the actual terms. Work permits stay valid while it is only a proposal.",
+        "signals": "Who is covered, how existing cards and renewals are handled and how long the transition lasts."
       },
       {
-        name: 'Final rescission takes effect',
-        headline:
-          'Income and career arrangements may change gradually or all at once',
-        assumption: 'After rulemaking, a rescission rule becomes effective.',
-        effects:
-          'The speed of the effect would depend on protection for existing cases and treatment of issued cards. Families may need to rebalance the principal worker’s job benefits against the spouse’s career opportunities.',
-        signals:
-          'Final effective-date terms, treatment of issued cards, and any court orders affecting implementation.',
-      },
+        "name": "Final rescission takes effect",
+        "headline": "Income and careers change gradually or all at once",
+        "assumption": "After the proposal, comments and a final rule, the repeal takes effect.",
+        "effects": "How fast it hits depends on whether existing cards can be used until they expire. Families may have to weigh the H-1B job against the spouse’s career.",
+        "signals": "The final start date, how existing cards are handled and any court orders affecting it."
+      }
     ],
     scope: [
       {
-        label: 'Covered people',
-        text: 'Eligible H-4 spouses who receive work authorization under the current rule.',
+        "label": "Who it affects",
+        "text": "H-4 spouses who get work permits under this rule today, and those who plan to apply."
       },
       {
-        label: 'Principal worker',
-        text: 'This agenda item does not directly end H-1B status or cap-selection eligibility.',
+        "label": "The H-1B holder",
+        "text": "H-1B status and lottery eligibility are not affected."
       },
       {
-        label: 'Current stage',
-        text: 'There is no formal proposal, comment window, or effective date.',
-      },
+        "label": "Where it stands",
+        "text": "Only on the long-term plan. There is no proposal, comment period or start date yet."
+      }
     ],
     milestones: [
       {
         "date": "2026 Unified Agenda",
-        "text": "The initiative appeared on the government’s long-term rulemaking agenda."
-      },
-      {
-        "date": "As of 2026-10-13",
-        "text": "AD14 remains a long-term agenda item with no proposal date; no public AD14 NPRM was obtained and the OIRA search returned no record for it."
+        "text": "Listed as a long-term item in the government’s rulemaking plan."
       }
     ],
     next: [
       {
-        date: 'Date unknown',
-        text: 'If DHS proceeds, it must still publish an NPRM, accept comments, issue a final rule, and may face litigation.',
-      },
+        "date": "Date unknown",
+        "text": "If DHS moves ahead, it must publish a proposal, take public comments and then issue a final rule; lawsuits could follow."
+      }
     ],
     process: {
       detail:
-        'The initiative is only a long-term item in the Unified Agenda. It has not entered OIRA review or the NPRM stage.',
-      currentSummary: 'Long-term agenda item with no date',
+        "It is only a long-term item in the government’s rulemaking plan; it has not gone to OIRA and there is no proposal.",
+      currentSummary: 'Long-term plan; no date',
       waitingFor:
-        'Whether the long-term agenda item advances into rulemaking; no proposal date is set.',
+        "Whether it moves from the long-term plan into formal rulemaking.",
     },
-    reviewNote: "The AD14 long-term agenda, OIRA pending/concluded searches and Federal Register query were reviewed October 13; no public AD14 eligibility-rescission proposal was obtained. The relocated USCIS H-4 page was found and read, confirming spousal eligibility through an approved principal I-140 or qualifying AC21 extension. The separate AD05 EAD-renewal final-rule preview was also read: it carries forward the October 30, 2025 renewal rule, not AD14 eligibility rescission. A later eligibility proposal, complete agency guidance and litigation remain unverified.",
   },
 };

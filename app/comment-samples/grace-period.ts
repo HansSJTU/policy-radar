@@ -432,8 +432,8 @@ export default {
       textSha256:
         'a4133680e6ffe4644028d389f0bf1d514a87ffc9941ff73e93838afdf9b80cd8',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -525,15 +525,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
-        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -577,15 +577,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
-        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -653,15 +653,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
-        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1064,8 +1064,8 @@ export default {
       textSha256:
         'e3ac5325cbb04ba48a54c935e41b22255d54760ed8e00962256db0e67ede625a',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1152,8 +1152,8 @@ export default {
       textSha256:
         '9c5f69ecaa892c1970bc3951ca3681f47d488585872882d4be2036ff956e7413',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1173,15 +1173,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
-        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1396,8 +1396,8 @@ export default {
       textSha256:
         '0655e62da128b0954306a862f5c162963d8b63c1832462ea391f48a2a3f7caa0',
       sourceNote: {
-        zh: '正文提及附件，但API未列出附件链接；依据实质正文分类。',
-        en: 'The body references an attachment, but the API lists no attachment link; classification uses the substantive body.',
+        zh: '正文提到附件，但没有附件链接；按正文归类。',
+        en: 'The text mentions an attachment, but no attachment link is listed; classified from the text.',
       },
     },
     {
@@ -1405,15 +1405,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件无法读取，立场无法判断。',
-        en: 'Body only refers to an inaccessible attachment; stance cannot be determined.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1500,15 +1500,15 @@ export default {
       stance: 'unclear',
       themes: [],
       summary: {
-        zh: '正文仅指向附件；附件未能读取，无法判断立场。',
-        en: 'Body only refers to an attachment; the unavailable attachment prevents a stance determination.',
+        zh: '正文只写了“见附件”，附件打不开，看不出立场。',
+        en: 'The text only says “see attachment,” which couldn’t be opened, so no position can be read.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         'f57a02c717ada2ce922714836984bad201d137ce4ccc76a60803ff168ce5592e',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1777,8 +1777,8 @@ export default {
       textSha256:
         '19eb1fc0e2d94b479590451f49d434abd70b732545b5c519b4c331c09320b988',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1906,15 +1906,15 @@ export default {
       stance: 'oppose',
       themes: [],
       summary: {
-        zh: '正文简短表达反对，未提供实质理由；附件未能读取。',
-        en: 'Body briefly expresses opposition without substantive reasons; attachment could not be read.',
+        zh: '正文简短表示反对，没写具体理由；附件打不开。',
+        en: 'Briefly opposes without giving reasons; the attachment couldn’t be opened.',
       },
       postedDate: '2026-09-11T04:00:00Z',
       textSha256:
         '1afafb1d5812d520cf440773aa912dd2f51a1449c5190be81f1a173de3ac5a40',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -1953,8 +1953,8 @@ export default {
       textSha256:
         'ee5a84a0369935e40b4645c13c409458b56a0215169a9df05a40131922c90acf',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类。',
-        en: 'The official attachment download returned HTTP403; classification uses readable body text only.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'The attachment couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -2248,8 +2248,8 @@ export default {
       textSha256:
         'cd05af562d5a2bebd40da1ed49d46af1da8cfaa77b6fa5e2633b4cffdece8a1a',
       sourceNote: {
-        zh: '官方附件下载返回403；仅根据可读正文归类，正文不足的保留为无法判断。',
-        en: 'Official attachment downloads returned HTTP403. Classification uses readable body text only; insufficient bodies remain unclassifiable.',
+        zh: '附件无法下载，按评论正文归类。',
+        en: 'Attachments couldn’t be downloaded; classified from the comment text.',
       },
     },
     {
@@ -2633,8 +2633,8 @@ export default {
     },
   ],
   scopeNote: {
-    zh: '样本来自该提案的已公开评论。无法读取的附件逐条注明；观点摘要为评论者主张，并非事实或法律结论。',
-    en: 'This sample covers published comments on the proposal. Unreadable attachments are disclosed per record; summaries describe commenters’ views, not factual or legal findings.',
+    zh: '样本来自这项提案的公开评论。附件打不开的逐条注明；摘要转述的是评论者自己的观点。',
+    en: 'This sample covers published comments on the proposal. Records whose attachments couldn’t be opened are marked; summaries describe what commenters said.',
   },
   commentPhase: 'open',
   commentDeadline: '2026-11-10',

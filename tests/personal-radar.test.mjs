@@ -1,12 +1,17 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { build } from 'esbuild';
+import { readFile } from 'node:fs/promises';
 import { Module } from 'node:module';
 import { Miniflare } from 'miniflare';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { POLICY_IDS } from '../app/policy-ids.ts';
-import { buildPersonalPolicies } from '../app/radar/personal-radar-data.ts';
+import {
+  buildPersonalPolicies,
+  ESTIMATE_BASELINE,
+  personalEstimates,
+} from '../app/radar/personal-radar-data.ts';
 import {
   addMonths,
   chooseImpact,
@@ -182,54 +187,106 @@ test('severity is a continuous red/orange/white scale with contrasting number in
   assert.notEqual(severityColor(8.1).fill, severityColor(8.9).fill);
 });
 
-test('every mark sits inside its own stage and time band, clear of labels and other marks', () => {
-  for (const language of ['zh', 'en'])
-    for (const width of [286, 290, 320, 345, 360, 396, 440, 540]) {
-      const entries = buildPersonalPolicies(language, {}, '2026-09-30');
-      const compact = width < 440;
-      const g = radarGeometry(width);
-      const labels = timeLabelBoxes(g, language);
-      const placed = placePolicies(entries, width, language, compact);
-      assert.deepEqual(
-        placed.map((p) => p.entry.id),
-        entries.map((p) => p.id),
-      );
-      placed.forEach(({ entry, x, y }, i) => {
-        const where = `${language}/${width}/${entry.id}`;
-        const radius = markRadius(entry.inForce, compact);
-        const rho = Math.hypot(x - g.cx, y - g.cy);
-        const angle =
-          ((Math.atan2(x - g.cx, g.cy - y) * 180) / Math.PI + 360) % 360;
-        const offset = angle - SECTOR_KEYS.indexOf(entry.sector) * SECTOR_STEP;
-        assert.ok(
-          offset > 0 && offset < SECTOR_STEP,
-          `${where} left its stage`,
-        );
-        if (entry.ring > 0) {
-          const near = Math.min(offset, SECTOR_STEP - offset);
-          assert.ok(
-            rho * Math.sin((near * Math.PI) / 180) >= radius / 2,
-            `${where} straddles a stage divider`,
-          );
-        }
-        const inner = entry.ring ? g.rings[entry.ring - 1] : 0;
-        assert.ok(
-          rho >= inner && rho <= g.rings[entry.ring],
-          `${where} left its time band`,
-        );
-        assert.equal(
-          labelClearance([x, y], radius, labels, [], 1),
-          0,
-          `${where} overlaps a time label`,
-        );
-        for (const other of placed.slice(0, i))
-          assert.ok(
-            Math.hypot(x - other.x, y - other.y) >=
-              radius + markRadius(other.entry.inForce, compact),
-            `${where} overlaps ${other.entry.id}`,
-          );
-      });
+// Rings follow the visit date, so the layout changes as estimate windows come
+// closer. Collect the first day of each distinct layout from the estimate
+// baseline until six months after the newest estimate.
+function upcomingLayoutDays() {
+  const newest = Object.values(personalEstimates).reduce(
+    (latest, { baseline }) => (baseline > latest ? baseline : latest),
+    ESTIMATE_BASELINE,
+  );
+  const seen = new Set();
+  const days = [];
+  for (
+    let day = ESTIMATE_BASELINE;
+    day <= addMonths(newest, 6);
+    day = new Date(Date.parse(day) + 86400000).toISOString().slice(0, 10)
+  ) {
+    const layout = buildPersonalPolicies('en', {}, day)
+      .map((p) => p.ring)
+      .join();
+    if (!seen.has(layout)) {
+      seen.add(layout);
+      days.push(day);
     }
+  }
+  return days;
+}
+
+test('every mark sits inside its own stage and time band, clear of labels and other marks, in every layout of the next six months', () => {
+  const days = upcomingLayoutDays();
+  assert.ok(days.length > 1);
+  for (const day of days)
+    for (const language of ['zh', 'en'])
+      for (const width of [286, 290, 320, 345, 360, 396, 440, 540]) {
+        const entries = buildPersonalPolicies(language, {}, day);
+        const compact = width < 440;
+        const g = radarGeometry(width);
+        const labels = timeLabelBoxes(g, language);
+        const placed = placePolicies(entries, width, language, compact);
+        assert.deepEqual(
+          placed.map((p) => p.entry.id),
+          entries.map((p) => p.id),
+        );
+        placed.forEach(({ entry, x, y }, i) => {
+          const where = `${day}/${language}/${width}/${entry.id}`;
+          const radius = markRadius(entry.inForce, compact);
+          const rho = Math.hypot(x - g.cx, y - g.cy);
+          const angle =
+            ((Math.atan2(x - g.cx, g.cy - y) * 180) / Math.PI + 360) % 360;
+          const offset = angle - SECTOR_KEYS.indexOf(entry.sector) * SECTOR_STEP;
+          assert.ok(
+            offset > 0 && offset < SECTOR_STEP,
+            `${where} left its stage`,
+          );
+          if (entry.ring > 0) {
+            const near = Math.min(offset, SECTOR_STEP - offset);
+            assert.ok(
+              rho * Math.sin((near * Math.PI) / 180) >= radius / 2,
+              `${where} straddles a stage divider`,
+            );
+          }
+          const inner = entry.ring ? g.rings[entry.ring - 1] : 0;
+          assert.ok(
+            rho >= inner && rho <= g.rings[entry.ring],
+            `${where} left its time band`,
+          );
+          assert.equal(
+            labelClearance([x, y], radius, labels, [], 1),
+            0,
+            `${where} overlaps a time label`,
+          );
+          for (const other of placed.slice(0, i))
+            assert.ok(
+              Math.hypot(x - other.x, y - other.y) >=
+                radius + markRadius(other.entry.inForce, compact),
+              `${where} overlaps ${other.entry.id}`,
+            );
+        });
+      }
+});
+
+test('placement reserves exactly the space each dot is drawn with', async () => {
+  const css = await readFile(
+    new URL('../app/radar/personal-radar.css', import.meta.url),
+    'utf8',
+  );
+  const size = (selector) => {
+    const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const rule = css.match(new RegExp(`(?:^|\\n)${escaped} \\{([^}]*)\\}`));
+    assert.ok(rule, selector);
+    return Number(rule[1].match(/width:\s*(\d+)px/)[1]);
+  };
+  const inset = Number(
+    css.match(
+      /\[data-compact='true'\] \.pr-dot\[data-force='false'\]:after \{[^}]*inset:\s*(\d+)px/,
+    )[1],
+  );
+  const chart = ".pr .pr-chart[data-compact='true']";
+  assert.equal(size('.pr .pr-dot > span') / 2, markRadius(true, false));
+  assert.equal(size('.pr .pr-dot') / 2, markRadius(false, false));
+  assert.equal(size(`${chart} .pr-dot > span`) / 2, markRadius(true, true));
+  assert.equal(size(`${chart} .pr-dot`) / 2 - inset, markRadius(false, true));
 });
 
 test('estimate windows map onto the labelled rings and disappear once in force or elapsed', () => {

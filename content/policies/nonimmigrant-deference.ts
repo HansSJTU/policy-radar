@@ -5,227 +5,245 @@ export const nonimmigrantDeference: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-10-13",
+  "checkedOn": "2026-11-02",
   "related": [
     "h1b-reform",
     "grace-period"
   ],
   "process": {
     "kind": "federal-rulemaking",
-    "lastCompletedStage": 0,
-    "activeStage": 2,
-    "nextStage": 3
+    "lastCompletedStage": 2,
+    "activeStage": 3,
+    "nextStage": 4
   },
   "sources": [
     {
-      "href": "https://public-inspection.federalregister.gov/2026-20941.pdf",
-      "zh": "10·13 NPRM 预览原文 · 预定 10·14 刊登",
-      "en": "October 13 NPRM preview · publication scheduled October 14"
+      "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility",
+      "zh": "Federal Register 10·14 NPRM（91 FR 65119）",
+      "en": "Federal Register October 14 NPRM (91 FR 65119)"
     },
     {
-      "href": "https://www.federalregister.gov/api/v1/public_inspection_documents/2026-20941",
-      "zh": "联邦公报 · 公开预览记录",
-      "en": "Federal Register · public-inspection record"
+      "href": "https://public-inspection.federalregister.gov/2026-20941.pdf",
+      "zh": "10·13 提案预览稿",
+      "en": "October 13 proposal preview"
     },
     {
       "href": "https://www.govinfo.gov/content/pkg/FR-2024-12-18/pdf/2024-29354.pdf",
-      "zh": "2024 H-1B 现代化最终规则 · 既往批准尊重原则",
-      "en": "2024 H-1B modernization final rule · deference provision"
+      "zh": "2024 H-1B 现代化最终规则（现行“参照上次批准”条款）",
+      "en": "2024 H-1B modernization final rule (current deference provision)"
+    },
+    {
+      "href": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20941.pdf",
+      "zh": "GPO · 10·14 正式刊登版 PDF",
+      "en": "GPO · October 14 published PDF"
+    },
+    {
+      "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD26",
+      "zh": "OIRA · 1615-AD26 审查记录检索",
+      "en": "OIRA · 1615-AD26 review search"
     }
   ],
   "commentUrl": "https://www.regulations.gov/docket/USCIS-2026-0529",
   "zh": {
-    "title": "工作身份续期拟取消对既往批准的尊重原则",
-    "short": "续期既往批准审查",
-    "status": "NPRM 预览已公开 · 预定 10·14 刊登",
+    "title": "工作签证续期：拟取消“上次批过就参照”的原则",
+    "short": "续期不再参照上次批准",
+    "status": "正式提案 · 评论截至 11 月 13 日",
     "effectLabel": "尚未生效 · 现行规则未变",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "DHS 拟删除 Form I-129 审理中对相同当事方、相同基本事实的既往批准一般予以尊重的规定，使续期可以重新审查资格。提案预览已公开，尚未生效。",
+    "tldr": "H-1B 第一期三年到了要延期时，雇主会再递交一份 I-129。现在的规定是：雇主、员工和工作内容都没变，USCIS 一般会参照上次的批准，不从头挑毛病。DHS 提议取消这条照顾，让每次延期都重新审一遍资格。提案 10·14 公布，公众意见 11·13 截止，现在还没生效，延期照旧。",
     "tags": [
       "H-1B 续期",
       "I-129",
       "资格审查"
     ],
-    "summary": "DHS 拟删除 8 CFR 214.1(c)(5)，取消 USCIS 在相同当事方和相同基本事实的 Form I-129 申请中一般尊重既往资格认定的规则。10·13 公开的 NPRM 预览预定 10·14 正式刊登；目前不是最终规则。",
-    "audience": "通过 Form I-129 申请延长工作或停留的非移民雇员及申请雇主，包括适用该表格的 H-1B、L-1、O-1，以及 E、TN 等申请。",
-    "caveat": "拟议调整不自动拒绝续期，也不取消已经批准的身份或许可；现行 deference 本来就有重大错误、事实变化和新重要信息等例外，申请人仍须证明资格。",
-    "reviewNote": "10·13 已读取 46 页官方预览及联邦公报公开记录，并核对现行尊重原则的规则来源。正式刊登尚未发生，预览中的评论截止日仍是“刊登后 30 天”占位符；不写成已确定日历期限。Regulations.gov 动态案卷被拒，OIRA 按 RIN 检索未返回记录，完整审查历史、后续说明及诉讼未核实。",
-    "background": "现行 8 CFR 214.1(c)(5) 一般要求 USCIS 在相同当事方、相同基本事实的 I-129 请求中尊重既往资格认定；它不免除提交证据的责任，也允许因重大错误、重大变化或新重要信息重新审查。\n本次 RIN 1615-AD26 提议删除并保留空置该款，理由包括独立核对资格与申请人的举证责任。它与尚在 OIRA 审查中的 RIN 1615-AD00 综合 H-1B 改革是不同项目。",
-    "teaser": "之前获批，未来可能更难作为续期审查的稳定基础。",
-    "headline": "续期的证据准备可能增加，既往批准不等于未来结果。",
-    "analysis": "若最终按预览实施，同样岗位和雇主的续期也可能需要更完整地重新解释职位与申请人资格。补件、准备时间和不确定性可能增加，但预览没有规定所有续期必须被拒，也不能从中推算个人拒签率。",
+    "summary": "I-129 是雇主为 H-1B、L-1、O-1 等工作签证递交的申请表，第一次申请和后来的延期都用它。现行法规 8 CFR 214.1(c)(5) 规定：延期时如果雇主、员工和基本情况都和上次一样，USCIS 一般参照上次的批准结论。DHS 提议删除这一条，让 USCIS 每次都独立判断资格。提案 10·14 正式刊登（91 FR 65119），任何人都可以在 11·13 前提交意见。",
+    "audience": "要用 I-129 延期的工作签证持有人和他们的雇主：H-1B、L-1、O-1，以及用这张表办理的 E、TN 申请。对 F-1 学生来说，这关系到以后 H-1B 第一期三年到期时的延期。",
+    "caveat": "每份延期申请都按交上去的材料来判断，这一点不变；已经批下来的身份和工作许可照常有效。",
+    "background": "现行 8 CFR 214.1(c)(5) 是一条“参照上次批准”的规定：I-129 延期时，如果雇主、员工和基本事实都没变，USCIS 一般沿用上次对资格的认定，不会因为换了一位审查官就推翻重来。这条规定也有例外：上次批错了、情况有重大变化，或者出现了新的重要信息，USCIS 都可以重新审。申请人每次也照样要交证据。\n这次的提案（RIN 1615-AD26）要整条删掉这项规定。DHS 的理由是：每次申请都应该独立审核，由申请人自己证明符合条件。它和还在 OIRA 审查的 H-1B 综合改革（#07，RIN 1615-AD00）是两件事，分开推进。\n提案现在处在公众意见阶段。意见截止后，DHS 要阅读、回应这些意见，再决定最终条文；最终规则公布并生效之后，延期的审法才会改变。",
+    "teaser": "上次批过，下次延期可能要从头证明一遍。",
+    "headline": "延期可能要从头证明资格。",
+    "analysis": "如果按提案定稿，最直接的变化是：同一个雇主、同一个岗位的延期，也可能被要求重新完整说明这个职位为什么符合 H-1B 要求、你本人为什么够格。USCIS 发补件通知（要求补交材料）的机会会变多，准备材料的时间和律师费也可能增加。手里有效的 H-1B 不受影响。",
     "impacts": [
       {
-        "title": "对在职雇员：续期可能需要重新证明资格",
-        "text": "原批准仍可作为材料，但一般尊重既往认定的监管要求拟被删除。",
+        "title": "对员工：延期时可能要重新证明自己",
+        "text": "上次的批准通知仍然可以作为材料附上，但 USCIS 不再需要参照它。",
         "examples": [
-          "同一雇主为同一职位续期时，可能需要重新提交学位、职责与职位关系等证据；不是因规则预览公开就失去现有 H-1B。"
+          "小李在同一家公司做同一份工作，H-1B 第一期三年快到了，公司为他递交延期。按提案，审查官可以重新要求学位证明、职责说明、学位和工作的关系等材料，就像第一次申请一样。小李现在的 H-1B 照常有效。"
         ]
       },
       {
-        "title": "对雇主：材料与审查负担可能增加",
-        "text": "准备成本、补件和处理不确定性可能上升，实际变化取决于最终条文和执行说明。",
+        "title": "对雇主：材料和审查都会变多",
+        "text": "准备成本、补件通知和审批结果的不确定性都会上升。具体多大，要看最终条文和 USCIS 的执行说明。",
         "examples": [
-          "此前获批的 L-1 或其他 I-129 续期不能仅靠旧批准保证结果；该提案也没有要求每件申请一定补件。"
+          "一家公司以前批过员工的 L-1，现在为同一员工续期。按提案，上次的批准不再是依靠，公司要准备像首次申请一样完整的材料，也更可能收到补件通知。"
         ]
       }
     ],
-    "outlook": "先核对正式刊登、30 天评论窗口与最终文本；只有后续最终规则及其生效条款，才能确定何时改变实际审理要求。",
+    "outlook": "先看 11·13 意见截止后 DHS 怎么定稿。在最终规则生效之前，延期仍然按现在的“参照上次批准”来审。",
     "scenarios": [
       {
-        "name": "提案进入评论",
-        "headline": "现行原则继续，评估证据负担",
-        "assumption": "正式刊登后进入评论，尚无生效的最终规则。",
-        "effects": "雇主可评估拟议改动，但当前续期仍按现行规定审理。",
-        "signals": "正式 NPRM 日期、评论截止日及解释条款。"
+        "name": "意见征集期内",
+        "headline": "现在照旧参照，先评估影响",
+        "assumption": "提案在征求意见，还没有最终规则。",
+        "effects": "现在递交的延期仍按现行规定审；雇主可以趁这段时间评估影响。",
+        "signals": "意见截止日，以及 DHS 对提案的说明。"
       },
       {
-        "name": "最终删除该款",
-        "headline": "资格可能逐次重新审查",
-        "assumption": "最终规则删除该款并按公布的条款生效。",
-        "effects": "相同事实的续期可能承受更多准备和审查，不等于自动拒绝。",
-        "signals": "最终生效日、操作说明和可能影响执行的法院命令。"
+        "name": "最终删除这一条",
+        "headline": "每次延期都可能重新审资格",
+        "assumption": "最终规则删掉这一条并生效。",
+        "effects": "情况没变的延期也要准备更多材料，审查更严。",
+        "signals": "最终生效日期、USCIS 的操作说明，以及可能影响执行的法院命令。"
       },
       {
-        "name": "提案未推进或被修订",
-        "headline": "现行原则继续，关注最终边界",
-        "assumption": "没有最终删除规则，或最终条文保留部分尊重原则。",
-        "effects": "实际审理仍取决于现行规定或最终公布的修订内容，不能把提案预览当作结果。",
-        "signals": "撤回、修订或最终规则中的保留条款。"
+        "name": "提案搁置或修改",
+        "headline": "参照原则继续",
+        "assumption": "一直没出最终规则，或者最终条文保留了部分参照。",
+        "effects": "按现行规定，或按最终公布的修订内容审。",
+        "signals": "提案撤回、修改，或最终规则里保留的条款。"
       }
     ],
     "scope": [
       {
-        "label": "主要对象",
-        "text": "Form I-129 下相同当事方、相同基本事实的工作或停留延期请求。"
+        "label": "适用于",
+        "text": "雇主、员工和基本事实都没变的 I-129 工作签证延期。"
       },
       {
-        "label": "不是所有签证",
-        "text": "不能外推所有领事签证、I-539 家属延期或所有移民申请均适用同一变化。"
+        "label": "其他申请照旧",
+        "text": "领事馆签证、家属用 I-539 办的延期等其他申请，按各自的规定办。"
       },
       {
-        "label": "现行授权",
-        "text": "提案预览本身不终止已有批准、身份或工作许可。"
+        "label": "已有的批准",
+        "text": "已经批下来的身份和工作许可照常有效。"
       }
     ],
     "milestones": [
       {
         "date": "2026-10-13",
-        "text": "NPRM 预览公开，提议删除 8 CFR 214.1(c)(5)。"
+        "text": "提案在联邦公报上预先公开，提议删除 8 CFR 214.1(c)(5)。"
+      },
+      {
+        "date": "2026-10-14",
+        "text": "提案正式刊登（91 FR 65119），公众意见 11·13 截止。"
       }
     ],
     "next": [
       {
-        "date": "2026-10-14",
-        "text": "预定正式刊登；仍须核对刊登版本与具体评论日期。"
+        "date": "2026-11-13",
+        "text": "公众意见截止（美东时间午夜前），在 regulations.gov 的案卷 USCIS-2026-0529 下提交。"
       },
       {
         "date": "日期未定",
-        "text": "预览要求刊登后 30 天内评论；最终规则及生效日尚未确定。"
+        "text": "DHS 审阅意见后，决定最终条文和生效日期。",
+        "estimate": true
       }
     ],
     "process": {
-      "detail": "NPRM 预览已公开，等待正式刊登；OIRA 审查历史未独立核实。",
-      "currentSummary": "提案预览公开，尚未改变现行审理规则",
-      "waitingFor": "正式刊登、评论窗口及后续最终规则。"
+      "detail": "提案 10·14 正式刊登，公众意见 11·13 截止。",
+      "currentSummary": "提案已公布，正在收集公众意见",
+      "waitingFor": "11·13 意见截止，之后看 DHS 会不会发最终规则。"
     }
   },
   "en": {
-    "title": "Proposed Removal of Deference to Prior Work-Petition Approvals",
-    "short": "Prior-Approval Deference",
-    "status": "NPRM preview public · publication scheduled October 14",
+    "title": "Proposed End to Deference to Prior Approvals in Work-Visa Renewals",
+    "short": "Renewal Deference",
+    "status": "Proposed rule · Comments due November 13",
     "effectLabel": "Not in effect · Current rules unchanged",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "DHS proposes removing general deference to prior eligibility approvals in Form I-129 requests involving the same parties and underlying facts, allowing renewed eligibility review. The proposal preview is public but not in effect.",
+    "tldr": "When the first three years of an H-1B run out, the employer files another I-129 to extend it. Today, if the employer, worker and job are the same, USCIS generally follows its earlier approval instead of starting over. DHS proposes ending that, so every extension can be reviewed from scratch. The proposal was published October 14 and comments close November 13. It is not in effect; extensions work as before for now.",
     "tags": [
       "Work-petition renewals",
       "I-129",
       "Eligibility review"
     ],
-    "summary": "DHS proposes removing 8 CFR 214.1(c)(5), which generally requires USCIS to defer to prior eligibility determinations in Form I-129 requests involving the same parties and underlying facts. The October 13 NPRM preview is scheduled for October 14 publication; it is not a final rule.",
-    "audience": "Nonimmigrant workers and petitioners extending employment or stay through Form I-129, including H-1B, L-1, O-1 and E or TN requests using that form.",
-    "caveat": "The proposal does not automatically deny renewals or cancel existing approvals or status. Current deference already has material-error, changed-facts and new-information exceptions, and petitioners must still establish eligibility.",
-    "reviewNote": "The 46-page official preview, public-inspection record and regulatory source of current deference were reviewed October 13. Formal publication has not occurred; the preview leaves the comment date as 30 days after publication, not a confirmed calendar deadline. The live Regulations.gov docket was blocked and the OIRA RIN search returned no record; complete review history, later guidance and litigation remain unverified.",
-    "background": "Current 8 CFR 214.1(c)(5) generally requires deference to prior eligibility determinations for I-129 requests with the same parties and underlying facts. It does not remove the evidence burden and allows reconsideration for material error, material changes or new material information.\nRIN 1615-AD26 proposes removing and reserving that paragraph to support independent eligibility review and the burden of proof. It is separate from broader H-1B reform RIN 1615-AD00, which remains under OIRA review.",
-    "teaser": "A prior approval could become a less stable foundation for a later renewal.",
-    "headline": "Renewals may require more evidence; prior approval does not guarantee a future outcome.",
-    "analysis": "If finalized as previewed, renewals for the same employer and job may require fuller explanations of the position and worker’s eligibility. Evidence requests, preparation time and uncertainty could increase, but the preview does not mandate denial of every renewal or establish individual denial probabilities.",
+    "summary": "Form I-129 is the petition employers file for H-1B, L-1, O-1 and other work visas, both the first time and for extensions. The current regulation, 8 CFR 214.1(c)(5), says that when an extension involves the same employer, worker and basic facts, USCIS generally follows its earlier decision. DHS proposes deleting that provision so USCIS decides eligibility fresh each time. The proposal was published October 14 (91 FR 65119), and anyone can comment until November 13.",
+    "audience": "Work-visa holders extending through Form I-129 and their employers: H-1B, L-1, O-1, and E or TN cases filed on that form. For F-1 students, this matters when a future H-1B reaches its first three-year extension.",
+    "caveat": "Extensions are still decided on their merits, meaning on the evidence submitted, and approvals and status you already have stay valid.",
+    "background": "Current 8 CFR 214.1(c)(5) is a “follow the earlier approval” rule, known as deference. When an I-129 extension involves the same employer, worker and basic facts, USCIS generally keeps its earlier finding on eligibility, so a new officer does not overturn it on a whim. There are exceptions: USCIS can look again if the earlier approval was a mistake, the facts changed materially or important new information appears. Applicants still submit evidence every time.\nThis proposal (RIN 1615-AD26) would delete that provision entirely. DHS’s reasoning is that each petition should be reviewed on its own, with the applicant proving eligibility. It moves separately from the broader H-1B reform (#07, RIN 1615-AD00) still under OIRA review.\nThe proposal is now in its public comment period. After comments close, DHS must read and respond to them before deciding the final text. Extension reviews change only after a final rule is published and takes effect.",
+    "teaser": "Being approved last time may no longer carry over to your extension.",
+    "headline": "Extensions may need to prove eligibility from scratch.",
+    "analysis": "If adopted as proposed, the most direct change is that even a same-employer, same-job extension could require a full new case: why the position qualifies for H-1B and why you qualify for it. USCIS would likely send more requests for evidence (letters asking for more documents), and preparation time and legal fees could go up. Your current H-1B stays valid.",
     "impacts": [
       {
-        "title": "For workers: renewal may require proving eligibility again",
-        "text": "A prior approval can still be submitted, but the regulatory requirement of general deference would be removed.",
+        "title": "For workers: you may have to prove yourself again at extension time",
+        "text": "You can still attach the earlier approval notice, but USCIS would no longer have to follow it.",
         "examples": [
-          "A same-employer, same-position renewal may need renewed evidence about qualifications and job duties. Publication of this preview does not end the worker’s existing H-1B."
+          "Li has the same job at the same company, and his first three H-1B years are nearly up, so the company files an extension. Under the proposal, the officer could ask again for his degree, job duties and how the two connect, just like a first petition. Li’s current H-1B stays valid."
         ]
       },
       {
-        "title": "For employers: evidence and review burdens may grow",
-        "text": "Preparation costs, evidence requests and uncertainty may increase, depending on final text and implementation guidance.",
+        "title": "For employers: more paperwork and scrutiny",
+        "text": "Preparation costs, evidence requests and uncertainty all go up. How much depends on the final text and USCIS instructions.",
         "examples": [
-          "A previously approved L-1 or other I-129 renewal cannot rely on the old approval to guarantee an outcome; the proposal does not mandate an evidence request in every case."
+          "A company that got an L-1 approved for an employee now files to extend it. Under the proposal, the earlier approval no longer carries weight, so the company prepares a case as full as the first one and is more likely to get an evidence request."
         ]
       }
     ],
-    "outlook": "First check formal publication, the 30-day comment window and final text. Only a later final rule and its effective provisions can establish when actual adjudication requirements change.",
+    "outlook": "Watch what DHS finalizes after comments close November 13. Until a final rule takes effect, extensions are still reviewed with deference to earlier approvals.",
     "scenarios": [
       {
-        "name": "Proposal enters comments",
-        "headline": "Current deference continues while evidence burdens are assessed",
-        "assumption": "Formal publication opens comments without an effective final rule.",
-        "effects": "Employers can assess the proposal; current renewals remain governed by existing regulations.",
-        "signals": "Formal NPRM date, comment deadline and explanatory text."
+        "name": "During the comment period",
+        "headline": "Deference continues for now; assess the impact",
+        "assumption": "The proposal is open for comment; there is no final rule.",
+        "effects": "Extensions filed now are decided under current rules; employers can use the time to assess the impact.",
+        "signals": "The comment deadline and DHS’s explanation of the proposal."
       },
       {
-        "name": "Paragraph removed by a final rule",
-        "headline": "Eligibility may be reviewed anew on each request",
-        "assumption": "A final rule removes the paragraph and becomes effective under its published terms.",
-        "effects": "Same-facts renewals may face additional preparation and scrutiny, not automatic denial.",
-        "signals": "Final effective date, operational guidance and any court orders affecting implementation."
+        "name": "Provision deleted",
+        "headline": "Every extension may be reviewed from scratch",
+        "assumption": "A final rule deletes the provision and takes effect.",
+        "effects": "Even extensions with unchanged facts need more preparation and face closer review.",
+        "signals": "The final start date, USCIS instructions and any court orders affecting it."
       },
       {
-        "name": "Proposal stalls or is revised",
-        "headline": "Current deference continues while final boundaries remain open",
-        "assumption": "No final removal rule is issued, or final text retains some deference.",
-        "effects": "Adjudication remains governed by current provisions or the eventual published revision; the preview is not the outcome.",
-        "signals": "Withdrawal, revisions or retained provisions in a final rule."
+        "name": "Proposal stalls or changes",
+        "headline": "Deference continues",
+        "assumption": "No final rule comes out, or the final text keeps some deference.",
+        "effects": "Cases are decided under current rules or the eventual final version.",
+        "signals": "A withdrawal, revisions or provisions kept in a final rule."
       }
     ],
     "scope": [
       {
-        "label": "Principal coverage",
-        "text": "Form I-129 employment or stay extensions involving the same parties and underlying facts."
+        "label": "Applies to",
+        "text": "Form I-129 work-visa extensions with the same employer, worker and basic facts."
       },
       {
-        "label": "Not all visas",
-        "text": "Do not extend this change to all consular visas, I-539 dependent extensions or all immigration applications."
+        "label": "Other filings",
+        "text": "Consular visas, family extensions on Form I-539 and other applications follow their own rules."
       },
       {
-        "label": "Existing authorization",
-        "text": "The proposal preview does not terminate existing approvals, status or employment authorization."
+        "label": "Existing approvals",
+        "text": "Approvals, status and work authorization you already have stay valid."
       }
     ],
     "milestones": [
       {
         "date": "2026-10-13",
-        "text": "NPRM preview released, proposing removal of 8 CFR 214.1(c)(5)."
+        "text": "The proposal was posted for public inspection in the Federal Register, proposing to delete 8 CFR 214.1(c)(5)."
+      },
+      {
+        "date": "2026-10-14",
+        "text": "The proposal was published (91 FR 65119); comments close November 13."
       }
     ],
     "next": [
       {
-        "date": "2026-10-14",
-        "text": "Publication scheduled; verify the published version and exact comment date."
+        "date": "2026-11-13",
+        "text": "Public comments due before midnight Eastern Time, filed on regulations.gov under docket USCIS-2026-0529."
       },
       {
         "date": "Date unknown",
-        "text": "The preview calls for comments within 30 days after publication; final text and an effective date are undetermined."
+        "text": "After reviewing comments, DHS decides the final text and start date.",
+        "estimate": true
       }
     ],
     "process": {
-      "detail": "The NPRM preview is public and awaits formal publication; OIRA review history was not independently verified.",
-      "currentSummary": "Proposal preview public; current adjudication rules unchanged",
-      "waitingFor": "Formal publication, comments and a later final rule."
+      "detail": "The proposal was published October 14; public comments close November 13.",
+      "currentSummary": "Proposal published; public comments open",
+      "waitingFor": "Comments close November 13; then whether DHS issues a final rule."
     }
   }
 };
