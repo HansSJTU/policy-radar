@@ -16,7 +16,9 @@ export function languageAlternates(path: string, language: Language) {
     languages: {
       'zh-CN': localizedPageUrl(path, 'zh'),
       en: localizedPageUrl(path, 'en'),
-      'x-default': POLICY_SITE_URL + path,
+      // The bare path canonicalizes to the English page, and search engines
+      // ignore hreflang targets that are not canonical.
+      'x-default': localizedPageUrl(path, 'en'),
     },
   };
 }

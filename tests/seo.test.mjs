@@ -17,9 +17,31 @@ test('gives each language its own canonical URL and names both versions', () => 
     languages: {
       'zh-CN': `${POLICY_SITE_URL}/updates?lang=zh`,
       en: `${POLICY_SITE_URL}/updates?lang=en`,
-      'x-default': `${POLICY_SITE_URL}/updates`,
+      'x-default': `${POLICY_SITE_URL}/updates?lang=en`,
     },
   });
+});
+
+test('points every hreflang alternate at a canonical URL', () => {
+  const canonicals = new Set(sitemap().map((entry) => entry.url));
+  for (const entry of sitemap()) {
+    for (const url of Object.values(entry.alternates.languages)) {
+      assert.ok(canonicals.has(url), url);
+    }
+  }
+});
+
+test('renders metadata in <head> for every visitor, crawlers and the prerender included', async () => {
+  const { default: config } = await import('../next.config.ts');
+  for (const agent of [
+    'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15',
+    'policy-radar-prerender',
+  ]) {
+    assert.match(agent, config.htmlLimitedBots, agent);
+  }
+  const prerender = await readFile(new URL('../scripts/prerender-static.mjs', import.meta.url), 'utf8');
+  assert.match(prerender, /'user-agent': 'policy-radar-prerender'/);
 });
 
 test('lists the home page, every policy and the update log in both languages', () => {

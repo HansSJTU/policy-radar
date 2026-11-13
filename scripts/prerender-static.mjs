@@ -61,7 +61,12 @@ async function render(origin, outDir, { language, source, file }) {
       // who already chose it, so `<html lang>` matches the page.
       const response = await fetch(origin + source, {
         redirect: 'manual',
-        headers: { cookie: `${LANGUAGE_COOKIE}=${language}` },
+        // A request without a User-Agent gets metadata streamed into
+        // `<body>`; next.config.ts puts it in `<head>` for any named agent.
+        headers: {
+          cookie: `${LANGUAGE_COOKIE}=${language}`,
+          'user-agent': 'policy-radar-prerender',
+        },
       });
       const body = Buffer.from(await response.arrayBuffer());
       if (response.status === 200 && isComplete(file, body)) {
