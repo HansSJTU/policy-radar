@@ -93,3 +93,37 @@ export function isEnglish(language: Language): boolean {
 export function brandHomeLabel(language: Language): string {
   return language === 'en' ? 'Policy Radar home' : '政策雷达首页';
 }
+
+// The language a page renders in: an explicit `?lang=` first, then the saved
+// choice, then a Chinese-community referrer, then the browser's languages.
+// Shared by the page renderer and the Worker that serves prebuilt pages.
+export function resolveLanguage(sources: {
+  explicit?: string | null;
+  saved?: string | null;
+  referrer?: string | null;
+  acceptLanguage?: string | null;
+}): Language {
+  return (
+    parseLanguage(sources.explicit) ??
+    parseLanguage(sources.saved) ??
+    languageFromReferrer(sources.referrer) ??
+    languageFromAcceptLanguage(sources.acceptLanguage)
+  );
+}
+
+export function cookieValue(
+  cookieHeader: string | null | undefined,
+  name: string,
+): string | undefined {
+  for (const part of (cookieHeader ?? '').split(';')) {
+    const separator = part.indexOf('=');
+    if (separator < 0 || part.slice(0, separator).trim() !== name) continue;
+    const value = part.slice(separator + 1).trim();
+    try {
+      return decodeURIComponent(value);
+    } catch {
+      return value;
+    }
+  }
+  return undefined;
+}

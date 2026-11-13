@@ -3,7 +3,7 @@
   "name": "policy-radar",
   "compatibility_date": "2026-08-31",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "vinext/server/fetch-handler",
+  "main": "worker/index.ts",
   "workers_dev": true,
   "routes": [
     { "pattern": "stayradar.org", "custom_domain": true },
@@ -12,7 +12,8 @@
   "assets": {
     "directory": "dist/client",
     "not_found_handling": "none",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "run_worker_first": ["/__static/*"]
   },
   "d1_databases": [
     {

@@ -65,11 +65,14 @@ npm run build
 1. Create a D1 database named `policy-radar-db`.
 2. Set its ID in `wrangler.jsonc` at `d1_databases[0].database_id`.
 3. Authenticate with Wrangler, or provide `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
-4. Deploy:
+4. Build, then deploy:
 
 ```bash
+npm run build
 npm run deploy
 ```
+
+`npm run build` also renders the home page, the updates page, each policy page and the link-preview images into `dist/client/__static` by running the built Worker locally. The Worker serves those files directly, so these pages cost almost no CPU per request; `/radar` and `/stats` read D1 and are still rendered per request.
 
 GitHub Actions uses repository secrets with the same names. Pull requests and non-`main` branch pushes run tests and build the project without deploying. A push to `main` validates the project and deploys the Worker.
 

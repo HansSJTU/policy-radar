@@ -6,10 +6,10 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "build": "vinext build && node --experimental-strip-types scripts/prerender-static.mjs",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "deploy": "vinext-cloudflare deploy",
+    "deploy": "vinext-cloudflare deploy --skip-build",
     "lint": "oxlint",
     "format": "oxfmt"
   },

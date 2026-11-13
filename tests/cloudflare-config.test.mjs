@@ -38,7 +38,12 @@ test('package exposes native Cloudflare build and deploy commands', () => {
     packageJson.devDependencies['@vinext/cloudflare'],
     packageJson.dependencies.vinext,
   );
-  assert.equal(packageJson.scripts.deploy, 'vinext-cloudflare deploy');
+  // The build also prerenders static pages, so deploy reuses its output.
+  assert.match(packageJson.scripts.build, /^vinext build && .*prerender-static/);
+  assert.equal(
+    packageJson.scripts.deploy,
+    'vinext-cloudflare deploy --skip-build',
+  );
 });
 
 test('Vite uses the native Cloudflare plugin without Sites wiring', () => {
@@ -51,7 +56,7 @@ test('Vite uses the native Cloudflare plugin without Sites wiring', () => {
 test('Wrangler config serves app routes and binds both analytics stores', () => {
   assert.ok(wranglerConfig, 'wrangler.jsonc must exist');
   assert.equal(wranglerConfig.name, 'policy-radar');
-  assert.equal(wranglerConfig.main, 'vinext/server/fetch-handler');
+  assert.equal(wranglerConfig.main, 'worker/index.ts');
   assert.equal(wranglerConfig.workers_dev, true);
   assert.deepEqual(wranglerConfig.routes, [
     { pattern: 'stayradar.org', custom_domain: true },
@@ -62,6 +67,7 @@ test('Wrangler config serves app routes and binds both analytics stores', () => 
     directory: 'dist/client',
     not_found_handling: 'none',
     binding: 'ASSETS',
+    run_worker_first: ['/__static/*'],
   });
   assert.equal(wranglerConfig.d1_databases.length, 1);
   assert.equal(wranglerConfig.d1_databases[0].binding, 'DB');
