@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "policy-radar-dev",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["POLICY_RADAR_LOCAL_COMPAT_DATE=2026-05-22", "npm", "run", "dev", "--", "--port", "5173", "--strictPort"],
+      "port": 5173
+    },
+    {
+      "name": "policy-radar-prod",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["wrangler", "dev", "--config", "dist/server/wrangler.json", "--port", "8787", "--compatibility-date", "2026-05-22"],
+      "port": 8787
+    }
+  ]
+}
