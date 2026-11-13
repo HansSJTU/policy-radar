@@ -1,21 +1,14 @@
 import type { Metadata } from 'next';
-import { env } from 'cloudflare:workers';
 import { resolveRequestLanguage } from '../language-server';
 import { SITE_UPDATED_ON } from '../policy-freshness';
-import { getGenuinePolicyImpactAggregates } from '../../db/policy-ratings';
 import { buildPersonalPolicies } from './personal-radar-data';
-import {
-  DEFAULT_PROFILE,
-  isSector,
-  type RadarProfile,
-} from './personal-radar-model';
 import PersonalRadar from './personal-radar';
 import './personal-radar.css';
 
+// Built once per deploy (see app/static-pages.ts). The browser reads the
+// profile from the address, loads live votes and applies today's date.
 export const dynamic = 'force-dynamic';
-type PageProps = {
-  searchParams?: Promise<{ lang?: string; stage?: string; goal?: string }>;
-};
+type PageProps = { searchParams?: Promise<{ lang?: string }> };
 
 export async function generateMetadata({
   searchParams,
@@ -34,33 +27,13 @@ export async function generateMetadata({
 }
 
 export default async function Page({ searchParams }: PageProps) {
-  const parameters = await searchParams;
-  const language = await resolveRequestLanguage(parameters?.lang);
-  const initialProfile: RadarProfile = {
-    stage: isSector(parameters?.stage)
-      ? parameters.stage
-      : DEFAULT_PROFILE.stage,
-    goal:
-      parameters?.goal === 'none' || isSector(parameters?.goal)
-        ? parameters.goal
-        : DEFAULT_PROFILE.goal,
-  };
-  const ratings = await getGenuinePolicyImpactAggregates(env.DB).catch(
-    () => null,
-  );
+  const language = await resolveRequestLanguage((await searchParams)?.lang);
   const today = new Date().toISOString().slice(0, 10);
   return (
     <PersonalRadar
       language={language}
-      entries={buildPersonalPolicies(language, ratings, today)}
+      entries={buildPersonalPolicies(language, undefined, today)}
       checkedOn={SITE_UPDATED_ON}
-      initialProfile={initialProfile}
-      explicitProfile={
-        isSector(parameters?.stage) ||
-        parameters?.goal === 'none' ||
-        isSector(parameters?.goal)
-      }
-      ratingsUnavailable={ratings === null}
     />
   );
 }

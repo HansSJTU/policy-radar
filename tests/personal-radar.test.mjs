@@ -25,6 +25,7 @@ import {
   placePolicies,
   profileFromRange,
   radarGeometry,
+  refreshRadarEntry,
   routeRange,
   SECTOR_KEYS,
   SECTOR_STEP,
@@ -336,5 +337,28 @@ test('server-rendered facts have the same aligned schema in both languages', asy
     assert.match(html, /pr-fact-sub/);
     assert.match(html, /AI/);
     assert.doesNotMatch(html, /½|1½/);
+  }
+});
+
+test('the browser brings deploy-time radar entries up to date', () => {
+  const ratings = {
+    'opt-fee': { average: 7.4, count: 12 },
+    'h1b-fee': { average: 9, count: 3 },
+  };
+  for (const language of ['zh', 'en']) {
+    const built = buildPersonalPolicies(language, undefined, '2026-09-30');
+    assert.ok(built.every((p) => p.genuineCount === undefined));
+    assert.ok(built.every((p) => p.score === p.estimateScore));
+    for (const { today, votes } of [
+      { today: '2026-11-13', votes: ratings },
+      { today: '2027-06-01', votes: {} },
+      { today: '2040-01-01', votes: null },
+    ]) {
+      assert.deepEqual(
+        built.map((p) => refreshRadarEntry(p, votes, today, language)),
+        buildPersonalPolicies(language, votes, today),
+        `${language} ${today}`,
+      );
+    }
   }
 });

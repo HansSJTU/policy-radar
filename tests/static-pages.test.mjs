@@ -35,9 +35,9 @@ test('reads one cookie from a Cookie header', () => {
 
 test('every prebuilt file is rendered from a request that maps back to it', () => {
   const files = staticFiles();
-  // Home and updates, plus each policy page for every return path, and
+  // Home, updates and radar, each policy page for every return path, and
   // the link-preview images, in both languages.
-  assert.equal(files.length, 2 * (5 + 1 + 1 + POLICY_IDS.length * 6));
+  assert.equal(files.length, 2 * (5 + 1 + 1 + 1 + POLICY_IDS.length * 6));
   assert.equal(new Set(files.map((entry) => entry.file)).size, files.length);
   for (const { language, source, file } of files) {
     const asset = assetFor(source, {
@@ -59,6 +59,10 @@ test('serves pages in the reader language without a lang parameter', () => {
     }),
     '/__static/en/policies/opt-fee-all',
   );
+  assert.equal(
+    assetFor('/radar?stage=opt&goal=none', { 'accept-language': 'zh-CN' }),
+    '/__static/zh/radar',
+  );
   // Link-preview images ignore the reader and default to Chinese.
   assert.equal(
     assetFor('/share-image', { 'accept-language': 'en-US' }),
@@ -67,7 +71,6 @@ test('serves pages in the reader language without a lang parameter', () => {
 });
 
 test('leaves dynamic requests to the renderer', () => {
-  assert.equal(assetFor('/radar?lang=zh'), null);
   assert.equal(assetFor('/stats'), null);
   assert.equal(assetFor('/policies/not-a-policy'), null);
   assert.equal(assetFor('/policies/not-a-policy/share-image'), null);

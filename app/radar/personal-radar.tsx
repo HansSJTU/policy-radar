@@ -22,17 +22,21 @@ import PersonalRadarChart, { policyStyle } from './personal-radar-chart';
 import { personalRadarCopy } from './personal-radar-copy';
 import {
   arcLabels,
+  DEFAULT_PROFILE,
   impactLabel,
+  isSector,
   parseProfile,
   profileFromRange,
   PROFILE_STORAGE_KEY,
   routeRange,
   SECTOR_KEYS,
   sectorsInRange,
+  refreshRadarEntry,
   stageLabels,
   type RadarPolicy,
   type RadarProfile,
   type RadarRange,
+  type RatingMap,
 } from './personal-radar-model';
 
 type FactsProps = {
@@ -64,11 +68,13 @@ export function PolicyFacts(props: FactsProps) {
       label: ui.source,
       value: ai ? `${ui.ai} · ${ui.low}` : ui.community,
       sub:
-        p.genuineCount === null
-          ? ui.unavailable
-          : ai
-            ? ui.aiCount(p.genuineCount)
-            : ui.count(p.genuineCount),
+        p.genuineCount === undefined
+          ? ui.loading
+          : p.genuineCount === null
+            ? ui.unavailable
+            : ai
+              ? ui.aiCount(p.genuineCount)
+              : ui.count(p.genuineCount),
     },
     { label: ui.status, value: p.status },
     {
@@ -117,6 +123,29 @@ function storedProfile() {
     return null;
   }
 }
+// Read once per render; neither the address profile nor the date needs to
+// trigger a re-render on its own. A shared link names the profile in the
+// address: ?stage=…&goal=….
+function subscribeAddress() {
+  return () => {};
+}
+function addressQuery() {
+  return window.location.search;
+}
+function visitDate() {
+  return new Date().toISOString().slice(0, 10);
+}
+function profileFromAddress(search: string): RadarProfile | null {
+  const query = new URLSearchParams(search);
+  const stage = query.get('stage'),
+    goal = query.get('goal');
+  const validGoal = goal === 'none' || isSector(goal);
+  if (!isSector(stage) && !validGoal) return null;
+  return {
+    stage: isSector(stage) ? stage : DEFAULT_PROFILE.stage,
+    goal: validGoal ? (goal as RadarProfile['goal']) : DEFAULT_PROFILE.goal,
+  };
+}
 function readProfile(raw: string | null) {
   try {
     return parseProfile(JSON.parse(raw ?? 'null'));
@@ -126,18 +155,13 @@ function readProfile(raw: string | null) {
 }
 export default function PersonalRadar({
   language,
-  entries,
+  entries: builtEntries,
   checkedOn,
-  initialProfile,
-  explicitProfile,
-  ratingsUnavailable,
 }: {
   language: Language;
+  // Built at deploy time, before votes are known.
   entries: RadarPolicy[];
   checkedOn: string;
-  initialProfile: RadarProfile;
-  explicitProfile: boolean;
-  ratingsUnavailable: boolean;
 }) {
   const ui = personalRadarCopy[language];
   const root = useRef<HTMLDivElement>(null),
@@ -148,14 +172,55 @@ export default function PersonalRadar({
     storedProfile,
     () => null,
   );
+  const address = useSyncExternalStore(
+    subscribeAddress,
+    addressQuery,
+    () => '',
+  );
   const [localProfile, setProfile] = useState<RadarProfile | null>(null);
   const profile = useMemo(
     () =>
       localProfile ??
-      (explicitProfile
-        ? initialProfile
-        : (readProfile(saved) ?? initialProfile)),
-    [localProfile, explicitProfile, initialProfile, saved],
+      profileFromAddress(address) ??
+      readProfile(saved) ??
+      DEFAULT_PROFILE,
+    [localProfile, address, saved],
+  );
+  // undefined while loading, null when the votes could not be read.
+  const [ratings, setRatings] = useState<RatingMap | null | undefined>(
+    undefined,
+  );
+  // The visit date in the browser; null while rendering the built page.
+  const today = useSyncExternalStore(subscribeAddress, visitDate, () => null);
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/policy-ratings?votes=genuine', {
+      credentials: 'same-origin',
+      headers: { Accept: 'application/json' },
+    })
+      .then(async (response) => {
+        if (!response.ok) throw new Error('Rating service unavailable');
+        const payload = (await response.json()) as { ratings?: unknown };
+        if (!payload.ratings || typeof payload.ratings !== 'object')
+          throw new Error('Invalid rating response');
+        if (!cancelled) setRatings(payload.ratings as RatingMap);
+      })
+      .catch(() => {
+        if (!cancelled) setRatings(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  const ratingsUnavailable = ratings === null;
+  const entries = useMemo(
+    () =>
+      today === null
+        ? builtEntries
+        : builtEntries.map((entry) =>
+            refreshRadarEntry(entry, ratings, today, language),
+          ),
+    [builtEntries, ratings, today, language],
   );
   const [preview, setPreview] = useState<RadarRange | null>(null);
   const [showAll, setShowAll] = useState(true);
@@ -565,9 +630,11 @@ export default function PersonalRadar({
                         /10
                       </strong>
                       <span className="pr-small-count">
-                        {entry.genuineCount === null
-                          ? ui.unavailable
-                          : ui.count(entry.genuineCount)}
+                        {entry.genuineCount === undefined
+                          ? ui.loading
+                          : entry.genuineCount === null
+                            ? ui.unavailable
+                            : ui.count(entry.genuineCount)}
                         {entry.scoreOrigin === 'ai' ? ` · ${ui.low}` : ''}
                       </span>
                     </span>

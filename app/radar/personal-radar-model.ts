@@ -27,9 +27,15 @@ export type RadarPolicy = {
   ring: Ring;
   score: number;
   scoreOrigin: 'community' | 'ai';
-  genuineCount: number | null;
+  // Real votes behind the score; null when ratings could not be read and
+  // undefined while they are still loading.
+  genuineCount: number | null | undefined;
+  // The editorial AI score, used until enough real votes come in.
+  estimateScore: number;
   scoreReason: string;
   timing: string;
+  // Timing label while the estimate window is still ahead; null once in force.
+  estimateTiming: string | null;
   timeReason: string;
   timeSources: SourceLink[];
   estimateBaseline: string | null;
@@ -130,6 +136,8 @@ export function dragBoundary(
   return { ...range, [edge]: next };
 }
 
+export type RatingMap = Record<string, { average: number; count: number }>;
+
 export function chooseImpact(
   rating: { average: number; count: number } | undefined | null,
   estimate: number,
@@ -197,6 +205,49 @@ export function addMonths(date: string, months: number): string {
 export function monthsUntil(date: string, today: string) {
   return (Date.parse(date) - Date.parse(today)) / ((86400000 * 365.25) / 12);
 }
+const elapsedTiming: Record<Language, string> = {
+  zh: '估计区间已过 · 待重新估计',
+  en: 'Estimate elapsed · review needed',
+};
+
+// The page is built when the site deploys. Votes and the visit date change
+// after that, so the browser applies them to each entry: `ratings` null means
+// the votes could not be read, undefined that they have not loaded yet.
+export function refreshRadarEntry(
+  entry: RadarPolicy,
+  ratings: RatingMap | null | undefined,
+  today: string,
+  language: Language,
+): RadarPolicy {
+  const impact =
+    ratings === undefined
+      ? {
+          score: entry.estimateScore,
+          scoreOrigin: 'ai' as const,
+          genuineCount: undefined,
+        }
+      : chooseImpact(
+          ratings === null ? null : ratings[entry.id],
+          entry.estimateScore,
+        );
+  if (entry.estimateTiming === null) return { ...entry, ...impact };
+  const dates = entry.estimateDates;
+  const placement = dates
+    ? forecastPlacement(dates, today)
+    : { ring: 0 as const, expired: false };
+  return {
+    ...entry,
+    ...impact,
+    ring: placement.ring,
+    estimateExpired: placement.expired,
+    timing: placement.expired ? elapsedTiming[language] : entry.estimateTiming,
+    estimateMonths:
+      dates && !placement.expired
+        ? [monthsUntil(dates[0], today), monthsUntil(dates[1], today)]
+        : null,
+  };
+}
+
 export function forecastPlacement(
   dates: [string, string],
   today: string,

@@ -39,6 +39,7 @@ export const personalRadarCopy = {
     veryLow: '极低置信度',
     count: (n: number) => `${n} 份真实评分`,
     aiCount: (n: number) => `${n}/10 份真实评分 · AI 分数不计入社区均分`,
+    loading: '正在读取社区评分',
     unavailable: '社区评分暂时不可用',
     unavailableNote: '暂时显示 AI 估计。',
     currentMatch: '匹配当前身份',
@@ -94,6 +95,7 @@ export const personalRadarCopy = {
     count: (n: number) => `${n} genuine ${n === 1 ? 'rating' : 'ratings'}`,
     aiCount: (n: number) =>
       `${n}/10 genuine ratings · AI excluded from community average`,
+    loading: 'Loading community ratings',
     unavailable: 'Community ratings temporarily unavailable',
     unavailableNote:
       'Showing AI estimates for now.',

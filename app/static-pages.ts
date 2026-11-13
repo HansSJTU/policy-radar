@@ -27,6 +27,9 @@ function homeFile(language: Language, path: PathFilter) {
 function updatesFile(language: Language) {
   return `${STATIC_DIR}/${language}/updates.html`;
 }
+function radarFile(language: Language) {
+  return `${STATIC_DIR}/${language}/radar.html`;
+}
 function policyFile(language: Language, id: string, from: PathFilter) {
   return `${STATIC_DIR}/${language}/policies/${id}-${from}.html`;
 }
@@ -49,6 +52,7 @@ export function staticFiles(): StaticFile[] {
         file: homeFile(language, path),
       })),
       { source: `/updates?lang=${language}`, file: updatesFile(language) },
+      { source: `/radar?lang=${language}`, file: radarFile(language) },
       { source: `/share-image?lang=${language}`, file: homeImageFile(language) },
       ...POLICY_IDS.flatMap((id) => [
         ...PATH_FILTERS.map((from) => ({
@@ -106,6 +110,10 @@ export function staticAssetFor(request: RequestLike): string | null {
   }
   if (pathname === '/updates') {
     return assetPath(updatesFile(language()));
+  }
+  // The radar reads its profile (?stage=, ?goal=) in the browser.
+  if (pathname === '/radar') {
+    return assetPath(radarFile(language()));
   }
   const pageMatch = /^\/policies\/([^/]+)$/.exec(pathname);
   if (pageMatch && isPolicyId(pageMatch[1])) {

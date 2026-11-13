@@ -5,10 +5,9 @@ import { policyHref } from '../policy-links.ts';
 import { RADAR_PLACEMENT } from './radar-model.ts';
 import {
   addMonths,
-  chooseImpact,
-  forecastPlacement,
-  monthsUntil,
+  refreshRadarEntry,
   type RadarPolicy,
+  type RatingMap,
 } from './personal-radar-model.ts';
 
 // Editorial AI estimates are separate from votes. Update deliberately when
@@ -151,7 +150,7 @@ const historySources = [
 
 export function buildPersonalPolicies(
   language: Language,
-  ratings: Record<string, { average: number; count: number }> | null,
+  ratings: RatingMap | null | undefined,
   today: string,
 ): RadarPolicy[] {
   const zh = language === 'zh';
@@ -166,9 +165,6 @@ export function buildPersonalPolicies(
             addMonths(estimateBaseline, estimate.months[1]),
           ]
         : null;
-    const placement = dates
-      ? forecastPlacement(dates, today)
-      : { ring: 0 as const, expired: false };
     const litigation = policy.id === 'duration-status';
     const longTerm = policy.id === 'h4-ead';
     const timeReason = litigation
@@ -176,7 +172,7 @@ export function buildPersonalPolicies(
         ? '法院没有给恢复执行的日期。6–24 个月是假设官司最终允许执行时的 AI 估计；紧急裁定可能更早，也可能一直不执行。'
         : 'The court has set no restart date. Six to twenty-four months is an AI estimate assuming the courts eventually allow the rule; an emergency ruling could come sooner, or it might never be enforced.'
       : `${longTerm ? (zh ? '还在长期计划里，没有提案日期，后面还要走完整规则程序；18–36 个月是假设推进时的估计。' : 'It is on the long-term plan with no proposal date and still needs full rulemaking; eighteen to thirty-six months is an estimate if it moves forward. ') : ''}${history[language]}`;
-    return {
+    const entry: RadarPolicy = {
       id: policy.id,
       number: policy.rank,
       title: policy.short,
@@ -189,11 +185,11 @@ export function buildPersonalPolicies(
       sources: policy.sources,
       sector: RADAR_PLACEMENT[policy.id].sector,
       inForce,
-      ring: placement.ring,
-      ...chooseImpact(
-        ratings === null ? null : ratings[policy.id],
-        estimate.score,
-      ),
+      ring: 0,
+      score: estimate.score,
+      scoreOrigin: 'ai',
+      genuineCount: undefined,
+      estimateScore: estimate.score,
       scoreReason: estimate.why[language],
       timing: inForce
         ? policy.effectState === 'executive-order-issued'
@@ -203,11 +199,10 @@ export function buildPersonalPolicies(
           : zh
             ? '已在执行'
             : 'In force'
-        : placement.expired
-          ? zh
-            ? '估计区间已过 · 待重新估计'
-            : 'Estimate elapsed · review needed'
-          : `${zh ? (litigation ? 'AI 情景' : 'AI 预估') : 'AI estimate'} · ${dates?.[0].slice(0, 7)} – ${dates?.[1].slice(0, 7)}`,
+        : '',
+      estimateTiming: inForce
+        ? null
+        : `${zh ? (litigation ? 'AI 情景' : 'AI 预估') : 'AI estimate'} · ${dates?.[0].slice(0, 7)} – ${dates?.[1].slice(0, 7)}`,
       timeReason: inForce ? policy.caveat : timeReason,
       timeSources:
         inForce || litigation
@@ -215,16 +210,14 @@ export function buildPersonalPolicies(
           : historySources.map((s) => ({ label: s[language], href: s.href })),
       estimateBaseline: dates ? estimateBaseline : null,
       estimateDates: dates,
-      estimateMonths:
-        dates && !placement.expired
-          ? [monthsUntil(dates[0], today), monthsUntil(dates[1], today)]
-          : null,
+      estimateMonths: null,
       timeConfidence: dates
         ? litigation || longTerm
           ? 'very-low'
           : 'low'
         : null,
-      estimateExpired: placement.expired,
+      estimateExpired: false,
     };
+    return refreshRadarEntry(entry, ratings, today, language);
   });
 }

@@ -1,16 +1,27 @@
 import { isInvalidJsonRequest } from './api-request';
 import { parseCommunityRating } from './community-impact-model';
 import {
+  getGenuinePolicyImpactAggregates,
   getPolicyImpactAggregates,
   savePolicyImpactRating,
 } from '../db/policy-ratings';
 
 const noStoreHeaders = { 'Cache-Control': 'no-store' };
 
-export async function getPolicyRatingsResponse(db: D1Database) {
+// `?votes=genuine` leaves out the launch seeds; the personal radar uses it.
+export async function getPolicyRatingsResponse(
+  db: D1Database,
+  request?: Request,
+) {
+  const genuine =
+    request && new URL(request.url).searchParams.get('votes') === 'genuine';
   try {
     return Response.json(
-      { ratings: await getPolicyImpactAggregates(db) },
+      {
+        ratings: genuine
+          ? await getGenuinePolicyImpactAggregates(db)
+          : await getPolicyImpactAggregates(db),
+      },
       { headers: noStoreHeaders },
     );
   } catch {
