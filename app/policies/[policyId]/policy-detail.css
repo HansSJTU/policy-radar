@@ -341,17 +341,15 @@
 .pd-rating-modal-dialog:not([open]) {
   display: none;
 }
+/* The native backdrop dims; the click layer above it blurs. */
 .pd-rating-modal-dialog::backdrop {
-  background: rgb(16 29 51 / 48%);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: var(--scrim);
 }
 .pd-rating-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgb(16 29 51 / 48%);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: var(--scrim-filter);
+  backdrop-filter: var(--scrim-filter);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   z-index: 1;
@@ -375,12 +373,14 @@
 .pd-rating-modal-sheet {
   position: relative;
   z-index: 2;
-  background: var(--paper);
+  background: var(--glass-sheen), var(--glass-strong);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
   width: 100%;
   max-width: 520px;
   border-radius: var(--r-lg) var(--r-lg) 0 0;
   padding: 16px 18px max(24px, env(safe-area-inset-bottom, 24px));
-  box-shadow: var(--elev-3);
+  box-shadow: var(--glass-edge), var(--elev-3);
   animation: pd-modal-slide-up var(--motion-slow) var(--motion-ease);
   cursor: default;
 }
@@ -1457,12 +1457,6 @@ fieldset.pd-scenarios {
 /* Phone contents, after WebNav's FloatingToc: a frosted reading pill at the bottom and a contents
    drawer from the left. Hidden from 801px, where the sidebar directory shows. */
 .policy-detail-page {
-  --pd-frost: color-mix(in srgb, var(--card) 62%, transparent);
-  --pd-frost-strong: color-mix(in srgb, var(--card) 78%, transparent);
-  --pd-frost-sheen: linear-gradient(to bottom, rgb(255 255 255 / 50%), rgb(255 255 255 / 0%) 64%);
-  --pd-frost-filter: blur(24px) saturate(1.8) brightness(1.04);
-  --pd-frost-edge: inset 0 1px 0 rgb(255 255 255 / 90%), inset 0 0 0 1px color-mix(in srgb, var(--ink) 9%, transparent);
-  --pd-frost-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 8%, transparent), 0 18px 40px -16px color-mix(in srgb, var(--ink) 32%, transparent);
   --pd-ease-spring: cubic-bezier(.3, 1.35, .5, 1);
 }
 .pd-read-progress, .pd-toc-pill, .pd-toc-sheet { display: none; }
@@ -1490,10 +1484,10 @@ fieldset.pd-scenarios {
     padding: 0 6px 0 16px;
     border: 0;
     border-radius: var(--r-full);
-    background: var(--pd-frost-sheen), var(--pd-frost);
-    -webkit-backdrop-filter: var(--pd-frost-filter);
-    backdrop-filter: var(--pd-frost-filter);
-    box-shadow: var(--pd-frost-edge), var(--pd-frost-shadow);
+    background: var(--glass-sheen), var(--glass);
+    -webkit-backdrop-filter: var(--glass-filter);
+    backdrop-filter: var(--glass-filter);
+    box-shadow: var(--glass-edge), var(--glass-shadow);
     color: var(--ink);
     font-size: 14px;
     text-align: start;
@@ -1521,11 +1515,11 @@ fieldset.pd-scenarios {
     padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
     border: 0;
     border-radius: 0 24px 24px 0;
-    background: var(--pd-frost-sheen), var(--pd-frost-strong);
-    -webkit-backdrop-filter: var(--pd-frost-filter);
-    backdrop-filter: var(--pd-frost-filter);
+    background: var(--glass-sheen), var(--glass-strong);
+    -webkit-backdrop-filter: var(--glass-filter);
+    backdrop-filter: var(--glass-filter);
     color: var(--ink);
-    box-shadow: var(--pd-frost-edge), 24px 0 60px -20px color-mix(in srgb, var(--ink) 30%, transparent);
+    box-shadow: var(--glass-edge), 24px 0 60px -20px color-mix(in srgb, var(--ink) 30%, transparent);
     transition: transform 240ms var(--motion-ease);
     touch-action: pan-y;
   }

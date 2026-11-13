@@ -52,9 +52,11 @@ main { width: 100%; min-width: 0; }
 }
 .glossary-popover {
   color: var(--ink);
-  background: var(--card);
-  border-color: var(--line);
-  box-shadow: var(--elev-3);
+  border: 0;
+  background: var(--glass-sheen), var(--glass-strong);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
+  box-shadow: var(--glass-edge), var(--elev-3);
   animation-duration: .12s !important;
   font-family: var(--font-ui);
 }

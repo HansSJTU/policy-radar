@@ -46,7 +46,7 @@
 .evidence-banner p { margin: 0; color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.7; }
 .empty-result { grid-column: 1 / -1; margin: 0; padding: 48px; color: var(--muted); text-align: center; }
 
-.evidence-modal-backdrop { position: fixed; inset: 0; z-index: 3000; padding: max(18px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); display: grid; place-items: center; background: rgb(16 29 51 / 56%); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); animation: evidence-fade-in var(--motion-base) var(--motion-ease) both; }
+.evidence-modal-backdrop { position: fixed; inset: 0; z-index: 3000; padding: max(18px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); display: grid; place-items: center; background: var(--scrim); -webkit-backdrop-filter: var(--scrim-filter); backdrop-filter: var(--scrim-filter); animation: evidence-fade-in var(--motion-base) var(--motion-ease) both; }
 .evidence-modal { position: relative; width: min(900px, 100%); max-height: min(90dvh, 940px); margin: 0; padding: 0; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: var(--r-lg); color: var(--ink); background: var(--card); box-shadow: var(--elev-3); animation: evidence-rise-in var(--motion-slow) var(--motion-ease) both; }
 .evidence-modal-backdrop.closing { pointer-events: none; animation: evidence-fade-out var(--motion-fast) ease-in both; }
 .evidence-modal-backdrop.closing .evidence-modal { animation: evidence-sink-out var(--motion-fast) ease-in both; }

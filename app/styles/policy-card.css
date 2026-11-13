@@ -29,14 +29,13 @@
 .flow-help summary { width: 18px; height: 18px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; color: var(--muted); background: var(--card); font-size: .6875rem; line-height: 1; list-style: none; cursor: pointer; transition: var(--motion-colors); }
 .flow-help summary::-webkit-details-marker { display: none; }
 .flow-help summary:hover, .flow-help[open] summary { color: var(--ink); border-color: var(--ink-soft); }
-.flow-popover { position: absolute; z-index: 70; top: calc(100% + 12px); left: -118px; width: min(410px, calc(100vw - 54px)); padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); background: var(--card); box-shadow: var(--elev-3); transform-origin: 130px 0; animation: popover-enter var(--motion-base) var(--motion-ease) both; }
-.flow-popover::before { content: ''; position: absolute; top: -6px; left: 122px; width: 10px; height: 10px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); background: var(--card); transform: rotate(45deg); }
-.flow-popover-head { padding-bottom: 12px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
+.flow-popover { position: absolute; z-index: 70; top: calc(100% + 12px); left: -118px; width: min(410px, calc(100vw - 54px)); padding: 18px; border: 0; border-radius: var(--radius); color: var(--ink); background: var(--glass-sheen), var(--glass-strong); -webkit-backdrop-filter: var(--glass-filter); backdrop-filter: var(--glass-filter); box-shadow: var(--glass-edge), var(--elev-3); transform-origin: 130px 0; animation: popover-enter var(--motion-base) var(--motion-ease) both; }
+.flow-popover-head { padding-bottom: 12px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 9%, transparent); }
 .flow-popover-head span { font-size: var(--fs-sm); font-weight: var(--w-strong); }
 .flow-popover-head strong { color: var(--ink-soft); font-size: var(--fs-2xs); font-weight: var(--w-normal); line-height: 1.5; text-align: right; }
 .flow-popover > p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.7; }
 .flow-popover .flow-meaning { margin: 12px 0 8px; }
-.flow-popover .flow-detail { margin: 0 0 14px; padding: 10px 12px; border-radius: var(--r-sm); background: var(--paper); }
+.flow-popover .flow-detail { margin: 0 0 14px; padding: 10px 12px; border-radius: var(--r-sm); background: var(--glass-hover); }
 .flow-popover ol { margin: 0; padding: 0; display: grid; gap: 8px; list-style: none; }
 .flow-popover li { display: grid; grid-template-columns: 22px 1fr; align-items: center; gap: 10px; }
 .flow-popover li > i { width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; color: var(--muted); background: var(--card); font: var(--fs-2xs)/1 var(--font-num); font-style: normal; }
@@ -212,7 +211,6 @@
 @media (max-width: 480px) {
   .flow-help { position: static; }
   .flow-popover { top: calc(100% + 10px); right: 0; left: 0; width: 100%; padding: 16px; }
-  .flow-popover::before { left: min(132px, calc(100% - 28px)); }
   .flow-popover-head { display: grid; grid-template-columns: 1fr; gap: 6px; }
   .flow-popover-head strong { text-align: left; }
   .flow-popover li > span { min-width: 0; }

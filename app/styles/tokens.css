@@ -55,6 +55,20 @@
   --elev-2: 0 1px 2px rgb(20 60 50 / 5%), 0 10px 28px rgb(20 60 50 / 8%);
   --elev-3: 0 2px 6px rgb(20 60 50 / 6%), 0 24px 60px rgb(20 60 50 / 18%);
 
+  /* Frosted glass, for layers that float over the page: the header, sticky bars, menus,
+     popovers and sheets. Cards in the page flow stay solid. --glass is the thin material,
+     --glass-strong the thicker one for panels that carry a lot of text. */
+  --glass: color-mix(in srgb, var(--card) 42%, transparent);
+  --glass-strong: color-mix(in srgb, var(--card) 62%, transparent);
+  --glass-sheen: linear-gradient(to bottom, rgb(255 255 255 / 32%), rgb(255 255 255 / 0%) 64%);
+  --glass-filter: blur(18px) saturate(1.8) brightness(1.04);
+  --glass-edge: inset 0 1px 0 rgb(255 255 255 / 90%), inset 0 0 0 1px color-mix(in srgb, var(--ink) 9%, transparent);
+  --glass-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 8%, transparent), 0 18px 40px -16px color-mix(in srgb, var(--ink) 32%, transparent);
+  --glass-hover: color-mix(in srgb, var(--ink) 5%, transparent);
+  /* The dim behind a modal sheet. */
+  --scrim: color-mix(in srgb, var(--ink) 26%, transparent);
+  --scrim-filter: blur(10px) saturate(1.4);
+
   /* Type. Monospace is for dates, identifiers and values only. */
   --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
   --font-num: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
@@ -99,4 +113,11 @@
 [data-path="H-1B"] { --path-color: var(--stage-h1b); --path-ink: var(--stage-h1b-ink); --path-bg: var(--stage-h1b-bg); }
 @media (max-width: 720px) {
   :root { --page-gutter: 16px; --site-header-height: 56px; }
+}
+/* Solid surfaces where the browser cannot blur, or the reader asked for less transparency. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root { --glass: var(--card); --glass-strong: var(--card); --glass-sheen: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  :root { --glass: var(--card); --glass-strong: var(--card); --glass-sheen: none; --glass-filter: none; --scrim-filter: none; }
 }

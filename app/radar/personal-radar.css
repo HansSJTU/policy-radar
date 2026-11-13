@@ -522,11 +522,13 @@
   width: 328px;
   max-width: calc(100% - 24px);
   padding: 16px;
-  border: 1px solid var(--pr-line);
+  border: 0;
   border-radius: var(--pr-radius);
-  background: var(--pr-white);
+  background: var(--glass-sheen), var(--glass-strong);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
   color: var(--pr-ink);
-  box-shadow: 0 8px 26px color-mix(in srgb, var(--pr-ink) 14%, transparent);
+  box-shadow: var(--glass-edge), 0 8px 26px color-mix(in srgb, var(--pr-ink) 14%, transparent);
   z-index: 20;
 }
 .pr .pr-hover-heading {

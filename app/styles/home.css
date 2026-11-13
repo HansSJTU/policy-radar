@@ -79,7 +79,7 @@
 .ranking-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; }
 .ranking-head h2 { margin: 0; font-size: var(--fs-h2); line-height: 1.25; }
 .ranking-hint { margin: 10px 0 0; color: var(--muted); font-size: var(--fs-sm); line-height: 1.65; }
-.path-console { position: sticky; top: calc(var(--site-header-height) + 12px); z-index: 25; min-width: 0; margin-top: 28px; padding: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: color-mix(in srgb, var(--card) 88%, transparent); -webkit-backdrop-filter: saturate(1.6) blur(14px); backdrop-filter: saturate(1.6) blur(14px); box-shadow: var(--elev-2); }
+.path-console { position: sticky; top: calc(var(--site-header-height) + 12px); z-index: 25; min-width: 0; margin-top: 28px; padding: 7px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 0; border-radius: var(--radius); background: var(--glass-sheen), var(--glass); -webkit-backdrop-filter: var(--glass-filter); backdrop-filter: var(--glass-filter); box-shadow: var(--glass-edge), var(--elev-2); }
 .path-controls { min-width: 0; max-width: 100%; margin: 0; padding: 0; display: flex; gap: 2px; border: 0; }
 .path-controls button { min-width: 0; min-height: 40px; padding: 0 14px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: var(--r-sm); color: var(--muted); background: transparent; font-size: var(--fs-sm); white-space: nowrap; transition: var(--motion-colors); }
 .path-label, .path-count { flex: 0 0 auto; white-space: nowrap; }
