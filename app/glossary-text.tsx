@@ -22,14 +22,10 @@ function GlossaryTerm({ entry }: { entry: GlossaryTermEntry }) {
         nativeButton={false}
         onClick={keepTapOnTerm}
         openOnHover
-        render={(
-          <abbr
-            aria-label={`${entry.value}：${entry.definition}`}
-            className="glossary-term"
-          >
-            {entry.value}
-          </abbr>
-        )}
+        // The definition lives in the popover, which opens on focus, hover or
+        // tap. Repeating it in an aria-label on every occurrence made the
+        // home page several hundred kilobytes heavier.
+        render={<abbr className="glossary-term">{entry.value}</abbr>}
       />
       <PopoverContent
         align="center"
