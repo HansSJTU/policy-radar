@@ -57,4 +57,5 @@ Write the way you would explain it to a friend. Explain a legal term the first t
 
 - Update `checkedOn` only for entries whose sources you actually reviewed, and `SITE_UPDATED_ON` in `app/policy-freshness.ts` when the site changes.
 - Add an update-log entry only for a change a reader would notice: a new event, a new school, a changed status. A routine re-check with no change needs no entry.
+- When a policy's status changes, reread its `searchTitle` and `searchDescription` (what Google shows) and fix any that no longer hold. Lead them with the words readers search for, such as "OPT fee" or "H-4 EAD".
 - Run `npm test`, `npm run lint` and `npm run build` before opening a PR.

@@ -43,6 +43,8 @@ export const prevailingWage: PolicyContent = {
   zh: {
     title: 'H-1B / PERM 最低工资要求拟上调',
     short: 'H-1B / PERM 最低工资',
+    searchTitle: "H-1B / PERM 最低工资拟上调：入门级门槛大幅提高",
+    searchDescription: "劳工部提议提高 H-1B 和 PERM 绿卡的最低工资线：入门级从同地区同职业约第 17 百分位提高到约第 34 百分位，其余三级也一起上调。",
     status: "最终规则送 OIRA 审查 · 尚未生效",
     effectLabel: '尚未生效',
     agency: 'DOL',
@@ -164,6 +166,8 @@ export const prevailingWage: PolicyContent = {
   en: {
     title: 'Proposed Increase to H-1B / PERM Wage Floors',
     short: 'H-1B / PERM Wage Floors',
+    searchTitle: "H-1B & PERM Prevailing Wage Increase: Higher DOL Wage Levels",
+    searchDescription: "DOL proposes raising the minimum wage employers must pay for H-1B and PERM green cards. The entry level moves from about the 17th to about the 34th percentile, and the other levels rise too.",
     status: "Final rule at OIRA · Not in effect",
     effectLabel: 'Not in effect',
     agency: 'DOL',

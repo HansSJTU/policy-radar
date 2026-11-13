@@ -98,3 +98,6 @@
   .school-tab-list { grid-template-columns: 1fr; }
   .school-tab-list button { justify-content: flex-start; padding: 0 12px; }
 }
+.school-index-link { margin-top: 12px; display: inline-flex; align-items: center; gap: 6px; color: var(--accent-ink); font-size: var(--fs-sm); font-weight: var(--w-strong); text-decoration: none; }
+.school-index-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.school-index-link svg { width: 14px; height: 14px; }

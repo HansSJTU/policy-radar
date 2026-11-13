@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { resolveLanguage, cookieValue } from '../app/language.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
+import { SCHOOL_IDS } from '../app/school-pages.ts';
 import { staticAssetFor, staticFiles } from '../app/static-pages.ts';
 
 function assetFor(url, headers = {}, method = 'GET') {
@@ -35,9 +36,13 @@ test('reads one cookie from a Cookie header', () => {
 
 test('every prebuilt file is rendered from a request that maps back to it', () => {
   const files = staticFiles();
-  // Home, updates and radar, each policy page for every return path, and
-  // the link-preview images, in both languages.
-  assert.equal(files.length, 2 * (5 + 1 + 1 + 1 + POLICY_IDS.length * 6));
+  // Home, updates and radar, each policy page for every return path, the
+  // school index and every school page, and the link-preview images, in both
+  // languages.
+  assert.equal(
+    files.length,
+    2 * (5 + 1 + 1 + 1 + POLICY_IDS.length * 6 + 1 + SCHOOL_IDS.length),
+  );
   assert.equal(new Set(files.map((entry) => entry.file)).size, files.length);
   for (const { language, source, file } of files) {
     const asset = assetFor(source, {

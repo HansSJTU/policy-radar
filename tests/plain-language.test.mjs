@@ -111,6 +111,8 @@ test('interface copy is plain', async () => {
     'app/policies/[policyId]/policy-interactions.tsx',
     'app/public-comment-distribution.tsx',
     'app/stats/page.tsx',
+    'app/school-pages.ts',
+    'app/schools/[schoolId]/page.tsx',
   ];
   const found = [];
   for (const file of files) {

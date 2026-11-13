@@ -2,6 +2,7 @@ import { getPolicy } from './policy-data.ts';
 import { SITE_UPDATED_ON } from './policy-freshness.ts';
 import { POLICY_IDS } from './policy-ids.ts';
 import { languageAlternates } from './policy-links.ts';
+import { getSchoolPage, SCHOOL_IDS, schoolPath } from './school-pages.ts';
 import type { Language } from './language';
 
 const LANGUAGES: Language[] = ['zh', 'en'];
@@ -30,5 +31,9 @@ export default function sitemap() {
       ),
     ),
     ...localizedEntries('/updates', SITE_UPDATED_ON, 0.5),
+    ...localizedEntries('/schools', SITE_UPDATED_ON, 0.7),
+    ...SCHOOL_IDS.flatMap((id) =>
+      localizedEntries(schoolPath(id), getSchoolPage(id, 'zh')!.checkedOn, 0.6),
+    ),
   ];
 }

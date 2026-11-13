@@ -2,6 +2,7 @@ import type { Language } from './language';
 import type { Policy } from './policy-data.ts';
 import { isForumLink } from './forum-links.ts';
 import { localizedPageUrl, POLICY_SITE_URL } from './policy-links.ts';
+import { schoolMetadata, type SchoolPage } from './school-pages.ts';
 import { siteMetadata } from './site-metadata.ts';
 
 // schema.org descriptions that search engines and AI answers read directly:
@@ -49,6 +50,26 @@ export function policyJsonLd(policy: Policy, language: Language) {
         name: source.label,
         url: source.href,
       })),
+  };
+}
+
+export function schoolJsonLd(school: SchoolPage, language: Language) {
+  const { url, description } = schoolMetadata(school, language);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${school.school} CPT`,
+    description,
+    url,
+    mainEntityOfPage: url,
+    dateModified: school.checkedOn,
+    inLanguage: inLanguage(language),
+    about: { '@type': 'CollegeOrUniversity', name: school.school },
+    isPartOf: website(language),
+    publisher: { '@type': 'Organization', name: siteMetadata(language).siteName },
+    ...(school.href
+      ? { citation: [{ '@type': 'CreativeWork', name: school.school, url: school.href }] }
+      : {}),
   };
 }
 

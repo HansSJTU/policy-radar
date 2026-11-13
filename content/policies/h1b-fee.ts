@@ -73,6 +73,8 @@ export const h1bFee: PolicyContent = {
   zh: {
     title: 'H-1B 拟加收 103,265 美元',
     short: 'H-1B 10.3 万美元附加费',
+    searchTitle: "H-1B 103,265 美元附加费提案：谁要交、什么时候收",
+    searchDescription: "DHS 提议：参加抽签的 H-1B 申请，雇主每份再交 103,265 美元，OPT 转 H-1B 和美国硕士名额也要交，大学等免抽签雇主不用交。",
     status: '正式提案 · 评论期已结束',
     effectLabel: '尚未生效',
     agency: 'DHS / USCIS',
@@ -208,6 +210,8 @@ export const h1bFee: PolicyContent = {
   en: {
     title: 'Proposed $103,265 H-1B Surcharge',
     short: '$103,265 H-1B Surcharge',
+    searchTitle: "$103,265 H-1B Fee Proposal: Who Pays and When",
+    searchDescription: "DHS proposes an extra $103,265 on every cap-subject H-1B petition, including U.S. master’s-cap cases and F-1 students moving from OPT. Cap-exempt employers such as universities do not pay.",
     status: 'Proposed rule · Comment period closed',
     effectLabel: 'Not in effect',
     agency: 'DHS / USCIS',

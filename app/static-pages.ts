@@ -2,6 +2,7 @@ import { LANGUAGE_COOKIE, cookieValue, resolveLanguage } from './language.ts';
 import type { Language } from './language';
 import { POLICY_IDS, isPolicyId } from './policy-ids.ts';
 import { POLICY_PATHS, parsePathFilter, type PathFilter } from './policy-paths.ts';
+import { isSchoolId, SCHOOL_IDS } from './school-pages.ts';
 
 // Pages and link-preview images that change only when the site is deployed.
 // `npm run build` renders every variant into dist/client/__static, and the
@@ -33,6 +34,14 @@ function radarFile(language: Language) {
 function policyFile(language: Language, id: string, from: PathFilter) {
   return `${STATIC_DIR}/${language}/policies/${id}-${from}.html`;
 }
+function schoolsFile(language: Language) {
+  // Not schools.html: a file beside the schools/ directory of the same name
+  // could be answered with a directory redirect.
+  return `${STATIC_DIR}/${language}/schools-index.html`;
+}
+function schoolFile(language: Language, id: string) {
+  return `${STATIC_DIR}/${language}/schools/${id}.html`;
+}
 function homeImageFile(language: Language) {
   return `${STATIC_DIR}/${language}/share.png`;
 }
@@ -53,6 +62,11 @@ export function staticFiles(): StaticFile[] {
       })),
       { source: `/updates?lang=${language}`, file: updatesFile(language) },
       { source: `/radar?lang=${language}`, file: radarFile(language) },
+      { source: `/schools?lang=${language}`, file: schoolsFile(language) },
+      ...SCHOOL_IDS.map((id) => ({
+        source: `/schools/${id}?lang=${language}`,
+        file: schoolFile(language, id),
+      })),
       { source: `/share-image?lang=${language}`, file: homeImageFile(language) },
       ...POLICY_IDS.flatMap((id) => [
         ...PATH_FILTERS.map((from) => ({
@@ -114,6 +128,13 @@ export function staticAssetFor(request: RequestLike): string | null {
   // The radar reads its profile (?stage=, ?goal=) in the browser.
   if (pathname === '/radar') {
     return assetPath(radarFile(language()));
+  }
+  if (pathname === '/schools') {
+    return assetPath(schoolsFile(language()));
+  }
+  const schoolMatch = /^\/schools\/([^/]+)$/.exec(pathname);
+  if (schoolMatch && isSchoolId(schoolMatch[1])) {
+    return assetPath(schoolFile(language(), schoolMatch[1]));
   }
   const pageMatch = /^\/policies\/([^/]+)$/.exec(pathname);
   if (pageMatch && isPolicyId(pageMatch[1])) {

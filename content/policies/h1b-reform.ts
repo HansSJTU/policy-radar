@@ -42,6 +42,8 @@ export const h1bReform: PolicyContent = {
   zh: {
     title: 'H-1B 改革：免抽签资格和外派岗位要重新审',
     short: 'H-1B 资格改革',
+    searchTitle: "H-1B 改革：免抽签资格和外派岗位审查收紧",
+    searchDescription: "DHS 准备重新规定哪些雇主可以免抽签，并更严格地审查被派到客户公司上班的岗位和有违规记录的雇主。",
     status: 'OIRA 审查中 · 尚未生效',
     effectLabel: '尚未生效 · 提案内容未公开',
     agency: 'DHS / USCIS',
@@ -148,6 +150,8 @@ export const h1bReform: PolicyContent = {
     title:
       'H-1B Reform: Cap-Exempt Status and Client-Site Jobs Under Review',
     short: 'H-1B Eligibility Reform',
+    searchTitle: "H-1B Reform: Cap-Exempt Employers and Third-Party Placements",
+    searchDescription: "DHS plans to redefine which employers can skip the H-1B lottery and to look harder at third-party client-site placements and at employers with past violations.",
     status: 'Under OIRA review · Not in effect',
     effectLabel: 'Not in effect · Proposal not yet public',
     agency: 'DHS / USCIS',

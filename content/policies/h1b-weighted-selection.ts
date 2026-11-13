@@ -33,6 +33,8 @@ export const h1bWeightedSelection: PolicyContent = {
   zh: {
     title: 'H-1B 已改为工资等级加权抽签',
     short: 'H-1B 工资加权抽签',
+    searchTitle: "H-1B 工资加权抽签：工资等级决定中签机会",
+    searchDescription: "H-1B 抽签按 offer 的工资等级加权：一级进池 1 次，二级 2 次，三级 3 次，四级 4 次。规则已生效，从 FY2027 这一轮抽签开始使用。",
     status: '已生效 · FY2027 起使用',
     effectLabel: '已生效 · 2026-02-27',
     agency: 'DHS / USCIS',
@@ -133,6 +135,8 @@ export const h1bWeightedSelection: PolicyContent = {
   en: {
     title: 'H-1B Selection Now Weights Wage Levels',
     short: 'Wage-Weighted H-1B Selection',
+    searchTitle: "H-1B Weighted Lottery: How Wage Level Changes Your Odds",
+    searchDescription: "The H-1B lottery now weights entries by the wage level of your offer: Level I is entered once, Level II twice, Level III three times and Level IV four times, starting with FY2027.",
     status: 'In effect · Used beginning with FY2027',
     effectLabel: 'In effect · February 27, 2026',
     agency: 'DHS / USCIS',

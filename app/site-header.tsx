@@ -7,7 +7,7 @@ import { MobileSiteMenu } from './mobile-site-menu';
 import { PageLanguageSwitch } from './page-language-switch';
 import { siteCopy } from './site-copy';
 
-export type SitePage = 'home' | 'radar' | 'updates' | 'stats' | 'policy';
+export type SitePage = 'home' | 'radar' | 'updates' | 'stats' | 'policy' | 'schools';
 
 type SiteHeaderProps = {
   language: Language;

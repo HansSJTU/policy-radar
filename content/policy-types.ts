@@ -30,6 +30,10 @@ export type PolicyCopy = {
   title: string;
   // Used for the path map, breadcrumbs, the policy picker and briefing rows.
   short: string;
+  // The search-result title and description. Lead with the words readers
+  // search for ("OPT fee", "H-4 EAD"); keep them true when the status changes.
+  searchTitle: string;
+  searchDescription: string;
   // Procedural stage, shown on the home card, the path map and the detail page.
   status: string;
   effectLabel: string;

@@ -42,6 +42,8 @@ export const eadDiscretion: PolicyContent = {
   zh: {
     title: 'I-765 拟加严犯罪记录审查',
     short: 'I-765 犯罪记录审查',
+    searchTitle: "I-765 工卡拟加严犯罪记录审查：OPT、H-4 EAD 都在内",
+    searchDescription: "DHS 提议：申请 OPT、H-4 EAD 等工卡时，曾被逮捕、起诉或定罪的人，USCIS 一般会拒绝 I-765。没有刑事记录的人不受影响。",
     status: '评论期已结束 · 尚未生效',
     effectLabel: '尚未生效',
     agency: 'DHS / USCIS',
@@ -154,6 +156,8 @@ export const eadDiscretion: PolicyContent = {
   en: {
     title: 'Proposed Expansion of Criminal-Record Review for Form I-765',
     short: 'I-765 Criminal-Record Review',
+    searchTitle: "I-765 Criminal Record Rule: Proposed Denials for OPT and EAD",
+    searchDescription: "DHS proposes that USCIS generally deny I-765 work-permit applications, including OPT and H-4 EAD, from anyone ever arrested, charged or convicted. People without a criminal record are not affected.",
     status: 'Comment period closed · Not in effect',
     effectLabel: 'Not in effect',
     agency: 'DHS / USCIS',

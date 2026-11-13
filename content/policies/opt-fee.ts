@@ -53,6 +53,8 @@ export const optFee: PolicyContent = {
   zh: {
     title: "OPT 拟收费：首次 7 万美元、后续 3 万美元",
     short: "OPT 首次 7 万美元收费",
+    searchTitle: "OPT 收费提案：首次 7 万美元、之后每次 3 万美元",
+    searchDescription: "ICE 提议：学校推荐 OPT 前要先为每名学生交费，首次 7 万美元，之后每次 OPT（含 STEM 延期）3 万美元。学校可以自己出，也可以让学生或雇主出。",
     status: "规则评论已截止 · PRA 评论至 12 月 7 日",
     effectLabel: "尚未生效 · 拟由学校先交费",
     agency: 'DHS / ICE',
@@ -171,6 +173,8 @@ export const optFee: PolicyContent = {
   en: {
     title: "Proposed OPT Fees: $70,000 Initially, $30,000 Subsequently",
     short: "Proposed $70,000 Initial OPT Fee",
+    searchTitle: "OPT Fee Proposal: $70,000 for the First OPT, $30,000 After",
+    searchDescription: "ICE proposes that schools pay $70,000 before recommending a student’s first OPT and $30,000 for each later OPT, including the STEM extension. Who pays, the timeline and what it means for F-1 students.",
     status: "Rule comments closed · PRA comments through December 7",
     effectLabel: "Not in effect · Schools would pay first",
     agency: 'DHS / ICE',

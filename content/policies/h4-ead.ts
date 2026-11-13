@@ -47,6 +47,8 @@ export const h4Ead: PolicyContent = {
   zh: {
     title: '部分 H-4 配偶工作许可拟被取消',
     short: 'H-4 配偶 EAD',
+    searchTitle: "H-4 EAD 拟取消：H-1B 配偶工卡最新进展",
+    searchDescription: "DHS 打算取消 H-1B 配偶（H-4）凭 I-140 获批等条件申请工卡的资格。持 H-1B 的一方不受影响。查看进展和对家庭的影响。",
     status: '长期计划 · 还没有提案日期',
     effectLabel: '尚未生效 · 现行规则未变',
     agency: 'DHS / USCIS',
@@ -143,6 +145,8 @@ export const h4Ead: PolicyContent = {
   en: {
     title: 'Proposed End to Work Authorization for Some H-4 Spouses',
     short: 'H-4 Spousal EAD',
+    searchTitle: "H-4 EAD Removal: Latest on Work Permits for H-1B Spouses",
+    searchDescription: "DHS plans to end work authorization for H-4 spouses of H-1B workers on the green-card path, such as those with an approved I-140. The H-1B worker is not affected.",
     status: 'Long-term plan · No proposal date',
     effectLabel: 'Not in effect · Current rules unchanged',
     agency: 'DHS / USCIS',

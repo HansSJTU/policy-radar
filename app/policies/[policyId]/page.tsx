@@ -70,11 +70,14 @@ export async function generateMetadata({
     };
   const alternates = languageAlternates(`/policies/${policy.id}`, language);
   const canonical = alternates.canonical;
-  const title = `${policy.title}｜${language === 'en' ? 'Stay Path Radar' : '留美路径雷达'}`;
+  const title =
+    language === 'en'
+      ? `${policy.searchTitle} | Stay Path Radar`
+      : `${policy.searchTitle}｜留美路径雷达`;
   const image = `${POLICY_SITE_URL}/policies/${policyId}/share-image?lang=${language}`;
   return {
     title,
-    description: policy.teaser,
+    description: policy.searchDescription,
     alternates,
     openGraph: {
       title: policy.title,

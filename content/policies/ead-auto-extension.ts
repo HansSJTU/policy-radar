@@ -88,6 +88,8 @@ export const eadAutoExtension: PolicyContent = {
   "zh": {
     "title": "部分 EAD 续期自动延期已取消",
     "short": "EAD 续期自动延期",
+    "searchTitle": "部分 EAD 续期不再自动延期：旧卡到期就要停工",
+    "searchDescription": "2025 年 10 月 30 日或之后递交的相关类别 EAD 续期，旧卡不再自动延期，到期就要停工，等新卡批下来才能接着上班。",
     "status": "已执行 · 最终规则 10·14 生效",
     "effectLabel": "2025·10·30 起执行 · 法定例外仍然有效",
     "agency": "DHS / USCIS",
@@ -213,6 +215,8 @@ export const eadAutoExtension: PolicyContent = {
   "en": {
     "title": "Automatic Extensions Removed for Certain EAD Renewals",
     "short": "EAD Renewal Extensions",
+    "searchTitle": "EAD Automatic Extension Ended for Certain Renewals",
+    "searchDescription": "For EAD renewals in affected categories filed on or after October 30, 2025, the old card no longer gets an automatic extension. Work stops when it expires and resumes once the new card arrives.",
     "status": "In force · final rule effective October 14",
     "effectLabel": "In force since October 30, 2025 · Legal exceptions still apply",
     "agency": "DHS / USCIS",

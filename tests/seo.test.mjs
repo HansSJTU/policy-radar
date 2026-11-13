@@ -6,6 +6,7 @@ import { getPolicies } from '../app/policy-data.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import { languageAlternates, POLICY_SITE_URL } from '../app/policy-links.ts';
 import robots from '../app/robots.ts';
+import { SCHOOL_IDS } from '../app/school-pages.ts';
 import sitemap from '../app/sitemap.ts';
 import { homeJsonLd, jsonLdScript, policyJsonLd } from '../app/structured-data.ts';
 import { buildUpdateFeed, changeAnchor, feedUrl } from '../app/update-feed.ts';
@@ -23,7 +24,7 @@ test('gives each language its own canonical URL and names both versions', () => 
 });
 
 test('gives every indexable page a canonical URL', async () => {
-  for (const file of ['app/page.tsx', 'app/policies/[policyId]/page.tsx', 'app/updates/page.tsx', 'app/stats/page.tsx', 'app/radar/page.tsx']) {
+  for (const file of ['app/page.tsx', 'app/policies/[policyId]/page.tsx', 'app/updates/page.tsx', 'app/stats/page.tsx', 'app/radar/page.tsx', 'app/schools/page.tsx', 'app/schools/[schoolId]/page.tsx']) {
     const source = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
     assert.match(source, /alternates[:,]/, file);
   }
@@ -51,9 +52,15 @@ test('renders metadata in <head> for every visitor, crawlers and the prerender i
   assert.match(prerender, /'user-agent': 'policy-radar-prerender'/);
 });
 
-test('lists the home page, every policy and the update log in both languages', () => {
+test('lists the home page, every policy, the update log and every school in both languages', () => {
   const urls = sitemap().map((entry) => entry.url);
-  const paths = ['/', ...POLICY_IDS.map((id) => `/policies/${id}`), '/updates'];
+  const paths = [
+    '/',
+    ...POLICY_IDS.map((id) => `/policies/${id}`),
+    '/updates',
+    '/schools',
+    ...SCHOOL_IDS.map((id) => `/schools/${id}`),
+  ];
 
   assert.deepEqual(
     [...urls].sort(),

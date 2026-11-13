@@ -17,8 +17,8 @@ type UpdatesPageProps = { searchParams?: Promise<{ lang?: string }> };
 
 const updatesCopy = {
   zh: {
-    metadataTitle: '更新记录｜留美路径政策雷达',
-    metadataDescription: '留美路径政策雷达的政策、时间与 CPT 学校材料更新记录。',
+    metadataTitle: '留学生签证政策更新记录：OPT、CPT、H-1B 最新变化｜留美路径政策雷达',
+    metadataDescription: 'OPT、CPT、H-1B、D/S 等留学生相关政策的最新变化：法院裁定、新规发布、学校 CPT 调整，按日期列出，每条附来源。',
     title: '更新记录',
     entryLabel: '次内容变化',
     subscribe: '用 RSS 订阅更新',
@@ -28,9 +28,9 @@ const updatesCopy = {
     locale: 'zh-CN',
   },
   en: {
-    metadataTitle: 'Updates | U.S. Stay Path Policy Radar',
+    metadataTitle: 'F-1, OPT, CPT & H-1B Policy Updates | U.S. Stay Path Policy Radar',
     metadataDescription:
-      'Content updates to policy status, dates, and CPT school evidence in the U.S. Stay Path Policy Radar.',
+      'The latest changes to F-1, OPT, CPT, H-1B and D/S policies: court orders, new rules and school CPT changes, by date, each with its sources.',
     title: 'Updates',
     entryLabel: 'content changes',
     subscribe: 'Subscribe via RSS',

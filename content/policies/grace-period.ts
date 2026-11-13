@@ -59,6 +59,8 @@ export const gracePeriod: PolicyContent = {
   zh: {
     title: '失业后的最长 60 天宽限期拟取消',
     short: '取消失业后 60 天宽限期',
+    searchTitle: "H-1B 失业 60 天宽限期拟取消：被裁后还剩多少时间",
+    searchDescription: "DHS 提议取消 H-1B 等工作签证持有人失业后最长 60 天的宽限期。被裁后找新雇主、转身份和安排家人的时间都会更紧。",
     status: '正式提案 · 评论已结束',
     effectLabel: '尚未生效 · 现行规则未变',
     agency: 'DHS / USCIS',
@@ -191,6 +193,8 @@ export const gracePeriod: PolicyContent = {
   en: {
     title: 'Proposed End to the Up-to-60-Day Grace Period After Job Loss',
     short: 'Ending the 60-Day Grace Period',
+    searchTitle: "H-1B 60-Day Grace Period Proposed to End: What a Layoff Means",
+    searchDescription: "DHS proposes ending the up-to-60-day grace period for H-1B and other work-visa holders after a job loss, leaving less time to find a new employer, change status or plan for family.",
     status: 'Proposed rule · Comment period closed',
     effectLabel: 'Not in effect · Current rule unchanged',
     agency: 'DHS / USCIS',

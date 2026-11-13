@@ -47,6 +47,8 @@ export const nonimmigrantDeference: PolicyContent = {
   "zh": {
     "title": "工作签证续期：拟取消“上次批过就参照”的原则",
     "short": "续期不再参照上次批准",
+    "searchTitle": "H-1B 延期拟取消“参照上次批准”：每次都要重新审",
+    "searchDescription": "DHS 提议取消“雇主、员工和工作没变就参照上次批准”的做法，H-1B 等工作签证每次延期都要重新审资格。",
     "status": "正式提案 · 评论截至 11 月 13 日",
     "effectLabel": "尚未生效 · 现行规则未变",
     "agency": "DHS / USCIS",
@@ -148,6 +150,8 @@ export const nonimmigrantDeference: PolicyContent = {
   "en": {
     "title": "Proposed End to Deference to Prior Approvals in Work-Visa Renewals",
     "short": "Renewal Deference",
+    "searchTitle": "H-1B Extensions: Proposal to End Deference to Prior Approvals",
+    "searchDescription": "DHS proposes ending deference to earlier approvals, so each H-1B or other work-visa extension would be reviewed from the start, even when the employer, worker and job are unchanged.",
     "status": "Proposed rule · Comments due November 13",
     "effectLabel": "Not in effect · Current rules unchanged",
     "agency": "DHS / USCIS",

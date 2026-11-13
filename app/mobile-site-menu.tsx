@@ -21,7 +21,7 @@ import {
 } from '@/components/ui/popover';
 
 type MobileSiteMenuProps = {
-  current: 'home' | 'updates' | 'stats' | 'radar';
+  current: 'home' | 'updates' | 'stats' | 'radar' | 'schools';
   language: Language;
 };
 
@@ -61,6 +61,7 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
       label: copy.schools,
       href: `${home}#cpt-schools`,
       icon: <GraduationCap aria-hidden="true" />,
+      current: current === 'schools',
     },
     {
       id: 'updates',

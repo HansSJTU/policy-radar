@@ -207,6 +207,8 @@ export const durationStatus: PolicyContent = {
   zh: {
     title: 'D/S 最终规则被法院全国暂缓',
     short: 'D/S 固定期限',
+    searchTitle: "F-1 D/S 固定期限新规：法院全国暂缓，现行 D/S 照旧",
+    searchDescription: "DHS 最终规则要把 F-1 学生的 D/S（身份有效期间）改成固定停留期限，到期须申请延期。法院 9 月在全国范围暂缓了这项规则，诉讼还在进行。",
     status: "全国暂缓 · 双方 11·02 书面意见已交",
     effectLabel: '尚未生效 · 法院全国暂缓',
     agency: 'DHS / ICE',
@@ -385,6 +387,8 @@ export const durationStatus: PolicyContent = {
   en: {
     title: 'Court Stays the D/S Final Rule Nationwide',
     short: 'D/S Fixed Admission Period',
+    searchTitle: "F-1 Duration of Status Rule: Court Stays It Nationwide",
+    searchDescription: "DHS’s final rule would replace duration of status (D/S) for F-1 students with a fixed admission period. A court stayed it nationwide in September; the lawsuit continues.",
     status: "Nationwide court stay · Both sides filed November 2 responses",
     effectLabel: 'Not in effect · Nationwide court stay',
     agency: 'DHS / ICE',

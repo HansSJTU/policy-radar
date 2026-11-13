@@ -151,6 +151,8 @@ export const cptGuidance: PolicyContent = {
   zh: {
     title: 'CPT 指引收紧：选修实习课不再够用',
     short: '8·12 / 8·24 CPT 指引',
+    searchTitle: "CPT 新规收紧：选修实习课不再够用",
+    searchDescription: "ICE/SEVP 8 月指引：只有专业所有学生都必须完成的实习才能批 CPT，选修实习课通常不够，雇主还要和学校签合作协议。很多学校已暂停或收紧 CPT。",
     status: "指引执行中 · 11·06 已听证，等待裁定",
     effectLabel: '正在执行 · 各校做法不同',
     agency: 'ICE / SEVP',
@@ -303,6 +305,8 @@ export const cptGuidance: PolicyContent = {
     title:
       'Tighter CPT Guidance: An Elective Internship Course Is No Longer Enough',
     short: 'August 12 / 24 CPT Guidance',
+    searchTitle: "CPT Guidance 2026: Elective Internship Courses No Longer Qualify",
+    searchDescription: "ICE/SEVP’s August guidance limits CPT to internships every student in the program must complete, and employers must sign an agreement with the school. Lawsuit status and school changes.",
     status: "Guidance in use · November 6 hearing held; ruling pending",
     effectLabel: 'In use · Varies by school',
     agency: 'ICE / SEVP',

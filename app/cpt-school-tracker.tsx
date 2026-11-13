@@ -1,6 +1,7 @@
 /* oxlint-disable next/no-img-element -- Evidence screenshots are served as-is from public/. */
 import { useCallback, useEffect, useState } from 'react';
 import {
+  ArrowRight,
   ArrowUpRight,
   CheckCircle2,
   ExternalLink,
@@ -15,6 +16,7 @@ import { GlossaryText } from './glossary-text';
 import { homeCopy } from './home-copy';
 import type { Language } from './language';
 import { getSchoolShareItem } from './item-share-model';
+import { schoolHref } from './school-links';
 import { ShareButton } from './share-button';
 
 type CptSchoolTrackerProps = {
@@ -104,7 +106,7 @@ export function CptSchoolTracker({
     <>
       <section className="school-section" id="cpt-schools" aria-labelledby="schools-title">
         <div className="school-head">
-          <div><h2 id="schools-title">{ui.schoolTitle}</h2><p>{ui.schoolIntro}</p></div>
+          <div><h2 id="schools-title">{ui.schoolTitle}</h2><p>{ui.schoolIntro}</p><a className="school-index-link" href={`/schools?lang=${language}`}>{ui.schoolIndex}<ArrowRight aria-hidden="true" /></a></div>
           <label className="school-search"><Search aria-hidden="true" /><input value={schoolQuery} onChange={(event) => setSchoolQuery(event.target.value)} placeholder={ui.search} aria-label={ui.search} /></label>
         </div>
 
@@ -188,6 +190,9 @@ export function CptSchoolTracker({
               </button>
             </header>
             <div className="evidence-modal-body">
+              <a className="evidence-official-link" href={schoolHref(selectedEvidence.id, language)}>
+                {ui.schoolPage}<ArrowRight aria-hidden="true" />
+              </a>
               {'href' in selectedEvidence && (
                 <a className="evidence-official-link" href={selectedEvidence.href} target="_blank" rel="noreferrer">
                   {ui.officialPage}<ExternalLink aria-hidden="true" />

@@ -48,6 +48,8 @@ export const h1bProgramIntegrity: PolicyContent = {
   zh: {
     title: 'H-1B 行政命令：审查时要看雇主有没有裁员',
     short: 'H-1B 裁员审查行政命令',
+    searchTitle: "H-1B 行政命令：雇主裁员成为审查因素",
+    searchDescription: "9·18 行政命令要求国务院、劳工部和 DHS 共享信息，审 H-1B 时考虑担保雇主最近的相关裁员：同一雇主、同类岗位、一年内或已计划。",
     status: '已签署 · 各部门落实中',
     effectLabel: '已签署 · 各部门落实中',
     agency: '总统 / 国务院 / DOL / DHS',
@@ -184,6 +186,8 @@ export const h1bProgramIntegrity: PolicyContent = {
   en: {
     title: 'H-1B Executive Order: Employer Layoffs Become Part of Review',
     short: 'H-1B Layoff-Review Executive Order',
+    searchTitle: "H-1B Executive Order: Employer Layoffs Now Part of Review",
+    searchDescription: "A September 18 executive order has the State Department, DOL and DHS share information and weigh a sponsor’s recent relevant layoffs in H-1B review: same employer, same kind of job, within a year or planned.",
     status: 'Signed · Agencies implementing',
     effectLabel:
       'Signed · Agencies implementing',

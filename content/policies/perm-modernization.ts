@@ -53,6 +53,8 @@ export const permModernization: PolicyContent = {
   zh: {
     title: 'PERM 拟改革：招聘方式和雇主合规要求',
     short: 'PERM 劳工认证改革',
+    searchTitle: "PERM 绿卡改革：招聘规则和雇主合规要求最新进展",
+    searchDescription: "PERM 是雇主担保绿卡的第一步。劳工部打算改革这一步，涉及招聘方式、被裁美国员工的保护和雇主合规要求。",
     status: "OIRA 已审完 · 等待正式提案",
     effectLabel: "尚未生效 · 现行 PERM 规则未变",
     agency: 'DOL / ETA',
@@ -198,6 +200,8 @@ export const permModernization: PolicyContent = {
   en: {
     title: 'PERM Reform: How Employers Recruit and Comply',
     short: 'PERM Labor Certification Reform',
+    searchTitle: "PERM Modernization: New Recruitment and Compliance Rules",
+    searchDescription: "PERM is the first step of an employer-sponsored green card. DOL plans to overhaul it, covering how employers recruit, protections for laid-off U.S. workers and compliance.",
     status: "OIRA review done · Awaiting proposal",
     effectLabel:
       "Not in effect · Current PERM rules unchanged",
