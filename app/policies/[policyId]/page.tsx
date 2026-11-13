@@ -33,7 +33,7 @@ import {
 import { VisitorTracker } from '@/components/visitor-tracker';
 import {
   PolicyDirectory,
-  PolicySectionBar,
+  PolicyReadingPill,
   PolicyPicker,
   PolicyProgress,
   PolicyScenarios,
@@ -567,7 +567,7 @@ export default async function PolicyPage({ params, searchParams }: Props) {
           </footer>
         </div>
         <SiteFooter language={language} />
-        <PolicySectionBar sections={sections} language={language} />
+        <PolicyReadingPill sections={sections} language={language} />
       </div>
     </LanguageProvider>
   );

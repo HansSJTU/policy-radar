@@ -1,15 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import {
-  BookOpen,
-  CalendarDays,
-  Link2,
-  ListChecks,
-  TrendingUp,
-  Users,
-  type LucideIcon,
-} from 'lucide-react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { List as ListIcon, X } from 'lucide-react';
 import { GlossaryText } from '../../glossary-text';
 import type { Language } from '../../language';
 import { useEnterOnChange } from '../../motion';
@@ -318,18 +310,49 @@ export function PolicyDirectory({
   );
 }
 
-// Short labels and icons for the phone section bar; the full labels stay in the page's section list.
-const sectionBarItems: Record<string, { icon: LucideIcon; zh: string; en: string }> = {
-  overview: { icon: BookOpen, zh: '背景', en: 'Context' },
-  impact: { icon: Users, zh: '影响', en: 'Impact' },
-  outlook: { icon: TrendingUp, zh: '走向', en: 'Outlook' },
-  progress: { icon: ListChecks, zh: '进度', en: 'Progress' },
-  timeline: { icon: CalendarDays, zh: '时间', en: 'Dates' },
-  sources: { icon: Link2, zh: '来源', en: 'Sources' },
-};
+/** How far the reader is through `selector`, 0 to 1; 1 at the end of the page. */
+function useReadingProgress(selector: string) {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const article = document.querySelector<HTMLElement>(selector);
+    if (!article) return;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const atEnd =
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 2;
+      const box = article.getBoundingClientRect();
+      const value = atEnd
+        ? 1
+        : Math.min(1, Math.max(0, (window.innerHeight - box.top) / Math.max(1, box.height)));
+      setProgress(value);
+      document.documentElement.style.setProperty('--pd-progress', value.toFixed(4));
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    const observer = new ResizeObserver(schedule);
+    observer.observe(article);
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    schedule();
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+    };
+  }, [selector]);
+  return progress;
+}
 
-/** Bottom section bar shown on phones, where the sidebar directory is hidden. */
-export function PolicySectionBar({
+/**
+ * Phone contents, after WebNav's FloatingToc: a frosted reading pill at the bottom shows the
+ * current section and reading progress; tapping it slides a contents drawer in from the left,
+ * which closes from its button, the backdrop, Escape or a left swipe.
+ */
+export function PolicyReadingPill({
   sections,
   language,
 }: {
@@ -337,26 +360,174 @@ export function PolicySectionBar({
   language: Language;
 }) {
   const active = useActiveSection(sections);
+  const progress = useReadingProgress('.pd-main');
+  const sheet = useRef<HTMLDialogElement>(null);
+  const pill = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
+  const english = language === 'en';
+  const copy = english
+    ? { title: 'On this page', open: 'Open page contents', close: 'Close contents' }
+    : { title: '本页目录', open: '打开本页目录', close: '收起目录' };
+  const activeIndex = Math.max(0, sections.findIndex(([id]) => id === active));
+  const percent = `${Math.round(progress * 100)}%`;
+  const number = (index: number) => String(index).padStart(2, '0');
+
+  // Leaving phone width with the drawer open closes it.
+  useEffect(() => {
+    const phone = window.matchMedia('(max-width: 800px)');
+    const onChange = () => {
+      if (!phone.matches && sheet.current?.open) sheet.current.close();
+    };
+    phone.addEventListener('change', onChange);
+    return () => phone.removeEventListener('change', onChange);
+  }, []);
+
+  const openSheet = () => {
+    const dialog = sheet.current;
+    if (!dialog || dialog.open) return;
+    dialog.style.transform = '';
+    dialog.showModal();
+    setOpen(true);
+  };
+  // The drawer slides back to the left before it closes.
+  const closeSheet = useCallback((then?: () => void) => {
+    const dialog = sheet.current;
+    if (!dialog?.open || dialog.dataset.closing !== undefined) return;
+    dialog.dataset.closing = '';
+    dialog.style.transform = '';
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.setTimeout(() => {
+      dialog.close();
+      delete dialog.dataset.closing;
+      then?.();
+    }, reduced ? 0 : 240);
+  }, []);
+
+  // A tap on the backdrop (outside the drawer's right edge) closes it; Escape is handled by onCancel.
+  useEffect(() => {
+    const dialog = sheet.current;
+    if (!dialog) return;
+    const onBackdrop = (event: MouseEvent) => {
+      if (event.target === dialog && event.clientX > dialog.getBoundingClientRect().right) closeSheet();
+    };
+    dialog.addEventListener('click', onBackdrop);
+    return () => dialog.removeEventListener('click', onBackdrop);
+  }, [closeSheet]);
+
+  const swipe = useRef<{ x: number; y: number; time: number; dx: number; horizontal?: boolean } | null>(null);
+  const onTouchStart = (event: React.TouchEvent) => {
+    const touch = event.touches[0];
+    swipe.current = { x: touch.clientX, y: touch.clientY, time: event.timeStamp, dx: 0 };
+  };
+  const onTouchMove = (event: React.TouchEvent) => {
+    const state = swipe.current;
+    const dialog = sheet.current;
+    if (!state || !dialog) return;
+    const touch = event.touches[0];
+    const dx = touch.clientX - state.x;
+    const dy = touch.clientY - state.y;
+    if (state.horizontal === undefined) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+      state.horizontal = Math.abs(dx) > Math.abs(dy) && dx < 0;
+      if (!state.horizontal) {
+        swipe.current = null;
+        return;
+      }
+      dialog.dataset.dragging = '';
+    }
+    state.dx = Math.min(0, dx);
+    dialog.style.transform = `translateX(${state.dx}px)`;
+  };
+  const onTouchEnd = (event: React.TouchEvent) => {
+    const state = swipe.current;
+    const dialog = sheet.current;
+    swipe.current = null;
+    if (!state?.horizontal || !dialog) return;
+    delete dialog.dataset.dragging;
+    const speed = state.dx / Math.max(1, event.timeStamp - state.time);
+    if (-state.dx > dialog.offsetWidth * 0.3 || speed < -0.5) closeSheet();
+    else dialog.style.transform = '';
+  };
+
+  const jump = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    event.preventDefault();
+    closeSheet(() => {
+      const heading = document.getElementById(id);
+      if (!heading) return;
+      // Instant, as in WebNav: a smooth scroll here would be cut short by focus moving.
+      history.replaceState(null, '', `#${id}`);
+      heading.tabIndex = -1;
+      heading.focus({ preventScroll: true });
+      heading.scrollIntoView({ block: 'start', behavior: 'instant' });
+    });
+  };
+
+  const progressBar = (
+    <div className="pd-toc-progress" aria-hidden="true"><span /></div>
+  );
+
   return (
-    <nav
-      className="pd-section-bar"
-      aria-label={language === 'en' ? 'Sections on this page' : '本页章节'}
-    >
-      {sections.map(([id, label]) => {
-        const item = sectionBarItems[id];
-        const Icon = item?.icon ?? BookOpen;
-        return (
-          <a
-            key={id}
-            href={`#${id}`}
-            aria-label={label}
-            aria-current={active === id ? 'location' : undefined}
-          >
-            <Icon aria-hidden="true" />
-            <span>{item ? item[language] : label}</span>
-          </a>
-        );
-      })}
-    </nav>
+    <>
+      <div className="pd-read-progress" aria-hidden="true" />
+      <button
+        ref={pill}
+        type="button"
+        className="pd-toc-pill"
+        aria-label={copy.open}
+        aria-haspopup="dialog"
+        aria-controls="pd-toc-sheet"
+        aria-expanded={open}
+        onClick={openSheet}
+      >
+        <ListIcon aria-hidden="true" />
+        <span className="pd-toc-pill-label">
+          <span className="pd-toc-num">{number(activeIndex)}</span>
+          <span className="pd-toc-pill-text">{sections[activeIndex]?.[1]}</span>
+        </span>
+        <span className="pd-toc-percent pd-toc-ring">{percent}</span>
+      </button>
+      <dialog
+        ref={sheet}
+        id="pd-toc-sheet"
+        className="pd-toc-sheet"
+        aria-labelledby="pd-toc-title"
+        onCancel={(event) => {
+          event.preventDefault();
+          closeSheet();
+        }}
+        // Closing returns focus to the pill natively; a jump then moves it to the heading.
+        onClose={() => setOpen(false)}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        onTouchCancel={onTouchEnd}
+      >
+        <span className="pd-toc-sheet-handle" aria-hidden="true" />
+        <header className="pd-toc-sheet-head">
+          <h2 id="pd-toc-title">{copy.title}</h2>
+          <span className="pd-toc-percent">{percent}</span>
+          <button type="button" aria-label={copy.close} onClick={() => closeSheet()}>
+            <X aria-hidden="true" />
+          </button>
+        </header>
+        {progressBar}
+        <nav aria-label={copy.title}>
+          <ol className="pd-toc-list">
+            {sections.map(([id, label], index) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  aria-current={active === id ? 'location' : undefined}
+                  onClick={(event) => jump(event, id)}
+                >
+                  <span className="pd-toc-num" aria-hidden="true">{number(index)}</span>
+                  <span className="pd-toc-label">{label}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </dialog>
+    </>
   );
 }
