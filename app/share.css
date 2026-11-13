@@ -72,7 +72,7 @@
 .share-checked-date { display: block; margin-top: 8px; color: var(--ink-soft); font: var(--fs-2xs)/1.5 var(--font-num); }
 .share-item-actions { display: grid; gap: 8px; margin-bottom: 16px; }
 .share-item-actions .share-copy-button { min-height: 44px; font-size: .8125rem; }
-.share-item-actions .share-copy-button:first-child { color: #fff; background: var(--ink); border-color: var(--ink); }
+.share-item-actions .share-copy-button:first-child { color: #fff; background: var(--accent); border-color: var(--accent); }
 .share-manual-summary { width: 100%; resize: vertical; margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: var(--r-sm); font: inherit; font-size: 1rem; line-height: 1.65; color: var(--ink); background: var(--paper); }
 .share-image-content { text-align: center; }
 .share-generated-image { display: block; width: 100%; height: auto; margin-bottom: 14px; border: 1px solid var(--line); border-radius: var(--r-sm); }
@@ -94,6 +94,6 @@
   .share-preview { margin-bottom: 12px; }
   .share-copy-button { min-height: 44px; }
   .share-link-row input { font-size: 1rem; }
-  .share-wechat-content > .share-copy-button { min-height: 48px; background: var(--ink); color: #fff; border-color: var(--ink); }
+  .share-wechat-content > .share-copy-button { min-height: 48px; background: var(--accent); color: #fff; border-color: var(--accent); }
 }
 @media print { .share-trigger, .share-positioner, .share-backdrop { display: none !important; } }

@@ -43,13 +43,14 @@ test('briefing headings carry a stage tag drawn from the shared stay-path tokens
   );
 });
 
-test('the path stage is never encoded by color (DESIGN.md rule 1)', () => {
-  assert.match(css, /:root\s*\{[^}]*--path-ink:/s);
-  assert.doesNotMatch(
-    css,
-    /\[data-path[^\]]*\]\s*\{[^}]*--path-(?:color|ink|bg)\s*:/s,
-  );
-  assert.doesNotMatch(policyPage, /颜色对应路径阶段|Colors mark the path stage/);
+test('each path stage has its own color', () => {
+  for (const stage of ['F-1', 'CPT', 'OPT', 'H-1B']) {
+    assert.match(
+      css,
+      new RegExp(`\\[data-path="${stage}"\\]\\s*\\{[^}]*--path-color:`, 's'),
+    );
+  }
+  assert.match(css, /\.briefing-tag::before\s*\{[^}]*background: var\(--path-color\)/s);
 });
 
 test('the homepage footer discloses synthetic launch samples in both languages', () => {

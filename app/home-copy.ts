@@ -3,7 +3,7 @@ import { SITE_UPDATED_ON } from './policy-freshness';
 
 export const homeCopy = {
   zh: {
-    heroTitle: '留美路径政策雷达', heroCount: (policies: number, schools: number) => `${policies} 项动态 · ${schools} 条学校／院系记录`,
+    heroTitle: '留美路径', heroTitleAccent: '政策雷达', heroCount: (policies: number, schools: number) => `${policies} 项动态 · ${schools} 条学校／院系记录`,
     routeTitle: '你的留美路径', routeHint: '选择阶段，查看相关政策', morePolicies: (count: number) => `另有 ${count} 项政策`, showAll: '显示全部 ×', routeAria: 'F-1 到 H-1B 路径与政策分布',
     briefingAria: '最近 30 天动态与未来 30 天关键时间点', recent: '最近 30 天动态', upcoming: '未来 30 天关键时间点', moreBriefing: (count: number) => `另有 ${count} 条`,
     ranking: '最难绕开的关卡', rankingHint: '按对留美路径的潜在冲击排序，#01 最大', filterAria: '按签证路径筛选', all: '全部', items: '项',
@@ -17,7 +17,7 @@ export const homeCopy = {
     footer: `更新于 ${SITE_UPDATED_ON}（美东）。每项的核查范围和缺口写在详情里。预计日期可能因规则修改或诉讼变化而移动。做个人决定前，请复核原始文件并咨询专业人士。`, seedDisclosure: '部分政策的社区影响均分里，每项包含 10–20 个用于上线初始化的模拟样本。这些样本在数据库里单独标记，等真实评分积累起来后会删除。',
   },
   en: {
-    heroTitle: 'U.S. Stay Path Policy Radar', heroCount: (policies: number, schools: number) => `${policies} policy developments · ${schools} school/department records`,
+    heroTitle: 'U.S. Stay Path ', heroTitleAccent: 'Policy Radar', heroCount: (policies: number, schools: number) => `${policies} policy developments · ${schools} school/department records`,
     routeTitle: 'Your path in the U.S.', routeHint: 'Select a stage to explore its policies', morePolicies: (count: number) => `${count} more policies`, showAll: 'Show all ×', routeAria: 'Policies along the F-1 to H-1B path',
     briefingAria: 'Recent 30-day developments and key dates in the next 30 days', recent: 'Developments in the last 30 days', upcoming: 'Key dates in the next 30 days', moreBriefing: (count: number) => `${count} more`,
     ranking: 'Highest-impact barriers', rankingHint: 'Ranked by potential impact on the stay path, #01 highest', filterAria: 'Filter by immigration path', all: 'All', items: 'items',

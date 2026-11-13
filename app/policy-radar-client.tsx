@@ -163,7 +163,7 @@ export default function Home({ view, language, initialPath = 'all' }: {
 
       <section className="workspace-hero" id="top">
         <div className="workspace-title">
-          <h1>{ui.heroTitle}</h1>
+          <h1>{ui.heroTitle}<em>{ui.heroTitleAccent}</em></h1>
           <p>{ui.heroCount(view.policies.length, view.schools.verified.length + view.schools.community.length)}</p>
         </div>
 

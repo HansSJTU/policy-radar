@@ -33,7 +33,7 @@ export async function GET(request: Request) {
           marginTop: 44,
         }}
       >
-        {ui.heroTitle}
+        {ui.heroTitle}{ui.heroTitleAccent}
       </div>
       <div
         style={{

@@ -11,10 +11,10 @@
 
 /* Updates */
 .updates-feed-link { margin-top: 20px; min-height: 36px; padding: 0 14px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line-strong); border-radius: var(--r-full); color: var(--ink-soft); background: var(--card); font-size: var(--fs-sm); text-decoration: none; transition: var(--motion-colors); }
-.updates-feed-link svg { width: 15px; height: 15px; color: var(--muted); }
+.updates-feed-link svg { width: 15px; height: 15px; color: var(--stage-h1b); }
 .updates-feed-link:hover { color: var(--ink); border-color: var(--ink-soft); }
 .updates-feed { display: grid; gap: 56px; }
-.update-release > header { padding-bottom: 16px; display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--ink); }
+.update-release > header { padding-bottom: 14px; display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--accent); }
 .update-date-mark { display: none; }
 .update-release > header > div:last-child { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; }
 .update-release > header time { color: var(--ink); font-size: 1.375rem; font-weight: var(--w-strong); line-height: 1.3; letter-spacing: var(--tracking-tight); font-variant-numeric: tabular-nums; }
@@ -22,37 +22,37 @@
 .update-change-list { margin: 0; padding: 0; list-style: none; }
 .update-change { position: relative; padding: 28px 0; scroll-margin-top: calc(var(--site-header-height) + 12px); }
 .update-change:not(:last-child) { border-bottom: 1px solid var(--line); }
-.update-change:target .update-change-body > h2 { color: var(--blue); }
+.update-change:target .update-change-body > h2 { color: var(--accent-ink); }
 .update-change-number { display: none; }
 .update-change-body { min-width: 0; }
-.update-change-category { display: block; color: var(--muted); font-size: var(--fs-xs); line-height: 1.5; }
-.update-change h2 { margin: 6px 0 0; font-size: var(--fs-h3); line-height: 1.3; }
+.update-change-category { width: fit-content; padding: 2px 10px; display: block; border-radius: var(--r-full); color: var(--accent-ink); background: var(--accent-soft); font-size: var(--fs-2xs); font-weight: var(--w-strong); line-height: 1.6; }
+.update-change h2 { margin: 10px 0 0; font-size: var(--fs-h3); line-height: 1.3; }
 .update-change-body > p { max-width: 68ch; margin: 12px 0 0; color: var(--ink-soft); font-size: var(--fs-body); line-height: 1.8; }
 .update-diff { margin-top: 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; gap: 12px; }
 .update-diff > div { min-width: 0; padding: 14px 16px; display: grid; align-content: start; gap: 6px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); }
 /* Before is what was replaced: dashed. After is what stands now: solid. */
 .update-diff > div:first-child { border-style: dashed; background: transparent; }
 .update-diff > div:first-child strong { color: var(--muted); font-weight: var(--w-normal); }
-.update-diff > div:last-child { border-color: var(--line-strong); box-shadow: var(--elev-1); }
+.update-diff > div:last-child { border-color: color-mix(in srgb, var(--accent) 45%, var(--card)); background: color-mix(in srgb, var(--accent-soft) 45%, var(--card)); }
 .update-diff small { color: var(--muted); font-size: var(--fs-2xs); line-height: 1.4; }
 .update-diff strong { font-size: var(--fs-sm); line-height: 1.6; overflow-wrap: anywhere; }
-.update-diff > svg { width: 16px; height: 16px; align-self: center; color: var(--faint); }
+.update-diff > svg { width: 16px; height: 16px; align-self: center; color: var(--accent); }
 .update-details { margin: 18px 0 0; padding: 0; display: grid; gap: 8px; color: var(--ink-soft); font-size: var(--fs-body); line-height: 1.7; list-style: none; }
 .update-details li { position: relative; padding-left: 18px; }
-.update-details li::before { content: ''; position: absolute; top: .8em; left: 2px; width: 8px; height: 1px; background: var(--faint); }
+.update-details li::before { content: ''; position: absolute; top: .7em; left: 2px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
 .update-sources { margin-top: 20px; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .update-sources > span { margin-right: 4px; color: var(--muted); font-size: var(--fs-xs); }
-.update-sources a { min-height: 32px; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: var(--r-full); color: var(--blue); background: var(--card); font-size: var(--fs-xs); text-decoration: none; transition: var(--motion-colors); }
-.update-sources a:hover { border-color: var(--blue); }
+.update-sources a { min-height: 32px; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: var(--r-full); color: var(--accent-ink); background: var(--card); font-size: var(--fs-xs); text-decoration: none; transition: var(--motion-colors); }
+.update-sources a:hover { border-color: var(--accent); background: var(--accent-soft); }
 .update-sources a:focus-visible { outline-offset: 2px; }
 .update-sources svg { width: 11px; height: 11px; }
 
 /* Traffic */
 .stats-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .stats-summary article { min-height: 132px; padding: 20px 22px; display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--elev-1); }
-.stats-summary svg { width: 18px; height: 18px; margin-top: 2px; color: var(--faint); }
+.stats-summary svg { width: 18px; height: 18px; margin-top: 2px; color: var(--accent); }
 .stats-summary span { color: var(--muted); font-size: var(--fs-sm); }
-.stats-summary strong { grid-column: 1 / -1; align-self: end; color: var(--ink); font-size: 2.5rem; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.stats-summary strong { grid-column: 1 / -1; align-self: end; color: var(--accent-ink); font-size: 2.75rem; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .stats-summary small { color: var(--muted); font: var(--w-normal) var(--fs-sm)/1 var(--font-num); letter-spacing: 0; }
 :is(.stats-chart-card, .stats-country-card) { margin-top: 16px; padding: 24px 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--elev-1); }
 .stats-chart-card > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
@@ -61,8 +61,8 @@
 .stats-legend { display: flex; align-items: center; gap: 16px; color: var(--muted); font-size: var(--fs-2xs); }
 .stats-legend span { display: inline-flex; align-items: center; gap: 6px; }
 .stats-legend span::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
-.stats-legend .visitors::before { background: var(--blue); }
-.stats-legend .views::before { background: var(--red); }
+.stats-legend .visitors::before { background: var(--accent); }
+.stats-legend .views::before { background: var(--stage-opt); }
 .stats-chart { width: 100%; height: 340px; margin-top: 20px; aspect-ratio: auto; color: var(--muted); }
 .stats-country-card > header { display: flex; align-items: flex-start; gap: 12px; }
 .stats-country-card > header svg { width: 18px; height: 18px; margin-top: 4px; color: var(--faint); }
@@ -74,7 +74,7 @@
 .country-detail strong { overflow: hidden; color: var(--ink); font-size: var(--fs-sm); text-overflow: ellipsis; white-space: nowrap; }
 .country-detail > div > span { flex: none; color: var(--muted); font-size: var(--fs-2xs); font-variant-numeric: tabular-nums; }
 .country-bar { height: 4px; overflow: hidden; border-radius: var(--r-full); background: var(--paper-2); }
-.country-bar > span { height: 100%; display: block; border-radius: inherit; background: var(--ink-soft); }
+.country-bar > span { height: 100%; display: block; border-radius: inherit; background: var(--accent); }
 .country-empty { margin-top: 20px; padding: 16px 18px; border-radius: var(--r-sm); background: var(--paper); }
 .stats-method { margin-top: 40px; padding: 28px 0 0; display: grid; grid-template-columns: 180px 1fr; gap: 28px; border-top: 1px solid var(--line); }
 .stats-method div { display: grid; gap: 10px; }

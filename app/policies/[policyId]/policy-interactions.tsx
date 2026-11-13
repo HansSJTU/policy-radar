@@ -1,6 +1,15 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import {
+  BookOpen,
+  CalendarDays,
+  Link2,
+  ListChecks,
+  TrendingUp,
+  Users,
+  type LucideIcon,
+} from 'lucide-react';
 import { GlossaryText } from '../../glossary-text';
 import type { Language } from '../../language';
 import { useEnterOnChange } from '../../motion';
@@ -235,13 +244,8 @@ export function PolicyPicker({
   );
 }
 
-export function PolicyDirectory({
-  sections,
-  language,
-}: {
-  sections: [string, string][];
-  language: Language;
-}) {
+/** The section whose top has passed the reading line, updated on scroll and resize. */
+function useActiveSection(sections: [string, string][]) {
   const [active, setActive] = useState(sections[0]?.[0]);
   useEffect(() => {
     const elements = sections
@@ -257,6 +261,10 @@ export function PolicyDirectory({
           current = element.id;
         else break;
       }
+      // At the end of the page the last short sections never reach the line.
+      const bottom = window.innerHeight + window.scrollY;
+      if (bottom >= document.documentElement.scrollHeight - 4)
+        current = elements[elements.length - 1]?.id ?? current;
       if (current) setActive(current);
     };
     const schedule = () => {
@@ -276,6 +284,17 @@ export function PolicyDirectory({
       window.removeEventListener('hashchange', schedule);
     };
   }, [sections]);
+  return active;
+}
+
+export function PolicyDirectory({
+  sections,
+  language,
+}: {
+  sections: [string, string][];
+  language: Language;
+}) {
+  const active = useActiveSection(sections);
   return (
     <nav
       className="pd-directory"
@@ -291,6 +310,49 @@ export function PolicyDirectory({
           {label}
         </a>
       ))}
+    </nav>
+  );
+}
+
+// Short labels and icons for the phone section bar; the full labels stay in the page's section list.
+const sectionBarItems: Record<string, { icon: LucideIcon; zh: string; en: string }> = {
+  overview: { icon: BookOpen, zh: '背景', en: 'Context' },
+  impact: { icon: Users, zh: '影响', en: 'Impact' },
+  outlook: { icon: TrendingUp, zh: '走向', en: 'Outlook' },
+  progress: { icon: ListChecks, zh: '进度', en: 'Progress' },
+  timeline: { icon: CalendarDays, zh: '时间', en: 'Dates' },
+  sources: { icon: Link2, zh: '来源', en: 'Sources' },
+};
+
+/** Bottom section bar shown on phones, where the sidebar directory is hidden. */
+export function PolicySectionBar({
+  sections,
+  language,
+}: {
+  sections: [string, string][];
+  language: Language;
+}) {
+  const active = useActiveSection(sections);
+  return (
+    <nav
+      className="pd-section-bar"
+      aria-label={language === 'en' ? 'Sections on this page' : '本页章节'}
+    >
+      {sections.map(([id, label]) => {
+        const item = sectionBarItems[id];
+        const Icon = item?.icon ?? BookOpen;
+        return (
+          <a
+            key={id}
+            href={`#${id}`}
+            aria-label={label}
+            aria-current={active === id ? 'location' : undefined}
+          >
+            <Icon aria-hidden="true" />
+            <span>{item ? item[language] : label}</span>
+          </a>
+        );
+      })}
     </nav>
   );
 }

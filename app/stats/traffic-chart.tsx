@@ -19,8 +19,8 @@ import {
 
 export function TrafficChart({ points, language }: { points: TrafficPoint[]; language: Language }) {
   const chartConfig = {
-    visitors: { label: language === 'en' ? 'Unique visitors' : '独立访客', color: '#315f92' },
-    pageViews: { label: language === 'en' ? 'Page views' : '页面浏览量', color: '#d95042' },
+    visitors: { label: language === 'en' ? 'Unique visitors' : '独立访客', color: 'var(--accent)' },
+    pageViews: { label: language === 'en' ? 'Page views' : '页面浏览量', color: 'var(--stage-opt)' },
   } satisfies ChartConfig;
   const maximum = Math.max(
     1,
@@ -49,7 +49,7 @@ export function TrafficChart({ points, language }: { points: TrafficPoint[]; lan
           domain={[0, maximum]}
         />
         <ChartTooltip
-          cursor={{ stroke: '#b8c0cb', strokeDasharray: '3 3' }}
+          cursor={{ stroke: 'var(--line-strong)', strokeDasharray: '3 3' }}
           content={
             <ChartTooltipContent
               indicator="line"

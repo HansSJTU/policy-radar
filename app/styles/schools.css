@@ -5,7 +5,7 @@
 .school-head h2 { margin: 0; font-size: var(--fs-h2); line-height: 1.25; }
 .school-head > div > p { margin: 10px 0 0; color: var(--muted); font-size: var(--fs-body); }
 .school-search { width: 310px; height: 44px; flex: 0 0 auto; padding: 0 14px; display: flex; align-items: center; gap: 10px; border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--card); transition: var(--motion-colors); }
-.school-search:focus-within { border-color: var(--ink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 10%, transparent); }
+.school-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .school-search > svg { width: 16px; height: 16px; flex: 0 0 auto; color: var(--faint); }
 .school-search input { width: 100%; min-width: 0; height: 100%; padding: 0; border: 0; color: var(--ink); background: transparent; box-shadow: none !important; font-size: var(--fs-body); outline: none; }
 .school-search input::placeholder { color: var(--muted); }
@@ -17,29 +17,29 @@
 .school-tab-list button > span { min-width: 0; }
 .school-tab-list button > b { color: var(--muted); font: var(--w-normal) var(--fs-2xs)/1 var(--font-num); transition: var(--motion-colors); }
 .school-tab-list button:hover { color: var(--ink); }
-.school-tab-list button.active { color: var(--ink); background: var(--card); box-shadow: var(--elev-1); font-weight: var(--w-strong); }
+.school-tab-list button.active { color: var(--accent-ink); background: var(--card); box-shadow: var(--elev-1); font-weight: var(--w-strong); }
 .school-tab-list button.active > b { color: var(--muted); }
 .school-tab-content { animation: tab-enter var(--motion-slow) var(--motion-ease) both; }
 
 .school-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .school-share-card { position: relative; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); scroll-margin-top: calc(var(--site-header-height) + 36px); transition: var(--motion-colors); }
 .school-share-card:hover { border-color: var(--line-strong); background: var(--card); box-shadow: var(--elev-2); }
-.school-share-card:target { border-color: var(--blue); box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 16%, transparent); }
+.school-share-card:target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .school-card { position: relative; width: 100%; flex: 1; padding: 22px; display: flex; flex-direction: column; border: 0; border-radius: var(--radius); color: var(--ink); background: transparent; font: inherit; text-align: left; text-decoration: none; }
 .school-card > div { max-width: calc(100% - 40px); width: fit-content; display: flex; align-items: center; gap: 8px; color: var(--ink-soft); font-size: var(--fs-2xs); line-height: 1.5; }
 .school-state { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: var(--gray); }
 .school-state.pause { background: var(--red); }
-.school-state.tighten { background: var(--amber); }
-.school-state.continue { background: var(--green); }
+.school-state.tighten { background: var(--stage-h1b); }
+.school-state.continue { background: var(--stage-f1); }
 /* Unverified leads are hollow. */
 .school-state.lead { border: 1.5px solid var(--gray); background: transparent; }
 .school-card h3 { margin: 14px 0 0; font-size: 1.25rem; line-height: 1.3; }
 .school-card > strong { margin-top: 10px; display: block; color: var(--ink); font-size: .9375rem; line-height: 1.6; }
 .school-card > p { margin: 8px 0 0; color: var(--muted); font-size: var(--fs-sm); line-height: 1.75; }
-.school-card > small { width: 100%; margin-top: auto; padding-top: 18px; display: inline-flex; align-items: center; gap: 7px; color: var(--ink-soft); font-size: var(--fs-xs); }
+.school-card > small { width: 100%; margin-top: auto; padding-top: 18px; display: inline-flex; align-items: center; gap: 7px; color: var(--accent-ink); font-size: var(--fs-xs); font-weight: var(--w-strong); }
 .school-card > small svg { width: 15px; height: 15px; }
 .school-evidence-arrow { margin-left: auto; color: var(--faint); transition: transform var(--motion-base) var(--motion-ease), color var(--motion-fast) var(--motion-ease); }
-.evidence-card:hover .school-evidence-arrow { color: var(--ink); transform: translate(2px, -2px); }
+.evidence-card:hover .school-evidence-arrow { color: var(--accent-ink); transform: translate(2px, -2px); }
 .school-share-card > .share-card-trigger { position: absolute; top: 16px; right: 16px; }
 .evidence-banner { margin-bottom: 4px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 10px; border-radius: var(--r-sm); background: var(--tone-amber-bg); }
 .evidence-banner svg { width: 16px; min-width: 16px; margin-top: 3px; color: var(--amber); }

@@ -1,28 +1,43 @@
 /* Design variables. DESIGN.md「设计变量」is the source of truth: change it first. */
 :root {
-  /* Neutrals: cool ink on blue-white paper. */
-  --ink: #101d33;
-  --ink-soft: #34435b;
-  --muted: #5c6a80;
-  --faint: #7c889b;
-  --paper: #f6f8fb;
-  --paper-2: #edf1f6;
+  /* Mint: cream paper, deep green ink, teal as the one accent. */
+  --ink: #142521;
+  --ink-soft: #40524d;
+  --muted: #5d6e69;
+  --faint: #84958f;
+  --paper: #f6f8f3;
+  --paper-2: #eaf1ec;
   --card: #ffffff;
-  --line: #e2e7ee;
-  --line-strong: #cbd4df;
+  --line: #dfe8e2;
+  --line-strong: #c3d2ca;
 
-  /* Status and warning colors. Color never encodes the path stage. */
-  --red: #d1453b;
-  --red-dark: #a3302a;
-  --amber: #8f5a0a;
+  /* Accent: fills, text on light, and the soft tint behind it. */
+  --accent: #0a8572;
+  --accent-ink: #0a6b5c;
+  --accent-soft: #d9f3ec;
+  /* Older rules call the accent --blue (links, focus, current). */
+  --blue: var(--accent-ink);
+
+  /* Status tones. */
+  --red: #ef6a5b;
+  --red-dark: #a8352b;
+  --amber: #855c06;
   --green: #1c6f52;
-  --blue: #2a5caa;
-  --gray: #738094;
-  --tone-red-bg: #fdf0ee;
-  --tone-amber-bg: #fbf3e4;
-  --tone-blue-bg: #edf3fb;
-  --tone-green-bg: #eaf5ef;
+  --gray: #7b8a85;
+  --tone-red-bg: #fde5e1;
+  --tone-amber-bg: #fbf0cf;
+  --tone-blue-bg: var(--accent-soft);
+  --tone-green-bg: #e3f3e6;
   --tone-gray-bg: var(--paper-2);
+
+  /* One color per path stage: a bright mark, a dark text color, a soft tint. */
+  --stage-f1: #0f9a84;  --stage-f1-ink: #0a6b5c;  --stage-f1-bg: #d9f3ec;
+  --stage-cpt: #3b82c4; --stage-cpt-ink: #255f96; --stage-cpt-bg: #e0edf9;
+  --stage-opt: #ef6a5b; --stage-opt-ink: #b23c2e; --stage-opt-bg: #fde5e1;
+  --stage-h1b: #d39a1a; --stage-h1b-ink: #855c06; --stage-h1b-bg: #fbf0cf;
+  --path-color: var(--line-strong);
+  --path-ink: var(--ink-soft);
+  --path-bg: var(--paper-2);
 
   /* Two weights only. */
   --w-normal: 400;
@@ -36,9 +51,9 @@
   --r-full: 999px;
 
   /* Elevation: hairline first, shadow second. */
-  --elev-1: 0 1px 2px rgb(16 29 51 / 4%);
-  --elev-2: 0 1px 2px rgb(16 29 51 / 4%), 0 8px 24px rgb(16 29 51 / 6%);
-  --elev-3: 0 2px 6px rgb(16 29 51 / 5%), 0 24px 60px rgb(16 29 51 / 16%);
+  --elev-1: 0 1px 2px rgb(20 60 50 / 5%);
+  --elev-2: 0 1px 2px rgb(20 60 50 / 5%), 0 10px 28px rgb(20 60 50 / 8%);
+  --elev-3: 0 2px 6px rgb(20 60 50 / 6%), 0 24px 60px rgb(20 60 50 / 18%);
 
   /* Type. Monospace is for dates, identifiers and values only. */
   --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
@@ -71,18 +86,17 @@
   --foreground: var(--ink);
   --border: var(--line);
   --input: var(--line);
-  --ring: var(--blue);
+  --ring: var(--accent);
   --primary: var(--ink);
   --primary-foreground: #fff;
   --secondary: var(--paper-2);
   --secondary-foreground: var(--ink);
   --muted-foreground: var(--muted);
-
-  /* Stage tags share one neutral treatment; the stage is told by position and label. */
-  --path-color: var(--line-strong);
-  --path-ink: var(--ink-soft);
-  --path-bg: var(--paper-2);
 }
+[data-path="F-1"] { --path-color: var(--stage-f1); --path-ink: var(--stage-f1-ink); --path-bg: var(--stage-f1-bg); }
+[data-path="CPT"] { --path-color: var(--stage-cpt); --path-ink: var(--stage-cpt-ink); --path-bg: var(--stage-cpt-bg); }
+[data-path="OPT"] { --path-color: var(--stage-opt); --path-ink: var(--stage-opt-ink); --path-bg: var(--stage-opt-bg); }
+[data-path="H-1B"] { --path-color: var(--stage-h1b); --path-ink: var(--stage-h1b-ink); --path-bg: var(--stage-h1b-bg); }
 @media (max-width: 720px) {
   :root { --page-gutter: 16px; --site-header-height: 56px; }
 }

@@ -1,9 +1,9 @@
 .policy-detail-page {
   /* Page aliases of the site variables (app/styles/tokens.css). */
-  --pd-accent: var(--blue);
-  --pd-accent-bg: var(--tone-blue-bg);
+  --pd-accent: var(--accent-ink);
+  --pd-accent-bg: var(--accent-soft);
   --pd-answer: var(--paper-2);
-  --pd-solid: var(--ink);
+  --pd-solid: var(--accent);
   --pd-solid-text: #fff;
   --pd-surface: var(--card);
   --pd-muted: var(--muted);
@@ -83,9 +83,10 @@
 }
 .pd-eyebrow span {
   padding: 2px 8px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--r-xs);
-  color: var(--ink-soft);
+  padding: 2px 10px;
+  border-radius: var(--r-full);
+  color: var(--path-ink);
+  background: var(--path-bg);
   font-weight: var(--w-strong);
 }
 .pd-main h1 {
@@ -102,8 +103,8 @@
 }
 .pd-answer {
   padding: 25px 26px 24px;
-  background: var(--pd-answer);
-  border-left: 3px solid var(--ink);
+  background: var(--pd-accent-bg);
+  border-left: 3px solid var(--accent);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 .pd-answer-label {
@@ -166,8 +167,8 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px 24px;
   padding: 16px 18px;
-  background: var(--pd-answer);
-  border-left: 3px solid var(--ink);
+  background: var(--pd-accent-bg);
+  border-left: 3px solid var(--accent);
   border-radius: 0 var(--r-sm) var(--r-sm) 0;
   font-size: 1rem;
   line-height: 1.6;
@@ -936,7 +937,7 @@
   transition: color var(--motion-base) var(--motion-ease);
 }
 .pd-directory a[aria-current='location'] {
-  color: var(--ink);
+  color: var(--pd-accent);
   font-weight: var(--w-strong);
 }
 .pd-directory a span {
@@ -1287,10 +1288,10 @@ fieldset.pd-scenarios {
   border-radius: var(--r-sm);
 }
 .pd-scenarios button[aria-pressed='true'] {
-  background: var(--pd-surface);
+  background: var(--pd-accent-bg);
   color: var(--ink);
-  border-color: var(--ink);
-  box-shadow: inset 0 0 0 1px var(--ink);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
 }
 .pd-scenario-choice {
   display: flex;
@@ -1364,9 +1365,9 @@ fieldset.pd-scenarios {
 }
 /* Done is solid, the current stage is the ink node, not yet reached is dashed and hollow. */
 .pd-stages .complete > span {
-  background: var(--ink-soft);
+  background: color-mix(in srgb, var(--accent) 55%, var(--card));
   color: #fff;
-  border-color: var(--ink-soft);
+  border-color: transparent;
 }
 .pd-stages .upcoming > span {
   border-style: dashed;
@@ -1465,3 +1466,76 @@ fieldset.pd-scenarios {
 .pd-comment-record-tab-list { flex-wrap: wrap; }
 .pd-comment-record-tab-list .pd-comment-tab { flex: 1 0 auto; }
 .pd-comment-record-panel:focus-visible { outline: 2px solid var(--pd-accent); outline-offset: 3px; }
+
+/* Phone section bar: the sidebar directory moved to the bottom edge, like an app tab bar. */
+.pd-section-bar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .policy-detail-page {
+    --pd-bar-height: 60px;
+  }
+  /* Room for the bar under the last footer line. */
+  .policy-detail-page .site-footer {
+    padding-bottom: calc(36px + var(--pd-bar-height) + 10px + env(safe-area-inset-bottom, 0px));
+  }
+  .pd-section-bar {
+    position: fixed;
+    z-index: 40;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    left: 10px;
+    height: var(--pd-bar-height);
+    padding: 5px;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    gap: 2px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    background: color-mix(in srgb, var(--card) 88%, transparent);
+    -webkit-backdrop-filter: saturate(1.6) blur(16px);
+    backdrop-filter: saturate(1.6) blur(16px);
+    box-shadow: var(--elev-3);
+  }
+  .pd-section-bar a {
+    min-width: 0;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 3px;
+    border-radius: var(--radius);
+    color: var(--muted);
+    font-size: .6875rem;
+    line-height: 1.2;
+    text-align: center;
+    transition: var(--motion-colors);
+  }
+  .policy-detail-page .pd-section-bar a:hover {
+    color: var(--ink);
+  }
+  .pd-section-bar a svg {
+    width: 19px;
+    height: 19px;
+    stroke-width: 1.8;
+  }
+  .pd-section-bar a span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .policy-detail-page .pd-section-bar a[aria-current='location'] {
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    font-weight: var(--w-strong);
+  }
+  .pd-section-bar a:focus-visible {
+    outline-offset: -2px;
+  }
+}
+@media print {
+  .pd-section-bar {
+    display: none !important;
+  }
+}
