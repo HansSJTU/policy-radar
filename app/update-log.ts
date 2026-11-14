@@ -23,6 +23,43 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-13",
+    "changes": [
+      {
+        "id": "tamu-cpt-399-691-november13",
+        "category": "#05 CPT 学校追踪",
+        "title": "Texas A&M 列明 399、691 课程及合作协议条件",
+        "summary": "必修 399 课程可作为 CPT 依据；691 研究须同时满足研究和论文必需条件，院系与雇主共同签署合作协议表。",
+        "before": "8·24 之后的新申请必须同时满足两条：实践为全体学生毕业要求，并有合作协议。不满足的申请会被拒绝。",
+        "after": "8·24 之后的新申请须满足项目实践要求并有合作协议。新增 FAQ 说明：所有学生都必须修读的 399 High-Impact Experience 课程可作为 CPT 依据，即使实习不是取得该课程学分的唯一方式；只是在技术选修课清单中选择实习课不符合资格。论文型硕士或博士使用 691 Research，须由院系说明：取得校外数据、设备或实验室条件是完成研究所必需，论文完成又依赖这项研究。院系须上传课程目录中的实践要求；目录尚未更新时，可提交项目手册截图，并书面确认正在更新下一学年目录。雇主与院系都须填写并签署 ISSS 的 CPT 合作协议及雇主信息表，由院系通过 ISSS Portal 上传；双方还须直接沟通。8·24 当日或之前提交或获批的 CPT 照常，修改授权时按新条件审核。",
+        "sources": [
+          {
+            "label": "Texas A&M ISSS · CPT 新增 FAQ",
+            "href": "https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html"
+          },
+          {
+            "label": "Texas A&M ISSS · CPT 合作协议及雇主信息表",
+            "href": "https://global.tamu.edu/_files/_documents/isss-documents/cpt-cooperative-agreement-and-employer-info-form.pdf"
+          }
+        ]
+      },
+      {
+        "id": "brown-concurrent-masters-cpt-november13",
+        "category": "#05 CPT 学校追踪",
+        "title": "Brown 补充博士同时攻读硕士的 CPT 条件",
+        "summary": "11·13 页面补充 Concurrent Secondary Master's Degree：博士生不能凭同时攻读的硕士项目申请 CPT。",
+        "before": "ISSS 11·09 更新的规定暂停 F-1 本科生 CPT，期限未定，包括可选职业实践方向、独立研究课和 Brown in Washington 等可选校外学期。硕士只接受 PRIME、数据科学、公共事务、教学、城市教育政策和公共卫生 6 个有必修实践要求的项目。博士生通常不符合资格；已获批的博士论文计划要求在校外机构工作才能完成论文的，ISSS 可在极少数情形下考虑。申请须有 Brown 与雇主的合作协议，并在取得 CPT I-20 后开始工作。",
+        "after": "ISSS 11·13 更新的规定暂停 F-1 本科生 CPT，期限未定，包括可选职业实践方向、独立研究课和 Brown in Washington 等可选校外学期。硕士只接受 PRIME、数据科学、公共事务、教学、城市教育政策和公共卫生 6 个有必修实践要求的项目。博士生通常不符合资格；已获批的博士论文计划要求在校外机构工作才能完成论文的，ISSS 可在极少数情形下考虑。在读博士通过 Open Graduate Education 或 Concurrent Secondary Master's Degree 同时攻读硕士，不能凭该硕士项目申请 CPT。申请须有 Brown 与雇主的合作协议，并在取得 CPT I-20 后开始工作。",
+        "sources": [
+          {
+            "label": "Brown ISSS · 11·13 更新的 CPT 规定",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "changes": [
       {
@@ -2260,6 +2297,43 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-13",
+    "changes": [
+      {
+        "id": "tamu-cpt-399-691-november13",
+        "category": "#05 CPT School Tracker",
+        "title": "Texas A&M specifies CPT conditions for 399, 691 and agreements",
+        "summary": "Required 399 courses can support CPT. For 691, CPT must be essential to research that the thesis or dissertation depends on. Departments and employers sign the cooperative-agreement form.",
+        "before": "New applications after August 24 must satisfy both the program-wide graduation requirement and cooperative-agreement standards.",
+        "after": "New applications after August 24 must meet the program’s training requirement and have a cooperative agreement. The new FAQ allows a 399 High-Impact Experience course required of all degree candidates as a CPT basis, even if an internship is not the only way to earn 399 credit. Choosing an internship from technical electives does not qualify. For a thesis-track master’s or PhD student using 691 Research, the department must explain why access to outside data, equipment or laboratories is essential to the research and why the thesis or dissertation depends on that research. Departments upload the catalog’s training requirement. If the catalog is outdated, a program-handbook screenshot is accepted with written confirmation that the next academic year’s catalog is being updated. The employer and department both complete and sign the ISSS CPT Cooperative Agreement and Employer Information Form; the department uploads it in the ISSS Portal. They must also communicate directly. Requests submitted or authorized on or before August 24 continue; changes to authorizations are reviewed under the new conditions.",
+        "sources": [
+          {
+            "label": "Texas A&M ISSS · new CPT FAQ",
+            "href": "https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html"
+          },
+          {
+            "label": "Texas A&M ISSS · CPT Cooperative Agreement and Employer Information Form",
+            "href": "https://global.tamu.edu/_files/_documents/isss-documents/cpt-cooperative-agreement-and-employer-info-form.pdf"
+          }
+        ]
+      },
+      {
+        "id": "brown-concurrent-masters-cpt-november13",
+        "category": "#05 CPT School Tracker",
+        "title": "Brown clarifies CPT for PhD students taking a concurrent master’s",
+        "summary": "The November 13 page adds Concurrent Secondary Master’s Degree enrollment: a concurrent master’s does not qualify a PhD student for CPT.",
+        "before": "The November 9 ISSS update suspends F-1 undergraduate CPT indefinitely, including optional professional tracks, independent study and optional semester-away programs such as Brown in Washington. Master’s requests are accepted only from six programs with mandatory training: PRIME, Data Science, Public Affairs, Teaching, Urban Education Policy and Public Health. PhD students generally do not qualify; ISSS may consider very limited cases where an approved dissertation proposal requires employment with an external organization to complete the dissertation. Requests need a cooperative agreement between Brown and the employer; work begins after the CPT I-20 is issued.",
+        "after": "The November 13 ISSS update suspends F-1 undergraduate CPT indefinitely, including optional professional tracks, independent study and optional semester-away programs such as Brown in Washington. Master’s requests are accepted only from six programs with mandatory training: PRIME, Data Science, Public Affairs, Teaching, Urban Education Policy and Public Health. PhD students generally do not qualify; ISSS may consider very limited cases where an approved dissertation proposal requires employment with an external organization to complete the dissertation. Concurrent master’s enrollment through Open Graduate Education or the Concurrent Secondary Master’s Degree program does not qualify a PhD student for CPT. Requests need a cooperative agreement between Brown and the employer; work begins after the CPT I-20 is issued.",
+        "sources": [
+          {
+            "label": "Brown ISSS · CPT requirements updated November 13",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-12",
     "changes": [
