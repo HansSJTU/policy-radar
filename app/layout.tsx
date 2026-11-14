@@ -6,7 +6,18 @@ import { siteMetadata } from './site-metadata';
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = siteMetadata(await resolveRequestLanguage());
-  return { title, description };
+  return {
+    title,
+    description,
+    // Drawn from public/icon.svg by scripts/build-icons.mjs.
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
+        { url: '/icon.svg', type: 'image/svg+xml' },
+      ],
+      apple: '/apple-touch-icon.png',
+    },
+  };
 }
 
 export default async function RootLayout({

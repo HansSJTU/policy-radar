@@ -168,9 +168,10 @@ export function shortCacheKey(request: RequestLike): string | null {
 }
 
 // Requests for files this site never serves: scanners probing for secrets
-// (/.env, /wp-admin/install.php, /config.json) and browsers asking for icons
-// the pages do not declare. Existing static files are served before the
-// Worker runs, so anything matching here is a miss.
+// (/.env, /wp-admin/install.php, /config.json) and browsers guessing icon
+// names. Existing static files, the real favicon.ico and
+// apple-touch-icon.png included, are served before the Worker runs, so
+// anything matching here is a miss.
 const PROBE_PATH =
   /(^|\/)\.|\.(php|env|json|ya?ml|ini|bak|sql)$|^\/(favicon\.ico|apple-touch-icon[^/]*\.png)$/i;
 
