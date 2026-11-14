@@ -4,7 +4,11 @@ import test from 'node:test';
 import { resolveLanguage, cookieValue } from '../app/language.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import { SCHOOL_IDS } from '../app/school-pages.ts';
-import { staticAssetFor, staticFiles } from '../app/static-pages.ts';
+import {
+  shortCacheKey,
+  staticAssetFor,
+  staticFiles,
+} from '../app/static-pages.ts';
 
 function assetFor(url, headers = {}, method = 'GET') {
   return staticAssetFor({
@@ -83,4 +87,24 @@ test('leaves dynamic requests to the renderer', () => {
   assert.equal(assetFor('/?lang=en&_rsc=abc'), null);
   assert.equal(assetFor('/', {}, 'POST'), null);
   assert.equal(assetFor('/__static/zh/home-all'), null);
+});
+
+test('keeps a short-lived copy of the stats page per language', () => {
+  const key = (url, headers = {}, method = 'GET') =>
+    shortCacheKey({
+      method,
+      url: `https://stayradar.org${url}`,
+      headers: new Headers(headers),
+    });
+  assert.equal(
+    key('/stats', { 'accept-language': 'zh-CN' }),
+    'https://stayradar.org/__short-cache/stats?lang=zh',
+  );
+  assert.equal(
+    key('/stats?lang=en&utm_source=x', { cookie: 'policy-radar-language=zh' }),
+    'https://stayradar.org/__short-cache/stats?lang=en',
+  );
+  assert.equal(key('/stats', { rsc: '1' }), null);
+  assert.equal(key('/stats', {}, 'POST'), null);
+  assert.equal(key('/api/visit'), null);
 });

@@ -1,11 +1,23 @@
 import handler from 'vinext/server/fetch-handler';
 
 import { canonicalRedirect } from '../app/canonical-host';
-import { staticAssetFor } from '../app/static-pages';
+import { LANGUAGE_COOKIE } from '../app/language';
+import {
+  SHORT_CACHE_SECONDS,
+  shortCacheKey,
+  staticAssetFor,
+} from '../app/static-pages';
 
 // Pages that only change on deploy are rendered at build time (see
 // app/static-pages.ts). Serving them from static assets costs almost no CPU;
 // everything else, and any request without a prebuilt file, goes to vinext.
+// Browsers still revalidate: the language can come from a cookie.
+function withNoStore(response: Response) {
+  const served = new Response(response.body, response);
+  served.headers.set('Cache-Control', 'no-store, must-revalidate');
+  return served;
+}
+
 export default {
   async fetch(request, env, ctx) {
     const asset = canonicalRedirect(request.url, request.method)
@@ -26,6 +38,29 @@ export default {
         }
         return served;
       }
+    }
+    const cacheKey = canonicalRedirect(request.url, request.method)
+      ? null
+      : shortCacheKey(request);
+    if (cacheKey) {
+      const cache = await caches.open('short-cache');
+      const cached = await cache.match(cacheKey);
+      if (cached) return withNoStore(cached);
+      const language = new URL(cacheKey).searchParams.get('lang');
+      const headers = new Headers(request.headers);
+      headers.set('cookie', `${LANGUAGE_COOKIE}=${language}`);
+      const response = await handler.fetch(
+        new Request(request, { headers }),
+        env,
+        ctx,
+      );
+      if (response.status !== 200) return response;
+      // The edge cache honours Cache-Control, so the stored copy gets its own.
+      const stored = new Response(response.clone().body, response);
+      stored.headers.set('Cache-Control', `public, max-age=${SHORT_CACHE_SECONDS}`);
+      stored.headers.delete('Vary');
+      ctx.waitUntil(cache.put(cacheKey, stored));
+      return response;
     }
     return handler.fetch(request, env, ctx);
   },

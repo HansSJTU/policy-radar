@@ -144,3 +144,25 @@ export function staticAssetFor(request: RequestLike): string | null {
   }
   return null;
 }
+
+// Pages that read live data but tolerate being a few minutes old. The Worker
+// keeps each rendered copy in the edge cache for this long, so a burst of
+// requests renders the page once per language instead of once per request.
+export const SHORT_CACHE_SECONDS = 300;
+
+// The edge-cache key for a short-cached page, or null when the request must
+// be rendered as is. The key names the page language; the Worker renders the
+// cached copy with that language cookie so `<html lang>` matches.
+export function shortCacheKey(request: RequestLike): string | null {
+  if (request.method !== 'GET') return null;
+  const url = new URL(request.url);
+  if (request.headers.has('rsc') || url.searchParams.has('_rsc')) return null;
+  if (url.pathname !== '/stats') return null;
+  const language = resolveLanguage({
+    explicit: url.searchParams.get('lang'),
+    saved: cookieValue(request.headers.get('cookie'), LANGUAGE_COOKIE),
+    referrer: request.headers.get('referer'),
+    acceptLanguage: request.headers.get('accept-language'),
+  });
+  return `${url.origin}/__short-cache/stats?lang=${language}`;
+}
