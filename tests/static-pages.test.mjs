@@ -5,6 +5,8 @@ import { resolveLanguage, cookieValue } from '../app/language.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import { SCHOOL_IDS } from '../app/school-pages.ts';
 import {
+  isProbePath,
+  ratingsCacheKey,
   shortCacheKey,
   staticAssetFor,
   staticFiles,
@@ -106,5 +108,21 @@ test('keeps a short-lived copy of the stats page per language', () => {
   );
   assert.equal(key('/stats', { rsc: '1' }), null);
   assert.equal(key('/stats', {}, 'POST'), null);
+  assert.equal(key('/api/visit'), null);
+});
+
+test('answers scanner probes without rendering, but not real routes', () => {
+  for (const path of ['/.env', '/wp-admin/install.php', '/config/config.json', '/.git/HEAD', '/favicon.ico', '/apple-touch-icon-precomposed.png', '/secrets.yaml'])
+    assert.equal(isProbePath(path), true, path);
+  for (const path of ['/', '/stats', '/feed.xml', '/sitemap.xml', '/robots.txt', '/policies/opt-fee', '/schools/ucla', '/api/policy-ratings'])
+    assert.equal(isProbePath(path), false, path);
+});
+
+test('caches vote aggregates per query, not per reader', () => {
+  const key = (url, method = 'GET') =>
+    ratingsCacheKey({ method, url: `https://stayradar.org${url}`, headers: new Headers() });
+  assert.equal(key('/api/policy-ratings'), 'https://stayradar.org/__short-cache/policy-ratings');
+  assert.equal(key('/api/policy-ratings?votes=genuine'), 'https://stayradar.org/__short-cache/policy-ratings?votes=genuine');
+  assert.equal(key('/api/policy-ratings', 'POST'), null);
   assert.equal(key('/api/visit'), null);
 });

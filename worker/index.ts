@@ -3,6 +3,9 @@ import handler from 'vinext/server/fetch-handler';
 import { canonicalRedirect } from '../app/canonical-host';
 import { LANGUAGE_COOKIE } from '../app/language';
 import {
+  isProbePath,
+  RATINGS_CACHE_SECONDS,
+  ratingsCacheKey,
   SHORT_CACHE_SECONDS,
   shortCacheKey,
   staticAssetFor,
@@ -20,6 +23,22 @@ function withNoStore(response: Response) {
 
 export default {
   async fetch(request, env, ctx) {
+    if (isProbePath(new URL(request.url).pathname)) {
+      return new Response('Not found', { status: 404 });
+    }
+    const ratingsKey = ratingsCacheKey(request);
+    if (ratingsKey) {
+      const cache = await caches.open('short-cache');
+      const cached = await cache.match(ratingsKey);
+      if (cached) return withNoStore(cached);
+      const response = await handler.fetch(request, env, ctx);
+      if (response.status !== 200) return response;
+      const stored = new Response(response.clone().body, response);
+      stored.headers.set('Cache-Control', `public, max-age=${RATINGS_CACHE_SECONDS}`);
+      stored.headers.delete('Vary');
+      ctx.waitUntil(cache.put(ratingsKey, stored));
+      return response;
+    }
     const asset = canonicalRedirect(request.url, request.method)
       ? null
       : staticAssetFor(request);

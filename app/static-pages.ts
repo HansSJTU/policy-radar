@@ -166,3 +166,26 @@ export function shortCacheKey(request: RequestLike): string | null {
   });
   return `${url.origin}/__short-cache/stats?lang=${language}`;
 }
+
+// Requests for files this site never serves: scanners probing for secrets
+// (/.env, /wp-admin/install.php, /config.json) and browsers asking for icons
+// the pages do not declare. Existing static files are served before the
+// Worker runs, so anything matching here is a miss.
+const PROBE_PATH =
+  /(^|\/)\.|\.(php|env|json|ya?ml|ini|bak|sql)$|^\/(favicon\.ico|apple-touch-icon[^/]*\.png)$/i;
+
+export function isProbePath(pathname: string): boolean {
+  return PROBE_PATH.test(pathname);
+}
+
+export const RATINGS_CACHE_SECONDS = 60;
+
+// Vote aggregates change slowly; a voter sees their own vote from the POST
+// response. One copy per query string is kept at the edge for a minute.
+export function ratingsCacheKey(request: RequestLike): string | null {
+  if (request.method !== 'GET') return null;
+  const url = new URL(request.url);
+  if (url.pathname !== '/api/policy-ratings') return null;
+  const genuine = url.searchParams.get('votes') === 'genuine';
+  return `${url.origin}/__short-cache/policy-ratings${genuine ? '?votes=genuine' : ''}`;
+}
