@@ -25,6 +25,8 @@ npm run lint
 npm run build
 ```
 
+`npm run sources` fetches every source the site cites and reports which ones changed since the site was last reconciled with them. Run it before a content update, read what it lists, then run `npm run sources -- --record <id>` for each policy or school you finished. See `AGENTS.md`.
+
 A Pull Request should explain:
 
 1. which policy, school, or interface behavior changed;
