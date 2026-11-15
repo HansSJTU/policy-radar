@@ -22,13 +22,15 @@ test('EAD final rule preserves the operative 2025 cutoff and stays separate from
   assert.ok(!ead.next.some(({ date }) => date === '2026-10-14'));
 });
 
-test('deference NPRM is a published proposal with a November 13 comment deadline, not automatic denial', () => {
+test('deference NPRM comments closed November 13 while current extension rules stay in force', () => {
   const policy = getPolicy('nonimmigrant-deference', 'en');
   assert.equal(policy.effectState, 'not-in-effect');
-  assert.match(policy.status, /Comments due November 13/);
+  assert.match(policy.status, /Comments closed November 13/);
   assert.match(policy.sources[0].href, /federalregister\.gov\/documents\/2026\/10\/14\/2026-20941\//);
   assert.match(policy.caveat, /decided on their merits/);
-  assert.ok(policy.next.some(({date}) => date === '2026-11-13'));
+  assert.ok(!policy.next.some(({date}) => date === '2026-11-13'));
+  assert.ok(policy.milestones.some(({date, text}) => date === '2026-11-13' && /comments closed/i.test(text)));
+  assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-11-13' && e.timing === 'recent' && e.availableOn === '2026-11-14'));
   assert.ok(policy.next.some(({date}) => date === 'Date unknown'));
   assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-11-13' && e.timing === 'upcoming'));
   assert.ok(briefingEntries.some(e => e.policyId === policy.id && e.date === '2026-10-13' && e.timing === 'recent'));

@@ -54,6 +54,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Jane Doe case: hearing on the government’s request to end the case and scheduling conference, 4 p.m. Pacific / 7 p.m. Eastern."
   },
   {
+    "id": "deference-comments-closed-november13",
+    "date": "2026-11-13",
+    "availableOn": "2026-11-14",
+    "policyId": "nonimmigrant-deference",
+    "timing": "recent",
+    "zh": "取消 I-129 延期“参照上次批准”原则的提案已结束公众评论。DHS 接下来阅读、回应意见，再决定最终规则；现行延期审查规定继续适用。",
+    "en": "Public comments on the proposal to end deference to earlier I-129 approvals closed. DHS next reads and responds to comments before deciding on a final rule. Current extension-review rules remain in place."
+  },
+  {
     "id": "deference-comment-deadline",
     "date": "2026-11-13",
     "policyId": "nonimmigrant-deference",
