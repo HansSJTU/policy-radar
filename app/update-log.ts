@@ -23,6 +23,47 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-14",
+    "changes": [
+      {
+        "id": "deference-comments-closed-november13",
+        "category": "#14 工作签证续期：拟取消“上次批过就参照”的原则",
+        "title": "11·13 评论结束，等待 DHS 决定最终规则",
+        "summary": "公众意见征集已结束，DHS 接下来阅读、回应意见，再决定最终条文；现行延期审查规定继续适用。",
+        "before": "正式提案 · 评论截至 11 月 13 日；提案已公布，正在收集公众意见。",
+        "after": "正式提案 · 11·13 评论已结束；公众意见已结束，等待 DHS 决定最终规则。11·13 意见截止从未来节点移入已发生的里程碑。",
+        "sources": [
+          {
+            "label": "Federal Register · 10·14 提案与 11·13 评论结束状态",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
+          },
+          {
+            "label": "eCFR · 现行参照上次批准条款",
+            "href": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.1#p-214.1(c)(5)"
+          }
+        ]
+      },
+      {
+        "id": "cooper-union-cpt-added-november14",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 Cooper Union 的 CPT 暂停通知",
+        "summary": "学校 8·27 通知暂停全部 CPT 申请，现行就业页面也保留这项安排。",
+        "before": "81 条记录：77 条校方网页、4 条社区截图；79 所不同学校。",
+        "after": "加入 Cooper Union 校方网页后，共 82 条记录：78 条校方网页、4 条社区截图；80 所不同学校。暂停安排来自 8·27 通知。",
+        "sources": [
+          {
+            "label": "Cooper Union ISSO · 8·27 CPT 暂停通知",
+            "href": "https://cooper.edu/admissions/international/Changes-to-CPT-policy"
+          },
+          {
+            "label": "Cooper Union · 现行 F-1 就业页面",
+            "href": "https://cooper.edu/admissions/international/student-employment"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-13",
     "changes": [
       {
@@ -2297,6 +2338,47 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-14",
+    "changes": [
+      {
+        "id": "deference-comments-closed-november13",
+        "category": "#14 Proposed End to Deference to Prior Approvals in Work-Visa Renewals",
+        "title": "Comments closed November 13; DHS next decides on a final rule",
+        "summary": "Public comments have closed. DHS next reads and responds to comments before deciding the final text; current extension-review rules remain in place.",
+        "before": "Proposed rule · Comments due November 13; Proposal published; public comments open.",
+        "after": "Proposed rule · Comments closed November 13; Public comments closed; awaiting DHS’s final-rule decision. The November 13 deadline moves from next steps to a completed milestone.",
+        "sources": [
+          {
+            "label": "Federal Register · October 14 proposal and closed-comment status",
+            "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
+          },
+          {
+            "label": "eCFR · current deference provision",
+            "href": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.1#p-214.1(c)(5)"
+          }
+        ]
+      },
+      {
+        "id": "cooper-union-cpt-added-november14",
+        "category": "#05 CPT School Tracker",
+        "title": "Add Cooper Union’s CPT pause notice",
+        "summary": "The August 27 notice pauses all CPT applications; the current employment page retains the pause.",
+        "before": "81 evidence entries: 77 public university pages and 4 community reports; 79 distinct institutions.",
+        "after": "Adding Cooper Union’s public page brings the total to 82 evidence entries: 78 public university pages and 4 community reports; 80 distinct institutions. The pause comes from the August 27 notice.",
+        "sources": [
+          {
+            "label": "Cooper Union ISSO · August 27 CPT pause notice",
+            "href": "https://cooper.edu/admissions/international/Changes-to-CPT-policy"
+          },
+          {
+            "label": "Cooper Union · current F1 employment page",
+            "href": "https://cooper.edu/admissions/international/student-employment"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-13",
     "changes": [

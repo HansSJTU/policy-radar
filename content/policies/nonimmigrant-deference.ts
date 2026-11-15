@@ -12,15 +12,15 @@ export const nonimmigrantDeference: PolicyContent = {
   ],
   "process": {
     "kind": "federal-rulemaking",
-    "lastCompletedStage": 2,
-    "activeStage": 3,
+    "lastCompletedStage": 3,
+    "activeStage": null,
     "nextStage": 4
   },
   "sources": [
     {
       "href": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility",
-      "zh": "Federal Register 10·14 NPRM（91 FR 65119）",
-      "en": "Federal Register October 14 NPRM (91 FR 65119)"
+      "zh": "Federal Register 10·14 NPRM（91 FR 65119）· 11·13 评论已结束",
+      "en": "Federal Register October 14 NPRM (91 FR 65119) · comments closed November 13"
     },
     {
       "href": "https://public-inspection.federalregister.gov/2026-20941.pdf",
@@ -41,6 +41,11 @@ export const nonimmigrantDeference: PolicyContent = {
       "href": "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD26",
       "zh": "OIRA · 1615-AD26 审查记录检索",
       "en": "OIRA · 1615-AD26 review search"
+    },
+    {
+      "href": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.1#p-214.1(c)(5)",
+      "zh": "eCFR · 现行 8 CFR 214.1(c)(5) 参照上次批准条款",
+      "en": "eCFR · current 8 CFR 214.1(c)(5) deference provision"
     }
   ],
   "commentUrl": "https://www.regulations.gov/docket/USCIS-2026-0529",
@@ -49,20 +54,20 @@ export const nonimmigrantDeference: PolicyContent = {
     "short": "续期不再参照上次批准",
     "searchTitle": "H-1B 延期拟取消“参照上次批准”：每次都要重新审",
     "searchDescription": "DHS 提议取消“雇主、员工和工作没变就参照上次批准”的做法，H-1B 等工作签证每次延期都要重新审资格。",
-    "status": "正式提案 · 评论截至 11 月 13 日",
+    "status": "正式提案 · 11·13 评论已结束",
     "effectLabel": "尚未生效 · 现行规则未变",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "H-1B 第一期三年到了要延期时，雇主会再递交一份 I-129。现在的规定是：雇主、员工和工作内容都没变，USCIS 一般会参照上次的批准，不从头挑毛病。DHS 提议取消这条照顾，让每次延期都重新审一遍资格。提案 10·14 公布，公众意见 11·13 截止，现在还没生效，延期照旧。",
+    "tldr": "H-1B 第一期三年到了要延期时，雇主会再递交一份 I-129。现在的规定是：雇主、员工和工作内容都没变，USCIS 一般会参照上次的批准，不从头挑毛病。DHS 提议取消这条照顾，让每次延期都重新审一遍资格。提案 10·14 公布，公众意见已于 11·13 结束，现在还没生效，延期照旧。",
     "tags": [
       "H-1B 续期",
       "I-129",
       "资格审查"
     ],
-    "summary": "I-129 是雇主为 H-1B、L-1、O-1 等工作签证递交的申请表，第一次申请和后来的延期都用它。现行法规 8 CFR 214.1(c)(5) 规定：延期时如果雇主、员工和基本情况都和上次一样，USCIS 一般参照上次的批准结论。DHS 提议删除这一条，让 USCIS 每次都独立判断资格。提案 10·14 正式刊登（91 FR 65119），任何人都可以在 11·13 前提交意见。",
+    "summary": "I-129 是雇主为 H-1B、L-1、O-1 等工作签证递交的申请表，第一次申请和后来的延期都用它。现行法规 8 CFR 214.1(c)(5) 规定：延期时如果雇主、员工和基本情况都和上次一样，USCIS 一般参照上次的批准结论。DHS 提议删除这一条，让 USCIS 每次都独立判断资格。提案 10·14 正式刊登（91 FR 65119），公众意见已在 11·13 结束，DHS 接下来阅读、回应意见，再决定最终条文。",
     "audience": "要用 I-129 延期的工作签证持有人和他们的雇主：H-1B、L-1、O-1，以及用这张表办理的 E、TN 申请。对 F-1 学生来说，这关系到以后 H-1B 第一期三年到期时的延期。",
     "caveat": "每份延期申请都按交上去的材料来判断，这一点不变；已经批下来的身份和工作许可照常有效。",
-    "background": "现行 8 CFR 214.1(c)(5) 是一条“参照上次批准”的规定：I-129 延期时，如果雇主、员工和基本事实都没变，USCIS 一般沿用上次对资格的认定，不会因为换了一位审查官就推翻重来。这条规定也有例外：上次批错了、情况有重大变化，或者出现了新的重要信息，USCIS 都可以重新审。申请人每次也照样要交证据。\n这次的提案（RIN 1615-AD26）要整条删掉这项规定。DHS 的理由是：每次申请都应该独立审核，由申请人自己证明符合条件。它和还在 OIRA 审查的 H-1B 综合改革（#07，RIN 1615-AD00）是两件事，分开推进。\n提案现在处在公众意见阶段。意见截止后，DHS 要阅读、回应这些意见，再决定最终条文；最终规则公布并生效之后，延期的审法才会改变。",
+    "background": "现行 8 CFR 214.1(c)(5) 是一条“参照上次批准”的规定：I-129 延期时，如果雇主、员工和基本事实都没变，USCIS 一般沿用上次对资格的认定，不会因为换了一位审查官就推翻重来。这条规定也有例外：上次批错了、情况有重大变化，或者出现了新的重要信息，USCIS 都可以重新审。申请人每次也照样要交证据。\n这次的提案（RIN 1615-AD26）要整条删掉这项规定。DHS 的理由是：每次申请都应该独立审核，由申请人自己证明符合条件。它和还在 OIRA 审查的 H-1B 综合改革（#07，RIN 1615-AD00）是两件事，分开推进。\n公众意见已于 11·13 结束。DHS 接下来阅读、回应这些意见，再决定最终条文；最终规则公布并生效之后，延期的审法才会改变。",
     "teaser": "上次批过，下次延期可能要从头证明一遍。",
     "headline": "延期可能要从头证明资格。",
     "analysis": "如果按提案定稿，最直接的变化是：同一个雇主、同一个岗位的延期，也可能被要求重新完整说明这个职位为什么符合 H-1B 要求、你本人为什么够格。USCIS 发补件通知（要求补交材料）的机会会变多，准备材料的时间和律师费也可能增加。手里有效的 H-1B 不受影响。",
@@ -82,14 +87,14 @@ export const nonimmigrantDeference: PolicyContent = {
         ]
       }
     ],
-    "outlook": "先看 11·13 意见截止后 DHS 怎么定稿。在最终规则生效之前，延期仍然按现在的“参照上次批准”来审。",
+    "outlook": "公众意见已在 11·13 结束，接下来看 DHS 怎么定稿。在最终规则生效之前，延期仍然按现在的“参照上次批准”来审。",
     "scenarios": [
       {
-        "name": "意见征集期内",
+        "name": "评论结束，等待定稿",
         "headline": "现在照旧参照，先评估影响",
-        "assumption": "提案在征求意见，还没有最终规则。",
+        "assumption": "公众意见已结束，DHS 尚未公布最终规则。",
         "effects": "现在递交的延期仍按现行规定审；雇主可以趁这段时间评估影响。",
-        "signals": "意见截止日，以及 DHS 对提案的说明。"
+        "signals": "DHS 对公众意见的回应，以及最终规则的条文和生效日期。"
       },
       {
         "name": "最终删除这一条",
@@ -128,13 +133,13 @@ export const nonimmigrantDeference: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "提案正式刊登（91 FR 65119），公众意见 11·13 截止。"
+      },
+      {
+        "date": "2026-11-13",
+        "text": "公众意见征集结束，DHS 接下来阅读、回应意见，再决定最终条文。"
       }
     ],
     "next": [
-      {
-        "date": "2026-11-13",
-        "text": "公众意见截止（美东时间午夜前），在 regulations.gov 的案卷 USCIS-2026-0529 下提交。"
-      },
       {
         "date": "日期未定",
         "text": "DHS 审阅意见后，决定最终条文和生效日期。",
@@ -142,9 +147,9 @@ export const nonimmigrantDeference: PolicyContent = {
       }
     ],
     "process": {
-      "detail": "提案 10·14 正式刊登，公众意见 11·13 截止。",
-      "currentSummary": "提案已公布，正在收集公众意见",
-      "waitingFor": "11·13 意见截止，之后看 DHS 会不会发最终规则。"
+      "detail": "提案 10·14 正式刊登，公众意见已在 11·13 结束；下一步由 DHS 决定最终规则。",
+      "currentSummary": "公众意见已结束，等待 DHS 决定最终规则",
+      "waitingFor": "DHS 阅读、回应意见后，决定最终条文和生效日期。"
     }
   },
   "en": {
@@ -152,20 +157,20 @@ export const nonimmigrantDeference: PolicyContent = {
     "short": "Renewal Deference",
     "searchTitle": "H-1B Extensions: Proposal to End Deference to Prior Approvals",
     "searchDescription": "DHS proposes ending deference to earlier approvals, so each H-1B or other work-visa extension would be reviewed from the start, even when the employer, worker and job are unchanged.",
-    "status": "Proposed rule · Comments due November 13",
+    "status": "Proposed rule · Comments closed November 13",
     "effectLabel": "Not in effect · Current rules unchanged",
     "agency": "DHS / USCIS",
     "documentId": "1615-AD26 · FR Doc. 2026-20941",
-    "tldr": "When the first three years of an H-1B run out, the employer files another I-129 to extend it. Today, if the employer, worker and job are the same, USCIS generally follows its earlier approval instead of starting over. DHS proposes ending that, so every extension can be reviewed from scratch. The proposal was published October 14 and comments close November 13. It is not in effect; extensions work as before for now.",
+    "tldr": "When the first three years of an H-1B run out, the employer files another I-129 to extend it. Today, if the employer, worker and job are the same, USCIS generally follows its earlier approval instead of starting over. DHS proposes ending that, so every extension can be reviewed from scratch. The proposal was published October 14 and comments closed November 13. It is not in effect; extensions work as before for now.",
     "tags": [
       "Work-petition renewals",
       "I-129",
       "Eligibility review"
     ],
-    "summary": "Form I-129 is the petition employers file for H-1B, L-1, O-1 and other work visas, both the first time and for extensions. The current regulation, 8 CFR 214.1(c)(5), says that when an extension involves the same employer, worker and basic facts, USCIS generally follows its earlier decision. DHS proposes deleting that provision so USCIS decides eligibility fresh each time. The proposal was published October 14 (91 FR 65119), and anyone can comment until November 13.",
+    "summary": "Form I-129 is the petition employers file for H-1B, L-1, O-1 and other work visas, both the first time and for extensions. The current regulation, 8 CFR 214.1(c)(5), says that when an extension involves the same employer, worker and basic facts, USCIS generally follows its earlier decision. DHS proposes deleting that provision so USCIS decides eligibility fresh each time. The proposal was published October 14 (91 FR 65119), and public comments closed November 13. DHS next reads and responds to comments before deciding on the final text.",
     "audience": "Work-visa holders extending through Form I-129 and their employers: H-1B, L-1, O-1, and E or TN cases filed on that form. For F-1 students, this matters when a future H-1B reaches its first three-year extension.",
     "caveat": "Extensions are still decided on their merits, meaning on the evidence submitted, and approvals and status you already have stay valid.",
-    "background": "Current 8 CFR 214.1(c)(5) is a “follow the earlier approval” rule, known as deference. When an I-129 extension involves the same employer, worker and basic facts, USCIS generally keeps its earlier finding on eligibility, so a new officer does not overturn it on a whim. There are exceptions: USCIS can look again if the earlier approval was a mistake, the facts changed materially or important new information appears. Applicants still submit evidence every time.\nThis proposal (RIN 1615-AD26) would delete that provision entirely. DHS’s reasoning is that each petition should be reviewed on its own, with the applicant proving eligibility. It moves separately from the broader H-1B reform (#07, RIN 1615-AD00) still under OIRA review.\nThe proposal is now in its public comment period. After comments close, DHS must read and respond to them before deciding the final text. Extension reviews change only after a final rule is published and takes effect.",
+    "background": "Current 8 CFR 214.1(c)(5) is a “follow the earlier approval” rule, known as deference. When an I-129 extension involves the same employer, worker and basic facts, USCIS generally keeps its earlier finding on eligibility, so a new officer does not overturn it on a whim. There are exceptions: USCIS can look again if the earlier approval was a mistake, the facts changed materially or important new information appears. Applicants still submit evidence every time.\nThis proposal (RIN 1615-AD26) would delete that provision entirely. DHS’s reasoning is that each petition should be reviewed on its own, with the applicant proving eligibility. It moves separately from the broader H-1B reform (#07, RIN 1615-AD00) still under OIRA review.\nPublic comments closed November 13. DHS next reads and responds to comments before deciding the final text. Extension reviews change only after a final rule is published and takes effect.",
     "teaser": "Being approved last time may no longer carry over to your extension.",
     "headline": "Extensions may need to prove eligibility from scratch.",
     "analysis": "If adopted as proposed, the most direct change is that even a same-employer, same-job extension could require a full new case: why the position qualifies for H-1B and why you qualify for it. USCIS would likely send more requests for evidence (letters asking for more documents), and preparation time and legal fees could go up. Your current H-1B stays valid.",
@@ -185,14 +190,14 @@ export const nonimmigrantDeference: PolicyContent = {
         ]
       }
     ],
-    "outlook": "Watch what DHS finalizes after comments close November 13. Until a final rule takes effect, extensions are still reviewed with deference to earlier approvals.",
+    "outlook": "Comments closed November 13; watch what DHS finalizes next. Until a final rule takes effect, extensions are still reviewed with deference to earlier approvals.",
     "scenarios": [
       {
-        "name": "During the comment period",
+        "name": "Comments closed; awaiting a final rule",
         "headline": "Deference continues for now; assess the impact",
-        "assumption": "The proposal is open for comment; there is no final rule.",
+        "assumption": "Public comments have closed; there is no final rule.",
         "effects": "Extensions filed now are decided under current rules; employers can use the time to assess the impact.",
-        "signals": "The comment deadline and DHS’s explanation of the proposal."
+        "signals": "DHS’s response to comments and the final rule’s text and effective date."
       },
       {
         "name": "Provision deleted",
@@ -231,13 +236,13 @@ export const nonimmigrantDeference: PolicyContent = {
       {
         "date": "2026-10-14",
         "text": "The proposal was published (91 FR 65119); comments close November 13."
+      },
+      {
+        "date": "2026-11-13",
+        "text": "Public comments closed. DHS next reads and responds to comments before deciding the final text."
       }
     ],
     "next": [
-      {
-        "date": "2026-11-13",
-        "text": "Public comments due before midnight Eastern Time, filed on regulations.gov under docket USCIS-2026-0529."
-      },
       {
         "date": "Date unknown",
         "text": "After reviewing comments, DHS decides the final text and start date.",
@@ -245,9 +250,9 @@ export const nonimmigrantDeference: PolicyContent = {
       }
     ],
     "process": {
-      "detail": "The proposal was published October 14; public comments close November 13.",
-      "currentSummary": "Proposal published; public comments open",
-      "waitingFor": "Comments close November 13; then whether DHS issues a final rule."
+      "detail": "The proposal was published October 14; comments closed November 13. DHS next decides on a final rule.",
+      "currentSummary": "Public comments closed; awaiting DHS’s final-rule decision",
+      "waitingFor": "DHS reads and responds to comments, then decides the final text and effective date."
     }
   }
 };
