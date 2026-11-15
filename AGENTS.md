@@ -55,7 +55,13 @@ Write the way you would explain it to a friend. Explain a legal term the first t
 
 ## Daily policy updates
 
-- Update `checkedOn` only for entries whose sources you actually reviewed, and `SITE_UPDATED_ON` in `app/policy-freshness.ts` when the site changes.
+- Start with `npm run sources`. It fetches every source the site cites and writes a report listing which sources changed since the site was last reconciled with them, which are new, and which it could not read. Do not write your own fetch scripts.
+- Read every source the report lists as changed or new. Open the ones it could not read with the web tool. Then search for later developments the site does not cite yet.
+- When you have finished a policy or school, run `npm run sources -- --record <id>` and commit `content/source-hashes.json`. Record only what you read: anything left unrecorded is reported again on the next run. If the report lists more than one run can read, finish some policies completely and leave the rest.
+- Advance a policy's `checkedOn` when its primary source (the first entry in `sources`) is unchanged or you read its changes, and you read every other source the report lists for it. A secondary page that will not load by any route does not hold the date back; name it in the PR description.
+- Advance a school's `checkedOn` when its page is unchanged or you read the change. If the page cannot be read by any route, keep the date.
+- When a date in `next` has passed, find out what happened. Move the event to `milestones`, or replace it with the next expected step.
+- Set `SITE_UPDATED_ON` in `app/policy-freshness.ts` when the site changes.
 - Add an update-log entry only for a change a reader would notice: a new event, a new school, a changed status. A routine re-check with no change needs no entry.
 - When a policy's status changes, reread its `searchTitle` and `searchDescription` (what Google shows) and fix any that no longer hold. Lead them with the words readers search for, such as "OPT fee" or "H-4 EAD".
 - Run `npm test`, `npm run lint` and `npm run build` before opening a PR.

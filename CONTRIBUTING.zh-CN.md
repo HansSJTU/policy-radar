@@ -25,6 +25,8 @@ npm run lint
 npm run build
 ```
 
+`npm run sources` 会抓取网站引用的全部来源，并报告哪些来源自上次核对后有变化。更新内容前先运行，读完报告列出的来源，再对每个处理完的政策或学校运行 `npm run sources -- --record <id>`。详见 `AGENTS.md`。
+
 Pull Request 请说明：
 
 1. 更新了哪些政策、学校或界面行为；

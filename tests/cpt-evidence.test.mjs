@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import test from 'node:test';
 
-import { communitySchools, getVerifiedSchools, verifiedSchools } from '../app/cpt-schools.ts';
+import { communitySchools, getVerifiedSchools, schoolRecordCount, verifiedSchools } from '../app/cpt-schools.ts';
 
 const source = await readFile(new URL('../app/home-copy.ts', import.meta.url), 'utf8');
 
@@ -76,9 +76,12 @@ test('verified-school screenshots are notice attachments rather than forum page 
 });
 
 test('current CPT status evidence is grouped without overstating public verification', () => {
-  assert.equal(verifiedSchools.length, 79);
-  assert.equal(communitySchools.length, 4);
-  assert.equal(verifiedSchools.length + communitySchools.length, 83);
+  // Counts are derived, not pinned: adding a school must not need a test edit.
+  const ids = [...verifiedSchools, ...communitySchools].map(({ id }) => id);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.equal(schoolRecordCount, ids.length);
+  for (const school of verifiedSchools) assert.match(school.href, /^https:\/\//, school.school);
+  for (const school of communitySchools) assert.equal('href' in school, false, school.school);
 
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));

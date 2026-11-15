@@ -10,6 +10,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "deploy": "vinext-cloudflare deploy --skip-build",
+    "sources": "node --experimental-strip-types scripts/check-sources.mjs",
     "lint": "oxlint",
     "format": "oxfmt"
   },

@@ -40,8 +40,6 @@ test('content files cover every ranked policy in rank order', () => {
 });
 
 test('the English policy and school copy contains no Chinese', () => {
-  assert.equal(verifiedSchools.length, 79);
-  assert.equal(communitySchools.length, 4);
   const strings = collectStrings([
     policyContents.map((policy) => policy.en),
     policyContents.map((policy) => policy.sources.map(({ en }) => en)),
