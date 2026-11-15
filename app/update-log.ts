@@ -23,6 +23,39 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-15",
+    "changes": [
+      {
+        "id": "opt-aau-comments-added-november15",
+        "category": "#01 OPT 收费提案",
+        "title": "加入 AAU 11·09 反对意见",
+        "summary": "美国大学协会要求撤回收费提案，质疑收费授权、理由和对学生与学校的负担。",
+        "before": "时间线记录 11·09 评论结束，背景中尚无 AAU 提交的意见。",
+        "after": "新增 AAU 11·09 提交意见的事件和全文来源；背景说明协会要求撤回提案及其理由。收费金额、提案状态和 12·07 材料收集评论截止日照旧。",
+        "sources": [
+          {
+            "label": "AAU · 11·09 OPT 收费公众意见全文",
+            "href": "https://www.aau.edu/uploads/files/general/Final-AAU-Comment-100k-OPT-Fees.pdf"
+          }
+        ]
+      },
+      {
+        "id": "uccs-cpt-added-november15",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 UCCS 10·01 CPT 办理通知",
+        "summary": "该校只处理目录中要求全体学生完成的实习 CPT 申请。",
+        "before": "82 条记录：78 条校方网页、4 条社区截图；80 所不同学校。",
+        "after": "加入 UCCS 校方网页后，共 83 条记录：79 条校方网页、4 条社区截图；81 所不同学校。办理条件来自 10·01 通知。",
+        "sources": [
+          {
+            "label": "UCCS ISSS · 10·01 CPT 办理通知",
+            "href": "https://international.uccs.edu/international-students-and-scholars/important-immigration-updates"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "changes": [
       {
@@ -2338,6 +2371,39 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-15",
+    "changes": [
+      {
+        "id": "opt-aau-comments-added-november15",
+        "category": "#01 Proposed OPT Fees",
+        "title": "Add AAU’s November 9 opposition comments",
+        "summary": "AAU asks DHS to withdraw the fee proposal, challenging its legal authority, rationale and burdens on students and universities.",
+        "before": "The timeline recorded the November 9 comment closing; the background did not include AAU’s submission.",
+        "after": "Add AAU’s November 9 comment filing and full text, with its withdrawal request and reasons in the background. Fee amounts, proposal status and the December 7 data-collection comment deadline stay the same.",
+        "sources": [
+          {
+            "label": "AAU · November 9 full OPT fee comments",
+            "href": "https://www.aau.edu/uploads/files/general/Final-AAU-Comment-100k-OPT-Fees.pdf"
+          }
+        ]
+      },
+      {
+        "id": "uccs-cpt-added-november15",
+        "category": "#05 CPT School Tracker",
+        "title": "Add UCCS’s October 1 CPT processing notice",
+        "summary": "The school processes CPT only for training the university catalog requires of every student in the program.",
+        "before": "82 evidence entries: 78 public university pages and 4 community reports; 80 distinct institutions.",
+        "after": "Adding UCCS’s public page brings the total to 83 evidence entries: 79 public university pages and 4 community reports; 81 distinct institutions. The processing conditions come from the October 1 notice.",
+        "sources": [
+          {
+            "label": "UCCS ISSS · October 1 CPT processing notice",
+            "href": "https://international.uccs.edu/international-students-and-scholars/important-immigration-updates"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-14",
     "changes": [

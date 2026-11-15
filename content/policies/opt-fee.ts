@@ -48,6 +48,11 @@ export const optFee: PolicyContent = {
       "href": "https://www.uscardforum.com/t/topic/531864",
       "zh": "美卡论坛讨论",
       "en": "USCardForum discussion"
+    },
+    {
+      "href": "https://www.aau.edu/uploads/files/general/Final-AAU-Comment-100k-OPT-Fees.pdf",
+      "zh": "AAU · 11·09 OPT 收费公众意见全文",
+      "en": "AAU · November 9 full OPT fee comments"
     }
   ],
   zh: {
@@ -67,7 +72,7 @@ export const optFee: PolicyContent = {
     caveat:
       "交费的是学校，最后由学校、学生还是雇主出钱，各校可以自己决定。",
     background:
-      "现在申请 OPT 的流程是：学校的 DSO 先在 SEVIS 里推荐，给你一份更新过的 I-20；你再拿着它向 USCIS 递交 I-765，申请 EAD 工卡。这项提案在第一步前面加了一道收费。\nICE 2026-08-20 把这项收费规则（RIN 1653-AB01）送交 OIRA 审查，9·11 审完并做了修改。10·08 正式提案公布（文件号 2026-20660，91 FR 64566，案卷 ICEB-2026-0100），金额是第一次 7 万美元，之后每次 3 万美元。\n具体怎么收：学校交了费，DSO 才能推荐，USCIS 才会批 OPT 工卡。学校可以让学生或雇主出这笔钱。所有类型的 OPT 都收费；CPT 不收；OPT 期间只是换雇主，也不用再交。\n从哪天开始：最终规则公布后第 60 天起。这天之后的第一次 OPT 推荐收 7 万美元，就算学生以前用过 OPT 也一样；交过这 7 万之后，以后每次推荐收 3 万。已经拿到的 EAD 照常有效。\n能不能退：OPT 或延期批下来之前，学校可以撤回推荐、申请退款，由 SEVP 逐个决定；批下来之后不退，退款被拒也不能申诉。\n两个截止日：规则本身的公众评论已于 11·09 结束；提案里还涉及新表格和数据收集，按《文书削减法》（PRA）要另外征求意见，这部分 12·07 截止。",
+      "现在申请 OPT 的流程是：学校的 DSO 先在 SEVIS 里推荐，给你一份更新过的 I-20；你再拿着它向 USCIS 递交 I-765，申请 EAD 工卡。这项提案在第一步前面加了一道收费。\nICE 2026-08-20 把这项收费规则（RIN 1653-AB01）送交 OIRA 审查，9·11 审完并做了修改。10·08 正式提案公布（文件号 2026-20660，91 FR 64566，案卷 ICEB-2026-0100），金额是第一次 7 万美元，之后每次 3 万美元。\n具体怎么收：学校交了费，DSO 才能推荐，USCIS 才会批 OPT 工卡。学校可以让学生或雇主出这笔钱。所有类型的 OPT 都收费；CPT 不收；OPT 期间只是换雇主，也不用再交。\n从哪天开始：最终规则公布后第 60 天起。这天之后的第一次 OPT 推荐收 7 万美元，就算学生以前用过 OPT 也一样；交过这 7 万之后，以后每次推荐收 3 万。已经拿到的 EAD 照常有效。\n能不能退：OPT 或延期批下来之前，学校可以撤回推荐、申请退款，由 SEVP 逐个决定；批下来之后不退，退款被拒也不能申诉。\n两个截止日：规则本身的公众评论已于 11·09 结束；提案里还涉及新表格和数据收集，按《文书削减法》（PRA）要另外征求意见，这部分 12·07 截止。\n美国大学协会（AAU）11·09 提交公众意见，要求 DHS 撤回收费提案。协会认为收费缺少国会授权，反欺诈和成本依据不足，还会增加学生、学校和雇主的负担。DHS 接下来审阅意见，再决定最终条文。",
     teaser: "学校先交钱，DSO 才能推荐 OPT；这笔钱最后谁出，要看学校。",
     headline: "毕业后第一份工作，可能先卡在学校交不交这笔钱。",
     analysis:
@@ -152,6 +157,10 @@ export const optFee: PolicyContent = {
         "date": "2026-11-09",
         "text": "规则本身的公众评论结束；表格和数据收集部分（PRA）的意见征集到 12·07。"
       },
+      {
+        "date": "2026-11-09",
+        "text": "美国大学协会（AAU）提交公众意见，要求撤回收费提案，质疑收费授权、理由和对学生与学校的负担。"
+      },
     ],
     next: [
       {
@@ -188,7 +197,7 @@ export const optFee: PolicyContent = {
     caveat:
       "The school pays the fee; each school decides whether it, the student or the employer ultimately covers it.",
     background:
-      "Today, applying for OPT works like this: your school’s DSO first recommends you in SEVIS and gives you an updated I-20; you then file Form I-765 with USCIS for an EAD work permit. This proposal adds a fee before the first step.\nICE sent the fee rule (RIN 1653-AB01) to OIRA for review on August 20, 2026; review finished, with changes, on September 11. The proposal was published October 8 (document 2026-20660, 91 FR 64566, docket ICEB-2026-0100), setting the amounts at $70,000 the first time and $30,000 each time after.\nHow it would work: only after the school pays can the DSO recommend you and USCIS approve your OPT work permit. The school can have the student or employer cover the cost. Every type of OPT is charged; CPT is not; and simply changing employers during OPT does not trigger another fee.\nWhen it would start: 60 days after the final rule is published. The first OPT recommendation after that date costs $70,000, even for a student who has used OPT before; once that is paid, each later recommendation costs $30,000. EADs already issued stay valid.\nRefunds: before OPT or an extension is approved, the school can withdraw the recommendation and ask for a refund, which SEVP decides case by case; after approval there is no refund, and a denied refund cannot be appealed.\nTwo deadlines: comments on the rule itself closed November 9; the proposal also creates new forms and data collection, which under the Paperwork Reduction Act (PRA) get their own comment period, closing December 7.",
+      "Today, applying for OPT works like this: your school’s DSO first recommends you in SEVIS and gives you an updated I-20; you then file Form I-765 with USCIS for an EAD work permit. This proposal adds a fee before the first step.\nICE sent the fee rule (RIN 1653-AB01) to OIRA for review on August 20, 2026; review finished, with changes, on September 11. The proposal was published October 8 (document 2026-20660, 91 FR 64566, docket ICEB-2026-0100), setting the amounts at $70,000 the first time and $30,000 each time after.\nHow it would work: only after the school pays can the DSO recommend you and USCIS approve your OPT work permit. The school can have the student or employer cover the cost. Every type of OPT is charged; CPT is not; and simply changing employers during OPT does not trigger another fee.\nWhen it would start: 60 days after the final rule is published. The first OPT recommendation after that date costs $70,000, even for a student who has used OPT before; once that is paid, each later recommendation costs $30,000. EADs already issued stay valid.\nRefunds: before OPT or an extension is approved, the school can withdraw the recommendation and ask for a refund, which SEVP decides case by case; after approval there is no refund, and a denied refund cannot be appealed.\nTwo deadlines: comments on the rule itself closed November 9; the proposal also creates new forms and data collection, which under the Paperwork Reduction Act (PRA) get their own comment period, closing December 7.\nThe Association of American Universities (AAU) submitted comments on November 9 asking DHS to withdraw the fee proposal. AAU argues that Congress has not authorized these charges, the fraud and cost rationale is inadequate, and the proposal would burden students, universities and employers. DHS next reviews comments before deciding the final text.",
     teaser:
       "The school has to pay before the DSO can recommend OPT; who ends up paying depends on the school.",
     headline:
@@ -274,6 +283,10 @@ export const optFee: PolicyContent = {
       {
         "date": "2026-11-09",
         "text": "Comments on the rule closed; comments on forms and data collection (PRA) continue through December 7."
+      },
+      {
+        "date": "2026-11-09",
+        "text": "The Association of American Universities (AAU) submitted comments asking DHS to withdraw the fee proposal, challenging its legal authority, rationale and burdens on students and universities."
       },
     ],
     next: [
