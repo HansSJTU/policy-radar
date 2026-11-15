@@ -97,6 +97,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Public comments on the OPT-fee rule closed. DHS next evaluates comments and decides the final text; comments on forms and data collection (PRA) continue through December 7. The proposal is not in effect."
   },
   {
+    "id": "opt-aau-comments-november9",
+    "date": "2026-11-09",
+    "availableOn": "2026-11-15",
+    "policyId": "opt-fee",
+    "timing": "recent",
+    "zh": "美国大学协会（AAU）提交意见，要求撤回 OPT 收费提案，质疑收费授权、理由和对学生与学校的负担。",
+    "en": "The Association of American Universities (AAU) submitted comments asking DHS to withdraw the OPT fee proposal, challenging its legal authority, rationale and burdens on students and universities."
+  },
+  {
     "id": "opt-fee-general-comment-deadline",
     "date": "2026-11-09",
     "policyId": "opt-fee",
