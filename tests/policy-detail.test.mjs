@@ -14,6 +14,17 @@ test('policy links retain language and target the requested detail section', () 
   );
 });
 
+test('policy links name the canonical URL unless a stage filter is set', () => {
+  assert.equal(
+    policyHref('h1b-program-integrity', 'en', undefined, 'all'),
+    '/policies/h1b-program-integrity?lang=en',
+  );
+  assert.equal(
+    policyHref('opt-fee', 'zh', undefined, 'OPT'),
+    '/policies/opt-fee?lang=zh&from=OPT',
+  );
+});
+
 test('only known legacy policy fragments become detail URLs', () => {
   assert.equal(legacyPolicyHref('#opt-fee', 'en'), '/policies/opt-fee?lang=en');
   assert.equal(legacyPolicyHref('#cpt-schools', 'zh'), null);
