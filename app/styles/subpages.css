@@ -14,6 +14,14 @@
 .updates-feed-link svg { width: 15px; height: 15px; color: var(--stage-h1b); }
 .updates-feed-link:hover { color: var(--ink); border-color: var(--ink-soft); }
 .updates-feed { display: grid; gap: 56px; }
+.updates-back-link svg { color: currentColor; }
+.updates-months { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--line); }
+.updates-months h2 { margin: 0; font-size: var(--fs-h3); line-height: 1.3; }
+.updates-months p { max-width: 62ch; margin: 8px 0 0; color: var(--muted); font-size: var(--fs-sm); line-height: 1.7; }
+.updates-months ul { margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.updates-months a { min-height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: var(--r-full); color: var(--ink-soft); background: var(--card); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; text-decoration: none; transition: var(--motion-colors); }
+.updates-months a:hover { color: var(--ink); border-color: var(--ink-soft); }
+.updates-months a[aria-current='page'] { color: var(--accent-ink); border-color: var(--accent); background: var(--accent-soft); }
 .update-release > header { padding-bottom: 14px; display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--accent); }
 .update-date-mark { display: none; }
 .update-release > header > div:last-child { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; }
@@ -85,6 +93,7 @@
   .updates-page > :nth-last-child(2), .stats-page > :nth-last-child(2) { margin-bottom: 56px; }
   :is(.updates-hero, .stats-hero) { padding: 36px 0 28px; }
   .updates-feed { gap: 44px; }
+  .updates-months { margin-top: 44px; }
   .update-change { padding: 24px 0; }
   .update-diff { grid-template-columns: 1fr; gap: 6px; }
   .update-diff > svg { justify-self: center; transform: rotate(90deg); }

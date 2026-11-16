@@ -3,6 +3,7 @@ import type { Language } from './language';
 import { POLICY_IDS, isPolicyId } from './policy-ids.ts';
 import { POLICY_PATHS, parsePathFilter, type PathFilter } from './policy-paths.ts';
 import { isSchoolId, SCHOOL_IDS } from './school-pages.ts';
+import { isUpdateMonth, UPDATE_MONTHS, updateMonthPath } from './update-pages.ts';
 
 // Pages and link-preview images that change only when the site is deployed.
 // `npm run build` renders every variant into dist/client/__static, and the
@@ -27,6 +28,10 @@ function homeFile(language: Language, path: PathFilter) {
 }
 function updatesFile(language: Language) {
   return `${STATIC_DIR}/${language}/updates.html`;
+}
+function updateMonthFile(language: Language, month: string) {
+  // Not updates/<month>.html: see schoolsFile.
+  return `${STATIC_DIR}/${language}/updates-${month}.html`;
 }
 function radarFile(language: Language) {
   return `${STATIC_DIR}/${language}/radar.html`;
@@ -61,6 +66,10 @@ export function staticFiles(): StaticFile[] {
         file: homeFile(language, path),
       })),
       { source: `/updates?lang=${language}`, file: updatesFile(language) },
+      ...UPDATE_MONTHS.map((month) => ({
+        source: `${updateMonthPath(month)}?lang=${language}`,
+        file: updateMonthFile(language, month),
+      })),
       { source: `/radar?lang=${language}`, file: radarFile(language) },
       { source: `/schools?lang=${language}`, file: schoolsFile(language) },
       ...SCHOOL_IDS.map((id) => ({
@@ -124,6 +133,10 @@ export function staticAssetFor(request: RequestLike): string | null {
   }
   if (pathname === '/updates') {
     return assetPath(updatesFile(language()));
+  }
+  const monthMatch = /^\/updates\/(\d{4}-\d{2})$/.exec(pathname);
+  if (monthMatch && isUpdateMonth(monthMatch[1])) {
+    return assetPath(updateMonthFile(language(), monthMatch[1]));
   }
   // The radar reads its profile (?stage=, ?goal=) in the browser.
   if (pathname === '/radar') {
