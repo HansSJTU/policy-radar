@@ -84,6 +84,13 @@ test('Wrangler config serves app routes and binds both analytics stores', () => 
   ]);
 });
 
+test('Wrangler config limits writes per address on the rating and visit endpoints', () => {
+  assert.deepEqual(wranglerConfig.ratelimits, [
+    { name: 'RATINGS_LIMITER', namespace_id: '1001', simple: { limit: 20, period: 60 } },
+    { name: 'VISITS_LIMITER', namespace_id: '1002', simple: { limit: 120, period: 60 } },
+  ]);
+});
+
 test('the home route is request-dynamic', () => {
   assert.match(homePage, /dynamic\s*=\s*['"]force-dynamic['"]/);
 });

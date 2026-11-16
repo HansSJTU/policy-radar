@@ -2,6 +2,7 @@ import handler from 'vinext/server/fetch-handler';
 
 import { canonicalRedirect } from '../app/canonical-host';
 import { LANGUAGE_COOKIE } from '../app/language';
+import { isOverWriteLimit, tooManyRequests } from '../app/rate-limit';
 import {
   isProbePath,
   RATINGS_CACHE_SECONDS,
@@ -26,6 +27,7 @@ export default {
     if (isProbePath(new URL(request.url).pathname)) {
       return new Response('Not found', { status: 404 });
     }
+    if (await isOverWriteLimit(request, env)) return tooManyRequests(request);
     const ratingsKey = ratingsCacheKey(request);
     if (ratingsKey) {
       const cache = await caches.open('short-cache');
