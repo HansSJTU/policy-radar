@@ -4,6 +4,7 @@ import test from 'node:test';
 import { resolveLanguage, cookieValue } from '../app/language.ts';
 import { POLICY_IDS } from '../app/policy-ids.ts';
 import { SCHOOL_IDS } from '../app/school-pages.ts';
+import { UPDATE_MONTHS } from '../app/update-pages.ts';
 import {
   isProbePath,
   ratingsCacheKey,
@@ -42,12 +43,12 @@ test('reads one cookie from a Cookie header', () => {
 
 test('every prebuilt file is rendered from a request that maps back to it', () => {
   const files = staticFiles();
-  // Home, updates and radar, each policy page for every return path, the
-  // school index and every school page, and the link-preview images, in both
-  // languages.
+  // Home, updates with one page per month and radar, each policy page for
+  // every return path, the school index and every school page, and the
+  // link-preview images, in both languages.
   assert.equal(
     files.length,
-    2 * (5 + 1 + 1 + 1 + POLICY_IDS.length * 6 + 1 + SCHOOL_IDS.length),
+    2 * (5 + 1 + UPDATE_MONTHS.length + 1 + 1 + POLICY_IDS.length * 6 + 1 + SCHOOL_IDS.length),
   );
   assert.equal(new Set(files.map((entry) => entry.file)).size, files.length);
   for (const { language, source, file } of files) {
@@ -74,6 +75,10 @@ test('serves pages in the reader language without a lang parameter', () => {
     assetFor('/radar?stage=opt&goal=none', { 'accept-language': 'zh-CN' }),
     '/__static/zh/radar',
   );
+  assert.equal(
+    assetFor(`/updates/${UPDATE_MONTHS[0]}`, { 'accept-language': 'zh-CN' }),
+    `/__static/zh/updates-${UPDATE_MONTHS[0]}`,
+  );
   // Link-preview images ignore the reader and default to Chinese.
   assert.equal(
     assetFor('/share-image', { 'accept-language': 'en-US' }),
@@ -84,6 +89,8 @@ test('serves pages in the reader language without a lang parameter', () => {
 test('leaves dynamic requests to the renderer', () => {
   assert.equal(assetFor('/stats'), null);
   assert.equal(assetFor('/policies/not-a-policy'), null);
+  assert.equal(assetFor('/updates/1999-01'), null);
+  assert.equal(assetFor('/updates/change/some-change'), null);
   assert.equal(assetFor('/policies/not-a-policy/share-image'), null);
   assert.equal(assetFor('/?lang=en', { rsc: '1' }), null);
   assert.equal(assetFor('/?lang=en&_rsc=abc'), null);

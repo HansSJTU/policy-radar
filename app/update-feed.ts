@@ -1,9 +1,10 @@
 import type { Language } from './language';
 import { SITE_UPDATED_ON } from './policy-freshness.ts';
 import { localizedPageUrl, POLICY_SITE_URL } from './policy-links.ts';
+import { changeAnchor, monthOf, updateMonthPath } from './update-pages.ts';
 import { getUpdateLog, type ContentChange } from './update-log.ts';
 
-// Enough history for a new subscriber; older changes stay on /updates.
+// Enough history for a new subscriber; older changes stay on the month pages.
 const FEED_LIMIT = 60;
 
 const feedCopy = {
@@ -26,10 +27,6 @@ const feedCopy = {
 
 export function feedUrl(language: Language): string {
   return `${POLICY_SITE_URL}/feed.xml?lang=${language}`;
-}
-
-export function changeAnchor(change: Pick<ContentChange, 'id'>): string {
-  return `change-${change.id}`;
 }
 
 function escapeXml(text: string): string {
@@ -76,12 +73,17 @@ export function buildUpdateFeed(language: Language): string {
     )
     .slice(0, FEED_LIMIT);
 
+  // An entry links to the change on the page of its month, which keeps
+  // working after the change leaves /updates.
+  const changeUrl = (date: string, change: ContentChange) =>
+    `${localizedPageUrl(updateMonthPath(monthOf(date)), language)}#${changeAnchor(change)}`;
+
   const entryXml = entries.map(({ date, change }) =>
     [
       '<entry>',
       `<id>tag:${new URL(POLICY_SITE_URL).host},${date}:${language}/${escapeXml(change.id)}</id>`,
       `<title>${escapeXml(`${change.category} · ${change.title}`)}</title>`,
-      `<link rel="alternate" type="text/html" href="${escapeXml(`${updatesUrl}#${changeAnchor(change)}`)}"/>`,
+      `<link rel="alternate" type="text/html" href="${escapeXml(changeUrl(date, change))}"/>`,
       `<updated>${timestamp(date)}</updated>`,
       `<category term="${escapeXml(change.category)}"/>`,
       `<summary>${escapeXml(change.summary)}</summary>`,

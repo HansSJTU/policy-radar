@@ -9,8 +9,9 @@ import robots from '../app/robots.ts';
 import { SCHOOL_IDS } from '../app/school-pages.ts';
 import sitemap from '../app/sitemap.ts';
 import { homeJsonLd, jsonLdScript, policyJsonLd } from '../app/structured-data.ts';
-import { buildUpdateFeed, changeAnchor, feedUrl } from '../app/update-feed.ts';
+import { buildUpdateFeed, feedUrl } from '../app/update-feed.ts';
 import { getUpdateLog } from '../app/update-log.ts';
+import { changeAnchor, UPDATE_MONTHS } from '../app/update-pages.ts';
 
 test('gives each language its own canonical URL and names both versions', () => {
   assert.deepEqual(languageAlternates('/updates', 'zh'), {
@@ -24,7 +25,7 @@ test('gives each language its own canonical URL and names both versions', () => 
 });
 
 test('gives every indexable page a canonical URL', async () => {
-  for (const file of ['app/page.tsx', 'app/policies/[policyId]/page.tsx', 'app/updates/page.tsx', 'app/stats/page.tsx', 'app/radar/page.tsx', 'app/schools/page.tsx', 'app/schools/[schoolId]/page.tsx']) {
+  for (const file of ['app/page.tsx', 'app/policies/[policyId]/page.tsx', 'app/updates/page.tsx', 'app/updates/[month]/page.tsx', 'app/stats/page.tsx', 'app/radar/page.tsx', 'app/schools/page.tsx', 'app/schools/[schoolId]/page.tsx']) {
     const source = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
     assert.match(source, /alternates[:,]/, file);
   }
@@ -52,12 +53,13 @@ test('renders metadata in <head> for every visitor, crawlers and the prerender i
   assert.match(prerender, /'user-agent': 'policy-radar-prerender'/);
 });
 
-test('lists the home page, every policy, the update log and every school in both languages', () => {
+test('lists the home page, every policy, the update log with each of its months and every school in both languages', () => {
   const urls = sitemap().map((entry) => entry.url);
   const paths = [
     '/',
     ...POLICY_IDS.map((id) => `/policies/${id}`),
     '/updates',
+    ...UPDATE_MONTHS.map((month) => `/updates/${month}`),
     '/schools',
     ...SCHOOL_IDS.map((id) => `/schools/${id}`),
   ];
@@ -87,6 +89,8 @@ test('keeps the page language on every internal navigation link', async () => {
     'app/policy-radar-client.tsx',
     'app/mobile-site-menu.tsx',
     'app/updates/page.tsx',
+    'app/updates/[month]/page.tsx',
+    'app/updates/update-list.tsx',
     'app/stats/page.tsx',
   ];
   for (const file of files) {
@@ -102,12 +106,17 @@ test('publishes the update log as an Atom feed in each language', () => {
     const xml = buildUpdateFeed(language);
     const changes = getUpdateLog(language).flatMap((update) => update.changes);
     const entries = xml.match(/<entry>/g) ?? [];
-    const [latest] = changes;
+    const [newest] = getUpdateLog(language);
 
     assert.match(xml, /^<\?xml version="1.0" encoding="utf-8"\?>\n<feed xmlns="http:\/\/www.w3.org\/2005\/Atom"/);
     assert.equal(entries.length, Math.min(changes.length, 60));
     assert.ok(xml.includes(`<link rel="self" type="application/atom+xml" href="${feedUrl(language)}"/>`));
-    assert.ok(xml.includes(`${POLICY_SITE_URL}/updates?lang=${language}#${changeAnchor(latest)}`));
+    // Each entry links to the change on its month page, which is permanent.
+    assert.ok(
+      xml.includes(
+        `${POLICY_SITE_URL}/updates/${newest.date.slice(0, 7)}?lang=${language}#${changeAnchor(newest.changes[0])}`,
+      ),
+    );
     assert.doesNotMatch(xml, /<(?!\/?(feed|id|title|subtitle|link|updated|author|name|entry|category|summary|content)\b|\?xml)/);
   }
 });
