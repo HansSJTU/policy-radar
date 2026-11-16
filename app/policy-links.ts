@@ -29,10 +29,9 @@ export function policyHref(
   section?: string,
   from?: string,
 ): string {
-  const origin =
-    from === 'all' || isPolicyPath(from)
-      ? `&from=${encodeURIComponent(from)}`
-      : '';
+  // Only a stage filter is carried; "all" is the default, and linking the
+  // `&from=all` copy led Google to pick it over the canonical page.
+  const origin = isPolicyPath(from) ? `&from=${encodeURIComponent(from)}` : '';
   return `/policies/${encodeURIComponent(id)}?lang=${language}${origin}${section ? `#${encodeURIComponent(section)}` : ''}`;
 }
 
