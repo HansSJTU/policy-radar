@@ -5,7 +5,7 @@ export const durationStatus: PolicyContent = {
   "path": "F-1",
   "tone": "amber",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-11-02",
+  "checkedOn": "2026-11-16",
   "related": [
     "cpt-guidance",
     "opt-fee",
