@@ -23,6 +23,53 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-16",
+    "changes": [
+      {
+        "id": "ds-rule-vacated-november16",
+        "category": "#03 D/S 定期停留规则",
+        "title": "法院 11·16 撤销整项规则",
+        "summary": "法院根据双方书面材料判原告胜诉，现行 D/S 制度继续适用。",
+        "before": "全国暂缓，等待地区法院最终判决。",
+        "after": "整项最终规则被撤销，固定期限、额外延期和学业限制均失去法律效力。",
+        "sources": [
+          {
+            "label": "法院 11·16 命令",
+            "href": "https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "perm-proposal-preview-november16",
+        "category": "#12 PERM 改革提案",
+        "title": "提案预览公开，拟收紧裁员和招聘要求",
+        "summary": "提案计划 11·17 刊登，现行 PERM 规则继续适用。",
+        "before": "OIRA 已审完，等待提案；五项变化属于业内预测。",
+        "after": "11·16 提案预览已公开：相关裁员后两年内拟禁止递交，招聘广告至少 90 天，递交后相关裁员须在 5 个工作日内报告。五项变化改为提案具体要求。",
+        "sources": [
+          {
+            "label": "Federal Register · PERM 提案预览",
+            "href": "https://public-inspection.federalregister.gov/2026-23370.pdf"
+          }
+        ]
+      },
+      {
+        "id": "gatech-cpt-forms-delayed-november16",
+        "category": "#05 CPT 学校追踪",
+        "title": "Georgia Tech 延后新 CPT 表单开放",
+        "summary": "OIE 将新表单开放时间改为法院决定后，秋季 CPT 仍不批延期。",
+        "before": "新申请表和合作协议表最迟 11·16 提供。",
+        "after": "因诉讼仍在进行，表单延后至法院作出决定后开放；博士证明细节在表单发布时提供。",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · CPT 页面",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-15",
     "changes": [
       {
@@ -2371,6 +2418,53 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-16",
+    "changes": [
+      {
+        "id": "ds-rule-vacated-november16",
+        "category": "#03 D/S Fixed-Stay Rule",
+        "title": "Court vacates the entire rule November 16",
+        "summary": "The court ruled for plaintiffs on the written record; existing D/S continues.",
+        "before": "Nationwide stay, with final district-court judgment pending.",
+        "after": "The entire final rule is vacated; fixed stay periods, extra extensions and academic restrictions lose legal effect.",
+        "sources": [
+          {
+            "label": "Court’s November 16 order",
+            "href": "https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf"
+          }
+        ]
+      },
+      {
+        "id": "perm-proposal-preview-november16",
+        "category": "#12 PERM Reform Proposal",
+        "title": "Proposal preview sets out stricter layoff and recruiting requirements",
+        "summary": "Publication is scheduled November 17; current PERM rules continue.",
+        "before": "OIRA review complete, awaiting the proposal; five changes labeled practitioner predictions.",
+        "after": "November 16 preview: a proposed two-year filing bar after relevant layoffs, at least 90 days of ads and reporting relevant post-filing layoffs within five business days. Five changes now describe the proposal’s terms.",
+        "sources": [
+          {
+            "label": "Federal Register · PERM proposal preview",
+            "href": "https://public-inspection.federalregister.gov/2026-23370.pdf"
+          }
+        ]
+      },
+      {
+        "id": "gatech-cpt-forms-delayed-november16",
+        "category": "#05 CPT School Tracker",
+        "title": "Georgia Tech delays new CPT forms",
+        "summary": "OIE now links form release to a court decision; Fall CPT extensions remain unavailable.",
+        "before": "New request and agreement forms due by November 16.",
+        "after": "Because litigation is ongoing, forms are delayed until a court decision; doctoral documentation details follow form release.",
+        "sources": [
+          {
+            "label": "Georgia Tech OIE · CPT page",
+            "href": "https://isss.oie.gatech.edu/curricular-practical-training-cpt"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-15",
     "changes": [

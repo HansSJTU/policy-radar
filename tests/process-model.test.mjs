@@ -83,6 +83,7 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { date: '9·14', label: '全国暂缓' },
       { date: '10·30', label: '双方请求判决' },
       { date: '11·02', label: '政府交回复' },
+      { date: '11·16', label: '法院撤销整项规则' },
     ],
   );
   assert.deepEqual(
@@ -97,11 +98,12 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { afterStage: 4, progress: 90 },
       { afterStage: 4, progress: 98 },
       { afterStage: 4, progress: 99 },
+      { afterStage: 4, progress: 100 },
     ],
   );
   assert.deepEqual(
     track.litigation.map(({ lane }) => lane),
-    ['base', 'raised', 'base', 'raised', 'base', 'raised'],
+    ['base', 'raised', 'base', 'raised', 'base', 'raised', 'base'],
   );
   assert.deepEqual(
     englishTrack.litigation.map(({ date, label }) => ({ date, label })),
@@ -112,10 +114,11 @@ test('D/S fixed-duration rule remains federal rulemaking with litigation overlai
       { date: '9·14', label: 'Nationwide stay' },
       { date: '10·30', label: 'Both sides seek judgment' },
       { date: '11·02', label: 'Government reply filed' },
+      { date: '11·16', label: 'Court vacates entire rule' },
     ],
   );
-  assert.match(track.currentSummary, /全国暂缓/);
-  assert.match(englishTrack.currentSummary, /Nationwide stay/);
+  assert.match(track.currentSummary, /撤销整项规则/);
+  assert.match(englishTrack.currentSummary, /Entire rule vacated/);
 });
 
 test('administrative guidance has its own process and color family', () => {
@@ -198,7 +201,7 @@ test('home cards highlight the active stage, or the last stage reached while wai
     'nonimmigrant-deference': 3,
     'ead-discretion': 3,
     'h4-ead': 0,
-    'perm-modernization': 1,
+    'perm-modernization': 2,
     'h1b-program-integrity': 1,
   };
   for (const language of ['zh', 'en']) {

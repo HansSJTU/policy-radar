@@ -5,7 +5,7 @@ export const h1bReform: PolicyContent = {
   path: 'H-1B',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-15",
+  checkedOn: "2026-11-16",
   related: [
     "h1b-fee",
     "grace-period",

@@ -10,13 +10,13 @@ import { policyContents } from '../content/policies/index.ts';
 
 const han = /[㐀-鿿]/u;
 
-test('PERM has cleared OIRA and D/S preserves past filings without an expired future deadline', () => {
+test('PERM preview is public and D/S preserves past filings without an expired future deadline', () => {
   const perm = policyContents.find(({ id }) => id === 'perm-modernization');
   assert.equal(perm.process.lastCompletedStage, 1);
-  assert.equal(perm.process.activeStage, null);
-  assert.equal(perm.process.nextStage, 2);
+  assert.equal(perm.process.activeStage, 2);
+  assert.equal(perm.process.nextStage, 3);
   assert.equal(perm.effectState, 'not-in-effect');
-  assert.match(perm.sources[0].href, /rrid=1533011/);
+  assert.match(perm.sources[0].href, /public-inspection\.federalregister\.gov\/2026-23370\.pdf/);
   const duration = policyContents.find(({ id }) => id === 'duration-status');
   for (const language of ['zh', 'en']) {
     assert.equal(duration[language].next[0].date, language === 'zh' ? '日期未定' : 'Date unknown');
