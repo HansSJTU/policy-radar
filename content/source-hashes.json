@@ -1,7 +1,35 @@
 {
+  "courtlistener:71541425": {
+    "hash": "e7c050fe86f6aed7",
+    "changedOn": "2026-11-16"
+  },
+  "courtlistener:72122041": {
+    "hash": "acfb27946c412f08",
+    "changedOn": "2026-11-16"
+  },
+  "courtlistener:74661796": {
+    "hash": "e626179693b65edd",
+    "changedOn": "2026-11-16"
+  },
+  "courtlistener:74908049": {
+    "hash": "5decb4d710c6acbc",
+    "changedOn": "2026-11-16"
+  },
+  "courtlistener:74919449": {
+    "hash": "2fcc677fe505353a",
+    "changedOn": "2026-11-16"
+  },
+  "ecfr:8:214.1": {
+    "hash": "929ebbe1c298428a",
+    "changedOn": "2026-11-16"
+  },
   "ecfr:8:274a.12": {
     "hash": "cebf82eba86f8185",
     "changedOn": "2026-11-15"
+  },
+  "federal-register:2025-16554": {
+    "hash": "4476a34e89b0f243",
+    "changedOn": "2026-11-16"
   },
   "federal-register:2025-23853": {
     "hash": "321021a41d72f2f8",
@@ -10,6 +38,38 @@
   "federal-register:2026-06017": {
     "hash": "8dd8aba80e464893",
     "changedOn": "2026-11-15"
+  },
+  "federal-register:2026-11285": {
+    "hash": "87341779a5e18467",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-14439": {
+    "hash": "7934a95722b998d6",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-17324": {
+    "hash": "dbc1753bbd8c8ca9",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-18631": {
+    "hash": "50c6b5fffb02af1e",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-19555": {
+    "hash": "25aae745bb9131fc",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-20660": {
+    "hash": "f755dd0c3538c20c",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-20941": {
+    "hash": "aaa5190ec5825a6c",
+    "changedOn": "2026-11-16"
+  },
+  "federal-register:2026-20955": {
+    "hash": "d617a0bf15ecdc48",
+    "changedOn": "2026-11-16"
   },
   "https://blogs.illinois.edu/view/7559/791491523": {
     "hash": "1986eb3c4aeca1d5",
@@ -23,6 +83,10 @@
     "hash": "e7986b6c43c8c72d",
     "changedOn": "2026-11-15"
   },
+  "https://clearinghouse.net/case/48393/": {
+    "hash": "294120cb002d8a1e",
+    "changedOn": "2026-11-16"
+  },
   "https://coe.northeastern.edu/academics-experiential-learning/co-op-experiential-learning/co-op/graduate-co-op/masters-co-op/": {
     "hash": "0dc121e727f7a64b",
     "changedOn": "2026-11-16"
@@ -30,6 +94,10 @@
   "https://cooper.edu/admissions/international/Changes-to-CPT-policy": {
     "hash": "cdc7f3b4d70891d6",
     "changedOn": "2026-11-15"
+  },
+  "https://forms.mad.uscourts.gov/courtlist.html": {
+    "hash": "30f97be9d1a3fc1d",
+    "changedOn": "2026-11-16"
   },
   "https://global.rutgers.edu/all-alerts": {
     "hash": "f43e6d208f1b6fc1",
@@ -99,6 +167,10 @@
     "hash": "ae877b800ed6d638",
     "changedOn": "2026-11-15"
   },
+  "https://iss.washington.edu/dhs-proposes-new-opt-fees/": {
+    "hash": "438969b212c595d5",
+    "changedOn": "2026-11-16"
+  },
   "https://iss.washington.edu/follow-up-on-cpt-policy/": {
     "hash": "1ddb26435e1a4977",
     "changedOn": "2026-11-15"
@@ -139,6 +211,10 @@
     "hash": "2240d125536ac711",
     "changedOn": "2026-11-16"
   },
+  "https://oag.ca.gov/system/files/attachments/press-docs/H1B%20Order.pdf": {
+    "hash": "47a37109e9632ee1",
+    "changedOn": "2026-11-16"
+  },
   "https://offices.depaul.edu/global-engagement/student-resources/student-services/Pages/employment.aspx": {
     "hash": "e72c559f77678948",
     "changedOn": "2026-11-16"
@@ -151,6 +227,10 @@
     "hash": "c38859a7bb9427a4",
     "changedOn": "2026-11-15"
   },
+  "https://ois.uic.edu/news-stories/dhs-advances-proposed-rulemaking-on-opt-fees/": {
+    "hash": "836c220775a0c5ca",
+    "changedOn": "2026-11-16"
+  },
   "https://ois.uic.edu/news-stories/sevps-cpt-memos-challenged-in-court/": {
     "hash": "d20ccf41731b1c95",
     "changedOn": "2026-11-15"
@@ -158,6 +238,10 @@
   "https://ois.usc.edu/important-update-regarding-curricular-practical-training/": {
     "hash": "4fe5e95f3781bfa3",
     "changedOn": "2026-11-15"
+  },
+  "https://oiss.rice.edu/dhs-final-rule-elimination-duration-status-new-academic-mobility-restrictions": {
+    "hash": "71345ad4671b38f6",
+    "changedOn": "2026-11-16"
   },
   "https://oiss.ucsb.edu/curricular-practical-training": {
     "hash": "b4059f6d047da5af",
@@ -167,8 +251,68 @@
     "hash": "f4795c403ea50db7",
     "changedOn": "2026-11-16"
   },
+  "https://public-inspection.federalregister.gov/2026-18631.pdf": {
+    "hash": "b9a81dc960724c1a",
+    "changedOn": "2026-11-16"
+  },
+  "https://public-inspection.federalregister.gov/2026-20941.pdf": {
+    "hash": "c064757c3b45db89",
+    "changedOn": "2026-11-16"
+  },
   "https://public-inspection.federalregister.gov/2026-23370.pdf": {
     "hash": "8676b050aeec1d79",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.138.0.pdf": {
+    "hash": "424f5ae7a5b48d8d",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.46.1.pdf": {
+    "hash": "540d17c533f5b5f1",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0.pdf": {
+    "hash": "d1c4e0325e04a470",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.51.0.pdf": {
+    "hash": "d9aa7b278e151235",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.61.0.pdf": {
+    "hash": "f3e0ecb39c733f9f",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.66.0.pdf": {
+    "hash": "b0fc5a8427245a6c",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.68.0.pdf": {
+    "hash": "20db321a2efa7eb0",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.69.0.pdf": {
+    "hash": "e5d90f97b532d2fb",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.70.0.pdf": {
+    "hash": "c8ef6af7180b8918",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.71.0.pdf": {
+    "hash": "5a1858d8c4c28c4f",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.72.0.pdf": {
+    "hash": "7002381b75fd8ead",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.0.pdf": {
+    "hash": "b6883fafba17f66c",
+    "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.32.0.pdf": {
+    "hash": "3265c084ba6b0247",
     "changedOn": "2026-11-16"
   },
   "https://uwm.edu/cie/services/students/employment/curricular-practical-training/": {
@@ -183,9 +327,21 @@
     "hash": "562f8f9b92d5a564",
     "changedOn": "2026-11-15"
   },
+  "https://www.aau.edu/uploads/files/general/Final-AAU-Comment-100k-OPT-Fees.pdf": {
+    "hash": "0bce85aad176322a",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.aau.edu/uploads/files/general/Motion-for-Preliminary-Injunction-and-Stay-of-Agency-Action-CPT-Case.pdf": {
+    "hash": "c1a95b9db597e91a",
+    "changedOn": "2026-11-16"
+  },
   "https://www.adelphi.edu/policies/curricular-practical-training-cpt-policy/": {
     "hash": "24bdd8522a5aa58e",
     "changedOn": "2026-11-15"
+  },
+  "https://www.adhikarilaw.com/wp-content/uploads/2026/09/Jane-Doe-1-v.-United-States-Department-of-Homeland-Security-8-26-cv-00060-C.D.-Cal.-Sep-11-2026-ECF-No.-46_TRO.pdf": {
+    "hash": "396cb911a069483b",
+    "changedOn": "2026-11-16"
   },
   "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html": {
     "hash": "ccee86b34296f4e3",
@@ -207,21 +363,109 @@
     "hash": "60d792529f641e94",
     "changedOn": "2026-11-16"
   },
+  "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf": {
+    "hash": "837c5f7eba23ee4d",
+    "changedOn": "2026-11-16"
+  },
   "https://www.cmu.edu/oie/employment/f1-students/curricular-practical-training.html": {
     "hash": "1a53f299381d8cb1",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.cmu.edu/oie/news-and-events/2025-2026/august/cpt-broadcast-message.html": {
+    "hash": "00a987efb7ccdb48",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html": {
+    "hash": "f9e37752c22a96bb",
     "changedOn": "2026-11-16"
   },
   "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs": {
     "hash": "480d2aea5d03e5e6",
     "changedOn": "2026-11-15"
   },
+  "https://www.csd.cs.cmu.edu/academics/doctoral-resources/applying-for-cpt-or-opt": {
+    "hash": "c0d5c870f42eb846",
+    "changedOn": "2026-11-16"
+  },
   "https://www.dol.gov/newsroom/releases/eta/eta20260326-0": {
     "hash": "e8354b8f5e3633a7",
     "changedOn": "2026-11-15"
   },
+  "https://www.durbin.senate.gov/download/cra-on-student-visa-rule&download=1": {
+    "hash": "4b4c80f478172dca",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.durbin.senate.gov/newsroom/press-releases/durbin-blumenthal-padilla-whitehouse-jayapal-raskin-introduce-cra-resolution-of-disapproval-regarding-regulation-that-changes-how-international-students-and-journalists-maintain-immigration-status": {
+    "hash": "421120e179dedacd",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.fragomen.com/insights/united-states-dhs-proposal-to-eliminate-60-day-nonimmigrant-grace-period-clears-federal-review.html": {
+    "hash": "c6171a34ea941ce5",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/app/details/BILLS-119hjres215ih": {
+    "hash": "d6b5a30f00a0c84f",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/app/details/BILLS-119sjres213pcs": {
+    "hash": "760d8696fa31ebb5",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/app/details/USCOURTS-cand-4_25-cv-08454/USCOURTS-cand-4_25-cv-08454-17/context": {
+    "hash": "475bb1a776770fa8",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/CCAL-119scal-2026-10-09/html/CCAL-119scal-2026-10-09-pt5.htm": {
+    "hash": "0b1f9bd29cd865bb",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/CCAL-119scal-2026-10-13/html/CCAL-119scal-2026-10-13-pt5.htm": {
+    "hash": "a7302de4038bd61f",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2024-12-18/pdf/2024-29354.pdf": {
+    "hash": "68d330321e3fbcc9",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-10-30/pdf/2025-19702.pdf": {
+    "hash": "982635ad405eceba",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/C1-2026-17324.pdf": {
+    "hash": "00592216ada17380",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/2026-18631.pdf": {
+    "hash": "65f1abaffc373eca",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-10-08/pdf/2026-20660.pdf": {
+    "hash": "9d2d908b51089dce",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20941.pdf": {
+    "hash": "a99add44d1891df1",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20955.pdf": {
+    "hash": "1d9882d3b02fae24",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf": {
+    "hash": "b8af6e7d9db6e51e",
+    "changedOn": "2026-11-16"
+  },
   "https://www.hio.harvard.edu/employment-training/curricular-practical-training": {
     "hash": "b0aca576d9859564",
     "changedOn": "2026-11-15"
+  },
+  "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf": {
+    "hash": "1f18c53df1ccab95",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf": {
+    "hash": "1c5a046d4fbdbce9",
+    "changedOn": "2026-11-16"
   },
   "https://www.iit.edu/global-services/student-employment/curricular-practical-training-cpt": {
     "hash": "f936b2f17dc68c5d",
@@ -239,8 +483,24 @@
     "hash": "6cc6f26795de948c",
     "changedOn": "2026-11-16"
   },
+  "https://www.justice.gov/crt/media/1465571/dl?inline=": {
+    "hash": "b4d87f16f54d1eb2",
+    "changedOn": "2026-11-16"
+  },
   "https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers": {
     "hash": "257faffcf56f10be",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.justice.gov/opa/pr/us-departments-justice-and-labor-secure-settlement-cloudera-enforce-two-year-perm-debarment": {
+    "hash": "fe4e9f4a2781b009",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.nafsa.org/sites/default/files/media/document/CPT%20Complaint%20AAU%20v.%20DHS%20.pdf": {
+    "hash": "5c9a492a38dbe82a",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.nafsa.org/sites/default/files/media/document/PI%20Hearing%20Court%20Transcript.pdf": {
+    "hash": "002012184224aa39",
     "changedOn": "2026-11-16"
   },
   "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/": {
@@ -263,6 +523,10 @@
     "hash": "9349d19e63102b7b",
     "changedOn": "2026-11-16"
   },
+  "https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf": {
+    "hash": "3a91f8ec1e925d3b",
+    "changedOn": "2026-11-16"
+  },
   "https://www.purdue.edu/gpp/iss/student/f1/employment/cpt.html": {
     "hash": "438cd235a9caa7ee",
     "changedOn": "2026-11-15"
@@ -279,6 +543,10 @@
     "hash": "4b3507f41fc55952",
     "changedOn": "2026-11-15"
   },
+  "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AC98": {
+    "hash": "c2022b3f0799ec5f",
+    "changedOn": "2026-11-16"
+  },
   "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD00": {
     "hash": "f0db0e6d198637f0",
     "changedOn": "2026-11-15"
@@ -286,6 +554,10 @@
   "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD14": {
     "hash": "312d46f57f32d1e5",
     "changedOn": "2026-11-15"
+  },
+  "https://www.reginfo.gov/public/Forward?SearchTarget=RegReview&textfield=1615-AD26": {
+    "hash": "312d46f57f32d1e5",
+    "changedOn": "2026-11-16"
   },
   "https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1615-AD00&pubId=202510": {
     "hash": "2097277b2d9167ea",
@@ -299,9 +571,17 @@
     "hash": "3c1bdc4d4820f0cc",
     "changedOn": "2026-11-16"
   },
+  "https://www.reginfo.gov/public/do/eoDetails?rrid=1496261": {
+    "hash": "2a83f3c3955ba0a3",
+    "changedOn": "2026-11-16"
+  },
   "https://www.reginfo.gov/public/do/eoDetails?rrid=1505714": {
     "hash": "abf482c577d06377",
     "changedOn": "2026-11-15"
+  },
+  "https://www.reginfo.gov/public/do/eoDetails?rrid=1506461": {
+    "hash": "6ec5d143949306eb",
+    "changedOn": "2026-11-16"
   },
   "https://www.reginfo.gov/public/do/eoDetails?rrid=1532863": {
     "hash": "9589c12b0fc5cef4",
@@ -339,12 +619,36 @@
     "hash": "a9f4910df214fda5",
     "changedOn": "2026-11-15"
   },
+  "https://www.uscardforum.com/t/topic/431784": {
+    "hash": "253af173818532f1",
+    "changedOn": "2026-11-16"
+  },
   "https://www.uscardforum.com/t/topic/439546": {
     "hash": "3f5a5a3d7738d62b",
     "changedOn": "2026-11-15"
   },
   "https://www.uscardforum.com/t/topic/517411": {
     "hash": "7467b9bade633fe4",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/521188": {
+    "hash": "958d179c01608014",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/523657": {
+    "hash": "f32bc229fd98a1ab",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/524965": {
+    "hash": "ce23ea78abedcce1",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/525892": {
+    "hash": "c3fba15c365c8595",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/527162": {
+    "hash": "d1a307072a940fb5",
     "changedOn": "2026-11-16"
   },
   "https://www.uscardforum.com/t/topic/527527": {
@@ -354,6 +658,38 @@
   "https://www.uscardforum.com/t/topic/528394": {
     "hash": "a31ff147f37479e9",
     "changedOn": "2026-11-15"
+  },
+  "https://www.uscardforum.com/t/topic/531864": {
+    "hash": "574934a24aaadf89",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscardforum.com/t/topic/533107": {
+    "hash": "3e369a23a86bc3b2",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/eadautoextend": {
+    "hash": "b5940b03170c0cc3",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/i-539": {
+    "hash": "b2116a4011ecb09c",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/i-765": {
+    "hash": "4823fd97b16cdb75",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/newsroom/news-releases/under-president-trumps-leadership-uscis-takes-unprecedented-22-million-enforcement-actions": {
+    "hash": "698fdfa60fdbdf2d",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/policy-manual/volume-10-part-a-chapter-4": {
+    "hash": "3494e63355a41c24",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.uscis.gov/working-in-the-united-states/information-for-employers-and-employees/options-for-nonimmigrant-workers-following-termination-of-employment": {
+    "hash": "0900c2b646813859",
+    "changedOn": "2026-11-16"
   },
   "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses": {
     "hash": "044a0e5c87613acc",
@@ -375,8 +711,28 @@
     "hash": "8cda9a8906fec15d",
     "changedOn": "2026-11-15"
   },
+  "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/": {
+    "hash": "0e91cc7077cd0211",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/": {
+    "hash": "e4d86395fa1c3c43",
+    "changedOn": "2026-11-16"
+  },
+  "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/": {
+    "hash": "f218ca5ee0764105",
+    "changedOn": "2026-11-16"
+  },
   "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/": {
     "hash": "1aa1c2145d229004",
     "changedOn": "2026-11-15"
+  },
+  "regulations:ICEB-2026-0100-0001": {
+    "hash": "3d38e26c7b39181c",
+    "changedOn": "2026-11-16"
+  },
+  "regulations:USCIS-2026-0364-0001": {
+    "hash": "17056d868ba2a96b",
+    "changedOn": "2026-11-16"
   }
 }
