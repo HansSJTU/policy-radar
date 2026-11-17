@@ -83,7 +83,7 @@ test('all existing policy IDs resolve with complete analysis and valid related l
 test('the first non-forum source is the primary government document', () => {
   const primary = (id) =>
     getPolicy(id, 'zh').sources.find(({ href }) => !href.includes('uscardforum.com')).href;
-  assert.match(primary('duration-status'), /2026-14439/);
+  assert.match(primary('duration-status'), /2026-11-16-District-Judge-dckt-73_0\.pdf/);
   assert.match(primary('h1b-fee'), /federalregister\.gov\/documents\/2026\/08\/25/);
   assert.match(primary('cpt-guidance'), /ice\.gov\/doclib\/sevis/);
 });
@@ -123,7 +123,7 @@ test('federal details share one process while litigation remains separate', () =
     }
     const litigation = getProcessTrack('duration-status', language);
     assert.equal(litigation.lastCompletedStage, 4);
-    assert.equal(litigation.litigation.length, 6);
+    assert.equal(litigation.litigation.length, 7);
     assert.notDeepEqual(
       getProcessTrack('cpt-guidance', language).stages,
       federal,
@@ -257,7 +257,7 @@ test('grace-period publication is distinct from final effectiveness', () => {
   }
 });
 
-test('PERM expectations stay labeled as analysis and cite the Justice Department settlement', () => {
+test('PERM proposal terms cite the official preview and preserve settlement history', () => {
   for (const language of ['zh', 'en']) {
     const policy = getPolicy('perm-modernization', language);
     assert.equal(policy.possibilities.items.length, 5);
@@ -275,8 +275,11 @@ test('PERM expectations stay labeled as analysis and cite the Justice Department
     );
     assert.ok(policy.milestones.some(({ date }) => date === '2026-08-04'));
   }
-  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /以 DOL 公布的提案为准/);
-  assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /expect/i);
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /提案预览/);
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.items[0][1], /两年/);
+  assert.match(getPolicy('perm-modernization', 'en').possibilities.items[0][1], /two years/);
+  assert.match(getPolicy('perm-modernization', 'en').sources[0].href, /2026-23370\.pdf/);
+  assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /proposal/i);
 });
 
 test('D/S relief is consistent across details, homepage and share copy', async () => {
@@ -291,7 +294,7 @@ test('D/S relief is consistent across details, homepage and share copy', async (
     assert.ok(policy.milestones.some(({ date }) => date === '2026-10-09'));
     assert.ok(policy.sources.some(source => source.href.endsWith('.51.0.pdf')));
     const text = buildItemShareContent(getPolicyShareItem('duration-status', language), language).text;
-    const expression = language === 'zh' ? /全国暂缓/ : /Nationwide court stay/;
+    const expression = language === 'zh' ? /撤销整项规则/ : /vacated entire rule/;
     assert.match(text, expression);
     const home = buildHomeView(language);
     assert.match(home.policies.find(({ id }) => id === 'duration-status').status, expression);

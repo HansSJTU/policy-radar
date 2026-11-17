@@ -45,6 +45,33 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 fee case: plaintiffs’ answering brief due in the Ninth Circuit (No. 26-6667)."
   },
   {
+    "id": "perm-proposal-publication-november17",
+    "date": "2026-11-17",
+    "availableOn": "2026-11-16",
+    "policyId": "perm-modernization",
+    "timing": "upcoming",
+    "zh": "提案计划正式刊登，拟征求 60 天公众意见；包括相关裁员后两年内禁止递交、招聘广告至少展示 90 天等要求。",
+    "en": "Scheduled publication of the proposal, with 60 days of public comments planned; proposed requirements include a two-year filing bar after relevant layoffs and at least 90 days of job ads."
+  },
+  {
+    "id": "ds-rule-vacated-november16",
+    "date": "2026-11-16",
+    "availableOn": "2026-11-16",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "法院判原告胜诉，撤销整项规则：固定停留期限、额外延期和学业限制均作废。现行 D/S 制度继续适用；政府可上诉。",
+    "en": "The court ruled for the plaintiffs and vacated the entire rule, setting aside fixed stay periods, extra extensions and academic restrictions. Existing D/S continues; the government can appeal."
+  },
+  {
+    "id": "perm-proposal-preview-november16",
+    "date": "2026-11-16",
+    "availableOn": "2026-11-16",
+    "policyId": "perm-modernization",
+    "timing": "recent",
+    "zh": "DOL 提案预览已公开：拟禁止相关裁员后两年内递交 PERM，并要求招聘广告至少展示 90 天。计划 11·17 正式刊登，现行规则继续适用。",
+    "en": "DOL released a proposal preview with a two-year bar on PERM filings after relevant layoffs and at least 90 days of job ads. Publication is scheduled November 17; current rules continue."
+  },
+  {
     "id": "ead-doe-hearing-november16",
     "date": "2026-11-16",
     "availableOn": "2026-11-04",

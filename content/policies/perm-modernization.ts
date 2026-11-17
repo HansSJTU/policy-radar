@@ -1,19 +1,27 @@
 import type { PolicyContent } from '../policy-types.ts';
 
 export const permModernization: PolicyContent = {
-  id: 'perm-modernization',
-  path: 'H-1B',
-  tone: 'blue',
-  effectState: 'not-in-effect',
-  checkedOn: "2026-11-02",
-  related: ['prevailing-wage', 'h1b-reform'],
-  process: {
+  "id": "perm-modernization",
+  "path": "H-1B",
+  "tone": "blue",
+  "effectState": "not-in-effect",
+  "checkedOn": "2026-11-16",
+  "related": [
+    "prevailing-wage",
+    "h1b-reform"
+  ],
+  "process": {
     "kind": "federal-rulemaking",
     "lastCompletedStage": 1,
-    "activeStage": null,
-    "nextStage": 2
+    "activeStage": 2,
+    "nextStage": 3
   },
-  sources: [
+  "sources": [
+    {
+      "href": "https://public-inspection.federalregister.gov/2026-23370.pdf",
+      "zh": "Federal Register · PERM 提案预览（2026-23370），拟于 11·17 刊登",
+      "en": "Federal Register · PERM proposal preview (2026-23370), scheduled November 17"
+    },
     {
       "href": "https://www.reginfo.gov/public/do/eoDetails?rrid=1533011",
       "zh": "OIRA 10·23 审查结论 · Consistent with Change · RIN 1205-AC29",
@@ -50,105 +58,102 @@ export const permModernization: PolicyContent = {
       "en": "OIRA · 1205-AC29 review search"
     }
   ],
-  zh: {
-    title: 'PERM 拟改革：招聘方式和雇主合规要求',
-    short: 'PERM 劳工认证改革',
-    searchTitle: "PERM 绿卡改革：招聘规则和雇主合规要求最新进展",
-    searchDescription: "PERM 是雇主担保绿卡的第一步。劳工部打算改革这一步，涉及招聘方式、被裁美国员工的保护和雇主合规要求。",
-    status: "OIRA 已审完 · 等待正式提案",
-    effectLabel: "尚未生效 · 现行 PERM 规则未变",
-    agency: 'DOL / ETA',
-    documentId: '1205-AC29',
-    tldr: "PERM 是雇主担保绿卡的第一步：雇主要先公开招聘，证明找不到合适的美国员工。DOL 打算改革这一步，涉及招聘方式、对被裁美国员工的保护和雇主的合规要求。白宫 OIRA 10·23 审完，要求修改后同意发布。下一步是 DOL 正式公布提案，现在仍按旧规则办。",
-    tags: ['H-1B → 绿卡', 'PERM', '雇主担保'],
-    summary:
-      "DOL 打算更新 PERM 的四个方面：雇主用什么渠道招聘、怎么保护被裁的美国员工、怎么防止招聘歧视，以及要留哪些记录。提案 9·14 送到白宫 OIRA 审查，10·23 审完，结论是“Consistent with Change”，意思是 DOL 按白宫的意见修改后就可以发布。下一步是 DOL 在联邦公报上公布提案全文和公众评论截止日。",
-    audience:
-      "打算通过雇主担保办绿卡的员工（包括现在持 H-1B 或在 OPT 期间、雇主已经答应办绿卡的人），以及替员工办 PERM 的雇主。",
-    caveat:
-      "这项改的是绿卡第一步的招聘和合规流程。H-1B 抽签照旧；PERM 的工资标准由另一项提案（#06，RIN 1205-AC30）管。",
-    background:
-      "PERM 是雇主替外籍员工办职业移民绿卡的第一步，也叫劳工证。雇主要按规定的渠道公开招聘，证明自己认真招过美国人、没找到合适人选，劳工部批准后，才能进入下一步递交 I-140。PERM 的规则写在联邦法规 20 CFR 656 里，现行版本主要来自 2005 年。\nDOL 在政府规则计划表里列出这项改革，原定 7 月公布提案。2026-09-14，DOL 把提案送交白宫 OIRA 审查；10·23 OIRA 审完（审查记录编号 rrid=1533011），结论是“Consistent with Change”。提案全文还没刊登，现行 PERM 规则照常适用。",
-    teaser: '招聘规则一改，雇主准备 PERM 的工作量和时间都会变。',
-    headline: '办绿卡担保，可能要在招聘和留档上花更多时间。',
-    analysis:
-      "我们的判断：改革是想让 PERM 招聘更像公司平时真正招人的方式。如果按这个方向落地，招聘渠道、怎么收简历、要留哪些记录都可能变，雇主每个案子的工时和费用大概率上升；刚裁过员的公司，核对相关岗位和招聘记录也会更麻烦。下面五项是律所和业界的预测，正式内容以提案为准。",
-    possibilities: {
-      "heading": "业内预测的五项变化",
-      "note": "这五项是律所和业界根据政府计划表和近期执法案例做的预测，正式条款以 DOL 公布的提案为准。其中至少三项已经出现在 2026-08-04 司法部和 OpenAI 的 PERM 和解里：司法部认定这家公司没在公开招聘网站发 PERM 职位、只收邮寄的纸质申请，还在深夜投放电台广告；和解要求它改在官网发布职位，并接受网上申请。",
+  "zh": {
+    "title": "PERM 改革提案：裁员回溯两年、招聘至少 90 天",
+    "short": "PERM 劳工认证改革",
+    "searchTitle": "PERM 改革提案：裁员两年限制、招聘至少 90 天",
+    "searchDescription": "DOL 11·16 公开 PERM 提案预览，拟限制近两年裁过相关美国员工的雇主递交，并延长招聘、加强留档。拟 11·17 刊登，现行规则继续适用。",
+    "status": "提案预览已公开 · 拟 11·17 刊登",
+    "effectLabel": "尚未生效 · 现行 PERM 规则未变",
+    "agency": "DOL / ETA",
+    "documentId": "1205-AC29 · ETA-2026-0133 · 2026-23370",
+    "tldr": "DOL 公开 PERM 改革提案预览：雇主如果过去两年在工作地区裁过同类岗位的美国员工，将不能递交相关 PERM；招聘广告至少展示 90 天。打算走雇主担保绿卡的 OPT、H-1B 员工最直接受影响。提案计划 11·17 正式刊登。",
+    "tags": [
+      "H-1B → 绿卡",
+      "PERM",
+      "雇主担保"
+    ],
+    "summary": "DOL 11·16 公开的 PERM 提案预览，拟把递交前的相关裁员回溯期从 180 天延长到两年，并禁止有这类裁员的雇主递交相关申请。递交后、I-140 获批前再发生相关裁员，雇主须在 5 个工作日内报告，并向被裁美国员工提供岗位机会。招聘广告拟至少展示 90 天，并采用公司平时招聘的渠道和申请方式。",
+    "audience": "打算通过雇主担保办绿卡的员工（包括现在持 H-1B 或在 OPT 期间、雇主已经答应办绿卡的人），以及替员工办 PERM 的雇主。",
+    "caveat": "现行 PERM 规则继续适用。新要求须经过公众评论和最终规则程序；H-1B 抽签与身份照旧，工资标准由另一项规则（RIN 1205-AC30）处理。",
+    "background": "PERM 是许多雇主担保职业移民绿卡的第一步，也叫劳工证。雇主要先公开招聘，证明找不到合适的美国员工。劳工部批准后，雇主才能递交 I-140 移民申请。现行规则主要来自 2005 年。\nDOL 的提案 9·14 送白宫 OIRA 审查，10·23 按意见修改后获准发布。11·16，联邦公报公开提案预览，计划 11·17 正式刊登。提案拟留 60 天公众评论期。\n提案区分递交前和递交后的裁员。递交前两年内，雇主在拟工作地区裁过同类或相近岗位的美国员工，就不能递交相关 PERM。递交后至 I-140 获批前发生这类裁员，雇主要在 5 个工作日内通知劳工部；I-140 正在审理的，还要通知 USCIS。雇主要向可能符合条件的被裁员工提供该岗位，并记录录用、拒绝或基于合法岗位理由不录用的结果。\n招聘方面，提案拟用电子招聘替代强制报纸广告。广告至少展示 90 天；公司平时同类岗位招得更久的，要按更长时间。递交时还要交招聘报告及美国申请人的简历、申请等材料。雇主须在递交前 10 个工作日内开始向员工公示申请，并持续到 I-140 获批；被拒或撤回的案件，持续到相关最终决定。\n提案拟给最终规则刊登后的新要求安排 90 天过渡：60 天后生效，再给 30 天切换。最终规则刊登后第 90 天起递交的 PERM 或工资核定申请，拟按新要求办理。",
+    "teaser": "招聘规则一改，雇主准备 PERM 的工作量和时间都会变。",
+    "headline": "办绿卡担保，可能要在招聘和留档上花更多时间。",
+    "analysis": "我们的判断：对刚裁过相关岗位的雇主，两年内禁止递交会直接影响员工何时启动绿卡申请。对其他雇主，至少 90 天广告、更多随案材料和持续公示，也会增加准备时间。学生可以先和 HR 确认担保岗位、工作地区和招聘计划，再按最终规则安排时间。",
+    "possibilities": {
+      "heading": "提案写明的五项变化",
+      "note": "以下来自 11·16 公开的提案预览。公司日常招聘方式成为参照：平时用 ATS 在线收简历的，PERM 岗位也须提供同样方便的申请方式。此前 OpenAI 和解已要求官网刊登职位并接受网上申请。",
       "items": [
         [
-          "取消强制性的报纸广告",
-          "不再硬性要求在当地报纸刊登招聘广告。报纸是 2005 年规则留下的渠道，如今大多数技术类求职者根本不看。"
+          "递交前回溯两年裁员",
+          "雇主过去两年在拟工作地区裁过同类或相近岗位的美国员工，拟禁止递交相关 PERM。"
         ],
         [
-          "改用现代招聘渠道",
-          "要求或允许用社交媒体、招聘网站这类现在常用的渠道，同时去掉电台、电视这类过时渠道。"
+          "递交后裁员要报告并提供岗位",
+          "I-140 获批前再发生相关裁员，拟要求 5 个工作日内报告，并向可能符合条件的被裁美国员工提供岗位机会。"
         ],
         [
-          "不再要求邮寄简历",
-          "不再把“只收邮寄纸质简历”当成合规做法，免得用这种门槛把申请人挡在外面。"
+          "招聘广告至少展示 90 天",
+          "拟用电子招聘替代强制报纸广告。广告至少展示 90 天，或按公司过去一年同类普通岗位更长的惯常招聘时间。"
         ],
         [
-          "在公司招聘页面发布职位",
-          "公司如果有自己的招聘页面，就要把 PERM 职位发在上面，而不是只发在报纸或州劳工局。"
+          "招聘渠道和申请方式跟日常一致",
+          "PERM 拟采用公司平时招聘同类岗位的渠道和方式；投递渠道须正常运行、有人查看，并能保存申请。"
         ],
         [
-          "通过 ATS 接收申请",
-          "公司如果用申请人管理系统（ATS，也就是网上投递简历的那套系统），就要让申请人能通过系统投递，而不是只留一个邮箱或邮寄地址。"
+          "外包客户的相关裁员也要考虑",
+          "外派员工与客户构成雇佣关系时，客户在规定期间的相关裁员也会限制该岗位的 PERM。"
         ]
       ]
     },
-    impacts: [
+    "impacts": [
       {
-        "title": "对雇主：招聘和留档工作变多",
-        "text": "如果招聘和留档的最低标准提高，公司要改招聘流程、留更多证据。具体多哪些步骤、多花多少钱，由提案写明。",
+        "title": "对雇主：招聘时间和随案材料增加",
+        "text": "广告至少展示 90 天，并在招聘结束 30 至 60 天后递交。雇主要随案提交招聘报告和美国申请人的材料。",
         "examples": [
-          "一家企业准备为小陈办 PERM。如果最终规则要求更完整的招聘记录，HR 就要多整理求职申请和招聘结果，准备时间也会拉长。"
+          "公司准备为小陈办 PERM。如果最终采用这些安排，HR 要先排出至少 90 天的招聘期，再留出招聘结束后的等待时间。"
         ]
       },
       {
-        "title": "对裁过员的公司：保护美国员工的要求更严",
-        "text": "计划表写明要加强对被裁美国员工的保护。往回查多久、涉及哪些岗位、要不要逐个通知，由提案写明。裁过员的公司仍然可以办 PERM。",
+        "title": "对裁过员的公司：相关岗位可能两年内无法递交",
+        "text": "拟限制的是拟工作地区同类或相近岗位美国员工的裁员。符合这个范围的裁员，会使雇主在两年回溯期内无法递交相关 PERM。",
         "examples": [
-          "小林的公司最近裁过员，又准备给他办 PERM。改革要加强保护被裁员工，公司以后可能要更仔细地核对相关岗位，具体范围看提案。"
+          "小林的公司刚在同一工作地区裁过美国软件工程师。如果他的担保岗位属于同类或相近岗位，按提案雇主需等到两年回溯期过去才能递交。"
         ]
       },
       {
-        "title": "对 H-1B 员工：绿卡时间可能往后推",
-        "text": "雇主准备一个案子的时间变长，员工的绿卡计划就可能往后推；现有 H-1B 身份照常。",
+        "title": "对 OPT、H-1B 员工：绿卡启动时间更难安排",
+        "text": "员工的担保岗位、工作地区以及雇主和客户的裁员记录，会影响 PERM 的准备与递交时间。",
         "examples": [
-          "小王持 H-1B，雇主答应今年给他办绿卡。如果新规让准备工作变多，雇主递交的时间可能推迟；他的 H-1B 身份照常。"
+          "小王持 H-1B，在客户公司上班。除了担保雇主，客户公司的相关裁员和双方的实际雇佣关系，也会影响提案下的 PERM 资格。"
         ]
       }
     ],
-    outlook:
-      "OIRA 已审完，接下来等 DOL 正式公布提案。重点看：招聘渠道、裁员后的通知和核对要求、材料要留几年，以及已经递交的案子怎么过渡。",
-    scenarios: [
+    "outlook": "先看 11·17 正式刊登及其公众评论安排，之后看 DOL 如何回应意见、是否修改两年限制和 90 天招聘要求，以及最终过渡条款。",
+    "scenarios": [
       {
-        "name": "审完，等提案",
-        "headline": "现行规则照旧",
-        "assumption": "OIRA 已审完，DOL 还没公布提案。",
-        "effects": "雇主继续按现行规则准备案件。",
-        "signals": "DOL 和联邦公报有没有公布提案、改了什么。"
+        "name": "提案预览已公开",
+        "headline": "雇主可开始评估影响",
+        "assumption": "11·16 已公开正文，计划 11·17 正式刊登。",
+        "effects": "按担保岗位和工作地区检查裁员记录，并估算招聘和材料准备时间。",
+        "signals": "正式刊登日期和公众评论安排。"
       },
       {
-        name: '提案公布，开始征求意见',
-        headline: '雇主开始评估流程怎么变',
-        assumption: 'DOL 公布具体条款和评论期。',
-        effects: '员工和雇主可以对照正文估算准备量；新要求要等最终规则生效才适用。',
-        signals: '招聘标准、裁员保护、留档要求和适用范围。',
+        "name": "公众评论后形成最终规则",
+        "headline": "DOL 决定哪些要求保留",
+        "assumption": "DOL 阅读公众意见并完成最终规则。",
+        "effects": "雇主根据最终条款调整招聘、裁员报告和申请流程。",
+        "signals": "最终条文对两年限制、90 天招聘及外包岗位的规定。"
       },
       {
-        name: '最终规则生效',
-        headline: '按最终规则调整 PERM 流程',
-        assumption: 'DOL 走完规则程序，最终规则生效。',
-        effects:
-          '新案和在办案件要不要改，看最终条款、过渡安排和可能的法院命令。',
-        signals: '生效日期、过渡安排，以及已经做完的招聘和已递交的案子怎么算。',
-      },
+        "name": "最终规则进入过渡期",
+        "headline": "按递交日期区分新旧要求",
+        "assumption": "最终规则采用提案中的 90 天过渡安排。",
+        "effects": "最终规则刊登后第 90 天起递交的 PERM 或工资核定申请，按新要求办理。",
+        "signals": "最终规则的刊登日、生效日和过渡安排。"
+      }
     ],
-    scope: [
+    "scope": [
       {
         "label": "涉及什么",
         "text": "20 CFR 656 下的 PERM 劳工证，也就是职业移民绿卡的第一步。"
@@ -159,10 +164,10 @@ export const permModernization: PolicyContent = {
       },
       {
         "label": "现在到哪一步",
-        "text": "9·14 送 OIRA，10·23 审完；下一步是公布提案和公众评论期。"
+        "text": "11·16 提案预览已公开，计划 11·17 正式刊登；随后征求公众意见。"
       }
     ],
-    milestones: [
+    "milestones": [
       {
         "date": "2026 统一议程",
         "text": "DOL 在政府规则计划表里列出 PERM 改革，原定 7 月公布提案。"
@@ -178,131 +183,129 @@ export const permModernization: PolicyContent = {
       {
         "date": "2026-10-23",
         "text": "OIRA 审完，结论是按意见修改后同意发布（Consistent with Change）。"
+      },
+      {
+        "date": "2026-11-16",
+        "text": "联邦公报公开 PERM 提案预览，拟限制相关裁员后两年内递交，并将招聘广告延长至至少 90 天。"
       }
     ],
-    next: [
+    "next": [
       {
-        "date": "日期未定",
-        "text": "DOL 正式公布提案，写明招聘渠道、适用案件和公众评论截止日。"
+        "date": "2026-11-17",
+        "text": "计划正式刊登提案，开始公众评论程序。"
       },
       {
         "date": "日期未定",
-        "text": "最终规则、生效日期，以及在办案件的过渡安排。",
+        "text": "提案拟留 60 天公众评论期，之后 DOL 阅读意见并决定最终条文。"
+      },
+      {
+        "date": "日期未定",
+        "text": "最终规则及过渡安排；提案拟从最终规则刊登后第 90 天起，对新递交申请适用新要求。",
         "estimate": true
       }
     ],
-    process: {
-      "detail": "OIRA 2026-10-23 审完 PERM 提案，同意按意见修改后发布；提案全文公布之前，现行规则照常。",
-      "currentSummary": "OIRA 已审完，等待提案公布",
-      "waitingFor": "DOL 公布提案和评论期限。"
-    },
+    "process": {
+      "detail": "OIRA 10·23 审完；11·16 已公开提案预览，计划 11·17 正式刊登并征求公众意见。",
+      "currentSummary": "提案预览已公开，等待正式刊登",
+      "waitingFor": "11·17 计划刊登，以及公众评论安排。"
+    }
   },
-  en: {
-    title: 'PERM Reform: How Employers Recruit and Comply',
-    short: 'PERM Labor Certification Reform',
-    searchTitle: "PERM Modernization: New Recruitment and Compliance Rules",
-    searchDescription: "PERM is the first step of an employer-sponsored green card. DOL plans to overhaul it, covering how employers recruit, protections for laid-off U.S. workers and compliance.",
-    status: "OIRA review done · Awaiting proposal",
-    effectLabel:
-      "Not in effect · Current PERM rules unchanged",
-    agency: 'DOL / ETA',
-    documentId: '1205-AC29',
-    tldr: "PERM is the first step of an employer-sponsored green card: the employer has to advertise the job and show it couldn’t find a qualified U.S. worker. DOL plans to overhaul that step, covering how employers recruit, protections for laid-off U.S. workers and compliance rules. The White House’s OIRA finished its review on October 23 and cleared it with changes. Next, DOL publishes the formal proposal; for now the old rules apply.",
-    tags: ['H-1B to green card', 'PERM', 'Employer sponsorship'],
-    summary:
-      "DOL plans to update four parts of PERM: which channels employers recruit through, how laid-off U.S. workers are protected, how recruiting discrimination is prevented, and what records must be kept. The proposal went to the White House’s OIRA on September 14 and review finished October 23 with “Consistent with Change,” meaning DOL can publish once it makes the White House’s requested changes. Next, DOL publishes the full proposal in the Federal Register with a public comment deadline.",
-    audience:
-      "Workers planning an employer-sponsored green card (including those on H-1B now, or on OPT with an employer promise to sponsor), and the employers filing PERM for them.",
-    caveat:
-      "This changes the recruiting and compliance steps at the start of a green card. The H-1B lottery is unchanged, and PERM wage levels are handled by a separate proposal (#06, RIN 1205-AC30).",
-    background:
-      "PERM, also called labor certification, is the first step of an employment-based green card. The employer has to recruit publicly through set channels and show it genuinely tried to hire U.S. workers and found no qualified one; only after the Department of Labor approves can it file Form I-140. PERM’s rules are in the federal regulation at 20 CFR 656, largely written in 2005.\nDOL listed the reform in the government’s rulemaking plan, aiming to publish a proposal in July. On September 14, 2026 it sent the proposal to the White House’s OIRA for review; on October 23 OIRA finished (review record rrid=1533011) with the conclusion “Consistent with Change.” The full proposal has not been published yet, and the current PERM rules still apply.",
-    teaser:
-      'If recruitment rules are rewritten, the work and timing of preparing a PERM case change with them.',
-    headline:
-      'Green-card sponsorship may take more time on recruiting and records.',
-    analysis:
-      "Our view: the reform aims to make PERM recruiting look more like how companies really hire. If it goes that way, recruiting channels, how applications are taken and what records are kept may all change, and each case will likely cost employers more time and money; companies with recent layoffs will have more checking to do. The five items below are predictions from law firms and industry; the proposal will have the actual terms.",
-    possibilities: {
-      "heading": "Five changes practitioners expect",
-      "note": "These five items are predictions by law firms and practitioners based on the government’s plan and recent enforcement; the actual terms will be in DOL’s published proposal. At least three already showed up in the Justice Department’s August 4, 2026 PERM settlement with OpenAI: DOJ found the company did not post PERM jobs on its public careers site, accepted only paper applications by mail and ran late-night radio ads; the settlement requires it to post on its own site and accept online applications.",
+  "en": {
+    "title": "PERM Proposal: Two-Year Layoff Lookback, 90-Day Recruiting",
+    "short": "PERM Labor Certification Reform",
+    "searchTitle": "PERM Reform Proposal: Two-Year Layoff Limit and 90-Day Recruiting",
+    "searchDescription": "DOL released a PERM proposal preview November 16: a two-year restriction after relevant layoffs, longer recruiting and more records. Publication is scheduled November 17; current rules continue.",
+    "status": "Proposal preview available · Publication scheduled November 17",
+    "effectLabel": "Not in effect · Current PERM rules unchanged",
+    "agency": "DOL / ETA",
+    "documentId": "1205-AC29 · ETA-2026-0133 · 2026-23370",
+    "tldr": "DOL’s PERM proposal preview would bar related filings when an employer laid off U.S. workers in the same or similar occupation and work area during the previous two years. Job ads would run for at least 90 days. OPT and H-1B workers seeking employer-sponsored green cards are directly affected. Publication is scheduled November 17.",
+    "tags": [
+      "H-1B to green card",
+      "PERM",
+      "Employer sponsorship"
+    ],
+    "summary": "DOL’s November 16 PERM proposal preview would extend the pre-filing layoff lookback from 180 days to two years and bar related filings by employers with those layoffs. Relevant layoffs after filing and before I-140 approval would require a report within five business days and job offers to laid-off U.S. workers. Ads would run for at least 90 days, using the employer’s usual recruiting and application methods.",
+    "audience": "Workers planning an employer-sponsored green card (including those on H-1B now, or on OPT with an employer promise to sponsor), and the employers filing PERM for them.",
+    "caveat": "Current PERM rules continue. New requirements must go through public comments and final rulemaking. H-1B selection and status continue as before; a separate rule (RIN 1205-AC30) handles wage levels.",
+    "background": "PERM, or labor certification, is the first step for many employer-sponsored employment-based green cards. The employer recruits publicly to show that no qualified U.S. worker is available. After DOL approval, the employer can file the I-140 immigrant petition. The current rules largely date to 2005.\nDOL sent the proposal to the White House’s OIRA on September 14. OIRA cleared it with changes on October 23. On November 16, the Federal Register released the proposal preview, scheduled for publication November 17. The proposal provides for a 60-day public comment period.\nThe proposal treats layoffs before and after filing differently. An employer that laid off U.S. workers in the same or similar occupation and intended work area within the preceding two years could not file the related PERM application. Relevant layoffs after filing and before I-140 approval would require notice to DOL within five business days, and to USCIS when an I-140 is pending. The employer would have to offer the job to potentially qualified laid-off workers and document hiring, refusal, or rejection for lawful, job-related reasons.\nElectronic recruitment would replace mandatory newspaper ads. Ads would run for at least 90 days, or longer if that is the employer’s customary duration for comparable jobs. The filing would include a recruitment report and U.S. applicants’ resumes and applications. Employers would begin a notice of filing (NOF) within ten business days before filing and keep it available through I-140 approval, or the relevant final decision for denied or withdrawn cases.\nThe proposal sets out a 90-day transition after publication of a final rule: a 60-day delayed effective date and another 30 days to switch. PERM or prevailing-wage applications filed on or after day 90 after final-rule publication would follow the new requirements.",
+    "teaser": "If recruitment rules are rewritten, the work and timing of preparing a PERM case change with them.",
+    "headline": "Green-card sponsorship may take more time on recruiting and records.",
+    "analysis": "Our view: a two-year filing bar after relevant layoffs would directly affect when employees can start green-card cases. For other employers, at least 90 days of ads, more documents with the filing and continuing notices would add preparation time. Students can discuss the sponsored job, work area and recruiting plan with HR before planning around the final rule.",
+    "possibilities": {
+      "heading": "Five changes in the proposal",
+      "note": "These come from the November 16 proposal preview. Ordinary recruiting is the benchmark: employers that normally accept resumes online through an ATS would need an equally accessible route for PERM jobs. The earlier OpenAI settlement already required careers-site postings and online applications.",
       "items": [
         [
-          "Drop the mandatory newspaper ad",
-          "Stop requiring a print advertisement in a local newspaper. Print ads are a holdover from the 2005 rule, and most technical job seekers never see them."
+          "Two-year pre-filing layoff lookback",
+          "Related PERM filings would be barred if the employer laid off U.S. workers in the same or similar occupation and intended work area during the preceding two years."
         ],
         [
-          "Move to modern recruitment channels",
-          "Require or allow social media, job boards and other current channels, while dropping outdated ones such as radio and television."
+          "Report post-filing layoffs and offer the job",
+          "Relevant layoffs before I-140 approval would require reports within five business days and job offers to potentially qualified laid-off U.S. workers."
         ],
         [
-          "Stop requiring mailed resumes",
-          "Stop treating “paper applications by mail only” as compliant recruitment, so a physical step does not screen applicants out."
+          "Run ads for at least 90 days",
+          "Electronic recruiting would replace mandatory newspaper ads. Ads would run for at least 90 days, or the employer’s longer customary duration for comparable ordinary jobs during the past year."
         ],
         [
-          "Post roles on the company job page",
-          "If an employer has its own careers page, PERM roles should appear there, not only in a newspaper or on the state job board."
+          "Use ordinary recruiting and application methods",
+          "PERM recruiting would use the channels and methods normally used for comparable jobs. Application channels must work, be monitored and retain applications."
         ],
         [
-          "Accept applications through the ATS",
-          "If an employer uses an applicant tracking system (ATS, the online system you submit a resume through), applicants should be able to apply through it rather than to a single mailbox or mailing address."
+          "Relevant client layoffs also count",
+          "When a placement creates an employment relationship with a client, that client’s relevant layoffs during the specified period would also restrict PERM for the job."
         ]
       ]
     },
-    impacts: [
+    "impacts": [
       {
-        "title": "For employers: more recruiting and recordkeeping",
-        "text": "If minimum recruiting and recordkeeping standards go up, companies will need to change their process and keep more evidence. The proposal will spell out which steps and what cost.",
+        "title": "For employers: longer recruiting and more documents with the filing",
+        "text": "Ads would run for at least 90 days, followed by filing 30 to 60 days after recruiting ends. Employers would submit a recruitment report and U.S. applicants’ records with the application.",
         "examples": [
-          "A company is preparing PERM for Chen. If the final rule requires fuller recruitment records, HR would need to compile more application and hiring data, and preparation would take longer."
+          "A company is preparing PERM for Chen. If these terms become final, HR would plan at least 90 days of recruiting and the waiting period after recruiting ends."
         ]
       },
       {
-        "title": "For companies with layoffs: stricter protections for U.S. workers",
-        "text": "The plan says protections for laid-off U.S. workers will be stronger. How far back it looks, which jobs count and whether each worker must be notified will be set in the proposal. Companies that had layoffs can still file PERM.",
+        "title": "For companies with layoffs: related filings could be barred for two years",
+        "text": "The proposed restriction concerns layoffs of U.S. workers in the same or similar occupation and intended work area. Those layoffs would bar related PERM filings during the two-year lookback.",
         "examples": [
-          "Lin’s company recently had layoffs and is about to start his PERM. With stronger protections for laid-off workers, the company may have to check related jobs more carefully; the proposal will set the scope."
+          "Lin’s company recently laid off U.S. software engineers in his intended work area. If his sponsored job is the same or similar, the proposal would require the employer to wait until the layoffs fall outside the two-year lookback before filing."
         ]
       },
       {
-        "title": "For H-1B employees: green-card timing could slip",
-        "text": "If employer preparation takes longer, the employee’s green-card timeline could shift. Existing H-1B status continues as before.",
+        "title": "For OPT and H-1B workers: harder green-card planning",
+        "text": "The sponsored job, work area and layoffs at the employer or client would affect PERM preparation and filing dates.",
         "examples": [
-          "Wang is on H-1B and his employer has committed to start his green card this year. If the new rules mean more preparation, the filing could slip; Wang’s H-1B status continues as before."
+          "Wang works at a client site on H-1B. Alongside the sponsoring employer, relevant client layoffs and the actual employment relationship would affect PERM eligibility under the proposal."
         ]
       }
     ],
-    outlook:
-      "OIRA is done; next comes DOL’s formal proposal. Watch for recruiting channels, notice and checks after layoffs, how long records must be kept and how cases already filed are handled.",
-    scenarios: [
+    "outlook": "Watch the scheduled November 17 publication and comment arrangements, then DOL’s responses, any revisions to the two-year restriction and 90-day recruiting requirement, and the final transition terms.",
+    "scenarios": [
       {
-        "name": "Review done; proposal pending",
-        "headline": "Current rules still apply",
-        "assumption": "OIRA has finished; DOL has not published the proposal yet.",
-        "effects": "Employers keep preparing cases under current rules.",
-        "signals": "Whether DOL and the Federal Register publish the proposal, and what it changes."
+        "name": "Proposal preview available",
+        "headline": "Employers can assess the impact",
+        "assumption": "The text was released November 16, with publication scheduled November 17.",
+        "effects": "Check layoffs against the sponsored job and work area and estimate recruiting and document preparation time.",
+        "signals": "Formal publication and public comment arrangements."
       },
       {
-        name: 'Proposal published for comment',
-        headline: 'Employers assess how the process would change',
-        assumption: 'DOL publishes the terms and a comment period.',
-        effects:
-          'Employees and employers can size the preparation work against the text; new requirements apply only once a final rule takes effect.',
-        signals:
-          'Recruiting standards, layoff protections, recordkeeping and who it covers.',
+        "name": "A final rule follows public comments",
+        "headline": "DOL decides which requirements to keep",
+        "assumption": "DOL reads comments and completes a final rule.",
+        "effects": "Employers adjust recruitment, layoff reporting and filings to the final terms.",
+        "signals": "Final terms on the two-year restriction, 90-day recruiting and client placements."
       },
       {
-        name: 'A final rule takes effect',
-        headline: 'PERM processing adjusts to the final rule',
-        assumption:
-          'DOL finishes rulemaking and the final rule takes effect.',
-        effects:
-          'Whether new and pending cases must change depends on the final terms, transition rules and any court orders.',
-        signals:
-          'The start date, transition rules and how recruiting already done and cases already filed are treated.',
-      },
+        "name": "A final rule enters transition",
+        "headline": "Filing dates determine the requirements",
+        "assumption": "The final rule adopts the proposed 90-day transition.",
+        "effects": "PERM or prevailing-wage applications filed on or after day 90 after final-rule publication follow the new requirements.",
+        "signals": "Publication, effective date and transition terms in the final rule."
+      }
     ],
-    scope: [
+    "scope": [
       {
         "label": "What it covers",
         "text": "PERM labor certification under 20 CFR 656, the first step of an employment-based green card."
@@ -313,10 +316,10 @@ export const permModernization: PolicyContent = {
       },
       {
         "label": "Where it stands",
-        "text": "Sent to OIRA September 14 and cleared October 23; next comes the published proposal and comment period."
+        "text": "The proposal preview was released November 16, with publication scheduled November 17 and public comments to follow."
       }
     ],
-    milestones: [
+    "milestones": [
       {
         "date": "2026 Unified Agenda",
         "text": "DOL listed PERM reform in the government’s rulemaking plan, aiming to publish a proposal in July."
@@ -332,23 +335,31 @@ export const permModernization: PolicyContent = {
       {
         "date": "2026-10-23",
         "text": "OIRA finished review and cleared the proposal once changes are made (Consistent with Change)."
+      },
+      {
+        "date": "2026-11-16",
+        "text": "The Federal Register released a PERM proposal preview with a two-year restriction after relevant layoffs and at least 90 days of job ads."
       }
     ],
-    next: [
+    "next": [
       {
-        "date": "Date unknown",
-        "text": "DOL publishes the formal proposal, with recruiting channels, which cases it covers and a public comment deadline."
+        "date": "2026-11-17",
+        "text": "Scheduled publication of the formal proposal and start of the public comment process."
       },
       {
         "date": "Date unknown",
-        "text": "The final rule, its start date and transition terms for pending cases.",
+        "text": "The proposal provides for 60 days of comments, followed by DOL review and a decision on final terms."
+      },
+      {
+        "date": "Date unknown",
+        "text": "A final rule and transition terms; the proposal would apply new requirements to applications filed on or after day 90 after final-rule publication.",
         "estimate": true
       }
     ],
-    process: {
-      "detail": "OIRA finished reviewing the PERM proposal on October 23, 2026 and cleared it with changes; until the full proposal is published, current rules apply.",
-      "currentSummary": "OIRA done; awaiting proposal",
-      "waitingFor": "DOL’s proposal and comment deadline."
-    },
-  },
+    "process": {
+      "detail": "OIRA cleared review October 23. The proposal preview became available November 16, with publication and public comments scheduled November 17.",
+      "currentSummary": "Proposal preview available; formal publication next",
+      "waitingFor": "Scheduled November 17 publication and public comment arrangements."
+    }
+  }
 };

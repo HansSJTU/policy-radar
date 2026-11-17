@@ -21,6 +21,30 @@ export type GlossarySegment =
 
 export const glossaryEntries: GlossaryEntry[] = [
   {
+    "term": "ATS",
+    "fullName": "Applicant Tracking System（求职申请管理系统）",
+    "explanation": "公司接收、保存和筛选求职申请的在线系统。PERM 提案要求申请方式和公司平时招聘同类岗位一样方便。",
+    "fullNameEn": "Applicant Tracking System",
+    "explanationEn": "The online system a company uses to receive, store and review job applications. The PERM proposal would require application methods as accessible as those used for comparable ordinary jobs."
+  },
+  {
+    "term": "NOF",
+    "fullName": "Notice of Filing（劳工证申请公示）",
+    "explanation": "雇主向员工或工会公示自己将递交劳工证申请，让员工知道岗位和工资，并可向劳工部提供相关信息。",
+    "fullNameEn": "Notice of Filing",
+    "explanationEn": "An employer notice to workers or their union about a planned labor-certification filing, the job and wage, and how to provide relevant information to DOL."
+  },
+  {
+    "term": "vacatur",
+    "aliases": [
+      "撤销规则"
+    ],
+    "fullName": "Vacatur（撤销规则）",
+    "explanation": "法院让一项规则失去法律效力。政府可以上诉；后续变化由法院新的命令决定。",
+    "fullNameEn": "Vacatur",
+    "explanationEn": "A court decision removing a rule’s legal effect. The government can appeal; later changes depend on further court orders."
+  },
+  {
     term: 'PRA',
     aliases: ['《文书削减法》'],
     fullName: 'Paperwork Reduction Act（文书削减法）',
