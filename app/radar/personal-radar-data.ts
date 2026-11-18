@@ -40,8 +40,8 @@ export const personalEstimates: Record<PolicyId, Estimate> = {
     score: 8,
     months: [6, 24],
     why: {
-      zh: '固定停留期限和延期手续会大大改变学业和身份安排；法院目前已暂缓执行，分数描述的是新规一旦执行的影响。',
-      en: 'Fixed stays and extension filings would substantially change study and status plans. The rule is paused by a court; the score describes the impact if it were enforced.',
+      zh: '固定停留期限和延期手续会大大改变学业和身份安排；法院 11·16 已撤销整项规则，分数保留原规则的影响记录。',
+      en: 'Fixed stays and extension filings would substantially change study and status plans. The court vacated the entire rule November 16; the score records the original rule’s impact.',
     },
   },
   'h1b-weighted-selection': {
@@ -54,8 +54,8 @@ export const personalEstimates: Record<PolicyId, Estimate> = {
   'cpt-guidance': {
     score: 9,
     why: {
-      zh: '“专业必修”和校企协议的要求，让很多原本能做的实习拿不到 CPT；具体看课程设置和学校通知。',
-      en: 'The “required of every student” rule and the school-employer agreement shut many internships out of CPT; it depends on the curriculum and the school’s notice.',
+      zh: '法院 11·17 已在全国暂停两份 CPT 指引；分数描述限制恢复时的影响，各校正调整申请流程。',
+      en: 'The court stayed both CPT broadcasts nationwide November 17. The score describes their impact if restored; schools are adjusting application procedures.',
     },
   },
   'prevailing-wage': {
@@ -165,9 +165,12 @@ export function buildPersonalPolicies(
             addMonths(estimateBaseline, estimate.months[1]),
           ]
         : null;
-    const litigation = policy.id === 'duration-status';
+    const litigation = policy.id === 'duration-status' || policy.id === 'cpt-guidance';
+    const pausedCpt = policy.id === 'cpt-guidance' && !inForce;
     const longTerm = policy.id === 'h4-ead';
-    const timeReason = litigation
+    const timeReason = pausedCpt
+      ? (zh ? '法院 11·17 在全国暂停指引，恢复执行的日期未定；后续安排取决于法院命令。' : 'The court stayed the guidance nationwide November 17. Any restart date depends on further court orders.')
+      : litigation
       ? zh
         ? '法院没有给恢复执行的日期。6–24 个月是假设官司最终允许执行时的 AI 估计；紧急裁定可能更早，也可能一直不执行。'
         : 'The court has set no restart date. Six to twenty-four months is an AI estimate assuming the courts eventually allow the rule; an emergency ruling could come sooner, or it might never be enforced.'
@@ -185,7 +188,7 @@ export function buildPersonalPolicies(
       sources: policy.sources,
       sector: RADAR_PLACEMENT[policy.id].sector,
       inForce,
-      ring: 0,
+      ring: pausedCpt ? 3 : 0,
       score: estimate.score,
       scoreOrigin: 'ai',
       genuineCount: undefined,
@@ -199,8 +202,8 @@ export function buildPersonalPolicies(
           : zh
             ? '已在执行'
             : 'In force'
-        : '',
-      estimateTiming: inForce
+        : pausedCpt ? (zh ? '法院暂缓 · 日期未定' : 'Court stay · Date unknown') : '',
+      estimateTiming: (inForce || pausedCpt)
         ? null
         : `${zh ? (litigation ? 'AI 情景' : 'AI 预估') : 'AI estimate'} · ${dates?.[0].slice(0, 7)} – ${dates?.[1].slice(0, 7)}`,
       timeReason: inForce ? policy.caveat : timeReason,

@@ -198,8 +198,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "next": [
       {
-        "date": "2026-11-16",
-        "text": "政府请求结束案件的听证及排期会议，美西下午 4 点／美东晚上 7 点。"
+        "date": "日期未定",
+        "text": "法院对政府结束案件请求的决定及后续排期。"
       },
       {
         "date": "日期未定",
@@ -208,8 +208,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "process": {
       "detail": "取消自动延期的临时规则从 2025·10·30 起执行；10·14 的最终规则照原样定稿并生效。9·11 的初步禁令保护起诉的七个人。",
-      "currentSummary": "规则已执行；11·16 听取政府结束案件的请求",
-      "waitingFor": "11·16 听证后，法院决定案件接下来怎么审理。"
+      "currentSummary": "规则已执行；等待案件下一步安排",
+      "waitingFor": "法院决定政府结束案件的请求及后续安排。"
     }
   },
   "en": {
@@ -325,8 +325,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "next": [
       {
-        "date": "2026-11-16",
-        "text": "Hearing on the government’s request to end the case and scheduling conference, 4 p.m. Pacific / 7 p.m. Eastern."
+        "date": "Date unknown",
+        "text": "The court’s decision on the government’s request to end the case and further scheduling."
       },
       {
         "date": "Date unknown",
@@ -335,8 +335,8 @@ export const eadAutoExtension: PolicyContent = {
     ],
     "process": {
       "detail": "The interim rule ending automatic extensions has applied since October 30, 2025; the October 14 final rule keeps it unchanged and is in effect. The September 11 preliminary injunction protects the seven people who sued.",
-      "currentSummary": "Rule in force; hearing November 16 on the request to end the case",
-      "waitingFor": "The November 16 hearing and the court’s decision on how the case proceeds."
+      "currentSummary": "Rule in force; next case steps pending",
+      "waitingFor": "The court’s decision on the request to end the case and further proceedings."
     }
   }
 };

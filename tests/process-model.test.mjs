@@ -193,7 +193,7 @@ test('home cards highlight the active stage, or the last stage reached while wai
     'h1b-fee': 3,
     'duration-status': 4,
     'h1b-weighted-selection': 5,
-    'cpt-guidance': 2,
+    'cpt-guidance': 1,
     'prevailing-wage': 4,
     'h1b-reform': 1,
     'grace-period': 3,
@@ -201,7 +201,7 @@ test('home cards highlight the active stage, or the last stage reached while wai
     'nonimmigrant-deference': 3,
     'ead-discretion': 3,
     'h4-ead': 0,
-    'perm-modernization': 2,
+    'perm-modernization': 3,
     'h1b-program-integrity': 1,
   };
   for (const language of ['zh', 'en']) {
