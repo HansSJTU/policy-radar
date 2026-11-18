@@ -188,10 +188,6 @@ export const h1bFee: PolicyContent = {
     ],
     next: [
       {
-        "date": "2026-11-06",
-        "text": "10 万美元入境费案：政府向第九巡回法院提交上诉书。"
-      },
-      {
         "date": "2026-12-04",
         "text": "10 万美元入境费案：原告答辩书截止。"
       },
@@ -327,10 +323,6 @@ export const h1bFee: PolicyContent = {
       }
     ],
     next: [
-      {
-        "date": "2026-11-06",
-        "text": "$100,000 fee case: government’s opening brief due in the Ninth Circuit."
-      },
       {
         "date": "2026-12-04",
         "text": "$100,000 fee case: plaintiffs’ answering brief due."

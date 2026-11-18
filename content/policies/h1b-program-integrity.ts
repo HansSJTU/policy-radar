@@ -5,7 +5,7 @@ export const h1bProgramIntegrity: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'executive-order-issued',
-  checkedOn: "2026-11-02",
+  checkedOn: "2026-11-17",
   related: ['h1b-reform', 'h1b-fee', 'prevailing-wage', 'perm-modernization'],
   process: {
     kind: 'executive-order',
@@ -171,7 +171,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     next: [
       {
         "date": "日期未定",
-        "text": "劳工部开始复查以前的 LCA（命令要求 10·18 前开始），以及各部门的执行文件。",
+        "text": "劳工部关于复查既有 LCA 的后续说明，以及各部门的执行文件。",
         "estimate": true
       }
     ],
@@ -317,7 +317,7 @@ export const h1bProgramIntegrity: PolicyContent = {
     next: [
       {
         "date": "Date unknown",
-        "text": "DOL starts re-checking past LCAs (due to begin by October 18), and agencies issue their implementing documents.",
+        "text": "Further DOL instructions on reviews of past LCAs and other agencies’ implementing documents.",
         "estimate": true
       }
     ],

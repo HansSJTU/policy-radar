@@ -85,7 +85,7 @@ test('the first non-forum source is the primary government document', () => {
     getPolicy(id, 'zh').sources.find(({ href }) => !href.includes('uscardforum.com')).href;
   assert.match(primary('duration-status'), /2026-11-16-District-Judge-dckt-73_0\.pdf/);
   assert.match(primary('h1b-fee'), /federalregister\.gov\/documents\/2026\/08\/25/);
-  assert.match(primary('cpt-guidance'), /ice\.gov\/doclib\/sevis/);
+  assert.match(primary('cpt-guidance'), /nafsa\.org\/.*Preliminary-Injuntion-11-17\.pdf$/);
 });
 
 test('examples sit under the impact they illustrate in both languages', () => {
@@ -224,7 +224,7 @@ test('every detail has an explicit effect, audience, caveat and distinct backgro
         (id === 'h1b-weighted-selection' || id === 'ead-auto-extension')
           ? 'in-effect'
           : id === 'cpt-guidance'
-            ? 'guidance-in-use'
+            ? 'not-in-effect'
             : id === 'h1b-program-integrity'
               ? 'executive-order-issued'
             : 'not-in-effect';
@@ -257,7 +257,7 @@ test('grace-period publication is distinct from final effectiveness', () => {
   }
 });
 
-test('PERM proposal terms cite the official preview and preserve settlement history', () => {
+test('PERM proposal terms cite formal publication and preserve settlement history', () => {
   for (const language of ['zh', 'en']) {
     const policy = getPolicy('perm-modernization', language);
     assert.equal(policy.possibilities.items.length, 5);
@@ -275,10 +275,10 @@ test('PERM proposal terms cite the official preview and preserve settlement hist
     );
     assert.ok(policy.milestones.some(({ date }) => date === '2026-08-04'));
   }
-  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /提案预览/);
+  assert.match(getPolicy('perm-modernization', 'zh').possibilities.note, /11·17 正式刊登/);
   assert.match(getPolicy('perm-modernization', 'zh').possibilities.items[0][1], /两年/);
   assert.match(getPolicy('perm-modernization', 'en').possibilities.items[0][1], /two years/);
-  assert.match(getPolicy('perm-modernization', 'en').sources[0].href, /2026-23370\.pdf/);
+  assert.match(getPolicy('perm-modernization', 'en').sources[0].href, /federalregister\.gov\/d\/2026-23370$/);
   assert.match(getPolicy('perm-modernization', 'en').possibilities.heading, /proposal/i);
 });
 

@@ -126,7 +126,7 @@ export const RADAR_PLACEMENT: Record<
   'h1b-fee': { sector: 'h1b-petition', ring: 'half-year' },
   'duration-status': { sector: 'f1', ring: 'unknown' },
   'h1b-weighted-selection': { sector: 'h1b-lottery', ring: 'active' },
-  'cpt-guidance': { sector: 'cpt', ring: 'active' },
+  'cpt-guidance': { sector: 'cpt', ring: 'unknown' },
   'prevailing-wage': { sector: 'h1b-petition', ring: 'eighteen-months' },
   'h1b-reform': { sector: 'h1b-petition', ring: 'eighteen-months' },
   'grace-period': { sector: 'h1b-work', ring: 'eighteen-months' },

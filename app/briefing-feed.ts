@@ -45,7 +45,26 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 fee case: plaintiffs’ answering brief due in the Ninth Circuit (No. 26-6667)."
   },
   {
+    "id": "cpt-nationwide-stay-november17",
+    "date": "2026-11-17",
+    "availableOn": "2026-11-17",
+    "policyId": "cpt-guidance",
+    "timing": "recent",
+    "zh": "法院在全国暂停 8 月两份 CPT 指引；起诉协会及其成员、员工和学生另获初步禁令保护。各校陆续恢复或调整申请流程。",
+    "en": "The court stayed both August CPT broadcasts nationwide and separately protected the plaintiff associations, their members, employees and students with a preliminary injunction. Schools are restoring or adjusting application procedures."
+  },
+  {
+    "id": "perm-proposal-published-november17",
+    "date": "2026-11-17",
+    "availableOn": "2026-11-17",
+    "policyId": "perm-modernization",
+    "timing": "recent",
+    "zh": "PERM 改革提案正式刊登（91 FR 73916），公众评论至 2027·01·19。拟限制相关裁员后两年内递交，并要求招聘广告至少 90 天。",
+    "en": "The PERM reform proposal was published (91 FR 73916), with comments due January 19, 2027. It proposes a two-year filing restriction after relevant layoffs and at least 90 days of job ads."
+  },
+  {
     "id": "perm-proposal-publication-november17",
+    "supersededOn": "2026-11-17",
     "date": "2026-11-17",
     "availableOn": "2026-11-16",
     "policyId": "perm-modernization",
@@ -176,7 +195,6 @@ export const briefingEntries: BriefingEntry[] = [
     "zh": "政府补交判决请求引用的行政记录目录和摘录，供法官审阅。D/S 全国暂缓继续。",
     "en": "The government filed the record index and excerpts cited in its request for judgment for the judge to review. The nationwide D/S stay continues."
   },
-
   {
     "id": "cpt-relief-hearing",
     "date": "2026-11-06",

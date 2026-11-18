@@ -23,6 +23,101 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-17",
+    "changes": [
+      {
+        "id": "cpt-nationwide-stay-november17",
+        "category": "#05 CPT 指引",
+        "title": "法院 11·17 在全国暂停两份 8 月通知",
+        "summary": "选修实习计学分的 CPT 可重新按原有法规审核，各校陆续调整流程。",
+        "before": "指引执行中；11·06 听证后等待裁定。",
+        "after": "两份指引在全国暂停执行；初步禁令另保护起诉协会及其成员、员工和学生，包括通知发布前的 CPT。",
+        "sources": [
+          {
+            "label": "法院 11·17 暂缓与初步禁令",
+            "href": "https://www.nafsa.org/sites/default/files/media/document/District-Judge-Julia-E-Kobick-Memorandum-and-Order-on-Plaintiffs-Motion-for-a-Preliminary-Injuntion-11-17.pdf"
+          }
+        ]
+      },
+      {
+        "id": "perm-proposal-published-november17",
+        "category": "#12 PERM 改革提案",
+        "title": "提案正式刊登，评论至 2027·01·19",
+        "summary": "两年裁员限制和至少 90 天招聘要求进入公众评论程序。",
+        "before": "11·16 预览公开，计划 11·17 正式刊登。",
+        "after": "11·17 正式刊登（91 FR 73916），公众评论截止日为 2027·01·19。",
+        "sources": [
+          {
+            "label": "Federal Register · 11·17 正式提案",
+            "href": "https://www.federalregister.gov/d/2026-23370"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-responses-november17",
+        "category": "#05 CPT 学校追踪",
+        "title": "学校公布暂缓后的恢复及等待安排",
+        "summary": "Buffalo、Alabama、Kansas、WMU、UIUC 和 Texas A&M 恢复或扩大审核；其他学校陆续准备流程。",
+        "before": "多校仅受理全专业必修实践；WMU 原定 2027 春季起收紧。",
+        "after": "上述六校恢复原有标准或停止全专业必修限制；Oregon 列入选修实习。Michigan 要求非必需实践先等说明；Columbia 准备指引；Penn 准备重审流程；UW 暂时维持秋季安排。Brown 正讨论下一步，UVA 公布法院命令消息。",
+        "sources": [
+          {
+            "label": "Buffalo",
+            "href": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-.html"
+          },
+          {
+            "label": "Alabama",
+            "href": "https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/"
+          },
+          {
+            "label": "Kansas",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          },
+          {
+            "label": "WMU",
+            "href": "https://wmich.edu/international/immigration/news"
+          },
+          {
+            "label": "UIUC",
+            "href": "https://blogs.illinois.edu/view/8569/1744245392"
+          },
+          {
+            "label": "Texas A&M",
+            "href": "https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html"
+          },
+          {
+            "label": "Michigan",
+            "href": "https://internationalcenter.umich.edu/about/news/federal-court-temporarily-blocks-sevp-guidance-curricular-practical-training-cpt"
+          },
+          {
+            "label": "Columbia",
+            "href": "https://isso.columbia.edu/news/court-orders-injunction-and-stay-federal-cpt-advisories"
+          },
+          {
+            "label": "Penn",
+            "href": "https://global.upenn.edu/isss/news-articles/federal-court-stays-august-2026-cpt-guidance/"
+          },
+          {
+            "label": "UW",
+            "href": "https://iss.washington.edu/preliminary-injunction-cpt/"
+          },
+          {
+            "label": "University of Oregon",
+            "href": "https://isss.uoregon.edu/curricular-practical-training-cpt"
+          },
+          {
+            "label": "Brown University",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          },
+          {
+            "label": "University of Virginia (UVA)",
+            "href": "https://issp.virginia.edu/cpt-update"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "changes": [
       {
@@ -2418,6 +2513,101 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-17",
+    "changes": [
+      {
+        "id": "cpt-nationwide-stay-november17",
+        "category": "#05 CPT Guidance",
+        "title": "Court stayed both August broadcasts nationwide November 17",
+        "summary": "CPT based on elective internship credit can again be reviewed under the existing regulation; schools are adjusting procedures.",
+        "before": "Guidance in use; ruling pending after the November 6 hearing.",
+        "after": "Both broadcasts stayed nationwide. A separate preliminary injunction protects the plaintiff associations, their members, employees and students, including CPT predating the broadcasts.",
+        "sources": [
+          {
+            "label": "Court’s November 17 stay and preliminary injunction",
+            "href": "https://www.nafsa.org/sites/default/files/media/document/District-Judge-Julia-E-Kobick-Memorandum-and-Order-on-Plaintiffs-Motion-for-a-Preliminary-Injuntion-11-17.pdf"
+          }
+        ]
+      },
+      {
+        "id": "perm-proposal-published-november17",
+        "category": "#12 PERM Reform Proposal",
+        "title": "Proposal published; comments due January 19, 2027",
+        "summary": "The two-year layoff restriction and at least 90 days of recruiting enter public comments.",
+        "before": "Preview released November 16; publication scheduled November 17.",
+        "after": "Published November 17 (91 FR 73916); comments close January 19, 2027.",
+        "sources": [
+          {
+            "label": "Federal Register · November 17 proposal",
+            "href": "https://www.federalregister.gov/d/2026-23370"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-responses-november17",
+        "category": "#05 CPT School Tracker",
+        "title": "Schools announce resumed processing and waiting arrangements",
+        "summary": "Buffalo, Alabama, Kansas, WMU, UIUC and Texas A&M resume or broaden review; other schools are preparing procedures.",
+        "before": "Many schools processed only training required of every student; WMU planned tighter limits from Spring 2027.",
+        "after": "Those six schools restored earlier standards or stopped the all-student requirement; Oregon lists elective internships. Michigan asks non-required applicants to wait, Columbia is preparing guidance, Penn is preparing reconsideration, and UW retains autumn arrangements for now. Brown is discussing next steps; UVA announced the court’s order.",
+        "sources": [
+          {
+            "label": "Buffalo",
+            "href": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/curricular-practical-training--cpt-.html"
+          },
+          {
+            "label": "Alabama",
+            "href": "https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/"
+          },
+          {
+            "label": "Kansas",
+            "href": "https://iss.ku.edu/f-1-cpt-curricular-practical-training"
+          },
+          {
+            "label": "WMU",
+            "href": "https://wmich.edu/international/immigration/news"
+          },
+          {
+            "label": "UIUC",
+            "href": "https://blogs.illinois.edu/view/8569/1744245392"
+          },
+          {
+            "label": "Texas A&M",
+            "href": "https://global.tamu.edu/isss/employment-internships/curricular-practical-training.html"
+          },
+          {
+            "label": "Michigan",
+            "href": "https://internationalcenter.umich.edu/about/news/federal-court-temporarily-blocks-sevp-guidance-curricular-practical-training-cpt"
+          },
+          {
+            "label": "Columbia",
+            "href": "https://isso.columbia.edu/news/court-orders-injunction-and-stay-federal-cpt-advisories"
+          },
+          {
+            "label": "Penn",
+            "href": "https://global.upenn.edu/isss/news-articles/federal-court-stays-august-2026-cpt-guidance/"
+          },
+          {
+            "label": "UW",
+            "href": "https://iss.washington.edu/preliminary-injunction-cpt/"
+          },
+          {
+            "label": "University of Oregon",
+            "href": "https://isss.uoregon.edu/curricular-practical-training-cpt"
+          },
+          {
+            "label": "Brown University",
+            "href": "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt"
+          },
+          {
+            "label": "University of Virginia (UVA)",
+            "href": "https://issp.virginia.edu/cpt-update"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-16",
     "changes": [
