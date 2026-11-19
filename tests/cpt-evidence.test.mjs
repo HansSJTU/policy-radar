@@ -97,7 +97,7 @@ test('UC Berkeley describes the narrow thesis and dissertation CPT exception', (
   const berkeley = getVerifiedSchools('zh').find(({ school }) => school === 'UC Berkeley');
 
   assert.ok(berkeley);
-  assert.equal(berkeley.state, 'Course Credit CPT 仍暂停；论文型 CPT 仅限严格个案');
+  assert.equal(berkeley.state, '11·17：恢复 Course Credit CPT；须提前两周申请');
   assert.match(berkeley.detail, /Degree Requirement CPT/);
   assert.match(berkeley.detail, /Thesis\/Dissertation Requirement CPT/);
   assert.match(berkeley.detail, /Advanced to Candidacy/);

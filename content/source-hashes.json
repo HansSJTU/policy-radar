@@ -8,8 +8,8 @@
     "changedOn": "2026-11-16"
   },
   "courtlistener:74661796": {
-    "hash": "e626179693b65edd",
-    "changedOn": "2026-11-16"
+    "hash": "a5ed84b97e851b95",
+    "changedOn": "2026-11-18"
   },
   "courtlistener:74908049": {
     "hash": "5decb4d710c6acbc",
@@ -20,12 +20,12 @@
     "changedOn": "2026-11-17"
   },
   "ecfr:8:214.1": {
-    "hash": "929ebbe1c298428a",
-    "changedOn": "2026-11-16"
+    "hash": "5f782adeb6d0f8bf",
+    "changedOn": "2026-11-18"
   },
   "ecfr:8:274a.12": {
-    "hash": "cebf82eba86f8185",
-    "changedOn": "2026-11-15"
+    "hash": "f04bd8f9a06533d3",
+    "changedOn": "2026-11-18"
   },
   "federal-register:2025-16554": {
     "hash": "4476a34e89b0f243",
@@ -76,8 +76,8 @@
     "changedOn": "2026-11-17"
   },
   "https://blogs.illinois.edu/view/8569/1744245392": {
-    "hash": "52ca49f105326290",
-    "changedOn": "2026-11-17"
+    "hash": "5d31fc8402a34a67",
+    "changedOn": "2026-11-18"
   },
   "https://campus.kennesaw.edu/current-students/academics/global-education/international-student-scholar-services/f-1/curricular-practical-training.php": {
     "hash": "1458c2febf3e5e7c",
@@ -120,28 +120,32 @@
     "changedOn": "2026-11-15"
   },
   "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/": {
-    "hash": "1c82b33c1fe2bb8d",
-    "changedOn": "2026-11-15"
+    "hash": "9b03e6db3d9b8e0e",
+    "changedOn": "2026-11-18"
   },
   "https://international.global.uconn.edu/2026/08/30/immigration-changes-regarding-internships/": {
     "hash": "cd4efda0699698f7",
     "changedOn": "2026-11-15"
+  },
+  "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20": {
+    "hash": "9a8905d9c1f746d9",
+    "changedOn": "2026-11-18"
   },
   "https://international.ua.edu/news/curricular-practical-training-cpt-changes-effective-immediately/": {
     "hash": "bb527b248d2302a2",
     "changedOn": "2026-11-17"
   },
   "https://international.uccs.edu/international-students-and-scholars/important-immigration-updates": {
-    "hash": "c809a71078e89824",
-    "changedOn": "2026-11-16"
+    "hash": "d28411556d861127",
+    "changedOn": "2026-11-18"
   },
   "https://internationalcenter.ucla.edu/September8message": {
     "hash": "aa59b5dab6ec6c89",
     "changedOn": "2026-11-15"
   },
   "https://internationaloffice.berkeley.edu/students/employment/cpt": {
-    "hash": "8b5c323cbc04605f",
-    "changedOn": "2026-11-15"
+    "hash": "746eeff311c9919f",
+    "changedOn": "2026-11-18"
   },
   "https://internationalservices.georgetown.edu/immigration-updates/": {
     "hash": "313e316f62ed2551",
@@ -160,8 +164,8 @@
     "changedOn": "2026-11-15"
   },
   "https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html": {
-    "hash": "ef21072f74f01819",
-    "changedOn": "2026-11-15"
+    "hash": "bca5ee38651d8e22",
+    "changedOn": "2026-11-18"
   },
   "https://iso.mit.edu/employment/f-1-curricular-practical-training/": {
     "hash": "ea05adb0aeeb3b3b",
@@ -184,8 +188,8 @@
     "changedOn": "2026-11-17"
   },
   "https://isso.utdallas.edu/2026/09/17/update-on-cpt-policy-sevp-broadcast/": {
-    "hash": "853bf8973256ac3e",
-    "changedOn": "2026-11-15"
+    "hash": "c7c77f7cbb48a6b2",
+    "changedOn": "2026-11-18"
   },
   "https://isss.brown.edu/international-students/currently-brown/f-1-students/employment/cpt": {
     "hash": "9ce79eda8d51bfa6",
@@ -196,8 +200,8 @@
     "changedOn": "2026-11-17"
   },
   "https://isss.umbc.edu/updates/": {
-    "hash": "f204eb453e14baa4",
-    "changedOn": "2026-11-16"
+    "hash": "11ca0d81a8d34921",
+    "changedOn": "2026-11-18"
   },
   "https://isss.uoregon.edu/curricular-practical-training-cpt": {
     "hash": "74401b0544a67d69",
@@ -251,9 +255,9 @@
     "hash": "b4059f6d047da5af",
     "changedOn": "2026-11-15"
   },
-  "https://oiss.yale.edu/news/cpt-update-sevp-broadcast-messages-and-pending-litigation": {
-    "hash": "f4795c403ea50db7",
-    "changedOn": "2026-11-16"
+  "https://oiss.yale.edu/immigration/immigration-changes/immigration-faqs-for-international-students-and-": {
+    "hash": "04e1271a103f83dd",
+    "changedOn": "2026-11-18"
   },
   "https://public-inspection.federalregister.gov/2026-18631.pdf": {
     "hash": "b9a81dc960724c1a",
@@ -310,6 +314,10 @@
   "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.72.0.pdf": {
     "hash": "7002381b75fd8ead",
     "changedOn": "2026-11-16"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.74.0.pdf": {
+    "hash": "f94f44948331d3ea",
+    "changedOn": "2026-11-18"
   },
   "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.0.pdf": {
     "hash": "b6883fafba17f66c",
@@ -404,8 +412,8 @@
     "changedOn": "2026-11-16"
   },
   "https://www.fragomen.com/insights/united-states-dhs-proposal-to-eliminate-60-day-nonimmigrant-grace-period-clears-federal-review.html": {
-    "hash": "084b530b8122d358",
-    "changedOn": "2026-11-17"
+    "hash": "61b823d2b3527ecd",
+    "changedOn": "2026-11-18"
   },
   "https://www.govinfo.gov/app/details/BILLS-119hjres215ih": {
     "hash": "d6b5a30f00a0c84f",
@@ -512,8 +520,8 @@
     "changedOn": "2026-11-16"
   },
   "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/": {
-    "hash": "16be1f44bdd5029c",
-    "changedOn": "2026-11-15"
+    "hash": "a9ebb61f146c58aa",
+    "changedOn": "2026-11-18"
   },
   "https://www.oid.iu.edu/resources/visa-immigration-updates.html": {
     "hash": "1954b01fd6e6c01b",
@@ -528,8 +536,8 @@
     "changedOn": "2026-11-15"
   },
   "https://www.plu.edu/iss/announcements/": {
-    "hash": "9349d19e63102b7b",
-    "changedOn": "2026-11-16"
+    "hash": "4f85d7a174d75c38",
+    "changedOn": "2026-11-18"
   },
   "https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf": {
     "hash": "3a91f8ec1e925d3b",
@@ -612,8 +620,8 @@
     "changedOn": "2026-11-15"
   },
   "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx": {
-    "hash": "641e7cb089078daa",
-    "changedOn": "2026-11-16"
+    "hash": "5d986511ba27fcef",
+    "changedOn": "2026-11-18"
   },
   "https://www.uclaextension.edu/international-students": {
     "hash": "54c33a2519683c56",
@@ -628,8 +636,8 @@
     "changedOn": "2026-11-15"
   },
   "https://www.uscardforum.com/t/topic/431784": {
-    "hash": "253af173818532f1",
-    "changedOn": "2026-11-16"
+    "hash": "5b25478555dbe716",
+    "changedOn": "2026-11-18"
   },
   "https://www.uscardforum.com/t/topic/439546": {
     "hash": "3f5a5a3d7738d62b",
@@ -728,8 +736,8 @@
     "changedOn": "2026-11-16"
   },
   "https://www.whitehouse.gov/videos/vice-president-jd-vance-holds-press-conference-on-fighting-visa-fraud/": {
-    "hash": "f218ca5ee0764105",
-    "changedOn": "2026-11-16"
+    "hash": "4dc524f3a0285d38",
+    "changedOn": "2026-11-18"
   },
   "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/": {
     "hash": "78faac6fa040d60c",

@@ -98,7 +98,7 @@ test('every glossary entry has an English-only popover definition', () => {
 test('the English UC Berkeley entry preserves the narrow CPT eligibility conditions', () => {
   const berkeley = verifiedSchools.find(({ school }) => school === 'UC Berkeley').en;
 
-  assert.match(berkeley.state, /Course Credit CPT remains paused/);
+  assert.match(berkeley.state, /Course Credit CPT resumed/);
   assert.match(berkeley.detail, /Degree Requirement CPT/);
   assert.match(berkeley.detail, /Thesis\/Dissertation Requirement CPT/);
   assert.match(berkeley.detail, /Advanced to Candidacy/);

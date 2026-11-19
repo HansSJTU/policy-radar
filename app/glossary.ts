@@ -21,6 +21,17 @@ export type GlossarySegment =
 
 export const glossaryEntries: GlossaryEntry[] = [
   {
+    "term": "结案命令",
+    "aliases": [
+      "Order of dismissal",
+      "order of dismissal"
+    ],
+    "fullName": "Order of Dismissal（结案命令）",
+    "explanation": "法院正式结束案件的命令。在 D/S 案中，法院依照同日原告胜诉、整项规则被撤销的判决结案；政府仍可上诉。",
+    "fullNameEn": "Order of Dismissal",
+    "explanationEn": "An order formally closing a case. In the D/S case, it follows the same-day judgment for the plaintiffs vacating the entire rule. The government can still appeal."
+  },
+  {
     "term": "ATS",
     "fullName": "Applicant Tracking System（求职申请管理系统）",
     "explanation": "公司接收、保存和筛选求职申请的在线系统。PERM 提案要求申请方式和公司平时招聘同类岗位一样方便。",

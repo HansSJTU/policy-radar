@@ -23,6 +23,91 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-18",
+    "changes": [
+      {
+        "id": "cornell-cpt-reopens-november20",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 Cornell：11·20 重开部分 CPT 申请",
+        "summary": "11·18 校方通知明确重开日期，覆盖工程 Co-op、课程学分及必要博士研究。",
+        "before": "83 条记录：79 条校方网页、4 条社区截图；81 所不同学校。",
+        "after": "84 条记录：80 条校方网页、4 条社区截图；82 所不同学校。Cornell 将在 11·20 向先前符合条件的学生重开申请，学位必需实践照常。",
+        "sources": [
+          {
+            "label": "Cornell · 11·18 重开申请通知",
+            "href": "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-procedures-november18",
+        "category": "#05 CPT 学校追踪",
+        "title": "Columbia、Berkeley 恢复；其他学校公布后续流程",
+        "summary": "Columbia 恢复考虑选修 CPT，Berkeley 恢复课程学分型 CPT。",
+        "before": "Columbia 正准备指引；Berkeley 的课程学分型 CPT 暂停。",
+        "after": "Columbia 11·18 恢复考虑选修 CPT，要求课程联系及学生、学院、实习机构三方协议；Berkeley 恢复课程学分型 CPT，要求至少提前两周申请。CSU 按现行法规审核；Dearborn、UCCS 和 UCSD 将继续公布办理说明。Yale 让因 8 月指引被拒或搁置的学生联系 OISS 询问重新评估。",
+        "sources": [
+          {
+            "label": "Columbia · 11·18 校方通知",
+            "href": "https://immigration.columbia.edu/news/important-updates-cpt-opt-duration-status"
+          },
+          {
+            "label": "Berkeley · CPT 申请规定",
+            "href": "https://internationaloffice.berkeley.edu/students/employment/cpt"
+          },
+          {
+            "label": "CSU · 11·17 通知",
+            "href": "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/"
+          },
+          {
+            "label": "Dearborn · 11·18 更新",
+            "href": "https://umdearborn.edu/office-international-affairs/important-updates"
+          },
+          {
+            "label": "UCCS · 11·17 更新",
+            "href": "https://international.uccs.edu/international-students-and-scholars/important-immigration-updates"
+          },
+          {
+            "label": "UCSD · CPT 公告",
+            "href": "https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html"
+          },
+          {
+            "label": "Yale · 11·17 办理说明",
+            "href": "https://oiss.yale.edu/immigration/immigration-changes/immigration-faqs-for-international-students-and-"
+          }
+        ]
+      },
+      {
+        "id": "trine-remote-cpt-and-semester-course",
+        "category": "#05 CPT 学校追踪",
+        "title": "Trine 不再接受全远程 CPT，课程须读完整学期",
+        "summary": "混合办公逐案审核；CPT 授权提前结束，学生仍须完成整学期课程并缴费。",
+        "before": "课程注册和退课按 CPT 授权持续时间办理，授权结束后可退出课程。",
+        "after": "全远程岗位不再受理，混合办公逐案审核；授权开工日后一周内自动注册。授权在学期中结束也须继续完成该学期课程，同学期的新 CPT 沿用原课程。",
+        "sources": [
+          {
+            "label": "Trine · CPT 远程工作与课程规则",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      },
+      {
+        "id": "ds-case-closed-november16",
+        "category": "#03 D/S 定期停留规则",
+        "title": "法院依 11·16 撤销判决结案",
+        "summary": "地区法院依同日原告胜诉的判决结束案件，现行 D/S 继续适用，政府仍可上诉。",
+        "before": "法院 11·16 撤销整项规则。",
+        "after": "法院同日另发结案命令，依撤销规则的判决结束地区法院案件。",
+        "sources": [
+          {
+            "label": "法院 11·16 结案命令",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.74.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "changes": [
       {
@@ -2513,6 +2598,91 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-18",
+    "changes": [
+      {
+        "id": "cornell-cpt-reopens-november20",
+        "category": "#05 CPT School Tracker",
+        "title": "Cornell added: some CPT applications reopen November 20",
+        "summary": "The November 18 notice sets a reopening date for engineering co-op, course-credit training and necessary doctoral research.",
+        "before": "83 evidence entries: 79 public university pages and 4 community reports; 81 distinct institutions.",
+        "after": "84 evidence entries: 80 public university pages and 4 community reports; 82 distinct institutions. Cornell will reopen applications November 20 for previously eligible students; degree-required training continues.",
+        "sources": [
+          {
+            "label": "Cornell · November 18 reopening announcement",
+            "href": "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-procedures-november18",
+        "category": "#05 CPT School Tracker",
+        "title": "Columbia and Berkeley resume; other schools announce next steps",
+        "summary": "Columbia is again considering elective CPT, and Berkeley has resumed Course Credit CPT.",
+        "before": "Columbia was preparing guidance; Berkeley’s Course Credit CPT was paused.",
+        "after": "Columbia’s November 18 notice restores consideration of elective CPT with a curriculum link and an agreement signed by the student, school and internship organization. Berkeley has resumed Course Credit CPT and requires applications at least two weeks ahead. CSU reviews requests under current regulations; Dearborn, UCCS and UCSD will provide further processing instructions. Yale directs students whose requests were denied or held under the August guidance to ask OISS about reconsideration.",
+        "sources": [
+          {
+            "href": "https://immigration.columbia.edu/news/important-updates-cpt-opt-duration-status",
+            "label": "Columbia · November 18 notice"
+          },
+          {
+            "href": "https://internationaloffice.berkeley.edu/students/employment/cpt",
+            "label": "Berkeley · CPT requirements"
+          },
+          {
+            "href": "https://international.colostate.edu/international-student-updates-immigration-visa-travel-information/",
+            "label": "CSU · November 17 notice"
+          },
+          {
+            "href": "https://umdearborn.edu/office-international-affairs/important-updates",
+            "label": "Dearborn · November 18 update"
+          },
+          {
+            "href": "https://international.uccs.edu/international-students-and-scholars/important-immigration-updates",
+            "label": "UCCS · November 17 update"
+          },
+          {
+            "href": "https://iseo.ucsd.edu/student-services/working-in-us/f1-cpt.html",
+            "label": "UCSD · CPT announcement"
+          },
+          {
+            "href": "https://oiss.yale.edu/immigration/immigration-changes/immigration-faqs-for-international-students-and-",
+            "label": "Yale · November 17 instructions"
+          }
+        ]
+      },
+      {
+        "id": "trine-remote-cpt-and-semester-course",
+        "category": "#05 CPT School Tracker",
+        "title": "Trine ends fully remote CPT and requires full-semester course completion",
+        "summary": "Hybrid work is reviewed individually. Students must complete and pay for the semester’s CPT course even if authorization ends early.",
+        "before": "Course registration and withdrawal followed the authorization period; students could leave the course after authorization ended.",
+        "after": "Fully remote jobs are no longer accepted; hybrid jobs are reviewed individually. Registration occurs automatically within a week after the authorized start date. Students finish the course even if CPT ends mid-semester; a new CPT authorization in the same semester uses the existing course.",
+        "sources": [
+          {
+            "label": "Trine · Remote-work and CPT-course rules",
+            "href": "https://www.trine.edu/international/hybrid/experiential-learning/cpt-information.aspx"
+          }
+        ]
+      },
+      {
+        "id": "ds-case-closed-november16",
+        "category": "#03 D/S Fixed-Stay Rule",
+        "title": "Court closed the case under its November 16 vacatur judgment",
+        "summary": "The district court closed the case in accordance with the same-day judgment for the plaintiffs. Existing D/S continues; the government can appeal.",
+        "before": "The court vacated the entire rule November 16.",
+        "after": "A separate order that day closed the district-court case in accordance with the judgment vacating the rule.",
+        "sources": [
+          {
+            "label": "Court’s November 16 order closing the case",
+            "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.74.0.pdf"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-17",
     "changes": [
