@@ -5,7 +5,7 @@ export const durationStatus: PolicyContent = {
   "path": "F-1",
   "tone": "amber",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-11-16",
+  "checkedOn": "2026-11-18",
   "related": [
     "cpt-guidance",
     "opt-fee",
@@ -94,6 +94,11 @@ export const durationStatus: PolicyContent = {
       "href": "https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf",
       "zh": "法院 11·16 撤销整项 D/S 规则的命令（第 73 项；原告托管法院原文）",
       "en": "Court’s November 16 order vacating the entire D/S rule (entry 73; plaintiff-hosted court original)"
+    },
+    {
+      "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.74.0.pdf",
+      "zh": "法院 11·16 结案命令（第 74 项）",
+      "en": "Court’s November 16 order closing the case (entry 74)"
     },
     {
       "href": "https://www.nafsa.org/sites/default/files/media/document/District-Judge-Julia-E-Kobick-Memorandum-and-Order-on-Plaintiffs-Motion-for-a-Preliminary-Injuntion-11-17.pdf",
@@ -250,21 +255,21 @@ export const durationStatus: PolicyContent = {
     "title": "D/S 定期停留规则被法院撤销",
     "short": "D/S 固定期限",
     "searchTitle": "F-1 D/S 新规被撤销：固定期限和学业限制均作废",
-    "searchDescription": "法院 11·16 撤销整项 D/S 最终规则，F-1、J-1 继续按 D/S 停留。固定期限、额外延期和学业限制均作废；8 月 CPT 指引属于另一案。",
-    "status": "法院 11·16 撤销整项规则",
+    "searchDescription": "法院 11·16 撤销整项 D/S 定期停留规则，并依判决结案。F-1、J-1 继续适用 D/S，固定期限、额外延期和学业限制均作废。政府仍可上诉。",
+    "status": "法院 11·16 撤销整项规则并结案",
     "effectLabel": "已被法院撤销 · D/S 继续适用",
     "agency": "DHS / ICE",
     "documentId": "最终规则 2026-14439",
-    "tldr": "法院 11·16 判原告胜诉，撤销 DHS 整项 D/S 最终规则。规则原本要给 F-1、J-1 等身份设置固定停留期限，并增加延期手续、限制转学和换学位。现在继续按 D/S 停留：维持身份、按规定学习或参加获准活动，就按现行规则留在美国。",
+    "tldr": "法院 11·16 判原告胜诉，撤销 DHS 整项 D/S 最终规则。规则原本要给 F-1、J-1 等身份设置固定停留期限，并增加延期手续、限制转学和换学位。现在继续按 D/S 停留：维持身份、按规定学习或参加获准活动，就按现行规则留在美国。法院同日依该判决发出结案命令。",
     "tags": [
       "F-1",
       "CPT",
       "OPT"
     ],
-    "summary": "麻省联邦法院 11·16 根据双方提交的书面材料作出判决：原告胜诉，整项 D/S 最终规则被撤销，也就是失去法律效力。这比 9 月先推迟生效更进一步。法官认为 DHS 没有合理衡量成本、收益和 SEVIS 替代方案，限制学生选择学业路径也超出法律授权。现行 D/S 制度继续适用。",
+    "summary": "麻省联邦法院 11·16 根据双方提交的书面材料作出判决：原告胜诉，整项 D/S 最终规则被撤销，也就是失去法律效力。这比 9 月先推迟生效更进一步。法官认为 DHS 没有合理衡量成本、收益和 SEVIS 替代方案，限制学生选择学业路径也超出法律授权。现行 D/S 制度继续适用。法院同日依该判决发出结案命令，结束地区法院的案件。",
     "audience": "F、J、I 签证持有人及其家属、学校和雇主。整项规则被撤销，现行制度在全国继续适用。",
     "caveat": "政府仍可就最终判决上诉并申请暂停执行判决。现有撤销命令继续有效。CPT 案另于 11·17 获得全国暂缓，各校正按该命令调整流程。",
-    "background": "先说新规是什么。现在 F-1 学生入境时，I-94 上写的是 D/S，意思是只要你在按规定读书、维持身份，就可以一直待下去，没有固定的截止日。DHS 2025 年 8 月提出、2026 年 7 月 17 日发布最终规则（2026-14439），要把它改成固定的停留期限：到期还没读完，要另外向移民局申请延期；同时限制转学和中途换学位层级。新规原定 9 月 15 日生效。\n再说官司。8 月 18 日，一批高校和组织在麻省联邦法院起诉。9 月 14 日美东下午 4:55，法院发出初步禁令：在全国范围推迟整项新规生效，并禁止 DHS/ICE 执行，直到法院另有命令或作出最终判决。原定 9 月 15 日的生效日因此停止适用。法院意见第 46—48 页写明这项保护适用于全国，不只是起诉学校的学生；第 42 页认定新规“武断且任意”，这是《行政程序法》（APA）下判断规则违法的常用标准，意思是政府没有给出合理的理由。\n政府 9 月 30 日向第一巡回上诉法院上诉（案号 26-2112），并获准加快审理：法院当时把政府上诉书和附录的截止日定为 11 月 9 日（附录是把地区法院的关键文件汇编给上诉法院），原告收到后 30 天内答辩，政府再在 10 天内回复。上诉期间暂缓继续有效。\n地区法院同时在推进最终判决。法院排定书面程序后，政府 10 月 23 日交出行政记录，也就是 DHS 制定新规时依据的全部材料。10 月 30 日双方都请求直接判决。原告的补充意见认为，DHS 没有好好考虑 SEVIS 系统已经能做到的追踪，限制转学和换学位也违法，应该撤销整项新规。11 月 2 日政府交了最后一轮回复，主张 SEVIS 替代不了新规要求的定期审查、DHS 有权规定停留期限。\n原告 11 月 2 日也回应了政府的判决请求。他们认为 DHS 没有充分衡量新规的成本和收益，也没有充分考虑用 SEVIS 系统加强管理等负担更小的办法。原告还主张，DHS 忽略了重要的公众意见，给这项复杂新规的评论期只有 32 天，时间太短。他们请求法院驳回政府的判决请求，并撤销整项新规。这些请求在 11·16 判决前交由法院决定。\n国会方面，参议员 Durbin 等 9 月 14 日依据《国会审查法》（CRA）提出推翻新规的决议 S.J.Res.213，众议院版本是 H.J.Res.215。9 月 17 日 S.J.Res.213 列入参议院待议清单（第 668 号），还没有表决。要生效，须两院都通过并经总统签署，或者国会推翻总统否决。\n11 月 6 日，政府补交了此前判决请求引用的行政记录目录和摘录。这些是政府制定规则时使用、现在交给法官审阅的材料。全国暂缓继续有效。\n11 月 16 日，法院根据双方提交的书面材料判原告胜诉、政府败诉，并撤销整项规则。法院沿用 9 月意见中的理由，还认定 DHS 没有充分考虑加强现有 SEVIS 管理这一替代方案，限制转学、联合学位和同级学位等学业选择也超出法律授权。法官拒绝政府“把规则发回补充说明但保留规则”的请求，选择让整项规则失去法律效力。现行 D/S 制度继续适用。",
+    "background": "先说新规是什么。现在 F-1 学生入境时，I-94 上写的是 D/S，意思是只要你在按规定读书、维持身份，就可以一直待下去，没有固定的截止日。DHS 2025 年 8 月提出、2026 年 7 月 17 日发布最终规则（2026-14439），要把它改成固定的停留期限：到期还没读完，要另外向移民局申请延期；同时限制转学和中途换学位层级。新规原定 9 月 15 日生效。\n再说官司。8 月 18 日，一批高校和组织在麻省联邦法院起诉。9 月 14 日美东下午 4:55，法院发出初步禁令：在全国范围推迟整项新规生效，并禁止 DHS/ICE 执行，直到法院另有命令或作出最终判决。原定 9 月 15 日的生效日因此停止适用。法院意见第 46—48 页写明这项保护适用于全国，不只是起诉学校的学生；第 42 页认定新规“武断且任意”，这是《行政程序法》（APA）下判断规则违法的常用标准，意思是政府没有给出合理的理由。\n政府 9 月 30 日向第一巡回上诉法院上诉（案号 26-2112），并获准加快审理：法院当时把政府上诉书和附录的截止日定为 11 月 9 日（附录是把地区法院的关键文件汇编给上诉法院），原告收到后 30 天内答辩，政府再在 10 天内回复。上诉期间暂缓继续有效。\n地区法院同时在推进最终判决。法院排定书面程序后，政府 10 月 23 日交出行政记录，也就是 DHS 制定新规时依据的全部材料。10 月 30 日双方都请求直接判决。原告的补充意见认为，DHS 没有好好考虑 SEVIS 系统已经能做到的追踪，限制转学和换学位也违法，应该撤销整项新规。11 月 2 日政府交了最后一轮回复，主张 SEVIS 替代不了新规要求的定期审查、DHS 有权规定停留期限。\n原告 11 月 2 日也回应了政府的判决请求。他们认为 DHS 没有充分衡量新规的成本和收益，也没有充分考虑用 SEVIS 系统加强管理等负担更小的办法。原告还主张，DHS 忽略了重要的公众意见，给这项复杂新规的评论期只有 32 天，时间太短。他们请求法院驳回政府的判决请求，并撤销整项新规。这些请求在 11·16 判决前交由法院决定。\n国会方面，参议员 Durbin 等 9 月 14 日依据《国会审查法》（CRA）提出推翻新规的决议 S.J.Res.213，众议院版本是 H.J.Res.215。9 月 17 日 S.J.Res.213 列入参议院待议清单（第 668 号），还没有表决。要生效，须两院都通过并经总统签署，或者国会推翻总统否决。\n11 月 6 日，政府补交了此前判决请求引用的行政记录目录和摘录。这些是政府制定规则时使用、现在交给法官审阅的材料。全国暂缓继续有效。\n11 月 16 日，法院根据双方提交的书面材料判原告胜诉、政府败诉，并撤销整项规则。法院沿用 9 月意见中的理由，还认定 DHS 没有充分考虑加强现有 SEVIS 管理这一替代方案，限制转学、联合学位和同级学位等学业选择也超出法律授权。法官拒绝政府“把规则发回补充说明但保留规则”的请求，选择让整项规则失去法律效力。现行 D/S 制度继续适用。\n11 月 16 日，法院还依照同日判决发出结案命令，结束地区法院的案件。整项规则被撤销的判决继续有效。",
     "teaser": "法院已撤销整项规则，现行 D/S 照旧。",
     "headline": "D/S 新规已被法院撤销，现行制度继续适用。",
     "keyPoint": {
@@ -414,6 +419,10 @@ export const durationStatus: PolicyContent = {
       {
         "date": "2026-11-16",
         "text": "法院根据书面材料判原告胜诉，撤销整项 D/S 最终规则；现行 D/S 制度继续适用。"
+      },
+      {
+        "date": "2026-11-16",
+        "text": "法院依照同日原告胜诉、整项规则被撤销的判决发出结案命令。"
       }
     ],
     "next": [
@@ -424,7 +433,7 @@ export const durationStatus: PolicyContent = {
     ],
     "process": {
       "detail": "法院 11·16 根据书面材料判原告胜诉，撤销整项最终规则。固定期限、额外延期和学业限制均失去法律效力，现行 D/S 制度继续适用。",
-      "currentSummary": "法院已撤销整项规则，D/S 继续适用",
+      "currentSummary": "法院已撤销整项规则，地区法院已结案",
       "waitingFor": "政府是否上诉最终判决，以及后续法院命令。"
     }
   },
@@ -432,21 +441,21 @@ export const durationStatus: PolicyContent = {
     "title": "Court Vacates the D/S Fixed-Stay Rule",
     "short": "D/S Fixed Admission Period",
     "searchTitle": "F-1 D/S Rule Vacated: Fixed Stay Periods and Study Limits Set Aside",
-    "searchDescription": "The court vacated the entire D/S final rule November 16. F-1 and J-1 students continue under D/S; fixed stay periods, extra extensions and study limits are set aside. CPT guidance is a separate case.",
-    "status": "Court vacated entire rule November 16",
+    "searchDescription": "The district court vacated the entire D/S rule and closed the case November 16. F-1 and J-1 students continue under D/S; fixed stays, extra extensions and study limits are set aside. The government can appeal.",
+    "status": "Court vacated entire rule and closed case November 16",
     "effectLabel": "Vacated by the court · D/S continues",
     "agency": "DHS / ICE",
     "documentId": "Final Rule 2026-14439",
-    "tldr": "On November 16, the court ruled for the plaintiffs and vacated DHS’s entire D/S final rule. The rule would have set fixed stay periods for F-1, J-1 and other categories, added extension filings and restricted transfers and degree changes. D/S continues: students who maintain status and study or undertake authorized activities follow the existing stay rules.",
+    "tldr": "On November 16, the court ruled for the plaintiffs and vacated DHS’s entire D/S final rule. The rule would have set fixed stay periods for F-1, J-1 and other categories, added extension filings and restricted transfers and degree changes. D/S continues: students who maintain status and study or undertake authorized activities follow the existing stay rules. The court issued an order closing the case the same day.",
     "tags": [
       "F-1",
       "CPT",
       "OPT"
     ],
-    "summary": "On November 16, the federal district court in Massachusetts decided the case on the written record for the plaintiffs and vacated the entire D/S final rule, removing its legal effect. This goes further than September’s temporary postponement. The judge found inadequate analysis of costs, benefits and SEVIS alternatives, and held that restrictions on academic choices exceeded statutory authority. The existing D/S framework continues.",
+    "summary": "On November 16, the federal district court in Massachusetts decided the case on the written record for the plaintiffs and vacated the entire D/S final rule, removing its legal effect. This goes further than September’s temporary postponement. The judge found inadequate analysis of costs, benefits and SEVIS alternatives, and held that restrictions on academic choices exceeded statutory authority. The existing D/S framework continues. A separate order that day closed the district-court case in accordance with the ruling.",
     "audience": "F, J and I visa holders, their families, schools and employers. The entire rule is vacated, and the existing framework continues nationwide.",
     "caveat": "The government can appeal the final judgment and ask to pause its effect. The vacatur remains in force. A separate November 17 order stayed the CPT guidance nationwide; schools are adjusting procedures under that order.",
-    "background": "First, what the rule does. Today, when an F-1 student enters the U.S., the I-94 says D/S: as long as you study by the rules and keep your status, you can stay, with no fixed end date. DHS proposed a change in August 2025 and published the final rule (2026-14439) on July 17, 2026. It would set a fixed period of stay instead: if you are still studying when it runs out, you apply to USCIS for an extension. It also limits transfers and switching degree level mid-program. It was set to start September 15.\nThen, the lawsuit. On August 18, a group of universities and organizations sued in federal court in Massachusetts. At 4:55 p.m. ET on September 14, the court issued a preliminary injunction: it postponed the entire rule nationwide and barred DHS/ICE from enforcing it until the court orders otherwise or issues a final ruling. The September 15 start date is off. The court’s opinion (pp. 46–48) grants nationwide relief, not just relief for students at the schools that sued, and page 42 finds the rule “arbitrary and capricious,” the usual Administrative Procedure Act (APA) test for an unlawful rule, meaning the government did not give adequate reasons. At that stage the court paused the rule but did not permanently vacate it (strike it down for good); the November 16 ruling later resolved that question.\nThe government appealed to the First Circuit on September 30 (No. 26-2112) on a fast track: the court set November 9 as the deadline for its brief and appendix (the appendix collects the key district-court documents for the appeals court), plaintiffs answer within 30 days of receiving it, and the government replies within 10 days after that. The pause stays in place during the appeal.\nThe district court is moving toward a final ruling at the same time. After it set a written schedule, the government turned over the administrative record on October 23, meaning all the material DHS relied on to write the rule. On October 30 both sides asked the court to decide the case on the papers. Plaintiffs’ supplemental memorandum argues that DHS ignored what the SEVIS system can already track, that the transfer and degree-change limits are unlawful, and that the whole rule should be struck down. On November 2 the government filed its final reply, arguing that SEVIS cannot replace the periodic review the rule requires and that DHS may set periods of stay.\nPlaintiffs also responded to the government on November 2. They argue that DHS did not adequately weigh the rule’s costs and benefits or consider less burdensome options such as improving oversight through SEVIS. They also argue that DHS disregarded significant public comments and allowed only 32 days for comments on a complex rule, too little time. They ask the court to deny the government’s request for judgment and strike down the whole rule. These requests were before the court ahead of its November 16 decision.\nIn Congress, Senator Durbin and colleagues introduced S.J.Res.213 on September 14 to overturn the rule under the Congressional Review Act (CRA); the House version is H.J.Res.215. On September 17 S.J.Res.213 was placed on the Senate calendar (No. 668); there has been no vote. It would take effect only if both chambers pass it and the President signs it, or Congress overrides a veto.\nOn November 6, the government filed an index and excerpts of the administrative record cited in its earlier request for judgment. These are materials the government used in making the rule, now submitted for the judge to review. The nationwide stay remains in force.\nOn November 16, the court decided the case on the written record for the plaintiffs and against the government, vacating the entire rule. It adopted its September reasoning and also held that DHS failed to consider stronger use of existing SEVIS oversight and exceeded its authority by restricting transfers, joint degrees and same-level degrees. The judge rejected the government’s request to send the rule back for a fuller explanation while leaving it in place, and instead removed the entire rule’s legal effect. The existing D/S framework continues.",
+    "background": "First, what the rule does. Today, when an F-1 student enters the U.S., the I-94 says D/S: as long as you study by the rules and keep your status, you can stay, with no fixed end date. DHS proposed a change in August 2025 and published the final rule (2026-14439) on July 17, 2026. It would set a fixed period of stay instead: if you are still studying when it runs out, you apply to USCIS for an extension. It also limits transfers and switching degree level mid-program. It was set to start September 15.\nThen, the lawsuit. On August 18, a group of universities and organizations sued in federal court in Massachusetts. At 4:55 p.m. ET on September 14, the court issued a preliminary injunction: it postponed the entire rule nationwide and barred DHS/ICE from enforcing it until the court orders otherwise or issues a final ruling. The September 15 start date is off. The court’s opinion (pp. 46–48) grants nationwide relief, not just relief for students at the schools that sued, and page 42 finds the rule “arbitrary and capricious,” the usual Administrative Procedure Act (APA) test for an unlawful rule, meaning the government did not give adequate reasons. At that stage the court paused the rule but did not permanently vacate it (strike it down for good); the November 16 ruling later resolved that question.\nThe government appealed to the First Circuit on September 30 (No. 26-2112) on a fast track: the court set November 9 as the deadline for its brief and appendix (the appendix collects the key district-court documents for the appeals court), plaintiffs answer within 30 days of receiving it, and the government replies within 10 days after that. The pause stays in place during the appeal.\nThe district court is moving toward a final ruling at the same time. After it set a written schedule, the government turned over the administrative record on October 23, meaning all the material DHS relied on to write the rule. On October 30 both sides asked the court to decide the case on the papers. Plaintiffs’ supplemental memorandum argues that DHS ignored what the SEVIS system can already track, that the transfer and degree-change limits are unlawful, and that the whole rule should be struck down. On November 2 the government filed its final reply, arguing that SEVIS cannot replace the periodic review the rule requires and that DHS may set periods of stay.\nPlaintiffs also responded to the government on November 2. They argue that DHS did not adequately weigh the rule’s costs and benefits or consider less burdensome options such as improving oversight through SEVIS. They also argue that DHS disregarded significant public comments and allowed only 32 days for comments on a complex rule, too little time. They ask the court to deny the government’s request for judgment and strike down the whole rule. These requests were before the court ahead of its November 16 decision.\nIn Congress, Senator Durbin and colleagues introduced S.J.Res.213 on September 14 to overturn the rule under the Congressional Review Act (CRA); the House version is H.J.Res.215. On September 17 S.J.Res.213 was placed on the Senate calendar (No. 668); there has been no vote. It would take effect only if both chambers pass it and the President signs it, or Congress overrides a veto.\nOn November 6, the government filed an index and excerpts of the administrative record cited in its earlier request for judgment. These are materials the government used in making the rule, now submitted for the judge to review. The nationwide stay remains in force.\nOn November 16, the court decided the case on the written record for the plaintiffs and against the government, vacating the entire rule. It adopted its September reasoning and also held that DHS failed to consider stronger use of existing SEVIS oversight and exceeded its authority by restricting transfers, joint degrees and same-level degrees. The judge rejected the government’s request to send the rule back for a fuller explanation while leaving it in place, and instead removed the entire rule’s legal effect. The existing D/S framework continues.\nOn November 16, the court also issued an order closing the district-court case in accordance with that day’s ruling. The judgment vacating the entire rule remains in force.",
     "teaser": "Entire rule vacated; current D/S continues.",
     "headline": "The D/S rule has been vacated; the existing framework continues.",
     "analysis": "Our view: the ruling sets aside fixed stay periods, extra extension filings and academic restrictions together, which especially matters for transfers, second degrees and long doctoral programs. Students continue maintaining status and obtaining any required work authorization under existing rules. Next, watch for a government appeal and any further court orders.",
@@ -596,6 +605,10 @@ export const durationStatus: PolicyContent = {
       {
         "date": "2026-11-16",
         "text": "The court decided the case on the written record for the plaintiffs and vacated the entire D/S final rule; existing D/S continues."
+      },
+      {
+        "date": "2026-11-16",
+        "text": "The court issued an order closing the case in accordance with the same-day judgment for the plaintiffs vacating the entire rule."
       }
     ],
     "next": [
@@ -606,7 +619,7 @@ export const durationStatus: PolicyContent = {
     ],
     "process": {
       "detail": "On November 16, the court decided the case on the written record for the plaintiffs and vacated the entire final rule. Fixed stay periods, extra extensions and academic restrictions lose legal effect; existing D/S continues.",
-      "currentSummary": "Entire rule vacated; D/S continues",
+      "currentSummary": "Entire rule vacated; district-court case closed",
       "waitingFor": "Any government appeal of the final judgment and further court orders."
     }
   }

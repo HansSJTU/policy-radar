@@ -73,6 +73,15 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Scheduled publication of the proposal, with 60 days of public comments planned; proposed requirements include a two-year filing bar after relevant layoffs and at least 90 days of job ads."
   },
   {
+    "id": "ds-case-closed-november16",
+    "date": "2026-11-16",
+    "availableOn": "2026-11-18",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "法院依同日原告胜诉、撤销整项规则的判决发出结案命令。地区法院案件结束，现行 D/S 继续适用，政府仍可上诉。",
+    "en": "The court closed the case in accordance with its same-day judgment for the plaintiffs vacating the entire rule. The district-court case is over; existing D/S continues and the government can appeal."
+  },
+  {
     "id": "ds-rule-vacated-november16",
     "date": "2026-11-16",
     "availableOn": "2026-11-16",
