@@ -5,7 +5,7 @@ export const optFee: PolicyContent = {
   path: 'OPT',
   tone: 'blue',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-18",
+  checkedOn: "2026-11-19",
   related: ['h1b-fee', 'duration-status'],
   process: {
     kind: 'federal-rulemaking',

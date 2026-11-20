@@ -23,6 +23,95 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-19",
+    "changes": [
+      {
+        "id": "three-cpt-schools-november19",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 Minnesota、Pitt 和 Virginia Tech",
+        "summary": "Minnesota 11·23 开放申请表；Pitt 恢复 8 月前办法；Virginia Tech 将发后续说明。",
+        "before": "84 条记录：80 条校方网页、4 条社区截图；82 所不同学校。",
+        "after": "87 条记录：83 条校方网页、4 条社区截图；85 所不同学校。Minnesota 恢复必修和选修 CPT，申请表 11·23 开放。Pitt 恢复学位要求或合格学分型 CPT；Virginia Tech 正与校方讨论后续安排。",
+        "sources": [
+          {
+            "label": "Minnesota · 11·18 通知",
+            "href": "https://isss.umn.edu/fstudents/employment/cpt"
+          },
+          {
+            "label": "Pitt · CPT 办理办法",
+            "href": "https://www.ois.pitt.edu/curricular-practical-training"
+          },
+          {
+            "label": "Virginia Tech · 11·18 通知",
+            "href": "https://international.vt.edu/employment/cpt.html"
+          }
+        ]
+      },
+      {
+        "id": "osu-northwestern-cpt-credit-november19",
+        "category": "#05 CPT 学校追踪",
+        "title": "Ohio State 和 Northwestern 扩大课程型 CPT 审核",
+        "summary": "课程联系、修课及学业批准仍是申请条件。",
+        "before": "Ohio State 排除选修实践；Northwestern 要求所有学生必修，并限制完成必修实践后的额外 CPT。",
+        "after": "Ohio State 允许取得学分、经顾问确认课程联系的非学位必需实践。Northwestern 按主修和课程联系审核，要求注册相关学术课程及合作协议。两校均须先取得 CPT I-20 才能开工。",
+        "sources": [
+          {
+            "label": "Ohio State · 当前 CPT 规定",
+            "href": "https://oia.osu.edu/international-students/employment/curricular-practical-training"
+          },
+          {
+            "label": "Northwestern · 11·19 更新",
+            "href": "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "ncstate-cpt-coop-november19",
+        "category": "#05 CPT 学校追踪",
+        "title": "NC State 恢复 co-op 路径，保留学期内全职限制",
+        "summary": "研究生必修学期的 co-op 限兼职，全职仍须满足学位或论文要求。",
+        "before": "按 8·24 指引排除选修实习、co-op 和选修研究。",
+        "after": "列出课程要求、必要论文研究和专业相关 co-op 路径；实习至少 6 周。研究生必修学期 co-op 限每周 20 小时，全职 CPT 仍须为学位或论文必需。原有春季申请和授权日期保留。",
+        "sources": [
+          {
+            "label": "NC State · 11·19 更新",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-next-procedures-november19",
+        "category": "#05 CPT 学校追踪",
+        "title": "Oklahoma 春季重开；Georgetown 12·01 前说明资格",
+        "summary": "IU、W&M 和 CU Boulder 也公布法院暂缓后的流程安排。",
+        "before": "Oklahoma 从 8·24 起的新请求全部暂停；Georgetown 仍列所有学生必修条件；CU Boulder 按列明专业处理。",
+        "after": "Oklahoma 秋季继续关闭，2027 春季重开。Georgetown 将在 12·01 前公布资格更新。CU Boulder 暂关申请表以更新流程。IU 正评估流程；W&M 维持学位必修实践继续、其他请求暂停的安排。",
+        "sources": [
+          {
+            "label": "Oklahoma · 11·19 更新",
+            "href": "https://www.ou.edu/globalengagement/iss/curricular-practical-training"
+          },
+          {
+            "label": "Georgetown · 11·19 通知",
+            "href": "https://internationalservices.georgetown.edu/immigration-updates/"
+          },
+          {
+            "label": "IU · 11·19 通知",
+            "href": "https://www.oid.iu.edu/resources/visa-immigration-updates.html"
+          },
+          {
+            "label": "W&M · 11·19 更新",
+            "href": "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/"
+          },
+          {
+            "label": "CU Boulder · 11·17 更新",
+            "href": "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "changes": [
       {
@@ -2598,6 +2687,95 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-19",
+    "changes": [
+      {
+        "id": "three-cpt-schools-november19",
+        "category": "#05 CPT School Tracker",
+        "title": "Minnesota, Pitt and Virginia Tech added",
+        "summary": "Minnesota opens its form November 23; Pitt restores pre-August procedures; Virginia Tech will issue further instructions.",
+        "before": "84 evidence entries: 80 public university pages and 4 community reports; 82 distinct institutions.",
+        "after": "87 evidence entries: 83 public university pages and 4 community reports; 85 distinct institutions. Minnesota will process required and elective CPT, with its form opening November 23. Pitt restores degree-required or qualifying credit-based CPT; Virginia Tech is reviewing next steps with university leadership.",
+        "sources": [
+          {
+            "label": "Minnesota · November 18 notice",
+            "href": "https://isss.umn.edu/fstudents/employment/cpt"
+          },
+          {
+            "label": "Pitt · CPT procedures",
+            "href": "https://www.ois.pitt.edu/curricular-practical-training"
+          },
+          {
+            "label": "Virginia Tech · November 18 notice",
+            "href": "https://international.vt.edu/employment/cpt.html"
+          }
+        ]
+      },
+      {
+        "id": "osu-northwestern-cpt-credit-november19",
+        "category": "#05 CPT School Tracker",
+        "title": "Ohio State and Northwestern broaden curriculum-based CPT review",
+        "summary": "A curriculum connection, course enrollment and academic approval remain required.",
+        "before": "Ohio State excluded optional training. Northwestern required training of all students and restricted additional CPT after required training was completed.",
+        "after": "Ohio State allows non-degree-required training for academic credit with adviser confirmation of its curriculum connection. Northwestern reviews the major and curriculum connection and requires enrollment in a related academic course and a cooperative agreement. Both schools require a CPT I-20 before work.",
+        "sources": [
+          {
+            "label": "Ohio State · Current CPT requirements",
+            "href": "https://oia.osu.edu/international-students/employment/curricular-practical-training"
+          },
+          {
+            "label": "Northwestern · November 19 update",
+            "href": "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "ncstate-cpt-coop-november19",
+        "category": "#05 CPT School Tracker",
+        "title": "NC State restores the co-op route with term-time full-time limits",
+        "summary": "Graduate co-op in required semesters is part-time; full-time CPT remains tied to degree or thesis requirements.",
+        "before": "The August 24 approach excluded elective internships, co-ops and research.",
+        "after": "The page lists curriculum-required training, essential thesis research and major-related co-op, with at least six weeks of training. Graduate co-op in required semesters is limited to 20 hours weekly; full-time CPT must still be degree- or thesis-required. Existing spring request and authorization dates remain.",
+        "sources": [
+          {
+            "label": "NC State · November 19 update",
+            "href": "https://internationalservices.ncsu.edu/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "campus-cpt-next-procedures-november19",
+        "category": "#05 CPT School Tracker",
+        "title": "Oklahoma reopens in spring; Georgetown to update eligibility by December 1",
+        "summary": "IU, W&M and CU Boulder also announce procedures following the court’s stay.",
+        "before": "Oklahoma paused all new requests from August 24. Georgetown listed an all-student requirement; CU Boulder processed only listed programs.",
+        "after": "Oklahoma keeps fall requests closed and reopens for Spring 2027. Georgetown will communicate eligibility updates by December 1. CU Boulder temporarily closes its request form while procedures are updated. IU is reviewing processes; W&M keeps processing degree-required training and pauses other requests.",
+        "sources": [
+          {
+            "label": "Oklahoma · November 19 update",
+            "href": "https://www.ou.edu/globalengagement/iss/curricular-practical-training"
+          },
+          {
+            "label": "Georgetown · November 19 notice",
+            "href": "https://internationalservices.georgetown.edu/immigration-updates/"
+          },
+          {
+            "label": "IU · November 19 notice",
+            "href": "https://www.oid.iu.edu/resources/visa-immigration-updates.html"
+          },
+          {
+            "label": "W&M · November 19 update",
+            "href": "https://www.wm.edu/offices/revescenter/issp/visasandimmigration/immigration-updates/"
+          },
+          {
+            "label": "CU Boulder · November 17 update",
+            "href": "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-18",
     "changes": [
