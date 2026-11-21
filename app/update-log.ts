@@ -23,6 +23,47 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-20",
+    "changes": [
+      {
+        "id": "cornell-uic-cpt-november20",
+        "category": "#05 CPT 学校追踪",
+        "title": "Cornell 申请已开放；UIC 沿用 8 月前办法",
+        "summary": "Cornell 开放先前符合条件的申请；UIC 按原有流程审核与课程相关的实践。",
+        "before": "Cornell 计划 11·20 重开申请；UIC 按 10·07 通知逐案审核 CPT 资格并关注诉讼。",
+        "after": "Cornell 确认 CPT 申请现已开放，涵盖工程 Co-op、课程学分及必要博士研究。UIC 明确在案件审理期间沿用 8 月前办法，合格实习、co-op 及其他课程内实践可按原有流程获批。",
+        "sources": [
+          {
+            "label": "Cornell · 11·20 申请已开放",
+            "href": "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20"
+          },
+          {
+            "label": "UIC · 11·20 CPT 通知",
+            "href": "https://ois.uic.edu/news-stories/update-on-f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "rutgers-bc-cpt-procedures-november20",
+        "category": "#05 CPT 学校追踪",
+        "title": "Rutgers 和 Boston College 公布法院暂缓后的安排",
+        "summary": "Rutgers 按现行规定继续审核；Boston College 将在后续几周通知是否恢复原办法。",
+        "before": "Rutgers 仍列所有学生必修条件；Boston College 暂停非必修 CPT。",
+        "after": "Rutgers 与总法律顾问及各校区国际办公室评估后续安排，按现行校规和联邦规定继续审核。Boston College 正评估是否恢复原办法，将在后续几周通知学生和院系；此前非必修 CPT 暂停继续。",
+        "sources": [
+          {
+            "label": "Rutgers · 11·17 CPT 通知",
+            "href": "https://global.rutgers.edu/all-alerts"
+          },
+          {
+            "label": "Boston College · 11·20 CPT 通知",
+            "href": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "changes": [
       {
@@ -2687,6 +2728,47 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-20",
+    "changes": [
+      {
+        "id": "cornell-uic-cpt-november20",
+        "category": "#05 CPT school tracker",
+        "title": "Cornell applications now open; UIC continues pre-August rules",
+        "summary": "Cornell opens applications for previously eligible students; UIC reviews curriculum-based training through its established process.",
+        "before": "Cornell planned to reopen applications November 20; UIC reviewed CPT eligibility case by case under its October 7 notice and monitored the lawsuit.",
+        "after": "Cornell confirms CPT applications are now open for engineering co-op, course credit and necessary doctoral research. UIC says pre-August rules remain in effect during the case; eligible internships, co-ops and other curriculum-based training may be authorized through existing procedures.",
+        "sources": [
+          {
+            "label": "Cornell · November 20 applications open",
+            "href": "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20"
+          },
+          {
+            "label": "UIC · November 20 CPT notice",
+            "href": "https://ois.uic.edu/news-stories/update-on-f-1-curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "rutgers-bc-cpt-procedures-november20",
+        "category": "#05 CPT school tracker",
+        "title": "Rutgers and Boston College announce steps after the court pause",
+        "summary": "Rutgers continues review under current rules; Boston College will announce whether it returns to prior policies in coming weeks.",
+        "before": "Rutgers still listed an all-students degree requirement; Boston College paused non-required CPT.",
+        "after": "Rutgers is reviewing next steps with General Counsel and campus international offices, while continuing to review requests under current university and federal guidance. Boston College is assessing a return to prior policies and will notify students and departments in coming weeks; its earlier non-required CPT pause continues.",
+        "sources": [
+          {
+            "label": "Rutgers · November 17 CPT notice",
+            "href": "https://global.rutgers.edu/all-alerts"
+          },
+          {
+            "label": "Boston College · November 20 CPT notice",
+            "href": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-international-students-and-scholars/maintain/jcr%3Acontent/bottompar/bc_padded_section/par/bc_news_notes.newsItems.html"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-19",
     "changes": [

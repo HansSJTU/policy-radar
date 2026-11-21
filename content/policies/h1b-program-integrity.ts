@@ -5,7 +5,7 @@ export const h1bProgramIntegrity: PolicyContent = {
   path: 'H-1B',
   tone: 'amber',
   effectState: 'executive-order-issued',
-  checkedOn: "2026-11-19",
+  checkedOn: "2026-11-20",
   related: ['h1b-reform', 'h1b-fee', 'prevailing-wage', 'perm-modernization'],
   process: {
     kind: 'executive-order',
