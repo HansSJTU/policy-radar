@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-19",
+  checkedOn: "2026-11-20",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -190,8 +190,8 @@ export const cptGuidance: PolicyContent = {
     },
     {
       "href": "https://international.globallearning.cornell.edu/alerts/cpt-applications-reopening-november-20",
-      "zh": "Cornell · 11·18 通知，11·20 重开 CPT 申请",
-      "en": "Cornell · November 18 notice; CPT applications reopen November 20"
+      "zh": "Cornell · 11·20 更新，CPT 申请已开放",
+      "en": "Cornell · November 20 update; CPT applications now open"
     },
   ],
   zh: {
