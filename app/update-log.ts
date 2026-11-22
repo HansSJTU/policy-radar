@@ -23,6 +23,53 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-21",
+    "changes": [
+      {
+        "id": "csulb-cpt-pre-august-guidelines",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 CSU Long Beach：按 8 月前办法申请 CPT",
+        "summary": "专业课程相关实践可申请；秋春限兼职，暑期可全职。",
+        "before": "87 条记录：83 条校方网页、4 条社区截图；85 所不同学校。",
+        "after": "88 条记录：84 条校方网页、4 条社区截图；86 所不同学校。CSULB 11·20 通知允许按 8·12 前办法申请，须修相关学分课程并先取得 CPT I-20。秋春 CPT 与校内工作合计每周不超过 20 小时；全职 CPT 只在暑期开放。",
+        "sources": [
+          {
+            "label": "CSULB · 11·20 CPT 更新",
+            "href": "https://www.csulb.edu/international/current-students/curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "gw-elective-cpt-november18",
+        "category": "#05 CPT 学校追踪",
+        "title": "GW 明确选修课程可以支持 CPT",
+        "summary": "须计入学位进度，并在实践学期注册相应课程取得学分。",
+        "before": "9·02 公告暂停非全专业必修的新 CPT。",
+        "after": "11·18 公告允许专业现有的选修实习或体验课程支持 CPT，要求实践与课程直接相关、计入学位进度并同期修课取得学分。已有 CPT 按获批条件继续。",
+        "sources": [
+          {
+            "label": "GW · 11·18 课程要求说明",
+            "href": "https://internationalservices.gwu.edu/important-update-federal-court-blocks-sevp-cpt-guidance-clarifications-institutional-cpt-policy"
+          }
+        ]
+      },
+      {
+        "id": "bu-spring-cpt-required-training",
+        "category": "#05 CPT 学校追踪",
+        "title": "BU 明确春季仍限全专业必修 CPT",
+        "summary": "学校正与院系及总法律顾问准备后续课程实践办法。",
+        "before": "按 8·28 公告，学位必需 CPT 继续，其他模式在校内审查期间暂停。",
+        "after": "11·19 更新明确春季继续只批同一项目所有学生必需的实践。学校正起草有关实习、临床轮转等课程实践的指引，并准备下一学年的 CPT 办法。",
+        "sources": [
+          {
+            "label": "BU · 11·19 更新",
+            "href": "https://www.bu.edu/isso/2026/11/17/judge-issues-preliminary-injunction-in-lawsuit-challenging-sevp-cpt-guidance/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "changes": [
       {
@@ -2728,6 +2775,53 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-21",
+    "changes": [
+      {
+        "id": "csulb-cpt-pre-august-guidelines",
+        "category": "#05 CPT school tracker",
+        "title": "Add CSU Long Beach: CPT applications follow pre-August guidelines",
+        "summary": "Training must link to the major and curriculum; fall and spring are part-time, with full-time CPT available in summer.",
+        "before": "87 evidence entries: 83 public university pages and 4 community reports; 85 distinct institutions.",
+        "after": "88 evidence entries: 84 public university pages and 4 community reports; 86 distinct institutions. CSULB’s November 20 update allows applications under pre-August 12 guidelines, with academic-credit enrollment and the CPT I-20 before work. Fall and spring CPT plus on-campus work is capped at 20 combined hours weekly; full-time CPT is available only in summer.",
+        "sources": [
+          {
+            "label": "CSULB · November 20 CPT update",
+            "href": "https://www.csulb.edu/international/current-students/curricular-practical-training"
+          }
+        ]
+      },
+      {
+        "id": "gw-elective-cpt-november18",
+        "category": "#05 CPT school tracker",
+        "title": "GW confirms elective courses can support CPT",
+        "summary": "The course must count toward degree progress, with academic credit and enrollment during the training term.",
+        "before": "The September 2 notice paused new CPT not required of all students in the degree.",
+        "after": "The November 18 notice allows established elective internship or experiential courses to support CPT. Training must connect directly to the course and count toward degree progress, with same-term enrollment for academic credit. Existing CPT continues under its approved conditions.",
+        "sources": [
+          {
+            "label": "GW · November 18 curriculum criteria",
+            "href": "https://internationalservices.gwu.edu/important-update-federal-court-blocks-sevp-cpt-guidance-clarifications-institutional-cpt-policy"
+          }
+        ]
+      },
+      {
+        "id": "bu-spring-cpt-required-training",
+        "category": "#05 CPT school tracker",
+        "title": "BU keeps spring CPT limited to all-students requirements",
+        "summary": "ISSO is preparing further curricular-training guidance with academic departments and General Counsel.",
+        "before": "Under the August 28 notice, degree-required CPT continued and other models were paused during institutional review.",
+        "after": "The November 19 update specifies that spring CPT continues only for training required of every student in a particular program. BU is drafting guidance for internships, clinical rotations and other curricular training, while preparing CPT guidelines for the next academic year.",
+        "sources": [
+          {
+            "label": "BU · November 19 update",
+            "href": "https://www.bu.edu/isso/2026/11/17/judge-issues-preliminary-injunction-in-lawsuit-challenging-sevp-cpt-guidance/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-20",
     "changes": [
