@@ -121,6 +121,11 @@ test('publishes the update log as an Atom feed in each language', () => {
   }
 });
 
+test('keeps the Atom feed out of search results', async () => {
+  const source = await readFile(new URL('../app/feed.xml/route.ts', import.meta.url), 'utf8');
+  assert.match(source, /'X-Robots-Tag': 'noindex'/);
+});
+
 test('describes each policy for search engines with its review date and official sources', () => {
   for (const language of ['zh', 'en']) {
     for (const policy of getPolicies(language)) {
