@@ -44,13 +44,6 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
     : { label: '打开网站菜单', title: '页面导航', policies: '政策', schools: 'CPT 学校', updates: '更新记录', stats: '访问统计' };
   const items: MenuItem[] = [
     {
-      id: 'radar',
-      label: english ? 'My radar' : '我的雷达',
-      href: `/radar?lang=${language}`,
-      icon: <Radar aria-hidden="true" />,
-      current: current === 'radar',
-    },
-    {
       id: 'policies',
       label: copy.policies,
       href: `${home}#ranking`,
@@ -62,6 +55,13 @@ export function MobileSiteMenu({ current, language }: MobileSiteMenuProps) {
       href: `${home}#cpt-schools`,
       icon: <GraduationCap aria-hidden="true" />,
       current: current === 'schools',
+    },
+    {
+      id: 'radar',
+      label: english ? 'My radar' : '我的雷达',
+      href: `/radar?lang=${language}`,
+      icon: <Radar aria-hidden="true" />,
+      current: current === 'radar',
     },
     {
       id: 'updates',

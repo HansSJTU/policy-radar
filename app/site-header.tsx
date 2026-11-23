@@ -35,9 +35,9 @@ export function SiteHeader({
   // On the home page these are same-document anchors, so they scroll instead of reloading.
   const homeAnchor = (id: string) => (current === 'home' ? `#${id}` : `${home}#${id}`);
   const links: { id: string; href: string; label: string }[] = [
-    { id: 'radar', href: `/radar?lang=${language}`, label: ui.radar },
     { id: 'policies', href: homeAnchor('ranking'), label: ui.policies },
     { id: 'schools', href: homeAnchor('cpt-schools'), label: ui.cptSchools },
+    { id: 'radar', href: `/radar?lang=${language}`, label: ui.radar },
     { id: 'updates', href: `/updates?lang=${language}`, label: ui.updates },
     { id: 'stats', href: `/stats?lang=${language}`, label: ui.stats },
   ];

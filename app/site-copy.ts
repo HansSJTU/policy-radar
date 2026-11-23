@@ -3,9 +3,9 @@ export const siteCopy = {
   zh: {
     brand: '留美路径雷达',
     nav: '页面导航',
-    radar: '我的雷达',
     policies: '政策',
     cptSchools: 'CPT 学校',
+    radar: '我的雷达',
     updates: '更新记录',
     stats: '访问统计',
     switchLanguage: '切换网站语言',
@@ -14,9 +14,9 @@ export const siteCopy = {
   en: {
     brand: 'Stay Path Radar',
     nav: 'Page navigation',
-    radar: 'My radar',
     policies: 'Policies',
     cptSchools: 'CPT Schools',
+    radar: 'My radar',
     updates: 'Updates',
     stats: 'Traffic',
     switchLanguage: 'Switch site language',
