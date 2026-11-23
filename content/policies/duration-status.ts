@@ -440,7 +440,7 @@ export const durationStatus: PolicyContent = {
   "en": {
     "title": "Court Vacates the D/S Fixed-Stay Rule",
     "short": "D/S Fixed Admission Period",
-    "searchTitle": "F-1 D/S Rule Vacated: Fixed Stay Periods and Study Limits Set Aside",
+    "searchTitle": "Duration of Status Rule Vacated: F-1 Students Stay on D/S",
     "searchDescription": "The district court vacated the entire D/S rule and closed the case November 16. F-1 and J-1 students continue under D/S; fixed stays, extra extensions and study limits are set aside. The government can appeal.",
     "status": "Court vacated entire rule and closed case November 16",
     "effectLabel": "Vacated by the court · D/S continues",

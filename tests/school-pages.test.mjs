@@ -32,7 +32,7 @@ test('every CPT school record has its own page in both languages', () => {
 
 test('school page titles lead with the school and CPT, as readers search', () => {
   const ucsb = schoolMetadata(getSchoolPage('ucsb', 'en'), 'en');
-  assert.equal(ucsb.title, 'UCSB CPT Policy: Tighter review | Stay Path Radar');
+  assert.equal(ucsb.title, 'UC Santa Barbara (UCSB) CPT Policy: Tighter review | Stay Path Radar');
   assert.equal(ucsb.url, `${POLICY_SITE_URL}/schools/ucsb?lang=en`);
   const cmu = schoolMetadata(getSchoolPage('carnegie-mellon-university', 'zh'), 'zh');
   assert.match(cmu.title, /^Carnegie Mellon University \(CMU\) CPT 政策：收紧｜留美路径雷达$/);
@@ -66,7 +66,7 @@ test('the school index lists every school from A to Z', () => {
 test('school structured data names the school and its last check', () => {
   const school = getSchoolPage('mit', 'en');
   const data = schoolJsonLd(school, 'en');
-  assert.equal(data.about.name, 'MIT');
+  assert.equal(data.about.name, 'Massachusetts Institute of Technology (MIT)');
   assert.equal(data.dateModified, school.checkedOn);
   assert.equal(data.citation[0].url, school.href);
   assert.equal('citation' in schoolJsonLd(getSchoolPage('caltech', 'en'), 'en'), false);
@@ -94,4 +94,6 @@ test('every policy has a search title and description in both languages', () => 
   assert.match(english['h4-ead'], /^H-4 EAD/);
   assert.match(english['cpt-guidance'], /^CPT/);
   assert.match(english['perm-modernization'], /^PERM/);
+  assert.match(english['h1b-fee'], /^H-1B Fee/);
+  assert.match(english['duration-status'], /^Duration of Status/);
 });

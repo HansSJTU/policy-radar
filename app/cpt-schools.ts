@@ -170,7 +170,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     "id": "ohio-state-university",
     "checkedOn": "2026-11-22",
-    "school": "The Ohio State University",
+    "school": "The Ohio State University (OSU)",
     "href": "https://oia.osu.edu/international-students/employment/curricular-practical-training",
     "tone": "continue",
     "zh": {
@@ -820,7 +820,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     "id": "uiuc",
     "checkedOn": "2026-11-22",
-    "school": "UIUC",
+    "school": "University of Illinois Urbana-Champaign (UIUC)",
     "href": "https://blogs.illinois.edu/view/8569/1744245392",
     "tone": "continue",
     "zh": {
@@ -961,7 +961,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     "id": "university-of-washington",
     "checkedOn": "2026-11-22",
-    "school": "University of Washington",
+    "school": "University of Washington (UW)",
     "href": "https://iss.washington.edu/preliminary-injunction-cpt/",
     "tone": "tighten",
     "zh": {
@@ -1012,7 +1012,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     id: 'mit',
     "checkedOn": "2026-11-22",
-    school: 'MIT',
+    school: 'Massachusetts Institute of Technology (MIT)',
     href: 'https://iso.mit.edu/employment/f-1-curricular-practical-training/',
     tone: 'pause',
     zh: {
@@ -1033,7 +1033,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     id: 'ucsb',
     "checkedOn": "2026-11-22",
-    school: 'UCSB',
+    school: 'UC Santa Barbara (UCSB)',
     href: 'https://oiss.ucsb.edu/curricular-practical-training',
     tone: 'tighten',
     zh: {
@@ -1107,7 +1107,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     id: 'uc-irvine',
     "checkedOn": "2026-11-22",
-    school: 'UC Irvine',
+    school: 'UC Irvine (UCI)',
     href: 'https://ic.uci.edu/welcome-students/students-current-students/students-current-employment-information/curricular-practical-training/',
     tone: 'tighten',
     zh: {
@@ -1217,7 +1217,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     "id": "university-of-colorado-boulder",
     "checkedOn": "2026-11-22",
-    "school": "University of Colorado Boulder",
+    "school": "University of Colorado Boulder (CU Boulder)",
     "href": "https://www.colorado.edu/isss/2026/08/20/change-cpt-authorization-policy-faqs",
     "tone": "pause",
     "zh": {
@@ -1284,7 +1284,7 @@ export const verifiedSchools: VerifiedSchoolRecord[] = [
   {
     id: 'george-mason-university',
     "checkedOn": "2026-11-22",
-    school: 'George Mason University',
+    school: 'George Mason University (GMU)',
     href: 'https://oips.gmu.edu/current-immigration-information/',
     tone: 'pause',
     zh: {

@@ -206,7 +206,7 @@ export const h1bFee: PolicyContent = {
   en: {
     title: 'Proposed $103,265 H-1B Surcharge',
     short: '$103,265 H-1B Surcharge',
-    searchTitle: "$103,265 H-1B Fee Proposal: Who Pays and When",
+    searchTitle: "H-1B Fee Proposal: $103,265 for Lottery Cases, Who Pays and When",
     searchDescription: "DHS proposes an extra $103,265 on every cap-subject H-1B petition, including U.S. master’s-cap cases and F-1 students moving from OPT. Cap-exempt employers such as universities do not pay.",
     status: 'Proposed rule · Comment period closed',
     effectLabel: 'Not in effect',

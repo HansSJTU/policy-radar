@@ -17,30 +17,30 @@ const verifiedForumEvidence = {
   'Purdue University (ISS)': ['/cpt-evidence/cpt_purdue_iss.jpeg'],
 
   UCLA: ['/cpt-evidence/cpt_ucla.jpeg'],
-  'UC Irvine': ['/cpt-evidence/cpt_uci.jpeg'],
-  UCSB: [
+  'UC Irvine (UCI)': ['/cpt-evidence/cpt_uci.jpeg'],
+  'UC Santa Barbara (UCSB)': [
     '/cpt-evidence/cpt_ucsb_1.jpeg',
     '/cpt-evidence/cpt_ucsb_2.jpeg',
   ],
-  UIUC: ['/cpt-evidence/cpt_uiuc_notice.jpeg'],
+  'University of Illinois Urbana-Champaign (UIUC)': ['/cpt-evidence/cpt_uiuc_notice.jpeg'],
   'University of Michigan': ['/cpt-evidence/cpt_michigan_notice.jpeg'],
   'Northwestern University': ['/cpt-evidence/cpt_northwestern_notice.png'],
   'Columbia University': ['/cpt-evidence/cpt_columbia_notice.webp'],
-  MIT: ['/cpt-evidence/cpt_mit.jpeg'],
+  'Massachusetts Institute of Technology (MIT)': ['/cpt-evidence/cpt_mit.jpeg'],
 };
 
 const verifiedWithoutForumEvidence = [
   'Carnegie Mellon University (CMU)',
   'UC Berkeley',
   'UCLA Extension',
-  'The Ohio State University',
+  'The Ohio State University (OSU)',
   'University of Denver',
   'UC Davis',
   'Boston University',
   'Texas A&M',
   'UT Dallas',
   'Harvard University',
-  'University of Washington',
+  'University of Washington (UW)',
   'University of Maryland, College Park',
   'Trine University',
   'New York University (Tandon Mathematics)',
@@ -83,11 +83,11 @@ test('current CPT status evidence is grouped without overstating public verifica
   for (const school of verifiedSchools) assert.match(school.href, /^https:\/\//, school.school);
   for (const school of communitySchools) assert.equal('href' in school, false, school.school);
 
-  assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington'));
+  assert.ok(verifiedSchools.some(({ school }) => school === 'University of Washington (UW)'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'University of Maryland, College Park'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'Trine University'));
-  assert.ok(verifiedSchools.some(({ school }) => school === 'MIT'));
-  assert.equal(communitySchools.some(({ school }) => school === 'MIT'), false);
+  assert.ok(verifiedSchools.some(({ school }) => school === 'Massachusetts Institute of Technology (MIT)'));
+  assert.equal(communitySchools.some(({ school }) => school === 'Massachusetts Institute of Technology (MIT)'), false);
   assert.ok(communitySchools.some(({ school }) => school === 'Purdue ECE'));
   assert.ok(verifiedSchools.some(({ school }) => school === 'Purdue University (ISS)'));
   assert.equal(communitySchools.some(({ school }) => school === 'Purdue University (ISS)'), false);
