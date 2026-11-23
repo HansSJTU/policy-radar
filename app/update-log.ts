@@ -23,6 +23,25 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-22",
+    "changes": [
+      {
+        "id": "unl-cpt-pre-august-guidelines",
+        "category": "#05 CPT 学校追踪",
+        "title": "加入 Nebraska–Lincoln：恢复 8 月前 CPT 办法",
+        "summary": "ISSO 已恢复审核和处理申请；学生先与学业顾问确认资格。",
+        "before": "88 条记录：84 条校方网页、4 条社区截图；86 所不同学校。",
+        "after": "89 条记录：85 条校方网页、4 条社区截图；87 所不同学校。UNL 11·17 通知确认，校方法律顾问审阅法院命令后，ISSO 恢复按 8 月前的指引审核和处理 CPT 申请。",
+        "sources": [
+          {
+            "label": "UNL · 11·17 CPT 通知（页面更新 11·19）",
+            "href": "https://global.unl.edu/isso/immigration/us-immigration-policy-regulatory-updates/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-21",
     "changes": [
       {
@@ -2775,6 +2794,25 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-22",
+    "changes": [
+      {
+        "id": "unl-cpt-pre-august-guidelines",
+        "category": "#05 CPT school tracker",
+        "title": "Add Nebraska–Lincoln: pre-August CPT procedures resume",
+        "summary": "ISSO has resumed reviewing and processing applications; students should confirm eligibility with their academic adviser.",
+        "before": "88 evidence entries: 84 public university pages and 4 community reports; 86 distinct institutions.",
+        "after": "89 evidence entries: 85 public university pages and 4 community reports; 87 distinct institutions. UNL’s November 17 notice confirms that, after university counsel reviewed the court order, ISSO resumed reviewing and processing CPT applications under pre-August guidelines.",
+        "sources": [
+          {
+            "label": "UNL · November 17 CPT notice (page updated November 19)",
+            "href": "https://global.unl.edu/isso/immigration/us-immigration-policy-regulatory-updates/"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-21",
     "changes": [
