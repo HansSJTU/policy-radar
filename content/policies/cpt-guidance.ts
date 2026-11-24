@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-22",
+  checkedOn: "2026-11-23",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -130,8 +130,8 @@ export const cptGuidance: PolicyContent = {
     },
     {
       "href": "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html",
-      "zh": "CMU OIE · 10·08 CPT 诉讼通知",
-      "en": "CMU OIE · October 8 CPT litigation notice"
+      "zh": "CMU OIE · 11·23 CPT 法院命令与校内审查通知",
+      "en": "CMU OIE · November 23 court-order and campus-review update"
     },
     {
       "href": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.27.0.pdf",

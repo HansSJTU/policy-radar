@@ -23,6 +23,75 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-23",
+    "changes": [
+      {
+        "id": "umd-winter-spring-cpt-dates",
+        "category": "#05 CPT 学校追踪",
+        "title": "补充 UMD 冬春 CPT 日期",
+        "summary": "校方日历以 2027 年 1·27 作为冬季最晚结束和春季最早开始日。",
+        "before": "条目列明哪些 CPT 继续受理、哪些仍暂停，没有冬春 CPT 日期。",
+        "after": "增加校方当前日历：冬季 CPT 最晚于 2027 年 1·27 结束，春季 CPT 最早同日开始。学校的申请资格要求照常适用。",
+        "sources": [
+          {
+            "label": "UMD · CPT 学期日历",
+            "href": "https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "plu-ucdavis-cpt-return",
+        "category": "#05 CPT 学校追踪",
+        "title": "PLU 恢复选修 CPT；UC Davis 冬季恢复课程学分 CPT",
+        "summary": "PLU 须关联课程或学分，并遵守学期工时限制；UC Davis 宣布冬季学季恢复办理。",
+        "before": "PLU 只批全专业学生毕业必须完成的实践；UC Davis 暂停课程学分型 CPT。",
+        "after": "PLU 11·20 宣布恢复与专业相关、关联现有课程或选修实习／独立研究学分的 CPT，秋春每周最多 20 小时。UC Davis 11·23 宣布冬季学季恢复处理课程学分 CPT，开始实践前须获 SISS 授权。",
+        "sources": [
+          {
+            "label": "PLU · 11·20 公告",
+            "href": "https://www.plu.edu/iss/announcements/"
+          },
+          {
+            "label": "UC Davis · 11·23 冬季 CPT 通知",
+            "href": "https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars"
+          }
+        ]
+      },
+      {
+        "id": "utah-cpt-pre-august-review",
+        "category": "#05 CPT 学校追踪",
+        "title": "Utah 恢复必修及选修 CPT 审核",
+        "summary": "2027 年春季申请窗口为 12·07 至 1·29。",
+        "before": "9·03 起暂停非必修的新 CPT，UAtlas 可收申请但等待审核。",
+        "after": "11·23 通知恢复按 8 月前标准审核，必修和选修实践均可考虑，须与专业直接相关、属于既定课程。2027 年春季申请 12·07 开放、1·29 截止，开始实践前须取得 CPT I-20；已有授权照获批条件继续。",
+        "sources": [
+          {
+            "label": "Utah · 11·23 CPT 通知",
+            "href": "https://isss.utah.edu/news/posts/2026/federal-court-temporarily-blocks-guidance-on-cpt.php"
+          }
+        ]
+      },
+      {
+        "id": "minnesota-cmu-cpt-november23",
+        "category": "#05 CPT 学校追踪",
+        "title": "Minnesota 已恢复处理 CPT；CMU 评估后续流程",
+        "summary": "Minnesota 确认 11·23 起恢复必修及选修 CPT，CMU 正与法律顾问审阅命令和表格。",
+        "before": "Minnesota 预告 11·23 开放申请表；CMU 条目仍引用 10·08 的诉讼介绍。",
+        "after": "Minnesota 11·23 确认当天起已恢复处理必修及选修 CPT，申请流程有调整。CMU 11·23 通知称，OIE 正与总法律顾问审阅法院命令、CPT 表格和流程，后续将公布办理说明。",
+        "sources": [
+          {
+            "label": "Minnesota · 11·23 更新",
+            "href": "https://isss.umn.edu/fstudents/employment/cpt"
+          },
+          {
+            "label": "CMU OIE · 11·23 通知",
+            "href": "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "changes": [
       {
@@ -2794,6 +2863,75 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-23",
+    "changes": [
+      {
+        "id": "umd-winter-spring-cpt-dates",
+        "category": "#05 CPT school tracker",
+        "title": "Add UMD winter and spring CPT dates",
+        "summary": "The school calendar lists January 27, 2027 as the latest winter end and earliest spring start.",
+        "before": "The entry listed which CPT requests continued or remained paused, without winter or spring CPT dates.",
+        "after": "Add the current school calendar: winter CPT ends no later than January 27, 2027 and spring CPT starts no earlier than that date. The school’s eligibility requirements continue to apply.",
+        "sources": [
+          {
+            "label": "UMD · CPT term calendar",
+            "href": "https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "plu-ucdavis-cpt-return",
+        "category": "#05 CPT school tracker",
+        "title": "PLU returns to elective CPT; UC Davis resumes course-credit CPT for winter",
+        "summary": "PLU requires coursework or credit and term-specific hour limits; UC Davis announces winter-quarter processing.",
+        "before": "PLU allowed only training every program student needs to graduate; UC Davis paused course-credit CPT.",
+        "after": "PLU’s November 20 notice restores major-related CPT linked to a course or elective internship or independent-study credit, with 20 hours weekly in fall and spring. UC Davis’s November 23 notice announces course-credit CPT processing for winter quarter; obtain SISS authorization before training.",
+        "sources": [
+          {
+            "label": "PLU · November 20 announcement",
+            "href": "https://www.plu.edu/iss/announcements/"
+          },
+          {
+            "label": "UC Davis · November 23 winter CPT notice",
+            "href": "https://siss.ucdavis.edu/news/federal-government-updates-international-students-and-scholars"
+          }
+        ]
+      },
+      {
+        "id": "utah-cpt-pre-august-review",
+        "category": "#05 CPT school tracker",
+        "title": "Utah resumes required and elective CPT review",
+        "summary": "Spring 2027 applications run from December 7 through January 29.",
+        "before": "New non-required CPT was paused from September 3; UAtlas accepted requests while approval awaited review.",
+        "after": "The November 23 notice restores pre-August review criteria, including required and elective training directly related to the major and established curriculum. Spring 2027 applications open December 7 and close January 29; obtain the CPT I-20 before training. Existing authorizations continue under their approved terms.",
+        "sources": [
+          {
+            "label": "Utah · November 23 CPT notice",
+            "href": "https://isss.utah.edu/news/posts/2026/federal-court-temporarily-blocks-guidance-on-cpt.php"
+          }
+        ]
+      },
+      {
+        "id": "minnesota-cmu-cpt-november23",
+        "category": "#05 CPT school tracker",
+        "title": "Minnesota CPT processing has resumed; CMU reviews next steps",
+        "summary": "Minnesota confirms required and elective processing from November 23; CMU is reviewing the order and forms with counsel.",
+        "before": "Minnesota planned to open its application form November 23; the CMU entry still cited its October 8 litigation notice.",
+        "after": "Minnesota’s November 23 update confirms that required and elective CPT processing has resumed with changes to the process. CMU’s November 23 notice says OIE is reviewing the court order, CPT forms and procedures with general counsel and will publish further instructions.",
+        "sources": [
+          {
+            "label": "Minnesota · November 23 update",
+            "href": "https://isss.umn.edu/fstudents/employment/cpt"
+          },
+          {
+            "label": "CMU OIE · November 23 notice",
+            "href": "https://www.cmu.edu/oie/news-and-events/2026-2027/october/cpt-lawsuit.html"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-22",
     "changes": [
