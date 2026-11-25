@@ -5,7 +5,7 @@ export const cptGuidance: PolicyContent = {
   path: 'CPT',
   tone: 'red',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-23",
+  checkedOn: "2026-11-24",
   related: ['duration-status', 'opt-fee'],
   schoolLink: true,
   process: {
@@ -179,9 +179,9 @@ export const cptGuidance: PolicyContent = {
       "en": "Columbia University · November 18 elective CPT review resumes"
     },
     {
-      "href": "https://blogs.illinois.edu/view/8569/1744245392",
-      "zh": "UIUC · 11·17 CPT 安排",
-      "en": "UIUC · November 17 CPT arrangements"
+      "href": "https://blogs.illinois.edu/view/8569/687632551",
+      "zh": "UIUC · 11·24 申请流程，11·23 起暂停三方协议要求",
+      "en": "UIUC · November 24 application procedures; agreement requirement suspended November 23"
     },
     {
       "href": "https://iss.washington.edu/preliminary-injunction-cpt/",
