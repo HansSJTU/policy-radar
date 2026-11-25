@@ -45,6 +45,14 @@ export const briefingEntries: BriefingEntry[] = [
     "en": "Separate $100,000 fee case: plaintiffs’ answering brief due in the Ninth Circuit (No. 26-6667)."
   },
   {
+    "id": "ds-uscis-form-editions",
+    "date": "2026-11-24",
+    "policyId": "duration-status",
+    "timing": "recent",
+    "zh": "USCIS 更新撤销 D/S 规则后的表格说明：继续接受 08/28/24 版 I-539、08/21/25 版 I-765；09/15/26 版两种表格暂停接受。",
+    "en": "USCIS updated its form instructions after the D/S vacatur: it continues accepting I-539 edition 08/28/24 and I-765 edition 08/21/25; both 09/15/26 editions remain unaccepted."
+  },
+  {
     "id": "cpt-nationwide-stay-november17",
     "date": "2026-11-17",
     "availableOn": "2026-11-17",

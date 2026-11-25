@@ -23,6 +23,67 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-24",
+    "changes": [
+      {
+        "id": "uiuc-agreement-suspended",
+        "category": "#05 CPT 学校追踪",
+        "title": "UIUC 暂停三方协议要求",
+        "summary": "11·23 起可像以前一样凭录用信申请 CPT。",
+        "before": "条目只列有正式实践课程或论文研究支持的 CPT。",
+        "after": "补充校方 11·24 公告：11·23 起暂停要求三方合作协议，学生可凭录用信申请；课程或论文研究要求和工作前 CPT 授权继续适用。",
+        "sources": [
+          {
+            "label": "UIUC · 11·24 CPT 公告",
+            "href": "https://blogs.illinois.edu/view/8569/687632551"
+          }
+        ]
+      },
+      {
+        "id": "bmc-prepares-cpt-procedures",
+        "category": "#05 CPT 学校追踪",
+        "title": "Bryn Mawr 正准备法院暂缓后的 CPT 流程",
+        "summary": "ISSA 公布 11·17 法院暂缓，并准备校内申请说明。",
+        "before": "条目停留在 9·15 新选修型 CPT 暂停。",
+        "after": "补充 ISSA 正在准备新流程，学生可向 ISSA 咨询申请安排。",
+        "sources": [
+          {
+            "label": "Bryn Mawr · ISSA 公告",
+            "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements"
+          }
+        ]
+      },
+      {
+        "id": "umd-spring-start-correction",
+        "category": "#05 CPT 学校追踪",
+        "title": "UMD 春季 CPT 最早开始日改为 1·26",
+        "summary": "冬季最晚结束日仍为 1·27。",
+        "before": "春季 CPT 最早于 2027 年 1·27 开始。",
+        "after": "校方当前日历将春季最早开始日列为 2027 年 1·26；冬季最晚结束日仍为 1·27。",
+        "sources": [
+          {
+            "label": "UMD · CPT 日历",
+            "href": "https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "ds-uscis-form-editions",
+        "category": "#03 D/S 规则",
+        "title": "USCIS 更新撤销规则后的表格说明",
+        "summary": "继续使用 I-539 的 08/28/24 版和 I-765 的 08/21/25 版。",
+        "before": "页面列明法院撤销整项规则及地区法院结案。",
+        "after": "增加 USCIS 11·24 公告：撤销规则后仍接受上述版本，09/15/26 版两种表格暂停接受，直到另行通知。",
+        "sources": [
+          {
+            "label": "USCIS · 11·24 表格说明",
+            "href": "https://www.uscis.gov/i-539"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "changes": [
       {
@@ -2863,6 +2924,67 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-24",
+    "changes": [
+      {
+        "id": "uiuc-agreement-suspended",
+        "category": "#05 CPT school tracker",
+        "title": "UIUC suspends the three-party agreement requirement",
+        "summary": "From November 23, students may apply with an offer letter as before.",
+        "before": "The entry listed CPT supported by a formal practical course or thesis research.",
+        "after": "Add the November 24 announcement: the three-party agreement requirement was suspended November 23. Apply with an offer letter; curriculum or thesis requirements and CPT authorization before work continue to apply.",
+        "sources": [
+          {
+            "label": "UIUC · November 24 CPT announcement",
+            "href": "https://blogs.illinois.edu/view/8569/687632551"
+          }
+        ]
+      },
+      {
+        "id": "bmc-prepares-cpt-procedures",
+        "category": "#05 CPT school tracker",
+        "title": "Bryn Mawr prepares CPT procedures after the court order",
+        "summary": "ISSA announces the November 17 court order and prepares application guidance.",
+        "before": "The entry showed only the September 15 pause on new optional CPT.",
+        "after": "Add that ISSA is preparing updated procedures; students can contact ISSA about applications.",
+        "sources": [
+          {
+            "label": "Bryn Mawr · ISSA announcements",
+            "href": "https://www.brynmawr.edu/inside/offices-services/impact-center/international-advising/issa-announcements"
+          }
+        ]
+      },
+      {
+        "id": "umd-spring-start-correction",
+        "category": "#05 CPT school tracker",
+        "title": "UMD moves earliest spring CPT start to January 26",
+        "summary": "The latest winter end remains January 27.",
+        "before": "Spring CPT could start no earlier than January 27, 2027.",
+        "after": "The current school calendar lists January 26, 2027 as the earliest spring start; the latest winter end remains January 27.",
+        "sources": [
+          {
+            "label": "UMD · CPT calendar",
+            "href": "https://marylandglobal.umd.edu/global-learning-all/international-students-scholars/employment-taxes/employment-f-1-international-students/curricular-practical-training-cpt"
+          }
+        ]
+      },
+      {
+        "id": "ds-uscis-form-editions",
+        "category": "#03 D/S rule",
+        "title": "USCIS updates form instructions after vacatur",
+        "summary": "Continue using I-539 edition 08/28/24 and I-765 edition 08/21/25.",
+        "before": "The page described vacatur of the entire rule and closure of the district-court case.",
+        "after": "Add the November 24 USCIS notice: those editions remain accepted after vacatur. The 09/15/26 editions of both forms remain unaccepted until further notice.",
+        "sources": [
+          {
+            "label": "USCIS · November 24 form notice",
+            "href": "https://www.uscis.gov/i-539"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-23",
     "changes": [
