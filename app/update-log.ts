@@ -23,6 +23,75 @@ export type ContentUpdate = {
 
 const chineseUpdates: ContentUpdate[] = [
   {
+    "date": "2026-11-25",
+    "changes": [
+      {
+        "id": "arizona-cpt-return",
+        "category": "#05 CPT 学校追踪",
+        "title": "Arizona 将恢复按 8 月前办法受理 CPT",
+        "summary": "12·05 前公布更新后的表单和申请要求。",
+        "before": "非项目必需的 CPT 暂停处理，只批课程或论文必需的实践。",
+        "after": "ISS 11·25 公告说明将恢复按 8 月前办法受理，实践属于既定课程的一部分即可考虑；新表单和申请要求将在 12·05 前公布。",
+        "sources": [
+          {
+            "label": "校方公告",
+            "href": "https://international.arizona.edu/iss/announcements"
+          }
+        ]
+      },
+      {
+        "id": "cooper-mit-jhu-procedures",
+        "category": "#05 CPT 学校追踪",
+        "title": "Cooper Union、MIT 和 Johns Hopkins 评估法院命令后的 CPT 流程",
+        "summary": "各校正在准备或评估新流程，学生按现有申请安排办理。",
+        "before": "Cooper Union、MIT 和 Johns Hopkins 条目只列原有暂停或限制。",
+        "after": "补充 Cooper Union 和 MIT 对 11·17 法院命令的流程审查，以及 Johns Hopkins 与法律顾问讨论后续办理安排；保留当前受理条件。",
+        "sources": [
+          {
+            "label": "校方公告",
+            "href": "https://cooper.edu/admissions/international/Changes-to-CPT-policy"
+          },
+          {
+            "label": "MIT ISO",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          },
+          {
+            "label": "Johns Hopkins OIS",
+            "href": "https://ois.jhu.edu/students/current-f-1-students/f-1-training-and-employment/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "northwestern-precompletion-opt-option",
+        "category": "#05 CPT 学校追踪",
+        "title": "Northwestern 增加毕业前 OPT 的申请路径",
+        "summary": "雇主不签 CPT 合作协议时，可申请毕业前 OPT，获批后开展实践。",
+        "before": "条目列明 CPT 合作协议要求。",
+        "after": "增加 11·25 页面说明：雇主或实习机构不签协议时，学生可申请毕业前 OPT，获批后开展实践。",
+        "sources": [
+          {
+            "label": "校方公告",
+            "href": "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "rutgers-new-brunswick-email",
+        "category": "#05 CPT 学校追踪",
+        "title": "Rutgers 将向 New Brunswick 学生邮件发送 CPT 专项安排",
+        "summary": "通知预计在未来几周发送。",
+        "before": "条目列明学校正在评估法院命令，后续变化另行通知。",
+        "after": "补充面向 New Brunswick 学生的通知：未来几周会通过邮件发送 CPT 专项安排。",
+        "sources": [
+          {
+            "label": "校方公告",
+            "href": "https://global.rutgers.edu/all-alerts"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-24",
     "changes": [
       {
@@ -2924,6 +2993,75 @@ const chineseUpdates: ContentUpdate[] = [
 ];
 
 const englishUpdates: ContentUpdate[] = [
+  {
+    "date": "2026-11-25",
+    "changes": [
+      {
+        "id": "arizona-cpt-return",
+        "category": "#05 CPT school tracker",
+        "title": "Arizona to resume CPT review under pre-August procedures",
+        "summary": "Updated forms and application requirements are due by December 5.",
+        "before": "Non-required CPT processing was suspended; only curriculum- or thesis-required training qualified.",
+        "after": "The November 25 ISS announcement says pre-August review will resume for training integral to the curriculum, with updated forms and requirements by December 5.",
+        "sources": [
+          {
+            "label": "University announcement",
+            "href": "https://international.arizona.edu/iss/announcements"
+          }
+        ]
+      },
+      {
+        "id": "cooper-mit-jhu-procedures",
+        "category": "#05 CPT school tracker",
+        "title": "Cooper Union, MIT and Johns Hopkins review CPT procedures after the court order",
+        "summary": "The schools are preparing or reviewing procedures while current application arrangements continue.",
+        "before": "The entries listed only the earlier pauses or restrictions.",
+        "after": "Add Cooper Union and MIT review of procedures after the November 17 order, and Johns Hopkins consultation with counsel about processing. Preserve current eligibility conditions.",
+        "sources": [
+          {
+            "label": "University announcement",
+            "href": "https://cooper.edu/admissions/international/Changes-to-CPT-policy"
+          },
+          {
+            "label": "MIT ISO",
+            "href": "https://iso.mit.edu/employment/f-1-curricular-practical-training/"
+          },
+          {
+            "label": "Johns Hopkins OIS",
+            "href": "https://ois.jhu.edu/students/current-f-1-students/f-1-training-and-employment/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "northwestern-precompletion-opt-option",
+        "category": "#05 CPT school tracker",
+        "title": "Northwestern adds a pre-completion OPT option",
+        "summary": "If an employer will not sign the CPT agreement, students may apply for pre-completion OPT and train after approval.",
+        "before": "The entry listed the CPT cooperative-agreement requirement.",
+        "after": "Add the November 25 page instruction allowing students to apply for pre-completion OPT if the employer or internship provider will not sign the agreement. Training begins after approval.",
+        "sources": [
+          {
+            "label": "University announcement",
+            "href": "https://www.northwestern.edu/international/international-students/student-employment/f-1-practical-training/curricular-practical-training/"
+          }
+        ]
+      },
+      {
+        "id": "rutgers-new-brunswick-email",
+        "category": "#05 CPT school tracker",
+        "title": "Rutgers to email New Brunswick students further CPT guidance",
+        "summary": "The notice says guidance will arrive in the coming weeks.",
+        "before": "The entry said the university was reviewing the court order and would announce updates.",
+        "after": "Add the notice to New Brunswick students saying CPT-specific guidance will be emailed in the coming weeks.",
+        "sources": [
+          {
+            "label": "University announcement",
+            "href": "https://global.rutgers.edu/all-alerts"
+          }
+        ]
+      }
+    ]
+  },
   {
     "date": "2026-11-24",
     "changes": [

@@ -21,6 +21,14 @@ export type GlossarySegment =
 
 export const glossaryEntries: GlossaryEntry[] = [
   {
+    term: '毕业前 OPT',
+    aliases: ['pre-completion OPT', 'Pre-Completion OPT', 'Pre-completion OPT'],
+    fullName: 'Pre-completion Optional Practical Training（毕业前选择性实践训练）',
+    explanation: 'F-1 学生毕业前从事专业相关工作的许可。先由学校推荐，再向 USCIS 申请，收到工卡并到获准开始日后才能工作。获准的时间会占用同一学位层级的毕业后 OPT 额度。',
+    fullNameEn: 'Pre-completion Optional Practical Training',
+    explanationEn: 'Authorization for an F-1 student to work in the field of study before completing the program. It requires a school recommendation and USCIS approval. Work starts after the EAD is received and its authorized start date arrives. Authorized time reduces post-completion OPT available at the same degree level.',
+  },
+  {
     "term": "结案命令",
     "aliases": [
       "Order of dismissal",

@@ -5,7 +5,7 @@ export const nonimmigrantDeference: PolicyContent = {
   "path": "H-1B",
   "tone": "gray",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-11-24",
+  "checkedOn": "2026-11-25",
   "related": [
     "h1b-reform",
     "grace-period"

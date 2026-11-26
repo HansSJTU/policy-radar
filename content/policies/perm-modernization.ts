@@ -5,7 +5,7 @@ export const permModernization: PolicyContent = {
   "path": "H-1B",
   "tone": "blue",
   "effectState": "not-in-effect",
-  "checkedOn": "2026-11-24",
+  "checkedOn": "2026-11-25",
   "related": [
     "prevailing-wage",
     "h1b-reform"
