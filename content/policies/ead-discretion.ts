@@ -5,7 +5,7 @@ export const eadDiscretion: PolicyContent = {
   path: 'OPT',
   tone: 'amber',
   effectState: 'not-in-effect',
-  checkedOn: "2026-11-26",
+  checkedOn: "2026-11-27",
   related: [
     "opt-fee",
     "h4-ead",
